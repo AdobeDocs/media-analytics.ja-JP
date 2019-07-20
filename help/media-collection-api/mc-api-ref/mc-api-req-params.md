@@ -1,0 +1,164 @@
+---
+seo-title: リクエストパラメーター
+title: リクエストパラメーター
+uuid: f83e9ef1-803d-4152- a6c7- acaa325036b9
+translation-type: tm+mt
+source-git-commit: 4c5fe469d5ef858e1caa65a25cc23d2a84637144
+
+---
+
+
+# リクエストパラメーター{#request-parameters}
+
+## Analytics データ
+
+| リクエストキー | 必須 | 設定する場所 |  説明  |
+| --- | :---: | :---: | --- |
+| `analytics.trackingServer` | はい | `sessionStart` | Adobe Analytics サーバーの URL |
+| `analytics.reportSuite` | はい | `sessionStart` | Analytics レポートデータを識別する ID |
+| `analytics.enableSSL` | いいえ | `sessionStart` | SSL を有効にするかどうか（true または false） |
+| `analytics.visitorId` | いいえ | `sessionStart` | Adobe訪問者IDは、複数のAdobeアプリケーションで使用できるカスタムIDです。The Heartbeat `visitorId` equals the Analytics `VID.` |
+
+## 訪問者データ
+
+| リクエストキー | 必須 | 設定する場所 |  説明  |
+| --- | :---: | :---: | --- |
+| `visitor.marketingCloudOrgId` | はい | `sessionStart` | Experience Cloud 組織 ID。Adobe Experience Cloud エコシステム内で組織を識別します。 |
+| `visitor.marketingCloudUserId` | いいえ | `sessionStart` | これは、Experience CloudユーザーID（ECID）です。ほとんどのシナリオでは、これはユーザーを識別するために使用するIDです。The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. 技術的には必須ではありませんが、このパラメーターは、Experience Cloudのアプリケーションにアクセスするために必要です。 |
+| `visitor.aamLocationHint` | いいえ | `sessionStart` | Adobe Audience Manager Edge データを提供します。 |
+| `appInstallationId` | いいえ | `sessionStart` | アプリとデバイスを一意に識別する appInstallationId |
+
+## コンテンツデータ
+
+| リクエストキー | 必須 | 設定する場所 |  説明  |
+| --- | :---: | :---: | --- |
+| `media.id` | はい | `sessionStart` | コンテンツの一意の識別子 |
+| `media.name` | いいえ | `sessionStart` | 人が判読可能なコンテンツの名前 |
+| `media.length` | はい | `sessionStart` | コンテンツの長さ（秒） |
+| `media.contentType` | はい | `sessionStart` | ストリームの形式（任意の文字列を指定できます。推奨される値は、「Live」、「VOD」または「Linear」です） |
+| `media.playerName` | はい | `sessionStart` | コンテンツのレンダリングをおこなうプレーヤーの名前 |
+| `media.channel` | はい | `sessionStart` | コンテンツの配布チャネル。モバイルアプリケーション名、Web サイト名またはプロパティ名を使用できます。 |
+| `media.resume` | いいえ | `sessionStart` | ユーザーが以前のセッションを再開するかどうかを示します（新しいセッションを開始するのではなく、 |
+| `media.sdkVersion` | いいえ | `sessionStart` | プレーヤーで使用される SDK のバージョン |
+
+## コンテンツ標準メタデータ
+
+| リクエストキー | 必須 | 設定する場所 |  説明  |
+| --- | :---: | :---: | --- |
+| `media.show` | いいえ | `sessionStart` | プログラム名またはシリーズ名 |
+| `media.season` | いいえ | `sessionStart` | 番組またはシリーズが属するシーズン番号 |
+| `media.episode` | いいえ | `sessionStart` | エピソードの番号 |
+| `media.assetId` | いいえ | `sessionStart` | TV シリーズのエピソードの識別子、ムービーアセットの識別子、ライブイベントの識別子など、ビデオアセットのコンテンツの一意の識別子。この ID は通常、EIDR、TMS／Gracenote、Rovi などのメタデータを扱う機関から取得します。その他の独自のシステムや社内システムから取得することもできます。 |
+| `media.genre` | いいえ | `sessionStart` | コンテンツプロデューサーによって定義されたコンテンツのタイプ |
+| `media.firstAirDate` | いいえ | `sessionStart` | コンテンツがテレビで最初に放送された日付 |
+| `media.firstDigitalDate` | いいえ | `sessionStart` | コンテンツが何らかのデジタルプラットフォームで最初に放送された日付 |
+| `media.rating` | いいえ | `sessionStart` | TV Parental Guidelines で定義されたレーティング |
+| `media.originator` | いいえ | `sessionStart` | コンテンツの作成者 |
+| `media.network` | いいえ | `sessionStart` | ネットワーク／チャネル名 |
+| `media.showType` | いいえ | `sessionStart` | コンテンツのタイプ（0 ～ 3 の整数） <ul> <li>0 - エピソードそのもの </li> <li>1 - プレビュー </li> <li>2 - クリップ </li> <li>3 - その他 </li> </ul> |
+| `media.adLoad` | いいえ | `sessionStart` | 読み込まれた広告のタイプ |
+| `media.pass.mvpd` | いいえ | `sessionStart` | アドビの認証によって提供される MVPD |
+| `media.pass.auth` | いいえ | `sessionStart` | ユーザーがアドビの認証によって認証されていることを示します（設定されている場合にのみ true になります）。 |
+| `media.dayPart` | いいえ | `sessionStart` | コンテンツが放送された時刻 |
+| `media.feed` | いいえ | `sessionStart` | フィードのタイプ（例：「West-HD」） |
+
+## 広告データ
+
+| リクエストキー | 必須 | 設定する場所 |  説明  |
+| --- | :---: | :---: | --- |
+| `media.ad.podFriendlyName` | いいえ | `adBreakStart` | 広告ブレークのわかりやすい名前 |
+| `media.ad.podIndex` | はい | `adBreakStart` | ビデオ内の広告ポッドのインデックス |
+| `media.ad.podSecond` | はい | `adBreakStart` | ポッドが開始された時間（秒） |
+| `media.ad.podPosition` | はい | `adStart` | 広告ブレーク内の広告のインデックス（1 から開始） |
+| `media.ad.name` | いいえ | `adStart` | 広告のわかりやすい名前 |
+| `media.ad.id` | はい | `adStart` | 広告の名前 |
+| `media.ad.length` | はい | `adStart` | ビデオ広告の長さ（秒） |
+| `media.ad.playerName` | はい | `adStart` | 広告のレンダリングをおこなうプレーヤーの名前 |
+
+## 広告標準メタデータ
+
+| リクエストキー | 必須 | 設定する場所 |  説明  |
+| --- | :---: | :---: | --- |
+| `media.ad.advertiser` | いいえ | `adStart` | 広告で取り上げられている製品の会社またはブランド |
+| `media.ad.campaignId` | いいえ | `adStart` | 広告キャンペーンの ID |
+| `media.ad.creativeId` | いいえ | `adStart` | 広告クリエイティブの ID |
+| `media.ad.siteId` | いいえ | `adStart` | 広告サイトの ID |
+| `media.ad.creativeURL` | いいえ | `adStart` | 広告クリエイティブの URL |
+| `media.ad.placementId` | いいえ | `adStart` | 広告のプレースメント ID |
+
+## チャプターデータ
+
+| リクエストキー | 必須 | 設定する場所 |  説明  |
+| --- | :---: | :---: | --- |
+| `media.chapter.index` | はい | `chapterStart` | コンテンツ内のチャプターの位置を識別します。 |
+| `media.chapter.offset` | はい | `chapterStart` | 再生においてチャプターが始まる時間（秒） |
+| `media.chapter.length` | はい | `chapterStart` | チャプターの長さ（秒） |
+| `media.chapter.friendlyName` | いいえ | `chapterStart` | チャプターのわかりやすい名前 |
+
+## 品質データ
+
+| リクエストキー | 必須 | 設定する場所 |  説明  |
+| --- | :---: | :---: | --- |
+| `media.qoe.bitrate` | いいえ | 任意 | ストリームのビットレート |
+| `media.qoe.droppedFrames` | いいえ | 任意 | ストリーム内のドロップフレームの数 |
+| `media.qoe.framesPerSecond` | いいえ | 任意 | 1 秒あたりのフレーム数 |
+| `media.qoe.timeToStart` | いいえ | 任意 | ユーザーが再生を押してからコンテンツが読み込まれて再生が開始されたときまでの時間（ミリ秒） |
+
+## 追加の詳細情報 {#section_ryt_ccy_lcb}
+
+### visitor.marketingCloudUserId
+
+Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `sessionStart` call by including it inside the `params` map using the following key: **visitor.marketingCloudUserId**. これは、既に他の Experience Cloud 製品と統合していて、MCID を既に取得している場合に便利な機能です。
+
+>[!NOTE]
+>
+>Media Analytics（MA）は、Experience Cloudファミリーアプリ（Adobe Analytics、Audience Manager、Targetなど）に統合されています。これらのアプリにアクセスするには、Experience Cloud ID が必要です。_EIDは、ほとんどのシナリオでユーザーを識別するために使用する必要のあるものです。_
+
+### appInstallationId
+
+* **値&#x200B;*を渡さない*`appInstallationId`場合-** MAバックエンドはMCIDを生成しなくなりますが、代わりにAdobe Analyticsに依存します。MCID を送信する（MCID を取得できる場合）か、（必須の `appInstallationId` と共に）`marketingCloudOrgId` を送信してメディアコレクション API が MCID を生成してすべての呼び出しで送信できるようにすることをお勧めします。
+
+* **値&#x200B;**を渡す`appInstallationId`場合は、（** 必須パラメーターとして）、MAバックエンドによっ *てMCID* を生成 `appInstallationId` すること `marketingCloudOrgId` ができます。自分で `appInstallationId` を渡す場合は、クライアント側でその値を維持する必要があります。この値はデバイス上のアプリに対して一意である必要があり、アプリが再インストールされない限り永続的である必要があります。
+
+>[!NOTE]
+>
+>`appInstallationId` アプリケーション *とデバイスを一意に識別*&#x200B;します。この値は各デバイスのアプリごとに一意である必要があります。つまり、異なるデバイスで同じアプリの同じバージョンを使用する 2 人のユーザーは、それぞれ異なる（一意の）`appInstallationId` を送信する必要があります。
+
+<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
+\<ul id="ul_iwc_fqt_pbb"\> 
+ \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
+</ul> -->
+
+### visitor.marketingCloudOrgId
+
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](../../federated-analytics.md))
+
+### AnalyticsレガシーユーザーID（aid）および宣言済みユーザーID（CustomerIDs）
+
+* **analytics. aid:**
+
+   このキーの値は、AnalyticsのレガシーユーザーIDを表す文字列である必要があります
+* **visitor. customerIDs:**
+
+   このキーの値は、次の形式のオブジェクトである必要があります。
+
+   ```js
+   "<<insert your ID name here>>": {  
+     "id": " <<insert your id here>>",  
+      "authState": <<insert one of 0, 1, 2>> 
+   }
+   ```
+
+`visitor.customerIDs` の値には、上記の形式のオブジェクトを任意の数だけ含めることができます。
+
+### visitor.aamLocationHint
+
+このパラメーターは、Adobe Analyticsが顧客データをAudience Managerに送信する際にヒットされるAdobe Audience Manager（AAM） Edgeを示します。このパラメーターを渡さない場合、アドビによって値が 1 にハードコーディングされます。これは、エンドユーザーが地理的に離れた場所（例えば、米国東部、米国西部、ヨーロッパ、アジア）でデバイスを使用する場合に特に重要です。そうでない場合、ユーザーデータは複数の AAM Edge に分散されます。
+
+### media.resume
+
+セッションが閉じられた後で（例えば、ユーザーが一旦ビデオから離れた後で戻ってきた結果）再開され、プレーヤーの再生ヘッドが停止された位置からビデオが再開されたことをアプリが検出した場合、**呼び出しの params バケット内でブール型のオプションの** media.resume`sessionStart` パラメーターを送信できます。
+
+<!--
+| `media.uniqueTimePlayed` | N | Close | The value in seconds of the unique segments of content played during a session. Excludes time played on seek back scenarios in which a viewer is watching the same segment of the content multiple times.  |
+-->
