@@ -1,0 +1,838 @@
+---
+seo-title: マイルストーンから Media Analytics への移行
+title: マイルストーンから Media Analytics への移行
+uuid: fdc96146- af63-48ce- b938- c0ca70729277
+translation-type: tm+mt
+source-git-commit: 27740fc1753e8ac9cf5a4b240a56b1c2dd567010
+
+---
+
+
+# マイルストーンから Media Analytics への移行 {#migrating-from-milestone-to-media-analytics}
+
+## 概要 {#section_ihl_nbz_cfb}
+
+マイルストーンと Media Analytics では、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。Media Analytics ソリューションはマイルストーンが発展したものであるので、多くのメソッドや指標は同じです。ただし、設定のアプローチやコードは大幅に変更されています。新しい Media Analytics のメソッドを指すようにプレーヤーのイベントコードを更新できる必要があります。See [SDK Overview](../../sdk-implement/setup/setup-overview.md) and [Tracking Overview](../../sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
+
+以下の表では、マイルストーンソリューションと Media Analytics ソリューション間の変更について説明します。
+
+## 移行ガイド {#section_iyb_pbz_cfb}
+
+### 変数リファレンス
+
+| マイルストーンの指標 | 変数の種類 | Media Analytics の指標 |
+| --- | --- | --- |
+| コンテンツ | eVar<br/><br/>Default expiration: Visit | コンテンツ |
+| コンテンツタイプ | eVar<br/><br/> Default expiration: Page view | コンテンツタイプ |
+| コンテンツ視聴時間 | Event<br/><br/> Type: Counter | コンテンツ視聴時間 |
+| ビデオ開始 | Event<br/><br/> Type: Counter | ビデオ開始 |
+| ビデオ完了 | Event<br/><br/> Type: Counter | コンテンツ完了 |
+
+### メディアモジュール変数
+
+<table>
+<thead>
+<tr>
+<th>マイルストーン
+</th>
+<th>マイルストーンの構文
+</th>
+<th>Media Analytics
+</th>
+<th>Media Analytics の構文
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Media.trackUsingContextData
+</td>
+<td>
+<pre>
+s.Media.trackUsingContextData = true;
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>すべての Media Analytics データはコンテキストデータのみを使用して送信されます。
+</td>
+</tr>
+<tr>
+<td>
+Media.contextDataMapping
+</td>
+<td>
+<pre>
+s. Media. contextDataMapping={"a.
+ media. name":"eVar2， prop2"，"a.
+ media. segment":"eVar3"，"a.
+ contentType":"eVar1"，"a.
+ media. timePlayed":"event3"，"a.
+ media. view":"event1"，"a.
+ media. segmentView":"event2"，"a.
+ media. complete":"event7"，"a.
+ media. milestones":{25:"event4"，50:"event5"，75:"event6"}};
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>Media Analytics のコンテキストデータは、予約変数に自動的に設定されます。実装コード内で eVar、prop およびイベントへのマッピングは不要になりました。お客様は、処理ルールを使用してコンテキストデータを変数にマッピングすることができます。
+</td>
+</tr>
+<tr>
+<td>
+Media.trackVars
+</td>
+<td>
+<pre>
+s. Media. trackVars=
+"events，
+ prop2，
+ eVar1，
+ eVar2，
+ eVar3";
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>マッピングは予約変数および処理ルールによって実行されるので、不要になりました。
+</td>
+</tr>
+<tr>
+<td>
+Media.trackEvents
+</td>
+<td>
+<pre>
+s. Media. trackEvents=
+"event1，
+ event2，
+ event3，
+ event4，
+ event5，
+ event6，
+ event7"
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>マッピングは予約変数および処理ルールによって実行されるので、不要になりました。
+</td>
+</tr>
+</tbody>
+</table>
+
+### オプションの変数
+
+<table>
+<thead>
+<tr>
+<th>マイルストーン
+</th>
+<th>マイルストーンの構文
+</th>
+<th>Media Analytics
+</th>
+<th>Media Analytics の構文
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Media.autoTrack
+</td>
+<td>
+<pre>
+s.Media.autoTrack = true;
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>事前定義されたプレーヤーのマッピングは提供されなくなりました。
+</td>
+</tr>
+<tr>
+<td>
+Media.autoTrackNetStreams
+</td>
+<td>
+<pre>
+s.Media.
+  autoTrackNetStreams=
+ true
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>事前定義されたプレーヤーのマッピングは提供されなくなりました。
+</td>
+</tr>
+<tr>
+<td>
+Media.completeByCloseOffset
+</td>
+<td>
+<pre>
+s.Media.
+  completeByCloseOffset=
+ true
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>コンテンツ完了では、100％プログレスマーカーのみがサポートされます。
+</td>
+</tr>
+<tr>
+<td>
+Media.completeCloseOffsetThreshold
+</td>
+<td>
+<pre>
+s.Media.
+  completeCloseOffsetThreshold=1
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>コンテンツ完了では、100％プログレスマーカーのみがサポートされます。
+</td>
+</tr>
+<tr>
+<td>
+Media.playerName
+</td>
+<td>
+<pre>
+s.Media.playerName = "Custom Player Name"
+</pre>
+</td>
+<td>
+SDK Key:playerName;
+APIキー:media. playerName
+</td>
+<td>
+<pre>
+MediaHeartbeatConfig.
+  playerName
+</pre>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+Media.trackSeconds
+</td>
+<td>
+<pre>
+s.Media.
+  trackSeconds=15
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>Media Analytics は、コンテンツの場合は 10 秒、広告の場合は 1 秒に設定されます。他のオプションは利用できません。
+</td>
+</tr>
+<tr>
+<td>
+Media.trackMilestones
+</td>
+<td>
+<pre>
+s.Media.
+  trackMilestones="25,50,75";
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>Media Analytics は、常に 10％、25％、50％、75％、95％のプログレスマーカーを追跡します。
+</td>
+</tr>
+<tr>
+<td>
+Media.trackOffsetMilestones
+</td>
+<td>
+<pre>
+s.Media.
+  trackOffsetMilestones="20,40,60";
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>Media Analytics は、常に 10％、25％、50％、75％、95％のプログレスマーカーを追跡します。
+</td>
+</tr>
+<tr>
+<td>
+Media.segmentByMilestones
+</td>
+<td>
+<pre>
+s.Media.segmentByMilestones = true;
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>自動追跡は利用できなくなりました。
+</td>
+</tr>
+<tr>
+<td>
+Media.segmentByOffsetMilestones
+</td>
+<td>
+<pre>
+s.Media.
+  segmentByOffsetMilestones=
+ true;
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>自動追跡は利用できなくなりました。
+</td>
+</tr>
+</tbody>
+</table>
+
+### 広告トラッキング変数
+
+<table>
+<thead>
+<tr>
+<th>マイルストーン
+</th>
+<th>マイルストーンの構文
+</th>
+<th>Media Analytics
+</th>
+<th>Media Analytics の構文
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Media.adTrackSeconds
+</td>
+<td>
+<pre>
+s.Media.
+  adTrackSeconds=15
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>Media Analytics は、コンテンツの場合は 10 秒、広告の場合は 1 秒に設定されます。他のオプションは利用できません。
+</td>
+</tr>
+<tr>
+<td>
+Media.adTrackMilestones
+</td>
+<td>
+<pre>
+s.Media.
+  adTrackMilestones="25,50,75";
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>広告の場合、プログレスマーカーはデフォルトでは提供されません。広告のプログレスマーカーを作成するには、計算指標を使用します。
+</td>
+</tr>
+<tr>
+<td>
+Media.adTrackOffsetMilestones
+</td>
+<td>
+<pre>
+s.Media.
+  adTrackOffsetMilestones="20,40,60";
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>広告の場合、Media Analytics は 1 秒に設定されます。他のオプションは利用できません。
+</td>
+</tr>
+<tr>
+<td>
+Media.adSegmentByMilestones
+</td>
+<td>
+<pre>
+s.Media.
+  adSegmentByMilestones=
+ true;
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>自動追跡は利用できなくなりました。
+</td>
+</tr>
+<tr>
+<td>
+Media.adSegmentByOffsetMilestones
+</td>
+<td>
+<pre>
+s.Media.
+  adSegmentByOffsetMilestones=
+ true;
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>自動追跡は利用できなくなりました。
+</td>
+</tr>
+</tbody>
+</table>
+
+### メディアモジュールメソッド
+
+<table>
+<thead>
+<tr>
+<th>マイルストーン
+</th>
+<th>マイルストーンの構文
+</th>
+<th>Media Analytics
+</th>
+<th>Media Analytics の構文
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Media.open
+</td>
+<td>
+<pre>
+s.Media.open(mediaName,mediaLength,mediaPlayerName)
+</pre>
+</td>
+<td>
+<pre>
+trackSessionStart
+</pre>
+</td>
+<td>
+<pre>
+trackSessionStart（MediaObject，
+contextData）
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+mediaName-（必須）ビデオレポートに表示するビデオの名前。
+</td>
+<td>
+<pre>
+mediaName
+</pre>
+</td>
+<td>
+<pre>
+name
+</pre>
+</td>
+<td>
+<pre>
+createMediaObject（name，
+mediaID、
+length、
+StreamType）
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+mediaLength-（必須）ビデオの長さ（秒単位）。
+</td>
+<td>
+<pre>
+mediaLength
+</pre>
+</td>
+<td>
+<pre>
+length
+</pre>
+</td>
+<td>
+<pre>
+createMediaObject（name，
+mediaID、
+length、
+StreamType）
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+mediaPlayerName-（必須）ビデオレポートに表示するために使用するメディアプレイヤーの名前。
+</td>
+<td>
+<pre>
+mediaPlayerName
+</pre>
+</td>
+<td>
+<pre>
+playerName
+</pre>
+</td>
+<td>
+<pre>
+MediaHeartbeatConfig.
+  playerName
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+Media.openAd
+</td>
+<td>
+<pre>
+s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM)
+</pre>
+</td>
+<td>
+<pre>
+trackEvent
+</pre>
+</td>
+<td>
+<pre>
+MediaHeartbeat. trackEvent（MediaHeartbeat.
+ イベント.
+    AdBreakStart、
+AdBreakObject）;
+…
+trackEvent（MediaHeartbeat.
+ イベント.
+    AdStart，
+AdObject、
+AdCustomMetadata）;
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+name-（必須）広告の名前またはID。
+</td>
+<td>
+<pre>
+name
+</pre>
+</td>
+<td>
+<pre>
+name
+</pre>
+</td>
+<td>
+<pre>
+createAdObject（name，
+aId，
+position，
+length）
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+length（必須）広告の長さ。
+</td>
+<td>
+<pre>
+length
+</pre>
+</td>
+<td>
+<pre>
+length
+</pre>
+</td>
+<td>
+<pre>
+createAdObject（name，
+aId，
+position，
+length）
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+playerName-（必須）広告の表示に使用されるメディアプレイヤーの名前。
+</td>
+<td>
+<pre>
+playerName
+</pre>
+</td>
+<td>
+<pre>
+playerName
+</pre>
+</td>
+<td>
+<pre>
+MediaHeartbeatConfig.
+  playerName
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+parentName-広告が埋め込まれるプライマリコンテンツの名前またはID。
+</td>
+<td>
+<pre>
+parentName
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>自動的に継承される
+</td>
+</tr>
+<tr>
+<td>
+parentPod-広告が再生されたプライマリコンテンツ内の位置。
+</td>
+<td>
+<pre>
+parentPod
+</pre>
+</td>
+<td>
+<pre>
+position
+</pre>
+</td>
+<td>
+<pre>
+createAdBreakObject（name，
+position，
+startTime）
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+parentPodPosition-広告が再生されるポッド内の位置。
+</td>
+<td>
+<pre>
+parentPodPosition
+</pre>
+</td>
+<td>
+<pre>
+position
+</pre>
+</td>
+<td>
+<pre>
+createAdObject（name，
+aId，
+position，
+length）
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+CPM:この再生に適用されるCPMまたは暗号化されたCPM（"~"のプレフィックスが付く）。
+</td>
+<td>
+<pre>
+CPM
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>Media Analyticsではデフォルトで使用不可
+</td>
+</tr>
+<tr>
+<td>
+Media.click
+</td>
+<td>
+<pre>
+s.Media.click(name,offset)
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>カスタムリンクの分析呼び出しを使用してクリックを追跡する
+</td>
+</tr>
+<tr>
+<td>
+Media.close
+</td>
+<td>
+<pre>
+s.Media.close(mediaName)
+</pre>
+</td>
+<td>
+<pre>
+trackSessionEnd
+</pre>
+</td>
+<td>
+<pre>
+trackSessionEnd()
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+Media.complete
+</td>
+<td>
+<pre>
+s.Media.complete(name,offset)
+</pre>
+</td>
+<td>
+<pre>
+trackComplete
+</pre>
+</td>
+<td>
+<pre>
+trackComplete()
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+Media.play
+</pre>
+</td>
+<td>
+<pre>
+s.Media.play(name,offset,segmentNum,segment,segmentLength)
+</pre>
+</td>
+<td>
+<pre>
+trackPlay
+</pre>
+</td>
+<td>
+<pre>
+trackPlay()
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+Media.stop
+</pre>
+</td>
+<td>
+<pre>
+s.Media.stop(mediaName,mediaOffset)
+</pre>
+</td>
+<td>
+<pre>
+trackPause
+</pre>  または 
+<pre>
+trackEvent
+</pre>
+</td>
+<td>
+<pre>
+trackPause()
+</pre> 
+ または
+<pre>
+trackEvent（MediaHeartbeat.
+ イベント.
+  SeekStart)
+</pre>  または
+<pre>
+trackEvent（MediaHeartbeat.
+ イベント.
+  BufferStart);
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+Media.monitor
+</pre>
+</td>
+<td>
+<pre>
+s.Media.monitor(s, media)
+</pre>
+</td>
+<td>追加の変数を指定するには、カスタムまたは標準のメタデータを使用します。
+</td>
+<td>
+<pre>
+var customVideoMetadata={isUserLoggedIn:
+"false"、tvStation:
+"Sample TV Station"、プログラマー:
+"Sampleプログラマー」};
+…
+var StandardVideoMetadata
+={};
+StandardVideoMetadata[MediaHeartbeat.
+ VideoMetadataKeys.
+   EPISSE]=
+「サンプルエピソード」;
+StandardVideoMetadata[MediaHeartbeat.
+ VideoMetadataKeys.
+   SHOW]="Sample Show";
+…
+MediaObject. setValue（MediaHeartbeat.
+ MediaObjectKey.
+ StandardVideoMetadata、
+StandardVideoMetadata）;
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+Media.track
+</pre>
+</td>
+<td>
+<pre>
+s.Media.track(mediaName)
+</pre>
+</td>
+<td>該当なし
+</td>
+<td>トラッキングコールの頻度は自動的に設定されます。
+</td>
+</tr>
+</tbody>
+</table>
+
