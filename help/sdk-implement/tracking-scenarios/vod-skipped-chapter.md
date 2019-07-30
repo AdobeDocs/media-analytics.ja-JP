@@ -3,7 +3,7 @@ seo-title: チャプターがスキップされた VOD 再生
 title: チャプターがスキップされた VOD 再生
 uuid: 19fb020c- eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 このシナリオでは、ユーザーは、メインコンテンツのチャプターをスキップします。
 
-これは、この事例のユーザーがチャプターをシークするつもりで結果としてチャプターをスキップしてメインコンテンツに進んでいることを除いて、[チャプターが 1 つある VOD 再生](../../sdk-implement/tracking-scenarios/vod-one-chapter.md)と同じシナリオです。
+これは、この事例のユーザーがチャプターをシークするつもりで結果としてチャプターをスキップしてメインコンテンツに進んでいることを除いて、[チャプターが 1 つある VOD 再生](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)と同じシナリオです。
 
 | トリガー | ハートビートメソッド | ネットワーク呼び出し   | メモ |
 |---|---|---|---|
@@ -31,7 +31,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 ## パラメーター {#section_1874F6B7880B43C5856BD11FF85B382E}
 
-The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](../../sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
+The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
 
 ## サンプルコード {#section_fyl_ncj_x2b}
 
