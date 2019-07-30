@@ -3,7 +3,7 @@ seo-title: メディアレポートの有効化
 title: メディアレポートの有効化
 uuid: d306068d- a308-4b6e-8a72-742dda0de428
 translation-type: tm+mt
-source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -65,4 +65,4 @@ source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
 
 >[!IMPORTANT]
 >
->Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](../metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". メディア分類は、レポートスイートがメディアトラッキングに対して有効になっているときに定義されます。アドビでは、随時、新しいプロパティを追加し、これが発生すると、レポートスイートを再度有効にして、新しいメディアプロパティにアクセスできるようにする必要があります。アドビの更新プロセス中に、変数の名前をチェックすることで、分類が有効かどうかを判定します。見つからない場合は、見つからないものが再度追加されます。
+>Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". メディア分類は、レポートスイートがメディアトラッキングに対して有効になっているときに定義されます。アドビでは、随時、新しいプロパティを追加し、これが発生すると、レポートスイートを再度有効にして、新しいメディアプロパティにアクセスできるようにする必要があります。アドビの更新プロセス中に、変数の名前をチェックすることで、分類が有効かどうかを判定します。見つからない場合は、見つからないものが再度追加されます。
