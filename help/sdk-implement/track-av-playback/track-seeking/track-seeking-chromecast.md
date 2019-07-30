@@ -3,7 +3,7 @@ seo-title: Chromecast でのシークの追跡
 title: Chromecast でのシークの追跡
 uuid: 8018e6c4- feed9-4de7-9ae- c720da55ad8c
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](../../../sdk-implement/download-sdks.md)
+>以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## シークトラッキング定数
 
@@ -35,4 +35,4 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    ADBMobile.media.trackEvent(ADBMobile.media.Event.SeekComplete); 
    ```
 
-詳しくは、追跡シナリオの[メインコンテンツでのシークのある VOD 再生](../../../sdk-implement/tracking-scenarios/vod-seeking.md)を参照してください。
+詳しくは、追跡シナリオの[メインコンテンツでのシークのある VOD 再生](/help/sdk-implement/tracking-scenarios/vod-seeking.md)を参照してください。
