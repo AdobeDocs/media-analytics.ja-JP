@@ -3,7 +3,7 @@ seo-title: チャプターが 1 つある VOD 再生
 title: チャプターが 1 つある VOD 再生
 uuid: 1566a6f5- cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 このシナリオでは、VOD コンテンツの一部がチャプターとしてマークされています。
 
-特に指定のない限り、このシナリオのネットワーク呼び出しは、[広告のない VOD 再生](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオの呼び出しと同じです。ネットワーク呼び出しは同時に発生しますが、ペイロードは異なります。
+特に指定のない限り、このシナリオのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオの呼び出しと同じです。ネットワーク呼び出しは同時に発生しますが、ペイロードは異なります。
 
 | トリガー   | ハートビートメソッド   | ネットワーク呼び出し   | メモ   |
 |---|---|---|---|
@@ -23,8 +23,8 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 | チャプター再生の最初のフレーム。 | `trackPlay` | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
 | チャプターが再生される。 |  | Chapter Heartbeats |  |
 | チャプターが完了する。 | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | チャプターの終わりに達したとき。 |
-| コンテンツが再生される。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| コンテンツが再生される。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端に到達したことを意味します。このAPIは、ユーザーがメディアを最後まで視聴していない場合でも呼び出す必要があります。 |
 
 ## パラメーター {#section_869319D99A474FEA8EA840415EA97FBD}
