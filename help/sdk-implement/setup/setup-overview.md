@@ -3,7 +3,7 @@ seo-title: セットアップの概要
 title: セットアップの概要
 uuid: 06ffeeddb- b0c8-4f7d-90c8- e374cde1695
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->次の手順は、2. xメディアSDKに適用されます。メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](../download-sdks.md) Primetimeインテグレーターについては、以下の _Primetime Media SDKドキュメント_ を参照してください。
+>次の手順は、2. xメディアSDKに適用されます。メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetimeインテグレーターについては、以下の _Primetime Media SDKドキュメント_ を参照してください。
 
 
 ## Minimum Platform Version Support {#minimum-platform-version}
