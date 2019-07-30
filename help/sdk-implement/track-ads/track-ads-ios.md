@@ -3,7 +3,7 @@ seo-title: iOS での広告の追跡
 title: iOS での広告の追跡
 uuid: e979e679- cde5-4c30-8f34-867fuleac13a
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 >[!IMPORTANT]
 >
->次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 広告トラッキング定数
 
@@ -76,7 +76,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 1. オプションで、コンテキストデータ変数を使用して、メディアトラッキングセッションに標準または広告メタデータをアタッチします。
 
-   * [iOS での標準広告メタデータの実装](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+   * [iOS での標準広告メタデータの実装](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **カスタムの広告メタデータ** - カスタムのメタデータの場合は、カスタムデータ変数の変数オブジェクトを作成し、現在の広告のデータを設定します。
 
       ```
@@ -129,4 +129,4 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
    }
    ```
 
-詳しくは、追跡シナリオの[プリロール広告のある VOD 再生](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md)を参照してください。
+詳しくは、追跡シナリオの[プリロール広告のある VOD 再生](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)を参照してください。
