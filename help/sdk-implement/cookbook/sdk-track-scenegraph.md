@@ -3,7 +3,7 @@ seo-title: SceneGraph（Roku）でのトラッキング
 title: SceneGraph（Roku）でのトラッキング
 uuid: fa85e546- c79b-4df4-8c03- d6593fa296d5
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -186,8 +186,8 @@ Input: None\
 | バージョン管理 | `version` | AdobeMobileLibrary バージョン情報を取得する定数 |
 | プライバシー／オプトアウト | `PRIVACY_STATUS_OPT_IN` | オプトインのプライバシーステータスを示す定数 |
 |  | `PRIVACY_STATUS_OPT_OUT` | オプトアウトのプライバシーステータスを示す定数 |
-| MediaHeartbeat 定数 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](../../sdk-implement/track-av-playback/track-core/track-core-roku.md) | これらの定数をMediaHeartbeat APIで使用する |
-| 標準メタデータ | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters.](../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 標準ビデオ／広告メタデータを MediaHeartbeat API にアタッチするにはこれらの定数を使用します。 |
+| MediaHeartbeat 定数 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | これらの定数をMediaHeartbeat APIで使用する |
+| 標準メタデータ | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 標準ビデオ／広告メタデータを MediaHeartbeat API にアタッチするにはこれらの定数を使用します。 |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. これらのメソッドについて詳しくは、以下の表を参照してください。
 
