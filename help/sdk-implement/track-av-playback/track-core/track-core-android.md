@@ -3,7 +3,7 @@ seo-title: Android でのコア再生の追跡
 title: Android でのコア再生の追跡
 uuid: ab5fab95-76ed-4ae6- aedb-2e66eece7607
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Android でのコア再生の追跡{#track-core-playback-on-android}
 
 >[!IMPORTANT]
->このドキュメントでは、SDKのバージョン2. xのトラッキングについて説明します。1.x バージョンの SDK を実装する場合は、Android 向けの 1.x の開発ガイドをこちら（[SDK のダウンロード](../../../sdk-implement/download-sdks.md)）からダウンロードできます。
+>このドキュメントでは、SDKのバージョン2. xのトラッキングについて説明します。1.x バージョンの SDK を実装する場合は、Android 向けの 1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. **初期トラッキングセットアップ**
 
@@ -56,14 +56,14 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **標準メタデータ**
 
-      [Android での標準メタデータの実装](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+      [Android での標準メタデータの実装](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
       >[!NOTE]
       >
       >標準のメタデータオブジェクトをメディアオブジェクトにアタッチすることはオプションです。
 
       * メディアメタデータキー API リファレンス - [標準メタデータキー - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * 利用可なビデオメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](../../../metrics-and-metadata/audio-video-parameters.md)を参照してください。
+      * 利用可なビデオメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を参照してください。
    * **カスタムメタデータ**
 
       カスタム変数用の辞書を作成し、このメディアのデータを入力します。次に例を示します。
@@ -170,6 +170,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 コア再生の追跡に関する追加情報については、以下を参照してください。
 
-* 追跡シナリオ：[広告のない VOD 再生](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 追跡シナリオ：[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Android SDK に含まれている、追跡の完全な例を示すサンプルプレーヤー
 
