@@ -3,7 +3,7 @@ seo-title: クライアント側
 title: クライアント側
 uuid: ba0496e2-585a-4176- b583- c705726fc6
 translation-type: tm+mt
-source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ Media Analytics（ハートビート）は、アドビの標準化されたメ�
 
 クライアント側統合は、Media Analytics のみを使用して実装されます。メディア SDK またはメディアコレクション API（またはその両方）を実装することを選択できます。クライアント側パスは、お客様のプレーヤーや、Brightcove、Ooyala、thePlatform などの OVP プレーヤーで使用できます。
 
-If Media Analytics is your intended path, see [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and [Media Collection API.](../../media-collection-api/mc-api-overview.md)
+If Media Analytics is your intended path, see [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
 
 >[!IMPORTANT]
 >
