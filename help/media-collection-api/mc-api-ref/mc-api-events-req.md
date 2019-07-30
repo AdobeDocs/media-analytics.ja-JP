@@ -3,7 +3,7 @@ seo-title: Events リクエスト
 title: Events リクエスト
 uuid: b237f0a0- dc29-418b-89ee-04c596a27f39
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -17,7 +17,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ## URIパラメーター
 
-`sid`: [Sessionsリクエストから返されたセッションID。](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+`sid`: [Sessionsリクエストから返されたセッションID。](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
 
 ## リクエスト本文
 
@@ -44,7 +44,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 * `customMetadata` （オプション;イベントタイプと共 `adStart``chapterStart` にのみ送信）
 * `qoeData` (オプション)
 
-For a list of valid event types for this release, see [Event types and descriptions.](../../media-collection-api/mc-api-ref/mc-api-event-types.md)
+For a list of valid event types for this release, see [Event types and descriptions.](/help/media-collection-api/mc-api-ref/mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
@@ -70,8 +70,8 @@ Access-Control-Expose-Headers Location
 | HTTP 応答コード | 説明 | クライアントのアクション項目 |
 |---|---|---|
 | **204** | **No Content.**<br/><br/> ハートビート呼び出しが成功しました。 | 該当なし |
-| **400** | **Bad Request.**<br/><br/> リクエストの形式が正しくありません。 | リクエストタイプについては、[JSON 検証スキーマ](../../media-collection-api/mc-api-ref/mc-api-json-validation.md)を確認してください。 |
-| **404** | **Not Found.**<br/><br/>メディアセッションのセッションIDがバックエンドサービスで見つかりませんでした。 | クライアントアプリケーションでは [Sessions リクエスト](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
-| **410** | **Gone.**<br/><br/>メディアセッションがバックエンドサービスで見つかりましたが、クライアントはアクティビティをレポートできません。 | クライアントアプリケーションでは [Sessions リクエスト](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
+| **400** | **Bad Request.**<br/><br/> リクエストの形式が正しくありません。 | リクエストタイプについては、[JSON 検証スキーマ](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)を確認してください。 |
+| **404** | **Not Found.**<br/><br/>メディアセッションのセッションIDがバックエンドサービスで見つかりませんでした。 | クライアントアプリケーションでは [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
+| **410** | **Gone.**<br/><br/>メディアセッションがバックエンドサービスで見つかりましたが、クライアントはアクティビティをレポートできません。 | クライアントアプリケーションでは [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
 | **500** | **サーバーエラー** | 該当なし |
 
