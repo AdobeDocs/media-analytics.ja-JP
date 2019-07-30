@@ -3,7 +3,7 @@ seo-title: ダウンロードされたコンテンツの追跡
 title: ダウンロードされたコンテンツの追跡
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 translation-type: tm+mt
-source-git-commit: 501bbfe8b44a2a8e9b2ac2caab49b2317f9ea0f3
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -30,7 +30,7 @@ Downloaded Content API では、ユーザーがオフライン時のメディア
 
 ### イベントスキーマ
 
-ダウンロードされたコンテンツAPIはメディア収集APIに基づいているので、プレーヤーがバッチおよび送信するイベントデータは、メディア収集APIと同じイベントスキーマを使用する必要があります。For information on these schemas, see: [Overview;](../media-collection-api/mc-api-overview.md) and [Validating event requests.](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+ダウンロードされたコンテンツAPIはメディア収集APIに基づいているので、プレーヤーがバッチおよび送信するイベントデータは、メディア収集APIと同じイベントスキーマを使用する必要があります。For information on these schemas, see: [Overview;](/help/media-collection-api/mc-api-overview.md) and [Validating event requests.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### イベントの順序
 
