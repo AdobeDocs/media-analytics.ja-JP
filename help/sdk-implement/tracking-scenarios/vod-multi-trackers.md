@@ -3,7 +3,7 @@ seo-title: 同時に複数の VOD トラッカー
 title: 同時に複数の VOD トラッカー
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
 
-This scenario is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. これらのセッションはそれぞれ、`MediaHeartbeat` の個別のインスタンスを使用します。
+This scenario is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. これらのセッションはそれぞれ、`MediaHeartbeat` の個別のインスタンスを使用します。
 
-特に指定のない限り、ネットワーク呼び出しは、[広告のない VOD 再生](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。
+特に指定のない限り、ネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。
 
 ## パラメーター {#section_45D7B10031524411B91E2C569F7818B0}
 
