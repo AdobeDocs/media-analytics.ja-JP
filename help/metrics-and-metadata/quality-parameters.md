@@ -3,7 +3,7 @@ seo-title: 品質パラメーター
 title: 品質パラメーター
 uuid: 0d9fa764- evdef-4178-8650-90c9a0852a57
 translation-type: tm+mt
-source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
+source-git-commit: 6e6ecdcb7309e06410a443247df5d5b49b083ea7
 
 ---
 
@@ -60,7 +60,7 @@ source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>droppedFrames </li> <li> **API キー：**<br/>media.qoe.droppedFrames </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>数値 </li> <li> **送信先:**<br/> メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> 3 </li><li> **説明:**<br/>ドロップフレームの数（整数）。この値は、再生セッション中のすべてのドロップフレームの合計として計算されます。この値は、最後の値（l:stream:dropped_ frames.）  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. qoe.<br/>droppedFrameCount） </li> <li> **ハートビート:**<br/> （l:stream:<br/>dropped_ frames） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>ドロップフレーム </li> <li> **コンテキストデータ:**<br/> （a. media. qoe.<br/>droppedFrameCount） </li> <li> **データフィード：**<br/>videoqoedroppedframecountevar </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a. media. qoe.<br/>droppedFrameCount） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>droppedFrames </li> <li> **API キー：**<br/>media.qoe.droppedFrames </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>数値 </li> <li> **送信先:**<br/> メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> 3 </li><li> **説明:**<br/>ドロップフレームの数（整数）。この値は、再生セッション中のすべてのドロップフレームの合計として計算されます。この値は、最後の値（l:stream:ドロップフレームを使用します）。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. qoe.<br/>droppedFrameCount） </li> <li> **ハートビート:**<br/> （l:stream:<br/>dropped_ frames） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>ドロップフレーム </li> <li> **コンテキストデータ:**<br/> （a. media. qoe.<br/>droppedFrameCount） </li> <li> **データフィード：**<br/>videoqoedroppedframecountevar </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a. media. qoe.<br/>droppedFrameCount） </li> </ul> |
 
 
 
@@ -205,7 +205,7 @@ source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信先:**<br/> メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>ビットレートの変更が発生したストリームの数。この指標は、再生セッション中に少なくとも 1 つのビットレート変更イベントが発生した場合にのみ、1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. qoe.<br/>BitrateChange） </li> <li> **ハートビート:**<br/> （s:イベント:<br/>type= bitrate_ change） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>ビットレート変更の影響を受けたストリーム </li> <li> **コンテキストデータ:**<br/> （a. media. qoe.<br/>BitrateChange） </li> <li> **データフィード：**<br/>videoqoebitratechange </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a. media. qoe.<br/>BitrateChange） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信先:**<br/> メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>ビットレートの変更が発生したストリームの数。この指標は、再生セッション中に少なくとも 1 つのビットレート変更イベントが発生した場合にのみ、1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. qoe.<br/>BitrateChange） </li> <li> **ハートビート:**<br/> （s:イベント:<br/>type= bitrate_ change） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名:**<br/> ビットレート変更の影響を受けたストリーム </li> <li> **コンテキストデータ:**<br/> （a. media. qoe.<br/>BitrateChange） </li> <li> **データフィード：**<br/>videoqoebitratechange </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a. media. qoe.<br/>BitrateChange） </li> </ul> |
 
 
 
@@ -224,7 +224,7 @@ source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信先:**<br/> メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>エラーイベントが発生したストリームの数が、再生セッション中に呼び出さ `trackError` れ、 `type=error` ハートビート呼び出しが生成されました。 </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. qoe.<br/>error） </li> <li> **ハートビート:**<br/> （s:イベント:<br/>type= error） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>エラーの影響を受けたストリーム </li> <li> **コンテキストデータ:**<br/> （a. media. qoe.<br/>error） </li> <li> **データフィード：**<br/>videoqoeerror </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a. media. qoe.<br/>error） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信先:**<br/> メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>エラーイベントが発生したストリームの数（例えば、再生セッション中に呼び出さ `trackError` れた）。 `type=error` また、ハートビート呼び出しが生成された。 </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. qoe.<br/>error） </li> <li> **ハートビート:**<br/> （s:イベント:<br/>type= error） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>エラーの影響を受けたストリーム </li> <li> **コンテキストデータ:**<br/> （a. media. qoe.<br/>error） </li> <li> **データフィード：**<br/>videoqoeerror </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a. media. qoe.<br/>error） </li> </ul> |
 
 
 
