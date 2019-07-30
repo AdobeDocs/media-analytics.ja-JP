@@ -3,7 +3,7 @@ seo-title: コードの比較1. xから2. x
 title: コードの比較1. xから2. x
 uuid: 9f0a1660-2100-446d- ab75- afdf966478b3
 translation-type: tm+mt
-source-git-commit: ee073531814b446ba0ae4a86fc1011f063886561
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -840,4 +840,4 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-2.x を使用したビデオの追跡について詳しくは、「[コアビデオ再生の追跡](../../sdk-implement/track-av-playback/track-core-overview.md)」を参照してください。
+2.x を使用したビデオの追跡について詳しくは、「[コアビデオ再生の追跡](/help/sdk-implement/track-av-playback/track-core-overview.md)」を参照してください。
