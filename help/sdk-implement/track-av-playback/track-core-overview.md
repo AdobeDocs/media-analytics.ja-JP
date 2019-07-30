@@ -3,7 +3,7 @@ seo-title: トラッキングの概要
 title: トラッキングの概要
 uuid: 7b8e2f76- bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->このドキュメントでは、SDKのバージョン2. xのトラッキングについて説明します。If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>このドキュメントでは、SDKのバージョン2. xのトラッキングについて説明します。If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## プレーヤーイベント
 
@@ -59,7 +59,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!TIP]
 >
->再生ヘッド位置は、セットアップコードおよび設定コードの一部として設定されます。For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](../../sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>再生ヘッド位置は、セットアップコードおよび設定コードの一部として設定されます。For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## 実装方法 {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -105,7 +105,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
       標準メタデータオブジェクトをインスタンス化し、必要な変数を設定して、メディアハートビートオブジェクトでメタデータオブジェクトを設定します。
 
-      See the comprehensive list of metadata here: [Audio and video parameters.](../../metrics-and-metadata/audio-video-parameters.md)
+      See the comprehensive list of metadata here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
 
    * **カスタムメタデータ** - カスタム変数の変数オブジェクトを作成し、このコンテンツのデータを設定します。
 
