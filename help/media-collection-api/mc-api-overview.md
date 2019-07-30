@@ -3,7 +3,7 @@ seo-title: 概要
 title: 概要
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
 
    この機能を使用すると、ユーザーのデバイスがオンラインに戻るまで、イベントデータをローカルで保存している間、メディアを追跡できます。（詳しくは、[ダウンロードされたコンテンツの追跡](track-downloaded-content.md)を参照してください）。
 
-メディアコレクション API は、基本的に、メディア SDK のサーバー側バージョンとして動作するアダプターです。つまり、メディアSDKドキュメントの一部はメディア収集APIに関連しています。For example, both solutions use the same [Audio and Video Parameters](../metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](../media-reports/media-reports-enable.md)
+メディアコレクション API は、基本的に、メディア SDK のサーバー側バージョンとして動作するアダプターです。つまり、メディアSDKドキュメントの一部はメディア収集APIに関連しています。For example, both solutions use the same [Audio and Video Parameters](/help/metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](/help/media-reports/media-reports-enable.md)
 
 ## メディアトラッキングデータのフロー {#section_pwq_n34_qbb}
 
