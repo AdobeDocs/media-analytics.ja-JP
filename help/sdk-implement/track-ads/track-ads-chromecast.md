@@ -3,7 +3,7 @@ seo-title: Chromecast での広告の追跡
 title: Chromecast での広告の追跡
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 translation-type: tm+mt
-source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
 
 >[!IMPORTANT]
 >
->次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 広告トラッキング定数
 
@@ -74,4 +74,4 @@ source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete, getAdBreakInfo());
    ```
 
-詳しくは、追跡シナリオの[プリロール広告のある VOD 再生](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md)を参照してください。
+詳しくは、追跡シナリオの[プリロール広告のある VOD 再生](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)を参照してください。
