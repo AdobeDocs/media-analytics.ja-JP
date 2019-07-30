@@ -3,7 +3,7 @@ seo-title: SDK のダウンロード
 title: SDK のダウンロード
 uuid: a619fbb8-693e-4583-8dabc-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 9d42a3a78d5f1812b41d83a5ae636d7a4bee2939
+source-git-commit: 8b4ed0c9ac2140a25c64602b615d982410b2faea
 
 ---
 
@@ -14,20 +14,20 @@ source-git-commit: 9d42a3a78d5f1812b41d83a5ae636d7a4bee2939
 
 | 2. xメディアSDK | 最新のメディアSDKダウンロード |  API   |  ドキュメント  |
 | --- | --- | --- | --- |
-| Android／FireTV | [Android 用メディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.0) | [Android API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android のセットアップ](../sdk-implement/setup/set-up-android.md) |
-| iOS／Apple TV | [iOS v2.2.0向けメディアSDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.0) （レガシー2.0SDKを入手するには [カスタマーケア ](https://helpx.adobe.com/marketing-cloud/contact-support.html) にお問い合わせください） | [iOS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS のセットアップ](../sdk-implement/setup/set-up-ios.md) |
-| JavaScript | [JS 用メディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.0) | [JS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript のセットアップ](../sdk-implement/setup/set-up-js.md) |
-| Roku | [Roku 用メディア SDK v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [Rokuの設定](../sdk-implement/setup/set-up-roku.md) |
-| Chromecast | [Chromecast 用メディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast のセットアップ](../sdk-implement/setup/set-up-chromecast.md) |
+| Android／FireTV | [Android 用メディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.0) | [Android API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android のセットアップ](/help/sdk-implement/setup/set-up-android.md) |
+| iOS／Apple TV | [iOS v2.2.0向けメディアSDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.0) （レガシー2.0SDKを入手するには [カスタマーケア ](https://helpx.adobe.com/marketing-cloud/contact-support.html) にお問い合わせください） | [iOS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS のセットアップ](/help/sdk-implement/setup/set-up-ios.md) |
+| JavaScript | [JS 用メディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.0) | [JS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript のセットアップ](/help/sdk-implement/setup/set-up-js.md) |
+| Roku | [Roku 用メディア SDK v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [Rokuの設定](/help/sdk-implement/setup/set-up-roku.md) |
+| Chromecast | [Chromecast 用メディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast のセットアップ](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 <!--
 ## Download the Adobe Nielsen 2.x SDKs {#section_ih5_vpz_p1b}
 
 |  &nbsp;Adobe Nielsen 2.x SDKs&nbsp; | Latest&nbsp;Media&nbsp;SDK&nbsp;Downloads&nbsp; | Nielsen&nbsp;Implementation&nbsp;Guides&nbsp; |
 |---|---|---|
-| **Android** | [VHL for Android v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [Android 2.1](../nielsen-partnership/dcr-impl/dcr-android-impl-2.1.md) |
-| **iOS** | [VHL for iOS v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [iOS 2.1](../nielsen-partnership/dcr-impl/dcr-ios-impl-2.1.md) |
-| **JavaScript** | [VHL for JavaScript v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [JavaScript 2.1](../nielsen-partnership/dcr-impl/dcr-js-impl-2.1.md) |
+| **Android** | [VHL for Android v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [Android 2.1](/help/nielsen-partnership/dcr-impl/dcr-android-impl-2.1.md) |
+| **iOS** | [VHL for iOS v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [iOS 2.1](/help/nielsen-partnership/dcr-impl/dcr-ios-impl-2.1.md) |
+| **JavaScript** | [VHL for JavaScript v.2.0.1N](https://adobecertifiedmetrics.zendesk.com/hc/en-us/articles/115002514727-VHL-version-2-0-x-N-GA-Release) | [JavaScript 2.1](/help/nielsen-partnership/dcr-impl/dcr-js-impl-2.1.md) |
 -->
 
 ## Media Analytics Launch 拡張機能 {#section_o54_gsd_12b}
