@@ -3,7 +3,7 @@ seo-title: iOS でのチャプターおよびセグメントの追跡
 title: iOS でのチャプターおよびセグメントの追跡
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. いつチャプター開始イベントが発生するかを識別し、チャプター情報を使用して `ChapterObject` インスタンスを作成します。
 
