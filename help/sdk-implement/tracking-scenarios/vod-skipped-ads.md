@@ -3,7 +3,7 @@ seo-title: 広告がスキップされた VOD 再生
 title: 広告がスキップされた VOD 再生
 uuid: f3ab3524- abcb-4051- b64e- a1aad6e3dd3f
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,22 +16,22 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 ### プリロール広告がスキップされた1つのVOD
 
-This is the same scenario as [VOD playback with pre-roll ads](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
+This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
 
 | トリガー   | ハートビートメソッド  | ネットワーク呼び出し   | メモ   |
 | --- | --- | --- | --- |
-| ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart()` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。これらのネットワーク呼び出しは、[広告のない VOD 再生](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。 |
+| ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart()` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。 |
 | 広告が開始される。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start、Heartbeat Ad Start |  |
 | 広告の最初のフレームが再生される。 | `trackPlay()` | Heartbeat Ad Play | メインコンテンツの前に広告コンテンツを再生する場合、ハートビートは、広告の再生が開始する際に開始されます。 |
 | 広告が再生される。 |  | Ad Heartbeats |  |
 | 広告がスキップされる。 | `trackEvent:trackAdSkip` |  | Ad Complete ネットワーク呼び出しはありません。 |
-| コンテンツが再生される。 |  | Content Heartbeats | These network calls are exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| コンテンツの再生が完了する。 | `trackComplete()` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| コンテンツが再生される。 |  | Content Heartbeats | These network calls are exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| コンテンツの再生が完了する。 | `trackComplete()` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | セッションが終了する。 | `trackSessionEnd()` |  | `SessionEnd` |
 
 ## パラメーター {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
 
-パラメーターは、Ad Complete および Ad-Break Complete 呼び出しがないことを除いて、[プリロール広告のある VOD 再生](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md)シナリオのパラメーターと同一です。
+パラメーターは、Ad Complete および Ad-Break Complete 呼び出しがないことを除いて、[プリロール広告のある VOD 再生](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)シナリオのパラメーターと同一です。
 
 ## サンプルコード {#section_lxt_qz3_x2b}
 
