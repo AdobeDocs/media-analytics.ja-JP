@@ -3,7 +3,7 @@ seo-title: マイルストーンから Media Analytics への移行
 title: マイルストーンから Media Analytics への移行
 uuid: fdc96146- af63-48ce- b938- c0ca70729277
 translation-type: tm+mt
-source-git-commit: 27740fc1753e8ac9cf5a4b240a56b1c2dd567010
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 27740fc1753e8ac9cf5a4b240a56b1c2dd567010
 
 ## 概要 {#section_ihl_nbz_cfb}
 
-マイルストーンと Media Analytics では、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。Media Analytics ソリューションはマイルストーンが発展したものであるので、多くのメソッドや指標は同じです。ただし、設定のアプローチやコードは大幅に変更されています。新しい Media Analytics のメソッドを指すようにプレーヤーのイベントコードを更新できる必要があります。See [SDK Overview](../../sdk-implement/setup/setup-overview.md) and [Tracking Overview](../../sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
+マイルストーンと Media Analytics では、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。Media Analytics ソリューションはマイルストーンが発展したものであるので、多くのメソッドや指標は同じです。ただし、設定のアプローチやコードは大幅に変更されています。新しい Media Analytics のメソッドを指すようにプレーヤーのイベントコードを更新できる必要があります。See [SDK Overview](/help/sdk-implement/setup/setup-overview.md) and [Tracking Overview](/help/sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
 
 以下の表では、マイルストーンソリューションと Media Analytics ソリューション間の変更について説明します。
 
