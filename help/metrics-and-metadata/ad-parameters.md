@@ -3,7 +3,7 @@ seo-title: 広告パラメーター
 title: 広告パラメーター
 uuid: 92cd7f97- bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
+source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
 
 ---
 
@@ -32,8 +32,14 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 >[!IMPORTANT]
 >
->"Reporting/Reserved Variable"で説明されている変数の分類名は、「分類」として変更しないでください。\
->メディア分類は、レポートスイートがメディアトラッキングに対して有効になっているときに定義されます。アドビでは、随時、新しいプロパティを追加し、これが発生すると、レポートスイートを再度有効にして、新しいメディアプロパティにアクセスできるようにする必要があります。アドビの更新プロセス中に、変数の名前をチェックすることで、分類が有効かどうかを判定します。見つからない場合は、見つからないものが再度追加されます。
+>以下に示す変数の分類名は変更しないでください
+>を参照してください。
+>メディア分類は、レポートスイートがメディアに対して有効になっているときに定義されます
+>トラッキング. 今後、アドビは新しいプロパティを追加し、これが発生すると、
+>顧客は、レポートスイートを再度有効にして、新しいメディアにアクセスする必要がある
+>プロパティを参照してください。更新プロセスでは、
+>分類を有効にすることができます。いずれかの場合
+>見つからない場合、見つからないものが再度追加されます。
 
 ## 広告ビデオデータ {#section_hq3_nbv_51b}
 
@@ -41,7 +47,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/> [adId](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.id </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可  </li> <li> **サンプル値:**<br/> "2125" </li><li> **説明:**<br/>広告のID。（整数と文字の組み合わせ）。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.name） </li> <li> **ハートビート:**<br/> （s:asset:ad_ id） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>訪問時 </li> <li> **レポート名：**<br/>広告 </li> <li> **コンテキストデータ:**<br/> （a.media.ad.name） </li> <li> **データフィード：**<br/>videoad </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.name) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> [adId](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.id </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可  </li> <li> **サンプル値:**<br/> "2125" </li><li> **説明:**<br/>広告のID。（整数と文字の組み合わせ）。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>name) </li> <li> **ハートビート:**<br/> （s:asset:ad_ id） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>訪問時 </li> <li> **レポート名：**<br/>広告 </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>name) </li> <li> **データフィード：**<br/>videoad </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.name) </li> </ul> |
 
 
 
@@ -49,7 +55,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.podPosition </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>数値 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> 1 </li><li> **説明:**<br/>親広告ブレーク内の広告の位置（インデックス）。最初の広告のインデックスは 0、2 番目の広告のインデックスは 1（以下同様）。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.podPosition） </li> <li> **ハートビート:**<br/> （s:asset:pod_ position） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>ポッド位置の広告 </li> <li> **コンテキストデータ:**<br/> （a.media.ad.podPosition） </li> <li> **データフィード：**<br/>videoadinpod </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.podPosition) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.podPosition </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>数値 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> 1 </li><li> **説明:**<br/>親広告ブレーク内の広告の位置（インデックス）。最初の広告のインデックスは 0、2 番目の広告のインデックスは 1（以下同様）。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>podPosition） </li> <li> **ハートビート:**<br/> （s:asset:pod_ position） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>ポッド位置の広告 </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>podPosition） </li> <li> **データフィード：**<br/>videoadinpod </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.podPosition) </li> </ul> |
 
 
 
@@ -57,7 +63,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [length](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.length </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>数値 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.1 </li> <li> **サンプル値:**<br/> "15"  </li><li> **説明:**<br/>ビデオ広告の長さ（秒単位）。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.length） </li> <li> **ハートビート:**<br/> （l:asset:ad_ length） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar および分類 </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>広告の長さおよび広告の長さ（変数） </li> <li> **コンテキストデータ:**<br/> （a.media.ad.length） </li> <li> **データフィード：**<br/>videoadlength </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.length) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [length](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.length </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>数値 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.1 </li> <li> **サンプル値:**<br/> "15"  </li><li> **説明:**<br/>ビデオ広告の長さ（秒単位）。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>length) </li> <li> **ハートビート:**<br/> （l:asset:ad_ length） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar および分類 </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>広告の長さおよび広告の長さ（変数） </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>length) </li> <li> **データフィード：**<br/>videoadlength </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.length) </li> </ul> |
 
 
 
@@ -65,7 +71,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [playerName](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.playerName </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> 「フリーホイール」 </li><li> **説明:**<br/>広告のレンダリングを担当するプレーヤーの名前。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.playerName） </li> <li> **ハートビート:**<br/> （s:sp:player_ name） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>広告プレーヤー名 </li> <li> **コンテキストデータ:**<br/> （a.media.ad.playerName） </li> <li> **データフィード：**<br/>videoadplayername </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.playerName) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [playerName](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.playerName </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> 「フリーホイール」 </li><li> **説明:**<br/>広告のレンダリングを担当するプレーヤーの名前。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>playerName) </li> <li> **ハートビート:**<br/> （s:sp:player_ name） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>広告プレーヤー名 </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>playerName) </li> <li> **データフィード：**<br/>videoadplayername </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.playerName) </li> </ul> |
 
 
 
@@ -73,7 +79,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.podFriendlyName </li> <li> **必須:**<br/> SDK:はい;API:いいえ。 </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> "pre- roll" </li><li> **説明:**<br/>広告ブレークのわかりやすい名前。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.podFriendlyName） </li> <li> **ハートビート:**<br/> （s:asset:ポッド名） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>分類 </li> <li> **レポート名：**<br/>ポッド名 </li> <li> **コンテキストデータ:**<br/> （a.media.ad.podFriendlyName） </li> <li> **データフィード：**<br/>videoadpod </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.podFriendlyName </li> <li> **必須:**<br/> SDK:はい;API:いいえ。 </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> "pre- roll" </li><li> **説明:**<br/>広告ブレークのわかりやすい名前。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>PodFriendlyName） </li> <li> **ハートビート:**<br/> （s:asset:ポッド名） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>分類 </li> <li> **レポート名：**<br/>ポッド名 </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>PodFriendlyName） </li> <li> **データフィード：**<br/>videoadpod </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
 
 
 
@@ -89,7 +95,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.podSecond </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>数値 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> 90 </li><li> **説明:**<br/>コンテンツ内の広告ブレークのオフセット（秒単位）。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.podSecond） </li> <li> **ハートビート:**<br/> （l:asset:pod_ offset） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>分類 </li> <li> **レポート名：**<br/>ポッド位置 </li> <li> **コンテキストデータ:**<br/> （a.media.ad.podSecond） </li> <li> **データフィード：**<br/> </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.podSecond) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.podSecond </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>数値 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> 90 </li><li> **説明:**<br/>コンテンツ内の広告ブレークのオフセット（秒単位）。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>ポッド秒） </li> <li> **ハートビート:**<br/> （l:asset:pod_ offset） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>分類 </li> <li> **レポート名：**<br/>ポッド位置 </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>ポッド秒） </li> <li> **データフィード：**<br/> </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.podSecond) </li> </ul> |
 
 
 
@@ -97,7 +103,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> c4a577424c84067899b807c76722d495_1  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.pod） </li> <li> **ハートビート:**<br/> （l:asset:pod_ id） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>広告ポッド </li> <li> **コンテキストデータ:**<br/> （a.media.ad.pod） </li> <li> **データフィード：**<br/>videoadpod </li> <li> **Audience Manager：**<br/> </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> c4a577424c84067899b807c76722d495_1  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>ポッド） </li> <li> **ハートビート:**<br/> （s:asset:pod_ id） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>広告ポッド </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>ポッド） </li> <li> **データフィード：**<br/>videoadpod </li> <li> **Audience Manager：**<br/> </li> </ul> |
 
 
 
@@ -105,7 +111,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.name </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.1 </li> <li> **サンプル値:**<br/> 「フォードF-150" </li><li> **説明:**<br/>広告のわかりやすい名前。レポートでは、「広告名」が分類、「広告名（変数）」が eVar です。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.friendlyName） </li> <li> **ハートビート:**<br/> （s:asset:ad_ name） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar および分類 </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>広告名および広告名（変数） </li> <li> **コンテキストデータ:**<br/> （a.media.ad.friendlyName） </li> <li> **データフィード：**<br/>なし </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.friendlyName) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/>media.ad.name </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.1 </li> <li> **サンプル値:**<br/> 「フォードF-150" </li><li> **説明:**<br/>広告のわかりやすい名前。レポートでは、「広告名」が分類、「広告名（変数）」が eVar です。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>friendlyName） </li> <li> **ハートビート:**<br/> （s:asset:ad_ name） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar および分類 </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>広告名および広告名（変数） </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>friendlyName） </li> <li> **データフィード：**<br/>なし </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.friendlyName) </li> </ul> |
 
 
 
@@ -115,7 +121,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>ADVERTISER </li> <li> **API キー：**<br/>media.ad.advertiser </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> </li><li> **説明:**<br/>広告で製品が特集されている会社/ブランド。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.advertiser） </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.advertiser） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i>広告主 </i> </li> <li> **コンテキストデータ:**<br/> （a.media.ad.advertiser） </li> <li> **データフィード：**<br/>videoadvertiser </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.advertiser) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>ADVERTISER </li> <li> **API キー：**<br/>media.ad.advertiser </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> </li><li> **説明:**<br/>広告で製品が特集されている会社/ブランド。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>advertiser) </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.advertiser） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i>広告主 </i> </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>advertiser) </li> <li> **データフィード：**<br/>videoadvertiser </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.advertiser) </li> </ul> |
 
 
 
@@ -123,7 +129,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>CAMPAIGN_ID </li> <li> **API キー：**<br/>media.ad.campaignId </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> 整数（文字列）。  </li><li> **説明:**<br/>広告キャンペーンのID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.campaign） </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.campaign） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i>キャンペーン ID </i> </li> <li> **コンテキストデータ:**<br/> （a.media.ad.campaign） </li> <li> **データフィード：**<br/>videocampaign </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.campaign) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>CAMPAIGN_ID </li> <li> **API キー：**<br/>media.ad.campaignId </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> 整数（文字列）。  </li><li> **説明:**<br/>広告キャンペーンのID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>campaign) </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.campaign） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i>キャンペーン ID </i> </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>campaign) </li> <li> **データフィード：**<br/>videocampaign </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.campaign) </li> </ul> |
 
 
 
@@ -131,7 +137,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>CREATIVE_ID </li> <li> **API キー：**<br/>media.ad.creativeId </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> 整数（文字列）。  </li><li> **説明:**<br/>広告クリエイティブのID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.creative） </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.creative） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i>クリエイティブ ID </i> </li> <li> **コンテキストデータ:**<br/> （a.media.ad.creative） </li> <li> **データフィード：**<br/>adclassificationcreative </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.creative) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>CREATIVE_ID </li> <li> **API キー：**<br/>media.ad.creativeId </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> 整数（文字列）。  </li><li> **説明:**<br/>広告クリエイティブのID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>creative) </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.creative） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i>クリエイティブ ID </i> </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>creative) </li> <li> **データフィード：**<br/>adclassificationcreative </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.creative) </li> </ul> |
 
 
 
@@ -139,7 +145,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>SITE_ID </li> <li> **API キー：**<br/>media.ad.siteId </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> </li><li> **説明:**<br/>広告サイトのID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.site） </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.site） </li> </ul> | <ul> <li> **利用可能:**<br/> <i>カスタム処理ルールの使用 </i> </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i> </i> </li> <li> **コンテキストデータ:**<br/> （a.media.ad.site） </li> <li> **データフィード：**<br/>なし </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.site) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>SITE_ID </li> <li> **API キー：**<br/>media.ad.siteId </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> </li><li> **説明:**<br/>広告サイトのID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>site) </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.site） </li> </ul> | <ul> <li> **利用可能:**<br/> <i>カスタム処理ルールの使用 </i> </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i> </i> </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>site) </li> <li> **データフィード：**<br/>なし </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.site) </li> </ul> |
 
 
 
@@ -147,7 +153,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>CREATIVE_URL </li> <li> **API キー：**<br/>media.ad.creativeURL </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> </li><li> **説明:**<br/>広告クリエイティブのURL。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.creativeURL） </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.creativeURL） </li> </ul> | <ul> <li> **利用可能:**<br/> <i>カスタム処理ルールの使用 </i> </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i> </i> </li> <li> **コンテキストデータ:**<br/> （a.media.ad.creativeURL） </li> <li> **データフィード：**<br/>なし </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.creativeURL) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>CREATIVE_URL </li> <li> **API キー：**<br/>media.ad.creativeURL </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> </li><li> **説明:**<br/>広告クリエイティブのURL。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>CreativeURL） </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.creativeURL） </li> </ul> | <ul> <li> **利用可能:**<br/> <i>カスタム処理ルールの使用 </i> </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i> </i> </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>CreativeURL） </li> <li> **データフィード：**<br/>なし </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.creativeURL) </li> </ul> |
 
 
 
@@ -155,7 +161,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>PLACEMENT_ID </li> <li> **API キー：**<br/>media.ad.placementId </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> </li><li> **説明:**<br/>広告のプレースメントID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.placement） </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.placement） </li> </ul> | <ul> <li> **利用可能:**<br/> <i>カスタム処理ルールの使用 </i> </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i> </i> </li> <li> **コンテキストデータ:**<br/> （a.media.ad.placement） </li> <li> **データフィード：**<br/>なし </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.placement) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>PLACEMENT_ID </li> <li> **API キー：**<br/>media.ad.placementId </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **サンプル値:**<br/> </li><li> **説明:**<br/>広告のプレースメントID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>placement) </li> <li> **ハートビート:**<br/> （s:meta:<br/>a.media.ad.placement） </li> </ul> | <ul> <li> **利用可能:**<br/> <i>カスタム処理ルールの使用 </i> </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/> <i> </i> </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>placement) </li> <li> **データフィード：**<br/>なし </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.placement) </li> </ul> |
 
 
 
@@ -166,7 +172,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>ビデオ広告の開始回数。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.view） </li> <li> **ハートビート:**<br/> （s:イベント:type= start）<br/> （asset:type= ad） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>広告開始 </li> <li> **データフィード：**<br/>videoadstart </li> <li> **コンテキストデータ:**<br/> （a.media.ad.view） </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.view) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>ビデオ広告の開始回数。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>view) </li> <li> **ハートビート:**<br/> （s:イベント:type= start）<br/> （asset:type= ad） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>広告開始 </li> <li> **データフィード：**<br/>videoadstart </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>view) </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.view) </li> </ul> |
 
 
 
@@ -174,7 +180,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>ビデオ広告の完了数。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.complete） </li> <li> **ハートビート:**<br/> （s:イベント:type= complete）<br/> （s:asset:type= ad）  </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>広告完了 </li> <li> **データフィード：**<br/>videoadcomplete </li> <li> **コンテキストデータ:**<br/> （a.media.ad.complete） </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.complete) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>ビデオ広告の完了数。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>complete) </li> <li> **ハートビート:**<br/> （s:イベント:type= complete）<br/> （s:asset:type= ad）  </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>広告完了 </li> <li> **データフィード：**<br/>videoadcomplete </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>complete) </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.complete) </li> </ul> |
 
 
 
@@ -182,7 +188,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> 15 </li><li> **説明:**<br/>広告の視聴に費やした合計時間（秒単位、再生秒数など）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a.media.ad.timePlayed） </li> <li> **ハートビート：**<br/> </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>広告滞在時間 </li> <li> **データフィード：**<br/>videoadtime </li> <li> **コンテキストデータ:**<br/> （a.media.ad.timePlayed） </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **サンプル値:**<br/> 15 </li><li> **説明:**<br/>広告の視聴に費やした合計時間（秒単位、再生秒数など）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. ad.<br/>TimePlayed） </li> <li> **ハートビート：**<br/> </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>広告滞在時間 </li> <li> **データフィード：**<br/>videoadtime </li> <li> **コンテキストデータ:**<br/> （a. media. ad.<br/>TimePlayed） </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
 
 
 
