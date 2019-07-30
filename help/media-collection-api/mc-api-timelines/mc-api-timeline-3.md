@@ -3,7 +3,7 @@ seo-title: タイムライン 3 - チャプター
 title: タイムライン 3 - チャプター
 uuid: 41b52072- e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: 6ada4d04824a3e501ecc58a9ca719cc9445aee12
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 6ada4d04824a3e501ecc58a9ca719cc9445aee12
 
 **実装の詳細**
 
-This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. プレーヤーの状態はまだ「再生中」ではなく、「開始中」です。[必須のセッションパラメーター](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)をリクエスト本文の `params` マップに含める必要があります。バックエンドでは、この呼び出しによって Adobe Analytics の開始呼び出しが生成されます。
+This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. プレーヤーの状態はまだ「再生中」ではなく、「開始中」です。[必須のセッションパラメーター](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)をリクエスト本文の `params` マップに含める必要があります。バックエンドでは、この呼び出しによって Adobe Analytics の開始呼び出しが生成されます。
 
 **リクエスト本文の例**
 
