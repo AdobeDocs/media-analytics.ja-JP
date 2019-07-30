@@ -3,7 +3,7 @@ seo-title: iOS のセットアップ
 title: iOS のセットアップ
 uuid: a1c6be79- a6dc-47b6-93b3- ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -27,7 +27,7 @@ Mobile SDKドキュメントの詳細については、"Experience Cloudソリ�
 
 ## SDK の実装
 
-1. [ダウンロードした](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)メディア SDK をプロジェクトに追加します。
+1. [ダウンロードした](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)メディア SDK をプロジェクトに追加します。
 
    1. `libs` ディレクトリに以下のソフトウェアコンポーネントが存在することを確認します。
 
@@ -137,7 +137,7 @@ Mobile SDKドキュメントの詳細については、"Experience Cloudソリ�
 
 バージョン 2.x では、すべてのパブリックメソッドは、開発をより簡単にするために、`ADBMediaHeartbeat` クラスに統合されています。すべての設定は、`ADBMediaHeartbeatConfig` クラスに統合されています。
 
-For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
 
 ## tvOS のネイティブアプリの設定
 
