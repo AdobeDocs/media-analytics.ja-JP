@@ -3,7 +3,7 @@ seo-title: タイムライン 2 - ユーザーが中断したセッション
 title: タイムライン 2 - ユーザーが中断したセッション
 uuid: 74b89e8f- ef56-4e0c- b9a8-40739e15b4cf
 translation-type: tm+mt
-source-git-commit: 69057b2abf7140d52b1897af3dc9d9fd01ca87ad
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 69057b2abf7140d52b1897af3dc9d9fd01ca87ad
 
 **実装の詳細**
 
-この呼び出しは、ビデオを&#x200B;_再生しようとするユーザーの意図_&#x200B;を示します。It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. プレーヤーの状態はまだ「再生中」ではなく、「開始中」です。[必須のセッションパラメーター](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)をリクエスト本文の `params` マップに含める必要があります。バックエンドでは、この呼び出しによって Adobe Analytics の開始呼び出しが生成されます。
+この呼び出しは、ビデオを&#x200B;_再生しようとするユーザーの意図_&#x200B;を示します。It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. プレーヤーの状態はまだ「再生中」ではなく、「開始中」です。[必須のセッションパラメーター](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)をリクエスト本文の `params` マップに含める必要があります。バックエンドでは、この呼び出しによって Adobe Analytics の開始呼び出しが生成されます。
 
 **リクエスト本文の例**
 
