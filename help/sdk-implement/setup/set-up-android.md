@@ -3,7 +3,7 @@ seo-title: Android のセットアップ
 title: Android のセットアップ
 uuid: 3ffe3276- a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 ## SDK の実装
 
-1. [ダウンロードした](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)メディア SDK をプロジェクトに追加します。
+1. [ダウンロードした](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)メディア SDK をプロジェクトに追加します。
 
    1. Expand the Android zip file (e.g., `MediaSDK-android-v2.*.zip`).
    1. Verify that the `MediaSDK.jar` file exists in the `libs/` directory.
@@ -128,4 +128,4 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 バージョン 2.x では、すべてのパブリックメソッドは、開発をより簡単にするために、`com.adobe.primetime.va.simple.MediaHeartbeat` クラスに統合されています。また、すべての設定は、`com.adobe.primetime.va.simple.MediaHeartbeatConfig` クラスに統合されました。
 
-For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
