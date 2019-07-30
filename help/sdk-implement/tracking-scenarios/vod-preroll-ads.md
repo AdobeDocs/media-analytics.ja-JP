@@ -5,18 +5,18 @@ description: このシナリオでは、メインコンテンツの前にプリ�
 seo-description: Adobe Media Analyticsのこのシナリオでは、プリロール広告はメインコンテンツの前に挿入されています。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: 66173d82714970c60f4e3088aa5ec0946efd7887
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
 
 # プリロール広告のある VOD 再生{#vod-playback-with-pre-roll-ads}
 
-このシナリオでは、メインコンテンツの前にプリロール広告が挿入されています。特に指定のない限り、ネットワーク呼び出しは、[広告のない VOD 再生](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオの呼び出しと同じです。ネットワーク呼び出しは同時に発生しますが、ペイロードは異なります。
+このシナリオでは、メインコンテンツの前にプリロール広告が挿入されています。特に指定のない限り、ネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオの呼び出しと同じです。ネットワーク呼び出しは同時に発生しますが、ペイロードは異なります。
 
 | トリガー | ハートビートメソッド | ネットワーク呼び出し   | メモ   |
 | --- | --- | --- | --- |
-| ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | 広告が開始される。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start、Heartbeat Ad Start |  |
 | 広告 #1 のフレームが再生される。 | `trackPlay` | Heartbeat Ad Play | メインコンテンツの前に広告コンテンツを再生し、ハートビートは、広告が開始する際に開始されます。 |
 | 広告が再生される。 |  | Ad Heartbeats |  |
@@ -24,8 +24,8 @@ source-git-commit: 66173d82714970c60f4e3088aa5ec0946efd7887
 | 広告 #2 の最初のフレームが再生される。 | `trackEvent:AdStart` | Analytics Ad Start、Heartbeat Ad Start |  |
 | 広告が再生される。 |  | Ad Heartbeats |  |
 | 広告 #2の再生が完了する。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | 広告の終わりとポッドの終わりに達しました。 |
-| コンテンツが再生される。 |  | Content Heartbeats | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| コンテンツが再生される。 |  | Content Heartbeats | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | セッションが終了する | `trackSessionEnd` |  | `SessionEnd` |
 
 ## パラメーター {#section_33CDFB6CB230437480B67A3D149EC44E}
