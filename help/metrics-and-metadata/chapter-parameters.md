@@ -3,7 +3,7 @@ seo-title: チャプターパラメーター
 title: チャプターパラメーター
 uuid: 2a6b9247- a694-46e9-98e1-424c08c27EC2
 translation-type: tm+mt
-source-git-commit: f7ffb9a88f1cf3ffefba0ae5508a857fa3de8432
+source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
 
 ---
 
@@ -73,13 +73,13 @@ source-git-commit: f7ffb9a88f1cf3ffefba0ae5508a857fa3de8432
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定  </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>チャプター開始 </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>開始するチャプターの数。重要：このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. chapter.<br/>view) </li> <li> **ハートビート:**<br/> （s:イベント:<br/>type= chapter_ start） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名:**<br/> チャプター開始g </li> <li> **コンテキストデータ:**<br/> （a. media. chapter.<br/>view) </li> <li> **データフィード：**<br/>videochapterstart </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a. media. chapter.<br/>view) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定  </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>チャプター開始 </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>開始するチャプターの数。**重要：**&#x200B;このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. chapter.<br/>view) </li> <li> **ハートビート:**<br/> （s:イベント:<br/>type= chapter_ start） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名:**<br/> チャプター開始g </li> <li> **コンテキストデータ:**<br/> （a. media. chapter.<br/>view) </li> <li> **データフィード：**<br/>videochapterstart </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a. media. chapter.<br/>view) </li> </ul> |
 
 ### チャプター完了
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定  </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信先:**<br/> チャプター終了 </li> <li> **最小のSDK のバージョン：** 1.3</li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>完了したチャプターの数。重要：このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. chapter.<br/>complete) </li> <li> **ハートビート:**<br/> （s:イベント:<br/>type= chapter_ complete） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名:**<br/> チャプター完了g </li> <li> **コンテキストデータ:**<br/> （a. media. chapter.<br/>complete) </li> <li> **データフィード：**<br/>videochaptercomplete </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a. media. chapter.<br/>complete) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定  </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信先:**<br/> チャプター終了 </li> <li> **最小のSDK のバージョン：** 1.3</li> <li> **サンプル値:**<br/> TRUE </li><li> **説明:**<br/>完了したチャプターの数。**重要：**&#x200B;このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> （a. media. chapter.<br/>complete) </li> <li> **ハートビート:**<br/> （s:イベント:<br/>type= chapter_ complete） </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名:**<br/> チャプター完了g </li> <li> **コンテキストデータ:**<br/> （a. media. chapter.<br/>complete) </li> <li> **データフィード：**<br/>videochaptercomplete </li> <li> **Audience Manager:**<br/> （c_ contextdata.<br/>a. media. chapter.<br/>complete) </li> </ul> |
 
 ### チャプター閲覧時間
 
