@@ -5,7 +5,7 @@ seo-title: iOS での標準メタデータの実装
 title: iOS での標準メタデータの実装
 uuid: 75a80f08-4a95-49d4- a27a-8ce531d64d31
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 ## 実装
 
 1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys`
-   [IOSメタデータキー](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+   [IOSメタデータキー](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
 1. メタデータの標準メタデータ定数を使用して、`MediaInfo``ADBMediaObject`   インスタンスに標準メタデータディクショナリを設定します。
 
