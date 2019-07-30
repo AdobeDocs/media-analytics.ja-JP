@@ -3,7 +3,7 @@ seo-title: 概要
 title: 概要
 uuid: 1607798b- c6ef-4d60-8e40- e958c345b09c
 translation-type: tm+mt
-source-git-commit: 56e8716ea37049b95a59a82144bbad0e882c16b4
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,9 +12,9 @@ source-git-commit: 56e8716ea37049b95a59a82144bbad0e882c16b4
 
 >[!IMPORTANT]
 >
->次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-広告再生には、広告ブレーク、広告開始、広告完了、広告スキップの追跡が含まれます。メディアプレイヤーのAPIを使用して、主要プレーヤーイベントを識別し、必須およびオプションの広告変数を設定します。See the comprehensive list of metadata here: [Ad parameters.](../../metrics-and-metadata/ad-parameters.md)
+広告再生には、広告ブレーク、広告開始、広告完了、広告スキップの追跡が含まれます。メディアプレイヤーのAPIを使用して、主要プレーヤーイベントを識別し、必須およびオプションの広告変数を設定します。See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
 
 ## Player events {#player-events}
 
