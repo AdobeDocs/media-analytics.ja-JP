@@ -3,7 +3,7 @@ seo-title: テスト1標準再生
 title: テスト1標準再生
 uuid: c4b3fad-1b27-484b- ab6a-39f1ae0f03f2
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -83,7 +83,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    1. ビデオ分析の開始
    1. ハートビートの開始
    1. ハートビート分析開始
-   上記の最初の2回の呼び出しには、追加のメタデータと変数が含まれています。For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   上記の最初の2回の呼び出しには、追加のメタデータと変数が含まれています。For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **広告ブレークを視聴する（可能な場合）**
 
@@ -93,7 +93,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    1. ビデオ広告分析開始
    1. ハートビート広告開始
    1. ハートビート広告分析開始
-   最初の2つの呼び出しには、追加のメタデータと変数が含まれています。For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
+   最初の2つの呼び出しには、追加のメタデータと変数が含まれています。For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
 
    * **広告再生**
 
@@ -122,7 +122,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    * 再生ヘッドの位置は、1 回の再生呼び出しにつき 10 ずつ増やす必要があります。
    * `l:event:duration` の値は、前回のトラッキングコールからのミリ秒数を表し、10 秒の呼び出しのたびにほぼ同じ値である必要があります。
 
-      For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
+      For call parameters and metadata, see [Test call details](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
 1. **再生中に 30 秒以上一時停止します。**&#x200B;ビデオプレーヤーの一時停止中には、一時停止イベントの呼び出しが 10 秒間隔で送信されます。一時停止が終わったら、再生イベントが再開される必要があります。
 
