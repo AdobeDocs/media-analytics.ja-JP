@@ -3,7 +3,7 @@ seo-title: 再生中のアプリケーション割り込みの処理
 title: 再生中のアプリケーション割り込みの処理
 uuid: 1ccb4507- bda6-462d- bf67- e22978a4db3d
 translation-type: tm+mt
-source-git-commit: 8c9592ee7ad97de2cf4aefb226ed1390bc5b53a8
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,5 +31,5 @@ source-git-commit: 8c9592ee7ad97de2cf4aefb226ed1390bc5b53a8
 
 * _同じセッションを再開するにはどうしたらよいですか？_
 
-   トラッキングセッションを再開するための詳しい手順については、[非アクティブなセッションの再開を参照してください。](../../sdk-implement/cookbook/resuming-inactive.md)SDK は、「再開」ping を送信して、セッションがユーザーによって手動で再開されたことをバックエンドに通知します。
+   トラッキングセッションを再開するための詳しい手順については、[非アクティブなセッションの再開を参照してください。](/help/sdk-implement/cookbook/resuming-inactive.md)SDK は、「再開」ping を送信して、セッションがユーザーによって手動で再開されたことをバックエンドに通知します。
 
