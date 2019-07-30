@@ -3,20 +3,20 @@ seo-title: セッションの応答が遅い場合のイベントのキューへ
 title: セッションの応答が遅い場合のイベントのキューへの登録
 uuid: 39ea59d9-89d3-4087- a806-48a43ecf0c98
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
 
 # セッションの応答が遅い場合のイベントのキューへの登録{#queueing-events-when-sessions-response-is-slow}
 
-メディアコレクション API は RESTful です。つまり、ユーザーは、HTTP リクエストを送信し、その応答を待ちます。This is an important point only for when you make a [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. これは、以降のすべてのトラッキング呼び出しにセッションIDが必要なためです。
+メディアコレクション API は RESTful です。つまり、ユーザーは、HTTP リクエストを送信し、その応答を待ちます。This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. これは、以降のすべてのトラッキング呼び出しにセッションIDが必要なためです。
 
-It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](../../media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](../../media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
+It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
 
 >[!NOTE]
 >
->[Events リクエスト](../../media-collection-api/mc-api-ref/mc-api-events-req.md)は、HTTP 応答コード以外のデータをクライアントに返しません。
+>[Events リクエスト](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)は、HTTP 応答コード以外のデータをクライアントに返しません。
 
 セッション ID を受け取る前にイベントを処理する 1 つの方法については、配信環境のリファレンスプレーヤーを確認してください。次に例を示します。
 
