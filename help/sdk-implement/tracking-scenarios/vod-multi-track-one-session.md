@@ -3,7 +3,7 @@ seo-title: 複数のセッションに対する 1 つの VOD トラッカー
 title: 複数のセッションに対する 1 つの VOD トラッカー
 uuid: 355c83f4-52bd-4bdd-92dc- ab506e412d0a
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 このシナリオでは、`MediaHeartbeat` インスタンスを使用して 2 つの異なるセッションを順に作成します。
 
-このシナリオは、[広告のない VOD 再生](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。
+このシナリオは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。
 
 ## パラメーター {#section_D52B325B99DA42108EF560873907E02C}
 
