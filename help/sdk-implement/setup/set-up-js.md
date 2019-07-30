@@ -3,7 +3,7 @@ seo-title: JavaScript のセットアップ
 title: JavaScript のセットアップ
 uuid: 0269d8ad-0af8-4bf1-9d15- e06c2952a005
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
    * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * *プレーヤー情報を提供する API* - メディア名や再生ヘッドなどの情報がこれに該当します。
 
-1. [ダウンロードした](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)ライブラリをプロジェクトに追加します。利便性のために、クラスへのローカル参照を作成します。
+1. [ダウンロードした](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)ライブラリをプロジェクトに追加します。利便性のために、クラスへのローカル参照を作成します。
 
    1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded.
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
@@ -115,4 +115,4 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 バージョン 2.x では、すべてのパブリックメソッドは、開発をより簡単にするために、`ADB.va.MediaHeartbeat` クラスに統合されています。また、すべての設定は、`ADB.va.MediaHeartbeatConfig` クラスに統合されました。
 
-For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
