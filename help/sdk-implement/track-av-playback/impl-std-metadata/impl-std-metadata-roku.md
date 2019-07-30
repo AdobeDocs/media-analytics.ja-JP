@@ -5,7 +5,7 @@ seo-title: Roku での標準メタデータの実装
 title: Roku での標準メタデータの実装
 uuid: ae14d809-343f-452c-832a- f94bd3d83a90
 translation-type: tm+mt
-source-git-commit: c6c7afee72d21c832be77c723750ae0551793613
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -36,5 +36,5 @@ standardMetadata[ADBMobile().MEDIA_AudioMetadataKeyLABEL] = "sample label"
 mediaInfo[ADBMobile().MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata 
 ```
 
-ビデオメタデータの包括的なリストについては、[オーディオおよびビデオパラメーター](../../../metrics-and-metadata/audio-video-parameters.md)を参照してください。
+ビデオメタデータの包括的なリストについては、[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を参照してください。
 
