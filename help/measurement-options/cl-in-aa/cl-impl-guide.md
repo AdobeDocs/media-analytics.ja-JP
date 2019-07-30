@@ -3,7 +3,7 @@ seo-title: カスタムリンク導入ガイド
 title: カスタムリンク導入ガイド
 uuid: 83315e73-20ca-4db5-9d43-33dayade45a13
 translation-type: tm+mt
-source-git-commit: 530973abc12fcb2567a3742c202d992944048b8b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 530973abc12fcb2567a3742c202d992944048b8b
 カスタムビデオトラッキングでは、Analytics [ 内の](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html)カスタムリンクコードを使用した手動リンクトラッキング`appMeasurement`を利用します。ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
 
 * In JavaScript: `s.tl()` function
-* モバイルアプリの場合：[trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html)、[trackAction() OTT](../../sdk-implement/analytics-with-ott/track-app-actions.md)
+* モバイルアプリの場合：[trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 
 * In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
