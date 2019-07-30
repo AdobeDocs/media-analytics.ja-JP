@@ -5,7 +5,7 @@ seo-title: iOS での標準広告メタデータの実装
 title: iOS での標準広告メタデータの実装
 uuid: f15fb727-5a5b-46c5- bf12-93b376c10fd1
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,4 +31,4 @@ NSMutableDictionary *standardAdMetadata = [[NSMutableDictionary alloc] init];
 [adObject setValue:standardAdMetadata forKey:ADBMediaObjectKeyStandardAdMetadata];
 ```
 
-[iOS のメタデータキー](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+[iOS のメタデータキー](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
