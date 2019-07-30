@@ -3,7 +3,7 @@ seo-title: タイムライン 1 - コンテンツの最後まで視聴
 title: タイムライン 1 - コンテンツの最後まで視聴
 uuid: 0ff591d3- fa99-4123-9e09- c4e71ea1060b
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
 
 **実装の詳細**
 
-この呼び出しは、ビデオを&#x200B;_再生しようとするユーザーの意図_&#x200B;を示します。<br/><br/>セッション内の後続のすべてのトラッキングコールを識別するために使用されるクライアントに、セッションID（ `{sid}`）を返します。プレーヤーの状態はまだ「再生中」ではなく、「開始中」です。<br/><br/>[必須のセッションパラメーター](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)をリクエスト本文の `params` マップに含める必要があります。<br/><br/>バックエンドでは、この呼び出しによって Adobe Analytics の開始呼び出しが生成されます。
+この呼び出しは、ビデオを&#x200B;_再生しようとするユーザーの意図_&#x200B;を示します。<br/><br/>セッション内の後続のすべてのトラッキングコールを識別するために使用されるクライアントに、セッションID（ `{sid}`）を返します。プレーヤーの状態はまだ「再生中」ではなく、「開始中」です。<br/><br/>[必須のセッションパラメーター](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)をリクエスト本文の `params` マップに含める必要があります。<br/><br/>バックエンドでは、この呼び出しによって Adobe Analytics の開始呼び出しが生成されます。
 
 **リクエスト本文の例**
 
