@@ -3,7 +3,7 @@ seo-title: 非アクティブなセッションの再開
 title: 非アクティブなセッションの再開
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 translation-type: tm+mt
-source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -19,7 +19,7 @@ Media SDKは、メディア再生が次の非アクティブ状態のいずれ�
 * 停止
 * バッファー
 
-メディアトラッキングセッションが30分以上非アクティブな状態のままの場合、セッションは自動的に閉じられます。以前非アクティブになったビデオトラッキングセッションの後にユーザーが再開（`trackPlay`）した場合、メディアハートビートは、以前使用したビデオ情報およびメタデータを使用して新しいビデオセッションを自動的に作成し、再開ハートビートイベントを送信します。For more information, see [Audio and video parameters.](../../metrics-and-metadata/audio-video-parameters.md)
+メディアトラッキングセッションが30分以上非アクティブな状態のままの場合、セッションは自動的に閉じられます。以前非アクティブになったビデオトラッキングセッションの後にユーザーが再開（`trackPlay`）した場合、メディアハートビートは、以前使用したビデオ情報およびメタデータを使用して新しいビデオセッションを自動的に作成し、再開ハートビートイベントを送信します。For more information, see [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 ## 以前終了したセッションの手動での再開
 
