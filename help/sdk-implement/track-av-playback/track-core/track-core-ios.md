@@ -3,7 +3,7 @@ seo-title: iOS でのコア再生の追跡
 title: iOS でのコア再生の追跡
 uuid: bdc0e05c-4fe5-430e- aee2- f331bc59ac6b
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # iOS でのコア再生の追跡{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->このドキュメントでは、SDKのバージョン2. xのトラッキングについて説明します。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](../../../sdk-implement/download-sdks.md)）からダウンロードできます。
+>このドキュメントでは、SDKのバージョン2. xのトラッキングについて説明します。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. **初期トラッキングセットアップ**
 
@@ -62,11 +62,11 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **標準のビデオメタデータ**
 
-      * [iOS での標準メタデータの実装](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+      * [iOS での標準メタデータの実装](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **ビデオメタデータキー**
-         [iOS のメタデータキー](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         [iOS のメタデータキー](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-      * ビデオメタデータの包括的なリストについては、[オーディオおよびビデオパラメーター](../../../metrics-and-metadata/audio-video-parameters.md)を参照してください。
+      * ビデオメタデータの包括的なリストについては、[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を参照してください。
       >[!NOTE]
       >
       >標準のビデオメタデータオブジェクトをメディアオブジェクトにアタッチすることはオプションです。
@@ -172,6 +172,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 コア再生の追跡に関する追加情報については、以下を参照してください。
 
-* 追跡シナリオ：[広告のない VOD 再生](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 追跡シナリオ：[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * iOS SDK に含まれている、追跡の完全な例を示すサンプルプレーヤー
 
