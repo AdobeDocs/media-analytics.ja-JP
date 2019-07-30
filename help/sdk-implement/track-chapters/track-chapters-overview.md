@@ -3,7 +3,7 @@ seo-title: 概要
 title: 概要
 uuid: 3fe32425-5e2a-4886-8fea- d91d15671bb0
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 チャプターとセグメントの追跡は、カスタム定義のメディアチャプターまたはセグメントで使用できます。チャプタートラッキングの一般的な使用法は、メディアコンテンツ（野球の休止など）に基づいてカスタムセグメントを定義したり、広告の時間間でコンテンツセグメントを定義したりすることです。Chapter tracking is **not** required for core media tracking implementations.
 
