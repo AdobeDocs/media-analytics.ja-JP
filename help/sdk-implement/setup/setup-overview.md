@@ -3,25 +3,25 @@ seo-title: セットアップの概要
 title: セットアップの概要
 uuid: 06ffeeddb- b0c8-4f7d-90c8- e374cde1695
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
 
-# Setup Overview{#setup-overview}
+# セットアップの概要{#setup-overview}
 
 >[!IMPORTANT]
 >
 >次の手順は、2. xメディアSDKに適用されます。メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetimeインテグレーターについては、以下の _Primetime Media SDKドキュメント_ を参照してください。
 
 
-## Minimum Platform Version Support {#minimum-platform-version}
+## プラットフォームバージョンの最小サポート {#minimum-platform-version}
 
 次の表に、2019年2月20日からの各SDKでサポートされる最小プラットフォームバージョンを示します。
 
 | OS/ブラウザー | 最小バージョンが必要です |
 | --- | --- |
-| iOS   | iOS 6+ |
+| iOS | iOS 6+ |
 | Android | Android5.0+- Lollipop |
 | Chrome | v22+ |
 | Mozilla | v27+ |
@@ -49,7 +49,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `ssl` | 呼び出しが HTTPS を使用しておこなわれる必要があるかどうかを示します。 | × | false |
    | `debugLogging` | デバッグのログが有効になっているかどうかを示します。 | × | false |
 
-1. Implement the `MediaHeartbeatDelegate`.
+1. 導入 `MediaHeartbeatDelegate`を参照してください。
 
    |  メソッド名  |  説明  | 必須 |
    | --- | --- | :---: |
@@ -91,7 +91,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    
    //Media Heartbeat Config 
    var mediaConfig = new MediaHeartbeatConfig(); 
-   mediaConfig.trackingServer = "namespace.hb.omtrdc.net"; 
+   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net"; 
    mediaConfig.playerName = "HTML5 Basic"; 
    mediaConfig.channel = "Video Channel"; 
    mediaConfig.debugLogging = true; 
@@ -136,16 +136,16 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* **ハートビート（Media Analytics）**&#x200B;には常に形式があります。`[namespace].hb.omtrdc.net`「ここで」`[namespace]`は、ログイン会社によって定義され、アドビが提供します。
+* ** Media Analytics（ハートビート）**これには常に形式があり`[your_namespace].hb.omtrdc.net`ます。「値」には会社を`[your_namespace]`指定し、アドビによって提供されます。
 
-## SDK 1.x Documentation {#section_acj_tkk_t2b}
+## SDK1. xドキュメント {#section_acj_tkk_t2b}
 
 | ビデオ分析1. x SDK | 開発者ガイド（PDFのみ） |
 | --- | --- |
 | Android | [Android 向け設定 ](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Apple TV 向け設定 ](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [Chromecast 向け設定 ](chromecast_1.x_sdk.pdf) |
-| iOS   | [iOS 向け設定 ](vhl-dev-guide-v15_ios.pdf) |
+| iOS | [iOS 向け設定 ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript 向け設定 ](vhl-dev-guide-v15_js.pdf) |
 | Primetime | <ul> <li> Android:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [TVML 向け設定 ](vhl_tvml.pdf) |
