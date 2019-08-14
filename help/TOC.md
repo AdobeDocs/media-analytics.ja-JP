@@ -3,7 +3,7 @@ product: Media Analytics
 audience: end-user
 user-guide-title: オーディオおよびビデオ用Adobe Analytics
 translation-type: tm+mt
-source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
       + [マイルストーンからカスタムリンクへの移行](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics のカスタムリンク {#cl-in-aa}
       + [カスタムリンク導入ガイド](measurement-options/cl-in-aa/cl-impl-guide.md)
-+ Introduction to Audio and Video Analytics {#intro-to-ava}
++ オーディオおよびビデオ分析の概要 {#intro-to-ava}
    + [前提条件](intro-to-ava/prereqs.md)
    + 実装パス {#implementation-paths}
       + [概要](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -113,7 +113,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
    + 検証 {#validation}
       + [検証の概要](sdk-implement/validation/validation-overview.md)
       + [テスト 1：標準の再生](sdk-implement/validation/test1-standard-playback.md)
-      + [テスト 2：ビデオの中断](sdk-implement/validation/test2-video-interrupt.md)
+      + [テスト2:メディア中断](sdk-implement/validation/test2-media-interrupt.md)
       + [テストコールの詳細](sdk-implement/validation/test-call-details.md)
       + [ハートビートパラメーターの説明](sdk-implement/validation/heartbeat-params.md)
       + デバッグ {#debugging}
@@ -136,7 +136,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
       + [移行の概要](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [コードの比較：1.x と 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [1.x から 2.x API への変換](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
-+ Media Collection API (RESTful) {#media-collection-api}
++ メディア収集API（RESTful） {#media-collection-api}
    + [概要](media-collection-api/mc-api-overview.md)
    + API リファレンス {#mc-api-ref}
       + [Sessions リクエスト](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -180,4 +180,4 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
    + [メディアワークスペーステンプレート](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
 + その他のリソース {#additional-resources}
-   + [ドキュメントの更新](additional-resources/doc-updates.md)
+   + [ドキュメントのアップデート](additional-resources/doc-updates.md)
