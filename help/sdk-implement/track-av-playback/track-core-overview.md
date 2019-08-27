@@ -3,12 +3,12 @@ seo-title: トラッキングの概要
 title: トラッキングの概要
 uuid: 7b8e2f76- bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Tracking Overview{#tracking-overview}
+# トラッキングの概要{#tracking-overview}
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * メディアオブジェクトを作成します
 * メタデータを設定します
-* Call `trackSessionStart`; For example: `trackSessionStart(mediaObject, contextData)`
+* 呼び出し `trackSessionStart`;次に例を示します。 `trackSessionStart(mediaObject, contextData)`
 
 ### メディア開始時
 
@@ -59,7 +59,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!TIP]
 >
->再生ヘッド位置は、セットアップコードおよび設定コードの一部として設定されます。For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>再生ヘッド位置は、セットアップコードおよび設定コードの一部として設定されます。詳しく `getCurrentPlayheadTime`は [、概要を参照してください。一般導入のガイドラインを参照してください。](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## 実装方法 {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -234,32 +234,5 @@ if (e.type == “buffered”) {
 
 ## 検証 {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-### コンテンツ開始
+実装の検証について詳しくは [、検証を参照してください。](/help/sdk-implement/validation/validation-overview.md)
 
-メディアプレーヤーの開始時には、次の順番で重要な呼び出しが送信されます。
-
-1. メディア分析開始
-1. ハートビートの開始
-1. ハートビート分析開始
-
-呼び出し 1 および 2 には、カスタムと標準の両方の追加のメタデータ変数が含まれます。
-
-### コンテンツの再生
-
-通常のメインコンテンツ再生中には、ハートビート呼び出しが 10 秒間隔でハートビートサーバーに送信されます。
-
-### コンテンツ完了
-
-コンテンツがすべて再生されるとコンテンツ上、またはリニアストリームの境界表示で、ハートビート完了呼び出しが送信されます。
-
-### コンテンツの一時停止
-
-プレーヤーが一時停止になると、プレーヤーの一時停止イベントの呼び出しが 10 秒間隔で送信されます。一時停止が終わったら、再生イベントを再開する必要があります。
-
-### コンテンツのスクラビング／シーク
-
-再生ヘッドのスクラビング時には、トラッキングコールが送信されることは特にありません。ただし、スクラビング後に再生が再開されると、再生ヘッドの値には、メインコンテンツの新しい位置を反映させる必要があります。
-
-### コンテンツのバッファリング
-
-メディアプレーヤーがバッファリングすると、プレーヤーのバッファーイベントの呼び出しが 10 秒間隔で送信されます。バッファリングが終わったら、再生イベントを再開する必要があります。
