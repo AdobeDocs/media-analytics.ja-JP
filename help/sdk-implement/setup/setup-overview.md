@@ -3,7 +3,7 @@ seo-title: セットアップの概要
 title: セットアップの概要
 uuid: 06ffeeddb- b0c8-4f7d-90c8- e374cde1695
 translation-type: tm+mt
-source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -121,14 +121,12 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ## 検証 {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-メディア実装は以下の 2 つのタイプのトラッキングコールで構成されています。
+Media Analyticsトラッキングの導入では、次の2種類のトラッキングコールが生成されます。
 
-* メディア開始および広告開始の呼び出しは AppMeasurement サーバーに直接送信されます。
-* ハートビート呼び出しは、開始時、コンテンツの場合は 10 秒ごと、広告の場合は 1 秒ごとにハートビートトラッキングサーバーに送信されます。
+* メディアおよび広告開始呼び出しは、Adobe Analytics（AppMeasurement）サーバーに直接送信されます。
+* ハートビート呼び出しは、Media Analytics（ハートビート）トラッキングサーバーに送信され、そこで処理され、Adobe Analyticsサーバーに渡されます。
 
-メディアトラッキングはあらゆるプラットフォーム、デスクトップ、モバイルで同じように動作します。オーディオトラッキングは現在モバイルプラットフォームで動作します。すべてのトラッキングコールに共通する、検証が必要な主要ユニバーサル変数がいくつかあります。
-
-* **AppMeasurement（Analytics）**&#x200B;サーバーオプションの詳細については、trackingServer変数とtrackingServerSecure変数の [適切な設定を参照してください。](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html)
+* **Adobe Analytics（AppMeasurement）サーバー**&#x200B;のトラッキングサーバーオプションについて詳しくは、 [trackingServer変数とtrackingServerSecure変数の適切な設定を参照してください。](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
@@ -136,7 +134,9 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics（ハートビート）**これには常に形式があり`[your_namespace].hb.omtrdc.net`ます。「値」には会社を`[your_namespace]`指定し、アドビによって提供されます。
+* ** Media Analytics（ハートビート） server**これには常に形式があり`[your_namespace].hb.omtrdc.net`ます。「値」には会社を`[your_namespace]`指定し、アドビによって提供されます。
+
+メディアトラッキングはあらゆるプラットフォーム、デスクトップ、モバイルで同じように動作します。オーディオトラッキングは、現在モバイルプラットフォームで動作します。すべてのトラッキングコールに共通する、検証が必要な主要ユニバーサル変数がいくつかあります。
 
 ## SDK1. xドキュメント {#section_acj_tkk_t2b}
 
