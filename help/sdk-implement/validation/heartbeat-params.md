@@ -3,79 +3,79 @@ seo-title: ハートビートパラメーターの説明
 title: ハートビートパラメーターの説明
 uuid: e9ddda32-0952-43d0- a702-49f5b1bfd8cf
 translation-type: tm+mt
-source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
+source-git-commit: 10a5d921953339bef1cde2f802eb9ce0cb1bbe4b
 
 ---
 
 
 # Media Analytics（ハートビート）パラメーターの説明{#heartbeat-parameter-descriptions}
 
-アドビがハートビートサーバー上で収集および処理するMedia Analyticsパラメーターのリスト:
+AdobeがMedia Analytics（ハートビート）サーバー上で収集および処理するMedia Analyticsパラメーターのリスト:
 
 ## すべてのイベント
 
-| 名前 | 必須／オプション | データソース | 説明   |
-| ---  | :---: | --- | --- |
-| `s:event:type` | R | メディア SDK | 追跡されるイベントのタイプ。イベントタイプ： <ul> <li> `s:event:type=start` </li> <li> `s:event:type=complete` </li> <li> `s:event:type=chapter_start` </li> <li> `s:event:type=chapter_complete` </li> <li> `s:event:type=buffer` </li> <li> `s:event:type=pause` </li> <li> `s:event:type=resume` </li> <li> `s:event:type=bitrate_change` </li> <li> `s:event:type=aa_start` </li> <li> `s:event:type=stall` </li> <li> `s:event:type=end` </li> </ul> |
-| `l:event:prev_ts` | R | メディア SDK | このセッションにおける同じタイプの最後のイベントのタイムスタンプ。この値は `-1` |
-| `l:event:ts` | R | メディア SDK | イベントのタイムスタンプ。 |
-| `l:event:duration` | R | メディア SDK | この値はプレーヤーではなく、VHL ライブラリによって内部的に設定されます（単位はミリ秒）。バックエンドで滞在時間の指標を算出するのに使用されます。For example `a.media.totalTimePlayed` `type=play` Note:  For some of the HB that are sent This parameter is set to 0 for certain events because they are "state change events" (e.g., `type=complete` `type=chapter_complete` `type=bitrate_change` |
-| `l:event:playhead` | R | `VideoInfo` | イベントが記録された場合、再生ヘッドは、現在アクティブなアセット（メインまたは広告）の内部にあります。 |
-| `s:event:sid` | R | メディア SDK | セッション ID（ランダムに生成された文字列）。特定のセッションのすべてのイベント（ビデオ + 広告）は同じである必要があります。 |
-| `l:asset:duration / l:asset:length` （名前を `length``duration` | R | `VideoInfo` | メインアセットのビデオアセットの長さ。 |
-| `s:asset:publisher` | R | `MediaHeartbeatConfig` | アセットの投稿者。 |
-| `s:asset:video_id` | R | `VideoInfo` | 投稿者のカタログでビデオを一意に識別する ID。 |
-| `s:asset:type` | R | メディア SDK | アセットのタイプ（メインまたは広告）。 |
-| `s:stream:type` | R | `VideoInfo` | ストリームタイプ。以下のいずれかを指定できます。 <ul> <li> `live` </li> <li> `vod` </li> <li> `linear` </li> </ul>を参照してください。 |
-| `s:user:id` | O | モバイルの config オブジェクト、App Measurement VisitorID | ユーザーが特別に設定した訪問者 ID。 |
-| `s:user:aid` | O | Experience Cloud 組織 | ユーザーの Analytics 訪問者 ID 値。 |
-| `s:user:mid` | R | Experience Cloud 組織 | ユーザーの Experience Cloud 訪問者 ID 値。 |
-| `s:cuser:customer_user_ids_x` | O | `MediaHeartbeatConfig` | Audience Manager で設定したすべての顧客のユーザー ID。 |
-| `l:aam:loc_hint` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
-| `s:aam:blob` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
-| `s:sc:rsid` | R | レポートスイート ID（複数の場合もあります） | レポート送信先のAdobe Analytics RSID。 |
-| `s:sc:tracking_server` | R | `MediaHeartbeatConfig` | Adobe Analyticsトラッキングサーバー。 |
-| `h:sc:ssl` | R | `MediaHeartbeatConfig` | トラフィックが HTTPS（1 に設定されている場合）または HTTP（0 に設定されている場合）のどちらを使用するか。 |
-| `s:sp:ovp` | O | `MediaHeartbeatConfig` | Primetime プレーヤーの場合は「primetime」、他のプレーヤーの場合は実際の OVP に設定されます。 |
-| `s:sp:sdk` | R | `MediaHeartbeatConfig` | OVP バージョン文字列。 |
-| `s:sp:player_name` | R | `VideoInfo` | ビデオプレーヤー名（実際のプレーヤーソフトウェア。プレーヤーの識別に使用） |
-| `s:sp:channel` | O | `MediaHeartbeatConfig` | ユーザーがコンテンツを視聴しているチャネル。モバイルアプリの場合、アプリ名。Web サイトの場合、ドメイン名。 |
-| `s:sp:hb_version` | R | メディア SDK | 呼び出しを発行する VideoHeartbeat ライブラリのバージョン番号。 |
-| `l:stream:bitrate` | R | `QoSInfo` | ストリームビットレートの現在の値（bps）。 |
+| 名前 | データソース |  説明  |
+| ---  | --- | --- |
+| s:event:type | メディア SDK | (Required)<br/><br/>The type of the event being tracked. イベントタイプ： <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
+| l:event:prev_ts | メディア SDK | (Required)<br/><br/>The timestamp of the last event of the same type in this session. 値は-1です。 |
+| l:event:ts | メディア SDK | (Required)<br/><br/>The timestamp of the event. |
+| l:event:duration | メディア SDK | (Required)<br/><br/>This value is set internally (in milliseconds) by the Media SDK, not by the player. バックエンドで滞在時間の指標を算出するのに使用されます。例:a. media. totalTimePlayedは、生成されたすべてのPlay（type= play）ハートビートの継続時間の合計として計算されます。<br/>*注意:* このパラメーターは、"state change events"であるため、特定のイベントに対して0に設定されています（例: type= complete、type= chapter_ complete、type= bitrate_ change）。 |
+| l:event:playhead | videoInfo | (Required)<br/><br/>The playhead was inside the currently active asset (main or ad), when the event was recorded. |
+| s:event:sid | メディア SDK | (Required)<br/><br/>The session ID (a randomly generated string). 特定のセッションのすべてのイベント（ビデオ + 広告）は同じである必要があります。 |
+| l:asset:duration/l:asset:length <br/>（長期間の名前から名前変更） | videoInfo | (Required)<br/><br/>The video asset length of the main asset. |
+| s:asset:publisher | MediaHeartbeatConfig | (Required)<br/><br/>The publisher of the asset. |
+| s:asset:video_id | videoInfo | (Required)<br/><br/>An ID uniquely identifying the video in the publisher's catalog. |
+| s:asset:type | メディア SDK | (Required)<br/><br/>The asset type (main or ad). |
+| s:stream:type | videoInfo | （必須）<br/><br/>ストリームタイプ。次のいずれかを使用できます。 <ul> <li> live </li> <li> vod </li> <li> 線形 </li> </ul> |
+| s:user:id | モバイルの config オブジェクト、App Measurement VisitorID | (Optional)<br/><br/>User's specifically set Visitor ID. |
+| s:user:aid | Experience Cloud 組織 | (Optional)<br/><br/>The user's Analytics Visitor ID value. |
+| s:user:mid | Experience Cloud 組織 | (Required)<br/><br/>The user's Experience cloud visitor ID value. |
+| s:cuser:customer_user_ids_x | MediaHeartbeatConfig | (Optional)<br/><br/>All customer user IDs set on Audience Manager. |
+| l:aam:loc_hint | MediaHeartbeatConfig | (Required)<br/><br/>AAM data sent on each payload after aa_start |
+| s:aam:blob | MediaHeartbeatConfig | (Required)<br/><br/>AAM data sent on each payload after aa_start |
+| s:sc:rsid | レポートスイート ID（複数の場合もあります） | （必須）<br/><br/>レポートを送信するAdobe Analytics RSID。 |
+| s:sc:tracking_server | MediaHeartbeatConfig | （必須）<br/><br/>Adobe Analyticsトラッキングサーバー。 |
+| h:sc:ssl | MediaHeartbeatConfig | (Required)<br/><br/>Whether the traffic is over HTTPS (if set to 1) or over HTTP (is set to 0). |
+| s:sp:ovp | MediaHeartbeatConfig | (Optional)<br/><br/>Set to "primetime" for Primetime players, or the actual OVP for other players. |
+| s:sp:sdk | MediaHeartbeatConfig | (Required)<br/><br/>The OVP version string. |
+| s:sp:player_name | videoInfo | (Required)<br/><br/>Video player name (the actual player software, used to identify the player). |
+| s:sp:channel | MediaHeartbeatConfig | (Optional)<br/><br/>The channel where the user is watching the content. モバイルアプリの場合、アプリ名。Web サイトの場合、ドメイン名。 |
+| s:sp:hb_version | メディア SDK | （必須）<br/><br/>呼び出しを発行するMedia SDKライブラリのバージョン番号。 |
+| l:stream:bitrate | QoSInfo | (Required)<br/><br/>The current value of the stream bitrate (in bps). |
 
 ## エラーイベント
 
-| 名前 | 必須／オプション | データソース | 説明   |
-| ---  | :---: | --- | --- |
-| `s:event:source` | R | メディア SDK | プレーヤー内部またはアプリケーションレベルの、エラーのソース。 |
-| `s:event:id` | R | メディア SDK | エラーを一意に識別するエラー ID。 |
+| 名前 | データソース | 説明   |
+| ---  | --- | --- |
+| s:event:source | メディア SDK | (Required)<br/><br/>The source of the error, either player-internal, or the application-level. |
+| s:event:id | メディア SDK | (Required)<br/><br/>Error ID, uniquely identifies the error. |
 
 ## 広告イベント
 
-| 名前 | 必須／オプション | データソース | 説明   |
-| ---  | :---: | --- | --- |
-| `s:asset:ad_id` | R | `AdInfo` | 広告の名前。 |
-| `s:asset:ad_sid` | R | メディア SDK | メディア SDK によって生成される一意の識別子。広告関連のすべての ping に追加されます。 |
-| `s:asset:pod_id` | R | メディア SDK | ビデオ内部のポッド ID。この値は、次の式に基づいて自動的に計算されます。 `MD5(video_id) + "_" + [pod index]` |
-| `s:asset:pod_position` | R | `AdBreakInfo` | ポッド内部の広告のインデックス（最初の広告はインデックス 0、2 番目の広告はインデックス 1、以下同様となります）。 |
-| `s:asset:resolver` | R | `AdBreakInfo` | 広告のリゾルバー。 |
-| `s:meta:custom_ad_metadata.x` | O | `MediaHeartbeat` | カスタム広告メタデータ。 |
+| 名前 | データソース | 説明   |
+| ---  | --- | --- |
+| s:asset:ad_id | AdInfo | （必須）<br/><br/>広告の名前。 |
+| s:asset:ad_sid | メディア SDK | (Required)<br/><br/>A unique identifier generated by the Media SDK, appended to all ad-related pings. |
+| s:asset:pod_id | メディア SDK | (Required)<br/><br/>Pod ID inside the video. This value is computed automatically based on the following formula: <br/>`MD5(video_id) + `<br/>`"_" + `<br/>`[pod index]` |
+| s:asset:pod_position | AdBreakInfo | (Required)<br/><br/>Index of the ad inside the pod (the first ad has index 0, the second ad has index 1, etc.). |
+| s:asset:resolver | AdBreakInfo | （必須）<br/><br/>広告リゾルバー。 |
+| s:meta:custom_ad_metadata.x | MediaHeartbeat | (Optional)<br/><br/>The custom ad metadata. |
 
 ## チャプターイベント
 
-| 名前 | 必須／オプション | データソース | 説明   |
-| ---  | :---: | --- | --- |
-| `s:stream:chapter_sid` | R | メディア SDK | チャプターの再生インスタンスに関連付けられた一意の識別子。注意：チャプターは、ユーザーによって実行されたシークバック操作が原因で複数回再生される可能性があります。 |
-| `s:stream:chapter_name` | O | `ChapterInfo` | チャプターのわかりやすい（つまり、人間が理解できる）名前。 |
-| `s:stream:chapter_id` | R | メディア SDK | チャプターの一意の ID。この値は、次の式に基づいて自動的に計算されます。 `MD5(video_id) + "_" + chapter_pos` |
-| `l:stream:chapter_pos` | R | `ChapterInfo` | チャプターのリストにあるチャプターのインデックス（1 から始まる）。 |
-| `l:stream:chapter_offset` | R | `ChapterInfo` | 広告を除く、メインコンテンツ内のチャプターのオフセット（秒単位で表現される）。 |
-| `l:stream:chapter_length` | R | `ChapterInfo` | チャプターの時間（秒単位で表現される）。 |
-| `s:meta:custom_chapter_metadata.x` | O | `ChapterInfo` | カスタムチャプターメタデータ。 |
+| 名前 | データソース | 説明   |
+| ---  | --- | --- |
+| s:stream:chapter_sid | メディア SDK | (Required)<br/><br/>The unique identifier associated to the playback instance of the chapter.  <br/> **注意：**&#x200B;チャプターは、ユーザーによって実行されたシークバック操作が原因で複数回再生される可能性があります。 |
+| s:stream:chapter_name | ChapterInfo | (Optional)<br/><br/>The chapter's friendly (i.e., human readable) name. |
+| s:stream:chapter_id | メディア SDK | (Required)<br/><br/>The unique ID of the chapter. This value is computed automatically based on the following formula: <br/>`MD5(video_id) +`<br/>` "_" +`<br/>`chapter_pos` |
+| l:stream:chapter_pos | ChapterInfo | (Required)<br/><br/>The chapter's index in the list of chapters (starting with 1). |
+| l:stream:chapter_offset | ChapterInfo | (Required)<br/><br/>The chapter's offset (expressed in seconds) inside the main content, excluding ads. |
+| l:stream:chapter_length | ChapterInfo | (Required)<br/><br/>The chapter's duration (expressed in seconds). |
+| s:meta:custom_chapter_metadata.x | ChapterInfo | （オプション）<br/><br/>カスタムチャプターメタデータ。 |
 
 ## セッション終了イベント
 
-| 名前 | 必須／オプション | データソース | 説明   |
-| ---  | :---: | --- | --- |
-| `s:event:type=end` | R | メディア SDK | Adobe コード内の  `end``close` |
+| 名前 | データソース | 説明   |
+| ---  | --- | --- |
+| s:event:type=end | メディア SDK | （必須） <br/><br/>`end``close` |
 
