@@ -3,7 +3,7 @@ seo-title: 概要
 title: 概要
 uuid: 3fe32425-5e2a-4886-8fea- d91d15671bb0
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * 呼び出し `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Implement chapter tracking {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## チャプタートラッキングの実装 {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
 
 1. いつチャプター開始イベントが発生するかを識別し、チャプター情報を使用して `ChapterObject` インスタンスを作成します。
 
@@ -85,18 +85,3 @@ if (e.type == "chapter skip") {
 }; 
 ```
 
-## 検証 {#section_07EC2811BE3249249494596BFE9BF869}
-
-### チャプター開始
-
-個々のチャプター再生の開始時に、1回のキー呼び出しが送信されます。
-
-* ハートビートチャプター開始（この呼び出しには、チャプターメタデータ変数が追加されています）
-
-### チャプター完了
-
-チャプターの終了境界では、ハートビートチャプター完了呼び出しが送信されます。
-
-### チャプタースキップ
-
-チャプターがスキップされると、ハートビートチャプタースキップ呼び出しが送信されます。
