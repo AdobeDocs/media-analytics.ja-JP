@@ -3,7 +3,7 @@ seo-title: 順次追跡を含むライブメインコンテンツ
 title: 順次追跡を含むライブメインコンテンツ
 uuid: b03477b6-9be8-4b67- a5a0-4extenite3cf262ab
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -53,7 +53,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-メディアの再生中に、1つまたは複数のハートビートを10秒ごとに送信するタイマーがあります。それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
+メディアの再生中に、メインコンテンツの10秒ごと、および広告の1秒ごとに1つ以上のハートビートを送信するタイマーがあります。それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
 
 Content Heartbeats では、いくつかの特定の事柄を探します。
 
@@ -162,7 +162,7 @@ _mediaHeartbeat.trackSessionEnd();
 // Continue similarly tracking further sessions in the live stream if required 
 ```
 
-### iOS  
+### iOS
 
 以下に、期待される API 呼び出し順序を示します。
 
