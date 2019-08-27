@@ -3,7 +3,7 @@ seo-title: 概要
 title: 概要
 uuid: 4d73c47f- d0a4-4228-9040- d6432311c9eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. メディアプレイヤーAPIを使用して、QoSおよびエラー追跡に関連する変数を識別できます。Quality of Experience を追跡するうえで重要な要素は次のとおりです。
 
-## Player events {#player-events}
+## プレーヤーイベント {#player-events}
 
 ### QoS 指標の変更時：
 
@@ -71,12 +71,3 @@ if (e.type == "bitrate_change") {
 };
 ```
 
-## 検証 {#section_F3174831408947A893F7E8C15659E5AA}
-
-### ビットレート変更
-
-ビットレートが変更されるたびに、ハートビートの `bitrate_change` 呼び出しが送信されます。
-
-### エラー
-
-プレーヤーのエラー発生時に、エラーの値を含むハートビートエラー呼び出しが送信されます。
