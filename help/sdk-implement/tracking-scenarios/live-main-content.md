@@ -3,7 +3,7 @@ seo-title: ライブメインコンテンツ
 title: ライブメインコンテンツ
 uuid: e92e99f4- c395-48aa-8a30- cbdd2f5fc07c
 translation-type: tm+mt
-source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Analytics Content Start 呼び出し時に確認される同じ値の多�
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-メディアの再生中に、1つまたは複数のハートビートを10秒ごとに送信するタイマーがあります。それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
+メディアの再生中に、メインコンテンツの10秒ごと、および広告の1秒ごとに1つ以上のハートビート（ping）を送信するタイマーがあります。それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
 
 Content Heartbeats では、いくつかの特定の事柄を探します。
 
@@ -59,13 +59,13 @@ LIVEストリームの場合、プログラミングが開始された時点か�
 
 ### 開始時
 
-For LIVE media, when a user starts playing the stream, you need to set `l:event:playhead` to the current offset, in seconds. VODとは対照的に、再生ヘッドを"0"に設定します。
+LIVEメディアの場合、ユーザーがストリームの再生を開始したときに、現在のオフセット `l:event:playhead` を秒単位で設定する必要があります。VODとは対照的に、再生ヘッドを"0"に設定します。
 
-For example, say a LIVE streaming event starts at midnight and runs for 24 hours (`a.media.length=86400`; `l:asset:length=86400`). その後、ユーザーが午後12時にLIVEストリームの再生を開始したとします。In this scenario, you should set `l:event:playhead` to 43200 (12 hours into the stream).
+例えば、LIVEストリーミングイベントが午前0時から開始し、24時間（`a.media.length=86400`; `l:asset:length=86400`）を参照してください。その後、ユーザーが午後12時にLIVEストリームの再生を開始したとします。このシナリオでは、43200（ストリームの12時間） `l:event:playhead` に設定する必要があります。
 
 ### 一時停止時
 
-再生開始時に適用される「ライブ再生ヘッド」ロジックは、ユーザーが再生を一時停止したときに適用する必要があります。When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value to the new offset playhead position, _not_ to the point where the user paused the LIVE stream.
+再生開始時に適用される「ライブ再生ヘッド」ロジックは、ユーザーが再生を一時停止したときに適用する必要があります。ユーザーがLIVEストリームの再生に戻るとき、ユーザーがLIVEストリーム `l:event:playhead` を一時停止した時点で _はなく_ 、新しいオフセット再生ヘッド位置に値を設定する必要があります。
 
 ## サンプルコード {#section_vct_j2j_x2b}
 
@@ -110,7 +110,7 @@ _mediaHeartbeat.trackSessionEnd();
 ....... 
 ```
 
-### iOS  
+### iOS
 
 以下に、期待される API 呼び出し順序を示します。
 
