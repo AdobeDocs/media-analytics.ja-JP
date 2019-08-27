@@ -3,7 +3,7 @@ seo-title: 新しいデバッグレポートの作成
 title: 新しいデバッグレポートの作成
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
          * [!UICONTROL Analytics／管理者／ユーザー管理／ユーザー／個々のユーザーの設定]新しいユーザーの Web サービス API の資格情報を作成するには、[!UICONTROL ユーザー管理]でユーザーを **Web サービスアクセス**&#x200B;ユーザーグループに追加します。
       * [!UICONTROL デフォルトのエンドポイント] -このフィールドのデータはアドビによって提供され、変更できません。
       * [!UICONTROL 追加エンドポイント] -これ `CNAMES`らを使用する場合、サーバーの「いいね!"の取り消し `metrics.companyname.com`
-   * **Media Heartbeats**
+   * **ビデオハートビート（Media Analytics）**
 
       * [!UICONTROL デフォルトのエンドポイント] -このフィールドのデータはアドビによって提供され、変更できません。
       * [!UICONTROL Extraエンドポイント] -トラッキングサーバーの場合、例えば `CNAMES`、トラッキングサーバーに対して追加 `metrics.companyname.com`します。
