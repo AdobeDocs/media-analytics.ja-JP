@@ -3,7 +3,7 @@ seo-title: 概要
 title: 概要
 uuid: 1607798b- c6ef-4d60-8e40- e958c345b09c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-広告再生には、広告ブレーク、広告開始、広告完了、広告スキップの追跡が含まれます。メディアプレイヤーのAPIを使用して、主要プレーヤーイベントを識別し、必須およびオプションの広告変数を設定します。See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
+広告再生には、広告ブレーク、広告開始、広告完了、広告スキップの追跡が含まれます。メディアプレイヤーのAPIを使用して、主要プレーヤーイベントを識別し、必須およびオプションの広告変数を設定します。メタデータの詳細なリストはこちらを参照してください。 [広告パラメーター。](/help/metrics-and-metadata/ad-parameters.md)
 
-## Player events {#player-events}
+## プレーヤーイベント {#player-events}
 
 
 ### 広告の時間開始時
@@ -46,7 +46,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * ブレーク完了の `trackEvent` を呼び出します。
 
-## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## 広告トラッキングの実装 {#section_83E0F9406A7743E3B57405D4CDA66F68}
 
 ### 広告トラッキング定数
 
@@ -100,7 +100,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Make sure you do NOT increment the content player playhead (`l:event:playhead`) during ad playback (`s:asset:type=ad`). その場合、コンテンツ滞在時間指標は悪影響を受けます。
+>広告再生中にコンテンツプレイヤーplayhead（`l:event:playhead`）をインクリメントしない`s:asset:type=ad`ようにしてください。その場合、コンテンツ滞在時間指標は悪影響を受けます。
 
 以下のサンプルコードは、HTML5メディアプレイヤー用JavaScript2. x SDKを使用しています。
 
@@ -139,32 +139,4 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
 ```
-
-## 検証 {#section_5F1783F5FE2644F1B94B0101F73D57EB}
-
-### 広告開始
-
-個々の広告再生の開始時に、次の順番で 3 件の重要な呼び出しが送信されます。
-
-1. ビデオ広告分析開始
-1. ハートビート広告開始
-1. ハートビート分析開始
-
-呼び出し 1 および 2 には、カスタムと標準の両方の追加のメタデータ変数が含まれます。
-
-### 広告再生
-
-広告再生中、Heartbeat Ad Play 呼び出しが 1 秒間隔でハートビートサーバーに送信されます。
-
-### 広告完了
-
-広告がすべて再生されると、Heartbeat Ad Complete 呼び出しが送信されます。
-
-### 広告スキップ
-
-広告がスキップされた場合は、イベントが送信されないので、トラッキングコールに広告情報が含まれません。
-
->[!TIP]
->
->広告の時間開始と広告の時間完了時に一意の呼び出しが送信されません。
 
