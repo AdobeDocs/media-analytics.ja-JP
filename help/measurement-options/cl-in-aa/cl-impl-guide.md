@@ -3,12 +3,12 @@ seo-title: カスタムリンク導入ガイド
 title: カスタムリンク導入ガイド
 uuid: 83315e73-20ca-4db5-9d43-33dade45a13
 translation-type: tm+mt
-source-git-commit: fe245e766ab8ee48a8e8aaf247cfd552fed816e9
+source-git-commit: f790d60c7c19dc203ea5dd48e1e55ec20a341900
 
 ---
 
 
-# カスタムリンク導入ガイド{#custom-link-implementation-guide}
+# Custom Link Implementation Guide{#custom-link-implementation-guide}
 
 Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
 
