@@ -1,9 +1,9 @@
 ---
 seo-title: 順次追跡を含むライブメインコンテンツ
 title: 順次追跡を含むライブメインコンテンツ
-uuid: b03477b6-9be8-4b67- a5a0-4extenite3cf262ab
+uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 
 ---
 
@@ -16,16 +16,16 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 これは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じシナリオですが、コンテンツの一部はスクラブされ、メインコンテンツのあるポイントから別のポイントまでのシークが完了します。
 
-| トリガー | ハートビートメソッド | ネットワーク呼び出し   | メモ   |
+| トリガー | ハートビートメソッド |  ネットワーク呼び出し |  メモ   |
 | --- | --- | --- | --- |
-| ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
-| コンテンツ再生の最初のフレーム。 | `trackPlay` | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
+| ユーザーが[!UICONTROL 再生]をクリックする | trackSessionStart | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
+| コンテンツ再生の最初のフレーム。 | trackPlay | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
 | コンテンツ再生 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| Session1 終了（Episode1 終了） | `trackComplete` `trackSessionEnd` | Heartbeat Content Complete | Complete は、最初のエピソードの session1 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
-| Episode2 を開始する（Session2 開始） | `trackSessionStart` | Analytics Content Start Heartbeat Content Start | これは、ユーザーが最初のエピソードを視聴し、別のエピソードまで視聴し続けたためです |
-| メディアの最初のフレーム | `trackPlay` | Heartbeat Content Play | このメソッドは、タイマーをトリガーし、これ以降、ハートビートは、再生が続く限り、10 秒ごとに送信されます。 |
+| Session1 終了（Episode1 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete は、最初のエピソードの session1 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
+| Episode2 を開始する（Session2 開始） | trackSessionStart | Analytics Content Start Heartbeat Content Start | これは、ユーザーが最初のエピソードを視聴し、別のエピソードまで視聴し続けたためです |
+| メディアの最初のフレーム | trackPlay | Heartbeat Content Play | このメソッドは、タイマーをトリガーし、これ以降、ハートビートは、再生が続く限り、10 秒ごとに送信されます。 |
 | コンテンツ再生 |  | Content Heartbeats |  |
-| セッション終了（Episode2 終了） | `trackComplete` `trackSessionEnd` | Heartbeat Content Complete | Complete は、2 番目のエピソードの session2 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
+| セッション終了（Episode2 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete は、2 番目のエピソードの session2 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
 
 ## パラメーター {#section_D52B325B99DA42108EF560873907E02C}
 
@@ -40,7 +40,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | `s:asset:type` | `"main"` |  |
 | `s:asset:media_id` | &lt;メディア名&gt; |  |
 | `s:stream:type` | `live` |  |
-| `s:meta:*` | *オプション* | メディアに設定されたカスタムメタデータ |
+| `s:meta:*` | *オプション* | メディア上のカスタムメタデータセット |
 
 ## Heartbeat Content Play {#section_B6AD9225747943F881DCA8E6A1D5710E}
 
@@ -53,7 +53,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-メディアの再生中に、メインコンテンツの10秒ごと、および広告の1秒ごとに1つ以上のハートビートを送信するタイマーがあります。それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
+メディアの再生中に、1つ以上のハートビートをメインコンテンツに対して10秒おき、広告に対して1秒おきに送信するタイマーがあります。 それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
 
 Content Heartbeats では、いくつかの特定の事柄を探します。
 
