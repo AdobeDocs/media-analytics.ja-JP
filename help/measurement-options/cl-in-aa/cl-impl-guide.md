@@ -1,29 +1,29 @@
 ---
 seo-title: カスタムリンク導入ガイド
 title: カスタムリンク導入ガイド
-uuid: 83315e73-20ca-4db5-9d43-33dayade45a13
+uuid: 83315e73-20ca-4db5-9d43-33dade45a13
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: fe245e766ab8ee48a8e8aaf247cfd552fed816e9
 
 ---
 
 
 # カスタムリンク導入ガイド{#custom-link-implementation-guide}
 
-カスタムビデオトラッキングでは、Analytics [ 内の](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html)カスタムリンクコードを使用した手動リンクトラッキング`appMeasurement`を利用します。ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
+Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
 
-* In JavaScript: `s.tl()` function
+* JavaScriptの場合：関 `s.tl()` 数
 * モバイルアプリの場合：[trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 
 * In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
-**要件：**
+## 要件
 
 * ビデオプレーヤー API のイベントおよびデータへのアクセス
 * スクリプトを追加できること（分析 SDK を使用している場合）
 * （カスタムスクリプトまたはハードコーディングで）トラッキングビーコンを追加できること（Data Insertion API を使用している場合）
 
-**メタデータ：**
+## メタデータ
 
 * メタデータは、リンクデータの一部として任意のトラッキングコールに追加できます。
 * Remember to update the `linkTrackVars` and `linkTrackEvents`
@@ -44,7 +44,7 @@ if (e.type == "ended") {
 };
 ```
 
-**カスタムリンクを使用する理由：**
+## カスタムリンクを使用する理由
 
 * 必要な前提条件が最小限である。
 * NoScript を含むあらゆるプラットフォームで動作する。
@@ -53,7 +53,7 @@ if (e.type == "ended") {
 * ビデオデータのあらゆる側面に対する完全な制御。
 * サンプルプレーヤーへのリンクを削除できる。
 
-**HTML5 プレーヤー用のサンプル JavaScript**
+## HTML5 プレーヤー用のサンプル JavaScript
 
 ```javascript
 <script type="text/javascript"> 
