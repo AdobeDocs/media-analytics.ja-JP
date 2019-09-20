@@ -1,9 +1,9 @@
 ---
 seo-title: Roku での Quality of Experience の追跡
 title: Roku での Quality of Experience の追跡
-uuid: a8b242ab- da3c-4297-9eef- f0b9684ef56a
+uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 実装QoS
+## QOSの実装
 
-1. Identify when the bitrate changes during media playback, and use the `mediaUpdateQoS` API to update the QoS info on the Media SDK.
+1. メディア再生中にビットレートが変化するタイミングを識別し、 `mediaUpdateQoS` APIを使用してMedia SDKのQoS情報を更新します。
 
    QoSObject 変数：
 
@@ -55,15 +55,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
     ```
     -->
 
-1. When playback switches bitrates, call `trackEvent(BitrateChange)` to notify the Media SDK that the Bitrate changed.
+1. 再生がビットレートを切り替えるときに、ビ `trackEvent(BitrateChange)` ットレートが変更されたことをメディアSDKに通知するように呼び出します。
 
    ```
-   ADBMobile().trackMediaEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
+   ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
    ```
 
    >[!NOTE]
    >
-   >You need to call `updateQoSObject` with the updated bitrate value.
+   >更新されたビットレート `updateQoSObject` 値を使用してを呼び出す必要があります。
 
    <!--
     ```
@@ -80,5 +80,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >メディアプレイヤーのエラーを追跡しても、メディアトラッキングセッションは停止しません。If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >メディアプレイヤーのエラーを追跡しても、メディアトラッキングセッションは停止しません。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
