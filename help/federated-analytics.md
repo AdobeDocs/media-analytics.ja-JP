@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: d3501c6290f9c932a3dcd0bab8ec2cda3554576c
+source-git-commit: a80097ac92c422bcf9c04a18ee91a20d3d383af4
 
 ---
 
@@ -39,7 +39,9 @@ Federated Analytics サービスは、2 つのパートナー間でアドビの�
 
 ## プロセス {#section_byb_kb3_vbb}
 
-1. 送信者と受信者が協力し、フェデレーションルールの契約フォームに情報を入力します。**** 現在のバージョンのフォームをダウンロードする場所：フェデレ [ーション規則契約フォーム。](/assets/federated_analytics_form.pdf) （このフォームにはエンジニアリングチーム向けの特別なフィールドが含まれており、Adobe Acrobatを使用してのみ編集できます。）[Acrobat は無償でダウンロードできます。](https://get.adobe.com/reader/)
+1. 送信者と受信者が協力し、フェデレーションルールの契約フォームに情報を入力します。**** 現在のバージョンのフォームをダウンロードする場所：フェデレ [ーション規則契約フォーム。](/assets/federated_analytics_form.pdf)
+
+   [!NOTEこのフォームにはエンジニアリングチーム用の特別なフィールドが含まれており、Adobe Acrobatを使用してのみ編集できます。 [Acrobat は無償でダウンロードできます。](https://get.adobe.com/reader/)
 1. データファイルが使用可能である場合、コンサルティングサービスが、送信者のプレーヤーの実際のデータを含むサンプルのデータファイルを受信者に提供し、データ共有ルールが適切に定義されているか詳細に確認します。
 1. 送信者と受信者が、データ共有契約によって、両者間のすべての契約要件を満たせるかを確認します。
 1. コンサルティングサービスが、情報が入力されたフォームをアドビのエンジニアリングチームに送信します。これにより、データ共有ルールが設定されます。
