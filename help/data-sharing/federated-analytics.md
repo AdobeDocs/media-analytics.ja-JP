@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
+source-git-commit: ef6e37791cd365b12d964b2a06831a563f605104
 
 ---
 
@@ -33,7 +33,7 @@ Federated Analytics サービスは、2 つのパートナー間でアドビの�
 
 * **メディアストリームに関する契約：** Adobe Analytics 内でオーディオおよびビデオデータにアクセスするためには、受信者と送信者が事前に Adobe Analytics for Media Streams の契約を済ませておく必要があります。詳しくは、アカウントチームにお問い合わせください。
 * **フェデレーションに関する補遺契約：**&#x200B;データの送受信をおこなうためには、送信者と受信者それぞれがアドビとの補遺契約に署名している必要があります。パートナーシップ 1 組で 1 つの補遺契約ではなく、それぞれのお客様が補遺契約に署名する必要があります。詳しくは、アカウントチームにお問い合わせください。
-* **Media Analytics の実装：**&#x200B;送信者はフェデレーテッドデータセットの一部になるすべてのプレーヤーに、Media Analytics を実装する必要があります。フェデレーションによって利用できるのは Media Analytics のデータのみです。See documentation: [Measuring audio and video in Adobe Analytics](media-overview.md)
+* **Media Analytics の実装：**&#x200B;送信者はフェデレーテッドデータセットの一部になるすべてのプレーヤーに、Media Analytics を実装する必要があります。フェデレーションによって利用できるのは Media Analytics のデータのみです。See documentation: [Measuring audio and video in Adobe Analytics](/help/media-overview.md)
 
 * **アドビのコンサルティングサービスの契約：**&#x200B;送信者と受信者間のフェデレーテッドルールの初期設定については、コンサルティングサービスと協力してデータの確認とデータ共有契約の作成をおこなうと効果的です。
 
@@ -41,7 +41,7 @@ Federated Analytics サービスは、2 つのパートナー間でアドビの�
 
 1. 送信者と受信者が協力し、フェデレーションルールの契約フォームに情報を入力します。
 1. 現在のバージョンのフォームをダウンロードする場所：フェデレ [ーション規則契約フォーム。](/assets/federated_analytics_form.pdf)
-1. The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [Acrobat は無償でダウンロードできます。](https://get.adobe.com/reader/)
+1. 連合ルール契約フォームには、エンジニアリングチーム向けの特別なフィールドが含まれており、Adobe Acrobatを使用してのみ編集できます。 [Acrobat は無償でダウンロードできます。](https://get.adobe.com/reader/)
 1. データファイルが使用可能である場合、コンサルティングサービスが、送信者のプレーヤーの実際のデータを含むサンプルのデータファイルを受信者に提供し、データ共有ルールが適切に定義されているか詳細に確認します。
 1. 送信者と受信者が、データ共有契約によって、両者間のすべての契約要件を満たせるかを確認します。
 1. コンサルティングサービスが、情報が入力されたフォームをアドビのエンジニアリングチームに送信します。これにより、データ共有ルールが設定されます。
