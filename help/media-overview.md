@@ -1,9 +1,9 @@
 ---
 seo-title: Adobe Analytics でのオーディオおよびビデオの測定
 title: Adobe Analytics でのオーディオおよびビデオの測定
-uuid: b3cbe240- b94d-42b8- a99c-0280334aaa14
+uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 1915261ec21679f510350663a472096abe7fdf63
+source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 1915261ec21679f510350663a472096abe7fdf63
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 従来のマイルストーンビデオ実装に関する手順は含まれません。すべてのお客様に、2 つの最新のメディアトラッキングソリューションのどちらかまたは両方に移行して、強化された機能と拡張された計測機能を利用することをお勧めします。最新のソリューションに移行する利点については、[以下](media-overview.md#section_cnj_5st_p1b)を参照してください。ビデオトラッキングのマイルストーン方法は引き続きサポートされますが、予定されている更新、修正、機能改善はありません。ご不明な点がある場合は、アドビのアカウントマネージャーにお問い合わせください。
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy Milestone video implementation. すべてのお客様に、2 つの最新のメディアトラッキングソリューションのどちらかまたは両方に移行して、強化された機能と拡張された計測機能を利用することをお勧めします。最新のソリューションに移行する利点については、[以下](media-overview.md#section_cnj_5st_p1b)を参照してください。引き続きビデオの追跡のMilestoneメソッドをサポートしますが、予定されている更新、修正、機能改善はありません。 ご不明な点がある場合は、アドビのアカウントマネージャーにお問い合わせください。
 
 ## 概要 {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -39,14 +39,14 @@ Adobe Analytics for Media を利用すると、メディアの視聴状況など
 
 * **タイムリーな分析** - 複数のチャネル全体でのメディアの主要パフォーマンス指標（長さなど）を参考にし、リアルタイムで的確な意思決定を下すことができます。メインコンテンツのイベントは **10 秒**&#x200B;間隔で計測され、発生したすべてのアクティビティが記録されます。広告トラッキングのイベントは **1 秒**&#x200B;間隔で発生します。
 * **エンゲージメントの促進** - バッファリングの少ないイベントで効果的にユーザーに働きかけることができます。広告をコンテンツ内のどの場所でいつ再生すればいいかを把握することで、邪魔にならないスムーズな体験を実現してユーザーを引き付け、再訪問を促すこともできます。
-* **全体的な写真-すべてのコンテンツ配信者** にわたって複数のデータポイントを組み合わせて、すべてのメディアアクティビティを包括的に把握したり、エンゲージメントやビューを測定したり、 [フェデレーテッド分析](federated-analytics.md) 機能を通じてすべてのチャネルにわたってリッスンしたりできます。
+* **全体的な画像** — すべてのコンテンツ配信者の複数のデータポイントを組み合わせて、すべてのメディアアクティビティを完全に把握し、フェデレーテッド分析機能を使用して、可能なすべてのチャネルにわたるエンゲージメントと表示/リスンを測定し [ます](data-sharing/federated-analytics.md) 。
 * **精度の向上** - 個々の訪問者の時間帯や分単位の同時ビューア数、コンテンツの平均視聴時間など、非常に詳細なレベルで視聴行動を評価できます。
 * **正確な計測** - OTT、スマートフォン、タブレット、デスクトップなど、メディア視聴に使用されたあらゆるデバイス全体でデータを計測し、利用状況のパターンや傾向を監視できます。
 * **セグメント化** - プレーヤー、デバイス、ジャンル、チャプターおよび番組に分類を適用し、全体的な視聴回数、コンテンツ、オーディオおよび広告（またはその組み合わせ）に対するそれぞれの影響度を把握できます。
 
 ## マイルストーンに対するハートビートのメリット {#section_cnj_5st_p1b}
 
-Media for Mediaは、次の2つの方法で測定できます。従来のマイルストーンメソッド（ビデオのみ）および現在のハートビートメソッド（メディアSDKとメディアコレクションAPIの両方に含まれるオーディオおよびビデオ）。推奨の計測方法はハートビートなので、アドビではすべてのお客様に、以下で説明するメリットを得られるようこのバージョンに移行することをお勧めしています。
+Adobe Analytics for mediaは、次の2つの方法で測定できます。従来のMilestoneメソッド（ビデオのみ）と現在のHeartbeatsメソッド（オーディオおよびビデオ、Media SDKとMedia Collection APIの両方で特集）。 推奨の計測方法はハートビートなので、アドビではすべてのお客様に、以下で説明するメリットを得られるようこのバージョンに移行することをお勧めしています。
 
 従来のマイルストーン方式は、ビデオの開始、四分位数、長さ、完了に対応する、Analytics サーバーに対する個々のサーバー呼び出しに基づいています。ハートビート方式は、メインコンテンツを 10 秒間隔で計測するより強力なメディアトラッキングソリューションで、標準化された効果的なメディア指標を参照できます。また、アドビはマイルストーン方式で培ったノウハウを生かし、ハートビート方式で使用するメディア SDK またはメディアコレクション API の実装プロセスを効率化、簡略化しています。
 
@@ -106,8 +106,8 @@ For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup
 
 ## Transport Layer Security {#transport-layer-security}
 
-**TLS Notice——** アドビには、古いセキュリティプロトコルの提供終了を必要とするセキュリティ準拠規格があります。アドビは、引き続き最新のセキュリティプロトコル規格に準拠するために、最新の安全なバージョンを使用するためにTLS1.2の使用を進めています。2019年2月20日から、アドビはTLS1.1以降のみサポートします。この変更により、古いデバイスまたはTLS1.0をデプロイするWebブラウザーを使用したエンドユーザーからデータを収集しなくなります。TLS1.2への移行により、セキュリティが向上しました。移行をスムーズに実施するため、詳細を確認し、変更の計画を立てることが重要です。
+**TLS Notice -- Adobe has security compliance standards that require the end-of-life of older security protocols.** To continue to meet the evolving security protocol standards, Adobe is moving toward the use of TLS 1.2, in order to have the most up-to-date and secure version in use. 2019年2月20日より、アドビはTLS 1.1以降のみをサポートします。 この変更により、古いデバイスやTLS 1.0をデプロイするWebブラウザーを使用しているエンドユーザーからデータが収集されなくなります。TLS 1.2への移行により、セキュリティが向上しました。 移行をスムーズに実施するため、詳細を確認し、変更の計画を立てることが重要です。
 
 >[!NOTE]
 >
->TLSは現在、Webブラウザーやその他のアプリケーションで使用される、ネットワーク上で安全に交換されるために必要なセキュリティプロトコルです。
+>TLSは、現在、Webブラウザーや、ネットワーク経由で安全にデータを交換する必要がある他のアプリケーションで使用される、最も広く導入されているセキュリティプロトコルです。
