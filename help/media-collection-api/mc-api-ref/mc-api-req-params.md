@@ -1,9 +1,9 @@
 ---
 seo-title: リクエストパラメーター
 title: リクエストパラメーター
-uuid: f83e9ef1-803d-4152- a6c7- acaa325036b9
+uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ---
 
@@ -17,14 +17,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `analytics.trackingServer` | はい | `sessionStart` | Adobe Analytics サーバーの URL |
 | `analytics.reportSuite` | はい | `sessionStart` | Analytics レポートデータを識別する ID |
 | `analytics.enableSSL` | いいえ | `sessionStart` | SSL を有効にするかどうか（true または false） |
-| `analytics.visitorId` | いいえ | `sessionStart` | Adobe訪問者IDは、複数のAdobeアプリケーションで使用できるカスタムIDです。The Heartbeat `visitorId` equals the Analytics `VID.` |
+| `analytics.visitorId` | いいえ | `sessionStart` | Adobe訪問者IDは、複数のアドビアプリケーションで使用できるカスタムIDです。 ハートビート `visitorId` はAnalyticsと等しい `VID.` |
 
 ## 訪問者データ
 
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | はい | `sessionStart` | Experience Cloud 組織 ID。Adobe Experience Cloud エコシステム内で組織を識別します。 |
-| `visitor.marketingCloudUserId` | いいえ | `sessionStart` | これは、Experience CloudユーザーID（ECID）です。ほとんどのシナリオでは、これはユーザーを識別するために使用するIDです。The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. 技術的には必須ではありませんが、このパラメーターは、Experience Cloudのアプリケーションにアクセスするために必要です。 |
+| `visitor.marketingCloudUserId` | いいえ | `sessionStart` | This is the Experience Cloud User ID (ECID). ほとんどのシナリオでは、このIDを使用してユーザーを識別します。 ハートビート `marketingCloudUserId` は、Adobe Analytics `MID` の「」と等しいです。 技術的には必須ではありませんが、このパラメーターはExperience cloudアプリのファミリーにアクセスする場合に必要です。 |
 | `visitor.aamLocationHint` | いいえ | `sessionStart` | Adobe Audience Manager Edge データを提供します。 |
 | `appInstallationId` | いいえ | `sessionStart` | アプリとデバイスを一意に識別する appInstallationId |
 
@@ -38,7 +38,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `media.contentType` | はい | `sessionStart` | ストリームの形式（任意の文字列を指定できます。推奨される値は、「Live」、「VOD」または「Linear」です） |
 | `media.playerName` | はい | `sessionStart` | コンテンツのレンダリングをおこなうプレーヤーの名前 |
 | `media.channel` | はい | `sessionStart` | コンテンツの配布チャネル。モバイルアプリケーション名、Web サイト名またはプロパティ名を使用できます。 |
-| `media.resume` | いいえ | `sessionStart` | ユーザーが以前のセッションを再開するかどうかを示します（新しいセッションを開始するのではなく、 |
+| `media.resume` | いいえ | `sessionStart` | ユーザーが（新しいセッションを開始するのではなく）前のセッションを再開しているかどうかを示します。 |
 | `media.sdkVersion` | いいえ | `sessionStart` | プレーヤーで使用される SDK のバージョン |
 
 ## コンテンツ標準メタデータ
@@ -112,17 +112,17 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 >[!NOTE]
 >
->Media Analytics（MA）は、Experience Cloudファミリーアプリ（Adobe Analytics、Audience Manager、Targetなど）に統合されています。これらのアプリにアクセスするには、Experience Cloud ID が必要です。_EIDは、ほとんどのシナリオでユーザーを識別するために使用する必要のあるものです。_
+>Media Analytics(MA)は、Experience cloudアプリのファミリー（Adobe Analytics、Audience Manager、Targetなど）と統合されています。 これらのアプリにアクセスするには、Experience Cloud ID が必要です。_ECIDは、ほとんどのシナリオでユーザーを識別するために使用する必要があるものです。_
 
 ### appInstallationId
 
-* **値&#x200B;*を渡さない*`appInstallationId`場合-** MAバックエンドはMCIDを生成しなくなりますが、代わりにAdobe Analyticsに依存します。MCID を送信する（MCID を取得できる場合）か、（必須の `appInstallationId` と共に）`marketingCloudOrgId` を送信してメディアコレクション API が MCID を生成してすべての呼び出しで送信できるようにすることをお勧めします。
+* **値を&#x200B;*渡さない場*合`appInstallationId`** - MAバックエンドはMCIDを生成しなくなりますが、代わりにAdobe Analyticsを使用して生成します。 MCID を送信する（MCID を取得できる場合）か、（必須の `appInstallationId` と共に）`marketingCloudOrgId` を送信してメディアコレクション API が MCID を生成してすべての呼び出しで送信できるようにすることをお勧めします。
 
-* **値&#x200B;**を渡す`appInstallationId`場合は、（** 必須パラメーターとして）、MAバックエンドによっ *てMCID* を生成 `appInstallationId` すること `marketingCloudOrgId` ができます。自分で `appInstallationId` を渡す場合は、クライアント側でその値を維持する必要があります。この値はデバイス上のアプリに対して一意である必要があり、アプリが再インストールされない限り永続的である必要があります。
+* **値を渡す&#x200B;*場合*- MCIDは`appInstallationId`MAバックエンドで生成できます** 。この場合、と（必須）パラメータの値を渡し **`appInstallationId``marketingCloudOrgId` ます。 自分で `appInstallationId` を渡す場合は、クライアント側でその値を維持する必要があります。この値はデバイス上のアプリに対して一意である必要があり、アプリが再インストールされない限り永続的である必要があります。
 
 >[!NOTE]
 >
->`appInstallationId` アプリケーション *とデバイスを一意に識別*&#x200B;します。この値は各デバイスのアプリごとに一意である必要があります。つまり、異なるデバイスで同じアプリの同じバージョンを使用する 2 人のユーザーは、それぞれ異なる（一意の）`appInstallationId` を送信する必要があります。
+>The `appInstallationId` uniquely identifies the app *and the device*. この値は各デバイスのアプリごとに一意である必要があります。つまり、異なるデバイスで同じアプリの同じバージョンを使用する 2 人のユーザーは、それぞれ異なる（一意の）`appInstallationId` を送信する必要があります。
 
 <!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
 \<ul id="ul_iwc_fqt_pbb"\> 
@@ -131,14 +131,14 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 ### visitor.marketingCloudOrgId
 
-In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/federated-analytics.md))
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/data-sharing/federated-analytics.md))
 
-### AnalyticsレガシーユーザーID（aid）および宣言済みユーザーID（CustomerIDs）
+### Analytics Legacy User ID (aid) and Declared User IDs (customerIDs)
 
-* **analytics. aid:**
+* **analytics.aid:**
 
-   このキーの値は、AnalyticsのレガシーユーザーIDを表す文字列である必要があります
-* **visitor. customerIDs:**
+   The value of this key must be a string that represents the Analytics Legacy User ID
+* **visitor.customerIDs:**
 
    このキーの値は、次の形式のオブジェクトである必要があります。
 
@@ -153,7 +153,7 @@ In addition to being necessary for MCID generation when that is not provided, th
 
 ### visitor.aamLocationHint
 
-このパラメーターは、Adobe Analyticsが顧客データをAudience Managerに送信する際にヒットされるAdobe Audience Manager（AAM） Edgeを示します。このパラメーターを渡さない場合、アドビによって値が 1 にハードコーディングされます。これは、エンドユーザーが地理的に離れた場所（例えば、米国東部、米国西部、ヨーロッパ、アジア）でデバイスを使用する場合に特に重要です。そうでない場合、ユーザーデータは複数の AAM Edge に分散されます。
+このパラメーターは、Adobe Analyticsが顧客データをAudience Managerに送信する際に、どのAdobe Audience Manager(AAM)エッジがヒットされるかを示します。 このパラメーターを渡さない場合、アドビによって値が 1 にハードコーディングされます。これは、エンドユーザーが地理的に離れた場所（例えば、米国東部、米国西部、ヨーロッパ、アジア）でデバイスを使用する場合に特に重要です。そうでない場合、ユーザーデータは複数の AAM Edge に分散されます。
 
 ### media.resume
 
