@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: JavaScript での標準メタデータの実装
 title: JavaScript での標準メタデータの実装
-uuid: 523d29e3-0a62-40d7- ac74- da645024cdcb
+uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
