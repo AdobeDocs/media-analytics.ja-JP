@@ -27,12 +27,12 @@ source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
          * [!UICONTROL Analytics／管理者／カンパニー設定／Web サービス]
          * [!UICONTROL Analytics／管理者／ユーザー管理／ユーザー／個々のユーザーの設定]新しいユーザーの Web サービス API の資格情報を作成するには、[!UICONTROL ユーザー管理]でユーザーを **Web サービスアクセス**&#x200B;ユーザーグループに追加します。
-      * [!UICONTROL デフォルトのエンドポイント] -このフィールドのデータはアドビによって提供され、変更できません。
-      * [!UICONTROL 追加エンドポイント] -これ `CNAMES`らを使用する場合、サーバーの「いいね!"の取り消し `metrics.companyname.com`
-   * **ビデオハートビート（Media Analytics）**
+      * [!UICONTROL デフォルトのエンドポイント] — このフィールドのデータはアドビから提供され、変更できません。
+      * [!UICONTROL Extra Endpoint] — 使 `CNAMES`用する場合は、 `metrics.companyname.com`
+   * **ビデオハートビート(Media Analytics)**
 
-      * [!UICONTROL デフォルトのエンドポイント] -このフィールドのデータはアドビによって提供され、変更できません。
-      * [!UICONTROL Extraエンドポイント] -トラッキングサーバーの場合、例えば `CNAMES`、トラッキングサーバーに対して追加 `metrics.companyname.com`します。
+      * [!UICONTROL デフォルトのエンドポイント] — このフィールドのデータはアドビから提供され、変更できません。
+      * [!UICONTROL 追加のエンドポ] イント `CNAMES`— トラッキングサーバー用に追加します(例： `metrics.companyname.com`)。
 
 
 
