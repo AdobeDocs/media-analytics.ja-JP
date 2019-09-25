@@ -1,7 +1,7 @@
 ---
 seo-title: セットアップの概要
 title: セットアップの概要
-uuid: 06ffeeddb- b0c8-4f7d-90c8- e374cde1695
+uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,17 +12,17 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->次の手順は、2. xメディアSDKに適用されます。メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetimeインテグレーターについては、以下の _Primetime Media SDKドキュメント_ を参照してください。
+>以下の手順は、2.xメディアSDKに適用されます。 メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetimeインテグレーターについては、以下の _Primetime Media SDKドキュメントを参照してください_ 。
 
 
-## プラットフォームバージョンの最小サポート {#minimum-platform-version}
+## 最小プラットフォームバージョンのサポート {#minimum-platform-version}
 
-次の表に、2019年2月20日からの各SDKでサポートされる最小プラットフォームバージョンを示します。
+次の表に、2019年2月20日以降に各SDKでサポートされる最小プラットフォームバージョンを示します。
 
-| OS/ブラウザー | 最小バージョンが必要です |
+| OS/ブラウザ | 最小バージョンが必要です |
 | --- | --- |
 | iOS | iOS 6+ |
-| Android | Android5.0+- Lollipop |
+| Android | Android 5.0以降 — Lollipop |
 | Chrome | v22+ |
 | Mozilla | v27+ |
 | Safari | v7+ |
@@ -37,7 +37,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 次の実装手順を実行します。
 
-1. `MediaHeartbeatConfig` インスタンスを作成し、configパラメーターの値を設定します。
+1. Create a `MediaHeartbeatConfig` instance and set your config parameter values.
 
    |  変数名  | 説明  | 必須 |  デフォルト値  |
    |---|---|:---:|---|
@@ -49,7 +49,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
    | `ssl` | 呼び出しが HTTPS を使用しておこなわれる必要があるかどうかを示します。 | × | false |
    | `debugLogging` | デバッグのログが有効になっているかどうかを示します。 | × | false |
 
-1. 導入 `MediaHeartbeatDelegate`を参照してください。
+1. Implement the `MediaHeartbeatDelegate`.
 
    |  メソッド名  |  説明  | 必須 |
    | --- | --- | :---: |
@@ -58,7 +58,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!TIP]
    >
-   >Quality of Service（QoS）オブジェクトはオプションです。プレーヤーで QoS データが使用可能であり、そのデータを追跡する場合は、以下の変数が必要です。
+   >The Quality of Service (QoS) object is optional. プレーヤーで QoS データが使用可能であり、そのデータを追跡する場合は、以下の変数が必要です。
 
    | 変数名 | 説明   | 必須 |
    | --- | --- | :---: |
@@ -67,7 +67,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
    | `fps` | 1 秒あたりの表示フレーム数。 | ○ |
    | `droppedFrames` | それまでのドロップフレームの数。 | ○ |
 
-1. `MediaHeartbeat` インスタンスを作成します。
+1. Create the `MediaHeartbeat` instance.
 
    Use the `MediaHertbeatConfig` and `MediaHertbeatDelegate` to create the `MediaHeartbeat` instance.
 
@@ -77,7 +77,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!TIP]
    >
-   >`MediaHeartbeat` には、Adobe `AppMeasurement` Analyticsに呼び出しを送信するためのインスタンスが必要です。
+   >`MediaHeartbeat` には、Adobe Analyticsに呼び出し `AppMeasurement` を送信するインスタンスが必要です。
 
 1. すべての要素を組み合わせます。
 
@@ -121,26 +121,28 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ## 検証 {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-Media Analyticsトラッキングの導入では、次の2種類のトラッキングコールが生成されます。
+Media Analyticsのトラッキングの導入では、2種類のトラッキングコールが生成されます。
 
-* メディアおよび広告開始呼び出しは、Adobe Analytics（AppMeasurement）サーバーに直接送信されます。
+* メディアおよび広告開始呼び出しは、Adobe Analytics(AppMeasurement)サーバーに直接送信されます。
 * ハートビート呼び出しは、Media Analytics（ハートビート）トラッキングサーバーに送信され、そこで処理され、Adobe Analyticsサーバーに渡されます。
 
-* **Adobe Analytics（AppMeasurement）サーバー**&#x200B;のトラッキングサーバーオプションについて詳しくは、 [trackingServer変数とtrackingServerSecure変数の適切な設定を参照してください。](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Adobe Analytics (AppMeasurement) server**
+For more information about tracking server options, see [Correctly populate the trackingServer and trackingServerSecure variables.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
-   >Experience Cloud訪問者IDサービスにはRDCサーバーへのRDCトラッキングサーバーまたはCNAME解決が必要です。
+   >An RDC tracking server or CNAME resolving to an RDC server is required for Experience Cloud Visitor ID service.
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics（ハートビート） server**これには常に形式があり`[your_namespace].hb.omtrdc.net`ます。「値」には会社を`[your_namespace]`指定し、アドビによって提供されます。
+* ** Media Analytics (Heartbeats) server**
+This always has the format "`[your_namespace].hb.omtrdc.net`". The value of "" specifies your company, and is provided by Adobe.`[your_namespace]`
 
-メディアトラッキングはあらゆるプラットフォーム、デスクトップ、モバイルで同じように動作します。オーディオトラッキングは、現在モバイルプラットフォームで動作します。すべてのトラッキングコールに共通する、検証が必要な主要ユニバーサル変数がいくつかあります。
+メディアトラッキングはあらゆるプラットフォーム、デスクトップ、モバイルで同じように動作します。オーディオトラッキングは、現在、モバイルプラットフォームで機能します。 すべてのトラッキングコールに共通する、検証が必要な主要ユニバーサル変数がいくつかあります。
 
-## SDK1. xドキュメント {#section_acj_tkk_t2b}
+## SDK 1.x Documentation {#section_acj_tkk_t2b}
 
-| ビデオ分析1. x SDK | 開発者ガイド（PDFのみ） |
+| ビデオ分析1.x SDK |  開発者ガイド（PDFのみ） |
 | --- | --- |
 | Android | [Android 向け設定 ](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Apple TV 向け設定 ](vhl-dev-guide-v1x_appletv.pdf) |
