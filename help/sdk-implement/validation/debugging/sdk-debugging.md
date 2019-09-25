@@ -1,7 +1,7 @@
 ---
 seo-title: SDK のデバッグ
 title: SDK のデバッグ
-uuid: a5972d87- c593-4b4f- a56f- ca6e25268e1
+uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
@@ -10,7 +10,7 @@ source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 # SDK のデバッグ{#sdk-debugging}
 
-ログの有効/無効を切り替えることができます。Media SDKは、メディアトラッキングスタック全体で広範なトレース/ログメカニズムを提供します。You can enable or disable logging by setting the `debugLogging` flag on the Config object.
+ログを有効または無効にすることができます。 Media SDKは、メディアトラッキングスタック全体に広範なトレース/ログメカニズムを提供します。 You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## デバッグログのサンプルコード
 
@@ -46,7 +46,7 @@ mediaConfig.debugLogging = true;
 this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement); 
 ```
 
-### OTT（Chromecast、Roku）
+### OTT(Chromecast、Roku)
 
 ADBMobile ライブラリでは、`setDebugLogging` メソッドを利用してデバッグのログを記録できます。すべての実稼働アプリケーションに対してデバッグのログを `false` に設定してください。
 
@@ -71,7 +71,7 @@ ADBMobile.config.setDebugLogging(true)
 
 >[!IMPORTANT]
 >
->2017年4月30日から、Adobe Bloodhoundが夕日になりました。2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
+>2017年4月30日現在、Adobe Bloodhoundは日没しています。 2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
 
 ## ログメッセージ
 
@@ -91,7 +91,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag：**&#x200B;ログメッセージを発行したサブコンポーネントの名前（通常、クラス名）
 * **message：**&#x200B;実際のトレースメッセージ
 
-Media SDKライブラリによるログ出力を使用して、実装を検証できます。A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
+Media SDKライブラリのログ出力を使用して、実装を検証できます。 A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
 
 For instance, this is what the logs filtered for `#track` could look like:
 
