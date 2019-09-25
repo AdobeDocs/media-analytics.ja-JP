@@ -90,7 +90,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS  
+### iOS
 
 iOS でこのシナリオを表示するには、以下のコードを設定します。
 
