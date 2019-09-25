@@ -1,7 +1,7 @@
 ---
 seo-title: メディアの概要
 title: メディアの概要
-uuid: bdbd998f-9b5e-40c9- a8ea-12dfa5acd35c
+uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
@@ -24,7 +24,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 クリックおよびドラッグしてズームインし、マウスポインターを置いて特定のメディアの詳細な指標を表示します。クリック  ![](assets/video-overview-report-revert.png)
 
-を指定すると、ズーム後にビューがリセットされます。
+をクリックします。
 
 ![](assets/media_overview_zoom.png){width="400px"}
 
