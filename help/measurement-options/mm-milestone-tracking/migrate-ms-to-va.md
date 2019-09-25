@@ -1,7 +1,7 @@
 ---
 seo-title: マイルストーンから Media Analytics への移行
 title: マイルストーンから Media Analytics への移行
-uuid: fdc96146- af63-48ce- b938- c0ca70729277
+uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 概要 {#section_ihl_nbz_cfb}
 
-マイルストーンと Media Analytics では、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。Media Analytics ソリューションはマイルストーンが発展したものであるので、多くのメソッドや指標は同じです。ただし、設定のアプローチやコードは大幅に変更されています。新しい Media Analytics のメソッドを指すようにプレーヤーのイベントコードを更新できる必要があります。See [SDK Overview](/help/sdk-implement/setup/setup-overview.md) and [Tracking Overview](/help/sdk-implement/track-av-playback/track-core-overview.md) for more details on implementing Media Analytics.
+マイルストーンと Media Analytics では、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。Media Analytics ソリューションはマイルストーンが発展したものであるので、多くのメソッドや指標は同じです。ただし、設定のアプローチやコードは大幅に変更されています。新しい Media Analytics のメソッドを指すようにプレーヤーのイベントコードを更新できる必要があります。See SDK Overview and Tracking Overview for more details on implementing Media Analytics.[](/help/sdk-implement/setup/setup-overview.md)[](/help/sdk-implement/track-av-playback/track-core-overview.md)
 
 以下の表では、マイルストーンソリューションと Media Analytics ソリューション間の変更について説明します。
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 | マイルストーンの指標 | 変数の種類 | Media Analytics の指標 |
 | --- | --- | --- |
-| コンテンツ | eVar<br/><br/>Default expiration: Visit | コンテンツ |
+| コンテンツ | eVarDefault<br/><br/>expiration:訪問 | コンテンツ |
 | コンテンツタイプ | eVar<br/><br/> Default expiration: Page view | コンテンツタイプ |
 | コンテンツ視聴時間 | Event<br/><br/> Type: Counter | コンテンツ視聴時間 |
 | ビデオ開始 | Event<br/><br/> Type: Counter | ビデオ開始 |
@@ -64,15 +64,7 @@ Media.contextDataMapping
 </td>
 <td>
 <pre>
-s. Media. contextDataMapping={"a.
- media. name":"eVar2， prop2"，"a.
- media. segment":"eVar3"，"a.
- contentType":"eVar1"，"a.
- media. timePlayed":"event3"，"a.
- media. view":"event1"，"a.
- media. segmentView":"event2"，"a.
- media. complete":"event7"，"a.
- media. milestones":{25:"event4"，50:"event5"，75:"event6"}};
+s.Media.contextDataMapping = { "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.view":"event1, "a.media.media.media.mediasegmentView":"event2", "a.media.complete":"event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
 </pre>
 </td>
 <td>該当なし
@@ -86,12 +78,7 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s. Media. trackVars=
-"events，
- prop2，
- eVar1，
- eVar2，
- eVar3";
+s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
 </pre>
 </td>
 <td>該当なし
@@ -105,14 +92,14 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s. Media. trackEvents=
-"event1，
- event2，
- event3，
- event4，
- event5，
- event6，
- event7"
+s.Media.trackEvents = 
+  "event1,
+  event2,
+  event3,
+  event4,
+  event5,
+  event6,
+  event7"
 </pre>
 </td>
 <td>該当なし
@@ -160,8 +147,8 @@ Media.autoTrackNetStreams
 <td>
 <pre>
 s.Media.
-  autoTrackNetStreams=
- true
+  autoTrackNetStreams
+  = true
 </pre>
 </td>
 <td>該当なし
@@ -176,8 +163,8 @@ Media.completeByCloseOffset
 <td>
 <pre>
 s.Media.
-  completeByCloseOffset=
- true
+  completeByCloseOffset
+  = true
 </pre>
 </td>
 <td>該当なし
@@ -192,7 +179,7 @@ Media.completeCloseOffsetThreshold
 <td>
 <pre>
 s.Media.
-  completeCloseOffsetThreshold=1
+  completeCloseOffsetThreshold = 1
 </pre>
 </td>
 <td>該当なし
@@ -210,8 +197,8 @@ s.Media.playerName = "Custom Player Name"
 </pre>
 </td>
 <td>
-SDK Key:playerName;
-APIキー:media. playerName
+SDK Key: playerName; 
+API Key: media.playerName
 </td>
 <td>
 <pre>
@@ -228,7 +215,7 @@ Media.trackSeconds
 <td>
 <pre>
 s.Media.
-  trackSeconds=15
+  trackSeconds = 15
 </pre>
 </td>
 <td>該当なし
@@ -243,7 +230,7 @@ Media.trackMilestones
 <td>
 <pre>
 s.Media.
-  trackMilestones="25,50,75";
+  trackMilestones = "25,50,75";
 </pre>
 </td>
 <td>該当なし
@@ -258,7 +245,7 @@ Media.trackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  trackOffsetMilestones="20,40,60";
+  trackOffsetMilestones = "20,40,60";
 </pre>
 </td>
 <td>該当なし
@@ -287,8 +274,7 @@ Media.segmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  segmentByOffsetMilestones=
- true;
+  segmentByOffsetMilestones = true;
 </pre>
 </td>
 <td>該当なし
@@ -322,7 +308,7 @@ Media.adTrackSeconds
 <td>
 <pre>
 s.Media.
-  adTrackSeconds=15
+  adTrackSeconds = 15
 </pre>
 </td>
 <td>該当なし
@@ -337,7 +323,8 @@ Media.adTrackMilestones
 <td>
 <pre>
 s.Media.
-  adTrackMilestones="25,50,75";
+  adTrackMilestones
+  = "25,50,75";
 </pre>
 </td>
 <td>該当なし
@@ -352,7 +339,8 @@ Media.adTrackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adTrackOffsetMilestones="20,40,60";
+  adTrackOffsetMilestones
+  = "20,40,60";
 </pre>
 </td>
 <td>該当なし
@@ -367,8 +355,7 @@ Media.adSegmentByMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByMilestones=
- true;
+  adSegmentByMilestones = true;
 </pre>
 </td>
 <td>該当なし
@@ -383,8 +370,7 @@ Media.adSegmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByOffsetMilestones=
- true;
+  adSegmentByOffsetMilestones = true;
 </pre>
 </td>
 <td>該当なし
@@ -427,14 +413,13 @@ trackSessionStart
 </td>
 <td>
 <pre>
-trackSessionStart（MediaObject，
-contextData）
+trackSessionStart( mediaObject, contextData)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-mediaName-（必須）ビデオレポートに表示するビデオの名前。
+mediaName — （必須）ビデオレポートに表示するビデオの名前。
 </td>
 <td>
 <pre>
@@ -448,16 +433,13 @@ name
 </td>
 <td>
 <pre>
-createMediaObject（name，
-mediaID、
-length、
-StreamType）
+createMediaObject( name, mediaId, length, streamType)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-mediaLength-（必須）ビデオの長さ（秒単位）。
+mediaLength — （必須）ビデオの長さ（秒）。
 </td>
 <td>
 <pre>
@@ -471,16 +453,14 @@ length
 </td>
 <td>
 <pre>
-createMediaObject（name，
-mediaID、
-length、
-StreamType）
+createMediaObject( name, mediaId, length, streamType)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-mediaPlayerName-（必須）ビデオレポートに表示するために使用するメディアプレイヤーの名前。
+mediaPlayerName - (Required) The name of the media player used to view the video, 
+as you want it to appear in video reports.
 </td>
 <td>
 <pre>
@@ -515,22 +495,17 @@ trackEvent
 </td>
 <td>
 <pre>
-MediaHeartbeat. trackEvent（MediaHeartbeat.
- イベント.
-    AdBreakStart、
-AdBreakObject）;
-…
-trackEvent（MediaHeartbeat.
- イベント.
-    AdStart，
-AdObject、
-AdCustomMetadata）;
+mediaHeartbeat.trackEvent( mediaHeartbeat.
+    イベント.
+    AdBreakStart、adBreakObject);...trackEvent( mediaHeartbeat.
+    イベント.
+    AdStart、adObject、adCustomMetadata);
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-name-（必須）広告の名前またはID。
+name — （必須）広告の名前またはID。
 </td>
 <td>
 <pre>
@@ -544,10 +519,7 @@ name
 </td>
 <td>
 <pre>
-createAdObject（name，
-aId，
-position，
-length）
+createAdObject( name, adId, position, length)
 </pre>
 </td>
 </tr>
@@ -567,16 +539,14 @@ length
 </td>
 <td>
 <pre>
-createAdObject（name，
-aId，
-position，
-length）
+createAdObject( name, adId, position, length)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-playerName-（必須）広告の表示に使用されるメディアプレイヤーの名前。
+playerName - (Required) The name of the media
+player used to view the ad.
 </td>
 <td>
 <pre>
@@ -597,7 +567,7 @@ MediaHeartbeatConfig.
 </tr>
 <tr>
 <td>
-parentName-広告が埋め込まれるプライマリコンテンツの名前またはID。
+parentName — 広告が埋め込まれるプライマリコンテンツの名前またはID。
 </td>
 <td>
 <pre>
@@ -611,7 +581,7 @@ parentName
 </tr>
 <tr>
 <td>
-parentPod-広告が再生されたプライマリコンテンツ内の位置。
+parentPod — 広告が表示されたプライマリコンテンツ内の位置。
 </td>
 <td>
 <pre>
@@ -625,15 +595,13 @@ position
 </td>
 <td>
 <pre>
-createAdBreakObject（name，
-position，
-startTime）
+createAdBreakObject( name, position, startTime)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-parentPodPosition-広告が再生されるポッド内の位置。
+parentPodPosition — 広告が表示されるポッド内の位置。
 </td>
 <td>
 <pre>
@@ -647,16 +615,14 @@ position
 </td>
 <td>
 <pre>
-createAdObject（name，
-aId，
-position，
-length）
+createAdObject( name, adId, position, length)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-CPM:この再生に適用されるCPMまたは暗号化されたCPM（"~"のプレフィックスが付く）。
+CPM
+The CPM or encrypted CPM (prefixed with a "~") that applies to this playback.
 </td>
 <td>
 <pre>
@@ -665,7 +631,7 @@ CPM
 </td>
 <td>該当なし
 </td>
-<td>Media Analyticsではデフォルトで使用不可
+<td>Media Analyticsではデフォルトでは使用できません
 </td>
 </tr>
 <tr>
@@ -769,13 +735,13 @@ trackPause()
 </pre> 
  または
 <pre>
-trackEvent（MediaHeartbeat.
- イベント.
+trackEvent( mediaHeartbeat.
+  イベント.
   SeekStart)
 </pre>  または
 <pre>
-trackEvent（MediaHeartbeat.
- イベント.
+trackEvent( mediaHeartbeat.
+  イベント.
   BufferStart);
 </pre>
 </td>
@@ -795,25 +761,16 @@ s.Media.monitor(s, media)
 </td>
 <td>
 <pre>
-var customVideoMetadata={isUserLoggedIn:
-"false"、tvStation:
-"Sample TV Station"、プログラマー:
-"Sampleプログラマー」};
-…
-var StandardVideoMetadata
-={};
-StandardVideoMetadata[MediaHeartbeat.
- VideoMetadataKeys.
-   EPISSE]=
-「サンプルエピソード」;
-StandardVideoMetadata[MediaHeartbeat.
- VideoMetadataKeys.
-   SHOW]="Sample Show";
-…
-MediaObject. setValue（MediaHeartbeat.
- MediaObjectKey.
- StandardVideoMetadata、
-StandardVideoMetadata）;
+var customVideoMetadata = { isUserLoggedIn:
+    "false", tvStation:
+    「サンプルTV局」、プログラマ：
+    "Sample programmer"};...var standardVideoMetadata = {};standardVideoMetadata [MediaHeartbeat.
+   VideoMetadataKeys.
+   EPISODE] = "Sample Episode";standardVideoMetadata [MediaHeartbeat.
+   VideoMetadataKeys.
+   SHOW] = "Sample Show";...mediaObject.setValue( mediaHeartbeat.
+  MediaObjectKey。
+  StandardVideoMetadata、standardVideoMetadata);
 </pre>
 </td>
 </tr>
