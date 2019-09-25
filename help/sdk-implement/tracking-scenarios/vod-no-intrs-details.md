@@ -1,7 +1,7 @@
 ---
 seo-title: 広告のない VOD 再生
 title: 広告のない VOD 再生
-uuid: ee2a1b79-2c2f-42e1-8e81- b62bdd0d8cb
+uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 translation-type: tm+mt
 source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
@@ -31,11 +31,11 @@ Heartbeat 呼び出し時に確認される同じ値の多くは、Adobe Analyti
 |---|---|---|
 | `s:sc:rsid` | &lt;Adobe レポートスイート ID&gt; |  |
 | `s:sc:tracking_server` | &lt;Analytics トラッキングサーバー URL&gt; |  |
-| `s:user:mid` | 設定される必要がある | `Adobe Analytics Content Start` 呼び出しのmid値と一致する必要があります。 |
+| `s:user:mid` | 設定される必要がある | Should match the mid value on the `Adobe Analytics Content Start` call. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
 | `s:asset:media_id` | &lt;メディア名&gt; |  |
-| `s:meta:*` | オプション | メディアに設定されたカスタムメタデータ。 |
+| `s:meta:*` | オプション | メディアに設定されるカスタムメタデータ。 |
 
 ## Heartbeat Content Play {#section_2ABBD51D3A6D45ABA92CC516E414417A}
 
@@ -48,14 +48,14 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 
 ## Content Heartbeats {#section_3B5945336E464160A94518231CEE8F53}
 
-メディアの再生中に、タイマーは少なくとも1つのハートビートを10秒ごとに送信します。それらのハートビートには、再生、広告、バッファーなどに関する情報が含まれています。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外ですが、重要な問題は、ハートビートは、再生が続く間、常にトリガーされるということです。
+メディアの再生中、タイマーは10秒ごとに少なくとも1つのハートビートを送信します。 それらのハートビートには、再生、広告、バッファーなどに関する情報が含まれています。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外ですが、重要な問題は、ハートビートは、再生が続く間、常にトリガーされるということです。
 
 Content Heartbeats で、以下のパラメーターを探します。
 
 | パラメーター | 値 | メモ   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;再生ヘッド位置&gt;例:50,60,70 | このパラメーターは、再生ヘッドの現在の位置を反映します。 |
+| `l:event:playhead` | &lt;再生ヘッドの位置&gt;例：50,60,70 | このパラメーターは、再生ヘッドの現在の位置を反映します。 |
 
 ## Heartbeat Content Complete {#section_33BCC4C3181940C39446A57C25D82179}
 
