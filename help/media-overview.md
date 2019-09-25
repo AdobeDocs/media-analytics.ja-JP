@@ -14,7 +14,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy Milestone video implementation. すべてのお客様に、2 つの最新のメディアトラッキングソリューションのどちらかまたは両方に移行して、強化された機能と拡張された計測機能を利用することをお勧めします。最新のソリューションに移行する利点については、[以下](media-overview.md#section_cnj_5st_p1b)を参照してください。引き続きビデオの追跡のMilestoneメソッドをサポートしますが、予定されている更新、修正、機能改善はありません。 ご不明な点がある場合は、アドビのアカウントマネージャーにお問い合わせください。
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 従来のMilestoneビデオ実装に関する手順は含まれません。 すべてのお客様に、2 つの最新のメディアトラッキングソリューションのどちらかまたは両方に移行して、強化された機能と拡張された計測機能を利用することをお勧めします。最新のソリューションに移行する利点については、[以下](media-overview.md#section_cnj_5st_p1b)を参照してください。引き続きビデオの追跡のMilestoneメソッドをサポートしますが、予定されている更新、修正、機能改善はありません。 ご不明な点がある場合は、アドビのアカウントマネージャーにお問い合わせください。
 
 ## 概要 {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -102,11 +102,11 @@ Adobe Analytics for Media は業界とともに進化しており、強力なデ
 | **Sony PS3／PS4** |  | ![](assets/icon-blue-check.png) |
 | **（その他／新しいコネクテッドデバイス）** |  | ![](assets/icon-blue-check.png) |
 
-For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+メディアSDKについては、最小プラットフォームバージ [ョンのサポートも参照してください。](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
 ## Transport Layer Security {#transport-layer-security}
 
-**TLS Notice -- Adobe has security compliance standards that require the end-of-life of older security protocols.** To continue to meet the evolving security protocol standards, Adobe is moving toward the use of TLS 1.2, in order to have the most up-to-date and secure version in use. 2019年2月20日より、アドビはTLS 1.1以降のみをサポートします。 この変更により、古いデバイスやTLS 1.0をデプロイするWebブラウザーを使用しているエンドユーザーからデータが収集されなくなります。TLS 1.2への移行により、セキュリティが向上しました。 移行をスムーズに実施するため、詳細を確認し、変更の計画を立てることが重要です。
+**TLS通知 — アドビには** 、古いセキュリティプロトコルの提供終了を必要とするセキュリティコンプライアンス標準が用意されています。 アドビは、進化するセキュリティプロトコル標準を引き続き満たすために、最新で安全なバージョンを使用するために、TLS 1.2の使用に取り組んでいます。 2019年2月20日より、アドビはTLS 1.1以降のみをサポートします。 この変更により、古いデバイスやTLS 1.0をデプロイするWebブラウザーを使用しているエンドユーザーからデータが収集されなくなります。TLS 1.2への移行により、セキュリティが向上しました。 移行をスムーズに実施するため、詳細を確認し、変更の計画を立てることが重要です。
 
 >[!NOTE]
 >
