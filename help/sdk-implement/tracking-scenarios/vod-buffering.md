@@ -1,7 +1,7 @@
 ---
 seo-title: バッファリングがある VOD 再生
 title: バッファリングがある VOD 再生
-uuid: 958f7692-7193-40fb- a8e7-2ff4fa805330
+uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -103,7 +103,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS  
+### iOS
 
 iOS でこのシナリオを表示するには、以下のコードを設定します。
 
