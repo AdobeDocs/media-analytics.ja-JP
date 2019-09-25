@@ -2,7 +2,7 @@
 seo-title: プリロール広告のある VOD 再生
 title: プリロール広告のある VOD 再生
 description: このシナリオでは、メインコンテンツの前にプリロール広告が挿入されています。
-seo-description: Adobe Media Analyticsのこのシナリオでは、プリロール広告はメインコンテンツの前に挿入されています。
+seo-description: Adobe Media Analyticsのこのシナリオでは、メインコンテンツの前にプリロール広告が挿入されています。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
@@ -24,8 +24,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 広告 #2 の最初のフレームが再生される。 | `trackEvent:AdStart` | Analytics Ad Start、Heartbeat Ad Start |  |
 | 広告が再生される。 |  | Ad Heartbeats |  |
 | 広告 #2の再生が完了する。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | 広告の終わりとポッドの終わりに達しました。 |
-| コンテンツが再生される。 |  | Content Heartbeats | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| コンテンツが再生される。 |  | Content Heartbeats | このネットワーク呼び出しは、広告のない [VOD再生シナリオと同じです](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
+| コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、広告のない [VOD再生シナリオと同じです](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
 | セッションが終了する | `trackSessionEnd` |  | `SessionEnd` |
 
 ## パラメーター {#section_33CDFB6CB230437480B67A3D149EC44E}
@@ -178,7 +178,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS-** iOSでこのシナリオを表示するには、次のコードを設定します。
+* **iOS -** iOSでこのシナリオを表示するには、次のコードを設定します。
 
    ```
    //  Set up mediaObject 
@@ -282,7 +282,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript** JavaScriptでこのシナリオを表示するには、次のテキストを入力します。
+* **JavaScript To view this scenario in JavaScript, enter the following text:**
 
    ```js
    // Set up mediaObject 
@@ -748,7 +748,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript** JavaScriptでこのシナリオを表示するには、次のテキストを入力します。
+* **JavaScript** javaScriptでこのシナリオを表示するには、次のテキストを入力します。
 
    ```js
    // Set up mediaObject 
