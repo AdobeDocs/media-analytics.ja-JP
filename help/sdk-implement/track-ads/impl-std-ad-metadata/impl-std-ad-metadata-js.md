@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: JavaScript での標準広告メタデータの実装
 title: JavaScript での標準広告メタデータの実装
-uuid: 4ea10c5a- ae2b-45d0- aad3-9f10028ee7c3
+uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 translation-type: tm+mt
 source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
