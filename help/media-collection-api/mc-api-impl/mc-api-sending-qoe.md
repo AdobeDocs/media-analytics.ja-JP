@@ -14,5 +14,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!NOTE]
 >
->You should check the [JSON validation schemas](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md) to verify parameter types and whether they are mandatory or optional.
+>[JSON検証スキーマを確認して、パラメーターの種類](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md) 、および必須かオプションかを検証する必要があります。
 
