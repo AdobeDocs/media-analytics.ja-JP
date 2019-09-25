@@ -1,7 +1,7 @@
 ---
 seo-title: Roku でのシークの追跡
 title: Roku でのシークの追跡
-uuid: 0572252b-397f-4aa2- b4b5- c5346b75244a
+uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
