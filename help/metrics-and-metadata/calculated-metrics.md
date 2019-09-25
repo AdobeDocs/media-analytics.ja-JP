@@ -1,7 +1,7 @@
 ---
 seo-title: 計算指標
 title: 計算指標
-uuid: 9dd35155-58aa-4f05-896e- c5cbc4b13d59
+uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 translation-type: tm+mt
 source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
 
@@ -12,13 +12,13 @@ source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
 
 >[!NOTE]
 >
->これらの計算指標は2018年9月13日に導入されました。
+>これらの計算指標は2018年9月14日に導入されました。
 
 | 指標 | 説明 | 数式 |
 |---|---|---|
 | メディアストリームあたりの平均広告数 | メディア開始ごとの広告開始 | `Ad Starts / Media Starts` |
 | メディアストリームあたりの平均チャプター数 | メディア開始ごとのチャプター開始 | `Chapter Start / Media Starts` |
-| 平均メディア視聴時間 | メディア開始ごとの合計滞在時間（HH:MM:SS） | `Media Time Spent / Media Starts` |
+| 平均メディア視聴時間 | メディア開始別滞在時間の合計(HH:MM:SS) | `Media Time Spent / Media Starts` |
 | 平均コンテンツ視聴時間 | コンテンツ開始あたりのコンテンツ視聴時間（HH:MM:SS） | `Content Time Spent / Content Start` |
 | 平均広告滞在時間 | 広告開始あたりの広告滞在時間（HH:MM:SS） | `Ad Time Spent / Ad Start` |
 | 平均チャプター閲覧時間 | チャプター開始あたりのチャプター閲覧時間（HH:MM:SS） | `Chapter Time Spent / Chapter Start` |
