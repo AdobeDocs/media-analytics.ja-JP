@@ -1,7 +1,7 @@
 ---
 seo-title: JavaScript のセットアップ
 title: JavaScript のセットアップ
-uuid: 0269d8ad-0af8-4bf1-9d15- e06c2952a005
+uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,8 +12,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 前提条件
 
-* **有効な設定パラメーターの取得**&#x200B;これらのパラメーターは、Analyticsアカウントをセットアップした後、アドビの担当者から取得できます。
-* **JavaScript用の実装メディアアプリケーションについ`AppMeasurement`て」を参照してください。Adobe Mobile SDKドキュメントの詳細につい**&#x200B;ては、"JavaScriptを使用したAnalytics [の実装」を参照してください。](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
+* **有効な設定パラメーターの取得**&#x200B;これらのパラメーターは、Analyticsアカウントを設定した後、アドビの担当者から取得できます。
+* **メディアア`AppMeasurement`プリケーションへのJavaScriptの実装** Adobe Mobile SDKドキュメントについて詳しくは、JavaScriptを使用したAnalyticsの実装を [参照してください。](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. [ダウンロードした](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)ライブラリをプロジェクトに追加します。利便性のために、クラスへのローカル参照を作成します。
 
-   1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded.
+   1. ダウンロードした `MediaSDK-js-v2.*.zip` ファイルを展開します。
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
 
    1. Host the `MediaSDK.min.js` file.
@@ -52,7 +52,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
    ```
 
-1. `MediaHeartbeatConfig` インスタンスを作成します。
+1. Create a `MediaHeartbeatConfig` instance.
 
    ここでは、`MediaHeartbeat` 設定パラメーターと、正確な追跡のために `MediaHeartbeat` インスタンスに正しい設定値を設定する方法について説明します。
 
@@ -70,7 +70,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaConfig.ovp = Configuration.HEARTBEAT.OVP; 
    ```
 
-1. `MediaHeartbeatDelegate` プロトコルを実装します。
+1. Implement the `MediaHeartbeatDelegate` protocol.
 
    ```js
    var mediaDelegate = new MediaHeartbeatDelegate(); 
@@ -86,7 +86,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    };
    ```
 
-1. `MediaHeartbeat` インスタンスを作成します。
+1. Create the `MediaHeartbeat` instance.
 
    Use the `MediaHeartbeatConfig` and `MediaHeartbeatDelegate` to create the `MediaHeartbeat` instance.
 
@@ -100,7 +100,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >`MediaHeartbeat` には、Adobe `AppMeasurement` Analyticsに呼び出しを送信するためのインスタンスが必要です。以下に、`AppMeasurement` インスタンスの例を示します。
+   >`MediaHeartbeat` には、Adobe Analyticsに呼び出し `AppMeasurement` を送信するインスタンスが必要です。 以下に、`AppMeasurement` インスタンスの例を示します。
 
    ```js
    var appMeasurement = new AppMeasurement(); 
