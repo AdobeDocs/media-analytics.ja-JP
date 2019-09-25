@@ -1,7 +1,7 @@
 ---
 seo-title: チャプターが 1 つある VOD 再生
 title: チャプターが 1 つある VOD 再生
-uuid: 1566a6f5- cf22-42e7-8e1a-6976c6c4e649
+uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -25,7 +25,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | チャプターが完了する。 | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | チャプターの終わりに達したとき。 |
 | コンテンツが再生される。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端に到達したことを意味します。このAPIは、ユーザーがメディアを最後まで視聴していない場合でも呼び出す必要があります。 |
+| セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端に到達したことを意味します。このAPIは、ユーザーがメディアを視聴せずに完了するまで呼び出す必要があります。 |
 
 ## パラメーター {#section_869319D99A474FEA8EA840415EA97FBD}
 
@@ -114,7 +114,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS  
+### iOS
 
 iOS でこのシナリオを表示するには、以下のコードを設定します。
 
@@ -327,7 +327,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS  
+### iOS
 
 iOS でこのシナリオを表示するには、以下のコードを設定します。
 
