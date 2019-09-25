@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Roku での標準メタデータの実装
 title: Roku での標準メタデータの実装
-uuid: ae14d809-343f-452c-832a- f94bd3d83a90
+uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 標準メタデータオブジェクトをインスタンス化し、必要な変数を設定して、メディアハートビートオブジェクトでメタデータオブジェクトを設定します。
 
-**Video:**
+**ビデオ:**
 
 ```
 standardMetadata = {} 
