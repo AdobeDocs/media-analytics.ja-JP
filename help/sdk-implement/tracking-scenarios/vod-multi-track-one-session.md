@@ -1,7 +1,7 @@
 ---
 seo-title: 複数のセッションに対する 1 つの VOD トラッカー
 title: 複数のセッションに対する 1 つの VOD トラッカー
-uuid: 355c83f4-52bd-4bdd-92dc- ab506e412d0a
+uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -183,7 +183,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS  
+### iOS
 
 To create two instances of `MediaHeartbeat` for two media players, enter the following:
 
