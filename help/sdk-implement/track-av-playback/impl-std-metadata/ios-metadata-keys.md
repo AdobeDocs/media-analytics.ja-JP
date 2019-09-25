@@ -1,7 +1,7 @@
 ---
 seo-title: iOS のメタデータキー
 title: iOS のメタデータキー
-uuid: 8eb90111- c9dd-4ca7-9766-91530a8ae6cf
+uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
