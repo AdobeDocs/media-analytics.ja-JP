@@ -1,7 +1,7 @@
 ---
 seo-title: Roku のセットアップ
 title: Roku のセットアップ
-uuid: 904dfda0-4782-41da- b4ab-212e81156633
+uuid: 904dfda0-4782-41da-b4ab-212e81156633
 translation-type: tm+mt
 source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
@@ -12,7 +12,7 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ## 前提条件
 
-* **ハートビートの有効な設定パラメーターの取得**&#x200B;これらのパラメーターは、メディア分析アカウントを設定した後、アドビの担当者から取得できます。
+* **ハートビート用の有効な設定パラメーターの取得**&#x200B;これらのパラメーターは、メディア分析アカウントを設定した後、アドビの担当者から取得できます。
 * **メディアプレーヤーで以下の機能を設定します。**
    * _プレーヤーイベントをサブスクライブするための API_ - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * _プレーヤー情報を提供する API_ - メディア名や再生ヘッドなどの情報がこれに該当します。
@@ -27,11 +27,11 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
 
 1. [ダウンロードした](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Roku ライブラリをプロジェクトに追加します。
 
-   1. `AdobeMobileLibrary-2.*-Roku.zip` ダウンロードファイルは、次のソフトウェアコンポーネントで構成されています。
+   1. The `AdobeMobileLibrary-2.*-Roku.zip` download file consists of the following software components:
 
-      * `adbmobile.brs`:このライブラリファイルは、Rokuアプリケーションソースフォルダーに含まれます。
+      * `adbmobile.brs`:このライブラリファイルはRokuアプリのソースフォルダーに含まれます。
 
-      * `ADBMobileConfig.json`:このSDK設定ファイルは、アプリケーション用にカスタマイズされます。
+      * `ADBMobileConfig.json`:このSDK設定ファイルは、アプリ用にカスタマイズされています。
    1. プロジェクトソースに、ライブラリファイルと JSON 設定ファイルを追加します。
 
       Adobe Mobile の設定に使用する JSON には、`mediaHeartbeat` という名前のメディアハートビート専用のキーがあります。メディアハートビートの設定パラメーターは、このキーに属しています。
@@ -114,7 +114,7 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
 
    >[!IMPORTANT]
    >
-   >`@AdobeOrg`必ず含めてください。
+   >Ensure that you include `@AdobeOrg`.
 
    設定が完了すると、Experience Cloud 訪問者 ID が生成され、すべてのヒットに含まれます。Other Visitor IDs, such as `custom` and `automatically-generated`, continue to be sent with each hit.
 
@@ -127,8 +127,8 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
    |  メソッド   | 説明 |
    | --- | --- |
    | `visitorMarketingCloudID` | Retrieves the Experience Cloud visitor ID from the visitor ID service.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | Experience Cloud 訪問者 ID とともに、各訪問者に関連付けることができる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。This method corresponds to `setCustomerIDs`. For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | SDKに広告のRoku ID（RIDA）を設定するために使用します。For example: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>`"<sample_roku_identifier_for_advertising>")`<br/><br/><br/>Roku SDK [GetRida（）](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) APIを使用して広告のRoku ID（RIA）を取得します。 |
+   | `visitorSyncIdentifiers` | Experience Cloud 訪問者 ID とともに、各訪問者に関連付けることができる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドはに対応しま `setCustomerIDs`す。 For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `setAdvertisingIdentifier` | SDK上の広告用Roku ID(RIDA)の設定に使用します。 For example: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` Roku SDK <br/><br/><br/>getRIDA() [](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) APIを使用して、広告用のRoku IDを取得します。 |
 
    <!--
     Roku Api Reference: 
