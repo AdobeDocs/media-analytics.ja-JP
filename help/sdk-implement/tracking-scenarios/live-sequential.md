@@ -16,7 +16,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 
 これは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じシナリオですが、コンテンツの一部はスクラブされ、メインコンテンツのあるポイントから別のポイントまでのシークが完了します。
 
-| トリガー | ハートビートメソッド |  ネットワーク呼び出し |  メモ   |
+| トリガー | ハートビートメソッド |  Network calls  |  メモ   |
 | --- | --- | --- | --- |
 | ユーザーが[!UICONTROL 再生]をクリックする | trackSessionStart | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
 | コンテンツ再生の最初のフレーム。 | trackPlay | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
@@ -38,7 +38,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:user:mid` | `s:user:mid` | Adobe Analytics Content Start 呼び出しの mid 値と一致する必要がある |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;メディア名&gt; |  |
+| `s:asset:media_id` | &lt;Your Media Name&gt; |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *オプション* | メディア上のカスタムメタデータセット |
 
@@ -53,7 +53,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-メディアの再生中に、1つ以上のハートビートをメインコンテンツに対して10秒おき、広告に対して1秒おきに送信するタイマーがあります。 それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
+During media playback, there is a timer that will send one or more heartbeats every 10 seconds for main content, and every one second for ads. それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
 
 Content Heartbeats では、いくつかの特定の事柄を探します。
 
