@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: iOS での標準メタデータの実装
 title: iOS での標準メタデータの実装
-uuid: 75a80f08-4a95-49d4- a27a-8ce531d64d31
+uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
