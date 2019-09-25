@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: iOS での標準広告メタデータの実装
 title: iOS での標準広告メタデータの実装
-uuid: f15fb727-5a5b-46c5- bf12-93b376c10fd1
+uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
