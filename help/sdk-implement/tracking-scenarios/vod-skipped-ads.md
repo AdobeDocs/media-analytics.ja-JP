@@ -1,7 +1,7 @@
 ---
 seo-title: 広告がスキップされた VOD 再生
 title: 広告がスキップされた VOD 再生
-uuid: f3ab3524- abcb-4051- b64e- a1aad6e3dd3f
+uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -123,7 +123,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS  
+### iOS
 
 このシナリオを表示するには、以下のテキストを入力します。
 
