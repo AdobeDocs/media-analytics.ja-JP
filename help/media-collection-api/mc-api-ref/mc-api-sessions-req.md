@@ -1,7 +1,7 @@
 ---
 seo-title: Sessions リクエスト
 title: Sessions リクエスト
-uuid: 9609192d-4f7f-4fb5-844f- ea89d47c4e30
+uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 translation-type: tm+mt
 source-git-commit: f1c9f5f4cbcd4c043e1c7b4a5037c134b2bdd380
 
@@ -21,7 +21,7 @@ None
 
 ## リクエスト本文
 
-リクエスト本文はJSONである必要があり、このサンプルリクエスト本文と同じ構造を持つ必要があります。
+リクエスト本文はJSONで、このサンプルリクエスト本文と同じ構造を持つ必要があります。
 
 ```
 { 
@@ -62,7 +62,7 @@ None
    * `ts` - タイムスタンプ。ミリ秒単位で指定する必要があります。
 * `eventType` (必須)
 
-   **有効な値:**`sessionStart`
+   **有効な値：**`sessionStart`
 * `params` (必須)
 * `customMetadata` (オプション)
 * `qoeData` (オプション)
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header-部分的 `/api/v1/` にはAPIバージョンを提供します。The part after `[…]sessions/` is the Session ID.
+`Location:` header — この部分はAPI `/api/v1/` バージョンを提供します。 の後の部分はセ `[…]sessions/` ッションIDです。
 
 ## 応答コード
 
