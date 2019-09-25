@@ -1,7 +1,7 @@
 ---
 seo-title: Chromecast のメタデータキー
 title: Chromecast のメタデータキー
-uuid: c446ad41-51b8-46d6-9bc1- abfae866023f
+uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
