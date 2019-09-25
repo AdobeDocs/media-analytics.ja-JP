@@ -16,16 +16,16 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 概要 {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. メディアプレイヤーAPIを使用して、QoSおよびエラー追跡に関連する変数を識別できます。
+Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. メディアプレイヤーAPIを使用して、QoSおよびエラートラッキングに関連する変数を識別できます。
 
-## Player events {#player-events}
+## プレーヤーイベント {#player-events}
 
 ### すべてのビットレート変更イベント
 
 * 再生の QoS オブジェクトインスタンス（`qosObject`）を作成または更新します
 * 呼び出し `trackEvent(Media.Heartbeat.Event.BitrateChange, qosObject);`
 
-### プレーヤーのエラー時
+### プレイヤーエラー時
 
 呼び出し `trackError(“media error id”);`
 
@@ -37,7 +37,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!TIP]
    >
-   >これらの変数は、QoSを追跡する場合にのみ必要です。
+   >これらの変数は、QoSを追跡する予定の場合にのみ必要です。
 
    | 変数 | 説明 | 必須 |
    | --- | --- | :---: |
@@ -60,12 +60,12 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >QoSオブジェクトを更新し、ビットレート変更ごとにビットレート変更イベントを呼び出します。これにより、最も正確な QoS データを取得できます。
+   >QoSオブジェクトを更新し、ビットレート変更が行われるたびにビットレート変更イベントを呼び出します。 これにより、最も正確な QoS データを取得できます。
 
 1. `getQoSObject()` メソッドで、最新の QoS 情報が返されるようにします。
 1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >メディアプレイヤーのエラーを追跡しても、メディアトラッキングセッションは停止しません。If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >メディアプレイヤーのエラーを追跡しても、メディアトラッキングセッションは停止しません。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
