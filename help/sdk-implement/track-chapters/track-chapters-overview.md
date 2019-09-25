@@ -1,7 +1,7 @@
 ---
 seo-title: 概要
 title: 概要
-uuid: 3fe32425-5e2a-4886-8fea- d91d15671bb0
+uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,11 +12,11 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、2.x SDKを使用した実装のガイダンスを示しています。 If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-チャプターとセグメントの追跡は、カスタム定義のメディアチャプターまたはセグメントで使用できます。チャプタートラッキングの一般的な使用法は、メディアコンテンツ（野球の休止など）に基づいてカスタムセグメントを定義したり、広告の時間間でコンテンツセグメントを定義したりすることです。Chapter tracking is **not** required for core media tracking implementations.
+チャプターおよびセグメントの追跡は、カスタム定義のメディアチャプターまたはセグメントで使用できます。 チャプタートラッキングの一般的な使用方法は、メディアコンテンツに基づいてカスタムセグメントを定義する場合や、広告の時間の間にコンテンツセグメントを定義する場合です。 Chapter tracking is **not** required for core media tracking implementations.
 
-チャプターの追跡には、チャプター開始、チャプター完了、チャプタースキップが含まれます。メディアプレイヤーAPIをカスタマイズしたセグメント化ロジックで使用して、チャプターイベントを識別したり、必須およびオプションのチャプター変数を設定したりできます。
+チャプターの追跡には、チャプター開始、チャプター完了、チャプタースキップが含まれます。メディアプレイヤーAPIをカスタマイズされたセグメントロジックと共に使用して、チャプターイベントを識別し、必要なチャプター変数とオプションのチャプター変数を設定できます。
 
 ## プレーヤーイベント
 
@@ -42,7 +42,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!NOTE]
    >
-   >これらの変数は、チャプターを追跡する計画がある場合にのみ必要です。
+   >これらの変数は、チャプターを追跡する予定の場合にのみ必要です。
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
@@ -57,7 +57,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 1. ユーザーがチャプターをスキップした（例えば、ユーザーがチャプター境界の外にシークした）のでチャプター再生が完了しなかった場合は、MediaHeartbeat インスタンスで `ChapterSkip` イベントを呼び出します。
 1. その他のチャプターがある場合、手順 1 ～ 5 を繰り返します。
 
-以下のサンプルコードでは、HTML5メディアプレイヤー用のJavaScript2. x SDKを使用しています。このコードは、コアメディア再生コードで使用する必要があります。
+以下のサンプルコードは、HTML5メディアプレイヤー用のJavaScript 2.x SDKを使用しています。 このコードは、コアメディア再生コードと共に使用する必要があります。
 
 ```js
 /* Call on chapter start */ 
