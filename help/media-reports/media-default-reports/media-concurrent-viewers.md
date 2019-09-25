@@ -1,7 +1,7 @@
 ---
 seo-title: メディア同時ビューア
 title: メディア同時ビューア
-uuid: e61c50e5-8196-4538- b67c- ebc01c6e6ba7
+uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
@@ -14,7 +14,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 >[!TIP]
 >
->選択した間隔が1日でない場合、データは表示されません。
+>選択した間隔が1日以外の場合は、データは表示されません。
 
 ![](assets/video-concurrent-viewers.png)
 
