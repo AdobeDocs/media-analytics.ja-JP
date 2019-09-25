@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>2.x SDKを使用した導入に関するガイダンスを以下に示します。 If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 広告トラッキング定数
 
@@ -24,7 +24,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `AdComplete` | 追跡する Ad Complete イベントの定数 |
 | `AdSkip` | 追跡する Ad Skip イベントの定数 |
 
-## 実装手順
+## 導入手順
 
 1. プリロールを含め、いつ広告ブレークの境界が開始するかを識別し、広告ブレーク情報を使用して `AdBreakObject` を作成します。
 
@@ -34,7 +34,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName); 
    ```
 
-1. `trackEvent()` インスタンス `AdBreakStart` 内で `MediaHeartbeat` 呼び出して、広告の時間の追跡を開始します。 [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, getAdBreakInfo());
@@ -48,7 +48,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
    ```
 
-1. オプションで、コンテキストデータ変数を使用して、メディアトラッキングセッションに標準または広告メタデータをアタッチします。
+1. オプションで、コンテキストデータ変数を使用して、標準および/または広告メタデータをメディアトラッキングセッションに添付します。
 
    * **標準広告メタデータ** - 標準広告メタデータの場合、ご利用のプラットフォームのキーを使用して、標準広告メタデータのキーと値のペアのディクショナリを作成します。
    * **カスタムの広告メタデータ** - カスタムのメタデータの場合は、カスタムデータ変数の変数オブジェクトを作成し、現在の広告アセットのデータを設定します。
