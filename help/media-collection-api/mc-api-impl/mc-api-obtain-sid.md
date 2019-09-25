@@ -1,7 +1,7 @@
 ---
 seo-title: セッション ID の取得
 title: セッション ID の取得
-uuid: fc8712fa-848f-4564- af5d-5dd9d6b088d8
+uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
