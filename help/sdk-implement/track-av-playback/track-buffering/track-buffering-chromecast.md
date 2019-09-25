@@ -1,7 +1,7 @@
 ---
 seo-title: Chromecast でのバッファーの追跡
 title: Chromecast でのバッファーの追跡
-uuid: f6fa3a1a- d7de-4293- bd11- eb9e130badd
+uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
