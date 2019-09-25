@@ -1,7 +1,7 @@
 ---
 seo-title: アプリの状態の追跡
 title: アプリの状態の追跡
-uuid: 2f98fb43- c362-4a9b-8732- fa7e963da729
+uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 translation-type: tm+mt
 source-git-commit: 9cdf69e30fa727aeb974213769a7ab61fb05b756
 
@@ -10,11 +10,11 @@ source-git-commit: 9cdf69e30fa727aeb974213769a7ab61fb05b756
 
 # アプリの状態の追跡{#track-app-states}
 
-状態とは、アプリケーションの様々な画面またはビューのことです。Each time a new state is displayed in your application, you should send a `trackState` call. For example, when a user navigates from the home page to the video details screen, send a `trackState` call. 通常、状態はパスレポートを使用して表示されるので、ユーザーがアプリ内をどのように移動しているか、どの状態が最も多く閲覧されているかを確認できます。
+状態とは、アプリケーションの様々な画面またはビューのことです。アプリケーションに新しい状態が表示されるたびに、呼び出しを送信する必要があ `trackState` ります。 例えば、ユーザーがホームページからビデオの詳細画面に移動した場合は、呼び出しを送信し `trackState` ます。 通常、状態はパスレポートを使用して表示されるので、ユーザーがアプリ内をどのように移動しているか、どの状態が最も多く閲覧されているかを確認できます。
 
 ## trackState呼び出し
 
-You typically call `trackState` each time the app loads a new screen.
+通常、アプリが新し `trackState` い画面を読み込むたびに呼び出します。
 
 ### Roku
 
@@ -28,11 +28,11 @@ ADBMobile().trackState("State Name", {})
 ADBMobile.analytics.trackState("State Name",{});
 ```
 
-The state name is reported in the "View State" variable in Adobe Mobile services, and a view is recorded for each `trackState` call. 他のAnalyticsインターフェイスでは、"View State"は"Page Name"としてレポートされます。「状態ビュー」は「ページビュー数」としてレポートされます。
+The state name is reported in the "View State" variable in Adobe Mobile services, and a view is recorded for each `trackState` call. 他のAnalyticsインターフェイスでは、「View State」は「Page Name」としてレポートされます。「状態ビュー」は、「ページビュー数」としてレポートされます。
 
 ## コンテキストデータの送信
 
-"State Name"に加えて、各トラック状態呼び出しで追加のコンテキストデータを送信できます。
+「状態名」に加えて、トラック状態呼び出しのたびに追加のコンテキストデータを送信できます。
 
 ### Roku
 
@@ -52,5 +52,5 @@ ADBMobile.analytics.trackState("Home Screen", dictionary);
 
 >[!NOTE]
 >
->コンテキストデータ値は、Adobe Mobileサービスのカスタム変数にマップする必要があります。
+>コンテキストデータ値は、Adobe Mobile Servicesのカスタム変数にマップする必要があります。
 
