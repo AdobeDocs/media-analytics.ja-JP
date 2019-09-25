@@ -1,7 +1,7 @@
 ---
 seo-title: SceneGraph（Roku）でのトラッキング
 title: SceneGraph（Roku）でのトラッキング
-uuid: fa85e546- c79b-4df4-8c03- d6593fa296d5
+uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -108,14 +108,14 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 | 定数名 | 説明 |
 |---|---|
 | `API_RESPONSE` | Used to retrieve the response object from `adbmobileTask` node's `adbmobileApiResponse` field |
-| `DEBUG_LOGGING` | Used as `apiName` for `getDebugLogging` |
-| `PRIVACY_STATUS` | Used as `apiName` for `getPrivacyStatus` |
-| `TRACKING_IDENTIFIER` | Used as `apiName` for `trackingIdentifier` |
-| `USER_IDENTIFIER` | Used as `apiName` for `userIdentifier` |
-| `VISITOR_MARKETING_CLOUD_ID` | Used as `apiName` for `visitorMarketingCloudID` |
-| `AUDIENCE_VISITOR_PROFILE` | Used as `apiName` for `audienceVisitorProfile` |
-| `AUDIENCE_DPID` | Used as `apiName` for `audienceDpid` |
-| `AUDIENCE_DPUUID` | Used as `apiName` for `audienceDpuuid` |
+| `DEBUG_LOGGING` | 次の用途で `apiName` 使用 `getDebugLogging` |
+| `PRIVACY_STATUS` | 次の用途で `apiName` 使用 `getPrivacyStatus` |
+| `TRACKING_IDENTIFIER` | 次の用途で `apiName` 使用 `trackingIdentifier` |
+| `USER_IDENTIFIER` | 次の用途で `apiName` 使用 `userIdentifier` |
+| `VISITOR_MARKETING_CLOUD_ID` | 次の用途で `apiName` 使用 `visitorMarketingCloudID` |
+| `AUDIENCE_VISITOR_PROFILE` | 次の用途で `apiName` 使用 `audienceVisitorProfile` |
+| `AUDIENCE_DPID` | 次の用途で `apiName` 使用 `audienceDpid` |
+| `AUDIENCE_DPUUID` | 次の用途で `apiName` 使用 `audienceDpuuid` |
 
 ### adbmobileTask ノード
 
@@ -136,26 +136,20 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> 無効 </td>
-<td> 読み取り- AdobeMobileSDKで実行されるすべてのAPIは、このフィールドで応答を返します。応答オブジェクトを受信するには、このフィールドの更新をリッスンするコールバックを登録します。応答オブジェクトの形式を次に示します。  
+<td> 読み取り専用AdobeMobileSDKで実行されるすべてのAPIは、このフィールドに応答を返します。 応答オブジェクトを受信するには、このフィールドの更新をリッスンするコールバックを登録します。応答オブジェクトの形式を次に示します。  
 <codeblock>
-response={"APInName":&lt; SceneGraphConstants.
- API_ NAME&gt;
-"returnValue:&lt; API_RE応答&gt;} 
+response = { "apiName" :&lt;SceneGraphConstants.
+               API_NAME&gt; "returnValue :&lt;API_RESPONSE&gt; } 
 </codeblock>
-この応答オブジェクトのインスタンスは API リファレンスガイドに記載されているように値を返す AdobeMobileSDK の API 呼び出し用に送信されます。例えば、visitorMarketingCloudID（）のAPI呼び出しは、次の応答オブジェクトを返します。 
+この応答オブジェクトのインスタンスは API リファレンスガイドに記載されているように値を返す AdobeMobileSDK の API 呼び出し用に送信されます。例えば、visitorMarketingCloudID()のAPI呼び出しは、次の応答オブジェクトを返します。 
 <codeblock>
-response={"APInName":m.
- ADBMobileConstts.
- VISITOR_ MARKETING_ CLOUD_ ID
-"returnValue:"07050x25671x33760x72644x14"} 
+response = { "apiName" :m.              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID "returnValue :"07050x25671x33760x72644x14" } 
 </codeblock>
 また、応答データは無効になる場合もあります。 
 <codeblock>
-response={
-"apinName":m.
- ADBMobileConstts.
- VISITOR_ MARKETING_ CLOUD_ ID
-"returnValue:無効} 
+response = { "apiName" :m.              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID "returnValue :invalid } 
 </codeblock>
 </td>
 </tr>
@@ -167,13 +161,11 @@ response={
 #### `getADBMobileConnectorInstance`
 
 API 署名: `ADBMobile().getADBMobileConnectorInstance()`\
-Input: `adbmobileTask`
-Return Type: `ADBMobileConnector`
+入力：戻 `adbmobileTask`り値の型： `ADBMobileConnector`
 
 #### `sgConstants`
 
-API Signature: `ADBMobile().sgConstants()`
-Input: None\
+API Signature: `ADBMobile().sgConstants()`入力：なし\
 戻り値の型: `SceneGraphConstants`
 
 >[!NOTE]
@@ -186,7 +178,7 @@ Input: None\
 | バージョン管理 | `version` | AdobeMobileLibrary バージョン情報を取得する定数 |
 | プライバシー／オプトアウト | `PRIVACY_STATUS_OPT_IN` | オプトインのプライバシーステータスを示す定数 |
 |  | `PRIVACY_STATUS_OPT_OUT` | オプトアウトのプライバシーステータスを示す定数 |
-| MediaHeartbeat 定数 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | これらの定数をMediaHeartbeat APIで使用する |
+| MediaHeartbeat 定数 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | MediaHeartbeat APIでこれらの定数を使用します |
 | 標準メタデータ | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 標準ビデオ／広告メタデータを MediaHeartbeat API にアタッチするにはこれらの定数を使用します。 |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. これらのメソッドについて詳しくは、以下の表を参照してください。
@@ -203,7 +195,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 ## 実装 {#section_dbz_ydz_y2b}
 
-1. **Rokuライブラリのダウンロード-**[最新のRokuライブラリをダウンロードします。](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
+1. **Rokuライブラリのダウンロード — 最新の** Rokuライブラリ [をダウンロードします。](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
 
 1. **開発環境の設定**
 
@@ -231,7 +223,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
       m.adbmobile = ADBMobile().getADBMobileConnectorInstance(m.adbmobileTask)
       ```
 
-   1. `adbmobile` SG定数を取得します。
+   1. Get `adbmobile` SG constants.
 
       ```
       m.adbmobileConstants = m.adbmobile.sceneGraphConstants()
