@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Android での標準メタデータの実装
 title: Android での標準メタデータの実装
-uuid: c48b4190- b062-4c4e-9c40-8de4598a50e
+uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 translation-type: tm+mt
 source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 
@@ -20,13 +20,13 @@ source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 
 ## メタデータキーAPIリファレンス
 
-* Create a `HashMap` of standard metadata key value pairs.
+* 標準メタデータ `HashMap` のキーと値のペアの作成。
    * [ビデオメタデータキー](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
    * [オーディオメタデータキー](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * メタデータの標準メタデータ定数を使用して、`HashMap` に標準メタデータ `MediaInfo` を設定します。
 * Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
 
-## サンプル実装
+## 実装例
 
 ### ビデオ
 
