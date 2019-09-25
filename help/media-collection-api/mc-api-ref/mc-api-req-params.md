@@ -24,7 +24,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | はい | `sessionStart` | Experience Cloud 組織 ID。Adobe Experience Cloud エコシステム内で組織を識別します。 |
-| `visitor.marketingCloudUserId` | いいえ | `sessionStart` | This is the Experience Cloud User ID (ECID). ほとんどのシナリオでは、このIDを使用してユーザーを識別します。 ハートビート `marketingCloudUserId` は、Adobe Analytics `MID` の「」と等しいです。 技術的には必須ではありませんが、このパラメーターはExperience cloudアプリのファミリーにアクセスする場合に必要です。 |
+| `visitor.marketingCloudUserId` | いいえ | `sessionStart` | これは、Experience cloudユーザーID(ECID)です。 ほとんどのシナリオでは、このIDを使用してユーザーを識別します。 ハートビート `marketingCloudUserId` は、Adobe Analytics `MID` の「」と等しいです。 技術的には必須ではありませんが、このパラメーターはExperience cloudアプリのファミリーにアクセスする場合に必要です。 |
 | `visitor.aamLocationHint` | いいえ | `sessionStart` | Adobe Audience Manager Edge データを提供します。 |
 | `appInstallationId` | いいえ | `sessionStart` | アプリとデバイスを一意に識別する appInstallationId |
 
@@ -133,11 +133,11 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/data-sharing/federated-analytics.md))
 
-### Analytics Legacy User ID (aid) and Declared User IDs (customerIDs)
+### Analyticsの従来のユーザーID(aid)および宣言済みのユーザーID(customerID)
 
 * **analytics.aid:**
 
-   The value of this key must be a string that represents the Analytics Legacy User ID
+   このキーの値は、AnalyticsレガシーユーザーIDを表す文字列である必要があります
 * **visitor.customerIDs:**
 
    このキーの値は、次の形式のオブジェクトである必要があります。
