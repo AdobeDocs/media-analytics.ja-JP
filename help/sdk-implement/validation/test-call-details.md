@@ -1,7 +1,7 @@
 ---
 seo-title: テスト呼び出しの詳細
 title: テスト呼び出しの詳細
-uuid: d3a0e62f-2fc3-413d- ac56- adbbc9b3e983
+uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 translation-type: tm+mt
 source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
@@ -12,9 +12,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ## メディアプレイヤーの起動 {#start-the-media-player}
 
-### Adobe Analytics（AppMeasurement）の開始呼び出し {#aa-start-call}
+### Adobe Analytics(AppMeasurement)Start呼び出し {#aa-start-call}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episode Title |
@@ -31,9 +31,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * これら以外にも、メタデータを含むコンテキストデータ変数が存在します。メタデータについて詳しくは、以下を参照してください。
 * リニアストリームの長さは、現在の番組の推定値に設定します。
 
-### Adobe Analytics（AppMeasurement）の開始呼び出しの標準メタデータ {#std-metadata-aa}
+### Adobe Analytics(AppMeasurement)Start呼び出しの標準メタデータ {#std-metadata-aa}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -50,16 +50,16 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Adobe Analytics（AppMeasurement）の開始呼び出しのカスタムメタデータ {#custom-metadata-aa}
+### Adobe Analytics(AppMeasurement)Start呼び出しのカスタムメタデータ {#custom-metadata-aa}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
 ### Media Analytics（ハートビート）開始呼び出し {#ma-start-call}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
@@ -77,9 +77,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * これら以外にも、メタデータを含むコンテキストデータ変数が存在します。メタデータについて詳しくは、以下を参照してください。
 * ビデオ開始時点でのリニアストリームの再生ヘッドの位置は、0 ではなく、現在の番組の開始から経過した秒数に設定する必要があります。
 
-### Media Analytics（ハートビート）の呼び出し呼び出しの標準メタデータ {#std-metadata-ma}
+### Media Analytics（ハートビート）開始呼び出しの標準メタデータ {#std-metadata-ma}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | `s:meta:a.media.show` | 番組 |
 | `s:meta:a.media.season` | 6 |
@@ -96,16 +96,16 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Media Analytics（ハートビート）の呼び出し呼び出しのカスタムメタデータ {#custom-metadata-ma}
+### Media Analytics（ハートビート）開始呼び出しのカスタムメタデータ {#custom-metadata-ma}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics（ハートビート） Adobe Analytics Start呼び出し {#ma-aa-start}
+### Media Analytics（ハートビート）Adobe Analytics start呼び出し {#ma-aa-start}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
@@ -118,14 +118,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 **注意：**
 
-* この呼び出しは、Media SDKがAdobe Analytics `pev2=ms_s` の呼び出しをAdobe Analytics（AppMeasurement）サーバーに送信することを要求したことを示します。
+* この呼び出しは、Media SDKがAdobe Analytics呼び出しのAdobe Analytics(AppMeasurement) `pev2=ms_s` サーバーへの送信を要求したことを示します。
 * この呼び出しには、カスタムメタデータは含まれません。
 
 ## 広告再生の視聴 {#view-ad-playback}
 
-### Adobe Analytics（AppMeasurement）広告開始呼び出し {#aa-ad-start-call}
+### Adobe Analytics(AppMeasurement)Ad Start呼び出し {#aa-ad-start-call}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
@@ -148,7 +148,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -165,16 +165,16 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Adobe Analytics（AppMeasurement）広告開始呼び出しのカスタムメタデータ {#custom-metadata-aa-ad-start}
+### Adobe Analytics(AppMeasurement)Ad start呼び出しのカスタムメタデータ {#custom-metadata-aa-ad-start}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### Media Analytics（ハートビート）広告開始呼び出し {#ma-ad-start-call}
+### Media Analytics（ハートビート）Ad start呼び出し {#ma-ad-start-call}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | _**`s:event:type`**_ | _**start**_ |
 | `l:event:playhead` | 0 |
@@ -193,7 +193,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ### Standard metadata in Media Analytics (heartbeats) Ad Start call {#std-metadata-ma-ad-start}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | `s:meta:a.media.show` | 番組 |
 | `s:meta:a.media.season` | 6 |
@@ -210,16 +210,16 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Media Analytics（ハートビート）広告開始呼び出しのカスタムメタデータ {#custom-metadata-ma-ad-start}
+### Media Analytics（ハートビート）Ad start呼び出しのカスタムメタデータ {#custom-metadata-ma-ad-start}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics（ハートビート） Adobe Analytics広告開始呼び出し {#ma-aa-ad-start-call}
+### Media Analytics（ハートビート）Adobe Analytics Ad Start呼び出し {#ma-aa-ad-start-call}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | _**`s:event:type`**_ | _**aa_ad_start**_ |
 | `l:event:playhead` | 0 |
@@ -229,9 +229,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### Media Analytics（ハートビート）広告再生呼び出し {#ma-ad-play-call}
+### Media Analytics（ハートビート）Ad play呼び出し {#ma-ad-play-call}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | _**`s:event:type`**_ | _**play**_ |
 | `l:event:playhead` | 15 |
@@ -241,9 +241,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Media Analytics（ハートビート）広告一時停止呼び出し {#ma-ad-pause-call}
+### Media Analytics（ハートビート）Ad Pause呼び出し {#ma-ad-pause-call}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
 | `l:event:playhead` | 15 |
@@ -253,9 +253,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Media Analytics（ハートビート） Adobe Analytics Ad Complete呼び出し {#ma-aa-ad-complete-call}
+### Media Analytics（ハートビート）Adobe Analytics Ad Complete呼び出し {#ma-aa-ad-complete-call}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | _**`s:event:type`**_ | _**complete**_ |
 | `l:event:playhead` | 15 |
@@ -267,9 +267,9 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ## メインコンテンツの再生 {#play-main-content}
 
-### Media Analytics（ハートビート） Play呼び出し {#ma-play-call}
+### Media Analytics（ハートビート）Play呼び出し {#ma-play-call}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
@@ -282,14 +282,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 **注意：**
 
-* 再生ヘッド位置は、すべての再生呼び出しで10秒増加します。
+* 再生ヘッドの位置は、play呼び出しのたびに10秒ずつ増加する必要があります。
 * `l:event:duration` の値は、前回のトラッキングコールからのミリ秒数を表し、10 秒の呼び出しのたびにほぼ同じ値である必要があります。
 
 ## メインコンテンツの一時停止 {#pause-main-content}
 
 ### Media Analytics（ハートビート）一時停止呼び出し {#ma-pause-call}
 
-| パラメーター | Value（サンプル） |
+| パラメーター |  値（サンプル） |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
