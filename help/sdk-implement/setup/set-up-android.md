@@ -1,7 +1,7 @@
 ---
 seo-title: Android のセットアップ
 title: Android のセットアップ
-uuid: 3ffe3276- a104-4182-9220-038729e9f3d5
+uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,8 +12,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 前提条件
 
-* **メディアSDKの有効な設定パラメーターの取得これ**&#x200B;らのパラメーターは、分析アカウントを設定した後、アドビの担当者から取得できます。
-* **アプリケーション**&#x200B;でのAndroid用ADBMobileの実装アプリケーションでのAndroid用のADBMobile [の実装」を参照してください。](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
+* **Media SDKの有効な設定パラメーターの取得** Analyticsアカウントを設定した後で、これらのパラメーターをアドビの担当者から取得できます。
+* **アプリケーションにAndroid用ADBMobileを実装** Adobe Mobile SDKドキュメントについて詳しくは、 [Experience cloudソリューション用Android SDK 4.xを参照してください。](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
 * **メディアプレーヤーで以下の機能を設定します。**
    * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * *プレーヤー情報を提供する API* - メディア名や再生ヘッドなどの情報がこれに該当します。
@@ -31,9 +31,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       1. **[!UICONTROL プロジェクトナビゲーション]**&#x200B;パネルでプロジェクトを右クリックします。
       1. Select **[!UICONTROL Open Module Settings]**.
-      1. **[!UICONTROL 「プロジェクト設定]**»で、??«ライブラリ??****
+      1. Under **[!UICONTROL Project Settings]**, select **[!UICONTROL Libraries]**.
 
-      1. **[!UICONTROL "+"]** をクリックして新しいライブラリを追加します。
+      1. Click **[!UICONTROL +]** to add a new library.
       1. 「**[!UICONTROL Java]**」を選択し、`MediaSDK.jar` ファイルに移動します。
 
       1. モバイルライブラリを使用する予定のモジュールを選択します。
@@ -59,7 +59,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    import com.adobe.primetime.va.simple.MediaObject; 
    ```
 
-1. `MediaHeartbeatConfig` インスタンスを作成します。
+1. Create the `MediaHeartbeatConfig` instance.
 
    `MediaHeartbeatConfig` 初期化のサンプル：
 
@@ -74,7 +74,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    config.debugLogging = <true/false>; 
    ```
 
-1. `MediaHeartbeatDelegate` インターフェイスを実装します。
+1. Implement the `MediaHeartbeatDelegate` interface.
 
    ```java
    public class VideoAnalyticsProvider implements Observer, MediaHeartbeatDelegate{}
@@ -98,9 +98,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    }
    ```
 
-1. `MediaHeartbeat` インスタンスを作成します。
+1. Create the `MediaHeartbeat` instance.
 
-   `MediaHeartbeatConfig` インスタンスと `MediaHertbeatDelegate` インスタンスを使用して `MediaHeartbeat` インスタンスを作成します。
+   Use the `MediaHeartbeatConfig` instance and the `MediaHertbeatDelegate` instance to create the `MediaHeartbeat` instance.
 
    ```java
    // Replace <MediaHertbeatDelegate> with your delegate instance 
@@ -128,4 +128,4 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 バージョン 2.x では、すべてのパブリックメソッドは、開発をより簡単にするために、`com.adobe.primetime.va.simple.MediaHeartbeat` クラスに統合されています。また、すべての設定は、`com.adobe.primetime.va.simple.MediaHeartbeatConfig` クラスに統合されました。
 
-For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+1.xから2.xへの移行について詳しくは、 [mig-1x-2x-overview.mdを参照してください。](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
