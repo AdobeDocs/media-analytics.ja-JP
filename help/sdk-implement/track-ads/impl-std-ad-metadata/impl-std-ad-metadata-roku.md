@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Roku での標準広告メタデータの実装
 title: Roku での標準広告メタデータの実装
-uuid: 20a437d7-18b8-4099- ac81-9f3628384236
+uuid: 20a437d7-18b8-4099-ac81-9f3628384236
 translation-type: tm+mt
 source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
