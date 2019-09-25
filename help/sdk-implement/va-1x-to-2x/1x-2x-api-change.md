@@ -1,16 +1,16 @@
 ---
 seo-title: 1.x から 2.x API への変換
 title: 1.x から 2.x API への変換
-uuid: 6e619288- c082-4cb4-8685- e90823dadf4a
+uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 translation-type: tm+mt
 source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
 
 ---
 
 
-# API 1.x to 2.x conversion {#one-x-to-two-x-conv}
+# API 1.xから2.xへの変換 {#one-x-to-two-x-conv}
 
-## Media SDK2. x APIリファレンス
+## Media SDK 2.x APIリファレンス
 
 * [Android API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [iOS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
@@ -19,7 +19,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
 
 ## 必要なTrack* API:
 
-| VHL1. x | VHL2. x |
+|  VHL 1.x | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | 該当なし |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbeat.trackSessionStart(mediaObject, mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |
