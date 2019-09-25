@@ -1,7 +1,7 @@
 ---
-seo-title: 広告間のメイン再生の解決
-title: 広告間のメイン再生の解決
-uuid: 228b4812- c23e-40c8- ae2b- e15ca69b0bc2
+seo-title: 広告間に表示されるメイン再生の解決
+title: 広告間に表示されるメイン再生の解決
+uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
 source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
@@ -18,18 +18,18 @@ source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
 ## 特定方法
 
-プリロール広告の時間中に、この順序でAdobe DebugまたはCharlesなどのネットワークパケットスニファーを使用している場合、次のハートビート呼び出しが表示されます。
+Adobe DebugまたはCharlesなどのネットワークパケットスニファーを使用している間、プリロール広告の時間中に次のハートビート呼び出しがこの順序で表示される場合：
 
 * セッション開始: `s:event:type=start` &amp; `s:asset:type=main`
 * 広告開始: `s:event:type=start` &amp; `s:asset:type=ad`
 * 広告再生: `s:event:type=play` &amp; `s:asset:type=ad`
 * 広告完了: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(unexpected)**
+* メインコンテンツの再生： `s:event:type=play` &amp; `s:asset:type=main`**（予期しない）**
 
 * 広告開始: `s:event:type=start` &amp; `s:asset:type=ad`
 * 広告再生: `s:event:type=play` &amp; `s:asset:type=ad`
 * 広告完了: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(expected)**
+* メインコンテンツの再生： `s:event:type=play` &amp; `s:asset:type=main`(期&#x200B;**待値)**
 
 ## 解決策
 
@@ -45,11 +45,11 @@ source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
 **すべての広告アセットの開始時：**
 
-* **呼び出し`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **通話`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
-   >これは、以前の広告が完了していない場合にのみ呼び出してください。ブール値を使用して前の広告の「`isinAd`」状態を維持することを検討してください。
+   >前の広告が完了していない場合にのみ呼び出します。 ブール値を使用して前の広告の「`isinAd`」状態を維持することを検討してください。
 
 * 広告アセットの広告オブジェクトのインスタンス（例えば、`adObject`）を作成します。
 * Populate the ad metadata, `adCustomMetadata`.
@@ -58,7 +58,7 @@ source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
 **すべての広告アセットの完了時：**
 
-* **呼び出しを行わない**
+* **電話をかけない**
 
    >[!NOTE]
    >
@@ -70,7 +70,7 @@ source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
 **広告ブレークの完了時：**
 
-* **呼び出し`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **通話`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
