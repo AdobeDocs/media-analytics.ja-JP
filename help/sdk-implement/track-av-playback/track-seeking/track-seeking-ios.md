@@ -1,7 +1,7 @@
 ---
 seo-title: iOS でのシークの追跡
 title: iOS でのシークの追跡
-uuid: 1d31ae99-384f-4b4d- b557-4018db177349
+uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
