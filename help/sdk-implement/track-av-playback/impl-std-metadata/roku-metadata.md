@@ -1,7 +1,7 @@
 ---
 seo-title: Roku のメタデータキー
 title: Roku のメタデータキー
-uuid: 2ca6bb1d- c545-43d3-9c3e-63b890aa268d
+uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -10,7 +10,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 # Roku のメタデータキー{#roku-metadata-keys}
 
-標準ビデオ、オーディオおよび広告メタデータは、メディアおよび広告情報オブジェクトにそれぞれ設定できます。ビデオや広告メタデータの定数キーを使用すると、追跡 API を呼び出す前に、標準メタデータを含むディクショナリが情報オブジェクトに設定されます。標準メタデータ定数の一覧と例については、以下の表を参照してください。
+標準ビデオ、オーディオ、広告メタデータは、それぞれメディアおよび広告情報オブジェクトに設定できます。 ビデオや広告メタデータの定数キーを使用すると、追跡 API を呼び出す前に、標準メタデータを含むディクショナリが情報オブジェクトに設定されます。標準メタデータ定数の一覧と例については、以下の表を参照してください。
 
 ## ビデオメタデータ定数 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
 
@@ -70,8 +70,8 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 | 定数 | 説明   |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` | Constant to set metadata on the `MediaInfo` `trackLoad` |
-| `MEDIA_STANDARD_AD_METADATA` | Constant to set the ad metadata on the `EventData` `trackEvent` |
+| `MEDIA_STANDARD_MEDIA_METADATA` | Constant to set metadata on the  `MediaInfo``trackLoad` |
+| `MEDIA_STANDARD_AD_METADATA` | Constant to set the ad metadata on the  `EventData``trackEvent` |
 | `MEDIA_RESUMED` | ビデオ再開のハートビートを送信する定数。To resume video tracking of previously stopped content, you need to set the `MEDIA_RESUMED` property on the `mediaInfo` object when you call `mediaTrackLoad`. (`MEDIA_RESUMED` is not an event that you can track using the `mediaTrackEvent` API.) アプリケーションで、ユーザーが視聴を中断したものの、視聴再開の意図を示したコンテンツのトラッキングを継続したい場合は、`MEDIA_RESUMED` を true に設定する必要があります。<br/><br/>例えば、あるユーザーがコンテンツの 30％を視聴してからアプリを閉じたとします。その場合はセッションが終了します。Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they left off, then the application should set `MEDIA_RESUMED` to "true" while calling the `mediaTrackLoad` API. これにより、同じビデオコンテンツのこの 2 つのメディアセッションをリンクさせることができます。実装の例は次のとおりです。 <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)`<br/><br/>この例では、ビデオの新しいセッションが作成されますが、SDK によってイベントタイプ「resume」のハートビートリクエストも送信されます。これをレポートで使用することで、2 つのメディアセッションをリンクさせることができます。 |
 
 ### コンテンツタイプ定数
