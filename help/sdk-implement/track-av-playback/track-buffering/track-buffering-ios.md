@@ -1,7 +1,7 @@
 ---
 seo-title: iOS でのバッファーの追跡
 title: iOS でのバッファーの追跡
-uuid: 4f4db23a-489b-4b41- bb6e-393ec64d52a2
+uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
