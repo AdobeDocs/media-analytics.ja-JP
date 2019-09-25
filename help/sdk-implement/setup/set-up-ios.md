@@ -1,7 +1,7 @@
 ---
 seo-title: iOS のセットアップ
 title: iOS のセットアップ
-uuid: a1c6be79- a6dc-47b6-93b3- ac7b42f1f3eb
+uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,13 +12,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 前提条件
 
-* **メディアSDKの有効な設定パラメーターの取得これ**&#x200B;らのパラメーターは、分析アカウントを設定した後、アドビの担当者から取得できます。
-* **アプリケーションでのADBMobile for iOSの実装アプリケーション**でのAdobe
-Mobile SDKドキュメントの詳細については、"Experience Cloudソリューション用 [iOS SDK4. x"を参照してください。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **Media SDKの有効な設定パラメーターの取得** Analyticsアカウントを設定した後で、これらのパラメーターをアドビの担当者から取得できます。
+* **アプリケーションにiOS用ADBMobileを実装**&#x200B;します。Adobe Mobile SDKドキュメントについて詳しくは、 [iOS SDK 4.x for Experience Cloud Solutionsを参照してください。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
 
    >[!IMPORTANT]
    >
-   >iOS9から、AppleはApp Transport Security（ATS）という機能を導入しました。これはアプリで使用するプロトコルや暗号を業界標準のものに制限することで、ネットワークセキュリティを改善するための機能です。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。For details on ATS, see [App Transport Security.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >iOS 9以降、AppleはApp Transport Security(ATS)と呼ばれる機能を導入しました。 これはアプリで使用するプロトコルや暗号を業界標準のものに制限することで、ネットワークセキュリティを改善するための機能です。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。ATSについて詳しくは、「アプリ転送セキュリティ」 [を参照してください。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
@@ -50,7 +49,7 @@ Mobile SDKドキュメントの詳細については、"Experience Cloudソリ�
          ![](assets/choose-options_ios.png)
 
       1. Click **[!UICONTROL Finish]**.
-      1. **[!UICONTROL プロジェクトナビゲーター]**&#x200B;で、アプリを選択し、ターゲットを選択します。
+      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
       1. 「**[!UICONTROL 一般]**」タブの「**[!UICONTROL リンクされたフレームワーク]**」および「**[!UICONTROL ライブラリ]**」セクションで、必要なフレームワークとライブラリをリンクさせます。
 
          **iOS アプリのターゲット：**
@@ -76,7 +75,7 @@ Mobile SDKドキュメントの詳細については、"Experience Cloudソリ�
    #import "ADBMediaHeartbeatConfig.h" 
    ```
 
-1. `ADBMediaHeartbeatConfig` インスタンスを作成します。
+1. Create a `ADBMediaHeartbeatConfig` instance.
 
    ここでは、`MediaHeartbeat` 設定パラメーターと、正確な追跡のために `MediaHeartbeat` インスタンスに正しい設定値を設定する方法を説明します。
 
@@ -94,7 +93,7 @@ Mobile SDKドキュメントの詳細については、"Experience Cloudソリ�
    config.debugLogging   = <YES/NO>; 
    ```
 
-1. `ADBMediaHeartbeatDelegate` プロトコルを実装します。
+1. Implement the `ADBMediaHeartbeatDelegate` protocol.
 
    ```
    @interface VideoAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -145,7 +144,7 @@ For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migrat
 
 次の手順を Xcode プロジェクトで実行します。このガイドは、プロジェクトのターゲットの 1 つが tvOS 用の Apple TV アプリであることを想定して記述されています。
 
-1. `VideoHeartbeat_TV.a` ライブラリファイルをプロジェクト `lib` のフォルダにドラッグします。
+1. Drag the `VideoHeartbeat_TV.a` library file into your project’s `lib` folder.
 
 1. tvOS アプリのターゲットの「**[!UICONTROL Build Phases（ビルドフェーズ）]**」タブで、「**[!UICONTROL Link Binary with Libraries（バイナリをライブラリとリンク）]**」を展開して、以下のライブラリを追加します。
 
