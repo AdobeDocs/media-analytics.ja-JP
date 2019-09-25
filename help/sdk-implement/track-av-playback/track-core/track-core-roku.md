@@ -1,7 +1,7 @@
 ---
 seo-title: Roku でのコア再生の追跡
 title: Roku でのコア再生の追跡
-uuid: a8aa7b3c-2d39-44d7-8ebc- b101d130101f
+uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -11,23 +11,23 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # Roku でのコア再生の追跡{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->このドキュメントでは、SDKのバージョン2. xのトラッキングについて説明します。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>このドキュメントでは、SDKバージョン2.xでのトラッキングについて説明します。 1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-1. **初期トラッキングセットアップ**
+1. **初期トラッキングの設定**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
-   **`MediaObject`参照:**
+   **`MediaObject`参照：**
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
    | `name` | ビデオ名 | ○ |
    | `mediaid` | ビデオの一意の識別子 | ○ |
    | `length` | ビデオの長さ | ○ |
-   | `streamType` | Stream type (see _StreamType constants_ below) | ○ |
-   | `mediaType` | Media type (see _MediaType constants_ below) | ○ |
+   | `streamType` | ストリームタイプ( _後述のStreamType定数_ ) | ○ |
+   | `mediaType` | メディアタイプ( _以下のMediaType定数_ ) | ○ |
 
-   **`StreamType`定数:**
+   **`StreamType`定数：**
 
    | 定数名 | 説明   |
    |---|---|
@@ -38,14 +38,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `MEDIA_STREAM_TYPE_AUDIOBOOK` | オーディオブックのストリームタイプ。 |
    | `MEDIA_STREAM_TYPE_PODCAST` | ポッドキャストのストリームタイプ。 |
 
-   **`MediaType`定数:**
+   **`MediaType`定数：**
 
    | 定数名 | 説明 |
    |---|---|
    | `MEDIA_STREAM_TYPE_AUDIO` | オーディオストリームのメディアタイプ。 |
    | `MEDIA_STREAM_TYPE_VIDEO` | ビデオストリームのメディアタイプ。 |
 
-   **VODコンテンツを含むビデオ用のメディア情報オブジェクトを作成します。**
+   **VODコンテンツを含むビデオ用のメディア情報オブジェクトの作成：**
 
    ```
     mediaInfo = adb_media_init_mediainfo(
@@ -68,7 +68,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaInfo.mediaType = ADBMobile().MEDIA_TYPE_VIDEO
    ```
 
-   **AODコンテンツを含むビデオ用のメディア情報オブジェクトを作成します。**
+   **AODコンテンツを含むビデオのメディア情報オブジェクトを作成します。**
 
    ```
    mediaInfo = adb_media_init_mediainfo(
@@ -93,7 +93,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **メタデータの添付**
 
-   オプションで、コンテキストデータ変数を使用して、トラッキングセッションに標準またはカスタムのメタデータオブジェクトをアタッチします。
+   オプションで、コンテキストデータ変数を使用して、標準またはカスタムメタデータオブジェクトをトラッキングセッションにアタッチします。
 
    * **標準メタデータ**
 
@@ -101,14 +101,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       >[!NOTE]
       >
-      >標準のメタデータオブジェクトをメディアオブジェクトにアタッチすることはオプションです。
+      >標準メタデータオブジェクトのメディアオブジェクトへのアタッチはオプションです。
 
       * Media metadata keys API Reference - [Standard metadata keys - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
          See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このメディアのデータを入力します。次に例を示します。
+      カスタム変数用の変数オブジェクトを作成し、このメディアのデータを設定します。 次に例を示します。
 
       ```js
       /* Set custom context data */ 
@@ -120,9 +120,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       ```
 
 
-1. **再生を開始する意図を追跡する**
+1. **再生を開始する意図の追跡**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance:
+   To begin tracking a media session, call  on the Media Heartbeat instance:`trackSessionStart`
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -130,17 +130,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >2番目の値は、手順2で作成したカスタムメディアメタデータオブジェクト名です。
+   >2つ目の値は、手順2で作成したカスタムメディアメタデータオブジェクト名です。
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` は、再生の開始ではなく、再生のユーザーの意図を追跡します。この API は、データ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
+   >`trackSessionStart` 再生の開始ではなく、ユーザーの再生の意図を追跡します。 この API は、データ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
 
    >[!NOTE]
    >
    >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **実際の再生開始の追跡**
+1. **Track the actual start of playback**
 
    Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
 
@@ -156,7 +156,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackComplete();
    ```
 
-1. **セッションの終わりの追跡**
+1. **Track the end of the session**
 
    Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
 
@@ -176,20 +176,20 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaInfo.length = "600"
    ```
 
-1. **ビデオメタデータの添付**
+1. **Attach video metadata**
 
-   オプションで、コンテキストデータ変数を使用して、ビデオトラッキングセッションに標準ビデオまたはカスタムビデオメタデータオブジェクトをアタッチします。
+   Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
 
    * **標準のビデオメタデータ**
 
       [Roku での標準メタデータの実装](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
-      >標準のビデオメタデータオブジェクトをメディアオブジェクトにアタッチすることはオプションです。
+      >Attaching the standard video metadata object to the media object is optional.
 
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このビデオのデータを入力します。次に例を示します。
+      Create a variable object for the custom variables and populate with the data for this video. 次に例を示します。
 
       ```
       mediaContextData = {}
@@ -197,24 +197,24 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       mediaContextData["cmk2"] = "cmv2"
       ```
 
-1. **再生を開始する意図を追跡する**
+1. **Track the intention to start playback**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance:
+   To begin tracking a media session, call  on the Media Heartbeat instance:`trackSessionStart`
 
    ```
    ADBMobile().mediaTrackSessionStart(mediaInfo,mediaContextData)
    ```
 
    >[!TIP]
-   >2番目の値は、手順2で作成したカスタムビデオメタデータオブジェクト名です。
+   >2つ目の値は、手順2で作成したカスタムビデオメタデータオブジェクト名です。
 
    >[!IMPORTANT]
-   >`trackSessionStart` は、再生の開始ではなく、再生のユーザーの意図を追跡します。この API は、ビデオのデータ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
+   >`trackSessionStart` 再生の開始ではなく、ユーザーの再生の意図を追跡します。 この API は、ビデオのデータ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
 
    >[!NOTE]
    >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **実際の再生開始の追跡**
+1. **Track the actual start of playback**
 
    ビデオの再生開始（ビデオの最初のフレームが画面に表示）に関するイベントをビデオプレーヤーから識別し、`trackPlay` () を呼び出します。
 
@@ -222,7 +222,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ADBMobile().mediaTrackPlay()
    ```
 
-1. **再生の完了の追跡**
+1. **Track the completion of playback**
 
    ビデオの再生完了（ユーザーがコンテンツを最後まで視聴）に関するイベントをビデオプレーヤーから識別し、`trackComplete` () を呼び出します。
 
@@ -230,7 +230,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ADBMobile().mediaTrackComplete()
    ```
 
-1. **セッションの終わりの追跡**
+1. **Track the end of the session**
 
    ビデオ再生のアンロード／終了（ユーザーがビデオを閉じる、またはビデオの再生が完了してアンロードされる）に関するイベントをビデオプレーヤーから識別し、`trackSessionEnd` () を呼び出します。
 
@@ -239,9 +239,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ```
 
    >[!IMPORTANT]
-   >`trackSessionEnd` は、ビデオトラッキングセッションの終わりをマークします。セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
+   >`trackSessionEnd` ビデオトラッキングセッションの終わりを示します。 セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
 
-1. **すべての可能な一時停止シナリオの追跡**
+1. **Track all possible pause scenarios**
 
    Identify the event from the video player for video pause and call `trackPause`:
 
@@ -249,7 +249,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ADBMobile().mediaTrackPause()
    ```
 
-   **一時停止シナリオ**
+   **Pause Scenarios**
 
    Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. 以下のシナリオでは、アプリで `trackPause()` () を呼び出す必要があります。
 
@@ -265,7 +265,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ```
 
    >[!TIP]
-   >これは、手順4で使用されていたイベントソースと同じです。ビデオ再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
+   >これは、手順4で使用したのと同じイベントソースである場合があります。 ビデオ再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
 
 * 追跡シナリオ：[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Roku SDK に含まれている、追跡の完全な例を示すサンプルプレーヤー
