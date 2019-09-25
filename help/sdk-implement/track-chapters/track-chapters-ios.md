@@ -12,15 +12,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->次の手順では、2. x SDKを使用した導入について説明します。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、2.x SDKを使用した実装のガイダンスを示しています。 If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. いつチャプター開始イベントが発生するかを識別し、チャプター情報を使用して `ChapterObject` インスタンスを作成します。
 
-   `ChapterObject` チャプタートラッキングリファレンス:
+   `ChapterObject` チャプタートラッキングリファレンス：
 
    >[!NOTE]
    >
-   >これらの変数は、チャプターを追跡する計画がある場合にのみ必要です。
+   >これらの変数は、チャプターを追跡する予定の場合にのみ必要です。
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
