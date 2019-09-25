@@ -1,7 +1,7 @@
 ---
 seo-title: チャプターがスキップされた VOD 再生
 title: チャプターがスキップされた VOD 再生
-uuid: 19fb020c- eb7a-4942-9212-94f4d47195b9
+uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -18,7 +18,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 | トリガー | ハートビートメソッド | ネットワーク呼び出し   | メモ |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。これらのネットワーク呼び出しは、[iOS](vod-no-intrs-details.md) のシナリオでの中断のない再生。 |
+| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。これらのネットワーク呼び出しは、 [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | チャプターが開始する。 | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | チャプターの最初のフレームが再生される。 | `trackPlay` | Heartbeat Chapter Play | メインコンテンツの前にチャプターコンテンツを再生する場合、チャプターが開始する際にハートビートを開始します。 |
 | チャプターが再生される。 |  | Chapter Heartbeats |  |
@@ -27,11 +27,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | ユーザーが通常のチャプターの境界を越えてシークしたことをアプリケーションが認識する。 | `trackEvent:trackChapterSkip` |  |  |
 | コンテンツが再生される。 |  | Content Heartbeats |  |
 | コンテンツの再生が完了する。 | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。このAPIは、ユーザーがメディアを最後まで視聴していない場合でも呼び出す必要があります。 |
+| セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。このAPIは、ユーザーがメディアを視聴せずに完了するまで呼び出す必要があります。 |
 
 ## パラメーター {#section_1874F6B7880B43C5856BD11FF85B382E}
 
-The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
+チャプター再生中に使用されるパラメーターは、チャプター完了ネットワーク呼び出しがない点を除き [、1つのチャプターシナリオを持つ](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) VOD再生のパラメーターと同じです。
 
 ## サンプルコード {#section_fyl_ncj_x2b}
 
@@ -123,7 +123,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS  
+### iOS
 
 iOS でこのシナリオを表示するには、以下のコードを設定します。
 
