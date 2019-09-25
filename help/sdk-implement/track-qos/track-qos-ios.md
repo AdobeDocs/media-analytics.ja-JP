@@ -1,7 +1,7 @@
 ---
 seo-title: iOS での Quality of Experience の追跡
 title: iOS での Quality of Experience の追跡
-uuid: cae2c142- ed39-4234- a711-765dabc5415
+uuid: cae2c142-ed39-4234-a711-765dcabc5415
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 実装QoS
+## QOSの実装
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
@@ -29,7 +29,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >これらの変数は、QoSを追跡する場合にのみ必要です。
+   >これらの変数は、QoSを追跡する予定の場合にのみ必要です。
 
    QoS オブジェクトの作成：
 
@@ -53,5 +53,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >QoSオブジェクトを更新し、ビットレート変更ごとにビットレート変更イベントを呼び出します。これにより、最も正確な QoS データを取得できます。
+   >QoSオブジェクトを更新し、ビットレート変更が行われるたびにビットレート変更イベントを呼び出します。 これにより、最も正確な QoS データを取得できます。
 
