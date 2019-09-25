@@ -1,7 +1,7 @@
 ---
 seo-title: Adobe Debug の設定
 title: Adobe Debug の設定
-uuid: e416458d- f23c-41ce-8d99- fa5076c455f0
+uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
 source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
@@ -14,7 +14,7 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
 Adobe Debug にアクセスするには：
 
-1. [Experience Cloud](https://www.marketing.adobe.com) に移動し、新しいAdobe Experience Cloudユーザーを作成します。
+1. Go to [Experience Cloud](https://www.marketing.adobe.com) and create a new Adobe Experience Cloud user.
 
    >[!TIP]
    >
@@ -52,7 +52,7 @@ Debug Proxyをダウンロードして設定します。
 
 Adobe Debug を初めて実行すると、一意の SSL 証明書が生成されます。デスクトップまたはアプリで HTTPS トラフィックをサポートする場合は、アドビの SSL 証明書をダウンロードしてインストールする必要があります。
 
-SSL証明書をダウンロードしてインストールします。
+SSL証明書のダウンロードとインストール：
 
 1. After Adobe Debug has been installed and started, go to [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl) and download the certification.
 1. 証明書の読み込み
@@ -70,22 +70,22 @@ SSL証明書をダウンロードしてインストールします。
 <!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
 -->
 
-    1. Firefoxの場合は、[Mozilla Firefoxでのルート証明書のインストール]の手順を実行します。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+    1. Firefoxの場合は、[Mozilla Firefoxでのルート証明書のインストール]の手順を実行します。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)変更を確認するに
     
-    You might need to quit and reopen Firefox to see the change.
+    は、Firefoxを終了して再度開く必要がある場合があります。
     
-    ** iOSデバイス**
-    1."**[!UACROL Settings app]****&gt;****[!UACROL WiFi settings]**.
+    **iOSデバイス**
+    1。 Set your iOS device to use Adobe Debug as its HTTP proxy by clicking **[!UICONTROL Settings app]** **&gt;** **[!UICONTROL Wifi settings]**.
     
-    1. Safariで[Debug]に移動します。](https://proxy.debug.adobe.com/ssl)
+    1. Safariで、[Debug]に移動します。](https://proxy.debug.adobe.com/ssl)
     
-    Safari will prompt you to install the SSL certificate.
+    SafariはSSL証明書のインストールを求めるプロンプトを表示します。
 
 ## モバイルデバイスへの SSL 証明書のインストール {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
 
 Adobe Debug で HTTPS 呼び出しが見つからない場合は、モバイルデバイスに Adobe Debug の SSL 証明書をインストールする必要があります。
 
-### iOS  
+### iOS
 
 iOS デバイスに SSL 証明書をインストールするには：
 
@@ -95,7 +95,7 @@ iOS デバイスに SSL 証明書をインストールするには：
    1. ラップトップで使用しているのと同じ Wi-Fi 信号を選択します。
    1. ラップトップで、Debug Proxy アプリに表示されている IP とポートを手動で設定します。
    1. Apple Safari ブラウザーウィンドウを開きます。
-   1. [https://proxy.debug.adobe.com/sslに移動します。](https://proxy.debug.adobe.com/ssl)
+   1. Go to [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
    1. SSL 証明書をダウンロードしてインストールします。
 
 1. ラップトップで、Adobe Debug セッションを開始します。
@@ -111,7 +111,7 @@ Android デバイスに SSL 証明書をインストールするには：
    1. ラップトップで使用しているのと同じ Wi-Fi 信号を選択します。
    1. ラップトップで、Debug Proxy アプリに表示されている IP とポートを手動で設定します。
    1. ブラウザーウィンドウを開きます。
-   1. [https://proxy.debug.adobe.com/sslに移動します。](https://proxy.debug.adobe.com/ssl)
+   1. Go to [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
    1. SSL 証明書をダウンロードしてインストールします。
 
 1. ラップトップで、Adobe Debug セッションを開始します。
