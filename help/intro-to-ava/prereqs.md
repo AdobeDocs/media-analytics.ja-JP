@@ -1,7 +1,7 @@
 ---
 seo-title: 前提条件
 title: 前提条件
-uuid: 4c0b37f3-8615-4cc0- b9c9- eeb029067064
+uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -20,13 +20,13 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## タスク {#prereq-tasks}
 
-*Media Analytics* の実装の場合、開始する前に完了する必要があるタスクは次のとおりです。
+For a Media Analytics implementation, here are the tasks you must complete before you begin:**
 
 1. **Experience Cloud を有効にします。**
 
-   Adobe Experience Platform IDサービスを実装する必要があります。
+   You need to implement the Adobe Experience Platform Identity Service.
 
-   IDサービスでは、Experience Cloudコアサービス、ソリューション、顧客属性およびPeopleコアサービスのオーディエンスに対して共通の識別フレームワークが有効になります。サイト訪問者に一意の永続的 ID を割り当てることで機能します。組織が ID サービスを実装する場合、この ID を使用することで、同じサイト訪問者およびそのデータを様々な Experience Cloud ソリューションで識別できます。
+   IDサービスを使用すると、Experience cloudコアサービス、ソリューション、Peopleコアサービスの顧客属性およびオーディエンスの共通の識別フレームワークを有効にできます。 サイト訪問者に一意の永続的 ID を割り当てることで機能します。組織が ID サービスを実装する場合、この ID を使用することで、同じサイト訪問者およびそのデータを様々な Experience Cloud ソリューションで識別できます。
 
    ![](assets/mc_id_service_graphic.png)
 
@@ -36,7 +36,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >Adobe Experience Cloud Device Co- opに参加するには、Experience Cloud IDサービスが必要です。
+   >Adobe Experience Cloud Device Co-opに参加するには、Experience Cloud IDサービスが必要です。
 
    ID サービスを実装していない場合、今が移行戦略を検討し始めるチャンスです。For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
