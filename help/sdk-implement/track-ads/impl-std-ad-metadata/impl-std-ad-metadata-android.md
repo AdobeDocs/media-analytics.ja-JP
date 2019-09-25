@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: Android での標準広告メタデータの実装
 title: Android での標準広告メタデータの実装
-uuid: 19b98bc1- c659-4182- a4ff- b3340fe2453c
+uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 translation-type: tm+mt
 source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
