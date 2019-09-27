@@ -3,14 +3,14 @@ seo-title: カスタムリンク導入ガイド
 title: カスタムリンク導入ガイド
 uuid: 83315e73-20ca-4db5-9d43-33dade45a13
 translation-type: tm+mt
-source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
+source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
 
 ---
 
 
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
-Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
+Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
 
 * JavaScriptの場合：関 `s.tl()` 数
 * モバイルアプリの場合：[trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
