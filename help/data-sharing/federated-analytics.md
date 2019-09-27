@@ -3,14 +3,15 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
+source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
 
 ---
 
 
 # フェデレーテッド分析{#federated-analytics}
 
-Federated Analytics サービスは、2 つのパートナー間でアドビのメディア（オーディオおよびビデオ）分析データを共有できるシステムです。Media Analytics によって生成される標準化された計測データは、Federated Analytics の指標の 1 つで、複数のソースからの同一のデータを単一のレポートに表示できます。Federated Analytics を規定するルールとロジックによって、それぞれの状況に合わせてデータを簡単に管理し、個々のパートナーのニーズに対応できます。Federated Analytics を利用すれば、オーディオおよびビデオ計測の効率性と実用性を高め、簡略化を推し進めることができます。
+フェデレーテッド分析サービスは、2つのパートナー間でAdobe Media Analyticsデータ（オーディオおよびビデオ）を共有するシステムを提供します。
+Media Analytics によって生成される標準化された計測データは、Federated Analytics の指標の 1 つで、複数のソースからの同一のデータを単一のレポートに表示できます。Federated Analytics を規定するルールとロジックによって、それぞれの状況に合わせてデータを簡単に管理し、個々のパートナーのニーズに対応できます。Federated Analytics を利用すれば、オーディオおよびビデオ計測の効率性と実用性を高め、簡略化を推し進めることができます。
 
 ## メリット {#section_804FFE8671594A6FB769CBE79EF9D627}
 
