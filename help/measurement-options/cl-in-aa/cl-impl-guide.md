@@ -3,7 +3,7 @@ seo-title: カスタムリンク導入ガイド
 title: カスタムリンク導入ガイド
 uuid: 83315e73-20ca-4db5-9d43-33dade45a13
 translation-type: tm+mt
-source-git-commit: d325f3184932b179bbd6cde0d3e82cb2e278dd2a
+source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
 
 ---
 
@@ -14,7 +14,7 @@ Custom Video Tracking utilizes [manual link tracking using custom link code](htt
 
 * JavaScriptの場合：関 `s.tl()` 数
 * モバイルアプリの場合：[trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 要件
 
