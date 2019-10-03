@@ -1,9 +1,9 @@
 ---
 product: Media Analytics
 audience: end-user
-user-guide-title: Adobe Analytics for Audio and Video
+user-guide-title: オーディオおよびビデオのAdobe Analytics
 translation-type: tm+mt
-source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
+source-git-commit: 1704ef6a637a476fe88d61e0d2edec687ec4b66e
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
       + [Media Analyticsへのマイルストーンの移行](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [マイルストーンからカスタムリンクへの移行](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics のカスタムリンク {#cl-in-aa}
-      + [Custom Link Implementation Guide](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + [カスタムリンク導入ガイド](measurement-options/cl-in-aa/cl-impl-guide.md)
 + オーディオとビデオ分析の概要 {#intro-to-ava}
    + [前提条件](intro-to-ava/prereqs.md)
    + 実装パス {#implementation-paths}
@@ -41,16 +41,16 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
          + [Track Core Playback on Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [iOSでのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + [JavaScriptでのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-js.md)
-         + [Track Core Playback on Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
-         + [Rokuでのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-roku.md)
+         + [Chromecastでのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
+         + [Track Core Playback on Roku](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + Track Buffering {#track-buffering}
-         + [Androidでのバッファリングの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
-         + [iOSでのバッファリングの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
-         + [JavaScriptでのバッファリングの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
-         + [Chromecastでのバッファリングの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Rokuでのバッファリングの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
+         + [Track Buffering on Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
+         + [Track Buffering on iOS](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
+         + [Track Buffering on JavaScript](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
+         + [Track Buffering on Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
+         + [Track Buffering on Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + Track Seeking {#track-seeking}
-         + [Track Seeking on Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Androidでのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [iOSでの追跡のシーク](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + [JavaScriptでのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
          + [Chromecastでのトラックシーク](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
@@ -68,9 +68,9 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
       + [概要](sdk-implement/track-ads/track-ads-overview.md)
       + [Androidでの広告の追跡](sdk-implement/track-ads/track-ads-android.md)
       + [iOSでの広告の追跡](sdk-implement/track-ads/track-ads-ios.md)
-      + [Track Ads on JavaScript](sdk-implement/track-ads/track-ads-js.md)
-      + [Track Ads on Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
-      + [Track Ads on Roku](sdk-implement/track-ads/track-ads-roku.md)
+      + [JavaScriptでの広告の追跡](sdk-implement/track-ads/track-ads-js.md)
+      + [Chromecastでの広告の追跡](sdk-implement/track-ads/track-ads-chromecast.md)
+      + [Rokuでの広告の追跡](sdk-implement/track-ads/track-ads-roku.md)
       + 標準広告メタデータの実装 {#impl-std-ad-metadata}
          + [Android での標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [iOS での標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
@@ -79,15 +79,15 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
    + チャプターおよびセグメントの追跡 {#track-chapters}
       + [概要](sdk-implement/track-chapters/track-chapters-overview.md)
       + [Androidでのチャプターとセグメントの追跡](sdk-implement/track-chapters/track-chapters-android.md)
-      + [iOSでのチャプターとセグメントの追跡](sdk-implement/track-chapters/track-chapters-ios.md)
-      + [JavaScriptでのチャプターとセグメントの追跡](sdk-implement/track-chapters/track-chapters-js.md)
-      + [Chromecastでのチャプターとセグメントの追跡](sdk-implement/track-chapters/track-chapters-chromecast.md)
-      + [六のチャプターとセグメントの追跡](sdk-implement/track-chapters/track-chapters-roku.md)
+      + [Track Chapters and Segments on iOS](sdk-implement/track-chapters/track-chapters-ios.md)
+      + [Track Chapters and Segments on JavaScript](sdk-implement/track-chapters/track-chapters-js.md)
+      + [Track Chapters and Segments on Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
+      + [Track Chapters and Segments on Roku](sdk-implement/track-chapters/track-chapters-roku.md)
    + Quality of Experience の追跡 {#track-qos}
       + [概要](sdk-implement/track-qos/track-qos-overview.md)
-      + [Androidでのエクスペリエンスの質の追跡](sdk-implement/track-qos/track-qos-android.md)
-      + [iOSでのエクスペリエンスの質の追跡](sdk-implement/track-qos/track-qos-ios.md)
-      + [JavaScriptでのエクスペリエンスの質の追跡](sdk-implement/track-qos/track-qos-js.md)
+      + [Track Quality of Experience on Android](sdk-implement/track-qos/track-qos-android.md)
+      + [Track Quality of Experience on iOS](sdk-implement/track-qos/track-qos-ios.md)
+      + [Track Quality of Experience on JavaScript](sdk-implement/track-qos/track-qos-js.md)
       + [Chromecastでのエクスペリエンスの質の追跡](sdk-implement/track-qos/track-qos-chromecast.md)
       + [体験の質の記録(Roku)](sdk-implement/track-qos/track-qos-roku.md)
    + Track Errors {#track-errors}
@@ -114,7 +114,7 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
       + [検証の概要](sdk-implement/validation/validation-overview.md)
       + [テスト 1：標準の再生](sdk-implement/validation/test1-standard-playback.md)
       + [テスト2:メディアの中断](sdk-implement/validation/test2-media-interrupt.md)
-      + [Test Call Details](sdk-implement/validation/test-call-details.md)
+      + [テストコールの詳細](sdk-implement/validation/test-call-details.md)
       + [ハートビートパラメーターの説明](sdk-implement/validation/heartbeat-params.md)
       + デバッグ {#debugging}
          + [SDK Debugging](sdk-implement/validation/debugging/sdk-debugging.md)
@@ -124,13 +124,13 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
    + Analytics in OTT Apps {#analytics-with-ott}
       + [アプリの状態の追跡](sdk-implement/analytics-with-ott/track-app-states.md)
       + [アプリのアクションの追跡](sdk-implement/analytics-with-ott/track-app-actions.md)
-      + [Set User IDs](sdk-implement/analytics-with-ott/set-user-ids.md)
+      + [ユーザーIDの設定](sdk-implement/analytics-with-ott/set-user-ids.md)
       + [OTT と Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT と Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + クックブック {#cookbook}
       + [再生中のアプリケーション割り込みの処理](sdk-implement/cookbook/app-interrupts.md)
       + [広告と広告の間に発生する main:play の解決](sdk-implement/cookbook/fix-ad-play-ad.md)
-      + [Resuming Inactive Sessions](sdk-implement/cookbook/resuming-inactive.md)
+      + [非アクティブなセッションの再開](sdk-implement/cookbook/resuming-inactive.md)
       + [SceneGraph（Roku）でのトラッキング](sdk-implement/cookbook/sdk-track-scenegraph.md)
       + [SDKと起動の違い](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
    + Media Analytics 1.x to 2.x Migration {#va-1x-to-2x}
@@ -161,16 +161,16 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
       + [タイムライン 1 - コンテンツの最後まで視聴](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [タイムライン 2 - ユーザーが中断したセッション](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [タイムライン 3 - チャプター](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-   + [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
+   + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + 指標とメタデータ {#metrics-and-metadata}
-   + [オーディオおよびビデオのパラメーター](metrics-and-metadata/audio-video-parameters.md)
+   + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md)
    + [広告パラメーター](metrics-and-metadata/ad-parameters.md)
    + [チャプターパラメーター](metrics-and-metadata/chapter-parameters.md)
    + [品質パラメーター](metrics-and-metadata/quality-parameters.md)
    + [セグメント](metrics-and-metadata/segments.md)
    + [計算指標](metrics-and-metadata/calculated-metrics.md)
 + Reporting and Analysis {#media-reports}
-   + [メディアレポートの有効化](media-reports/media-reports-enable.md)
+   + [Media Reports Enablement](media-reports/media-reports-enable.md)
    + Media Default Reports {#media-default-reports}
       + [デフォルトのレポートの概要](media-reports/media-default-reports/default-reports-overview.md)
       + [メディアの概要](media-reports/media-default-reports/media-reports-overview.md)
@@ -182,4 +182,3 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
 + [Federated Analytics](data-sharing/federated-analytics.md)
 + その他のリソース {#additional-resources}
    + [ドキュメントのアップデート](additional-resources/doc-updates.md)
-
