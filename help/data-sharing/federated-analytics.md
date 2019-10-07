@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 99a8908499ab0e43964fd3d7e6e419b5a78ce66b
+source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
 
 ---
 
@@ -40,7 +40,7 @@ Media Analytics によって生成される標準化された計測データは�
 
 ## フェデレーテッド分析フォームのダウンロード
 
-現在のバージョンのフォームをダウンロードする場所：フェデレー [ションルール契約フォーム](/assets/federated_analytics_form.pdf)
+現在のバージョンのフォームをダウンロードする場所：フェデレー [ションルール契約フォーム](federated_analytics_form.pdf)
 
 ## プロセス {#section_byb_kb3_vbb}
 
