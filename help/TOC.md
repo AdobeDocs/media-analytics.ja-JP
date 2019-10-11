@@ -3,7 +3,7 @@ product: Media Analytics
 audience: end-user
 user-guide-title: オーディオおよびビデオのAdobe Analytics
 translation-type: tm+mt
-source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
+source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
 
 ---
 
@@ -179,6 +179,6 @@ source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
       + [メディア同時ビューア](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [同時ビューア JSON レポートデータの取得](media-reports/media-default-reports/get-concurrent-json.md)
    + [メディアワークスペーステンプレート](media-reports/media-workspace-templates.md)
-+ [Federated Analytics](data-sharing/federated-analytics.md)
++ [Federated Analytics](federated-analytics.md)
 + その他のリソース {#additional-resources}
    + [ドキュメントのアップデート](additional-resources/doc-updates.md)
