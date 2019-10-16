@@ -3,7 +3,7 @@ seo-title: メディアワークスペースのテンプレート
 title: メディアワークスペースのテンプレート
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Analytics のワークスペースを利用すると、トラッキング�
 
    ![](assets/all-templates-audio.png)
 
-   例えば、オーディオ消費テンプレートを選択すると、以下のオーディオ向けダッシュボードが表示されます。
+   For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
 
    ![](assets/aa-workspace.png)
 
