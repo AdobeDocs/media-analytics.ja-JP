@@ -3,7 +3,7 @@ seo-title: iOS のセットアップ
 title: iOS のセットアップ
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
 ---
 
@@ -140,7 +140,7 @@ For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migrat
 
 ## tvOS のネイティブアプリの設定
 
-新しい Apple TV のリリースに伴い、ネイティブ tvOS 環境で実行するためのアプリケーションを作成できるようになりました。iOS で利用可能ないくつかのフレームワークのいずれかを使用して完全にネイティブなアプリを作成するか、XML テンプレートおよび JavaScript を使用したアプリを作成できます。MediaSDK バージョン 2.0 から、tvOS のサポートが利用できます。For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/documentation/)
+新しい Apple TV のリリースに伴い、ネイティブ tvOS 環境で実行するためのアプリケーションを作成できるようになりました。iOS で利用可能ないくつかのフレームワークのいずれかを使用して完全にネイティブなアプリを作成するか、XML テンプレートおよび JavaScript を使用したアプリを作成できます。MediaSDK バージョン 2.0 から、tvOS のサポートが利用できます。For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/)
 
 次の手順を Xcode プロジェクトで実行します。このガイドは、プロジェクトのターゲットの 1 つが tvOS 用の Apple TV アプリであることを想定して記述されています。
 
