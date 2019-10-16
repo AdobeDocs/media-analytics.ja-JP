@@ -3,7 +3,7 @@ seo-title: メディアレポートの有効化
 title: メディアレポートの有効化
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -16,22 +16,22 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 >
 >新しい機能を利用するには、既存のMedia Analyticsのお客様は、RSIDのメディアトラッキングを再有効化する必要があります。
 
-1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click [!UICONTROL Admin] &gt; [!UICONTROL Report Suites].
-1. Select the report suite(s) where you are collecting media data and click [!UICONTROL Edit Settings] &gt; [!UICONTROL Media Management] &gt; [!UICONTROL Media Reporting].
+1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click **[!UICONTROL Admin &gt; Report Suites].**
+1. Select the report suite(s) where you are collecting media data and click **[!UICONTROL Edit Settings &gt; Media Management &gt; Media Reporting].**
 
    ![](assets/media-reporting.png){width="400px"}
 
-1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core]**, and optionally enable **[!UICONTROL Media Ads]**, **[!UICONTROL Media Chapters]**, and **[!UICONTROL Media Quality]**.
+1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core],** and optionally enable **[!UICONTROL Media Ads],** **[!UICONTROL Media Chapters],** and **[!UICONTROL Media Quality].**
 
    メディア測定には、以下のモジュールが含まれます。
 
    * **メディアコア**
 
-      Core media measurement is used for media content. This will use Solution (or Custom) eVars to keep track of Content, Content Type, Content Player Name, and Content Channel. Solution (or Custom) events will be used for Media Starts, Content Starts, Content Completes, and Content Time Spent.
+      コアメディア測定は、メディアコンテンツに使用されます。これは、ソリューション（またはカスタム）eVarを使用して、コンテンツ、コンテンツタイプ、コンテンツプレイヤー名およびコンテンツチャネルを追跡します。 ソリューション（またはカスタム）イベントは、メディア開始、コンテンツ開始、コンテンツ完了およびコンテンツ滞在時間に使用されます。
 
    * **メディア広告**
 
-      Media ad measurement is used for the measurement of ads within the media content. これは、ソリューション eVar を使用して、広告、広告プレーヤー名、広告ポッドおよびポッド位置の広告を測定します。ソリューションイベントは、広告開始、広告完了、広告滞在時間およびビデオ滞在時間に使用されます。
+      メディア広告指標は、メディアコンテンツ内の広告の測定に使用されます。 これは、ソリューション eVar を使用して、広告、広告プレーヤー名、広告ポッドおよびポッド位置の広告を測定します。ソリューションイベントは、広告開始、広告完了、広告滞在時間およびビデオ滞在時間に使用されます。
 
    * **メディアチャプター**
 
@@ -52,16 +52,16 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
    広告、チャプター、再生画質をまだ追跡していない場合、いつでも追加のオプションを有効にすることができます。
 
-1. 「**[!UICONTROL 保存]**」をクリックします。
+1. Click **[!UICONTROL Save].**
 
-   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. [!UICONTROL メディアコア指標]ページが表示されたら、次のステップへと進みます。
+   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. **[!UICONTROL メディアコア指標]ページが表示されたら、次のステップへと進みます。**
 
-1. (Conditional) On the [!UICONTROL Media Core measurement] page, choose to continue using custom variables or choose to use solution variables.
+1. (Conditional) On the **[!UICONTROL Media Core measurement]** page, choose to continue using custom variables or choose to use solution variables.
 
    | オプション | メモ |
    | --- | --- |
-   | 引き続きカスタム変数を使用 | Pros and Cons:<ul> <li> **長所：**&#x200B;移行後もコンテンツトレンドが機能し続けます。 </li> <li> **** 短所：2つのカスタムeVarと3つのカスタムイベントをメディアに割り当てておく必要があります。 1 つのカスタム eVar と 1 つのカスタムイベントが再び使用できるようになります。 </li> </ul> カスタム変数を使用し続けるには <ol> <li>「カスタム変数を使用」を選択して、「保存」をクリックします。 </li> <li>プロンプトが表示されたら、現在のカスタム eVar およびイベントをマッピングして、「保存」をクリックします。 </li> </ol> |
-   | ソリューション変数への移行 | 長所と短所：<ul> <li> **長所：** 3 つのカスタム eVar と 4 つのカスタムイベントが再び使用できるようになります。 </li> <li> **短所：**：メディアレポートの&#x200B;**すべて**&#x200B;の履歴トレンドおよび比較が失われます。つまり、ハートビートへの移行前のすべての日付のコンテンツ表示またはコンテンツ再生時間のトレンドを確認できなくなります。 </li> </ul> **制限事項：**&#x200B;このトレンド情報を保持しなくてもよいことが確実でない限り、ソリューション変数に移行しないでください。以前からの持続性を保持する必要がある場合のみ、すべてのお客様がソリューション変数および処理ルールを使用して、メディアデータを既存の prop および eVar に移行する必要があります。ソリューション変数に移行するには：「ソリュー [!UICONTROL ション変数を使用」を選択し] 、「保存」をクリ [!UICONTROL ックします]。 <br><br> 重要：ソリューション変数に移行すると、メディアレポ **ートの履歴** 、および比較がすべて失われます。 |
+   | 引き続きカスタム変数を使用 | 長所と短所：<ul> <li> **長所：**&#x200B;移行後もコンテンツトレンドが機能し続けます。 </li> <li> **** 短所：2つのカスタムeVarと3つのカスタムイベントをメディアに割り当てておく必要があります。 1 つのカスタム eVar と 1 つのカスタムイベントが再び使用できるようになります。 </li> </ul> カスタム変数を使用し続けるには <ol> <li>Select **[!UICONTROL Use Custom Variables,]** then click **[!UICONTROL Save.]** </li> <li>When prompted, map your current custom eVars and events and then click **[!UICONTROL Save:]** </li> </ol> |
+   | ソリューション変数への移行 | 長所と短所：<ul> <li> **長所：** 3 つのカスタム eVar と 4 つのカスタムイベントが再び使用できるようになります。 </li> <li> **短所：**：メディアレポートの&#x200B;**すべて**&#x200B;の履歴トレンドおよび比較が失われます。つまり、ハートビートへの移行前のすべての日付のコンテンツ表示またはコンテンツ再生時間のトレンドを確認できなくなります。 </li> </ul> **制限事項：**&#x200B;このトレンド情報を保持しなくてもよいことが確実でない限り、ソリューション変数に移行しないでください。以前からの持続性を保持する必要がある場合のみ、すべてのお客様がソリューション変数および処理ルールを使用して、メディアデータを既存の prop および eVar に移行する必要があります。ソリューション変数に移行するには：「ソリュー **[!UICONTROL ション変数を使用」を選択し]** 、「保存」をクリ **[!UICONTROL ックします]。** <br><br> 重要：ソリューション変数に移行すると、メディアレポ **ートの履歴** 、および比較がすべて失われます。 |
 
 >[!IMPORTANT]
 >
