@@ -3,7 +3,7 @@ seo-title: Primetime
 title: Primetime
 uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: d339ae295af89a1c2ba2e8c938e1650d82507e2b
 
 ---
 
@@ -20,11 +20,12 @@ Primetime は、メディアパブリッシング、広告、パーソナライ�
 * 動的広告挿入を使用した（または使用しない）広告ブレーク測定のサポート。
 * TVSDK のシームレスな広告挿入モデルにより、広告再生の直接測定が可能になり、精度が向上します。
 * 充実したイベントとメタデータが、QoS バッファー、モバイル接続中断の問題、エンドユーザーのインタラクション（モバイルでのシーク、一時停止、バックグラウンド実行など）に関する正確性を保ちます。
-* ID3 メタデータを使用する Nielsen DTVR（線形）および CMS メタデータを使用する DCR の統合サポート。
+<!--
+* Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
+-->
 
-TVSDK は既にメディア SDK と統合されているので、サポートされているすべてのプラットフォームと簡単かつ迅速に統合することができます。また、Primetime は Nielsen とのパートナーシップをサポートしています。Primetime を最大限に活用するには、以下に挙げる各プラットフォームのドキュメントに加え、[クライアント側](/help/intro-to-ava/implementation-paths/client-side-path.md)に記載されているガイドラインと前提条件を参照してください。 Primetimeユ [ーザーガイド](https://helpx.adobe.com/primetime/user-guide.html)
+TVSDK は既にメディア SDK と統合されているので、サポートされているすべてのプラットフォームと簡単かつ迅速に統合することができます。<!--Primetime also supports the partnership with Nielsen.--> Primetimeを活用するには、お使いのプラットフォームに関する以下のドキュメントと共に、 [クライアント](/help/intro-to-ava/implementation-paths/client-side-path.md) 側で見つかったのと同じガイドラインおよび前提条件に従ってください。Primetimeユ [ーザーガイドを参照してください。](https://helpx.adobe.com/primetime/user-guide.html)
 
 >[!NOTE]
 >
->この実装パスでは、Media Analyticsには一意のSKUがあり、メディアストリームに基づくモデルに対するサーバーコールに基づく価格モデルから変更されるので、顧客は販売担当者/アカウントマネージャーに連絡して新しい販売注文に署名する必要があります。 また、TVSDK の購入について、営業担当者またはアカウントマネージャーにお問い合わせください。
-
+>この導入パスでは、Media Analyticsは一意のSKUを持ち、メディアストリームに基づくモデルに対するサーバーコールに基づく価格モデルから変更されるので、顧客は営業担当者/アカウントマネージャーに連絡して新しい受注に署名する必要があります。 また、TVSDK の購入について、営業担当者またはアカウントマネージャーにお問い合わせください。
