@@ -3,7 +3,7 @@ seo-title: クライアント側
 title: クライアント側
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -22,5 +22,4 @@ If Media Analytics is your intended path, see [Media SDK Implementation](/help/s
 
 >[!NOTE]
 >
->Media Analytics には独自の SKU があり、サーバー呼び出しに基づく価格モデルからメディアのストリーミングに基づくモデルに変更されているので、お客様は営業担当者またはアカウントマネージャーに連絡して新たに販売契約を結ぶ必要があります。
-
+>Media Analyticsは一意のSKUを持ち、サーバーコールに基づく価格モデルからメディアストリームに基づくモデルに変更があるので、顧客は販売担当者/アカウントマネージャーに連絡して、新しい販売注文に署名する必要があります。
