@@ -3,20 +3,20 @@ seo-title: 順次追跡を含むライブメインコンテンツ
 title: 順次追跡を含むライブメインコンテンツ
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 順次追跡を含むライブメインコンテンツ{#live-main-content-with-sequential-tracking}
 
-## シナリオ {#section_E4B558253AD84ED59256EDB60CED02AE}
+## シナリオ {#scenario}
 
 このシナリオでは、ライブストリームに参加後、40 秒間広告が再生されていない、1 つのライブアセットがあります。
 
 これは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じシナリオですが、コンテンツの一部はスクラブされ、メインコンテンツのあるポイントから別のポイントまでのシークが完了します。
 
-| トリガー | ハートビートメソッド |  Network calls  |  メモ   |
+| トリガー | ハートビートメソッド |  ネットワーク呼び出し |  メモ   |
 | --- | --- | --- | --- |
 | ユーザーが[!UICONTROL 再生]をクリックする | trackSessionStart | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
 | コンテンツ再生の最初のフレーム。 | trackPlay | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
@@ -27,7 +27,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | コンテンツ再生 |  | Content Heartbeats |  |
 | セッション終了（Episode2 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete は、2 番目のエピソードの session2 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
 
-## パラメーター {#section_D52B325B99DA42108EF560873907E02C}
+## パラメーター {#parameters}
 
 ### Heartbeat Content Start
 
@@ -38,11 +38,11 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:user:mid` | `s:user:mid` | Adobe Analytics Content Start 呼び出しの mid 値と一致する必要がある |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Your Media Name&gt; |  |
+| `s:asset:media_id` | &lt;メディア名&gt; |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *オプション* | メディア上のカスタムメタデータセット |
 
-## Heartbeat Content Play {#section_B6AD9225747943F881DCA8E6A1D5710E}
+## Heartbeat Content Play {#heartbeat-content-play}
 
 これは、Heartbeat Content Start 呼び出しとほとんど同じように見えますが、「s:event:type」パラメーターに重要な違いがあります。すべてのパラメーターは、ここで準備ができている必要があります。
 
@@ -51,9 +51,9 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
+## Content Heartbeats {#content-heartbeats}
 
-During media playback, there is a timer that will send one or more heartbeats every 10 seconds for main content, and every one second for ads. それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
+メディアの再生中に、1つ以上のハートビートをメインコンテンツに対して10秒おき、広告に対して1秒おきに送信するタイマーがあります。 それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
 
 Content Heartbeats では、いくつかの特定の事柄を探します。
 
@@ -62,7 +62,7 @@ Content Heartbeats では、いくつかの特定の事柄を探します。
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;再生ヘッドの位置&gt; 例：50、60、70 | これは、再生ヘッドの現在の位置を反映する必要があります。 |
 
-## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 任意のエピソードの再生が完了した場合（再生ヘッドがエピソードの境界を越える）、Heartbeat Content Complete 呼び出しが送信されます。これは、他のハートビート呼び出しに似ていますが、いくつか特有のものが含まれます。
 
@@ -71,7 +71,7 @@ Content Heartbeats では、いくつかの特定の事柄を探します。
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## サンプルコード {#section_mpx_q2j_x2b}
+## サンプルコード {#sample-code}
 
 ![](assets/ios-live-noads-multiplesessions.png)
 
