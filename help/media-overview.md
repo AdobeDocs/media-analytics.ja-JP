@@ -3,7 +3,7 @@ seo-title: Adobe Analytics でのオーディオおよびビデオの測定
 title: Adobe Analytics でのオーディオおよびビデオの測定
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
+source-git-commit: d339ae295af89a1c2ba2e8c938e1650d82507e2b
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 従来のMilestoneビデオ実装に関する手順は含まれません。 すべてのお客様に、2 つの最新のメディアトラッキングソリューションのどちらかまたは両方に移行して、強化された機能と拡張された計測機能を利用することをお勧めします。最新のソリューションに移行する利点については、[以下](media-overview.md#section_cnj_5st_p1b)を参照してください。引き続きビデオの追跡のMilestoneメソッドをサポートしますが、予定されている更新、修正、機能改善はありません。 ご不明な点がある場合は、アドビのアカウントマネージャーにお問い合わせください。
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 従来のMilestoneビデオ実装に関する手順は含まれません。 すべてのお客様に、2 つの最新のメディアトラッキングソリューションのどちらかまたは両方に移行して、強化された機能と拡張された計測機能を利用することをお勧めします。最新のソリューションに移行する利点については、[以下](media-overview.md#heartbeat-versus-milestone-benefits)を参照してください。引き続きビデオの追跡のMilestoneメソッドをサポートしますが、予定されている更新、修正、機能改善はありません。 ご不明な点がある場合は、アドビのアカウントマネージャーにお問い合わせください。
 
-## 概要 {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
+## 概要 {#overview}
 
 Adobe Analytics for Media（Media Analytics とも呼ばれます）は、基本の Analytics 機能へのアドオンであり、クライアントに対してコンテンツ、オーディオおよび広告を対象とした堅牢なメディア測定を実現します。Media Analytics には様々なメリットがあり、リアルタイムモニタリングや詳細分析をおこなったり、行動につながるインサイトや収益化のチャンスを把握したりできます。
 
@@ -29,7 +29,7 @@ Adobe Analytics for Media を利用すると、メディアの視聴状況など
 
 これらのメディアソリューションは、ドロップフレーム、バッファリングに費やされた時間、平均ビットレートなど、QoS に関する重要な配信指標を測定するだけではありません。お客様の Web サイトやアプリデータと組み合わせて、顧客のフローや顧客の関心を視覚化したり、Adobe Experience Cloud を使用してレコメンデーションを強化したり、顧客エクスペリエンスをパーソナライズしたりできます。
 
-## メリット {#section_7712BA90EAE64C118218D1C581EF68B7}
+## メリット {#benefits}
 
 アドビのメディア測定には様々なメリットがあります。主なものは以下のとおりです。
 
@@ -40,7 +40,7 @@ Adobe Analytics for Media を利用すると、メディアの視聴状況など
 * **正確な計測** - OTT、スマートフォン、タブレット、デスクトップなど、メディア視聴に使用されたあらゆるデバイス全体でデータを計測し、利用状況のパターンや傾向を監視できます。
 * **セグメント化** - プレーヤー、デバイス、ジャンル、チャプターおよび番組に分類を適用し、全体的な視聴回数、コンテンツ、オーディオおよび広告（またはその組み合わせ）に対するそれぞれの影響度を把握できます。
 
-## マイルストーンに対するハートビートのメリット {#section_cnj_5st_p1b}
+## マイルストーンに対するハートビートのメリット {#heartbeat-versus-milestone-benefits}
 
 Adobe Analytics for mediaは、次の2つの方法で測定できます。従来のMilestoneメソッド（ビデオのみ）と現在のHeartbeatsメソッド（オーディオおよびビデオ、Media SDKとMedia Collection APIの両方で特集）。 推奨の計測方法はハートビートなので、アドビではすべてのお客様に、以下で説明するメリットを得られるようこのバージョンに移行することをお勧めしています。
 
@@ -51,7 +51,6 @@ Adobe Analytics for mediaは、次の2つの方法で測定できます。従来
 * **実装プロセスの簡略化** - プレーヤー API によって簡単に変数をマッピングできるほか、Adobe Debug ツールを使用して実装を検証し、必要な変数をすべて正確に追跡できているか確認できます。
 * **Adobe Experience Cloud の自動統合** - Experience Cloud ID による Adobe Experience Cloud との自動統合を活用し、メディアの視聴者をセグメント化してターゲットに設定できるほか、それぞれの視聴者の好みに合わせて推奨メディアを提示できます。
 * **Federated Analytics によるデータの共有** - 業界最高レベルのメディア共有機能を生かし、通信事業者、コンテンツ制作会社、配信業者など、すべてのメディア配信パートナーにわたってデータを総合的に分析できます。
-* **認定視聴率測定パートナーとの提携** - アドビは視聴率測定パートナーの Nielsen と提携することで、中立的な調査に基づく第三者の計測データを利用し、信頼性の高い認定済みのメディアのレーティングを参照できるようにしています。
 * **あらゆるプラットフォームに対応できる標準化されたソリューション** - あらゆるメディアおよびプラットフォーム全体で一貫性のある標準化された変数を使用し、より効率的にクロスキャンペーンを実施してデバイスおよびベンダーを比較できます。
 * **ダウンロードされたコンテンツの追跡** — 接続状況に関係なく、デバイス上でダウンロードおよび再生されるメディアコンテンツ（ビデオおよびオーディオ）を追跡します。
 
@@ -67,7 +66,7 @@ Adobe Analytics for mediaは、次の2つの方法で測定できます。従来
 | **パートナー共有** | 該当なし | Federated Analytics および認定済み指標 |
 | **高度な追跡** | 該当なし | エラーリカバリーの追跡および同時ビューア |
 
-## サポートされるデバイス {#section_lkm_l5t_p1b}
+## サポートされるデバイス {#devices-supported}
 
 Adobe Analytics for Media は業界とともに進化しており、強力なデータ収集ツールによって、対象となるすべてのデバイスから各メディアストリームのデータを収集し、レポートに表示できます。アドビのメディア SDK は、次のような一般的なデバイスに対応できるよう開発されています。
 
