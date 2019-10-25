@@ -3,7 +3,7 @@ seo-title: Android のセットアップ
 title: Android のセットアップ
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## SDK の実装
 
-1. [ダウンロードした](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)メディア SDK をプロジェクトに追加します。
+1. [ダウンロードした](/help/sdk-implement/download-sdks.md#download-2x-sdks)メディア SDK をプロジェクトに追加します。
 
    1. Expand the Android zip file (e.g., `MediaSDK-android-v2.*.zip`).
    1. Verify that the `MediaSDK.jar` file exists in the `libs/` directory.
@@ -30,8 +30,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       **IntelliJ IDEA：**
 
       1. **[!UICONTROL プロジェクトナビゲーション]**&#x200B;パネルでプロジェクトを右クリックします。
-      1. Select **[!UICONTROL Open Module Settings]**.
-      1. Under **[!UICONTROL Project Settings]**, select **[!UICONTROL Libraries]**.
+      1. 「**[!UICONTROL モジュール設定を開く]**」を選択します。
+      1. 「**[!UICONTROL プロジェクト設定]**」で、「**[!UICONTROL ライブラリ]**」を選択します。
 
       1. Click **[!UICONTROL +]** to add a new library.
       1. 「**[!UICONTROL Java]**」を選択し、`MediaSDK.jar` ファイルに移動します。
@@ -41,9 +41,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       **Eclipse：**
 
       1. Eclipse IDE で、プロジェクト名を右クリックします。
-      1. Click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Add External Archives]** .
+      1. **[!UICONTROL Build Path（ビルドパス）]**／**[!UICONTROL Add External Archives（外部アーカイブの追加）]**&#x200B;をクリックします。
       1. Select `MediaSDK.jar`.
-      1. Click **[!UICONTROL Open]**.
+      1. 「**[!UICONTROL Open（開く）]**」をクリックします。
       1. Right-click the project again, and click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]** .
       1. 「**[!UICONTROL 順序]**／**[!UICONTROL エクスポート]**」タブをクリックします。
 
