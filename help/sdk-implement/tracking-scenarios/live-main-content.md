@@ -3,14 +3,14 @@ seo-title: ライブメインコンテンツ
 title: ライブメインコンテンツ
 uuid: e92e99f4-c395-48aa-8a30-cbd2f5fc07c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # ライブメインコンテンツ{#live-main-content}
 
-## シナリオ {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## シナリオ {#scenario}
 
 このシナリオでは、ライブストリームに参加後、40 秒間広告が再生されていない、1 つのライブアセットがあります。
 
@@ -21,7 +21,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | コンテンツが再生される。 |  | Content Heartbeats |  |
 | セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。このAPIは、ユーザーがメディアを消費せずに完了する場合でも呼び出す必要があります。 |
 
-## パラメーター {#section_D52B325B99DA42108EF560873907E02C}
+## パラメーター {#parameters}
 
 Adobe Analytics Content Start 呼び出し時に確認される同じ値の多くは、Heartbeat Content Start 呼び出し時にも確認されます。また、Adobe Analyticsの様々なメディアレポートに入力するためにアドビが使用するその他のパラメーターの多くも確認できます。 ここではすべては取り上げません。本当に重要なものだけを示します。
 
@@ -38,7 +38,7 @@ Adobe Analytics Content Start 呼び出し時に確認される同じ値の多�
 | `s:stream:type` | live |  |
 | `s:meta:*` | オプション | メディア上のカスタムメタデータセット |
 
-## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
+## Content Heartbeats {#content-heartbeats}
 
 メディアの再生中に、1つ以上のハートビート(ping)を、メインコンテンツに10秒ごと、広告に1秒ごとに送信するタイマーがあります。 それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
 
@@ -49,7 +49,7 @@ Content Heartbeats では、いくつかの特定の事柄を探します。
 | `s:event:type` | "play" |  |
 | `l:event:playhead` | &lt;再生ヘッドの位置&gt; 例：50、60、70 | これは、再生ヘッドの現在の位置を反映する必要があります。 |
 
-## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 このシナリオでは、ライブストリームが完了しなかったので、完了呼び出しは行われません。
 
@@ -67,7 +67,7 @@ LIVEメディアの場合、ユーザーがストリームの再生を開始す�
 
 再生を一時停止したときに、再生の開始時に適用したのと同じ「ライブ再生ヘッド」ロジックを適用する必要があります。 ユーザーがLIVEストリームの再生に戻ったら、ユーザーがLIVEストリームを一時停止したポイントではなく、新しいオフセット再生ヘッ `l:event:playhead` ド __ （位置）に値を設定する必要があります。
 
-## サンプルコード {#section_vct_j2j_x2b}
+## サンプルコード {#sample-code}
 
 ![](assets/live-content-playback.png)
 
