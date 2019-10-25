@@ -3,14 +3,14 @@ seo-title: メインコンテンツでのシークのある VOD 再生
 title: メインコンテンツでのシークのある VOD 再生
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # メインコンテンツでのシークのある VOD 再生{#vod-playback-with-seeking-in-the-main-content}
 
-## シナリオ {#section_E4B558253AD84ED59256EDB60CED02AE}
+## シナリオ {#scenario}
 
 このシナリオには、再生中にメインコンテンツでのシークがあります。
 
@@ -26,7 +26,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | コンテンツが完了した | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | セッション終了 | `trackSessionEnd` |  | `SessionEnd` |
 
-## サンプルコード {#section_q2d_wcj_x2b}
+## サンプルコード {#sample-code}
 
 このシナリオでは、メインコンテンツの再生中にユーザーがシークしています。
 
