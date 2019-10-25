@@ -3,16 +3,16 @@ seo-title: ダウンロードされたコンテンツの追跡
 title: ダウンロードされたコンテンツの追跡
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 translation-type: tm+mt
-source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # ダウンロードされたコンテンツの追跡{#track-downloaded-content}
 
-## 概要 {#section_hcy_3pk_cfb}
+## 概要 {#overview}
 
-ダウンロードされたコンテンツ機能を使用すると、ユーザーがオフラインの間にメディアの消費を追跡できます。 例えば、ユーザーがモバイルデバイスでアプリをダウンロードし、インストールします。その後、アプリを使用してコンテンツをデバイスのローカルストレージにダウンロードします。To track this downloaded data, Adobe has developed the Downloaded Content feature. With this feature, when the user plays content from a device's storage, tracking data is stored on the device, regardless of the device's connectivity. ユーザーが再生セッションを終了し、デバイスがオンラインに戻ると、保存されたトラッキング情報が、単一のペイロード内のMedia Collection APIバックエンドに送信されます。 ここから、メディアコレクションAPIでは通常どおり処理とレポートが実行されます。
+ダウンロードされたコンテンツ機能を使用すると、ユーザーがオフラインの間にメディアの消費を追跡できます。 例えば、ユーザーがモバイルデバイスでアプリをダウンロードし、インストールします。その後、アプリを使用してコンテンツをデバイスのローカルストレージにダウンロードします。このダウンロードされたデータを追跡するために、アドビはダウンロードされたコンテンツ機能を開発しました。 この機能を使用すると、ユーザーがデバイスのストレージからコンテンツを再生すると、デバイスの接続状況に関係なく、デバイスに追跡データが保存されます。 ユーザーが再生セッションを終了し、デバイスがオンラインに戻ると、保存されたトラッキング情報が、単一のペイロード内のMedia Collection APIバックエンドに送信されます。 ここから、メディアコレクションAPIでは通常どおり処理とレポートが実行されます。
 
 2つのアプローチを比較する：
 
@@ -28,36 +28,36 @@ source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
 * オンラインシナリオはリアルタイムで追跡し、これには、各ネットワーク呼び出しの前に接続チェックが必要です。
 * オフラインシナリオ（ダウンロードされたコンテンツ機能）では、ネットワーク接続の確認が1つだけ必要ですが、デバイスのメモリ使用量も増えます。
 
-## 実装 {#section_jhp_jpk_cfb}
+## 実装 {#implementation}
 
 ### イベントスキーマ
 
-ダウンロードされたコンテンツ機能は、（標準の）オンラインメディアコレクションAPIのオフラインバージョンなので、プレーヤーがバッチ処理してバックエンドに送信するイベントデータは、オンライン呼び出しを行う際に使用するのと同じイベントスキーマを使用する必要があります。 For information on these schemas, see:
+ダウンロードされたコンテンツ機能は、（標準の）オンラインメディアコレクションAPIのオフラインバージョンなので、プレーヤーがバッチ処理してバックエンドに送信するイベントデータは、オンライン呼び出しを行う際に使用するのと同じイベントスキーマを使用する必要があります。 これらのスキーマの詳細は、次を参照してください。
 * [概要;](/help/media-collection-api/mc-api-overview.md)
 * [イベントリクエストの検証](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### イベントの順序
 
 * バッチペイロードの最初のイベントは、Media Collection API `sessionStart` で通常どおりに設定する必要があります。
-* **You must include`media.downloaded: true`** in the standard metadata parameters (`params` key) on the `sessionStart` event to indicate to the back-end that you are sending downloaded content. If this parameter is not present or is set to false when you send downloaded data, the API will return a 400 response code (Bad Request). This parameter distinguishes downloaded versus live content to the back-end. (Note that if `media.downloaded: true` is set on a live session, this will likewise result in a 400 response from the API.)
+* **ダウンロードしたコ`media.downloaded: true`** ンテンツをバックエンドに通知するには、イベントの標準メ`params``sessionStart` タデータパラメーター（キー）を含める必要があります。 ダウンロードしたデータを送信する際にこのパラメーターが存在しない場合、またはfalseに設定されている場合、APIは400応答コード(Bad Request)を返します。 このパラメーターは、ダウンロード済みコンテンツとライブコンテンツをバックエンドで区別します。 (Note that if `media.downloaded: true` is set on a live session, this will likewise result in a 400 response from the API.)
 * プレーヤーイベントを発生順に正しく保存するのは実装側の責任です。
 
-### Response codes
+### 応答コード
 
 * 201 - Created: Successful Request。データが有効であり、セッションが作成されたので、処理されます。
 * 400 - Bad Request。スキーマの検証に失敗し、すべてのデータが破棄されたので、セッションデータは処理されません。
 
-## Adobe Analtyics との統合 {#section_cty_kpk_cfb}
+## Adobe Analtyics との統合 {#integration-with-adobe-analtyics}
 
-When computing the Analytics start/close calls for the downloaded content scenario, the back-end sets an extra Analytics field called  These are timestamps for the first and last events received (start and complete). `ts.`このメカニズムを使用すると、完了したメディアセッションを正しい時点に配置できます（例えば、ユーザーが数日間オンラインに戻らなかった場合でも、コンテンツが実際に表示された時点でメディアセッションが発生したと報告されます）。 _タイムスタンプオプションのレポートスイートを作成して、Adobe Analytics 側でこのメカニズムを有効にする必要があります。_ タイムスタンプオプションのレポートスイートを有効にする方法については、タイムスタンプオプシ [ョンを参照してください。](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
+ダウンロードしたコンテンツシナリオに対するAnalyticsの開始/終了呼び出しを計算する際、バックエンドは、受信した最初と最後のイベント（開始および完了）のタイムスタンプと呼ばれる追加のAnalyticsフィールドを設定します。 `ts.` このメカニズムを使用すると、完了したメディアセッションを正しい時点に配置できます（例えば、ユーザーが数日間オンラインに戻らなかった場合でも、コンテンツが実際に表示された時点でメディアセッションが発生したと報告されます）。 _タイムスタンプオプションのレポートスイートを作成して、Adobe Analytics 側でこのメカニズムを有効にする必要があります。_ タイムスタンプオプションのレポートスイートを有効にする方法については、タイムスタンプオプシ [ョンを参照してください。](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
 
-## サンプルセッションの比較 {#section_qnk_lpk_cfb}
+## サンプルセッションの比較 {#sample-session-comparison}
 
 ```
 [url]/api/v1/sessions
 ```
 
-### Online Content
+### オンラインコンテンツ
 
 ```
 { 
@@ -71,7 +71,7 @@ When computing the Analytics start/close calls for the downloaded content scenar
 }
 ```
 
-### Downloaded Content
+### ダウンロード済みコンテンツ
 
 ```
 [{ 
