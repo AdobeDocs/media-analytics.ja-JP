@@ -3,7 +3,7 @@ seo-title: Chromecast での Quality of Experience の追跡
 title: Chromecast での Quality of Experience の追跡
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 概要 {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
+## 概要 {#overview}
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. メディアプレイヤーAPIを使用して、QoSおよびエラートラッキングに関連する変数を識別できます。
 
@@ -29,7 +29,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 呼び出し `trackError(“media error id”);`
 
-## 実装方法 {#section_3B8EBEB167624D0481E8AF4761F83047}
+## 実装方法 {#implement}
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
