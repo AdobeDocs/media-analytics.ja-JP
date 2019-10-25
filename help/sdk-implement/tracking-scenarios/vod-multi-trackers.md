@@ -3,14 +3,14 @@ seo-title: 同時に複数の VOD トラッカー
 title: 同時に複数の VOD トラッカー
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 同時に複数の VOD トラッカー{#vod-multiple-trackers-in-parallel}
 
-## シナリオ {#section_1AFCA33B322B46818BA4F1BDD3B40B4E}
+## シナリオ {#scenario}
 
 In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
 
@@ -18,7 +18,7 @@ This scenario is identical to the [VOD playback with no ads](/help/sdk-implement
 
 特に指定のない限り、ネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。
 
-## パラメーター {#section_45D7B10031524411B91E2C569F7818B0}
+## パラメーター {#parameters}
 
 ### ハートビートセッション
 
@@ -26,7 +26,7 @@ This scenario is identical to the [VOD playback with no ads](/help/sdk-implement
 |---|---|---|
 | `s:event:sid` | 一意のセッション ID | `trackSessionEnd` メソッドが呼び出されるまで、すべてのハートビートネットワーク呼び出しに存在する一意のセッション ID。 |
 
-## サンプルコード {#section_qpy_4dj_x2b}
+## サンプルコード {#sample-code}
 
 ![](assets/multi-sessions-in-parallel.png)
 
