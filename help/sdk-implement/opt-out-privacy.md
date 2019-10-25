@@ -3,14 +3,14 @@ seo-title: オプトアウトおよびプライバシー
 title: オプトアウトおよびプライバシー
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 translation-type: tm+mt
-source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # オプトアウトおよびプライバシー{#opt-out-and-privacy}
 
-## オプトアウトとオプトイン {#section_zfb_syq_v2b}
+## オプトアウトとオプトイン {#opt-out-opt-in}
 
 特定のデバイスでトラッキングアクティビティを許可するかどうかを制御できます。
 
@@ -26,7 +26,7 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
    * The `privacyDefault` setting in the `ADBMobile.json` config file. この設定は、コード内で変更されるまで保持される初期設定を制御します。
 
-   * The  method.`ADBMobile().setPrivacyStatus()`
+   * `ADBMobile().setPrivacyStatus()` メソッド。
 
       * **オプトアウト：**
 
@@ -73,7 +73,7 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
             ```
    `setPrivacyStatus` を使用してプライバシー設定を変更した後は、同じメソッドを使用して再度変更されるまで、またはアプリを完全にアンインストールして再度インストールするまで、変更が保持されます。
 
-## Retrieving Stored Identifiers (OTT Apps) {#section_mky_2yq_v2b}
+## Retrieving Stored Identifiers (OTT Apps) {#retrieving-stored-identifiers-ott-apps}
 
 この情報は、ローカルに保存されているユーザー ID を Roku アプリケーションから取得する場合に役立ちます。
 
