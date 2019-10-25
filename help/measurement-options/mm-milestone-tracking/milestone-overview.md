@@ -3,7 +3,7 @@ seo-title: マイルストーンの概要
 title: マイルストーンの概要
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356cc5
 translation-type: tm+mt
-source-git-commit: 7eb14c8e4da742fb426a6e5d0d60ebf8c2063bb6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 7eb14c8e4da742fb426a6e5d0d60ebf8c2063bb6
 
 [レガシーのマイルストーンドキュメント](milestone_analytics_video.pdf)
 
-## 設定 {#section_rzx_j1z_cfb}
+## 設定 {#configuration}
 
 ### マイルストーンビデオの設定
 
@@ -47,7 +47,7 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 <!--![](assets/0clip_image008_-92166399.png)-->
 ![](assets/rs3.png)
 
-## ビデオ変数リファレンス {#section_emg_c1z_cfb}
+## ビデオ変数リファレンス {#video-variable-reference}
 
 次の表に、ビデオのコマース変数とカスタムイベントの詳細を示します。
 
@@ -59,18 +59,18 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 | ビデオ開始 | Event <br/>Type: Counter | 訪問者がビデオの一部を視聴したことを示します。ただし、訪問者がビデオを視聴した時間や視聴した部分に関する情報は提供されません。 |
 | ビデオ完了 | event <br/>タイプ：カウンター | ユーザーがビデオを最後まで視聴したことを示します。デフォルトでは、完了イベントはビデオが終了する 1 秒前に測定されます。<br/>導入時に、表示完了と見なすビデオの終わりからの秒数を指定できます。終わりが定義されないライブビデオやその他のストリーミングの場合は、完了を測定するためのカスタムポイントを指定できます。例えば、表示開始から特定の時間が経過したポイントなどです。 |
 
-## メディアモジュール変数 {#section_ts5_11z_cfb}
+## メディアモジュール変数 {#media-module-variables}
 
 次の変数を使用して、ビデオ測定を設定できます。「必須変数」の表に示した変数に対する値を定義する必要があります。また、ビデオプレーヤーでイベントを追跡するには、autoTrack を有効にするか（サポートされているプレーヤーの場合）、open、play、stop および close の各メソッドを使用してカスタムプレーヤーイベント追跡を導入する必要があります。
 
 | 変数    | 説明 |
 | --- | --- |
-| `Media.trackUsingContextData` | **構文：**<br/><br/> `s.Media.trackUsingContextData = true;`<br/>このオプションは、統合ビデオ追跡を有効にします。trueに設定した場合、メディアモジュールは、レガシーデータではなく、メディアトラッキング用のコンテキストデータを生成しま `pev3`す。 <br/>`Media.contextDataMapping` を使用して、選択した eVar および event にコンテキストデータをマッピングします。<br/>デフォルト値： `false` |
+| `Media.trackUsingContextData` | **構文：**<br/><br/> `s.Media.trackUsingContextData = true;`<br/>このオプションは、統合ビデオ追跡を有効にします。trueに設定した場合、メディアモジュールは、レガシーデータではなく、メディアトラッキング用のコンテキストデータを生成しま `pev3`す。 <br/>`Media.contextDataMapping` を使用して、選択した eVar および event にコンテキストデータをマッピングします。<br/>デフォルト値: `false` |
 | `Media.contextDataMapping` | **構文：**<br/><br/> `s.Media.contextDataMapping = {`<br/>      `"a.media.name":"eVar2, prop2",` <br/>     `"a.media.segment":"eVar3",` <br/>     `"a.contentType":"eVar1",` <br/>     `"a.media.timePlayed":"event3",` <br/>     `"a.media.view":"event1",` <br/>     `"a.media.segmentView":"event2",` <br/>     `"a.media.complete":"event7",` <br/>     `"a.media.milestones":{` <br/>         `25:"event4",` <br/>         `50:"event5",` <br/>         `75:"event6"` <br/>     ` }` <br/> `};`<br/><br/>ビデオ測定に使用する eVar および event への変数マッピングを定義するオブジェクトです。The object must map the following fields: <br/><br/> **a.media.name：**（必須）変数にビデオ名を入力します。ビデオ名の格納先として選択した eVar と、ビデオパス用に使用するカスタムインサイトビデオ変数（`s.prop`）を指定します。Provide the values in a comma-separated list. <br/><br/> **a.media.segment：**（オプション）メディアセグメント名の格納先の eVar です。a.contentType：（オプション）ビデオ値の格納先の eVar。これには、ビデオの訪問回数および訪問者数のレポート生成が有効にされた、訪問回数および訪問者数の追跡機能が含まれます。選択する変数は、記事、スライドショー、製品ページというように、データの格納に既に使用されているものの場合もあります。<br/><br/> **** a.media.view:（必須）メディアビューをカウントするイベント。 <br/><br/> **** a.media.segmentView:（オプション）セグメントビューをカウントするイベント。 <br/><br/> **** a.media.complete:（オプション）完全なビューをカウントするイベント。 <br/><br/> **** a.media.timePlayed:（オプション、強く推奨）再生されたビデオの秒数を格納する数値イベント。 <br/><br/> **a.media.milestones：**（オプション）s.Media.trackMilestones マイルストーンをカウンターイベントにマッピングするオブジェクトです。マイルストーンを定義する場合は、Media.segmentByMilestones を true に設定する必要があります。 <br/><br/> **広告トラッキング** ：広告をトラッキングするには、以下のコンテキストデータ変数を使用できます。 <br/> **a.media.ad.name：**（必須）変数に広告名を入力します。広告名の格納先として選択した eVar と、パス用に使用するカスタムインサイトビデオ変数（`s.prop`）を指定します。Provide the values in a comma-separated list. <br/><br/> **** a.media.ad.pod:広告が再生されたプライマリコンテンツ内の位置。 <br/><br/> **** a.media.ad.podPosition:広告が表示されるポッド内の位置。 <br/><br/> **** a.media.ad.CPM:この再生に適用されるCPMまたは暗号化されたCPM（「～」のプリフィックスが付く）。 <br/><br/> **a.media.ad.view：** と同じように機能します。`a.media.view`<br/><br/> **** a.media.ad.clicked:広告のクリック数をカウント(呼び出し`Media.click` ) <br/><br/> **a.media.ad.timePlayed：** と同じように機能します。`a.media.timePlayed`<br/><br/> **** a.media.ad.complete:a.media.ad.segmentと同じように機能 `a.media.complete` します。次と同じように機能しま `a.media.segment` す <br/><br/> **a.media.ad.segmentView：** と同じように機能します。`a.media.segmentView`<br/><br/> **a.media.ad.milestones：** と同じように機能します。`a.media.milestones`<br/><br/> **a.media.ad.offsetMilestones：** と同じように機能します。`a.media.offsetMilestones` |
 | `Media.trackVars` | **構文：**<br/><br/> `s.Media.trackVars =` <br/>    `"events,` `prop2,` `eVar1,` `eVar2,` `eVar3";` <br/><br/>A comma-separated list of all variables that are set in your video tracking code. |
 | `Media.trackEvents` | **構文：**<br/><br/> `s.Media.trackEvents =` <br/>    `"event1,` `event2,` `event3,` `event4,` `event5,` `event6,` `event7"` <br/><br/>A comma-separated list of all events that are set in your video tracking code. |
 
-## オプションの変数 {#section_ufg_zzy_cfb}
+## オプションの変数 {#optional-variables}
 
 |  変数    | 説明 |
 | --- | --- |
@@ -82,10 +82,10 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 | `Media.trackSeconds` | **構文：**<br/><br/> `s.Media.trackSeconds = 15`<br/><br/>ビデオ再生中にビデオ追跡データを Adobe データ収集サーバーへ送信する時間間隔を秒数で定義します。値は 5 秒単位の増分で設定する必要があります。<br/><br/> を有効に `Media.trackSeconds` すると、で定義されたイベントのみがトリガーされま `Media.contextDataMapping`す。 ビデオ測定のために指定以外の変数を追加で送信するには、Media.Monitor を使用する必要があります。 |
 | `Media.trackMilestones` | Tracks milestones as percentage of the video length.  <br/><br/> **構文：**<br/><br/> `s.Media.trackMilestones = "25, 50, 75";`<br/><br/>ビデオ追跡データを Adobe データ収集サーバーに送信する時間間隔を、ビデオの長さの割合として定義します。整数のコンマ区切りリストとしてマイルストーンを指定します。例えば、10 は 10％を表し、23 は 23％を表します。<br/><br/>これらのマイルストーンはビデオ内の固定ポイントなので、訪問者が 10％のマイルストーンをまたいで視聴し、その後に巻戻しを実行して、もう一度 10％のマイルストーンを通過した場合、メディアモジュールは追跡データを複数回送信します。同様に、ある訪問者が早送りしてマイルストーンを通過した場合、そのマイルストーンについての追跡データはメディアモジュールによって送信されません。<br/><br/>を有効に `Media.trackMilestones` すると、で定義されたイベントのみがトリガーされま `Media.contextDataMapping`す。 ビデオ測定のために指定以外の変数を追加で送信するには、Media.Monitor を使用する必要があります。 |
 | `Media.trackOffsetMilestones` | Tracks milestones as seconds elapsed from the beginning of the video.  <br/><br/> **構文：**<br/><br/> `s.Media.trackOffsetMilestones = "20, 40, 60";`<br/><br/>ビデオ追跡データを Adobe データ収集サーバーに送信する時間間隔を、ビデオの開始時点からの経過秒数として定義します。整数のコンマ区切りリストとしてマイルストーンを指定します。例：20 = 20 秒、40 = 40 秒。<br/><br/>これらのマイルストーンはビデオ内の固定ポイントなので、訪問者が 20 秒のマイルストーンをまたいで視聴し、その後に巻戻しを実行して、もう一度 20 秒のマイルストーンを通過した場合、メディアモジュールは追跡データを複数回送信します。同様に、ある訪問者が早送りしてマイルストーンを通過した場合、そのマイルストーンについての追跡データはメディアモジュールによって送信されません。<br/><br/> を有効に `Media.trackOffsetMilestones` すると、で定義されたイベントのみがトリガーされま `Media.contextDataMapping`す。 ビデオ測定のために指定以外の変数を追加で送信するには、Media.Monitor を使用する必要があります。 |
-| `Media.segmentByMilestones` | **構文：**<br/><br/> `s.Media.segmentByMilestones = true;` メディ <br/><br/>アの長さと、マイルストーンによるセグメント化で指定されたマイルストーンに基づいて、セグメント名、セグメント番号およびセグメントの長さのデータを自動的に生成します。 `Media.trackMilestones`<br/><br/>これは、を使用する場合にセグメントを定義する唯一の方法で `autoTrack`す。 <br/><br/>デフォルト値： `false` |
-| `Media.segmentByOffsetMilestones` | **構文：**<br/><br/> `s.Media.segmentByOffsetMilestones = true;` メディ <br/><br/>アの長さと、マイルストーンによるセグメント化で指定されたマイルストーンに基づいて、セグメント名、セグメント番号およびセグメントの長さのデータを自動的に生成します。 `Media.trackOffsetMilestones`<br/><br/>これは、を使用する場合にセグメントを定義する唯一の方法で `autoTrack`す。  <br/><br/>デフォルト値： `false` |
+| `Media.segmentByMilestones` | **構文：**<br/><br/> `s.Media.segmentByMilestones = true;` メディ <br/><br/>アの長さと、マイルストーンによるセグメント化で指定されたマイルストーンに基づいて、セグメント名、セグメント番号およびセグメントの長さのデータを自動的に生成します。 `Media.trackMilestones`<br/><br/>これは、を使用する場合にセグメントを定義する唯一の方法で `autoTrack`す。 <br/><br/>デフォルト値: `false` |
+| `Media.segmentByOffsetMilestones` | **構文：**<br/><br/> `s.Media.segmentByOffsetMilestones = true;` メディ <br/><br/>アの長さと、マイルストーンによるセグメント化で指定されたマイルストーンに基づいて、セグメント名、セグメント番号およびセグメントの長さのデータを自動的に生成します。 `Media.trackOffsetMilestones`<br/><br/>これは、を使用する場合にセグメントを定義する唯一の方法で `autoTrack`す。  <br/><br/>デフォルト値: `false` |
 
-## 広告トラッキング変数 {#section_bhv_xzy_cfb}
+## 広告トラッキング変数 {#ad-tracking-variables}
 
 これらの変数は、openAd メソッドと組み合わせて広告情報を送信するために使用されます。See [VAST Video Ad Tracking.](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_ads.html)
 
@@ -94,10 +94,10 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 | `Media.adTrackSeconds` | **構文：**<br/><br/> `s.Media.adTrackSeconds = 15;`<br/><br/>ビデオ再生中にビデオ広告追跡データを Adobe データ収集サーバーに送信する時間間隔を秒数で定義します。値は 5 秒単位の増分で設定する必要があります。<br/><br/> を有効に `Media.adTrackSeconds` すると、で定義されたイベントのみがトリガーされま `Media.contextDataMapping`す。 ビデオ測定のために指定以外の変数を追加で送信するには、`Media.monitor` を使用する必要があります。 |
 | `Media.adTrackMilestones` | Tracks ad milestones as percentage of the ad length.  <br/><br/> **構文：**<br/><br/> `s.Media.adTrackMilestones = "25, 50, 75";`<br/><br/>広告追跡データを Adobe データ収集サーバーに送信する時間間隔を、広告の長さの割合として定義します。整数のコンマ区切りリストとしてマイルストーンを指定します。例：10 = 10%、23 = 23%)。  <br/><br/>これらのマイルストーンは広告内の固定ポイントなので、訪問者が 10％のマイルストーンをまたいで視聴し、その後に巻戻しを実行して、もう一度 10％のマイルストーンを通過した場合、メディアモジュールは追跡データを複数回送信します。同様に、ある訪問者が早送りしてマイルストーンを通過した場合、そのマイルストーンについての追跡データはメディアモジュールによって送信されません。<br/><br/> を有効に `Media.adTrackMilestones` すると、で定義されたイベントのみがトリガーされま `Media.contextDataMapping`す。 ビデオ測定のために指定以外の変数を追加で送信するには、`Media.monitor` を使用する必要があります。 |
 | `Media.adTrackOffsetMilestones` | Tracks ad milestones as seconds elapsed from the beginning of the ad.  <br/><br/> **構文：**<br/><br/> `s.Media.adTrackOffsetMilestones = "20, 40, 60";`<br/><br/>広告追跡データを Adobe データ収集サーバーに送信する時間間隔を、広告の開始時点からの経過秒数として定義します。整数のコンマ区切りリストとしてマイルストーンを指定します。例：20 = 20 秒、40 = 40 秒。<br/><br/>これらのマイルストーンは広告内の固定ポイントなので、訪問者が 20 秒のマイルストーンをまたいで視聴し、その後に巻戻しを実行して、もう一度 20 秒のマイルストーンを通過した場合、メディアモジュールは追跡データを複数回送信します。同様に、ある訪問者が早送りしてマイルストーンを通過した場合、そのマイルストーンについての追跡データはメディアモジュールによって送信されません。<br/><br/> を有効に `Media.adTrackOffsetMilestones` すると、で定義されたイベントのみがトリガーされま `Media.contextDataMapping`す。 ビデオ測定のために指定以外の変数を追加で送信するには、`Media.monitor` を使用する必要があります。 |
-| `Media.adSegmentByMilestones` | **構文：**<br/><br/> `s.Media.adSegmentByMilestones = true;` メディ <br/><br/>アの長さと、マイルストーンによるセグメント化で指定されたマイルストーンに基づいて、セグメント名、セグメント番号およびセグメントの長さのデータを自動的に生成します。 `Media.adTrackMilestones`<br/><br/>これは、を使用する場合にセグメントを定義する唯一の方法で `autoTrack`す。  <br/><br/>デフォルト値： `false` |
-| `Media.adSegmentByOffsetMilestones` | **構文：**<br/><br/> `s.Media.adSegmentByOffsetMilestones = true;` メディ <br/><br/>アの長さと、マイルストーンによるセグメント化で指定されたマイルストーンに基づいて、セグメント名、セグメント番号およびセグメントの長さのデータを自動的に生成します。 `Media.adTrackOffsetMilestones`<br/><br/>これは、を使用する場合にセグメントを定義する唯一の方法で `autoTrack`す。 <br/><br/>デフォルト値： `false` |
+| `Media.adSegmentByMilestones` | **構文：**<br/><br/> `s.Media.adSegmentByMilestones = true;` メディ <br/><br/>アの長さと、マイルストーンによるセグメント化で指定されたマイルストーンに基づいて、セグメント名、セグメント番号およびセグメントの長さのデータを自動的に生成します。 `Media.adTrackMilestones`<br/><br/>これは、を使用する場合にセグメントを定義する唯一の方法で `autoTrack`す。  <br/><br/>デフォルト値: `false` |
+| `Media.adSegmentByOffsetMilestones` | **構文：**<br/><br/> `s.Media.adSegmentByOffsetMilestones = true;` メディ <br/><br/>アの長さと、マイルストーンによるセグメント化で指定されたマイルストーンに基づいて、セグメント名、セグメント番号およびセグメントの長さのデータを自動的に生成します。 `Media.adTrackOffsetMilestones`<br/><br/>これは、を使用する場合にセグメントを定義する唯一の方法で `autoTrack`す。 <br/><br/>デフォルト値: `false` |
 
-## メディアモジュールメソッド {#section_xp1_wzy_cfb}
+## メディアモジュールメソッド {#media-module-methods}
 
 メディアモジュールメソッドを使用すると、プレーヤーのイベントを手動で追跡したり、標準ビデオレポートに含まれていない追加の指標を追跡したりできます。
 
@@ -117,7 +117,7 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 | `Media.track` | **構文：**<br/><br/> `s.Media.track(mediaName)`<br/><br/>現在のビデオの状態と共に、ユーザーが定義した `Media.trackVars` と Media.trackEvents を即座に送信します。このメソッドは、`Media.monitor` 内で使用します。<br/><br/>Media.monitorを使 [用した追加指標の測定を参照してください。](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_mediamonitor.html) このメ <br/><br/>ソッドを `Media.open` 呼び出す `Media.play` 前に、ビデオを呼び出します。 このメソッドでは次のパラメーターを利用します。 <ul> <li> **mediaName**：ビデオ名。`Media.open` で使用されている名前と一致させる必要があります。</li> </ul> このメソッドは、ビデオ再生中に他の変数を送信する唯一の方法です。このメソッドは、追跡が複数回ヒットしないように、秒間隔およびパーセントマイルストーンを 0 にリセットします。 |
 
 
-## ビデオプレーヤーイベントの追跡 {#section_dsg_rzy_cfb}
+## ビデオプレーヤーイベントの追跡 {#track-video-player-events}
 
 ビデオプレーヤーのイベントハンドラーに追加する関数を作成することで、メディアプレーヤーを追跡できます。This lets you call `Media.open`, `Media.play`, `Media.stop`, and `Media.close` at the appropriate times. 次に例を示します。
 
@@ -158,7 +158,7 @@ function endMovie() {
 } 
 ```
 
-## JavaScript autotrack {#section_ahz_pzy_cfb}
+## JavaScript autotrack {#javascript-autotrack}
 
 The JavaScript media module identifies all `<embed>` or `<object>` tags in the page HTML. その後、各タグのデータを検索し、使用されているメディアプレーヤーがある場合はどのメディアプレーヤーかを判断します。プレーヤーが Windows Media Player、Quicktime、または Real Player の場合は、`autoTrack` を使用できます。ただし、Windows Media Player については、`autoTrack` が機能するのは Internet Explorer のみです。その他のすべてのブラウザーをサポートするには、Windows Media Player の手動の追跡が必要です。
 
@@ -168,7 +168,7 @@ The JavaScript media module identifies all `<embed>` or `<object>` tags in the p
 s.Media.autoTrack = true
 ```
 
-## JavaScript のサンプルコード {#section_i4g_4zy_cfb}
+## JavaScript のサンプルコード {#javascript-sample-code}
 
 ```javascript
 // Sample implementation 
