@@ -3,7 +3,7 @@ seo-title: Audience Manager の有効化
 title: Audience Manager の有効化
 uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
 translation-type: tm+mt
-source-git-commit: 8ae15f1e14731a97d212ab66816a777b4dcc897e
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -22,7 +22,7 @@ AAM を利用すると、データ販売者、exchange、デマンド側のプ�
 
 フェデレーテッドデータは AAM とのデータ共有を完全にサポートしています。担当のアドビチームと連携してフェデレーテッドデータ設定を確認してください。
 
-## OTT／AAM メソッド {#section_yqq_5br_v2b}
+## OTT／AAM メソッド {#ott-aam-methods}
 
 これらのメソッドを利用して、Audience Manager からシグナルを送信し、訪問者セグメントを取得できます。
 
