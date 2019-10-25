@@ -3,7 +3,7 @@ seo-title: JavaScript のセットアップ
 title: JavaScript のセットアップ
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * *プレーヤー情報を提供する API* - メディア名や再生ヘッドなどの情報がこれに該当します。
 
-1. [ダウンロードした](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)ライブラリをプロジェクトに追加します。利便性のために、クラスへのローカル参照を作成します。
+1. [ダウンロードした](/help/sdk-implement/download-sdks.md#download-2x-sdks)ライブラリをプロジェクトに追加します。利便性のために、クラスへのローカル参照を作成します。
 
    1. ダウンロードした `MediaSDK-js-v2.*.zip` ファイルを展開します。
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
