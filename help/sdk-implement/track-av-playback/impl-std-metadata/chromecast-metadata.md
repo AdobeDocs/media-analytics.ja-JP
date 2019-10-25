@@ -3,7 +3,7 @@ seo-title: Chromecast のメタデータキー
 title: Chromecast のメタデータキー
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 ビデオと広告の標準メタデータをそれぞれメディアと広告の情報オブジェクトに設定できます。ビデオや広告メタデータの定数キーを使用すると、追跡 API を呼び出す前に、標準メタデータを含むディクショナリが情報オブジェクトに設定されます。標準メタデータ定数の一覧と例については、以下の表を参照してください。
 
-## メタデータ定数 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## メタデータ定数 {#video-metadata-constants}
 
 | メタデータ名 | コンテキストデータキー | 定数名 |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | フィード | `a.media.feed` | `ADBMobile.media.VideoMetadataKeys.FEED` |
 | ストリーム形式 | `a.media.format` | `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` |
 
-## 広告メタデータ定数 {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## 広告メタデータ定数 {#ad-metadata-constants}
 
 | メタデータ名 | コンテキストデータキー | 定数名 |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | サイト ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | クリエイティブ URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Sample implementations for Chromecast {#section_wvy_bdn_w2b}
+## Chromecastの実装例 {#sample-implementations-for-chromecast}
 
 ### ビデオ
 
