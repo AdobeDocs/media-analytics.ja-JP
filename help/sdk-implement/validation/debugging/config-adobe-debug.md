@@ -3,14 +3,14 @@ seo-title: Adobe Debug の設定
 title: Adobe Debug の設定
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
-source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
 
 # Adobe Debug の設定{#configure-adobe-debug}
 
-## Adobe Debug へのアクセス {#section_AF81E7AD331E41FFA371AB9DA924BFBB}
+## Adobe Debug へのアクセス {#accessing-adobe-debug}
 
 Adobe Debug にアクセスするには：
 
@@ -33,7 +33,7 @@ Adobe Debug にアクセスするには：
 
 推奨されるブラウザーは、Chrome および Firefox の最新バージョンです。
 
-## Debug Proxy {#section_8D3493B8426B46DEB9CD7E2ABD785D66}
+## Debug Proxy {#debug-proxy}
 
 Debug Proxyをダウンロードして設定します。
 
@@ -48,7 +48,7 @@ Debug Proxyをダウンロードして設定します。
 
    OS とブラウザーに応じて、ブラウザー設定を調整する必要がある場合があります。
 
-## デスクトップまたはアプリでの SSL 証明書のダウンロードおよびインストール {#section_2F9547E301CB413299A67BD59AFBEE0D}
+## デスクトップまたはアプリでの SSL 証明書のダウンロードおよびインストール {#download-and-install-sSL-desktop}
 
 Adobe Debug を初めて実行すると、一意の SSL 証明書が生成されます。デスクトップまたはアプリで HTTPS トラフィックをサポートする場合は、アドビの SSL 証明書をダウンロードしてインストールする必要があります。
 
@@ -81,7 +81,7 @@ SSL証明書のダウンロードとインストール：
     
     SafariはSSL証明書のインストールを求めるプロンプトを表示します。
 
-## モバイルデバイスへの SSL 証明書のインストール {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
+## モバイルデバイスへの SSL 証明書のインストール {#install-sSL-for-mobile-device}
 
 Adobe Debug で HTTPS 呼び出しが見つからない場合は、モバイルデバイスに Adobe Debug の SSL 証明書をインストールする必要があります。
 
