@@ -3,7 +3,7 @@ seo-title: 概要
 title: 概要
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -46,7 +46,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 * ブレーク完了の `trackEvent` を呼び出します。
 
-## 広告トラッキングの実装 {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## 広告トラッキングの実装 {#implement-ad-tracking}
 
 ### 広告トラッキング定数
 
