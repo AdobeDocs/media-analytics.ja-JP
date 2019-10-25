@@ -3,7 +3,7 @@ seo-title: セットアップの概要
 title: セットアップの概要
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | Safari | v7+ |
 | IE | v11+ |
 
-## 一般的な実装のガイドライン {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
+## 一般的な実装のガイドライン {#general-implementation-guidelines}
 
 メディアトラッキングには、主に以下の 3 つの SDK コンポーネントが必要です。
 * Media Heartbeat Config - この Config にはレポート用の基本設定が含まれます。
@@ -58,7 +58,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!TIP]
    >
-   >The Quality of Service (QoS) object is optional. プレーヤーで QoS データが使用可能であり、そのデータを追跡する場合は、以下の変数が必要です。
+   >サービス品質(QoS)オブジェクトはオプションです。 プレーヤーで QoS データが使用可能であり、そのデータを追跡する場合は、以下の変数が必要です。
 
    | 変数名 | 説明   | 必須 |
    | --- | --- | :---: |
@@ -119,28 +119,26 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## 検証 {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
+## 検証 {#validate}
 
 Media Analyticsのトラッキングの導入では、2種類のトラッキングコールが生成されます。
 
 * メディアおよび広告開始呼び出しは、Adobe Analytics(AppMeasurement)サーバーに直接送信されます。
 * ハートビート呼び出しは、Media Analytics（ハートビート）トラッキングサーバーに送信され、そこで処理され、Adobe Analyticsサーバーに渡されます。
 
-* **Adobe Analytics (AppMeasurement) server**
-For more information about tracking server options, see [Correctly populate the trackingServer and trackingServerSecure variables.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Adobe Analytics(AppMeasurement)サーバートラッキングサー**&#x200B;バーオプションについて詳しくは、trackingServer変数とtrackingServerSecure変数 [の正しい設定を参照してください。](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
-   >An RDC tracking server or CNAME resolving to an RDC server is required for Experience Cloud Visitor ID service.
+   >Experience cloud訪問者IDサービスには、RDCトラッキングサーバーまたはRDCサーバーに解決するCNAMEが必要です。
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics (Heartbeats) server**
-This always has the format "`[your_namespace].hb.omtrdc.net`". The value of "" specifies your company, and is provided by Adobe.`[your_namespace]`
+* ** Media Analytics（ハートビート）サーバー**この形式は常に「`[your_namespace].hb.omtrdc.net`」です。 「`[your_namespace]`」の値は会社を指定し、アドビが提供します。
 
 メディアトラッキングはあらゆるプラットフォーム、デスクトップ、モバイルで同じように動作します。オーディオトラッキングは、現在、モバイルプラットフォームで機能します。 すべてのトラッキングコールに共通する、検証が必要な主要ユニバーサル変数がいくつかあります。
 
-## SDK 1.x Documentation {#section_acj_tkk_t2b}
+## SDK 1.xドキュメント {#sdk-1x-documentation}
 
 | ビデオ分析1.x SDK |  開発者ガイド（PDFのみ） |
 | --- | --- |
