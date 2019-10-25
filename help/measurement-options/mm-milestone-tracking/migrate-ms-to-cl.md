@@ -3,20 +3,20 @@ seo-title: マイルストーンからカスタムリンクへの移行
 title: マイルストーンからカスタムリンクへの移行
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # マイルストーンからカスタムリンクへの移行{#migrating-from-milestone-to-custom-link}
 
-## 概要 {#section_xlc_fc2_dfb}
+## 概要 {#overview}
 
 マイルストーンとカスタムリンクのトラッキングでは、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。カスタムリンクのアプローチは、実装と収集されるデータの両方の縮小と簡素化と考えてください。カスタムリンクソリューションを使用する場合、ビデオ測定用の変数やメソッドが事前に定義されていないので、完全なカスタムのセットアップが必要です。開始や完了など、基本的なプレーヤーイベントについては、カスタムリンクのトラッキングコールを指すようにプレーヤーのイベントコードを更新できる必要があります。詳しくは、[カスタムリンク導入ガイド](/help/measurement-options/cl-in-aa/cl-impl-guide.md)および[カスタムリンクコードを使用した手動リンクトラッキング](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html)を参照してください。
 
 以下の表では、マイルストーンソリューションとカスタムリンクソリューション間の変更について説明します。
 
-## 移行ガイド {#section_btt_fc2_dfb}
+## 移行ガイド {#migration-guide}
 
 ### ビデオ変数リファレンス
 
