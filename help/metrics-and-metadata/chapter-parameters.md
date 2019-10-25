@@ -3,7 +3,7 @@ seo-title: チャプターパラメーター
 title: チャプターパラメーター
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -33,27 +33,27 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 >[!IMPORTANT]
 >
 >「レポート/予約変数」で「分類」として説明されている以下の変数の分類名は変更しないでください。\
->The media classifications are defined when a report suite is enabled for media tracking. アドビは、新しいプロパティを随時追加し、その場合は、新しいメディアプロパティにアクセスするためにレポートスイートを再度有効にする必要があります。 更新プロセス中に、変数の名前を確認することで、分類が有効かどうかが判断されます。 いずれかが見つからない場合は、見つからないものが再度追加されます。
+>メディア分類は、レポートスイートでメディアの追跡が有効になっている場合に定義されます。 アドビは、新しいプロパティを随時追加し、その場合は、新しいメディアプロパティにアクセスするためにレポートスイートを再度有効にする必要があります。 更新プロセス中に、変数の名前を確認することで、分類が有効かどうかが判断されます。 いずれかが見つからない場合は、見つからないものが再度追加されます。
 
-## チャプターメタデータ {#section_534D3A6BFEB24D1884F80AD6A50BF13C}
+## チャプターメタデータ {#chapter-metadata}
 
 ### チャプター名
 
 |   実装   | ネットワークパラメータ | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [name](./chapter-parameters.md#related_apis_section) </li> <li> **API キー：**<br/>media.chapter.friendlyName </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> ****<br/> 送信先：チャプター開始、チャプター閉じる </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> **Sample Value:**<br/> "The Big Bang Chapter 2 - Dating" </li><li> **説明：チ**<br/>ャプターまたはセグメントの名前。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>friendlyName) </li> <li> ****<br/> ハートビート：(s:stream:chapter_name) </li> </ul> | <ul> <li> **利用可能：**<br/>デフォルトで作成...  </li> <li> **予約変数：**<br/>分類 </li> <li> **レポート名：**<br/>チャプター名 </li> <li> ****<br/> コンテキストデータ：(a.media.chapter)。<br/>friendlyName) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter<br/>friendlyName) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [name](./chapter-parameters.md#related_apis_section) </li> <li> **API キー：**<br/>media.chapter.friendlyName </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> ****<br/> 送信先：チャプター開始、チャプター閉じる </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> ****<br/> サンプル値：『ビッグバン第2章 — 年代記』 </li><li> **説明：チ**<br/>ャプターまたはセグメントの名前。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>friendlyName) </li> <li> ****<br/> ハートビート：(s:stream:chapter_name) </li> </ul> | <ul> <li> **利用可能：**<br/>デフォルトで作成...  </li> <li> **予約変数：**<br/>分類 </li> <li> **レポート名：**<br/>チャプター名 </li> <li> ****<br/> コンテキストデータ：(a.media.chapter)。<br/>friendlyName) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter<br/>friendlyName) </li> </ul> |
 
 ### チャプター位置
 
 |   実装   | ネットワークパラメータ | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [position](./chapter-parameters.md#related_apis_section) </li> <li> **API キー：**<br/>media.chapter.index </li> <li> **Required:**<br/> SDK: No; API: Yes. </li> <li> **型：**<br/>数値 </li> <li> ****<br/> 送信先：チャプター閉じる </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> ****<br/> サンプル値：2 </li><li> **説明：**<br/>コンテンツ内のチャプターの位置（インデックス、整数）。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>position) </li> <li> ****<br/> ハートビート：(l:stream:chapter_pos) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>分類 </li> <li> **レポート名：**<br/>チャプター位置 </li> <li> ****<br/> コンテキストデータ：(a.media.chapter)。<br/>position) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter<br/>position) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [position](./chapter-parameters.md#related_apis_section) </li> <li> **API キー：**<br/>media.chapter.index </li> <li> ****<br/> 必須：SDK:いや、API:はい。 </li> <li> **型：**<br/>数値 </li> <li> ****<br/> 送信先：チャプター閉じる </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> ****<br/> サンプル値：2 </li><li> **説明：**<br/>コンテンツ内のチャプターの位置（インデックス、整数）。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>position) </li> <li> ****<br/> ハートビート：(l:stream:chapter_pos) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>分類 </li> <li> **レポート名：**<br/>チャプター位置 </li> <li> ****<br/> コンテキストデータ：(a.media.chapter)。<br/>position) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter<br/>position) </li> </ul> |
 
 ### チャプターオフセット
 
 |   実装   | ネットワークパラメータ | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [startTime](./chapter-parameters.md#related_apis_section) </li> <li> **API キー：**<br/>media.chapter.offset </li> <li> ****<br/> 必須：SDK:いや、API:はい。 </li> <li> **型：**<br/>数値 </li> <li> ****<br/> 送信先：チャプター閉じる </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> ****<br/> サンプル値：58 </li><li> **説明：**<br/>コンテンツ内のチャプターの開始からのオフセット（秒）。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>オフセット) </li> <li> ****<br/> ハートビート：(l:stream:chapter_offset) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>分類 </li> <li> **レポート名：**<br/>チャプターオフセット </li> <li> ****<br/> コンテキストデータ：(a.media.chapter)。<br/>オフセット) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter.<br/>オフセット) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [startTime](./chapter-parameters.md#related_apis_section) </li> <li> **API キー：**<br/>media.chapter.offset </li> <li> ****<br/> 必須：SDK:いや、API:はい。 </li> <li> **型：**<br/>数値 </li> <li> ****<br/> 送信先：チャプター閉じる </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> ****<br/> サンプル値：58 </li><li> **説明：**<br/>コンテンツ内のチャプターの開始からのオフセット（秒）。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>オフセット) </li> <li> ****<br/> ハートビート：(l:stream:chapter_offset) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>分類 </li> <li> **レポート名：**<br/>チャプターオフセット </li> <li> ****<br/> コンテキストデータ：(a.media.chapter)。<br/>オフセット) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter<br/>オフセット) </li> </ul> |
 
 ### チャプターの長さ
 
@@ -65,29 +65,29 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 |   実装   | ネットワークパラメータ | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> **Sent with:**<br/> Chapter Close </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> **サンプル値：**<br/> </li><li> **説明：**<br/>チャプターの自動生成ID。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>name) </li> <li> ****<br/> ハートビート：(s:stream:chapter_id) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>チャプター </li> <li> ****<br/> コンテキストデータ：(a.media.chapter)。<br/>name) </li> <li> **データフィード：**<br/>videochapter </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter<br/>name) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>文字列 </li> <li> ****<br/> 送信先：チャプター閉じる </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> **サンプル値：**<br/> </li><li> **説明：**<br/>チャプターの自動生成ID。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>name) </li> <li> ****<br/> ハートビート：(s:stream:chapter_id) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>チャプター </li> <li> ****<br/> コンテキストデータ：(a.media.chapter)。<br/>name) </li> <li> **データフィード：**<br/>videochapter </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter<br/>name) </li> </ul> |
 
-## チャプター指標 {#section_1C47D6FB1DF343C39CE7A8F724406F33}
+## チャプター指標 {#chapter-Metrics}
 
 ### チャプター開始
 
 |   実装   | ネットワークパラメータ | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定  </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>チャプター開始 </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> ****<br/> Sample Value: TRUE </li><li> **Description:**<br/>The number of chapter starts.  **重要：**&#x200B;このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>view) </li> <li> ****<br/> ハートビート：(s:event:<br/>type=chapter_start) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> ****<br/> レポート名：チャプター開始g </li> <li> ****<br/> Context Data: (a.media.chapter.<br/>view) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter<br/>view) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定  </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>チャプター開始 </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> ****<br/> サンプル値：TRUE </li><li> **説明：**<br/>開始するチャプターの数。  **重要：**&#x200B;このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>view) </li> <li> ****<br/> ハートビート：(s:event:<br/>type=chapter_start) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> ****<br/> レポート名：チャプター開始g </li> <li> ****<br/> コンテキストデータ：(a.media.chapter)。<br/>view) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter<br/>view) </li> </ul> |
 
 ### チャプター完了
 
 |   実装   | ネットワークパラメータ | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定  </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **Sent with:**<br/> Chapter Close </li> <li> **最小のSDK のバージョン：** 1.3</li> <li> ****<br/> Sample Value: TRUE </li><li> **Description:The number of chapter completes.**<br/>**重要：**&#x200B;このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>complete) </li> <li> ****<br/> Heartbeat: (s:event:type=chapter_complete)<br/> </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **Report Name:**<br/> Chapter Completes g </li> <li> ****<br/> Context Data: (a.media.chapter.<br/>complete) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter.<br/>complete) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定  </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> ****<br/> 送信先：チャプター閉じる </li> <li> **最小のSDK のバージョン：** 1.3</li> <li> ****<br/> サンプル値：TRUE </li><li> **説明：完**<br/>了したチャプターの数。  **重要：**&#x200B;このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>complete) </li> <li> ****<br/> ハートビート：(s:event:<br/>type=chapter_complete) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> ****<br/> レポート名：チャプター完了g </li> <li> ****<br/> コンテキストデータ：(a.media.chapter)。<br/>complete) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter<br/>complete) </li> </ul> |
 
 ### チャプター閲覧時間
 
 |   実装   | ネットワークパラメータ | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定  </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>数値 </li> <li> ****<br/> 送信先：チャプター閉じる </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> **Sample Value:**<br/> </li><li> **説明：チ**<br/>ャプターでの滞在時間。  Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter.<br/>timePlayed) </li> <li> **ハートビート：**<br/> </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> ****<br/> レポート名：チャプター滞在時間g </li> <li> ****<br/> Context Data: (a.media.chapter.<br/>timePlayed) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter.<br/>timePlayed) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定  </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>数値 </li> <li> ****<br/> 送信先：チャプター閉じる </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> **サンプル値：**<br/> </li><li> **説明：チ**<br/>ャプターでの滞在時間。  Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.chapter)。<br/>timePlayed) </li> <li> **ハートビート：**<br/> </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> ****<br/> レポート名：チャプター滞在時間g </li> <li> ****<br/> コンテキストデータ：(a.media.chapter)。<br/>timePlayed) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapter<br/>timePlayed) </li> </ul> |
 
-## Related APIs {#related_apis_section}
+## 関連API {#related_apis_section}
 
 * Android - [createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createChapterObject-java.lang.String-java.lang.Long-java.lang.Double-java.lang.Double-)
 * iOS - [createChapterObjectWithName](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createChapterObjectWithName:position:length:startTime:)
