@@ -3,7 +3,7 @@ seo-title: Roku のメタデータキー
 title: Roku のメタデータキー
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 標準ビデオ、オーディオ、広告メタデータは、それぞれメディアおよび広告情報オブジェクトに設定できます。 ビデオや広告メタデータの定数キーを使用すると、追跡 API を呼び出す前に、標準メタデータを含むディクショナリが情報オブジェクトに設定されます。標準メタデータ定数の一覧と例については、以下の表を参照してください。
 
-## ビデオメタデータ定数 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## ビデオメタデータ定数 {#video-metadata-constants}
 
 | メタデータ名 | コンテキストデータキー | 定数名 |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | フィード | `a.media.feed` | `MEDIA_VideoMetadataKeyFEED` |
 | ストリーム形式 | `a.media.format` | `MEDIA_VideoMetadataKeySTREAM_FORMAT` |
 
-## Audio metadata constants {#audio-metadata-constants}
+## オーディオメタデータ定数 {#audio-metadata-constants}
 
 | メタデータ名 | コンテキストデータキー | 定数名 |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | ステーション | `a.media.station` | `MEDIA_AudioMetadataKeySTATION` |
 | 発行者 | `a.media.publisher` | `MEDIA_AudioMetadataKeyPUBLISHER` |
 
-## 広告メタデータ定数 {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## 広告メタデータ定数 {#ad-metadata-constants}
 
 | メタデータ名 | コンテキストデータキー | 定数名 |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | サイト ID | `a.media.ad.site` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
 | クリエイティブ URL | `a.media.ad.creativeURL` | `MEDIA_AdMetadataKeyCREATIVE_URL` |
 
-## 定数 {#section_F55145DBE77F45B988849C42C044C7DA}
+## 定数 {#constants}
 
 メディアイベントのトラッキングに利用できる定数は次のとおりです。
 
@@ -70,8 +70,8 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 | 定数 | 説明   |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` | Constant to set metadata on the  `MediaInfo``trackLoad` |
-| `MEDIA_STANDARD_AD_METADATA` | Constant to set the ad metadata on the  `EventData``trackEvent` |
+| `MEDIA_STANDARD_MEDIA_METADATA` | メタデータを設定する `MediaInfo` 定数 `trackLoad` |
+| `MEDIA_STANDARD_AD_METADATA` | 広告メタデータを設定する定 `EventData` 数 `trackEvent` |
 | `MEDIA_RESUMED` | ビデオ再開のハートビートを送信する定数。To resume video tracking of previously stopped content, you need to set the `MEDIA_RESUMED` property on the `mediaInfo` object when you call `mediaTrackLoad`. (`MEDIA_RESUMED` is not an event that you can track using the `mediaTrackEvent` API.) アプリケーションで、ユーザーが視聴を中断したものの、視聴再開の意図を示したコンテンツのトラッキングを継続したい場合は、`MEDIA_RESUMED` を true に設定する必要があります。<br/><br/>例えば、あるユーザーがコンテンツの 30％を視聴してからアプリを閉じたとします。その場合はセッションが終了します。Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they left off, then the application should set `MEDIA_RESUMED` to "true" while calling the `mediaTrackLoad` API. これにより、同じビデオコンテンツのこの 2 つのメディアセッションをリンクさせることができます。実装の例は次のとおりです。 <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)`<br/><br/>この例では、ビデオの新しいセッションが作成されますが、SDK によってイベントタイプ「resume」のハートビートリクエストも送信されます。これをレポートで使用することで、2 つのメディアセッションをリンクさせることができます。 |
 
 ### コンテンツタイプ定数
