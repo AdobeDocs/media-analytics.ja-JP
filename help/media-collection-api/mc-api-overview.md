@@ -3,7 +3,7 @@ seo-title: 概要
 title: 概要
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 メディアコレクション API は、基本的に、メディア SDK のサーバー側バージョンとして動作するアダプターです。つまり、Media SDKドキュメントの一部の側面もMedia Collection APIに関連しています。 例えば、両方のソリューションで同じオーディオ [とビデオのパラメーターが使用され](/help/metrics-and-metadata/audio-video-parameters.md)、収集されたオーディオとビデオのトラッキングデータが同じレポートと分析 [に結び付きます。](/help/media-reports/media-reports-enable.md)
 
-## メディアトラッキングデータのフロー {#section_pwq_n34_qbb}
+## メディアトラッキングデータのフロー {#media-tracking-data-flows}
 
 メディアコレクションAPIを実装するメディアプレイヤーは、RESTful APIトラッキングコールをメディアトラッキングバックエンドサーバーに直接送信しますが、Media SDKを実装するプレイヤーは、プレーヤーアプリ内のSDK APIに対してトラッキングコールを送信します。 Web 経由で呼び出しを送信する影響の 1 つとして、メディアコレクション API を実装するプレーヤーでは、メディア SDK が自動的に処理する処理の一部を処理する必要があります(メディアコレク [ションの導入の詳細](mc-api-impl/mc-api-quick-start.md))。
 
@@ -26,7 +26,7 @@ Media Collection APIでキャプチャされたトラッキングデータは、
 
 ![](assets/col_api_overview_simple.png)
 
-## APIの概要 {#section_y4n_mcl_kcb}
+## APIの概要 {#api-overview}
 
 **URI：**&#x200B;この情報はアドビの担当者から入手します。
 
