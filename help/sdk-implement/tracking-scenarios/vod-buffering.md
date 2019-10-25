@@ -3,14 +3,14 @@ seo-title: バッファリングがある VOD 再生
 title: バッファリングがある VOD 再生
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # バッファリングがある VOD 再生{#vod-playback-with-buffering}
 
-## シナリオ {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## シナリオ {#scenario}
 
 このシナリオでは、VOD コンテンツを再生する際にバッファリングが発生します。
 
@@ -28,7 +28,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | コンテンツの再生が完了する。 | `trackComplete` | Heartbeat Content Complete | 再生ヘッドの終わりに達しました。 |
 | セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。この API は、ユーザーが最後までビデオを視聴していなくても、呼び出される必要があります。 |
 
-## パラメーター {#section_A52A57C9FB1C41CEA6C0E2D53E01048E}
+## パラメーター {#parameters}
 
 ### Heartbeat Buffer
 
@@ -36,7 +36,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 |---|---|---|
 | `s:event:type` | `"buffer"` |  |
 
-## サンプルコード {#section_hxn_fdj_x2b}
+## サンプルコード {#sample-code}
 
 このシナリオでは、VOD コンテンツを再生する際にバッファリングが発生します。
 
