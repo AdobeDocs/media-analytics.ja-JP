@@ -3,14 +3,14 @@ seo-title: チャプターがスキップされた VOD 再生
 title: チャプターがスキップされた VOD 再生
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # チャプターがスキップされた VOD 再生{#vod-playback-with-a-skipped-chapter}
 
-## シナリオ {#section_34DCAFE0E64949C4A6DF2D98F8A12B41}
+## シナリオ {#scenario}
 
 このシナリオでは、ユーザーは、メインコンテンツのチャプターをスキップします。
 
@@ -29,11 +29,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | コンテンツの再生が完了する。 | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。このAPIは、ユーザーがメディアを視聴せずに完了するまで呼び出す必要があります。 |
 
-## パラメーター {#section_1874F6B7880B43C5856BD11FF85B382E}
+## パラメーター {#parameters}
 
 チャプター再生中に使用されるパラメーターは、チャプター完了ネットワーク呼び出しがない点を除き [、1つのチャプターシナリオを持つ](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) VOD再生のパラメーターと同じです。
 
-## サンプルコード {#section_fyl_ncj_x2b}
+## サンプルコード {#sample-code}
 
 ![](assets/chapter-skip.png)
 
