@@ -3,14 +3,14 @@ seo-title: SceneGraph（Roku）でのトラッキング
 title: SceneGraph（Roku）でのトラッキング
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # SceneGraph（Roku）でのトラッキング{#tracking-in-scenegraph-roku}
 
-## はじめに {#section_vfr_zcz_y2b}
+## はじめに {#introduction}
 
 Roku では、アプリケーションを開発するための新たなプログラミングフレームワークである SceneGraph XML プログラミングフレームワークを導入しました。この新しいフレームワークの特徴は、次の 2 つの新しい重要な概念です。
 
@@ -19,7 +19,7 @@ Roku では、アプリケーションを開発するための新たなプログ
 
 Adobe Mobile SDK for Roku は BrightScript で記述されています。この SDK では、SceneGraph 上で実行されるアプリでは利用できない様々なコンポーネントを使用します（スレッドなど）。したがって、SceneGraph フレームワークの使用を考えている Roku アプリケーション開発者は Adobe Mobile SDK API を呼び出すことができません（後者はレガシー BrightScript アプリで利用可能なものに類似しています）。
 
-## アーキテクチャ {#section_dj5_1dz_y2b}
+## アーキテクチャ {#architecture}
 
 SceneGraph サポートを AdobeMobile SDK に追加するために、アドビは AdobeMobile SDK と `adbmobileTask` の接続ブリッジを作成する新たな API を追加しました。adbmobileTask は、SDK の API 実行に使用される SceneGraph ノードです（`adbmobileTask` の使用方法については、このドキュメントの後半で詳しく説明します）。
 
@@ -31,7 +31,7 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 
 ![](assets/SceneGraph_arch.png)
 
-## コンポーネント {#section_jwl_wqx_1bb}
+## コンポーネント {#components}
 
 **SceneGraph アプリケーション：**
 
@@ -49,7 +49,7 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 * `AdobeMobileLibrary` API をバックグラウンドスレッドで実行する SceneGraph タスクノードです。
 * データをアプリケーションシーンに戻すデリゲートとして機能します。
 
-## 公開 SceneGraph API {#section_jyd_hdz_y2b}
+## 公開 SceneGraph API {#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
@@ -193,7 +193,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 | `adb_media_init_adbreakinfo` | This method returns initialized AdBreak Information object.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
 | `adb_media_init_qosinfo` | This method returns an initialized QoS Information object.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
-## 実装 {#section_dbz_ydz_y2b}
+## 実装 {#implementation}
 
 1. **Rokuライブラリのダウンロード — 最新の** Rokuライブラリ [をダウンロードします。](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
 
@@ -293,7 +293,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
       end function 
       ```
 
-## 実装例 {#section_mld_lfz_y2b}
+## 実装例 {#sample-implementation}
 
 ### レガシー SDK の API 呼び出しの例
 
