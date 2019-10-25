@@ -3,7 +3,7 @@ seo-title: メディア同時ビューア
 title: メディア同時ビューア
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 ![](assets/video-concurrent-viewers.png)
 
-## レポートの各機能 {#section_11F8BCB98042490DAD0EA0B7EDA80569}
+## レポートの各機能 {#report-features}
 
 このレポートの主な機能は次のとおりです。
 
@@ -30,7 +30,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 * レポートの対象期間は 1 日のみです。
 * お客様は、過去の同時ビューアレポートを参照できます（1 日に制限）。
 
-## 制限事項 {#section_F159BC0213134FE4A997E52EECC7BB9D}
+## 制限事項 {#limitations}
 
 このレポートの主な制限事項は次のとおりです。
 
