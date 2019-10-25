@@ -6,20 +6,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: b0816d87f66f95f347cf391176b5c46457c9a790
 
 ---
 
 
-# ドキュメントの更新{#documentation-updates}
+# リソース{#resources}
 
-## 最終更新日：2019 年 3 月 8 日 {#March-2019-update}
+## リリースノート{#release-notes}
+
+* [リリースノート](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+
+## ドキュメントのアップデート{#documentation-updates}
+
+### Last updated: October, 2019 {#October-2019-update}
+
+多数の編集と書式の修正。
+「メディアトラッキング以外のメディアディメンション」に関する新しい一般的なcookbookトピックを含む、Media SDK以外にもクックブックのトピックが追加されました。
+
+
+### 最終更新日：2019 年 3 月 8 日 {#March-2019-update}
 
 * この更新は、主にJavaScriptおよびOTTプラットフォームの2.2 Media SDKリリースに対して行われました。
-* The 2.2 Media SDK release on JavaScript and OTT platforms provides the same support as
-described below for the iOS and Android platforms (November 1, 2018 update).
+* JavaScriptおよびOTTプラットフォーム上の2.2 Media SDKリリースは、iOSおよびAndroidプラットフォーム（2018年11月1日更新）に対して、以下に説明するのと同じサポートを提供します。
 
-## 最終更新日：2018 年 11 月 2 日 {#November-2018-update}
+### 最終更新日：2018 年 11 月 2 日 {#November-2018-update}
 
 * この更新は、主に Android および iOS プラットフォームのメディア SDK リリース 2.2 に関連しています。
 * Android および iOS のメディア SDK リリース 2.2 では、これらのプラットフォームでオーディオトラッキングをサポートすると共に、内部的な機能強化をおこなっています。
@@ -36,11 +47,10 @@ described below for the iOS and Android platforms (November 1, 2018 update).
 
 * オーディオトラッキングに関係する新しいパラメーターを反映するために、Federated Analytics フォームがバージョン 3.2 に更新されました。
 
-## 更新：2018 年 10 月 11 日 {#October-2018-update}
+### 更新：2018 年 10 月 11 日 {#October-2018-update}
 
 * ドキュメント構造の SDK の導入に関する領域が「リファクタリング」されました。プラットフォームごとの（内容的にはほぼ同じ）導入ガイドは SDK 導入に関する 1 つの節にまとめられ、プラットフォーム固有のトラッキング例は、共通のトラッキングトピックの下に配置したサブ節に示されています。
 * 新しいドキュメントシステムへの移行に備えて、ファイルの名前が全般的に変更されました。概念、参照およびタスクトピックタイプを示すDITAプリフィックス(c_、r_、t_)はすべて削除されました。 すべてのアンダースコア（「_」）がハイフン（「-」）に置き換えられました。また、ファイル名がトピックのタイトルに近いものに変更されました。
 * 検証と認定の一般的な説明に関するトピックに更新を加えました。
 * 測定オプションの提示を含む紹介資料が新しく追加されたほか、前提条件、実装パスおよび Audience Manager の有効化が更新されています。
 * オーディオ分析機能の追加を反映するように、指標とメタデータおよびレポートと分析に関する節が更新されました。
-
