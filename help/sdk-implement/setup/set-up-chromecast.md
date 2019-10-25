@@ -3,7 +3,7 @@ seo-title: Chromecast のセットアップ
 title: Chromecast のセットアップ
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -31,7 +31,7 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
 
 ## SDK の実装
 
-1. [ダウンロードした](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Chromecast ライブラリをプロジェクトに追加します。
+1. [ダウンロードした](/help/sdk-implement/download-sdks.md#download-2x-sdks) Chromecast ライブラリをプロジェクトに追加します。
 
    1. `AdobeMobileLibrary-Chromecast-[version]`.zip ファイルには、次のソフトウェアコンポーネントが含まれています。
 
