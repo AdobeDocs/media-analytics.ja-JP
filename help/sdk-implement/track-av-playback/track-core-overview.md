@@ -3,7 +3,7 @@ seo-title: 追跡の概要
 title: 追跡の概要
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -59,9 +59,9 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!TIP]
 >
->再生ヘッドの位置は、設定および設定コードの一部として設定されます。 詳しくは、概要を参 `getCurrentPlayheadTime`照してく [ださい。一般的な導入のガイドラインを参照してください。](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>再生ヘッドの位置は、設定および設定コードの一部として設定されます。 詳しくは、概要を参 `getCurrentPlayheadTime`照してく [ださい。一般的な導入のガイドラインを参照してください。](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
-## 実装方法 {#section_BB217BE6585D4EDEB34C198559575004}
+## 実装方法 {#implement}
 
 1. **追跡の初期設定** - いつユーザーが再生の意図（ユーザーが再生をクリックする、または自動再生がオンになる）をトリガーするかを識別し、メディア情報（コンテンツ名、コンテンツ ID、コンテンツの長さ、ストリームのタイプ）を使用して `MediaObject` インスタンスを作成します。
 
@@ -232,7 +232,7 @@ if (e.type == “buffered”) {
 };
 ```
 
-## 検証 {#section_ABCFB92C587B4CAABDACF93452EFA78F}
+## 検証 {#validate}
 
 実装の検証について詳しくは、「検証」を参照して [ください。](/help/sdk-implement/validation/validation-overview.md)
 
