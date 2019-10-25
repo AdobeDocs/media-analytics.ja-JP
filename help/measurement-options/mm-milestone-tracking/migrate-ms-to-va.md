@@ -3,20 +3,20 @@ seo-title: マイルストーンから Media Analytics への移行
 title: マイルストーンから Media Analytics への移行
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # マイルストーンから Media Analytics への移行 {#migrating-from-milestone-to-media-analytics}
 
-## 概要 {#section_ihl_nbz_cfb}
+## 概要 {#overview}
 
-マイルストーンと Media Analytics では、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。Media Analytics ソリューションはマイルストーンが発展したものであるので、多くのメソッドや指標は同じです。ただし、設定のアプローチやコードは大幅に変更されています。新しい Media Analytics のメソッドを指すようにプレーヤーのイベントコードを更新できる必要があります。See SDK Overview and Tracking Overview for more details on implementing Media Analytics.[](/help/sdk-implement/setup/setup-overview.md)[](/help/sdk-implement/track-av-playback/track-core-overview.md)
+マイルストーンと Media Analytics では、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。Media Analytics ソリューションはマイルストーンが発展したものであるので、多くのメソッドや指標は同じです。ただし、設定のアプローチやコードは大幅に変更されています。新しい Media Analytics のメソッドを指すようにプレーヤーのイベントコードを更新できる必要があります。Media Analyticsの導入について詳しくは、 [SDKの概要](/help/sdk-implement/setup/setup-overview.md) （英語のみ）と [トラッキングの概要(英語のみ](/help/sdk-implement/track-av-playback/track-core-overview.md) )を参照してください。
 
 以下の表では、マイルストーンソリューションと Media Analytics ソリューション間の変更について説明します。
 
-## 移行ガイド {#section_iyb_pbz_cfb}
+## 移行ガイド {#migration-guide}
 
 ### 変数リファレンス
 
@@ -92,14 +92,7 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s.Media.trackEvents = 
-  "event1,
-  event2,
-  event3,
-  event4,
-  event5,
-  event6,
-  event7"
+s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
 </pre>
 </td>
 <td>該当なし
@@ -147,8 +140,7 @@ Media.autoTrackNetStreams
 <td>
 <pre>
 s.Media.
-  autoTrackNetStreams
-  = true
+  autoTrackNetStreams = true
 </pre>
 </td>
 <td>該当なし
@@ -163,8 +155,7 @@ Media.completeByCloseOffset
 <td>
 <pre>
 s.Media.
-  completeByCloseOffset
-  = true
+  completeByCloseOffset = true
 </pre>
 </td>
 <td>該当なし
@@ -197,8 +188,8 @@ s.Media.playerName = "Custom Player Name"
 </pre>
 </td>
 <td>
-SDK Key: playerName; 
-API Key: media.playerName
+SDKキー：playerName;
+APIキー：media.playerName
 </td>
 <td>
 <pre>
@@ -323,8 +314,7 @@ Media.adTrackMilestones
 <td>
 <pre>
 s.Media.
-  adTrackMilestones
-  = "25,50,75";
+  adTrackMilestones = "25,50,75";
 </pre>
 </td>
 <td>該当なし
@@ -339,8 +329,7 @@ Media.adTrackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adTrackOffsetMilestones
-  = "20,40,60";
+  adTrackOffsetMilestones = "20,40,60";
 </pre>
 </td>
 <td>該当なし
@@ -459,8 +448,7 @@ createMediaObject( name, mediaId, length, streamType)
 </tr>
 <tr>
 <td>
-mediaPlayerName - (Required) The name of the media player used to view the video, 
-as you want it to appear in video reports.
+mediaPlayerName — （必須）ビデオの視聴に使用するメディアプレイヤーの名前。ビデオレポートに表示する名前を付けます。
 </td>
 <td>
 <pre>
@@ -545,8 +533,7 @@ createAdObject( name, adId, position, length)
 </tr>
 <tr>
 <td>
-playerName - (Required) The name of the media
-player used to view the ad.
+playerName — （必須）広告の表示に使用するメディアプレイヤーの名前。
 </td>
 <td>
 <pre>
@@ -621,8 +608,7 @@ createAdObject( name, adId, position, length)
 </tr>
 <tr>
 <td>
-CPM
-The CPM or encrypted CPM (prefixed with a "~") that applies to this playback.
+この再生に適用されるCPMまたは暗号化されたCPM（「～」のプリフィックスが付く）。
 </td>
 <td>
 <pre>
