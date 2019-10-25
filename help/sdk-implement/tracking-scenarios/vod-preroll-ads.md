@@ -5,7 +5,7 @@ description: このシナリオでは、メインコンテンツの前にプリ�
 seo-description: Adobe Media Analyticsのこのシナリオでは、メインコンテンツの前にプリロール広告が挿入されています。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、広告のない [VOD再生シナリオと同じです](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
 | セッションが終了する | `trackSessionEnd` |  | `SessionEnd` |
 
-## パラメーター {#section_33CDFB6CB230437480B67A3D149EC44E}
+## パラメーター {#parameters}
 
 When ad playback begins, a `Heartbeat Ad Start` call is sent. 広告の開始が 10 秒のタイマーと同時に起こらない場合、`Heartbeat Ad Start` 呼び出しは、数秒間遅延され、呼び出しは次の 10 秒のインターバルに進みます。これが発生すると、`Content Heartbeat` 呼び出しは同じインターバルから出ます。この 2 つの呼び出しの違いは、イベントタイプとアセットタイプを調査することで区別できます。
 
@@ -68,7 +68,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |
 
-## プリロール広告ブレークのサンプルコード {#section_nwf_xy3_x2b}
+## プリロール広告ブレークのサンプルコード {#sample-code-for-a-pre-roll-ad-break}
 
 このシナリオでは、VOD は、プリロール広告、2 番目のプリロール広告で構成され、次にコンテンツが再生されます。
 
@@ -282,7 +282,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript To view this scenario in JavaScript, enter the following text:**
+* **JavaScript** javaScriptでこのシナリオを表示するには、次のテキストを入力します。
 
    ```js
    // Set up mediaObject 
@@ -378,7 +378,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    .......
    ```
 
-## 複数の広告ブレークのサンプルコード {#section_ojy_zy3_x2b}
+## 複数の広告ブレークのサンプルコード {#sample-code-for-multiple-ad-breaks}
 
 このシナリオでは、VOD コンテンツは、プリロール広告、コンテンツ、ミッドロール広告、コンテンツ、ポストロール広告を再生します。
 
