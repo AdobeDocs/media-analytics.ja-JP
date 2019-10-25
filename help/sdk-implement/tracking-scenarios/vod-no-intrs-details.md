@@ -3,14 +3,14 @@ seo-title: 広告のない VOD 再生
 title: 広告のない VOD 再生
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 広告のない VOD 再生{#vod-playback-with-no-ads}
 
-## シナリオ {#section_E4B558253AD84ED59256EDB60CED02AE}
+## シナリオ {#scenario}
 
 このシナリオは、広告のない 1 つの VOD アセットで構成され、最初から最後まで 1 回再生されます。
 
@@ -21,7 +21,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 | コンテンツ再生 |  | Content Heartbeats |  |
 | コンテンツが完了した | `trackComplete` | Heartbeat Content Complete | *Complete* は、再生ヘッドの終わりに達したことを意味します。 |
 
-## パラメーター {#section_45D7B10031524411B91E2C569F7818B0}
+## パラメーター {#parameters}
 
 Heartbeat 呼び出し時に確認される同じ値の多くは、Adobe Analytics `Content Start`Content Start 呼び出し時にも確認されます。様々なメディアレポートに入力するためにアドビが使用する多くのパラメーターがありますが、最も重要なパラメーターのみを次の表に示します。
 
@@ -37,7 +37,7 @@ Heartbeat 呼び出し時に確認される同じ値の多くは、Adobe Analyti
 | `s:asset:media_id` | &lt;メディア名&gt; |  |
 | `s:meta:*` | オプション | メディアに設定されるカスタムメタデータ。 |
 
-## Heartbeat Content Play {#section_2ABBD51D3A6D45ABA92CC516E414417A}
+## Heartbeat Content Play {#heartbeat-content-play}
 
 These parameters should look nearly identical to the `Heartbeat Content Start` call, but the key difference is the `s:event:type` parameter. その他のパラメーターは、そのまま存在する必要があります。
 
@@ -46,7 +46,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Content Heartbeats {#section_3B5945336E464160A94518231CEE8F53}
+## Content Heartbeats {#content-heartbeats}
 
 メディアの再生中、タイマーは10秒ごとに少なくとも1つのハートビートを送信します。 それらのハートビートには、再生、広告、バッファーなどに関する情報が含まれています。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外ですが、重要な問題は、ハートビートは、再生が続く間、常にトリガーされるということです。
 
@@ -57,7 +57,7 @@ Content Heartbeats で、以下のパラメーターを探します。
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;再生ヘッドの位置&gt;例：50,60,70 | このパラメーターは、再生ヘッドの現在の位置を反映します。 |
 
-## Heartbeat Content Complete {#section_33BCC4C3181940C39446A57C25D82179}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 再生が完了した場合、つまり、再生ヘッドの終わりに達した場合、`Heartbeat Content Complete` 呼び出しが送信されます。この呼び出しは、他のハートビート呼び出しに似ていますが、いくつかの特有のパラメーターが含まれています。
 
@@ -66,7 +66,7 @@ Content Heartbeats で、以下のパラメーターを探します。
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## サンプルコード {#section_glq_vw3_x2b}
+## サンプルコード {#sample-code}
 
 このシナリオでは、コンテンツの長さは 40 秒です。最後まで中断なく再生されます。
 
