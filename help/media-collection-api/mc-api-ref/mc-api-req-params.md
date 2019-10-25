@@ -3,7 +3,7 @@ seo-title: リクエストパラメーター
 title: リクエストパラメーター
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 | `analytics.optOutServerSideForwarding` | いいえ | `sessionStart` | エンドユーザーがAdobe Analyticsと他のExperience cloudソリューション（Audience Managerなど）との間で共有されるデータをオプトアウトした場合にtrueに設定します |
 | `analytics.optOutShare` | いいえ | `sessionStart` | エンドユーザーがフェデレーション対象のデータ（他のAdobe Analyticsクライアントなど）をオプトアウトした場合は、trueに設定します。 |
 
-## 追加の詳細情報 {#section_ryt_ccy_lcb}
+## 追加の詳細情報 {#additional-details}
 
 ### visitor.marketingCloudUserId
 
