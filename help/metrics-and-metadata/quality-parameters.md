@@ -3,7 +3,7 @@ seo-title: 品質パラメーター
 title: 品質パラメーター
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
@@ -39,13 +39,11 @@ source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 | <ul> <li> **SDK キー：**<br/>  [bitrate](./quality-parameters.md#related_apis_section) </li> <li> **API キー：**<br/>media.qoe.bitrate </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>数値 </li> <li> **送信タイミング：**<br/>終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> ****<br/> サンプル値：800-899 </li><li> **説明：平**<br/>均ビットレート(kbps)。 値は、100 kbps の間隔で事前定義されたグループです。平均ビットレートは、再生セッション中に発生した再生時間に関連するすべてのビットレート値の加重平均として計算されます。を参照してください。  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.qoe.<br/>bitrateAverageBucket) </li> <li> ****<br/> ハートビート：(l:stream:bitrate) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>平均ビットレート </li> <li> ****<br/> コンテキストデータ：(a.media.qoe.<br/>bitrateAverageBucket) </li> <li> **データフィード：**<br/>videoqoebitrateaverageevar </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.qoe<br/>bitrateAverageBucket) </li> </ul> |
 
 
-
 ### 開始時間
 
 |   実装   | ネットワークパラメータ | レポート |
 | --- | --- | --- |
 | <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/>media.qoe.timeToStart </li> <li> **必須：**<br/>いいえ </li> <li> **型：**<br/>数値 </li> <li> ****<br/> 送信先：メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> ****<br/> サンプル値：30,000 </li><li> **説明：QoSObject**<br/>を使用して設定しない場合、この値のデフォルトは0です。 この値はミリ秒単位で設定します。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.qoe.<br/>timeToStart) </li> <li> ****<br/> ハートビート：(l:stream:startup_time) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>eVar </li> <li> **有効期限：**<br/>ヒット時 </li> <li> **レポート名：**<br/>開始時間 </li> <li> ****<br/> コンテキストデータ：(a.media.qoe.<br/>timeToStart) </li> <li> **データフィード：**<br/>videoqoetimetostartevar </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.qoe<br/>timeToStart) </li> </ul> |
-
 
 
 ### FPS
