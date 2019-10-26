@@ -3,7 +3,7 @@ product: Media Analytics
 audience: end-user
 user-guide-title: オーディオおよびビデオのAdobe Analytics
 translation-type: tm+mt
-source-git-commit: cc067b31066aa5d7e254167e32429c6c56e40c77
+source-git-commit: fa72eba07a06adbd7c278282bd69d0b336529ac8
 
 ---
 
@@ -164,7 +164,7 @@ source-git-commit: cc067b31066aa5d7e254167e32429c6c56e40c77
       + [タイムライン 3 - チャプター](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
 + クックブック {#media-analytics-cookbook}
-   + [クックブック](media-analytics-cookbook/cookbook-overview.md)
+   + [クックブック](media-analytics-cookbook/media-analytics-cookbook.md)
    + [メディアストリーム属性](media-analytics-cookbook/media-dimensions.md)
 + 指標とメタデータ {#metrics-and-metadata}
    + [オーディオおよびビデオのパラメーター](metrics-and-metadata/audio-video-parameters.md)
@@ -186,4 +186,3 @@ source-git-commit: cc067b31066aa5d7e254167e32429c6c56e40c77
 + [Federated Analytics](federated-analytics.md)
 + その他のリソース {#additional-resources}
    + [リソース](additional-resources/doc-updates.md)
-
