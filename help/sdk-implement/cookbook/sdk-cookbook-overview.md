@@ -4,14 +4,14 @@ seo-title: SDK Cookbookの概要
 description: 'SDK固有のcookbookトピック '
 seo-description: 'SDK固有のcookbookトピック '
 translation-type: tm+mt
-source-git-commit: cafe29452f5c0a14849b15aaf2af557dc4721d9f
+source-git-commit: 9736c939b40ecdf72d3faa6d25cc9f3ee6e14419
 
 ---
 
 
 # SDK Cookbookの概要
 
-Media SDKとMedia Collection APIの両方に適用される一般的なMedia Analyticsクックブックのトピックは、次の場所にあります。メデ [ィア解析Cookbookを参照してください。](/help/media-analytics-cookbook/cookbook-overview.md)
+Media SDKとMedia Collection APIの両方に適用される一般的なMedia Analyticsクックブックのトピックは、次の場所にあります。メデ [ィア解析Cookbookを参照してください。](/help/media-analytics-cookbook/media-analytics-cookbook.md)
 
 以下に示すcookbookのトピックは、Media AnalyticsのMedia SDKバージョンに固有です。
 
