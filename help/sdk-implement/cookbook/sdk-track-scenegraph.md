@@ -3,7 +3,7 @@ seo-title: SceneGraph（Roku）でのトラッキング
 title: SceneGraph（Roku）でのトラッキング
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 3e115cbbae77413743764ed0757af9ac99965d6e
 
 ---
 
@@ -195,7 +195,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 ## 実装 {#implementation}
 
-1. **Rokuライブラリのダウンロード — 最新の** Rokuライブラリ [をダウンロードします。](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
+1. **Rokuライブラリのダウンロード — 最新の** Rokuライブラリ [をダウンロードします。](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
 
 1. **開発環境の設定**
 
