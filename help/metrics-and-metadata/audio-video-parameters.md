@@ -3,7 +3,7 @@ seo-title: オーディオおよびビデオパラメーター
 title: オーディオおよびビデオパラメーター
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a74955b2a
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 35224b77881802c742b15ecd6e9f6b0e12b316e3
 
 ---
 
@@ -434,17 +434,19 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **型：**<br/>文字列 </li> <li> ****<br/> 送信先：メディアを閉じる </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/>TRUE </li> <li> ****<br/> 説明：メインコンテンツの表示回数。 A Content Segment View is counted when there is at least one frame viewed.  <br/> **重要：**&#x200B;設定されている場合は true のみを返します。設定されていない場合は値は返されません。 </li></ul> | <ul> <li> **Adobe Analytics：**<br/>なし </li> <li> **ハートビート：**<br/>なし </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>コンテンツセグメント視聴回数 </li> <li> ****<br/> コンテキストデータ：(a.media.segmentView) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.segmentView) </li> </ul> |
 
-### 広告数
+<!--
+### Ad Count 
 
-|   実装   | ネットワークパラメータ | レポート |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> SDKキー：該当なし </li> <li> **API キー：**<br/>なし </li> <li> **型：**<br/>数値 </li> <li> ****<br/> 送信先：メディアを閉じる </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> ****<br/> サンプル値：2 </li> <li> ****<br/> 説明：メディアセッション中に開始された広告の数。   <br/> </li></ul> | <ul> <li> **Adobe Analytics：**<br/>なし </li> <li> **ハートビート：**<br/>なし </li> </ul> | <ul> <li> **利用可能：**<br/>カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>なし </li> <li> **レポート名：**<br/>カスタム </li> <li> ****<br/> コンテキストデータ：(a.media.adCount) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.adCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of ads started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.adCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.adCount) </li> </ul> |
 
-### チャプター数
+### Chapter Count 
 
-|   実装   | ネットワークパラメータ | レポート |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> SDKキー：該当なし </li> <li> **API キー：**<br/>なし </li> <li> **型：**<br/>数値 </li> <li> ****<br/> 送信先：メディアを閉じる </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> ****<br/> サンプル値：2 </li> <li> ****<br/> 説明：メディアセッション中に開始されたチャプターの数。   <br/> </li></ul> | <ul> <li> **Adobe Analytics：**<br/>なし </li> <li> **ハートビート：**<br/>なし </li> </ul> | <ul> <li> **利用可能：**<br/>カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>なし </li> <li> **レポート名：**<br/>カスタム </li> <li> ****<br/> コンテキストデータ：(a.media.chapterCount) </li> <li> **データフィード：**<br/>なし </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of chapters started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.chapterCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+-->
 
 ## カリフォルニア消費者プライバシー法(CCPA)のパラメータ {#ccpa-params}
 
