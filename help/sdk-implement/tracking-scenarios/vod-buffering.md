@@ -1,9 +1,9 @@
 ---
-seo-title: バッファリングがある VOD 再生
 title: バッファリングがある VOD 再生
+description: Media SDKを使用してVODコンテンツを追跡する方法の例です。
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
