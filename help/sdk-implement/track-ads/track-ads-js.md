@@ -1,9 +1,9 @@
 ---
-seo-title: JavaScript での広告の追跡
 title: JavaScript での広告の追跡
+description: Media SDKを使用して、ブラウザー(JS)アプリケーションに広告トラッキングを実装します。
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
