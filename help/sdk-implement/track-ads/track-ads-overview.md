@@ -1,9 +1,9 @@
 ---
-seo-title: 概要
 title: 概要
+description: メディアSDKを使用した広告トラッキングの実装の概要です。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
