@@ -1,9 +1,9 @@
 ---
-seo-title: プレーヤーでの HTTP リクエストタイプの設定
 title: プレーヤーでの HTTP リクエストタイプの設定
+description: null
 uuid: b8fa7233-e654-4acf-a9d7-14158cded13e
 translation-type: tm+mt
-source-git-commit: 7f0a6a8d6def094bd669e5924ea76107a4ab3cc1
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
