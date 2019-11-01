@@ -1,9 +1,9 @@
 ---
-seo-title: マイルストーンから Media Analytics への移行
 title: マイルストーンから Media Analytics への移行
+description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
