@@ -1,9 +1,9 @@
 ---
-seo-title: 広告間に表示されるメイン再生の解決
 title: 広告間に表示されるメイン再生の解決
+description: 広告間での予期しないmain:play呼び出しの処理方法。
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
-source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
