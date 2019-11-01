@@ -1,9 +1,9 @@
 ---
-seo-title: リクエストパラメーター
 title: リクエストパラメーター
+description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -14,8 +14,8 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
-| `analytics.trackingServer` | はい | `sessionStart` | Adobe Analytics サーバーの URL |
-| `analytics.reportSuite` | はい | `sessionStart` | Analytics レポートデータを識別する ID |
+| `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics サーバーの URL |
+| `analytics.reportSuite` | Y | `sessionStart` | Analytics レポートデータを識別する ID |
 | `analytics.enableSSL` | いいえ | `sessionStart` | SSL を有効にするかどうか（true または false） |
 | `analytics.visitorId` | いいえ | `sessionStart` | Adobe訪問者IDは、複数のアドビアプリケーションで使用できるカスタムIDです。 ハートビート `visitorId` はAnalyticsと等しい `VID.` |
 
@@ -23,7 +23,7 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | はい | `sessionStart` | Experience Cloud 組織 ID。Adobe Experience Cloud エコシステム内で組織を識別します。 |
+| `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 組織 ID。Adobe Experience Cloud エコシステム内で組織を識別します。 |
 | `visitor.marketingCloudUserId` | いいえ | `sessionStart` | これは、Experience cloudユーザーID(ECID)です。 ほとんどのシナリオでは、このIDを使用してユーザーを識別します。 ハートビート `marketingCloudUserId` は、Adobe Analytics `MID` の「」と等しいです。 技術的には必須ではありませんが、このパラメーターはExperience cloudアプリのファミリーにアクセスする場合に必要です。 |
 | `visitor.aamLocationHint` | いいえ | `sessionStart` | Adobe Audience Manager Edge データを提供します。 |
 | `appInstallationId` | いいえ | `sessionStart` | アプリとデバイスを一意に識別する appInstallationId |
@@ -32,12 +32,12 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
-| `media.id` | はい | `sessionStart` | コンテンツの一意の識別子 |
+| `media.id` | Y | `sessionStart` | コンテンツの一意の識別子 |
 | `media.name` | いいえ | `sessionStart` | 人が判読可能なコンテンツの名前 |
-| `media.length` | はい | `sessionStart` | コンテンツの長さ（秒） |
-| `media.contentType` | はい | `sessionStart` | ストリームの形式（任意の文字列を指定できます。推奨される値は、「Live」、「VOD」または「Linear」です） |
-| `media.playerName` | はい | `sessionStart` | コンテンツのレンダリングをおこなうプレーヤーの名前 |
-| `media.channel` | はい | `sessionStart` | コンテンツの配布チャネル。モバイルアプリケーション名、Web サイト名またはプロパティ名を使用できます。 |
+| `media.length` | Y | `sessionStart` | コンテンツの長さ（秒） |
+| `media.contentType` | Y | `sessionStart` | ストリームの形式（任意の文字列を指定できます。推奨される値は、「Live」、「VOD」または「Linear」です） |
+| `media.playerName` | Y | `sessionStart` | コンテンツのレンダリングをおこなうプレーヤーの名前 |
+| `media.channel` | Y | `sessionStart` | コンテンツの配布チャネル。モバイルアプリケーション名、Web サイト名またはプロパティ名を使用できます。 |
 | `media.resume` | いいえ | `sessionStart` | ユーザーが（新しいセッションを開始するのではなく）前のセッションを再開しているかどうかを示します。 |
 | `media.sdkVersion` | いいえ | `sessionStart` | プレーヤーで使用される SDK のバージョン |
 
@@ -67,13 +67,13 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | いいえ | `adBreakStart` | 広告ブレークのわかりやすい名前 |
-| `media.ad.podIndex` | はい | `adBreakStart` | ビデオ内の広告ポッドのインデックス |
-| `media.ad.podSecond` | はい | `adBreakStart` | ポッドが開始された時間（秒） |
-| `media.ad.podPosition` | はい | `adStart` | 広告ブレーク内の広告のインデックス（1 から開始） |
+| `media.ad.podIndex` | Y | `adBreakStart` | ビデオ内の広告ポッドのインデックス |
+| `media.ad.podSecond` | Y | `adBreakStart` | ポッドが開始された時間（秒） |
+| `media.ad.podPosition` | Y | `adStart` | 広告ブレーク内の広告のインデックス（1 から開始） |
 | `media.ad.name` | いいえ | `adStart` | 広告のわかりやすい名前 |
-| `media.ad.id` | はい | `adStart` | 広告の名前 |
-| `media.ad.length` | はい | `adStart` | ビデオ広告の長さ（秒） |
-| `media.ad.playerName` | はい | `adStart` | 広告のレンダリングをおこなうプレーヤーの名前 |
+| `media.ad.id` | Y | `adStart` | 広告の名前 |
+| `media.ad.length` | Y | `adStart` | ビデオ広告の長さ（秒） |
+| `media.ad.playerName` | Y | `adStart` | 広告のレンダリングをおこなうプレーヤーの名前 |
 
 ## 広告標準メタデータ
 
@@ -90,9 +90,9 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
-| `media.chapter.index` | はい | `chapterStart` | コンテンツ内のチャプターの位置を識別します。 |
-| `media.chapter.offset` | はい | `chapterStart` | 再生においてチャプターが始まる時間（秒） |
-| `media.chapter.length` | はい | `chapterStart` | チャプターの長さ（秒） |
+| `media.chapter.index` | Y | `chapterStart` | コンテンツ内のチャプターの位置を識別します。 |
+| `media.chapter.offset` | Y | `chapterStart` | 再生においてチャプターが始まる時間（秒） |
+| `media.chapter.length` | Y | `chapterStart` | チャプターの長さ（秒） |
 | `media.chapter.friendlyName` | いいえ | `chapterStart` | チャプターのわかりやすい名前 |
 
 ## 品質データ
