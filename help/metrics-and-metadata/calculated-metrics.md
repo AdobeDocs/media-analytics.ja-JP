@@ -1,9 +1,9 @@
 ---
-seo-title: 計算指標
 title: 計算指標
+description: null
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 translation-type: tm+mt
-source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
