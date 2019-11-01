@@ -1,9 +1,9 @@
 ---
-seo-title: iOS でのエラーの追跡
 title: iOS でのエラーの追跡
+description: ここでは、iOSでのメディアSDKを使用したエラートラッキングの実装について説明します。
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
