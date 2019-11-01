@@ -1,9 +1,9 @@
 ---
-seo-title: オーディオおよびビデオパラメーター
 title: オーディオおよびビデオパラメーター
+description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a74955b2a
 translation-type: tm+mt
-source-git-commit: 35224b77881802c742b15ecd6e9f6b0e12b316e3
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
