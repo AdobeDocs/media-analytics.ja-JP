@@ -1,9 +1,9 @@
 ---
-seo-title: JavaScript でのバッファーの追跡
 title: JavaScript でのバッファーの追跡
+description: ブラウザーアプリ(JS)でのバッファリングイベントの追跡について説明します。
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
