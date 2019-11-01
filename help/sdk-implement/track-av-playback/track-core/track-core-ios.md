@@ -1,9 +1,9 @@
 ---
-seo-title: iOS でのコア再生の追跡
 title: iOS でのコア再生の追跡
+description: このトピックでは、iOSでのMedia SDKを使用したコアトラッキングの実装方法について説明します。
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
