@@ -1,9 +1,9 @@
 ---
-seo-title: 検証の概要
 title: 検証の概要
+description: ここでは、検証プロセスの概要を説明します。
 uuid: bbc6b6d6-1899-45b9-9fb7-8031f07563f6
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
