@@ -1,9 +1,9 @@
 ---
-seo-title: SDK のデバッグ
 title: SDK のデバッグ
+description: このトピックでは、Media SDKで使用できるトラッキング/ログについて説明します。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -71,7 +71,7 @@ ADBMobile.config.setDebugLogging(true)
 
 >[!IMPORTANT]
 >
->2017年4月30日現在、Adobe Bloodhoundは日没しています。 2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
+>Adobe Bloodhound は、2017 年 4 月 30 日をもって廃止されました。2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
 
 ## ログメッセージ
 
