@@ -1,9 +1,9 @@
 ---
-seo-title: JavaScript での Quality of Experience の追跡
 title: JavaScript での Quality of Experience の追跡
+description: このトピックでは、ブラウザーアプリ(JS)でMedia SDKを使用したエクスペリエンスの質(QoE、QoS)トラッキングの実装について説明します。
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
