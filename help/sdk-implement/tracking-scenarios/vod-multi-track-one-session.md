@@ -1,9 +1,9 @@
 ---
-seo-title: 複数のセッションに対する 1 つの VOD トラッカー
 title: 複数のセッションに対する 1 つの VOD トラッカー
+description: 1つのトラッカーを使用して、Media SDKを使用して複数のセッションを追跡する方法の例です。
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
-source-git-commit: e24dbf0ab08b9e148f887ef19903ad2d157822ad
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
