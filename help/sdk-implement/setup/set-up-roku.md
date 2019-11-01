@@ -1,9 +1,9 @@
 ---
-seo-title: Roku のセットアップ
 title: Roku のセットアップ
+description: Rokuでの実装用のメディアSDKアプリケーションの設定。
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 translation-type: tm+mt
-source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -128,7 +128,7 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
    | --- | --- |
    | `visitorMarketingCloudID` | Retrieves the Experience Cloud visitor ID from the visitor ID service.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Experience Cloud 訪問者 ID とともに、各訪問者に関連付けることができる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドはに対応しま `setCustomerIDs`す。 For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | SDK上の広告用Roku ID(RIDA)の設定に使用します。 For example: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` Roku SDK <br/><br/><br/>getRIDA() [](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) APIを使用して、広告用のRoku IDを取得します。 |
+   | `setAdvertisingIdentifier` | SDK上の広告用Roku ID(RIDA)の設定に使用します。 例：<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` Roku SDK <br/><br/><br/>getRIDA() [](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) APIを使用して、広告用のRoku IDを取得します。 |
 
    <!--
     Roku Api Reference: 
