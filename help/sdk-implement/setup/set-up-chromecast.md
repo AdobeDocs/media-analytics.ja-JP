@@ -1,9 +1,9 @@
 ---
-seo-title: Chromecast のセットアップ
 title: Chromecast のセットアップ
+description: Chromecastでの実装用のメディアSDKアプリケーション設定。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
-source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
