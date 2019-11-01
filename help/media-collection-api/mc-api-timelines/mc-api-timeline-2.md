@@ -1,9 +1,9 @@
 ---
-seo-title: タイムライン 2 - ユーザーが中断したセッション
 title: タイムライン 2 - ユーザーが中断したセッション
+description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
