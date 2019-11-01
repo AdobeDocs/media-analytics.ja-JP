@@ -1,9 +1,9 @@
 ---
-seo-title: 同時ビューア JSON レポートデータの取得
 title: 同時ビューア JSON レポートデータの取得
+description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
-source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
