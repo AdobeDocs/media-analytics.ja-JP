@@ -1,23 +1,23 @@
 ---
-seo-title: ハートビートパラメーターの説明
 title: ハートビートパラメーターの説明
+description: アドビがMedia Analytics（ハートビート）サーバーで収集および処理するハートビートパラメーターのリストです。
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 translation-type: tm+mt
-source-git-commit: 10a5d921953339bef1cde2f802eb9ce0cb1bbe4b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
 # Media Analytics（ハートビート）パラメーターの説明{#heartbeat-parameter-descriptions}
 
-List of Media Analytics parameters that Adobe collects and processes on the Media Analytics (heartbeats) server:
+アドビがMedia Analytics（ハートビート）サーバーで収集および処理するMedia Analyticsパラメーターのリストです。
 
 ## すべてのイベント
 
-| 名前 | Data Source |  説明  |
+| 名前 | データソース |  説明  |
 | ---  | --- | --- |
 | s:event:type | メディア SDK | (Required)<br/><br/>The type of the event being tracked. イベントタイプ： <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
-| l:event:prev_ts | メディア SDK | (Required)<br/><br/>The timestamp of the last event of the same type in this session. The value is -1. |
+| l:event:prev_ts | メディア SDK | (Required)<br/><br/>The timestamp of the last event of the same type in this session. 値は —1です。 |
 | l:event:ts | メディア SDK | (Required)<br/><br/>The timestamp of the event. |
 | l:event:duration | メディア SDK | (Required)<br/><br/>This value is set internally (in milliseconds) by the Media SDK, not by the player. バックエンドで滞在時間の指標を算出するのに使用されます。例：a.media.totalTimePlayedは、生成されるすべてのPlay(type=play)ハートビートの継続時間の合計として計算されます。 <br/>** 注意：特定のイベントは「状態変更イベント」なので、このパラメーターは0に設定されます（例：type=complete、type=chapter_complete、type=bitrate_change）。 |
 | l:event:playhead | VideoInfo | (Required)<br/><br/>The playhead was inside the currently active asset (main or ad), when the event was recorded. |
@@ -26,7 +26,7 @@ List of Media Analytics parameters that Adobe collects and processes on the Medi
 | s:asset:publisher | MediaHeartbeatConfig | (Required)<br/><br/>The publisher of the asset. |
 | s:asset:video_id | VideoInfo | (Required)<br/><br/>An ID uniquely identifying the video in the publisher's catalog. |
 | s:asset:type | メディア SDK | (Required)<br/><br/>The asset type (main or ad). |
-| s:stream:type | VideoInfo | （必須）ストリ<br/><br/>ームのタイプ。 Can be one of the following: <ul> <li> live </li> <li> vod </li> <li> 線形 </li> </ul> |
+| s:stream:type | VideoInfo | （必須）ストリ<br/><br/>ームのタイプ。 次のいずれかを指定できます。 <ul> <li> live </li> <li> vod </li> <li> 線形 </li> </ul> |
 | s:user:id | モバイルの config オブジェクト、App Measurement VisitorID | (Optional)<br/><br/>User's specifically set Visitor ID. |
 | s:user:aid | Experience Cloud 組織 | (Optional)<br/><br/>The user's Analytics Visitor ID value. |
 | s:user:mid | Experience Cloud 組織 | (Required)<br/><br/>The user's Experience cloud visitor ID value. |
@@ -63,7 +63,7 @@ List of Media Analytics parameters that Adobe collects and processes on the Medi
 
 ## チャプターイベント
 
-| 名前 | Data Source | 説明   |
+| 名前 | データソース | 説明   |
 | ---  | --- | --- |
 | s:stream:chapter_sid | メディア SDK | (Required)<br/><br/>The unique identifier associated to the playback instance of the chapter.  <br/> **注意：**&#x200B;チャプターは、ユーザーによって実行されたシークバック操作が原因で複数回再生される可能性があります。 |
 | s:stream:chapter_name | ChapterInfo | (Optional)<br/><br/>The chapter's friendly (i.e., human readable) name. |
