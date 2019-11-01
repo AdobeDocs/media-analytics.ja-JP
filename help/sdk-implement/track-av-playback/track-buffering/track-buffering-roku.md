@@ -1,9 +1,9 @@
 ---
-seo-title: Roku でのバッファーの追跡
 title: Roku でのバッファーの追跡
+description: Rokuでのバッファリングイベントの追跡について説明します。
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,14 +14,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## Buffer tracking constants
+## バッファートラッキング定数
 
 | 定数名 | 説明     |
 |---|---|
 | `BufferStart` | 追跡する Buffer Start イベントの定数 |
 | `BufferComplete` | 追跡する Buffer Complete イベントの定数 |
 
-## Implement buffering
+## バッファリングの実装
 
 1. メディアプレーヤーの再生バッファーイベントをリッスンし、バッファー開始イベント通知時に、`BufferStart` イベントを使用してバッファーを追跡します。
 
