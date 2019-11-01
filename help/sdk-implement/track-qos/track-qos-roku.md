@@ -1,9 +1,9 @@
 ---
-seo-title: Roku での Quality of Experience の追跡
 title: Roku での Quality of Experience の追跡
+description: このトピックでは、Roku上のMedia SDKを使用したエクスペリエンスの質(QoE、QoS)トラッキングの実装について説明します。
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 translation-type: tm+mt
-source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
