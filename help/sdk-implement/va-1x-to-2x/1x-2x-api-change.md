@@ -1,9 +1,9 @@
 ---
-seo-title: 1.x から 2.x API への変換
 title: 1.x から 2.x API への変換
+description: このトピックには、APIリファレンスへのリンクが含まれ、Media SDKの1.xおよび2.xバージョンで必要なトラッキングAPIとオプションのトラッキングAPIのリストが含まれています。
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
