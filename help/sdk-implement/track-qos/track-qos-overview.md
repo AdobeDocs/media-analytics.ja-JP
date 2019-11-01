@@ -1,9 +1,9 @@
 ---
-seo-title: 概要
 title: 概要
+description: Media SDKを使用したエクスペリエンスの品質(QoE、QoS)の追跡の概要です。
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
