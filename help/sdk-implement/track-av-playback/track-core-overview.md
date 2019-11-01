@@ -1,9 +1,9 @@
 ---
-seo-title: 追跡の概要
 title: 追跡の概要
+description: 'このトピックでは、メディアの読み込み、メディアの開始、メディアの一時停止、メディアの完了の追跡など、コア再生の追跡について説明します。 '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
