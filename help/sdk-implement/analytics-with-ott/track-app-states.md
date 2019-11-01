@@ -1,9 +1,9 @@
 ---
-seo-title: アプリの状態の追跡
 title: アプリの状態の追跡
+description: 'アプリの状態は、アプリ内の様々な画面またはビューで、表示されるとtrackState呼び出しが発生します。 '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 translation-type: tm+mt
-source-git-commit: 9cdf69e30fa727aeb974213769a7ab61fb05b756
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
