@@ -1,9 +1,9 @@
 ---
-seo-title: セグメント
 title: セグメント
+description: null
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
