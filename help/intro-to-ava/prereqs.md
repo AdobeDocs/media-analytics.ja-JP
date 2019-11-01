@@ -1,16 +1,16 @@
 ---
-seo-title: 前提条件
 title: 前提条件
+description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
 # 前提条件{#prerequisites}
 
-## Decisions {#decision}
+## 決定事項 {#decision}
 
 トラッキングを実装する前に、状況に合った実装方法を見きわめるため、いくつかの点を最初の段階で判断する必要があります。
 
@@ -20,11 +20,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## タスク {#prereq-tasks}
 
-For a Media Analytics implementation, here are the tasks you must complete before you begin:**
+Media Analyticsの導入 *の場合* 、開始する前に完了する必要があるタスクを次に示します。
 
 1. **Experience Cloud を有効にします。**
 
-   You need to implement the Adobe Experience Platform Identity Service.
+   Adobe Experience Platform IDサービスを実装する必要があります。
 
    IDサービスを使用すると、Experience cloudコアサービス、ソリューション、Peopleコアサービスの顧客属性およびオーディエンスの共通の識別フレームワークを有効にできます。 サイト訪問者に一意の永続的 ID を割り当てることで機能します。組織が ID サービスを実装する場合、この ID を使用することで、同じサイト訪問者およびそのデータを様々な Experience Cloud ソリューションで識別できます。
 
