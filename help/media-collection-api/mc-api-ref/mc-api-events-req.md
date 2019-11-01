@@ -1,9 +1,9 @@
 ---
-seo-title: Events リクエスト
 title: Events リクエスト
+description: null
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
