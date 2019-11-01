@@ -1,9 +1,9 @@
 ---
-seo-title: タイムライン 3 - チャプター
 title: タイムライン 3 - チャプター
+description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 ## VOD、プリロール広告、一時停止、バッファリング、コンテンツの最後まで視聴
 
 
-次の図は、再生ヘッドのタイムラインと、ユーザーのアクションの対応するタイムラインを示しています。 The details for each action and its accompanying requests are presented below.
+次の図は、再生ヘッドのタイムラインと、ユーザーのアクションの対応するタイムラインを示しています。 各アクションの詳細と、それに伴うリクエストを以下に示します。
 
 
 ![](assets/va_api_content_3.png)
@@ -22,20 +22,20 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 ![](assets/va_api_actions_3.png)
 
 
-## Action details
+## アクションの詳細
 
 
-### Action 1 - Start session {#Action-1}
+### アクション1 — セッションの開始 {#Action-1}
 
 | アクション | アクションタイムライン（秒） | 再生ヘッドの位置（秒） | クライアントリクエスト |
 | --- | :---: | :---: | --- |
 | 自動再生または再生ボタンが押され、ビデオの読み込みが開始される | 0 | 0 | `/api/v1/sessions` |
 
-**Implementation details**
+**実装の詳細**
 
-This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. プレーヤーの状態はまだ「再生中」ではなく、「開始中」です。[必須のセッションパラメーター](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)をリクエスト本文の `params` マップに含める必要があります。バックエンドでは、この呼び出しによって Adobe Analytics の開始呼び出しが生成されます。
+この呼び出しは、 _ユーザがビデオを再生する意図を_ 、通知します。 It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. プレーヤーの状態はまだ「再生中」ではなく、「開始中」です。[必須のセッションパラメーター](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)をリクエスト本文の `params` マップに含める必要があります。バックエンドでは、この呼び出しによって Adobe Analytics の開始呼び出しが生成されます。
 
-**Sample request body**
+**サンプルリクエスト本文**
 
 ```
 {
@@ -60,15 +60,15 @@ This call signals _the intention of the user to play_ a video. It returns a Sess
 }
 ```
 
-### Action 2 - Ping timer starts {#Action-2}
+### アクション2 - pingタイマーが開始します {#Action-2}
 
 | アクション | アクションタイムライン（秒） | 再生ヘッドの位置（秒） | クライアントリクエスト |
 | --- | :---: | :---: | --- |
 | アプリが ping イベントタイマーを開始する | 0 | 0 |  |
 
-**Implementation details**
+**実装の詳細**
 
-Start your ping timer. First ping event should then fire 1 second in if there are pre-roll ads, 10 seconds in otherwise.
+pingタイマーを起動します。 プリロール広告がある場合は、最初のpingイベントが1秒で起動し、それ以外の場合は10秒です。
 
 ### アクション3 — 広告の時間の開始 {#Action-3}
 
@@ -76,11 +76,11 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 | --- | :---: | :---: | --- |
 | プリロール広告ブレークの開始を追跡する | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**実装の詳細**
 
 広告は、広告ブレーク内でのみ追跡できます。
 
-**Sample request body**
+**サンプルリクエスト本文**
 
 ```
 {
@@ -95,13 +95,13 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### アクション4 — 広告開始 {#Action-4}
 
 | アクション | アクションタイムライン（秒） | 再生ヘッドの位置（秒） | クライアントリクエスト |
 | --- | :---: | :---: | --- |
 | プリロール広告 #1 の開始を追跡する | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**実装の詳細**
 
 長さが 15 秒の最初のプリロール広告の追跡を開始します。この `adStart` を使用してカスタムメタデータを含めます。
 
@@ -134,7 +134,7 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### アクション5 — 広告のping {#Action-5}
 
 | アクション | アクションタイムライン（秒） | 再生ヘッドの位置（秒） | クライアントリクエスト |
 | --- | :---: | :---: | --- |
@@ -142,7 +142,7 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 
 **実装の詳細**
 
-1秒ごとにバックエンドにpingを実行します。 (Subsequent ad pings not shown in the interest of brevity.)
+1秒ごとにバックエンドにpingを実行します。 （以降の広告pingは、簡潔にするために表示されません）。
 
 **サンプルリクエスト本文**
 
@@ -285,11 +285,11 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 | --- | :---: | :---: | --- |
 | 再生イベントを追跡する | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**実装の詳細**
 
 `adBreakComplete` イベントの後、`play` イベントを使用してプレーヤーを「再生中」状態にします。
 
-**Sample request body**
+**サンプルリクエスト本文**
 
 ```
 {
@@ -307,11 +307,11 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 | --- | :---: | :---: | --- |
 | チャプター開始イベントを追跡する | 23 | 1 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**実装の詳細**
 
 再生イベントの後、最初のチャプターの開始を追跡します。
 
-**Sample request body**
+**サンプルリクエスト本文**
 
 ```
 {
@@ -332,11 +332,11 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 | --- | :---: | :---: | --- |
 | アプリが ping イベントを送信する | 30 | 8 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**実装の詳細**
 
 バックエンドに対する ping を 10 秒ごとに実行します。
 
-**Sample request body**
+**サンプルリクエスト本文**
 
 ```
 {
@@ -354,7 +354,7 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 | --- | :---: | :---: | --- |
 | バッファー開始イベントが発生した | 33 | 11 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**実装の詳細**
 
 「バッファリング」状態への移行を追跡します。
 
@@ -506,7 +506,7 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 
 1秒ごとにバックエンドにpingを実行します。 （以降の広告pingは、簡潔にするために表示されません）。
 
-**Sample request body**
+**サンプルリクエスト本文**
 
 ```
 {
@@ -524,11 +524,11 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 | --- | :---: | :---: | --- |
 | ミッドロール広告 #1 の完了を追跡する | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**実装の詳細**
 
 ミッドロール広告が完了します。
 
-**Sample request body**
+**サンプルリクエスト本文**
 
 ```
 {
@@ -546,11 +546,11 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 | --- | :---: | :---: | --- |
 | ミッドロール広告ブレークの完了を追跡する | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**実装の詳細**
 
 広告ブレークが完了します。
 
-**Sample request body**
+**サンプルリクエスト本文**
 
 ```
 {
@@ -568,7 +568,7 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 | --- | :---: | :---: | --- |
 | チャプター 2 の開始を追跡する | 55 | 22 | `/api/v1/sessions/{sid}/events` |
 
-**Implementation details**
+**実装の詳細**
 
 
 
@@ -729,7 +729,7 @@ Start your ping timer. First ping event should then fire 1 second in if there ar
 
 `sessionComplete` をバックエンドに送信して、ユーザーがコンテンツ全体の視聴を終了したことを示します。
 
-**Sample request body**
+**サンプルリクエスト本文**
 
 ```
 {
