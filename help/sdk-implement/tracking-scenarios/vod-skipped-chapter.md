@@ -1,9 +1,9 @@
 ---
-seo-title: チャプターがスキップされた VOD 再生
 title: チャプターがスキップされた VOD 再生
+description: Media SDKを使用してチャプターをスキップしたVODコンテンツの追跡方法の例です。
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
