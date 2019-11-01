@@ -1,11 +1,9 @@
 ---
-seo-title: プリロール広告のある VOD 再生
 title: プリロール広告のある VOD 再生
-description: このシナリオでは、メインコンテンツの前にプリロール広告が挿入されています。
-seo-description: Adobe Media Analyticsのこのシナリオでは、メインコンテンツの前にプリロール広告が挿入されています。
+description: Media SDKを使用して、プリロール広告を含むVODコンテンツを追跡する方法の例です。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
