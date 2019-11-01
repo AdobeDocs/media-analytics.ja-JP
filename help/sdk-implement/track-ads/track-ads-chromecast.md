@@ -1,9 +1,9 @@
 ---
-seo-title: Chromecast での広告の追跡
 title: Chromecast での広告の追跡
+description: Media SDKを使用して、Chromecastアプリケーションに広告トラッキングを実装します。
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
