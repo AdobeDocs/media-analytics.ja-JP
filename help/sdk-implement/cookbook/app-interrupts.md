@@ -1,9 +1,9 @@
 ---
-seo-title: 再生中のアプリケーション割り込みの処理
 title: 再生中のアプリケーション割り込みの処理
+description: メディアの再生中にトラッキングが中断された場合の対処方法。
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
