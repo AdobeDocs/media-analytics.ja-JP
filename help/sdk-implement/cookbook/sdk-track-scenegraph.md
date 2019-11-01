@@ -1,9 +1,9 @@
 ---
-seo-title: SceneGraph（Roku）でのトラッキング
 title: SceneGraph（Roku）でのトラッキング
+description: Roku SceneGraph XMLプログラミングフレームワークを使用したメディアの追跡。
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
-source-git-commit: 3e115cbbae77413743764ed0757af9ac99965d6e
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
