@@ -1,9 +1,9 @@
 ---
-seo-title: Android でのシークの追跡
 title: Android でのシークの追跡
-uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
+description: ここでは、AndroidでのMedia SDKを使用したシークトラッキングの実装について説明します。
+uuid: 65add99-eebf-4a80-8b4a-d5fbdff8ab06
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `MediaHeartbeat.Event.SeekStart` | 追跡する Seek Start イベントの定数。 |
 | `MediaHeartbeat.Event.SeekComplete` | 追跡する Seek Complete イベントの定数。 |
 
-## Implement seeking
+## シークの実装
 
 1. メディアプレーヤーの再生シークイベントをリッスンし、シーク開始イベント通知時に、`SeekStart` イベントを使用してシークを追跡します。
 
