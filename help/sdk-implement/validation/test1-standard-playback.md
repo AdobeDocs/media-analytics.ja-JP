@@ -1,9 +1,9 @@
 ---
-seo-title: テスト1標準再生
 title: テスト1標準再生
+description: このトピックでは、検証で使用される標準再生テストについて説明します。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -127,7 +127,7 @@ Media Analyticsの導入には、2種類のトラッキングコールが含ま�
 
    メインコンテンツの再生中、Media SDKはハートビート（Play呼び出し）を10秒ごとにMedia Analyticsサーバーに送信します。
 
-   注意：
+   メモ:
 
    * 再生ヘッドの位置は、Play呼び出しのたびに10ずつ増加する必要があります。
    * `l:event:duration` の値は、前回のトラッキングコールからのミリ秒数を表し、10 秒の呼び出しのたびにほぼ同じ値である必要があります。
