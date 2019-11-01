@@ -1,9 +1,9 @@
 ---
-seo-title: iOS でのシークの追跡
 title: iOS でのシークの追跡
+description: ここでは、iOSでのMedia SDKを使用したシークトラッキングの実装について説明します。
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
