@@ -1,9 +1,9 @@
 ---
-seo-title: メディアワークスペースのテンプレート
 title: メディアワークスペースのテンプレート
+description: null
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 translation-type: tm+mt
-source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
