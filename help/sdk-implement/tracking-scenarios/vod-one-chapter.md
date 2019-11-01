@@ -1,9 +1,9 @@
 ---
-seo-title: チャプターが 1 つある VOD 再生
 title: チャプターが 1 つある VOD 再生
+description: 1つのチャプターを含むVOD再生の追跡の例です。
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
