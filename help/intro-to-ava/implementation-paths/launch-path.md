@@ -1,9 +1,9 @@
 ---
-seo-title: Adobe Experience Platform Launch
 title: Adobe Experience Platform Launch
+description: null
 uuid: d6f9daf2-6f61-4475-9a77-94361bdd9d95
 translation-type: tm+mt
-source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
