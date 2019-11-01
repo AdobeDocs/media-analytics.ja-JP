@@ -1,9 +1,9 @@
 ---
-seo-title: 広告がスキップされた VOD 再生
 title: 広告がスキップされた VOD 再生
+description: Media SDKを使用して広告をスキップしたVODコンテンツの追跡方法の例です。
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
