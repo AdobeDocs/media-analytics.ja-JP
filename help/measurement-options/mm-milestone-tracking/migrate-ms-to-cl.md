@@ -1,9 +1,9 @@
 ---
-seo-title: マイルストーンからカスタムリンクへの移行
 title: マイルストーンからカスタムリンクへの移行
+description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
