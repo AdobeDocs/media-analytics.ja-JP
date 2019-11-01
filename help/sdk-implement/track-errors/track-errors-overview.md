@@ -1,9 +1,9 @@
 ---
-seo-title: 概要
 title: 概要
+description: Media SDKを使用したエラー追跡。
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
