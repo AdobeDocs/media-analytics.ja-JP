@@ -1,9 +1,9 @@
 ---
-seo-title: 非アクティブなセッションの再開
 title: 非アクティブなセッションの再開
+description: 非アクティブなセッションの再開の処理方法。
 uuid: 3ff1205d-7be-4016-9bd7-6e34b7862c4c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
