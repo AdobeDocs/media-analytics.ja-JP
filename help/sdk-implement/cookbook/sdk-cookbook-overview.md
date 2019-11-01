@@ -2,7 +2,7 @@
 title: SDK Cookbookの概要
 description: 'SDK固有のcookbookトピック '
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: b807835875594a2acfc79ec9cbffce4aadbaac84
 
 ---
 
@@ -17,4 +17,3 @@ Media SDKとMedia Collection APIの両方に適用される一般的なMedia Ana
 * [広告と広告の間に発生する main:play の解決](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
 * [非アクティブなセッションの再開](/help/sdk-implement/cookbook/resuming-inactive.md)
 * [SceneGraph（Roku）でのトラッキング](/help/sdk-implement/cookbook/sdk-track-scenegraph.md)
-* [SDKと起動の違い](/help/sdk-implement/cookbook/sdk-vs-launch-qoe.md)
