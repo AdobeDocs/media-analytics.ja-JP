@@ -1,9 +1,9 @@
 ---
-seo-title: Code comparison 1.x to 2.x
-title: Code comparison 1.x to 2.x
+title: コード比較1.xから2.x
+description: このトピックでは、Media SDKの1.xおよび2.xバージョンのコードを比較します。
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 **設定 API の変更点は次のとおりです。**
 
 * `AdobeHeartbeatPluginConfig.sdk`  — 名前を `MediaConfig.appVersion`
-* `MediaHeartbeatConfig.playerName` - Now set through  instead of `MediaHeartbeatConfig``VideoPlayerPluginDelegate`
+* `MediaHeartbeatConfig.playerName`  — では、 `MediaHeartbeatConfig``VideoPlayerPluginDelegate`
 * （JavaScript のみ）：`AppMeasurement` インスタンス - `MediaHeartbeat` コンストラクターによって送信されるようになりました。
 
 **設定プロパティの変更点は次のとおりです。**
@@ -181,7 +181,7 @@ this._mediaHeartbeat = new MediaHeartbeat(new SampleMediaHeartbeatDelegate(this.
 | `VideoPlayerPluginDelegate.trackVideoLoad()` | `MediaHeartbeat.createMediaObject()` |
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### Session Start (1.x) {#session-start-1.x}
+#### セッション開始(1.x) {#session-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -431,7 +431,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackComplete()` | `MediaHeartbeat.trackComplete()` |
 
-#### Playback Complete (1.x) {#playback-complete-1.x}
+#### 再生完了(1.x) {#playback-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -442,7 +442,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 };
 ```
 
-#### Playback Complete (2.x) {#playback-complete-2.x}
+#### 再生完了(2.x) {#playback-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -462,7 +462,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | `VideoPlayerPluginDelegate.getAdInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakStart)` |
 |  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
 
-#### Ad Start (1.x) {#ad-start-1.x}
+#### 広告開始(1.x) {#ad-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -477,7 +477,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### Ad Start (2.x) {#ad-start-2.x}
+#### 広告開始(2.x) {#ad-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -503,7 +503,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdMetadataKeys()` | `MediaHeartbeat.createAdObject()` |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.trackAdStart()` |
 
-#### Standard Ad Metadata (1.x) {#ad-meta-1.x}
+#### 標準広告メタデータ(1.x) {#ad-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -522,7 +522,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### Standard Ad Metadata (2.x) {#ad-meta-2.x}
+#### 標準広告メタデータ(2.x) {#ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -557,7 +557,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
 |  | `MediaHeartbeat.trackAdStart()` |
 
-#### Custom Ad Metadata (1.x) {#custom-ad-meta-1.x}
+#### カスタム広告メタデータ(1.x) {#custom-ad-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -576,7 +576,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### Custom Ad Metadata (2.x) {#custom-ad-meta-2.x}
+#### カスタム広告メタデータ(2.x) {#custom-ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -608,7 +608,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
 |  | `MediaHeartbeat.trackAdStart()` |
 
-#### Ad Skip (1.x) {#ad-skip-1.x}
+#### Ad Skip(1.x) {#ad-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() { 
@@ -616,7 +616,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### Ad Skip (2.x) {#ad-skip-2.x}
+#### Ad Skip(2.x) {#ad-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdSkip = function() { 
@@ -635,7 +635,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 | `VideoPlayerPlugin.trackAdComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdComplete)` |
 |  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
 
-#### Ad Complete (1.x) {#ad-complete-1.x}
+#### 広告完了(1.x) {#ad-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() { 
@@ -644,7 +644,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 };
 ```
 
-#### Ad Complete (2.x) {#ad-complete-2.x}
+#### 広告完了(2.x) {#ad-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() { 
@@ -663,7 +663,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.createChapterObject` |
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### Chapter Start (1.x) {#chap-start-1.x}
+#### チャプター開始(1.x) {#chap-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -709,7 +709,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 >[!NOTE]
 >In VHL 1.5.X APIs; `getChapterinfo()` must return null if the player is outside the Chapter boundaries.
 
-#### Chapter Skip (2.x) {#chap-skip-2.x}
+#### チャプタースキップ(2.x) {#chap-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterSkip = function() { 
