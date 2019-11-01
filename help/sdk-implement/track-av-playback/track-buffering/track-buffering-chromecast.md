@@ -1,9 +1,9 @@
 ---
-seo-title: Chromecast でのバッファーの追跡
 title: Chromecast でのバッファーの追跡
+description: Chromecastでのバッファリングイベントの追跡について説明します。
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
