@@ -3,7 +3,7 @@ product: Media Analytics
 audience: end-user
 user-guide-title: オーディオおよびビデオのAdobe Analytics
 translation-type: tm+mt
-source-git-commit: 6bf606e97dc11c20b4523393523feffe632ae287
+source-git-commit: 8eb90f83aa81f15caf509fe1e44f6396df7701aa
 
 ---
 
@@ -137,6 +137,12 @@ source-git-commit: 6bf606e97dc11c20b4523393523feffe632ae287
       + [移行の概要](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [コードの比較：1.x と 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [1.x から 2.x API への変換](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
+   + 移行を開始するMedia Analytics SDK {#sdk-to-launch}
+      + [移行を開始するSDK](sdk-implement/sdk-to-launch/sdk-to-launch-migration.md)
+      + 移行プラットフォームガイドを起動するSDK {#sdk-to-launch-migration-platforms}
+         + [Android](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+         + [iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+         + [JS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + メディアコレクションAPI(RESTful) {#media-collection-api}
    + [概要](media-collection-api/mc-api-overview.md)
    + API リファレンス {#mc-api-ref}
