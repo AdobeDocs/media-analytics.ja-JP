@@ -1,10 +1,8 @@
 ---
-seo-title: スタンドアロンのメディアSDKからAdobe Launchへの移行 — Android
 title: スタンドアロンのメディアSDKからAdobe Launchへの移行 — Android
-seo-description: Media SDKからLaunch for Androidへの移行に役立つ手順とコードサンプルです。
 description: Media SDKからLaunch for Androidへの移行に役立つ手順とコードサンプルです。
 translation-type: tm+mt
-source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
+source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
@@ -12,15 +10,6 @@ source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
 # スタンドアロンのメディアSDKからAdobe Launchへの移行 — Android
 
 ## 設定
-
-### Launch Extension
-
-1. 「エクスペリエンスプラットフォームの起動」で、 [!UICONTROL mobileプロパティの] 「拡張」タブをクリックします。
-1. 「カタログ [!UICONTROL 」タブで] 、オーディオおよびビデオ用Adobe Media Analyticsの拡張機能を探し、「インストール」をクリック [!UICONTROL します]。
-1. 拡張機能の設定ページで、トラッキングパラメーターを設定します。
-メディア拡張では、設定済みのパラメーターをトラッキングに使用します。
-
-[Mobile Extensionsの使用](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ### スタンドアロンメディアSDK
 
@@ -39,7 +28,52 @@ config.debugLogging = true;
 MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 ```
 
+### Launch Extension
+
+1. 「エクスペリエンスプラットフォームの起動」で、 [!UICONTROL mobileプロパティの] 「拡張」タブをクリックします。
+1. 「カタログ [!UICONTROL 」タブで] 、オーディオおよびビデオ用Adobe Media Analyticsの拡張機能を探し、「インストール」をクリック [!UICONTROL します]。
+1. 拡張機能の設定ページで、トラッキングパラメーターを設定します。
+メディア拡張では、設定済みのパラメーターをトラッキングに使用します。
+
+![](assets/launch_config_mobile.png)
+
+[Mobile Extensionsの使用](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+
 ## トラッカーの作成
+
+### スタンドアロンメディアSDK
+
+スタンドアロンのメディアSDKでは、オブジェクトを手動で作成し、ト `MediaHeartbeatConfig` ラッキングパラメーターを設定します。 delegateインターフェイスを実装し、トラッキ`getQoSObject()` ング用のイン `getCurrentPlaybackTime()functions.``MediaHeartbeat` スタンスを作成します。
+
+```java
+MediaHeartbeatConfig config = new MediaHeartbeatConfig();
+config.trackingServer = "namespace.hb.omtrdc.net";
+config.channel = "sample-channel";
+config.appVersion = "v2.0";
+config.ovp = "video-provider"; 
+config.playerName = "native-player";
+config.ssl = true;
+config.debugLogging = true;
+
+MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
+    @Override 
+    public MediaObject getQoSObject() {
+        // When called should return the latest qos values.
+        return MediaHeartbeat.createQoSObject(<bitrate>,  
+                                              <startupTime>,  
+                                              <fps>,  
+                                              <droppedFrames>); 
+    } 
+
+    @Override 
+    public Double getCurrentPlaybackTime() { 
+        // When called should return the current player time in seconds.
+        return <currentPlaybackTime>; 
+    }
+
+    MediaHeartbeat tracker = new MediaHeartbeat(delegate, config);
+}
+```
 
 ### Launch Extension
 
@@ -81,41 +115,11 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 });
 ```
 
+## 再生ヘッドとエクスペリエンスの質の値を更新しています。
+
 ### スタンドアロンメディアSDK
 
-スタンドアロンのメディアSDKでは、オブジェクトを手動で作成し、ト `MediaHeartbeatConfig` ラッキングパラメーターを設定します。 delegateインターフェイスを実装し、トラッキ`getQoSObject()` ング用のイン `getCurrentPlaybackTime()functions.``MediaHeartbeat` スタンスを作成します。
-
-```java
-MediaHeartbeatConfig config = new MediaHeartbeatConfig();
-config.trackingServer = "namespace.hb.omtrdc.net";
-config.channel = "sample-channel";
-config.appVersion = "v2.0";
-config.ovp = "video-provider"; 
-config.playerName = "native-player";
-config.ssl = true;
-config.debugLogging = true;
-
-MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
-    @Override 
-    public MediaObject getQoSObject() {
-        // When called should return the latest qos values.
-        return MediaHeartbeat.createQoSObject(<bitrate>,  
-                                              <startupTime>,  
-                                              <fps>,  
-                                              <droppedFrames>); 
-    } 
-
-    @Override 
-    public Double getCurrentPlaybackTime() { 
-        // When called should return the current player time in seconds.
-        return <currentPlaybackTime>; 
-    }
-
-    MediaHeartbeat tracker = new MediaHeartbeat(delegate, config);
-}
-```
-
-## 再生ヘッドとエクスペリエンスの質の値を更新しています。
+スタンドアロンのMedia SDKでは、トラッカーの作成中にインターフェイスを実装するdelegate`MediaHeartbeartDelegate` オブジェクトを渡します。  トラッカーがインターフェイスメソッドおよびインターフェイスメソッドを呼び出すたびに`getQoSObject()` 、実装は最新のQoEと再生ヘッド `getCurrentPlaybackTime()` を返す必要があります。
 
 ### Launch Extension
 
@@ -127,64 +131,7 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 [メディアAPIリファレンス — qoEオブジェクトの更新](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-### スタンドアロンメディアSDK
-
-スタンドアロンのMedia SDKでは、トラッカーの作成中にインターフェイスを実装するdelegate`MediaHeartbeartDelegate` オブジェクトを渡します。  トラッカーがインターフェイスメソッドおよびインターフェイスメソッドを呼び出すたびに`getQoSObject()` 、実装は最新のQoEと再生ヘッド `getCurrentPlaybackTime()` を返す必要があります。
-
 ## 標準メディア/広告メタデータを渡す
-
-### Launch Extension
-
-* 標準メディアメタデータ：
-
-   ```java
-   HashMap<String, Object> mediaObject = 
-     Media.createMediaObject("media-name", 
-                             "media-id", 
-                             60D, 
-                             MediaConstants.StreamType.VOD, 
-                             Media.MediaType.Video);
-   
-   HashMap<String, String> mediaMetadata = 
-     new HashMap<String, String>();
-   
-   // Standard metadata keys provided by adobe.
-   mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE, 
-                     "Sample Episode");
-   mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW, 
-                     "Sample Show");
-   
-   // Custom metadata keys
-   mediaMetadata.put("isUserLoggedIn", "false");
-   mediaMetadata.put("tvStation", "Sample TV Station");
-   
-   tracker.trackSessionStart(mediaInfo, mediaMetadata);
-   ```
-
-* 標準の広告メタデータ:
-
-   ```java
-   HashMap<String, Object> adObject = 
-     Media.createAdObject("ad-name", 
-                          "ad-id", 
-                          1L, 
-                          15D);
-   HashMap<String, String> adMetadata = 
-     new HashMap<String, String>();
-   
-   // Standard metadata keys provided by adobe.
-   adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER, 
-                  "Sample Advertiser");
-   adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID, 
-                  "Sample Campaign");
-   
-   // Custom metadata keys
-   adMetadata.put("affiliate", 
-                  "Sample affiliate");
-   _tracker.trackEvent(Media.Event.AdStart, 
-                       adObject, 
-                       adMetadata);
-   ```
 
 ### スタンドアロンメディアSDK
 
@@ -246,4 +193,55 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
                       adMetadata);
    ```
 
+### Launch Extension
 
+* 標準メディアメタデータ：
+
+   ```java
+   HashMap<String, Object> mediaObject = 
+     Media.createMediaObject("media-name", 
+                             "media-id", 
+                             60D, 
+                             MediaConstants.StreamType.VOD, 
+                             Media.MediaType.Video);
+   
+   HashMap<String, String> mediaMetadata = 
+     new HashMap<String, String>();
+   
+   // Standard metadata keys provided by adobe.
+   mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE, 
+                     "Sample Episode");
+   mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW, 
+                     "Sample Show");
+   
+   // Custom metadata keys
+   mediaMetadata.put("isUserLoggedIn", "false");
+   mediaMetadata.put("tvStation", "Sample TV Station");
+   
+   tracker.trackSessionStart(mediaInfo, mediaMetadata);
+   ```
+
+* 標準の広告メタデータ:
+
+   ```java
+   HashMap<String, Object> adObject = 
+     Media.createAdObject("ad-name", 
+                          "ad-id", 
+                          1L, 
+                          15D);
+   HashMap<String, String> adMetadata = 
+     new HashMap<String, String>();
+   
+   // Standard metadata keys provided by adobe.
+   adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER, 
+                  "Sample Advertiser");
+   adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID, 
+                  "Sample Campaign");
+   
+   // Custom metadata keys
+   adMetadata.put("affiliate", 
+                  "Sample affiliate");
+   _tracker.trackEvent(Media.Event.AdStart, 
+                       adObject, 
+                       adMetadata);
+   ```
