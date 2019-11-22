@@ -1,9 +1,10 @@
 ---
-product: Media Analytics
 audience: end-user
-user-guide-title: オーディオおよびビデオのAdobe Analytics
+user-guide-title: Adobe Analytics for Audio and Video
+product: adobe analytics
+sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: 8eb90f83aa81f15caf509fe1e44f6396df7701aa
+source-git-commit: ec98c87e31ce0265698d6da37a50c6d25d7155d3
 
 ---
 
