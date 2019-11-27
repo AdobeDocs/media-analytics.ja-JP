@@ -1,17 +1,17 @@
 ---
-title: SDK Cookbookの概要
-description: 'SDK固有のcookbookトピック '
-translation-type: tm+mt
+title: SDK クックブックの概要
+description: 'SDK 専用のクックブックトピック '
+translation-type: ht
 source-git-commit: b807835875594a2acfc79ec9cbffce4aadbaac84
 
 ---
 
 
-# SDK Cookbookの概要
+# SDK クックブックの概要
 
-Media SDKとMedia Collection APIの両方に適用される一般的なMedia Analyticsクックブックのトピックは、次の場所にあります。メデ [ィア解析Cookbookを参照してください。](/help/media-analytics-cookbook/media-analytics-cookbook.md)
+メディア SDK およびメディアコレクション API の両方に適用できる、一般的な Media Analytics クックブックトピックについては、[Media Analytics クックブック](/help/media-analytics-cookbook/media-analytics-cookbook.md)を参照してください。
 
-以下に示すcookbookのトピックは、Media AnalyticsのMedia SDKバージョンに固有です。
+次のクックブックトピックは、Media Analytics のメディア SDK バージョンに特有です。
 
 * [再生中のアプリケーション割り込みの処理](/help/sdk-implement/cookbook/app-interrupts.md)
 * [広告と広告の間に発生する main:play の解決](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
