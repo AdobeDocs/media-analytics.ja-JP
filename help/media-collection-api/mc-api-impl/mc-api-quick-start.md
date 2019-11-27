@@ -2,22 +2,22 @@
 title: クイックスタート
 description: null
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# クイックスタート{#quick-start}
+# クイックスタート {#quick-start}
 
 >[!TIP]
 >
->Media Analytics(MA)収集APIバックエンドサーバーへの [セッション要求の成功を完了するため](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) に必要なリクエストデータを収集します。 （`curl`、Postman などを使用して）リクエストを手動で送信することで、リクエストデータを迅速に確認できます。これにより、リクエスト内の無効なデータ型または無効な情報に起因する問題があるかどうかに関するフィードバックがすぐに得られます。[JSON 検証スキーマ](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)を使用して、適切なリクエストデータを提供していることを確認します。
+>Media Analytics（MA）コレクション API バックエンドサーバーへの [Session リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を正常に完了するために必要なリクエストデータを収集します。（`curl`、Postman などを使用して）リクエストを手動で送信することで、リクエストデータを迅速に確認できます。これにより、リクエスト内の無効なデータ型または無効な情報に起因する問題があるかどうかに関するフィードバックがすぐに得られます。[JSON 検証スキーマ](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)を使用して、適切なリクエストデータを提供していることを確認します。
 
 1. 標準の必須の Adobe Analytics および訪問者データを収集します。これらは、すべての Experience Cloud アプリケーションを実行するために提供する必要があります。
 
    * 訪問者の Experience Cloud 組織 ID
-   * Visitor Experience cloudユーザーID
+   * 訪問者の Experience Cloud ユーザー ID
    * Analytics レポートスイート ID
    * Analytics トラッキングサーバー URL
 
@@ -49,9 +49,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
    >[!NOTE]
    >
-   >JSONリクエスト本文で正しいデータ型を使用する必要があります。 E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. [JSON検証スキーマを確認することで、パラメーターのタイプと必須の要件およびオプションの要件を確認できます。](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+   >JSON リクエスト本文内では正しいデータ型を使用する必要があります。例えば、`analytics.enableSSL` はブール型、`media.length` は数値型です。[JSON 検証スキーマ](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)を調べて、パラメーターのタイプと、それが必須の要件かオプションの要件かを確認できます。
 
-1. MA Collection APIエンドポイントにセッション要求を送信します。 リクエストのペイロードが無効な場合は、問題を特定し、`201 Created` 応答を受け取るまで再試行します。In this `curl` example, the JSON request body is in a file named `sample_data_session`:
+1. Sessions リクエストを MA コレクション API エンドポイントに送信します。リクエストのペイロードが無効な場合は、問題を特定し、`201 Created` 応答を受け取るまで再試行します。この `curl` の例では、JSON リクエスト本文は、`sample_data_session` という名前のファイルに格納されています。
 
    ```
    $ curl -i -d \ 
@@ -72,4 +72,4 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
    Access-Control-Expose-Headers: Location
    ```
 
-[Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)が成功すると、上記のような `201 Created` 応答を受け取ります。応答の Location ヘッダーにはセッション ID が含まれています。セッション ID は、後続のすべてのトラッキングコールに必要なので、応答における重要な情報です。After a successful return of a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md), you can confidently proceed with implementing video tracking using the MA API in your video player.
+[Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)が成功すると、上記のような `201 Created` 応答を受け取ります。応答の Location ヘッダーにはセッション ID が含まれています。セッション ID は、後続のすべてのトラッキングコールに必要なので、応答における重要な情報です。[Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)が正常に返されたら、ビデオプレーヤーで MA API を使用してビデオトラッキングの実装を続行できます。
