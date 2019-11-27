@@ -2,17 +2,17 @@
 title: セッションの応答が遅い場合のイベントのキューへの登録
 description: null
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# セッションの応答が遅い場合のイベントのキューへの登録{#queueing-events-when-sessions-response-is-slow}
+# セッションの応答が遅い場合のイベントのキューへの登録 {#queueing-events-when-sessions-response-is-slow}
 
-メディアコレクション API は RESTful です。つまり、ユーザーは、HTTP リクエストを送信し、その応答を待ちます。This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. 以降のすべてのトラッキングコールにセッションIDが必要なので、これは重要です。
+メディアコレクション API は RESTful です。つまり、ユーザーは、HTTP リクエストを送信し、その応答を待ちます。これは、ビデオ再生の開始時に [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を送信してセッション ID を取得する場合にのみ重要です。これが重要なのは、このセッション ID が後続のすべてのトラッキングコールで必要なためです。
 
-It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
+プレーヤーでは、（セッション ID パラメーターを含む）_Sessions 応答がバックエンドから返される前に_&#x200B;イベントが発生する可能性があります。これが発生すると、アプリは、[Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)とその応答の間に届いたすべてのトラッキングイベントをキューに入れる必要があります。Sessions 応答が届いたら、キューに入れられた[イベント](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)を最初に処理する必要があります。それから、[Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) 呼び出しを使用して&#x200B;_ライブ_&#x200B;イベントの処理を開始できます。
 
 >[!NOTE]
 >
