@@ -1,43 +1,43 @@
 ---
 title: Chromecast での Quality of Experience の追跡
-description: このトピックでは、Chromecast上のMedia SDKを使用したエクスペリエンスの品質(QoE、QoS)トラッキングの実装について説明します。
+description: ここでは、Chromecast でのメディア SDK を使用した Quality of Experience（QoE、QoS）追跡の実装について説明します。
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Chromecast での Quality of Experience の追跡{#track-quality-of-experience-on-chromecast}
+# Chromecast での Quality of Experience の追跡 {#track-quality-of-experience-on-chromecast}
 
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 ## 概要 {#overview}
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. メディアプレイヤーAPIを使用して、QoSおよびエラートラッキングに関連する変数を識別できます。
+Quality of Experience の追跡には、サービス品質（QoS）およびエラー追跡が含まれますが、どちらもオプションの要素で、コアメディアトラッキングの実装には&#x200B;**不要**&#x200B;です。メディアプレーヤー API を使用して、QoS とエラーの追跡に関連する変数を識別できます。
 
 ## プレーヤーイベント {#player-events}
 
-### すべてのビットレート変更イベント
+### すべてのビットレート変更イベント時
 
 * 再生の QoS オブジェクトインスタンス（`qosObject`）を作成または更新します
-* 呼び出し `trackEvent(Media.Heartbeat.Event.BitrateChange, qosObject);`
+* `trackEvent(Media.Heartbeat.Event.BitrateChange, qosObject);` を呼び出します
 
-### プレイヤーエラー時
+### プレーヤーのエラー時
 
-呼び出し `trackError(“media error id”);`
+`trackError(“media error id”);` を呼び出します
 
 ## 実装方法 {#implement}
 
-1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
+1. メディアの再生中にいつビットレートが変更されるかを識別し、QoS 情報を使用して `MediaObject` インスタンスを作成します。
 
    **QoSObject 変数：**
 
    >[!TIP]
    >
-   >これらの変数は、QoSを追跡する予定の場合にのみ必要です。
+   >これらの変数は、QoS を追跡する場合にのみ必要です。
 
    | 変数 | 説明 | 必須 |
    | --- | --- | :---: |
@@ -60,12 +60,12 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >QoSオブジェクトを更新し、ビットレート変更が行われるたびにビットレート変更イベントを呼び出します。 これにより、最も正確な QoS データを取得できます。
+   >ビットレートが変更されるたびに、QoS オブジェクトを更新し、ビットレート変更イベントを呼び出します。これにより、最も正確な QoS データを取得できます。
 
 1. `getQoSObject()` メソッドで、最新の QoS 情報が返されるようにします。
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
+1. メディアプレーヤーでエラーが生じ、エラーイベントをプレーヤー API で利用できる場合は、`trackError()` を使用してそのエラーの情報を取得します（[の概要](/help/sdk-implement/track-errors/track-errors-overview.md)を参照）。
 
    >[!TIP]
    >
-   >メディアプレイヤーのエラーを追跡しても、メディアトラッキングセッションは停止しません。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >メディアプレーヤーのエラーの追跡は、メディアトラッキングセッションを停止しません。メディアプレーヤーのエラーが再生の続行を妨げる場合、`trackError()` の呼び出しの後で `trackSessionEnd()` を呼び出すことで、メディアトラッキングセッションを確実に終了するようにしてください。
 
