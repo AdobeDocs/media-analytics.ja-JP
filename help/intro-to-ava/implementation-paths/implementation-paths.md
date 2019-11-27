@@ -2,7 +2,7 @@
 title: 実装パス
 description: null
 uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -10,22 +10,22 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # 実装パス {#implementation-paths}
 
-Media Analytics（ハートビート）は、アドビの標準化されたビデオソリューションです。 従来のアドビのマイルストーンモデルの後継モデルです。
+Media Analytics（ハートビート）は、アドビの標準化されたビデオソリューションです。従来のアドビのマイルストーンモデルの後継モデルです。
 
-Media Analyticsには一意のSKUがあり、ビデオストリームに基づくサーバーコールに基づく価格モデルからの変更があるので、これらの各実装パスについて、顧客は担当の営業またはアカウントマネージャーに連絡して新しい販売注文に署名する必要があります。
+Media Analytics には独自の SKU があり、サーバー呼び出しに基づく価格モデルからビデオのストリーミングに基づくモデルに変更されているので、実装パスごとにお客様は営業担当者またはアカウントマネージャーに連絡して新たに販売契約を結ぶ必要があります。
 
-* **クライアント側 —** Media Analytics専用の統合です。 ビデオハートビート SDK やメディアコレクション API の統合を選択できます。このパスは、お客様のプレーヤーや、Brightcove、Ooyala、thePlatform などの OVP プレーヤーで使用できます。
+* **クライアント側 -** これは Media Analytics のみの統合です。ビデオハートビート SDK やメディアコレクション API の統合を選択できます。このパスは、お客様のプレーヤーや、Brightcove、Ooyala、thePlatform などの OVP プレーヤーで使用できます。
 
-   If Media Analytics is your intended path, see the [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and the [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
+   Media Analytics が目的のパスの場合は、[メディア SDK の実装](/help/sdk-implement/setup/setup-overview.md)および[メディアコレクション API](/help/media-collection-api/mc-api-overview.md) を参照してください。
 
    >[!IMPORTANT]
    >
-   >Media Analyticsを使用するには、Adobe Analyticsも使用する必要があります。
+   >Media Analytics を使用するには、Adobe Analytics も使用する必要があります。
 
-* **Adobe Experience Platform Launch -** Adobe Experience Platform Launchは、Dynamic Tag Managementの後継製品で、プレーヤーへのビデオトラッキングの導入を容易にするMedia Analytics Launch Extensionを備えています。
+* **Adobe Experience Platform Launch -** Adobe Experience Platform Launch は Dynamic Tag Management の後継製品で、各プレーヤーへのビデオトラッキングの実装を容易にする Media Analytics Launch 拡張機能を備えています。
 
-   エクスペリエンスプラットフォームの発表について詳しくは、以下を参照してください。オー [ディオおよびビデオ拡張用Adobe Media Analytics](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
-* **Adobe Primetime -** Adobe Primetimeは、接続されたすべての画面でコンテンツプログラマーや配布者がメディアを収益化するのに役立つAdobe Experience cloudソリューションです。
+   Experience Platform Launch について詳しくは、[Adobe Media Analytics for Audio and Video 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)を参照してください。
+* **Adobe Primetime -** Adobe Primetime は、コンテンツプログラマーやディストリビューターが、接続されたすべての画面でメディアを収益化できるようにする Adobe Experience Cloud ソリューションです。
 
    Primetime は、ビデオパブリッシング、広告、パーソナライゼーション、アナリティクス用のモジュール式プラットフォームを提供することで、各種デバイスをまたぐグローバルオーディエンスへのリーチ、収益化、活性化における複雑性を軽減します。また、Primetime は以下を中心としたソリューションと価値を提供します。
 
@@ -37,6 +37,6 @@ Media Analyticsには一意のSKUがあり、ビデオストリームに基づ�
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDKは、Media Analytics（ハートビート）SDKと既に統合されています。これにより、サポートされるすべてのプラットフォームで実装がより簡単で高速になります。 <!--Primetime also supports the partnership with Nielsen.--> Primetimeを活用するには、お使いのプラットフォームに関する以下のドキュメントと共に、 [クライアント](/help/intro-to-ava/implementation-paths/client-side-path.md) 側で見つかったのと同じガイドラインおよび前提条件に従ってください。Primetimeユ [ーザーガイドを参照してください。](https://helpx.adobe.com/primetime/user-guide.html)
+TVSDK は既に Media Analtyics（ハートビート）SDK と統合されているので、サポートされているすべてのプラットフォームと簡単かつ迅速に統合することができます。<!--Primetime also supports the partnership with Nielsen.--> Primetime を最大限に活用するには、[クライアント側](/help/intro-to-ava/implementation-paths/client-side-path.md)に記載されているのと同じガイドラインおよび前提条件に従うと共に、お使いのプラットフォームの [Primetime ユーザーガイド](https://helpx.adobe.com/jp/primetime/user-guide.html)を参照してください。
 
 また、営業担当者またはアカウントマネージャーに連絡して、TVSDK 購入に何が必要かをお問い合わせください。
