@@ -1,23 +1,23 @@
 ---
 title: iOS のセットアップ
-description: iOSでの実装用のメディアSDKアプリケーションの設定。
+description: iOS での実装用のメディア SDK アプリケーション設定です。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# iOS のセットアップ{#set-up-ios}
+# iOS のセットアップ {#set-up-ios}
 
 ## 前提条件
 
-* **Media SDKの有効な設定パラメーターの取得** Analyticsアカウントを設定した後で、これらのパラメーターをアドビの担当者から取得できます。
-* **アプリケーションにiOS用ADBMobileを実装**&#x200B;します。Adobe Mobile SDKドキュメントについて詳しくは、 [iOS SDK 4.x for Experience Cloud Solutionsを参照してください。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **メディア SDK 用の有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
+* **iOS 向け ADBMobile をアプリケーションに実装** Adobe Mobile SDK ドキュメントについて詳しくは、[Experience Cloud ソリューション用 iOS SDK 4.x](https://marketing.adobe.com/resources/help/ja_JP/mobile/ios/) を参照してください。
 
    >[!IMPORTANT]
    >
-   >iOS 9以降、AppleはApp Transport Security(ATS)と呼ばれる機能を導入しました。 これはアプリで使用するプロトコルや暗号を業界標準のものに制限することで、ネットワークセキュリティを改善するための機能です。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。ATSについて詳しくは、「アプリ転送セキュリティ」 [を参照してください。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >iOS 9 から、Apple は App Transport Security（ATS）という機能を導入しました。これはアプリで使用するプロトコルや暗号を業界標準のものに制限することで、ネットワークセキュリティを改善するための機能です。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。ATS について詳しくは、[App Transport Security](https://marketing.adobe.com/resources/help/ja_JP/mobile/ios/app_transport_security.html) を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
@@ -44,12 +44,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       1. Xcode IDE を起動して、アプリを開きます。
       1. **[!UICONTROL Project Navigator]** で、`libs` ディレクトリをドラッグして、プロジェクトにドロップします。
 
-      1. 「**[!UICONTROL Copy Items if Needed]**」チェックボックスが選択されていること、「**[!UICONTROL Create Groups]」が選択されていること、および「** Add to Target **」にあるチェックボックスが選択されていないことを確認します。**
+      1. 「**[!UICONTROL Copy Items if Needed]**」チェックボックスが選択されていること、「**[!UICONTROL Create Groups]**」が選択されていること、および「**[!UICONTROL Add to Target]**」にあるチェックボックスが選択されていないことを確認します。
 
          ![](assets/choose-options_ios.png)
 
-      1. 「**[!UICONTROL Finish]**」をクリックします。
-      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
+      1. **[!UICONTROL Finish]**&#x200B;をクリックします。
+      1. **[!UICONTROL Project Navigator]** で、アプリを選択し、ターゲットを選択します。
       1. 「**[!UICONTROL 一般]**」タブの「**[!UICONTROL リンクされたフレームワーク]**」および「**[!UICONTROL ライブラリ]**」セクションで、必要なフレームワークとライブラリをリンクさせます。
 
          **iOS アプリのターゲット：**
@@ -75,7 +75,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    #import "ADBMediaHeartbeatConfig.h" 
    ```
 
-1. Create a `ADBMediaHeartbeatConfig` instance.
+1. `ADBMediaHeartbeatConfig` インスタンスを作成します。
 
    ここでは、`MediaHeartbeat` 設定パラメーターと、正確な追跡のために `MediaHeartbeat` インスタンスに正しい設定値を設定する方法を説明します。
 
@@ -93,7 +93,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    config.debugLogging   = <YES/NO>; 
    ```
 
-1. Implement the `ADBMediaHeartbeatDelegate` protocol.
+1. `ADBMediaHeartbeatDelegate` プロトコルを実装します。
 
    ```
    @interface VideoAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -120,7 +120,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    @end
    ```
 
-1. Use the `ADBMediaHeartBeatConfig` and `ADBMediaHeartBeatDelegate` to create the `ADBMediaHeartbeat` instance.
+1. `ADBMediaHeartBeatConfig` および `ADBMediaHeartBeatDelegate` を使用して、`ADBMediaHeartbeat` インスタンスを作成します。
 
    ```
    //Replace <ADBMediaHeartBeatDelegate> with your delegate instance 
@@ -130,21 +130,21 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `ADBMediaHeartbeat` instance is accessible and *does not get deallocated until the end of the session*. このインスタンスは、以下のすべてのトラッキングイベントに使用されます。
+   >`ADBMediaHeartbeat` インスタンスがアクセス可能であることと、*セッションの終わりまで解放されない*&#x200B;ことを確認します。このインスタンスは、以下のすべてのトラッキングイベントに使用されます。
 
 ## iOS でのバージョン 1.x から 2.x への移行 {#migrate-to-two-x}
 
 バージョン 2.x では、すべてのパブリックメソッドは、開発をより簡単にするために、`ADBMediaHeartbeat` クラスに統合されています。すべての設定は、`ADBMediaHeartbeatConfig` クラスに統合されています。
 
-For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+1.x から 2.x への移行について詳しくは、[VHL 1.x から 2.x への移行](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)を参照してください。
 
 ## tvOS のネイティブアプリの設定
 
-新しい Apple TV のリリースに伴い、ネイティブ tvOS 環境で実行するためのアプリケーションを作成できるようになりました。iOS で利用可能ないくつかのフレームワークのいずれかを使用して完全にネイティブなアプリを作成するか、XML テンプレートおよび JavaScript を使用したアプリを作成できます。MediaSDK バージョン 2.0 から、tvOS のサポートが利用できます。For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/)
+新しい Apple TV のリリースに伴い、ネイティブ tvOS 環境で実行するためのアプリケーションを作成できるようになりました。iOS で利用可能ないくつかのフレームワークのいずれかを使用して完全にネイティブなアプリを作成するか、XML テンプレートおよび JavaScript を使用したアプリを作成できます。MediaSDK バージョン 2.0 から、tvOS のサポートが利用できます。tvOS について詳しくは、[tvOS Developer サイト](https://developer.apple.com/jp/tvos/)を参照してください。
 
 次の手順を Xcode プロジェクトで実行します。このガイドは、プロジェクトのターゲットの 1 つが tvOS 用の Apple TV アプリであることを想定して記述されています。
 
-1. Drag the `VideoHeartbeat_TV.a` library file into your project’s `lib` folder.
+1. プロジェクトの `lib` フォルダーに `VideoHeartbeat_TV.a` ライブラリファイルをドラッグします。
 
 1. tvOS アプリのターゲットの「**[!UICONTROL Build Phases（ビルドフェーズ）]**」タブで、「**[!UICONTROL Link Binary with Libraries（バイナリをライブラリとリンク）]**」を展開して、以下のライブラリを追加します。
 
