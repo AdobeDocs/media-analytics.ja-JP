@@ -1,22 +1,22 @@
 ---
 title: Chromecast でのコア再生の追跡
-description: このトピックでは、ChromecastでのMedia SDKを使用したコアトラッキングの実装方法について説明します。
+description: ここでは、Chromecast でのメディア SDK を使用したコア追跡の実装方法について説明します。
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Chromecast でのコア再生の追跡{#track-core-playback-on-chromecast}
+# Chromecast でのコア再生の追跡 {#track-core-playback-on-chromecast}
 
 >[!IMPORTANT]
 >
->このドキュメントでは、SDKバージョン2.xでのトラッキングについて説明します。 1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>このドキュメントでは、バージョン 2.x の SDK での追跡について説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-1. **初期トラッキングの設定**
+1. **追跡の初期設定**
 
-   Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+   いつユーザーが再生の意図をトリガーする（ユーザーが再生をクリックする、または自動再生がオンになる）かを識別し、`MediaObject` インスタンスを作成します。
 
    **`MediaObject`API リファレンス:**
 
@@ -28,15 +28,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    **`StreamType`定数：**
 
-   [ADBMobileメディア](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
+   [ADBMobile メディア](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
 
    **`MediaType`定数：**
 
-   [ADBMobileメディア](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
+   [ADBMobile メディア](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
-1. **ビデオメタデータの添付**
+1. **ビデオメタデータのアタッチ**
 
-   オプションで、コンテキストデータ変数を使用して、標準またはカスタムビデオメタデータオブジェクトをビデオトラッキングセッションにアタッチします。
+   オプションで、コンテキストデータ変数を使用して標準またはカスタムのビデオメタデータオブジェクトをビデオトラッキングセッションにアタッチします。
 
    * **標準のビデオメタデータ**
 
@@ -44,11 +44,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       >[!NOTE]
       >
-      >標準ビデオメタデータオブジェクトのメディアオブジェクトへのアタッチは任意です。
+      >メディアオブジェクトへの標準のビデオメタデータオブジェクトのアタッチはオプションです。
 
    * **カスタムメタデータ**
 
-      カスタム変数用の変数オブジェクトを作成し、このビデオのデータを設定します。 次に例を示します。
+      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
 
       ```js
       /* Set custom context data */ 
@@ -59,9 +59,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       };
       ```
 
-1. **再生を開始する意図の追跡**
+1. **意図を追跡して再生を開始**
 
-   メディアセッションの追跡を開始するには、オブジェ [クトで](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionStart) trackSessionStartを呼び出 `media` します。
+   メディアセッションの追跡を開始するには、`media` オブジェクトの [trackSessionStart](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionStart) を呼び出します。
 
    ```
    ADBMobile.media.trackSessionStart(mediaObject, customVideoMetadata);
@@ -69,31 +69,31 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 再生の開始ではなく、ユーザーの再生の意図を追跡します。 この API は、ビデオのデータ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
+   >`trackSessionStart` では、再生の開始ではなく、ユーザーの再生の意図を追跡します。この API は、ビデオのデータ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
 
    >[!NOTE]
    >
-   >2つ目の値は、手順2で作成したカスタムビデオメタデータオブジェクト名です。 If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >2 つ目の値は、手順 2 で作成した、カスタムのビデオメタデータオブジェクトの名前です。カスタムのビデオメタデータを使用しない場合は、前述の iOS の例でコメントアウトされている行に示されているように、`trackSessionStart` の `data` 引数に空のオブジェクトを送信します。
 
-1. **再生の実際の開始の追跡**
+1. **実際の再生開始を追跡**
 
-   Identify the event from the video player for the beginning of the video playback, where the first frame of the video is rendered on the screen, and call [trackPlay:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackPlay)
+   ビデオの再生開始（ビデオの最初のフレームが画面に表示）に関するイベントをビデオプレーヤーから識別し、[trackPlay](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackPlay) を呼び出します。
 
    ```
    ADBMobile.media.trackPlay();
    ```
 
-1. **再生の完了の追跡**
+1. **再生の完了を追跡**
 
-   Identify the event from the video player for the completion of the video playback, where the user has watched the content until the end, and call [trackComplete:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)
+   ビデオの再生完了（ユーザーがコンテンツを最後まで視聴）に関するイベントをビデオプレーヤーから識別し、[trackComplete](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete) を呼び出します。
 
    ```
    ADBMobile.media.trackComplete();
    ```
 
-1. **セッションの終了の追跡**
+1. **セッションの終了を追跡**
 
-   Identify the event from the video player for the unloading/closing of the video playback, where the user closes the video and/or the video is completed and has been unloaded, and call [trackSessionEnd:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionEnd)
+   ビデオ再生のアンロード／終了（ユーザーがビデオを閉じる、またはビデオの再生が完了してアンロードされる）に関するイベントをビデオプレーヤーから識別し、[trackSessionEnd](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionEnd) を呼び出します。
 
    ```
    ADBMobile.media.trackSessionEnd();
@@ -101,26 +101,26 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` ビデオトラッキングセッションの終わりを示します。 セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
+   >`trackSessionEnd` は、ビデオトラッキングセッションの終わりをマークします。セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。`trackSessionEnd` の後は、他のすべての `track*` API 呼び出しは無視されます（新しいビデオトラッキングセッション用の `trackSessionStart` を除く）。
 
-1. **すべての可能な一時停止シナリオの追跡**
+1. **考えられるすべての一時停止シナリオを追跡**
 
-   Identify the event from the video player for video pause and call [trackPause:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackPause)
+   ビデオの一時停止に関するイベントをビデオプレーヤーから識別し、[trackPause](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackPause) を呼び出します。
 
    ```
    ADBMobile.media.trackPause();
    ```
 
-   **一時停止シナリオ**
+   **一時停止のシナリオ**
 
-   Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. 以下のシナリオでは、アプリで `trackPause()` () を呼び出す必要があります。
+   ビデオプレーヤーが一時停止するあらゆるシナリオを識別して、`trackPause` が適切に呼び出されるようにします。以下のシナリオでは、アプリで `trackPause()` () を呼び出す必要があります。
 
    * アプリ内でユーザーが明示的に一時停止をクリックする。
    * プレーヤー自体が一時停止状態になる。
    * （*モバイルアプリ*）- ユーザーがアプリケーションをバックグラウンドに移行した場合でも、アプリのセッションを開いたままにしておきたい。
    * （*モバイルアプリ*）- 何らかのシステムの割り込みが生じ、アプリケーションがバックグラウンドに移行する。例：ユーザーに電話がかかってきた場合や、別のアプリケーションのポップアップが表示された場合でも、アプリケーションのセッションを終了せず、ユーザーが中断した場所からビデオを再開できるようにしたい。
 
-1. Identify the event from the player for video play and/or video resume from pause and call [trackPlay:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)
+1. 一時停止からのビデオ再生およびビデオ再開に関するイベントをプレーヤーから識別し、[trackPlay](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete) を呼び出します。
 
    ```
    ADBMobile.media.trackPlay();
@@ -128,7 +128,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >これは、手順4で使用したのと同じイベントソースである場合があります。 ビデオ再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
+   >これは、手順 4 で使用したのと同じイベントソースである可能性があります。ビデオ再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
 
 * 追跡シナリオ：[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Chromecast SDK に含まれている、追跡の完全な例を示すサンプルプレーヤー
