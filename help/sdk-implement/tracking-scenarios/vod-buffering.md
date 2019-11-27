@@ -1,14 +1,14 @@
 ---
 title: バッファリングがある VOD 再生
-description: Media SDKを使用してVODコンテンツを追跡する方法の例です。
+description: メディア SDK を使用した VOD コンテンツの追跡方法の例です。
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# バッファリングがある VOD 再生{#vod-playback-with-buffering}
+# バッファリングがある VOD 再生 {#vod-playback-with-buffering}
 
 ## シナリオ {#scenario}
 
@@ -18,7 +18,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | トリガー   | ハートビートメソッド   | ネットワーク呼び出し   | メモ   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | これは、**[!UICONTROL 再生]をクリックするユーザーか、自動再生イベントである可能性があります。** |
+| ユーザーが&#x200B;**[!UICONTROL 再生]**&#x200B;をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | これは、**[!UICONTROL 再生]**&#x200B;をクリックするユーザーか、自動再生イベントである可能性があります。 |
 | ビデオ再生の最初のフレーム。 | `trackPlay` | Heartbeat Content Play | このメソッドは、タイマーをトリガーします。ハートビートは、再生が続く限り、10 秒ごとに送信されます。 |
 | コンテンツが再生される。 |  | Content Heartbeats |  |
 | バッファリングが開始される。 | `trackEvent:BufferStart` | Heartbeat Buffer |  |
