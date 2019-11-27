@@ -2,28 +2,27 @@
 title: 同時ビューア JSON レポートデータの取得
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# 同時ビューア JSON レポートデータの取得{#get-concurrent-viewers-json-report-data}
+# 同時ビューア JSON レポートデータの取得 {#get-concurrent-viewers-json-report-data}
 
-同時ビューアのレポートデータは、 _* 1.4バージョンのAnalytics APIを使用して&#x200B;*_ 、次のように取得できます。
+Analytics API の&#x200B;_*&#x200B;バージョン 1.4 *_ を使用して、同時ビューアレポートデータを取得できます。
 * [Analytics API](https://github.com/AdobeDocs/analytics-1.4-apis)
-* [スワガー](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
+* [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
-1. UI上に構築された任意のセグメントを使用して、データをフィルタリングします。 特定のコンテンツIDでフィルターするには、新しいセグメントを作成します。
-1. リクエスト本 `elements` 文の `id` -&gt;をに設定します `videoconcurrentviewers`。
-1. 十分な量のデータをリクエストします。 データに隙間がないように、3200のデータポイントを使用することをお勧めします。
+1. UI に組み込まれた任意のセグメントを使用してデータをフィルタリングします。特定のコンテンツ ID でフィルタリングするには、新しいセグメントを作成します。
+1. リクエスト本文の `elements` -&gt; `id` を `videoconcurrentviewers` に設定します。
+1. 十分な量のデータをリクエストします。アドビでは、データにギャップがないようにするために、3200 データポイントをお勧めします。
 
-   * レポートで指定するデータ範囲は、ビデオセッション終了時に同時に _収集されるすべてのビューアデータです。_
-したがって、1日に開始し、真夜中過ぎに終了するセッション（翌日）を考慮する必要があります。
+   * レポートで指定したデータ範囲で、ビデオセッション終了時に、すべての同時ビューアデータを取得します。__&#x200B;そのため、ある日に開始し、真夜中以降（つまり翌日）に終了するセッションを考慮する必要があります。
 
-   * 1日以上のデータをリクエストするが、分析ではデ _*&#x200B;ータの最初の日のみを使用する。*_
+   * 1 日以上のデータをリクエストしますが、分析では&#x200B;_*&#x200B;最初の日のデータのみ&#x200B;*_&#x200B;を使用します。
 
-このシナリオのサンプルリクエストペイロードは、次のようになります。
+次に、このシナリオでのリクエストペイロードの例を示します。
 
 ```
 {
