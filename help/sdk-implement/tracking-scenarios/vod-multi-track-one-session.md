@@ -1,14 +1,14 @@
 ---
 title: 複数のセッションに対する 1 つの VOD トラッカー
-description: 1つのトラッカーを使用して、Media SDKを使用して複数のセッションを追跡する方法の例です。
+description: メディア SDK を使用した、1 つのトラッカーで複数のセッションを追跡する方法の例です。
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# 複数のセッションに対する 1 つの VOD トラッカー{#vod-one-tracker-for-multiple-sessions}
+# 複数のセッションに対する 1 つの VOD トラッカー {#vod-one-tracker-for-multiple-sessions}
 
 ## シナリオ {#scenario}
 
@@ -22,7 +22,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | パラメーター | 値 | メモ   |
 | --- | --- | --- |
-| `s:event:sid` | 一意のセッション ID | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
+| `s:event:sid` | 一意のセッション ID | `trackSessionEnd` が呼び出されるまで、すべてのハートビートネットワーク呼び出しに存在する一意のセッション ID。 |
 
 ## サンプルコード {#sample-code}
 
@@ -30,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Android {#android}
 
-To create two instances of `MediaHeartbeat` for two media players, set up the following code:
+2 つのメディアプレーヤー用に `MediaHeartbeat` の 2 つのインスタンスを作成するには、以下のコードを設定します。
 
 ```java
 public class MediaAnalyticsProvider implements MediaHeartbeatDelegate { 
@@ -139,7 +139,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-To display the second session, you can use the same `MediaAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session:
+2 番目のセッションを表示するには、新しいセッションであることを別にすれば、最初のセッションと同じ `MediaAnalyticsProvider`（`MediaHeartbeat`）インスタンスを使用できます。
 
 ```java
 // Set up mediaObject 
@@ -185,7 +185,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS {#ios}
 
-To create two instances of `MediaHeartbeat` for two media players, enter the following:
+2 つのメディアプレーヤー用に `MediaHeartbeat` の 2 つのインスタンスを作成するには、以下を入力します。
 
 ```
 @interface MediaAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -291,7 +291,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 ....... 
 ```
 
-To display the second session, you can use the same `MediaAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session:
+2 番目のセッションを表示するには、新しいセッションであることを別にすれば、最初のセッションと同じ `MediaAnalyticsProvider`（`MediaHeartbeat`）インスタンスを使用できます。
 
 ```
 // Set up mediaObject 
