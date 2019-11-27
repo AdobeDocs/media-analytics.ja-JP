@@ -1,18 +1,18 @@
 ---
 title: 新しいデバッグレポートの作成
-description: ここでは、新しいデバッグレポートを作成する方法について説明します。
+description: ここでは、新しいデバッグレポートの作成方法について説明します。
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# 新しいデバッグレポートの作成{#create-a-new-debug-report}
+# 新しいデバッグレポートの作成 {#create-a-new-debug-report}
 
 新しいデバッグレポートを作成するには：
 
-1. In [!UICONTROL Create New Debug Report] select the following:
+1. 「[!UICONTROL Create New Debug Report]」で、以下を選択します。
 
    ![](assets/create-new-debug-report.png)
 
@@ -27,12 +27,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
          * [!UICONTROL Analytics／管理者／カンパニー設定／Web サービス]
          * [!UICONTROL Analytics／管理者／ユーザー管理／ユーザー／個々のユーザーの設定]新しいユーザーの Web サービス API の資格情報を作成するには、[!UICONTROL ユーザー管理]でユーザーを **Web サービスアクセス**&#x200B;ユーザーグループに追加します。
-      * [!UICONTROL デフォルトのエンドポイント] — このフィールドのデータはアドビから提供され、変更できません。
-      * [!UICONTROL Extra Endpoint] — 使 `CNAMES`用する場合は、 `metrics.companyname.com`
-   * **ビデオハートビート(Media Analytics)**
+      * [!UICONTROL Default Endpoint] - このフィールドのデータはアドビが提供します。変更することはできません。
+      * [!UICONTROL Extra Endpoint] - CNAME を使用している場合に、`metrics.companyname.com` などのトラッキングサーバーの `CNAMES` を追加します。
+   * **ビデオハートビート（Media Analytics）**
 
-      * [!UICONTROL デフォルトのエンドポイント] — このフィールドのデータはアドビから提供され、変更できません。
-      * [!UICONTROL 追加のエンドポ] イント `CNAMES`— トラッキングサーバー用に追加します(例： `metrics.companyname.com`)。
+      * [!UICONTROL Default Endpoint] - このフィールドのデータはアドビが提供します。変更することはできません。
+      * [!UICONTROL Extra Endpoint] - CNAME を使用している場合に、`metrics.companyname.com` などのトラッキングサーバーの `CNAMES` を追加します。
 
 
 
