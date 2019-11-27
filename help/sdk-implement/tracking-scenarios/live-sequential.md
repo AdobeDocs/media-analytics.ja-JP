@@ -1,14 +1,14 @@
 ---
 title: 順次追跡を含むライブメインコンテンツ
-description: Media SDKを使用した順次追跡を使用したライブコンテンツの追跡方法の例です。
+description: メディア SDK を使用した順次追跡を含むライブコンテンツの追跡方法の例です。
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# 順次追跡を含むライブメインコンテンツ{#live-main-content-with-sequential-tracking}
+# 順次追跡を含むライブメインコンテンツ {#live-main-content-with-sequential-tracking}
 
 ## シナリオ {#scenario}
 
@@ -16,7 +16,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 これは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じシナリオですが、コンテンツの一部はスクラブされ、メインコンテンツのあるポイントから別のポイントまでのシークが完了します。
 
-| トリガー | ハートビートメソッド |  ネットワーク呼び出し |  メモ   |
+| トリガー | ハートビートメソッド | ネットワーク呼び出し |  メモ   |
 | --- | --- | --- | --- |
 | ユーザーが[!UICONTROL 再生]をクリックする | trackSessionStart | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
 | コンテンツ再生の最初のフレーム。 | trackPlay | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
@@ -40,7 +40,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:asset:type` | `"main"` |  |
 | `s:asset:media_id` | &lt;メディア名&gt; |  |
 | `s:stream:type` | `live` |  |
-| `s:meta:*` | *オプション* | メディア上のカスタムメタデータセット |
+| `s:meta:*` | *オプション* | メディアに設定されたカスタムメタデータ |
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
@@ -53,7 +53,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Content Heartbeats {#content-heartbeats}
 
-メディアの再生中に、1つ以上のハートビートをメインコンテンツに対して10秒おき、広告に対して1秒おきに送信するタイマーがあります。 それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
+メディア再生中に、1 つ以上のハートビートを 10 秒ごと（メインコンテンツ）および 1 秒ごと（広告）に送信するタイマーがあります。それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
 
 Content Heartbeats では、いくつかの特定の事柄を探します。
 
