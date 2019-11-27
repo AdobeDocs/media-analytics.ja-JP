@@ -1,14 +1,14 @@
 ---
 title: Android での標準広告メタデータの実装
-description: Androidでの広告追跡での標準広告メタデータの使用方法。
+description: Android 上の広告トラッキングでの標準広告メタデータの使用方法です。
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Android での標準広告メタデータの実装{#implement-standard-ad-metadata-on-android}
+# Android での標準広告メタデータの実装 {#implement-standard-ad-metadata-on-android}
 
 ## 広告定数
 
@@ -16,9 +16,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardAdMetadata` | 標準広告メタデータを Ad `MediaObject` にアタッチするための定数。 |
 
-## 実装標準広告メタデータ
+## 標準広告メタデータの実装
 
-標準広告メタデータの場合、プラットフォームのキーを使用して、標準広告メタデータのキーと値のペアのディクショナリを作成します。
+標準広告メタデータの場合、ご利用のプラットフォームのキーを使用して、標準広告メタデータのキーと値のペアのディクショナリを作成します。
 
 ```java
 // Setting standard Ad Metadata 
