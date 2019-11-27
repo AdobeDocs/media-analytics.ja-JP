@@ -2,23 +2,23 @@
 title: メディアワークスペースのテンプレート
 description: null
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# メディアワークスペースのテンプレート{#media-workspace-templates}
+# メディアワークスペースのテンプレート {#media-workspace-templates}
 
 Adobe Analytics のワークスペースを利用すると、トラッキングデータを分析するためのダッシュボードをすばやくセットアップすることができます。新しいプロジェクトを作成する際や、ワークスペースに移動して既存のプロジェクトを管理する際に、よく利用する一般的な追跡シナリオ（獲得、オーディオおよびビデオの視聴など）に対応した標準のテンプレートから選択することができます。または、独自のカスタムテンプレートの作成、変更、保存をおこなうこともできます。
 
 テンプレートの操作は、プロジェクトの作成や管理をおこなう際に Adobe Analytics の「ワークスペース」タブでおこないます。最初にワークスペースに移動すると、新規プロジェクトを作成するのか既存のプロジェクトを開くのかを選択できます。
 
-* **新規プロジェクトの作成** - ワークスペースで「**[!UICONTROL 新規プロジェクトの作成]」ボタンをクリックすると、ダイアログが表示されます。このダイアログで、（標準とカスタムを含む）テンプレートのコレクションから選択できます。**
+* **新規プロジェクトの作成 -** ワークスペースで「**[!UICONTROL 新規プロジェクトの作成]**」ボタンをクリックすると、ダイアログが表示されます。このダイアログで、（標準とカスタムを含む）テンプレートのコレクションから選択できます。
 
    ![](assets/all-templates-audio.png)
 
-   For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
+   例えば、**[!UICONTROL オーディオ消費]**&#x200B;テンプレートを選択すると、以下のオーディオ向けダッシュボードが表示されます。
 
    ![](assets/aa-workspace.png)
 
