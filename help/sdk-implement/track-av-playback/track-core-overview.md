@@ -1,20 +1,20 @@
 ---
 title: 追跡の概要
-description: 'このトピックでは、メディアの読み込み、メディアの開始、メディアの一時停止、メディアの完了の追跡など、コア再生の追跡について説明します。 '
+description: 'ここでは、メディアの読み込み、メディア開始、メディアの一時停止およびメディア完了の追跡を含む、コア再生の追跡について説明します。 '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# 追跡の概要{#tracking-overview}
+# 追跡の概要 {#tracking-overview}
 
 >[!IMPORTANT]
 >
->このドキュメントでは、SDKバージョン2.xでのトラッキングについて説明します。 If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>このドキュメントでは、バージョン 2.x の SDK での追跡について説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-## プレイヤーイベント
+## プレーヤーイベント
 
 コア再生の追跡には、メディアの読み込み、メディアの開始、メディアの一時停止およびメディアの完了の追跡が含まれます。また、必須ではありませんが、バッファーとシークの追跡もコンテンツ再生の追跡に使用されるコアコンポーネントです。ご使用のメディアプレーヤー API で、メディア SDK のトラッキングコールに対応するプレーヤーイベントを識別し、トラッキング API を呼び出すイベントハンドラーと、必須およびオプションの変数を設定するイベントハンドラーをコーディングします。
 
@@ -22,50 +22,50 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * メディアオブジェクトを作成します
 * メタデータを設定します
-* 呼び `trackSessionStart`出し例： `trackSessionStart(mediaObject, contextData)`
+* `trackSessionStart` を呼び出します。例：`trackSessionStart(mediaObject, contextData)`
 
-### メディア開始時
+### メディアの開始時
 
-* 呼び出し `trackPlay`
+* `trackPlay` を呼び出します
 
-### 一時停止/再開時
+### 一時停止／再開時
 
-* 呼び出し `trackPause`
-* Call `trackPlay`   _when playback resumes_
+* `trackPause` を呼び出します
+* 再生が再開されたときに `trackPlay` を呼び出します。__
 
-### メディア完了時
+### メディアの完了時
 
-* 呼び出し `trackComplete`
+* `trackComplete` を呼び出します
 
 ### メディアの中止時
 
-* 呼び出し `trackSessionEnd`
+* `trackSessionEnd` を呼び出します
 
-### スクラブ開始時
+### スクラビングの開始時
 
-* 呼び出し `trackEvent(SeekStart)`
+* `trackEvent(SeekStart)` を呼び出します
 
-### スクラブ終了時
+### スクラビングの終了時
 
-* 呼び出し `trackEvent(SeekComplete)`
+* `trackEvent(SeekComplete)` を呼び出します
 
-### バッファリング開始時
+### バッファリングの開始時
 
-* 呼び出し `trackEvent(BufferStart);`
+* `trackEvent(BufferStart);` を呼び出します
 
-### バッファリングが終了した場合
+### バッファリングの終了時
 
-* 呼び出し `trackEvent(BufferComplete);`
+* `trackEvent(BufferComplete);` を呼び出します
 
 >[!TIP]
 >
->再生ヘッドの位置は、設定および設定コードの一部として設定されます。 詳しくは、概要を参 `getCurrentPlayheadTime`照してく [ださい。一般的な導入のガイドラインを参照してください。](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
+>再生ヘッドの位置は、セットアップおよび設定コードの一環として設定されます。`getCurrentPlayheadTime` について詳しくは、[概要：一般的な実装のガイドライン](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)を参照してください。
 
 ## 実装方法 {#implement}
 
 1. **追跡の初期設定** - いつユーザーが再生の意図（ユーザーが再生をクリックする、または自動再生がオンになる）をトリガーするかを識別し、メディア情報（コンテンツ名、コンテンツ ID、コンテンツの長さ、ストリームのタイプ）を使用して `MediaObject` インスタンスを作成します。
 
-   **`MediaObject`参照：**
+   **`MediaObject`リファレンス：**
 
    | 変数名 | 説明 | 必須 |
    |---|---|---|
@@ -93,7 +93,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `Audio` | オーディオストリームのメディアタイプ。 |
    | `Video` | ビデオストリームのメディアタイプ。 |
 
-   The general format for creating the `MediaObject` is `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
+   `MediaObject` を作成するための一般的な形式は `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);` です。
 
 1. **メタデータのアタッチ** - オプションで、コンテキストデータ変数を使用して標準またはカスタムのメタデータオブジェクトをトラッキングセッションにアタッチします。
 
@@ -101,11 +101,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       >[!NOTE]
       >
-      >標準メタデータオブジェクトのメディアオブジェクトへのアタッチはオプションです。
+      >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
 
       標準メタデータオブジェクトをインスタンス化し、必要な変数を設定して、メディアハートビートオブジェクトでメタデータオブジェクトを設定します。
 
-      See the comprehensive list of metadata here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
+      メタデータの包括的なリストについては、[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を参照してください。
 
    * **カスタムメタデータ** - カスタム変数の変数オブジェクトを作成し、このコンテンツのデータを設定します。
 
@@ -113,11 +113,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 再生の開始ではなく、ユーザーの再生の意図を追跡します。 この API は、データ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
+   >`trackSessionStart` では、再生の開始ではなく、ユーザーの再生の意図を追跡します。この API は、データ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
 
    >[!NOTE]
    >
-   >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >カスタムメタデータを使用しない場合は、`trackSessionStart` の `data` 引数に空のオブジェクトを送信します。
 
 1. **実際の再生開始を追跡** - 再生開始（コンテンツの最初のフレームが画面にレンダリングされる）に関するイベントをメディアプレーヤーから識別し、`trackPlay` を呼び出します。
 
@@ -127,7 +127,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` トラッキングセッションの終わりを示します。 セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` は、トラッキングセッションの終わりをマークします。セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。`trackSessionEnd` の後は、他のすべての `track*` API 呼び出しは無視されます（新しいトラッキングセッション用の `trackSessionStart` を除く）。
 
 1. **考えられるすべての一時停止シナリオを追跡** - 一時停止に関するイベントをメディアプレーヤーから識別し、`trackPause` を呼び出します。
 
@@ -142,7 +142,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >これは、手順4で使用したのと同じイベントソースである場合があります。 Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >これは、手順 4 で使用したのと同じイベントソースである可能性があります。再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
 
 1. メディアプレーヤーの再生シークイベントをリッスンします。シーク開始イベント通知時に、`SeekStart` イベントを使用してシークを追跡します。
 1. メディアプレーヤーからのシーク完了通知時に、`SeekComplete` イベントを使用してシークの終わりを追跡します。
@@ -234,5 +234,5 @@ if (e.type == “buffered”) {
 
 ## 検証 {#validate}
 
-実装の検証について詳しくは、「検証」を参照して [ください。](/help/sdk-implement/validation/validation-overview.md)
+実装の検証について詳しくは、[検証](/help/sdk-implement/validation/validation-overview.md)を参照してください。
 
