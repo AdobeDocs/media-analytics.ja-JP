@@ -1,20 +1,20 @@
 ---
 title: プリロール広告のある VOD 再生
-description: Media SDKを使用して、プリロール広告を含むVODコンテンツを追跡する方法の例です。
+description: メディア SDK を使用した、プリロール広告を含む VOD コンテンツの追跡方法の例です。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# プリロール広告のある VOD 再生{#vod-playback-with-pre-roll-ads}
+# プリロール広告のある VOD 再生 {#vod-playback-with-pre-roll-ads}
 
 このシナリオでは、メインコンテンツの前にプリロール広告が挿入されています。特に指定のない限り、ネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオの呼び出しと同じです。ネットワーク呼び出しは同時に発生しますが、ペイロードは異なります。
 
 | トリガー | ハートビートメソッド | ネットワーク呼び出し   | メモ   |
 | --- | --- | --- | --- |
-| ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
 | 広告が開始される。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start、Heartbeat Ad Start |  |
 | 広告 #1 のフレームが再生される。 | `trackPlay` | Heartbeat Ad Play | メインコンテンツの前に広告コンテンツを再生し、ハートビートは、広告が開始する際に開始されます。 |
 | 広告が再生される。 |  | Ad Heartbeats |  |
@@ -22,13 +22,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 広告 #2 の最初のフレームが再生される。 | `trackEvent:AdStart` | Analytics Ad Start、Heartbeat Ad Start |  |
 | 広告が再生される。 |  | Ad Heartbeats |  |
 | 広告 #2の再生が完了する。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | 広告の終わりとポッドの終わりに達しました。 |
-| コンテンツが再生される。 |  | Content Heartbeats | このネットワーク呼び出しは、広告のない [VOD再生シナリオと同じです](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
-| コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、広告のない [VOD再生シナリオと同じです](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
+| コンテンツが再生される。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。 |
+| コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。 |
 | セッションが終了する | `trackSessionEnd` |  | `SessionEnd` |
 
 ## パラメーター {#parameters}
 
-When ad playback begins, a `Heartbeat Ad Start` call is sent. 広告の開始が 10 秒のタイマーと同時に起こらない場合、`Heartbeat Ad Start` 呼び出しは、数秒間遅延され、呼び出しは次の 10 秒のインターバルに進みます。これが発生すると、`Content Heartbeat` 呼び出しは同じインターバルから出ます。この 2 つの呼び出しの違いは、イベントタイプとアセットタイプを調査することで区別できます。
+広告の再生が開始されると、`Heartbeat Ad Start` 呼び出しが送信されます。広告の開始が 10 秒のタイマーと同時に起こらない場合、`Heartbeat Ad Start` 呼び出しは、数秒間遅延され、呼び出しは次の 10 秒のインターバルに進みます。これが発生すると、`Content Heartbeat` 呼び出しは同じインターバルから出ます。この 2 つの呼び出しの違いは、イベントタイプとアセットタイプを調査することで区別できます。
 
 ### Heartbeat Ad Start
 
@@ -37,7 +37,7 @@ When ad playback begins, a `Heartbeat Ad Start` call is sent. 広告の開始が
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
 
-Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call is similar to the `Content Play` call.
+広告は、`Content Heartbeats` と同じ基本モデルに従うので、`Ad Play` 呼び出しは、`Content Play` 呼び出しに似ています。
 
 ### Heartbeat Ad Play 呼び出し
 
@@ -46,7 +46,7 @@ Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call i
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
 
-These parameters are similar to the `Content Heartbeats` call, but the `Ad Heartbeats` call contains a few extra parameters:
+これらのパラメーターは `Content Heartbeats` 呼び出しに似ていますが、`Ad Heartbeats` 呼び出しは、いくつかの追加のパラメーターを含んでいます。
 
 ### Ad Heartbeats
 
@@ -57,7 +57,7 @@ These parameters are similar to the `Content Heartbeats` call, but the `Ad Heart
 | `s:asset:ad_id` | &lt;広告 ID&gt; |  |
 | `s:asset:pod_id` | &lt;広告ポッド ID&gt; |  |
 
-Similar to `Heartbeat Content Complete` calls, when ad playback has completed, and the end of the playhead is reached, a `Heartbeat Ad Complete` call is sent. この呼び出しは、他の `Heartbeat Ad` 呼び出しに似ていますが、いくつか特有のものが含まれます。
+`Heartbeat Content Complete` 呼び出しと同様、再生が完了した（再生ヘッドの終わりに達した）場合、`Heartbeat Ad Complete` 呼び出しが送信されます。この呼び出しは、他の `Heartbeat Ad` 呼び出しに似ていますが、いくつか特有のものが含まれます。
 
 ### Heartbeat Ad Complete 呼び出し
 
@@ -72,7 +72,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** Androidでこのシナリオを表示するには、次のコードを設定します。
+* **Android** Android でこのシナリオを表示するには、以下のコードを設定します。
 
    ```java
    // Set up  mediaObject 
@@ -176,7 +176,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS -** iOSでこのシナリオを表示するには、次のコードを設定します。
+* **iOS -** iOS でこのシナリオを表示するには、以下のコードを設定します。
 
    ```
    //  Set up mediaObject 
@@ -280,7 +280,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript** javaScriptでこのシナリオを表示するには、次のテキストを入力します。
+* **JavaScript** JavaScript でこのシナリオを表示するには、以下のテキストを入力します。
 
    ```js
    // Set up mediaObject 
@@ -382,7 +382,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** Androidでこのシナリオを表示するには、次のコードを設定します。
+* **Android** Android でこのシナリオを表示するには、以下のコードを設定します。
 
    ```java
    // Set up mediaObject 
@@ -559,7 +559,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS** iOSでこのシナリオを表示するには、次のコードを設定します。
+* **iOS** iOS でこのシナリオを表示するには、以下のコードを設定します。
 
    ```
    //  Set up mediaObject 
@@ -746,7 +746,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript** javaScriptでこのシナリオを表示するには、次のテキストを入力します。
+* **JavaScript** JavaScript でこのシナリオを表示するには、以下のテキストを入力します。
 
    ```js
    // Set up mediaObject 
