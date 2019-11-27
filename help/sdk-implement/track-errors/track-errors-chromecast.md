@@ -1,22 +1,22 @@
 ---
 title: Chromecast でのエラーの追跡
-description: このトピックでは、ChromecastでのMedia SDKを使用したエラートラッキングの実装について説明します。
+description: ここでは、Chromecast でのメディア SDK を使用したエラー追跡の実装について説明します。
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Chromecast でのエラーの追跡{#track-errors-on-chromecast}
+# Chromecast でのエラーの追跡 {#track-errors-on-chromecast}
 
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 ## エラー追跡の実装
 
-1. Track media player errors: [trackError](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackError)
+1. メディアプレーヤーのエラー [trackError](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackError) を追跡します。
 
    ```
    trackError(errorId)
@@ -24,5 +24,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!NOTE]
 >
->メディアプレイヤーのエラーを追跡しても、メディアトラッキングセッションは停止しません。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
+>メディアプレーヤーのエラーの追跡は、メディアトラッキングセッションを停止しません。メディアプレーヤーのエラーが再生の続行を妨げる場合、`trackError` の呼び出しの後で `trackSessionEnd` を呼び出すことで、メディアトラッキングセッションを確実に終了するようにしてください。
 
