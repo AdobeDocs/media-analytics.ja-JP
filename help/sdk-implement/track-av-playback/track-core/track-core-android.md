@@ -1,21 +1,21 @@
 ---
 title: Android でのコア再生の追跡
-description: ここでは、AndroidでMedia SDKを使用してコアトラッキングを実装する方法について説明します。
+description: ここでは、Android でのメディア SDK を使用したコア追跡の実装方法について説明します。
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Android でのコア再生の追跡{#track-core-playback-on-android}
+# Android でのコア再生の追跡 {#track-core-playback-on-android}
 
 >[!IMPORTANT]
->このドキュメントでは、SDKバージョン2.xでのトラッキングについて説明します。 1.x バージョンの SDK を実装する場合は、Android 向けの 1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>このドキュメントでは、バージョン 2.x の SDK での追跡について説明しています。1.x バージョンの SDK を実装する場合は、Android 向けの 1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-1. **初期トラッキングの設定**
+1. **追跡の初期設定**
 
-   Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+   いつユーザーが再生の意図をトリガーする（ユーザーが再生をクリックする、または自動再生がオンになる）かを識別し、`MediaObject` インスタンスを作成します。
 
    [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)
 
@@ -24,8 +24,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `name` | メディア名 | ○ |
    | `mediaId` | メディアの一意の識別子 | ○ |
    | `length` | メディアの長さ | ○ |
-   | `streamType` | ストリームタイプ( _後述のStreamType定数_ ) | ○ |
-   | `mediaType` | メディアタイプ( _以下のMediaType定数_ ) | ○ |
+   | `streamType` | ストリームタイプ（後述の _StreamType 定数_ を参照） | ○ |
+   | `mediaType` | メディアタイプ（後述の&#x200B;_MediaType 定数_ を参照） | ○ |
 
    **`StreamType`定数：**
 
@@ -50,9 +50,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
      <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);
    ```
 
-1. **メタデータの添付**
+1. **メタデータのアタッチ**
 
-   オプションで、コンテキストデータ変数を使用して、標準またはカスタムメタデータオブジェクトをトラッキングセッションにアタッチします。
+   オプションで、コンテキストデータ変数を使用して標準またはカスタムメタデータオブジェクトをトラッキングセッションにアタッチします。
 
    * **標準メタデータ**
 
@@ -60,13 +60,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       >[!NOTE]
       >
-      >標準メタデータオブジェクトのメディアオブジェクトへのアタッチはオプションです。
+      >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
 
       * メディアメタデータキー API リファレンス - [標準メタデータキー - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
       * 利用可なビデオメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を参照してください。
    * **カスタムメタデータ**
 
-      カスタム変数用のディクショナリを作成し、このメディアのデータを設定します。 次に例を示します。
+      カスタム変数のディクショナリを作成し、このメディアのデータを設定します。次に例を示します。
 
       ```java
       HashMap<String, String> mediaMetadata =  
@@ -77,9 +77,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       ```
 
 
-1. **再生を開始する意図の追跡**
+1. **意図を追跡して再生を開始**
 
-   メディアセッションの追跡を開始するには、Media Heartbeatイン `trackSessionStart` スタンスを呼び出します。 次に例を示します。
+   メディアセッションの追跡を開始するには、メディアハートビートインスタンスの `trackSessionStart` を呼び出します。次に例を示します。
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
@@ -89,19 +89,19 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >2つ目の値は、手順2で作成したカスタムメディアメタデータオブジェクト名です。
+   >2 つ目の値は、手順 2 で作成した、カスタムのメディアメタデータオブジェクトの名前です。
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 再生の開始ではなく、ユーザーの再生の意図を追跡します。 この API は、メディアのデータ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` () と `trackPlay` () の間の時間）を見積もるために使用します。
+   >`trackSessionStart` では、再生の開始ではなく、ユーザーの再生の意図を追跡します。この API は、メディアのデータ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` () と `trackPlay` () の間の時間）を見積もるために使用します。
 
    >[!NOTE]
    >
-   >If you are not using custom media metadata, simply send an empty object for the second argument in `trackSessionStart`.
+   >カスタムのメディアメタデータを使用しない場合は、`trackSessionStart` の 2 番目の引数に空のオブジェクトを送信します。
 
-1. **再生の実際の開始の追跡**
+1. **実際の再生開始を追跡**
 
-   Identify the event from the media player for the beginning of the media playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
+   メディアの再生開始（メディアの最初のフレームが画面に表示）に関するイベントをメディアプレーヤーから識別し、`trackPlay` を呼び出します。
 
    ```java
    // Video is rendered on the screen) and call trackPlay.  
@@ -110,9 +110,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. **再生の完了の追跡**
+1. **再生の完了を追跡**
 
-   Identify the event from the media player for the completion of the media playback, where the user has watched the content until the end, and call `trackComplete`:
+   メディア再生完了（ユーザーがコンテンツを最後まで視聴）に関するイベントをメディアプレーヤーから識別し、`trackComplete` を呼び出します。
 
    ```java
    public void onVideoComplete(Observable observable, Object data) { 
@@ -120,9 +120,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. **セッションの終了の追跡**
+1. **セッションの終了を追跡**
 
-   Identify the event from the media player for the unloading/closing of the media playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
+   メディア再生のアンロード／終了（ユーザーがメディアを閉じる、またはメディアが完了してアンロードされる）に関するイベントをメディアプレーヤーから識別し、`trackSessionEnd` を呼び出します。
 
    ```java
    // Closes the media and/or the media completed and unloaded,  
@@ -134,11 +134,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` メディアトラッキングセッションの終わりを示します。 セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new media tracking session.
+   >`trackSessionEnd` は、メディアトラッキングセッションの終わりをマークします。セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。`trackSessionEnd` の後は、他のすべての `track*` API 呼び出しは無視されます（新しいメディアトラッキングセッション用の `trackSessionStart` を除く）。
 
-1. **すべての可能な一時停止シナリオの追跡**
+1. **考えられるすべての一時停止シナリオを追跡**
 
-   メディアの一時停止と呼び出しに関するイベントをメディアプレイヤーから識別しま `trackPause`す。
+   メディアの一時停止に関するイベントをメディアプレーヤーから識別し、`trackPause` を呼び出します。
 
    ```java
    public void onVideoPause(Observable observable, Object data) {  
@@ -146,9 +146,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-   **一時停止シナリオ**
+   **一時停止のシナリオ**
 
-   Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. 以下のシナリオでは、アプリで `trackPause()` () を呼び出す必要があります。
+   ビデオプレーヤーが一時停止するあらゆるシナリオを識別して、`trackPause` が適切に呼び出されるようにします。以下のシナリオでは、アプリで `trackPause()` () を呼び出す必要があります。
 
    * アプリ内でユーザーが明示的に一時停止をクリックする。
    * プレーヤー自体が一時停止状態になる。
@@ -166,7 +166,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >これは、手順4で使用したのと同じイベントソースである場合があります。 Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the media playback resumes.
+   >これは、手順 4 で使用したのと同じイベントソースである可能性があります。メディア再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
 
 コア再生の追跡に関する追加情報については、以下を参照してください。
 
