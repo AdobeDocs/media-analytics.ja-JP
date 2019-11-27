@@ -1,28 +1,28 @@
 ---
 title: セットアップの概要
-description: モバイル、OTTおよびブラウザー(JS)アプリケーションでのメディアトラッキング用のメディアSDKの設定の概要です。
+description: モバイル、OTT およびブラウザー（JS）アプリケーションでのメディアトラッキングのためのメディア SDK のセットアップの概要です。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# セットアップの概要{#setup-overview}
+# セットアップの概要 {#setup-overview}
 
 >[!IMPORTANT]
 >
->以下の手順は、2.xメディアSDKに適用されます。 メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetimeインテグレーターについては、以下の _Primetime Media SDKドキュメントを参照してください_ 。
+>以下の手順は、メディア SDK 2.x に適用されます。メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetime のインテグレーターの場合は、後述の _Primetime メディア SDK のドキュメント_&#x200B;を参照してください。
 
 
-## 最小プラットフォームバージョンのサポート {#minimum-platform-version}
+## サポートされる最小プラットフォームバージョン {#minimum-platform-version}
 
-次の表に、2019年2月20日以降に各SDKでサポートされる最小プラットフォームバージョンを示します。
+次の表に、2019 年 2 月 19 日より各 SDK でサポートされている最小プラットフォームバージョンを示します。
 
-| OS/ブラウザ | 最小バージョンが必要です |
+| OS／ブラウザー | 必要な最小バージョン |
 | --- | --- |
 | iOS | iOS 6+ |
-| Android | Android 5.0以降 — Lollipop |
+| Android | Android 5.0 Lollipop 以降 |
 | Chrome | v22+ |
 | Mozilla | v27+ |
 | Safari | v7+ |
@@ -37,7 +37,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 次の実装手順を実行します。
 
-1. Create a `MediaHeartbeatConfig` instance and set your config parameter values.
+1. `MediaHeartbeatConfig` インスタンスを作成し、設定パラメーター値を設定します。
 
    |  変数名  | 説明  | 必須 |  デフォルト値  |
    |---|---|:---:|---|
@@ -49,7 +49,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `ssl` | 呼び出しが HTTPS を使用しておこなわれる必要があるかどうかを示します。 | × | false |
    | `debugLogging` | デバッグのログが有効になっているかどうかを示します。 | × | false |
 
-1. Implement the `MediaHeartbeatDelegate`.
+1. `MediaHeartbeatDelegate` を実装します。
 
    |  メソッド名  |  説明  | 必須 |
    | --- | --- | :---: |
@@ -58,7 +58,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >サービス品質(QoS)オブジェクトはオプションです。 プレーヤーで QoS データが使用可能であり、そのデータを追跡する場合は、以下の変数が必要です。
+   >サービス品質（QoS）オブジェクトはオプションです。プレーヤーで QoS データが使用可能であり、そのデータを追跡する場合は、以下の変数が必要です。
 
    | 変数名 | 説明   | 必須 |
    | --- | --- | :---: |
@@ -67,17 +67,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `fps` | 1 秒あたりの表示フレーム数。 | ○ |
    | `droppedFrames` | それまでのドロップフレームの数。 | ○ |
 
-1. Create the `MediaHeartbeat` instance.
+1. `MediaHeartbeat` インスタンスを作成します。
 
-   Use the `MediaHertbeatConfig` and `MediaHertbeatDelegate` to create the `MediaHeartbeat` instance.
+   `MediaHertbeatConfig` および `MediaHertbeatDelegate` を使用して、`MediaHeartbeat` インスタンスを作成します。
 
    >[!IMPORTANT]
    >
-   >Make sure that your `MediaHeartbeat` instance is accessible and does not get deallocated until the end of the session. このインスタンスは、以下のすべてのメディアトラッキングイベントに使用されます。
+   >`MediaHeartbeat` インスタンスがアクセス可能であることと、セッションの終わりまで解放されないことを確認します。このインスタンスは、以下のすべてのメディアトラッキングイベントに使用されます。
 
    >[!TIP]
    >
-   >`MediaHeartbeat` には、Adobe Analyticsに呼び出し `AppMeasurement` を送信するインスタンスが必要です。
+   >`MediaHeartbeat` が Adobe Analytics に呼び出しを送信するためには、`AppMeasurement` のインスタンスが必要です。
 
 1. すべての要素を組み合わせます。
 
@@ -121,35 +121,35 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 検証 {#validate}
 
-Media Analyticsのトラッキングの導入では、2種類のトラッキングコールが生成されます。
+Media Analytics 追跡実装は、2 つのタイプのトラッキングコールを生成します。
 
-* メディアおよび広告開始呼び出しは、Adobe Analytics(AppMeasurement)サーバーに直接送信されます。
-* ハートビート呼び出しは、Media Analytics（ハートビート）トラッキングサーバーに送信され、そこで処理され、Adobe Analyticsサーバーに渡されます。
+* メディア開始および広告開始の呼び出しは Adobe Analytics（AppMeasurement）サーバーに直接送信されます。
+* ハートビート呼び出しは、Media Analytics（ハートビート）トラッキングサーバーに送信され、そこで処理されて、Adobe Analytics サーバーに渡されます。
 
-* **Adobe Analytics(AppMeasurement)サーバートラッキングサー**&#x200B;バーオプションについて詳しくは、trackingServer変数とtrackingServerSecure変数 [の正しい設定を参照してください。](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Adobe Analytics（AppMeasurement）サーバー** トラッキングサーバーオプションについて詳しくは、[trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html)を参照してください。
 
    >[!IMPORTANT]
    >
-   >Experience cloud訪問者IDサービスには、RDCトラッキングサーバーまたはRDCサーバーに解決するCNAMEが必要です。
+   >Experience Cloud 訪問者 ID サービスを使用するには、RDC トラッキングサーバーまたは RDC サーバーに解決される CNAME が必要です。
 
-   The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
+   Analytics トラッキングサーバーは「`.sc.omtrdc.net`」で終わるか CNAME である必要があります。
 
-* ** Media Analytics（ハートビート）サーバー**この形式は常に「`[your_namespace].hb.omtrdc.net`」です。 「`[your_namespace]`」の値は会社を指定し、アドビが提供します。
+* ** Media Analytics（ハートビート）サーバー** これは、常に「`[your_namespace].hb.omtrdc.net`」形式になります。「`[your_namespace]`」の値は会社を指定し、アドビによって提供されます。
 
-メディアトラッキングはあらゆるプラットフォーム、デスクトップ、モバイルで同じように動作します。オーディオトラッキングは、現在、モバイルプラットフォームで機能します。 すべてのトラッキングコールに共通する、検証が必要な主要ユニバーサル変数がいくつかあります。
+メディアトラッキングはあらゆるプラットフォーム、デスクトップ、モバイルで同じように動作します。オーディオトラッキングは、現在、モバイルプラットフォームで動作します。すべてのトラッキングコールに共通する、検証が必要な主要ユニバーサル変数がいくつかあります。
 
-## SDK 1.xドキュメント {#sdk-1x-documentation}
+## SDK 1.x ドキュメント {#sdk-1x-documentation}
 
-| ビデオ分析1.x SDK |  開発者ガイド（PDFのみ） |
+| Video Analytics 1.x SDK | 開発者ガイド（PDF のみ） |
 | --- | --- |
 | Android | [Android 向け設定 ](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Apple TV 向け設定 ](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [Chromecast 向け設定 ](chromecast_1.x_sdk.pdf) |
 | iOS | [iOS 向け設定 ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript 向け設定 ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android：   [Media Analytics の設定](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS：   [Media Analytics の設定](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：   [Media Analytics の設定](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [TVML 向け設定 ](vhl_tvml.pdf) |
 
 ## Primetime メディア SDK のドキュメント {#primetime-docs}
 
-* [Primetimeユーザーガイド](https://helpx.adobe.com/primetime/user-guide.html)
+* [Primetime ユーザーガイド](https://helpx.adobe.com/jp/primetime/user-guide.html)
