@@ -1,14 +1,14 @@
 ---
 title: チャプターがスキップされた VOD 再生
-description: Media SDKを使用してチャプターをスキップしたVODコンテンツの追跡方法の例です。
+description: メディア SDK を使用した、ユーザーがチャプターをスキップした VOD コンテンツの追跡方法の例です。
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# チャプターがスキップされた VOD 再生{#vod-playback-with-a-skipped-chapter}
+# チャプターがスキップされた VOD 再生 {#vod-playback-with-a-skipped-chapter}
 
 ## シナリオ {#scenario}
 
@@ -18,7 +18,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | トリガー | ハートビートメソッド | ネットワーク呼び出し   | メモ |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。これらのネットワーク呼び出しは、 [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
+| ユーザーが&#x200B;**[!UICONTROL 再生]**&#x200B;をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。これらのネットワーク呼び出しは、[iOS での中断のない再生](vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | チャプターが開始する。 | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | チャプターの最初のフレームが再生される。 | `trackPlay` | Heartbeat Chapter Play | メインコンテンツの前にチャプターコンテンツを再生する場合、チャプターが開始する際にハートビートを開始します。 |
 | チャプターが再生される。 |  | Chapter Heartbeats |  |
@@ -26,12 +26,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | シークが完了する。 | `trackEvent:trackSeekComplete` |  | ハートビートは、この後再開されます。 |
 | ユーザーが通常のチャプターの境界を越えてシークしたことをアプリケーションが認識する。 | `trackEvent:trackChapterSkip` |  |  |
 | コンテンツが再生される。 |  | Content Heartbeats |  |
-| コンテンツの再生が完了する。 | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。このAPIは、ユーザーがメディアを視聴せずに完了するまで呼び出す必要があります。 |
+| コンテンツの再生が完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[iOS での中断のない再生](vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。この API は、ユーザーが最後までメディアを視聴していなくても、呼び出される必要があります。 |
 
 ## パラメーター {#parameters}
 
-チャプター再生中に使用されるパラメーターは、チャプター完了ネットワーク呼び出しがない点を除き [、1つのチャプターシナリオを持つ](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) VOD再生のパラメーターと同じです。
+チャプター再生中に使用されるパラメーターは、Chapter Complete ネットワーク呼び出しがないことを除いて、[チャプターが 1 つある VOD 再生](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)シナリオのパラメーターと同一です。
 
 ## サンプルコード {#sample-code}
 
