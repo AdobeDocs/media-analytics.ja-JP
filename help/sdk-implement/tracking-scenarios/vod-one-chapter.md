@@ -1,14 +1,14 @@
 ---
 title: チャプターが 1 つある VOD 再生
-description: 1つのチャプターを含むVOD再生の追跡の例です。
+description: 1 つのチャプターを含む VOD 再生の追跡の例です。
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# チャプターが 1 つある VOD 再生{#vod-playback-with-one-chapter}
+# チャプターが 1 つある VOD 再生 {#vod-playback-with-one-chapter}
 
 ## シナリオ {#scenario}
 
@@ -18,18 +18,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | トリガー   | ハートビートメソッド   | ネットワーク呼び出し   | メモ   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | プリロール広告があることを Measurement Library にまだ伝えていないので、これらのネットワーク呼び出しは、単一の VOD と同一です。 |
+| ユーザーが&#x200B;**[!UICONTROL 再生]**&#x200B;をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | プリロール広告があることを Measurement Library にまだ伝えていないので、これらのネットワーク呼び出しは、単一の VOD と同一です。 |
 | チャプターが開始する。 | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | チャプター再生の最初のフレーム。 | `trackPlay` | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
 | チャプターが再生される。 |  | Chapter Heartbeats |  |
 | チャプターが完了する。 | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | チャプターの終わりに達したとき。 |
 | コンテンツが再生される。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端に到達したことを意味します。このAPIは、ユーザーがメディアを視聴せずに完了するまで呼び出す必要があります。 |
+| セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端に到達したことを意味します。この API は、ユーザーが最後までメディアを視聴していなくても、呼び出される必要があります。 |
 
 ## パラメーター {#parameters}
 
-When chapter playback begins, a `Heartbeat Chapter Start` call is sent. チャプターの開始が 10 秒のタイマーと同時に起こらない場合、`Heartbeat Chapter Start` 呼び出しは、数秒間遅延され、呼び出しは次の 10 秒のインターバルに進みます。
+チャプターの再生が開始されると、`Heartbeat Chapter Start` 呼び出しが送信されます。チャプターの開始が 10 秒のタイマーと同時に起こらない場合、`Heartbeat Chapter Start` 呼び出しは、数秒間遅延され、呼び出しは次の 10 秒のインターバルに進みます。
 
 これが発生すると、`Content Heartbeat` 呼び出しは同じインターバルから出ます。イベントタイプとアセットタイプを調査することで、この 2 つの違いを区別できます。
 
