@@ -1,14 +1,14 @@
 ---
 title: Chromecast での標準メタデータの実装
-description: Chromecastでの標準ビデオおよび広告メタデータの設定について説明します。
+description: Chromecast 上での標準ビデオおよび広告メタデータの設定を説明します。
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Chromecast での標準メタデータの実装{#implement-standard-metadata-on-chromecast}
+# Chromecast での標準メタデータの実装 {#implement-standard-metadata-on-chromecast}
 
 標準メタデータオブジェクトをインスタンス化し、必要な変数を設定して、メディアハートビートオブジェクトでメタデータオブジェクトを設定します。次に例を示します。
 
@@ -28,4 +28,4 @@ standardAudioMetadata[AudioMetadataKeys.ALBUM] = "Sample album";
 mediaObject[ADBMobile.media.MediaObjectKey.StandardAudioMetadata] = standardAudioMetadata;
 ```
 
-See the comprehensive list of audio and video metadata here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
+オーディオおよびビデオメタデータの包括的なリストについては、[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を参照してください。
