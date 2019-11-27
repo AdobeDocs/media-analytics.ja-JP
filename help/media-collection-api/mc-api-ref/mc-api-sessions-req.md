@@ -2,26 +2,26 @@
 title: Sessions リクエスト
 description: null
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Sessions リクエスト{#sessions-request}
+# Sessions リクエスト {#sessions-request}
 
 ```
 POST 
 https://{uri}/api/v1/sessions
 ```
 
-## URIパラメーター
+## URI パラメーター
 
 なし
 
 ## リクエスト本文
 
-リクエスト本文はJSONで、このサンプルリクエスト本文と同じ構造を持つ必要があります。
+リクエスト本文は、JSON である必要があり、このリクエスト本文の例と同じ構造である必要があります。
 
 ```
 { 
@@ -62,7 +62,7 @@ https://{uri}/api/v1/sessions
    * `ts` - タイムスタンプ。ミリ秒単位で指定する必要があります。
 * `eventType` (必須)
 
-   **有効な値：**`sessionStart`
+   **有効な値：** `sessionStart`
 * `params` (必須)
 * `customMetadata` (オプション)
 * `qoeData` (オプション)
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header — この部分はAPI `/api/v1/` バージョンを提供します。 の後の部分はセ `[…]sessions/` ッションIDです。
+`Location:` ヘッダー - `/api/v1/` 部分は API バージョンを示します。`[…]sessions/` の後の部分は、セッション ID です。
 
 ## 応答コード
 
