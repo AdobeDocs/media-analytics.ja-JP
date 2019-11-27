@@ -2,21 +2,21 @@
 title: Adobe Experience Platform Launch
 description: null
 uuid: d6f9daf2-6f61-4475-9a77-94361bdd9d95
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Adobe Experience Platform Launch{#adobe-launch}
+# Adobe Experience Platform Launch {#adobe-launch}
 
 Media Analytics（ハートビート）は、アドビの標準化されたメディアトラッキングソリューションです。従来のアドビのマイルストーンモデルの後継モデルです。
 
-Dynamic Tag Managementの後続製品であるAdobe Experience Platform Launchには、メディアプレーヤーへのトラッキングの導入を容易にするLaunch拡張機能が含まれています。
+Adobe Experience Platform Launch は Dynamic Tag Management の後継製品で、メディアプレーヤーへのトラッキングの実装を容易にする Launch 拡張機能を備えています。
 
-You can learn more about the Launch extension here: [Adobe Media Analytics for Audio and Video Extension.](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+Launch 拡張機能について詳しくは、[Adobe Media Analytics for Audio and Video 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)を参照してください。
 
 >[!NOTE]
 >
->この実装パスでは、Media Analyticsには一意のSKUが割り当てられ、メディアストリームに基づくモデルへのサーバーコールに基づく価格モデルの変更が含まれるので、顧客は販売担当者/アカウントマネージャーに連絡して新しい販売注文に署名する必要があります。
+>Media Analytics には独自の SKU があり、サーバー呼び出しに基づく価格モデルからメディアのストリーミングに基づくモデルに変更されているので、この実装パスでは、お客様は営業担当者またはアカウントマネージャーに連絡して新たに販売契約を結ぶ必要があります。
 
