@@ -1,14 +1,14 @@
 ---
 title: Roku での標準メタデータの実装
-description: Rokuでのトラッキングコールと共に送信される標準ビデオおよび広告メタデータの設定について説明します。
+description: Roku 上で、標準ビデオおよび広告メタデータがトラッキングコールで送信されるようにする設定を説明します。
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Roku での標準メタデータの実装{#implement-standard-metadata-on-roku}
+# Roku での標準メタデータの実装 {#implement-standard-metadata-on-roku}
 
 標準メタデータオブジェクトをインスタンス化し、必要な変数を設定して、メディアハートビートオブジェクトでメタデータオブジェクトを設定します。
 
