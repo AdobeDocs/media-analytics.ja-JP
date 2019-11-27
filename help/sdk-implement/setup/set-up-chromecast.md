@@ -1,31 +1,31 @@
 ---
 title: Chromecast のセットアップ
-description: Chromecastでの実装用のメディアSDKアプリケーション設定。
+description: Chromecast での実装用のメディア SDK アプリケーション設定です。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Chromecast のセットアップ{#set-up-chromecast}
+# Chromecast のセットアップ {#set-up-chromecast}
 
 ## FAQ
 
 _Chromecast JavaScript SDK または標準の JavaScript SDK のどちらを使用すべきでしょうか。_
 
-正しい答えは「Chromecast」です。次の理由があります。
+正解は「Chromecast」です。理由は以下のとおりです。
 * 標準の JS SDK の AppMeasurement および VisitorAPI ライブラリは、OTT プラットフォームでの動作が認定されていません。Chromecast JS SDK では、ビデオハートビートライブラリ（VHL）、Analytics および VisitorAPI が Chromecast 向けに認定された 1 つの統合 SDK に組み込まれています。
 * この Chromecast SDK は標準の JS SDK より大幅に軽量です。これは、OTT プラットフォームで使用されるローエンドのハードウェアでは非常に重要です。
 
 ## 前提条件
 
-* **ハートビート用の有効な設定パラメーターの取得**&#x200B;これらのパラメーターは、メディア分析アカウントを設定した後、アドビの担当者から取得できます。
+* **ハートビート用の有効な設定パラメーターを取得** これらのパラメーターは、Media Analytics アカウントの設定後、アドビの担当者から取得できます。
 * **メディアプレーヤーで以下の機能を設定します。**
    * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * *プレーヤー情報を提供する API* - メディア名や再生ヘッドなどの情報がこれに該当します。
 
-Adobe Mobile Services は、モバイルアプリ用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。今回は、Adobe Analytics および Adobe Target ソリューションのアプリ分析およびターゲティング機能とのシームレスな統合を提供します。Learn more at [Adobe Mobile Services documentation.](https://marketing.adobe.com/resources/help/en_US/mobile/)
+Adobe Mobile Services は、モバイルアプリ用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。今回は、Adobe Analytics および Adobe Target ソリューションのアプリ分析およびターゲティング機能とのシームレスな統合を提供します。詳しくは、[Adobe Mobile Services のドキュメント](https://marketing.adobe.com/resources/help/ja_JP/mobile/)を参照してください。
 
 Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると、JavaScript で記述された Chromecast アプリケーションを測定したり、Audience Management を使用してオーディエンスデータを利用および収集したり、ビデオハートビートを使用してビデオエンゲージメントを測定したりできます。
 
@@ -87,7 +87,7 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
 
       >[!IMPORTANT]
       >
-      >If `mediaHeartbeat` is incorrectly configured, the media module (VHL) enters an error state and will stop sending tracking calls.
+      >`mediaHeartbeat` を誤って設定した場合、メディアモジュール（VHL）がエラー状態になり、トラッキングコールの送信が中止されます。
 
       mediaHeartbeat キーの ADBMobile 設定パラメーター：
    | 設定パラメーター | 説明     |
@@ -105,7 +105,7 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
 
    Experience Cloud 訪問者 ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。訪問者 ID サービスは、ビデオハートビートおよびその他の Experience Cloud 統合に必要です。
 
-   Verify that your `ADBMobileConfig` config contains your `marketingCloud` organization ID.
+   `ADBMobileConfig` 設定ファイルに `marketingCloud` 組織 ID が含まれていることを確認します。
 
    ```js
    "marketingCloud": { 
@@ -113,24 +113,24 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
    }
    ```
 
-   Experience Cloud organization IDs uniquely identify each client company in the Adobe Marketing Cloud and appear similar to the following value: `016D5C175213CCA80A490D05@AdobeOrg`.
+   Experience Cloud 組織 ID は、Adobe Experience Cloud 内の各クライアント企業を一意に識別するもので、`016D5C175213CCA80A490D05@AdobeOrg` のようになります。
 
    >[!IMPORTANT]
    >
-   >Ensure that you include `@AdobeOrg`.
+   >「`@AdobeOrg`」が含まれている必要があります。
 
-   設定が完了すると、Experience Cloud 訪問者 ID が生成され、すべてのヒットに含まれます。Other Visitor IDs, such as `custom` and `automatically-generated`, continue to be sent with each hit.
+   設定が完了すると、Experience Cloud 訪問者 ID が生成され、すべてのヒットに含まれます。`custom` や `automatically-generated` などの他の訪問者 ID は、引き続きヒットごとに送信されます。
 
    **Experience Cloud 訪問者 ID サービスメソッド**
 
    >[!TIP]
    >
-   >Experience Cloud Visitor ID methods are prefixed with `visitor`.
+   >Experience Cloud 訪問者 ID メソッドのプレフィックスは `visitor` です。
 
    | メソッド | 説明 |
    | --- | --- |
-   | `getMarketingCloudID()` | Retrieves the Experience Cloud Visitor ID from the Visitor ID service.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
-   | `syncIdentifiers()` | Experience Cloud 訪問者 ID とともに、各訪問者に関連付けることができる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs()` に相当します。For example: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+   | `getMarketingCloudID()` | 訪問者 ID サービスから Experience Cloud 訪問者 ID を取得します。<br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
+   | `syncIdentifiers()` | Experience Cloud 訪問者 ID とともに、各訪問者に関連付けることができる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs()` に相当します。以下に例を示します。<br/><br/>`var identifiers = {};`<br/><br/>`identifiers["idType"] = "idValue";`<br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
