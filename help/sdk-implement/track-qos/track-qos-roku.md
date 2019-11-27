@@ -1,28 +1,28 @@
 ---
 title: Roku での Quality of Experience の追跡
-description: このトピックでは、Roku上のMedia SDKを使用したエクスペリエンスの質(QoE、QoS)トラッキングの実装について説明します。
+description: ここでは、Roku でのメディア SDK を使用した Quality of Experience（QoE、QoS）追跡の実装について説明します。
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Roku での Quality of Experience の追跡{#track-quality-of-experience-on-roku}
+# Roku での Quality of Experience の追跡 {#track-quality-of-experience-on-roku}
 
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-## QOSの実装
+## QoS の実装
 
-1. メディア再生中にビットレートが変化するタイミングを識別し、 `mediaUpdateQoS` APIを使用してMedia SDKのQoS情報を更新します。
+1. メディアの再生中にいつビットレートが変更されるかを識別し、`mediaUpdateQoS` API を使用してメディア SDK の QoS 情報を更新します。
 
    QoSObject 変数：
 
    >[!TIP]
    >
-   >これらの変数は、QoSを追跡する場合にのみ必要です。
+   >これらの変数は、QoS を追跡している場合にのみ必要です。
 
    | 変数 | 説明 | 必須 |
    | --- | --- | :---: |
@@ -55,7 +55,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
     ```
     -->
 
-1. 再生がビットレートを切り替えるときに、ビ `trackEvent(BitrateChange)` ットレートが変更されたことをメディアSDKに通知するように呼び出します。
+1. 再生中にビットレートが切り替わったときに、`trackEvent(BitrateChange)` を呼び出して、ビットレートが変更されたことをメディア SDK に通知します。
 
    ```
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
@@ -63,7 +63,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!NOTE]
    >
-   >更新されたビットレート `updateQoSObject` 値を使用してを呼び出す必要があります。
+   >更新されたビットレート値と共に `updateQoSObject` を呼び出す必要があります。
 
    <!--
     ```
@@ -76,9 +76,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
     -->
 
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
+1. メディアプレーヤーでエラーが生じ、エラーイベントをプレーヤー API で利用できる場合は、`trackError()` を使用してそのエラーの情報を取得します（[の概要](/help/sdk-implement/track-errors/track-errors-overview.md)を参照）。
 
    >[!TIP]
    >
-   >メディアプレイヤーのエラーを追跡しても、メディアトラッキングセッションは停止しません。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >メディアプレーヤーのエラーの追跡は、メディアトラッキングセッションを停止しません。メディアプレーヤーのエラーが再生の続行を妨げる場合、`trackError()` の呼び出しの後で `trackSessionEnd()` を呼び出すことで、メディアトラッキングセッションを確実に終了するようにしてください。
 
