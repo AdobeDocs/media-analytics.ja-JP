@@ -2,15 +2,15 @@
 title: 前提条件
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# 前提条件{#prerequisites}
+# 前提条件 {#prerequisites}
 
-## 決定事項 {#decision}
+## 判断 {#decision}
 
 トラッキングを実装する前に、状況に合った実装方法を見きわめるため、いくつかの点を最初の段階で判断する必要があります。
 
@@ -20,33 +20,33 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## タスク {#prereq-tasks}
 
-Media Analyticsの導入 *の場合* 、開始する前に完了する必要があるタスクを次に示します。
+*Media Analytics* 実装について、開始前に完了しておく必要がある作業を示します。
 
 1. **Experience Cloud を有効にします。**
 
-   Adobe Experience Platform IDサービスを実装する必要があります。
+   Adobe Experience Platform Identity Service を実装する必要があります。
 
-   IDサービスを使用すると、Experience cloudコアサービス、ソリューション、Peopleコアサービスの顧客属性およびオーディエンスの共通の識別フレームワークを有効にできます。 サイト訪問者に一意の永続的 ID を割り当てることで機能します。組織が ID サービスを実装する場合、この ID を使用することで、同じサイト訪問者およびそのデータを様々な Experience Cloud ソリューションで識別できます。
+   Identity Service は、Experience Cloud コアサービス、ソリューション、People コアサービスの顧客属性およびオーディエンスのための、共通の識別フレームワークですサイト訪問者に一意の永続的 ID を割り当てることで機能します。組織が ID サービスを実装する場合、この ID を使用することで、同じサイト訪問者およびそのデータを様々な Experience Cloud ソリューションで識別できます。
 
    ![](assets/mc_id_service_graphic.png)
 
-   また、この ID サービスは、様々なソリューション専用 ID（例：Analytics AID）を置き換えることができます。[顧客 ID と認証状態](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html)の機能を使用して、ID サービスから独自の顧客 ID を Experience Cloud に渡すことができます。ただし、ID サービスは、既に登録されているソリューションのみと連携することに注意してください。他製品へのアクセスにサインアップしていない場合、ID サービスではアクセスが提供されません。
+   また、この ID サービスは、様々なソリューション専用 ID（例：Analytics AID）を置き換えることができます。[顧客 ID と認証状態](https://marketing.adobe.com/resources/help/ja_JP/mcvid/mcvid-authenticated-state.html)の機能を使用して、ID サービスから独自の顧客 ID を Experience Cloud に渡すことができます。ただし、ID サービスは、既に登録されているソリューションのみと連携することに注意してください。他製品へのアクセスにサインアップしていない場合、ID サービスではアクセスが提供されません。
 
-   いずれは、ID サービスは、多くの現在および将来の Experience Cloud 機能、強化、サービスにとって不可欠な要素になります。Currently, the ID service supports [Analytics,](https://www.adobe.com/marketing-cloud/web-analytics.html) [Audience Manager,](https://www.adobe.com/marketing-cloud/data-management-platform.html) and [Target.](https://www.adobe.com/marketing-cloud/testing-targeting.html)
-
-   >[!IMPORTANT]
-   >
-   >Adobe Experience Cloud Device Co-opに参加するには、Experience Cloud IDサービスが必要です。
-
-   ID サービスを実装していない場合、今が移行戦略を検討し始めるチャンスです。For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
+   いずれは、ID サービスは、多くの現在および将来の Experience Cloud 機能、強化、サービスにとって不可欠な要素になります。現在、ID サービスは、[Analytics](https://www.adobe.com/jp/marketing-cloud/web-analytics.html)、[Audience Manager](https://www.adobe.com/jp/marketing-cloud/data-management-platform.html) および [Target](https://www.adobe.com/jp/marketing-cloud/testing-targeting.html) をサポートしています。
 
    >[!IMPORTANT]
    >
-   >In the absence of any user ID information present on the media-specific calls, the default analytics [Fallback ID Methods](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html) will apply.
+   >Adobe Experience Cloud Device Co-op に参加するには、Experience Cloud ID サービスが必要です。
 
-   For additional information about the Experience Cloud ID, see [Experience Cloud ID Overview,](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html) and [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/)
+   ID サービスを実装していない場合、今が移行戦略を検討し始めるチャンスです。ID サービスの重要性と役割について詳しくは、[なぜ新しい Identity Service に注目すべきか](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)を参照してください。
+
+   >[!IMPORTANT]
+   >
+   >ユーザー ID 情報がメディア専用の呼び出しに存在しない場合、Analytics のデフォルトの[フォールバック ID による方法](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html)が適用されます。
+
+   Experience Cloud ID について詳しくは、[Experience Cloud ID の概要](https://marketing.adobe.com/resources/help/ja_JP/mcvid/mcvid-overview.html)および [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/ja_JP/mcvid/) を参照してください。
 
 1. **Adobe Analytics レポートを有効にします。**
 
-   To enable reports in Analytics and see the content and ad data you are collecting, see [Media reports enablement.](/help/media-reports/media-reports-enable.md)
+   Analytics でレポートを有効にし、収集しているコンテンツや広告データを確認するには、[メディアレポートの有効化](/help/media-reports/media-reports-enable.md)を参照してください。
 
