@@ -2,17 +2,17 @@
 title: イベントリクエストの検証
 description: null
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# イベントリクエストの検証{#validating-event-requests}
+# イベントリクエストの検証 {#validating-event-requests}
 
 各イベントタイプの JSON リクエスト本文は、JSON スキーマを使用してバックエンドで検証されます。API 呼び出しで検証が失敗すると、HTTP 応答本文にエラーメッセージが書き込まれます。
 
-JSON validation schemas for each event type are publicly accessible here: `{uri}/api/v1/schemas/{eventType}` (e.g., `{uri}/api/v1/schemas/sessionEnd`). これらのJSON検証スキーマは、イベントのタイプごとに正しいリクエスト本文のパラメーターを決定する絶対的な権限です。
+各イベントタイプの JSON 検証スキーマは、`{uri}/api/v1/schemas/{eventType}`（例えば、`{uri}/api/v1/schemas/sessionEnd`）で公開されています。これらの JSON 検証スキーマは、各タイプのイベントの正しいリクエスト本文パラメーターを判断するための絶対的な典拠となります。
 
 例えば、`sessionStart` 検証スキーマに対するリクエストへの応答は、次のサンプルのようになります（ここでは読みやすくするためにある程度整形しています）。
 
@@ -125,5 +125,5 @@ Connection: keep-alive
 
 >[!NOTE]
 >
->セッションコンテキストがコレクションレイヤーで使用できないので、セッションレベルの検証はできません。
+>セッションコンテキストはコレクション層で使用できないので、セッションレベルの検証はできません。
 
