@@ -2,21 +2,21 @@
 title: イベントタイプと説明
 description: null
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# イベントタイプと説明{#event-types-and-descriptions}
+# イベントタイプと説明 {#event-types-and-descriptions}
 
 ## sessionStart
 
-呼び出しと共に送信さ `sessions` れます。 応答が返されたら、Location ヘッダーからセッション ID を抽出し、それをコレクションサーバーに対する後続のイベント呼び出しに使用します。
+`sessions` 呼び出しと共に送信されます。応答が返されたら、Location ヘッダーからセッション ID を抽出し、それをコレクションサーバーに対する後続のイベント呼び出しに使用します。
 
 ## play
 
-Sent when the player changes state to "playing" from another state (i.e., the `on('Playing')` callback is triggered by the player). プレーヤーが「再生中」に移行する前の他の状態には、「バッファリング」のほか、ユーザーが「一時停止」から復帰したとき、プレーヤーがエラーから回復したとき、自動再生などがあります。
+プレーヤーが他の状態から「再生中」に移行したとき（つまり、`on('Playing')` コールバックがプレーヤーによってトリガーされたとき）に送信されます。プレーヤーが「再生中」に移行する前の他の状態には、「バッファリング」のほか、ユーザーが「一時停止」から復帰したとき、プレーヤーがエラーから回復したとき、自動再生などがあります。
 
 ## ping
 
@@ -27,63 +27,63 @@ ping イベントの場合、リクエスト本文に *マップが含まれて�
 
 ## bitrateChange
 
-ビットレージが変更されたときに送信されます。
+ビットレートが変更されたときに送信されます。
 
 ## bufferStart
 
-バッファリングが開始したときに送信されます。 `bufferResume` イベントタイプはありません。A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
+バッファリングの開始時に送信されます。`bufferResume` イベントタイプはありません。`bufferStart` の後に `play` イベントを送信すると、`bufferResume` と解釈されます。
 
 ## pauseStart
 
-ユーザーが一時停止を押すと送信されます。 `resume` イベントタイプはありません。A `resume` is inferred when you send a `play` event after a `pauseStart`.
+ユーザーが一時停止を押したときに送信されます。`resume` イベントタイプはありません。`pauseStart` の後に `play` イベントを送信すると、`resume` と解釈されます。
 
 ## adBreakStart
 
-広告の時間の開始を通知します。
+広告ブレークの開始を示します。
 
 ## adStart
 
-広告の開始を通知します
+広告の開始を示します。
 
 ## adComplete
 
-広告の時間の完了を知らせる
+広告ブレークの完了を示します。
 
 ## adSkip
 
-広告のスキップを通知します
+広告スキップを示します。
 
 ## adBreakComplete
 
-広告の時間の完了を知らせる
+広告ブレークの完了を示します。
 
 ## chapterStart
 
-チャプターセグメントの開始を通知します。
+チャプターセグメントの開始を示します。
 
 ## chapterSkip
 
-チャプタースキップを通知する
+チャプタースキップを示します。
 
 ## chapterComplete
 
-チャプターの完了を知らせる
+チャプターの完了を示します。
 
 ## error
 
-エラーが発生したことを知らせます。
+エラーが発生したことを示します。
 
 ## sessionEnd
 
-これは、ユーザーがコンテンツの表示を中止し、再び訪問する可能性が低い場合に、Media Analyticsバックエンドにセッションを即座に閉じるように通知するために使用されます。
+これは、コンテンツの視聴を中断したユーザーが復帰する可能性が低いときに、Media Analytics バックエンドにセッションを即座に閉じるよう通知するために使用されます。
 
-If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
+`sessionEnd` を送信しない場合、中断されたセッションは、（10 分間イベントを受け取らなかった後、または再生ヘッドが 30 分間移動しなかった場合）通常どおりにタイムアウトし、バックエンドによって削除されます。
 
 ## sessionComplete
 
-メインコンテンツの終わりに達した場合に送信されます
+メインコンテンツの最後に達したときに送信されます。
 
 >[!IMPORTANT]
 >
->You should refer to the [JSON validation schemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) for each event type, to verify correct event parameter types and requirements.
+>各イベントタイプについて [JSON 検証スキーマ](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)を参照して、正しいイベントパラメーターのタイプと要件を確認してください。
 
