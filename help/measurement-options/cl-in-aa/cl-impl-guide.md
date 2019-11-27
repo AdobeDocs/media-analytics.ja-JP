@@ -1,21 +1,20 @@
 ---
 title: カスタムリンク導入ガイド
 description: null
-uuid: 83315e73-20ca-4db5-9d43-33dade45a13
-translation-type: tm+mt
+uuid: 83315e73-20ca-4db5-9d43-33daade45a13
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Custom Link Implementation Guide{#custom-link-implementation-guide}
+# カスタムリンク導入ガイド {#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
-ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
+カスタムビデオトラッキングでは、Analytics `appMeasurement` 内の[カスタムリンクコードを使用した手動リンクトラッキング](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/link_manual.html)を使用します。ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
 
-* JavaScriptの場合：関 `s.tl()` 数
-* モバイルアプリの場合：[trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* JavaScript の場合：`s.tl()` 関数
+* モバイルアプリの場合：[trackAction() Android](https://marketing.adobe.com/resources/help/ja_JP/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/ja_JP/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* Data Insertion API の場合：[linktype タグ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 要件
 
@@ -26,7 +25,7 @@ Custom Video Tracking uses [manual link tracking using custom link code](https:/
 ## メタデータ
 
 * メタデータは、リンクデータの一部として任意のトラッキングコールに追加できます。
-* Remember to update the `linkTrackVars` and `linkTrackEvents`
+* `linkTrackVars` および `linkTrackEvents` を必ず更新してください。
 
 ```javascript
 /* Call on video complete */ 
