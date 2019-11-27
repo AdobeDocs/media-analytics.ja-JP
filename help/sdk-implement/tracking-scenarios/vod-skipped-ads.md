@@ -1,22 +1,22 @@
 ---
 title: 広告がスキップされた VOD 再生
-description: Media SDKを使用して広告をスキップしたVODコンテンツの追跡方法の例です。
+description: メディア SDK を使用した、ユーザーが広告をスキップした VOD コンテンツの追跡方法の例です。
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# 広告がスキップされた VOD 再生{#vod-playback-with-skipped-ads}
+# 広告がスキップされた VOD 再生 {#vod-playback-with-skipped-ads}
 
 ## シナリオ {#scenario}
 
 このシナリオは、広告がスキップされた VOD コンテンツ再生で構成されます。
 
-### プリロール広告がスキップされた1つのVOD
+### プリロール広告がスキップされた 1 本の VOD
 
-This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
+これは、スキップボタンのクリックなどでユーザーが広告をスキップできるようにアプリケーションが準備されていることを除いて、[プリロール広告のある VOD 再生](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)と同じシナリオです。
 
 | トリガー   | ハートビートメソッド  | ネットワーク呼び出し   | メモ   |
 | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implemen
 | 広告の最初のフレームが再生される。 | `trackPlay()` | Heartbeat Ad Play | メインコンテンツの前に広告コンテンツを再生する場合、ハートビートは、広告の再生が開始する際に開始されます。 |
 | 広告が再生される。 |  | Ad Heartbeats |  |
 | 広告がスキップされる。 | `trackEvent:trackAdSkip` |  | Ad Complete ネットワーク呼び出しはありません。 |
-| コンテンツが再生される。 |  | Content Heartbeats | These network calls are exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| コンテンツが再生される。 |  | Content Heartbeats | これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | コンテンツの再生が完了する。 | `trackComplete()` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | セッションが終了する。 | `trackSessionEnd()` |  | `SessionEnd` |
 
