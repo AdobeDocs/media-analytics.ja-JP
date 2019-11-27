@@ -1,59 +1,59 @@
 ---
-title: テスト2メディア割り込み
-description: ここでは、検証で使用されるメディア中断テストについて説明します。
+title: テスト 2  メディアの中断
+description: ここでは、検証で使用されるメディアの中断テストについて説明します。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# テスト2:メディアの中断{#test-media-interruption}
+# テスト 2：メディアの中断 {#test-media-interruption}
 
-このテストケースは、モバイルの中断動作を検証します。 これは、証明書要求の必須要素です。
+このテストケースは、モバイルの中断動作を検証します。認定リクエストの必須要素です。
 
-## 証明書の要請フォーム
+## 認定リクエストフォーム
 
-**次のURLから証明書申請フォームをダウンロードします。==&gt;**[Certification Request Form.](cert_req_form.docx)
+**認定リクエストフォームを**[こちら](cert_req_form.docx)からダウンロードします。
 
 ## テスト手順
 
 次の順序でタスクを実行して記録する必要があります。
 
-1. **メディアプレイヤーの起動**
+1. **メディアプレーヤーを開始する**
 
-   メディアプレイヤーが起動すると、次の呼び出しが次の順序で送信されます。
+   メディアプレーヤーの開始時に、次の順番で呼び出しが送信されます。
 
-   1. Adobe Analytics(AppMeasurement)の開始
-   1. Media Analytics（ハートビート）開始
-   1. Media Analytics（ハートビート）Adobe Analytics start呼び出しの要求
-   上記の最初の2つの呼び出しには、追加のメタデータと変数が含まれています。 呼び出しパラメーターとメタデータについては、テスト呼び出しの [詳細を参照してください。](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
+   1. Adobe Analytics（AppMeasurement）Start
+   1. Media Analytics（ハートビート）Start
+   1. Media Analytics（ハートビート）Adobe Analytics Start 呼び出しがリクエストされる
+   上記の最初の 2 つの呼び出しには、追加のメタデータおよび変数が含まれます。呼び出しパラメーターおよびメタデータについては、[テスト呼び出しの詳細](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)を参照してください。
 
-   上記の3回目の呼び出しは、Adobe Analytics start呼び出し(`pev2=ms_s`)のAdobe Analyticsサーバーへの送信をMedia SDKが要求したことをMedia Analyticsサーバーに通知します。
+   上記の 3 番目の呼び出しは、Adobe Analytics サーバーに送信される Adobe Analytics Start 呼び出し（`pev2=ms_s`）をメディア SDK がリクエストしたことを Media Analytics サーバーに伝えます。
 
-1. **メインコンテンツを5分以上中断せずに再生**
+1. **メインコンテンツを中断せずに 5 分以上間再生する**
 
    **コンテンツの再生**
 
-   コンテンツの再生中、Media SDKは再生呼び出し（ハートビート）を10秒ごとにMedia Analyticsサーバーに送信します。
+   コンテンツの再生中、メディア SDK は、10 秒ごとに再生呼び出し（ハートビート）を Media Analytics サーバーに送信します。
 
-   呼び出しパラメーターとメタデータについては、テスト呼び出しの [詳細を参照してください。](/help/sdk-implement/validation/test-call-details.md#play-main-content)
+   呼び出しパラメーターおよびメタデータについては、[テスト呼び出しの詳細](/help/sdk-implement/validation/test-call-details.md#play-main-content)を参照してください。
 
-   Also see your platform's [Track Ads](/help/sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
+   また、これらの広告呼び出しの追加情報については、プラットフォームの[広告の追跡](/help/sdk-implement/track-ads/track-ads-overview.md)の指示も参照してください。
 
 1. **アプリまたはブラウザーをバックグラウンドに移動する**
 
-   While the app runs in the background, only `main:pause` calls should be sent to the Media Analytics server, starting with VHL version 1.6.6 and later.
+   アプリがバックグラウンドで実行されている間、`main:pause` 呼び出しのみが Media Analytics サーバーに送信される必要があります（VHL バージョン 1.6.6 以降）。
 
-1. **アプリまたはブラウザーを前面へ戻す**
+1. **アプリまたはブラウザーをフォアグラウンドに移動する**
 
    バックグラウンドからフォアグラウンドに戻したとき、コンテンツの再生が再開される必要があります。
 
-1. **メインコンテンツメディアを5分以上中断なく再生**
+1. **メインコンテンツメディアを中断せずに 5 分以上間再生する**
 
-   呼び出しパラメーターとメタデータについては、「呼び出しの詳 [細のテスト」を参照してください。](/help/sdk-implement/validation/test-call-details.md#play-main-content)
+   呼び出しパラメーターおよびメタデータについては、[テスト呼び出しの詳細](/help/sdk-implement/validation/test-call-details.md#play-main-content)を参照してください。
 
-1. **メディアプレイヤーを閉じる**
+1. **メディアプレーヤーを閉じる**
 
-   メディアプレイヤーが閉じられた後は、追加のトラッキングコールは発生しません。
+   メディアプレーヤーが閉じられた後は、追加のトラッキングコールを発生させないでください。
 
