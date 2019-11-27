@@ -1,19 +1,19 @@
 ---
 title: JavaScript のセットアップ
-description: JavaScriptでの実装用のメディアSDKアプリケーションの設定。
+description: JavaScript での実装用のメディア SDK アプリケーション設定です。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# JavaScript のセットアップ{#set-up-javascript}
+# JavaScript のセットアップ {#set-up-javascript}
 
 ## 前提条件
 
-* **有効な設定パラメーターの取得**&#x200B;これらのパラメーターは、Analyticsアカウントを設定した後、アドビの担当者から取得できます。
-* **メディアア`AppMeasurement`プリケーションへのJavaScriptの実装** Adobe Mobile SDKドキュメントについて詳しくは、JavaScriptを使用したAnalyticsの実装を [参照してください。](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
+* **有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
+* **JavaScript 向け`AppMeasurement`をメディアアプリケーションに実装** Adobe Mobile SDK のドキュメントについて詳しくは、[JavaScript を使用した Analytics の実装](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/js_implementation.html)を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
@@ -23,15 +23,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. [ダウンロードした](/help/sdk-implement/download-sdks.md#download-2x-sdks)ライブラリをプロジェクトに追加します。利便性のために、クラスへのローカル参照を作成します。
 
    1. ダウンロードした `MediaSDK-js-v2.*.zip` ファイルを展開します。
-   1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
+   1. `libs` ディレクトリに `MediaSDK.min.js` ファイルが存在することを確認します。
 
-   1. Host the `MediaSDK.min.js` file.
+   1. `MediaSDK.min.js` ファイルをホストします。
 
       このコア JavaScript ファイルは、サイトのすべてのページから参照可能な Web サーバーでホストする必要があります。次の手順で、これらのファイルへのパス情報が必要になります。
 
    1. サイトのすべてのページから `MediaSDK.min.js` を参照します。
 
-      Include `MediaSDK` for JavaScript by adding the following line of code in the `<head>` or `<body>` tag on each page. 次に例を示します。
+      各ページの `<head>` タグまたは `<body>` タグに以下のコードを追加して、JavaScript 用の `MediaSDK` を含めます。次に例を示します。
 
       ```
       <script type="text/javascript" 
@@ -42,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       >[!NOTE]
       >
-      >From Version 2.1.0, the JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `VideoHeartbeat.min.js` can also be used with compatible module loaders.
+      >バージョン 2.1.0 以降の JavaScript SDK は、AMD および CommonJS モジュールの仕様に準拠しており、互換性のあるモジュールローダーと共に `VideoHeartbeat.min.js` を使用することもできます。
 
 1. API に簡単にアクセスできるように、`MediaHeartbeat` クラスへのローカル参照を作成します。
 
@@ -52,7 +52,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
    ```
 
-1. Create a `MediaHeartbeatConfig` instance.
+1. `MediaHeartbeatConfig` インスタンスを作成します。
 
    ここでは、`MediaHeartbeat` 設定パラメーターと、正確な追跡のために `MediaHeartbeat` インスタンスに正しい設定値を設定する方法について説明します。
 
@@ -70,7 +70,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaConfig.ovp = Configuration.HEARTBEAT.OVP; 
    ```
 
-1. Implement the `MediaHeartbeatDelegate` protocol.
+1. `MediaHeartbeatDelegate` プロトコルを実装します。
 
    ```js
    var mediaDelegate = new MediaHeartbeatDelegate(); 
@@ -86,9 +86,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    };
    ```
 
-1. Create the `MediaHeartbeat` instance.
+1. `MediaHeartbeat` インスタンスを作成します。
 
-   Use the `MediaHeartbeatConfig` and `MediaHeartbeatDelegate` to create the `MediaHeartbeat` instance.
+   `MediaHeartbeatConfig` および `MediaHeartbeatDelegate` を使用して、`MediaHeartbeat` インスタンスを作成します。
 
    ```js
    this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
@@ -96,11 +96,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `MediaHeartbeat` instance is accessible and does not get deallocated until the end of the media session. このインスタンスは、以下のすべてのトラッキングイベントに使用されます。
+   >`MediaHeartbeat` インスタンスがアクセス可能であることと、メディアセッションの終わりまで解放されないことを確認します。このインスタンスは、以下のすべてのトラッキングイベントに使用されます。
 
    >[!TIP]
    >
-   >`MediaHeartbeat` には、Adobe Analyticsに呼び出し `AppMeasurement` を送信するインスタンスが必要です。 以下に、`AppMeasurement` インスタンスの例を示します。
+   >`MediaHeartbeat` が Adobe Analytics に呼び出しを送信するためには、`AppMeasurement` のインスタンスが必要です。以下に、`AppMeasurement` インスタンスの例を示します。
 
    ```js
    var appMeasurement = new AppMeasurement(); 
@@ -115,4 +115,4 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 バージョン 2.x では、すべてのパブリックメソッドは、開発をより簡単にするために、`ADB.va.MediaHeartbeat` クラスに統合されています。また、すべての設定は、`ADB.va.MediaHeartbeatConfig` クラスに統合されました。
 
-For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+1.x から 2.x への移行について詳しくは、[VHL 1.x から 2.x への移行](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)を参照してください。
