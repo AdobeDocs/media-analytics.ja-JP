@@ -1,40 +1,40 @@
 ---
 title: 概要
-description: Media SDKを使用したエクスペリエンスの品質(QoE、QoS)の追跡の概要です。
+description: メディア SDK を使用した Quality of Experience（QoE、QoS）追跡の概要です。
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# 概要{#overview}
+# 概要 {#overview}
 
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. メディアプレイヤーAPIを使用して、QoSおよびエラートラッキングに関連する変数を識別できます。 Quality of Experience を追跡するうえで重要な要素は次のとおりです。
+Quality of Experience の追跡には、サービス品質（QoS）およびエラー追跡が含まれますが、どちらもオプションの要素で、コアメディアトラッキングの実装には&#x200B;**不要**&#x200B;です。メディアプレーヤー API を使用して、QoS とエラーの追跡に関連する変数を識別できます。Quality of Experience を追跡するうえで重要な要素は次のとおりです。
 
 ## プレーヤーイベント {#player-events}
 
 ### QoS 指標の変更時：
 
-再生の QoS オブジェクトインスタンスを作成または更新します。[QoS APIリファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
+再生の QoS オブジェクトインスタンスを作成または更新します。[QoS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
 
-### すべてのビットレート変更イベント
+### すべてのビットレート変更イベント時
 
-呼び出し `trackEvent(Media.Heartbeat.Event.BitrateChange);`
+`trackEvent(Media.Heartbeat.Event.BitrateChange);` を呼び出します
 
-## QOSの実装
+## QoS の実装
 
-1. Identify when any of QOS metrics change during media playback, create the `MediaObject` using the QoS information, and update the new QoS information.
+1. メディアの再生中にいつ QoS 指標が変更されるかを識別し、QoS 情報を使用して `MediaObject` を作成し、新しい QoS 情報を更新します。
 
    QoSObject 変数：
 
    >[!TIP]
    >
-   >これらの変数は、QoSを追跡する予定の場合にのみ必要です。
+   >これらの変数は、QoS を追跡する場合にのみ必要です。
 
    | 変数 | 説明 | 必須 |
    | --- | --- | :---: |
@@ -48,9 +48,9 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >QoSオブジェクトを更新し、ビットレート変更が行われるたびにビットレート変更イベントを呼び出します。 これにより、最も正確な QoS データを取得できます。
+   >ビットレートが変更されるたびに、QoS オブジェクトを更新し、ビットレート変更イベントを呼び出します。これにより、最も正確な QoS データを取得できます。
 
-以下のサンプルコードは、HTML5メディアプレイヤー用のJavaScript 2.x SDKを使用しています。 このコードは、コアメディア再生コードと共に使用する必要があります。
+以下のサンプルコードでは、HTML5 メディアプレーヤー用の JavaScript 2.x SDK を使用しています。このコードをコアメディア再生コードと共に使用する必要があります。
 
 ```js
 var mediaDelegate = new MediaHeartbeatDelegate(); 
