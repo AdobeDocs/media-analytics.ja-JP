@@ -1,25 +1,25 @@
 ---
 title: 1.x から 2.x API への変換
-description: このトピックには、APIリファレンスへのリンクが含まれ、Media SDKの1.xおよび2.xバージョンで必要なトラッキングAPIとオプションのトラッキングAPIのリストが含まれています。
+description: このトピックには、メディア SDK の 1.x および 2.x バージョン用の API リファレンスへのリンクおよび必須およびオプションのトラッキング API のリストが含まれています。
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# API 1.xから2.xへの変換 {#one-x-to-two-x-conv}
+# API 1.x から 2.x への変換 {#one-x-to-two-x-conv}
 
-## Media SDK 2.x APIリファレンス
+## メディア SDK 2.x API リファレンス
 
 * [Android API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [iOS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
 * [JS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
 * [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
-## 必要なTrack* API:
+## 必要な追跡* API：
 
-|  VHL 1.x | VHL 2.x |
+| VHL 1.x | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | 該当なし |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbeat.trackSessionStart(mediaObject, mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |
@@ -36,14 +36,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | VHL 1.x | VHL 2.x |
 |---|---|
-| Return a valid `AdBreakInfo` in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakStart)` |
-| Return null in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakComplete)` |
+| `VideoPlayerPlugin.getAdBreakInfo()` で有効な `AdBreakInfo` を返します。 | `trackEvent(Event.AdBreakStart)` |
+| `VideoPlayerPlugin.getAdBreakInfo()` で null を返します。 | `trackEvent(Event.AdBreakComplete)` |
 | `playerPlugin.trackAdStart()` | `trackEvent(Event.AdStart, adObject, adCustomMetadata)` |
 | `playerPlugin.trackAdComplete()` | `trackEvent(Event.AdComplete)` |
-| Return null in `VideoPlayerPlugin.getAdInfo()` | `trackEvent(Event.AdSkip)` |
+| `VideoPlayerPlugin.getAdInfo()` で null を返します。 | `trackEvent(Event.AdSkip)` |
 | `playerPlugin.trackChapterStart()` | `trackEvent(Event.ChapterStart, chapterObject, chapterCustomMetadata)` |
 | `playerPlugin.trackChapterComplete()` | `trackEvent(Event.ChapterComplete)` |
-| Return null in `VideoPlayerPlugin.getChapterInfo()` | `trackEvent(Event.ChapterSkip)` |
+| `VideoPlayerPlugin.getChapterInfo()` で null を返します。 | `trackEvent(Event.ChapterSkip)` |
 | `playerPlugin.trackSeekStart()` | `trackEvent(Event.SeekStart)` |
 | `playerPlugin.trackSeekComplete()` | `trackEvent(Event.SeekComplete)` |
 | `playerPlugin.trackBufferStart()` | `trackEvent(Event.BufferStart)` |
