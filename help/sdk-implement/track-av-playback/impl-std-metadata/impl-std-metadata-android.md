@@ -1,28 +1,28 @@
 ---
 title: Android での標準メタデータの実装
-description: Androidでトラッキングコールと共に送信される標準ビデオおよび広告メタデータの設定について説明します。
+description: Android 上で、標準ビデオおよび広告メタデータがトラッキングコールで送信されるようにする設定を説明します。
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Android での標準メタデータの実装{#implement-standard-metadata-on-android}
+# Android での標準メタデータの実装 {#implement-standard-metadata-on-android}
 
-## 標準メタデータ定数
+## 標準メタデータの定数
 
 | 定数名 | 説明   |
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata` | 標準メタデータを `MediaObject` にアタッチするための定数。 |
 
-## メタデータキーAPIリファレンス
+## メタデータキー API リファレンス
 
-* 標準メタデータ `HashMap` のキーと値のペアの作成。
-   * [ビデオメタデータキー](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-   * [オーディオメタデータキー](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
+* 標準メタデータのキーと値のペアの `HashMap` を作成します。
+   * [ビデオのメタデータキー](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+   * [オーディオのメタデータキー](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * メタデータの標準メタデータ定数を使用して、`HashMap` に標準メタデータ `MediaInfo` を設定します。
-* Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
+* `trackSessionStart()` API を呼び出すと同時に、この `MediaInfo` オブジェクトを提供します。
 
 ## 実装例
 
