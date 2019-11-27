@@ -1,30 +1,30 @@
 ---
 title: オプトアウトおよびプライバシー
-description: オプトイン、オプトアウト、プライバシーの処理方法を示します。
+description: オプトイン、オプトアウトおよびプライバシーを処理する方法です。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# オプトアウトおよびプライバシー{#opt-out-and-privacy}
+# オプトアウトおよびプライバシー {#opt-out-and-privacy}
 
 ## オプトアウトとオプトイン {#opt-out-opt-in}
 
 特定のデバイスでトラッキングアクティビティを許可するかどうかを制御できます。
 
-* **モバイルアプリ** - VA ライブラリは、`AdobeMobile` ライブラリのプライバシーおよびオプトアウト設定に従います。トラッキングをオプトアウトするには、`AdobeMobile` ライブラリを使用する必要があります。`AdobeMobile` ライブラリのオプトアウトおよびプライバシー設定について詳しくは、[オプトアウトおよびプライバシー設定](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html)を参照してください。
-* **JavaScript およびブラウザーアプリ** - VA ライブラリは、`VisitorAPI` のプライバシーおよびオプトアウト設定に従います。トラッキングをオプトアウトするには、Visitor API サービスからオプトアウトする必要があります。For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* **OTTアプリ(Chromecast、Roku)**`opt` - OTT SDKは、データ収集と送信のステータスフラグを設定し、ローカルに保存されたIDを取得できる、General Data Protection Regulation(GDPR)対応のAPIを提供します。
+* **モバイルアプリ** - VA ライブラリは、`AdobeMobile` ライブラリのプライバシーおよびオプトアウト設定に従います。トラッキングをオプトアウトするには、`AdobeMobile` ライブラリを使用する必要があります。`AdobeMobile` ライブラリのオプトアウトおよびプライバシー設定について詳しくは、[オプトアウトおよびプライバシー設定](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/gdpr-privacy-android/privacy.html)を参照してください。
+* **JavaScript およびブラウザーアプリ** - VA ライブラリは、`VisitorAPI` のプライバシーおよびオプトアウト設定に従います。トラッキングをオプトアウトするには、Visitor API サービスからオプトアウトする必要があります。オプトアウトおよびプライバシーについて詳しくは、[Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/ja_JP/mcvid/) を参照してください。
+* **OTT アプリ（Chromecast、Roku）-** OTT SDK は、EU 一般データ保護規則（GDPR）対応の API を提供します。これらの API を使用して、データ収集および送信の `opt` ステータスフラグを設定し、ローカルに保存されている ID を取得できます。
 
    >[!NOTE]
    >
-   >また、プライバシーステータスがオプトアウトに設定されている場合、メディアハートビートトラッキング呼び出しも無効になります。
+   >プライバシーのステータスがオプトアウトに設定されている場合、メディアハートビートトラッキングコールも無効になります。
 
    次の設定を使用することで、Analytics データが特定のデバイスに送信されるかどうかを制御できます。
 
-   * The `privacyDefault` setting in the `ADBMobile.json` config file. この設定は、コード内で変更されるまで保持される初期設定を制御します。
+   * `ADBMobile.json` 設定ファイル内の `privacyDefault` 設定。この設定は、コード内で変更されるまで保持される初期設定を制御します。
 
    * `ADBMobile().setPrivacyStatus()` メソッド。
 
@@ -43,7 +43,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
             ```
          >[!IMPORTANT]
          >
-         >ユーザーが追跡をオプトアウトすると、ユーザーが再びオプトインするまで、持続的なすべてのデバイスデータとIDが削除されます。
+         >ユーザーがトラッキングをオプトアウトすると、再度オプトインするまで、永続化されたデバイスデータと ID がすべて消去されます。
 
       * **再度オプトインする：**
 
@@ -73,13 +73,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
             ```
    `setPrivacyStatus` を使用してプライバシー設定を変更した後は、同じメソッドを使用して再度変更されるまで、またはアプリを完全にアンインストールして再度インストールするまで、変更が保持されます。
 
-## Retrieving Stored Identifiers (OTT Apps) {#retrieving-stored-identifiers-ott-apps}
+## 保存されている ID の取得（OTT アプリ） {#retrieving-stored-identifiers-ott-apps}
 
 この情報は、ローカルに保存されているユーザー ID を Roku アプリケーションから取得する場合に役立ちます。
 
 >[!IMPORTANT]
 >
->すべての識別子を取得する方法は、SDKが認識し、保持するすべてのユーザーIDを取得します。 このメソッドは、ユーザーがオプトアウトする&#x200B;**前**&#x200B;に呼び出す必要があります。
+>すべての ID を取得するこのメソッドは、既知のユーザー ID、および SDK によって保持されているユーザー ID をすべて取得します。このメソッドは、ユーザーがオプトアウトする&#x200B;**前**&#x200B;に呼び出す必要があります。
 
 ローカルに保存された ID は JSON 文字列で返されます。この文字列には次の情報が含まれている可能性があります。
 
