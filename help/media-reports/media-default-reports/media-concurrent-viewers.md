@@ -2,19 +2,19 @@
 title: メディア同時ビューア
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# メディア同時ビューア{#media-concurrent-viewers}
+# メディア同時ビューア {#media-concurrent-viewers}
 
 メディア同時ビューアダッシュボードには、1 日の同時視聴者数が表示されます。データは、コンテンツ、デバイスタイプまたは国でフィルターできます。
 
 >[!TIP]
 >
->選択した間隔が1日以外の場合は、データは表示されません。
+>選択したインターバルが 1 日ではない場合、データは表示されません。
 
 ![](assets/video-concurrent-viewers.png)
 
