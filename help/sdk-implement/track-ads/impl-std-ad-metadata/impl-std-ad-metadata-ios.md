@@ -1,24 +1,24 @@
 ---
 title: iOS での標準広告メタデータの実装
-description: iOSでの広告追跡で標準広告メタデータを使用する方法。
+description: iOS 上の広告トラッキングでの標準広告メタデータの使用方法です。
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# iOS での標準広告メタデータの実装{#implement-standard-ad-metadata-on-ios}
+# iOS での標準広告メタデータの実装 {#implement-standard-ad-metadata-on-ios}
 
 ## 広告定数
 
 | 定数名 | 説明   |
 |---|---|
-| `ADBMediaObjectKeyStandardAdMetadata` | Constant for attaching standard ad metadata on `AdInfo ADBMediaObject` |
+| `ADBMediaObjectKeyStandardAdMetadata` | 標準広告メタデータを `AdInfo ADBMediaObject` にアタッチするための定数 |
 
-## 実装標準広告メタデータ
+## 標準広告メタデータの実装
 
-標準広告メタデータの場合、プラットフォームのキーを使用して、標準広告メタデータのキーと値のペアのディクショナリを作成します。
+標準広告メタデータの場合、ご利用のプラットフォームのキーを使用して、標準広告メタデータのキーと値のペアのディクショナリを作成します。
 
 ```
 // Sample implementation for using standard metadata keys for Ad 
