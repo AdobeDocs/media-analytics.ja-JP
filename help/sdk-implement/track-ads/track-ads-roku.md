@@ -1,20 +1,20 @@
 ---
 title: Roku での広告の追跡
-description: Media SDKを使用して、Rokuアプリケーションに広告トラッキングを実装します。
+description: メディア SDK を使用して、Roku アプリケーションに広告トラッキングを実装します。
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Roku での広告の追跡{#track-ads-on-roku}
+# Roku での広告の追跡 {#track-ads-on-roku}
 
 >[!IMPORTANT]
 >
->2.x SDKを使用した導入に関するガイダンスを以下に示します。 If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-## 広告トラッキング定数
+## 広告トラッキングの定数
 
 | 定数名 | 説明   |
 |---|---|
@@ -24,11 +24,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `AdComplete` | 追跡する Ad Complete イベントの定数 |
 | `AdSkip` | 追跡する Ad Skip イベントの定数 |
 
-## 導入手順
+## 実装手順
 
 1. プリロールを含め、いつ広告ブレークの境界が開始するかを識別し、広告ブレーク情報を使用して `AdBreakObject` を作成します。
 
-   `AdBreakObject` 参照：
+   `AdBreakObject` リファレンス：
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
@@ -44,7 +44,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    adBreakInfo.position = <POSITION>
    ```
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break:
+1. `MediaHeartbeat` インスタンスの `AdBreakStart` で `trackEvent()` を呼び出し、広告ブレークの追跡を開始します。
 
    ```
    contextData = {} 
@@ -61,7 +61,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                            ad.duration) 
    ```
 
-1. オプションで、コンテキストデータ変数を使用して、標準および/または広告メタデータをメディアトラッキングセッションに添付します。
+1. オプションで、コンテキストデータ変数を使用して標準または広告メタデータをメディアトラッキングセッションにアタッチします。
 
    * [Roku での標準広告メタデータの実装](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **カスタムの広告メタデータ** - カスタムのメタデータの場合は、カスタムデータ変数の変数オブジェクトを作成し、現在の広告アセットのデータを設定します。
@@ -72,13 +72,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       contextData["adinfo2"] = "adinfo2"
       ```
 
-1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback:
+1. `MediaHeartbeat` インスタンスの `AdStart` イベントで `trackEvent()` を呼び出し、広告再生の追跡を開始します。
 
    ```
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_START, adInfo, contextData)
    ```
 
-1. When the ad asset playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event.
+1. 広告の再生が広告の終わりに到達したら、`AdComplete` イベントで `trackEvent()` を呼び出します。
 
    ```
    standardAdMetadata = {} 
