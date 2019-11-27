@@ -1,20 +1,20 @@
 ---
 title: Android での広告の追跡
-description: Media SDKを使用して、Androidアプリケーションに広告トラッキングを実装します。
+description: メディア SDK を使用して、Android アプリケーションに広告トラッキングを実装します。
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Android での広告の追跡{#track-ads-on-android}
+# Android での広告の追跡 {#track-ads-on-android}
 
 >[!IMPORTANT]
 >
->2.x SDKを使用した導入に関するガイダンスを以下に示します。 If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-## 広告トラッキング定数
+## 広告トラッキングの定数
 
 | 定数名 | 説明 |
 | --- | --- |
@@ -24,11 +24,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `MediaHeartbeat.Event.AdComplete` | 追跡する Ad Complete イベントの定数 |
 | `MediaHeartbeat.Event.AdSkip` | 追跡する Ad Skip イベントの定数 |
 
-## 導入手順
+## 実装手順
 
 1. プリロールを含め、いつ広告ブレークの境界が開始するかを識別し、広告ブレーク情報を使用して `AdBreakObject` を作成します。
 
-   `AdBreakObject` 参照：
+   `AdBreakObject` リファレンス：
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
@@ -45,7 +45,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                                         <START_TIME>);
    ```
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break:
+1. `MediaHeartbeat` インスタンスの `AdBreakStart` で `trackEvent()` を呼び出し、広告ブレークの追跡を開始します。
 
    ```java
    public void onAdBreakStart(Observable observable, Object data) {  
@@ -57,7 +57,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. いつ広告が開始するかを識別し、広告情報を使用して `AdObject` インスタンスを作成します。
 
-   `AdObject` 参照：
+   `AdObject` リファレンス：
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
@@ -76,7 +76,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                                    <LENGTH>);
    ```
 
-1. オプションで、コンテキストデータ変数を使用して、標準および/または広告メタデータをメディアトラッキングセッションに添付します。
+1. オプションで、コンテキストデータ変数を使用して標準または広告メタデータをメディアトラッキングセッションにアタッチします。
 
    * [Android での標準広告メタデータの実装](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
    * **カスタムの広告メタデータ** - カスタムのメタデータの場合は、カスタムデータ変数の変数オブジェクトを作成し、現在の広告のデータを設定します。
@@ -88,7 +88,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       adMetadata.put("campaign", "Sample ad campaign");
       ```
 
-1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
+1. `MediaHeartbeat` インスタンスの `AdStart` イベントで `trackEvent()` を呼び出し、広告再生の追跡を開始します。
 
    カスタムメタデータ変数（または空のオブジェクト）への参照を、イベント呼び出しの 3 番目のパラメーターとして含めます。
 
@@ -100,7 +100,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event:
+1. 広告の再生が広告の終わりに到達したら、`AdComplete` イベントで `trackEvent()` を呼び出します。
 
    ```java
    public void onAdComplete(Observable observable, Object data) {  
