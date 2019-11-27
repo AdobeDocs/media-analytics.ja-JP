@@ -1,29 +1,29 @@
 ---
 title: 再生中のアプリケーション割り込みの処理
-description: メディアの再生中にトラッキングが中断された場合の対処方法。
+description: メディアの再生時に追跡の中断を処理する方法です。
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# 再生中のアプリケーション割り込みの処理{#handling-application-interrupts-during-playback}
+# 再生中のアプリケーション割り込みの処理 {#handling-application-interrupts-during-playback}
 
-メディアアプリケーションでの再生は、様々な方法で中断できます。ユーザーが一時停止を明示的に押した場合、またはユーザーがアプリケーションをバックグラウンドに置いた場合。 メディアの再生が中断される原因に関係なく、トラッキング手順は同じです。
+メディアアプリケーションでは、様々な原因で再生が中断されることがあります。例えば、ユーザーによって明示的に一時停止が押されたときや、アプリケーションがバックグラウンドに移行されたときなどがこれに該当します。メディア再生が中断された原因に関係なく、トラッキングの手順は同じです。
 
-1. Call **`trackPause`** when the application is interrupted (goes to background, media pauses, etc.).
-1. Call **`trackPlay`** when the application returns to the foreground and/or the media resumes playing.
+1. （バックグラウンドに移行された、メディアが一時停止されたなどの理由で）アプリケーションが中断されたら、**`trackPause`** を呼び出します。
+1. アプリケーションがフォアグラウンドに戻るかメディアの再生が再開されたら、**`trackPlay`** を呼び出します。
 
 >[!NOTE]
 >
->The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. これにより、その時点までの再生が合計再生時間にカウントされず、以前の進行状況マーカーやセグメントなどが失われます。 Instead, call `trackPlay` when the app returns and/or the media resumes playing.
+>アプリがバックグラウンドから戻ったときにお客様が `trackSessionStart` を呼び出しているケースが Media Analytics チームによって確認されています。この場合、その時点までの再生が合計再生時間にカウントされず、以前のプログレスマーカーやセグメントなどが失われます。アプリがフォアグラウンドに戻るかメディアの再生が再開されたときは、代わりに `trackPlay` を呼び出してください。
 
-## FAQ about handling application interrupts: {#faq-about-handling-application-interrupts}
+## アプリケーション割り込みの処理に関する FAQ： {#faq-about-handling-application-interrupts}
 
 * _アプリがバックグラウンドになってからセッションが終了するまでどれくらいの時間を確保する必要があります？_
 
-   アプリケーションでバックグラウンド再生が許可されている場合は、API を呼び出すことでトラッキングを続けることができます。すべての通常のトラッキング ping が送信されます。YouTube red以外のビデオアプリでは、バックグラウンド再生を許可しない場合がありますが、すべてのオーディオアプリで許可されています。 アプリケーションでバックグラウンド再生が許可されていない場合は、1分間一時停止状態のままにしてから、トラッキングセッションを終了することをお勧めします。 アプリケーションは一時停止のpingの送信を続行できません。ほとんどの場合、ユーザーがメディアの閲覧を続行するかどうか、またはユーザーがいつ停止するかを判断できないからです。 また、バックグラウンドで ping を送信し続けるのは不適切なエクスペリエンスでもあります。
+   アプリケーションでバックグラウンド再生が許可されている場合は、API を呼び出すことでトラッキングを続けることができます。すべての通常のトラッキング ping が送信されます。バックグラウンド再生を許可するビデオアプリは多くありません（YouTube Red を除く）が、すべてのオーディオアプリはこれを許可します。アプリケーションでバックグラウンド再生が許可されていない場合は、1 分間一時停止状態にしてからトラッキングセッションを終了することをお勧めします。ほとんどの場合、アプリケーションは、ユーザーがその後メディアの視聴を再開するかどうか、またはいつメディアを強制終了するかを判断できないので、一時停止 ping の送信を続行できません。また、バックグラウンドで ping を送信し続けるのは不適切なエクスペリエンスでもあります。
 
 * _アプリが長時間バックグラウンドに置かれた後でトラッキングを再開するにはどうするのが適切ですか？_
 
