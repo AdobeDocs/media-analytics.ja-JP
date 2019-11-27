@@ -1,28 +1,28 @@
 ---
 title: Android でのチャプターおよびセグメントの追跡
-description: ここでは、AndroidでのMedia SDKを使用したチャプターおよびセグメントトラッキングの実装について説明します。
+description: ここでは、Android でのメディア SDK を使用したチャプターおよびセグメント追跡の実装について説明します。
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Android でのチャプターおよびセグメントの追跡{#track-chapters-and-segments-on-android}
+# Android でのチャプターおよびセグメントの追跡 {#track-chapters-and-segments-on-android}
 
 >[!IMPORTANT]
 >
->以下の手順は、2.x SDKを使用した実装のガイダンスを示しています。 If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。1.x バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-## チャプタートラッキングの実装
+## チャプター追跡の実装
 
 1. いつチャプター開始イベントが発生するかを識別し、チャプター情報を使用して `ChapterObject` インスタンスを作成します。
 
-   `ChapterObject` チャプタートラッキングリファレンス：
+   `ChapterObject` チャプター追跡リファレンス：
 
    >[!NOTE]
    >
-   >これらの変数は、チャプターを追跡する予定の場合にのみ必要です。
+   >これらの変数は、チャプターを追跡する場合にのみ必要です。
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
