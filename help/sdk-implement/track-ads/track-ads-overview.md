@@ -1,37 +1,37 @@
 ---
 title: 概要
-description: メディアSDKを使用した広告トラッキングの実装の概要です。
+description: メディア SDK を使用した広告トラッキングの実装の概要です。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# 概要{#overview}
+# 概要 {#overview}
 
 >[!IMPORTANT]
 >
->2.x SDKを使用した導入に関するガイダンスを以下に示します。 If you are implementing a 1.x version of the SDK, you can download 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-広告再生には、広告ブレーク、広告開始、広告完了、広告スキップの追跡が含まれます。メディアプレイヤーのAPIを使用して、主要なプレーヤーイベントを識別し、必要な広告変数とオプションの広告変数を設定します。 詳しくは、メタデータの詳細なリストを参照してください。広告パラ [メーター。](/help/metrics-and-metadata/ad-parameters.md)
+広告再生には、広告ブレーク、広告開始、広告完了、広告スキップの追跡が含まれます。メディアプレーヤーの API を使用して、重要なプレーヤーイベントを識別したり、必須およびオプションの広告変数を設定したりできます。メタデータの包括的なリストについては、[広告パラメーター](/help/metrics-and-metadata/ad-parameters.md)を参照してください。
 
 ## プレーヤーイベント {#player-events}
 
 
-### 広告の時間開始時
+### 広告ブレークの開始時
 
 >[!NOTE]
->プリロールを含む
+>プリロールを含みます
 
 * 広告ブレークの `adBreak` オブジェクトインスタンスを作成します。例：`adBreakObject`。
 
-* Call `trackEvent` for the ad break start with your `adBreakObject`.
+* `adBreakObject` を使用して、広告ブレーク開始の `trackEvent` を呼び出します。
 
 ### すべての広告アセットの開始時
 
 * 広告アセットの広告オブジェクトインスタンスを作成します。例：`adObject`。
-* Populate the ad metadata, `adCustomMetadata`.
+* 広告のメタデータ `adCustomMetadata` を設定します。
 * 広告開始の `trackEvent` を呼び出します。
 
 ### すべての広告の完了時
@@ -48,7 +48,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 広告トラッキングの実装 {#implement-ad-tracking}
 
-### 広告トラッキング定数
+### 広告トラッキングの定数
 
 | 定数名 | 説明   |
 |---|---|
@@ -58,11 +58,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `AdComplete` | 追跡する Ad Complete イベントの定数 |
 | `AdSkip` | 追跡する Ad Skip イベントの定数 |
 
-### 導入手順
+### 実装手順
 
 1. プリロールを含め、いつ広告ブレークの境界が開始するかを識別し、広告ブレーク情報を使用して `AdBreakObject` を作成します。
 
-   `AdBreakObject` 参照：
+   `AdBreakObject` リファレンス：
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
@@ -70,11 +70,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `position` | コンテンツ内の広告ブレークの位置番号（1 から始まる）。 | ○ |
    | `startTime` | 広告ブレーク開始時の再生ヘッド値 | ○ |
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break.
+1. `MediaHeartbeat` インスタンスの `AdBreakStart` で `trackEvent()` を呼び出し、広告ブレークの追跡を開始します。
 
 1. いつ広告が開始するかを識別し、広告情報を使用して `AdObject` インスタンスを作成します。
 
-   `AdObject` 参照：
+   `AdObject` リファレンス：
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
@@ -88,21 +88,21 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    * **標準広告メタデータ** - 標準広告メタデータの場合、ご利用のプラットフォームのキーを使用して、標準広告メタデータのキーと値のペアのディクショナリを作成します。
    * **カスタムの広告メタデータ** - カスタムのメタデータの場合は、カスタムデータ変数の変数オブジェクトを作成し、現在の広告のデータを設定します。
 
-1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
+1. `MediaHeartbeat` インスタンスの `AdStart` イベントで `trackEvent()` を呼び出し、広告再生の追跡を開始します。
 
    カスタムメタデータ変数（または空のオブジェクト）への参照を、イベント呼び出しの 3 番目のパラメーターとして追加します。
 
-1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event.
+1. 広告の再生が広告の終わりに到達したら、`AdComplete` イベントで `trackEvent()` を呼び出します。
 
 1. ユーザーが広告のスキップを選択したので広告再生が完了しなかった場合は、`AdSkip` イベントを追跡します。
 1. 同じ `AdBreak` にその他の広告がある場合、手順 3 ～ 7 を繰り返します。
-1. When the ad break is complete, use the `AdBreakComplete` event to track it.
+1. 広告ブレークが完了したら、`AdBreakComplete` イベントを使用して追跡します。
 
 >[!IMPORTANT]
 >
->広告の再生中は、コンテンツプレーヤーの再生ヘッド(`l:event:playhead`)を増やさないようにし`s:asset:type=ad`ます。 この場合、コンテンツ滞在時間指標に悪影響が及びます。
+>広告の再生（`s:asset:type=ad`）中、コンテンツプレーヤーの再生ヘッド（`l:event:playhead`）を増分しないでください。増分すると、コンテンツ視聴時間指標に悪影響をおよぼします。
 
-以下のサンプルコードは、HTML5メディアプレイヤー用のJavaScript 2.x SDKを使用しています。
+以下のサンプルコードでは、HTML5 メディアプレーヤー用の JavaScript 2.x SDK を使用しています。
 
 ```js
 /* Call on ad break start */ 
