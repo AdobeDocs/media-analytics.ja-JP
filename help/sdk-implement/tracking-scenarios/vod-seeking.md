@@ -1,14 +1,14 @@
 ---
 title: メインコンテンツでのシークのある VOD 再生
-description: Media SDKを使用してシークが発生したVODコンテンツの追跡方法の例です。
+description: メディア SDK を使用した、シークが発生した VOD コンテンツの追跡方法の例です。
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# メインコンテンツでのシークのある VOD 再生{#vod-playback-with-seeking-in-the-main-content}
+# メインコンテンツでのシークのある VOD 再生 {#vod-playback-with-seeking-in-the-main-content}
 
 ## シナリオ {#scenario}
 
@@ -21,7 +21,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
 | コンテンツ再生の最初のフレーム。 | `trackPlay` | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
 | コンテンツ再生 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| ユーザーがコンテンツでシーク操作を開始する | `trackSeekStart` |  | No heartbeats go out till seek is complete, for example, `trackSeekComplete` |
+| ユーザーがコンテンツでシーク操作を開始する | `trackSeekStart` |  | シークが完了する（例えば、`trackSeekComplete`）まで、ハートビートは終わりません。 |
 | シーク操作が完了する | `trackSeekComplete` |  | シークが完了したので、ハートビートは終わり始めます。ヒント：再生ヘッド値は、シーク後に修正された新しい再生ヘッドを表す必要があります。 |
 | コンテンツが完了した | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | セッション終了 | `trackSessionEnd` |  | `SessionEnd` |
