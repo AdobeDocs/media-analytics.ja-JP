@@ -1,20 +1,20 @@
 ---
 title: iOS のメタデータキー
-description: ここでは、使用可能なiOSメタデータキーについて説明します。
+description: ここでは、使用可能な iOS のメタデータキーについて説明します。
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# iOS のメタデータキー{#ios-metadata-keys}
+# iOS のメタデータキー {#ios-metadata-keys}
 
 [iOS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
 送信元 `ADBStandardMetadataKeys.h`:
 
-## ビデオメタデータキー
+## ビデオのメタデータキー
 
 | 定数名 | 説明 | タイプ |
 |---|---|---|
@@ -36,7 +36,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `ADBVideoMetadataKeyFEED` | フィード | ビデオ |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | ストリーム形式 | ビデオ |
 
-## オーディオメタデータキー
+## オーディオのメタデータキー
 
 | 定数名 | 説明 | タイプ |
 |---|---|---|
@@ -47,7 +47,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `ADBAudioMetadataKeyPUBLISHER` | アセット | Audio |
 | `ADBAudioMetadataKeySTATION` | ジャンル | Audio |
 
-## 広告メタデータキー
+## 広告のメタデータキー
 
 | 定数名 | 説明 | タイプ |
 |---|---|---|
