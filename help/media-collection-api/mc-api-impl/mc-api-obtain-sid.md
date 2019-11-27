@@ -2,15 +2,15 @@
 title: セッション ID の取得
 description: null
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# セッション ID の取得{#obtaining-a-session-id}
+# セッション ID の取得 {#obtaining-a-session-id}
 
-This code snippet from the Reference Player shows one way of coding a [Sessions request,](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) along with extracting the Session ID (and the Media Collection API version) from the Location header in the response:
+このリファレンスプレーヤーのコードスニペットは、[Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)をコーディングする 1 つの方法と、セッション ID（およびメディアコレクション API バージョン）を応答の Location ヘッダーから抽出する方法を示しています。
 
 ```js
 var  
