@@ -1,26 +1,26 @@
 ---
 title: JavaScript でのチャプターおよびセグメントの追跡
-description: このトピックでは、ブラウザーアプリ(JS)でMedia SDKを使用してチャプターおよびセグメントトラッキングを実装する方法について説明します。
+description: ここでは、ブラウザーアプリ（JS）でのメディア SDK を使用したチャプターおよびセグメント追跡の実装について説明します。
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# JavaScript でのチャプターおよびセグメントの追跡{#track-chapters-and-segments-on-javascript}
+# JavaScript でのチャプターおよびセグメントの追跡 {#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
->以下の手順は、2.x SDKを使用した実装のガイダンスを示しています。 If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。1.x バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. いつチャプター開始イベントが発生するかを識別し、チャプター情報を使用して `ChapterObject` インスタンスを作成します。
 
-   `ChapterObject` チャプタートラッキングリファレンス：
+   `ChapterObject` チャプター追跡リファレンス：
 
    >[!NOTE]
    >
-   >これらの変数は、チャプターを追跡する予定の場合にのみ必要です。
+   >これらの変数は、チャプターを追跡する場合にのみ必要です。
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
