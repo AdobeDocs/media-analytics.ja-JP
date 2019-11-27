@@ -1,14 +1,14 @@
 ---
 title: JavaScript での標準広告メタデータの実装
-description: ブラウザー(JS)アプリで広告トラッキングで標準広告メタデータを使用する方法。
+description: ブラウザー（JS）アプリ上の広告トラッキングでの標準広告メタデータの使用方法です。
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# JavaScript での標準広告メタデータの実装{#implement-standard-ad-metadata-on-javascript}
+# JavaScript での標準広告メタデータの実装 {#implement-standard-ad-metadata-on-javascript}
 
 ## 広告定数
 
@@ -16,9 +16,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `StandardAdMetadata` | 標準広告メタデータを広告オブジェクトにアタッチするための定数 |
 
-## 実装標準広告メタデータ
+## 標準広告メタデータの実装
 
-標準広告メタデータの場合、プラットフォームのキーを使用して、標準広告メタデータのキーと値のペアのディクショナリを作成します。
+標準広告メタデータの場合、ご利用のプラットフォームのキーを使用して、標準広告メタデータのキーと値のペアのディクショナリを作成します。
 
 ```js
 var adObject =  
