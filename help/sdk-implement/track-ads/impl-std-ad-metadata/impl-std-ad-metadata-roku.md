@@ -1,18 +1,18 @@
 ---
 title: Roku での標準広告メタデータの実装
-description: Rokuの広告追跡で標準広告メタデータを使用する方法。
+description: Roku 上の広告トラッキングでの標準広告メタデータの使用方法です。
 uuid: 20a437d7-18b8-4099-ac81-9f3628384236
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Roku での標準広告メタデータの実装{#implement-standard-ad-metadata-on-roku}
+# Roku での標準広告メタデータの実装 {#implement-standard-ad-metadata-on-roku}
 
-## 実装標準広告メタデータ
+## 標準広告メタデータの実装
 
-標準広告メタデータの場合、プラットフォームのキーを使用して、標準広告メタデータのキーと値のペアのディクショナリを作成します。
+標準広告メタデータの場合、ご利用のプラットフォームのキーを使用して、標準広告メタデータのキーと値のペアのディクショナリを作成します。
 
 ```
 standardAdMetadata = {} 
