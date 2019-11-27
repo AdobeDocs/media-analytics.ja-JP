@@ -1,22 +1,22 @@
 ---
 title: アプリのアクションの追跡
-description: アプリアクションは、測定するアプリで発生するイベントです。
+description: アプリのアクションは、測定したいアプリ内で発生するイベントです。
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# アプリのアクションの追跡{#track-app-actions}
+# アプリのアクションの追跡 {#track-app-actions}
 
 アクションは、測定したいアプリ内で発生するイベントです。
 
-各アクションは、イベントが発生するたびに増分される、1 つ以上の対応する指標を持ちます。For example, you might send a `trackAction` call for each new subscription, or each time content is rated, or each time a level is completed.
+各アクションは、イベントが発生するたびに増分される、1 つ以上の対応する指標を持ちます。例えば、新規サブスクリプションごとに、コンテンツがレーティングされるたびに、またはレベルが完了するたびに、`trackAction` 呼び出しを送信します。
 
 アクションは自動的には追跡されないので、追跡するイベントが発生したときに `trackAction` を呼び出し、アクションをカスタムイベントにマップします。
 
-1. When an event that you want to track occurs, call `trackAction`.
+1. 追跡するイベントが発生したら、`trackAction` を呼び出します。
 
    * **Roku：**
 
