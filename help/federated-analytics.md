@@ -24,7 +24,7 @@ Federated Analytics サービスは、2 つのパートナー間でAdobe Media A
 * **即時性：**&#x200B;ほぼリアルタイムでのデータの送受信が可能です
 * **簡単：**&#x200B;アドビの SDK を使用してプレーヤーに 1 回タグ付けするだけで、多数のパートナーとデータを共有できます
 
-## 定義 {#definitions}
+## 定義{#definitions}
 
 * **送信者：**&#x200B;所有するプレーヤーでオーディオおよびビデオ分析データを生成するお客様
 * **受信者：**&#x200B;送信者からオーディオおよびビデオ分析データを受け取るお客様
@@ -37,7 +37,7 @@ Federated Analytics サービスは、2 つのパートナー間でAdobe Media A
 
 * **アドビのコンサルティングサービスの契約：**&#x200B;送信者と受信者間のフェデレーテッドルールの初期設定については、コンサルティングサービスと協力してデータの確認とデータ共有契約の作成をおこなうと効果的です。
 
-## It should be modified to "Federated Analytics フォームのダウンロード"
+## It should be modified to 「Federated Analytics フォームのダウンロード」
 
 [こちら](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)から、フェデレーションルール契約書フォームの現在のバージョンをダウンロードします。
 
