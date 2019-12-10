@@ -12,6 +12,6 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 OTT アプリと Experience Cloud の統合については、以下の　Chromecast および Roku の「セットアップ」トピックを参照してください。
 
-* [Chromecast のセットアップ](/help/sdk-implement/setup/set-up-chromecast.md)
+* [Chromecast のセットアップ ](/help/sdk-implement/setup/set-up-chromecast.md)
 * [Roku のセットアップ](/help/sdk-implement/setup/set-up-roku.md)
 
