@@ -18,14 +18,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 定数名 | 説明 | タイプ |
 |---|---|---|
-| `ADBVideoMetadataKeySHOW` | Show | ビデオ |
+| `ADBVideoMetadataKeySHOW` | 番組 | ビデオ |
 | `ADBVideoMetadataKeySEASON` | シーズン | ビデオ |
 | `ADBVideoMetadataKeyEPISODE` | エピソード | ビデオ |
 | `ADBVideoMetadataKeyASSET_ID` | アセット | ビデオ |
 | `ADBVideoMetadataKeyGENRE` | ジャンル | ビデオ |
 | `ADBVideoMetadataKeyFIRST_AIR_DATE` | 初回放送日 | ビデオ |
 | `ADBVideoMetadataKeyFIRST_DIGITAL_DAT` | 初回デジタル日 | ビデオ |
-| `ADBVideoMetadataKeyRATING` | 評価 | ビデオ |
+| `ADBVideoMetadataKeyRATING` | レーティング | ビデオ |
 | `ADBVideoMetadataKeyORIGINATOR` | 作成者 | ビデオ |
 | `ADBVideoMetadataKeyNETWORK` | ネットワーク | ビデオ |
 | `ADBVideoMetadataKeySHOW_TYPE` | 番組タイプ | ビデオ |
