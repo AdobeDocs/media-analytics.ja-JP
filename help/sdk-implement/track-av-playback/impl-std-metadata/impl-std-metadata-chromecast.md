@@ -10,7 +10,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # Chromecast での標準メタデータの実装 {#implement-standard-metadata-on-chromecast}
 
-標準メタデータオブジェクトをインスタンス化し、必要な変数を設定して、メディアハートビートオブジェクトでメタデータオブジェクトを設定します。次に例を示します。
+標準メタデータオブジェクトをインスタンス化し、必要な変数を設定して、メディアハートビートオブジェクトでメタデータオブジェクトを設定します。例：
 
 ```js
 var standardVideoMetadata = {}; 
