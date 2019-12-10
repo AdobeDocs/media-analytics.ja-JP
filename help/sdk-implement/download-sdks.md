@@ -18,17 +18,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | iOS／Apple TV | [iOS v2.2.6 用メディア SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.6)（レガシー 2.0 SDK の入手方法については、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください） | [iOS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS のセットアップ](/help/sdk-implement/setup/set-up-ios.md) |
 | JavaScript | [JS 用メディア SDK v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.1) | [JS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript のセットアップ](/help/sdk-implement/setup/set-up-js.md) |
 | Roku | [Roku 用メディア SDK v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2) |  | [Roku のセットアップ](/help/sdk-implement/setup/set-up-roku.md) |
-| Chromecast | [Chromecast 用メディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast のセットアップ](/help/sdk-implement/setup/set-up-chromecast.md) |
+| Chromecast | [Chromecast 用メディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast のセットアップ ](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 ## Media Analytics Launch 拡張機能 {#media-analytics-launch-extension}
 
 | MA Launch コンポーネント   | ダウンロード | ドキュメント |
 |---|---|---|
-| **MA Launch 拡張機能** | [サンプルの HTML5 プレーヤー拡張機能](https://github.com/adobe/reactor-adobe-va-sample-player) | [Adobe Media Analytics for Audio and Video 拡張機能](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension) |
+| **MA Launch 拡張機能** | [サンプルの HTML5 プレーヤー拡張機能](https://github.com/adobe/reactor-adobe-va-sample-player) | [Adobe Media Analytics for Audio and Video 拡張機能](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) |
 
 ## メディア SDK 1.x のダウンロード {#download-the-1.x-media-sDKs}
 
-| SDK 1.x | メディア SDK のダウンロード | 入門ガイド |
+| SDK 1.x |  メディア SDK のダウンロード |  入門ガイド |
 | --- | --- | --- |
 | Android | [Android 用 SDK v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [はじめに - Android 用メディア 1.x](setup/vhl-dev-guide-v15_android.pdf) |
 | iOS | [iOS 用 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [はじめに - iOS 用メディア 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
