@@ -1,19 +1,19 @@
 ---
-title: スタンドアロンのメディアSDKからAdobe Launchへの移行 — Android
-description: Media SDKからLaunch for Androidへの移行に役立つ手順とコードサンプルです。
-translation-type: tm+mt
+title: スタンドアロンの Media SDK から Adobe Launch への移行 - Android
+description: Media SDK から Launch for Android への移行に役立つ手順とコードサンプルです。
+translation-type: ht
 source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
 
-# スタンドアロンのメディアSDKからAdobe Launchへの移行 — Android
+# スタンドアロンの Media SDK から Adobe Launch への移行 - Android
 
 ## 設定
 
-### スタンドアロンメディアSDK
+### スタンドアロンの Media SDK
 
-スタンドアロンのメディアSDKでは、アプリでトラッキングを設定し、トラッカーを作成する際にSDKに渡します。
+スタンドアロンの Media SDK では、アプリケーションでトラッキングを設定し、トラッカーを作成する際に SDK に渡します。
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -28,22 +28,21 @@ config.debugLogging = true;
 MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 ```
 
-### Launch Extension
+### Launch 拡張機能
 
-1. 「エクスペリエンスプラットフォームの起動」で、 [!UICONTROL mobileプロパティの] 「拡張」タブをクリックします。
-1. 「カタログ [!UICONTROL 」タブで] 、オーディオおよびビデオ用Adobe Media Analyticsの拡張機能を探し、「インストール」をクリック [!UICONTROL します]。
-1. 拡張機能の設定ページで、トラッキングパラメーターを設定します。
-メディア拡張では、設定済みのパラメーターをトラッキングに使用します。
+1. Experience Platform Launch でモバイルプロパティの「[!UICONTROL 拡張機能]」タブをクリックします。
+1. 「[!UICONTROL カタログ]」タブでオーディオおよびビデオ用 Adobe Media Analytics 拡張機能を探し、「[!UICONTROL インストール]」をクリックします。
+1. 拡張機能の設定ページで、トラッキングパラメーターを設定します。メディア拡張機能では、設定済みのパラメーターをトラッキングに使用します。
 
 ![](assets/launch_config_mobile.png)
 
-[Mobile Extensionsの使用](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[モバイル拡張機能の使用](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## トラッカーの作成
 
-### スタンドアロンメディアSDK
+### スタンドアロンの Media SDK
 
-スタンドアロンのメディアSDKでは、オブジェクトを手動で作成し、ト `MediaHeartbeatConfig` ラッキングパラメーターを設定します。 delegateインターフェイスを実装し、トラッキ`getQoSObject()` ング用のイン `getCurrentPlaybackTime()functions.``MediaHeartbeat` スタンスを作成します。
+スタンドアロンのメディア SDK では、`MediaHeartbeatConfig` オブジェクトを手動で作成し、トラッキングパラメーターを設定します。`getQoSObject()` および `getCurrentPlaybackTime()functions.` を公開する delegate インターフェイスを実装し、トラッキング用の `MediaHeartbeat` インスタンスを作成します。
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -75,11 +74,11 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 }
 ```
 
-### Launch Extension
+### Launch 拡張機能
 
-[メディアAPIリファレンス — メディアトラッカーの作成](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[メディア API リファレンス - メディアトラッカーの作成](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
-トラッカーを作成する前に、メディア拡張と依存する拡張をモバイルコアに登録する必要があります。
+トラッカーを作成する前に、メディア拡張機能と依存する拡張機能をモバイルコアに登録する必要があります。
 
 ```java
 // Register the extension once during app launch
@@ -103,8 +102,7 @@ try {
 }
 ```
 
-メディア拡張機能を登録したら、次のAPIを使用してトラッカーを作成します。
-トラッカーは、設定された起動プロパティから設定を自動的に選択します。
+メディア拡張機能を登録したら、次の API を使用してトラッカーを作成します。トラッカーは、設定済みの Launch プロパティから設定を自動的に取得します。
 
 ```java
 Media.createTracker(new AdobeCallback<MediaTracker>() {
@@ -115,25 +113,25 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 });
 ```
 
-## 再生ヘッドとエクスペリエンスの質の値を更新しています。
+## 再生ヘッドと Quality of Experience の値を更新します。
 
-### スタンドアロンメディアSDK
+### スタンドアロンの Media SDK
 
-スタンドアロンのMedia SDKでは、トラッカーの作成中にインターフェイスを実装するdelegate`MediaHeartbeartDelegate` オブジェクトを渡します。  トラッカーがインターフェイスメソッドおよびインターフェイスメソッドを呼び出すたびに`getQoSObject()` 、実装は最新のQoEと再生ヘッド `getCurrentPlaybackTime()` を返す必要があります。
+スタンドアロンの Media SDK では、トラッカーの作成中に `MediaHeartbeartDelegate` インターフェイスを実装する delegate オブジェクトを渡します。トラッカーが `getQoSObject()` および `getCurrentPlaybackTime()` インターフェイスメソッドを呼び出すたびに、実装は最新の QoE と再生ヘッドを返す必要があります。
 
-### Launch Extension
+### Launch 拡張機能
 
-実装では、トラッカーによって公開されたメソッドを呼び出して`updateCurrentPlayhead` 、現在のプレーヤー再生ヘッドを更新する必要があります。 正確な追跡を行うには、このメソッドを少なくとも1秒に1回呼び出す必要があります。
+実装では、トラッカーによって公開された `updateCurrentPlayhead` メソッドを呼び出して、現在のプレーヤーの再生ヘッドを更新する必要があります。正確な追跡をおこなうには、このメソッドを少なくとも 1 秒に 1 回呼び出す必要があります。
 
-[メディアAPIリファレンス — 現在のプレイヤーを更新](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[メディア API リファレンス - 現在のプレーヤーを更新](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
-実装では、トラッカーが公開するメソッドを呼び出してQoE `updateQoEObject`情報を更新する必要があります。 品質指標に変更が生じた場合は常に、このメソッドが呼び出されることを期待しています。
+実装では、トラッカーによって公開された `updateQoEObject` メソッドを呼び出して QoE 情報を更新する必要があります。品質指標に変更が生じた場合は常に、このメソッドが呼び出されることを想定しています。
 
-[メディアAPIリファレンス — qoEオブジェクトの更新](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[メディア API リファレンス - QoE オブジェクトの更新](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-## 標準メディア/広告メタデータを渡す
+## 標準メディア／広告メタデータを渡す
 
-### スタンドアロンメディアSDK
+### スタンドアロンの Media SDK
 
 * 標準メディアメタデータ：
 
@@ -164,7 +162,7 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
    tracker.trackSessionStart(mediaInfo, mediaMetadata);
    ```
 
-* 標準の広告メタデータ:
+* 標準の広告メタデータ：
 
    ```java
    MediaObject adInfo = 
@@ -193,7 +191,7 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
                       adMetadata);
    ```
 
-### Launch Extension
+### Launch 拡張機能
 
 * 標準メディアメタデータ：
 
@@ -221,7 +219,7 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
    tracker.trackSessionStart(mediaInfo, mediaMetadata);
    ```
 
-* 標準の広告メタデータ:
+* 標準の広告メタデータ：
 
    ```java
    HashMap<String, Object> adObject = 
