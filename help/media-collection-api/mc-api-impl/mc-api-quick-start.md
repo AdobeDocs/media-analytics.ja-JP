@@ -21,7 +21,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
    * Analytics レポートスイート ID
    * Analytics トラッキングサーバー URL
 
-1. 呼び出しを成功させるために必要な最小限のデータを含む、`sessions` リクエスト本文の JSON オブジェクトを作成します。次に例を示します。
+1. 呼び出しを成功させるために必要な最小限のデータを含む、`sessions` リクエスト本文の JSON オブジェクトを作成します。例：
 
    ```
    { 
