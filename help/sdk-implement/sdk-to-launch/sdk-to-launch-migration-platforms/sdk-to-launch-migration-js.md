@@ -1,24 +1,24 @@
 ---
-title: スタンドアロンのメディアSDKからAdobe Launch - Web (JS)への移行
-description: Media SDKからLaunchへの移行に役立つ手順とコードサンプルです。
-translation-type: tm+mt
+title: スタンドアロンのメディア SDK から Adobe Launch - Web（JS）への移行
+description: Media SDK から Launch への移行に役立つ手順とコードサンプルです。
+translation-type: ht
 source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
 
-# スタンドアロンのメディアSDKからAdobe Launch - Web (JS)への移行
+# スタンドアロンのメディア SDK から Adobe Launch - Web（JS）への移行
 
 ## 機能の違い
 
-* *Launch* - Launchは、Webベースのメディアトラッキングソリューションの設定、設定およびデプロイの手順を示すUIを提供します。 Dynamic Tag Management(DTM)の起動が強化されました。
-* *メディアSDK* — メディアSDKは、特定のプラットフォーム向けに設計されたメディアトラッキングライブラリ(例：Android、iOSなど)。 モバイルアプリでのメディア使用状況の追跡には、Media SDKをお勧めします。
+* *Launch* - Launch は、Web ベースのメディアトラッキングソリューションの設定、構成およびデプロイの手順を示す UI を提供します。Launch は、Dynamic Tag Management（DTM）を改善したものです。
+* *Media SDK* - Media SDK は、特定のプラットフォーム向けに設計されたメディアトラッキングライブラリ（例：Android、iOSなど）を提供します。モバイルアプリケーションでのメディア使用状況を追跡する際には、Media SDK をお勧めします。
 
 ## 設定
 
-### スタンドアロンメディアSDK
+### スタンドアロンの Media SDK
 
-スタンドアロンのメディアSDKでは、アプリでトラッキング設定を設定し、トラッカーの作成時にそれをSDKに渡します。
+スタンドアロンの Media SDK では、アプリケーションでトラッキング設定をおこない、トラッカーを作成する際に SDK に渡します。
 
 ```javascript
 //Media Heartbeat initialization
@@ -32,27 +32,26 @@ mediaConfig.ssl = true;
 mediaConfig.debugLogging = true;
 ```
 
-メディアトラッキングが正し `MediaHeartbeat` く機能するには、設定に加えて、ページでインスタンス `AppMeasurement` とインス `VisitorAPI` タンスを設定して渡す必要があります。
+メディアトラッキングが正しく機能するには、`MediaHeartbeat` 設定に加えて、ページで `AppMeasurement` インスタンスと `VisitorAPI` インスタンスを設定して渡す必要があります。
 
-### Launch Extension
+### Launch 拡張機能
 
-1. 「エクスペリエンスプラットフォームの起動」で、Webプロパティ [!UICONTROL の「拡張] 」タブをクリックします。
-1. 「カタログ [!UICONTROL 」タブで] 、Adobe Media Analytics for Audio andVideo拡張機能を探し、「インストール」をクリック [!UICONTROL します]。
-1. 拡張機能の設定ページで、トラッキングパラメーターを設定します。
-メディア拡張では、設定済みのパラメーターをトラッキングに使用します。
+1. Experience Platform Launch　で Web プロパティの「[!UICONTROL 拡張機能]」タブをクリックします。
+1. 「[!UICONTROL カタログ]」タブでオーディオおよびビデオ用 Adobe Media Analytics 拡張機能を探し、「[!UICONTROL インストール]」をクリックします。
+1. 拡張機能の設定ページで、トラッキングパラメーターを設定します。メディア拡張機能では、設定済みのパラメーターをトラッキングに使用します。
 
    ![](assets/launch_config_js.png)
 
-[ユーザーガイドの起動 — メディア拡張のインストールと設定](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Launch ユーザーガイド - メディア各ｋ長機能のインストールと設定](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
 
 ## トラッカーの作成の違い
 
 ### メディア SDK
 
-1. 開発プロジェクトにMedia Analyticsライブラリを追加します。
-1. 設定オブジェクトを作成しま`MediaHeartbeatConfig`す()。
-1. delegateプロトコルを実装し、関数と関数を `getQoSObject()` 公開 `getCurrentPlaybackTime()` します。
-1. Media Heartbeatインスタンスを作成します(`MediaHeartbeat`)。
+1. 開発プロジェクトに Media Analytics ライブラリを追加します。
+1. 設定オブジェクト（`MediaHeartbeatConfig`）を作成します。
+1. `getQoSObject()` および `getCurrentPlaybackTime()` を公開する delegate プロトコルを実装します。
+1. メディアハートビートインスタンス（`MediaHeartbeat`）を作成します。
 
 ```
 // Media Heartbeat initialization
@@ -73,46 +72,46 @@ mediaDelegate.getQoSObject = function() {
 this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
 ```
 
-[メディアSDK — トラッカーの作成](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
+[メディア SDK - トラッカーの作成](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
 
 ### Launch
 
-Launchは、トラッキングインフラストラクチャを作成する2つの方法を提供します。 どちらの方法でも、Media Analytics Launch Extensionを使用します。
+Launch は、トラッキングインフラストラクチャを作成する 2 つの方法を提供します。いずれの方法でも、Media Analytics Launch 拡張機能を使用します。
 
-1. WebページからメディアトラッキングAPIを使用します。
+1. Web ページからメディアトラッキング API を使用します。
 
-   このシナリオでは、Media Analytics Extensionが、グローバルウィンドウオブジェクトの設定済み変数にメディアトラッキングAPIをエクスポートします。
+   このシナリオでは、Media Analytics 拡張機能が、グローバルウィンドウオブジェクトの設定済み変数にメディアトラッキング API をエクスポートします。
 
    ```
    window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance
    ```
 
-1. 別のLaunch拡張からのメディアトラッキングAPIを使用します。
+1. 別の Launch 拡張機能のメディアトラッキング API を使用します。
 
-   このシナリオでは、および共有モジュールで公開されているメディアトラッキングAPI `get-instance` を使 `media-heartbeat` 用します。
+   このシナリオでは、`get-instance` および `media-heartbeat` 共有モジュールで公開されているメディアトラッキング API を使用します。
 
    >[!NOTE]
    >
-   >共有モジュールはWebページでは使用できません。 他の拡張機能の共有モジュールのみを使用できます。
+   >共有モジュールは Web ページでは使用できません。他の拡張機能の共有モジュールのみを使用できます。
 
-   共有モジュール `MediaHeartbeat` を使用してインスタン `get-instance` スを作成します。
-delegateオブジェクトを、公開し `get-instance` たり関数に `getQoSObject()` 渡し `getCurrentPlaybackTime()` ます。
+   `get-instance` 共有モジュールを使用して `MediaHeartbeat` インスタンスを作成します。
+delegate オブジェクトを、`getQoSObject()` および `getCurrentPlaybackTime()`　関数を公開する `get-instance` に渡します。
 
    ```
    var getMediaHeartbeatInstance =
    turbine.getSharedModule('adobe-video-analytics', 'get-instance');
    ```
 
-   共有モジ `MediaHeartbeat` ュールを使用して定数にア `media-heartbeat` クセスします。
+   `media-heartbeat`共有モジュールを使用して `MediaHeartbeat` 定数にアクセスします。
 
 ## 関連ドキュメント
 
 ### メディア SDK
 
-* [JSの設定](/help/sdk-implement/setup/set-up-js.md)
+* [JS の設定](/help/sdk-implement/setup/set-up-js.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
 
-* [起動の概要](https://docs.adobe.com/content/help/en/launch/using/overview.html)
-* [Media Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Launch の概要](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)
+* [Media Analytics 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
