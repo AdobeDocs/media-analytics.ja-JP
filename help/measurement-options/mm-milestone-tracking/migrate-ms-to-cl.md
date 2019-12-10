@@ -48,7 +48,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 <tr>
 <td>コンテンツ視聴時間</td>
 <td>
-<p>event</p>
+<p>イベント</p>
 <p>タイプ：カウンター</p>
 </td>
 <td>独自のイベントを定義する</td>
@@ -56,7 +56,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 <tr>
 <td>ビデオ開始</td>
 <td>
-<p>event</p>
+<p>イベント</p>
 <p>タイプ：カウンター</p>
 </td>
 <td>独自のイベントを定義する</td>
@@ -64,7 +64,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 <tr>
 <td>ビデオ完了</td>
 <td>
-<p>event</p>
+<p>イベント</p>
 <p>タイプ：カウンター</p>
 </td>
 <td>独自のイベントを定義する</td>
