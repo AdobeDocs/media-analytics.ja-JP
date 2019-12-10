@@ -16,7 +16,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | メタデータ名 | コンテキストデータキー | 定数名 |
 | --- | --- | --- |
-| Show | `a.media.show` | `ADBMobile.media.VideoMetadataKeys.SHOW` |
+| 番組 | `a.media.show` | `ADBMobile.media.VideoMetadataKeys.SHOW` |
 | シーズン | `a.media.season` | `ADBMobile.media.VideoMetadataKeys.SEASON` |
 | エピソード | `a.media.episode` | `ADBMobile.media.VideoMetadataKeys.EPISODE` |
 | アセット | `a.media.asset` | `ADBMobile.media.VideoMetadataKeys.TMS_ID` |
