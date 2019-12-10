@@ -73,7 +73,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
+      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。例：
 
       ```
       NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
