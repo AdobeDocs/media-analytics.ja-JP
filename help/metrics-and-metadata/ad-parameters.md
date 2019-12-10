@@ -172,7 +172,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>ビデオ広告の開始数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a.media.ad.<br/>view) </li> <li> **ハートビート：**<br/>  (s:event:type=start)<br/> (s:asset:type=ad) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>広告開始 </li> <li> **データフィード：**<br/>なし </li> <li> **コンテキストデータ：**<br/> (a.media.ad.<br/>view) </li> <li> **Audience Manager：**<br/> (c_contextdata.<br/>a.media.ad.view) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告開始 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/>TRUE </li><li> **説明：**<br/>ビデオ広告の開始数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a.media.ad.<br/>view) </li> <li> **ハートビート：**<br/>  (s:event:type=start)<br/> (s:asset:type=ad) </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>広告開始 </li> <li> **データフィード：**<br/>なし </li> <li> **コンテキストデータ：**<br/> (a.media.ad.<br/>view) </li> <li> **Audience Manager：**<br/> (c_contextdata.<br/>a.media.ad.view) </li> </ul> |
 
 
 
@@ -180,7 +180,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>ビデオ広告の完了数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a.media.ad.<br/>complete) </li> <li> **ハートビート：**<br/> (s:event:type=complete)<br/> (s:asset:type=ad)  </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>広告完了 </li> <li> **データフィード：**<br/>なし </li> <li> **コンテキストデータ：**<br/> (a.media.ad.<br/>complete) </li> <li> **Audience Manager：**<br/> (c_contextdata.<br/>a.media.ad.complete) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定 </li> <li> **API キー：**<br/>なし </li> <li> **必須：**<br/>はい </li> <li> **型：**<br/>文字列 </li> <li> **送信タイミング：**<br/>広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/>TRUE </li><li> **説明：**<br/>ビデオ広告の完了数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a.media.ad.<br/>complete) </li> <li> **ハートビート：**<br/> (s:event:type=complete)<br/> (s:asset:type=ad)  </li> </ul> | <ul> <li> **利用可能：**<br/>可 </li> <li> **予約変数：**<br/>イベント </li> <li> **レポート名：**<br/>広告完了 </li> <li> **データフィード：**<br/>なし </li> <li> **コンテキストデータ：**<br/> (a.media.ad.<br/>complete) </li> <li> **Audience Manager：**<br/> (c_contextdata.<br/>a.media.ad.complete) </li> </ul> |
 
 
 
