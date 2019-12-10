@@ -119,7 +119,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## 検証 {#validate}
+## 検証{#validate}
 
 Media Analytics 追跡実装は、2 つのタイプのトラッキングコールを生成します。
 
@@ -140,7 +140,7 @@ Media Analytics 追跡実装は、2 つのタイプのトラッキングコー�
 
 ## SDK 1.x ドキュメント {#sdk-1x-documentation}
 
-| Video Analytics 1.x SDK | 開発者ガイド（PDF のみ） |
+| Video Analytics 1.x SDK |  開発者ガイド（PDF のみ） |
 | --- | --- |
 | Android | [Android 向け設定 ](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Apple TV 向け設定 ](vhl-dev-guide-v1x_appletv.pdf) |
