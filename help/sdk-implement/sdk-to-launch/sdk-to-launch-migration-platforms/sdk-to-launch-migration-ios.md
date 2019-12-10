@@ -1,19 +1,19 @@
 ---
-title: スタンドアロンのメディアSDKからAdobe Launchへの移行 — iOS
-description: Media SDKからLaunch for iOSへの移行に役立つ手順とコードサンプルです。
-translation-type: tm+mt
+title: スタンドアロンの Media SDK から Adobe Launch への移行 - iOS
+description: Media SDK から Launch for iOS への移行に役立つ手順とコードサンプルです。
+translation-type: ht
 source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
 
-# スタンドアロンのメディアSDKからAdobe Launchへの移行 — iOS
+# スタンドアロンの Media SDK から Adobe Launch への移行 - iOS
 
 ## 設定
 
-### スタンドアロンメディアSDK
+### スタンドアロンの Media SDK
 
-スタンドアロンのMedia SDKでは、アプリでトラッキング設定を設定し、トラッカーの作成時にSDKに渡します。
+スタンドアロンの Media SDK では、アプリケーションでトラッキング設定をおこない、トラッカーを作成する際に SDK に渡します。
 
 ```objective-c
 ADBMediaHeartbeatConfig *config = 
@@ -31,24 +31,23 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
 ```
 
-### Launch Extension
+### Launch 拡張機能
 
-1. 「エクスペリエンスプラットフォームの起動」で、モバイルプロ [!UICONTROL パティの] 「拡張」タブをクリックします
-1. 「カタログ [!UICONTROL 」タブで] 、「オーディオ/ビデオ用Adobe Media Analytics」拡張機能を探し、「インストール」をクリック [!UICONTROL します]。
-1. 拡張機能の設定ページで、トラッキングパラメーターを設定します。
-メディア拡張では、設定済みのパラメーターをトラッキングに使用します。
+1. Experience Platform Launch　で、モバイルプロパティの「[!UICONTROL 拡張機能]」タブをクリックします。
+1. 「[!UICONTROL カタログ]」タブでオーディオおよびビデオ用 Adobe Media Analytics 拡張機能を探し、「[!UICONTROL インストール]」をクリックします。
+1. 拡張機能の設定ページで、トラッキングパラメーターを設定します。メディア拡張機能では、設定済みのパラメーターをトラッキングに使用します。
 
    ![](assets/launch_config_mobile.png)
 
-[Media Analytics拡張の設定](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[Media Analytics 拡張機能の設定](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## トラッカーの作成
 
-### スタンドアロンメディアSDK
+### スタンドアロンの Media SDK
 
-スタンドアロンのメディアSDKでは、オブジェクトを手動で作成し、ト `ADBMediaHeartbeatConfig` ラッキングパラメーターを設定します。 delegateインターフェイスを実装し`getQoSObject()` 、 `getCurrentPlaybackTime()functions.`
+スタンドアロンのメディア SDK では、`ADBMediaHeartbeatConfig` オブジェクトを手動で作成し、トラッキングパラメーターを設定します。`getQoSObject()` および `getCurrentPlaybackTime()functions.` を公開する delegate インターフェイスを実装します
 
-トラッキング用のMediaHeartbeatインスタンスの作成：
+トラッキング用の MediaHeartbeat インスタンスの作成：
 
 ```objective-c
 @interface PlayerDelegate : NSObject<ADBMediaHeartbeatDelegate>
@@ -83,11 +82,11 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:delegate config:config];
 ```
 
-### Launch Extension
+### Launch 拡張機能
 
-[メディアAPIリファレンス — メディアトラッカーを作成](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[メディア API リファレンス - メディアトラッカーの作成](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
-トラッカーを作成する前に、メディア拡張と依存する拡張機能をモバイルコアに登録します。
+トラッカーを作成する前に、メディア拡張機能と依存する拡張機能をモバイルコアに登録します。
 
 ```objective-c
 // Register the extension once during app launch
@@ -107,8 +106,8 @@ ADBMediaHeartbeat* tracker =
 }
 ```
 
-メディア拡張機能が登録されると、次のAPIを使用してトラッカーを作成できます。
-トラッカーは、設定された起動プロパティから設定を自動的に選択します。
+メディア拡張機能が登録されると、次の API を使用してトラッカーを作成できます。
+トラッカーは、設定済みの Launch プロパティから設定を自動的に取得します。
 
 ```objective-c
 [ACPMedia createTracker:^(ACPMediaTracker * _Nullable mediaTracker) {
@@ -116,26 +115,25 @@ ADBMediaHeartbeat* tracker =
 }];
 ```
 
-## 再生ヘッドとエクスペリエンスの質の値を更新しています。
+## 再生ヘッドと Quality of Experience の値を更新します。
 
-### スタンドアロンメディアSDK
+### スタンドアロンの Media SDK
 
-スタンドアロンのMedia SDKでは、プロトコルを実装するdelegateオブジェクトが`ADBMediaHeartbeartDelegate` 、トラッカーの作成中に渡されます。
-トラッカーがインターフェイスメソッドとインターフェイスメソッドを呼び出すたびに、実装は最新のQoEと再生ヘッド `getQoSObject()` を返す必 `getCurrentPlaybackTime()` 要があります。
+スタンドアロンの Media SDK では、トラッカーの作成中に `ADBMediaHeartbeartDelegate` プロトコルを実装する delegate オブジェクトを渡します。トラッカーが `getQoSObject()` および `getCurrentPlaybackTime()` インターフェイスメソッドを呼び出すたびに、実装は最新の QoE と再生ヘッドを返す必要があります。
 
-### Launch Extension
+### Launch 拡張機能
 
-実装では、トラッカーによって公開されたメソッドを呼び出して`updateCurrentPlayhead` 、現在のプレーヤー再生ヘッドを更新する必要があります。 正確な追跡を行うには、このメソッドを少なくとも1秒に1回呼び出す必要があります。
+実装では、トラッカーによって公開された `updateCurrentPlayhead` メソッドを呼び出すことにより、現在のプレーヤーの再生ヘッドを更新する必要があります。正確な追跡をおこなうには、このメソッドを少なくとも 1 秒に 1 回呼び出す必要があります。
 
-[メディアAPIリファレンス — 現在の再生ヘッドの更新](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[メディア API リファレンス - 現在の再生ヘッドの更新](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
-実装では、トラッカーで公開されているメソッドを呼び出して`updateQoEObject` 、QoE情報を更新する必要があります。 品質指標に変更がある場合は常に、このメソッドを呼び出す必要があります。
+実装では、トラッカーによって公開された `updateQoEObject` メソッドを呼び出して QoE 情報を更新する必要があります。品質指標に変更がある場合は常に、このメソッドを呼び出す必要があります。
 
-[メディアAPIリファレンス — qoEオブジェクトの更新](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[メディア API リファレンス - QoE オブジェクトの更新](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-## 標準メディア/広告メタデータを渡す
+## 標準メディア／広告メタデータを渡す
 
-### スタンドアロンメディアSDK
+### スタンドアロンの Media SDK
 
 * 標準メディアメタデータ：
 
@@ -161,7 +159,7 @@ ADBMediaHeartbeat* tracker =
    [tracker trackSessionStart:mediaObject data:mediaMetadata];
    ```
 
-* 標準の広告メタデータ:
+* 標準の広告メタデータ：
 
    ```objective-c
    ADBMediaObject* adObject = 
@@ -189,7 +187,7 @@ ADBMediaHeartbeat* tracker =
             data:adDictionary];
    ```
 
-### Launch Extension
+### Launch 拡張機能
 
 * 標準メディアメタデータ：
 
@@ -214,7 +212,7 @@ ADBMediaHeartbeat* tracker =
    [_tracker trackSessionStart:mediaObject data:mediaMetadata];
    ```
 
-* 標準の広告メタデータ:
+* 標準の広告メタデータ：
 
    ```objective-c
    NSDictionary* adObject = 
