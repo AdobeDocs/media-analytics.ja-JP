@@ -90,7 +90,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * Analytics ID（AVID、AID、VID、関連する RSID）
 * Audience Manager ID（UUID）
 
-次に例を示します。
+例：
 
 * **Chromecast：**
 
