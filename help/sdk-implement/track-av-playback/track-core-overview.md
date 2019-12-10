@@ -97,7 +97,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **メタデータのアタッチ** - オプションで、コンテキストデータ変数を使用して標準またはカスタムのメタデータオブジェクトをトラッキングセッションにアタッチします。
 
-   * **標準メタデータ** -
+   * **標準メタデータ -**
 
       >[!NOTE]
       >
@@ -232,7 +232,7 @@ if (e.type == “buffered”) {
 };
 ```
 
-## 検証 {#validate}
+## 検証{#validate}
 
 実装の検証について詳しくは、[検証](/help/sdk-implement/validation/validation-overview.md)を参照してください。
 
