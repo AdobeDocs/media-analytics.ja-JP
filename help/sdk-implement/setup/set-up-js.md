@@ -31,7 +31,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    1. サイトのすべてのページから `MediaSDK.min.js` を参照します。
 
-      各ページの `<head>` タグまたは `<body>` タグに以下のコードを追加して、JavaScript 用の `MediaSDK` を含めます。次に例を示します。
+      各ページの `<head>` タグまたは `<body>` タグに以下のコードを追加して、JavaScript 用の `MediaSDK` を含めます。例：
 
       ```
       <script type="text/javascript" 
