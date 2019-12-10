@@ -42,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:chapter_*` |  | チャプターデータに特有のストリーム情報。 |
 | `s:meta:*` |  | 特有のコンテキストデータのあるチャプター。 |
 
-## チャプターが途中にある場合のサンプルコード {#sample-code-chapter-in-the-middle}
+## チャプターが途中にある場合のサンプルコード{#sample-code-chapter-in-the-middle}
 
 このシナリオでは、VOD コンテンツの一部がチャプターです。
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## チャプターが最初にある場合のサンプルコード {#sample-code-chapter-at-the-beginning}
+## チャプターが最初にある場合のサンプルコード{#sample-code-chapter-at-the-beginning}
 
 このシナリオでは、VOD コンテンツは、再生の最初に 1 つのチャプターを再生します。
 
