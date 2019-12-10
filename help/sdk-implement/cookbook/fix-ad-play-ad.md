@@ -45,7 +45,7 @@ Adobe Debug または Charles などのネットワークパケットスニフ�
 
 **すべての広告アセットの開始時：**
 
-* **`trackEvent(MediaHeartbeat.Event.AdComplete);`を呼び出します。**
+* **`trackEvent(MediaHeartbeat.Event.AdComplete);`を呼び出します**
 
    >[!NOTE]
    >
@@ -70,7 +70,7 @@ Adobe Debug または Charles などのネットワークパケットスニフ�
 
 **広告ブレークの完了時：**
 
-* **`trackEvent(MediaHeartbeat.Event.AdComplete);`を呼び出します。**
+* **`trackEvent(MediaHeartbeat.Event.AdComplete);`を呼び出します**
 
    >[!NOTE]
    >
