@@ -19,7 +19,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 必要な追跡* API：
 
-| VHL 1.x | VHL 2.x |
+|  VHL 1.x | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | 該当なし |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbeat.trackSessionStart(mediaObject, mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |
