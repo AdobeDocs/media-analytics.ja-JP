@@ -19,7 +19,7 @@ Roku では、アプリケーションを開発するための新たなプログ
 
 Adobe Mobile SDK for Roku は BrightScript で記述されています。この SDK では、SceneGraph 上で実行されるアプリでは利用できない様々なコンポーネントを使用します（スレッドなど）。したがって、SceneGraph フレームワークの使用を考えている Roku アプリケーション開発者は Adobe Mobile SDK API を呼び出すことができません（後者はレガシー BrightScript アプリで利用可能なものに類似しています）。
 
-## アーキテクチャ {#architecture}
+## アーキテクチャ{#architecture}
 
 SceneGraph サポートを AdobeMobile SDK に追加するために、アドビは AdobeMobile SDK と `adbmobileTask` の接続ブリッジを作成する新たな API を追加しました。adbmobileTask は、SDK の API 実行に使用される SceneGraph ノードです（`adbmobileTask` の使用方法については、このドキュメントの後半で詳しく説明します）。
 
@@ -49,7 +49,7 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 * `AdobeMobileLibrary` API をバックグラウンドスレッドで実行する SceneGraph タスクノードです。
 * データをアプリケーションシーンに戻すデリゲートとして機能します。
 
-## 公開 SceneGraph API {#public-scenegraph-apis}
+## 公開 SceneGraph API{#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
