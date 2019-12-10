@@ -16,12 +16,12 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 >
 >新機能を活用するために、既存の Media Analytics のお客様は、RSID のビデオトラッキングを再有効化する必要があります。
 
-1. [Reports &amp; Analytics](https://my.omniture.com/login/) で、**[!UICONTROL 管理者／レポートスイート]をクリックします。**
+1. [Reports &amp; Analytics](https://my.omniture.com/login/) で、**[!UICONTROL 管理者／レポートスイートをクリックします]。**
 1. メディアデータを収集するレポートスイートを選択して、**[!UICONTROL 設定を編集／メディア管理／メディアレポート]をクリックします。**
 
    ![](assets/media-reporting.png){width="400px"}
 
-1. **[!UICONTROL メディアレポート]**&#x200B;ページで、**[!UICONTROL メディアコア]を**&#x200B;有効にして、オプションで&#x200B;**[!UICONTROL メディア広告]**、**[!UICONTROL メディアチャプター]**&#x200B;および&#x200B;**[!UICONTROL メディア画質]を有効にします。**
+1. **[!UICONTROL メディアレポート]**&#x200B;ページで、**[!UICONTROL メディアコア]を**&#x200B;有効にして、オプションで&#x200B;**[!UICONTROL メディア広告]**、**[!UICONTROL メディアチャプター]**&#x200B;および&#x200B;**[!UICONTROL メディア画質を有効にします]。**
 
    メディア測定には、以下のモジュールが含まれます。
 
@@ -52,7 +52,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
    広告、チャプター、再生画質をまだ追跡していない場合、いつでも追加のオプションを有効にすることができます。
 
-1. 「**[!UICONTROL 保存]」をクリックします。**
+1. 「**[!UICONTROL 保存]**」をクリックします。
 
    このレポートスイートが既にメディアデータを収集するように設定されている場合は、「**[!UICONTROL 保存]**」をクリックした後に、追加の設定ページが表示されます。**[!UICONTROL メディアコア指標]**&#x200B;ページが表示されたら、次のステップへと進みます。
 
