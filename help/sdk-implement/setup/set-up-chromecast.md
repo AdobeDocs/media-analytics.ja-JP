@@ -130,7 +130,7 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
    | メソッド | 説明 |
    | --- | --- |
    | `getMarketingCloudID()` | 訪問者 ID サービスから Experience Cloud 訪問者 ID を取得します。<br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
-   | `syncIdentifiers()` | Experience Cloud 訪問者 ID とともに、各訪問者に関連付けることができる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs()` に相当します。以下に例を示します。<br/><br/>`var identifiers = {};`<br/><br/>`identifiers["idType"] = "idValue";`<br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+   | `syncIdentifiers()` | Experience Cloud 訪問者 ID とともに、各訪問者に関連付けることができる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs()` に相当します。例：<br/><br/>`var identifiers = {};`<br/><br/>`identifiers["idType"] = "idValue";`<br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
