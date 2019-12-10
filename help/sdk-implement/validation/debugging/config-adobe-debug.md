@@ -33,7 +33,7 @@ Adobe Debug にアクセスするには：
 
 推奨されるブラウザーは、Chrome および Firefox の最新バージョンです。
 
-## Debug Proxy {#debug-proxy}
+## Debug Proxy{#debug-proxy}
 
 Debug Proxy のダウンロードおよび設定：
 
@@ -48,7 +48,7 @@ Debug Proxy のダウンロードおよび設定：
 
    OS とブラウザーに応じて、ブラウザー設定を調整する必要がある場合があります。
 
-## デスクトップまたはアプリでの SSL 証明書のダウンロードおよびインストール {#download-and-install-sSL-desktop}
+## デスクトップまたはアプリでの SSL 証明書のダウンロードおよびインストール{#download-and-install-sSL-desktop}
 
 Adobe Debug を初めて実行すると、一意の SSL 証明書が生成されます。デスクトップまたはアプリで HTTPS トラフィックをサポートする場合は、アドビの SSL 証明書をダウンロードしてインストールする必要があります。
 
@@ -70,14 +70,14 @@ SSL 証明書をダウンロードしてインストールします。
 <!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
 -->
 
-    1. Firefox の場合は、[Mozilla Firefox でのルート証明書のインストール](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox) に記載されている手順を実行します。
+    1.Firefox の場合は、[Mozilla Firefox でのルート証明書のインストール](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox) に記載されている手順を実行します。
     
     変更を確認するには、Firefox を終了して再度開く必要がある場合があります。
     
     **iOS デバイス**
-    1. Adobe Debug を HTTP プロキシとして使用するように iOS デバイスを設定するには、**[!UICONTROL 設定アプリ]** **／** **[!UICONTROL Wifi 設定]**をクリックします。
+    1.Adobe Debug を HTTP プロキシとして使用するように iOS デバイスを設定するには、**[!UICONTROL 設定アプリ]** **／** **[!UICONTROL Wifi 設定]**をクリックします。
     
-    1. Safari で、[Debug](https://proxy.debug.adobe.com/ssl) に移動します。
+    1.Safari で、[Debug](https://proxy.debug.adobe.com/ssl) に移動します。
     
     Safari に、SSL 証明書をインストールすることを求めるメッセージが表示されます。
 
