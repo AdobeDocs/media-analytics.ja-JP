@@ -1,25 +1,25 @@
 ---
-seo-title: スタンドアロンのメディアSDKからAdobe launchへの移行
-title: スタンドアロンのメディアSDKからAdobe launchへの移行
-seo-description: Media SDKからLaunchへの移行に役立つ手順とコードサンプルです。
-description: Media SDKからLaunchへの移行に役立つ手順とコードサンプルです。
-translation-type: tm+mt
+seo-title: スタンドアロンの Media SDK から Adobe Launch への移行
+title: スタンドアロンの Media SDK から Adobe Launch への移行
+seo-description: Media SDK から Launch への移行に役立つ手順とコードサンプルです。
+description: Media SDK から Launch への移行に役立つ手順とコードサンプルです。
+translation-type: ht
 source-git-commit: ccc23ad0fc7073159431c50b8a8235b692803236
 
 ---
 
 
-# スタンドアロンのメディアSDKからAdobe launchへの移行
+# スタンドアロンの Media SDK から Adobe Launch への移行
 
-このドキュメントでは、主に、スタンドアロンのメディアSDKとメディア分析起動拡張との間のメディア分析の実装の違いに焦点を当てます。
+このドキュメントでは、主に、スタンドアロンの Media SDK と Media Analytics Launch 拡張機能との間の Media Analytics の実装の違いに焦点を当てます。
 
-Launchを使用すると、Webやモバイルに関連する顧客エクスペリエンスを強化するために必要な、すべての分析、マーケティング、広告ソリューションをシンプルに導入および管理できます。 「起動」を使用すると、Launchとの統合を独自に構築し、維持することができます。 これらの統合は拡張と呼ばれます。
-App-Storeでの体験から起動するユーザーに対しては、拡張機能を利用できるので、ソリューションを迅速にインストール、設定、導入できます。
+Launch は、Web およびモバイルをまたいで期待に沿った顧客体験を強化するために必要なすべての分析、マーケティングおよび広告のタグをデプロイおよび管理するためのシンプルな手段を提供します。Launch を利用すると、Launch との独自の統合を誰でも作成および管理できます。これらの統合は拡張機能と呼ばれます。
+拡張機能は、Launch のお客様自身がアプリストアで利用できるので、タグをすばやくインストール、設定およびデプロイできます。
 
-オーディオおよびビデオ用のAdobe Media Analyticsは、Webとモバイルの両方で起動拡張機能として使用できます。
+オーディオおよびビデオ用 Adobe Media Analytics は、Web とモバイルの両方で Launch 拡張機能として使用できます。
 
-* [Web起動ドキュメント](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
-* [モバイル起動ドキュメント](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+* [Web Launch ドキュメント](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Mobile Launch ドキュメント](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## プラットフォーム
 
