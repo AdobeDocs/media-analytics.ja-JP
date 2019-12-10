@@ -17,7 +17,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 * [リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)
 
-## ドキュメントのアップデート {#documentation-updates}
+## ドキュメントの更新　{#documentation-updates}
 
 ### 最終更新日：2019 年 10 月 {#October-2019-update}
 
