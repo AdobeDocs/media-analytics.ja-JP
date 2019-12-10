@@ -66,7 +66,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       * 利用可なビデオメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を参照してください。
    * **カスタムメタデータ**
 
-      カスタム変数のディクショナリを作成し、このメディアのデータを設定します。次に例を示します。
+      カスタム変数のディクショナリを作成し、このメディアのデータを設定します。例：
 
       ```java
       HashMap<String, String> mediaMetadata =  
@@ -79,7 +79,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **意図を追跡して再生を開始**
 
-   メディアセッションの追跡を開始するには、メディアハートビートインスタンスの `trackSessionStart` を呼び出します。次に例を示します。
+   メディアセッションの追跡を開始するには、メディアハートビートインスタンスの `trackSessionStart` を呼び出します。例：
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
