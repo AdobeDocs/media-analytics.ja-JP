@@ -31,7 +31,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `fps` | FPS の値 | ○ |
    | `droppedFrames` | ドロップフレームの数 | ○ |
 
-   次に例を示します。
+   例：
 
    ```
    bitrate = 200000
