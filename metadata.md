@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-solution-title: Learn & Support
+solution-title: ラーニングとサポート
 solution-hub-url: https://helpx.adobe.com/jp/support/analytics.html
 solution-image: assets/analytics-icon-24.png
 getting-started-title: はじめに
@@ -21,7 +21,7 @@ metadata. md ファイルにはリポジトリ内のユーザーガイド TOC.md
 
 | メタデータ | 説明 |
 |--- |--- |
-| solution-title | 記事ヘッダーでリンクとして使用します の呼び出しの後におこなわれる場合です。簡潔にしてください。 |
+| solution-title | 記事ヘッダーでリンクとして使用しますの呼び出しの後におこなわれる場合です。簡潔にしてください。 |
 | solution-hub-url | Helpx ハブページを開きます |
 | solution-icon | ソリューションタイトルの横にソリューションアイコンを表示します。未実装 |
 | getting-started-url | Helpx 開始ページへのリンク |
