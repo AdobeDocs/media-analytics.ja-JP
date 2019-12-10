@@ -18,7 +18,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 >
 >[Events リクエスト](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)は、HTTP 応答コード以外のデータをクライアントに返しません。
 
-セッション ID を受け取る前にイベントを処理する 1 つの方法については、配信環境のリファレンスプレーヤーを確認してください。次に例を示します。
+セッション ID を受け取る前にイベントを処理する 1 つの方法については、配信環境のリファレンスプレーヤーを確認してください。例：
 
 ```js
 var eventData = {};            // JSON payload 
