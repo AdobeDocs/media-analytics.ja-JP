@@ -5,8 +5,8 @@ uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 
 ---
 
@@ -15,41 +15,49 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## リリースノート {#release-notes}
 
-* [リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)
+* [リリースノート](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
 
-## ドキュメントの更新　{#documentation-updates}
+<!--
+## Documentation Updates{#documentation-updates}
 
-### 最終更新日：2019 年 10 月 {#October-2019-update}
+### Last updated: October, 2019 {#October-2019-update}
 
-数多くの編集および形式を修正しました。クックブックトピックがメディア SDK を超えて拡張され、「メディアトラッキングの外側にあるメディアディメンション」に関する新しい一般的なクックブックトピックが追加されました。
+Numerous editing and formatting corrections. 
+Cookbook topics expanded beyond Media SDK, including a new general cookbook topic on "Media Dimensions
+outside Media Tracking."
 
 
-### 最終更新日：2019 年 3 月 8 日 {#March-2019-update}
+### Last updated: March 7, 2019 {#March-2019-update}
 
-* この更新は、主に JavaScript および OTT プラットフォームのメディア SDK リリース 2.2 に関連しています。
-* JavaScriptおよびOTT プラットフォームのメディア SDK リリース 2.2 では、後述の iOS および Android プラットフォーム（2018 年 11 月 1 日更新）に対するのと同じサポートを提供します。
+* This update was primarily for the 2.2 Media SDK release on the JavaScript and OTT platforms. 
+* The 2.2 Media SDK release on JavaScript and OTT platforms provides the same support as 
+  described below for the iOS and Android platforms (November 1, 2018 update).
 
-### 最終更新日：2018 年 11 月 2 日 {#November-2018-update}
+### Last updated: November 1, 2018 {#November-2018-update}
 
-* この更新は、主に Android および iOS プラットフォームのメディア SDK リリース 2.2 に関連しています。
-* Android および iOS のメディア SDK リリース 2.2 では、これらのプラットフォームでオーディオトラッキングをサポートすると共に、内部的な機能強化をおこなっています。
-* オーディオトラッキングが追加され、メディア SDK とメディアコレクション API のどちらでもオーディオとビデオ両方のトラッキング機能が利用可能になったことで、名前付けをある程度一般向けに更新することが求められています。
+* This update was primarily for the 2.2 Media SDK release on the Android and iOS platforms. 
+* The 2.2 Media SDK release on Android and iOS provides support for tracking audio on those 
+  platforms, along with internal improvements.
+* With the addition of audio tracking, and with both audio and video tracking capabilities 
+  now available in both the Media SDK and the Media Collection API, a relatively wholesale 
+  naming update is called for:
 
-   * ソリューション全体は、Adobe Analytics for Audio and Video と呼ばれます。
-   * これまでドキュメント全体で使用されていた「Video Analytics」は、これからは「Media Analytics」になります。
-   * SDK では、「ビデオハートビートライブラリ（VHL）」が「メディア SDK」になります。
-   * これまで「video」または「vhl」として参照されていたファイル名と URL（API リファレンスへのリンクなど）は、「media」になります。
-   * コードでは、メタデータキーの名前に含まれていた「VIDEO」が「MEDIA」になります。
-   * 他にも様々な変更があります。
+    * The overall solution is titled Adobe Analytics for Audio and Video
+    * The shorthand formerly used throughout the docs, "Video Analytics", is now "Media Analytics"
+    * In the SDK, references to "Video Heartbeat Library (VHL)" are now "Media SDK"
+    * Filenames and URLs (e.g., links to API references) that formerly referenced "video" or "vhl" now use "media" in their place
+    * In the code, the names of metadata keys now include "MEDIA" instead of "VIDEO"
+    * and so on...
 
-* 以上のほかに、メディア SDK の節では、標準メタデータの実装と参照を独立したトピックに戻す（前回のドキュメント更新で「*コアの追跡*」トピックに吸収されていました）などの再編をおこないました。これらのトピックは、「*コアの追跡*」、「*シークの追跡*」、「*バッファーの追跡*」の各トピックと共に「*オーディオとビデオの再生の追跡*」の下にまとめられました。
+* Along with the above, some additional restructuring has occurred in the Media SDK section, including Standard Metadata implementation and reference returning to their own topics (they had been absorbed into the *Track Core* topics in the previous doc update). These topics, along with the *Track core*, and *Track seeking*, and *Track buffering* topics are now grouped together under *Track audio and video playback*.
 
-* オーディオトラッキングに関係する新しいパラメーターを反映するために、Federated Analytics フォームがバージョン 3.2 に更新されました。
+* The Federated Analytics form was updated to Version 3.2, to reflect new parameters involved with tracking audio.
 
-### 更新：2018 年 10 月 11 日 {#October-2018-update}
+### Update: October 10, 2018 {#October-2018-update}
 
-* ドキュメント構造の SDK の導入に関する領域が「リファクタリング」されました。プラットフォームごとの（内容的にはほぼ同じ）導入ガイドは SDK 導入に関する 1 つの節にまとめられ、プラットフォーム固有のトラッキング例は、共通のトラッキングトピックの下に配置したサブ節に示されています。
-* 新しいドキュメントシステムへの移行に備えて、ファイルの名前が全般的に変更されました。すべての DITA プレフィックス（概念、参照、タスクの各トピックタイプを示す c_, r_, t_）が廃止されました。すべてのアンダースコア（「_」）がハイフン（「-」）に置き換えられました。また、ファイル名がトピックのタイトルに近いものに変更されました。
-* 検証と認定の一般的な説明に関するトピックに更新を加えました。
-* 測定オプションの提示を含む紹介資料が新しく追加されたほか、前提条件、実装パスおよび Audience Manager の有効化が更新されています。
-* オーディオ分析機能の追加を反映するように、指標とメタデータおよびレポートと分析に関する節が更新されました。
+* Document structure was "refactored" in the SDK Implementation area, by combining the individual (but mostly identical) platform implementation guides into one SDK implementation section, with platform-specific tracking examples presented in sub-sections beneath common tracking topics. 
+* Files were renamed throughout in anticipation of a migration to a new doc system. All DITA prefixes ( c_, r_, t_ ) indicating concept, reference, and task topic types respectively) were eliminated. All underscores ('_') were replaced with hyphens ('-'). Also, file names now more closely resemble the titles of the topics.
+* Updates to general Validation and Certification topics.
+* New introductory material including a presentation of measurement options, along with updates to prerequisites, implementation paths, and Audience Manager enablement.
+* Updates to Metrics and Metadata and Reporting and Analysis sections, reflecting the addition of Audio Analytics capabilities.
+-->
