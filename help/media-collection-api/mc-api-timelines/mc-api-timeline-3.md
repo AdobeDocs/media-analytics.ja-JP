@@ -3,7 +3,7 @@ title: タイムライン 3 - チャプター
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: 22f7c21feb55f54c0c92db17eadc509966715cf3
+source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 ---
 
@@ -287,7 +287,7 @@ ping タイマーを開始します。最初の ping イベントは、プリロ
 
 **実装の詳細**
 
-`adBreakComplete` イベントの後、`play` イベントを使用してプレーヤーを「再生中」状態にします。
+After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
 
 **リクエスト本文のサンプル**
 
