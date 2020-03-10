@@ -2,19 +2,15 @@
 title: テスト 2  メディアの中断
 description: ここでは、検証で使用されるメディアの中断テストについて説明します。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # テスト 2：メディアの中断 {#test-media-interruption}
 
-このテストケースは、モバイルの中断動作を検証します。認定リクエストの必須要素です。
-
-## 認定リクエストフォーム
-
-**認定リクエストフォームを**[こちら](cert_req_form.docx)からダウンロードします。
+このテストケースは、モバイルの中断動作を検証します。
 
 ## テスト手順
 
@@ -56,4 +52,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. **メディアプレーヤーを閉じる**
 
    メディアプレーヤーが閉じられた後は、追加のトラッキングコールを発生させないでください。
-
