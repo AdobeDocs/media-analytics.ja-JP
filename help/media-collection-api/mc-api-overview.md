@@ -1,20 +1,17 @@
 ---
+seo-title: 概要
 title: 概要
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # 概要 {#overview}
 
-メディアコレクション API は、クライアント側のメディア SDK の代替として使用できるアドビの RESTful API です。メディアコレクション API を使用すると、プレーヤーで RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントを追跡できます。メディアコレクション API は、メディア SDK と同じリアルタイムトラッキングに加えて、さらに機能を提供します。
-
-* **ダウンロードされたコンテンツの追跡**
-
-   これにより、ユーザーのデバイスがオンラインに戻るまでイベントデータをローカルに保存することで、ユーザーがオフラインの間もメディアを追跡することができます（詳しくは、[ダウンロードされたコンテンツの追跡](track-downloaded-content.md)を参照してください）。
+メディアコレクション API は、クライアント側のメディア SDK の代替として使用できるアドビの RESTful API です。メディアコレクション API を使用すると、プレーヤーで RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントを追跡できます。
 
 メディアコレクション API は、基本的に、メディア SDK のサーバー側バージョンとして動作するアダプターです。つまり、メディア SDK ドキュメントの一部はメディアコレクション API にも関連しています。例えば、両方のソリューションが同じ[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を使用すると、収集されたオーディオおよびビデオトラッキングデータは、同じ[レポートと分析](/help/media-reports/media-reports-enable.md)になります。
 
@@ -34,13 +31,13 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ### API 呼び出し {#mc-api-calls}
 
-* **`sessions`-** サーバーとのセッションを確立し、後続の `events` 呼び出しで使用するセッション ID を返します。アプリは、トラッキングセッションの開始時にこれを 1 回呼び出します。
+* **`sessions`— サー&#x200B;**バとのセッションを確立し、後続の呼び出しで使用されるセッションIDを返し`events`ます。 アプリは、トラッキングセッションの開始時にこれを 1 回呼び出します。
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-** メディアトラッキングデータを送信します。
+* **`events`— メディア&#x200B;**トラッキングデータを送信します。
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
@@ -49,28 +46,28 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 ### リクエスト本文 {#mc-api-request-body}
 
 ```
-{ 
-    "playerTime": { 
-        "playhead": {playhead position in seconds}, 
-        "ts": {timestamp in milliseconds} 
-    }, 
-    "eventType": {event-type}, 
-    "params": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "qoeData" : { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "customMetadata": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    } 
-} 
+{
+    "playerTime": {
+        "playhead": {playhead position in seconds},
+        "ts": {timestamp in milliseconds}
+    },
+    "eventType": {event-type},
+    "params": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "qoeData" : {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "customMetadata": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    }
+}
 ```
 
 * `playerTime` - すべてのリクエストに必須です。
@@ -99,4 +96,3 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 * `chapterComplete`
 * `sessionEnd`
 * `sessionComplete`
-
