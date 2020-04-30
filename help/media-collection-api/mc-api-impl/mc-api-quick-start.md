@@ -14,7 +14,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 >
 >Media Analytics（MA）コレクション API バックエンドサーバーへの [Session リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を正常に完了するために必要なリクエストデータを収集します。（`curl`、Postman などを使用して）リクエストを手動で送信することで、リクエストデータを迅速に確認できます。これにより、リクエスト内の無効なデータ型または無効な情報に起因する問題があるかどうかに関するフィードバックがすぐに得られます。[JSON 検証スキーマ](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)を使用して、適切なリクエストデータを提供していることを確認します。
 
-1. 標準の必須の Adobe Analytics および訪問者データを収集します。これらは、すべての Experience Cloud アプリケーションを実行するために提供する必要があります。
+1. 標準の必須 Adobe Analytics および訪問者データを収集します。これらは、すべての Experience Cloud アプリケーションを実行するために提供する必要があります。
 
    * 訪問者の Experience Cloud 組織 ID
    * 訪問者の Experience Cloud ユーザー ID
