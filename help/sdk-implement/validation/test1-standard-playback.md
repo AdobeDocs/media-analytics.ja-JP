@@ -2,7 +2,7 @@
 title: テスト 1  標準の再生
 description: ここでは、検証で使用される標準の再生テストについて説明します。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
@@ -107,7 +107,7 @@ Media Analytics 実装には、次の 2 つのタイプのトラッキングコ�
 
 
 
-1. **広告再生を 30 秒間一時停止します（可能な場合）。**  **広告一時停止**
+1. **広告再生を 30 秒間一時停止します（可能な場合）。** **広告一時停止**
 
    広告の一時停止時、1 秒ごとに Media Analytics ハートビートまたは「ping」呼び出しが SDK によって Media Analytics サーバーに送信されます。
 
@@ -117,7 +117,7 @@ Media Analytics 実装には、次の 2 つのタイプのトラッキングコ�
 
    呼び出しパラメーターおよびメタデータについては、[テスト呼び出しの詳細](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)を参照してください。
 
-1. **メインコンテンツを中断せずに 10 分間再生します。**  **コンテンツの再生**
+1. **メインコンテンツを中断せずに 10 分間再生します。** **コンテンツの再生**
 
    メインコンテンツの再生中、メディア SDK は、10 秒ごとにハートビート（Play 呼び出し）を Media Analytics サーバーに送信します。
 
