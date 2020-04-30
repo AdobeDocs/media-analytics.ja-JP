@@ -29,28 +29,28 @@ Adobe Debug にアクセスするには：
    * Google Chrome
    * Mozilla Firefox
    * Apple Safari
-   * Microsoft Internet Explorer バージョン 9 ～ 11
+   * Microsoft Internet Explorer バージョン9 ～ 11
 
-推奨されるブラウザーは、Chrome および Firefox の最新バージョンです。
+推奨ブラウザーは、Chrome と Firefox の最新バージョンです。
 
-## Debug Proxy{#debug-proxy}
+## Debug Proxy {#debug-proxy}
 
 Debug Proxy のダウンロードおよび設定：
 
 1. [アプリダウンロード](https://debug.adobe.com/#/downloads)から Debug Proxy アプリをダウンロードします。
 
-   サポートされるオペレーティングシステムは次のとおりです。
-   * OS X 10.7（64 bit）以降
-   * Windows 7.1（64 bit）以降
+   次のオペレーティングシステムがサポートされています。
+   * OS X 10.7 64 ビット以上
+   * Windows 7.1 64 ビット以上
    ![](assets/debug-proxy-app.png)
 
-1. Debug Proxy サーバーは、ローカルマシン上で稼働し、ポート 33284 を使用し、システムプロキシとして設定されます。
+1. Debug Proxy サーバーは、ローカルマシンのポート 33284 で実行され、システムプロキシとして設定されます。
 
-   OS とブラウザーに応じて、ブラウザー設定を調整する必要がある場合があります。
+   OS とブラウザーに基づいてブラウザーの調整が必要になる場合があります。
 
-## デスクトップまたはアプリでの SSL 証明書のダウンロードおよびインストール{#download-and-install-sSL-desktop}
+## デスクトップまたはアプリでの SSL 証明書のダウンロードおよびインストール {#download-and-install-sSL-desktop}
 
-Adobe Debug を初めて実行すると、一意の SSL 証明書が生成されます。デスクトップまたはアプリで HTTPS トラフィックをサポートする場合は、アドビの SSL 証明書をダウンロードしてインストールする必要があります。
+Adobe Debug を初めて実行すると、一意の SSL 証明書が生成されます。デスクトップやアプリで HTTPS トラフィックをサポートする場合は、SSL 証明書をダウンロードしてインストールする必要があります。
 
 SSL 証明書をダウンロードしてインストールします。
 
@@ -92,8 +92,8 @@ iOS デバイスに SSL 証明書をインストールするには：
 1. ラップトップで、Debug Proxy を有効にし、[Adobe Debug](https://debug.adobe.com) に移動します。
 1. iOS デバイスで次の手順を実行します。
    1. デバイスを機内モードに切り替えます。
-   1. ラップトップで使用しているのと同じ Wi-Fi 信号を選択します。
-   1. ラップトップで、Debug Proxy アプリに表示されている IP とポートを手動で設定します。
+   1. ノートパソコンと同じ Wi-Fi 信号を選択します。
+   1. ラップトップで、Debug Proxy アプリに表示される IP とポートを手動で設定します。
    1. Apple Safari ブラウザーウィンドウを開きます。
    1. [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl) に移動します。
    1. SSL 証明書をダウンロードしてインストールします。
@@ -106,10 +106,10 @@ iOS デバイスに SSL 証明書をインストールするには：
 Android デバイスに SSL 証明書をインストールするには：
 
 1. ラップトップで、Debug Proxy を有効にし、[Adobe Debug](https://debug.adobe.com) に移動します。
-1. Android デバイスで次の手順を実行します。
-   1. デバイスを機内モードに切り替えます。
-   1. ラップトップで使用しているのと同じ Wi-Fi 信号を選択します。
-   1. ラップトップで、Debug Proxy アプリに表示されている IP とポートを手動で設定します。
+1. ご使用の Android デバイスで、次の手順を実行します。
+   1. デバイスを機内モードに設定します。
+   1. ノートパソコンと同じ Wi-Fi 信号を選択します。
+   1. ラップトップで、Debug Proxy アプリに表示される IP とポートを手動で設定します。
    1. ブラウザーウィンドウを開きます。
    1. [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl) に移動します。
    1. SSL 証明書をダウンロードしてインストールします。
