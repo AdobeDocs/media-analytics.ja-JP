@@ -30,10 +30,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 一般的な実装のガイドライン {#general-implementation-guidelines}
 
-メディアトラッキングには、主に以下の 3 つの SDK コンポーネントが必要です。
-* Media Heartbeat Config - この Config にはレポート用の基本設定が含まれます。
-* Media Heartbeat Delegate - この Delegate は再生時間と QoS オブジェクトを制御します。
-* Media Heartbeat - メンバーとメソッドを含むプライマリライブラリです。
+メディアトラッキングには、3 つの主な SDK コンポーネントが関与しています。
+* メディアハートビート設定 - 設定には、レポートの基本設定が含まれています。
+* メディアハートビートデリゲート - このデリゲートは再生時間と QoS オブジェクトを制御します。
+* メディアハートビート - メンバーとメソッドを含むプライマリライブラリ。
 
 次の実装手順を実行します。
 
@@ -41,12 +41,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    |  変数名  | 説明  | 必須 |  デフォルト値  |
    |---|---|:---:|---|
-   | `trackingServer` | メディア分析用のトラッキングサーバー。これは、Analytics トラッキングサーバーとは異なります。 | ○ | 空の文字列 |
+   | `trackingServer` | メディア分析用のトラッキングサーバー。Analytics トラッキングサーバーとは異なります。 | ○ | 空の文字列 |
    | `channel` | チャネル名 | × | 空の文字列 |
    | `ovp` | コンテンツの配布に使用するオンラインメディアプラットフォームの名前。 | × | 空の文字列 |
-   | `appVersion` | メディアプレーヤーアプリ／SDK のバージョン。 | × | 空の文字列 |
-   | `playerName` | 使用中のビデオプレーヤーの名前（例："AVPlayer"、"HTML5 Player"、"My Custom Player"）。 | × | 空の文字列 |
-   | `ssl` | 呼び出しが HTTPS を使用しておこなわれる必要があるかどうかを示します。 | × | false |
+   | `appVersion` | メディアプレーヤーアプリケーション／SDK のバージョン。 | × | 空の文字列 |
+   | `playerName` | 使用中のメディアプレーヤーの名前（例：「AVPlayer」、「HTML5 Player」、「My Custom Player」）。 | × | 空の文字列 |
+   | `ssl` | 呼び出しを HTTPS 経由でおこなう必要があるかどうかを示します。 | × | false |
    | `debugLogging` | デバッグのログが有効になっているかどうかを示します。 | × | false |
 
 1. `MediaHeartbeatDelegate` を実装します。
@@ -119,9 +119,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## 検証{#validate}
+## 検証 {#validate}
 
-Media Analytics 追跡実装は、2 つのタイプのトラッキングコールを生成します。
+Media Analytics トラッキング実装は、2 つのタイプのトラッキングコールを生成します。
 
 * メディア開始および広告開始の呼び出しは Adobe Analytics（AppMeasurement）サーバーに直接送信されます。
 * ハートビート呼び出しは、Media Analytics（ハートビート）トラッキングサーバーに送信され、そこで処理されて、Adobe Analytics サーバーに渡されます。
@@ -147,7 +147,7 @@ Media Analytics 追跡実装は、2 つのタイプのトラッキングコー�
 | Chromecast | [Chromecast 向け設定 ](chromecast_1.x_sdk.pdf) |
 | iOS | [iOS 向け設定 ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript 向け設定 ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android：   [Media Analytics の設定](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS：   [Media Analytics の設定](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：   [Media Analytics の設定](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android： [Media Analytics の設定](https://helpx.adobe.com/jp/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS： [Media Analytics の設定](https://helpx.adobe.com/jp/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS： [Media Analytics の設定](https://helpx.adobe.com/jp/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [TVML 向け設定 ](vhl_tvml.pdf) |
 
 ## Primetime メディア SDK のドキュメント {#primetime-docs}
