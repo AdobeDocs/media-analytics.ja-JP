@@ -50,7 +50,8 @@ Media.trackUsingContextData
 </td>
 <td>
 <pre>
-s.Media.trackUsingContextData = true;
+s.Media.trackUsingContextData
+  = true;
 </pre>
 </td>
 <td>該当なし
@@ -150,7 +151,8 @@ Media.autoTrack
 </td>
 <td>
 <pre>
-s.Media.autoTrack = true;
+s.Media.autoTrack
+  = true;
 </pre>
 </td>
 <td>該当なし
@@ -212,7 +214,8 @@ Media.playerName
 </td>
 <td>
 <pre>
-s.Media.playerName = "Custom Player Name"
+s.Media.playerName
+  = "Custom Player Name"
 </pre>
 </td>
 <td>
@@ -281,7 +284,8 @@ Media.segmentByMilestones
 </td>
 <td>
 <pre>
-s.Media.segmentByMilestones = true;
+s.Media.segmentByMilestones
+  = true;
 </pre>
 </td>
 <td>該当なし
@@ -429,7 +433,10 @@ Media.open
 </td>
 <td>
 <pre>
-s.Media.open(mediaName,mediaLength,mediaPlayerName)
+s.Media.open(
+  mediaName,
+  mediaLength,
+  mediaPlayerName)
 </pre>
 </td>
 <td>
@@ -520,7 +527,14 @@ Media.openAd
 </td>
 <td>
 <pre>
-s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM)
+s.Media.openAd(
+  name,
+  length,
+  playerName,
+  parentName,
+  parentPod,
+  parentPodPosition,
+  CPM)
 </pre>
 </td>
 <td>
@@ -695,7 +709,9 @@ Media.click
 </td>
 <td>
 <pre>
-s.Media.click(name,offset)
+s.Media.click(
+  name,
+  offset)
 </pre>
 </td>
 <td>該当なし
@@ -709,7 +725,8 @@ Media.close
 </td>
 <td>
 <pre>
-s.Media.close(mediaName)
+s.Media.close(
+  mediaName)
 </pre>
 </td>
 <td>
@@ -729,7 +746,9 @@ Media.complete
 </td>
 <td>
 <pre>
-s.Media.complete(name,offset)
+s.Media.complete(
+  name,
+  offset)
 </pre>
 </td>
 <td>
@@ -751,7 +770,12 @@ Media.play
 </td>
 <td>
 <pre>
-s.Media.play(name,offset,segmentNum,segment,segmentLength)
+s.Media.play(
+  name,
+  offset,
+  segmentNum,
+  segment,
+  segmentLength)
 </pre>
 </td>
 <td>
@@ -773,7 +797,9 @@ Media.stop
 </td>
 <td>
 <pre>
-s.Media.stop(mediaName,mediaOffset)
+s.Media.stop(
+  mediaName,
+  mediaOffset)
 </pre>
 </td>
 <td>
@@ -856,7 +882,8 @@ Media.track
 </td>
 <td>
 <pre>
-s.Media.track(mediaName)
+s.Media.track(
+  mediaName)
 </pre>
 </td>
 <td>該当なし
