@@ -2,7 +2,7 @@
 audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
-sub-product: media analytics
+sub-product: Media Analytics
 translation-type: ht
 source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 
@@ -23,7 +23,7 @@ source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
    + [前提条件](intro-to-ava/prereqs.md)
    + 実装パス {#implementation-paths}
       + [概要](intro-to-ava/implementation-paths/implementation-paths.md)
-      + [クライアント側](intro-to-ava/implementation-paths/client-side-path.md)
+      + [クライアントサイド ](intro-to-ava/implementation-paths/client-side-path.md)
       + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)
       + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
    + [Audience Manager の有効化](intro-to-ava/am-enablement.md)
@@ -186,9 +186,9 @@ source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
       + [メディアの概要](media-reports/media-default-reports/media-reports-overview.md)
       + [メディアの詳細](media-reports/media-default-reports/media-reports-detail.md)
       + [メディア視聴時間帯](media-reports/media-default-reports/media-reports-daypart.md)
-      + [メディア同時ビューア](media-reports/media-default-reports/media-concurrent-viewers.md)
-      + [同時ビューア JSON レポートデータの取得](media-reports/media-default-reports/get-concurrent-json.md)
-   + [メディアワークスペースのテンプレート](media-reports/media-workspace-templates.md)
+      + [メディア同時閲覧者数](media-reports/media-default-reports/media-concurrent-viewers.md)
+      + [同時閲覧者数 JSON レポートデータの取得](media-reports/media-default-reports/get-concurrent-json.md)
+   + [Media Workspace のテンプレート](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
 + その他のリソース {#additional-resources}
    + [リリースノート](additional-resources/doc-updates.md)
