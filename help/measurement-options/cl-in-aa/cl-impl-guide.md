@@ -2,25 +2,25 @@
 title: カスタムリンク導入ガイド
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
 # カスタムリンク導入ガイド {#custom-link-implementation-guide}
 
-カスタムビデオトラッキングでは、Analytics `appMeasurement` 内の[カスタムリンクコードを使用した手動リンクトラッキング](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/link_manual.html)を使用します。ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
+カスタムビデオトラッキングでは、Analytics `appMeasurement` 内の[カスタムリンクコードを使用した手動リンクトラッキング](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)を使用します。ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
 
 * JavaScript の場合：`s.tl()` 関数
-* モバイルアプリの場合：[trackAction() Android](https://marketing.adobe.com/resources/help/ja_JP/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/ja_JP/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* モバイルアプリの場合：[trackAction() Android](hhttps://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html)、[trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * Data Insertion API の場合：[linktype タグ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 要件
 
-* ビデオプレーヤー API のイベントおよびデータへのアクセス
-* スクリプトを追加できること（分析 SDK を使用している場合）
-* （カスタムスクリプトまたはハードコーディングで）トラッキングビーコンを追加できること（Data Insertion API を使用している場合）
+* ビデオプレーヤー API イベントとデータへのアクセス
+* Analytics SDK を使用する場合のスクリプトの追加機能
+* データ挿入 API を使用する場合に、トラッキングビーコン（カスタムスクリプティングまたはハードコード）を追加する機能
 
 ## メタデータ
 
@@ -45,9 +45,9 @@ if (e.type == "ended") {
 
 ## カスタムリンクを使用する理由
 
-* 必要な前提条件が最小限である。
+* 必要最小限の前提条件
 * NoScript を含むあらゆるプラットフォームで動作する。
-* 滞在時間や四分位数などの計算はすべてカスタムスクリプトで計算する必要がある。
+* 滞在時間や四分位数などの計算は、カスタムスクリプトで計算する必要があります
 * 隠されたライブラリやスクリプトがなく、非常に簡単。
 * ビデオデータのあらゆる側面に対する完全な制御。
 
