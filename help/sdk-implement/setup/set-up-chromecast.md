@@ -2,8 +2,8 @@
 title: Chromecast のセットアップ
 description: Chromecast での実装用のメディア SDK アプリケーション設定です。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -15,8 +15,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 _Chromecast JavaScript SDK または標準の JavaScript SDK のどちらを使用すべきでしょうか。_
 
 正解は「Chromecast」です。理由は以下のとおりです。
-* 標準の JS SDK の AppMeasurement および VisitorAPI ライブラリは、OTT プラットフォームでの動作が認定されていません。Chromecast JS SDK では、ビデオハートビートライブラリ（VHL）、Analytics および VisitorAPI が Chromecast 向けに認定された 1 つの統合 SDK に組み込まれています。
-* この Chromecast SDK は標準の JS SDK より大幅に軽量です。これは、OTT プラットフォームで使用されるローエンドのハードウェアでは非常に重要です。
+* Standard JS SDK の AppMeasurement ライブラリと VisitorAPI ライブラリは、OTT プラットフォームでの使用は認定されていません。Chromecast JS SDK では、ビデオハートビートライブラリ（VHL）、Analytics および VisitorAPI が Chromecast 向けに認定された 1 つの統合 SDK に組み込まれています。
+* Chromecast SDK は、標準の JS SDK よりもはるかに軽量です。これは、OTT プラットフォームが使用するロワーエンドハードウェアにとって非常に重要な点です。
 
 ## 前提条件
 
@@ -25,7 +25,7 @@ _Chromecast JavaScript SDK または標準の JavaScript SDK のどちらを使�
    * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * *プレーヤー情報を提供する API* - メディア名や再生ヘッドなどの情報がこれに該当します。
 
-Adobe Mobile Services は、モバイルアプリ用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。今回は、Adobe Analytics および Adobe Target ソリューションのアプリ分析およびターゲティング機能とのシームレスな統合を提供します。詳しくは、[Adobe Mobile Services のドキュメント](https://marketing.adobe.com/resources/help/ja_JP/mobile/)を参照してください。
+Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。今回は、Adobe Analytics および Adobe Target ソリューションのアプリ分析およびターゲティング機能とのシームレスな統合を提供します。詳しくは、[Adobe Mobile Services のドキュメント](https://docs.adobe.com/content/help/ja-JP/mobile-services/using/home.html)を参照してください。
 
 Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると、JavaScript で記述された Chromecast アプリケーションを測定したり、Audience Management を使用してオーディエンスデータを利用および収集したり、ビデオハートビートを使用してビデオエンゲージメントを測定したりできます。
 
@@ -130,8 +130,8 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
    | メソッド | 説明 |
    | --- | --- |
    | `getMarketingCloudID()` | 訪問者 ID サービスから Experience Cloud 訪問者 ID を取得します。<br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
-   | `syncIdentifiers()` | Experience Cloud 訪問者 ID とともに、各訪問者に関連付けることができる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs()` に相当します。例：<br/><br/>`var identifiers = {};`<br/><br/>`identifiers["idType"] = "idValue";`<br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+   | `syncIdentifiers()` | Experience Cloud 訪問者 ID を使用して、各訪問者に関連付けることのできる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs()` に相当します。例：<br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
 
