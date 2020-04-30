@@ -1,5 +1,5 @@
 ---
-title: クライアント側
+title: クライアントサイド
 description: null
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 translation-type: ht
@@ -8,11 +8,11 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 ---
 
 
-# クライアント側 {#client-side}
+# クライアントサイド {#client-side}
 
 Media Analytics（ハートビート）は、アドビの標準化されたメディアトラッキングソリューションです。従来のアドビのマイルストーンモデルの後継モデルです。
 
-クライアント側統合は、Media Analytics のみを使用して実装されます。メディア SDK またはメディアコレクション API（またはその両方）を実装することを選択できます。クライアント側パスは、お客様のプレーヤーや、Brightcove、Ooyala、thePlatform などの OVP プレーヤーで使用できます。
+クライアントサイドの統合は、Media Analytics でのみ実装されます。メディア SDK またはメディアコレクション API（またはその両方）を実装できます。クライアントサイドパスは、Brightcove、Ooyala、Platform など、顧客や OVP プレーヤーを含む任意のプレーヤーで使用できます。
 
 Media Analytics が目的のパスの場合は、[メディア SDK の実装](/help/sdk-implement/setup/setup-overview.md)および[メディアコレクション API](/help/media-collection-api/mc-api-overview.md) を参照してください。
 
