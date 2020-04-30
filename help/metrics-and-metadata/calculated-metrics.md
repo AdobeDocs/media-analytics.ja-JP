@@ -24,10 +24,10 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | 平均チャプター閲覧時間 | チャプター開始あたりのチャプター閲覧時間（HH:MM:SS） | `Chapter Time Spent / Chapter Start` |
 | メディア完了率 | メディア開始に対するコンテンツ完了率（％） | `Content Completes/ Media Starts` |
 | コンテンツ完了率 | コンテンツ開始に対するコンテンツ完了率（％） | `Content Completes / Content Starts` |
-| 広告完了率 | 広告開始に対する広告完了率（％） | `Ad Completes / Ad Starts` |
+| 広告完了率 | 広告開始に対する広告完了の割合（％） | `Ad Completes / Ad Starts` |
 | チャプター完了率 | チャプター開始に対するチャプター完了率（％） | `Chapter Completes / Chapter Starts` |
-| 開始前にドロップ率 | メディア開始に対する開始前のドロップ率 (%) | `Drops before Starts / Media Starts` |
-| コンテンツ一時停止時間率 | コンテンツ視聴時間に対する一時停止時間合計の率（％） | `Total Pause Duration / Content Time Spent` |
-| コンテンツバッファー時間率 | コンテンツ視聴時間に対する合計バッファー時間の率（％） | `Total Buffer Duration / Content Time Spent` |
-| コンテンツ開始時間率 | コンテンツ視聴時間に対する開始時間の率（％） | `Time to Start / Content Time Spent` |
-| 広告視聴時間率 | コンテンツ視聴時間に対する広告滞在時間の率（％） | `Ad Time Spent / Content Time Spent` |
+| 開始前にドロップ率 | メディア開始に対する開始前のドロップ率（％） | `Drops before Starts / Media Starts` |
+| コンテンツ一時停止時間率 | コンテンツ視聴時間に対する合計一時停止時間の割合（％） | `Total Pause Duration / Content Time Spent` |
+| コンテンツバッファー時間率 | コンテンツ視聴時間に対する合計バッファー時間の割合（％） | `Total Buffer Duration / Content Time Spent` |
+| コンテンツ開始時間率 | コンテンツ視聴時間に対する開始までの時間の割合（％） | `Time to Start / Content Time Spent` |
+| 広告視聴時間率 | コンテンツ視聴時間に対する広告視聴時間の割合（％） | `Ad Time Spent / Content Time Spent` |
