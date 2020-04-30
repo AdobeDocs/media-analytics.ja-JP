@@ -48,7 +48,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 >[!IMPORTANT]
 >
->***広告トラッキング -**`adBreak`内の広告のみ追跡できます*。
+>***広告トラッキング -**`adBreak`*内の広告のみ追跡できます。
 >
 >広告の前後に `adBreakStart` と `adBreakComplete` の「ブックエンド」がない場合、`adStart` および `adComplete` イベントは単に無視され、対応する広告期間がメインコンテンツ期間として追跡されます。これは、Adobe Analytics で使用できる集計データに大きな影響を与える可能性があります。
 
@@ -69,9 +69,9 @@ Access-Control-Expose-Headers Location
 
 | HTTP 応答コード | 説明 | クライアントのアクション項目 |
 |---|---|---|
-| **204** | **No Content.**<br/><br/> ハートビート呼び出しが成功しました。 | 該当なし |
-| **400** | **Bad Request.**<br/><br/> リクエストの形式が正しくありません。 | リクエストタイプについては、[JSON 検証スキーマ](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)を確認してください。 |
-| **404** | **Not Found.** <br/><br/> メディアセッションのセッション ID がバックエンドサービスに見つかりませんでした。 | クライアントアプリケーションでは [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
-| **410** | **Gone.** <br/><br/> メディアセッションがバックエンドサービスに見つかりましたが、クライアントがそのセッションに関するアクティビティを報告できなくなっています。 | クライアントアプリケーションでは [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
+| **204** | **コンテンツがありません。**<br/><br/> ハートビート呼び出しが成功しました。 | 該当なし |
+| **400** | **不正なリクエストです。**<br/><br/> リクエストの形式が正しくありません。 | リクエストタイプについては、[JSON 検証スキーマ](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)を確認してください。 |
+| **404** | **見つかりません。** <br/><br/> メディアセッションのセッション ID がバックエンドサービスに見つかりませんでした。 | クライアントアプリケーションでは [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
+| **410** | **なくなりました。** <br/><br/> メディアセッションがバックエンドサービスに見つかりましたが、クライアントがそのセッションに関するアクティビティを報告できなくなっています。 | クライアントアプリケーションでは [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
 | **500** | **サーバーエラー** | 該当なし |
 
