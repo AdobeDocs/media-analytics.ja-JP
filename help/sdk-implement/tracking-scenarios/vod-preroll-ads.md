@@ -15,14 +15,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | トリガー | ハートビートメソッド | ネットワーク呼び出し   | メモ   |
 | --- | --- | --- | --- |
 | ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
-| 広告が開始される。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start、Heartbeat Ad Start |  |
-| 広告 #1 のフレームが再生される。 | `trackPlay` | Heartbeat Ad Play | メインコンテンツの前に広告コンテンツを再生し、ハートビートは、広告が開始する際に開始されます。 |
-| 広告が再生される。 |  | Ad Heartbeats |  |
-| 広告 #2の再生が完了する。 | `trackEvent:trackAdComplete` | Heartbeat Ad Complete | 広告の終わりに達しました。 |
-| 広告 #2 の最初のフレームが再生される。 | `trackEvent:AdStart` | Analytics Ad Start、Heartbeat Ad Start |  |
-| 広告が再生される。 |  | Ad Heartbeats |  |
-| 広告 #2の再生が完了する。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | 広告の終わりとポッドの終わりに達しました。 |
-| コンテンツが再生される。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。 |
+| 広告が開始されます。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start、Heartbeat Ad Start |  |
+| 広告 #1 のフレームが再生されます。 | `trackPlay` | Heartbeat Ad Play | メインコンテンツの前に広告コンテンツを再生し、ハートビートは、広告が開始する際に開始されます。 |
+| 広告が再生されます。 |  | Ad Heartbeats |  |
+| 広告 #2の再生が完了します。 | `trackEvent:trackAdComplete` | Heartbeat Ad Complete | 広告の終わりに到達しました。 |
+| 広告 #2 の最初のフレームが再生されます。 | `trackEvent:AdStart` | Analytics Ad Start、Heartbeat Ad Start |  |
+| 広告が再生されます。 |  | Ad Heartbeats |  |
+| 広告 #2の再生が完了します。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | 広告の終わりとポッドの終わりに達しました。 |
+| コンテンツが再生されます。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。 |
 | コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。 |
 | セッションが終了する | `trackSessionEnd` |  | `SessionEnd` |
 
@@ -54,8 +54,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
-| `s:asset:ad_id` | &lt;広告 ID&gt; |  |
-| `s:asset:pod_id` | &lt;広告ポッド ID&gt; |  |
+| `s:asset:ad_id` | &lt;広告 ID> |  |
+| `s:asset:pod_id` | &lt;広告ポッド ID> |  |
 
 `Heartbeat Content Complete` 呼び出しと同様、再生が完了した（再生ヘッドの終わりに達した）場合、`Heartbeat Ad Complete` 呼び出しが送信されます。この呼び出しは、他の `Heartbeat Ad` 呼び出しに似ていますが、いくつか特有のものが含まれます。
 
