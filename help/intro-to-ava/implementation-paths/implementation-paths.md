@@ -14,7 +14,7 @@ Media Analytics（ハートビート）は、アドビの標準化されたビ�
 
 Media Analytics には独自の SKU があり、サーバー呼び出しに基づく価格モデルからビデオのストリーミングに基づくモデルに変更されているので、実装パスごとにお客様は営業担当者またはアカウントマネージャーに連絡して新たに販売契約を結ぶ必要があります。
 
-* **クライアント側 -** これは Media Analytics のみの統合です。ビデオハートビート SDK やメディアコレクション API の統合を選択できます。このパスは、お客様のプレーヤーや、Brightcove、Ooyala、thePlatform などの OVP プレーヤーで使用できます。
+* **クライアントサイド -** これは Media Analytics のみの統合です。ビデオハートビート SDK やメディアコレクション API 統合を選択できます。このパスは、Brightcove、Ooyala、Platform など、顧客や OVP プレーヤーを含む任意のビデオプレーヤーで使用できます。
 
    Media Analytics が目的のパスの場合は、[メディア SDK の実装](/help/sdk-implement/setup/setup-overview.md)および[メディアコレクション API](/help/media-collection-api/mc-api-overview.md) を参照してください。
 
@@ -27,11 +27,11 @@ Media Analytics には独自の SKU があり、サーバー呼び出しに基�
    Experience Platform Launch について詳しくは、[Adobe Media Analytics for Audio and Video 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)を参照してください。
 * **Adobe Primetime -** Adobe Primetime は、コンテンツプログラマーやディストリビューターが、接続されたすべての画面でメディアを収益化できるようにする Adobe Experience Cloud ソリューションです。
 
-   Primetime は、ビデオパブリッシング、広告、パーソナライゼーション、アナリティクス用のモジュール式プラットフォームを提供することで、各種デバイスをまたぐグローバルオーディエンスへのリーチ、収益化、活性化における複雑性を軽減します。また、Primetime は以下を中心としたソリューションと価値を提供します。
+   Primetime は、ビデオパブリッシング、広告、パーソナライゼーション、アナリティクス用のモジュール式プラットフォームを提供することで、各種デバイスをまたぐグローバルオーディエンスへのリーチ、収益化、活性化における複雑性を軽減します。さらに、Primetime オファーは、次の点に関するソリューションと価値を提供します。
 
    * 線形および VOD コンテンツタイプの正確な測定のサポート。
-   * 動的広告挿入を使用した（または使用しない）広告ブレーク測定のサポート。
-   * TVSDK のシームレスな広告挿入モデルにより、広告再生の直接測定が可能になり、精度が向上します。
+   * 動的な広告挿入を使用する（または使用しない）広告ブレークの測定をサポートします。
+   * TVSDK のシームレスな広告挿入モデルを使用すると、広告の再生を直接測定する分析が可能になり、精度が向上します。
    * 充実したイベントとメタデータが、QoS バッファー、モバイル接続中断の問題、エンドユーザーのインタラクション（モバイルでのシーク、一時停止、バックグラウンド実行など）に関する正確性を保ちます。
 <!--
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
