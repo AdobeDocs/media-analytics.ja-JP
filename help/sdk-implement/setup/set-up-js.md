@@ -2,8 +2,8 @@
 title: JavaScript のセットアップ
 description: JavaScript での実装用のメディア SDK アプリケーション設定です。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ## 前提条件
 
 * **有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
-* **JavaScript 向け`AppMeasurement`をメディアアプリケーションに実装** Adobe Mobile SDK のドキュメントについて詳しくは、[JavaScript を使用した Analytics の実装](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/js_implementation.html)を参照してください。
+* **JavaScript 向け`AppMeasurement`をメディアアプリケーションに実装** Adobe Mobile SDK のドキュメントについて詳しくは、[JavaScript を使用した Analytics の実装](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/js/overview.html)を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
