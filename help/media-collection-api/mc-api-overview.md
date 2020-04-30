@@ -31,13 +31,13 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ### API 呼び出し {#mc-api-calls}
 
-* **`sessions`**- サーバーとのセッションを確立し、後続の`events`呼び出しで使用するセッション ID を返します。アプリは、トラッキングセッションの開始時にこれを 1 回呼び出します。
+* **`sessions`-** サーバーとのセッションを確立し、後続の`events`呼び出しで使用するセッション ID を返します。アプリは、トラッキングセッションの開始時にこれを 1 回呼び出します。
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`**- メディアトラッキングデータを送信します。
+* **`events`-** メディアトラッキングデータを送信します。
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
