@@ -2,8 +2,8 @@
 title: iOS のセットアップ
 description: iOS での実装用のメディア SDK アプリケーション設定です。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -13,11 +13,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ## 前提条件
 
 * **メディア SDK 用の有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
-* **iOS 向け ADBMobile をアプリケーションに実装** Adobe Mobile SDK ドキュメントについて詳しくは、[Experience Cloud ソリューション用 iOS SDK 4.x](https://marketing.adobe.com/resources/help/ja_JP/mobile/ios/) を参照してください。
+* **iOS 向け ADBMobile をアプリケーションに実装** Adobe Mobile SDK ドキュメントについて詳しくは、[Experience Cloud ソリューション用 iOS SDK 4.x](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/overview.html) を参照してください。
 
    >[!IMPORTANT]
    >
-   >iOS 9 から、Apple は App Transport Security（ATS）という機能を導入しました。これはアプリで使用するプロトコルや暗号を業界標準のものに制限することで、ネットワークセキュリティを改善するための機能です。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。ATS について詳しくは、[App Transport Security](https://marketing.adobe.com/resources/help/ja_JP/mobile/ios/app_transport_security.html) を参照してください。
+   >iOS 9 から、Apple は App Transport Security（ATS）という機能を導入しました。この機能は、アプリケーションで業界標準のプロトコルと暗号のみを使用することで、ネットワークセキュリティの向上を目的としています。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。ATS について詳しくは、[App Transport Security](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html) を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
@@ -44,15 +44,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       1. Xcode IDE を起動して、アプリを開きます。
       1. **[!UICONTROL Project Navigator]** で、`libs` ディレクトリをドラッグして、プロジェクトにドロップします。
 
-      1. 「**[!UICONTROL Copy Items if Needed]**」チェックボックスが選択されていること、「**[!UICONTROL Create Groups]**」が選択されていること、および「**[!UICONTROL Add to Target]**」にあるチェックボックスが選択されていないことを確認します。
+      1. Ensure that the **[!UICONTROL Copy Items if Needed]** checkbox is selected, the **[!UICONTROL Create Groups]** is selected, and none of the checkboxes in **[!UICONTROL Add to Target]** are selected.
 
          ![](assets/choose-options_ios.png)
 
-      1. **[!UICONTROL Finish]**&#x200B;をクリックします。
-      1. **[!UICONTROL Project Navigator]** で、アプリを選択し、ターゲットを選択します。
-      1. 「**[!UICONTROL 一般]**」タブの「**[!UICONTROL リンクされたフレームワーク]**」および「**[!UICONTROL ライブラリ]**」セクションで、必要なフレームワークとライブラリをリンクさせます。
+      1. クリック **[!UICONTROL Finish]**.
+      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
+      1. Link the required frameworks and libraries in the **[!UICONTROL Linked Frameworks]** and **[!UICONTROL Libraries]** section on the **[!UICONTROL General]** tab.
 
-         **iOS アプリのターゲット：**
+         **iOS App Targets:**
 
          * **AdobeMobileLibrary.a**
          * **MediaSDK.a**
@@ -63,7 +63,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
          * **MediaSDK_TV.a**
          * **libsqlite3.0.tbd**
          * **SystemConfiguration.framework**
-      1. アプリがエラーなくビルドされることを確認します。
+      1. アプリケーションがエラーなくビルドされることを確認します。
 
 
 
@@ -146,7 +146,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. プロジェクトの `lib` フォルダーに `VideoHeartbeat_TV.a` ライブラリファイルをドラッグします。
 
-1. tvOS アプリのターゲットの「**[!UICONTROL Build Phases（ビルドフェーズ）]**」タブで、「**[!UICONTROL Link Binary with Libraries（バイナリをライブラリとリンク）]**」を展開して、以下のライブラリを追加します。
+1. In the **[!UICONTROL Build Phases]** tab of your tvOS app’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
