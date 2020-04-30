@@ -2,7 +2,7 @@
 title: SDK のダウンロード
 description: Android、iOS、JavaScript、Chromecast および Roku を含む、利用可能なプラットフォームの SDK ダウンロードのリンクです。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8589a89847f4c3cc38317c1fe65e4e2efb9d8875
 
 ---
@@ -14,9 +14,9 @@ source-git-commit: 8589a89847f4c3cc38317c1fe65e4e2efb9d8875
 
 | メディア SDK 2.x | 最新のメディア SDK のダウンロード |  API   |  ドキュメント  |
 | --- | --- | --- | --- |
-| Android／FireTV | [Android 用メディア SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android APIリファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android のセットアップ](/help/sdk-implement/setup/set-up-android.md) |
+| Android／FireTV | [Android 用メディア SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android のセットアップ](/help/sdk-implement/setup/set-up-android.md) |
 | iOS／Apple TV | [iOS v2.2.7 用メディア SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.7)（レガシー 2.0 SDK の入手方法については、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください） | [iOS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS のセットアップ](/help/sdk-implement/setup/set-up-ios.md) |
-| JavaScript | [JS 用メディア SDK v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.1) | [JS APIリファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript のセットアップ](/help/sdk-implement/setup/set-up-js.md) |
+| JavaScript | [JS 用メディア SDK v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.1) | [JS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript のセットアップ](/help/sdk-implement/setup/set-up-js.md) |
 | Roku | [Roku 用メディア SDK v2.2.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.3) |  | [Roku のセットアップ](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Chromecast 用メディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast のセットアップ ](/help/sdk-implement/setup/set-up-chromecast.md) |
 
@@ -24,15 +24,15 @@ source-git-commit: 8589a89847f4c3cc38317c1fe65e4e2efb9d8875
 
 | MA Launch コンポーネント   | ダウンロード | ドキュメント |
 |---|---|---|
-| **MA Launch 拡張機能** | [サンプルの HTML5 プレーヤー拡張機能](https://github.com/adobe/reactor-adobe-va-sample-player) | [Adobe Media Analytics for Audio and Video 拡張機能](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) |
+| **MA Launch 拡張機能** | [サンプルの HTML5 プレーヤー拡張機能](https://github.com/adobe/reactor-adobe-va-sample-player) | [Adobe Media Analytics for Audio and Video 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) |
 
 ## メディア SDK 1.x のダウンロード {#download-the-1.x-media-sDKs}
 
 | SDK 1.x |  メディア SDK のダウンロード |  入門ガイド |
 | --- | --- | --- |
-| Android | [Android v1.5.8用SDK](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [はじめに — Media 1.x for Android](setup/vhl-dev-guide-v15_android.pdf) |
-| iOS | [SDK for iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [はじめに — iOS用Media 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [SDK for JavaScript v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [はじめに — Media 1.x for JS](setup/vhl-dev-guide-v15_js.pdf) |
-| TVML | [TVML v1.0.0用SDK](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [はじめに — TVML用Media 1.x](setup/vhl_tvml.pdf) |
+| Android | [Android 用 SDK v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [はじめに - Android 用メディア 1.x](setup/vhl-dev-guide-v15_android.pdf) |
+| iOS | [iOS 用 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [はじめに - iOS 用メディア 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [JavaScript 用 SDK v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [はじめに - JS 用メディア 1.x](setup/vhl-dev-guide-v15_js.pdf) |
+| TVML | [TVML 用 SDK v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [はじめに - TVML 用メディア 1.x](setup/vhl_tvml.pdf) |
 | Apple TV | Apple TV v1.0.0 用 SDK（レガシー SDK 1.x の入手方法については、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください） | [はじめに - Apple TV 用メディア 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | Chromecast v1.0.0 用 SDK（レガシー SDK 1.x の入手方法については、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください） | [はじめに - Chromecast 用メディア 1.x](setup/chromecast_1.x_sdk.pdf) |
