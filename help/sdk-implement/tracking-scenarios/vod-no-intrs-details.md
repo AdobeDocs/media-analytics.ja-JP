@@ -1,6 +1,6 @@
 ---
 title: 広告のない VOD 再生
-description: 広告を含まない VOD 再生の追跡の例です。
+description: 広告を含まない VOD 再生のトラッキングの例です。
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
@@ -12,14 +12,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## シナリオ {#scenario}
 
-このシナリオは、広告のない 1 つの VOD アセットで構成され、最初から最後まで 1 回再生されます。
+このシナリオには、広告のない 1 つの VOD アセットが含まれ、最初から最後まで 1 回再生されます。
 
 | トリガー | ハートビートメソッド | ネットワーク呼び出し | メモ   |
 |---|---|---|---|
 | ユーザーが&#x200B;**[!UICONTROL 再生]**&#x200B;をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | これは、再生をクリックするユーザーか、自動再生イベントである可能性があります。 |
-| メディアの最初のフレーム | `trackPlay` | Heartbeat Content Play | このメソッドは、タイマーをトリガーし、これ以降、ハートビートは、再生が継続する間、10 秒ごとに送信されます。 |
+| メディアの最初のフレーム | `trackPlay` | Heartbeat Content Play | このメソッドは、タイマーをトリガーし、以降、再生中 10 秒ごとにハートビートが送信されます。 |
 | コンテンツ再生 |  | Content Heartbeats |  |
-| コンテンツが完了した | `trackComplete` | Heartbeat Content Complete | *Complete* は、再生ヘッドの終わりに達したことを意味します。 |
+| コンテンツ完了 | `trackComplete` | Heartbeat Content Complete | *Complete* は、再生ヘッドの終わりに達したことを意味します。 |
 
 ## パラメーター {#parameters}
 
@@ -29,17 +29,17 @@ Heartbeat 呼び出し時に確認される同じ値の多くは、Adobe Analyti
 
 | パラメーター | 値 | メモ   |
 |---|---|---|
-| `s:sc:rsid` | &lt;Adobe レポートスイート ID&gt; |  |
-| `s:sc:tracking_server` | &lt;Analytics トラッキングサーバー URL&gt; |  |
+| `s:sc:rsid` | &lt;Adobe レポートスイート ID> |  |
+| `s:sc:tracking_server` | &lt;Analytics トラッキングサーバー URL> |  |
 | `s:user:mid` | 設定される必要がある | `Adobe Analytics Content Start` 呼び出しの mid 値と一致する必要がある。 |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;メディア名&gt; |  |
+| `s:asset:media_id` | &lt;メディア名> |  |
 | `s:meta:*` | オプション | メディアに設定されたカスタムメタデータ。 |
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
-これらのパラメーターは、`Heartbeat Content Start` 呼び出しとほとんど同じように見えますが、重要な違いは `s:event:type` パラメーターです。その他のパラメーターは、そのまま存在する必要があります。
+これらのパラメーターは、`Heartbeat Content Start` 呼び出しとほとんど同じように見えますが、重要な違いは `s:event:type` パラメーターです。その他のパラメーターはすべて必要です。
 
 | パラメーター | 値 | メモ   |
 |---|---|---|
@@ -48,18 +48,18 @@ Heartbeat 呼び出し時に確認される同じ値の多くは、Adobe Analyti
 
 ## Content Heartbeats {#content-heartbeats}
 
-メディア再生中に、タイマーが少なくとも 1 つのハートビートを 10 秒ごとに送信します。それらのハートビートには、再生、広告、バッファーなどに関する情報が含まれています。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外ですが、重要な問題は、ハートビートは、再生が続く間、常にトリガーされるということです。
+メディア再生中に、タイマーが少なくとも 1 つのハートビートを 10 秒ごとに送信します。これらのハートビートには、再生、広告、バッファリングなどに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外ですが、重要な問題は、ハートビートは、再生が続く間、常にトリガーされるということです。
 
-Content Heartbeats で、以下のパラメーターを探します。
+コンテンツハートビートで、次のパラメーターを探します。
 
 | パラメーター | 値 | メモ   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;再生ヘッドの位置&gt; 例：50,60,70 | このパラメーターは、再生ヘッドの現在の位置を反映します。 |
+| `l:event:playhead` | &lt;再生ヘッドの位置> 例：50、60、70 | このパラメーターは、再生ヘッドの現在の位置を反映します。 |
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
-再生が完了した場合、つまり、再生ヘッドの終わりに達した場合、`Heartbeat Content Complete` 呼び出しが送信されます。この呼び出しは、他のハートビート呼び出しに似ていますが、いくつかの特有のパラメーターが含まれています。
+再生が完了した場合、つまり、再生ヘッドの終わりに達した場合、`Heartbeat Content Complete` 呼び出しが送信されます。この呼び出しは、他のハートビート呼び出しに似ていますが、特定のパラメーターがいくつか含まれています。
 
 | パラメーター | 値 | メモ   |
 |---|---|---|
@@ -68,7 +68,7 @@ Content Heartbeats で、以下のパラメーターを探します。
 
 ## サンプルコード {#sample-code}
 
-このシナリオでは、コンテンツの長さは 40 秒です。最後まで中断なく再生されます。
+このシナリオでは、コンテンツの長さは 40 秒です。最後まで途切れずに再生されます。
 
 ![](assets/main-content-regular-playback.png)
 
