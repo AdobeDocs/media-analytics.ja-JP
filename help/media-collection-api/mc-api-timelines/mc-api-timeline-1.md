@@ -2,8 +2,8 @@
 title: タイムライン 1 - コンテンツの最後まで視聴
 description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
@@ -696,4 +696,3 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 >[!NOTE]
 >
 >**シークイベントがない-** メディアコレクション API では、`seekStart` および `seekComplete` イベントの明示的なサポートはありません。これは、特定のプレーヤーではエンドユーザーがスクラビングすると、これらのイベントが大量に生成され、数百人のユーザーであってもバックエンドサービスのネットワーク帯域幅のボトルネックになり得るからです。アドビでは、再生ヘッドの位置ではなく、デバイスのタイムスタンプに基づいてハートビート期間を計算することで、シークイベントの明示的なサポートの代わりとしています。
-
