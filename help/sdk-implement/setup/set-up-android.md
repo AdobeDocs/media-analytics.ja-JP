@@ -3,17 +3,25 @@ title: Android のセットアップ
 description: Android での実装用のメディア SDK アプリケーション設定です。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 ---
 
 
 # Android のセットアップ {#set-up-android}
 
+>[!IMPORTANT]
+>
+>2020年10月より、アドビは、バージョン4のモバイルSDKと、スタンドアロンのMedia Analytics SDK for Androidのサポートを終了します。 バージョン4のSDKは引き続きダウンロードして使用できますが、カスタマーケアのサポートとフォーラムへのアクセスは終了します。 Android向けAdobe Experience Platform(AEP)SDKに移行する必要があります。 AEP Mobile SDK（旧称v5）は、Adobe Experience Cloudの機能のみをサポートします。 この変更について詳しくは、 [バージョン4モバイルSDKのサポート終了に関するFAQを参照してください](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。 新しいAEP Mobile SDKに移行することをお勧めします。
+AEP Mobile SDKに移行した後、Adobe Analyticsのオーディオとビデオに対して有効にするには、Analytics Launch拡張機能とMedia Analytics Launch拡張機能を実装する必要があります。 新しいAEP Mobile SDKへの移行について詳しくは、「スタンドアロンメディアSDKからAdobe Launchへの [移行」を参照してください。 ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+
+
 ## 前提条件
+
 
 * **メディア SDK 用の有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
 * **Android 向け ADBMobile をアプリケーションに実装** Adobe Mobile SDK ドキュメントについて詳しくは、[Experience Cloud ソリューション用 Android SDK 4.x](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/overview.html) を参照してください。
+
 * **メディアプレーヤーで以下の機能を設定します。**
    * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * *プレーヤー情報を提供する API* - メディア名や再生ヘッドなどの情報がこれに該当します。
@@ -53,10 +61,10 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 1. ライブラリをインポートします。
 
    ```java
-   import com.adobe.primetime.va.simple.MediaHeartbeat; 
-   import com.adobe.primetime.va.simple.MediaHeartbeat.MediaHeartbeatDelegate; 
-   import com.adobe.primetime.va.simple.MediaHeartbeatConfig; 
-   import com.adobe.primetime.va.simple.MediaObject; 
+   import com.adobe.primetime.va.simple.MediaHeartbeat;
+   import com.adobe.primetime.va.simple.MediaHeartbeat.MediaHeartbeatDelegate;
+   import com.adobe.primetime.va.simple.MediaHeartbeatConfig;
+   import com.adobe.primetime.va.simple.MediaObject;
    ```
 
 1. `MediaHeartbeatConfig` インスタンスを作成します。
@@ -64,14 +72,14 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    `MediaHeartbeatConfig` 初期化のサンプル：
 
    ```java
-   // Media Heartbeat Initialization 
-   config.trackingServer = _<SAMPLE_HEARTBEAT_TRACKING_SERVER>_; 
-   config.channel = <SAMPLE_HEARTBEAT_CHANNEL>; 
-   config.appVersion = <SAMPLE_HEARTBEAT_SDK_VERSION>; 
-   config.ovp =  <SAMPLE_HEARTBEAT_OVP_NAME>; 
-   config.playerName = <SAMPLE_PLAYER_NAME>; 
-   config.ssl = <true/false>; 
-   config.debugLogging = <true/false>; 
+   // Media Heartbeat Initialization
+   config.trackingServer = _<SAMPLE_HEARTBEAT_TRACKING_SERVER>_;
+   config.channel = <SAMPLE_HEARTBEAT_CHANNEL>;
+   config.appVersion = <SAMPLE_HEARTBEAT_SDK_VERSION>;
+   config.ovp =  <SAMPLE_HEARTBEAT_OVP_NAME>;
+   config.playerName = <SAMPLE_PLAYER_NAME>;
+   config.ssl = <true/false>;
+   config.debugLogging = <true/false>;
    ```
 
 1. `MediaHeartbeatDelegate` インターフェイスを実装します。
@@ -83,18 +91,18 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    ```java
    // Replace <bitrate>, <startupTime>, <fps>, and  
    // <droppeFrames> with the current playback QoS values.  
-   @Override 
-   public MediaObject getQoSObject() { 
+   @Override
+   public MediaObject getQoSObject() {
        return MediaHeartbeat.createQoSObject(<bitrate>,  
                                              <startupTime>,  
                                              <fps>,  
-                                             <droppedFrames>); 
-   } 
+                                             <droppedFrames>);
+   }
    
-   //Replace <currentPlaybackTime> with the video player current playback time 
-   @Override 
-   public Double getCurrentPlaybackTime() { 
-       return <currentPlaybackTime>; 
+   //Replace <currentPlaybackTime> with the video player current playback time
+   @Override
+   public Double getCurrentPlaybackTime() {
+       return <currentPlaybackTime>;
    }
    ```
 
@@ -103,7 +111,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    `MediaHeartbeatConfig` インスタンスと `MediaHertbeatDelegate` インスタンスを使用して、`MediaHeartbeat` インスタンスを作成します。
 
    ```java
-   // Replace <MediaHertbeatDelegate> with your delegate instance 
+   // Replace <MediaHertbeatDelegate> with your delegate instance
    MediaHeartbeat _heartbeat =  
      new MediaHeartbeat(<MediaHeartbeatDelegate>, config);
    ```
