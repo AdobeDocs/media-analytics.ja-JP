@@ -3,8 +3,8 @@ audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
-translation-type: ht
-source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
+translation-type: tm+mt
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
@@ -12,20 +12,31 @@ source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 # Adobe Analytics for Audio and Video {#using}
 
 + [Adobe Analytics でのオーディオおよびビデオの測定](media-overview.md)
-+ 測定オプション {#measurement-options}
++ [測定オプション](measurement-options/measurement-options.md)
    + メディアモジュールのマイルストーンの追跡 {#mm-milestone-tracking}
       + [マイルストーンの概要](measurement-options/mm-milestone-tracking/milestone-overview.md)
       + [マイルストーンから Media Analytics への移行](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [マイルストーンからカスタムリンクへの移行](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics のカスタムリンク {#cl-in-aa}
-      + [カスタムリンク導入ガイド](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + [カスタムリンク導入ガイド](measurement-options/cl-in-aa/cl-impl-guide.md) -->
++ [サポートされるデバイス](measurement-options/supported-devices.md)
 + オーディオおよびビデオ分析の概要 {#intro-to-ava}
    + [前提条件](intro-to-ava/prereqs.md)
    + 実装パス {#implementation-paths}
       + [概要](intro-to-ava/implementation-paths/implementation-paths.md)
-      + [クライアントサイド ](intro-to-ava/implementation-paths/client-side-path.md)
       + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)
-      + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
+      + [クライアントサイド ](intro-to-ava/implementation-paths/client-side-path.md)
+      + [その他の実装パス](PATH)
+      + メディアモジュールのマイルストーンの追跡 {#mm-milestone-tracking}
+         + [マイルストーンの概要](measurement-options/mm-milestone-tracking/milestone-overview.md)
+         + [メディアの追跡](measurement-options/tracking-media-overview.md)
+         + [サポートされるデバイス](measurement-options/supported-devices.md)
+         + [マイルストーンから Media Analytics への移行](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+         + [マイルストーンからカスタムリンクへの移行](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+      + Analytics のカスタムリンク {#cl-in-aa}
+         + [カスタムリンク導入ガイド](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + Primetime {#primetime}
+         + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
    + [Audience Manager の有効化](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
    + [SDK のダウンロード](sdk-implement/download-sdks.md)
