@@ -2,8 +2,11 @@
 title: コードの比較：1.x と 2.x
 description: このトピックでは、メディア SDK の 1.x および 2.x バージョンのコードを比較します。
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 **1.x および 2.x サンプルプレーヤーへのリンク：**
 
 * [1.x のサンプルプレーヤー ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x のサンプルプレーヤー ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [2.x のサンプルプレーヤー ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 次の節では、初期化、コア再生、広告再生、チャプター再生、その他のイベントについて、1.x と 2.x のコードを比較します。
 
