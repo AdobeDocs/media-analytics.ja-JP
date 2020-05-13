@@ -18,16 +18,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | トリガー | ハートビートメソッド | ネットワーク呼び出し   | メモ |
 |---|---|---|---|
-| ユーザーが&#x200B;**[!UICONTROL 再生]**&#x200B;をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。これらのネットワーク呼び出しは、[iOS での中断のない再生](vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| チャプターが開始する。 | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
-| チャプターの最初のフレームが再生される。 | `trackPlay` | Heartbeat Chapter Play | メインコンテンツの前にチャプターコンテンツを再生する場合、チャプターが開始する際にハートビートを開始します。 |
-| チャプターが再生される。 |  | Chapter Heartbeats |  |
-| シークが始まり、最初のチャプターをスキップする。 | `trackEvent:trackSeekStart` |  | シーク中にハートビートなし |
-| シークが完了する。 | `trackEvent:trackSeekComplete` |  | ハートビートは、この後再開されます。 |
-| ユーザーが通常のチャプターの境界を越えてシークしたことをアプリケーションが認識する。 | `trackEvent:trackChapterSkip` |  |  |
-| コンテンツが再生される。 |  | Content Heartbeats |  |
-| コンテンツの再生が完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[iOS での中断のない再生](vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。この API は、ユーザーが最後までメディアを視聴していなくても、呼び出される必要があります。 |
+| ユーザーが&#x200B;**[!UICONTROL 再生]**&#x200B;をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。このネットワーク呼び出しは、[iOS での中断のない再生](vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| チャプターが開始します。 | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
+| チャプターの最初のフレームが再生されます。 | `trackPlay` | Heartbeat Chapter Play | メインコンテンツの前にチャプターコンテンツを再生する場合、チャプターが開始する際にハートビートを開始します。 |
+| チャプターが再生されます。 |  | Chapter Heartbeats |  |
+| シークが始まり、最初のチャプターをスキップします。 | `trackEvent:trackSeekStart` |  | シーク中にハートビートなし |
+| シークが完了します。 | `trackEvent:trackSeekComplete` |  | ハートビートは、この後再開されます。 |
+| ユーザーが通常のチャプターの境界を越えてシークしたことをアプリケーションが認識します。 | `trackEvent:trackChapterSkip` |  |  |
+| コンテンツが再生されます。 |  | Content Heartbeats |  |
+| コンテンツの再生が完了します。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[iOS での中断のない再生](vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| セッションが終了します。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。この API は、ユーザーが最後までメディアを視聴していなくても、呼び出される必要があります。 |
 
 ## パラメーター {#parameters}
 
