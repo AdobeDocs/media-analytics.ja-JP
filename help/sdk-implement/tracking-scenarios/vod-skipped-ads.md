@@ -20,14 +20,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | トリガー   | ハートビートメソッド  | ネットワーク呼び出し   | メモ   |
 | --- | --- | --- | --- |
-| ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart()` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。 |
-| 広告が開始される。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start、Heartbeat Ad Start |  |
-| 広告の最初のフレームが再生される。 | `trackPlay()` | Heartbeat Ad Play | メインコンテンツの前に広告コンテンツを再生する場合、ハートビートは、広告の再生が開始する際に開始されます。 |
-| 広告が再生される。 |  | Ad Heartbeats |  |
-| 広告がスキップされる。 | `trackEvent:trackAdSkip` |  | Ad Complete ネットワーク呼び出しはありません。 |
-| コンテンツが再生される。 |  | Content Heartbeats | これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| コンテンツの再生が完了する。 | `trackComplete()` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| セッションが終了する。 | `trackSessionEnd()` |  | `SessionEnd` |
+| ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart()` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| 広告が開始されます。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start、Heartbeat Ad Start |  |
+| 広告の最初のフレームが再生されます。 | `trackPlay()` | Heartbeat Ad Play | メインコンテンツの前に広告コンテンツを再生する場合、ハートビートは、広告の再生が開始する際に開始されます。 |
+| 広告が再生されます。 |  | Ad Heartbeats |  |
+| 広告がスキップされます。 | `trackEvent:trackAdSkip` |  | Ad Complete ネットワーク呼び出しはありません。 |
+| コンテンツが再生されます。 |  | Content Heartbeats | これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| コンテンツの再生が完了します。 | `trackComplete()` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| セッションが終了します。 | `trackSessionEnd()` |  | `SessionEnd` |
 
 ## パラメーター {#parameters}
 
