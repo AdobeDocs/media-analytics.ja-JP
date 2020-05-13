@@ -21,11 +21,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | ユーザーが[!UICONTROL 再生]をクリックする | trackSessionStart | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
 | コンテンツ再生の最初のフレーム。 | trackPlay | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
 | コンテンツ再生 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| Session1 終了（Episode1 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete は、最初のエピソードの session1 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
-| Episode2 を開始する（Session2 開始） | trackSessionStart | Analytics Content Start、Heartbeat Content Start | これは、ユーザーが最初のエピソードを視聴し、別のエピソードまで視聴し続けたためです |
+| セッション 1 終了（Episode 1 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | 「Complete」は、最初のエピソードの session1 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
+| Episode 2 開始（Session 2 開始） | trackSessionStart | Analytics Content Start、Heartbeat Content Start | これは、ユーザーが最初のエピソードを視聴し、別のエピソードまで視聴し続けたためです |
 | メディアの最初のフレーム | trackPlay | Heartbeat Content Play | このメソッドは、タイマーをトリガーし、これ以降、ハートビートは、再生が続く限り、10 秒ごとに送信されます。 |
 | コンテンツ再生 |  | Content Heartbeats |  |
-| セッション終了（Episode2 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete は、2 番目のエピソードの session2 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
+| セッション終了（Episode2 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | 「Complete」は、2 番目のエピソードの session2 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
 
 ## パラメーター {#parameters}
 
@@ -33,12 +33,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | パラメーター | 値 | メモ |
 |---|---|---|
-| `s:sc:rsid` | &lt;Adobe レポートスイート ID&gt; |  |
-| `s:sc:tracking_serve` | &lt;Analytics トラッキングサーバー URL&gt; |  |
+| `s:sc:rsid` | &lt;Adobe レポートスイート ID> |  |
+| `s:sc:tracking_serve` | &lt;Analytics トラッキングサーバー URL> |  |
 | `s:user:mid` | `s:user:mid` | Adobe Analytics Content Start 呼び出しの mid 値と一致する必要がある |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;メディア名&gt; |  |
+| `s:asset:media_id` | &lt;メディア名> |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *オプション* | メディアに設定されたカスタムメタデータ |
 
@@ -60,7 +60,7 @@ Content Heartbeats では、いくつかの特定の事柄を探します。
 | パラメーター | 値 | メモ |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;再生ヘッドの位置&gt; 例：50、60、70 | これは、再生ヘッドの現在の位置を反映する必要があります。 |
+| `l:event:playhead` | &lt;再生ヘッドの位置> 例：50、60、70 | これは、再生ヘッドの現在の位置を反映する必要があります。 |
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
