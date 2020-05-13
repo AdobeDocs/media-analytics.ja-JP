@@ -17,13 +17,13 @@ Roku では、アプリケーションを開発するための新たなプログ
 * アプリケーション画面の SceneGraph レンダリング
 * SceneGraph 画面の XML 設定
 
-Adobe Mobile SDK for Roku は BrightScript で記述されています。この SDK では、SceneGraph 上で実行されるアプリでは利用できない様々なコンポーネントを使用します（スレッドなど）。したがって、SceneGraph フレームワークの使用を考えている Roku アプリケーション開発者は Adobe Mobile SDK API を呼び出すことができません（後者はレガシー BrightScript アプリで利用可能なものに類似しています）。
+Adobe Mobile SDK for Roku は BrightScript で記述されています。SDK では、SceneGraph 上で実行されるアプリでは利用できない様々なコンポーネントを使用します（スレッドなど）。したがって、SceneGraph フレームワークの使用を考えている Roku アプリケーション開発者は Adobe Mobile SDK API を呼び出すことができません（後者はレガシー BrightScript アプリで利用可能なものに類似しています）。
 
-## アーキテクチャ{#architecture}
+## アーキテクチャ {#architecture}
 
-SceneGraph サポートを AdobeMobile SDK に追加するために、アドビは AdobeMobile SDK と `adbmobileTask` の接続ブリッジを作成する新たな API を追加しました。adbmobileTask は、SDK の API 実行に使用される SceneGraph ノードです（`adbmobileTask` の使用方法については、このドキュメントの後半で詳しく説明します）。
+SceneGraph サポートを AdobeMobile SDK に追加するために、アドビは AdobeMobile SDK と `adbmobileTask` の接続ブリッジを作成する新たな API を追加しました。後者は、SDK の API 実行に使用される SceneGraph ノードです（`adbmobileTask` の使用方法については、このドキュメントの後半で詳しく説明します）。
 
-接続ブリッジは以下のように設計されています。
+コネクタブリッジは以下のように設計されています。
 
 * ブリッジは、AdobeMobile SDK の SceneGraph 互換インスタンスを返します。SceneGraph 互換 SDK は、レガシー SDK で提供されているすべての API を備えています。
 * SceneGraph での AdobeMobile SDK API の使用方法は、レガシー API の使用方法とほぼ同じです。
@@ -40,7 +40,7 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 
 **AdobeMobileLibrary：**
 
-* 接続ブリッジ API を含む一連の公開 API（レガシー）を提供します。
+* コネクタブリッジ API を含む一連の公開 API（レガシー）を提供します。
 * 従来の公開 API をすべて含む SceneGraph 接続インスタンスを返します。
 * API 実行時には、`adbmobileTask` の SceneGraph ノードと通信します。
 
@@ -49,7 +49,7 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 * `AdobeMobileLibrary` API をバックグラウンドスレッドで実行する SceneGraph タスクノードです。
 * データをアプリケーションシーンに戻すデリゲートとして機能します。
 
-## 公開 SceneGraph API{#public-scenegraph-apis}
+## 公開 SceneGraph API {#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
