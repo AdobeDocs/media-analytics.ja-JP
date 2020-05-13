@@ -20,13 +20,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|---|---|
 | ユーザーが&#x200B;**[!UICONTROL 再生]**&#x200B;をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | これは、**[!UICONTROL 再生]**&#x200B;をクリックするユーザーか、自動再生イベントである可能性があります。 |
 | ビデオ再生の最初のフレーム。 | `trackPlay` | Heartbeat Content Play | このメソッドは、タイマーをトリガーします。ハートビートは、再生が続く限り、10 秒ごとに送信されます。 |
-| コンテンツが再生される。 |  | Content Heartbeats |  |
-| バッファリングが開始される。 | `trackEvent:BufferStart` | Heartbeat Buffer |  |
-| コンテンツがバッファーされる。 |  | Content Heartbeats |  |
-| バッファリングが完了する。 | `trackEvent:BufferComplete` | Heartbeat Buffer、Heartbeat Play |  |
-| コンテンツが再生される。 |  | Content Heartbeats |  |
-| コンテンツの再生が完了する。 | `trackComplete` | Heartbeat Content Complete | 再生ヘッドの終わりに達しました。 |
-| セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。この API は、ユーザーが最後までビデオを視聴していなくても、呼び出される必要があります。 |
+| コンテンツが再生されます。 |  | Content Heartbeats |  |
+| バッファリングが開始されます。 | `trackEvent:BufferStart` | Heartbeat Buffer |  |
+| コンテンツがバッファーされます。 |  | Content Heartbeats |  |
+| バッファリングが完了します。 | `trackEvent:BufferComplete` | Heartbeat Buffer、Heartbeat Play |  |
+| コンテンツが再生されます。 |  | Content Heartbeats |  |
+| コンテンツの再生が完了します。 | `trackComplete` | Heartbeat Content Complete | 再生ヘッドの終わりに達しました。 |
+| セッションが終了します。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。この API は、ユーザーが最後までビデオを視聴していなくても、呼び出される必要があります。 |
 
 ## パラメーター {#parameters}
 
