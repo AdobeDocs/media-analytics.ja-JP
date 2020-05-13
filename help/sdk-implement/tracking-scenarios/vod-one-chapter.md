@@ -19,13 +19,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | トリガー   | ハートビートメソッド   | ネットワーク呼び出し   | メモ   |
 |---|---|---|---|
 | ユーザーが&#x200B;**[!UICONTROL 再生]**&#x200B;をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | プリロール広告があることを Measurement Library にまだ伝えていないので、これらのネットワーク呼び出しは、単一の VOD と同一です。 |
-| チャプターが開始する。 | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
+| チャプターが開始します。 | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | チャプター再生の最初のフレーム。 | `trackPlay` | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
-| チャプターが再生される。 |  | Chapter Heartbeats |  |
-| チャプターが完了する。 | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | チャプターの終わりに達したとき。 |
-| コンテンツが再生される。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| セッションが終了する。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端に到達したことを意味します。この API は、ユーザーが最後までメディアを視聴していなくても、呼び出される必要があります。 |
+| チャプターが再生されます。 |  | Chapter Heartbeats |  |
+| チャプターが完了します。 | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | チャプターの終わりに達したとき。 |
+| コンテンツが再生されます。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| コンテンツが完了します。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| セッションが終了します。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端に到達したことを意味します。この API は、ユーザーが最後までメディアを視聴していなくても、呼び出される必要があります。 |
 
 ## パラメーター {#parameters}
 
