@@ -2,8 +2,11 @@
 title: セットアップの概要
 description: モバイル、OTT およびブラウザー（JS）アプリケーションでのメディアトラッキングのためのメディア SDK のセットアップの概要です。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '734'
+ht-degree: 95%
 
 ---
 
@@ -12,8 +15,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->以下の手順は、メディア SDK 2.x に適用されます。メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetime のインテグレーターの場合は、後述の _Primetime メディア SDK のドキュメント_&#x200B;を参照してください。
+>2021年8月31日にバージョン4のモバイルSDKのサポートが終了すると、アドビはiOSおよびAndroid用のMedia Analytics SDKのサポートも終了します。  詳しくは、 [Media Analytics SDKサポート終了FAQを参照してください](/help/sdk-implement/end-of-support-faqs.md)。
 
+以下の手順は、メディア SDK 2.x に適用されます。メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetime のインテグレーターの場合は、後述の _Primetime メディア SDK のドキュメント_&#x200B;を参照してください。
 
 ## サポートされる最小プラットフォームバージョン {#minimum-platform-version}
 
@@ -84,36 +88,36 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    以下のサンプルコードでは HTML5 ビデオプレーヤー用の JavaScript 2.x SDK を使用しています。
 
    ```javascript
-   // Create local references to the heartbeat classes 
-   var MediaHeartbeat = ADB.va.MediaHeartbeat; 
-   var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig; 
-   var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
+   // Create local references to the heartbeat classes
+   var MediaHeartbeat = ADB.va.MediaHeartbeat;
+   var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig;
+   var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate;
    
-   //Media Heartbeat Config 
-   var mediaConfig = new MediaHeartbeatConfig(); 
-   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net"; 
-   mediaConfig.playerName = "HTML5 Basic"; 
-   mediaConfig.channel = "Video Channel"; 
-   mediaConfig.debugLogging = true; 
-   mediaConfig.appVersion = "2.0"; 
-   mediaConfig.ssl = false; 
-   mediaConfig.ovp = ""; 
+   //Media Heartbeat Config
+   var mediaConfig = new MediaHeartbeatConfig();
+   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net";
+   mediaConfig.playerName = "HTML5 Basic";
+   mediaConfig.channel = "Video Channel";
+   mediaConfig.debugLogging = true;
+   mediaConfig.appVersion = "2.0";
+   mediaConfig.ssl = false;
+   mediaConfig.ovp = "";
    
-   // Media Heartbeat Delegate 
-   var mediaDelegate = new MediaHeartbeatDelegate(); 
+   // Media Heartbeat Delegate
+   var mediaDelegate = new MediaHeartbeatDelegate();
    
-   // Set mediaDelegate CurrentPlaybackTime 
-   mediaDelegate.getCurrentPlaybackTime = function() { 
-       return video.currentTime; 
-   }; 
+   // Set mediaDelegate CurrentPlaybackTime
+   mediaDelegate.getCurrentPlaybackTime = function() {
+       return video.currentTime;
+   };
    
-   // Set mediaDelegate QoSObject - OPTIONAL 
-   mediaDelegate.getQoSObject = function() { 
+   // Set mediaDelegate QoSObject - OPTIONAL
+   mediaDelegate.getQoSObject = function() {
        return MediaHeartbeat.createQoSObject(video.bitrate,  
                                              video.startuptime,  
                                              video.fps,  
-                                             video.droppedframes); 
-   } 
+                                             video.droppedframes);
+   }
    // Create mediaHeartbeat instance      
    this.mediaHeartbeat =  
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
