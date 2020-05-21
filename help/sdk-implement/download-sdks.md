@@ -3,7 +3,10 @@ title: SDK のダウンロード
 description: Android、iOS、JavaScript、Chromecast および Roku を含む、利用可能なプラットフォームの SDK ダウンロードのリンクです。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 90%
 
 ---
 
@@ -12,11 +15,7 @@ source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
 
 >[!IMPORTANT]
 >
->2020年10月より、アドビは、バージョン4のモバイルSDKと、iOSおよびAndroid用のスタンドアロンのメディア分析SDKのサポートを終了します。 バージョン4のSDKは引き続きダウンロードして使用できますが、カスタマーケアのサポートとフォーラムへのアクセスは終了します。 iOSまたはAndroid向けのAdobe Experience Platform(AEP)SDKに移行する必要があります。 AEP Mobile SDK（旧称v5）は、Adobe Experience Cloudの機能のみをサポートします。 この変更について詳しくは、 [バージョン4モバイルSDKのサポート終了に関するFAQを参照してください](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。 新しいAEP Mobile SDKに移行することをお勧めします。
-AEP Mobile SDKに移行した後、Adobe Analyticsのオーディオとビデオに対して有効にするには、Analytics Launch拡張機能とMedia Analytics Launch拡張機能を実装する必要があります。 新しいAEP Mobile SDKへの移行について詳しくは、「スタンドアロンメディアSDKからAdobe Launchへの [移行」を参照してください。 ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
-
-
-
+>2021年8月31日にバージョン4のモバイルSDKのサポートが終了すると、アドビはiOSおよびAndroid用のMedia Analytics SDKのサポートも終了します。  詳しくは、 [Media Analytics SDKサポート終了FAQを参照してください](/help/sdk-implement/end-of-support-faqs.md)。
 
 ## メディア SDK 2.x のダウンロード {#download-2x-sdks}
 
