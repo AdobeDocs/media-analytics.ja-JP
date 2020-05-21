@@ -2,17 +2,31 @@
 title: 実装パス
 description: null
 uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 64%
 
 ---
 
 
 # 実装パス {#implementation-paths}
 
-Media Analytics（ハートビート）は、アドビの標準化されたビデオソリューションです。従来のアドビのマイルストーンモデルの後継モデルです。
+Media Analyticsには一意のSKUがあり、サーバー呼び出しに基づく価格モデルからビデオストリームに基づくモデルに変更があるので、導入パスごとに、顧客は担当の営業またはアカウントマネージャーに連絡して、新しい販売注文に署名する必要があります。
 
-Media Analytics には独自の SKU があり、サーバー呼び出しに基づく価格モデルからビデオのストリーミングに基づくモデルに変更されているので、実装パスごとにお客様は営業担当者またはアカウントマネージャーに連絡して新たに販売契約を結ぶ必要があります。
+* **Adobe Media Analytics拡張機能を使用したAdobe Launch**
+
+   Adobe Launchは、アドビが提供する次世代のタグ管理ソリューションです。 Launchは、関連する顧客エクスペリエンスを強化するために必要なすべての解析、マーケティングおよび広告タグを、シンプルにデプロイおよび管理する方法を提供します。 独自のLaunchとの統合を構築し、維持するには、拡張機能を使用します。 拡張機能は、JavaScript、HTML、CSSパッケージで、起動UIとクライアント機能を拡張します。 詳しくは、『 [Experience Platform Launch User Guide』を参照してください](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)
+
+   Adobe Media Analytics(MA)の拡張機能により、オーディオおよびビデオ用のコアJavaScript Media SDK(Media 2.x SDK)が追加されます。 この拡張機能では、Launch サイトまたはプロジェクトに `MediaHeartbeat` トラッカーインスタンスを追加する機能を提供します。
+
+   Media Analytics拡張機能を使用したAdobe Launchでは、以下が必要です。
+   * Adobe Experience Cloudのお客様である必要があります。
+   * LaunchまたはDTM埋め込みコードをWebページにデプロイする必要があります。
+   * [Analytics 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
+   * [Experience Cloud ID 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
+
 
 * **クライアントサイド -** これは Media Analytics のみの統合です。ビデオハートビート SDK やメディアコレクション API 統合を選択できます。このパスは、Brightcove、Ooyala、Platform など、顧客や OVP プレーヤーを含む任意のビデオプレーヤーで使用できます。
 
@@ -22,9 +36,6 @@ Media Analytics には独自の SKU があり、サーバー呼び出しに基�
    >
    >Media Analytics を使用するには、Adobe Analytics も使用する必要があります。
 
-* **Adobe Experience Platform Launch -** Adobe Experience Platform Launch は Dynamic Tag Management の後継製品で、各プレーヤーへのビデオトラッキングの実装を容易にする Media Analytics Launch 拡張機能を備えています。
-
-   Experience Platform Launch について詳しくは、[Adobe Media Analytics for Audio and Video 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)を参照してください。
 * **Adobe Primetime -** Adobe Primetime は、コンテンツプログラマーやディストリビューターが、接続されたすべての画面でメディアを収益化できるようにする Adobe Experience Cloud ソリューションです。
 
    Primetime は、ビデオパブリッシング、広告、パーソナライゼーション、アナリティクス用のモジュール式プラットフォームを提供することで、各種デバイスをまたぐグローバルオーディエンスへのリーチ、収益化、活性化における複雑性を軽減します。さらに、Primetime オファーは、次の点に関するソリューションと価値を提供します。
