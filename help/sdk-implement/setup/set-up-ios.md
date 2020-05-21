@@ -3,7 +3,10 @@ title: iOS のセットアップ
 description: iOS での実装用のメディア SDK アプリケーション設定です。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 93%
 
 ---
 
@@ -12,9 +15,7 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 >[!IMPORTANT]
 >
->2020年10月より、アドビは、バージョン4のモバイルSDKとiOS用のスタンドアロンのメディア分析SDKのサポートを終了します。 バージョン4のSDKは引き続きダウンロードして使用できますが、カスタマーケアのサポートとフォーラムへのアクセスは終了します。 iOS用Adobe Experience Platform(AEP)SDKに移行する必要があります。 AEP Mobile SDK（旧称v5）は、Adobe Experience Cloudの機能のみをサポートします。 この変更について詳しくは、 [バージョン4モバイルSDKのサポート終了に関するFAQを参照してください](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。 新しいAEP Mobile SDKに移行することをお勧めします。
-AEP Mobile SDKに移行した後、Adobe Analyticsのオーディオとビデオに対して有効にするには、Analytics Launch拡張機能とMedia Analytics Launch拡張機能を実装する必要があります。 新しいAEP Mobile SDKへの移行について詳しくは、「スタンドアロンメディアSDKからAdobe Launchへの [移行」を参照してください。 ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
-
+>2021年8月31日にバージョン4のモバイルSDKのサポートが終了すると、アドビはiOSおよびAndroid向けのMedia Analytics SDKのサポートも終了します。  詳しくは、 [Media Analytics SDKサポート終了FAQを参照してください](/help/sdk-implement/end-of-support-faqs.md)。
 
 ## 前提条件
 
@@ -50,13 +51,13 @@ AEP Mobile SDKに移行した後、Adobe Analyticsのオーディオとビデオ
       1. Xcode IDE を起動して、アプリを開きます。
       1. **[!UICONTROL Project Navigator]** で、`libs` ディレクトリをドラッグして、プロジェクトにドロップします。
 
-      1. Ensure that the **[!UICONTROL Copy Items if Needed]** checkbox is selected, the **[!UICONTROL Create Groups]** is selected, and none of the checkboxes in **[!UICONTROL Add to Target]** are selected.
+      1. 「**[!UICONTROL Copy Items if Needed]**」チェックボックスが選択されていること、「**[!UICONTROL Create Groups]**」が選択されていること、および「**[!UICONTROL Add to Target]**」にあるチェックボックスが選択されていないことを確認します。
 
          ![](assets/choose-options_ios.png)
 
-      1. クリック **[!UICONTROL Finish]**.
-      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
-      1. Link the required frameworks and libraries in the **[!UICONTROL Linked Frameworks]** and **[!UICONTROL Libraries]** section on the **[!UICONTROL General]** tab.
+      1. 「**[!UICONTROL 完了]**」をクリックします。
+      1. **[!UICONTROL Project Navigator]** で、アプリを選択し、ターゲットを選択します。
+      1. 「**[!UICONTROL 一般]**」タブの「**[!UICONTROL リンクされたフレームワーク]**」および「**[!UICONTROL ライブラリ]**」セクションで、必要なフレームワークとライブラリをリンクさせます。
 
          **iOS App Targets:**
 
@@ -152,7 +153,7 @@ AEP Mobile SDKに移行した後、Adobe Analyticsのオーディオとビデオ
 
 1. プロジェクトの `lib` フォルダーに `VideoHeartbeat_TV.a` ライブラリファイルをドラッグします。
 
-1. In the **[!UICONTROL Build Phases]** tab of your tvOS app’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
+1. tvOS アプリのターゲットの「**[!UICONTROL Build Phases（ビルドフェーズ）]**」タブで、「**[!UICONTROL Link Binary with Libraries（バイナリをライブラリとリンク）]**」を展開して、以下のライブラリを追加します。
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
