@@ -3,7 +3,10 @@ title: Android のセットアップ
 description: Android での実装用のメディア SDK アプリケーション設定です。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 92%
 
 ---
 
@@ -12,12 +15,10 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 >[!IMPORTANT]
 >
->2020年10月より、アドビは、バージョン4のモバイルSDKと、スタンドアロンのMedia Analytics SDK for Androidのサポートを終了します。 バージョン4のSDKは引き続きダウンロードして使用できますが、カスタマーケアのサポートとフォーラムへのアクセスは終了します。 Android向けAdobe Experience Platform(AEP)SDKに移行する必要があります。 AEP Mobile SDK（旧称v5）は、Adobe Experience Cloudの機能のみをサポートします。 この変更について詳しくは、 [バージョン4モバイルSDKのサポート終了に関するFAQを参照してください](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。 新しいAEP Mobile SDKに移行することをお勧めします。
-AEP Mobile SDKに移行した後、Adobe Analyticsのオーディオとビデオに対して有効にするには、Analytics Launch拡張機能とMedia Analytics Launch拡張機能を実装する必要があります。 新しいAEP Mobile SDKへの移行について詳しくは、「スタンドアロンメディアSDKからAdobe Launchへの [移行」を参照してください。 ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+>2021年8月31日にバージョン4のモバイルSDKのサポートが終了すると、アドビはiOSおよびAndroid向けのMedia Analytics SDKのサポートも終了します。  詳しくは、 [Media Analytics SDKサポート終了FAQを参照してください](/help/sdk-implement/end-of-support-faqs.md)。
 
 
 ## 前提条件
-
 
 * **メディア SDK 用の有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
 * **Android 向け ADBMobile をアプリケーションに実装** Adobe Mobile SDK ドキュメントについて詳しくは、[Experience Cloud ソリューション用 Android SDK 4.x](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/overview.html) を参照してください。
@@ -37,23 +38,23 @@ AEP Mobile SDKに移行した後、Adobe Analyticsのオーディオとビデオ
 
       **IntelliJ IDEA：**
 
-      1. Right click your project in the **[!UICONTROL Project navigation]** panel.
-      1. **[!UICONTROL Open Module Settings]** を選択します。
-      1. の下 **[!UICONTROL Project Settings]**&#x200B;でを選択し **[!UICONTROL Libraries]**&#x200B;ます。
+      1. **[!UICONTROL プロジェクトナビゲーション]**&#x200B;パネルでプロジェクトを右クリックします。
+      1. **[!UICONTROL モジュール設定を開く]**&#x200B;を選択します。
+      1. **[!UICONTROL プロジェクト設定]**&#x200B;で、**[!UICONTROL ライブラリ]**&#x200B;を選択します。
 
-      1. Click **[!UICONTROL +]** to add a new library.
+      1. 「**[!UICONTROL +]**」をクリックして、新しいライブラリを追加します。
       1. 「**[!UICONTROL Java]**」を選択し、`MediaSDK.jar` ファイルに移動します。
 
       1. モバイルライブラリを使用する予定のモジュールを選択します。
-      1. Click **[!UICONTROL Apply]** and then **[!UICONTROL OK]** to close the Module Settings window.
+      1. 「**[!UICONTROL 適用]**」をクリックしてから、「**[!UICONTROL OK]**」をクリックしてモジュール設定ウィンドウを閉じます。
       **Eclipse：**
 
       1. Eclipse IDE で、プロジェクト名を右クリックします。
-      1. クリック  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]** .
+      1. **[!UICONTROL ビルドパス]**／**[!UICONTROL 外部アーカイブの追加]**&#x200B;をクリックします。
       1. `MediaSDK.jar` を選択します。
-      1. クリック **[!UICONTROL Open]**.
-      1. Right-click the project again, and click  **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]** .
-      1. Click the **[!UICONTROL Order]** and **[!UICONTROL Export]** tabs.
+      1. 「**[!UICONTROL 開く]**」をクリックします。
+      1. プロジェクトを再度右クリックし、**[!UICONTROL ビルドパス]**／**[!UICONTROL ビルドパスを設定]**&#x200B;をクリックします。
+      1. 「**[!UICONTROL 順序]**／**[!UICONTROL エクスポート]**」タブをクリックします。
 
       1. `MediaSDK.jar` ファイルが選択されていることを確認します。
 
