@@ -4,10 +4,10 @@ user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 841e02e5f4fdd6eebd6eac0c1d42997db49b071e
+source-git-commit: 48de18b022d004bf301a55ec71b6a889f7b9ebb3
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 98%
       + [JavaScript のセットアップ](sdk-implement/setup/set-up-js.md)
       + [Chromecast のセットアップ ](sdk-implement/setup/set-up-chromecast.md)
       + [Roku のセットアップ ](sdk-implement/setup/set-up-roku.md)
-   + オーディオとビデオの再生の追跡 {#track-av-playback}
+   + Track Audio and Video Playback {#track-av-playback}
       + [概要](sdk-implement/track-av-playback/track-core-overview.md)
       + コアオーディオおよびビデオ再生の追跡 {#track-core}
          + [Android でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -61,7 +61,7 @@ ht-degree: 98%
          + [JavaScript でのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
          + [Chromecast でのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Roku でのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + 標準メタデータの実装 {#impl-std-metadata}
+      + Implement Standard Metadata {#impl-std-metadata}
          + [Android での標準メタデータの実装](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [iOS での標準メタデータの実装](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS のメタデータキー](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -77,7 +77,7 @@ ht-degree: 98%
       + [JavaScript での広告の追跡](sdk-implement/track-ads/track-ads-js.md)
       + [Chromecast での広告の追跡](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Roku での広告の追跡](sdk-implement/track-ads/track-ads-roku.md)
-      + 標準広告メタデータの実装 {#impl-std-ad-metadata}
+      + Implement Standard ad Metadata {#impl-std-ad-metadata}
          + [Android での標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [iOS での標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + [JavaScript での標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
