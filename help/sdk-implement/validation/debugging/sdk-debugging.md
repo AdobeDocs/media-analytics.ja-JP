@@ -2,8 +2,11 @@
 title: SDK のデバッグ
 description: ここでは、メディア SDK で利用できる追跡／ログについて説明します。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '271'
+ht-degree: 100%
 
 ---
 
