@@ -2,8 +2,11 @@
 title: オプトアウトおよびプライバシー
 description: オプトイン、オプトアウトおよびプライバシーを処理する方法です。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '360'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
    * `ADBMobile().setPrivacyStatus()` メソッド。
 
-      * **オプトアウト:**
+      * **オプトアウト：**
 
          * **Chromecast：**
 
