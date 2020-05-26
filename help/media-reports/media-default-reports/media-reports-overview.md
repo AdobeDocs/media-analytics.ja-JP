@@ -2,8 +2,11 @@
 title: メディアの概要
 description: null
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5a4f15616712ee91bc028258991fc4e7359698a5
+workflow-type: ht
+source-wordcount: '91'
+ht-degree: 100%
 
 ---
 
