@@ -2,11 +2,11 @@
 title: 前提条件
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 99%
 
    >[!IMPORTANT]
    >
-   >ユーザー ID 情報がメディア専用の呼び出しに存在しない場合、Analytics のデフォルトの[フォールバック ID による方法](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html)が適用されます。
+   >ユーザー ID 情報がメディア専用の呼び出しに存在しない場合、Analytics のデフォルトの[フォールバック ID による方法](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.translate.html)が適用されます。
 
    Experience Cloud ID について詳しくは、[Experience Cloud ID の概要](https://docs.adobe.com/content/help/ja-JP/id-service/using/intro/overview.html)および [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/ja-JP/id-service/using/home.html) を参照してください。
 
