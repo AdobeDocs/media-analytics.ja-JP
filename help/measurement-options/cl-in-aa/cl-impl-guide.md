@@ -2,21 +2,21 @@
 title: カスタムリンク導入ガイド
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # カスタムリンク導入ガイド {#custom-link-implementation-guide}
 
-カスタムビデオトラッキングでは、Analytics `appMeasurement` 内の[カスタムリンクコードを使用した手動リンクトラッキング](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)を使用します。ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
+カスタムビデオトラッキングでは、Analytics `appMeasurement` 内の[カスタムリンクコードを使用した手動リンクトラッキング](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)を使用します。ほとんどの場合、カスタムのビデオリンクビデオトラッキングは、最小のビデオ指標が必要なプラットフォームおよびデバイスで使用します。
 
 * JavaScript の場合：`s.tl()` 関数
-* モバイルアプリの場合：[trackAction() Android](https://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html)、[trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* モバイルアプリの場合：[trackAction() Android](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/analytics-android/actions.html)、[trackAction() iOS](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/analytics-ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * Data Insertion API の場合：[linktype タグ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 要件
