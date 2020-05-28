@@ -2,17 +2,15 @@
 title: プレイヤー状態の追跡の例
 description: このトピックには、プレイヤー状態追跡機能の例が含まれています。
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---
 
 
 # プレイヤー状態の追跡の例
-
-追加例
 
 
 ## 長い一時停止の例
