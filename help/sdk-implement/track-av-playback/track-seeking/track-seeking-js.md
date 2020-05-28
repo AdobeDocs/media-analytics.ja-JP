@@ -1,14 +1,17 @@
 ---
-title: JavaScript でのシークの追跡
+title: JavaScript 2.xを使用したシークの追跡
 description: ここでは、ブラウザーアプリ（JS）でのメディア SDK を使用したシーク追跡の実装について説明します。
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 5f274452b9ff5770908f7e2e450935be572a22ea
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 92%
 
 ---
 
 
-# JavaScript でのシークの追跡 {#track-seeking-on-javascript}
+# JavaScript 2.xを使用したシークの追跡{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -26,16 +29,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. メディアプレーヤーの再生シークイベントをリッスンし、シーク開始イベント通知時に、`SeekStart` イベントを使用してシークを追跡します。
 
    ```js
-   _onSeekStart = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart); 
+   _onSeekStart = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart);
    };
    ```
 
 1. メディアプレーヤーからのシーク完了通知時に、`SeekComplete` イベントを使用してシークの終わりを追跡します。
 
    ```js
-   _onSeekComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete); 
+   _onSeekComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete);
    };
    ```
 
