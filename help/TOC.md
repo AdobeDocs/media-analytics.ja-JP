@@ -4,10 +4,10 @@ user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 48de18b022d004bf301a55ec71b6a889f7b9ebb3
+source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 96%
+source-wordcount: '765'
+ht-degree: 79%
 
 ---
 
@@ -38,7 +38,9 @@ ht-degree: 96%
       + [概要](sdk-implement/setup/setup-overview.md)
       + [Android のセットアップ](sdk-implement/setup/set-up-android.md)
       + [iOS のセットアップ](sdk-implement/setup/set-up-ios.md)
-      + [JavaScript のセットアップ](sdk-implement/setup/set-up-js.md)
+      + JavaScript のセットアップ {#setup-javascript}
+         + [JavaScript 2.xの設定](sdk-implement/setup/setup-javascript/set-up-js-2.md)
+         + [JavaScript 3.xの設定](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast のセットアップ ](sdk-implement/setup/set-up-chromecast.md)
       + [Roku のセットアップ ](sdk-implement/setup/set-up-roku.md)
    + Track Audio and Video Playback {#track-av-playback}
@@ -46,26 +48,30 @@ ht-degree: 96%
       + コアオーディオおよびビデオ再生の追跡 {#track-core}
          + [Android でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [iOS でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-ios.md)
-         + [JavaScript でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-js.md)
+         + [JavaScript 2.xでのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-js.md)
+         + [JavaScript 3.xでのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-js3.md)
          + [Chromecast でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
          + [Roku でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + バッファーの追跡 {#track-buffering}
          + [Android でのバッファーの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
          + [iOS でのバッファーの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
-         + [JavaScript でのバッファーの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
+         + [JavaScript 2.xでのバッファリングの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
+         + [JavaScript 3.xでのバッファリングの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-js3.md)
          + [Chromecast でのバッファーの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
          + [Roku でのバッファーの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + シークの追跡 {#track-seeking}
          + [Android でのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [iOS でのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
-         + [JavaScript でのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
+         + [JavaScript 2.xでのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
+         + [JavaScript 3.xでのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-js3.md)
          + [Chromecast でのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Roku でのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + Implement Standard Metadata {#impl-std-metadata}
          + [Android での標準メタデータの実装](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [iOS での標準メタデータの実装](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS のメタデータキー](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-         + [JavaScript での標準メタデータの実装](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+         + [JavaScript 2.xでの標準メタデータの実装](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+         + [JavaScript 3.xでの標準メタデータの実装](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js3.md)
          + [Chromecast での標準メタデータの実装](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [標準メタデータパラメーター - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [Roku での標準メタデータの実装](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
@@ -74,33 +80,38 @@ ht-degree: 96%
       + [概要](sdk-implement/track-ads/track-ads-overview.md)
       + [Android での広告の追跡](sdk-implement/track-ads/track-ads-android.md)
       + [iOS での広告の追跡](sdk-implement/track-ads/track-ads-ios.md)
-      + [JavaScript での広告の追跡](sdk-implement/track-ads/track-ads-js.md)
+      + [JavaScript 2.xでの広告の追跡](sdk-implement/track-ads/track-ads-js.md)
+      + [JavaScript 3.xでの広告の追跡](sdk-implement/track-ads/track-ads-js3.md)
       + [Chromecast での広告の追跡](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Roku での広告の追跡](sdk-implement/track-ads/track-ads-roku.md)
       + Implement Standard ad Metadata {#impl-std-ad-metadata}
          + [Android での標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [iOS での標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-         + [JavaScript での標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
+         + [JavaScript 2.xへの標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
+         + [JavaScript 3.xでの標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js3.md)
          + [Roku での標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + チャプターおよびセグメントの追跡 {#track-chapters}
       + [概要](sdk-implement/track-chapters/track-chapters-overview.md)
       + [Android でのチャプターおよびセグメントの追跡](sdk-implement/track-chapters/track-chapters-android.md)
       + [iOS でのチャプターおよびセグメントの追跡](sdk-implement/track-chapters/track-chapters-ios.md)
-      + [JavaScript でのチャプターおよびセグメントの追跡](sdk-implement/track-chapters/track-chapters-js.md)
+      + [JavaScript 2.xでのチャプターとセグメントの追跡](sdk-implement/track-chapters/track-chapters-js.md)
+      + [JavaScript 3.xでのチャプターとセグメントの追跡](sdk-implement/track-chapters/track-chapters-js3.md)
       + [Chromecast でのチャプターおよびセグメントの追跡](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [Roku でのチャプターおよびセグメントの追跡](sdk-implement/track-chapters/track-chapters-roku.md)
    + Quality of Experience の追跡 {#track-qos}
       + [概要](sdk-implement/track-qos/track-qos-overview.md)
       + [Android での Quality of Experience の追跡](sdk-implement/track-qos/track-qos-android.md)
       + [iOS での Quality of Experience の追跡](sdk-implement/track-qos/track-qos-ios.md)
-      + [JavaScript での Quality of Experience の追跡](sdk-implement/track-qos/track-qos-js.md)
+      + [JavaScript 2.xでのエクスペリエンスの質の追跡](sdk-implement/track-qos/track-qos-js.md)
+      + [JavaScript 3.xでのエクスペリエンスの質の追跡](sdk-implement/track-qos/track-qos-js3.md)
       + [Chromecast での Quality of Experience の追跡](sdk-implement/track-qos/track-qos-chromecast.md)
       + [Roku での Quality of Experience の追跡](sdk-implement/track-qos/track-qos-roku.md)
    + エラーの追跡 {#track-errors}
       + [概要](sdk-implement/track-errors/track-errors-overview.md)
       + [Android でのエラーの追跡](sdk-implement/track-errors/track-errors-android.md)
       + [iOS でのエラーの追跡](sdk-implement/track-errors/track-errors-ios.md)
-      + [JavaScript でのエラーの追跡](sdk-implement/track-errors/track-errors-js.md)
+      + [JavaScript 2.xでのエラーの追跡](sdk-implement/track-errors/track-errors-js.md)
+      + [JavaScript 3.xでのエラーの追跡](sdk-implement/track-errors/track-errors-js3.md)
       + [Chromecast でのエラーの追跡](sdk-implement/track-errors/track-errors-chromecast.md)
       + [Roku でのエラーの追跡](sdk-implement/track-errors/track-errors-roku.md)
    + [オプトアウトおよびプライバシー](sdk-implement/opt-out-privacy.md)
@@ -181,6 +192,7 @@ ht-degree: 96%
    + [オーディオおよびビデオパラメーター](metrics-and-metadata/audio-video-parameters.md)
    + [広告パラメーター](metrics-and-metadata/ad-parameters.md)
    + [チャプターパラメーター](metrics-and-metadata/chapter-parameters.md)
+   + [プレイヤーの状態パラメーター](metrics-and-metadata/player-state-parameters.md)
    + [品質パラメーター](metrics-and-metadata/quality-parameters.md)
    + [セグメント](metrics-and-metadata/segments.md)
    + [計算指標](metrics-and-metadata/calculated-metrics.md)
@@ -195,5 +207,10 @@ ht-degree: 96%
       + [同時閲覧者数 JSON レポートデータの取得](media-reports/media-default-reports/get-concurrent-json.md)
    + [Media Workspace のテンプレート](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
++ プレーヤーステートトラッキング {#player-state-tracking}
+   + [概要](sdk-implement/player-state-tracking/player-state-overview.md)
+   + [標準状態とカスタム状態](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+   + [導入とレポート](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [プレイヤー状態の追跡の例](sdk-implement/player-state-tracking/player-state-examples.md)
 + その他のリソース {#additional-resources}
    + [リリースノート](additional-resources/doc-updates.md)
