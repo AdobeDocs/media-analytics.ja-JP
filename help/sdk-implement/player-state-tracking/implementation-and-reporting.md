@@ -2,9 +2,9 @@
 title: 導入とレポート
 description: このトピックでは、を含むプレイヤー状態トラッキング機能の実装方法について説明します。
 translation-type: tm+mt
-source-git-commit: b0bfe74d1f6083e700dbf98f504a17518bd19ecb
+source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 `trackStateClose("state_name")`
 
 
-メディアコレクションAPIには、必須イベントーとして「media.stateName」を持つ2つの新しいパラメーターが追加されました。
+メディアコレクションAPIには、次の2つの新しいイベントが追加されました。これら `media.stateName` のパラメーターは、必須パラメーターとして指定します。
 
 `stateStart` と `stateEnd`
 
@@ -84,14 +84,19 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 個々の状態に対して提供される指標は、計算され、Context DataパラメーターとしてAdobe Analyticsにプッシュされ、レポートのために保存されます。 状態ごとに3つの指標を使用できます。
 
-* `a.media.states.(media.state.name).set = true`  — ストリームの特定の再生ごとに少なくとも1回状態が設定された場合、trueに設定します。
-* `a.media.states.(media.state.name).count = 4`  — ストリームの個々の再生中に、ある状態が発生した回数を識別します。
-* `a.media.states.(media.state.name).time = 240`  — ストリームの個々の再生あたりの状態の合計時間を秒単位で識別します。
+* `a.media.states.[state.name].set = true`  — ストリームの特定の再生ごとに少なくとも1回状態が設定された場合、trueに設定します。
+* `a.media.states.[state.name].count = 4`  — ストリームの個々の再生中に、ある状態が発生した回数を識別します。
+* `a.media.states.[state.name].time = 240`  — ストリームの個々の再生あたりの状態の合計時間を秒単位で識別します。
 
 ## レポート
 
-すべての状態指標は、任意のレポートのビジュアライゼーションまたはコンポーネント（セグメント、計算指標）に使用できます。
-TBD - AWからのスクリーンショットのソース/Wikiの更新情報を確認
+レポートスイートでプレイヤー状態の追跡が有効になると、すべてのプレイヤー状態指標を、分析ワークスペースやコンポーネント（セグメント、計算指標）で使用できるレポートのビジュアライゼーションに使用できます。 新しい指標は、管理コンソールから、メディアレポート設定(設定の編集/メディア管理/メディアレポート)を使用して、個々のレポートに対して有効にできます。
+
+![](assets/report-setup.png)
+
+Analytics Workspaceでは、すべての新しいプロパティが指標パネルに表示されます。 例えば、指標パネルでフルスクリーンデータ `full screen` を表示で検索できます。
+
+![](assets/full-screen-report.png)
 
 ## Adobe Experience Platformへのプレイヤーの指標のインポート
 
