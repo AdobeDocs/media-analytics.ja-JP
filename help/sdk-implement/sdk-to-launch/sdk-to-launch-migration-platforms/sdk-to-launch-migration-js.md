@@ -2,10 +2,10 @@
 title: スタンドアロンのメディア SDK から Adobe Launch - Web（JS）への移行
 description: Media SDK から Launch への移行に役立つ手順とコードサンプルです。
 translation-type: tm+mt
-source-git-commit: 0f9a985d04969eeca837a2655c666259ce30aee4
+source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 100%
+source-wordcount: '409'
+ht-degree: 98%
 
 ---
 
@@ -112,7 +112,8 @@ delegate オブジェクトを、`getQoSObject()` および `getCurrentPlaybackT
 
 ### メディア SDK
 
-* [JS の設定](/help/sdk-implement/setup/set-up-js.md)
+* [JavaScript 2.xの設定](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md)
+* [JavaScript 3.xの設定](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
