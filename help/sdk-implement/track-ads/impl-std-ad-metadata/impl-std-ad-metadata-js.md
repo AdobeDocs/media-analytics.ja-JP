@@ -1,14 +1,17 @@
 ---
-title: JavaScript での標準広告メタデータの実装
-description: ブラウザー（JS）アプリ上の広告トラッキングでの標準広告メタデータの使用方法です。
+title: JavaScript 2.xを使用した標準広告メタデータの実装
+description: JavaScript 2.xアプリを使用するブラウザーで、標準広告メタデータを広告追跡に使用する方法。
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 30ed54924c75a9c33e6122b2d7ddbb84c06b8c0c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 55%
 
 ---
 
 
-# JavaScript での標準広告メタデータの実装 {#implement-standard-ad-metadata-on-javascript}
+# JavaScript 2.xを使用した標準広告メタデータの実装{#implement-standard-ad-metadata-on-javascript}
 
 ## 広告定数
 
@@ -25,12 +28,11 @@ var adObject =
 MediaHeartbeat.createAdObject(<AD_NAME>,  
                               <AD_ID>,  
                               <POSITION>,  
-                              <LENGTH>); 
-   
-// Set standard Ad Metadata 
-var standardAdMetadata = {}; 
-standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = "Sample Advertiser"; 
-standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign"; 
+                              <LENGTH>);
+
+// Set standard Ad Metadata
+var standardAdMetadata = {};
+standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = "Sample Advertiser";
+standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign";
 adObject.setValue(MediaObjectKey.StandardAdMetadata, standardAdMetadata);
 ```
-
