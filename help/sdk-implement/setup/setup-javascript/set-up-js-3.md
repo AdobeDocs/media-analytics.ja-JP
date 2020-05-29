@@ -2,10 +2,10 @@
 title: JavaScript 3.xの設定
 description: JavaScript 3.xでの実装用のメディアSDKアプリケーション設定。
 translation-type: tm+mt
-source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
+source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 50%
+source-wordcount: '398'
+ht-degree: 47%
 
 ---
 
@@ -45,6 +45,16 @@ ht-degree: 50%
       >
       >The JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `MediaSDK.js` can also be used with compatible module loaders.
 
+1. のインスタンスを作成し、 `AppMeasurement` 設定を行い `visitor`ます。
+
+   メディアSDKの設定には、が設定されたのインスタンス `AppMeasurement` が必要 `visitor` です。
+
+```js
+var appMeasurement = new AppMeasurement(“<rsid>”);
+appMeasurement.visitor = visitor;
+appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+```
+
 1. メディアSDKの設定
 
    メディアSDKは、Webページごとに1回設定する必要があります。設定は、作成されるすべてのトラッカーインスタンスに適用されます。
@@ -52,6 +62,7 @@ ht-degree: 50%
    >[!IMPORTANT]
    >
    > Media SDK(3.x)は、2.x SDKで使用されているHBエンドポイントとは異なるメディアの追跡に、Media Collection APIを使用します。 詳細については、アドビの担当者にお問い合わせください。
+
 
    `MediaConfig` 初期化のサンプル：
 
