@@ -2,9 +2,9 @@
 title: 導入とレポート
 description: このトピックでは、を含むプレイヤー状態トラッキング機能の実装方法について説明します。
 translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -100,4 +100,4 @@ Analytics Workspaceでは、すべての新しいプロパティが指標パネ�
 
 ## Adobe Experience Platformへのプレイヤーの指標のインポート
 
-Analyticsに保存されたデータはどのような目的でも使用でき、プレーヤー状態指標はXDMを使用してAdobe Experience Platformにインポートし、Customer Jeurney Analyticsで使用できます。 標準の状態プロパティには固有のプロパティがあり、カスタム状態のプロパティはカスタムイベントを介して使用できます。
+Analyticsに保存されたデータはどのような目的でも使用でき、プレーヤー状態指標はXDMを使用してAdobe Experience Platformにインポートし、Customer Jeurney Analyticsで使用できます。 標準状態プロパティには固有のプロパティがあり、カスタム状態はカスタムイベントを使用してプロパティを使用できます。 標準の状態プロパティについて詳しくは、 *Player状態パラメーター* ページの「XDM Identitys [の](/help/metrics-and-metadata/player-state-parameters.md) プロパティリストー」の節を参照してください。
