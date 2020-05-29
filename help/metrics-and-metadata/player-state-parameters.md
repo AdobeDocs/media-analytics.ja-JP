@@ -3,10 +3,10 @@ title: プレイヤーの状態パラメーター
 description: このトピックでは、プレイヤー状態の追跡パラメーターについて説明します。
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: c23a8787a8f59746665702eb5e2e74dde2c213e8
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 27%
+source-wordcount: '2236'
+ht-degree: 26%
 
 ---
 
@@ -155,7 +155,27 @@ ht-degree: 27%
 | --- | --- | --- |
 | <ul> <li> **SDKキー&#x200B;**<br/>：自動的に設定</li> <li> **APIキー&#x200B;**<br/>該当なし</li> <li> **必須&#x200B;**<br/>No</li> <li> **タイプ&#x200B;**<br/>番号</li> <li> **メディアを閉じると共に送信&#x200B;**<br/></li> <li> **最小のSDK Version **<br/>3.0</li> <li> **サンプル値&#x200B;**<br/>TRUE</li><li> ****<br/>説明フォーカスが表示された時間。 This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **重要**<br/> このイベントを設定した場合、時間はビデオがフォーカス状態にあった時間と等しくなります。 このイベントが設定されていない場合、値は送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.time)<br/></li> <li> **ハートビート&#x200B;**<br/>N/A</li> </ul> | <ul> <li> **使用可能&#x200B;**<br/>Yes</li> <li> **予約変数&#x200B;**<br/>イベント</li> <li> **フォーカスされたレポート名&#x200B;**<br/>（合計期間）</li> <li> **コンテキストデータ&#x200B;**<br/>(media.states.infocus.time)<br/> </li> <li> **データフィード&#x200B;**<br/>media.states.infocus.time</li> <li> **オーディエンスマネージャ&#x200B;**<br/>(c_contextdata.media.states.infocus.time)</li> </ul> |
 
+## XDM IDのプロパティリスト
 
+Analyticsに保存されたデータはどのような目的でも使用でき、プレーヤー状態指標は、XDMを使用してAdobe Experience Platformにインポートし、Customer Jeurney Analyticsで使用できます。
+
+| プレイヤー状態プロパティ | マッピング |
+|---------------------------------------|------------------------------------|
+| a.media.states.fullScreen.set | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateSet |
+| a.media.states.fullScreen.count | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateCount |
+| a.media.states.fullScreen.time | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateTime |
+| a.media.states.mute.set | media.mediaTimed.primaryAssetViewDetails.mute.playerStateSet |
+| a.media.states.mute.count | media.mediaTimed.primaryAssetViewDetails.mute.playerStateCount |
+| a.media.states.mute.time | media.mediaTimed.primaryAssetViewDetails.mute.playerStateTime |
+| a.media.states.closeCaption.set | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateSet |
+| a.media.states.closeCaption.count | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateCount |
+| a.media.states.closeCaption.time | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateTime |
+| a.media.states.pictureInPicture.set | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateSet |
+| a.media.states.pictureInPicture.count | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateCount |
+| a.media.states.pictureInPicture.time | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateTime |
+| a.media.states.inFocus.set | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateSet |
+| a.media.states.inFocus.count | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateCount |
+| a.media.states.inFocus.time | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateTime |
 
 ## 関連する API {#related_apis_section}
 
