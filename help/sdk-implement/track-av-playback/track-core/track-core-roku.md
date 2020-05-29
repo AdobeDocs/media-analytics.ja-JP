@@ -2,8 +2,11 @@
 title: Roku でのコア再生の追跡
 description: ここでは、Roku でのメディア SDK を使用したコア追跡の実装方法について説明します。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+workflow-type: tm+mt
+source-wordcount: '1022'
+ht-degree: 100%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!IMPORTANT]
 >このドキュメントでは、バージョン 2.x の SDK での追跡について説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-1. **追跡の初期設定**
+1. **トラッキングの初期設定**
 
    いつユーザーが再生の意図をトリガーする（ユーザーが再生をクリックする、または自動再生がオンになる）かを識別し、`MediaObject` インスタンスを作成します。
 
@@ -72,10 +75,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    ```
    mediaInfo = adb_media_init_mediainfo(
-    "<MEDIA_NAME>", 
-    "<MEDIA_ID>", 
-    600, 
-    ADBMobile().MEDIA_STREAM_TYPE_AOD, 
+    "<MEDIA_NAME>",
+    "<MEDIA_ID>",
+    600,
+    ADBMobile().MEDIA_STREAM_TYPE_AOD,
     ADBMobile().MEDIA_TYPE_AUDIO
    )
    ```
@@ -97,7 +100,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    * **標準メタデータ**
 
-      [JavaScript での標準メタデータの実装](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+      [JavaScript での標準メタデータの実装](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
@@ -111,11 +114,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       カスタム変数の変数オブジェクトを作成し、このメディアのデータを設定します。例：
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
@@ -255,8 +258,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    * アプリ内でユーザーが明示的に一時停止をクリックする。
    * プレーヤー自体が一時停止状態になる。
-   * （*モバイルアプリ*）- ユーザーがアプリケーションをバックグラウンドに移行した場合でも、アプリのセッションを開いたままにしておきたい。
-   * （*モバイルアプリ*）- 何らかのシステムの割り込みが生じ、アプリケーションがバックグラウンドに移行する。例：ユーザーに電話がかかってきた場合や、別のアプリケーションのポップアップが表示された場合でも、アプリケーションのセッションを終了せず、ユーザーが中断した場所からビデオを再開できるようにしたい。
+   * （*モバイルアプリケーション*）- ユーザーがアプリケーションをバックグラウンドに移行した場合でも、アプリケーションのセッションを開いたままにしておきたい。
+   * （*モバイルアプリケーション*）- 何らかのシステムの割り込みが生じ、アプリケーションがバックグラウンドに移行する。例：ユーザーに電話がかかってきた場合や、別のアプリケーションのポップアップが表示された場合でも、アプリケーションのセッションを終了せず、ユーザーが中断した場所からビデオを再開できるようにしたい。
 
 1. 一時停止からのビデオ再生およびビデオ再開に関するイベントをプレーヤーから識別し、`trackPlay` を呼び出します。
 
@@ -267,6 +270,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >これは、手順 4 で使用したのと同じイベントソースである可能性があります。ビデオ再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
 
-* 追跡シナリオ：[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* トラッキングのシナリオ：[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Roku SDK に含まれている、追跡の完全な例を示すサンプルプレーヤー
-
