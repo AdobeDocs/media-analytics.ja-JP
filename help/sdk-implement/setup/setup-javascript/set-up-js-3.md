@@ -2,7 +2,7 @@
 title: JavaScript 3.xの設定
 description: JavaScript 3.xでの実装用のメディアSDKアプリケーション設定。
 translation-type: tm+mt
-source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
+source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 47%
@@ -49,11 +49,11 @@ ht-degree: 47%
 
    メディアSDKの設定には、が設定されたのインスタンス `AppMeasurement` が必要 `visitor` です。
 
-```js
-var appMeasurement = new AppMeasurement(“<rsid>”);
-appMeasurement.visitor = visitor;
-appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
-```
+   ```js
+    var appMeasurement = new AppMeasurement(“<rsid>”);
+    appMeasurement.visitor = visitor;
+    appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+   ```
 
 1. メディアSDKの設定
 
@@ -62,7 +62,6 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
    >[!IMPORTANT]
    >
    > Media SDK(3.x)は、2.x SDKで使用されているHBエンドポイントとは異なるメディアの追跡に、Media Collection APIを使用します。 詳細については、アドビの担当者にお問い合わせください。
-
 
    `MediaConfig` 初期化のサンプル：
 
@@ -77,7 +76,8 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
     mediaConfig.ssl = true;
    
     ADB.Media.configure(mediaConfig, appMeasurement);
-   
+   ```
+
 1. `MediaTracker` インスタンスを作成します。
 
    メディアSDKの設定後、メディアコンテンツを追跡するためのトラッカーインスタンスを `getInstance` APIを使用して作成できます。
