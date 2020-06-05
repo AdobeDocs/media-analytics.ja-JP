@@ -4,7 +4,7 @@ user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: f26816d37f30e9e4ae08dbf7af78f2135e8403f4
+source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 79%
@@ -193,7 +193,6 @@ ht-degree: 79%
       + [タイムライン 1 - コンテンツの最後まで視聴](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [タイムライン 2 - ユーザーが中断したセッション](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [タイムライン 3 - チャプター](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-   + [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
 + クックブック {#media-analytics-cookbook}
    + [クックブック](media-analytics-cookbook/media-analytics-cookbook.md)
    + [メディアストリームアトリビューション](media-analytics-cookbook/media-dimensions.md)
@@ -215,6 +214,7 @@ ht-degree: 79%
       + [メディア同時閲覧者数](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [同時閲覧者数 JSON レポートデータの取得](media-reports/media-default-reports/get-concurrent-json.md)
    + [Media Workspace のテンプレート](media-reports/media-workspace-templates.md)
++ [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + プレーヤーステートトラッキング {#player-state-tracking}
    + [概要](sdk-implement/player-state-tracking/player-state-overview.md)
