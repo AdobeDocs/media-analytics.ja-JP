@@ -2,10 +2,10 @@
 title: Media Analytics SDKサポート終了FAQ
 description: このトピックには、Media Analytics SDKのサポート終了に関するFAQが含まれています。
 translation-type: tm+mt
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 2%
+source-wordcount: '703'
+ht-degree: 3%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 2%
 
 ## 知りたいことのトップ5
 
-1. Mobile v4 SDKは、2021年8月31日を過ぎるとサポートされなくなります。 iOSおよびAndroid向けのAdobe Experience Platform(AEP)SDKに移行する必要があります。
+1. Mobile v4 SDKは、2021年8月31日を過ぎるとサポートされなくなります。 iOSおよびAndroid向けのAdobe Experience Platform(AEP)SDKに移行する必要があります。 詳しくは、 [バージョン4モバイルSDKのサポート終了に関するFAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)（英語）を参照してください。
 
-1. オーディオとビデオの分析の導入には、AEP SDKが必要で、AnalyticsとMedia Analyticsの拡張機能を使用する必要があります。 2021年9月1日から、新しいAEP SDKおよび拡張機能を使用する必要があります。  Media Analytics拡張機能は、「Adobe Launch」を使用して設定されます。  詳しくは、「スタンドアロンメディアSDKからAdobe Launchへの [移行」を参照してください。](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+1. オーディオとビデオの分析の導入には、AEP SDKが必要で、AnalyticsとMedia Analyticsの拡張機能を使用する必要があります。 2021年9月1日から、新しいAEP SDKおよび拡張機能を使用する必要があります。  Media Analytics拡張機能は、「Adobe Launch」を使用して設定されます。  詳しくは、「スタンドアロンメディアSDKからAdobe Launchへの [移行」を参照してください。](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
 1. iOSおよびAndroid用のMedia Analytics SDKの機能の開発は終了しました。  2019年秋から導入された新機能は、Media Analytics拡張機能とメディアコレクションAPIを使用して有効になります。
 
 1. Roku SDKとChromecast SDKは、オーディオおよびビデオのAnalyticsのお客様が引き続き利用できます。 Roku SDKとChromecast SDKは引き続き強化され、スタンドアロンSDKとしてサポートされます。  Media Analytics用のJS SDKを使用する場合、引き続きスタンドアロンSDKを使用するか、Adobe Launchを使用してMedia Analytics拡張機能を有効にすることができます。
 
-1. 2021年9月1日より前に、アドビは、独自の裁量で、高い技術的影響またはビジネス上の影響を及ぼす問題に対する新しい修正を開発することができます。 顧客の入力に基づいて、影響度、露出度、およびその結果生じるアクティビティがアドビによって判断されます。
+1. 2021年9月1日より前に、アドビは、独自の裁量で、高い技術的影響やビジネス上の影響を及ぼす問題に対する新しい修正を開発することができます。 顧客の入力に基づいて、影響度、露出度、およびその結果生じるアクティビティがアドビによって判断されます。
 
 ご質問がある場合は、アドビのカスタマーサクセスマネージャーにお問い合わせください。
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 1. **タグ管理システムとして起動する必要があるか 「起動」を使用しない場合はどうしますか？**
 
-   モバイルの場合、Mobile Services UIなどのメディア拡張機能を設定するには、「起動」が必要です。 モバイルアプリの使用例では、タグ管理システムとしては使用されません。
+   モバイルアプリの使用例では、LaunchはWeb用とは異なり、タグ管理システムとしては使用されません。  SDK拡張機能を設定するには、起動UIの使用が必要です。 これは、Adobe Mobile Services UIを使用してモバイルv4 SDKを設定する方法と似ています。 インストールに関しては、「起動」を使用する利点は、選択した拡張機能に基づいて、インストールの手順をカスタマイズできる点です。
 
 1. **このサポートの終了は、tvOS用SDKに影響を与えますか。**
 
