@@ -2,11 +2,11 @@
 title: セットアップの概要
 description: モバイル、OTT およびブラウザー（JS）アプリケーションでのメディアトラッキングのためのメディア SDK のセットアップの概要です。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->2021年8月31日にバージョン4のモバイルSDKのサポートが終了すると、アドビはiOSおよびAndroid用のMedia Analytics SDKのサポートも終了します。  詳しくは、 [Media Analytics SDKサポート終了FAQを参照してください](/help/sdk-implement/end-of-support-faqs.md)。
+>2021 年 8 月 31 日にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
 以下の手順は、メディア SDK 2.x に適用されます。メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetime のインテグレーターの場合は、後述の _Primetime メディア SDK のドキュメント_&#x200B;を参照してください。
 
@@ -25,12 +25,12 @@ ht-degree: 95%
 
 | OS／ブラウザー | 必要な最小バージョン |
 | --- | --- |
-| iOS | iOS 6+ |
+| iOS | iOS 6 以降 |
 | Android | Android 5.0 Lollipop 以降 |
-| Chrome | v22+ |
-| Mozilla | v27+ |
-| Safari | v7+ |
-| IE | v11+ |
+| Chrome | v22 以降 |
+| Mozilla | v27 以降 |
+| Safari | v7 以降 |
+| IE | v11 以降 |
 
 ## 一般的な実装のガイドライン {#general-implementation-guidelines}
 
@@ -156,4 +156,4 @@ Media Analytics トラッキング実装は、2 つのタイプのトラッキ�
 
 ## Primetime メディア SDK のドキュメント {#primetime-docs}
 
-* [Primetime ユーザーガイド](https://helpx.adobe.com/jp/primetime/user-guide.html)
+* [Primetime ユーザーガイド](https://helpx.adobe.com/jp/support/primetime.html)
