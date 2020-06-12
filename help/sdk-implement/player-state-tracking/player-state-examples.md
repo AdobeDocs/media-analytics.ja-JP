@@ -1,27 +1,27 @@
 ---
-title: プレイヤー状態の追跡の例
-description: このトピックには、プレイヤー状態追跡機能の例が含まれています。
+title: プレーヤーステートトラッキングの例
+description: このトピックでは、プレーヤーステートトラッキング機能の例を示します。
 translation-type: tm+mt
 source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
 workflow-type: tm+mt
 source-wordcount: '119'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# プレイヤー状態の追跡の例
+# プレーヤーステートトラッキングの例
 
 
 ## 長い一時停止の例
 
-ビデオセッションの一時停止時間が30分を超える場合、APIでは新しいセッションが必要です。 この場合、クライアントは新しいセッションIDを生成する必要があります。 両方のビデオセッションの場合、クライアントは、プレイヤーの状態をすべて保持し、呼び出しの直後にすべての情報を `stateStart` イベントとして送信する必要があり `sessionStart` ます。
+ビデオセッションの一時停止時間が 30 分を超える場合、API では新しいセッションが必要となります。この場合、クライアントは新しいセッション ID を生成する必要があります。両方のビデオセッションで、クライアントは、プレーヤーの状態をすべて保持し、`sessionStart` 呼び出しの直後にすべての情報を `stateStart` イベントとして送信する必要があります。
 
 `sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd
 `
 
-が送信さ `sessionEnd` れたら、新しいビデオセッションを開始する必要があり、最初のAPIイベントは次のようになります。
+`sessionEnd` が送信されたら、新しいビデオセッションを開始する必要があります。最初の API イベントは次のようになります。
 
 `sessionStart → stateStart (fullscreen) → stateStart (mute) → ... other API events`
 
-長い一時停止の例は、プレイヤーがその状態も保存しているので、新しいビデオセッションに送信できることを示しています。
+長い一時停止の例では、プレーヤーが状態も保存しているので、新しいビデオセッションに送信できることを示しています。
