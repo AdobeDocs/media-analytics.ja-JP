@@ -2,11 +2,11 @@
 title: iOS のセットアップ
 description: iOS での実装用のメディア SDK アプリケーション設定です。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '690'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 >[!IMPORTANT]
 >
->2021年8月31日にバージョン4のモバイルSDKのサポートが終了すると、アドビはiOSおよびAndroid向けのMedia Analytics SDKのサポートも終了します。  詳しくは、 [Media Analytics SDKサポート終了FAQを参照してください](/help/sdk-implement/end-of-support-faqs.md)。
+>2021 年 8 月 31 日にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
 ## 前提条件
 
@@ -24,7 +24,7 @@ ht-degree: 93%
 
    >[!IMPORTANT]
    >
-   >iOS 9 から、Apple は App Transport Security（ATS）という機能を導入しました。この機能は、アプリケーションで業界標準のプロトコルと暗号のみを使用することで、ネットワークセキュリティの向上を目的としています。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。ATS について詳しくは、[App Transport Security](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html) を参照してください。
+   >iOS 9 から、Apple は App Transport Security（ATS）という機能を導入しました。この機能は、アプリケーションで業界標準のプロトコルと暗号のみを使用することで、ネットワークセキュリティの向上を目的としています。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。ATS について詳しくは、[App Transport Security](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/config-ios/app-transport-security.html) を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
@@ -59,7 +59,7 @@ ht-degree: 93%
       1. **[!UICONTROL Project Navigator]** で、アプリを選択し、ターゲットを選択します。
       1. 「**[!UICONTROL 一般]**」タブの「**[!UICONTROL リンクされたフレームワーク]**」および「**[!UICONTROL ライブラリ]**」セクションで、必要なフレームワークとライブラリをリンクさせます。
 
-         **iOS App Targets:**
+         **iOS アプリのターゲット：**
 
          * **AdobeMobileLibrary.a**
          * **MediaSDK.a**
