@@ -1,11 +1,11 @@
 ---
 title: サポートされるデバイスとプラットフォーム
-description: オーディオおよびビデオ用のAdobe Analyticsでは、各メディアストリームがすべてのデバイスで収集され、レポートされるようにします。
-translation-type: tm+mt
+description: Adobe Analytics for Audio and Video では、各メディアストリームがすべてのデバイスをまたいで収集され、報告されるようにします。
+translation-type: ht
 source-git-commit: a8fec1747e688473af7a5eabbc4f9968772b5db3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
@@ -14,40 +14,40 @@ ht-degree: 15%
 
 >[!IMPORTANT]
 >
->2021年8月31日にバージョン4のモバイルSDKのサポートが終了すると、アドビはiOSおよびAndroid向けのMedia Analytics SDKのサポートも終了します。  詳しくは、 [Media Analytics SDKサポート終了FAQを参照してください](/help/sdk-implement/end-of-support-faqs.md)。
+>2021 年 8 月 31 日にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
-オーディオおよびビデオ用のAdobe Analyticsは、次の主要デバイスをすべてサポートしています。
+Adobe Analytics for Audio and Video は、次の主要デバイスをすべてサポートしています。
 
 * iOS および Android のスマートフォンおよびタブレット
 * ROKU、Apple TV、FireTV、Android TV の OTT デバイス
 * デスクトップおよびラップトップの JavaScript ブラウザー
 
-メディアSDKは、新しいバージョンのデバイスがリリースされると定期的に更新され、SDKを使用して、BrightcoveやOoyalaを含む現在最大のメディアプレイヤーと統合できます。
+このメディア SDK はデバイスの新バージョンのリリースに合わせて定期的にアップデートされ、Brightcove や Ooyala など、現在の主要メディアプレーヤーと統合できます。
 
-SDKが現在サポートされていないデバイスやプラットフォーム、またはSDKを使用したくない状況では、Media Collection APIを実装できます。 メディア収集APIを使用すると、デバイスまたはプラットフォームからMedia Analyticsバックエンドに直接RESTful API呼び出しを行うことができます。
+SDK が現在サポートされていないデバイスやプラットフォーム、または SDK を使用したくない状況では、Media Collection API を実装できます。メディアコレクション API を使用すると、デバイスまたはプラットフォームから Media Analytics バックエンドに直接 RESTful API 呼び出しをおこなうことができます。
 
-現在サポートされているリストとプラットフォームの表を次に示します。 この SDK の最新バージョンをダウンロードするには、[SDK のダウンロード](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html)を参照してください。デバイスが一覧に表示されない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
+現在サポートされているデバイスとプラットフォームの表を次に示します。この SDK の最新バージョンをダウンロードするには、[SDK のダウンロード](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/download-sdks.html)を参照してください。デバイスが一覧にない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
 
-| ストリーミングプラットフォームとデバイス |  | AEP SDKを含むメディア起動拡張 | メディア SDK | メディアコレクション API |
+| ストリーミングプラットフォームとデバイス |  | AEP SDK を含むメディア Launch 拡張機能 | メディア SDK | メディアコレクション API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
-| Web/モバイルWeb |  |  |  |  |
-|  | JavaScriptブラウザー | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
+| Web／モバイル Web |  |  |  |  |
+|  | JavaScript ブラウザー | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 | モバイルアプリ |  |  |  |  |
 |  | iOS デバイス | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Android デバイス | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Windowsデバイス |  |  | ![](/help/assets/icon-blue-check.png) |
+|  | Windows デバイス |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
-|  | Apple TV(tvOS) | 2020年予定 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript)    | ![](/help/assets/icon-blue-check.png)<br>（ネイティブ） |
-|  | Fire TV(Fire OS) | 2020年予定 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android TV | 2020年予定 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Apple TV（tvOS） | 2020 年中に対応予定 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>（BrightScript） | ![](/help/assets/icon-blue-check.png)<br>（ネイティブ） |
+|  | Fire TV（Fire OS） | 2020 年中に対応予定 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android TV | 2020 年中に対応予定 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
-|  | ゲームコンソール（Xbox ONE、ソニーPS3/PS4など） |  |  | ![](/help/assets/icon-blue-check.png) |
-|  | トップ・ボックスの設定（Xfinity X1など） |  |  | ![](/help/assets/icon-blue-check.png) |
-|  | スマートTV（Samsung、LG、Sony、Vizioなど） |  | ![](/help/assets/icon-blue-check.png)   <br>（Webベース）    | ![](/help/assets/icon-blue-check.png) |
+|  | ゲームコンソール（Xbox ONE、ソニー PS3／PS4 など） |  |  | ![](/help/assets/icon-blue-check.png) |
+|  | トップボックスの設定（Xfinity X1 など） |  |  | ![](/help/assets/icon-blue-check.png) |
+|  | スマート TV（Samsung、LG、Sony、Vizio など） |  | ![](/help/assets/icon-blue-check.png)   <br>（Web ベース） | ![](/help/assets/icon-blue-check.png) |
 | その他 |  |  |  |  |
-|  | 新しく接続されたデバイス |  |  | ![](/help/assets/icon-blue-check.png) |
+|  | 新しい接続デバイス |  |  | ![](/help/assets/icon-blue-check.png) |
 
-1. これらのSDKのサポートは2021年8月31日に終了します。 詳しくは、 [Media Analytics SDKサポート終了FAQを参照してください](/help/sdk-implement/end-of-support-faqs.md)。
+1. 次の SDK のサポートは 2021 年 8 月 31 日に終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
-各SDKでサポートされる最小プラットフォームバージョンについて詳しくは、 [最小プラットフォームバージョンのサポートを参照してください](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
+各 SDK でサポートされる最小プラットフォームバージョンについて詳しくは、[サポートされる最小プラットフォームバージョン](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/setup/setup-overview.html)を参照してください
