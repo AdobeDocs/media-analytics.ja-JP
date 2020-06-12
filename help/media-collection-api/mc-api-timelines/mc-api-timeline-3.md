@@ -2,9 +2,9 @@
 title: タイムライン 3 - チャプター
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 197041df4c985cdc572564652a976bd733448787
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1219'
 ht-degree: 100%
 
