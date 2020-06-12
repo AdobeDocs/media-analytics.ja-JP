@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 79%
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Audience Manager の有効化](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
-   + [Media Analytics SDKサポート終了FAQ](sdk-implement/end-of-support-faqs.md)
+   + [Media Analytics SDK のサポート終了に関する FAQ](sdk-implement/end-of-support-faqs.md)
    + [SDK のダウンロード](sdk-implement/download-sdks.md)
    + セットアップと設定 {#setup}
       + [概要](sdk-implement/setup/setup-overview.md)
@@ -43,7 +43,7 @@ ht-degree: 79%
          + [JavaScript 3.xの設定](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast のセットアップ ](sdk-implement/setup/set-up-chromecast.md)
       + [Roku のセットアップ ](sdk-implement/setup/set-up-roku.md)
-   + Track Audio and Video Playback {#track-av-playback}
+   + オーディオとビデオの再生の追跡 {#track-av-playback}
       + [概要](sdk-implement/track-av-playback/track-core-overview.md)
       + コアオーディオおよびビデオ再生の追跡 {#track-core}
          + [Android でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -69,7 +69,7 @@ ht-degree: 79%
             + [JavaScript 3.xでのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [Chromecast でのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Roku でのシークの追跡](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Implement Standard Metadata {#impl-std-metadata}
+      + 標準メタデータの実装 {#impl-std-metadata}
          + [Android での標準メタデータの実装](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [iOS での標準メタデータの実装](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS のメタデータキー](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -89,7 +89,7 @@ ht-degree: 79%
          + [JavaScript 3.xでの広告の追跡](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [Chromecast での広告の追跡](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Roku での広告の追跡](sdk-implement/track-ads/track-ads-roku.md)
-      + Implement Standard ad Metadata {#impl-std-ad-metadata}
+      + 標準広告メタデータの実装 {#impl-std-ad-metadata}
          + [Android での標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [iOS での標準広告メタデータの実装](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
@@ -219,7 +219,7 @@ ht-degree: 79%
 + プレーヤーステートトラッキング {#player-state-tracking}
    + [概要](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準状態とカスタム状態](sdk-implement/player-state-tracking/standard-and-custom-states.md)
-   + [導入とレポート](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [実装とレポート](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [プレイヤー状態の追跡の例](sdk-implement/player-state-tracking/player-state-examples.md)
 + その他のリソース {#additional-resources}
    + [リリースノート](additional-resources/doc-updates.md)
