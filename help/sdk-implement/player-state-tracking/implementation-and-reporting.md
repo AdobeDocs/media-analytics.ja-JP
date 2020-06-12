@@ -1,33 +1,33 @@
 ---
-title: 導入とレポート
-description: このトピックでは、を含むプレイヤー状態トラッキング機能の実装方法について説明します。
+title: 実装とレポート
+description: このトピックでは、以下を含むプレーヤーステートトラッキング機能の実装方法について説明します。
 translation-type: tm+mt
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 0%
+ht-degree: 58%
 
 ---
 
 
-# 導入とレポート
+# 実装とレポート
 
-再生セッション中は、各状態のオカレンス(開始間)を個別に追跡する必要があります。 メディアSDKとメディアコレクションAPIは、この機能の新しいトラッキングメソッドを提供します。
+再生セッション中は、各ステートの発生（最初から最後まで）を個別に追跡する必要があります。メディア SDK とメディアコレクション API は、この機能の新しいトラッキングメソッドを提供します。
 
-メディアSDKには、カスタム状態追跡の2つの新しいメソッドが含まれています。
+メディア SDK には、カスタムステートトラッキングの 2 つの新しいメソッドが含まれています。
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-メディアコレクションAPIには、次の2つの新しいイベントが追加されました。これら `media.stateName` のパラメーターは、必須パラメーターとして指定します。
+The Media Collection API includes two new events that have `media.stateName` as the required parameter:
 
 `stateStart` と `stateEnd`
 
-## メディアSDKの実装
+## メディア SDK の実装
 
-プレイヤーの状態開始
+プレーヤーステートトラッキング
 
 ```
 // StateStart (ex: Mute is switched on)
@@ -35,7 +35,7 @@ var stateObject = ADB.Media.createStateObject(ADB.Media.PlayerState.Mute);
 tracker.trackEvent(ADB.Media.Event.StateStart, stateObject);
 ```
 
-プレイヤー状態の終了
+プレーヤーステートの終了
 
 ```
 // StateEnd (ex: Mute is switched off)
@@ -43,9 +43,9 @@ tracker.trackEvent(ADB.Media.Event.StateEnd, stateObject);
 ```
 
 
-## メディア収集APIの実装
+## メディアコレクション API の実装
 
-プレイヤーの状態開始
+プレーヤーステートトラッキング
 
 ```
 // StateStart (ex: Mute is switched on)
@@ -62,7 +62,7 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 }
 ```
 
-プレイヤー状態の終了
+プレーヤーステートの終了
 
 ```
 // StateEnd (ex: Mute is switched off)
@@ -80,17 +80,17 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 }
 ```
 
-## 状態指標
+## ステートの指標
 
-個々の状態に対して提供される指標は、計算され、Context DataパラメーターとしてAdobe Analyticsにプッシュされ、レポートのために保存されます。 状態ごとに3つの指標を使用できます。
+個々のステートに対して提供される指標は、データパラメーターとして計算して Adobe Analytics にプッシュされ、レポート目的で保存されます。各ステートに対して 3 つの指標を使用できます。
 
-* `a.media.states.[state.name].set = true`  — ストリームの特定の再生ごとに少なくとも1回状態が設定された場合、trueに設定します。
-* `a.media.states.[state.name].count = 4`  — ストリームの個々の再生中に、ある状態が発生した回数を識別します。
-* `a.media.states.[state.name].time = 240`  — ストリームの個々の再生あたりの状態の合計時間を秒単位で識別します。
+* `a.media.states.[state.name].set = true`：ストリームの特定の再生 1 回あたり、ステートが 1 回以上設定された場合は、true に設定します。
+* `a.media.states.[state.name].count = 4`：ストリームを 1 回再生する間に、ステートが発生した回数を識別します。
+* `a.media.states.[state.name].time = 240`：ストリームの再生 1 回あたりの、ステートの合計時間を秒単位で識別します。
 
 ## レポート
 
-レポートスイートでプレイヤー状態の追跡が有効になると、すべてのプレイヤー状態指標を、分析ワークスペースやコンポーネント（セグメント、計算指標）で使用できるレポートのビジュアライゼーションに使用できます。 新しい指標は、管理コンソールから、メディアレポート設定(設定の編集/メディア管理/メディアレポート)を使用して、個々のレポートに対して有効にできます。
+レポートスイートでプレイヤー状態の追跡が有効になると、すべてのプレイヤー状態指標を、Analysis Workspaceで使用可能な任意のレポートビジュアライゼーションやコンポーネント（セグメント、計算指標）に使用できます。 新しい指標は、管理コンソールから、メディアレポート設定(設定の編集/メディア管理/メディアレポート)を使用して、個々のレポートに対して有効にできます。
 
 ![](assets/report-setup.png)
 
@@ -98,6 +98,6 @@ Analytics Workspaceでは、すべての新しいプロパティが指標パネ�
 
 ![](assets/full-screen-report.png)
 
-## Adobe Experience Platformへのプレイヤーの指標のインポート
+## Adobe Experience Platform にプレーヤーステート指標を読み込む
 
-Analyticsに保存されたデータはどのような目的でも使用でき、プレーヤー状態指標はXDMを使用してAdobe Experience Platformにインポートし、Customer Jeurney Analyticsで使用できます。 標準状態プロパティには固有のプロパティがあり、カスタム状態はカスタムイベントを使用してプロパティを使用できます。 標準の状態プロパティについて詳しくは、 *Player状態パラメーター* ページの「XDM Identitys [の](/help/metrics-and-metadata/player-state-parameters.md) プロパティリストー」の節を参照してください。
+Analytics に保存されたデータはどのような目的でも使用でき、プレーヤーステート指標は XDM を使用して Adobe Experience Platform に読み込み、Customer Journey Analytics で使用することができます。標準状態プロパティには固有のプロパティがあり、カスタム状態はカスタムイベントを使用してプロパティを使用できます。 標準の状態プロパティについて詳しくは、 *Player状態パラメーター* ページの「XDM Identitys [の](/help/metrics-and-metadata/player-state-parameters.md) プロパティリストー」の節を参照してください。
