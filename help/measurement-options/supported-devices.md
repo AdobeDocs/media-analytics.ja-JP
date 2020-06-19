@@ -1,10 +1,10 @@
 ---
 title: サポートされるデバイスとプラットフォーム
 description: Adobe Analytics for Audio and Video では、各メディアストリームがすべてのデバイスをまたいで収集され、報告されるようにします。
-translation-type: ht
-source-git-commit: a8fec1747e688473af7a5eabbc4f9968772b5db3
-workflow-type: ht
-source-wordcount: '341'
+translation-type: tm+mt
+source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
+workflow-type: tm+mt
+source-wordcount: '338'
 ht-degree: 100%
 
 ---
@@ -37,10 +37,10 @@ SDK が現在サポートされていないデバイスやプラットフォー�
 |  | Android デバイス | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Windows デバイス |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
-|  | Apple TV（tvOS） | 2020 年中に対応予定 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Apple TV（tvOS） | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>（BrightScript） | ![](/help/assets/icon-blue-check.png)<br>（ネイティブ） |
-|  | Fire TV（Fire OS） | 2020 年中に対応予定 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android TV | 2020 年中に対応予定 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Fire TV（Fire OS） | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | ゲームコンソール（Xbox ONE、ソニー PS3／PS4 など） |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | トップボックスの設定（Xfinity X1 など） |  |  | ![](/help/assets/icon-blue-check.png) |
