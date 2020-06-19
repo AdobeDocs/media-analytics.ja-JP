@@ -4,6 +4,9 @@ description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: tm+mt
+source-wordcount: '908'
+ht-degree: 98%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ## 概要 {#overview}
 
-マイルストーンとカスタムリンクのトラッキングでは、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。カスタムリンクのアプローチは、実装と収集されるデータの両方の縮小と簡素化と考えてください。カスタムリンクソリューションを使用する場合、ビデオ測定用の変数やメソッドが事前に定義されていないので、完全なカスタムのセットアップが必要です。開始や完了など、基本的なプレーヤーイベントについては、カスタムリンクのトラッキングコールを指すようにプレーヤーのイベントコードを更新できる必要があります。詳しくは、[カスタムリンク導入ガイド](/help/measurement-options/cl-in-aa/cl-impl-guide.md)および[カスタムリンクコードを使用した手動リンクトラッキング](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)を参照してください。
+マイルストーンとカスタムリンクのトラッキングでは、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。カスタムリンクのアプローチは、実装と収集されるデータの両方の縮小と簡素化と考えてください。カスタムリンクソリューションを使用する場合、ビデオ測定用の変数やメソッドが事前に定義されていないので、完全なカスタムのセットアップが必要です。開始や完了など、基本的なプレーヤーイベントについては、カスタムリンクのトラッキングコールを指すようにプレーヤーのイベントコードを更新できる必要があります。詳しくは、[カスタムリンク導入ガイド](/help/measurement-options/cl-in-aa/cl-impl-guide.md)および[カスタムリンクコードを使用した手動リンクトラッキング](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)を参照してください。
 
 以下の表では、マイルストーンソリューションとカスタムリンクソリューション間の変更について説明します。
 
