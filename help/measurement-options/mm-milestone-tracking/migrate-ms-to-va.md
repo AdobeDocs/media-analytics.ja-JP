@@ -2,8 +2,11 @@
 title: マイルストーンから Media Analytics への移行
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 100%
 
 ---
 
