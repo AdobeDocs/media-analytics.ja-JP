@@ -2,11 +2,11 @@
 title: プレーヤーステートパラメーター
 description: このトピックでは、プレーヤーステートトラッキングパラメーターについて説明します。
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 73c579ec013d15ab47faa936cca1297f7052a8fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2236'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 73%
    * *レポート名* - Adobe Aanlytics の変数のレポート名。
    * *コンテキストデータ* - レポートサーバーに渡され、処理ルールで使用される Adobe Analytics のコンテキストデータの名前。
    * *データフィード* - クリックストリームまたはライブストリームデータフィード内の変数の列の名前。
-   * *Audience Manager* - Adobe Audience Manager 内の特性名。
+   * *Audience Manager:* - Adobe Audience Manager 内の特性名。
 
 >[!IMPORTANT]
 >
@@ -40,7 +40,7 @@ ht-degree: 73%
 
 ## プレーヤーステートプロパティ {#player-state-properties}
 
-プレイヤー状態追跡機能は、オーディオまたはビデオストリームに付加することができる。 標準化されたプレーヤー状態トラッキング指標は、ソリューション変数として保存されます。 標準の状態は次のとおりです。 fullScreen、mute、closeCaption、pictureInPicture、inFocus。
+プレーヤーステートトラッキング機能は、オーディオまたはビデオストリームにアタッチできます。標準化されたプレーヤーステートトラッキング指標は、ソリューション変数として保存されます。標準のステートは、フルスクリーン、ミュート、クローズドキャプション、ピクチャーインピクチャー、フォーカス設定です。
 
 ### フルスクリーンプロパティ
 
@@ -48,13 +48,13 @@ ht-degree: 73%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>フルスクリーンの影響を受けたストリームの数。この指標は、再生セッション中にフルスクリーンステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.fullscreen.set<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>フルスクリーンの影響を受けたストリーム</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.fullscreen.set<br/> </li> <li> **データフィード&#x200B;**<br/>videostatefullscreen</li> <li> **Audience Manager **<br/>c_contextdata.a.media.states.fullscreen.set</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>フルスクリーンの影響を受けたストリームの数。この指標は、再生セッション中にフルスクリーンステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.fullscreen.set<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>フルスクリーンの影響を受けたストリーム</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.fullscreen.set<br/> </li> <li> **データフィード&#x200B;**<br/>videostatefullscreen</li> <li> **Audience Manager:**<br/>c_contextdata.a.media.states.fullscreen.set</li> </ul> |
 
-#### 全画面表示回数
+#### フルスクリーンの回数
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>フルスクリーンが表示された回数。この指標は、再生セッション中にフルスクリーンステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>：このイベントを設定した場合、カウントは、ビデオがフルスクリーン状態だった回数と等しくなります。 このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.fullscreen.count<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>フルスクリーンの回数</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.fullscreen.count<br/> </li> <li> **データフィード&#x200B;**<br/>videostatefullscreencount</li> <li> **Audience Manager **<br/>c_contextdata.media.states.fullscreen.count</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>フルスクリーンが表示された回数。この指標は、再生セッション中にフルスクリーンステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>：このイベントを設定した場合、カウントは、ビデオがフルスクリーンステートだった回数と等しくなります。このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.fullscreen.count<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>フルスクリーンの回数</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.fullscreen.count<br/> </li> <li> **データフィード&#x200B;**<br/>videostatefullscreencount</li> <li> **Audience Manager:**<br/>c_contextdata.media.states.fullscreen.count</li> </ul> |
 
 
 
@@ -62,7 +62,7 @@ ht-degree: 73%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>フルスクリーンが表示された時間の長さ。この指標は、再生セッション中にフルスクリーンステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>：このイベントを設定した場合、時間はビデオがフルスクリーン状態だった時間と等しくなります。 このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.fullscreen.time<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>Full Screen Total Duration</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.fullscreen.time<br/> </li> <li> **データフィード&#x200B;**<br/>videostatefullscreentime</li> <li> **Audience Manager **<br/>c_contextdata.media.states.fullscreen.time</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>フルスクリーンが表示された時間の長さ。この指標は、再生セッション中にフルスクリーンステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>：このイベントを設定した場合、時間はビデオがフルスクリーンステートだった期間と等しくなります。このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.fullscreen.time<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>フルスクリーンの時間合計</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.fullscreen.time<br/> </li> <li> **データフィード&#x200B;**<br/>videostatefullscreentime</li> <li> **Audience Manager:**<br/>c_contextdata.media.states.fullscreen.time</li> </ul> |
 
 
 ### クローズドキャプションのプロパティ
@@ -71,21 +71,21 @@ ht-degree: 73%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>クローズドキャプションの影響を受けたストリームの数。この指標は、再生セッション中にクローズドキャプションステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.closedcaptioning.set<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>クローズドキャプションの影響を受けたストリーム</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.closedcaptioning.set<br/> </li> <li> **データフィード&#x200B;**<br/>videostateclosedcaptioning</li> <li> **Audience Manager **<br/>c_contextdata.a.media.states.closedcaptioning.set</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>クローズドキャプションの影響を受けたストリームの数。この指標は、再生セッション中にクローズドキャプションステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.closedcaptioning.set<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>クローズドキャプションの影響を受けたストリーム</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.closedcaptioning.set<br/> </li> <li> **データフィード&#x200B;**<br/>videostateclosedcaptioning</li> <li> **Audience Manager:**<br/>c_contextdata.a.media.states.closedcaptioning.set</li> </ul> |
 
 
 #### クローズドキャプションの回数
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> ****<br/>説明クローズドキャプションが表示された回数。 この指標は、再生セッション中にクローズドキャプションステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>このイベントを設定した場合、カウントは、ビデオがクローズドキャプション状態だった回数と等しくなります。 このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>C19<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>クローズドキャプションの回数</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.closedcaptioning.count<br/> </li> <li> **データフィード&#x200B;**<br/>videostateclosedcaptioningcount</li> <li> **Audience Manager **<br/>c_contextdata.media.states.closedcaptioning.count</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>クローズドキャプションが表示された回数。この指標は、再生セッション中にクローズドキャプションステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>このイベントを設定した場合、カウントは、ビデオがクローズドキャプションステートだった回数と等しくなります。このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>C19<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>クローズドキャプションの回数</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.closedcaptioning.count<br/> </li> <li> **データフィード&#x200B;**<br/>videostateclosedcaptioningcount</li> <li> **Audience Manager:**<br/>c_contextdata.media.states.closedcaptioning.count</li> </ul> |
 
 
 #### クローズドキャプション時間合計
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> ****<br/>説明クローズドキャプションが表示された時間の長さ。 この指標は、再生セッション中にフルスクリーンステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>：このイベントを設定した場合、時間は、ビデオがクローズドキャプション状態であった時間と等しくなります。 このイベントが設定されていない場合、値は送信されません。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.closedcaptioning.time<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>Closed Captioning Total Duration</li> <li> **Context Data **<br/>a.media.states.closedcaptioning.time<br/> </li> <li> **データフィード&#x200B;**<br/>videostateclosedcaptioningtime</li> <li> **Audience Manager **<br/>c_contextdata.media.states.closedcaptioning.time</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>クローズドキャプションが表示された時間の長さ。この指標は、再生セッション中にフルスクリーンステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>：このイベントを設定した場合、時間は、ビデオがクローズドキャプションステートであった期間と等しくなります。このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.closedcaptioning.time<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>クローズドキャプションの時間合計</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.closedcaptioning.time<br/> </li> <li> **データフィード&#x200B;**<br/>videostateclosedcaptioningtime</li> <li> **Audience Manager:**<br/>c_contextdata.media.states.closedcaptioning.time</li> </ul> |
 
 
 ### ミュートのプロパティ
@@ -94,19 +94,19 @@ ht-degree: 73%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明：**<br/>ミュートの影響を受けたストリームの数。この指標は、再生セッション中にミュートステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.mute.set<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>ミュートの影響を受けたストリーム</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.mute.set<br/> </li> <li> **データフィード&#x200B;**<br/>videostatemute</li> <li> **Audience Manager **<br/>c_contextdata.a.media.states.mute.set</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明：**<br/>ミュートの影響を受けたストリームの数。この指標は、再生セッション中にミュートステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.mute.set<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>ミュートの影響を受けたストリーム</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.mute.set<br/> </li> <li> **データフィード&#x200B;**<br/>videostatemute</li> <li> **Audience Manager:**<br/>c_contextdata.a.media.states.mute.set</li> </ul> |
 
 #### ミュートの回数
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> ****<br/>説明ミュートが表示された回数。 この指標は、再生セッション中にミュートステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>：このイベントを設定した場合、カウントは、ビデオがミュート状態だった回数と等しくなります。 このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.mute.count<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>ミュートの回数</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.mute.count<br/> </li> <li> **データフィード&#x200B;**<br/>videostatemutecount</li> <li> **Audience Manager **<br/>c_contextdata.media.states.mute.count</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>ミュートが表示された回数。この指標は、再生セッション中にミュートステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>：このイベントを設定した場合、カウントは、ビデオがミュートステートだった回数と等しくなります。このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.mute.count<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>ミュートの回数</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.mute.count<br/> </li> <li> **データフィード&#x200B;**<br/>videostatemutecount</li> <li> **Audience Manager:**<br/>c_contextdata.media.states.mute.count</li> </ul> |
 
 #### ミュート時間合計
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> ****<br/>説明ミュートが表示された時間の長さ。 この指標は、再生セッション中にミュートステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>：このイベントを設定した場合、時間はビデオがミュート状態にあった時間と等しくなります。 このイベントが設定されていない場合、値は送信されません。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.mute.time<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>（ミュート）合計時間</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.mute.time<br/> </li> <li> **データフィード&#x200B;**<br/>videostatemutetime</li> <li> **Audience Manager **<br/>c_contextdata.media.states.mute.time</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>ミュートが表示された時間の長さ。この指標は、再生セッション中にミュートステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>：このイベントを設定した場合、時間はビデオがミュートステートにあった期間と等しくなります。このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.mute.time<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>ミュートの合計期間</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.mute.time<br/> </li> <li> **データフィード&#x200B;**<br/>videostatemutetime</li> <li> **Audience Manager:**<br/>c_contextdata.media.states.mute.time</li> </ul> |
 
 
 ### ピクチャーインピクチャーのプロパティ
@@ -116,21 +116,21 @@ ht-degree: 73%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明：**<br/>ピクチャーインピクチャーの影響を受けたストリームの数。この指標は、再生セッション中にピクチャーインピクチャー設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.pictureinpicture.set<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>ピクチャーインピクチャーの影響を受けたストリーム</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.picture.set<br/> </li> <li> **データフィード&#x200B;**<br/>videostatepictureinpicture</li> <li> **Audience Manager **<br/>c_contextdata.a.media.states.pictureinpicture.set</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明：**<br/>ピクチャーインピクチャーの影響を受けたストリームの数。この指標は、再生セッション中にピクチャーインピクチャー設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.pictureinpicture.set<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>ピクチャーインピクチャーの影響を受けたストリーム</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.pictureinpicture.set<br/> </li> <li> **データフィード&#x200B;**<br/>videostatepictureinpicture</li> <li> **Audience Manager:**<br/>c_contextdata.a.media.states.pictureinpicture.set</li> </ul> |
 
 
 #### ピクチャーインピクチャーの回数
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>ピクチャーインピクチャーが表示された回数。この指標は、再生セッション中にピクチャーインピクチャー設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/> このイベントを設定した場合、カウントは、ビデオがピクチャインピクチャ状態だった回数と等しくなります。 このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.pictureinpicture.count<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>ピクチャーインピクチャーの回数</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.pictureinpicture.count<br/> </li> <li> **データフィード&#x200B;**<br/>videostatepictureinpicturecount</li> <li> **Audience Manager **<br/>c_contextdata.media.states.pictureinpicture.count</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>ピクチャーインピクチャーが表示された回数。この指標は、再生セッション中にピクチャーインピクチャー設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定した場合、カウントは、ビデオがピクチャインピクチャステートだった回数と等しくなります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.pictureinpicture.count<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>ピクチャーインピクチャーの回数</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.pictureinpicture.count<br/> </li> <li> **データフィード&#x200B;**<br/>videostatepictureinpicturecount</li> <li> **Audience Manager:**<br/>c_contextdata.media.states.pictureinpicture.count</li> </ul> |
 
 
 #### ピクチャーインピクチャーの時間合計
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>ピクチャーインピクチャーが表示された時間の長さ。この指標は、再生セッション中にピクチャーインピクチャー設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/> このイベントを設定した場合、時間は、ビデオがピクチャインピクチャ状態にあった時間と等しくなります。 このイベントが設定されていない場合、値は送信されません。   </li> </ul> | <ul> <li> **Adobe **<br/>Analyticsa.media.states.pictureinpicture.time<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **画像内のレポート名&#x200B;**<br/>Picture （画像合計時間）</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.picture.time<br/> </li> <li> **データフィード&#x200B;**<br/>videostatepictureinpicturetime</li> <li> **Audience Manager **<br/>c_contextdata.media.states.pictureinpicture.time</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>ピクチャーインピクチャーが表示された時間の長さ。この指標は、再生セッション中にピクチャーインピクチャー設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定した場合、時間は、ビデオがピクチャインピクチャステートにあった期間と等しくなります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.pictureinpicture.time<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>ピクチャーインピクチャーの時間合計</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.pictureinpicture.time<br/> </li> <li> **データフィード&#x200B;**<br/>videostatepictureinpicturetime</li> <li> **Audience Manager:**<br/>c_contextdata.media.states.pictureinpicture.time</li> </ul> |
 
 
 ### フォーカス設定のプロパティ
@@ -139,27 +139,27 @@ ht-degree: 73%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明：**<br/>フォーカス設定の影響を受けたストリームの数。この指標は、再生セッション中にフォーカス設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.infocus.set<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>フォーカス設定の影響を受けたストリーム</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.infocus.set<br/> </li> <li> **データフィード&#x200B;**<br/>videostateinfocus</li> <li> **Audience Manager **<br/>c_contextdata.a.media.states.infocus.set</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明：**<br/>フォーカス設定の影響を受けたストリームの数。この指標は、再生セッション中にフォーカス設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定すると、値は TRUE のみになります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.infocus.set<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>フォーカス設定の影響を受けたストリーム</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.infocus.set<br/> </li> <li> **データフィード&#x200B;**<br/>videostateinfocus</li> <li> **Audience Manager:**<br/>c_contextdata.a.media.states.infocus.set</li> </ul> |
 
 
 #### フォーカス設定回数
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>フォーカス設定が表示された回数。この指標は、再生セッション中にフォーカス設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>このイベントを設定した場合、カウントは、ビデオがフォーカス状態だった回数と等しくなります。 このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.infocus.count<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>フォーカス設定の回数</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.infocus.count<br/> </li> <li> **データフィード&#x200B;**<br/>videostateinfocuscount</li> <li> **Audience Manager **<br/>c_contextdata.media.states.infocus.count</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>フォーカス設定が表示された回数。この指標は、再生セッション中にフォーカス設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要&#x200B;**<br/>このイベントを設定した場合、カウントは、ビデオがフォーカス設定ステートだった回数と等しくなります。このイベントを設定しない場合は、値が送信されません。</li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.infocus.count<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>フォーカス設定の回数</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.infocus.count<br/> </li> <li> **データフィード&#x200B;**<br/>videostateinfocuscount</li> <li> **Audience Manager:**<br/>c_contextdata.media.states.infocus.count</li> </ul> |
 
 
 #### フォーカス設定時間合計
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>フォーカス設定が表示された時間の長さ。この指標は、再生セッション中にフォーカス設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/> このイベントを設定した場合、時間はビデオがフォーカス状態にあった時間と等しくなります。 このイベントが設定されていない場合、値は送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.infocus.time<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **フォーカスされたレポート名&#x200B;**<br/>（合計期間）</li> <li> **Context Data **<br/>a.media.states.infocus.time<br/> </li> <li> **データフィード&#x200B;**<br/>videostateinfocustime</li> <li> **Audience Manager **<br/>c_contextdata.media.states.infocus.time</li> </ul> |
+| <ul> <li> **SDK キー&#x200B;**<br/>自動設定</li> <li> **API キー&#x200B;**<br/>なし</li> <li> **必須&#x200B;**<br/>いいえ</li> <li> **型&#x200B;**<br/>数値</li> <li> **送信タイミング&#x200B;**<br/>メディアの終了</li> <li> **最小のSDK のバージョン&#x200B;**<br/>3.0</li> <li> **値の例&#x200B;**<br/> TRUE</li><li> **説明&#x200B;**<br/>フォーカス設定が表示された時間の長さ。この指標は、再生セッション中にフォーカス設定ステートが 1 回以上発生した場合にのみ、1 に設定されます。<br/> **重要**<br/>このイベントを設定した場合、時間はビデオがフォーカス設定ステートにあった期間と等しくなります。このイベントを設定しない場合は、値が送信されません。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>a.media.states.infocus.time<br/></li> <li> **ハートビート&#x200B;**<br/>該当なし</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名&#x200B;**<br/>フォーカス設定の時間合計</li> <li> **コンテキストデータ&#x200B;**<br/>a.media.states.infocus.time<br/> </li> <li> **データフィード&#x200B;**<br/>videostateinfocustime</li> <li> **Audience Manager:**<br/>c_contextdata.media.states.infocus.time</li> </ul> |
 
-## XDM IDのプロパティリスト
+## XDM ID のプロパティリスト
 
-Analyticsに保存されたデータはどのような目的でも使用でき、プレーヤー状態指標は、XDMを使用してAdobe Experience Platformにインポートし、Customer Jeurney Analyticsで使用できます。
+Analytics に保存されたデータはどのような目的でも使用でき、プレーヤーステート指標は XDM を使用して Adobe Experience Platform に読み込み、Customer Journey Analytics で使用することができます。
 
-| プレイヤー状態プロパティ | マッピング |
+| プレーヤーステートのプロパティ | マッピング |
 |---------------------------------------|------------------------------------|
 | a.media.states.fullScreen.set | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateSet |
 | a.media.states.fullScreen.count | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateCount |
