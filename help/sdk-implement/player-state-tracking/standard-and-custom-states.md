@@ -1,11 +1,11 @@
 ---
 title: 標準ステートとカスタムステートについて
 description: このトピックでは、プレーヤーステートトラッキング機能と、標準およびカスタムプレーヤーステートの実装と報告に関する要件やガイドラインについて説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -30,15 +30,15 @@ ht-degree: 66%
 
 ## ガイドライン
 
-* 1つのビデオセッションは、10個のプレイヤー状態に制限されます。
-* 状態の任意の組み合わせが許可されます。
-* 複数のプレイヤー状態が通過した場合、最初の10のみが保持され、VA処理コンポーネントの下流に転送されます。
+* 1 つのビデオセッションでは、最大 10 のプレーヤーステートを使用できます。
+* ステートの組み合わせは自由です。
+* 複数のプレーヤーステートが渡されると、最初の 10 個のみが保持され、ダウンストリームの VA処理コンポーネントへと転送されます。
 * すべてのステートに対して、終了しているかどうかに関係なく、最大 10 個のステートが適用されます。
-* 1つの状態は、複数回開始して終了することができ、1つの状態としてカウントされます。 例えば、5回開始して停止する `closedCapationing` ことはできますが、1つの状態としてカウントされます。
-* 許可されている状態の上限が10個を超える状態はすべて破棄されます。
+* 1 つのステートは、複数回開始および終了でき、1 つのステートとしてカウントされます。例えば、`closedCapationing` は開始と停止を 5 回繰り返すことができますが、1 つのステートとしてカウントされます。
+* 許可されているステートの最大数である 10 を超えるステートは、すべて破棄されます。
 
 ## カスタムステート
 
 カスタムステートの作成機能を使用すると、再生セッション中にカスタムアクションをキャプチャし、カスタムメタデータを更新できます。
 
-カスタム状態の作成について詳しくは、 [メディアAPIリファレンスガイドを参照してください。 `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+カスタムステートの作成について詳しくは、[メディア API リファレンスガイド`createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)を参照してください。
