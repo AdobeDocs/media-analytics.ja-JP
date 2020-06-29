@@ -1,17 +1,17 @@
 ---
-title: JavaScript 2.xの設定
-description: JavaScript 2.xでの実装用のメディアSDKアプリケーション設定
+title: JavaScript 2.x のセットアップ
+description: JavaScript 2.x での実装用のメディア SDK アプリケーション設定です。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# JavaScript 2.xの設定{#set-up-javascript}
+# JavaScript 2.x のセットアップ{#set-up-javascript}
 
 ## 前提条件
 
@@ -114,7 +114,7 @@ ht-degree: 94%
    appMeasurement.charSet = "UTF­8";
    ```
 
-## JavaScript 1.xから2.xへの移行
+## JavaScript 1.x から 2.x への移行
 
 バージョン 2.x では、すべてのパブリックメソッドは、開発をより簡単にするために、`ADB.va.MediaHeartbeat` クラスに統合されています。また、すべての設定は、`ADB.va.MediaHeartbeatConfig` クラスに統合されました。
 
