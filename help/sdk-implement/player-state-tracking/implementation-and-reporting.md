@@ -1,11 +1,11 @@
 ---
 title: 実装とレポート
 description: このトピックでは、以下を含むプレーヤーステートトラッキング機能の実装方法について説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 58%
 `trackStateClose("state_name")`
 
 
-The Media Collection API includes two new events that have `media.stateName` as the required parameter:
+メディアコレクション API には、必須イベントパラメーターが「`media.stateName`」の 2 つの新しいイベントが含まれています。
 
 `stateStart` と `stateEnd`
 
@@ -90,14 +90,14 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## レポート
 
-レポートスイートでプレイヤー状態の追跡が有効になると、すべてのプレイヤー状態指標を、Analysis Workspaceで使用可能な任意のレポートビジュアライゼーションやコンポーネント（セグメント、計算指標）に使用できます。 新しい指標は、管理コンソールから、メディアレポート設定(設定の編集/メディア管理/メディアレポート)を使用して、個々のレポートに対して有効にできます。
+レポートスイートでプレーヤーステートトラッキングが有効にされると、すべてのプレーヤーステート指標を、Analysis Workspace で使用可能な任意のレポートビジュアライゼーションやコンポーネント（セグメント、計算指標）に使用できます。新しい指標は、Admin Console のメディアレポート設定（設定の編集／メディア管理／メディアレポート）で、個々のレポートに対して有効にできます。
 
 ![](assets/report-setup.png)
 
-Analytics Workspaceでは、すべての新しいプロパティが指標パネルに表示されます。 例えば、指標パネルでフルスクリーンデータ `full screen` を表示で検索できます。
+Analytics Workspace では、すべての新しいプロパティが指標パネルに表示されます。例えば、`full screen` で検索し、指標パネルにフルスクリーンデータを表示できます。
 
 ![](assets/full-screen-report.png)
 
 ## Adobe Experience Platform にプレーヤーステート指標を読み込む
 
-Analytics に保存されたデータはどのような目的でも使用でき、プレーヤーステート指標は XDM を使用して Adobe Experience Platform に読み込み、Customer Journey Analytics で使用することができます。標準状態プロパティには固有のプロパティがあり、カスタム状態はカスタムイベントを使用してプロパティを使用できます。 標準の状態プロパティについて詳しくは、 *Player状態パラメーター* ページの「XDM Identitys [の](/help/metrics-and-metadata/player-state-parameters.md) プロパティリストー」の節を参照してください。
+Analytics に保存されたデータはどのような目的でも使用でき、プレーヤーステート指標は XDM を使用して Adobe Experience Platform に読み込み、Customer Journey Analytics で使用することができます。標準ステートのプロパティには固有のプロパティがあります。カスタムステートのプロパティは、カスタムイベントを介して使用できます。標準のステートプロパティについて詳しくは、[プレーヤーステートパラメーター](/help/metrics-and-metadata/player-state-parameters.md) ページで、*XDM ID のプロパティリスト*&#x200B;の節を参照してください。
