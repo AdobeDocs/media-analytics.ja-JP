@@ -1,26 +1,26 @@
 ---
-title: JavaScript 3.xの設定
-description: JavaScript 3.xでの実装用のメディアSDKアプリケーション設定。
-translation-type: tm+mt
+title: JavaScript 3.x のセットアップ
+description: JavaScript 3.x での実装用のメディア SDK アプリケーション設定です。
+translation-type: ht
 source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 
-# JavaScript 3.xの設定{#set-up-javascript}
+# JavaScript 3.x のセットアップ{#set-up-javascript}
 
 ## 前提条件
 
 * **有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
-* **メディアアプリケーション`AppMeasurement`にJavaScript`Experience Cloud Identity Service`とJavaScriptを実装します**。詳しくは、AnalyticsのJavaScriptを使用した実装 [およびExperience Cloud Identityサービスの](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/js/overview.html)[実装を参照してください。](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-analytics.html)
+* **メディアアプリケーションで、JavaScript 向け`AppMeasurement`と`Experience Cloud Identity Service`を実装します**。詳しくは、[JavaScript を使用した Analytics の実装](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/js/overview.html)および [Experience Cloud ID サービスの実装](https://docs.adobe.com/content/help/ja-JP/id-service/using/implementation/setup-analytics.html)を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
    * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
-   * *プレイヤー情報を提供するAPI* — これには、現在再生中のメディア、広告、チャプターに関する情報が含まれます。
+   * *プレーヤー情報を提供する API* - 現在再生中のメディア、広告、チャプターに関する情報が含まれます。
 
 1. [ダウンロードした](/help/sdk-implement/download-sdks.md#download-3x-sdks)ライブラリをプロジェクトに追加します。利便性のために、クラスへのローカル参照を作成します。
 
@@ -39,15 +39,15 @@ ht-degree: 47%
       <script type="text/javascript" src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/MediaSDK.js"></script>
       ```
 
-   1. ライブラリが正常に読み込まれたことをすばやく確認するには、Windowオブジェクトにチェック `ADB.Media` を書き出します。
+   1. ライブラリが正常に読み込まれたことをすばやく確認するには、Window オブジェクトで `ADB.Media` が書き出されていることを確認します。
 
       >[!NOTE]
       >
-      >The JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `MediaSDK.js` can also be used with compatible module loaders.
+      >JavaScript SDK は、AMD および CommonJS モジュールの仕様に準拠しており、互換性のあるモジュールローダーと共に `MediaSDK.js` を使用することもできます。
 
-1. のインスタンスを作成し、 `AppMeasurement` 設定を行い `visitor`ます。
+1. `AppMeasurement` のインスタンスを作成し、`visitor` を設定します。
 
-   メディアSDKの設定には、が設定されたのインスタンス `AppMeasurement` が必要 `visitor` です。
+   メディア SDK の設定には、`visitor` が設定された `AppMeasurement` のインスタンスが必要です。
 
    ```js
     var appMeasurement = new AppMeasurement(“<rsid>”);
@@ -55,13 +55,13 @@ ht-degree: 47%
     appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
    ```
 
-1. メディアSDKの設定
+1. メディア SDK の設定
 
-   メディアSDKは、Webページごとに1回設定する必要があります。設定は、作成されるすべてのトラッカーインスタンスに適用されます。
+   メディア SDK は、Web ページごとに 1 回設定する必要があります。設定は、作成されるすべてのトラッカーインスタンスに適用されます。
 
    >[!IMPORTANT]
    >
-   > Media SDK(3.x)は、2.x SDKで使用されているHBエンドポイントとは異なるメディアの追跡に、Media Collection APIを使用します。 詳細については、アドビの担当者にお問い合わせください。
+   > Media SDK（3.x）は、メディアコレクション API を使用して、2.x SDK で使用されている HB エンドポイントとは異なるメディアを追跡します。詳細については、アドビの担当者にお問い合わせください。
 
    `MediaConfig` 初期化のサンプル：
 
@@ -80,7 +80,7 @@ ht-degree: 47%
 
 1. `MediaTracker` インスタンスを作成します。
 
-   メディアSDKの設定後、メディアコンテンツを追跡するためのトラッカーインスタンスを `getInstance` APIを使用して作成できます。
+   メディア SDK の設定後、`getInstance` API を使用して、メディアコンテンツを追跡するためのトラッカーインスタンスを作成できます。
 
    ```js
    var tracker = ADB.Media.getInstance();
@@ -88,8 +88,8 @@ ht-degree: 47%
 
    >[!IMPORTANT]
    >
-   >`tracker` インスタンスがアクセス可能であることと、メディアセッションの終わりまで解放されないことを確認します。このインスタンスは、そのセッションの以下のイベントをすべて追跡するために使用されます。
+   >`tracker` インスタンスがアクセス可能であることと、メディアセッションの終わりまで解放されないことを確認します。このインスタンスは、そのセッションで、その後のイベントをすべて追跡するために使用されます。
 
-## JavaScript 2.xから3.xへの移行
+## JavaScript 2.x から 3.x への移行
 
 2.x から 3.x への移行について詳しくは、[ 2.x から 3.x への移行](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)を参照してください。
