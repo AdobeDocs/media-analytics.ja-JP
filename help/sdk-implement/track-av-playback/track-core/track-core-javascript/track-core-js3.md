@@ -1,19 +1,19 @@
 ---
-title: JavaScript v3.xを使用したコア再生の追跡
-description: このトピックでは、JavaScript 3.xアプリを使用するブラウザーで、Media SDKを使用してコアトラッキングを実装する方法について説明します。
-translation-type: tm+mt
+title: JavaScript v3.x を使用したコア再生の追跡
+description: ここでは、JavaScript 3.x アプリを使用した、ブラウザーのメディア SDK によるコア追跡の実装方法について説明します。
+translation-type: ht
 source-git-commit: 40d75ef32596e915ac07c173b4595bb78db3688d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# JavaScript 3.xを使用したコア再生の追跡{#track-core-playback-on-javascript}
+# JavaScript 3.x を使用したコア再生の追跡{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->このドキュメントでは、バージョン 3.x の SDK でのトラッキングについて説明しています。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
+>このドキュメントでは、バージョン 3.x の SDK でのトラッキングについて説明しています。以前バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. **トラッキングの初期設定**
 
@@ -23,9 +23,9 @@ ht-degree: 81%
 
    | 変数名 | タイプ | 説明 |
    | --- | --- | --- |
-   | `name` | string | メディア名を示す空以外の文字列。 |
-   | `id` | string | 一意のメディア識別子を示す空以外の文字列。 |
-   | `length` | 数値 | メディアの長さを秒単位で示す正の数です。 長さが不明な場合は0を使用します。 |
+   | `name` | string | メディア名を示す、空白以外の文字列。 |
+   | `id` | string | 一意のメディア識別子を示す、空白以外の文字列。 |
+   | `length` | 数値 | メディアの長さを秒単位で示す正の数。長さが不明な場合は 0 を使用します。 |
    | `streamType` | string |  |
    | `mediaType` |  | メディアのタイプ（オーディオまたはビデオ）。 |
 
@@ -53,13 +53,13 @@ ht-degree: 81%
 
 1. **メタデータのアタッチ**
 
-   オプションで、コンテキストデータ変数を使用して、標準メタデータやカスタムメタデータをトラッキングセッションにアタッチできます。
+   オプションで、コンテキストデータ変数を使用して標準またはカスタムメタデータをトラッキングセッションにアタッチします。
 
    * **標準メタデータ**
 
       >[!NOTE]
       >
-      >標準メタデータの添付は任意です。
+      >標準メタデータのアタッチは任意です。
 
       * メディアメタデータキー API リファレンス - [標準メタデータキー - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
@@ -112,7 +112,7 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >If you are not using contextData, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >contextData を使用しない場合は、`data` の `trackSessionStart` 引数に空のオブジェクトを送信します。
 
 1. **実際の再生開始を追跡**
 
