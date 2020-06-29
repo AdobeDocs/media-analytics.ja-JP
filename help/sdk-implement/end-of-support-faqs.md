@@ -1,11 +1,11 @@
 ---
 title: Media Analytics SDK のサポート終了に関する FAQ
 description: このトピックには、Media Analytics SDK のサポート終了に関する FAQ が含まれています。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 
 ## 知っておきたいことトップ 5
 
-1. 2021 年 8 月 31 日を過ぎると、Mobile v4 SDK はサポートされなくなります。iOS または Android 用 Adobe Experience Platform（AEP）SDK に移行する必要があります。詳しくは、 [バージョン4モバイルSDKのサポート終了に関するFAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)（英語）を参照してください。
+1. 2021 年 8 月 31 日を過ぎると、Mobile v4 SDK はサポートされなくなります。iOS または Android 用 Adobe Experience Platform（AEP）SDK に移行する必要があります。詳しくは、[バージョン 4 モバイル SDK のサポート終了に関する FAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)を参照してください。
 
 1. Analytics for Audio and Video を実装するには AEP SDK と、Analytics と Media Analytics の拡張機能を使用する必要があります。2021 年 9 月 1 日以降は、新しい AEP SDK および拡張機能を使用する必要があります。Media Analytics 拡張機能は、Adobe Launch を使用して設定されます。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)を参照してください。
 
@@ -49,7 +49,7 @@ ht-degree: 88%
 
 1. **タグ管理システムとして Launch が必要ですか？Launch を使用したくない場合はどうなりますか？**
 
-   モバイルアプリの使用例では、LaunchはWeb用とは異なり、タグ管理システムとしては使用されません。  SDK拡張機能を設定するには、起動UIの使用が必要です。 これは、Adobe Mobile Services UIを使用してモバイルv4 SDKを設定する方法と似ています。 インストールに関しては、「起動」を使用する利点は、選択した拡張機能に基づいて、インストールの手順をカスタマイズできる点です。
+   モバイルアプリの使用例では、Launch は、Web の場合とは異なり、タグ管理システムとしては使用されません。SDK 拡張機能を設定するには、Launch UI を使用する必要があります。これは、Adobe Mobile Services UI を使用してモバイル v4 SDK を設定する方法と似ています。インストールに関して Launch を使用するメリットは、選択した拡張機能に基づいて、インストール手順をカスタマイズできる点です。
 
 1. **tvOS 用 SDK は、このサポートの終了の影響を受けますか？**
 
