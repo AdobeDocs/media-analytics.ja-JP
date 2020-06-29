@@ -1,17 +1,17 @@
 ---
-title: JavaScript 2.xを使用したコア再生の追跡
-description: このトピックでは、JavaScript 2.xアプリを使用するブラウザーで、Media SDKを使用してコアトラッキングを実装する方法について説明します。
+title: JavaScript 2.x を使用したコア再生の追跡
+description: ここでは、JavaScript 2.x アプリを使用した、ブラウザーのメディア SDK によるコア追跡の実装方法について説明します。
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# JavaScript 2.xを使用したコア再生の追跡{#track-core-playback-on-javascript}
+# JavaScript 2.x を使用したコア再生の追跡{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
 >このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
