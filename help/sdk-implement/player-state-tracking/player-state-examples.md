@@ -1,9 +1,9 @@
 ---
 title: プレーヤーステートトラッキングの例
 description: このトピックでは、プレーヤーステートトラッキング機能の例を示します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '119'
 ht-degree: 100%
 
