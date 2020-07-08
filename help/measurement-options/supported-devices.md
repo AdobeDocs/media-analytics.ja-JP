@@ -1,9 +1,9 @@
 ---
 title: サポートされるデバイスとプラットフォーム
 description: Adobe Analytics for Audio and Video では、各メディアストリームがすべてのデバイスをまたいで収集され、報告されるようにします。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
 ht-degree: 100%
 
@@ -50,4 +50,4 @@ SDK が現在サポートされていないデバイスやプラットフォー�
 
 1. 次の SDK のサポートは 2021 年 8 月 31 日に終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
-各 SDK でサポートされる最小プラットフォームバージョンについて詳しくは、[サポートされる最小プラットフォームバージョン](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/setup/setup-overview.html)を参照してください
+各 SDK でサポートされる最小プラットフォームバージョンについて詳しくは、[サポートされる最小プラットフォームバージョン](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/setup/setup-overview.html)を参照してください。
