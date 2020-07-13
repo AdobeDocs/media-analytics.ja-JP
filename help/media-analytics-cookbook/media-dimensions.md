@@ -1,8 +1,11 @@
 ---
 title: メディアストリームアトリビューション
 description: null
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 100%
 
 ---
 
@@ -18,8 +21,8 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 また、この機能を有効にする各レポートに対して、Admin Console からメディアトラッキング設定を再度有効にする必要があります。
 
 >[!NOTE]
->メディア指標は、ほとんどがハートビートイベントに基づいて Media Analytics で計算されるので、メディアトラッキングの外部では使用&#x200B;_できません_
->。また、メディア指標が異なる実装によって水増しされないことは重要です。
+>
+>メディア指標は、ほとんどがハートビートイベントに基づいて Media Analytics で計算されるので、メディアトラッキングの外部では使用&#x200B;_できません_。また、メディア指標が異なる実装によって水増しされないことは重要です。
 
 ## 方法
 
