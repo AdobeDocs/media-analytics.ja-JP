@@ -2,8 +2,11 @@
 title: ダウンロードされたコンテンツの追跡
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: be68a7abf7d5fd4cc725b040583801f2308ab066
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 56%
 
 ---
 
@@ -12,17 +15,17 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 概要 {#overview}
 
-Downloaded Content 機能では、ユーザーがオフライン時のメディア視聴を追跡できます。例えば、ユーザーがモバイルデバイスでアプリをダウンロードし、インストールします。その後、アプリを使用してコンテンツをデバイスのローカルストレージにダウンロードします。このダウンロードされたデータを追跡するために、アドビは Downloaded Content 機能を開発しました。この機能を使用すると、デバイスの接続状態に関係なく、ユーザーがデバイスのストレージからコンテンツを再生した場合に、トラッキングデータがデバイスに保存されます。ユーザーが再生セッションを終了し、デバイスがオンラインに戻ると、保存されたトラッキング情報が単一のペイロード内でメディアコレクション API バックエンドに送信されます。そこから、メディアコレクション API で通常おこなうように処理とレポート作成が実行されます。
+Downloaded Content 機能では、ユーザーがオフライン時のメディア視聴を追跡できます。例えば、ユーザーがモバイルデバイスにアプリをダウンロードしてインストールした後、そのアプリを使用してコンテンツをデバイスのローカルストレージにダウンロードするとします。 ダウンロードされたデータを追跡するために、アドビはダウンロードされたコンテンツ機能を開発しました。 この機能を使用すると、ユーザーがデバイスのストレージからコンテンツを再生すると、デバイスの接続性に関係なく、追跡データがデバイスに保存されます。 ユーザーが再生セッションを終了し、デバイスがオンラインに戻ると、保存されたトラッキング情報は、1つのペイロード内のメディア収集APIバックエンドに送信されます。 保存されたトラッキング情報は、通常どおりメディアコレクションAPIで処理およびレポートされます。
 
 2 つのアプローチの対比：
 
 * オンライン
 
-   このリアルタイムアプローチでは、メディアプレーヤーが各プレーヤーイベントの発生時にトラッキングデータを送信し、10 秒ごと（広告の場合は 1 秒ごと）にネットワーク ping を 1 つずつバックエンドに送信します。
+   このリアルタイムアプローチを使用すると、メディアプレイヤーは各プレイヤーイベントのトラッキングデータを送信し、10秒ごと（広告の場合は1秒ごと）に1回ずつバックエンドにpingを送信します。
 
 * オフライン（Downloaded Content 機能）
 
-   このバッチ処理アプローチでは、同じセッションイベントを生成する必要がありますが、単一セッションとしてバックエンドに送信されるまで、デバイスに保存されます（後述の例を参照）。
+   このバッチ処理アプローチでは、同じセッションイベントを生成する必要がありますが、単一のセッションとしてバックエンドに送信されるまで、デバイスに保存されます（以下の例を参照）。
 
 どちらのアプローチにもそれぞれ長所と短所があります。
 * オンラインシナリオは、リアルタイムに追跡します。各ネットワーク呼び出しの前に接続性チェックが必要です。
@@ -30,16 +33,20 @@ Downloaded Content 機能では、ユーザーがオフライン時のメディ�
 
 ## 実装 {#implementation}
 
+### サポートされるプラットフォーム
+
+コンテンツの追跡は、iOSおよびAndroidモバイルデバイスでサポートされます。
+
 ### イベントスキーマ
 
-Downloaded Content 機能は、（標準）オンラインメディアコレクション API の単なるオフラインバージョンなので、プレーヤーがバックエンドにバッチおよび送信するイベントデータは、オンライン呼び出しをおこなう際に使用するのと同じイベントスキーマを使用する必要があります。これらのスキーマについて詳しくは、次を参照してください。
+ダウンロードされたコンテンツ機能は、（標準の）オンラインメディアコレクションAPIのオフラインバージョンなので、プレイヤーがバッチ処理してバックエンドに送信するイベントデータは、オンライン呼び出しを行うときに使用したのと同じイベントスキーマを使用する必要があります。 これらのスキーマについて詳しくは、次を参照してください。
 * [概要](/help/media-collection-api/mc-api-overview.md)
 * [イベントリクエストの検証](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### イベントの順序
 
 * バッチペイロードの最初のイベントは、メディアコレクション API で通常おこなうように、`sessionStart` である必要があります。
-* **ダウンロードされたコンテンツを送信していることをバックエンドに示すために、`media.downloaded: true`** イベントの標準メタデータパラメーター（`params`キー）に`sessionStart`を含める必要があります。ダウンロードされたデータを送信する際に、このパラメーターが存在しないか、false に設定されている場合、API は応答コード 400（無効な要求）を返します。このパラメーターは、バックエンドに対して、ダウンロードされたコンテンツとライブコンテンツを区別します（ライブセッションに`media.downloaded: true`が設定されている場合、同様に API からの応答が 400 になります）。
+* **ダウンロードされたコンテンツを送信していることをバックエンドに示すために、`media.downloaded: true`** イベントの標準メタデータパラメーター（`params`キー）に`sessionStart`を含める必要があります。ダウンロードされたデータを送信する際に、このパラメーターが存在しないか、false に設定されている場合、API は応答コード 400（無効な要求）を返します。このパラメーターは、バックエンドに対して、ダウンロードされたコンテンツとライブコンテンツを区別しますIf`media.downloaded: true`is set on a live session, this will likewise result in a 400 response from the API.
 * プレーヤーイベントを発生順に正しく保存するのは実装側の責任です。
 
 ### 応答コード
@@ -60,42 +67,45 @@ Downloaded Content 機能は、（標準）オンラインメディアコレク�
 ### オンラインコンテンツ
 
 ```
-{ 
-  eventType: "sessionStart", 
-  playerTime: { 
+{
+  eventType: "sessionStart",
+  playerTime: {
     playhead: 0,  
     ts: 1529997923478},  
   params: { /* Standard metadata parameters as documented */ },  
   customMetadata: { /* Custom metadata parameters as documented */ },  
-  qoeData: { /* QoE parameters as documented */ } 
+  qoeData: { /* QoE parameters as documented */ }
 }
 ```
 
 ### ダウンロードされたコンテンツ
 
 ```
-[{ 
-    eventType: "sessionStart", 
+[{
+    eventType: "sessionStart",
     playerTime:{
-      playhead: 0, 
+      playhead: 0,
       ts: 1529997923478},  
     params:{
         "media.downloaded": true
         ...
-    }, 
+    },
     customMetadata:{},  
-    qoeData:{} 
-}, 
+    qoeData:{}
+},
     {eventType: "play", playerTime:
-        {playhead: 0,  ts: 1529997928174}}, 
+        {playhead: 0,  ts: 1529997928174}},
     {eventType: "ping", playerTime:
-        {playhead: 10, ts: 1529997937503}}, 
+        {playhead: 10, ts: 1529997937503}},
     {eventType: "ping", playerTime:
-        {playhead: 20, ts: 1529997947533}}, 
+        {playhead: 20, ts: 1529997947533}},
     {eventType: "ping", playerTime:
-        {playhead: 30, ts: 1529997957545},}, 
+        {playhead: 30, ts: 1529997957545},},
     {eventType: "sessionComplete", playerTime:
-        {playhead: 35, ts: 1529997960559} 
+        {playhead: 35, ts: 1529997960559}
 }]
 ```
 
+## メディアトラッカーAPIリファレンス
+
+ダウンロードしたコンテンツの設定方法について詳しくは、 [メディアトラッカーAPIリファレンスを参照してください](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#media-api-reference)。
