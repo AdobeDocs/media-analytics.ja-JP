@@ -1,9 +1,9 @@
 ---
 title: メディアストリームアトリビューション
 description: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
