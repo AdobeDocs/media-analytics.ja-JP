@@ -2,9 +2,9 @@
 title: 品質パラメーター
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2984'
 ht-degree: 100%
 
@@ -228,7 +228,7 @@ ht-degree: 100%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>自動設定</li> <li> **API キー：**<br/>なし</li> <li> **必須：**<br/>いいえ</li> <li> **型：**<br/>文字列</li> <li> **送信タイミング：**<br/>メディア終了</li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE</li><li> **説明：**<br/>エラーイベントが発生した（つまり、再生セッション中に`trackError`が呼び出され、`type=error`ハートビート呼び出しが生成された）ストリームの数。</li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>error）</li> <li> **ハートビート：**<br/>（s:event:<br/>type=error）</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名：**<br/>エラーの影響を受けたストリーム</li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>error）</li> <li> **データフィード：**<br/>なし</li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>error）</li> </ul> |
+| <ul> <li> **SDK キー：**<br/>自動設定</li> <li> **API キー：**<br/>なし</li> <li> **必須：**<br/>いいえ</li> <li> **型：**<br/>文字列</li> <li> **送信タイミング：**<br/>メディア終了</li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE</li><li> **説明：**<br/>エラーイベントが発生した（つまり、再生セッション中に `trackError` が呼び出され、`type=error` ハートビート呼び出しが生成された）ストリームの数。</li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>error）</li> <li> **ハートビート：**<br/>（s:event:<br/>type=error）</li> </ul> | <ul> <li> **利用可能：**<br/>可</li> <li> **予約変数：**<br/>イベント</li> <li> **レポート名：**<br/>エラーの影響を受けたストリーム</li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>error）</li> <li> **データフィード：**<br/>なし</li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>error）</li> </ul> |
 
 
 
