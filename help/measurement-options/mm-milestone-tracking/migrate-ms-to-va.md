@@ -2,9 +2,9 @@
 title: マイルストーンから Media Analytics への移行
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 ### オプションの変数
 
-| マイルストーン | マイルストーンの構文 | メディアAnalytics | Media Analytics の構文 |
+| マイルストーン | マイルストーンの構文 | Media Analytics | Media Analytics の構文 |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | 該当なし | 事前定義されたプレーヤーのマッピングは提供されなくなりました。 |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | 該当なし | 事前定義されたプレーヤーのマッピングは提供されなくなりました。 |
@@ -50,24 +50,24 @@ ht-degree: 100%
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | 該当なし | コンテンツ完了では、100％プログレスマーカーのみがサポートされます。 |
 | Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK Key: playerName;<br> API Key: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | 該当なし | Media Analytics は、コンテンツの場合は 10 秒、広告の場合は 1 秒に設定されます。他のオプションは利用できません。 |
-| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 該当なし | Media Analytics は、常に 10％、25％、50％、75％、95％のプログレスマーカーを追跡します。。 |
-| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 該当なし | Media Analytics は、常に 10％、25％、50％、75％、95％のプログレスマーカーを追跡します。。 |
-| Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。。 |
-| Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。。 |
+| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 該当なし | Media Analytics は、常に 10％、25％、50％、75％、95％のプログレスマーカーを追跡します。 |
+| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 該当なし | Media Analytics は、常に 10％、25％、50％、75％、95％のプログレスマーカーを追跡します。 |
+| Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。 |
+| Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。 |
 
 ### 広告トラッキング変数
 
-| マイルストーン | マイルストーンの構文 | メディアAnalytics | Media Analytics の構文 |
+| マイルストーン | マイルストーンの構文 | Media Analytics | Media Analytics の構文 |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 該当なし | Media Analytics は、コンテンツの場合は 10 秒、広告の場合は 1 秒に設定されます。他のオプションは利用できません。 |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 該当なし | 広告の場合、プログレスマーカーはデフォルトでは提供されません。広告のプログレスマーカーを作成するには、計算指標を使用します。 |
 | Media.adTrackOffsetMilestones | `s.Media.` <br> `  adTrackOffsetMilestones` <br> `  = "20,40,60";` | 該当なし | 広告の場合、Media Analytics は 1 秒に設定されます。他のオプションは利用できません。 |
-| Media.adSegmentByMilestones | `s.Media.` <br> `  adSegmentByMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。。 |
-| Media.adSegmentByOffsetMilestones | `s.Media.` <br> `  adSegmentByOffsetMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。。 |
+| Media.adSegmentByMilestones | `s.Media.` <br> `  adSegmentByMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。 |
+| Media.adSegmentByOffsetMilestones | `s.Media.` <br> `  adSegmentByOffsetMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。 |
 
 ### メディアモジュールメソッド
 
-| マイルストーン | マイルストーンの構文 | メディアAnalytics | Media Analytics の構文 |
+| マイルストーン | マイルストーンの構文 | Media Analytics | Media Analytics の構文 |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`：（必須）ビデオレポートに表示するビデオの名前。 | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
@@ -77,11 +77,11 @@ ht-degree: 100%
 | name | `name`：（必須）広告の名前または ID。 | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | length | `length`：（必須）広告の長さ。 | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | playerName | `playerName`：（必須）広告の表示に使用するメディアプレーヤーの名前。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| parentName | `parentName`：広告が埋め込まれたプライマリコンテンツの名前または ID。 | 該当なし | 自動的に継承される. |
-| parentPod | `parentPod`: 広告が表示されたプライマリコンテンツ内の位置. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
-| parentPodPosition | `parentPodPosition`: 広告が表示されるポッド内の位置. | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| CPM | `CPM`: この再生に適用される CPM または暗号化された CPM（「~」のプレフィックスが付く）. | 該当なし | デフォルトでは Media Analytics で使用できません。。 |
-| Media.click | `s.Media.click(name, offset)` | 該当なし | カスタムリンクの分析呼び出しを使用してクリックを追跡する. |
+| parentName | `parentName`：広告が埋め込まれたプライマリコンテンツの名前または ID。 | 該当なし | 自動的に継承される。 |
+| parentPod | `parentPod`: 広告が表示されたプライマリコンテンツ内の位置。 | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
+| parentPodPosition | `parentPodPosition`: 広告が表示されるポッド内の位置。 | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| CPM | `CPM`: この再生に適用される CPM または暗号化された CPM（「~」のプレフィックスが付く）。 | 該当なし | デフォルトでは Media Analytics で使用できません。 |
+| Media.click | `s.Media.click(name, offset)` | 該当なし | カスタムリンクの分析呼び出しを使用してクリックを追跡する。 |
 | Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
 | Media.complete | `s.Media.complete(name, offset)` | trackComplete | `trackComplete()` |
 | Media.play | `s.Media.play(` <br> `  name,` <br> `  offset,` <br> `  segmentNum,` <br> `  segment, ` <br> `  segmentLength)` | trackPlay | `trackPlay()` |
