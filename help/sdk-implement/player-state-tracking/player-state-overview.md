@@ -1,11 +1,11 @@
 ---
 title: プレーヤーステートトラッキングについて
 description: このトピックでは、プレーヤーステートトラッキング機能と、プレーヤーステートの実装と報告に関する要件やガイドラインについて説明します。
-translation-type: ht
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4c11efd0b8bb457246c746621e7fbb9fbda621b2
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 98%
 
 ---
 
@@ -31,6 +31,7 @@ ht-degree: 100%
 
 プレーヤーステートトラッキングでは、データ収集をおこなうために、次のいずれかが必要です。
 * メディア JS SDK 3.0 以降
+* Chromecast 3.0 SDK forAdobe Marketing Cloudソリューション
 * Media Analytics 拡張機能（Adobe Experience Platform（AEP）SDK 用）
    * Web：Adobe Media Analytics (3.x SDK) for Audio and Video v1.0 以降
    * モバイル：Adobe Media Analytics for Audio and Video v2.0 以降
