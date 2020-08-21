@@ -2,8 +2,11 @@
 title: SceneGraph（Roku）でのトラッキング
 description: Roku SceneGraph XML プログラミングフレームワークを使用してメディアを追跡します。
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 100%
 
 ---
 
@@ -134,34 +137,33 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 </tr>
 <tr>
 <td> adbmobileApiResponse </td>
-<td> assocarray </td>
+<td> 連想 </td>
 <td> 無効 </td>
 <td> 読み取り専用。AdobeMobileSDK で実行されるすべての API はこのフィールドに応答を返します。応答オブジェクトを受信するには、このフィールドの更新をリッスンするコールバックを登録します。応答オブジェクトの形式を次に示します。  
-<codeblock>
+<pre>
 response = {
   "apiName" : &lt;SceneGraphConstants.
                API_NAME&gt; 
   "returnValue : &lt;API_RESPONSE&gt; 
-} 
-</codeblock>
+}</pre>
 この応答オブジェクトのインスタンスは API リファレンスガイドに記載されているように値を返す AdobeMobileSDK の API 呼び出し用に送信されます。例えば、visitorMarketingCloudID() の API 呼び出しは以下の応答オブジェクトを返します。 
-<codeblock>
+<pre>
 response = {
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : "07050x25671x33760x72644x14"  
 } 
-</codeblock>
+</pre>
 また、応答データは無効になる場合もあります。 
-<codeblock>
+<pre>
 response = {  
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : invalid 
 } 
-</codeblock>
+</pre>
 </td>
 </tr>
 </tbody>
