@@ -2,8 +2,11 @@
 title: 再生中のアプリケーション割り込みの処理
 description: メディアの再生時に追跡の中断を処理する方法です。
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 29b0d38e904a561d467ba0432b255fdb17d6b829
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 100%
 
 ---
 
@@ -31,5 +34,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * _同じセッションを再開するにはどうしたらよいですか？_
 
-   トラッキングセッションを再開するための詳しい手順については、[非アクティブなセッションの再開を参照してください。](/help/sdk-implement/cookbook/resuming-inactive.md)SDK は、「再開」ping を送信して、セッションがユーザーによって手動で再開されたことをバックエンドに通知します。
+   トラッキングセッションを再開するための詳しい手順については、[非アクティブなセッションの再開](/help/sdk-implement/cookbook/resuming-inactive.md)を参照してください。SDK は、「再開」ping を送信して、セッションがユーザーによって手動で再開されたことをバックエンドに通知します。
 
