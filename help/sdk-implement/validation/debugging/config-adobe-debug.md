@@ -2,8 +2,11 @@
 title: Adobe Debug の設定
 description: ここでは、メディア SDK 実装のトラブルシューティングに使用できる Adobe Debug の設定方法について説明します。
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
+workflow-type: tm+mt
+source-wordcount: '653'
+ht-degree: 95%
 
 ---
 
@@ -42,6 +45,7 @@ Debug Proxy のダウンロードおよび設定：
    次のオペレーティングシステムがサポートされています。
    * OS X 10.7 64 ビット以上
    * Windows 7.1 64 ビット以上
+
    ![](assets/debug-proxy-app.png)
 
 1. Debug Proxy サーバーは、ローカルマシンのポート 33284 で実行され、システムプロキシとして設定されます。
@@ -63,23 +67,23 @@ SSL 証明書をダウンロードしてインストールします。
    1. ルート CA 証明書を「システム」に移動（ドラッグ）します。
    1. すべてのユーザーおよびローカルシステムプロセスによって確実に信頼されるために、証明書を「システム」にコピーする必要があります。
    1. ルート CA 証明書を開き、「信頼」を展開し、「常に信頼」を選択し、変更内容を保存します。
+
    **Windows**
    1. 次のどちらかの手順を実行します。
 
       * [ローカルコンピューターの信頼されたルート証明機関ストアへの証明書の追加](https://technet.microsoft.com/ja-jp/library/cc754841.aspx#BKMK_addlocal)
-<!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
--->
+   1. Firefoxの場合は、 [Mozilla Firefoxにルート証明書をインストールしています。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
 
-    1.Firefox の場合は、[Mozilla Firefox でのルート証明書のインストール](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox) に記載されている手順を実行します。
-    
-    変更を確認するには、Firefox を終了して再度開く必要がある場合があります。
-    
-    **iOS デバイス**
-    1.Adobe Debug を HTTP プロキシとして使用するように iOS デバイスを設定するには、**[!UICONTROL 設定アプリ]** **／** **[!UICONTROL Wifi 設定]**をクリックします。
-    
-    1.Safari で、[Debug](https://proxy.debug.adobe.com/ssl) に移動します。
-    
-    Safari に、SSL 証明書をインストールすることを求めるメッセージが表示されます。
+      変更を確認するには、Firefox を終了して再度開く必要がある場合があります。
+   **iOS デバイス**
+   1. Adobe Debug を HTTP プロキシとして使用するように iOS デバイスを設定するには、**[!UICONTROL 設定アプリ]****／****[!UICONTROL Wifi 設定]**&#x200B;をクリックします。
+
+   1. Safariで、 [デバッグ](https://proxy.debug.adobe.com/ssl)
+
+      Safari に、SSL 証明書のインストールを求めるメッセージが表示されます。
+
+
+
 
 ## モバイルデバイスへの SSL 証明書のインストール {#install-sSL-for-mobile-device}
 
