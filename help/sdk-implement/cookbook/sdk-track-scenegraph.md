@@ -2,9 +2,9 @@
 title: SceneGraph（Roku）でのトラッキング
 description: Roku SceneGraph XML プログラミングフレームワークを使用してメディアを追跡します。
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1171'
 ht-degree: 100%
 
@@ -137,7 +137,7 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 </tr>
 <tr>
 <td> adbmobileApiResponse </td>
-<td> 連想 </td>
+<td> assocarray </td>
 <td> 無効 </td>
 <td> 読み取り専用。AdobeMobileSDK で実行されるすべての API はこのフィールドに応答を返します。応答オブジェクトを受信するには、このフィールドの更新をリッスンするコールバックを登録します。応答オブジェクトの形式を次に示します。  
 <pre>
@@ -174,11 +174,13 @@ response = {
 #### `getADBMobileConnectorInstance`
 
 API 署名: `ADBMobile().getADBMobileConnectorInstance()`\
-入力：`adbmobileTask` 戻り値の型：`ADBMobileConnector`
+入力：`adbmobileTask`
+戻り値の型：`ADBMobileConnector`
 
 #### `sgConstants`
 
-API 署名：`ADBMobile().sgConstants()` 入力：なし\
+API 署名：`ADBMobile().sgConstants()`
+入力：なし\
 戻り値の型：`SceneGraphConstants`
 
 >[!NOTE]
@@ -194,7 +196,7 @@ API 署名：`ADBMobile().sgConstants()` 入力：なし\
 | MediaHeartbeat 定数 | <br/><br/>[メディアハートビートメソッド](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md)ページの定数を参照してください。 | メディアハートビート API でこれらの定数を使用します。 |
 | 標準メタデータ | <br/><br/>[標準メタデータパラメーター](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)ページの定数を参照してください。 | 標準ビデオ／広告メタデータを MediaHeartbeat API にアタッチするにはこれらの定数を使用します。 |
 
-レガシー AdobeMobileLibrary のグローバルに定義されたユーティリティ `MediaHeartbeat` API は、SceneGraph ノードでは使用できない Brightscript のコンポーネントが使用されていないので、SceneGraph 環境で&#x200B;**&#x200B;そのままアクセスできます。これらのメソッドについて詳しくは、以下の表を参照してください。
+レガシー AdobeMobileLibrary のグローバルに定義されたユーティリティ `MediaHeartbeat` API は、SceneGraph ノードでは使用できない Brightscript のコンポーネントが使用されていないので、SceneGraph 環境でそのままアクセスできます&#x200B;*。*&#x200B;これらのメソッドについて詳しくは、以下の表を参照してください。
 
 ### MediaHeartbeat のグローバルメソッド
 
