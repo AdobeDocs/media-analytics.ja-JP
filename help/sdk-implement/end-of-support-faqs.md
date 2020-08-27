@@ -1,10 +1,10 @@
 ---
 title: Media Analytics SDK のサポート終了に関する FAQ
 description: このトピックには、Media Analytics SDK のサポート終了に関する FAQ が含まれています。
-translation-type: ht
-source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
-workflow-type: ht
-source-wordcount: '703'
+translation-type: tm+mt
+source-git-commit: cea8c4b31b21f1b13a55268fbcfb9100a7bdbd7c
+workflow-type: tm+mt
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
@@ -53,8 +53,8 @@ ht-degree: 100%
 
 1. **tvOS 用 SDK は、このサポートの終了の影響を受けますか？**
 
-   はい。tvOS（バージョン 10 以降）の場合、Media Analytics 拡張機能へ移行することをお勧めします。AEP SDK のサポートと Media Analytics 拡張機能のサポートは、2020 年 6 月に予定されています。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（iOS）](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)を参照してください。
+   はい。tvOS（バージョン 10 以降）の場合、Media Analytics 拡張機能へ移行することをお勧めします。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（iOS）](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)を参照してください。
 
 1. **FireTV および AndroidTV 用 SDK は、このサポートの終了の影響を受けますか？**
 
-   はい。FireTV および AndroidTV の場合、Media Analytics 拡張機能へ移行することをお勧めします。AEP SDK のサポートと Media Analytics 拡張機能のサポートは、2020 年 6 月に予定されています。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（Android）](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)を参照してください。
+   はい。FireTV および AndroidTV の場合、Media Analytics 拡張機能へ移行することをお勧めします。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（Android）](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)を参照してください。
