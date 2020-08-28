@@ -2,11 +2,11 @@
 title: Adobe Debug の設定
 description: ここでは、メディア SDK 実装のトラブルシューティングに使用できる Adobe Debug の設定方法について説明します。
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,13 +72,13 @@ SSL 証明書をダウンロードしてインストールします。
    1. 次のどちらかの手順を実行します。
 
       * [ローカルコンピューターの信頼されたルート証明機関ストアへの証明書の追加](https://technet.microsoft.com/ja-jp/library/cc754841.aspx#BKMK_addlocal)
-   1. Firefoxの場合は、 [Mozilla Firefoxにルート証明書をインストールしています。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+   1. Firefox の場合は、[Mozilla Firefox でのルート証明書のインストール](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)に記載されている手順を実行します。
 
       変更を確認するには、Firefox を終了して再度開く必要がある場合があります。
    **iOS デバイス**
    1. Adobe Debug を HTTP プロキシとして使用するように iOS デバイスを設定するには、**[!UICONTROL 設定アプリ]****／****[!UICONTROL Wifi 設定]**&#x200B;をクリックします。
 
-   1. Safariで、 [デバッグ](https://proxy.debug.adobe.com/ssl)
+   1. Safari では、[デバッグ](https://proxy.debug.adobe.com/ssl)に移動します。
 
       Safari に、SSL 証明書のインストールを求めるメッセージが表示されます。
 
