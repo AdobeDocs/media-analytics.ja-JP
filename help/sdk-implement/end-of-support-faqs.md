@@ -1,9 +1,9 @@
 ---
 title: Media Analytics SDK のサポート終了に関する FAQ
 description: このトピックには、Media Analytics SDK のサポート終了に関する FAQ が含まれています。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cea8c4b31b21f1b13a55268fbcfb9100a7bdbd7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
@@ -33,6 +33,7 @@ ht-degree: 100%
 1. **Roku SDK と Chromecast SDK のサポートは影響を受けますか？**
 
    いいえ。Roku SDK と Chromecast SDK は、当面の間、スタンドアロン SDK として引き続きサポートされます。
+
 1. **Media Analytics JS SDK の実装は、この変更による影響を受けますか？**
 
    いいえ。Media Analytics 用 JS SDK をお使いのお客様は、引き続き SDK を使用するか、Adobe Launch を介して SDK を有効にすることができます。
@@ -53,8 +54,8 @@ ht-degree: 100%
 
 1. **tvOS 用 SDK は、このサポートの終了の影響を受けますか？**
 
-   はい。tvOS（バージョン 10 以降）の場合、Media Analytics 拡張機能へ移行することをお勧めします。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（iOS）](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)を参照してください。
+   はい。tvOS（バージョン 10 以降）の場合、Media Analytics 拡張機能へ移行することをお勧めします。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（iOS）](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)を参照してください。
 
 1. **FireTV および AndroidTV 用 SDK は、このサポートの終了の影響を受けますか？**
 
-   はい。FireTV および AndroidTV の場合、Media Analytics 拡張機能へ移行することをお勧めします。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（Android）](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)を参照してください。
+   はい。FireTV および AndroidTV の場合、Media Analytics 拡張機能へ移行することをお勧めします。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（Android）](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)を参照してください。
