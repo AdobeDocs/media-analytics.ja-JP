@@ -2,7 +2,7 @@
 title: メディア同時ビューアレポート
 description: Media Analyticsのお客様は、Analysis Workspaceのメディア同時ビューアパネルを使用して、同時ビューアを分析し、ピーク同時実行が発生した場所やドロップオフが発生した場所を把握できます。
 translation-type: tm+mt
-source-git-commit: 9c87109477518dd647b263edfa6bcf89be3e067d
+source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 10%
@@ -10,7 +10,7 @@ ht-degree: 10%
 ---
 
 
-# Media Concurent Viewersレポート{#media-concurrent-viewers}
+# メディア同時ビューアレポート{#media-concurrent-viewers}
 
 >[!IMPORTANT]
 >
