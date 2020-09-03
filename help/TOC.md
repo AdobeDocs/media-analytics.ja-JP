@@ -5,10 +5,10 @@ user-guide-description: Implement Analytics on audio or video sources. Includes 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 25920c9c01e67f9e5d969495a03f23fcf80d6493
+source-git-commit: 126b54173b8b488e53fe27fbc99ad9e83fb2c078
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 97%
+source-wordcount: '816'
+ht-degree: 99%
 
 ---
 
@@ -215,7 +215,7 @@ ht-degree: 97%
       + [メディア同時閲覧者数](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [同時閲覧者数 JSON レポートデータの取得](media-reports/media-default-reports/get-concurrent-json.md)
    + メディアワークスペースパネル {#media-workspace-panels}
-      + [メディア同時ビューアパネル](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+      + [メディア同時ビューアパネル](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Media Workspace のテンプレート](media-reports/media-workspace-templates.md)
 + [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
