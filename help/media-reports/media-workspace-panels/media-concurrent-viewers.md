@@ -1,19 +1,27 @@
 ---
-title: メディア同時ビューア
-description: Media Analyticsのお客様は、メディアの同時ビューアパネルを使用して、同時ビューアを分析し、同時実行性のピークが発生した場所やドロップオフが発生した場所を把握できます。
+title: メディア同時ビューアレポート
+description: Media Analyticsのお客様は、Analysis Workspaceのメディア同時ビューアパネルを使用して、同時ビューアを分析し、ピーク同時実行が発生した場所やドロップオフが発生した場所を把握できます。
 translation-type: tm+mt
-source-git-commit: a7938247a7cc3c23288e3ac5866ddecdf1f6a3bf
+source-git-commit: 9c87109477518dd647b263edfa6bcf89be3e067d
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 7%
+source-wordcount: '224'
+ht-degree: 10%
 
 ---
 
 
-# メディアコンカレントビューア{#media-concurrent-viewers}
+# Media Concurent Viewersレポート{#media-concurrent-viewers}
 
-Media Analyticsのお客様にとって、メディアの同時表示ビューアパネルを使用すると、ピーク同時実行が発生した場所や降下が発生した場所を把握し、コンテンツとビューアの関与の質に関する貴重な洞察を得ることができ、容量と規模のトラブルシューティングや計画に役立ちます。  [詳細情報](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+>[!IMPORTANT]
+>
+>この機能は、Media Analyticsのお客様向けの限定テストに含まれます。 [詳細情報...](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html)
 
-## パネル出力
+同時ビューアを分析すると、ピーク同時実行が発生した場所や降下が発生した場所を把握し、コンテンツの質とビューアの関与度に関する貴重な洞察を得たり、ボリュームと規模のトラブルシューティングや計画を行うことができます。
 
-![](assets/concurrent-viewers-output.png)
+## Analysis Workspaceのメディア同時ビューアパネル
+
+Analysis Workspaceの同時ビューア数とは、セッションの数に関係なく、特定の時点でメディアストリームを閲覧している個別訪問者の数です。 同時ビューアの視覚化、分類、比較を行うには、メディア同時ビューアパネルを使用します。 [詳細情報...](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+
+## AnalyticsレポートAPIを使用した同時ビューアの取得
+
+また、AnalyticsレポートAPI 2.0を使用すると、分レベルの精度で最大1か月の同時ビューアデータを取得できます。レポートAPIでは、Analysis Workspaceと同じ定義を使用します。  Analytics APIについて詳しくは、 [Analytics APIレポートユーザーガイド](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-guide.md).
