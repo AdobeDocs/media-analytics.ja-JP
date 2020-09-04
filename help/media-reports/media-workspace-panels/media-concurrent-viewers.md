@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 10%
 
 ## Analysis Workspaceのメディア同時ビューアパネル
 
-Analysis Workspaceの同時ビューア数とは、セッションの数に関係なく、特定の時点でメディアストリームを閲覧している個別訪問者の数です。 同時ビューアの視覚化、分類、比較を行うには、メディア同時ビューアパネルを使用します。 [詳細情報...](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+Analysis Workspaceの同時ビューア数とは、セッションの数に関係なく、特定の時点でメディアストリームを閲覧している個別訪問者の数です。 同時ビューアの視覚化、分類、比較を行うには、メディア同時ビューアパネルを使用します。 [詳細情報...](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
 ## AnalyticsレポートAPIを使用した同時ビューアの取得
 
