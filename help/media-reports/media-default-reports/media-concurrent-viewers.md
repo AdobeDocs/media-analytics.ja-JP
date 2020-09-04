@@ -2,8 +2,11 @@
 title: メディア同時閲覧者数
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 85%
 
 ---
 
@@ -13,8 +16,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 メディア同時閲覧者数ダッシュボードには、1 日の同時閲覧者が表示されます。データは、コンテンツ、デバイスタイプまたは国でフィルターできます。
 
 >[!TIP]
->
->選択したインターバルが 1 日ではない場合、データは表示されません。
+> 
+> ヒント：このレポートは、同時にアクティブなメディアセッションに基づいています。  個別訪問者別の同時ビューアを表示するには、セグメントを適用する追加機能、分類および比較する機能を使用します。 [Analysis Workspaceのメディア同時ビューアパネル](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+
 
 ![](assets/video-concurrent-viewers.png)
 
@@ -34,6 +38,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 このレポートの主な制限事項は次のとおりです。
 
+* 選択したインターバルが 1 日ではない場合、データは表示されません。
 * ReportBuilder などのデータをエクスポートすることはできません。
 * データは表形式では表示できません。
 * 電子メールでレポートを送信することはできません。
