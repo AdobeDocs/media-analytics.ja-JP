@@ -2,10 +2,10 @@
 title: メディア同時ビューアレポート
 description: Media Analyticsのお客様は、Analysis Workspaceのメディア同時ビューアパネルを使用して、同時ビューアを分析し、ピーク同時実行が発生した場所やドロップオフが発生した場所を把握できます。
 translation-type: tm+mt
-source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
+source-git-commit: 687ae6f2037590b58b30ea776635898c93ca144f
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 14%
+source-wordcount: '212'
+ht-degree: 13%
 
 ---
 
@@ -24,4 +24,4 @@ Analysis Workspaceの同時ビューア数とは、セッションの数に関�
 
 ## AnalyticsレポートAPIを使用した同時ビューアの取得
 
-また、AnalyticsレポートAPI 2.0を使用すると、分レベルの精度で最大1か月の同時ビューアデータを取得できます。レポートAPIでは、Analysis Workspaceと同じ定義を使用します。  Analytics APIについて詳しくは、 [Analytics APIレポートユーザーガイド](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-guide.md).
+また、AnalyticsレポートAPI 2.0を使用すると、分レベルの精度で最大1か月の同時ビューアデータを取得できます。レポートAPIでは、Analysis Workspaceと同じ定義を使用します。  詳しくは、 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
