@@ -3,10 +3,10 @@ title: メディア同時閲覧者数
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 85%
+source-wordcount: '267'
+ht-degree: 86%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 85%
 メディア同時閲覧者数ダッシュボードには、1 日の同時閲覧者が表示されます。データは、コンテンツ、デバイスタイプまたは国でフィルターできます。
 
 >[!TIP]
-> 
-> ヒント：このレポートは、同時にアクティブなメディアセッションに基づいています。  個別訪問者別の同時ビューアを表示するには、セグメントを適用する追加機能、分類および比較する機能を使用します。 [Analysis Workspaceのメディア同時ビューアパネル](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+>
+> このレポートは、同時にアクティブなメディアセッションに基づいています。  個別訪問者別の同時ビューアを表示するには、セグメントを適用する追加機能、分類および比較する機能を使用します。 [Analysis Workspaceのメディア同時ビューアパネル](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 
 
 ![](assets/video-concurrent-viewers.png)
@@ -44,4 +44,3 @@ ht-degree: 85%
 * 電子メールでレポートを送信することはできません。
 * 広告を追跡しない場合でも、メディアトラッキングを再度有効にしてメディア広告モジュールを選択する必要があります。
 * この機能では、一時停止トラッキング機能を含むメディアハートビートライブラリを使用すると、正確なデータを参照できます。
-
