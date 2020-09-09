@@ -2,10 +2,10 @@
 title: メディア同時視聴者数レポート
 description: Media Analytics のお客様は、Analysis Workspace のメディア同時視聴者数パネルを使用して、同時視聴者数を分析し、同時実行のピークが発生した場所やドロップオフが発生した場所を把握できます。
 translation-type: tm+mt
-source-git-commit: 687ae6f2037590b58b30ea776635898c93ca144f
+source-git-commit: 1e59c1201a4c0544b1fc571d6e1baf7bdc19e7dc
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 97%
+source-wordcount: '213'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 ## Analysis Workspace のメディア同時視聴者数パネル
 
-Analysis Workspace では、同時視聴者数は、セッション数にかかわらず、特定の時点におけるメディアストリームを視聴する個別訪問者数です。メディア同時視聴者数パネルは、同時視聴者数を視覚化、分類、比較するために使用できます。[詳細情報...](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+Analysis Workspace では、同時視聴者数は、セッション数にかかわらず、特定の時点におけるメディアストリームを視聴する個別訪問者数です。メディア同時視聴者数パネルは、同時視聴者数を視覚化、分類、比較するために使用できます。[詳細情報...](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html)
 
 ## Analytics レポートAPI を使用した同時視聴者数の取得
 
