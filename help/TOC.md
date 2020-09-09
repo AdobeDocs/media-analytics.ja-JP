@@ -5,10 +5,10 @@ user-guide-description: Implement Analytics on audio or video sources. Includes 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 126b54173b8b488e53fe27fbc99ad9e83fb2c078
+source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 99%
+source-wordcount: '830'
+ht-degree: 97%
 
 ---
 
@@ -211,12 +211,13 @@ ht-degree: 99%
       + [デフォルトレポートの概要](media-reports/media-default-reports/default-reports-overview.md)
       + [メディアの概要](media-reports/media-default-reports/media-reports-overview.md)
       + [メディアの詳細](media-reports/media-default-reports/media-reports-detail.md)
-      + [メディア視聴時間帯](media-reports/media-default-reports/media-reports-daypart.md)
-      + [メディア同時閲覧者数](media-reports/media-default-reports/media-concurrent-viewers.md)
-      + [同時閲覧者数 JSON レポートデータの取得](media-reports/media-default-reports/get-concurrent-json.md)
+      + [メディア視聴時間帯レポート](media-reports/media-default-reports/media-reports-daypart.md)
+      + [メディア同時ビューアレポート](media-reports/media-default-reports/media-concurrent-viewers.md)
+      + [同時閲覧者数 JSON レポートデータの取得](media-reports/media-default-reports/get-concurrent-json20.md)
    + メディアワークスペースパネル {#media-workspace-panels}
       + [メディア同時ビューアパネル](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Media Workspace のテンプレート](media-reports/media-workspace-templates.md)
+   + [APIを使用した同時ビューアデータの取得](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
 + [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + プレーヤーステートトラッキング {#player-state-tracking}
