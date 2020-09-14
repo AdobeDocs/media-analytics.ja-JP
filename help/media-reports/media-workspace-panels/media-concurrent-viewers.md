@@ -22,6 +22,6 @@ ht-degree: 89%
 
 Analysis Workspace では、同時視聴者数は、セッション数にかかわらず、特定の時点におけるメディアストリームを視聴する個別訪問者数です。メディア同時視聴者数パネルは、同時視聴者数を視覚化、分類、比較するために使用できます。[詳細情報...](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
-## Analytics レポートAPI を使用した同時視聴者数の取得
+## Analytics レポート API を使用した同時視聴者数の取得
 
 Analytics レポート API 2.0 を使用して、分単位の精度で、一度に最大 1 ヶ月間の同時視聴者データを取得することもできます。レポート API は、Analysis Workspace と同じ同時視聴者数の定義を使用します。詳しくは、 [_*Analytics 2.0 APIを使用した同時ビューアのJSONレポートデータの取得*_](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html).
