@@ -1,17 +1,17 @@
 ---
-title: Analytics 2.0 APIを使用した同時ビューアのJSONレポートデータの取得
+title: Analytics 2.0 API を使用した同時視聴者の JSON レポートデータの取得
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Analytics 2.0 APIを使用した同時ビューアのJSONレポートデータの取得{#get-concurrent-viewers-json-report-data}
+# Analytics 2.0 API を使用した同時視聴者の JSON レポートデータの取得 {#get-concurrent-viewers-json-report-data}
 
 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) を使用して、同時視聴者レポートデータを取得できます。
 
