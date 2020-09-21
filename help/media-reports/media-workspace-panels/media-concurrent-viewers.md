@@ -1,20 +1,16 @@
 ---
 title: メディア同時視聴者数レポート
 description: Media Analytics のお客様は、Analysis Workspace のメディア同時視聴者数パネルを使用して、同時視聴者数を分析し、同時実行のピークが発生した場所やドロップオフが発生した場所を把握できます。
-translation-type: ht
-source-git-commit: ee925e7bf2d32431679dd1b82e46c7c124256d13
-workflow-type: ht
-source-wordcount: '224'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: eb69c5c68b7bc367a944ce441a196f45791bcb53
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # メディア同時視聴者数レポート {#media-concurrent-viewers}
-
->[!IMPORTANT]
->
->この機能は、Media Analytics のお客様向けの限定的なテストです。[詳細情報...](https://docs.adobe.com/content/help/ja-JP/analytics/landing/an-releases.html)
 
 同時視聴者数を分析することで、同時実行のピークが発生した場所やドロップオフが発生した場所を把握し、コンテンツおよび視聴者エンゲージメントの品質に関する貴重なインサイトを得たり、量と規模に関するトラブルシューティングや計画に役立てたりすることができます。
 
