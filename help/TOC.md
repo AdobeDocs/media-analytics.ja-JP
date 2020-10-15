@@ -1,15 +1,15 @@
 ---
 audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
-breadcrumb-title: Media Analytics Guide
-user-guide-description: Implement Analytics on audio or video sources. Includes the Media SDK and the Media Collection API.
+breadcrumb-title: メディア解析ガイド
+user-guide-description: オーディオまたはビデオソースに Analytics を実装します。これには、メディア SDK とメディアコレクション API が含まれます。
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
 source-git-commit: 32865b998afc7b19ef328a2d43c3acd9970a4d5c
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 97%
+source-wordcount: '837'
+ht-degree: 98%
 
 ---
 
@@ -215,7 +215,7 @@ ht-degree: 97%
       + [メディア視聴時間帯レポート](media-reports/media-default-reports/media-reports-daypart.md)
       + [メディア同時ビューアレポート](media-reports/media-default-reports/media-concurrent-viewers.md)
    + メディアワークスペースパネル {#media-workspace-panels}
-      + [メディア同時ビューアパネル](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+      + [メディアの同時視聴者パネル](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Media Workspace のテンプレート](media-reports/media-workspace-templates.md)
    + [APIを使用した同時ビューアデータの取得](media-reports/media-default-reports/get-concurrent-json20.md)
 + [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
