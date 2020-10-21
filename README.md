@@ -1,9 +1,16 @@
 ---
-source-git-commit: 18d6b140df7211190dd9597ef03059d8b9285fe9
+source-git-commit: 7dbbd8b77801243a4a557be811dc678156c39d31
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '568'
+ht-degree: 72%
 
 ---
 # 記事の投稿
+
+| EXL-PR | EXL | プレビュー | アクティブ化 | 公開日 | ヘルプ |
+|--- |--- |--- |--- |--- |--- |
+| [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/lastBuild/) | [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/lastBuild) | [プレビューURL](https://experienceleague.corp.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [ライブURL](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [オーサリングガイド](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 | 実稼動 | Stage |
 |---|---|
@@ -38,7 +45,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### アドビ従業員による大幅な変更
 
-If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it&#39;s your job to contribute to or author technical articles, you should use the private repository [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+Adobe Experience Cloudソリューションのテクニカルライター、プログラムマネージャ、または製品チームの開発者で、お客様の職務が技術的な記事に貢献したり作成したりする場合は、プライベートリポジトリを使用する必要があります [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## ツールとセットアップ
 
