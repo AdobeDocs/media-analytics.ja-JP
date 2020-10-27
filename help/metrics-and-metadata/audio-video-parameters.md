@@ -2,11 +2,11 @@
 title: オーディオおよびビデオパラメーター
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: abb2cd2d056ffbefa72126061b11286cc10ec1ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6237'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [length](./audio-video-parameters.md#create-media-object) </li> <li> **API キー：**<br/> media.length </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> VOD: 128; Live: 86400; Linear: 1800. </li><li> **説明：**<br/>&#x200B;クリップの長さ／ランタイム - 視聴されるコンテンツの最大の長さまたは時間（秒単位）。メインタイプのイベントの `l:asset:length` の最後の値と等しくなります。`l:asset:length` `l:asset:duration` が設定されていない場合は、<br/> の最後の値が使用されます。<br/>レポートでは「ビデオの長さ」が分類、「コンテンツの長さ（変数）」が eVAR です。<br/> **重要：** このプロパティは、進捗状況の追跡指標や分平均オーディエンスなど、複数の指標の算出に使用されます。この値が設定されていない場合、または 0 以下の場合は、これらの指標は利用できません。時間が不明なライブメディアの場合は、86400 がデフォルト値となります。<br/>バージョン 1.5.1 より前の場合は `l:asset:duration`、1.5.1 以降の場合は `l:asset:length.`。<br/> **リリース日：2018 年 9 月 14 日** </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.length） </li> <li> **ハートビート：**<br/>（l:asset:length） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;コンテンツの長さ（変数） </li> <li> **コンテキストデータ：**<br/>（a.media.length） </li> <li> **データフィード：**<br/> videolength </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.length） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [length](./audio-video-parameters.md#create-media-object) </li> <li> **API キー：**<br/> media.length </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> VOD: 128; Live: 86400; Linear: 1800. </li><li> **説明：**<br/>&#x200B;クリップの長さ／ランタイム - 視聴されるコンテンツの最大の長さまたは時間（秒単位）。メインタイプのイベントの `l:asset:length` の最後の値と等しくなります。<br/>`l:asset:length` が設定されていない場合は、`l:asset:duration` の最後の値が使用されます。<br/>レポートでは「ビデオの長さ」が分類、「コンテンツの長さ（変数）」が eVAR です。<br/> **重要：** このプロパティは、進捗状況の追跡指標や分平均オーディエンスなど、複数の指標の算出に使用されます。この値が設定されていない場合、または 0 以下の場合は、これらの指標は利用できません。時間が不明なライブメディアの場合は、86400 がデフォルト値となります。<br/>バージョン 1.5.1 より前の場合は `l:asset:duration`、1.5.1 以降の場合は `l:asset:length.`。<br/> **リリース日：2018 年 9 月 14 日** </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.length） </li> <li> **ハートビート：**<br/>（l:asset:length） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;コンテンツの長さ（変数） </li> <li> **コンテキストデータ：**<br/>（a.media.length） </li> <li> **データフィード：**<br/> videolength </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.length） </li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
@@ -345,7 +345,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 105 </li> <li> **説明：**<br/>&#x200B;メインコンテンツでの再生タイプの全イベントの合計時間（秒単位）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。  <br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;コンテンツ視聴時間 </li> <li> **コンテキストデータ：**<br/>（a.media.timePlayed） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.timePlayed） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 105 </li> <li> **説明：**<br/>&#x200B;メインコンテンツでの再生タイプの全イベントの合計時間（秒単位）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。 <br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;コンテンツ視聴時間 </li> <li> **コンテキストデータ：**<br/>（a.media.timePlayed） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.timePlayed） </li> </ul> |
 
 ### メディア視聴時間
 
@@ -448,13 +448,13 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;なし </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 2 </li> <li> **説明：**<br/> メディアセッション中に開始された広告の数。   <br/> </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/> (a.media.adCount) </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.adCount) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;なし </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 2 </li> <li> **説明：**<br/>&#x200B;メディアセッション中に開始した広告の数。<br/> </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/>（a.media.adCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.adCount） </li> </ul> |
 
 ### チャプター数
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;なし </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 2 </li> <li> **説明：**<br/> メディアセッション中に開始したチャプターの数。   <br/> </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/> (a.media.chapterCount) </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;なし </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 2 </li> <li> **説明：**<br/>&#x200B;メディアセッション中に開始したチャプターの数。<br/> </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/>（a.media.chapterCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.chapterCount） </li> </ul> |
 
 
 ## カリフォルニア州消費者プライバシー法（CCPA）のパラメーター {#ccpa-params}
