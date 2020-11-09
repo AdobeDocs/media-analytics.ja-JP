@@ -1,9 +1,12 @@
 ---
 title: Federated Analytics
-description: 'Federated Analytics サービスは、2 つのパートナー間でAdobe Media Analytics データ（オーディオおよびビデオ）を共有できるシステムです。 '
+description: Federated Analytics サービスは、2 つのパートナー間でAdobe Media Analytics データ（オーディオおよびビデオ）を共有できるシステムです。
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 88f4479ec072ab2a332ade09a83e9fbff94a98e9
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 97%
 
 ---
 
@@ -39,7 +42,8 @@ Federated Analytics サービスは、2 つのパートナー間でAdobe Media A
 
 ## Federated Analytics フォームのダウンロード
 
-[こちら](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)から、フェデレーションルール契約書フォームの現在のバージョンをダウンロードします。
+Federated Analyticsに参加するには、 [連合規則協定](federated-analytics-form.pdf) form.
+
 
 ## プロセス {#process}
 
@@ -51,4 +55,3 @@ Federated Analytics サービスは、2 つのパートナー間でAdobe Media A
 1. 受信者によってデータが正しいことが確認されたら、アドビのエンジニアリングチームがルールを更新し、本番環境のレポートスイートを指定します。
 1. 受信者が本番環境のレポートスイートでデータの確認と検証をおこないます。
 1. 以降、データセットに変化が生じた場合は、送信者と受信者はカスタマーケアチケットを送信してサポートを受けることができます。
-
