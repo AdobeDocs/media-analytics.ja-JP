@@ -3,8 +3,11 @@ seo-title: 概要
 title: 概要
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 92%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 メディアコレクション API は、クライアント側のメディア SDK の代替として使用できるアドビの RESTful API です。メディアコレクション API を使用すると、プレーヤーで RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントを追跡できます。
 
-メディアコレクション API は、基本的に、メディア SDK のサーバー側バージョンとして動作するアダプターです。つまり、メディア SDK ドキュメントの一部はメディアコレクション API にも関連しています。例えば、両方のソリューションが同じ[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を使用すると、収集されたオーディオおよびビデオトラッキングデータは、同じ[レポートと分析](/help/media-reports/media-reports-enable.md)になります。
+メディアコレクション API は、基本的に、メディア SDK のサーバー側バージョンとして動作するアダプターです。つまり、メディア SDK ドキュメントの一部はメディアコレクション API にも関連しています。例えば、両方のソリューションが同じ [ストリーミングメディアのパラメータ](/help/metrics-and-metadata/audio-video-parameters.md)」の場合、収集されたストリーミングメディアの追跡データも同じ結果になります。 [レポートと分析。](/help/media-reports/media-reports-enable.md)
 
 ## メディアトラッキングデータのフロー {#media-tracking-data-flows}
 
@@ -31,7 +34,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ### API 呼び出し {#mc-api-calls}
 
-* **`sessions`-** サーバーとのセッションを確立し、後続の`events`呼び出しで使用するセッション ID を返します。アプリは、トラッキングセッションの開始時にこれを 1 回呼び出します。
+* **`sessions`-** サーバーとのセッションを確立し、後続の `events` 呼び出しで使用するセッション ID を返します。アプリは、トラッキングセッションの開始時にこれを 1 回呼び出します。
 
    ```
    {uri}/api/v1/sessions
