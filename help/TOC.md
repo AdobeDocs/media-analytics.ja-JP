@@ -1,24 +1,24 @@
 ---
 audience: end-user
-user-guide-title: Adobe Analytics for Audio and Video
+user-guide-title: ストリーミングメディア用Adobe Analytics
 breadcrumb-title: メディア解析ガイド
 user-guide-description: オーディオまたはビデオソースに Analytics を実装します。これには、メディア SDK とメディアコレクション API が含まれます。
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 32865b998afc7b19ef328a2d43c3acd9970a4d5c
+source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 98%
+source-wordcount: '830'
+ht-degree: 94%
 
 ---
 
 
-# Adobe Analytics for Audio and Video {#using}
+# ストリーミングメディア用Adobe Analytics {#using}
 
-+ [Adobe Analytics でのオーディオおよびビデオの測定](media-overview.md)
++ [Adobe Analyticsでのストリーミングメディアの測定](media-overview.md)
 + [サポートされるデバイスとプラットフォーム](measurement-options/supported-devices.md)
-+ オーディオおよびビデオ分析の概要 {#intro-to-ava}
++ ストリーミングメディア解析の概要 {#intro-to-ava}
    + [前提条件](intro-to-ava/prereqs.md)
    + 実装パス {#implementation-paths}
       + [概要](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 98%
          + [JavaScript 3.x のセットアップ](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast のセットアップ ](sdk-implement/setup/set-up-chromecast.md)
       + [Roku のセットアップ ](sdk-implement/setup/set-up-roku.md)
-   + オーディオとビデオの再生の追跡 {#track-av-playback}
+   + ストリーミングメディア再生の追跡 {#track-av-playback}
       + [概要](sdk-implement/track-av-playback/track-core-overview.md)
-      + コアオーディオおよびビデオ再生の追跡 {#track-core}
+      + コアストリーミングメディア再生の追跡 {#track-core}
          + [Android でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [iOS でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + JavaScript でのコア再生の追跡 {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 98%
    + [クックブック](media-analytics-cookbook/media-analytics-cookbook.md)
    + [メディアストリームアトリビューション](media-analytics-cookbook/media-dimensions.md)
 + 指標とメタデータ {#metrics-and-metadata}
-   + [オーディオおよびビデオパラメーター](metrics-and-metadata/audio-video-parameters.md)
+   + [ストリーミングメディアのパラメータ](metrics-and-metadata/audio-video-parameters.md)
    + [広告パラメーター](metrics-and-metadata/ad-parameters.md)
    + [チャプターパラメーター](metrics-and-metadata/chapter-parameters.md)
    + [プレーヤーステートパラメーター ](metrics-and-metadata/player-state-parameters.md)
@@ -220,6 +220,8 @@ ht-degree: 98%
    + [APIを使用した同時ビューアデータの取得](media-reports/media-default-reports/get-concurrent-json20.md)
 + [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
+
+<!-- + Basic Streaming Media Measurement for Adobe Analytics Ultimate{#basic-streaming-measurement} -->
 + プレーヤーステートトラッキング {#player-state-tracking}
    + [概要](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準ステートとカスタムステート](sdk-implement/player-state-tracking/standard-and-custom-states.md)
