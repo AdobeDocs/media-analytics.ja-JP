@@ -1,11 +1,11 @@
 ---
 title: サポートされるデバイスとプラットフォーム
-description: Adobe Analytics for Audio and Video では、各メディアストリームがすべてのデバイスをまたいで収集され、報告されるようにします。
-translation-type: ht
-source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
-workflow-type: ht
-source-wordcount: '338'
-ht-degree: 100%
+description: ストリーミングメディア用Adobe Analyticsは、各メディアストリームがすべてのデバイスで収集され、レポートされるようにします。
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >
 >2021 年 8 月 31 日にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
-Adobe Analytics for Audio and Video は、次の主要デバイスをすべてサポートしています。
+ストリーミングメディア用Adobe Analyticsは、以下を含む主要なデバイスをすべてサポートしています。
 
 * iOS および Android のスマートフォンおよびタブレット
 * ROKU、Apple TV、FireTV、Android TV の OTT デバイス
