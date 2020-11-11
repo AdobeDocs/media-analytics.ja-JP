@@ -1,9 +1,9 @@
 ---
-title: Adobe Analyticsの蒸しメディアの測定
+title: Adobe Analyticsでのストリーミングメディアの測定
 description: Adobe Analytics for Media（Media Analytics とも呼ばれます）は、クライアントに対してコンテンツ、オーディオおよび広告を対象とした堅牢なメディア測定を実現します。
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 85%
@@ -11,7 +11,7 @@ ht-degree: 85%
 ---
 
 
-# Adobe Analyticsの蒸しメディアの測定{#measuring-audio-and-video-in-adobe-analytics}
+# Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}でのストリーミングメディアの測定
 
 ![バナー](./assets/media_analytics_banner.png)
 
@@ -47,7 +47,7 @@ Adobe Analytics は、「ハートビート」を使用してビデオ指標を�
 | 価格  | メディアストリームごとの透明性の高い追跡（シングル） |
 | 実装およびサポート | 効率化された設定と、継続的なアップデートおよび機能改良<br>合理化された実装プロセスにより、プレーヤー API で変数をすばやくマッピングし、Adobe Debug ツールを使用して実装を検証し、必要なすべての変数を正確に追跡できます。 |
 | パートナー共有 | Federated Analytics および認定済み指標<br>Federated Analytics で共有されたデータを使用すれば、業界最高レベルのメディア共有機能を生かし、通信事業者、コンテンツ制作会社、配信業者など、すべてのメディア配信パートナーをまたいでデータを総合的に分析できます。 |
-| 高度な追跡 | ダウンロードされたコンテンツ追跡、エラー回復追跡、および同時ビューア<br>接続性に関係なく、デバイス上でダウンロードおよび再生されたストリーミングメディアコンテンツを追跡できます。 |
+| 高度な追跡 | ダウンロードされたコンテンツ追跡、エラー回復追跡、同時ビューア<br>接続性に関係なく、デバイスにダウンロードおよび再生されるストリーミングメディアコンテンツを追跡できます。 |
 
 
 
