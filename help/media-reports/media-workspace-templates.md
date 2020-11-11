@@ -3,7 +3,7 @@ title: メディアワークスペースのテンプレート
 description: null
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 79%
@@ -13,7 +13,7 @@ ht-degree: 79%
 
 # メディアワークスペースのテンプレート {#media-workspace-templates}
 
-Adobe Analytics の Workspace を利用すると、トラッキングデータを分析するためのダッシュボードをすばやくセットアップすることができます。新しいプロジェクトを作成する場合、またはWorkspaceに移動して既存のプロジェクトを管理する場合、獲得、ストリーミングメディアの消費など、一般的な追跡シナリオをカバーする標準テンプレートから選択できます。 または、独自のカスタムテンプレートの作成、変更、保存をおこなうこともできます。
+Adobe Analytics の Workspace を利用すると、トラッキングデータを分析するためのダッシュボードをすばやくセットアップすることができます。新しいプロジェクトを作成する場合、またはWorkspaceに移動して既存のプロジェクトを管理する場合、獲得、ストリーミングメディアの使用など、一般的な追跡シナリオをカバーする標準テンプレートから選択できます。 または、独自のカスタムテンプレートの作成、変更、保存をおこなうこともできます。
 
 テンプレートの操作は、プロジェクトの作成や管理をおこなう際に Adobe Analytics の「Workspace」タブでおこないます。最初に Workspace に移動すると、新規プロジェクトを作成するのか既存のプロジェクトを開くのかを選択できます。
 
