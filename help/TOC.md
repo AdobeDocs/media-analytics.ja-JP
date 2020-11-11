@@ -6,7 +6,7 @@ user-guide-description: オーディオまたはビデオソースに Analytics 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 94%
@@ -14,11 +14,11 @@ ht-degree: 94%
 ---
 
 
-# ストリーミングメディア用Adobe Analytics {#using}
+# ストリーミングメディア用Adobe Analytics{#using}
 
 + [Adobe Analyticsでのストリーミングメディアの測定](media-overview.md)
 + [サポートされるデバイスとプラットフォーム](measurement-options/supported-devices.md)
-+ ストリーミングメディア解析の概要 {#intro-to-ava}
++ ストリーミングメディア解析の概要{#intro-to-ava}
    + [前提条件](intro-to-ava/prereqs.md)
    + 実装パス {#implementation-paths}
       + [概要](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 94%
          + [JavaScript 3.x のセットアップ](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast のセットアップ ](sdk-implement/setup/set-up-chromecast.md)
       + [Roku のセットアップ ](sdk-implement/setup/set-up-roku.md)
-   + ストリーミングメディア再生の追跡 {#track-av-playback}
+   + ストリーミングメディア再生を追跡{#track-av-playback}
       + [概要](sdk-implement/track-av-playback/track-core-overview.md)
-      + コアストリーミングメディア再生の追跡 {#track-core}
+      + コアストリーミングメディア再生の追跡{#track-core}
          + [Android でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [iOS でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + JavaScript でのコア再生の追跡 {#track-core-javascript}
@@ -214,7 +214,7 @@ ht-degree: 94%
       + [メディアの詳細](media-reports/media-default-reports/media-reports-detail.md)
       + [メディア視聴時間帯レポート](media-reports/media-default-reports/media-reports-daypart.md)
       + [メディア同時ビューアレポート](media-reports/media-default-reports/media-concurrent-viewers.md)
-   + メディアワークスペースパネル {#media-workspace-panels}
+   + メディアワークスペースパネル{#media-workspace-panels}
       + [メディアの同時視聴者パネル](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Media Workspace のテンプレート](media-reports/media-workspace-templates.md)
    + [APIを使用した同時ビューアデータの取得](media-reports/media-default-reports/get-concurrent-json20.md)
