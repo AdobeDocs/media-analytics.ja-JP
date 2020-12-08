@@ -1,21 +1,12 @@
 ---
-source-git-commit: 7dbbd8b77801243a4a557be811dc678156c39d31
+source-git-commit: 4c4f296aced1e0e65a5fef7cf26ee9f6481139dd
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '568'
-ht-degree: 72%
+source-wordcount: '434'
+ht-degree: 91%
 
 ---
 # 記事の投稿
-
-| EXL-PR | EXL | プレビュー | アクティブ化 | 公開日 | ヘルプ |
-|--- |--- |--- |--- |--- |--- |
-| [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/lastBuild/) | [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/lastBuild) | [プレビューURL](https://experienceleague.corp.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [ライブURL](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [オーサリングガイド](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
-
-| 実稼動 | Stage |
-|---|---|
-| [![ビルドの状態](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![ビルドの状態](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/lastBuild) |
-| [Output Prod](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html) | [Output Stg](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html) |
 
 アドビのコミュニティや、ドキュメントチーム外部のアドビ従業員からの投稿をお待ちしています。
 
@@ -45,7 +36,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### アドビ従業員による大幅な変更
 
-Adobe Experience Cloudソリューションのテクニカルライター、プログラムマネージャ、または製品チームの開発者で、お客様の職務が技術的な記事に貢献したり作成したりする場合は、プライベートリポジトリを使用する必要があります [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+Adobe Experience Cloudソリューションのテクニカルライター、プログラムマネージャ、または製品チームの開発者で、お客様が技術記事の提供や作成を行う場合は、プライベートリポジトリ[git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs)を使用する必要があります。<!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## ツールとセットアップ
 
