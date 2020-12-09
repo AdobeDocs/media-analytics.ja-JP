@@ -2,10 +2,10 @@
 title: Media Analytics SDK のサポート終了に関する FAQ
 description: このトピックには、Media Analytics SDK のサポート終了に関する FAQ が含まれています。
 translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 90%
+source-wordcount: '679'
+ht-degree: 86%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 90%
 
 ## 知っておきたいことトップ 5
 
-1. 2021 年 8 月 31 日を過ぎると、Mobile v4 SDK はサポートされなくなります。iOS または Android 用 Adobe Experience Platform（AEP）SDK に移行する必要があります。詳しくは、[バージョン 4 モバイル SDK のサポート終了に関する FAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)を参照してください。
+1. 2021 年 8 月 31 日を過ぎると、Mobile v4 SDK はサポートされなくなります。iOSおよびAndroid用のAdobe Experience Platform(AEP)Mobile SDKに移行する必要があります。 詳しくは、[バージョン 4 モバイル SDK のサポート終了に関する FAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)を参照してください。
 
-1. Analytics for Streaming Mediaの導入には、AEP SDKが必要で、AnalyticsおよびMedia Analytics拡張機能を使用する必要があります。 2021 年 9 月 1 日以降は、新しい AEP SDK および拡張機能を使用する必要があります。Media Analytics 拡張機能は、Adobe Launch を使用して設定されます。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)を参照してください。
+1. Analytics for Streaming Mediaの導入には、AEP Mobile SDKが必要で、AnalyticsおよびMedia Analytics拡張機能を使用する必要があります。 2021年9月1日から、新しいAEP Mobile SDKおよび拡張機能を使用する必要があります。  Media Analytics 拡張機能は、Adobe Launch を使用して設定されます。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)を参照してください。
 
 1. iOS および Android 用 Media Analytics SDK の機能の開発は終了しました。2019 年秋から導入された新機能は、Media Analytics 拡張機能とメディアコレクション API を使用して有効化されます。
 
