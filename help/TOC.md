@@ -6,7 +6,7 @@ user-guide-description: オーディオまたはビデオソースに Analytics 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: a6f9c93c8c21f261eb5b592d4a2d8c9d2532efee
+source-git-commit: a51f9bb33c7385fef0f13b7e1e9009b07a788305
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 95%
@@ -219,11 +219,16 @@ ht-degree: 95%
    + [Media Workspace のテンプレート](media-reports/media-workspace-templates.md)
    + [APIを使用した同時ビューアデータの取得](media-reports/media-default-reports/get-concurrent-json20.md)
 + [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
-+ [Federated Analytics](federated-analytics.md)
 + プレーヤーステートトラッキング {#player-state-tracking}
    + [概要](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準ステートとカスタムステート](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [実装とレポート](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [プレーヤーステートトラッキングの例](sdk-implement/player-state-tracking/player-state-examples.md)
++ [Federated Analytics](federated-analytics.md)
+<!-- + Player State Tracking {#player-state-tracking}
+    + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
+    + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+    + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
 + その他のリソース {#additional-resources}
    + [リリースノート](additional-resources/doc-updates.md)
