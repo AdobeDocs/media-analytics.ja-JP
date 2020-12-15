@@ -3,9 +3,9 @@ title: オーディオおよびビデオパラメーター
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: c4d48d2ba1bec8afc7cfd8d625c6b654056e5489
 workflow-type: tm+mt
-source-wordcount: '6234'
+source-wordcount: '6235'
 ht-degree: 99%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/> [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API キー：**<br/> media.streamType </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK バージョン：** 2.2 <br/><br/>[メディアコレクション API の概要](/help/media-collection-api/mc-api-overview.md)または [SDK のダウンロード - バージョン 2.2](/help/sdk-implement/download-sdks.md) で利用可能。  </li>  <li> **値の例：**<br/> 「video」 </li> <li> **説明：**<br/>&#x200B;ストリームタイプの ID。有効な値は、「audio」、「video」、「all」です。<br/><br/>[レポートセグメント](/help/metrics-and-metadata/segments.md)：<br/><br/>メディアストリームタイプ：すべて - <br/>すべてのメディアストリームデータをセグメント化。ルール：コンテンツ（ID）が存在する<br/><br/>メディアストリームタイプ：オーディオ - <br/>すべてのオーディオストリームデータをセグメント化。ルール：コンテンツ（ID）が存在し、かつメディアストリームタイプ = オーディオ <br/><br/>メディアストリームタイプ：「ビデオ」 - <br/>すべてのビデオストリームデータをセグメント化。ルール：コンテンツ（ID）が存在し、かつメディアストリームタイプ ! = オーディオ <br/><br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.streamType） </li> <li> **ハートビート：**<br/>（s:meta:<br/>a.media.streamType） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;訪問時 </li> <li> **レポート名：**<br/>&#x200B;コンテンツ </li> <li> **コンテキストデータ：**<br/>（a.media.streamType） </li> <li> **データフィード：**<br/> videostreamtype </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.streamType） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API キー：**<br/> media.streamType </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK バージョン：** 2.2 <br/><br/>[メディアコレクション API の概要](/help/media-collection-api/mc-api-overview.md)または [SDK のダウンロード - バージョン 2.2](/help/sdk-implement/download-sdks.md) で利用可能。  </li>  <li> **値の例：**<br/> 「video」 </li> <li> **説明：**<br/>&#x200B;ストリームタイプの ID。有効な値は、「audio」、「video」、「all」です。<br/><br/>[レポートセグメント](/help/metrics-and-metadata/segments.md)：<br/><br/>メディアストリームタイプ：すべて - <br/>すべてのメディアストリームデータをセグメント化。ルール：コンテンツ（ID）が存在する<br/><br/>メディアストリームタイプ：オーディオ - <br/>すべてのオーディオストリームデータをセグメント化。ルール：コンテンツ（ID）が存在し、かつメディアストリームタイプ = オーディオ <br/><br/>メディアストリームタイプ：「ビデオ」 - <br/>すべてのビデオストリームデータをセグメント化。ルール：コンテンツ（ID）が存在し、かつメディアストリームタイプ ! = オーディオ <br/><br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.streamType） </li> <li> **ハートビート：**<br/>（s:meta:<br/>a.media.streamType） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/> ストリームタイプ </li> <li> **コンテキストデータ：**<br/>（a.media.streamType） </li> <li> **データフィード：**<br/> videostreamtype </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.streamType） </li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
