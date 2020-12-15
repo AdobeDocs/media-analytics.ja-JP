@@ -1,20 +1,20 @@
 ---
 audience: end-user
-user-guide-title: ストリーミングメディア用Adobe Analytics
+user-guide-title: ストリーミングメディア用 Adobe Analytics
 breadcrumb-title: メディア解析ガイド
 user-guide-description: オーディオまたはビデオソースに Analytics を実装します。これには、メディア SDK とメディアコレクション API が含まれます。
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: a6f9c93c8c21f261eb5b592d4a2d8c9d2532efee
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
 
-# ストリーミングメディア用Adobe Analytics{#using}
+# ストリーミングメディア用 Adobe Analytics {#using}
 
 + [Adobe Analyticsでのストリーミングメディアの測定](media-overview.md)
 + [サポートされるデバイスとプラットフォーム](measurement-options/supported-devices.md)
@@ -220,8 +220,6 @@ ht-degree: 94%
    + [APIを使用した同時ビューアデータの取得](media-reports/media-default-reports/get-concurrent-json20.md)
 + [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
-
-<!-- + Basic Streaming Media Measurement for Adobe Analytics Ultimate{#basic-streaming-measurement} -->
 + プレーヤーステートトラッキング {#player-state-tracking}
    + [概要](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準ステートとカスタムステート](sdk-implement/player-state-tracking/standard-and-custom-states.md)
