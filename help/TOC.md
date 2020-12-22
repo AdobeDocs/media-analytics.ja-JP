@@ -1,15 +1,15 @@
 ---
 audience: end-user
 user-guide-title: ストリーミングメディア用 Adobe Analytics
-breadcrumb-title: メディア解析ガイド
-user-guide-description: オーディオまたはビデオソースに Analytics を実装します。これには、メディア SDK とメディアコレクション API が含まれます。
+breadcrumb-title: ストリーミングメディア解析ガイド
+user-guide-description: ストリーミングメディア用にAdobe Analyticsを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: a51f9bb33c7385fef0f13b7e1e9009b07a788305
+source-git-commit: 640005cbd90a074a1a441865c4b6abc8f94c1277
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
