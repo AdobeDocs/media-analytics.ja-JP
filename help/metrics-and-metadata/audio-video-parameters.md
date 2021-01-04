@@ -3,9 +3,9 @@ title: オーディオおよびビデオパラメーター
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: f59738f48eeb80d3aaead1757abd2ba3785c40da
+source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
 workflow-type: tm+mt
-source-wordcount: '6257'
+source-wordcount: '6245'
 ht-degree: 99%
 
 ---
@@ -179,7 +179,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [appVersion](./audio-video-parameters.md#config-media-object) </li> <li> **API キー：**<br/> media.sdkVersion </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **値の例：**<br/> 「2.62.0_release」 </li> <li> **説明：**<br/>&#x200B;プレーヤーで使用される SDK のバージョン。プレーヤーに対応する任意のカスタムの値が利用可能です。<br/><br/>レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.<br/>sdkVersion） </li> <li> **ハートビート：**<br/>（s:sp:sdk） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;カスタム* </li> <li> **コンテキストデータ：**<br/>（a.media.sdkVersion） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.sdkVersion） </li> </ul>*カスタム処理ルールを使用 |
+| <ul> <li> **SDK キー：**<br/>  [appVersion](./audio-video-parameters.md#config-media-object) </li> <li> **API キー：**<br/> media.sdkVersion </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **値の例：**<br/> 「2.62.0_release」 </li> <li> **説明：**<br/>&#x200B;プレーヤーで使用される SDK のバージョン。プレーヤーに対応する任意のカスタムの値が利用可能です。<br/><br/>レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.<br/>sdkVersion） </li> <li> **ハートビート：**<br/>（s:sp:sdk） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/>（a.media.sdkVersion） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.sdkVersion） </li> </ul> |
 
 ### VHL バージョン
 
@@ -319,7 +319,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> media.publisher </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK バージョン：** 1.5.7 <br/>[メディアコレクションの概要](/help/media-collection-api/mc-api-overview.md)または [SDK のダウンロード - バージョン 2.2](/help/sdk-implement/download-sdks.md) で利用可能  </li> <li> **値の例：**<br/> &quot;Random Bauhaus&quot; </li> <li> **説明：**<br/>&#x200B;オーディオコンテンツパブリッシャーの名前。<br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.publisher） </li> <li> **ハートビート：**<br/>（s:meta:<br/>a.media.publisher） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;カスタム* </li> <li> **コンテキストデータ：**<br/>（a.media.publisher） </li> <li> **データフィード：**<br/> videoaudiopublisher </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.publisher） </li>  </ul> *カスタム処理ルールを使用 |
+| <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> media.publisher </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK バージョン：** 1.5.7 <br/>[メディアコレクションの概要](/help/media-collection-api/mc-api-overview.md)または [SDK のダウンロード - バージョン 2.2](/help/sdk-implement/download-sdks.md) で利用可能  </li> <li> **値の例：**<br/> &quot;Random Bauhaus&quot; </li> <li> **説明：**<br/>&#x200B;オーディオコンテンツパブリッシャーの名前。<br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.publisher） </li> <li> **ハートビート：**<br/>（s:meta:<br/>a.media.publisher） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/>（a.media.publisher） </li> <li> **データフィード：**<br/> videoaudiopublisher </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.publisher） </li>  </ul> |
 
 ## ストリーミングメディア指標{#audio-and-video-metrics}
 
@@ -399,7 +399,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 600</li> <li> **説明：**<br/> 最後の呼び出しからの経過秒数は、ストリームが完全なイベントまたは終了イベントで閉じられた場合は「0」、タイムアウトによって閉じられた場合は通常「600」です。この指標にはソリューション変数と自動処理ルールがないので、カスタム処理ルールを作成して保存する必要があります。</li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;カスタム*</li> <li> **コンテキストデータ：**<br/> （a.media.secondsSinceLastCall） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.secondsSinceLastCall） </li> </ul> *カスタム処理ルールの使用 |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 600</li> <li> **説明：**<br/> 最後の呼び出しからの経過秒数は、ストリームが完全なイベントまたは終了イベントで閉じられた場合は「0」、タイムアウトによって閉じられた場合は通常「600」です。この指標にはソリューション変数と自動処理ルールがないので、カスタム処理ルールを作成して保存する必要があります。</li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;カスタム</li> <li> **コンテキストデータ：**<br/> （a.media.secondsSinceLastCall） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.secondsSinceLastCall） </li> </ul> |
 
 ### フェデレーテッドデータ
 
