@@ -3,9 +3,9 @@ title: 品質パラメーター
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 translation-type: tm+mt
-source-git-commit: ef237fd0d9e2bcebe011d819224d98d450830d07
+source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '2992'
 ht-degree: 99%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/> </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/>  </li><li> **説明：**<br/>&#x200B;再生時にメディア SDK によって生成される一意のエラー ID。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>mediaSdkErrors） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;カスタム* </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>mediaSdkErrors） </li> <li> **データフィード：**<br/> mediaqoeexternalerrors </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>mediaSdkErrors） </li> </ul><br/>*カスタム処理ルールを使用 |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/> </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/>  </li><li> **説明：**<br/>&#x200B;再生時にメディア SDK によって生成される一意のエラー ID。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>mediaSdkErrors） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>mediaSdkErrors） </li> <li> **データフィード：**<br/> mediaqoeexternalerrors </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>mediaSdkErrors） </li> </ul><br/> |
 
 
 
@@ -252,7 +252,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;停止されたイベントが発生したストリームの数。この指標は、再生セッション中に少なくとも 1 回、停止が発生した場合にのみ 1 に設定されます。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stall） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> カスタム*</li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stall） </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>stall） </li> </ul><br/>*カスタム処理ルールを使用 |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;停止されたイベントが発生したストリームの数。この指標は、再生セッション中に少なくとも 1 回、停止が発生した場合にのみ 1 に設定されます。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stall） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;カスタム</li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stall） </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>stall） </li> </ul><br/> |
 
 >[!IMPORTANT]
 >
@@ -262,7 +262,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> 3 </li><li> **説明：**<br/>&#x200B;再生セッション中に再生が停止された回数。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stallCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> カスタム*</li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stallCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>stallCount） </li> </ul><br/>*カスタム処理ルールを使用 |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> 3 </li><li> **説明：**<br/>&#x200B;再生セッション中に再生が停止された回数。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stallCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;カスタム</li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stallCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>stallCount） </li> </ul><br/> |
 
 
 
@@ -270,7 +270,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> 12 </li><li> **説明：**<br/>&#x200B;再生セッション中に再生が停止された合計時間（秒、整数）。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stallTime） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> カスタム*</li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stallTime） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>stallTime） </li> </ul> <br/>*カスタム処理ルールを使用 |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> 12 </li><li> **説明：**<br/>&#x200B;再生セッション中に再生が停止された合計時間（秒、整数）。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stallTime） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;カスタム</li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stallTime） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>stallTime） </li> </ul> <br/> |
 
 
 
