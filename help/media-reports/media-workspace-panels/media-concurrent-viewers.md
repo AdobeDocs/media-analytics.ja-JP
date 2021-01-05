@@ -1,9 +1,9 @@
 ---
 title: メディア同時視聴者数レポート
 description: Media Analytics のお客様は、Analysis Workspace のメディア同時視聴者数パネルを使用して、同時視聴者数を分析し、同時実行のピークが発生した場所やドロップオフが発生した場所を把握できます。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2eb5318267546408f2aab5da074dd7f30c4fbb1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
 ht-degree: 100%
 
