@@ -2,9 +2,9 @@
 title: JSON 検証スキーマ
 description: null
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9b2f8b14ddb5b814f57c752665b78409e31173e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '55'
 ht-degree: 100%
 
