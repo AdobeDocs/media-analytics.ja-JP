@@ -2,11 +2,11 @@
 title: iOS のセットアップ
 description: iOS での実装用のメディア SDK アプリケーション設定です。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f54733c44e96c517d0c4c624a40742b421a54325
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 99%
 >SDK のバージョン 2.3.0 には Xcode 12.0 以降が必要で、該当する場合は Cocoapods 1.10.0 以降が必要です。
 
 * バイナリライブラリファイルについて言及されている場合は常に、 XCFramework に置き換えて使用する必要があります。
-   * MediaSDK.a/MediaSDK.xcframework
+   * MediaSDK.a > MediaSDK.xcframework
    * MediaSDK_TV.a > MediaSDKTV.xcframework
 * Adobe XCFrameworks を手動でプロジェクトに追加する場合は、埋め込まれていないことを確認してください。
 
