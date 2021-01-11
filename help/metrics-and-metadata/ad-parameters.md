@@ -2,9 +2,9 @@
 title: 広告パラメーター
 description: null
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1855'
 ht-degree: 100%
 
