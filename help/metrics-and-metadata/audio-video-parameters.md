@@ -2,11 +2,11 @@
 title: オーディオおよびビデオパラメーター
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6245'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,20 +40,20 @@ ht-degree: 99%
    * *レポート名* - Adobe Aanlytics の変数のレポート名。
    * *コンテキストデータ* - レポートサーバーに渡され、処理ルールで使用される Adobe Analytics のコンテキストデータの名前。
    * *データフィード* - クリックストリームまたはライブストリームデータフィード内の変数の列の名前。
-   * *Audience Manager:* - Adobe Audience Manager 内の特性名。
+   * *Audience Manager* - Adobe Audience Manager 内の特性名。
 
 >[!IMPORTANT]
 >
 >以下にリストされている変数で、レポート／予約変数に「分類」と説明されている変数の分類名を変更しないでください。\
 >メディア分類は、レポートスイートでメディアトラッキングが有効にされる際に定義されます。アドビは新しいプロパティを追加することがありますが、その場合、新しいメディアプロパティにアクセスするには、レポートスイートを再有効化する必要があります。更新処理の際に、アドビは、変数の名前をチェックすることで、分類が有効にされているかどうかを判別します。見つからない変数名がある場合、アドビは、分類を再追加します。
 
-## コアストリーミングメディアデータ{#core-audio-and-video-data}
+## コアストリーミングメディアデータ {#core-audio-and-video-data}
 
 ### ストリームタイプ {#stream-type}
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/> [mediaType](./audio-video-parameters.md#create-media-object) </li> <li> **API キー：**<br/> media.streamType </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK バージョン：** 2.2 <br/><br/>[メディアコレクション API の概要](/help/media-collection-api/mc-api-overview.md)または [SDK のダウンロード - バージョン 2.2](/help/sdk-implement/download-sdks.md) で利用可能。  </li>  <li> **値の例：**<br/> 「video」 </li> <li> **説明：**<br/>&#x200B;ストリームタイプの ID。有効な値は、「audio」、「video」、「all」です。<br/><br/>[レポートセグメント](/help/metrics-and-metadata/segments.md)：<br/><br/>メディアストリームタイプ：すべて - <br/>すべてのメディアストリームデータをセグメント化。ルール：コンテンツ（ID）が存在する<br/><br/>メディアストリームタイプ：オーディオ - <br/>すべてのオーディオストリームデータをセグメント化。ルール：コンテンツ（ID）が存在し、かつメディアストリームタイプ = オーディオ <br/><br/>メディアストリームタイプ：「ビデオ」 - <br/>すべてのビデオストリームデータをセグメント化。ルール：コンテンツ（ID）が存在し、かつメディアストリームタイプ ! = オーディオ <br/><br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.streamType） </li> <li> **ハートビート：**<br/>（s:meta:<br/>a.media.streamType） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/> ストリームタイプ </li> <li> **コンテキストデータ：**<br/>（a.media.streamType） </li> <li> **データフィード：**<br/> videostreamtype </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.streamType） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> [mediaType](./audio-video-parameters.md#create-media-object) </li> <li> **API キー：**<br/> media.streamType </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK バージョン：** 2.2 <br/><br/>[メディアコレクション API の概要](/help/media-collection-api/mc-api-overview.md)または [SDK のダウンロード - バージョン 2.2](/help/sdk-implement/download-sdks.md) で利用可能。  </li>  <li> **値の例：**<br/> 「video」 </li> <li> **説明：**<br/>&#x200B;ストリームタイプの ID。有効な値は、「audio」、「video」、「all」です。<br/><br/>[レポートセグメント](/help/metrics-and-metadata/segments.md)：<br/><br/>メディアストリームタイプ：すべて - <br/>すべてのメディアストリームデータをセグメント化。ルール：コンテンツ（ID）が存在する<br/><br/>メディアストリームタイプ：オーディオ - <br/>すべてのオーディオストリームデータをセグメント化。ルール：コンテンツ（ID）が存在し、かつメディアストリームタイプ = オーディオ <br/><br/>メディアストリームタイプ：「ビデオ」 - <br/>すべてのビデオストリームデータをセグメント化。ルール：コンテンツ（ID）が存在し、かつメディアストリームタイプ ! = オーディオ <br/><br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.streamType） </li> <li> **ハートビート：**<br/>（s:meta:<br/>a.media.streamType） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;ストリームタイプ </li> <li> **コンテキストデータ：**<br/>（a.media.streamType） </li> <li> **データフィード：**<br/> videostreamtype </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.streamType） </li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
@@ -187,7 +187,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **値の例：**<br/> 「js-2.0.1.88-c8c0b1」 </li> <li> **説明：**<br/>&#x200B;セッションのトラッキングに使用されるメディア SDK のバージョン。<br/><br/>レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。<br/><br/>[MediaHeartbeat.version（）;](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.<br/>vhlVersion） </li> <li> **ハートビート：**<br/>（s:sp:hb_version） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/>（a.media.vhlVersion） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.vhlVersion） </li> </ul> |
 
-## 標準ストリーミングメディアメタデータ{#standard-audio-and-video-metadata}
+## 標準ストリーミングメディアメタデータ {#standard-audio-and-video-metadata}
 
 ### 番組
 
@@ -321,7 +321,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> media.publisher </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK バージョン：** 1.5.7 <br/>[メディアコレクションの概要](/help/media-collection-api/mc-api-overview.md)または [SDK のダウンロード - バージョン 2.2](/help/sdk-implement/download-sdks.md) で利用可能  </li> <li> **値の例：**<br/> &quot;Random Bauhaus&quot; </li> <li> **説明：**<br/>&#x200B;オーディオコンテンツパブリッシャーの名前。<br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.publisher） </li> <li> **ハートビート：**<br/>（s:meta:<br/>a.media.publisher） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/>（a.media.publisher） </li> <li> **データフィード：**<br/> videoaudiopublisher </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.publisher） </li>  </ul> |
 
-## ストリーミングメディア指標{#audio-and-video-metrics}
+## ストリーミングメディア指標 {#audio-and-video-metrics}
 
 ### メディア開始
 
@@ -345,49 +345,49 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 105 </li> <li> **説明：**<br/>&#x200B;メインコンテンツでの再生タイプの全イベントの合計時間（秒単位）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。   <br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;コンテンツ視聴時間 </li> <li> **コンテキストデータ：**<br/>（a.media.timePlayed） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.timePlayed） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 105 </li> <li> **説明：**<br/>&#x200B;メインコンテンツでの再生タイプの全イベントの合計時間（秒単位）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。  <br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;コンテンツ視聴時間 </li> <li> **コンテキストデータ：**<br/>（a.media.timePlayed） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.timePlayed） </li> </ul> |
 
 ### メディア視聴時間
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 120 </li> <li> **説明：**<br/>&#x200B;メインコンテンツおよび広告コンテンツでの再生タイプの全イベントの合計時間（秒単位）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。   <br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;メディア視聴時間 </li> <li> **コンテキストデータ：**<br/>（a.media.totalTimePlayed） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.totalTimePlayed） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 120 </li> <li> **説明：**<br/>&#x200B;メインコンテンツおよび広告コンテンツでの再生タイプの全イベントの合計時間（秒単位）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。  <br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;メディア視聴時間 </li> <li> **コンテキストデータ：**<br/>（a.media.totalTimePlayed） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.totalTimePlayed） </li> </ul> |
 
 ### ユニーク再生時間
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 94 </li> <li> **説明：**<br/>&#x200B;セッション中に再生されたコンテンツの一意のセグメントの値（秒単位）。視聴者がコンテンツの同じセグメントを複数回視聴しているシークバックシナリオでの再生時間を除外します。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。   <br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> 実再生時間 </li> <li> **コンテキストデータ：**<br/>（a.media.uniqueTimePlayed） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.uniqueTimePlayed） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 94 </li> <li> **説明：**<br/>&#x200B;セッション中に再生されたコンテンツの一意のセグメントの値（秒単位）。視聴者がコンテンツの同じセグメントを複数回視聴しているシークバックシナリオでの再生時間を除外します。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。  <br/> **リリース日：2018 年 9 月 14 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;ユニーク再生時間 </li> <li> **コンテキストデータ：**<br/>（a.media.uniqueTimePlayed） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.uniqueTimePlayed） </li> </ul> |
 
 ### 10％プログレスマーカー
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;再生ヘッドが長さに基づくコンテンツの 10％マーカーを渡します。巻き戻しのシークがあった場合でも、このマーカーは 1 回のみカウントされます。早送りのシークがあった場合は、スキップされたマーカーはカウントされません。         <br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> 10％プログレスマーカー </li> <li> **コンテキストデータ：**<br/>（a.media.progress10） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.progress10） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;再生ヘッドが長さに基づくコンテンツの 10％マーカーを渡します。巻き戻しのシークがあった場合でも、このマーカーは 1 回のみカウントされます。早送りのシークがあった場合は、スキップされたマーカーはカウントされません。        <br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> 10％プログレスマーカー </li> <li> **コンテキストデータ：**<br/>（a.media.progress10） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.progress10） </li> </ul> |
 
 ### 25％プログレスマーカー
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;再生ヘッドが長さに基づくコンテンツの 25％マーカーを渡します。巻き戻しのシークがあった場合でも、マーカーは 1 回のみカウントされます。早送りのシークがあった場合は、スキップされたマーカーはカウントされません。         <br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> 25％プログレスマーカー </li> <li> **コンテキストデータ：**<br/>（a.media.progress25） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.progress25） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;再生ヘッドが長さに基づくコンテンツの 25％マーカーを渡します。巻き戻しのシークがあった場合でも、マーカーは 1 回のみカウントされます。早送りのシークがあった場合は、スキップされたマーカーはカウントされません。        <br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> 25％プログレスマーカー </li> <li> **コンテキストデータ：**<br/>（a.media.progress25） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.progress25） </li> </ul> |
 
 ### 50％プログレスマーカー
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;再生ヘッドが長さに基づくコンテンツの 50％マーカーを渡します。巻き戻しのシークがあった場合でも、マーカーは 1 回のみカウントされます。早送りのシークがあった場合は、スキップされたマーカーはカウントされません。         <br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> 50％プログレスマーカー </li> <li> **コンテキストデータ：**<br/>（a.media.progress50） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.progress50） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;再生ヘッドが長さに基づくコンテンツの 50％マーカーを渡します。巻き戻しのシークがあった場合でも、マーカーは 1 回のみカウントされます。早送りのシークがあった場合は、スキップされたマーカーはカウントされません。        <br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> 50％プログレスマーカー </li> <li> **コンテキストデータ：**<br/>（a.media.progress50） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.progress50） </li> </ul> |
 
 ### 75％プログレスマーカー
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/> **該当なし** </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;再生ヘッドが長さに基づくコンテンツの 75％マーカーを渡します。巻き戻しのシークがあった場合でも、マーカーは 1 回のみカウントされます。早送りのシークがあった場合は、スキップされたマーカーはカウントされません。         <br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> 75％プログレスマーカー </li> <li> **コンテキストデータ：**<br/>（a.media.progress75） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.progress75） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/> **該当なし** </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;再生ヘッドが長さに基づくコンテンツの 75％マーカーを渡します。巻き戻しのシークがあった場合でも、マーカーは 1 回のみカウントされます。早送りのシークがあった場合は、スキップされたマーカーはカウントされません。        <br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> 75％プログレスマーカー </li> <li> **コンテキストデータ：**<br/>（a.media.progress75） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.progress75） </li> </ul> |
 
 ### 95％プログレスマーカー
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;再生ヘッドが長さに基づくコンテンツの 95％マーカーを渡します。巻き戻しのシークがあった場合でも、マーカーは 1 回のみカウントされます。早送りのシークがあった場合は、スキップされたマーカーはカウントされません。         <br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> 95％プログレスマーカー </li> <li> **コンテキストデータ：**<br/>（a.media.progress95） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.progress95） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;再生ヘッドが長さに基づくコンテンツの 95％マーカーを渡します。巻き戻しのシークがあった場合でも、マーカーは 1 回のみカウントされます。早送りのシークがあった場合は、スキップされたマーカーはカウントされません。        <br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/> 95％プログレスマーカー </li> <li> **コンテキストデータ：**<br/>（a.media.progress95） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.progress95） </li> </ul> |
 
 ### 分平均オーディエンス
 
