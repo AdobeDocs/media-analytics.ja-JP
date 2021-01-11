@@ -2,11 +2,11 @@
 title: 品質パラメーター
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2992'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> media.qoe.timeToStart </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 30,000 </li><li> **説明：**<br/>&#x200B;この値は、QoSObject を使用して設定しない場合、デフォルトでは 0 に設定されます。この値はミリ秒単位で設定します。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **ハートビート：**<br/>（l:stream:startup_time） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;開始時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **データフィード：**<br/> videoqoetimetostartevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>timeToStart） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> media.qoe.timeToStart </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 30,000 </li><li> **説明：**<br/>&#x200B;この値は、QoSObject を使用して設定しない場合、デフォルトでは 0 に設定されます。この値はミリ秒単位で設定します。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **ハートビート：**<br/>（l:stream:startup_time） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;開始時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **データフィード：**<br/> videoqoetimetostartevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>timeToStart） </li> </ul> |
 
 
 ### FPS
@@ -61,7 +61,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/> droppedFrames </li> <li> **API キー：**<br/> media.qoe.droppedFrames </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 3 </li><li> **説明：**<br/>&#x200B;ドロップフレームの数（整数）。この値は、再生セッション中のすべてのドロップフレームの合計として計算されます。この値は、（l:stream:dropped_frames） の最後の値から取得されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>droppedFrameCount） </li> <li> **ハートビート：**<br/>（l:stream:<br/>dropped_frames） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;ドロップフレーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>droppedFrameCount） </li> <li> **データフィード：**<br/> videoqoedroppedframecountevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>droppedFrameCount） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> droppedFrames </li> <li> **API キー：**<br/> media.qoe.droppedFrames </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 3 </li><li> **説明：**<br/>&#x200B;ドロップフレームの数（整数）。この値は、再生セッション中のすべてのドロップフレームの合計として計算されます。この値は、（l:stream:dropped_frames） の最後の値から取得されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>droppedFrameCount） </li> <li> **ハートビート：**<br/>（l:stream:<br/>dropped_frames） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;ドロップフレーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>droppedFrameCount） </li> <li> **データフィード：**<br/> videoqoedroppedframecountevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>droppedFrameCount） </li> </ul> |
 
 
 
@@ -69,7 +69,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 2 </li><li> **説明：**<br/>&#x200B;バッファーイベントの数。この指標は、再生セッション中に発生した複数のバッファー状態の総数として計算されます。プレーヤーが他の状態（再生、一時停止など）からバッファー状態に移行した回数となります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=buffer） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;バッファーイベント </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferCount） </li> <li> **データフィード：**<br/> videoqoebuffercountevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>bufferCount） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 2 </li><li> **説明：**<br/>&#x200B;バッファーイベントの数。この指標は、再生セッション中に発生した複数のバッファー状態の総数として計算されます。プレーヤーが他の状態（再生、一時停止など）からバッファー状態に移行した回数となります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=buffer） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;バッファーイベント </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferCount） </li> <li> **データフィード：**<br/> videoqoebuffercountevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bufferCount） </li> </ul> |
 
 
 
@@ -77,7 +77,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK バージョン：** </li> <li> **値の例：**<br/> 30 </li><li> **説明：**<br/>&#x200B;バッファリングに費やした合計時間（秒）。この値は、再生セッション中に発生したすべてのバッファーイベントの時間の合計として計算されます。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **ハートビート：**<br/>（l:event:duration） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;合計バッファー時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **データフィード：**<br/> videoqoebuffertimeevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>bufferTime） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK バージョン：** </li> <li> **値の例：**<br/> 30 </li><li> **説明：**<br/>&#x200B;バッファリングに費やした合計時間（秒）。この値は、再生セッション中に発生したすべてのバッファーイベントの時間の合計として計算されます。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **ハートビート：**<br/>（l:event:duration） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;合計バッファー時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **データフィード：**<br/> videoqoebuffertimeevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bufferTime） </li> </ul> |
 
 
 
@@ -85,7 +85,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> media.qoe.bitrateChange </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 3 </li><li> **説明：**<br/>&#x200B;ビットレートの変更数（整数）。この値は、再生セッション中に発生したすべてのビットレート変更イベントの合計として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bitrateChangeCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=bitrate_change） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;ビットレート変更 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bitrateChangeCount） </li> <li> **データフィード：**<br/> videoqoebitratechangecountevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>bitrateChangeCount） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> media.qoe.bitrateChange </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 3 </li><li> **説明：**<br/>&#x200B;ビットレートの変更数（整数）。この値は、再生セッション中に発生したすべてのビットレート変更イベントの合計として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bitrateChangeCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=bitrate_change） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;ビットレート変更 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bitrateChangeCount） </li> <li> **データフィード：**<br/> videoqoebitratechangecountevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bitrateChangeCount） </li> </ul> |
 
 
 
@@ -93,7 +93,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 1 </li><li> **説明：**<br/>&#x200B;エラーが発生した回数（整数）。この値は、再生セッション中に発生したすべてのエラーイベントの合計として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>errorCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;エラー </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>errorCount） </li> <li> **データフィード：**<br/> videoqoeerrorcountevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>errorCount） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 1 </li><li> **説明：**<br/>&#x200B;エラーが発生した回数（整数）。この値は、再生セッション中に発生したすべてのエラーイベントの合計として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>errorCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;エラー </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>errorCount） </li> <li> **データフィード：**<br/> videoqoeerrorcountevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>errorCount） </li> </ul> |
 
 
 
@@ -101,7 +101,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/> </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/>  </li><li> **説明：**<br/>&#x200B;プレーヤー SDK によって生成される固有のエラー ID。お客様は、実装時に提供されたエラー API を使用してエラーコードや ID を指定する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>playerSdkErrors） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/> Player SDKエラーID </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>playerSdkErrors） </li> <li> **データフィード：**<br/> videoqoeplayersdkerrors </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>playerSdkErrors） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/> </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/>  </li><li> **説明：**<br/>&#x200B;プレーヤー SDK によって生成される固有のエラー ID。お客様は、実装時に提供されたエラー API を使用してエラーコードや ID を指定する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>playerSdkErrors） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/> Player SDK エラー ID </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>playerSdkErrors） </li> <li> **データフィード：**<br/> videoqoeplayersdkerrors </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>playerSdkErrors） </li> </ul> |
 
 
 
@@ -109,7 +109,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/> </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/>  </li><li> **説明：**<br/>&#x200B;任意の外部ソースからの一意のエラー ID（CDN エラーなど）。お客様は、実装時に提供されたエラー API を使用してエラーコードや ID を指定する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>externalErrors） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/> 外部エラーID </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>externalErrors） </li> <li> **データフィード：**<br/> videoqoeextneralerrors </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>externalErrors） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/> </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/>  </li><li> **説明：**<br/>&#x200B;任意の外部ソースからの一意のエラー ID（CDN エラーなど）。お客様は、実装時に提供されたエラー API を使用してエラーコードや ID を指定する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>externalErrors） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;外部エラー ID </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>externalErrors） </li> <li> **データフィード：**<br/> videoqoeextneralerrors </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>externalErrors） </li> </ul> |
 
 
 
@@ -117,7 +117,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/> </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/>  </li><li> **説明：**<br/>&#x200B;再生時にメディア SDK によって生成される一意のエラー ID。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>mediaSdkErrors） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>mediaSdkErrors） </li> <li> **データフィード：**<br/> mediaqoeexternalerrors </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>mediaSdkErrors） </li> </ul><br/> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/> </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/>  </li><li> **説明：**<br/>&#x200B;再生時にメディア SDK によって生成される一意のエラー ID。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>mediaSdkErrors） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>mediaSdkErrors） </li> <li> **データフィード：**<br/> mediaqoeexternalerrors </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>mediaSdkErrors） </li> </ul><br/> |
 
 
 
@@ -136,7 +136,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 30,000 </li><li> **説明：**<br/>&#x200B;この値は、QoSObject を使用して設定しない場合、デフォルトでは 0 に設定されます。この値はミリ秒単位で設定します。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **ハートビート：**<br/>（l:stream:startup_time） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;開始時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>timeToStart） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 30,000 </li><li> **説明：**<br/>&#x200B;この値は、QoSObject を使用して設定しない場合、デフォルトでは 0 に設定されます。この値はミリ秒単位で設定します。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **ハートビート：**<br/>（l:stream:startup_time） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;開始時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>timeToStart） </li> </ul> |
 
 
 
@@ -144,7 +144,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [startupTime](./quality-parameters.md#related_apis_section) </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 2 </li><li> **説明：**<br/>&#x200B;バッファーイベントの数（整数）。この指標は、再生セッション中に発生したバッファーイベントの総数として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=buffer） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;バッファーイベント </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>bufferCount） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [startupTime](./quality-parameters.md#related_apis_section) </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 2 </li><li> **説明：**<br/>&#x200B;バッファーイベントの数（整数）。この指標は、再生セッション中に発生したバッファーイベントの総数として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=buffer） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;バッファーイベント </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bufferCount） </li> </ul> |
 
 
 
@@ -152,7 +152,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 15 </li><li> **説明：**<br/>&#x200B;バッファリングに費やした合計時間（秒、整数）。この値は、再生セッション中に発生したすべてのバッファーイベントの時間の合計として計算されます。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **ハートビート：**<br/>（l:event:duration） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;合計バッファー時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>bufferTime） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 15 </li><li> **説明：**<br/>&#x200B;バッファリングに費やした合計時間（秒、整数）。この値は、再生セッション中に発生したすべてのバッファーイベントの時間の合計として計算されます。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **ハートビート：**<br/>（l:event:duration） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;合計バッファー時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bufferTime） </li> </ul> |
 
 
 
@@ -160,7 +160,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;イベント </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 3 </li><li> **説明：**<br/>&#x200B;ビットレートを変更した数。この値は、再生セッション中に発生したすべてのビットレート変更イベントの合計として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bitrateChangeCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=bitrate_change） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;ビットレート変更 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bitrateChangeCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>bitrateChangeCount） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;イベント </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 3 </li><li> **説明：**<br/>&#x200B;ビットレートを変更した数。この値は、再生セッション中に発生したすべてのビットレート変更イベントの合計として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bitrateChangeCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=bitrate_change） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;ビットレート変更 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bitrateChangeCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bitrateChangeCount） </li> </ul> |
 
 
 
@@ -168,7 +168,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 1 </li><li> **説明：**<br/>&#x200B;エラーが発生した回数（整数）。この値は、再生セッション中に発生したすべてのエラーイベントの合計として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>errorCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;エラーイベント </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>errorCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>errorCount） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 1 </li><li> **説明：**<br/>&#x200B;エラーが発生した回数（整数）。この値は、再生セッション中に発生したすべてのエラーイベントの合計として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>errorCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;エラーイベント </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>errorCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>errorCount） </li> </ul> |
 
 
 
@@ -176,7 +176,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 1 </li><li> **説明：**<br/>&#x200B;ドロップフレームの数（整数）。この値は、再生セッション中のすべてのドロップフレームの合計として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>droppedFrameCount） </li> <li> **ハートビート：**<br/>（l:stream:<br/>dropped_frames） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;ドロップフレーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>droppedFrameCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>droppedFrameCount） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 1 </li><li> **説明：**<br/>&#x200B;ドロップフレームの数（整数）。この値は、再生セッション中のすべてのドロップフレームの合計として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>droppedFrameCount） </li> <li> **ハートビート：**<br/>（l:stream:<br/>dropped_frames） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;ドロップフレーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>droppedFrameCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>droppedFrameCount） </li> </ul> |
 
 
 
@@ -184,7 +184,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ユーザーがビデオを開始する前に終了した回数。この指標は、広告とは無関係に、コンテンツがレンダリングされなかった場合に 1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>dropBeforeStart） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=aa_start） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;開始前にドロップ </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>dropBeforeStart） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>dropBeforeStart） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ユーザーがビデオを開始する前に終了した回数。この指標は、広告とは無関係に、コンテンツがレンダリングされなかった場合に 1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>dropBeforeStart） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=aa_start） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;開始前にドロップ </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>dropBeforeStart） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart） </li> </ul> |
 
 
 
@@ -196,7 +196,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;バッファリングの影響を受けたストリームの数。この指標は、再生セッション中に少なくとも 1 つのバッファーイベントが発生した場合にのみ、1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>buffer） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=buffer） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;バッファーの影響を受けたストリーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>buffer） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>buffer） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;バッファリングの影響を受けたストリームの数。この指標は、再生セッション中に少なくとも 1 つのバッファーイベントが発生した場合にのみ、1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>buffer） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=buffer） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;バッファーの影響を受けたストリーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>buffer） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>buffer） </li> </ul> |
 
 
 
@@ -208,7 +208,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ビットレートの変更が発生したストリームの数。この指標は、再生セッション中に少なくとも 1 つのビットレート変更イベントが発生した場合にのみ、1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bitrateChange） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=bitrate_change） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;ビットレート変更の影響を受けたストリーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bitrateChange） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>bitrateChange） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ビットレートの変更が発生したストリームの数。この指標は、再生セッション中に少なくとも 1 つのビットレート変更イベントが発生した場合にのみ、1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bitrateChange） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=bitrate_change） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;ビットレート変更の影響を受けたストリーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bitrateChange） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bitrateChange） </li> </ul> |
 
 
 
@@ -220,7 +220,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 3200 </li><li> **説明：**<br/>&#x200B;平均ビットレート（kbps、整数）。この指標は、再生セッション中に発生した再生時間に関連するすべてのビットレート値の加重平均として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bitrateAverage） </li> <li> **ハートビート：**<br/>（l:stream:bitrate） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;平均ビットレート </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bitrateAverage） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>bitrateAverage） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 3200 </li><li> **説明：**<br/>&#x200B;平均ビットレート（kbps、整数）。この指標は、再生セッション中に発生した再生時間に関連するすべてのビットレート値の加重平均として計算されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bitrateAverage） </li> <li> **ハートビート：**<br/>（l:stream:bitrate） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;平均ビットレート </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bitrateAverage） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bitrateAverage） </li> </ul> |
 
 
 
@@ -228,7 +228,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;エラーイベントが発生した（つまり、再生セッション中に `trackError` が呼び出され、`type=error` ハートビート呼び出しが生成された）ストリームの数。 </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>error） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;エラーの影響を受けたストリーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>error） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>error） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;エラーイベントが発生した（つまり、再生セッション中に `trackError` が呼び出され、`type=error` ハートビート呼び出しが生成された）ストリームの数。 </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>error） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=error） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;エラーの影響を受けたストリーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>error） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>error） </li> </ul> |
 
 
 
@@ -240,7 +240,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ドロップフレームが発生したストリームの数。この指標は、再生セッション中に少なくとも 1 つのフレームがドロップした場合にのみ、1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>droppedFrames） </li> <li> **ハートビート：**<br/>（l:stream:<br/>dropped_frames） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;ドロップフレームの影響を受けたストリーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>droppedFrames） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>droppedFrames） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ドロップフレームが発生したストリームの数。この指標は、再生セッション中に少なくとも 1 つのフレームがドロップした場合にのみ、1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>droppedFrames） </li> <li> **ハートビート：**<br/>（l:stream:<br/>dropped_frames） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;ドロップフレームの影響を受けたストリーム </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>droppedFrames） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>droppedFrames） </li> </ul> |
 
 
 
@@ -252,7 +252,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;停止されたイベントが発生したストリームの数。この指標は、再生セッション中に少なくとも 1 回、停止が発生した場合にのみ 1 に設定されます。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stall） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;カスタム</li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stall） </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>stall） </li> </ul><br/> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;停止されたイベントが発生したストリームの数。この指標は、再生セッション中に少なくとも 1 回、停止が発生した場合にのみ 1 に設定されます。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stall） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;カスタム</li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stall） </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>stall） </li> </ul><br/> |
 
 >[!IMPORTANT]
 >
@@ -262,7 +262,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> 3 </li><li> **説明：**<br/>&#x200B;再生セッション中に再生が停止された回数。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stallCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;カスタム</li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stallCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>stallCount） </li> </ul><br/> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> 3 </li><li> **説明：**<br/>&#x200B;再生セッション中に再生が停止された回数。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stallCount） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;カスタム</li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stallCount） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>stallCount） </li> </ul><br/> |
 
 
 
@@ -270,7 +270,7 @@ ht-degree: 99%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> 12 </li><li> **説明：**<br/>&#x200B;再生セッション中に再生が停止された合計時間（秒、整数）。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stallTime） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;カスタム</li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stallTime） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe<br/>stallTime） </li> </ul> <br/> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5 以上 </li> <li> **値の例：**<br/> 12 </li><li> **説明：**<br/>&#x200B;再生セッション中に再生が停止された合計時間（秒、整数）。レポートでこの値を参照できるようにするためには、独自の処理ルールを作成する必要があります。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>stallTime） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=stall） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;カスタム</li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>stallTime） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>stallTime） </li> </ul> <br/> |
 
 
 
