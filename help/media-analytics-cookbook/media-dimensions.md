@@ -1,11 +1,11 @@
 ---
-title: メディアストリームアトリビューション
-description: null
-translation-type: ht
-source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: ht
-source-wordcount: '209'
-ht-degree: 100%
+title: メディアストリームアトリビューションとは
+description: 追加の処理ルールやカスタム変数を使用せずに、アプリケーションアクションをメディアトラッキングデータにリンクする方法を説明します。
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 89%
 
 ---
 
@@ -46,4 +46,3 @@ Analytics レポートでは、`Show` eVar を使用してデータを分類し�
 ![](/assets/show-engagement.png)
 
 ![](/assets/vid-stream-attr-subs.png)
-
