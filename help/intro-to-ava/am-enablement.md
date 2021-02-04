@@ -1,9 +1,11 @@
 ---
-title: Audience Manager の有効化
-description: null
-uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+title: Adobe Audience Manager有効化とは何ですか。
+description: 追加の処理ルールやカスタム変数を使用せずに、アプリケーションアクションをメディアトラッキングデータにリンクする方法を説明します。
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 93%
 
 ---
 
@@ -109,4 +111,3 @@ AAM を利用すれば、データ販売者、exchange、デマンド側のプ�
    ```js
    ADBMobile().audienceSubmitSignal()
    ```
-
