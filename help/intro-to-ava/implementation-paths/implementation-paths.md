@@ -1,19 +1,18 @@
 ---
-title: 実装パス
-description: null
-uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: ht
-source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+title: 使用可能なストリーミングメディア導入パス
+description: Adobeの起動を含む、Adobeストリーミングメディアの実装パスについて説明します。
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 87%
 
 ---
 
 
 # 実装パス {#implementation-paths}
 
-Media Analytics には独自の SKU があり、サーバー呼び出しに基づく価格モデルからビデオのストリーミングに基づくモデルに変更されているので、実装パスごとにお客様は営業担当者またはアカウントマネージャーに連絡して新たに販売契約を結ぶ必要があります。
+各導入パスについて、お客様は、Streaming Media Analyticsに固有のSKUがあり、サーバー呼び出しに基づく価格モデルからビデオストリームに基づくモデルに変更があるので、新しい販売注文に署名するために、販売担当者/アカウントマネージャーに連絡する必要があります。
 
 * **Adobe Media Analytics 拡張機能を備えた Adobe Launch**
 
@@ -44,6 +43,7 @@ Media Analytics には独自の SKU があり、サーバー呼び出しに基�
    * 動的な広告挿入を使用する（または使用しない）広告ブレークの測定をサポートします。
    * TVSDK のシームレスな広告挿入モデルを使用すると、広告の再生を直接測定する分析が可能になり、精度が向上します。
    * 充実したイベントとメタデータが、QoS バッファー、モバイル接続中断の問題、エンドユーザーのインタラクション（モバイルでのシーク、一時停止、バックグラウンド実行など）に関する正確性を保ちます。
+
 <!--
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
