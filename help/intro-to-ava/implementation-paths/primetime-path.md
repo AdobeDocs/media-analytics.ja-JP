@@ -1,16 +1,18 @@
 ---
-title: Primetime
-description: null
-uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+title: Adobe Primetime とは
+description: Adobe Primetimeのソリューションと、それがストリーミングメディアの収益化に役立つ方法について説明します。
+translation-type: tm+mt
+source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 89%
 
 ---
 
 
 # Primetime {#primetime}
 
-Media Analytics（ハートビート）は、アドビの標準化されたメディアトラッキングソリューションです。従来のアドビのマイルストーンモデルの後継モデルです。
+Media Analytics（ハートビート）は、AdobeのMilestoneモデルに代わる、Adobeの標準化されたメディアトラッキングソリューションです。
 
 Adobe Primetime は、コンテンツプログラマーやディストリビューターが、接続されたすべての画面でメディアを収益化できるようにする Adobe Experience Cloud ソリューションです。
 
@@ -24,7 +26,7 @@ Primetime は、メディアの投稿、広告、パーソナライゼーショ�
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK は既にメディア SDK と統合されているので、サポートされているすべてのプラットフォームと簡単かつ迅速に統合することができます。<!--Primetime also supports the partnership with Nielsen.--> Primetime を最大限に活用するには、[クライアント側](/help/intro-to-ava/implementation-paths/client-side-path.md)に記載されているのと同じガイドラインおよび前提条件に従うと共に、お使いのプラットフォームの [Primetime ユーザーガイド](https://helpx.adobe.com/jp/primetime/user-guide.html)を参照してください。
+TVSDK は既にメディア SDK と統合されているので、サポートされているすべてのプラットフォームと簡単かつ迅速に統合することができます。<!--Primetime also supports the partnership with Nielsen.--> Primetime を最大限に活用するには、[クライアント側](/help/intro-to-ava/implementation-paths/client-side-path.md)に記載されているのと同じガイドラインおよび前提条件に従うと共に、お使いのプラットフォームの [Primetime ユーザーガイド](https://helpx.adobe.com/jp/support/primetime.html)を参照してください。
 
 >[!NOTE]
 >
