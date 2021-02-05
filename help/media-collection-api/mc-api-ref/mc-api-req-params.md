@@ -2,8 +2,11 @@
 title: リクエストパラメーター
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+workflow-type: tm+mt
+source-wordcount: '1195'
+ht-degree: 99%
 
 ---
 
@@ -45,6 +48,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
+| `media.streamFormat` | いいえ | `sessionStart` | ストリーム形式(例：&quot;HD&quot; |
 | `media.show` | いいえ | `sessionStart` | プログラム名またはシリーズ名 |
 | `media.season` | いいえ | `sessionStart` | 番組またはシリーズが属するシーズン番号 |
 | `media.episode` | いいえ | `sessionStart` | エピソードの番号 |
@@ -125,15 +129,15 @@ Experience Cloud ユーザー ID（`MID` または `MCID` とも呼ばれます�
 
 * ****`appInstallationId`値を渡さない場合 -** MA バックエンドは MCID を生成しなくなり、その代わりに Adobe Analytics にその操作を任せます。MCID を送信する（MCID を取得できる場合）か、（必須の `appInstallationId` と共に）`marketingCloudOrgId` を送信してメディアコレクション API が MCID を生成してすべての呼び出しで送信できるようにすることをお勧めします。
 
-* ****`appInstallationId`値を渡す場合 -**`appInstallationId` および（必須の）`marketingCloudOrgId` パラメーターの値を渡すと、MA バックエンドによって MCID を生成できます。**&#x200B;自分で `appInstallationId` を渡す場合は、クライアント側でその値を維持する必要があります。この値はデバイス上のアプリに対して一意である必要があり、アプリが再インストールされない限り永続的である必要があります。
+* ****`appInstallationId` 値を渡す場合 -**`appInstallationId` および（必須の）`marketingCloudOrgId` パラメーターの値を渡すと、MA バックエンドによって MCID を生成できます。**&#x200B;自分で `appInstallationId` を渡す場合は、クライアント側でその値を維持する必要があります。この値はデバイス上のアプリに対して一意である必要があり、アプリが再インストールされない限り永続的である必要があります。
 
 >[!NOTE]
 >
 >`appInstallationId` は、アプリ&#x200B;*とデバイス*&#x200B;を一意に識別します。この値は各デバイスのアプリごとに一意である必要があります。つまり、異なるデバイスで同じアプリの同じバージョンを使用する 2 人のユーザーは、それぞれ異なる（一意の）`appInstallationId` を送信する必要があります。
 
-<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
-\<ul id="ul_iwc_fqt_pbb"\> 
- \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
+<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
+\<ul id="ul_iwc_fqt_pbb"\>
+ \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li>
 </ul> -->
 
 ### visitor.marketingCloudOrgId
@@ -152,7 +156,7 @@ Experience Cloud ユーザー ID（`MID` または `MCID` とも呼ばれます�
    ```js
    "<<insert your ID name here>>": {  
      "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>> 
+      "authState": <<insert one of 0, 1, 2>>
    }
    ```
 
