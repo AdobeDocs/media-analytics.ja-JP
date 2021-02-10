@@ -1,18 +1,18 @@
 ---
-title: 使用可能なストリーミングメディア導入パス
-description: Adobeの起動を含む、Adobeストリーミングメディアの実装パスについて説明します。
-translation-type: tm+mt
+title: 使用可能なストリーミングメディア実装パスを教えてください。
+description: Adobe Launch を含む、Adobe ストリーミングメディアの実装パスについて説明します。
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '505'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # 実装パス {#implementation-paths}
 
-各導入パスについて、お客様は、Streaming Media Analyticsに固有のSKUがあり、サーバー呼び出しに基づく価格モデルからビデオストリームに基づくモデルに変更があるので、新しい販売注文に署名するために、販売担当者/アカウントマネージャーに連絡する必要があります。
+Streaming Media Analytics には独自の SKU があり、サーバー呼び出しに基づく価格モデルからビデオのストリーミングに基づくモデルへと変更されているので、お客様は実装パスごとに営業担当者またはアカウントマネージャーに連絡して新たに販売契約を結ぶ必要があります。
 
 * **Adobe Media Analytics 拡張機能を備えた Adobe Launch**
 
