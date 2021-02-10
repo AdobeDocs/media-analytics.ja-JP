@@ -1,11 +1,11 @@
 ---
-title: メディアストリームアトリビューションとは
-description: 追加の処理ルールやカスタム変数を使用せずに、アプリケーションアクションをメディアトラッキングデータにリンクする方法を説明します。
-translation-type: tm+mt
+title: メディアストリーム属性とは何ですか。
+description: 追加の処理ルールおよびカスタム変数を使用せずに、アプリケーションアクションをメディアトラッキングデータにリンクする方法を説明します。
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
