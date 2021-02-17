@@ -1,18 +1,18 @@
 ---
 title: Adobe Primetime とは
-description: Adobe Primetimeのソリューションと、それがストリーミングメディアの収益化に役立つ方法について説明します。
-translation-type: tm+mt
+description: Adobe Primetime ソリューションと、それがストリーミングメディアの収益化にどのように役立つかについて説明します。
+translation-type: ht
 source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
 # Primetime {#primetime}
 
-Media Analytics（ハートビート）は、AdobeのMilestoneモデルに代わる、Adobeの標準化されたメディアトラッキングソリューションです。
+Media Analytics（ハートビート）は、アドビの従来のマイルストーンモデルに代わる、アドビの標準メディアトラッキングソリューションです。
 
 Adobe Primetime は、コンテンツプログラマーやディストリビューターが、接続されたすべての画面でメディアを収益化できるようにする Adobe Experience Cloud ソリューションです。
 
