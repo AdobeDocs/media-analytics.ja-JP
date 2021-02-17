@@ -1,19 +1,19 @@
 ---
-title: Media Analyticsとクライアント側の統合とは何ですか。
-description: Media Analyticsがクライアント側統合、Media SDKおよび/またはメディア収集APIと連携する方法を説明します。
+title: Media Analytics とクライアントサイド統合とは何ですか。
+description: Media Analytics がクライアントサイド統合およびメディア SDK やメディアコレクション API とどのように連携するかについて説明します。
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '152'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 
 # クライアントサイド {#client-side}
 
-Media Analytics（ハートビート）は、アドビの標準化されたメディアトラッキングソリューションです。がAdobeのMilestoneモデルに取って代わる。
+Media Analytics（ハートビート）は、アドビの標準化されたメディアトラッキングソリューションです。これは、アドビの従来のマイルストーンモデルの後継モデルです。
 
 クライアントサイドの統合は、Media Analytics でのみ実装されます。メディア SDK またはメディアコレクション API（またはその両方）を実装できます。クライアントサイドパスは、Brightcove、Ooyala、Platform など、顧客や OVP プレーヤーを含む任意のプレーヤーで使用できます。
 
