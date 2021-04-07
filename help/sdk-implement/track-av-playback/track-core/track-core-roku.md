@@ -2,14 +2,14 @@
 title: Roku でのコア再生の追跡
 description: ここでは、Roku でのメディア SDK を使用したコア追跡の実装方法について説明します。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
+exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
-
 
 # Roku でのコア再生の追跡 {#track-core-playback-on-roku}
 
@@ -99,91 +99,6 @@ ht-degree: 100%
    オプションで、コンテキストデータ変数を使用して標準またはカスタムメタデータオブジェクトをトラッキングセッションにアタッチします。
 
    * **標準メタデータ**
-
-      [JavaScript での標準メタデータの実装](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-
-      >[!NOTE]
-      >
-      >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
-
-      * メディアメタデータキー API リファレンス - [標準メタデータキー - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-         利用可能なメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を参照してください。
-   * **カスタムメタデータ**
-
-      カスタム変数の変数オブジェクトを作成し、このメディアのデータを設定します。例：
-
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
-
-1. **意図を追跡して再生を開始**
-
-   メディアセッションの追跡を開始するには、メディアハートビートインスタンスの `trackSessionStart` を呼び出します。
-
-   ```js
-   mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
-   ```
-
-   >[!TIP]
-   >
-   >2 つ目の値は、手順 2 で作成した、カスタムのメディアメタデータオブジェクトの名前です。
-
-   >[!IMPORTANT]
-   >
-   >`trackSessionStart` では、再生の開始ではなく、ユーザーの再生の意図を追跡します。この API は、データ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
-
-   >[!NOTE]
-   >
-   >カスタムメタデータを使用しない場合は、前述の iOS の例でコメントアウトされている行に示されているように、`trackSessionStart` の `data` 引数に空のオブジェクトを送信します。
-
-1. **実際の再生開始を追跡**
-
-   再生開始（メディアの最初のフレームが画面に表示）に関するイベントをメディアプレーヤーから識別し、`trackPlay` を呼び出します。
-
-   ```js
-   mediaHeartbeat.trackPlay();
-   ```
-
-1. **再生の完了を追跡**
-
-   再生完了（ユーザーがコンテンツを最後まで視聴）に関するイベントをメディアプレーヤーから識別し、`trackComplete` を呼び出します。
-
-   ```js
-   mediaHeartbeat.trackComplete();
-   ```
-
-1. **セッションの終了を追跡**
-
-   再生のアンロード／終了（ユーザーがメディアを閉じる、またはメディアが完了してアンロードされる）に関するイベントをメディアプレーヤーから識別し、`trackSessionEnd` を呼び出します。
-
-   ```js
-   mediaHeartbeat.trackSessionEnd();
-   ```
-
-   >[!IMPORTANT]
-   >
-   >`trackSessionEnd` は、トラッキングセッションの終わりをマークします。セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。`trackSessionEnd` の後は、他のすべての `track*` API 呼び出しは無視されます（新しいトラッキングセッション用の `trackSessionStart` を除く）。メディアの読み込みをトラッキングし、現在のセッションをアクティブに設定するメディア再生トラッキングメソッド：
-
-   ```
-   ‘ Create a media info object
-   mediaInfo = adb_media_init_mediainfo()
-   mediaInfo.id = <MEDIA_ID>
-   mediaInfo.playhead = "0"
-   mediaInfo.length = "600"
-   ```
-
-1. **ビデオメタデータのアタッチ**
-
-   オプションで、コンテキストデータ変数を使用して標準またはカスタムのビデオメタデータオブジェクトをビデオトラッキングセッションにアタッチします。
-
-   * **標準のビデオメタデータ**
 
       [Roku での標準メタデータの実装](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
