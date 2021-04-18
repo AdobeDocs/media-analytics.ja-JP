@@ -1,12 +1,15 @@
 ---
 title: Events リクエスト
-description: null
+description: Events リクエスト
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 100%
 
 ---
-
 
 # Events リクエスト {#events-request}
 
@@ -48,7 +51,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 >[!IMPORTANT]
 >
->***広告トラッキング -**`adBreak`*内の広告のみ追跡できます。
+>***広告トラッキング -**`adBreak`* 内の広告のみ追跡できます。
 >
 >広告の前後に `adBreakStart` と `adBreakComplete` の「ブックエンド」がない場合、`adStart` および `adComplete` イベントは単に無視され、対応する広告期間がメインコンテンツ期間として追跡されます。これは、Adobe Analytics で使用できる集計データに大きな影響を与える可能性があります。
 
@@ -74,4 +77,3 @@ Access-Control-Expose-Headers Location
 | **404** | **見つかりません。** <br/><br/> メディアセッションのセッション ID がバックエンドサービスに見つかりませんでした。 | クライアントアプリケーションでは [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
 | **410** | **なくなりました。** <br/><br/> メディアセッションがバックエンドサービスに見つかりましたが、クライアントがそのセッションに関するアクティビティを報告できなくなっています。 | クライアントアプリケーションでは [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
 | **500** | **サーバーエラー** | 該当なし |
-
