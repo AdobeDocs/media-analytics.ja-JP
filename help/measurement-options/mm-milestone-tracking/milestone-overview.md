@@ -1,15 +1,15 @@
 ---
 title: マイルストーンの概要
-description: null
+description: マイルストーンの概要
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
+exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '3346'
 ht-degree: 100%
 
 ---
-
 
 # マイルストーンの概要 {#milestone-overview}
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ### マイルストーンレポートの設定
 
-マイルストーン実装用にビデオレポートを設定するには、**[!UICONTROL 管理者／レポートスイートマネージャーに移動します]。**レポートスイートを選択し、**[!UICONTROL ビデオ管理／ビデオレポート]を選択します。**
+マイルストーン実装用にビデオレポートを設定するには、**[!UICONTROL 管理者／レポートスイートマネージャーに移動します]。**&#x200B;レポートスイートを選択し、**[!UICONTROL ビデオ管理／ビデオレポート]を選択します。**
 
 <!--
 ![](assets/0clip_image002_1537416456.png){width="248"}
@@ -99,7 +99,7 @@ ht-degree: 100%
 
 ## 広告トラッキング変数 {#ad-tracking-variables}
 
-これらの変数は、openAd メソッドと組み合わせて広告情報を送信するために使用されます。[VAST ビデオ広告トラッキング](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html)を参照してください。
+これらの変数は、openAd メソッドと組み合わせて広告情報を送信するために使用されます。[VAST ビデオ広告トラッキング](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)を参照してください。
 
 | 変数    | 説明 |
 | --- | --- |
@@ -120,13 +120,13 @@ ht-degree: 100%
 | `Media.open` | **構文：**<br/><br/> `s.Media.open(mediaName, mediaLength, mediaPlayerName)`<br/><br/>メディアモジュールでビデオトラッキングデータを収集するよう準備します。このメソッドでは次のパラメーターを取ります。 <ul><li> **mediaName：**（必須）ビデオレポートに表示するビデオの名前。 </li><li>  **mediaLength：**（必須）ビデオの長さ（秒単位）。  </li><li> **mediaPlayerName：**（必須）ビデオの視聴に使用されるメディアプレーヤーの名前。ビデオレポートに表示する名前です。 </li></ul> |
 | `Media.openAd` | **構文：**<br/><br/> `s.Media.openAd(name, length, playerName, parentName,`<br/> `parentPod, parentPodPosition, CPM)` <br/><br/> メディアモジュールで広告トラッキングデータを収集するよう準備します。このメソッドでは次のパラメーターを取ります。 <ul> <li> **name：**（必須）広告の名前または ID。  </li> <li> **length：**（必須）広告の長さ。  </li> <li> **playerName：**（必須）広告の表示に使用するメディアプレーヤーの名前。  </li> <li> **parentName：**&#x200B;広告が埋め込まれたプライマリコンテンツの名前または ID。  </li> <li> **parentPod：**&#x200B;広告が表示されたプライマリコンテンツ内の位置。  </li> <li> **parentPodPosition：**&#x200B;広告が表示されるポッド内の位置。  </li> <li> **CPM：**&#x200B;この再生に適用される CPM または暗号化された CPM（「~」のプレフィックスが付く）。  </li> </ul> |
 | `Media.click` | **構文：**<br/><br/> `s.Media.click(name, offset)`<br/><br/>ビデオで広告がいつクリックされたかを追跡します。このメソッドでは次のパラメーターを取ります。 <ul> <li> **name：**&#x200B;広告の名前。Media.openAd で使用されている名前と一致させる必要があります。  </li> <li> **offset：**&#x200B;クリックが発生した際の、広告までのオフセット。  </li> </ul> |
-| `Media.close` | **構文：**<br/><br/> `s.Media.close(mediaName)`<br/><br/>ビデオデータの収集を終了して情報を Adobe データ収集サーバーに送信します。このメソッドはビデオの最後で呼び出します。このメソッドでは次のパラメーターを取ります。 <br/><br/> **mediaName：**&#x200B;ビデオ名。`Media.open` で使用されている名前と一致させる必要があります。 |
+| `Media.close` | **構文：**<br/><br/> `s.Media.close(mediaName)`<br/><br/>ビデオデータの収集を終了して情報を Adobe データ収集サーバーに送信します。このメソッドはビデオの最後で呼び出します。このメソッドでは次のパラメーターを取ります。  <br/><br/> **mediaName：**&#x200B;ビデオ名。`Media.open` で使用されている名前と一致させる必要があります。 |
 | `Media.complete` | **構文：**<br/><br/> `s.Media.complete(name, offset)`<br/><br/>このメソッドを使用して、完了イベントを手動で追跡します。このメソッドは、`Media.completeByCloseOffset` で処理できない特別なロジックを使用してイベントをトリガーする必要がある場合に使用します。<br/><br/>例えば、最後が定義されていないライブストリームを測定する場合、ユーザーがライブストリームを X 秒間視聴した後で、完了をトリガーすることができます。コンテンツの長さと種類に基づいた割合の計算を使用して、完了を測定します。このメソッドでは次のパラメーターを取ります。 <ul> <li> **mediaName：**&#x200B;ビデオ名。Media.open で使用されている名前と一致させる必要があります。  </li> <li> **mediaOffset：**&#x200B;完了イベントを送信する、ビデオ開始後の秒数。ゼロ秒を開始点としてオフセットを指定します。<br/><br/>メディアプレーヤーでマイルストーンを使用して追跡を行っている場合は、Media.complete を呼び出す前に、値を秒数に必ず変換してください。  </li> </ul> complete を手動で呼び出す計画がある場合は、<br/><br/> `s.Media.completeByCloseOffset = false` を参照してください。 |
-| `Media.play` | **構文：**<br/><br/> `s.Media.play(name, offset, segmentNum, segment, segmentLength)`<br/><br/>ビデオの再生を開始するときは常にこのメソッドを呼び出します。手動でビデオ測定を行う場合、ビデオ測定データを送信するときに現在のセグメントデータを送信できます。<br/><br/>プレーヤーでの再生があるセグメントから別のセグメントへ移行した場合は、その理由がどのようなものであっても、`Media.stop` `Media.play` を呼び出す必要があります。<br/><br/> このメソッドでは次のパラメーターを取ります。<br/><br/> **mediaName：**&#x200B;ビデオ名。Media.open で使用されている名前と一致させる必要があります。    <br/><br/> **mediaOffset：**&#x200B;ビデオの再生が開始されてからの秒数。ゼロ秒を開始点としてオフセットを指定します。メディアプレーヤーでマイルストーンを使用して追跡を行っている場合は、Media.play を呼び出す前に、値を秒数に必ず変換してください。    <br/><br/> **segmentNum：**（オプション）現在のセグメント番号。マーケティングレポートでは、この番号を使用して、レポートでのセグメントの表示順を決定します。segmentNum には、正の数を指定する必要があります。    <br/><br/> **segment：**（オプション）現在のセグメント名。<br/><br/> **segmentLength：**（オプション）<br/><br/>現在のセグメントの長さ（秒単位）。<br/><br/>例：<br/><br/> `s.Media.play("My Video", 1800, 2,"Second Quarter", 1800)` <br/><br/> `s.Media.play("My Video", 0, 1,"Preroll", 30)` |
+| `Media.play` | **構文：**<br/><br/> `s.Media.play(name, offset, segmentNum, segment, segmentLength)`<br/><br/>ビデオの再生を開始するときは常にこのメソッドを呼び出します。手動でビデオ測定を行う場合、ビデオ測定データを送信するときに現在のセグメントデータを送信できます。<br/><br/>プレーヤーでの再生があるセグメントから別のセグメントへ移行した場合は、その理由がどのようなものであっても、`Media.stop` `Media.play` を呼び出す必要があります。<br/><br/> このメソッドでは次のパラメーターを取ります。<br/><br/> **mediaName：**&#x200B;ビデオ名。Media.open で使用されている名前と一致させる必要があります。     <br/><br/> **mediaOffset：**&#x200B;ビデオの再生が開始されてからの秒数。ゼロ秒を開始点としてオフセットを指定します。メディアプレーヤーでマイルストーンを使用して追跡を行っている場合は、Media.play を呼び出す前に、値を秒数に必ず変換してください。     <br/><br/> **segmentNum：**（オプション）現在のセグメント番号。マーケティングレポートでは、この番号を使用して、レポートでのセグメントの表示順を決定します。segmentNum には、正の数を指定する必要があります。     <br/><br/> **segment：**（オプション）現在のセグメント名。<br/><br/> **segmentLength：**（オプション）<br/><br/>現在のセグメントの長さ（秒単位）。<br/><br/>例：<br/><br/> `s.Media.play("My Video", 1800, 2,"Second Quarter", 1800)` <br/><br/> `s.Media.play("My Video", 0, 1,"Preroll", 30)` |
 | `Media.stop` | **構文：**<br/><br/> `s.Media.stop(mediaName, mediaOffset)`<br/><br/>指定したビデオの停止イベント（停止、一時停止など）を追跡します。このメソッドでは次のパラメーターを取ります。 <ul> <li> **mediaName：**&#x200B;ビデオ名。`Media.open` で使用されている名前と一致させる必要があります。  </li> <li> **mediaOffset：**&#x200B;停止または一時停止が発生するビデオ開始後の秒数。ゼロ秒を開始点としてオフセットを指定します。  </li> </ul> |
-| `Media.monitor` | **構文：**<br/><br/> `s.Media.monitor(s, media)` <br/><br/> **Silverlight の構文：**<br/><br/> `s.Media.monitor =` <br/>   `new AppMeasurement_Media_Monitor(myMediaMonitor);` <br/><br/>Silverlight アプリケーションのメディアモニターには、Objective-C delegate の設計パターンが導入されています。`myMediaMonitor` クラスメソッドは `s` および `media` パラメーターを取ります。<br/><br/>このメソッドを使用して、追加のビデオ指標を送信します。変数（prop、eVar、event）を追加したり、ビデオの再生進行に伴う最新の状態に基づいて `Media.track` を呼び出し、変数を送信したりできます。<br/><br/>[Media.monitor を使用した追加指標の測定を参照してください。](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html) <br/><br/>このメソッドでは次のパラメーターを取ります。<br/><br/>  **s：** `AppMeasurement` インスタンス（または、JavaScript `s` オブジェクト）。<br/><br/> **media：**&#x200B;メンバーがビデオの状態を表すオブジェクトです。メンバーの例は次のとおりです。  <ul><li> `media.name:` ビデオの名前。`Media.open` で使用されている名前と一致させる必要があります。 </li><li> `media.length:` `Media.open` への呼び出しで提供されるビデオの長さ（秒）。 </li><li> `media.playerName:` `Media.open` への呼び出しで提供されるメディア プレイヤー名。 </li><li> `media.openTime:` `Media.open` が呼び出された時点についてのデータを含む NSDate オブジェクト。 </li><li> `media.offset:`ビデオの現在の秒オフセット（実際のビデオ経過時間）。オフセットは 0 で開始します（ビデオの最初は 0 秒）。 </li><li> `media.percent:`ビデオの長さと現在のオフセットを基にした、再生されているビデオの現在のパーセント。  </li><li> `media.timePlayed:`それまでの再生秒数の合計。  </li><li> `media.eventFirstTime:`そのビデオに当該メディアイベントが初めて呼び出されたことを示します。 </li><li> `media.mediaEvent:`モニターが呼び出される原因となったイベント名を含む文字列。 </li></ul> |
+| `Media.monitor` | **構文：**<br/><br/> `s.Media.monitor(s, media)` <br/><br/> **Silverlight の構文：**<br/><br/> `s.Media.monitor =` <br/>   `new AppMeasurement_Media_Monitor(myMediaMonitor);` <br/><br/>Silverlight アプリケーションのメディアモニターには、Objective-C delegate の設計パターンが導入されています。`myMediaMonitor` クラスメソッドは `s` および `media` パラメーターを取ります。<br/><br/>このメソッドを使用して、追加のビデオ指標を送信します。変数（prop、eVar、event）を追加したり、ビデオの再生進行に伴う最新の状態に基づいて `Media.track` を呼び出し、変数を送信したりできます。<br/><br/>[Media.monitor を使用した追加指標の測定を参照してください。](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) <br/><br/>このメソッドでは次のパラメーターを取ります。<br/><br/>  **s：** `AppMeasurement` インスタンス（または、JavaScript `s` オブジェクト）。<br/><br/> **media：**&#x200B;メンバーがビデオの状態を表すオブジェクトです。メンバーの例は次のとおりです。  <ul><li> `media.name:` ビデオの名前。`Media.open` で使用されている名前と一致させる必要があります。 </li><li> `media.length:` `Media.open` への呼び出しで提供されるビデオの長さ（秒）。 </li><li> `media.playerName:` `Media.open` への呼び出しで提供されるメディア プレイヤー名。 </li><li> `media.openTime:` `Media.open` が呼び出された時点についてのデータを含む NSDate オブジェクト。 </li><li> `media.offset:`ビデオの現在の秒オフセット（実際のビデオ経過時間）。オフセットは 0 で開始します（ビデオの最初は 0 秒）。 </li><li> `media.percent:`ビデオの長さと現在のオフセットを基にした、再生されているビデオの現在のパーセント。  </li><li> `media.timePlayed:`それまでの再生秒数の合計。  </li><li> `media.eventFirstTime:`そのビデオに当該メディアイベントが初めて呼び出されたことを示します。 </li><li> `media.mediaEvent:`モニターが呼び出される原因となったイベント名を含む文字列。 </li></ul> |
 |  | `media.mediaEvent` events： <ul><li> `OPEN:` 再生が初めて観察されたとき（`Media.autoTrack` 使用時）、または `Media.play` への呼び出し。 </li><li> `CLOSE:` ビデオの完了時に再生が終了したとき（`Media.autoTrack` 使用時）、または `Media.close` への呼び出し。</li><li> `PLAY:`一時停止またはスクラブ後に再生が再開されたとき（`Media.autoTrack` 使用時）、または `Media.play` への呼び出し。</li><li> `STOP:`スクラブの開始の一時停止により再生が停止したとき（`Media.autoTrack` 使用時）、または `Media.stop` への呼び出し。</li><li> `MONITOR:`自動監視機能により再生中にビデオの状態がチェックされるとき（毎秒）。</li><li> `SECONDS:` `Media.trackSeconds` 変数で定義されている秒間隔。</li><li> `MILESTONE:` `Media.trackMilestones` 変数で定義されているマイルストーン。 </li></ul> |
-| `Media.track` | **構文：**<br/><br/> `s.Media.track(mediaName)`<br/><br/>現在のビデオの状態と共に、ユーザーが定義した `Media.trackVars` と Media.trackEvents を即座に送信します。このメソッドは、`Media.monitor` 内で使用します。<br/><br/>[Media.monitor を使用した追加指標の測定を参照してください。](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html)<br/><br/>このメソッドを呼び出す前にビデオの `Media.open` と `Media.play` を呼び出します。このメソッドでは次のパラメーターを取ります。 <ul> <li> **mediaName**：ビデオ名。`Media.open` で使用されている名前と一致させる必要があります。</li> </ul> このメソッドは、ビデオ再生中に他の変数を送信する唯一の方法です。このメソッドは、追跡が複数回ヒットしないように、秒間隔およびパーセントマイルストーンを 0 にリセットします。 |
+| `Media.track` | **構文：**<br/><br/> `s.Media.track(mediaName)`<br/><br/>現在のビデオの状態と共に、ユーザーが定義した `Media.trackVars` と Media.trackEvents を即座に送信します。このメソッドは、`Media.monitor` 内で使用します。<br/><br/>[Media.monitor を使用した追加指標の測定を参照してください。](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)<br/><br/>このメソッドを呼び出す前にビデオの `Media.open` と `Media.play` を呼び出します。このメソッドでは次のパラメーターを取ります。 <ul> <li> **mediaName**：ビデオ名。`Media.open` で使用されている名前と一致させる必要があります。</li> </ul> このメソッドは、ビデオ再生中に他の変数を送信する唯一の方法です。このメソッドは、追跡が複数回ヒットしないように、秒間隔およびパーセントマイルストーンを 0 にリセットします。 |
 
 
 ## ビデオプレーヤーイベントの追跡 {#track-video-player-events}
@@ -238,4 +238,3 @@ s.dc = '122';
 /****************************** MODULES *****************************/ 
 /* Insert the media module tracking code here. */ 
 ```
-
