@@ -1,12 +1,15 @@
 ---
 title: セッション ID の取得
-description: null
+description: セッション ID の取得
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '46'
+ht-degree: 100%
 
 ---
-
 
 # セッション ID の取得 {#obtaining-a-session-id}
 
@@ -37,4 +40,3 @@ const SESSION_ID_EXTRACTOR = /^\/api\/(.*)\/sessions\/(.*)/;
         this._sessionStarted = true;    // Session started. 
     ...
 ```
-
