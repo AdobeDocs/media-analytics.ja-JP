@@ -1,12 +1,15 @@
 ---
 title: Events リクエストの実装
-description: null
+description: Events リクエストの実装
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '84'
+ht-degree: 100%
 
 ---
-
 
 # Events リクエストの実装 {#implementing-an-events-request}
 
