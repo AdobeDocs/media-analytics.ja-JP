@@ -1,15 +1,15 @@
 ---
 title: マイルストーンからカスタムリンクへの移行
-description: null
+description: マイルストーンからカスタムリンクへの移行
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-translation-type: ht
-source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
-workflow-type: ht
-source-wordcount: '576'
+exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '582'
 ht-degree: 100%
 
 ---
-
 
 # マイルストーンからカスタムリンクへの移行 {#migrating-from-milestone-to-custom-link}
 
@@ -80,7 +80,7 @@ ht-degree: 100%
 | parentName | `parentName`：広告が埋め込まれたプライマリコンテンツの名前または ID。 | 該当なし | 使用不可。 |
 | parentPod | `parentPod`: 広告が表示されたプライマリコンテンツ内の位置。 | 該当なし | 使用不可。 |
 | parentPodPosition | `parentPodPosition`: 広告が表示されるポッド内の位置。 | 該当なし | 使用不可。 |
-| CPM | `CPM`: この再生に適用される CPM または暗号化された CPM（「~」のプレフィックスが付く）。 | 該当なし | 使用不可。 |
+| CPM | `CPM`：この再生に適用される CPM または暗号化された CPM（「~」のプレフィックスが付く）。 | 該当なし | 使用不可。 |
 | Media.click | `s.Media.click(name, offset)` | `s.tl()` | カスタムリンクの分析呼び出しを使用してクリックを追跡する。 |
 | Media.close | `s.Media.close(mediaName)` | 該当なし | 使用不可。 |
 | Media.complete | `s.Media.complete(` <br> `  name,` <br> `  offset)` | `s.tl()` | `s.linkTrackVars` <br> `  = 'events,` <br> `     prop10,` <br> `     eVar10,` <br> `     eVar12,` <br> `     eVar15,` <br> `     contextData.video.name,` <br> `     contextData.video.complete';` <br> `s.linkTrackEvents ` <br> `  = 'event3';` <br> `s.prop10` <br> `   = mediaName;` <br> `s.eVar10` <br> `  = mediaName;` <br> `s.eVar12` <br> `  = "video";` <br> `s.eVar15` <br> `  = mediaPlayerName;` <br> `s.events` <br> `  = 'event3';` <br> `s.contextData['video.name']` <br> `  = mediaName;` <br> `s.contextData['video.complete']` <br> `  = 'true';` <br> `s.tl(this,'o','Video Complete');` |
