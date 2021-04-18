@@ -1,15 +1,15 @@
 ---
 title: マイルストーンから Media Analytics への移行
-description: null
+description: マイルストーンから Media Analytics への移行
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: ht
-source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
-workflow-type: ht
-source-wordcount: '669'
+exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '675'
 ht-degree: 100%
 
 ---
-
 
 # マイルストーンから Media Analytics への移行 {#migrating-from-milestone-to-media-analytics}
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ### オプションの変数
 
-| マイルストーン | マイルストーンの構文 | Media Analytics | Media Analytics の構文 |
+| マイルストーン | マイルストーンの構文 | メディア分析 | Media Analytics の構文 |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | 該当なし | 事前定義されたプレーヤーのマッピングは提供されなくなりました。 |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | 該当なし | 事前定義されたプレーヤーのマッピングは提供されなくなりました。 |
@@ -58,7 +58,7 @@ ht-degree: 100%
 
 ### 広告トラッキング変数
 
-| マイルストーン | マイルストーンの構文 | Media Analytics | Media Analytics の構文 |
+| マイルストーン | マイルストーンの構文 | メディア分析 | Media Analytics の構文 |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 該当なし | Media Analytics は、コンテンツの場合は 10 秒、広告の場合は 1 秒に設定されます。他のオプションは利用できません。 |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 該当なし | 広告の場合、プログレスマーカーはデフォルトでは提供されません。広告のプログレスマーカーを作成するには、計算指標を使用します。 |
@@ -68,7 +68,7 @@ ht-degree: 100%
 
 ### メディアモジュールメソッド
 
-| マイルストーン | マイルストーンの構文 | Media Analytics | Media Analytics の構文 |
+| マイルストーン | マイルストーンの構文 | メディア分析 | Media Analytics の構文 |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`：（必須）ビデオレポートに表示するビデオの名前。 | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
@@ -89,4 +89,3 @@ ht-degree: 100%
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> または <br>trackEvent | `trackPause()` <br> または `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> または <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | 追加の変数を指定するには、カスタムまたは標準のメタデータを使用します。 | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | 該当なし | トラッキングコールの頻度は自動的に設定されます。 |
-
