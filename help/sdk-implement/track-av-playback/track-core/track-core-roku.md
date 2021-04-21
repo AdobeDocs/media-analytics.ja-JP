@@ -25,7 +25,7 @@ ht-degree: 100%
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
    | `name` | ビデオ名 | ○ |
-   | `mediaid` | ビデオの一意の識別子 | ○ |
+   | `mediaid` | ビデオの一意の ID | ○ |
    | `length` | ビデオの長さ | ○ |
    | `streamType` | ストリームタイプ（後述の _StreamType 定数_ を参照） | ○ |
    | `mediaType` | メディアタイプ（後述の&#x200B;_MediaType 定数_ を参照） | ○ |
