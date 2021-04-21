@@ -1,20 +1,20 @@
 ---
 title: サポートされるデバイスとプラットフォーム
 description: Adobe Analytics for Streaming Media では、各メディアストリームがあらゆるデバイスをまたいで収集され、報告されることを確実にします。
+exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 translation-type: ht
-source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '337'
 ht-degree: 100%
 
 ---
 
-
 # サポートされるデバイスとプラットフォーム {#devices-supported}
 
 >[!IMPORTANT]
 >
->2021 年 8 月 31 日にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
+>2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
 Adobe Analytics for Streaming Media は、以下を含む主要なデバイスをすべてサポートしています。
 
@@ -48,6 +48,6 @@ SDK が現在サポートされていないデバイスやプラットフォー�
 | その他 |  |  |  |  |
 |  | 新しい接続デバイス |  |  | ![](/help/assets/icon-blue-check.png) |
 
-1. 次の SDK のサポートは 2021 年 8 月 31 日に終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
+1. 次の SDK のサポートは 2021 年 8 月 31 日（PT）に終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
 各 SDK でサポートされる最小プラットフォームバージョンについて詳しくは、[サポートされる最小プラットフォームバージョン](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/setup/setup-overview.html)を参照してください。
