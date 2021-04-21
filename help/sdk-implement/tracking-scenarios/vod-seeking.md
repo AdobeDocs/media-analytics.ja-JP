@@ -2,11 +2,14 @@
 title: メインコンテンツでのシークのある VOD 再生
 description: メディア SDK を使用した、シークが発生した VOD コンテンツの追跡方法の例です。
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
+exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '274'
+ht-degree: 100%
 
 ---
-
 
 # メインコンテンツでのシークのある VOD 再生 {#vod-playback-with-seeking-in-the-main-content}
 
@@ -209,4 +212,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
