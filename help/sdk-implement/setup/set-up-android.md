@@ -2,20 +2,20 @@
 title: Android のセットアップ
 description: Android での実装用のメディア SDK アプリケーション設定です。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
+exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '427'
 ht-degree: 100%
 
 ---
 
-
 # Android のセットアップ {#set-up-android}
 
 >[!IMPORTANT]
 >
->2021 年 8 月 31 日にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
+>2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
 
 ## 前提条件
@@ -47,6 +47,7 @@ ht-degree: 100%
 
       1. モバイルライブラリを使用する予定のモジュールを選択します。
       1. 「**[!UICONTROL 適用]**」をクリックしてから、「**[!UICONTROL OK]**」をクリックしてモジュール設定ウィンドウを閉じます。
+
       **Eclipse：**
 
       1. Eclipse IDE で、プロジェクト名を右クリックします。
