@@ -2,11 +2,14 @@
 title: 概要
 description: メディア SDK を使用した広告トラッキングの実装の概要です。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
+exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
-
 
 # 概要 {#overview}
 
@@ -139,4 +142,3 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
 ```
-
