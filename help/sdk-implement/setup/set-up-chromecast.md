@@ -2,14 +2,14 @@
 title: Chromecast のセットアップ
 description: Chromecast での実装用のメディア SDK アプリケーション設定です。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
+exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 translation-type: ht
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '630'
 ht-degree: 100%
 
 ---
-
 
 # Chromecast のセットアップ {#set-up-chromecast}
 
@@ -96,7 +96,7 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
    | 設定パラメーター | 説明     |
    | --- | --- |
    | `server` | バックエンドのトラッキングエンドポイントの URL を表す文字列。 |
-   | `publisher` | コンテンツパブリッシャーの一意の識別子を表す文字列。 |
+   | `publisher` | コンテンツパブリッシャーの一意の ID を表す文字列。 |
    | `channel` | コンテンツ配信チャネルの名前を表す文字列。 |
    | `ssl` | SSL をトラッキングコールに使用するかどうかを示すブール値。 |
    | `ovp` | ビデオプレーヤープロバイダーの名前を表す文字列。 |
@@ -138,4 +138,3 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
-
