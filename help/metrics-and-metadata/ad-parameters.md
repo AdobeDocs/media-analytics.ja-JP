@@ -2,14 +2,14 @@
 title: 広告パラメーター
 description: null
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
+exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 translation-type: ht
-source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '1855'
 ht-degree: 100%
 
 ---
-
 
 # 広告パラメーター {#ad-parameters}
 
@@ -191,7 +191,7 @@ ht-degree: 100%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 15 </li><li> **説明：**<br/>&#x200B;広告の合計視聴時間（再生秒数）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.ad.<br/>timePlayed） </li> <li> **ハートビート：**<br/> </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;広告滞在時間 </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/>（a.media.ad.<br/>timePlayed） </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.ad.timePlayed） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 15 </li><li> **説明：**<br/>&#x200B;広告の合計視聴時間（再生秒数）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 13 日（PT）**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.ad.<br/>timePlayed） </li> <li> **ハートビート：**<br/> </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;広告滞在時間 </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/>（a.media.ad.<br/>timePlayed） </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.ad.timePlayed） </li> </ul> |
 
 
 
