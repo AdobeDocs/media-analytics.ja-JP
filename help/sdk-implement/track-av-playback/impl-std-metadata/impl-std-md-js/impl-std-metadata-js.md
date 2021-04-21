@@ -1,17 +1,17 @@
 ---
-title: JavaScript 2.xを使用した標準メタデータの実装
+title: JavaScript 2.x を使用した標準メタデータの実装
 description: ブラウザーアプリ（JS）上で、標準ビデオおよび広告メタデータがトラッキングコールで送信されるようにする設定を説明します。
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 889c294b-ac45-4e82-abb3-88ab70abbc3d
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '62'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 2.xを使用した標準メタデータの実装{#implement-standard-metadata-on-javascript}
+# JavaScript 2.x を使用した標準メタデータの実装 {#implement-standard-metadata-on-javascript}
 
 ## メタデータ定数
 
