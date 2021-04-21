@@ -2,14 +2,14 @@
 title: リクエストパラメーター
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
+exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: ht
-source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '1195'
 ht-degree: 100%
 
 ---
-
 
 # リクエストパラメーター {#request-parameters}
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
-| `media.id` | Y | `sessionStart` | コンテンツの一意の識別子 |
+| `media.id` | Y | `sessionStart` | コンテンツの一意の ID |
 | `media.name` | いいえ | `sessionStart` | 人が判読可能なコンテンツの名前 |
 | `media.length` | Y | `sessionStart` | コンテンツの長さ（秒） |
 | `media.contentType` | Y | `sessionStart` | ストリームの形式（任意の文字列を指定できます。推奨される値は、「Live」、「VOD」または「Linear」です） |
@@ -52,7 +52,7 @@ ht-degree: 100%
 | `media.show` | いいえ | `sessionStart` | プログラム名またはシリーズ名 |
 | `media.season` | いいえ | `sessionStart` | 番組またはシリーズが属するシーズン番号 |
 | `media.episode` | いいえ | `sessionStart` | エピソードの番号 |
-| `media.assetId` | いいえ | `sessionStart` | TV シリーズのエピソードの識別子、ムービーアセットの識別子、ライブイベントの識別子など、ビデオアセットのコンテンツの一意の識別子。この ID は通常、EIDR、TMS／Gracenote、Rovi などのメタデータを扱う機関から取得します。その他の独自のシステムや社内システムから取得することもできます。 |
+| `media.assetId` | いいえ | `sessionStart` | TV シリーズのエピソードの識別子、ムービーアセットの識別子、ライブイベントの識別子など、ビデオアセットのコンテンツの一意の ID。この ID は通常、EIDR、TMS／Gracenote、Rovi などのメタデータを扱う機関から取得します。その他の独自のシステムや社内システムから取得することもできます。 |
 | `media.genre` | いいえ | `sessionStart` | コンテンツプロデューサーによって定義されたコンテンツのタイプ |
 | `media.firstAirDate` | いいえ | `sessionStart` | コンテンツがテレビで最初に放送された日付 |
 | `media.firstDigitalDate` | いいえ | `sessionStart` | コンテンツが何らかのデジタルプラットフォームで最初に放送された日付 |
