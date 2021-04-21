@@ -2,11 +2,14 @@
 title: Chromecast でのバッファーの追跡
 description: Chromecast でのバッファーの追跡イベントを説明します。
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
+exl-id: 26fd1e2a-4103-486f-be12-36b088d28cb6
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '128'
+ht-degree: 100%
 
 ---
-
 
 # Chromecast でのバッファーの追跡 {#track-buffering-on-chromecast}
 
