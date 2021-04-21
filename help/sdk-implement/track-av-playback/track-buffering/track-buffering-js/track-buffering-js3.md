@@ -1,20 +1,20 @@
 ---
-title: JavaScript 3.xを使用したバッファリングの追跡
+title: JavaScript 3.x を使用したバッファーの追跡
 description: ブラウザーアプリ（JS）でのバッファーの追跡イベントを説明します。
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 3.xを使用したバッファリングの追跡{#track-buffering-on-javascript}
+# JavaScript 3.x を使用したバッファーの追跡 {#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
->以下の手順は、すべての 3.x SDK に共通する実装のガイダンスです。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、すべての 3.x SDK に共通する実装のガイダンスです。以前のバージョンの SDK を実装している場合は、[SDK のダウンロード](/help/sdk-implement/download-sdks.md)から開発者ガイドをダウンロードできます。
 
 ## バッファー追跡の定数
 
