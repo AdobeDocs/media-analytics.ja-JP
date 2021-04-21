@@ -1,17 +1,17 @@
 ---
-title: JavaScript 2.xを使用したチャプターとセグメントの追跡
+title: JavaScript 2.x を使用したチャプターおよびセグメントの追跡
 description: ここでは、ブラウザーアプリ（JS）でのメディア SDK を使用したチャプターおよびセグメント追跡の実装について説明します。
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 9964ec0c-cce9-4ccc-bd26-a2b3fcdc3e28
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '197'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 2.xを使用したチャプターとセグメントの追跡{#track-chapters-and-segments-on-javascript}
+# JavaScript 2.x を使用したチャプターおよびセグメントの追跡 {#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
