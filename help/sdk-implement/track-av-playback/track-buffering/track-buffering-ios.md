@@ -2,11 +2,14 @@
 title: iOS でのバッファーの追跡
 description: iOS でのバッファーの追跡イベントを説明します。
 uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
+exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '112'
+ht-degree: 100%
 
 ---
-
 
 # iOS でのバッファーの追跡 {#track-buffering-on-ios}
 
