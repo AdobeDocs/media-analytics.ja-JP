@@ -2,11 +2,14 @@
 title: チャプターがスキップされた VOD 再生
 description: メディア SDK を使用した、ユーザーがチャプターをスキップした VOD コンテンツの追跡方法の例です。
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
+exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '312'
+ht-degree: 100%
 
 ---
-
 
 # チャプターがスキップされた VOD 再生 {#vod-playback-with-a-skipped-chapter}
 
@@ -288,4 +291,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
