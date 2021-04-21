@@ -2,11 +2,14 @@
 title: 概要
 description: メディア SDK を使用したチャプターおよびセグメント追跡の実装方法です。
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
+exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '318'
+ht-degree: 100%
 
 ---
-
 
 # 概要 {#overview}
 
@@ -24,15 +27,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * チャプターのチャプターオブジェクトのインスタンス `chapterObject` を作成します
 * チャプターのメタデータ `chapterCustomMetadata` を設定します
-* `trackEvent(MediaHeartbeat.Event.ChapterStart, chapterObject, chapterCustomMetadata);` を呼び出します
+* を呼び出します `trackEvent(MediaHeartbeat.Event.ChapterStart, chapterObject, chapterCustomMetadata);`
 
 ### チャプター完了時
 
-* `trackEvent(MediaHeartbeat.Event.ChapterComplete);` を呼び出します
+* を呼び出します `trackEvent(MediaHeartbeat.Event.ChapterComplete);`
 
 ### チャプタースキップ時
 
-* `trackEvent(MediaHeartbeat.Event.ChapterSkip);` を呼び出します
+* を呼び出します `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
 ## チャプター追跡の実装 {#implement-chapter-tracking}
 
@@ -84,4 +87,3 @@ if (e.type == "chapter skip") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
 }; 
 ```
-
