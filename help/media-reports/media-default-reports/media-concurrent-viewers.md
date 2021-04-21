@@ -2,14 +2,14 @@
 title: メディア同時閲覧者数
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
+exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
 translation-type: ht
-source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '267'
 ht-degree: 100%
 
 ---
-
 
 # メディア同時閲覧者数 {#media-concurrent-viewers}
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
-> このレポートは、同時にアクティブなメディアセッションに基づいています。  個別訪問者ごとの同時視聴者を表示し、セグメントを適用し、分解して比較するには、[Analysis Workspace のメディア同時視聴者数パネル](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).を使用します。
+> このレポートは、同時にアクティブなメディアセッションに基づいています。  ユニーク訪問者ごとの同時視聴者を表示し、セグメントを適用し、分解して比較するには、[Analysis Workspace のメディア同時視聴者数パネル](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)を使用します。
 
 
 ![](assets/video-concurrent-viewers.png)
