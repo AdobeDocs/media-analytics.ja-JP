@@ -2,11 +2,14 @@
 title: 1.x から 2.x API への変換
 description: このトピックには、メディア SDK の 1.x および 2.x バージョン用の API リファレンスへのリンクおよび必須およびオプションのトラッキング API のリストが含まれています。
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
+exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '203'
+ht-degree: 100%
 
 ---
-
 
 # API 1.x から 2.x への変換 {#one-x-to-two-x-conv}
 
@@ -50,4 +53,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `playerPlugin.trackBufferComplete()` | `trackEvent(Event.BufferComplete)` |
 | `playerPlugin.trackBitrateChange()` | `trackEvent(Event.BitrateChange)` |
 | `playerPlugin.trackTimedMetadata()` | `trackEvent(Event.TimedMetadataUpdate)` |
-
