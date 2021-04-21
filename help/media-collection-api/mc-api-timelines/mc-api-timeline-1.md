@@ -2,14 +2,14 @@
 title: タイムライン 1 - コンテンツの最後まで視聴
 description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
+exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 translation-type: ht
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '1164'
 ht-degree: 100%
 
 ---
-
 
 # タイムライン 1 - コンテンツの最後まで視聴 {#timeline-view-to-end-of-content}
 
@@ -406,7 +406,7 @@ ht-degree: 100%
 
 **実装の詳細**
 
-バッファリングが 3 秒後に終了するので、プレーヤーを「再生中」状態に戻します。バッファリングが終了したら再生イベントの追跡をもう 1 件送信する必要があります。**`bufferStart`の後の`play`呼び出しがバックエンドへの「bufferEnd」呼び出しと解釈されるので、** `bufferEnd` イベントは必要ありません。
+バッファリングが 3 秒後に終了するので、プレーヤーを「再生中」状態に戻します。バッファリングが終了したら再生イベントの追跡をもう 1 件送信する必要があります。**`bufferStart` の後の `play` 呼び出しがバックエンドへの「bufferEnd」呼び出しと解釈されるので、** `bufferEnd` イベントは必要ありません。
 
 **リクエスト本文のサンプル**
 
@@ -641,7 +641,7 @@ ht-degree: 100%
 
 **実装の詳細**
 
-再生状態を「再生中」に移行します。**`pauseStart`の後の`play`呼び出しがバックエンドへの「resume」呼び出しと解釈されるので**、`resume` イベントは必要ありません。
+再生状態を「再生中」に移行します。**`pauseStart` の後の `play` 呼び出しがバックエンドへの「resume」呼び出しと解釈されるので**、`resume` イベントは必要ありません。
 
 **リクエスト本文のサンプル**
 
