@@ -2,14 +2,14 @@
 title: プレーヤーステートパラメーター
 description: このトピックでは、プレーヤーステートトラッキングパラメーターについて説明します。
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
+exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
 translation-type: ht
-source-git-commit: 1cf631d7f3d5365a02be99af78655ac3b53fb3cb
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '2236'
 ht-degree: 100%
 
 ---
-
 
 # プレーヤーステートパラメーター {#player-state-parameters}
 
@@ -31,7 +31,7 @@ ht-degree: 100%
    * *レポート名* - Adobe Aanlytics の変数のレポート名。
    * *コンテキストデータ* - レポートサーバーに渡され、処理ルールで使用される Adobe Analytics のコンテキストデータの名前。
    * *データフィード* - クリックストリームまたはライブストリームデータフィード内の変数の列の名前。
-   * *Audience Manager：* - Adobe Audience Manager 内の特性名。
+   * *Audience Manager* - Adobe Audience Manager 内の特性名。
 
 >[!IMPORTANT]
 >
