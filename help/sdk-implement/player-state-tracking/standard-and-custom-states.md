@@ -1,14 +1,14 @@
 ---
 title: 標準ステートとカスタムステートについて
 description: このトピックでは、プレーヤーステートトラッキング機能と、標準およびカスタムプレーヤーステートの実装と報告に関する要件やガイドラインについて説明します。
+exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 translation-type: ht
-source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '280'
 ht-degree: 100%
 
 ---
-
 
 # 標準ステートとカスタムステートについて
 
