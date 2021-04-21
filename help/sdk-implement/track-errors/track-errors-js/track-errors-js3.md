@@ -1,20 +1,20 @@
 ---
-title: JavaScript 3.xを使用したエラーの追跡
+title: JavaScript 3.x を使用したエラーの追跡
 description: ここでは、ブラウザーアプリ（JS）でのメディア SDK を使用したエラー追跡の実装について説明します。
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
-workflow-type: tm+mt
+exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 3.xを使用したエラーの追跡{#track-errors-on-javascript}
+# JavaScript 3.x を使用したエラーの追跡 {#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
->以下の手順は、すべての 3.x SDK に共通する実装のガイダンスです。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、すべての 3.x SDK に共通する実装のガイダンスです。以前のバージョンの SDK を実装している場合は、[SDK のダウンロード](/help/sdk-implement/download-sdks.md)から開発者ガイドをダウンロードできます。
 
 ## エラー追跡の実装
 
