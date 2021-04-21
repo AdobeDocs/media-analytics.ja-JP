@@ -2,11 +2,14 @@
 title: iOS でのエラーの追跡
 description: ここでは、iOS でのメディア SDK を使用したエラー追跡の実装について説明します。
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
+exl-id: c4ce7092-a102-41da-80a6-a4359f925708
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '92'
+ht-degree: 100%
 
 ---
-
 
 # iOS でのエラーの追跡 {#track-errors-on-ios}
 
@@ -27,4 +30,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >メディアプレーヤーのエラーの追跡は、メディアトラッキングセッションを停止しません。メディアプレーヤーのエラーが再生の続行を妨げる場合、`trackError` の呼び出しの後で `trackSessionEnd` を呼び出すことで、メディアトラッキングセッションを確実に終了するようにしてください。
-
