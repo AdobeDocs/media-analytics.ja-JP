@@ -2,11 +2,14 @@
 title: 新しいデバッグレポートの作成
 description: ここでは、新しいデバッグレポートの作成方法について説明します。
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
+exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '205'
+ht-degree: 100%
 
 ---
-
 
 # 新しいデバッグレポートの作成 {#create-a-new-debug-report}
 
@@ -33,6 +36,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       * [!UICONTROL Default Endpoint] - このフィールドのデータはアドビが提供します。変更することはできません。
       * [!UICONTROL Extra Endpoint] - CNAME を使用している場合に、`metrics.companyname.com` などのトラッキングサーバーの `CNAMES` を追加します。
-
-
-
