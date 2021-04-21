@@ -2,11 +2,14 @@
 title: Chromecast での Quality of Experience の追跡
 description: ここでは、Chromecast でのメディア SDK を使用した Quality of Experience（QoE、QoS）追跡の実装について説明します。
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
+exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '292'
+ht-degree: 100%
 
 ---
-
 
 # Chromecast での Quality of Experience の追跡 {#track-quality-of-experience-on-chromecast}
 
@@ -23,11 +26,11 @@ Quality of Experience の追跡には、サービス品質（QoS）およびエ�
 ### すべてのビットレート変更イベント時
 
 * 再生の QoS オブジェクトインスタンス（`qosObject`）を作成または更新します
-* `trackEvent(Media.Heartbeat.Event.BitrateChange, qosObject);` を呼び出します
+* を呼び出します `trackEvent(Media.Heartbeat.Event.BitrateChange, qosObject);`
 
 ### プレーヤーのエラー時
 
-`trackError(“media error id”);` を呼び出します
+を呼び出します `trackError(“media error id”);`
 
 ## 実装方法 {#implement}
 
@@ -68,4 +71,3 @@ Quality of Experience の追跡には、サービス品質（QoS）およびエ�
    >[!TIP]
    >
    >メディアプレーヤーのエラーの追跡は、メディアトラッキングセッションを停止しません。メディアプレーヤーのエラーが再生の続行を妨げる場合、`trackError()` の呼び出しの後で `trackSessionEnd()` を呼び出すことで、メディアトラッキングセッションを確実に終了するようにしてください。
-
