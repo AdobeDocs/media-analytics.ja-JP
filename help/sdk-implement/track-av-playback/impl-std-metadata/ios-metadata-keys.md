@@ -2,11 +2,14 @@
 title: iOS のメタデータキー
 description: ここでは、使用可能な iOS のメタデータキーについて説明します。
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
+exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '115'
+ht-degree: 100%
 
 ---
-
 
 # iOS のメタデータキー {#ios-metadata-keys}
 
@@ -31,7 +34,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `ADBVideoMetadataKeySHOW_TYPE` | 番組タイプ | ビデオ |
 | `ADBVideoMetadataKeyAD_LOAD` | 広告読み込み | ビデオ |
 | `ADBVideoMetadataKeyMVPD` | mvpd | ビデオ |
-| `ADBVideoMetadataKeyAUTHORIZED` | 承認 | ビデオ |
+| `ADBVideoMetadataKeyAUTHORIZED` | Authorization | ビデオ |
 | `ADBVideoMetadataKeyDAY_PART` | 日パート | ビデオ |
 | `ADBVideoMetadataKeyFEED` | フィード | ビデオ |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | ストリーム形式 | ビデオ |
@@ -57,4 +60,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `ADBAdMetadataKeyPLACEMENT_ID` | プレースメント ID | 広告 |
 | `ADBAdMetadataKeySITE_ID` | サイト ID | 広告 |
 | `ADBAdMetadataKeyCREATIVE_URL` | クリエイティブ URL | 広告 |
-
