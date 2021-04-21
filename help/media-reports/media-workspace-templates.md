@@ -2,14 +2,14 @@
 title: メディアワークスペースのテンプレート
 description: null
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
+exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 translation-type: ht
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '187'
 ht-degree: 100%
 
 ---
-
 
 # メディアワークスペースのテンプレート {#media-workspace-templates}
 
