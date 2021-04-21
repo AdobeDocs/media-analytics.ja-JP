@@ -2,11 +2,14 @@
 title: 概要
 description: メディア SDK を使用してエラー追跡します。
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
+exl-id: 61c5f835-d66c-4621-a0af-2e4f47a922ac
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '88'
+ht-degree: 100%
 
 ---
-
 
 # 概要 {#overview}
 
@@ -23,4 +26,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >メディアプレーヤーのエラーの追跡は、メディアトラッキングセッションを停止しません。メディアプレーヤーのエラーが再生の続行を妨げる場合、`trackError` の呼び出しの後で `trackSessionEnd` を呼び出すことで、メディアトラッキングセッションを確実に終了するようにしてください。
-
