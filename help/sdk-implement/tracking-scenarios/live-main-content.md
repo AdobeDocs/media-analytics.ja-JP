@@ -2,11 +2,14 @@
 title: ライブメインコンテンツ
 description: メディア SDK を使用したライブコンテンツの追跡方法の例です。
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
+exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '528'
+ht-degree: 100%
 
 ---
-
 
 # ライブメインコンテンツ {#live-main-content}
 
@@ -185,4 +188,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
