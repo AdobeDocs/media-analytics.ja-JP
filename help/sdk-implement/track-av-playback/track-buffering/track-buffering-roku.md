@@ -2,11 +2,14 @@
 title: Roku でのバッファーの追跡
 description: Roku でのバッファーの追跡イベントを説明します。
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
+exl-id: 73b10b42-02ab-47f8-8250-58f03c5e0dd1
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '112'
+ht-degree: 100%
 
 ---
-
 
 # Roku でのバッファーの追跡 {#track-buffering-on-roku}
 
