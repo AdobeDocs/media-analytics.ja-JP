@@ -1,21 +1,21 @@
 ---
 title: JavaScript 3.x のセットアップ
 description: JavaScript 3.x での実装用のメディア SDK アプリケーション設定です。
+exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 translation-type: ht
-source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '398'
 ht-degree: 100%
 
 ---
 
-
-# JavaScript 3.x のセットアップ{#set-up-javascript}
+# JavaScript 3.x のセットアップ {#set-up-javascript}
 
 ## 前提条件
 
 * **有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
-* **メディアアプリケーションで、JavaScript 向け`AppMeasurement`と`Experience Cloud Identity Service`を実装します**。詳しくは、[JavaScript を使用した Analytics の実装](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/js/overview.html)および [Experience Cloud ID サービスの実装](https://docs.adobe.com/content/help/ja-JP/id-service/using/implementation/setup-analytics.html)を参照してください。
+* **メディアアプリケーションで、JavaScript 向け `AppMeasurement` と `Experience Cloud Identity Service` を実装します**。詳しくは、[JavaScript を使用した Analytics の実装](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/js/overview.html)および [Experience Cloud ID サービスの実装](https://docs.adobe.com/content/help/ja-JP/id-service/using/implementation/setup-analytics.html)を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
