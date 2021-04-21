@@ -2,26 +2,26 @@
 title: セットアップの概要
 description: モバイル、OTT およびブラウザー（JS）アプリケーションでのメディアトラッキングのためのメディア SDK のセットアップの概要です。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
+exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '734'
 ht-degree: 100%
 
 ---
 
-
 # セットアップの概要 {#setup-overview}
 
 >[!IMPORTANT]
 >
->2021 年 8 月 31 日にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
+>2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
 以下の手順は、メディア SDK 2.x に適用されます。メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetime のインテグレーターの場合は、後述の _Primetime メディア SDK のドキュメント_&#x200B;を参照してください。
 
 ## サポートされる最小プラットフォームバージョン {#minimum-platform-version}
 
-次の表に、2019 年 2 月 19 日より各 SDK でサポートされている最小プラットフォームバージョンを示します。
+次の表に、2019 年 2 月 19 日（PT）より各 SDK でサポートされている最小プラットフォームバージョンを示します。
 
 | OS／ブラウザー | 必要な最小バージョン |
 | --- | --- |
