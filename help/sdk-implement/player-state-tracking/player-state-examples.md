@@ -1,14 +1,14 @@
 ---
 title: プレーヤーステートトラッキングの例
 description: このトピックでは、プレーヤーステートトラッキング機能の例を示します。
+exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
 translation-type: ht
-source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '119'
 ht-degree: 100%
 
 ---
-
 
 # プレーヤーステートトラッキングの例
 
