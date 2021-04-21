@@ -2,11 +2,14 @@
 title: Roku でのエラーの追跡
 description: ここでは、Roku でのメディア SDK を使用したエラー追跡の実装について説明します。
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
+exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '92'
+ht-degree: 100%
 
 ---
-
 
 # Roku でのエラーの追跡 {#track-errors-on-roku}
 
@@ -26,4 +29,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >メディアプレーヤーのエラーの追跡は、メディアトラッキングセッションを停止しません。メディアプレーヤーのエラーが再生の続行を妨げる場合、`trackError` の呼び出しの後で `trackSessionEnd` を呼び出すことで、メディアトラッキングセッションを確実に終了するようにしてください。
-
