@@ -2,14 +2,14 @@
 title: ダウンロードされたコンテンツの追跡
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
+exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 translation-type: ht
-source-git-commit: be68a7abf7d5fd4cc725b040583801f2308ab066
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '611'
 ht-degree: 100%
 
 ---
-
 
 # ダウンロードされたコンテンツの追跡 {#track-downloaded-content}
 
