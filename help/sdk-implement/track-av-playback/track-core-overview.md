@@ -2,11 +2,14 @@
 title: トラッキングの概要
 description: 'ここでは、メディアの読み込み、メディア開始、メディアの一時停止およびメディア完了のトラッキングを含む、コア再生のトラッキングについて説明します。 '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
+exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '891'
+ht-degree: 100%
 
 ---
-
 
 # トラッキングの概要 {#tracking-overview}
 
@@ -26,36 +29,36 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### メディアの開始時
 
-* `trackPlay` を呼び出します
+* を呼び出します `trackPlay`
 
 ### 一時停止／再開時
 
-* `trackPause` を呼び出します
+* を呼び出します `trackPause`
 * 再生が再開されたときに `trackPlay` を呼び出します。__
 
 ### メディアの完了時
 
-* `trackComplete` を呼び出します
+* を呼び出します `trackComplete`
 
 ### メディアの中止時
 
-* `trackSessionEnd` を呼び出します
+* を呼び出します `trackSessionEnd`
 
 ### スクラビングの開始時
 
-* `trackEvent(SeekStart)` を呼び出します
+* を呼び出します `trackEvent(SeekStart)`
 
 ### スクラビングの終了時
 
-* `trackEvent(SeekComplete)` を呼び出します
+* を呼び出します `trackEvent(SeekComplete)`
 
 ### バッファリングの開始時
 
-* `trackEvent(BufferStart);` を呼び出します
+* を呼び出します `trackEvent(BufferStart);`
 
 ### バッファリングの終了時
 
-* `trackEvent(BufferComplete);` を呼び出します
+* を呼び出します `trackEvent(BufferComplete);`
 
 >[!TIP]
 >
@@ -70,7 +73,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | 変数名 | 説明 | 必須 |
    |---|---|---|
    | `name` | コンテンツ名 | ○ |
-   | `mediaid` | コンテンツの一意の識別子 | ○ |
+   | `mediaid` | コンテンツの一意の ID | ○ |
    | `length` | コンテンツの長さ | ○ |
    | `streamType` | ストリームタイプ | ○ |
    | `mediaType` | メディアタイプ（オーディオまたはビデオコンテンツ） | ○ |
@@ -235,4 +238,3 @@ if (e.type == “buffered”) {
 ## 検証 {#validate}
 
 実装の検証について詳しくは、[検証](/help/sdk-implement/validation/validation-overview.md)を参照してください。
-
