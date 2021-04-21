@@ -2,14 +2,14 @@
 title: SDK のダウンロード
 description: Android、iOS、JavaScript、Chromecast および Roku を含む、利用可能なプラットフォームの SDK ダウンロードのリンクです。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
+exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 translation-type: ht
-source-git-commit: cd3efa68ba0903bc9a616ac41dd5b20346c66870
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '517'
 ht-degree: 100%
 
 ---
-
 
 # SDK のダウンロード {#download-sdks}
 
