@@ -2,11 +2,14 @@
 title: Chromecast での標準メタデータの実装
 description: Chromecast 上での標準ビデオおよび広告メタデータの設定を説明します。
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
+exl-id: 052ede4b-ea8a-4ca6-bf02-0aab22a8bcda
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '54'
+ht-degree: 100%
 
 ---
-
 
 # Chromecast での標準メタデータの実装 {#implement-standard-metadata-on-chromecast}
 
