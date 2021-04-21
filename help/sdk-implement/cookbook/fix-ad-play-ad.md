@@ -2,11 +2,14 @@
 title: 広告と広告の間に発生する main:play の解決
 description: 広告間の予期しない main:play 呼び出しを処理する方法です。
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
+exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '448'
+ht-degree: 100%
 
 ---
-
 
 # 広告と広告の間に発生する main:play の解決 {#resolving-main-play-appearing-between-ads}
 
@@ -45,7 +48,7 @@ Adobe Debug または Charles などのネットワークパケットスニフ�
 
 **すべての広告アセットの開始時：**
 
-* **`trackEvent(MediaHeartbeat.Event.AdComplete);`を呼び出します**
+* **を呼び出します`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
@@ -70,11 +73,10 @@ Adobe Debug または Charles などのネットワークパケットスニフ�
 
 **広告ブレークの完了時：**
 
-* **`trackEvent(MediaHeartbeat.Event.AdComplete);`を呼び出します**
+* **を呼び出します`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
    >最後の `trackEvent:AdComplete` 呼び出しの一環としてこの手順を既に実行している場合は、この手順をスキップできます。
 
 * `trackEvent(MediaHeartbeat.Event.AdBreakComplete);` を呼び出します。
-
