@@ -1,20 +1,20 @@
 ---
-title: JavaScript 3.xを使用した標準メタデータの実装
+title: JavaScript 3.x を使用した標準メタデータの実装
 description: ブラウザーアプリ（JS）上で、標準ビデオおよび広告メタデータがトラッキングコールで送信されるようにする設定を説明します。
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 228ba000-10e2-4906-8417-265a03367a9b
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '43'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 3.xを使用した標準メタデータの実装{#implement-standard-metadata-on-javascript}
+# JavaScript 3.x を使用した標準メタデータの実装 {#implement-standard-metadata-on-javascript}
 
 ## 実装
 
-コンテキストデータオブジェクトをインスタンス化し、必要な標準メタデータ変数を設定します。 次に例を示します。
+コンテキストデータオブジェクトをインスタンス化し、必要な標準メタデータ変数に値を設定します。 次に例を示します。
 
 ```js
 _onVideoLoad = function () {
