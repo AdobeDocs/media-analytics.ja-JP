@@ -2,11 +2,14 @@
 title: 概要
 description: メディア SDK を使用した Quality of Experience（QoE、QoS）追跡の概要です。
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
+exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '254'
+ht-degree: 100%
 
 ---
-
 
 # 概要 {#overview}
 
@@ -24,7 +27,7 @@ Quality of Experience の追跡には、サービス品質（QoS）およびエ�
 
 ### すべてのビットレート変更イベント時
 
-`trackEvent(Media.Heartbeat.Event.BitrateChange);` を呼び出します
+を呼び出します `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
 ## QoS の実装
 
@@ -70,4 +73,3 @@ if (e.type == "bitrate_change") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
 };
 ```
-
