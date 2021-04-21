@@ -2,14 +2,14 @@
 title: JSON 検証スキーマ
 description: null
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
+exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
 translation-type: ht
-source-git-commit: 9b2f8b14ddb5b814f57c752665b78409e31173e8
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '55'
 ht-degree: 100%
 
 ---
-
 
 # JSON 検証スキーマ {#json-validation-schemas}
 
