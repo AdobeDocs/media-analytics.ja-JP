@@ -1,26 +1,26 @@
 ---
-title: JavaScript 3.xを使用したエクスペリエンスの質の追跡
-description: このトピックでは、JavaScript 3xを使用するブラウザーアプリで、Media SDKを使用したエクスペリエンスの品質(QoE、QoS)トラッキングの実装について説明します。
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
-workflow-type: tm+mt
+title: JavaScript 3.x を使用したエクスペリエンス品質の追跡
+description: このトピックでは、JavaScript 3x を使用するブラウザーアプリで Media SDK を使用してエクスペリエンス品質（QoE、QoS）のトラッキングを実装する方法について説明します。
+exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '223'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 3.xを使用したエクスペリエンスの質の追跡{#track-quality-of-experience-on-javascript}
+# JavaScript 3.x を使用したエクスペリエンス品質の追跡 {#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
->以下の手順は、すべての 3.x SDK に共通する実装のガイダンスです。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、すべての 3.x SDK に共通する実装のガイダンスです。以前のバージョンの SDK を実装している場合は、[SDK のダウンロード](/help/sdk-implement/download-sdks.md)から開発者ガイドをダウンロードできます。
 
-## QOEの実装
+## QOE の実装
 
-1. Identify when the bitrate changes during media playback and create the `qoeObject` instance using the QoE information.
+1. メディア再生中のビットレートの変化を識別し、QoE 情報を使用して `qoeObject` インスタンスを作成します。
 
-   QoEObject変数：
+   QoEObject の変数：
 
    >[!TIP]
    >
@@ -33,7 +33,7 @@ ht-degree: 49%
    | `fps` | 数値 | FPS の値 |
    | `droppedFrames` | 数値 | ドロップフレームの数 |
 
-   QoEオブジェクトの作成：
+   QoE オブジェクトの作成：
 
    ```js
    // Replace <bitrate>, <startuptime>, <fps> and
@@ -59,9 +59,9 @@ ht-degree: 49%
 
    >[!IMPORTANT]
    >
-   >QoEオブジェクトを更新し、ビットレートの変更ごとにビットレート変更イベントを呼び出します。 これにより、最も正確なQoEデータが提供されます。
+   >ビットレートが変更されるたびに、QoE オブジェクトを更新し、ビットレート変更イベントを呼び出します。 これにより、最も正確な QoE データを取得できます。
 
-1. SDKに最新のQoE情報を提供するために、必ず `updateQoEObject()` メソッドを呼び出してください。
+1. 必ず `updateQoEObject()` メソッドを呼び出して、最新の QoE 情報を SDK に提供してください。
 1. メディアプレーヤーでエラーが生じ、エラーイベントをプレーヤー API で利用できる場合は、`trackError()` を使用してそのエラーの情報を取得します（[の概要](/help/sdk-implement/track-errors/track-errors-overview.md)を参照）。
 
    >[!TIP]
