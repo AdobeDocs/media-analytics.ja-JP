@@ -2,16 +2,16 @@
 title: JavaScript 2.x を使用したコア再生の追跡
 description: ここでは、JavaScript 2.x アプリを使用した、ブラウザーのメディア SDK によるコア追跡の実装方法について説明します。
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
+exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 translation-type: ht
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '688'
 ht-degree: 100%
 
 ---
 
-
-# JavaScript 2.x を使用したコア再生の追跡{#track-core-playback-on-javascript}
+# JavaScript 2.x を使用したコア再生の追跡 {#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
 >このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
@@ -25,7 +25,7 @@ ht-degree: 100%
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
    | `name` | メディア名 | ○ |
-   | `mediaid` | メディアの一意の識別子 | ○ |
+   | `mediaid` | メディアの一意の ID | ○ |
    | `length` | メディアの長さ | ○ |
    | `streamType` | ストリームタイプ（後述の _StreamType 定数_ を参照） | ○ |
    | `mediaType` | メディアタイプ（後述の&#x200B;_MediaType 定数_ を参照） | ○ |
