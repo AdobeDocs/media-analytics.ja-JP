@@ -2,11 +2,14 @@
 title: アプリの状態の追跡
 description: 'アプリの状態は、アプリケーション内の別の画面または表示で、表示されると、trackState 呼び出しをおこなう必要があります。 '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
+exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '183'
+ht-degree: 100%
 
 ---
-
 
 # アプリの状態の追跡 {#track-app-states}
 
@@ -53,4 +56,3 @@ ADBMobile.analytics.trackState("Home Screen", dictionary);
 >[!NOTE]
 >
 >コンテキストデータ値は、Adobe Mobile Services のカスタム変数にマッピングする必要があります。
-
