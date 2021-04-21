@@ -2,14 +2,14 @@
 title: SDK のデバッグ
 description: ここでは、メディア SDK で利用できる追跡／ログについて説明します。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
+exl-id: c2de6454-8538-4d07-a099-e278b153d894
 translation-type: ht
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '271'
 ht-degree: 100%
 
 ---
-
 
 # SDK のデバッグ {#sdk-debugging}
 
@@ -78,7 +78,7 @@ For more information about Bloodhound, see the following guides:
 
 >[!IMPORTANT]
 >
->Adobe Bloodhound は、2017 年 4 月 30 日をもって廃止されました。2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
+>Adobe Bloodhound は、2017 年 4 月 30 日（PT）をもって廃止されました。2017 年 5 月 1 日（PT）以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
 
 ## ログメッセージ
 
@@ -114,4 +114,3 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 [16:11:29 GMT­0700 (PDT).764] [INFO] [plugin::player] #trackComplete() 
 [16:11:29 GMT­0700 (PDT).766] [INFO] [plugin::player] #trackVideoUnload()
 ```
-
