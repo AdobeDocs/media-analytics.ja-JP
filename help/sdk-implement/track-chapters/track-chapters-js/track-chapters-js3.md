@@ -1,20 +1,20 @@
 ---
-title: JavaScript 3.xを使用したチャプターとセグメントの追跡
+title: JavaScript 3.x を使用したチャプターおよびセグメントの追跡
 description: ここでは、ブラウザーアプリ（JS）でのメディア SDK を使用したチャプターおよびセグメント追跡の実装について説明します。
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 3.xを使用したチャプターとセグメントの追跡{#track-chapters-and-segments-on-javascript}
+# JavaScript 3.x を使用したチャプターおよびセグメントの追跡 {#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
->以下の手順は、SDK 3.x を使用した実装についてのガイダンスです。If you are implementing any previous versions of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、SDK 3.x を使用した実装についてのガイダンスです。以前のバージョンの SDK を実装している場合は、[SDK のダウンロード](/help/sdk-implement/download-sdks.md)から開発者ガイドをダウンロードできます。
 
 1. いつチャプター開始イベントが発生するかを識別し、チャプター情報を使用して `ChapterObject` インスタンスを作成します。
 
@@ -26,10 +26,10 @@ ht-degree: 71%
 
    | 変数名 | タイプ | 説明 |
    | --- | --- | --- |
-   | `name` | string | チャプター名を示す空以外の文字列。 |
-   | `position` | 数値 | コンテンツ内のチャプターの位置（1から始まる）。 |
+   | `name` | string | チャプター名を示す空白以外の文字列。 |
+   | `position` | 数値 | コンテンツ内のチャプターの位置（1 から始まります）。 |
    | `length` | 数値 | チャプターの長さを示す正の数。 |
-   | `startTime` | 数値 | チャプターの開始時の再生ヘッドの値 |
+   | `startTime` | 数値 | チャプターの開始位置の再生ヘッド値。 |
 
    チャプターオブジェクト：
 
