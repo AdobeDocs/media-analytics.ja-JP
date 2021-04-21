@@ -2,11 +2,14 @@
 title: チャプターが 1 つある VOD 再生
 description: 1 つのチャプターを含む VOD 再生の追跡の例です。
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
+exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '430'
+ht-degree: 100%
 
 ---
-
 
 # チャプターが 1 つある VOD 再生 {#vod-playback-with-one-chapter}
 
@@ -42,7 +45,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:chapter_*` |  | チャプターデータに特有のストリーム情報。 |
 | `s:meta:*` |  | 特有のコンテキストデータのあるチャプター。 |
 
-## チャプターが途中にある場合のサンプルコード{#sample-code-chapter-in-the-middle}
+## チャプターが途中にある場合のサンプルコード {#sample-code-chapter-in-the-middle}
 
 このシナリオでは、VOD コンテンツの一部がチャプターです。
 
@@ -254,7 +257,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## チャプターが最初にある場合のサンプルコード{#sample-code-chapter-at-the-beginning}
+## チャプターが最初にある場合のサンプルコード {#sample-code-chapter-at-the-beginning}
 
 このシナリオでは、VOD コンテンツは、再生の最初に 1 つのチャプターを再生します。
 
@@ -465,4 +468,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
