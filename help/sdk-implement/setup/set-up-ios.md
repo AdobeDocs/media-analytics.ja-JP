@@ -2,20 +2,20 @@
 title: iOS のセットアップ
 description: iOS での実装用のメディア SDK アプリケーション設定です。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
+exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 translation-type: ht
-source-git-commit: f54733c44e96c517d0c4c624a40742b421a54325
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '748'
 ht-degree: 100%
 
 ---
 
-
 # iOS のセットアップ {#set-up-ios}
 
 >[!IMPORTANT]
 >
->2021 年 8 月 31 日にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
+>2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
 ## 前提条件
 
