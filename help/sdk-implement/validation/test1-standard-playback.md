@@ -2,11 +2,14 @@
 title: テスト 1  標準の再生
 description: ここでは、検証で使用される標準の再生テストについて説明します。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
+exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '839'
+ht-degree: 100%
 
 ---
-
 
 # テスト 1：標準の再生 {#test-standard-playback}
 
@@ -32,6 +35,7 @@ Media Analytics 実装には、次の 2 つのタイプのトラッキングコ�
    * **Adobe Analytics（AppMeasurement）サーバー -** Experience Cloud 訪問者 ID サービスを使用するには、RDC トラッキングサーバー、または RDC サーバーに解決される CNAME が必要です。Adobe Analytics トラッキングサーバーは「`.sc.omtrdc.net`」で終わるか CNAME である必要があります。
 
    * **Media Analytics（ハートビート）サーバー -** このサーバーは、常に「`[namespace].hb.omtrdc.net`」形式になります（`[namespace]` は会社名を指定します）。この名前は、アドビから提供されます。
+
    すべてのトラッキングコールで共通の、特定のキー変数を検証する必要があります。
 
    **Adobe 訪問者 ID（`mid`）：** `mid` 変数は、AMCV Cookie に設定される値をキャプチャするために使用されます。`mid` 変数は、Web サイトとモバイルアプリの両方で識別のための主要な値となると共に、Experience Cloud 訪問者 ID サービスが適切に設定されていることを示します。Adobe Analytics（AppMeasurement）と Media Analytics（ハートビート）呼び出しの両方で使用されます。
@@ -81,6 +85,7 @@ Media Analytics 実装には、次の 2 つのタイプのトラッキングコ�
    1. Adobe Analytics サーバー - Start 呼び出し
    1. Media Analytics サーバー - Start 呼び出し
    1. Media Analytics サーバー - 「Adobe Analytics Start call requested」
+
    上記の最初の 2 つの呼び出しには、追加のメタデータおよび変数が含まれます。呼び出しパラメーターおよびメタデータについては、[テスト呼び出しの詳細](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)を参照してください。
 
    上記の 3 番目の呼び出しは、Adobe Analytics サーバーに送信される Adobe Analytics Start 呼び出し（`pev2=ms_s`）をメディア SDK がリクエストしたことを Media Analytics サーバーに伝えます。
@@ -88,11 +93,13 @@ Media Analytics 実装には、次の 2 つのタイプのトラッキングコ�
 1. **広告ブレークを視聴する（可能な場合）**
 
    * **広告開始**
+
    広告の開始時に、次の順番でキー呼び出しが送信されます。
 
    1. Adobe Analytics サーバー - Ad Start 呼び出し
    1. Media Analytics サーバー - Ad Start 呼び出し
    1. Media Analytics サーバー - 「Adobe Analytics Ad Start call requested」
+
    最初の 2 つの呼び出しには、追加のメタデータおよび変数が含まれます。呼び出しパラメーターおよびメタデータについては、[テスト呼び出しの詳細](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)を参照してください。
 
    3 番目の呼び出しは、Adobe Analytics サーバーに送信される Adobe Analytics Start 呼び出し（`pev2=msa_s`）をメディア SDK がリクエストしたことを Media Analytics サーバーに伝えます。
