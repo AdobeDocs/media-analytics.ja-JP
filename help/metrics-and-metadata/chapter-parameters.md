@@ -2,14 +2,14 @@
 title: チャプターパラメーター
 description: null
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
+exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 translation-type: ht
-source-git-commit: ef237fd0d9e2bcebe011d819224d98d450830d07
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '1066'
 ht-degree: 100%
 
 ---
-
 
 # チャプターパラメーター {#chapter-parameters}
 
@@ -31,7 +31,7 @@ ht-degree: 100%
    * *レポート名* - Adobe Aanlytics の変数のレポート名。
    * *コンテキストデータ* - レポートサーバーに渡され、処理ルールで使用される Adobe Analytics のコンテキストデータの名前。
    * *データフィード* - クリックストリームまたはライブストリームデータフィード内の変数の列の名前。
-   * *Audience Manager：* - Adobe Audience Manager 内の特性名。
+   * *Audience Manager* - Adobe Audience Manager 内の特性名。
 
 >[!IMPORTANT]
 >
@@ -88,7 +88,7 @@ ht-degree: 100%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定  </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;チャプター終了 </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> **値の例：**<br/>  </li><li> **説明：**<br/>&#x200B;チャプターの閲覧時間。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.chapter.<br/>timePlayed） </li> <li> **ハートビート：**<br/> </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;チャプター閲覧時間</li> <li> **コンテキストデータ：**<br/>（a.media.chapter.<br/>timePlayed） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.chapter.<br/>timePlayed） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定  </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;チャプター終了 </li> <li> **最小のSDK のバージョン：** 1.3 </li> <li> **値の例：**<br/>  </li><li> **説明：**<br/>&#x200B;チャプターの閲覧時間。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 13 日（PT）**   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.chapter.<br/>timePlayed） </li> <li> **ハートビート：**<br/> </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;チャプター閲覧時間</li> <li> **コンテキストデータ：**<br/>（a.media.chapter.<br/>timePlayed） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.chapter.<br/>timePlayed） </li> </ul> |
 
 ## 関連する API {#related_apis_section}
 
