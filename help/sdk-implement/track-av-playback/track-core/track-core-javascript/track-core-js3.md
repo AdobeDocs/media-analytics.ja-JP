@@ -1,16 +1,16 @@
 ---
 title: JavaScript v3.x を使用したコア再生の追跡
 description: ここでは、JavaScript 3.x アプリを使用した、ブラウザーのメディア SDK によるコア追跡の実装方法について説明します。
+exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 translation-type: ht
-source-git-commit: 40d75ef32596e915ac07c173b4595bb78db3688d
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '643'
 ht-degree: 100%
 
 ---
 
-
-# JavaScript 3.x を使用したコア再生の追跡{#track-core-playback-on-javascript}
+# JavaScript 3.x を使用したコア再生の追跡 {#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
 >このドキュメントでは、バージョン 3.x の SDK でのトラッキングについて説明しています。以前バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
