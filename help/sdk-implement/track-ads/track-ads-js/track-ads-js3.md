@@ -1,20 +1,20 @@
 ---
-title: JavaScript 3.xを使用した広告の追跡
+title: JavaScript 3.x を使用した広告の追跡
 description: メディア SDK を使用して、ブラウザー（JS）アプリケーションに広告トラッキングを実装します。
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
-workflow-type: tm+mt
+exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 3.xを使用した広告の追跡{#track-ads-on-javascript}
+# JavaScript 3.x を使用した広告の追跡 {#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
->以下の手順は、SDK 3.x を使用した実装についてのガイダンスです。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、SDK 3.x を使用した実装についてのガイダンスです。以前のバージョンの SDK を実装している場合は、[SDK のダウンロード](/help/sdk-implement/download-sdks.md)から開発者ガイドをダウンロードできます。
 
 ## 広告トラッキングの定数
 
@@ -34,7 +34,7 @@ ht-degree: 80%
 
    | 変数名 | タイプ | 説明 |
    | --- | --- | --- |
-   | `name` | string | adbreak名（プリロール、ミッドロールおよびポストロール）を示す空以外の文字列。 |
+   | `name` | string | 広告ブレーク名（プレロール、ミッドロール、ポストロール）を示す空白以外の文字列。 |
    | `position` | 数値 | 広告ブレークの位置番号（1 から始まる） |
    | `startTime` | 数値 | 広告ブレーク開始時の再生ヘッド値 |
 
@@ -59,9 +59,9 @@ ht-degree: 80%
 
    | 変数名 | タイプ | 説明 |
    | --- | --- | --- |
-   | `name` | string | 広告名を示す空以外の文字列。 |
-   | `adId` | string | 広告識別子を示す空以外の文字列。 |
-   | `position` | 数値 | 広告ブレーク内の広告の位置（1から始まる）。 |
+   | `name` | string | 広告名を示す空白以外の文字列。 |
+   | `adId` | string | 広告識別子を示す空白以外の文字列。 |
+   | `position` | 数値 | 広告ブレーク内の広告の位置を示す番号（1 から始まります）。 |
    | `length` | 数値 | 広告の長さを示す正の数。 |
 
    広告オブジェクトの作成：
