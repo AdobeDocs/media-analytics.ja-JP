@@ -2,11 +2,14 @@
 title: Android でのバッファーの追跡
 description: Android でのバッファーの追跡イベントを説明します。
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
+exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '112'
+ht-degree: 100%
 
 ---
-
 
 # Android でのバッファーの追跡 {#track-buffering-on-android}
 
