@@ -1,16 +1,16 @@
 ---
-title: JavaScript 3.xを使用した標準広告メタデータの実装
-description: JavaScript 3.xアプリを使用するブラウザーで、標準広告メタデータを広告追跡に使用する方法。
-translation-type: tm+mt
-source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
-workflow-type: tm+mt
+title: JavaScript 3.x を使用した標準広告メタデータの実装
+description: JavaScript 3.x アプリを使用するブラウザーで標準広告メタデータを広告トラッキングに使用する方法。
+exl-id: ba9abf1d-3778-49ef-a2fc-6c0eafa3b227
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '54'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 3.xを使用した標準広告メタデータの実装{#implement-standard-ad-metadata-on-javascript}
+# JavaScript 3.x を使用した標準広告メタデータの実装 {#implement-standard-ad-metadata-on-javascript}
 
 ## 標準広告メタデータの実装
 
