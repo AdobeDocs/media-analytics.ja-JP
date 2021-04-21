@@ -2,14 +2,14 @@
 title: カスタムリンク導入ガイド
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
+exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 translation-type: ht
-source-git-commit: 6ba2e92ef2c9eabbe0ccfc5eeea200f968bec911
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '193'
 ht-degree: 100%
 
 ---
-
 
 # カスタムリンク導入ガイド {#custom-link-implementation-guide}
 
