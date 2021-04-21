@@ -1,17 +1,17 @@
 ---
-title: JavaScript 2.xを使用したバッファリングの追跡
+title: JavaScript 2.x を使用したバッファーの追跡
 description: ブラウザーアプリ（JS）でのバッファーの追跡イベントを説明します。
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 62c1d5b4-2717-42b3-8343-d41e895a9da3
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '116'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 2.xを使用したバッファリングの追跡{#track-buffering-on-javascript}
+# JavaScript 2.x を使用したバッファーの追跡 {#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
