@@ -2,11 +2,14 @@
 title: 広告がスキップされた VOD 再生
 description: メディア SDK を使用した、ユーザーが広告をスキップした VOD コンテンツの追跡方法の例です。
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
+exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '279'
+ht-degree: 100%
 
 ---
-
 
 # 広告がスキップされた VOD 再生 {#vod-playback-with-skipped-ads}
 
@@ -292,4 +295,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
