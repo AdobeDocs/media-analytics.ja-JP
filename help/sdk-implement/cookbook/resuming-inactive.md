@@ -2,11 +2,14 @@
 title: 非アクティブなセッションの再開
 description: 非アクティブなセッションの再開を処理する方法です。
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
+exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '157'
+ht-degree: 100%
 
 ---
-
 
 # 非アクティブなセッションの再開 {#resuming-inactive-sessions}
 
@@ -16,7 +19,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * 一時停止
 * シーク
-* 停止
+* Stalled
 * バッファー
 
 メディアトラッキングセッションが 30 分以上非アクティブな状態のままの場合、セッションは自動的に閉じられます。以前非アクティブになったビデオトラッキングセッションの後にユーザーが再開（`trackPlay`）した場合、メディアハートビートは、以前使用したビデオ情報およびメタデータを使用して新しいビデオセッションを自動的に作成し、再開ハートビートイベントを送信します。詳しくは、[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を参照してください。
@@ -86,4 +89,3 @@ _onmediaLoad = function () {
   this._mediaHeartbeat.trackSessionStart(mediaObject, contextData); 
 };
 ```
-
