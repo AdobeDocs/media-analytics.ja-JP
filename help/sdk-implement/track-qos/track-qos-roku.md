@@ -2,11 +2,14 @@
 title: Roku での Quality of Experience の追跡
 description: ここでは、Roku でのメディア SDK を使用した Quality of Experience（QoE、QoS）追跡の実装について説明します。
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
+exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '195'
+ht-degree: 100%
 
 ---
-
 
 # Roku での Quality of Experience の追跡 {#track-quality-of-experience-on-roku}
 
@@ -81,4 +84,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >メディアプレーヤーのエラーの追跡は、メディアトラッキングセッションを停止しません。メディアプレーヤーのエラーが再生の続行を妨げる場合、`trackError()` の呼び出しの後で `trackSessionEnd()` を呼び出すことで、メディアトラッキングセッションを確実に終了するようにしてください。
-
