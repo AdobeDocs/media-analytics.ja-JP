@@ -1,20 +1,20 @@
 ---
-title: JavaScript 3.xを使用したシークの追跡
+title: JavaScript 3.x を使用したシークの追跡
 description: ここでは、ブラウザーアプリ（JS）でのメディア SDK を使用したシーク追跡の実装について説明します。
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 3.xを使用したシークの追跡{#track-seeking-on-javascript}
+# JavaScript 3.x を使用したシークの追跡 {#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
->以下の手順は、すべての 3.x SDK に共通する実装のガイダンスです。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下の手順は、すべての 3.x SDK に共通する実装のガイダンスです。以前のバージョンの SDK を実装している場合は、[SDK のダウンロード](/help/sdk-implement/download-sdks.md)から開発者ガイドをダウンロードできます。
 
 ## シーク追跡の定数
 
