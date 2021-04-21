@@ -2,14 +2,14 @@
 title: タイムライン 2 - ユーザーが中断したセッション
 description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
+exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 translation-type: ht
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '634'
 ht-degree: 100%
 
 ---
-
 
 # タイムライン 2 - ユーザーが中断したセッション {#timeline--2-user-abandons-session}
 
