@@ -2,14 +2,14 @@
 title: Adobe Debug の設定
 description: ここでは、メディア SDK 実装のトラブルシューティングに使用できる Adobe Debug の設定方法について説明します。
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
+exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 translation-type: ht
-source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '653'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Debug の設定 {#configure-adobe-debug}
 
@@ -120,4 +120,3 @@ Android デバイスに SSL 証明書をインストールするには：
 
 1. ラップトップで、Adobe Debug セッションを開始します。
 1. Android デバイスでテストを開始します。
-
