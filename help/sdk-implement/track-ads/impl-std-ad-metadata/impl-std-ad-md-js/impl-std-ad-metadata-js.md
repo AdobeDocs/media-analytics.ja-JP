@@ -1,17 +1,17 @@
 ---
-title: JavaScript 2.xを使用した標準広告メタデータの実装
-description: JavaScript 2.xアプリを使用するブラウザーで、標準広告メタデータを広告追跡に使用する方法。
+title: JavaScript2.x を使用した標準広告メタデータの実装
+description: JavaScript 2.x アプリを使用するブラウザーで標準広告メタデータを広告トラッキングに使用する方法。
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: b331db87-ab4e-44fa-a97c-9691974cacd4
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '68'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 2.xを使用した標準広告メタデータの実装{#implement-standard-ad-metadata-on-javascript}
+# JavaScript 2.x を使用した標準広告メタデータの実装 {#implement-standard-ad-metadata-on-javascript}
 
 ## 広告定数
 
