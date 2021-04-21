@@ -2,11 +2,14 @@
 title: Android での標準メタデータの実装
 description: Android 上で、標準ビデオおよび広告メタデータがトラッキングコールで送信されるようにする設定を説明します。
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
+exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '101'
+ht-degree: 100%
 
 ---
-
 
 # Android での標準メタデータの実装 {#implement-standard-metadata-on-android}
 
