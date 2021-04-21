@@ -2,14 +2,14 @@
 title: 品質パラメーター
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
+exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 translation-type: ht
-source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '2992'
 ht-degree: 100%
 
 ---
-
 
 # 品質パラメーター {#quality-parameters}
 
@@ -77,7 +77,7 @@ ht-degree: 100%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK バージョン：** </li> <li> **値の例：**<br/> 30 </li><li> **説明：**<br/>&#x200B;バッファリングに費やした合計時間（秒）。この値は、再生セッション中に発生したすべてのバッファーイベントの時間の合計として計算されます。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **ハートビート：**<br/>（l:event:duration） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;合計バッファー時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **データフィード：**<br/> videoqoebuffertimeevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bufferTime） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK バージョン：** </li> <li> **値の例：**<br/> 30 </li><li> **説明：**<br/>&#x200B;バッファリングに費やした合計時間（秒）。この値は、再生セッション中に発生したすべてのバッファーイベントの時間の合計として計算されます。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 13 日（PT）**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **ハートビート：**<br/>（l:event:duration） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;合計バッファー時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **データフィード：**<br/> videoqoebuffertimeevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bufferTime） </li> </ul> |
 
 
 
@@ -136,7 +136,7 @@ ht-degree: 100%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 30,000 </li><li> **説明：**<br/>&#x200B;この値は、QoSObject を使用して設定しない場合、デフォルトでは 0 に設定されます。この値はミリ秒単位で設定します。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **ハートビート：**<br/>（l:stream:startup_time） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;開始時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>timeToStart） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 30,000 </li><li> **説明：**<br/>&#x200B;この値は、QoSObject を使用して設定しない場合、デフォルトでは 0 に設定されます。この値はミリ秒単位で設定します。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 13 日（PT）**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **ハートビート：**<br/>（l:stream:startup_time） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;開始時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>timeToStart） </li> </ul> |
 
 
 
@@ -152,7 +152,7 @@ ht-degree: 100%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 15 </li><li> **説明：**<br/>&#x200B;バッファリングに費やした合計時間（秒、整数）。この値は、再生セッション中に発生したすべてのバッファーイベントの時間の合計として計算されます。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 14 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **ハートビート：**<br/>（l:event:duration） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;合計バッファー時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bufferTime） </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 15 </li><li> **説明：**<br/>&#x200B;バッファリングに費やした合計時間（秒、整数）。この値は、再生セッション中に発生したすべてのバッファーイベントの時間の合計として計算されます。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/>**リリース日：2018 年 9 月 13 日（PT）**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **ハートビート：**<br/>（l:event:duration） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;合計バッファー時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>bufferTime） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>bufferTime） </li> </ul> |
 
 
 
