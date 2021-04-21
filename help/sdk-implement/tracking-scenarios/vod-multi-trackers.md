@@ -2,11 +2,14 @@
 title: 同時に複数の VOD トラッカー
 description: 同時に複数のトラッカーを使用した VOD の追跡方法の例です。
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
+exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '244'
+ht-degree: 100%
 
 ---
-
 
 # 同時に複数の VOD トラッカー {#vod-multiple-trackers-in-parallel}
 
@@ -374,4 +377,3 @@ _player2.loadContent(URL_TO_MEDIA_2);
 ```
 
 `MediaAnalyticsProvider` および `MediaHeartbeat` の両方のインスタンスは、2 つの個別のセッションを追跡し、それぞれが独自の一意のセッション ID を持ちます。Charles デバッグツールで 2 つのセッションを確認できます。
-
