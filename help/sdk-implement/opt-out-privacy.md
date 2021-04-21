@@ -2,14 +2,14 @@
 title: オプトアウトおよびプライバシー
 description: オプトイン、オプトアウトおよびプライバシーを処理する方法です。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
+exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 translation-type: ht
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '360'
 ht-degree: 100%
 
 ---
-
 
 # オプトアウトおよびプライバシー {#opt-out-and-privacy}
 
@@ -106,4 +106,3 @@ ht-degree: 100%
    ```
    vids = ADBMobile().getAllIdentifiers()
    ```
-
