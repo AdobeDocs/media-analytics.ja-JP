@@ -2,11 +2,14 @@
 title: 広告のない VOD 再生
 description: 広告を含まない VOD 再生のトラッキングの例です。
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
+exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '364'
+ht-degree: 100%
 
 ---
-
 
 # 広告のない VOD 再生 {#vod-playback-with-no-ads}
 
@@ -198,4 +201,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........
 ```
-
