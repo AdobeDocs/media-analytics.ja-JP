@@ -2,14 +2,14 @@
 title: SceneGraph（Roku）でのトラッキング
 description: Roku SceneGraph XML プログラミングフレームワークを使用してメディアを追跡します。
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
+exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 translation-type: ht
-source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '1171'
 ht-degree: 100%
 
 ---
-
 
 # SceneGraph（Roku）でのトラッキング {#tracking-in-scenegraph-roku}
 
@@ -358,4 +358,3 @@ function onAdbmobileApiResponse() as void
     endif 
 end function
 ```
-
