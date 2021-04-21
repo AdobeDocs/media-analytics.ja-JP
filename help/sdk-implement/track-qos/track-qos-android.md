@@ -2,11 +2,14 @@
 title: Android での Quality of Experience の追跡
 description: ここでは、Android でのメディア SDK を使用した Quality of Experience（QoE、QoS）追跡の実装について説明します。
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
+exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '154'
+ht-degree: 100%
 
 ---
-
 
 # Android での Quality of Experience の追跡 {#track-quality-of-experience-on-android}
 
@@ -53,4 +56,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!IMPORTANT]
    >
    >ビットレートが変更されるたびに、QoS オブジェクトを更新し、ビットレート変更イベントを呼び出します。これにより、最も正確な QoS データを取得できます。
-
