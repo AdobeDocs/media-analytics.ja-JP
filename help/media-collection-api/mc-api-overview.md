@@ -3,14 +3,14 @@ seo-title: 概要
 title: 概要
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
+exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 translation-type: ht
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '331'
 ht-degree: 100%
 
 ---
-
 
 # 概要 {#overview}
 
