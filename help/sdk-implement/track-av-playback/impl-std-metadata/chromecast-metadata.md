@@ -2,11 +2,14 @@
 title: Chromecast のメタデータキー
 description: Chromecast 上で、標準ビデオおよび広告メタデータがトラッキングコールで送信されるようにする設定を説明します。
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
+exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '136'
+ht-degree: 100%
 
 ---
-
 
 # Chromecast のメタデータキー {#chromecast-metadata-keys}
 
@@ -111,4 +114,3 @@ adObject[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardVideoMetad
  
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, this._player.getAdInfo(), adContextData);
 ```
-
