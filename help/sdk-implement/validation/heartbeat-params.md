@@ -2,11 +2,14 @@
 title: ハートビートパラメーターの説明
 description: Media Analytics（ハートビート）サーバーでアドビが収集して処理するハートビートパラメーターの一覧です。
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
+exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '866'
+ht-degree: 100%
 
 ---
-
 
 # Media Analytics（ハートビート）パラメーターの説明 {#heartbeat-parameter-descriptions}
 
@@ -55,7 +58,7 @@ Media Analytics（ハートビート）サーバーでアドビが収集して�
 | 名前 | データソース | 説明   |
 | ---  | --- | --- |
 | s:asset:ad_id | AdInfo | （必須）<br/><br/>広告の名前。 |
-| s:asset:ad_sid | メディア SDK | （必須）<br/><br/>メディア SDK によって生成される一意の識別子。広告関連のすべての ping に追加されます。 |
+| s:asset:ad_sid | メディア SDK | （必須）<br/><br/>メディア SDK によって生成される一意の ID。広告関連のすべての ping に追加されます。 |
 | s:asset:pod_id | メディア SDK | （必須）<br/><br/>ビデオ内部のポッド ID。この値は、次の式に基づいて自動的に計算されます。<br/>`MD5(video_id) + `<br/>`"_" + `<br/>`[pod index]` |
 | s:asset:pod_position | AdBreakInfo | （必須）<br/><br/>ポッド内部の広告のインデックス（最初の広告はインデックス 0、2 番目の広告はインデックス 1、以下同様となります）。 |
 | s:asset:resolver | AdBreakInfo | （必須）<br/><br/>広告のリゾルバー。 |
@@ -65,7 +68,7 @@ Media Analytics（ハートビート）サーバーでアドビが収集して�
 
 | 名前 | データソース | 説明   |
 | ---  | --- | --- |
-| s:stream:chapter_sid | メディア SDK | （必須）<br/><br/>チャプターの再生インスタンスに関連付けられた一意の識別子。<br/> **注意：**&#x200B;チャプターは、ユーザーによって実行されたシークバック操作が原因で複数回再生される可能性があります。 |
+| s:stream:chapter_sid | メディア SDK | （必須）<br/><br/>チャプターの再生インスタンスに関連付けられた一意の ID。<br/> **注意：**&#x200B;チャプターは、ユーザーによって実行されたシークバック操作が原因で複数回再生される可能性があります。 |
 | s:stream:chapter_name | ChapterInfo | （オプション）<br/><br/>チャプターのわかりやすい（つまり、人間が理解できる）名前。 |
 | s:stream:chapter_id | メディア SDK | （必須）<br/><br/>チャプターの一意の ID。この値は、次の式に基づいて自動的に計算されます。<br/>`MD5(video_id) +`<br/>` "_" +`<br/>`chapter_pos` |
 | l:stream:chapter_pos | ChapterInfo | （必須）<br/><br/>チャプターのリストにあるチャプターのインデックス（1 から始まる）。 |
@@ -78,4 +81,3 @@ Media Analytics（ハートビート）サーバーでアドビが収集して�
 | 名前 | データソース | 説明   |
 | ---  | --- | --- |
 | s:event:type=end | メディア SDK | （必須）<br/><br/> `end` `close` |
-
