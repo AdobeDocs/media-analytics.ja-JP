@@ -2,11 +2,14 @@
 title: テスト 2  メディアの中断
 description: ここでは、検証で使用されるメディアの中断テストについて説明します。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: tm+mt
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '244'
+ht-degree: 100%
 
 ---
-
 
 # テスト 2：メディアの中断 {#test-media-interruption}
 
@@ -23,6 +26,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
    1. Adobe Analytics（AppMeasurement）Start
    1. Media Analytics（ハートビート）Start
    1. Media Analytics（ハートビート）Adobe Analytics Start 呼び出しがリクエストされる
+
    上記の最初の 2 つの呼び出しには、追加のメタデータおよび変数が含まれます。呼び出しパラメーターおよびメタデータについては、[テスト呼び出しの詳細](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)を参照してください。
 
    上記の 3 番目の呼び出しは、Adobe Analytics サーバーに送信される Adobe Analytics Start 呼び出し（`pev2=ms_s`）をメディア SDK がリクエストしたことを Media Analytics サーバーに伝えます。
