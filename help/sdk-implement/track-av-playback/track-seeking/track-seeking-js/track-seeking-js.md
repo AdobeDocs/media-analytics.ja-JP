@@ -1,17 +1,17 @@
 ---
-title: JavaScript 2.xを使用したシークの追跡
+title: JavaScript 2.x を使用したシークの追跡
 description: ここでは、ブラウザーアプリ（JS）でのメディア SDK を使用したシーク追跡の実装について説明します。
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '127'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-
-# JavaScript 2.xを使用したシークの追跡{#track-seeking-on-javascript}
+# JavaScript 2.x を使用したシークの追跡 {#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
