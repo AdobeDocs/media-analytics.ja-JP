@@ -3,9 +3,9 @@ title: マイルストーンからカスタムリンクへの移行
 description: マイルストーンからカスタムリンクへの移行
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '582'
 ht-degree: 100%
 
