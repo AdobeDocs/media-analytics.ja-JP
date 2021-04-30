@@ -3,9 +3,9 @@ title: イベントリクエストの検証
 description: イベントリクエストの検証
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '112'
 ht-degree: 100%
 
