@@ -3,9 +3,9 @@ title: マイルストーンから Media Analytics への移行
 description: マイルストーンから Media Analytics への移行
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ### オプションの変数
 
-| マイルストーン | マイルストーンの構文 | メディア分析 | Media Analytics の構文 |
+| マイルストーン | マイルストーンの構文 | Media Analytics | Media Analytics の構文 |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | 該当なし | 事前定義されたプレーヤーのマッピングは提供されなくなりました。 |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | 該当なし | 事前定義されたプレーヤーのマッピングは提供されなくなりました。 |
@@ -58,7 +58,7 @@ ht-degree: 100%
 
 ### 広告トラッキング変数
 
-| マイルストーン | マイルストーンの構文 | メディア分析 | Media Analytics の構文 |
+| マイルストーン | マイルストーンの構文 | Media Analytics | Media Analytics の構文 |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 該当なし | Media Analytics は、コンテンツの場合は 10 秒、広告の場合は 1 秒に設定されます。他のオプションは利用できません。 |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 該当なし | 広告の場合、プログレスマーカーはデフォルトでは提供されません。広告のプログレスマーカーを作成するには、計算指標を使用します。 |
@@ -68,7 +68,7 @@ ht-degree: 100%
 
 ### メディアモジュールメソッド
 
-| マイルストーン | マイルストーンの構文 | メディア分析 | Media Analytics の構文 |
+| マイルストーン | マイルストーンの構文 | Media Analytics | Media Analytics の構文 |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName`：（必須）ビデオレポートに表示するビデオの名前。 | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
