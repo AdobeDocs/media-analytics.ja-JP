@@ -3,9 +3,9 @@ title: 計算指標
 description: 計算指標
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '192'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->これらの計算指標は、2018 年 9 月 13 日に導入されました。
+>これらの計算指標は、2018 年 9 月 13 日（PT）に導入されました。
 
 | 指標 | 説明 | 数式 |
 |---|---|---|
