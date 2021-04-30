@@ -3,9 +3,9 @@ title: QoE データの送信
 description: QoE データの送信
 uuid: 52a02d92-195d-4ce8-8ce3-585ed68969f9
 exl-id: 41a20410-78e6-481d-bd5c-0febadb290d8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '49'
 ht-degree: 100%
 
