@@ -3,11 +3,11 @@ title: リクエストパラメーター
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '1195'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
+workflow-type: tm+mt
+source-wordcount: '1205'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 組織 ID。Adobe Experience Cloud エコシステム内で組織を識別します。 |
 | `visitor.marketingCloudUserId` | いいえ | `sessionStart` | これは、Experience Cloud ユーザー ID（ECID）です。ほとんどのシナリオで、これがユーザーを識別するために使用する必要がある ID です。ハートビート `marketingCloudUserId` は、Adobe Analytics の `MID` と同じです。技術的には必須ではありませんが、このパラメーターは、Experience Cloud ファミリーのアプリにアクセスするために必要です。 |
-| `visitor.aamLocationHint` | いいえ | `sessionStart` | Adobe Audience Manager Edge データを提供します。 |
+| `visitor.aamLocationHint` | いいえ | `sessionStart` | Adobe Audience Manager Edge データを提供します。  — 値が入力されない場合、値はnullです。 |
 | `appInstallationId` | いいえ | `sessionStart` | アプリとデバイスを一意に識別する appInstallationId |
 
 ## コンテンツデータ
