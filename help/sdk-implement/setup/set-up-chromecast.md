@@ -3,9 +3,8 @@ title: Chromecast のセットアップ
 description: Chromecast での実装用のメディア SDK アプリケーション設定です。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
+workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 100%
 
@@ -63,7 +62,7 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
             "analytics": {
               "rsids": "mobile5vhl.sample.player",
               "server": "obumobile5.sc.omtrdc.net",
-              "ssl": false,
+              "ssl": true,
               "offlineEnabled": false,
               "charset": "UTF-8",
               "lifecycleTimeout": 300,
@@ -78,7 +77,7 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
               "server": "obumobile5.hb.omtrdc.net",
               "publisher": "972C898555E9F7BC7F000101@AdobeOrg",
               "channel": "test-channel-chromecast",
-              "ssl": false,
+              "ssl": true,
               "ovp": "chromecast-player",
               "sdkVersion": "chromecast-sdk",
               "playerName": "Chromecast"
