@@ -2,9 +2,8 @@
 title: Adobe Audience Manager のイネーブルメントとは何ですか。
 description: 追加の処理ルールおよびカスタム変数を使用せずに、アプリケーションアクションをメディアトラッキングデータにリンクする方法を説明します。
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+source-git-commit: e781af84f23400aa7c899b686f0e9fee2c19d660
+workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 100%
 
@@ -59,7 +58,7 @@ AAM を利用すれば、データ販売者、exchange、デマンド側のプ�
    DPID および DPUUID を設定します。DPID と DPUUID が設定されている場合は、各シグナルと共に送信されます。
 
    ```js
-   ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
+   ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
    ```
 
 * `submitSignal() -`
@@ -67,7 +66,7 @@ AAM を利用すれば、データ販売者、exchange、デマンド側のプ�
    特性を含むシグナルを Audience Management に送信します。
 
    ```js
-   ADBMobile.audienceManager.SubmitSignal();
+   ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
    ```
 
 ### Roku {#am-roku}
@@ -109,5 +108,7 @@ AAM を利用すれば、データ販売者、exchange、デマンド側のプ�
    特性を含むシグナルを Audience Management に送信します。
 
    ```js
-   ADBMobile().audienceSubmitSignal()
+   traitData = {}
+   traitData["sampleTrait"] = "sampleValue"
+   ADBMobile().audienceSubmitSignal(traitData)
    ```
