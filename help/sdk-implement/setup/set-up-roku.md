@@ -3,11 +3,10 @@ title: Roku のセットアップ
 description: Roku での実装用のメディア SDK アプリケーション設定です。
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '577'
-ht-degree: 100%
+source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
+workflow-type: tm+mt
+source-wordcount: '709'
+ht-degree: 81%
 
 ---
 
@@ -47,40 +46,40 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
 
       ```
       {
-        "version":"1.0", 
+        "version":"1.0",
         "analytics":{
           "rsids":"",
           "server":"",
-          "charset":"UTF-8", 
-          "ssl":false, 
-          "offlineEnabled":false, 
-          "lifecycleTimeout":30, 
-          "batchLimit":50, 
-          "privacyDefault":"optedin", 
+          "charset":"UTF-8",
+          "ssl":true,
+          "offlineEnabled":false,
+          "lifecycleTimeout":30,
+          "batchLimit":50,
+          "privacyDefault":"optedin",
           "poi":[ ]
       },
       "marketingCloud":{
         "org":""
       },
-      "target":{ 
-        "clientCode":"", 
+      "target":{
+        "clientCode":"",
         "timeout":5
       },
-      "audienceManager":{ 
+      "audienceManager":{
         "server":""
       },
-      "acquisition":{ 
+      "acquisition":{
         "server":"example.com",
         "appid":"sample-app-id"
       },
       
-      "mediaHeartbeat":{ 
-         "server":"example.com", 
-         "publisher":"sample-publisher", 
-         "channel":"sample-channel", 
-         "ssl":false,
-         "ovp":"sample-ovp", 
-         "sdkVersion":"sample-sdk", 
+      "mediaHeartbeat":{
+         "server":"example.com",
+         "publisher":"sample-publisher",
+         "channel":"sample-channel",
+         "ssl":true,
+         "ovp":"sample-ovp",
+         "sdkVersion":"sample-sdk",
          "playerName":"roku"
          }    
       }
@@ -132,11 +131,41 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
    | `visitorMarketingCloudID` | 訪問者 ID サービスから Experience Cloud 訪問者 ID を取得します。<br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Experience Cloud 訪問者 ID を使用して、各訪問者に関連付けることのできる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、`setCustomerIDs` に対応します。例：<br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | SDK で広告（RIDA）用に Roku ID を設定するために使用されます。例：<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>`"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API を使用して、広告（RIDA）用の Roku ID を取得します。 |
-
+   | `getAllIdentifiers` | Analytics、訪問者、Audience Manager、カスタム識別子を含む、SDKに保存されているすべての識別子のリストを返します。<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
    <!--
-    Roku Api Reference: 
+    Roku Api Reference:
     * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
+
+   <br/><br/>
+
+   **その他のパブリックAPI**
+
+   **DebugLogging**
+|メソッド   |説明 | | — | — | |  `setDebugLogging` | SDKのデバッグログを有効または無効にするために使用します。<br/><br/>`ADBMobile().setDebugLogging(true)` | |  `getDebugLogging` |デバッグログが有効な場合はtrueを返します。   <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+
+   <br/><br/>
+
+   **PrivacyStatus**
+|定数   |説明 | | — | — | |  `PRIVACY_STATUS_OPT_IN` | setPrivacyStatusをに呼び出すときに渡される定数オプトイン。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`| |  `PRIVACY_STATUS_OPT_OUT` | setPrivacyStatusをに呼び出すときに渡される定数オプトアウト。  <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
+
+   <br/>
+
+   |  メソッド   | 説明 |
+   | --- | --- |
+   | `setPrivacyStatus` | SDKのプライバシーステータスを設定します。 <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
+   | `getPrivacyStatus` | SDKに設定されている現在のプライバシーステータスを取得します。<br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
+
+   <br/><br/>
+   >[!IMPORTANT]
+   >
+   >SDKがpingを正しく送信するように、250ミリ秒ごとにメインイベントループで`processMessages`関数と`processMediaMessages`関数を呼び出す必要があります。
+
+   |  メソッド   | 説明 |
+   | --- | --- |
+   | `processMessages` | 処理するSDKにAnalyticsイベントを渡します。 <br/><br/>`ADBMobile().processMessages()` |
+   | `processMediaMessages` | 処理するSDKにメディアイベントを渡します。<br/><br/>`ADBMobile().processMediaMessages()` |
+
 
 <!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
