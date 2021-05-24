@@ -3,11 +3,10 @@ title: リクエストパラメーター
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-translation-type: tm+mt
 source-git-commit: 786327371aa1fc8809c8a5827bc9c8991b1ecae1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1205'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,8 +16,8 @@ ht-degree: 98%
 
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
-| `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics サーバーの URL |
-| `analytics.reportSuite` | Y | `sessionStart` | Analytics レポートデータを識別する ID |
+| `analytics.trackingServer` | はい | `sessionStart` | Adobe Analytics サーバーの URL |
+| `analytics.reportSuite` | はい | `sessionStart` | Analytics レポートデータを識別する ID |
 | `analytics.enableSSL` | いいえ | `sessionStart` | SSL を有効にするかどうか（true または false） |
 | `analytics.visitorId` | いいえ | `sessionStart` | Adobe 訪問者 ID は、複数のアドビアプリケーションで使用できるカスタム ID です。ハートビート `visitorId` は Analytics `VID.` と同じです。 |
 
@@ -26,21 +25,21 @@ ht-degree: 98%
 
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 組織 ID。Adobe Experience Cloud エコシステム内で組織を識別します。 |
+| `visitor.marketingCloudOrgId` | はい | `sessionStart` | Experience Cloud 組織 ID。Adobe Experience Cloud エコシステム内で組織を識別します。 |
 | `visitor.marketingCloudUserId` | いいえ | `sessionStart` | これは、Experience Cloud ユーザー ID（ECID）です。ほとんどのシナリオで、これがユーザーを識別するために使用する必要がある ID です。ハートビート `marketingCloudUserId` は、Adobe Analytics の `MID` と同じです。技術的には必須ではありませんが、このパラメーターは、Experience Cloud ファミリーのアプリにアクセスするために必要です。 |
-| `visitor.aamLocationHint` | いいえ | `sessionStart` | Adobe Audience Manager Edge データを提供します。  — 値が入力されない場合、値はnullです。 |
+| `visitor.aamLocationHint` | いいえ | `sessionStart` | Adobe Audience Manager Edge データを提供します。- 値が入力されない場合、値は null になります。 |
 | `appInstallationId` | いいえ | `sessionStart` | アプリとデバイスを一意に識別する appInstallationId |
 
 ## コンテンツデータ
 
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
-| `media.id` | Y | `sessionStart` | コンテンツの一意の ID |
+| `media.id` | はい | `sessionStart` | コンテンツの一意の ID |
 | `media.name` | いいえ | `sessionStart` | 人が判読可能なコンテンツの名前 |
-| `media.length` | Y | `sessionStart` | コンテンツの長さ（秒） |
-| `media.contentType` | Y | `sessionStart` | ストリームの形式（任意の文字列を指定できます。推奨される値は、「Live」、「VOD」または「Linear」です） |
-| `media.playerName` | Y | `sessionStart` | コンテンツのレンダリングをおこなうプレーヤーの名前 |
-| `media.channel` | Y | `sessionStart` | コンテンツの配布チャネル。モバイルアプリケーション名、Web サイト名またはプロパティ名を使用できます。 |
+| `media.length` | はい | `sessionStart` | コンテンツの長さ（秒） |
+| `media.contentType` | はい | `sessionStart` | ストリームの形式（任意の文字列を指定できます。推奨される値は、「Live」、「VOD」または「Linear」です） |
+| `media.playerName` | はい | `sessionStart` | コンテンツのレンダリングをおこなうプレーヤーの名前 |
+| `media.channel` | はい | `sessionStart` | コンテンツの配布チャネル。モバイルアプリケーション名、Web サイト名またはプロパティ名を使用できます。 |
 | `media.resume` | いいえ | `sessionStart` | ユーザーが（新しいセッションを開始するに対して）以前のセッションを再開しているかどうかを示します |
 | `media.sdkVersion` | いいえ | `sessionStart` | プレーヤーで使用される SDK のバージョン |
 
@@ -71,13 +70,13 @@ ht-degree: 98%
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | いいえ | `adBreakStart` | 広告ブレークのわかりやすい名前 |
-| `media.ad.podIndex` | Y | `adBreakStart` | ビデオ内の広告ポッドのインデックス |
-| `media.ad.podSecond` | Y | `adBreakStart` | ポッドが開始された時間（秒） |
-| `media.ad.podPosition` | Y | `adStart` | 広告ブレーク内の広告のインデックス（1 から開始） |
+| `media.ad.podIndex` | はい | `adBreakStart` | ビデオ内の広告ポッドのインデックス |
+| `media.ad.podSecond` | はい | `adBreakStart` | ポッドが開始された時間（秒） |
+| `media.ad.podPosition` | はい | `adStart` | 広告ブレーク内の広告のインデックス（1 から開始） |
 | `media.ad.name` | いいえ | `adStart` | 広告のわかりやすい名前 |
-| `media.ad.id` | Y | `adStart` | 広告の名前 |
-| `media.ad.length` | Y | `adStart` | ビデオ広告の長さ（秒） |
-| `media.ad.playerName` | Y | `adStart` | 広告のレンダリングをおこなうプレーヤーの名前 |
+| `media.ad.id` | はい | `adStart` | 広告の名前 |
+| `media.ad.length` | はい | `adStart` | ビデオ広告の長さ（秒） |
+| `media.ad.playerName` | はい | `adStart` | 広告のレンダリングをおこなうプレーヤーの名前 |
 
 ## 広告標準メタデータ
 
@@ -94,9 +93,9 @@ ht-degree: 98%
 
 | リクエストキー | 必須 | 設定する場所 |  説明  |
 | --- | :---: | :---: | --- |
-| `media.chapter.index` | Y | `chapterStart` | コンテンツ内のチャプターの位置を識別します。 |
-| `media.chapter.offset` | Y | `chapterStart` | 再生においてチャプターが始まる時間（秒） |
-| `media.chapter.length` | Y | `chapterStart` | チャプターの長さ（秒） |
+| `media.chapter.index` | はい | `chapterStart` | コンテンツ内のチャプターの位置を識別します。 |
+| `media.chapter.offset` | はい | `chapterStart` | 再生においてチャプターが始まる時間（秒） |
+| `media.chapter.length` | はい | `chapterStart` | チャプターの長さ（秒） |
 | `media.chapter.friendlyName` | いいえ | `chapterStart` | チャプターのわかりやすい名前 |
 
 ## 品質データ
@@ -164,11 +163,11 @@ Experience Cloud ユーザー ID（`MID` または `MCID` とも呼ばれます�
 
 ### visitor.aamLocationHint
 
-このパラメーターは、Adobe Analytics が顧客データを Audience Manager に送信したときにどの Adobe Audience Manager（AAM）Edge がヒットするかを示します。値が入力されない場合、値はnullです。 これは、エンドユーザーが地理的に離れた場所（例えば、米国東部、米国西部、ヨーロッパ、アジア）でデバイスを使用する場合に特に重要です。そうでない場合、ユーザーデータは複数の AAM Edge に分散されます。
+このパラメーターは、Adobe Analytics が顧客データを Audience Manager に送信したときにどの Adobe Audience Manager（AAM）Edge がヒットするかを示します。値が入力されない場合、値は null になります。 これは、エンドユーザーが地理的に離れた場所（例えば、米国東部、米国西部、ヨーロッパ、アジア）でデバイスを使用する場合に特に重要です。そうでない場合、ユーザーデータは複数の AAM Edge に分散されます。
 
 ### media.resume
 
-セッションが閉じられた後で（例えば、ユーザーが一旦ビデオから離れた後で戻ってきた結果）再開され、プレーヤーの再生ヘッドが停止された位置からビデオが再開されたことをアプリが検出した場合、**呼び出しの params バケット内でブール型のオプションの** media.resume`sessionStart` パラメーターを送信できます。
+セッションが閉じられた後で（例えば、ユーザーが一旦ビデオから離れた後で戻ってきた結果）再開され、プレーヤーの再生ヘッドが停止された位置からビデオが再開されたことをアプリが検出した場合、`sessionStart` 呼び出しの params バケット内でブール型のオプションの **media.resume** パラメーターを送信できます。
 
 <!--
 | `media.uniqueTimePlayed` | N | Close | The value in seconds of the unique segments of content played during a session. Excludes time played on seek back scenarios in which a viewer is watching the same segment of the content multiple times.  |
