@@ -3,11 +3,10 @@ title: カスタムメタデータのサポート
 description: カスタムメタデータのサポート
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '59'
-ht-degree: 100%
+source-git-commit: 962bb8b6859ca8964efcb2f3ba0dc566a5e24c3e
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 54%
 
 ---
 
@@ -18,3 +17,30 @@ ht-degree: 100%
 `customMetadata` JSON キーには、キーと値のペアのオブジェクトを含める必要があります。キーには、英数字、下線、ドットおよびピリオドのみを使用できます。
 
 [MA コレクション API イベント](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)
+
+## 例
+
+現在、次のキーと値のペアを使用して`sessionStart`イベントを送信できます。
+
+```
+params: { "media.channel": "channel-1" },
+  customMetadata: { "a.media.channel": "channel-2" }
+```
+
+上記の設定では、Analyticsに送信されるレポートデータは次のようになります。
+
+`c.a.media.channel=channel-2`
+
+### 推奨
+
+カスタムメタデータには、別の名前空間を使用することをお勧めします。 次に例を示します。
+
+```
+params: { "media.channel": "channel-1" },
+  customMetadata: { "clientnamespace.media.channel": "channel-2" }
+```
+
+推奨される例では、Analyticsに送信されるカスタムメタデータのレポートデータは次のようになります。
+
+`c.a.media.channel=channel-1`
+`c.clientnamespace.media.channel=channel-2`
