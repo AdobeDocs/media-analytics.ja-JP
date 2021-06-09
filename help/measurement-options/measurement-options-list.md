@@ -2,11 +2,10 @@
 title: 測定オプション
 description: null
 uuid: null
-translation-type: ht
-source-git-commit: 967a126723ebbbe02097bd07edc2ed967cd35f4c
-workflow-type: ht
-source-wordcount: '293'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 93%
 
 ---
 
@@ -17,15 +16,15 @@ Adobe Media Analytics 拡張機能、メディア SDK およびメディアコ�
 
 ## Adobe Media Analytics 拡張機能を備えた Adobe Launch
 
-Launch は、アドビが提供する次世代タグ管理ソリューションです。Launch は、顧客体験の実現に必要なすべての分析、マーケティングおよび広告のタグをデプロイおよび管理するためのシンプルな手段を提供します。Launch との統合を構築して維持するには、拡張機能を使用します。拡張機能は、Launch UI とクライアント機能を拡張する JavaScript、HTML および CSS のパッケージです。詳しくは、[Experience Platform Launch ユーザーガイド](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)を参照してください
+Launch は、アドビが提供する次世代タグ管理ソリューションです。Launch は、顧客体験の実現に必要なすべての分析、マーケティングおよび広告のタグをデプロイおよび管理するためのシンプルな手段を提供します。Launch との統合を構築して維持するには、拡張機能を使用します。拡張機能は、Launch UI とクライアント機能を拡張する JavaScript、HTML および CSS のパッケージです。詳しくは、[Experience Platform Launch ユーザーガイド](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html)を参照してください
 
 Adobe Media Analytics（MA）の拡張機能により、オーディオおよびビデオ用のコア JavaScript Media SDK（Media 2.x SDK）が追加されます。この拡張機能では、Launch サイトまたはプロジェクトに `MediaHeartbeat` トラッカーインスタンスを追加する機能を提供します。
 
 Media Analytics 拡張機能を備えた Adobe Launch では、以下が必要です。
 * Adobe Experience Cloud のお客様である必要があります。
 * Web ページに Launch または DTM 埋め込みコードをデプロイする必要があります。
-* [Analytics 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
-* [Experience Cloud ID 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
+* [Analytics 拡張機能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
+* [Experience Cloud ID 拡張機能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
 
 ## メディア SDK
 
