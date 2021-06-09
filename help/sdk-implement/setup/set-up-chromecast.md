@@ -3,10 +3,10 @@ title: Chromecast のセットアップ
 description: Chromecast での実装用のメディア SDK アプリケーション設定です。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
-source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
-workflow-type: ht
-source-wordcount: '630'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ _Chromecast JavaScript SDK または標準の JavaScript SDK のどちらを使�
    * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * *プレーヤー情報を提供する API* - メディア名や再生ヘッドなどの情報がこれに該当します。
 
-Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。今回は、Adobe Analytics および Adobe Target ソリューションのアプリ分析およびターゲティング機能とのシームレスな統合を提供します。詳しくは、[Adobe Mobile Services のドキュメント](https://docs.adobe.com/content/help/ja-JP/mobile-services/using/home.html)を参照してください。
+Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。今回は、Adobe Analytics および Adobe Target ソリューションのアプリ分析およびターゲティング機能とのシームレスな統合を提供します。詳しくは、[Adobe Mobile Services のドキュメント](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)を参照してください。
 
 Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると、JavaScript で記述された Chromecast アプリケーションを測定したり、Audience Management を使用してオーディエンスデータを利用および収集したり、ビデオハートビートを使用してビデオエンゲージメントを測定したりできます。
 
@@ -136,4 +136,4 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
 
 
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
