@@ -2,11 +2,10 @@
 title: サポートされるデバイスとプラットフォーム
 description: Adobe Analytics for Streaming Media では、各メディアストリームがあらゆるデバイスをまたいで収集され、報告されることを確実にします。
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '337'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +25,7 @@ Adobe Analytics for Streaming Media は、以下を含む主要なデバイス�
 
 SDK が現在サポートされていないデバイスやプラットフォーム、または SDK を使用したくない状況では、Media Collection API を実装できます。メディアコレクション API を使用すると、デバイスまたはプラットフォームから Media Analytics バックエンドに直接 RESTful API 呼び出しをおこなうことができます。
 
-現在サポートされているデバイスとプラットフォームの表を次に示します。この SDK の最新バージョンをダウンロードするには、[SDK のダウンロード](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/download-sdks.html)を参照してください。デバイスが一覧にない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
+現在サポートされているデバイスとプラットフォームの表を次に示します。この SDK の最新バージョンをダウンロードするには、[SDK のダウンロード](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html)を参照してください。デバイスが一覧にない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
 
 | ストリーミングプラットフォームとデバイス |  | AEP Mobile SDK を含む Media Launch 拡張機能 | メディア SDK | メディアコレクション API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
@@ -50,4 +49,4 @@ SDK が現在サポートされていないデバイスやプラットフォー�
 
 1. 次の SDK のサポートは 2021 年 8 月 31 日（PT）に終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
-各 SDK でサポートされる最小プラットフォームバージョンについて詳しくは、[サポートされる最小プラットフォームバージョン](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/setup/setup-overview.html)を参照してください。
+各 SDK でサポートされる最小プラットフォームバージョンについて詳しくは、[サポートされる最小プラットフォームバージョン](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/setup/setup-overview.html)を参照してください。
