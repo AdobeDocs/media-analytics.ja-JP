@@ -3,15 +3,14 @@ title: 前提条件
 description: 前提条件
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 96%
 
 ---
 
-# 前提条件 {#prerequisites}
+# 前提条件{#prerequisites}
 
 ## 判断 {#decision}
 
@@ -33,7 +32,7 @@ ht-degree: 100%
 
    ![](assets/mc_id_service_graphic.png)
 
-   ID サービスは、様々なソリューション固有の ID（例えば、Analytics AID）を置き換えることもできます。[顧客 ID と認証状態](https://docs.adobe.com/content/help/ja-JP/id-service/using/reference/authenticated-state.html)機能を使用すると、ID サービスを通じて顧客 ID を Experience Cloud に渡すことが可能になります。ただし、ID サービスは、既に登録されているソリューションのみと連携することに注意してください。他製品へのアクセスにサインアップしていない場合、ID サービスではアクセスが提供されません。
+   ID サービスは、様々なソリューション固有の ID（例えば、Analytics AID）を置き換えることもできます。[顧客 ID と認証状態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)機能を使用すると、ID サービスを通じて顧客 ID を Experience Cloud に渡すことが可能になります。ただし、ID サービスは、既に登録されているソリューションのみと連携することに注意してください。他製品へのアクセスにサインアップしていない場合、ID サービスではアクセスが提供されません。
 
    いずれは、ID サービスは、多くの現在および将来の Experience Cloud 機能、強化、サービスにとって不可欠な要素になります。現在、ID サービスは、[Analytics](https://www.adobe.com/jp/marketing-cloud/web-analytics.html)、[Audience Manager](https://www.adobe.com/jp/marketing-cloud/data-management-platform.html) および [Target](https://www.adobe.com/jp/marketing-cloud/testing-targeting.html) をサポートしています。
 
@@ -47,7 +46,7 @@ ht-degree: 100%
    >
    >ユーザー ID 情報がメディア専用の呼び出しに存在しない場合、Analytics のデフォルトの[フォールバック ID による方法](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.translate.html)が適用されます。
 
-   Experience Cloud ID について詳しくは、[Experience Cloud ID の概要](https://docs.adobe.com/content/help/ja-JP/id-service/using/intro/overview.html)および [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/ja-JP/id-service/using/home.html) を参照してください。
+   Experience Cloud ID について詳しくは、[Experience Cloud ID の概要](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html)および [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/ja-JP/id-service/using/home.html) を参照してください。
 
 1. **Adobe Analytics レポートを有効にします。**
 
