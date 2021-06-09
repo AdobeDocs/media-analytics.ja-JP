@@ -2,11 +2,10 @@
 title: スタンドアロンのメディア SDK から Adobe Launch - Web（JS）への移行
 description: Media SDK から Launch への移行に役立つ手順とコードサンプルです。
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +44,7 @@ mediaConfig.debugLogging = true;
 
    ![](assets/launch_config_js.png)
 
-[Launch ユーザーガイド - メディア各ｋ長機能のインストールと設定](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Launch ユーザーガイド - メディア各ｋ長機能のインストールと設定](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
 
 ## トラッカーの作成の違い
 
@@ -76,7 +75,7 @@ this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurem
 ```
 
 <!--  Dead Link - from 2019 - can't locate where this should go
-[Media SDK - Tracker Creation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
+[Media SDK - Tracker Creation](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
 
 ### Launch
 
@@ -118,5 +117,5 @@ delegate オブジェクトを、`getQoSObject()` および `getCurrentPlaybackT
 
 ### Launch
 
-* [Launch の概要](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)
-* [Media Analytics 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Launch の概要](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html)
+* [Media Analytics 拡張機能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
