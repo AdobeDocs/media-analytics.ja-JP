@@ -1,11 +1,10 @@
 ---
 title: Adobe Launch によるストリーミングメディアトラッキングの実装のしくみについて教えてください。
 description: ストリーミングメディア用の Adobe Streaming Media Launch 拡張機能について説明します。
-translation-type: ht
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: ht
-source-wordcount: '132'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +15,7 @@ Media Analytics（ハートビート）は、アドビの標準化されたメ�
 
 Adobe Experience Platform Launch は Dynamic Tag Management の後継製品で、メディアプレーヤーへのトラッキングの実装を容易にする Launch 拡張機能を備えています。
 
-Launch 拡張機能について詳しくは、[Adobe Media Analytics for Audio and Video 拡張機能](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)を参照してください。
+Launch 拡張機能について詳しくは、[Adobe Media Analytics for Audio and Video 拡張機能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)を参照してください。
 
 >[!NOTE]
 >
