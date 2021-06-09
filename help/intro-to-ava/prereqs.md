@@ -3,10 +3,10 @@ title: 前提条件
 description: 前提条件
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 96%
+source-wordcount: '388'
+ht-degree: 89%
 
 ---
 
@@ -42,11 +42,7 @@ ht-degree: 96%
 
    ID サービスを実装していない場合、今が移行戦略を検討し始めるチャンスです。ID サービスの重要性と役割について詳しくは、[なぜ新しい Identity Service に注目すべきか](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)を参照してください。
 
-   >[!IMPORTANT]
-   >
-   >ユーザー ID 情報がメディア専用の呼び出しに存在しない場合、Analytics のデフォルトの[フォールバック ID による方法](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.translate.html)が適用されます。
-
-   Experience Cloud ID について詳しくは、[Experience Cloud ID の概要](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html)および [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/ja-JP/id-service/using/home.html) を参照してください。
+   Experience CloudIDについて詳しくは、「[Experience CloudIDの概要」、「](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html)」、「[Adobe Experience Platform IDサービス](https://experienceleague.adobe.com/docs/id-service/using/home.html)」を参照してください。
 
 1. **Adobe Analytics レポートを有効にします。**
 
