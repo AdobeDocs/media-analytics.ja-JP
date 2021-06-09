@@ -1,24 +1,23 @@
 ---
-title: ストリーミングメディアの新機能はAdobe Analyticsにありますか。
-description: ストリーミングメディアのAdobe Analyticsの新機能
+title: Adobe Analytics for Streaming Mediaの新機能
+description: Adobe Analytics for Streaming Mediaの新機能
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
-source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '30'
-ht-degree: 43%
+source-wordcount: '28'
+ht-degree: 39%
 
 ---
-
 
 # リソース {#resources}
 
 ## リリースノート {#release-notes}
 
-* [リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)
+* [リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)
 
 <!--
 ## Documentation Updates{#documentation-updates}
