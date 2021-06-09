@@ -2,10 +2,10 @@
 title: Adobe Audience Manager のイネーブルメントとは何ですか。
 description: 追加の処理ルールおよびカスタム変数を使用せずに、アプリケーションアクションをメディアトラッキングデータにリンクする方法を説明します。
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
-source-git-commit: e781af84f23400aa7c899b686f0e9fee2c19d660
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 96%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 データ管理プラットフォーム（DMP）である Adobe Audience Manager（AAM）は、オーディエンスデータアセットを 1 つにまとめるのに役立ちます。それにより、サイト訪問者について商業的に関連性のある情報の収集や、マーケティング用のセグメントの作成および適切なオーディエンスをターゲットにした広告やコンテンツの提供が容易になります。
 
-AAM を利用すれば、データ販売者、exchange、デマンド側のプラットフォームに縛られることがありません。さらに、AAM は、パートナーのデータアセットについては、完全に無関係です。複数のデータソースにアクセスできるので、デジタルパブリッシャーは、AAM によって幅広い種類のサードパーティデータやアドビのプライベートデータコープを利用できるようになります。AAM について詳しくは、AAM ドキュメントの [Audience Manager 製品ドキュメント](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/aam-home.html)を参照してください。
+AAM を利用すれば、データ販売者、exchange、デマンド側のプラットフォームに縛られることがありません。さらに、AAM は、パートナーのデータアセットについては、完全に無関係です。複数のデータソースにアクセスできるので、デジタルパブリッシャーは、AAM によって幅広い種類のサードパーティデータやアドビのプライベートデータコープを利用できるようになります。AAMについて詳しくは、AAMドキュメント[Audience Manager製品ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html)を参照してください。
 
 **VA から AAM へのデータ転送 -** ビデオコンテンツとビデオ広告の両方で、ソリューション（予約）変数を使用して収集された指標とメタデータを AAM へと自動的に送信できます。データ転送は、デスクトップ、モバイル、OTT を含むすべてのプラットフォームで使用できます。このサーバーサイドデータ転送を有効にするには、Adobe Client Care に連絡して、このフィードを有効にするよう依頼する必要があります。
 
