@@ -4,9 +4,9 @@ description: Android での実装用のメディア SDK アプリケーション
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '425'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 98%
 >2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
 
-## 前提条件
+## 前提条件 
 
 * **メディア SDK 用の有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
-* **Android 向け ADBMobile をアプリケーションに実装** Adobe Mobile SDK ドキュメントについて詳しくは、[Experience Cloud ソリューション用 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html) を参照してください。
+* **Android 向け ADBMobile をアプリケーションに実装** Adobe Mobile SDK ドキュメントについて詳しくは、[Experience Cloud ソリューション用 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=ja) を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
    * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
