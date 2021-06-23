@@ -4,15 +4,15 @@ description: Roku での実装用のメディア SDK アプリケーション設
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '707'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Roku のセットアップ {#set-up-roku}
 
-## 前提条件
+## 前提条件 
 
 * **ハートビート用の有効な設定パラメーターを取得** これらのパラメーターは、Media Analytics アカウントの設定後、アドビの担当者から取得できます。
 * **メディアプレーヤーで以下の機能を設定します。**
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。今回は、Adobe Analytics および Adobe Target ソリューションのアプリ分析およびターゲティング機能とのシームレスな統合を提供します。
 
-詳しくは、[Adobe Mobile Services のドキュメント](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)を参照してください。
+詳しくは、[Adobe Mobile Services のドキュメント](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=ja)を参照してください。
 
 Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、BrightScript で記述された Roku アプリケーションを測定したり、Audience Management を使用してオーディエンスデータを利用および収集したり、ビデオハートビートを使用してビデオエンゲージメントを測定したりできます。
 
