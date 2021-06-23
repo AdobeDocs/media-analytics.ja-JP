@@ -4,9 +4,9 @@ description: iOS での実装用のメディア SDK アプリケーション設�
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '744'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 98%
 >
 >2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
-## 前提条件
+## 前提条件 
 
 * **メディア SDK 用の有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
-* **iOS 向け ADBMobile をアプリケーションに実装** Adobe Mobile SDK ドキュメントについて詳しくは、[Experience Cloud ソリューション用 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html) を参照してください。
+* **iOS 向け ADBMobile をアプリケーションに実装** Adobe Mobile SDK ドキュメントについて詳しくは、[Experience Cloud ソリューション用 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=ja) を参照してください。
 
    >[!IMPORTANT]
    >
-   >iOS 9 から、Apple は App Transport Security（ATS）という機能を導入しました。この機能は、アプリケーションで業界標準のプロトコルと暗号のみを使用することで、ネットワークセキュリティの向上を目的としています。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。ATS について詳しくは、[App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html) を参照してください。
+   >iOS 9 から、Apple は App Transport Security（ATS）という機能を導入しました。この機能は、アプリケーションで業界標準のプロトコルと暗号のみを使用することで、ネットワークセキュリティの向上を目的としています。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。ATS について詳しくは、[App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=ja) を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
