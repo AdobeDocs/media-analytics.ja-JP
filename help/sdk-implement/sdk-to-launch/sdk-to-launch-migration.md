@@ -5,9 +5,9 @@ seo-description: Media SDK から Launch への移行に役立つ手順とコー
 description: Media SDK から Launch への移行に役立つ手順とコードサンプルです。
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '182'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Launch は、Web およびモバイルをまたいで期待に沿った顧客体
 
 Adobe Media Analytics for Audio and Video は、Web とモバイルの両方で Launch 拡張機能として使用できます。
 
-* [Web Launch ドキュメント](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Web Launch ドキュメント](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=ja)
 * [Mobile Launch ドキュメント](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## プラットフォーム
