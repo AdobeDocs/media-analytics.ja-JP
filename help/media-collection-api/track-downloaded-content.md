@@ -4,9 +4,9 @@ description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '609'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Downloaded Content 機能は、（標準）オンラインメディアコレク�
 
 ## Adobe Analtyics との統合 {#integration-with-adobe-analtyics}
 
-ダウンロードされたコンテンツシナリオ用に Analytics 開始／終了呼び出しを計算する際に、バックエンドは、`ts.` と呼ばれる追加の Analytics フィールドを設定します。これらは、受け取った最初および最後のイベント（開始および終了）のタイムスタンプです。このメカニズムにより、完了したメディアセッションを正しい時点に配置できます（つまり、ユーザーが数日間オンラインに戻らなくても、コンテンツが実際に視聴された時点でメディアセッションが発生したと報告されます）。_タイムスタンプオプションのレポートスイートを作成して、Adobe Analytics 側でこのメカニズムを有効にする必要があります。_ タイムスタンプオプションのレポートスイートを有効にするには、[タイムスタンプオプション](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)を参照してください。
+ダウンロードされたコンテンツシナリオ用に Analytics 開始／終了呼び出しを計算する際に、バックエンドは、`ts.` と呼ばれる追加の Analytics フィールドを設定します。これらは、受け取った最初および最後のイベント（開始および終了）のタイムスタンプです。このメカニズムにより、完了したメディアセッションを正しい時点に配置できます（つまり、ユーザーが数日間オンラインに戻らなくても、コンテンツが実際に視聴された時点でメディアセッションが発生したと報告されます）。_タイムスタンプオプションのレポートスイートを作成して、Adobe Analytics 側でこのメカニズムを有効にする必要があります。_ タイムスタンプオプションのレポートスイートを有効にするには、[タイムスタンプオプション](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=ja)を参照してください。
 
 ## サンプルセッションの比較 {#sample-session-comparison}
 
