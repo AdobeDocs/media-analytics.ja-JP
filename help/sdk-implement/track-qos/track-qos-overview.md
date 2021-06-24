@@ -1,17 +1,18 @@
 ---
-title: 概要
+title: Quality of Experienceの追跡の説明
 description: メディア SDK を使用した Quality of Experience（QoE、QoS）追跡の概要です。
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '254'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '260'
+ht-degree: 98%
 
 ---
 
-# 概要 {#overview}
+# 概要{#overview}
 
 >[!IMPORTANT]
 >
