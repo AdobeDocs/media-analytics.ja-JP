@@ -1,16 +1,18 @@
 ---
-title: iOS のセットアップ
-description: iOS での実装用のメディア SDK アプリケーション設定です。
+title: iOSでのメディアSKDの設定方法
+description: iOSでメディアSDKアプリケーションをセットアップするには、次の手順に従います。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '744'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 97%
 
 ---
 
-# iOS のセットアップ {#set-up-ios}
+# iOS のセットアップ{#set-up-ios}
 
 >[!IMPORTANT]
 >
