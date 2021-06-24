@@ -1,17 +1,18 @@
 ---
-title: JavaScript 2.x を使用したエラーの追跡
-description: ここでは、ブラウザーアプリ（JS）でのメディア SDK を使用したエラー追跡の実装について説明します。
+title: JavaScript 2.xを使用したエラーの追跡方法を説明します。
+description: ブラウザーアプリ(JS)でのメディアSDKを使用したエラー追跡の実装について説明します。
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 exl-id: b3012bce-4b92-408e-8b7a-57ae9d52e93d
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '96'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 79%
 
 ---
 
-# JavaScript 2.x を使用したエラーの追跡 {#track-errors-on-javascript}
+# JavaScript 2.x を使用したエラーの追跡{#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
