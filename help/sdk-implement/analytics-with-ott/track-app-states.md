@@ -1,17 +1,18 @@
 ---
 title: アプリの状態の追跡
-description: 'アプリの状態は、アプリケーション内の別の画面または表示で、表示されると、trackState 呼び出しをおこなう必要があります。 '
+description: 'アプリの状態とは、アプリケーション内の様々な画面またはビューのことです。 trackState呼び出しを使用して、アプリケーションのアプリの状態を追跡する方法を説明します。 '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '183'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 86%
 
 ---
 
-# アプリの状態の追跡 {#track-app-states}
+# アプリの状態の追跡{#track-app-states}
 
 状態とは、アプリケーションの様々な画面またはビューのことです。アプリケーションに新しい状態が表示されるたびに、`trackState` 呼び出しを送信する必要があります。例えば、ユーザーがホームページからビデオの詳細画面に移動する際に、`trackState` 呼び出しを送信します。通常、状態はパスレポートを使用して表示されるので、ユーザーがアプリ内をどのように移動しているか、どの状態が最も多く閲覧されているかを確認できます。
 
