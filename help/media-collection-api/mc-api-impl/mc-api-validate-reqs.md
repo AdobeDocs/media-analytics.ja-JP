@@ -1,17 +1,18 @@
 ---
 title: イベントリクエストの検証
-description: イベントリクエストの検証
+description: JSON検証スキーマを使用してイベントリクエストを検証する方法を説明します。
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '112'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 90%
 
 ---
 
-# イベントリクエストの検証 {#validating-event-requests}
+# イベントリクエストの検証{#validating-event-requests}
 
 各イベントタイプの JSON リクエスト本文は、JSON スキーマを使用してバックエンドで検証されます。API 呼び出しで検証が失敗すると、HTTP 応答本文にエラーメッセージが書き込まれます。
 
