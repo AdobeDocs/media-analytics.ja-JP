@@ -1,17 +1,18 @@
 ---
 title: 順次追跡を含むライブメインコンテンツ
-description: メディア SDK を使用した順次追跡を含むライブコンテンツの追跡方法の例です。
+description: メディアSDKを使用した順次追跡を含むライブコンテンツの追跡方法の例を示します。
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 91%
 
 ---
 
-# 順次追跡を含むライブメインコンテンツ {#live-main-content-with-sequential-tracking}
+# 順次追跡を含むライブメインコンテンツ{#live-main-content-with-sequential-tracking}
 
 ## シナリオ {#scenario}
 
@@ -47,7 +48,7 @@ ht-degree: 100%
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
-これは、Heartbeat Content Start 呼び出しとほとんど同じように見えますが、「s:event:type」パラメーターに重要な違いがあります。すべてのパラメーターは、ここで準備ができている必要があります。
+これは、Heartbeat Content Start呼び出しとほとんど同じように見えますが、「s:event:type」パラメーターに重要な違いがあります。 すべてのパラメーターは、ここで準備ができている必要があります。
 
 | パラメーター | 値 | メモ |
 |---|---|---|
