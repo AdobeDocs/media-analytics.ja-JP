@@ -3,15 +3,16 @@ title: ユーザー ID の設定
 description: 一意の顧客識別子として提供されるユーザー ID を設定するための API。
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '53'
-ht-degree: 100%
+feature: 「Media Analytics、API」
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 94%
 
 ---
 
-# ユーザー ID の設定 {#set-user-ids}
+# ユーザー ID の設定{#set-user-ids}
 
 ユーザー ID はアプリケーションがユーザーに対して定義する一意のカスタム訪問者識別子です。
 
