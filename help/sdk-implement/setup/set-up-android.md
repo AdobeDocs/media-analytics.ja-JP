@@ -1,16 +1,18 @@
 ---
-title: Android のセットアップ
-description: Android での実装用のメディア SDK アプリケーション設定です。
+title: AndroidでメディアSKDを設定する方法
+description: AndroidでメディアSDKアプリケーションをセットアップするには、次の手順に従います。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 95%
 
 ---
 
-# Android のセットアップ {#set-up-android}
+# Android のセットアップ{#set-up-android}
 
 >[!IMPORTANT]
 >
