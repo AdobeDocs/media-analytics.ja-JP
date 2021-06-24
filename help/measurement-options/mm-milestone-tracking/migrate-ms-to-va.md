@@ -1,13 +1,14 @@
 ---
-title: マイルストーンから Media Analytics への移行
-description: マイルストーンから Media Analytics への移行
+title: マイルストーンからMedia Analyticsに移行する方法を説明します。
+description: マイルストーン変数をMedia Analytics指標およびマイルストーンモジュールメソッドに変更する方法を説明します。
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 96%
 
 ---
 
