@@ -1,17 +1,18 @@
 ---
 title: 再生中のアプリケーション割り込みの処理
-description: メディアの再生時に追跡の中断を処理する方法です。
+description: メディアの再生中にトラッキングの中断を処理する方法を説明します。
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '366'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 95%
 
 ---
 
-# 再生中のアプリケーション割り込みの処理 {#handling-application-interrupts-during-playback}
+# 再生中のアプリケーション割り込みの処理{#handling-application-interrupts-during-playback}
 
 メディアアプリケーションでは、様々な原因で再生が中断されることがあります。例えば、ユーザーによって明示的に一時停止が押されたときや、アプリケーションがバックグラウンドに移行されたときなどがこれに該当します。メディア再生が中断された原因に関係なく、トラッキングの手順は同じです。
 
@@ -22,7 +23,7 @@ ht-degree: 100%
 >
 >アプリがバックグラウンドから戻ったときにお客様が `trackSessionStart` を呼び出しているケースが Media Analytics チームによって確認されています。この場合、その時点までの再生が合計再生時間にカウントされず、以前のプログレスマーカーやセグメントなどが失われます。アプリがフォアグラウンドに戻るかメディアの再生が再開されたときは、代わりに `trackPlay` を呼び出してください。
 
-## アプリケーション割り込みの処理に関する FAQ： {#faq-about-handling-application-interrupts}
+## アプリケーション割り込みの処理に関する FAQ：  {#faq-about-handling-application-interrupts}
 
 * _アプリがバックグラウンドになってからセッションが終了するまでどれくらいの時間を確保する必要があります？_
 
