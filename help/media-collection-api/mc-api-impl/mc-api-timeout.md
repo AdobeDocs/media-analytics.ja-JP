@@ -1,17 +1,18 @@
 ---
 title: タイムアウト条件
-description: タイムアウト条件
+description: ストリーミングメディアコレクションAPIのタイムアウト条件について説明します。
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
 exl-id: 0b494b27-a4a6-4af7-84c1-c44b33b6da8f
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '156'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 95%
 
 ---
 
-# タイムアウト条件 {#timeout-conditions}
+# タイムアウト条件{#timeout-conditions}
 
 **メディアコレクション API のタイムアウト条件**
 
