@@ -1,12 +1,14 @@
 ---
-title: '前提条件 '
-description: '前提条件 '
+title: ストリーミングメディアの前提条件について
+description: Adobe Analytics Streaming Mediaの概要。 ストリーミングメディア用Adobe Analyticsを実装するために必要な機能について説明します。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
-workflow-type: ht
-source-wordcount: '388'
-ht-degree: 100%
+feature: Media Analytics、必要システム構成
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 93%
 
 ---
 
