@@ -1,17 +1,18 @@
 ---
-title: 概要
+title: チャプターおよびセグメントの追跡方法の説明
 description: メディア SDK を使用したチャプターおよびセグメント追跡の実装方法です。
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '318'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 97%
 
 ---
 
-# 概要 {#overview}
+# 概要{#overview}
 
 >[!IMPORTANT]
 >
