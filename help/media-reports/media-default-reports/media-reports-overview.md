@@ -1,17 +1,18 @@
 ---
 title: メディアの概要
-description: メディアの概要
+description: メディアの概要ダッシュボードを使用して、集計測定を表示します。 メディアのパフォーマンスをすばやく監視する方法を説明します。
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '93'
-ht-degree: 100%
+feature: 「Media Analytics、Reports & Analyticsの基本」
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 81%
 
 ---
 
-# メディアの概要 {#media-overview}
+# メディアの概要{#media-overview}
 
 メディアの概要ダッシュボードは、サイト全体のメディアを監視できるように設計されています。メディアの概要画面には、いくつかの測定値が集約されて表示されるので、メディアのパフォーマンスが正常であるかどうかをすばやく確認できます。グラフは、広告開始の隣にコンテンツ開始を表示して、各メディアアイテムのこれらの指標をすばやく表示できるようにします。
 
