@@ -1,17 +1,18 @@
 ---
-title: iOS でのチャプターおよびセグメントの追跡
-description: ここでは、iOS でのメディア SDK を使用したチャプターおよびセグメント追跡の実装について説明します。
+title: iOSでのチャプターおよびセグメントの追跡方法を説明します。
+description: iOSでのメディアSDKを使用したチャプターおよびセグメント追跡の実装について説明します。
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 88%
 
 ---
 
-# iOS でのチャプターおよびセグメントの追跡 {#track-chapters-and-segments-on-ios}
+# iOS でのチャプターおよびセグメントの追跡{#track-chapters-and-segments-on-ios}
 
 >[!IMPORTANT]
 >
