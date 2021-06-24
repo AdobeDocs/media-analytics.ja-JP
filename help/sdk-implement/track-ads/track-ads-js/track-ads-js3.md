@@ -1,16 +1,17 @@
 ---
-title: JavaScript 3.x を使用した広告の追跡
+title: JavaScript 3.xを使用した広告の追跡方法を説明します。
 description: メディア SDK を使用して、ブラウザー（JS）アプリケーションに広告トラッキングを実装します。
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 97%
 
 ---
 
-# JavaScript 3.x を使用した広告の追跡 {#track-ads-on-javascript}
+# JavaScript 3.x を使用した広告の追跡{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -59,8 +60,8 @@ ht-degree: 100%
 
    | 変数名 | タイプ | 説明 |
    | --- | --- | --- |
-   | `name` | string | 広告名を示す空白以外の文字列。 |
-   | `adId` | string | 広告識別子を示す空白以外の文字列。 |
+   | `name` | 文字列 | 広告名を示す空白以外の文字列。 |
+   | `adId` | 文字列 | 広告識別子を示す空白以外の文字列。 |
    | `position` | 数値 | 広告ブレーク内の広告の位置を示す番号（1 から始まります）。 |
    | `length` | 数値 | 広告の長さを示す正の数。 |
 
