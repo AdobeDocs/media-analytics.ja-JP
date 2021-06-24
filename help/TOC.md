@@ -1,12 +1,11 @@
 ---
+product: adobe analytics
 audience: end-user
 user-guide-title: ストリーミングメディア用 Adobe Analytics
 breadcrumb-title: メディア解析ガイド
 user-guide-description: ストリーミングメディア用 Adobe Analytics の実装これには、メディア SDK とメディアコレクション API が含まれます。
-product: adobe analytics
 sub-product: Media Analytics
-translation-type: tm+mt
-source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
+source-git-commit: 230488398dc145798e4b12ddb94cd73f4f790f28
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 100%
@@ -19,17 +18,17 @@ ht-degree: 100%
 + [Adobe Analytics でのストリーミングメディアの測定](media-overview.md)
 + [サポートされるデバイスとプラットフォーム](measurement-options/supported-devices.md)
 + ストリーミングメディア分析の概要 {#intro-to-ava}
-   + [前提条件](intro-to-ava/prereqs.md)
+   + [前提条件 ](intro-to-ava/prereqs.md)
    + 実装パス {#implementation-paths}
       + [概要](intro-to-ava/implementation-paths/implementation-paths.md)
-      + [クライアントサイド ](intro-to-ava/implementation-paths/client-side-path.md)
+      + [クライアントサイド](intro-to-ava/implementation-paths/client-side-path.md)
       + その他の実装パス {#other-paths}
          + メディアモジュールのマイルストーンの追跡 {#mm-milestone-tracking}
             + [マイルストーンの概要](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [マイルストーンから Media Analytics への移行](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [マイルストーンからカスタムリンクへの移行](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Analytics のカスタムリンク {#cl-in-aa}
-            + [カスタムリンク導入ガイド](measurement-options/cl-in-aa/cl-impl-guide.md)
+            + [カスタムリンク導入ガイド ](measurement-options/cl-in-aa/cl-impl-guide.md)
          + Primetime {#primetime}
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Audience Manager の有効化](intro-to-ava/am-enablement.md)
@@ -43,8 +42,8 @@ ht-degree: 100%
       + JavaScript のセットアップ {#setup-javascript}
          + [JavaScript 2.x のセットアップ](sdk-implement/setup/setup-javascript/set-up-js-2.md)
          + [JavaScript 3.x のセットアップ](sdk-implement/setup/setup-javascript/set-up-js-3.md)
-      + [Chromecast のセットアップ ](sdk-implement/setup/set-up-chromecast.md)
-      + [Roku のセットアップ ](sdk-implement/setup/set-up-roku.md)
+      + [Chromecast のセットアップ](sdk-implement/setup/set-up-chromecast.md)
+      + [Roku のセットアップ](sdk-implement/setup/set-up-roku.md)
    + ストリーミングメディア再生をトラック {#track-av-playback}
       + [概要](sdk-implement/track-av-playback/track-core-overview.md)
       + コアストリーミングメディア再生のトラック {#track-core}
@@ -158,7 +157,7 @@ ht-degree: 100%
    + クックブック {#cookbook}
       + [SDK クックブック](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [再生中のアプリケーション割り込みの処理](sdk-implement/cookbook/app-interrupts.md)
-      + [広告と広告の間に発生する main:play の解決](sdk-implement/cookbook/fix-ad-play-ad.md)
+      + [広告と広告の間に発生する main:play の解決 ](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [非アクティブなセッションの再開](sdk-implement/cookbook/resuming-inactive.md)
       + [SceneGraph（Roku）でのトラッキング](sdk-implement/cookbook/sdk-track-scenegraph.md)
    + Media Analytics 1.x から 2.x への移行 {#va-1x-to-2x}
