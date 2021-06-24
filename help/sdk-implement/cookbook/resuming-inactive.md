@@ -1,17 +1,18 @@
 ---
 title: 非アクティブなセッションの再開
-description: 非アクティブなセッションの再開を処理する方法です。
+description: 非アクティブなセッションの再開を処理する方法を説明します。
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '157'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 95%
 
 ---
 
-# 非アクティブなセッションの再開 {#resuming-inactive-sessions}
+# 非アクティブなセッションの再開{#resuming-inactive-sessions}
 
 ## 長時間の一時停止
 
