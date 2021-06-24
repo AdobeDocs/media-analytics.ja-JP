@@ -1,17 +1,18 @@
 ---
-title: Chromecast のメタデータキー
-description: Chromecast 上で、標準ビデオおよび広告メタデータがトラッキングコールで送信されるようにする設定を説明します。
+title: Chromecastのメタデータキーの説明
+description: Chromecast上で、標準ビデオおよび広告メタデータがトラッキングコールで送信されるようにする方法を説明します。
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '136'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 85%
 
 ---
 
-# Chromecast のメタデータキー {#chromecast-metadata-keys}
+# Chromecast のメタデータキー{#chromecast-metadata-keys}
 
 ビデオと広告の標準メタデータをそれぞれメディアと広告の情報オブジェクトに設定できます。ビデオや広告メタデータの定数キーを使用すると、追跡 API を呼び出す前に、標準メタデータを含むディクショナリが情報オブジェクトに設定されます。標準メタデータ定数の一覧と例については、以下の表を参照してください。
 
