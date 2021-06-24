@@ -1,17 +1,18 @@
 ---
-title: 概要
+title: 広告の追跡の説明
 description: メディア SDK を使用した広告トラッキングの実装の概要です。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '504'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 99%
 
 ---
 
-# 概要 {#overview}
+# 概要{#overview}
 
 >[!IMPORTANT]
 >
@@ -82,7 +83,7 @@ ht-degree: 100%
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
    | `name` | 広告のわかりやすい名前. | ○ |
-   | `adId` | 広告の一意の識別子。 | ○ |
+   | `adId` | 広告の一意の ID。 | ○ |
    | `position` | 広告ブレーク内の広告の位置番号（1 から始まる）。 | ○ |
    | `length` | 広告の長さ | ○ |
 
