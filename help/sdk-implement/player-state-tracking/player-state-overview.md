@@ -1,12 +1,13 @@
 ---
 title: プレーヤーステートトラッキングについて
-description: このトピックでは、プレーヤーステートトラッキング機能と、プレーヤーステートの実装と報告に関する要件やガイドラインについて説明します。
+description: プレーヤーステートトラッキング機能（プレーヤーステートの実装とレポートに関する要件やガイドラインなど）について説明します。
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '404'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 95%
 
 ---
 
