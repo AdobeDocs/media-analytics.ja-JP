@@ -3,15 +3,16 @@ title: アプリのアクションの追跡
 description: アプリのアクションは、測定したいアプリ内で発生するイベントです。
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
 exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '132'
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '134'
 ht-degree: 100%
 
 ---
 
-# アプリのアクションの追跡 {#track-app-actions}
+# アプリのアクションの追跡{#track-app-actions}
 
 アクションは、アプリ内で発生し、測定対象となるイベントです。
 
