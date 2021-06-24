@@ -1,18 +1,20 @@
 ---
-title: セグメント
+title: メディアストリーミングセグメントの説明
 description: 「メディアストリームタイプのセグメント、説明、ルールなど、メディアストリームタイプに関連付けられたレポートセグメントについて説明します。」
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: 「Media Analytics、セグメント化」
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 2d9d4352b0fd71710a9952ba4a77f6796ea9f5cc
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 84%
+source-wordcount: '207'
+ht-degree: 66%
 
 ---
 
 # セグメント{#segments}
+
+セグメントを使用すると、特性や Web サイトでのインタラクションに基づいて訪問者のサブセットを識別できます。ストリーミングメディアセグメントを使用すると、オーディオ、ライブ、ポッドキャストストリームなどの訪問者ストリームタイプを識別できます。 Adobe Analyticsセグメントについて詳しくは、『 Adobe Analyticsコンポーネントガイド』の「[セグメントとコンテナについて](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en) 」を参照してください。
 
 >[!NOTE]
 >
