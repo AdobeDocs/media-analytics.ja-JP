@@ -1,21 +1,22 @@
 ---
-title: Chromecast でのコア再生の追跡
-description: ここでは、Chromecast でのメディア SDK を使用したコア追跡の実装方法について説明します。
+title: Chromecastでのコア再生の追跡方法を説明します。
+description: ChromecastでのメディアSDKを使用したコア追跡の実装方法を説明します。
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '661'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 96%
 
 ---
 
-# Chromecast でのコア再生の追跡 {#track-core-playback-on-chromecast}
+# Chromecast でのコア再生の追跡{#track-core-playback-on-chromecast}
 
 >[!IMPORTANT]
 >
->このドキュメントでは、バージョン 2.x の SDK での追跡について説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. **トラッキングの初期設定**
 
