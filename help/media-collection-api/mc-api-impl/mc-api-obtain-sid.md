@@ -1,17 +1,18 @@
 ---
 title: セッション ID の取得
-description: セッション ID の取得
+description: 応答のLocationヘッダーからセッションIDを取得するためのSessionsリクエストのコーディング方法を説明します。
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '46'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '63'
+ht-degree: 69%
 
 ---
 
-# セッション ID の取得 {#obtaining-a-session-id}
+# セッション ID の取得{#obtaining-a-session-id}
 
 このリファレンスプレーヤーのコードスニペットは、[Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)をコーディングする 1 つの方法と、セッション ID（およびメディアコレクション API バージョン）を応答の Location ヘッダーから抽出する方法を示しています。
 
