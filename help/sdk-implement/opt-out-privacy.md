@@ -1,16 +1,18 @@
 ---
-title: オプトアウトおよびプライバシー
-description: オプトイン、オプトアウトおよびプライバシーを処理する方法です。
+title: 「オプトアウトおよびプライバシーの説明」
+description: 「オプトイン、オプトアウトおよびプライバシーを処理する方法を説明します。」
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '356'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 96%
 
 ---
 
-# オプトアウトおよびプライバシー {#opt-out-and-privacy}
+# オプトアウトおよびプライバシー{#opt-out-and-privacy}
 
 ## オプトアウトとオプトイン {#opt-out-opt-in}
 
@@ -75,7 +77,7 @@ ht-degree: 100%
             ```
    `setPrivacyStatus` を使用してプライバシー設定を変更した後は、同じメソッドを使用して再度変更されるまで、またはアプリを完全にアンインストールして再度インストールするまで、変更が保持されます。
 
-## 保存されている ID の取得（OTT アプリ） {#retrieving-stored-identifiers-ott-apps}
+## 保存されている ID の取得（OTT アプリ）  {#retrieving-stored-identifiers-ott-apps}
 
 この情報は、ローカルに保存されているユーザー ID を Roku アプリケーションから取得する場合に役立ちます。
 
