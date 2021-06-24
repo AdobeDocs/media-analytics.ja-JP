@@ -1,17 +1,18 @@
 ---
-title: 広告のない VOD 再生
-description: 広告を含まない VOD 再生のトラッキングの例です。
+title: 広告のないVOD再生
+description: 広告を含まないVOD再生の追跡の例を表示します。
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '364'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 95%
 
 ---
 
-# 広告のない VOD 再生 {#vod-playback-with-no-ads}
+# 広告のない VOD 再生{#vod-playback-with-no-ads}
 
 ## シナリオ {#scenario}
 
