@@ -1,13 +1,14 @@
 ---
-title: テスト 1  標準の再生
-description: ここでは、検証で使用される標準の再生テストについて説明します。
+title: テスト1の標準の再生
+description: 検証で使用される標準の再生テストについて説明します。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '839'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 98%
 
 ---
 
