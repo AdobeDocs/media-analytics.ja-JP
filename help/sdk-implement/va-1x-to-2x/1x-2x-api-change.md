@@ -1,13 +1,14 @@
 ---
-title: 1.x から 2.x API への変換
-description: このトピックには、メディア SDK の 1.x および 2.x バージョン用の API リファレンスへのリンクおよび必須およびオプションのトラッキング API のリストが含まれています。
+title: バージョン1.xから2.x APIへの変換
+description: メディアSDKの1.xおよび2.xバージョン用の必須およびオプションのトラッキングAPIを参照し、一覧表示します。
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '203'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 87%
 
 ---
 
