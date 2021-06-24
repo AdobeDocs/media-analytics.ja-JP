@@ -1,17 +1,18 @@
 ---
-title: iOS のメタデータキー
-description: ここでは、使用可能な iOS のメタデータキーについて説明します。
+title: iOSのメタデータキーの説明
+description: 使用可能なiOSのメタデータキーについて説明します。
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '115'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 90%
 
 ---
 
-# iOS のメタデータキー {#ios-metadata-keys}
+# iOS のメタデータキー{#ios-metadata-keys}
 
 [iOS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
@@ -44,11 +45,11 @@ ht-degree: 100%
 | 定数名 | 説明 | タイプ |
 |---|---|---|
 | `ADBAudioMetadataKeyALBUM` | 番組 | Audio |
-| `ADBAudioMetadataKeyARTIST` | シーズン | Audio |
-| `ADBAudioMetadataKeyAUTHOR` | シーズン | Audio |
-| `ADBAudioMetadataKeyLABEL` | エピソード | Audio |
-| `ADBAudioMetadataKeyPUBLISHER` | アセット | Audio |
-| `ADBAudioMetadataKeySTATION` | ジャンル | Audio |
+| `ADBAudioMetadataKeyARTIST` | シーズン | オーディオ |
+| `ADBAudioMetadataKeyAUTHOR` | シーズン | オーディオ |
+| `ADBAudioMetadataKeyLABEL` | エピソード | オーディオ |
+| `ADBAudioMetadataKeyPUBLISHER` | アセット | オーディオ |
+| `ADBAudioMetadataKeySTATION` | ジャンル | オーディオ |
 
 ## 広告のメタデータキー
 
