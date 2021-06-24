@@ -1,17 +1,18 @@
 ---
-title: iOS での Quality of Experience の追跡
-description: ここでは、iOS でのメディア SDK を使用した Quality of Experience（QoE、QoS）追跡の実装について説明します。
+title: iOSでのQuality of Experienceの追跡方法を説明します。
+description: 「iOSでのメディアSDKを使用したQuality of Experience(QoE、QoS)追跡の実装について説明します。」
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '154'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 84%
 
 ---
 
-# iOS での Quality of Experience の追跡 {#track-quality-of-experience-on-ios}
+# iOS での Quality of Experience の追跡{#track-quality-of-experience-on-ios}
 
 >[!IMPORTANT]
 >
