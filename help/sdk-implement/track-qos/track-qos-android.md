@@ -1,17 +1,18 @@
 ---
-title: Android での Quality of Experience の追跡
-description: ここでは、Android でのメディア SDK を使用した Quality of Experience（QoE、QoS）追跡の実装について説明します。
+title: AndroidでQuality of Experienceを追跡する方法を説明します。
+description: 「AndroidでのメディアSDKを使用したQuality of Experience(QoE、QoS)追跡の実装について説明します。」
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '154'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 84%
 
 ---
 
-# Android での Quality of Experience の追跡 {#track-quality-of-experience-on-android}
+# Android での Quality of Experience の追跡{#track-quality-of-experience-on-android}
 
 >[!IMPORTANT]
 >
