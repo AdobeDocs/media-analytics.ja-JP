@@ -1,17 +1,18 @@
 ---
-title: 複数のセッションに対する 1 つの VOD トラッカー
-description: メディア SDK を使用した、1 つのトラッカーで複数のセッションを追跡する方法の例です。
+title: 複数のセッションに対する1つのVODトラッカー
+description: メディアSDKを使用した、1つのトラッカーで複数のセッションを追跡する方法の例を示します。
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '183'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 87%
 
 ---
 
-# 複数のセッションに対する 1 つの VOD トラッカー {#vod-one-tracker-for-multiple-sessions}
+# 複数のセッションに対する 1 つの VOD トラッカー{#vod-one-tracker-for-multiple-sessions}
 
 ## シナリオ {#scenario}
 
