@@ -1,13 +1,14 @@
 ---
 title: テスト 2  メディアの中断
-description: ここでは、検証で使用されるメディアの中断テストについて説明します。
+description: 検証で使用されるメディア中断テストについて説明します。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '244'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 96%
 
 ---
 
