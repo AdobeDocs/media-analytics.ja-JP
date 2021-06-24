@@ -1,17 +1,18 @@
 ---
 title: Federated Analytics
-description: Federated Analyticsサービスは、2つのパートナー間でストリーミングメディアデータを共有するためのAdobe Analytics共有システムを提供します。
+description: Federated Analyticsサービスは、2つのパートナー間でAdobe Analyticsをストリーミングメディアデータを共有するシステムを提供します。
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
-translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+exl-id: 81970370-663c-49d5-b13c-628d294be178
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '554'
 ht-degree: 92%
 
 ---
 
-
-# Federated Analytics {#federated-analytics}
+# Federated Analytics{#federated-analytics}
 
 Federated Analytics サービスは、2 つのパートナー間でAdobe Media Analytics データ（オーディオおよびビデオ）を共有できるシステムです。Media Analytics によって生成される標準化された計測データは、Federated Analytics の指標の 1 つで、複数のソースからの同一のデータを単一のレポートに表示できます。Federated Analytics を規定するルールとロジックによって、それぞれの状況に合わせてデータを簡単に管理し、個々のパートナーのニーズに対応できます。Federated Analytics を利用すれば、オーディオおよびビデオ計測の効率性と実用性を高め、簡略化を推し進めることができます。
 
@@ -37,13 +38,13 @@ Federated Analytics サービスは、2 つのパートナー間でAdobe Media A
 * **メディアストリームに関する契約：** Adobe Analytics 内でオーディオおよびビデオデータにアクセスするためには、受信者と送信者が事前に Adobe Analytics for Media Streams の契約を済ませておく必要があります。詳しくは、アカウントチームにお問い合わせください。
 * **フェデレーションに関する補遺契約：**&#x200B;データの送受信をおこなうためには、送信者と受信者それぞれがアドビとの補遺契約に署名している必要があります。パートナーシップ 1 組で 1 つの補遺契約ではなく、それぞれのお客様が補遺契約に署名する必要があります。詳しくは、アカウントチームにお問い合わせください。
 
-* **Media Analytics の実装：** 送信者は、フェデレーテッドデータセットの一部となるすべてのプレーヤーにMedia Analyticsを実装する必要があります。フェデレーションに使用できるのは、Media Analytics データのみです。ドキュメントを参照してください。[Adobe Analytics](/help/media-overview.md)のストリーミングメディアの測定
+* **Media Analytics の実装：** 送信者は、フェデレーテッドデータセットの一部となるすべてのプレーヤーにMedia Analyticsを実装する必要があります。フェデレーションに使用できるのは、Media Analytics データのみです。以下のドキュメントを参照してください。[Adobe Analyticsでのストリーミングメディアの測定](/help/media-overview.md)
 
 * **アドビのコンサルティングサービスの契約：**&#x200B;送信者と受信者間のフェデレーテッドルールの初期設定については、コンサルティングサービスと協力してデータの確認とデータ共有契約の作成をおこなうと効果的です。
 
 ## Federated Analytics フォームのダウンロード
 
-Federated Analyticsに参加するには、[Federation Rules Agreement](federated-analytics-form.pdf)のフォームをダウンロードして記入します。
+Federated Analyticsに参加するには、[フェデレーションルールの契約](federated-analytics-form.pdf)フォームをダウンロードして記入します。
 
 
 ## プロセス {#process}
