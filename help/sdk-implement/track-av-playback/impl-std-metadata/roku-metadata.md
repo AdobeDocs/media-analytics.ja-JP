@@ -1,17 +1,18 @@
 ---
-title: Roku のメタデータキー
-description: ここでは、使用可能な Roku のメタデータキーについて説明します。
+title: Rokuのメタデータキーの説明
+description: 使用可能なRokuのメタデータキーについて説明し、標準メタデータ定数のリスト全体を表示します。
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '461'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 95%
 
 ---
 
-# Roku のメタデータキー {#roku-metadata-keys}
+# Roku のメタデータキー{#roku-metadata-keys}
 
 ビデオ、オーディオおよび広告の標準メタデータをそれぞれメディアと広告の情報オブジェクトに設定できます。ビデオや広告メタデータの定数キーを使用すると、追跡 API を呼び出す前に、標準メタデータを含むディクショナリが情報オブジェクトに設定されます。標準メタデータ定数の一覧と例については、以下の表を参照してください。
 
