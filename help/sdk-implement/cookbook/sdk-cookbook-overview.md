@@ -1,12 +1,13 @@
 ---
 title: SDK クックブックの概要
-description: SDK 専用のクックブックトピック
+description: 「SDK固有のクックブックトピックの参照」
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '66'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '69'
+ht-degree: 94%
 
 ---
 
@@ -17,6 +18,6 @@ ht-degree: 100%
 次のクックブックトピックは、Media Analytics のメディア SDK バージョンに特有です。
 
 * [再生中のアプリケーション割り込みの処理](/help/sdk-implement/cookbook/app-interrupts.md)
-* [広告と広告の間に発生する main:play の解決](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
+* [広告と広告の間に発生する main:play の解決 ](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
 * [非アクティブなセッションの再開](/help/sdk-implement/cookbook/resuming-inactive.md)
 * [SceneGraph（Roku）でのトラッキング](/help/sdk-implement/cookbook/sdk-track-scenegraph.md)
