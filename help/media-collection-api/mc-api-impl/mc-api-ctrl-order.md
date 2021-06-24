@@ -1,16 +1,18 @@
 ---
 title: イベントの順序の制御
-description: イベントの順序の制御
+description: イベントの順序の制御と、 playerTimeオブジェクトに指定されたタイムスタンプに基づいてイベントを並べ替える方法について説明します。
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
-source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 92%
 
 ---
 
-# イベントの順序の制御 {#controlling-the-order-of-events}
+# イベントの順序の制御{#controlling-the-order-of-events}
 
 ストリーミングビデオトラッキングは時間に大きく依存する操作で、メディアコレクション API トラッキング呼び出しがバックエンドに到達する順序は乱れることがあります。 このような場合、バックエンドは、`playerTime` オブジェクトで指定されたタイムスタンプに基づいてイベントをキューに追加したり、並べ替えたりするよう試みます。  この問題は、いくつかの制限によって発生します。 現在のところ、順不同の呼び出し間で遅延が 1 秒を超えると、並べ替えに失敗することがあります。 今後の更新では、「許容可能な遅延時間」を最適化して設定できるようになる可能性があります。
 
