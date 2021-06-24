@@ -1,17 +1,18 @@
 ---
-title: Android での広告の追跡
+title: Androidで広告を追跡する方法を説明します
 description: メディア SDK を使用して、Android アプリケーションに広告トラッキングを実装します。
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '352'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
 
-# Android での広告の追跡 {#track-ads-on-android}
+# Android での広告の追跡{#track-ads-on-android}
 
 >[!IMPORTANT]
 >
@@ -65,7 +66,7 @@ ht-degree: 100%
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
    | `name` | 広告のわかりやすい名前. | ○ |
-   | `adId` | 広告の一意の識別子。 | ○ |
+   | `adId` | 広告の一意の ID。 | ○ |
    | `position` | 広告ブレーク内の広告の位置番号（1 から始まる）。 | ○ |
    | `length` | 広告の長さ | ○ |
 
