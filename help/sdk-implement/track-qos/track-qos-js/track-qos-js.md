@@ -1,17 +1,18 @@
 ---
-title: JavaScript 2.x を使用したエクスペリエンス品質の追跡
-description: このトピックでは、JavaScript 2.x を使用するブラウザーアプリで Media SDK を使用してエクスペリエンス品質（QoE、QoS）のトラッキングを実装する方法について説明します。
+title: JavaScript 2.xを使用したQuality of Experienceの追跡について説明します。
+description: 「JavaScript 2.xを使用したブラウザーアプリでのメディアSDKを使用したQuality of Experience(QoE、QoS)追跡の実装について説明します。」
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '219'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 87%
 
 ---
 
-# JavaScript 2.x を使用したエクスペリエンス品質の追跡 {#track-quality-of-experience-on-javascript}
+# JavaScript 2.x を使用したエクスペリエンス品質の追跡{#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
