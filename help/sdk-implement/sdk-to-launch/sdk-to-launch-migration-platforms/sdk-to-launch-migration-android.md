@@ -1,12 +1,13 @@
 ---
-title: スタンドアロンの Media SDK から Adobe Launch への移行 - Android
-description: Media SDK から Launch for Android への移行に役立つ手順とコードサンプルです。
+title: 「スタンドアロンのメディアSDKからAdobeLaunchへの移行 — Android」
+description: メディアSDKからLaunch for Androidに移行する方法を説明します。
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '363'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 93%
 
 ---
 
