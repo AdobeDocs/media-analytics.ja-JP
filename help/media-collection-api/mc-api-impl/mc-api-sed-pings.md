@@ -1,17 +1,18 @@
 ---
 title: ping イベントの送信
-description: ping イベントの送信
+description: pingイベントは、ストリーミングメディア分析のハートビートです。 メインコンテンツまたは広告トラッキングに対して時間指定pingを送信する方法を説明します。
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '88'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 79%
 
 ---
 
-# ping イベントの送信 {#sending-ping-events}
+# ping イベントの送信{#sending-ping-events}
 
 **メインコンテンツに対しては、他にどのような API イベントが送信されているかに関係なく、再生を開始した 10 秒後から 10 秒ごとに ping イベントを発生させる必要があります。広告トラッキングの場合、1 秒ごとに ping イベントを発生させる必要があります。**
 
