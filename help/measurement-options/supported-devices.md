@@ -1,11 +1,13 @@
 ---
-title: サポートされるデバイスとプラットフォーム
-description: Adobe Analytics for Streaming Media では、各メディアストリームがあらゆるデバイスをまたいで収集され、報告されることを確実にします。
+title: サポートされるデバイスとプラットフォームについて説明します
+description: 「Adobe Analytics for Streaming MediaがサポートするiOS、Android、OTTデバイス、JavaScriptブラウザーなどの主なデバイスについて説明します。」
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '333'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 92%
 
 ---
 
