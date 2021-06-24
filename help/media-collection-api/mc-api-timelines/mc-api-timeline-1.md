@@ -1,17 +1,18 @@
 ---
-title: タイムライン 1 - コンテンツの最後まで視聴
-description: null
+title: コンテンツの最後までのメディアトラッキ�ングのタイムライン表示について説明します
+description: 再生ヘッドタイムラインと対応するユーザーのアクションを詳しく�調べます。 各アクションとそれに伴うリクエストの詳細について説明します。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 97%
 
 ---
 
-# タイムライン 1 - コンテンツの最後まで視聴 {#timeline-view-to-end-of-content}
+# タイムライン 1 - コンテンツの最後まで視聴{#timeline-view-to-end-of-content}
 
 ## VOD、プリロール広告、一時停止、バッファリング、コンテンツの最後まで視聴
 
