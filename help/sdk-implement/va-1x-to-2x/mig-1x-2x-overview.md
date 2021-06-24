@@ -1,17 +1,18 @@
 ---
 title: 移行の概要
-description: このトピックでは、メディア SDK の 1.x から 2.x バージョンへの移行の概要を説明します。
+description: メディアSDKの1.xから2.xバージョンへの移行について説明します。
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '213'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 94%
 
 ---
 
-# 移行の概要 {#migration-overview}
+# 移行の概要{#migration-overview}
 
 VHL 1.x から VHL 2.x への移行は簡単です。新しいバージョンでは、初期化や設定、プレーヤーのデリゲート用の簡略化された API を利用できるというメリットがあります。
 
