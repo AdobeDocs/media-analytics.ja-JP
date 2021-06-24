@@ -1,17 +1,18 @@
 ---
 title: デフォルトレポートの概要
-description: デフォルトレポートの概要
+description: 「Webサイト上のメディアの追跡に使用するレポートタイプと指標について説明します。 メディアコアモジュールで使用可能なダッシュボード形式のレポートを参照します。」
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '328'
-ht-degree: 100%
+feature: 「Media Analytics、Reports & Analyticsの基本」
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 91%
 
 ---
 
-# デフォルトレポートの概要 {#default-reports-overview}
+# デフォルトレポートの概要{#default-reports-overview}
 
 Adobe Analytics には、Web サイト上のメディアのパフォーマンスを追跡するためのいくつかのレポートと指標が用意されています。
 
