@@ -1,17 +1,18 @@
 ---
 title: セッションの応答が遅い場合のイベントのキューへの登録
-description: セッションの応答が遅い場合のイベントのキューへの登録
+description: 'プレーヤーでイベントが発生した後にセッションIDが返された場合の対処方法について説明します。 '
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '197'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 92%
 
 ---
 
-# セッションの応答が遅い場合のイベントのキューへの登録 {#queueing-events-when-sessions-response-is-slow}
+# セッションの応答が遅い場合のイベントのキューへの登録{#queueing-events-when-sessions-response-is-slow}
 
 メディアコレクション API は RESTful です。つまり、ユーザーは、HTTP リクエストを送信し、その応答を待ちます。これは、ビデオ再生の開始時に [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を送信してセッション ID を取得する場合にのみ重要です。これが重要なのは、このセッション ID が後続のすべてのトラッキングコールで必要なためです。
 
