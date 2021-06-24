@@ -1,17 +1,18 @@
 ---
-title: Roku でのチャプターおよびセグメントの追跡
-description: ここでは、Roku でのメディア SDK を使用したチャプターおよびセグメント追跡の実装について説明します。
+title: Rokuでのチャプターおよびセグメントの追跡方法について説明します。
+description: RokuでのメディアSDKを使用したチャプターおよびセグメント追跡の実装について説明します。
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '197'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 89%
 
 ---
 
-# Roku でのチャプターおよびセグメントの追跡 {#track-chapters-and-segments-on-roku}
+# Roku でのチャプターおよびセグメントの追跡{#track-chapters-and-segments-on-roku}
 
 >[!IMPORTANT]
 >
