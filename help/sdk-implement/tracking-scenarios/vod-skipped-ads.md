@@ -1,17 +1,18 @@
 ---
-title: 広告がスキップされた VOD 再生
-description: メディア SDK を使用した、ユーザーが広告をスキップした VOD コンテンツの追跡方法の例です。
+title: 広告がスキップされたVOD再生
+description: メディアSDKを使用した、ユーザーが広告をスキップしたVODコンテンツの追跡方法の例を示します。
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '279'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 91%
 
 ---
 
-# 広告がスキップされた VOD 再生 {#vod-playback-with-skipped-ads}
+# 広告がスキップされた VOD 再生{#vod-playback-with-skipped-ads}
 
 ## シナリオ {#scenario}
 
