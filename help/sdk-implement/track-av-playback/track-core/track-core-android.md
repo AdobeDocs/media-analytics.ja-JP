@@ -1,17 +1,18 @@
 ---
-title: Android でのコア再生の追跡
-description: ここでは、Android でのメディア SDK を使用したコア追跡の実装方法について説明します。
+title: Androidでのコア再生の追跡方法を説明します。
+description: AndroidでのメディアSDKを使用したコア追跡の実装方法について説明します。
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '707'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
 
-# Android でのコア再生の追跡 {#track-core-playback-on-android}
+# Android でのコア再生の追跡{#track-core-playback-on-android}
 
 >[!IMPORTANT]
 >このドキュメントでは、バージョン 2.x の SDK での追跡について説明しています。1.x バージョンの SDK を実装する場合は、Android 向けの 1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
