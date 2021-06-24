@@ -1,12 +1,13 @@
 ---
-title: JavaScript v3.x を使用したコア再生の追跡
-description: ここでは、JavaScript 3.x アプリを使用した、ブラウザーのメディア SDK によるコア追跡の実装方法について説明します。
+title: JavaScript v3.xを使用したコア再生の追跡方法を説明します。
+description: JavaScript 3.xアプリを使用して、ブラウザーのメディアSDKを使用したコア追跡を実装する方法について説明します。
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '643'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 95%
 
 ---
 
@@ -24,9 +25,9 @@ ht-degree: 100%
    | 変数名 | タイプ | 説明 |
    | --- | --- | --- |
    | `name` | string | メディア名を示す、空白以外の文字列。 |
-   | `id` | string | 一意のメディア識別子を示す、空白以外の文字列。 |
+   | `id` | 文字列 | 一意のメディア識別子を示す、空白以外の文字列。 |
    | `length` | 数値 | メディアの長さを秒単位で示す正の数。長さが不明な場合は 0 を使用します。 |
-   | `streamType` | string |  |
+   | `streamType` | 文字列 |  |
    | `mediaType` |  | メディアのタイプ（オーディオまたはビデオ）。 |
 
    **`StreamType`定数：**
