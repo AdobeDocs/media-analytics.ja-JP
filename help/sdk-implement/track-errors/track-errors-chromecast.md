@@ -1,17 +1,18 @@
 ---
-title: Chromecast でのエラーの追跡
-description: ここでは、Chromecast でのメディア SDK を使用したエラー追跡の実装について説明します。
+title: Chromecastでのエラーの追跡方法を説明します。
+description: ChromecastでのメディアSDKを使用したエラー追跡の実装について説明します。
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
 exl-id: 513772c2-582d-4b4b-92ed-0c32b99d7fdc
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '100'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 82%
 
 ---
 
-# Chromecast でのエラーの追跡 {#track-errors-on-chromecast}
+# Chromecast でのエラーの追跡{#track-errors-on-chromecast}
 
 >[!IMPORTANT]
 >
