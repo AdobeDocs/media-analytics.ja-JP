@@ -1,17 +1,18 @@
 ---
 title: Adobe Debug の設定
-description: ここでは、メディア SDK 実装のトラブルシューティングに使用できる Adobe Debug の設定方法について説明します。
+description: 「メディアSDKの実装のトラブルシューティングに使用できるAdobeデバッグの設定方法について説明します。」
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
 source-wordcount: '653'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Adobe Debug の設定 {#configure-adobe-debug}
+# Adobe Debug の設定{#configure-adobe-debug}
 
 ## Adobe Debug へのアクセス {#accessing-adobe-debug}
 
