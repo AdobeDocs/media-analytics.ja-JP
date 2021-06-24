@@ -1,17 +1,18 @@
 ---
-title: バッファリングがある VOD 再生
-description: メディア SDK を使用した VOD コンテンツの追跡方法の例です。
+title: バッファリングがあるVOD再生
+description: メディアSDKを使用したVODコンテンツの追跡方法の例を示します。
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '228'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 92%
 
 ---
 
-# バッファリングがある VOD 再生 {#vod-playback-with-buffering}
+# バッファリングがある VOD 再生{#vod-playback-with-buffering}
 
 ## シナリオ {#scenario}
 
