@@ -1,15 +1,17 @@
 ---
-title: JavaScript 3.x のセットアップ
-description: JavaScript 3.x での実装用のメディア SDK アプリケーション設定です。
+title: JavaScript 3.xを使用したメディアSKDの設定方法
+description: JavaScript 3.xでメディアSDKアプリケーションをセットアップするには、次の手順に従います。
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
-source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
-workflow-type: ht
-source-wordcount: '394'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 94%
 
 ---
 
-# JavaScript 3.x のセットアップ {#set-up-javascript}
+# JavaScript 3.x のセットアップ{#set-up-javascript}
 
 ## 前提条件 
 
