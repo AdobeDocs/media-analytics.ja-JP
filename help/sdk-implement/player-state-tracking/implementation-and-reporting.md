@@ -1,12 +1,13 @@
 ---
 title: 実装とレポート
-description: このトピックでは、以下を含むプレーヤーステートトラッキング機能の実装方法について説明します。
+description: を含む、プレーヤーステートトラッキング機能の実装方法について説明します。
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '333'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 96%
 
 ---
 
