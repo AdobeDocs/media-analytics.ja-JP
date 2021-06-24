@@ -1,18 +1,22 @@
 ---
-title: 計算指標
+title: ストリーミングメディア計算指標
 description: Adobeストリーミングメディアの計算指標と指標の数式について説明します。
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 2d9d4352b0fd71710a9952ba4a77f6796ea9f5cc
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 78%
+source-wordcount: '258'
+ht-degree: 59%
 
 ---
 
 # 計算指標{#calculated-metrics}
+
+ストリーミングメディアの計算指標は、平均広告滞在時間やメディアストリームあたりの平均広告数など、ターゲットを絞り込んだストリーミングメディアデータを取得できるカスタム指標です。
+
+Adobe Analyticsの計算指標について詳しくは、『Adobe Analyticsコンポーネントガイド』の「[計算指標および高度な計算（派生）指標](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en)」を参照してください。
 
 >[!NOTE]
 >
