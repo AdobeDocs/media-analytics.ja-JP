@@ -1,16 +1,18 @@
 ---
 title: メディア同時閲覧者数
-description: null
+description: 「1日の同時閲覧者数を表示するために使用するメディア同時閲覧者数ダッシュボードについて説明します。 データは、コンテンツ、デバイスタイプまたは国でフィルタリングできます。」
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+feature: 「Media Analytics、Reports & Analyticsの基本」
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 89%
 
 ---
 
-# メディア同時閲覧者数 {#media-concurrent-viewers}
+# メディア同時閲覧者数{#media-concurrent-viewers}
 
 メディア同時閲覧者数ダッシュボードには、1 日の同時閲覧者が表示されます。データは、コンテンツ、デバイスタイプまたは国でフィルターできます。
 
