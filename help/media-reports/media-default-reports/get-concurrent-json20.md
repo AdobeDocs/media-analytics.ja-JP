@@ -1,16 +1,18 @@
 ---
 title: Analytics 2.0 API を使用した同時視聴者の JSON レポートデータの取得
-description: null
+description: Analytics 2.0 APIを使用して同時視聴者レポートデータを取得する方法を説明します。 リクエストと応答のサンプルを表示します。
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '167'
-ht-degree: 100%
+feature: 「Media Analytics、Reports & Analyticsの基本」
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 87%
 
 ---
 
-# Analytics 2.0 API を使用した同時視聴者の JSON レポートデータの取得 {#get-concurrent-viewers-json-report-data}
+# Analytics 2.0 API を使用した同時視聴者の JSON レポートデータの取得{#get-concurrent-viewers-json-report-data}
 
 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) を使用して、同時視聴者レポートデータを取得できます。
 
