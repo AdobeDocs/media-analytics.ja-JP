@@ -1,16 +1,17 @@
 ---
-title: JavaScript 3.x を使用したシークの追跡
-description: ここでは、ブラウザーアプリ（JS）でのメディア SDK を使用したシーク追跡の実装について説明します。
+title: JavaScript 3.xを使用したシークの追跡方法を説明します。
+description: ブラウザーアプリ(JS 3.x)のメディアSDKを使用して、シーク開始およびシーク完了イベントを追跡する方法について説明します。
 exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '126'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 80%
 
 ---
 
-# JavaScript 3.x を使用したシークの追跡 {#track-seeking-on-javascript}
+# JavaScript 3.x を使用したシークの追跡{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
