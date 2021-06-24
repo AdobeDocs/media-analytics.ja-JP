@@ -1,20 +1,21 @@
 ---
-title: iOS でのコア再生の追跡
-description: ここでは、iOS でのメディア SDK を使用したコア追跡の実装方法について説明します。
+title: iOSでのコア再生の追跡方法を説明します。
+description: iOSでのメディアSDKを使用したコア追跡の実装方法について説明します。
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '712'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 95%
 
 ---
 
-# iOS でのコア再生の追跡 {#track-core-playback-on-ios}
+# iOS でのコア再生の追跡{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->このドキュメントでは、バージョン 2.x の SDK での追跡について説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. **トラッキングの初期設定**
 
@@ -25,7 +26,7 @@ ht-degree: 100%
    | 変数名 | 説明 | 必須 |
    |---|---|---|
    | `name` | ビデオ名 | ○ |
-   | `mediaid` | ビデオの一意の識別子 | ○ |
+   | `mediaid` | ビデオの一意の ID | ○ |
    | `length` | ビデオの長さ | ○ |
    | `streamType` | ストリームタイプ（後述の _StreamType 定数_ を参照） | ○ |
    | `mediaType` | メディアタイプ（後述の&#x200B;_MediaType 定数_ を参照） | ○ |
