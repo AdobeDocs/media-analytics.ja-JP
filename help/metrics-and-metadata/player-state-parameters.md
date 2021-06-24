@@ -1,17 +1,18 @@
 ---
 title: プレーヤーステートパラメーター
-description: このトピックでは、プレーヤーステートトラッキングパラメーターについて説明します。
+description: '"フルスクリーン、クローズドキャプション、ミュート、およびピクチャーインピクチャーのプロパティのプレーヤーステートトラッキングパラメーターについて説明します。"'
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '2236'
-ht-degree: 100%
+feature: '"Media Analytics，変数"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '2249'
+ht-degree: 99%
 
 ---
 
-# プレーヤーステートパラメーター {#player-state-parameters}
+# プレーヤーステートパラメーター{#player-state-parameters}
 
 このトピックでは、ソリューション変数を介してアドビが収集するプレーヤーステートデータのリストを紹介します。
 
