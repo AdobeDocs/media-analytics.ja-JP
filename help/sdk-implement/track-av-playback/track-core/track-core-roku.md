@@ -1,20 +1,21 @@
 ---
-title: Roku でのコア再生の追跡
-description: ここでは、Roku でのメディア SDK を使用したコア追跡の実装方法について説明します。
+title: Rokuでのコア再生の追跡方法を説明します。
+description: RokuでのメディアSDKを使用したコア追跡の実装方法について説明します。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-translation-type: ht
-source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
-workflow-type: ht
-source-wordcount: '681'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '684'
+ht-degree: 97%
 
 ---
 
-# Roku でのコア再生の追跡 {#track-core-playback-on-roku}
+# Roku でのコア再生の追跡{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->このドキュメントでは、バージョン 2.x の SDK での追跡について説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. **トラッキングの初期設定**
 
@@ -100,7 +101,7 @@ ht-degree: 100%
 
    * **標準メタデータ**
 
-      [Roku での標準メタデータの実装](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Roku での標準メタデータの実装](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >メディアオブジェクトへの標準のビデオメタデータオブジェクトのアタッチはオプションです。
