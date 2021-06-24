@@ -1,12 +1,13 @@
 ---
 title: 標準ステートとカスタムステートについて
-description: このトピックでは、プレーヤーステートトラッキング機能と、標準およびカスタムプレーヤーステートの実装と報告に関する要件やガイドラインについて説明します。
+description: 標準およびカスタムプレーヤーステートの実装とレポートに関する要件やガイドラインなど、プレーヤーステートトラッキング機能について説明します。
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 92%
 
 ---
 
