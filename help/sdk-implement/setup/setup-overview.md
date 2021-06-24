@@ -1,17 +1,18 @@
 ---
-title: セットアップの概要
-description: モバイル、OTT およびブラウザー（JS）アプリケーションでのメディアトラッキングのためのメディア SDK のセットアップの概要です。
+title: メディアSDKの実装の説明
+description: 「モバイル、OTT、ブラウザー(JS)アプリケーションでのメディアトラッキング用のメディアSDKの設定方法について説明します。」
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '734'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 96%
 
 ---
 
-# セットアップの概要 {#setup-overview}
+# セットアップの概要{#setup-overview}
 
 >[!IMPORTANT]
 >
