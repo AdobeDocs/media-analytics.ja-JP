@@ -1,17 +1,18 @@
 ---
-title: Chromecast での Quality of Experience の追跡
-description: ここでは、Chromecast でのメディア SDK を使用した Quality of Experience（QoE、QoS）追跡の実装について説明します。
+title: ChromecastでのQuality of Experienceの追跡方法を説明します。
+description: 「ChromecastでのメディアSDKを使用したQuality of Experience(QoE、QoS)追跡の実装について説明します。」
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '292'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 91%
 
 ---
 
-# Chromecast での Quality of Experience の追跡 {#track-quality-of-experience-on-chromecast}
+# Chromecast での Quality of Experience の追跡{#track-quality-of-experience-on-chromecast}
 
 >[!IMPORTANT]
 >
