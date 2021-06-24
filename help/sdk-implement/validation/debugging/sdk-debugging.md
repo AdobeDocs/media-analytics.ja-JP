@@ -1,17 +1,18 @@
 ---
 title: SDK のデバッグ
-description: ここでは、メディア SDK で利用できる追跡／ログについて説明します。
+description: メディアSDKで使用できるトラッキング/ログについて説明します。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 exl-id: c2de6454-8538-4d07-a099-e278b153d894
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '271'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 96%
 
 ---
 
-# SDK のデバッグ {#sdk-debugging}
+# SDK のデバッグ{#sdk-debugging}
 
 ログを有効／無効にすることができます。メディア SDK では、メディアトラッキングスタック全体にわたる広範なトレース／ログメカニズムを提供します。Config オブジェクトの `debugLogging` フラグを設定することで、ログを有効または無効にできます。
 
