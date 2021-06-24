@@ -1,17 +1,18 @@
 ---
-title: Android でのバッファーの追跡
-description: Android でのバッファーの追跡イベントを説明します。
+title: Androidでバッファーを追跡する方法を説明します
+description: Androidでのバッファーイベントの追跡方法を説明します。
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '112'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
 
-# Android でのバッファーの追跡 {#track-buffering-on-android}
+# Android でのバッファーの追跡{#track-buffering-on-android}
 
 >[!IMPORTANT]
 >以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
