@@ -1,16 +1,17 @@
 ---
-title: JavaScript 3.x を使用したバッファーの追跡
-description: ブラウザーアプリ（JS）でのバッファーの追跡イベントを説明します。
+title: JavaScript 3.xを使用したバッファーの追跡方法を説明します。
+description: ブラウザーアプリ(JS)でのバッファーイベントの追跡方法を説明します。
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '115'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 85%
 
 ---
 
-# JavaScript 3.x を使用したバッファーの追跡 {#track-buffering-on-javascript}
+# JavaScript 3.x を使用したバッファーの追跡{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
