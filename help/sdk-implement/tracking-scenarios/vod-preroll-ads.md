@@ -1,17 +1,18 @@
 ---
-title: プリロール広告のある VOD 再生
-description: メディア SDK を使用した、プリロール広告を含む VOD コンテンツの追跡方法の例です。
+title: 「プリロール広告のあるVOD再生」
+description: 「メディアSDKを使用した、プリロール広告を含むVODコンテンツの追跡方法の例を表示します。」
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '526'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 95%
 
 ---
 
-# プリロール広告のある VOD 再生 {#vod-playback-with-pre-roll-ads}
+# プリロール広告のある VOD 再生{#vod-playback-with-pre-roll-ads}
 
 このシナリオでは、メインコンテンツの前にプリロール広告が挿入されています。特に指定のない限り、ネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオの呼び出しと同じです。ネットワーク呼び出しは同時に発生しますが、ペイロードは異なります。
 
