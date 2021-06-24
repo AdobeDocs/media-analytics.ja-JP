@@ -2,10 +2,11 @@
 title: プレーヤーステートトラッキングの例
 description: このトピックでは、プレーヤーステートトラッキング機能の例を示します。
 exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '119'
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: 8a421ee4ee5d2e61126fc6ac8f10f326427e78a7
+workflow-type: tm+mt
+source-wordcount: '121'
 ht-degree: 100%
 
 ---
@@ -17,8 +18,7 @@ ht-degree: 100%
 
 ビデオセッションの一時停止時間が 30 分を超える場合、API では新しいセッションが必要となります。この場合、クライアントは新しいセッション ID を生成する必要があります。両方のビデオセッションで、クライアントは、プレーヤーの状態をすべて保持し、`sessionStart` 呼び出しの直後にすべての情報を `stateStart` イベントとして送信する必要があります。
 
-`sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd
-`
+`sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd`
 
 `sessionEnd` が送信されたら、新しいビデオセッションを開始する必要があります。最初の API イベントは次のようになります。
 
