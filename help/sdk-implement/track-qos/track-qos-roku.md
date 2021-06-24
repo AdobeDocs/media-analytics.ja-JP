@@ -1,17 +1,18 @@
 ---
-title: Roku での Quality of Experience の追跡
-description: ここでは、Roku でのメディア SDK を使用した Quality of Experience（QoE、QoS）追跡の実装について説明します。
+title: RokuでQuality of Experienceを追跡する方法を説明します。
+description: 「RokuでのメディアSDKを使用したQuality of Experience(QoE、QoS)追跡の実装について説明します。」
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '195'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 87%
 
 ---
 
-# Roku での Quality of Experience の追跡 {#track-quality-of-experience-on-roku}
+# Roku での Quality of Experience の追跡{#track-quality-of-experience-on-roku}
 
 >[!IMPORTANT]
 >
