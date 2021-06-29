@@ -8,11 +8,11 @@ role: Business Practitioner, Administrator, Data Engineer
 source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
-# Adobe Analytics でのストリーミングメディアの測定{#measuring-audio-and-video-in-adobe-analytics}
+# Adobe Analytics でのストリーミングメディアの測定 {#measuring-audio-and-video-in-adobe-analytics}
 
 ![バナー](./assets/media_analytics_banner.png)
 
@@ -27,7 +27,7 @@ Adobe Analytics for Streaming Media を使用すれば、サイトをまたい�
 ## 機能 {#features}
 
 Adobe Analytics for Streaming Media のメリットには、リアルタイム監視、詳細分析、施策につながるインサイト、収益化の機会などがあります。
-* **リアルタイム分析** — 複数のチャネルにわたって、メディア開始などの主要なパフォーマンス指標を利用して、リアルタイムで実用的な決定を下します。
+* **リアルタイム分析** - 複数のチャネルにわたり、メディア開始などの主要パフォーマンス指標を利用して、アクションにつながる意思決定をリアルタイムで行います。
 * **エンゲージメントの促進** - バッファリングの少ないイベントで効果的にユーザーに働きかけることができます。広告をコンテンツ内のどの場所でいつ再生すればいいかを把握することで、邪魔にならないスムーズな体験を実現して、再訪問を促すこともできます。
 * **全体像の把握** - あらゆるコンテンツ配信業者の複数のデータポイントを統合してメディアアクティビティを総合的に分析し、Federated Analytics によってあらゆるチャネル全体でエンゲージメントと視聴を計測できます。
 * **精度の向上** - 個々の訪問者の時間帯や分単位の同時ビューア数、コンテンツの平均視聴時間など、非常に詳細なレベルで視聴行動を評価できます。
