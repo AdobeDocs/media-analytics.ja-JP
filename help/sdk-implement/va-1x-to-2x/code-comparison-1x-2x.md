@@ -4,8 +4,8 @@ description: メディアSDKの1.xバージョンと2.xバージョンのコー�
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 96%
