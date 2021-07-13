@@ -4,8 +4,8 @@ description: ブラウザーアプリ(JS 2.x)で、標準ビデオおよび広�
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 exl-id: 889c294b-ac45-4e82-abb3-88ab70abbc3d
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 59%
