@@ -3,8 +3,8 @@ title: 使用可能なストリーミングメディア実装パスを教えて�
 description: Adobe Launch を含む、Adobe ストリーミングメディアの実装パスについて説明します。
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%
@@ -17,7 +17,7 @@ Streaming Media Analytics には独自の SKU があり、サーバー呼び出�
 
 * **Adobe Media Analytics 拡張機能を備えた Adobe Launch**
 
-   Launch は、アドビが提供する次世代タグ管理ソリューションです。Launch は、顧客体験の実現に必要なすべての分析、マーケティングおよび広告のタグをデプロイおよび管理するためのシンプルな手段を提供します。Launch との統合を構築して維持するには、拡張機能を使用します。拡張機能は、Launch UI とクライアント機能を拡張する JavaScript、HTML および CSS のパッケージです。詳しくは、[Experience Platform Launch ユーザーガイド](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.html)を参照してください
+   Launch は、アドビが提供する次世代タグ管理ソリューションです。Launch は、顧客体験の実現に必要なすべての分析、マーケティングおよび広告のタグをデプロイおよび管理するためのシンプルな手段を提供します。Launch との統合を構築して維持するには、拡張機能を使用します。拡張機能は、Launch UI とクライアント機能を拡張する JavaScript、HTML および CSS のパッケージです。詳しくは、[Experience Platform Launch ユーザーガイド](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=ja)を参照してください
 
    Adobe Media Analytics（MA）の拡張機能により、オーディオおよびビデオ用のコア JavaScript Media SDK（Media 2.x SDK）が追加されます。この拡張機能では、Launch サイトまたはプロジェクトに `MediaHeartbeat` トラッカーインスタンスを追加する機能を提供します。
 
