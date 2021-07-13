@@ -4,8 +4,8 @@ description: 新しいデバッグレポートを作成する方法を説明し�
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 96%
