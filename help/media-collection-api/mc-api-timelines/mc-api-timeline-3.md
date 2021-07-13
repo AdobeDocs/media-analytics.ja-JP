@@ -4,8 +4,8 @@ description: 再生ヘッドタイムラインと、チャプターの開始と�
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 98%
