@@ -4,8 +4,8 @@ description: 「メディアSDKを使用した、プリロール広告を含むV
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 95%
