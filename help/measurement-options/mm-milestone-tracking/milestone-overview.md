@@ -4,8 +4,8 @@ description: 廃止さ�れたマイルストーン実装用のビデオレポ�
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '3353'
 ht-degree: 99%
@@ -87,7 +87,7 @@ ht-degree: 99%
 
 |  変数    | 説明 |
 | --- | --- |
-| `Media.autoTrack` | **構文：**<br/><br/> `s.Media.autoTrack = true`<br/><br/>サポートされているプレーヤーの自動追跡を有効にします。サポートされているプレーヤーは次のとおりです。 <ul> <li> Open Source Media Framework（OSMF） </li> <li> FLVPlayback（Flash Professional のビデオのインポートウィザードによって作成されるビデオプレーヤー） </li> <li> Silverlight </li> <li> MediaDisplay </li> <li> MediaPlayback </li> <li> Brightcove API バージョン 2 および 3（[Brightcove](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.html) を参照） </li> <li> JavaScript を使用する、Windows Media Player、Quicktime または Real Player </li> </ul> <br/><br/>以上のプレーヤーの中の 1 つを使用しない場合は、`Media.open`、`Media.play`、`Media.stop`、`Media.close` を使用して、プレーヤーイベントを追跡できます。 |
+| `Media.autoTrack` | **構文：**<br/><br/> `s.Media.autoTrack = true`<br/><br/>サポートされているプレーヤーの自動追跡を有効にします。サポートされているプレーヤーは次のとおりです。 <ul> <li> Open Source Media Framework（OSMF） </li> <li> FLVPlayback（Flash Professional のビデオのインポートウィザードによって作成されるビデオプレーヤー） </li> <li> Silverlight </li> <li> MediaDisplay </li> <li> MediaPlayback </li> <li> Brightcove API バージョン 2 および 3（[Brightcove](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ja) を参照） </li> <li> JavaScript を使用する、Windows Media Player、Quicktime または Real Player </li> </ul> <br/><br/>以上のプレーヤーの中の 1 つを使用しない場合は、`Media.open`、`Media.play`、`Media.stop`、`Media.close` を使用して、プレーヤーイベントを追跡できます。 |
 | `Media.autoTrackNetStreams` | **構文：**<br/><br/> `s.Media.autoTrackNetStreams = true` <br/><br/>Flash 10.3 では、拡張ビデオトラッキングを可能にする新しい機能が NetStream コンポーネントに追加されました。カスタム Flash NetStream プレーヤーを使用する場合は、この変数を有効にすることで、autoTrack と同様の機能を有効にできます。このメソッドを使用するには、ビデオが Flash 10.3 以降で視聴されている必要があります。 |
 | `Media.completeByCloseOffset` | **構文：**<br/><br/> <br/><br/>`s.Media.completeByCloseOffset = true`<br/><br/>この設定を使用すると、実際にビデオの最後に到達する数秒前に、ビデオビューの完了としてカウントできます。<br/><br/>イベントは、`completeCloseOffsetThreshold` で指定されている秒数に基づいて送信されます。これにより、ビデオの長さに等しいオフセットの報告を実行しないビデオプレーヤーでも、完了を測定できます。<br/><br/>デフォルトでは、この値は true に設定され、しきい値は 1 秒に設定されます。これらのデフォルトでは、完了イベントは、ビデオの最後の 1 秒前に送信されます。 |
 | `Media.completeCloseOffsetThreshold` | **構文：**<br/><br/> `s.Media.completeCloseOffsetThreshold = 1`<br/><br/>このしきい値を使用すると、実際にビデオの最後に到達する数秒前に、ビデオビューの完了としてカウントできます。このしきい値を使用するには、`Media.completeByCloseOffset` を true に設定する必要があります。<br/><br/>指定する整数値によって、終了時に完了としてカウントされる、ビデオの長さからのオフセットの値（秒数）が決まります。これにより、ビデオの長さに等しいオフセットの報告を実行しないビデオプレーヤーでも、完了を測定できます。<br/><br/>しきい値のデフォルトは 1 秒です。 |
