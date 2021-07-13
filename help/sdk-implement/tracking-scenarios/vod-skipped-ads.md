@@ -4,8 +4,8 @@ description: メディアSDKを使用した、ユーザーが広告をスキッ�
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 91%
