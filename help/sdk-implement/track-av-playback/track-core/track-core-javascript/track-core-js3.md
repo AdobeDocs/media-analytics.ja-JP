@@ -3,8 +3,8 @@ title: JavaScript v3.xを使用したコア再生の追跡方法を説明しま�
 description: JavaScript 3.xアプリを使用して、ブラウザーのメディアSDKを使用したコア追跡を実装する方法について説明します。
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 95%
