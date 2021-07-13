@@ -4,8 +4,8 @@ description: 一意の顧客識別子として提供されるユーザー ID を
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
 feature: 「Media Analytics、API」
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 94%
