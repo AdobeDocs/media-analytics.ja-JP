@@ -4,8 +4,8 @@ description: メディアSDKを使用したライブコンテンツの追跡方�
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 75%
