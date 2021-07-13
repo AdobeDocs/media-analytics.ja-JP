@@ -3,8 +3,8 @@ title: メディア同時視聴者数レポート
 description: 「メディア同時閲覧者数パネルを使用して同時閲覧者数を分析し、同時閲覧のピークおよびドロップオフを理解する方法について説明します。」
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: 「Media Analytics、ワークスペースの基本」
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 87%
