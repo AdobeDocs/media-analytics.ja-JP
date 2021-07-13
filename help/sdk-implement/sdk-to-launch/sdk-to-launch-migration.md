@@ -5,8 +5,8 @@ seo-description: Media SDK から Launch への移行に役立つ手順とコー
 description: メディアSDKからLaunchに移行する方法について説明します。
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 89%
