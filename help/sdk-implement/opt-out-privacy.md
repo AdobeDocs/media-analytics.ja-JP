@@ -4,8 +4,8 @@ description: 「オプトイン、オプトアウトおよびプライバシー�
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 96%
