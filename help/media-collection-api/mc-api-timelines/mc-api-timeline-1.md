@@ -4,8 +4,8 @@ description: 再生ヘッドタイムラインと対応するユーザーのア�
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: 1f18ba0c0c1b62f4228a590276164034474ebd08
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 97%
