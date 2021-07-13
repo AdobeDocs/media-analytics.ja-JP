@@ -4,8 +4,8 @@ description: 「Webサイト上のメディアの追跡に使用するレポー�
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
 feature: 「Media Analytics、Reports & Analyticsの基本」
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 91%
