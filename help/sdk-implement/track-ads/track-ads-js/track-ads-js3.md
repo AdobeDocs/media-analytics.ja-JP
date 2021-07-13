@@ -3,8 +3,8 @@ title: JavaScript 3.xを使用した広告の追跡方法を説明します。
 description: メディア SDK を使用して、ブラウザー（JS）アプリケーションに広告トラッキングを実装します。
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 97%
