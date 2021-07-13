@@ -3,8 +3,8 @@ title: 「スタンドアロンのメディアSDKからAdobeLaunch - Web(JS)へ�
 description: メディアSDKからLaunch for JSに移行する方法を説明します。
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 94%
