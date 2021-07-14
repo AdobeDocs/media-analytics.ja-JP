@@ -5,7 +5,7 @@ user-guide-title: ストリーミングメディア用 Adobe Analytics
 breadcrumb-title: メディア解析ガイド
 user-guide-description: ストリーミングメディア用 Adobe Analytics の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: Media Analytics
-source-git-commit: 230488398dc145798e4b12ddb94cd73f4f790f28
+source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 100%
@@ -15,10 +15,10 @@ ht-degree: 100%
 
 # ストリーミングメディア用 Adobe Analytics {#using}
 
-+ [Adobe Analytics でのストリーミングメディアの測定](media-overview.md)
++ [Adobe Analytics でのストリーミングメディアの測定 ](media-overview.md)
 + [サポートされるデバイスとプラットフォーム](measurement-options/supported-devices.md)
 + ストリーミングメディア分析の概要 {#intro-to-ava}
-   + [前提条件 ](intro-to-ava/prereqs.md)
+   + [前提条件](intro-to-ava/prereqs.md)
    + 実装パス {#implementation-paths}
       + [概要](intro-to-ava/implementation-paths/implementation-paths.md)
       + [クライアントサイド](intro-to-ava/implementation-paths/client-side-path.md)
@@ -224,10 +224,12 @@ ht-degree: 100%
    + [実装とレポート](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [プレーヤーステートトラッキングの例](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
++ その他のリソース {#additional-resources}
+   + [リリースノート](additional-resources/doc-updates.md)
+
 <!-- + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
-+ その他のリソース {#additional-resources}
-   + [リリースノート](additional-resources/doc-updates.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) 
+-->
