@@ -5,7 +5,7 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 94%
@@ -14,11 +14,12 @@ ht-degree: 94%
 
 # セットアップの概要{#setup-overview}
 
+以下の手順は、メディア SDK 2.x に適用されます。メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetime のインテグレーターの場合は、後述の _Primetime メディア SDK のドキュメント_&#x200B;を参照してください。
+
 >[!IMPORTANT]
 >
 >2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/sdk-implement/end-of-support-faqs.md) を参照してください。
 
-以下の手順は、メディア SDK 2.x に適用されます。メディア SDK の 1.x バージョンを実装する場合は、[メディア SDK 1.x のドキュメントを参照してください。](/help/sdk-implement/download-sdks.md) Primetime のインテグレーターの場合は、後述の _Primetime メディア SDK のドキュメント_&#x200B;を参照してください。
 
 ## サポートされる最小プラットフォームバージョン {#minimum-platform-version}
 
