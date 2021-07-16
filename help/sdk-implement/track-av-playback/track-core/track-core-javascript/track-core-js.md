@@ -1,6 +1,6 @@
 ---
-title: JavaScript 2.xを使用したコア再生の追跡方法を説明します。
-description: JavaScript 2.xアプリを使用して、ブラウザーのメディアSDKを使用したコア追跡を実装する方法について説明します。
+title: JavaScript 2.x を使用してコア再生をトラッキングする方法
+description: JavaScript 2.x アプリを使用するブラウザーで Media SDK を使用してコアトラッキングを実装する方法を説明します。
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 94%
          利用可能なメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を参照してください。
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このメディアのデータを設定します。例：
+      カスタム変数の変数オブジェクトを作成し、このメディアのデータを設定します。次に例を示します。
 
       ```js
       /* Set custom context data */
