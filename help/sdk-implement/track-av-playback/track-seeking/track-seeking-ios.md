@@ -5,7 +5,7 @@ uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 82%
@@ -14,9 +14,11 @@ ht-degree: 82%
 
 # iOS でのシークの追跡{#track-seeking-on-ios}
 
+以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 ## シーク追跡の定数
 
@@ -30,20 +32,20 @@ ht-degree: 82%
 1. メディアプレーヤーの再生シークイベントをリッスンし、シーク開始イベント通知時に、`SeekStart` イベントを使用してシークを追跡します。
 
    ```
-   - (void)onSeekStart:(NSNotification *)notification { 
+   - (void)onSeekStart:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventSeekStart  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
 1. メディアプレーヤーからのシーク完了通知時に、`SeekComplete` イベントを使用してシークの終わりを追跡します。
 
    ```
-   - (void)onSeekComplete:(NSNotification *)notification { 
+   - (void)onSeekComplete:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventSeekComplete  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
