@@ -5,17 +5,19 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
 # JavaScript 2.x を使用したコア再生の追跡{#track-core-playback-on-javascript}
 
+以下の手順は、2.x SDKをまたいだ実装のガイダンスです。
+
 >[!IMPORTANT]
->このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. **トラッキングの初期設定**
 
