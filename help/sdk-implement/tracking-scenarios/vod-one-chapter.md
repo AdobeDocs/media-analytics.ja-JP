@@ -1,6 +1,6 @@
 ---
-title: チャプターが1つあるVOD再生
-description: 1つのチャプターを含むVOD再生の追跡の例を表示します。
+title: 'チャプターが 1 つある VOD 再生 '
+description: チャプターを 1 つ含んだ VOD 再生のトラッキングの例を示します。
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 96%
 | チャプターが再生されます。 |  | Chapter Heartbeats |  |
 | チャプターが完了します。 | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | チャプターの終わりに達したとき。 |
 | コンテンツが再生されます。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| コンテンツが完了します。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| コンテンツが完了する | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | セッションが終了します。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端に到達したことを意味します。この API は、ユーザーが最後までメディアを視聴していなくても、呼び出される必要があります。 |
 
 ## パラメーター {#parameters}
