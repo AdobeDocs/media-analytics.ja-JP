@@ -1,6 +1,6 @@
 ---
-title: Rokuでのシークの追跡方法を説明します。
-description: RokuでのメディアSDKを使用して、シーク開始イベントとシーク完了イベントを追跡する方法について説明します。
+title: Roku でシークをトラッキングする方法
+description: Roku で Media SDK を使用してシーク開始イベントとシーク完了イベントをトラッキングする方法について説明します。
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
