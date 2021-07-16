@@ -1,6 +1,6 @@
 ---
 title: SDK のデバッグ
-description: メディアSDKで使用できるトラッキング/ログについて説明します。
+description: Media SDK で使用できるトラッキングとログについて説明します。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 exl-id: c2de6454-8538-4d07-a099-e278b153d894
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
