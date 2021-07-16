@@ -1,6 +1,6 @@
 ---
-title: ストリーミングメディアコレクションAPIイベ�ントリクエストエンドポイント
-description: 「メディアコレクションAPIイベントは、エンドポイントパラメーターと応答をリクエストしますか？」
+title: ストリーミングメディアコレクション API � イベントリクエストエンドポイント
+description: Media Collection API イベントリクエストエンドポイントのパラメーターと応答
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Access-Control-Expose-Headers Location
 | HTTP 応答コード | 説明 | クライアントのアクション項目 |
 |---|---|---|
 | **204** | **コンテンツがありません。**<br/><br/> ハートビート呼び出しが成功しました。 | 該当なし |
-| **400** | **不正なリクエストです。**<br/><br/> リクエストの形式が正しくありません。 | リクエストタイプについては、[JSON 検証スキーマ](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)を確認してください。 |
+| **400** | **不正なリクエストです。**<br/><br/>リクエストの形式が正しくありません。 | リクエストタイプについては、[JSON 検証スキーマ](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)を確認してください。 |
 | **404** | **見つかりません。** <br/><br/> メディアセッションのセッション ID がバックエンドサービスに見つかりませんでした。 | クライアントアプリケーションでは [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
 | **410** | **なくなりました。** <br/><br/> メディアセッションがバックエンドサービスに見つかりましたが、クライアントがそのセッションに関するアクティビティを報告できなくなっています。 | クライアントアプリケーションでは [Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API を使用して、別のメディアセッションおよびそのセッションに対するレポートトラッキングを作成する必要があります。 |
 | **500** | **サーバーエラー** | 該当なし |
