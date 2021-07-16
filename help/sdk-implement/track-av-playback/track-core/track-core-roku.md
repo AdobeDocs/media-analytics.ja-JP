@@ -1,6 +1,6 @@
 ---
-title: Rokuでのコア再生の追跡方法を説明します。
-description: RokuでのメディアSDKを使用したコア追跡の実装方法について説明します。
+title: Roku でコア再生をトラッキングする方法
+description: Roku で Media SDK を使用してコアトラッキングを実装する方法を説明します。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 97%
 
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。例：
+      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
 
       ```
       mediaContextData = {}
