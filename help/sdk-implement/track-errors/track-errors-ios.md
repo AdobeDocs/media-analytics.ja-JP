@@ -1,6 +1,6 @@
 ---
-title: iOSでのエラーの追跡方法を説明します。
-description: iOSでのメディアSDKを使用したエラー追跡の実装について説明します。
+title: iOS でエラーをトラッキングする方法
+description: iOS で Media SDK を使用してエラートラッキングを実装する方法について説明します。
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 exl-id: c4ce7092-a102-41da-80a6-a4359f925708
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
