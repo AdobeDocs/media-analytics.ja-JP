@@ -5,7 +5,7 @@ uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 97%
@@ -14,9 +14,11 @@ ht-degree: 97%
 
 # 概要{#overview}
 
+以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。
+
 >[!IMPORTANT]
->
->以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。1.x バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+> 
+> 1.x バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 チャプターおよびセグメントの追跡は、カスタム定義されたメディアのチャプターまたはセグメントに対して使用できます。チャプターの追跡は一般的に、メディアコンテンツ（野球のイニングなど）に基づくカスタムセグメントの定義や、広告ブレークの間のコンテンツセグメントの定義に使用されます。コアメディア追跡の実装では、チャプター追跡は&#x200B;**不要です**。
 
@@ -64,27 +66,27 @@ ht-degree: 97%
 以下のサンプルコードでは、HTML5 メディアプレーヤー用の JavaScript 2.x SDK を使用しています。このコードをコアメディア再生コードと共に使用する必要があります。
 
 ```js
-/* Call on chapter start */ 
-if (e.type == "chapter start") { 
-    var chapterObject = MediaHeartbeat.createChapterObject("Inning 5",5,500,2500); 
-    /* Set custom context data*/ 
-    var chapterCustomMetadata = { 
-        segmentType:"Baseball Innings", 
-        segmentName:"Inning 5", 
-        segmentInfo:"Game Six" 
-    } 
+/* Call on chapter start */
+if (e.type == "chapter start") {
+    var chapterObject = MediaHeartbeat.createChapterObject("Inning 5",5,500,2500);
+    /* Set custom context data*/
+    var chapterCustomMetadata = {
+        segmentType:"Baseball Innings",
+        segmentName:"Inning 5",
+        segmentInfo:"Game Six"
+    }
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
                                    chapterObject,  
-                                   chapterCustomMetadata); 
-}; 
- 
-/* Call on chapter complete */ 
-if (e.type == "chapter complete") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
-}; 
- 
-/* Call on chapter skip */ 
-if (e.type == "chapter skip") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
-}; 
+                                   chapterCustomMetadata);
+};
+
+/* Call on chapter complete */
+if (e.type == "chapter complete") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete);
+};
+
+/* Call on chapter skip */
+if (e.type == "chapter skip") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
+};
 ```
