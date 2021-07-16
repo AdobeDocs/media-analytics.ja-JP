@@ -1,13 +1,13 @@
 ---
-title: 「スタンドアロンのメディアSDKからAdobeLaunch - Web(JS)への移行」
-description: メディアSDKからLaunch for JSに移行する方法を説明します。
+title: スタンドアロンの Media SDK から Adobe Launch への移行 - Web（JS）
+description: Media SDK から JS 用の Launch に移行する方法を説明します。
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -119,5 +119,5 @@ delegate オブジェクトを、`getQoSObject()` および `getCurrentPlaybackT
 
 ### Launch
 
-* [Launch の概要](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.html)
+* [Launch の概要](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=ja)
 * [Media Analytics 拡張機能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=ja)
