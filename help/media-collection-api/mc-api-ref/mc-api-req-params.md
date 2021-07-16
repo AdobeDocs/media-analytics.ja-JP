@@ -1,6 +1,6 @@
 ---
-title: ストリーミングメディアコレクションAPIリク�エストパラメーター
-description: 「メディアコレクションAPIリクエストパラメーター、リクエストキーおよび説明とは何ですか。」
+title: ストリーミングメディアコレクション API � リクエストパラメーター
+description: Media Collection API のリクエストパラメーター、リクエストキー、説明
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1307'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
