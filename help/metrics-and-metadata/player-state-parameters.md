@@ -1,14 +1,14 @@
 ---
 title: プレーヤーステートパラメーター
-description: '"フルスクリーン、クローズドキャプション、ミュート、およびピクチャーインピクチャーのプロパティのプレーヤーステートトラッキングパラメーターについて説明します。"'
+description: フルスクリーン、クローズキャプション、ミュート、ピクチャーインピクチャーなどのプロパティに対するプレーヤーステートトラッキングパラメーターについて説明します。
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-feature: '"Media Analytics，変数"'
+feature: Media Analytics、変数
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '2249'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
