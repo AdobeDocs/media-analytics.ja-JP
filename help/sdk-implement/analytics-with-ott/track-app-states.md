@@ -1,6 +1,6 @@
 ---
 title: アプリの状態の追跡
-description: 'アプリの状態とは、アプリケーション内の様々な画面またはビューのことです。 trackState呼び出しを使用して、アプリケーションのアプリの状態を追跡する方法を説明します。 '
+description: 'アプリの状態とは、アプリケーションの様々な画面またはビューのことです。trackState 呼び出しを使用してアプリケーションでアプリの状態をトラッキングする方法を説明します。 '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
