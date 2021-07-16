@@ -1,5 +1,5 @@
 ---
-title: Quality of Experienceの追跡の説明
+title: エクスペリエンス品質のトラッキング
 description: メディア SDK を使用した Quality of Experience（QoE、QoS）追跡の概要です。
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
