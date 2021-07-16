@@ -1,6 +1,6 @@
 ---
-title: Androidでエラーを追跡する方法を説明します。
-description: AndroidでのメディアSDKを使用したエラー追跡の実装について説明します。
+title: Android でエラーをトラッキングする方法
+description: Android で Media SDK を使用してエラートラッキングを実装する方法について説明します。
 uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '92'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
