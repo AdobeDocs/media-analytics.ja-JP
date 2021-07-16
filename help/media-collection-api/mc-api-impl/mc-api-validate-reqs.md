@@ -1,6 +1,6 @@
 ---
 title: イベントリクエストの検証
-description: JSON検証スキーマを使用してイベントリクエストを検証する方法を説明します。
+description: JSON 検証スキーマを使用してイベントリクエストを検証する方法を説明します。
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
