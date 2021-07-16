@@ -1,6 +1,6 @@
 ---
-title: iOSでのコア再生の追跡方法を説明します。
-description: iOSでのメディアSDKを使用したコア追跡の実装方法について説明します。
+title: iOS でコア再生をトラッキングする方法
+description: iOS で Media SDK を使用してコアトラッキングを実装する方法を説明します。
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 95%
 
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。例：
+      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
 
       ```
       NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
