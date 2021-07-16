@@ -1,6 +1,6 @@
 ---
-title: エラーの追跡の説明
-description: メディアSDKを使用したエラー追跡を詳しく掘り下げます。
+title: エラーのトラッキング
+description: Media SDK を使用したエラートラッキングについて詳しく説明します。
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
 exl-id: 61c5f835-d66c-4621-a0af-2e4f47a922ac
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
