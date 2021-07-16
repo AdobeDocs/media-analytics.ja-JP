@@ -5,7 +5,7 @@ uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 98%
@@ -14,9 +14,11 @@ ht-degree: 98%
 
 # 概要{#overview}
 
+以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 Quality of Experience の追跡には、サービス品質（QoS）およびエラー追跡が含まれますが、どちらもオプションの要素で、コアメディアトラッキングの実装には&#x200B;**不要**&#x200B;です。メディアプレーヤー API を使用して、QoS とエラーの追跡に関連する変数を識別できます。Quality of Experience を追跡するうえで重要な要素は次のとおりです。
 
@@ -57,20 +59,20 @@ Quality of Experience の追跡には、サービス品質（QoS）およびエ�
 以下のサンプルコードでは、HTML5 メディアプレーヤー用の JavaScript 2.x SDK を使用しています。このコードをコアメディア再生コードと共に使用する必要があります。
 
 ```js
-var mediaDelegate = new MediaHeartbeatDelegate(); 
+var mediaDelegate = new MediaHeartbeatDelegate();
 ...  
- 
-// This is called periodically by MediaHeartbeat instance 
-mediaDelegate.prototype.getQoSObject = function() { 
-    return this.qosInfo; 
-}; 
- 
-if (e.type == "qos_update") { 
-    var qosInfo = MediaHeartbeat.createQoSObject(<BITRATE>,<STARTUP_TIME>,<FPS>,<DROPPED_FRAMES>); 
-    mediaDelegate.qosInfo = qosInfo; 
-}; 
- 
-if (e.type == "bitrate_change") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
+
+// This is called periodically by MediaHeartbeat instance
+mediaDelegate.prototype.getQoSObject = function() {
+    return this.qosInfo;
+};
+
+if (e.type == "qos_update") {
+    var qosInfo = MediaHeartbeat.createQoSObject(<BITRATE>,<STARTUP_TIME>,<FPS>,<DROPPED_FRAMES>);
+    mediaDelegate.qosInfo = qosInfo;
+};
+
+if (e.type == "bitrate_change") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject);
 };
 ```
