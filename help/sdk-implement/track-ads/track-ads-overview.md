@@ -1,5 +1,5 @@
 ---
-title: 広告の追跡の説明
+title: 広告のトラッキング
 description: メディア SDK を使用した広告トラッキングの実装の概要です。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
