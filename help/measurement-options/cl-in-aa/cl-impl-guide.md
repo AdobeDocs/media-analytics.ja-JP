@@ -1,5 +1,5 @@
 ---
-title: カスタムリンクの実装の説明
+title: カスタムリンクの実装
 description: ストリーミングメディア分析にカスタムリンクトラッキングを実装する方法について説明します。
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
