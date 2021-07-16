@@ -1,14 +1,14 @@
 ---
 title: デフォルトレポートの概要
-description: 「Webサイト上のメディアの追跡に使用するレポートタイプと指標について説明します。 メディアコアモジュールで使用可能なダッシュボード形式のレポートを参照します。」
+description: Web サイト上のメディアのトラッキングに使用するレポートタイプと指標について説明します。メディアコアモジュールで使用可能なダッシュボード形式のレポートについて説明します。
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-feature: 「Media Analytics、Reports & Analyticsの基本」
+feature: Media Analytics、Reports & Analytics の基本
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
