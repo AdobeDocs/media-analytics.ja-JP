@@ -1,5 +1,5 @@
 ---
-title: Media Analytics SDKのサポート終了に関するFAQについて説明します
+title: Media Analytics SDK のサポート終了に関する FAQ
 description: このトピックには、Media Analytics SDK のサポート終了に関する FAQ が含まれています。
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
