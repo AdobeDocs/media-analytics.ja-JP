@@ -5,7 +5,7 @@ uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
 exl-id: 8a8fcbcf-3232-4565-8c27-4167b6741613
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 82%
@@ -14,9 +14,11 @@ ht-degree: 82%
 
 # Android でのシークの追跡{#track-seeking-on-android}
 
+以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 ## シーク追跡の定数
 
@@ -31,7 +33,7 @@ ht-degree: 82%
 
    ```java
    public void onSeekStart(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.SeekStart, null, null); 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.SeekStart, null, null);
    }
    ```
 
@@ -39,7 +41,7 @@ ht-degree: 82%
 
    ```java
    public void onSeekComplete(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete, null, null); 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete, null, null);
    }
    ```
 
