@@ -1,6 +1,6 @@
 ---
-title: Androidでのコア再生の追跡方法を説明します。
-description: AndroidでのメディアSDKを使用したコア追跡の実装方法について説明します。
+title: Android でコア再生をトラッキングする方法
+description: Android で Media SDK を使用してコアトラッキングを実装する方法を説明します。
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 >[!IMPORTANT]
 >1.x バージョンの SDK を実装する場合は、Android 向けの 1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
-1. **追跡の初期設定**
+1. **トラッキングの初期設定**
 
    いつユーザーが再生の意図をトリガーする（ユーザーが再生をクリックする、または自動再生がオンになる）かを識別し、`MediaObject` インスタンスを作成します。
 
@@ -71,7 +71,7 @@ ht-degree: 97%
       * 利用可なビデオメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/metrics-and-metadata/audio-video-parameters.md)を参照してください。
    * **カスタムメタデータ**
 
-      カスタム変数のディクショナリを作成し、このメディアのデータを設定します。例：
+      カスタム変数のディクショナリを作成し、このメディアのデータを設定します。次に例を示します。
 
       ```java
       HashMap<String, String> mediaMetadata =  
@@ -84,7 +84,7 @@ ht-degree: 97%
 
 1. **意図を追跡して再生を開始**
 
-   メディアセッションの追跡を開始するには、メディアハートビートインスタンスの `trackSessionStart` を呼び出します。例：
+   メディアセッションの追跡を開始するには、メディアハートビートインスタンスの `trackSessionStart` を呼び出します。次に例を示します。
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
