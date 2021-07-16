@@ -1,6 +1,6 @@
 ---
 title: ダウンロードされたコンテンツの追跡
-description: ダウンロードされたコンテンツ機能を使用して、ユーザーがオフラインの場合のメディア視聴を追跡する方法について説明します。
+description: ユーザーがオフラインの場合に Downloaded Content 機能を使用してメディア視聴をトラッキングする方法について説明します。
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
