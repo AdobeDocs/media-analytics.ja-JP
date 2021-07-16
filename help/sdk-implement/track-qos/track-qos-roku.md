@@ -5,7 +5,7 @@ uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 87%
@@ -14,9 +14,11 @@ ht-degree: 87%
 
 # Roku での Quality of Experience の追跡{#track-quality-of-experience-on-roku}
 
+以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 ## QoS の実装
 
@@ -49,7 +51,7 @@ ht-degree: 87%
 
    <!--
     QoS object creation:
- 
+
     ```
     qosInfo=adb_media_init_qosinfo()
     qosInfo.bitrate = 200000
@@ -74,7 +76,7 @@ ht-degree: 87%
     qosContextData = {}
     ADBMobile().mediaTrackEvent(MEDIA_BITRATE_CHANGE, qosInfo, qosContextData)
     ```
- 
+
     >[!IMPORTANT]
     >
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
