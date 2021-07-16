@@ -4,7 +4,7 @@ description: ブラウザーアプリ(JS 3.x)のメディアSDKを使用して�
 exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 80%
@@ -13,9 +13,11 @@ ht-degree: 80%
 
 # JavaScript 3.x を使用したシークの追跡{#track-seeking-on-javascript}
 
+以下の手順は、すべての 3.x SDK に共通する実装のガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、すべての 3.x SDK に共通する実装のガイダンスです。以前のバージョンの SDK を実装している場合は、[SDK のダウンロード](/help/sdk-implement/download-sdks.md)から開発者ガイドをダウンロードできます。
+>以前のバージョンの SDK を実装している場合は、[SDK のダウンロード](/help/sdk-implement/download-sdks.md)から開発者ガイドをダウンロードできます。
 
 ## シーク追跡の定数
 
