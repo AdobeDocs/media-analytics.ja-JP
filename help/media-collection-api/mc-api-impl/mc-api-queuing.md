@@ -1,6 +1,6 @@
 ---
 title: セッションの応答が遅い場合のイベントのキューへの登録
-description: 'プレーヤーでイベントが発生した後にセッションIDが返された場合の対処方法について説明します。 '
+description: 'プレーヤーでイベントが発生した後にセッション ID が返された場合の対処方法について説明します。 '
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 92%
 >
 >[Events リクエスト](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)は、HTTP 応答コード以外のデータをクライアントに返しません。
 
-セッション ID を受け取る前にイベントを処理する 1 つの方法については、配信環境のリファレンスプレーヤーを確認してください。例：
+セッション ID を受け取る前にイベントを処理する 1 つの方法については、配信環境のリファレンスプレーヤーを確認してください。次に例を示します。
 
 ```js
 var eventData = {};            // JSON payload 
