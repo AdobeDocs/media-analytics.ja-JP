@@ -1,6 +1,6 @@
 ---
-title: メディアトラッキングのタイムラインに関する�説明
-description: ビデオセッションが中断された場合の再生ヘッドのタイムライン�と、対応するユーザーのアクションについて説明します。 各アクションとリクエストの詳細について説明します。
+title: メディアトラッキングタイムライン � ユーザーが中断したセッション
+description: ビデオセッションが中断された場合の再生ヘッドタイムラインと、対応するユーザーアクションについて説明します。各アクションとリクエストの詳細について説明します。
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
