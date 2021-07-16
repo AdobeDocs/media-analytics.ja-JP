@@ -1,6 +1,6 @@
 ---
-title: JavaScript 2.xを使用したメディアSKDの設定方法
-description: JavaScript 2.xでメディアSDKアプリケーションをセットアップするには、次の手順に従います。
+title: JavaScript 2.x を使用して Media SDK をセットアップする方法
+description: JavaScript 2.x で Media SDK アプリケーションをセットアップするには、次の手順に従います。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 ## 前提条件 
 
 * **有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
-* **JavaScript 向け `AppMeasurement` をメディアアプリケーションに実装** Adobe Mobile SDK のドキュメントについて詳しくは、[JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)を参照してください。
+* **JavaScript 向け `AppMeasurement` をメディアアプリケーションに実装** Adobe Mobile SDK のドキュメントについて詳しくは、[JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
@@ -35,7 +35,7 @@ ht-degree: 94%
 
    1. サイトのすべてのページから `MediaSDK.min.js` を参照します。
 
-      各ページの `<head>` タグまたは `<body>` タグに以下のコードを追加して、JavaScript 用の `MediaSDK` を含めます。例：
+      各ページの `<head>` タグまたは `<body>` タグに以下のコードを追加して、JavaScript 用の `MediaSDK` を含めます。次に例を示します。
 
       ```
       <script type="text/javascript"
