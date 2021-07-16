@@ -1,6 +1,6 @@
 ---
-title: Androidでバッファーを追跡する方法を説明します
-description: Androidでのバッファーイベントの追跡方法を説明します。
+title: Android でバッファリングをトラッキングする方法
+description: Android でバッファリングイベントをトラッキングする方法を説明します。
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '119'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
