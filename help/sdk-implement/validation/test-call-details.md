@@ -1,6 +1,6 @@
 ---
 title: テスト呼び出しの詳細
-description: 実装を検証するためにおこなう必要がある呼び出しを調べます。
+description: 実装の検証に必要な呼び出しについて説明します。
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 98%
 | `a.media.first_air_date` | 2016-07-04 |
 | `a.media.rating` | TV-14 |
 | `a.media.originator` | production house |
-| `a.media.network` | network |
+| `a.media.network` | réseau |
 | `a.media.ad_load` | 1 |
 | `a.media.mvpd` | mvpd |
 | `a.media.authorized` | unlocked |
@@ -93,7 +93,7 @@ ht-degree: 98%
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
 | `s:meta:a.media.originator` | 生産施設 |
-| `s:meta:a.media.network` | network |
+| `s:meta:a.media.network` | réseau |
 | `s:meta:a.media.ad_load` | 3 |
 | `s:meta:a.media.mvpd` | mvpd |
 | `s:meta:a.media.authorized` | unlocked |
@@ -162,7 +162,7 @@ ht-degree: 98%
 | `a.media.first_air_date` | 2016-07-04 |
 | `a.media.rating` | TV-14 |
 | `a.media.originator` | 生産施設 |
-| `a.media.network` | network |
+| `a.media.network` | réseau |
 | `a.media.ad_load` | 3 |
 | `a.media.mvpd` | mvpd |
 | `a.media.authorized` | unlocked |
@@ -207,7 +207,7 @@ ht-degree: 98%
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
 | `s:meta:a.media.originator` | 生産施設 |
-| `s:meta:a.media.network` | network |
+| `s:meta:a.media.network` | réseau |
 | `s:meta:a.media.ad_load` | 3 |
 | `s:meta:a.media.mvpd` | mvpd |
 | `s:meta:a.media.authorized` | unlocked |
