@@ -1,6 +1,6 @@
 ---
-title: 「ストリーミングメディアコレクションAPI — クイックスタート」
-description: ストリーミングメディアAPIの概要。 リクエストデータをすばやく確認する方法を説明します。
+title: ストリーミングメディアコレクション API - クイックスタート
+description: ストリーミングメディア API の基本を学ぶ。 リクエストデータをすばやく確認する方法を説明します。
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 92%
    * Analytics レポートスイート ID
    * Analytics トラッキングサーバー URL
 
-1. 呼び出しを成功させるために必要な最小限のデータを含む、`sessions` リクエスト本文の JSON オブジェクトを作成します。例：
+1. 呼び出しを成功させるために必要な最小限のデータを含む、`sessions` リクエスト本文の JSON オブジェクトを作成します。次に例を示します。
 
    ```
    { 
