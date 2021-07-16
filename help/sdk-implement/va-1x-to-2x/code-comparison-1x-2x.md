@@ -1,6 +1,6 @@
 ---
-title: コードの比較v1.xとv2.x
-description: メディアSDKの1.xバージョンと2.xバージョンのコードの違いについて説明します。
+title: v1.x と v2.x のコードの比較
+description: Media SDK のバージョン 1.x と 2.x のコードの違いについて説明します。
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '572'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
