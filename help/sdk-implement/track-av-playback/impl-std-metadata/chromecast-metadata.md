@@ -1,6 +1,6 @@
 ---
-title: Chromecastのメタデータキーの説明
-description: Chromecast上で、標準ビデオおよび広告メタデータがトラッキングコールで送信されるようにする方法を説明します。
+title: Chromecast のメタデータキー
+description: Chromecast で標準ビデオメタデータや標準広告メタデータをトラッキングコールで送信するように設定する方法を説明します。
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
