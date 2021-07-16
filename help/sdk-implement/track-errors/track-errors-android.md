@@ -5,24 +5,26 @@ uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '92'
 ht-degree: 80%
 
 ---
 
 # Android でのエラーの追跡{#track-errors-on-android}
 
+以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. メディアプレーヤーのエラーを追跡します。
 
    ```java
    public void onPlayerError(Observable observable, Object data) {  
-       _heartbeat.trackError("mediaErrorID"); 
+       _heartbeat.trackError("mediaErrorID");
    }
    ```
 
