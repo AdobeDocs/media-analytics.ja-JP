@@ -1,6 +1,6 @@
 ---
-title: コンテンツの最後までのメディアトラッキ�ングのタイムライン表示について説明します
-description: 再生ヘッドタイムラインと対応するユーザーのアクションを詳しく�調べます。 各アクションとそれに伴うリクエストの詳細について説明します。
+title: メディアトラッキングタイムライン � コンテンツの最後まで視聴
+description: 再生ヘッドタイムラインと対応するユーザーのアクションを詳しく説明します �。各アクションとそれに伴うリクエストの詳細について説明します。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1192'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
