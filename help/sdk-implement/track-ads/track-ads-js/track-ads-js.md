@@ -1,5 +1,5 @@
 ---
-title: JavaScript 2.xを使用した広告の追跡方法を説明します。
+title: JavaScript 2.x を使用して広告をトラッキングする方法
 description: メディア SDK を使用して、ブラウザー（JS）アプリケーションに広告トラッキングを実装します。
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
