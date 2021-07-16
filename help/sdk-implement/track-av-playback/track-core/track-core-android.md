@@ -5,7 +5,7 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 97%
@@ -14,8 +14,9 @@ ht-degree: 97%
 
 # Android でのコア再生の追跡{#track-core-playback-on-android}
 
+このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。
 >[!IMPORTANT]
->このドキュメントでは、バージョン 2.x の SDK での追跡について説明しています。1.x バージョンの SDK を実装する場合は、Android 向けの 1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>1.x バージョンの SDK を実装する場合は、Android 向けの 1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. **追跡の初期設定**
 
@@ -74,9 +75,9 @@ ht-degree: 97%
 
       ```java
       HashMap<String, String> mediaMetadata =  
-        new HashMap<String, String>(); 
-      mediaMetadata.put("isUserLoggedIn", "false"); 
-      mediaMetadata.put("tvStation", "Sample TV Station"); 
+        new HashMap<String, String>();
+      mediaMetadata.put("isUserLoggedIn", "false");
+      mediaMetadata.put("tvStation", "Sample TV Station");
       mediaMetadata.put("programmer", "Sample programmer");
       ```
 
@@ -87,7 +88,7 @@ ht-degree: 97%
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
-       _heartbeat.trackSessionStart(mediaInfo, mediaMetadata); 
+       _heartbeat.trackSessionStart(mediaInfo, mediaMetadata);
    }
    ```
 
@@ -109,8 +110,8 @@ ht-degree: 97%
 
    ```java
    // Video is rendered on the screen) and call trackPlay.  
-   public void onVideoPlay(Observable observable, Object data) { 
-       _heartbeat.trackPlay(); 
+   public void onVideoPlay(Observable observable, Object data) {
+       _heartbeat.trackPlay();
    }
    ```
 
@@ -119,8 +120,8 @@ ht-degree: 97%
    メディア再生完了（ユーザーがコンテンツを最後まで視聴）に関するイベントをメディアプレーヤーから識別し、`trackComplete` を呼び出します。
 
    ```java
-   public void onVideoComplete(Observable observable, Object data) { 
-       _heartbeat.trackComplete(); 
+   public void onVideoComplete(Observable observable, Object data) {
+       _heartbeat.trackComplete();
    }
    ```
 
@@ -132,7 +133,7 @@ ht-degree: 97%
    // Closes the media and/or the media completed and unloaded,  
    // and call trackSessionEnd().  
    public void onMainVideoUnload(Observable observable, Object data) {  
-       _heartbeat.trackSessionEnd(); 
+       _heartbeat.trackSessionEnd();
    }
    ```
 
@@ -146,7 +147,7 @@ ht-degree: 97%
 
    ```java
    public void onVideoPause(Observable observable, Object data) {  
-       _heartbeat.trackPause(); 
+       _heartbeat.trackPause();
    }
    ```
 
@@ -162,9 +163,9 @@ ht-degree: 97%
 1. 一時停止からのメディア再生およびメディア再開に関するイベントをメディアプレーヤーから識別し、`trackPlay` を呼び出します。
 
    ```java
-   // trackPlay() 
+   // trackPlay()
    public void onVideoPlay(Observable observable, Object data) {  
-       _heartbeat.trackPlay(); 
+       _heartbeat.trackPlay();
    }
    ```
 
