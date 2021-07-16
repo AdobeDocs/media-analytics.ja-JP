@@ -1,13 +1,13 @@
 ---
-title: JavaScript 3.xを使用したチャプターおよびセグメントの追跡について説明します。
-description: ブラウザーアプリ(JS)でのメディアSDKを使用したチャプターおよびセグメント追跡の実装について説明します。
+title: JavaScript 3.x を使用したチャプターとセグメントのトラッキング
+description: ブラウザーアプリ（JS）で Media SDK を使用してチャプターとセグメントのトラッキングを実装する方法を説明します。
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
