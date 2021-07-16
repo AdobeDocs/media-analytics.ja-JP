@@ -1,6 +1,6 @@
 ---
-title: 再生中のアプリケーション割り込みの処理
-description: メディアの再生中にトラッキングの中断を処理する方法を説明します。
+title: '再生中のアプリケーション割り込みの処理 '
+description: メディアの再生時にトラッキングの中断を処理する方法を説明します。
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
