@@ -1,6 +1,6 @@
 ---
-title: 同時に複数のVODトラッカー
-description: 同時に複数のトラッカーを使用したVODの追跡方法の例を示します。
+title: '同時に動作する複数の VOD トラッカー '
+description: 同時に複数のトラッカーを使用した VOD のトラッキング方法の例を示します。
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
 feature: Media Analytics
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# 同時に複数の VOD トラッカー{#vod-multiple-trackers-in-parallel}
+# 同時に動作する複数の VOD トラッカー{#vod-multiple-trackers-in-parallel}
 
 ## シナリオ {#scenario}
 
