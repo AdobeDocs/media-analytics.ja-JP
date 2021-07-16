@@ -5,7 +5,7 @@ uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 90%
@@ -14,9 +14,11 @@ ht-degree: 90%
 
 # Chromecast でのチャプターおよびセグメントの追跡{#track-chapters-and-segments-on-chromecast}
 
+以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。1.x バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+> 1.x バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. いつチャプター開始イベントが発生するかを識別し、チャプター情報を使用して `ChapterObject` インスタンスを作成します。
 
@@ -42,15 +44,15 @@ ht-degree: 90%
 1. チャプターのカスタムメタデータを含める場合、そのメタデータのコンテキストデータ変数を作成します。
 
    ```js
-   var chapterContextData = { 
-       segmentType: "Sample segment type" 
+   var chapterContextData = {
+       segmentType: "Sample segment type"
    };
    ```
 
 1. チャプター再生の追跡を開始するには、`ChapterStart` イベントを追跡します（[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)）。
 
    ```js
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, ChapterInfo, chapterContextData); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, ChapterInfo, chapterContextData);
    ```
 
 1. カスタムコードで定義したチャプター終了の境界まで再生したら、`ChapterComplete` インスタンスで `MediaHeartbeat` イベントを呼び出します（[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)）。
@@ -62,7 +64,7 @@ ht-degree: 90%
 1. ユーザーがチャプターをスキップした（例えば、ユーザーがチャプター境界の外にシークした）のでチャプター再生が完了しなかった場合は、`ChapterSkip` イベントを呼び出します（[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)）。
 
    ```js
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
    ```
 
 1. その他のチャプターがある場合、手順 1 ～ 5 を繰り返します。
