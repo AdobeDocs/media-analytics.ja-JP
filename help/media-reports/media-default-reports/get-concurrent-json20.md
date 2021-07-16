@@ -1,14 +1,14 @@
 ---
 title: Analytics 2.0 API を使用した同時視聴者の JSON レポートデータの取得
-description: Analytics 2.0 APIを使用して同時視聴者レポートデータを取得する方法を説明します。 リクエストと応答のサンプルを表示します。
+description: Analytics 2.0 API を使用して同時閲覧者レポートデータを取得する方法を説明します。 リクエストと応答のサンプルを表示します。
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-feature: 「Media Analytics、Reports & Analyticsの基本」
+feature: Media Analytics、Reports & Analytics の基本
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
