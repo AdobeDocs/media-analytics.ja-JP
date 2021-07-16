@@ -1,17 +1,17 @@
 ---
-title: JavaScript 3.xを使用した標準メタデータの実装について説明します。
-description: ブラウザーアプリ(JS 3.x)で、標準ビデオおよび広告メタデータがトラッキングコールで送信されるように設定する方法を説明します。
+title: JavaScript 3.x を使用した標準メタデータの実装
+description: ブラウザーアプリ（JS 3.x）で標準ビデオメタデータや標準広告メタデータをトラッキングコールで送信するように設定する方法を説明します。
 exl-id: 228ba000-10e2-4906-8417-265a03367a9b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '50'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
-# JavaScript 3.x を使用した標準メタデータの実装{#implement-standard-metadata-on-javascript}
+# JavaScript 3.x を使用した標準メタデータの実装 {#implement-standard-metadata-on-javascript}
 
 ## 実装
 
