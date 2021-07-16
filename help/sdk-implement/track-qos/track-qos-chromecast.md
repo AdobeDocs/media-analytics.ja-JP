@@ -5,7 +5,7 @@ uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 91%
@@ -14,9 +14,11 @@ ht-degree: 91%
 
 # Chromecast での Quality of Experience の追跡{#track-quality-of-experience-on-chromecast}
 
+以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 ## 概要 {#overview}
 
@@ -53,13 +55,13 @@ Quality of Experience の追跡には、サービス品質（QoS）およびエ�
    **QoS オブジェクトの作成：**[createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createQoSObject)
 
    ```
-   qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10); 
+   qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10);
    ```
 
 1. 再生中にビットレートが切り替わったときに、メディアハートビートインスタンスで `BitrateChange` イベントを呼び出します（[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)）。
 
    ```
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
    ```
 
    >[!IMPORTANT]
