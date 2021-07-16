@@ -1,6 +1,6 @@
 ---
-title: Rokuのメタデータキーの説明
-description: 使用可能なRokuのメタデータキーについて説明し、標準メタデータ定数のリスト全体を表示します。
+title: Roku のメタデータキー
+description: Roku で使用可能なメタデータキーについて説明し、標準メタデータ定数の一覧を示します。
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
