@@ -1,6 +1,6 @@
 ---
-title: コンテンツ再生の追跡の説明
-description: 「メディアの読み込み、メディアの開始、メディアの一時停止、メディアの完了の追跡を含む、コア再生の追跡について説明します。 "
+title: コンテンツ再生のトラッキング
+description: メディアの読み込み、開始、一時停止、完了などのトラッキングを含む、コア再生のトラッキングについて説明します。"
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
