@@ -1,13 +1,13 @@
 ---
-title: JavaScript 3.xを使用したメディアSKDの設定方法
-description: JavaScript 3.xでメディアSDKアプリケーションをセットアップするには、次の手順に従います。
+title: JavaScript 3.x を使用して Media SDK をセットアップする方法
+description: JavaScript 3.x で Media SDK アプリケーションをセットアップするには、次の手順に従います。
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '405'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 * **有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
 * **メディアアプリケーションで、`AppMeasurement` と JavaScript 向け `Experience Cloud Identity Service` を実装します**。
-詳しくは、[JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja) および [Experience Cloud ID サービスの実装](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja)を参照してください。
+詳しくは、[JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) および [Experience Cloud ID サービスの実装](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja)を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
@@ -35,7 +35,7 @@ ht-degree: 94%
 
    1. サイトのすべてのページから `MediaSDK.js` を参照します。
 
-      各ページの `<head>` タグまたは `<body>` タグに以下のコードを追加して、JavaScript 用の `MediaSDK` を含めます。例：
+      各ページの `<head>` タグまたは `<body>` タグに以下のコードを追加して、JavaScript 用の `MediaSDK` を含めます。次に例を示します。
 
       ```html
       <script type="text/javascript" src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/MediaSDK.js"></script>
