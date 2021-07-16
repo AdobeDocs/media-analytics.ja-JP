@@ -1,5 +1,5 @@
 ---
-title: Androidでの標準広告メタデータの実装方法を説明します。
+title: Android で標準広告メタデータを実装する方法
 description: Android 上の広告トラッキングでの標準広告メタデータの使用方法です。
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '65'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
