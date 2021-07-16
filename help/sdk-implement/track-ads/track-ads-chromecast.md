@@ -5,7 +5,7 @@ uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 97%
@@ -14,9 +14,11 @@ ht-degree: 97%
 
 # Chromecast での広告の追跡{#track-ads-on-chromecast}
 
+以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 ## 広告トラッキングの定数
 
@@ -35,7 +37,7 @@ ht-degree: 97%
    広告ブレークオブジェクトの作成：[createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdBreakObject)
 
    ```
-   adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName); 
+   adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName);
    ```
 
 1. `MediaHeartbeat` インスタンスの `AdBreakStart` で `trackEvent()` を呼び出し、広告ブレークの追跡を開始します（[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)）。
@@ -49,7 +51,7 @@ ht-degree: 97%
    広告オブジェクトの作成：[createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
 
    ```
-   adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
+   adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH);
    ```
 
 1. オプションで、コンテキストデータ変数を使用して標準または広告メタデータをメディアトラッキングセッションにアタッチします。
@@ -68,7 +70,7 @@ ht-degree: 97%
 1. 広告アセットの再生が広告の終わりに到達したら、`AdComplete` イベントで `trackEvent()` を呼び出します（[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)）。
 
    ```
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
    ```
 
 1. 同じ `AdBreak` にその他の広告がある場合、手順 3 ～ 6 を繰り返します。
