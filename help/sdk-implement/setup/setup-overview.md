@@ -1,6 +1,6 @@
 ---
-title: メディアSDKの実装の説明
-description: 「モバイル、OTT、ブラウザー(JS)アプリケーションでのメディアトラッキング用のメディアSDKの設定方法について説明します。」
+title: Media SDK の実装
+description: モバイルアプリケーション、OTT アプリケーション、ブラウザー（JS）アプリケーションでメディアトラッキング用に Media SDK をセットアップする方法を説明します。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
