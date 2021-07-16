@@ -1,13 +1,13 @@
 ---
-title: 「スタンドアロンのメディアSDKからAdobeLaunchへの移行 — iOS」
-description: メディアSDKからLaunch for iOSに移行する方法を説明します。
+title: スタンドアロンの Media SDK から Adobe Launch への移行 - iOS
+description: Media SDK から iOS 用の Launch に移行する方法を説明します。
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
