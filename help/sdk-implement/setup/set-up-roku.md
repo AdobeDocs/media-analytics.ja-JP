@@ -1,6 +1,6 @@
 ---
-title: Roku用メディアSKDの設定方法
-description: RokuでメディアSDKアプリケーションをセットアップするには、次の手順に従います。
+title: Roku 用 Media SDK のセットアップ方法
+description: Roku で Media SDK アプリケーションをセットアップするには、次の手順に従います。
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
       >
       >サンプルの `ADBMobileConfig` JSON ファイルがパッケージに付属しています。設定については、アドビの担当者にお問い合わせください。
 
-      例：
+      次に例を示します。
 
       ```
       {
