@@ -1,6 +1,6 @@
 ---
 title: セッション ID の取得
-description: 応答のLocationヘッダーからセッションIDを取得するためのSessionsリクエストのコーディング方法を説明します。
+description: Sessions リクエストをコーディングしてレスポンスの Location ヘッダーからセッション ID を取得する方法を説明します。
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '63'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
