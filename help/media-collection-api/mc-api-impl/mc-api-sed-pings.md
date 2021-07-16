@@ -1,6 +1,6 @@
 ---
 title: ping イベントの送信
-description: pingイベントは、ストリーミングメディア分析のハートビートです。 メインコンテンツまたは広告トラッキングに対して時間指定pingを送信する方法を説明します。
+description: ping イベントは、Streaming Media Analytics のハートビートです。メインコンテンツまたは広告トラッキング用の時間指定 ping を送信する方法を説明します。
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
