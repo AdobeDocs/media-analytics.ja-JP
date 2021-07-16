@@ -1,5 +1,5 @@
 ---
-title: Androidで広告を追跡する方法を説明します
+title: Android で広告をトラッキングする方法
 description: メディア SDK を使用して、Android アプリケーションに広告トラッキングを実装します。
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
