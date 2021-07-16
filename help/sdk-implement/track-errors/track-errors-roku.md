@@ -5,7 +5,7 @@ uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 81%
@@ -14,16 +14,18 @@ ht-degree: 81%
 
 # Roku でのエラーの追跡{#track-errors-on-roku}
 
+以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+> 1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 ## エラー追跡の実装
 
 1. メディアプレーヤーのエラーを追跡します。
 
    ```
-   ADBMobile().mediaTrackError(msg.GetMessage(), 
+   ADBMobile().mediaTrackError(msg.GetMessage(),
                                ADBMobile().ERROR_SOURCE_PLAYER)
    ```
 
