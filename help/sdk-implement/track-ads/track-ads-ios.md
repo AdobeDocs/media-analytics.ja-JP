@@ -1,5 +1,5 @@
 ---
-title: iOSでの広告の追跡方法を説明します
+title: iOS で広告をトラッキングする方法
 description: メディア SDK を使用して、iOS アプリケーションに広告トラッキングを実装します。
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
