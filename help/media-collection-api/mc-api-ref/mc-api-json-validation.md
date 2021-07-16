@@ -1,6 +1,6 @@
 ---
-title: ストリーミングメディア分析JSON検証スキーマ
-description: Steaming Media JSON検証スキーマとは何ですか。また、スキーマを使用して、各タイプのイベントに対する正しいリクエスト本文のパラメーターを判断する方法も示します。
+title: Streaming Media Analytics の JSON 検証スキーマ
+description: ストリーミングメディアの JSON 検証スキーマを説明し、それを使用してイベントタイプごとに正しいリクエスト本文パラメーターを決定する方法を示します。
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
