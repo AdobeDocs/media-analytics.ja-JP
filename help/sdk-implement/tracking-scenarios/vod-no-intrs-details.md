@@ -1,6 +1,6 @@
 ---
-title: 広告のないVOD再生
-description: 広告を含まないVOD再生の追跡の例を表示します。
+title: '広告のない VOD 再生 '
+description: 広告を含まない VOD 再生のトラッキングの例を示します。
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 | ユーザーが&#x200B;**[!UICONTROL 再生]**&#x200B;をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | これは、再生をクリックするユーザーか、自動再生イベントである可能性があります。 |
 | メディアの最初のフレーム | `trackPlay` | Heartbeat Content Play | このメソッドは、タイマーをトリガーし、以降、再生中 10 秒ごとにハートビートが送信されます。 |
 | コンテンツ再生 |  | Content Heartbeats |  |
-| コンテンツ完了 | `trackComplete` | Heartbeat Content Complete | *Complete* は、再生ヘッドの終わりに達したことを意味します。 |
+| コンテンツの完了 | `trackComplete` | Heartbeat Content Complete | *Complete* は、再生ヘッドの終わりに達したことを意味します。 |
 
 ## パラメーター {#parameters}
 
