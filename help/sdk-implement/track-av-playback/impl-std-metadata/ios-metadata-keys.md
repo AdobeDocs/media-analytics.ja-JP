@@ -1,6 +1,6 @@
 ---
-title: iOSのメタデータキーの説明
-description: 使用可能なiOSのメタデータキーについて説明します。
+title: iOS のメタデータキー
+description: iOS で使用可能なメタデータキーについて説明します。
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
