@@ -5,7 +5,7 @@ uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 84%
@@ -14,9 +14,11 @@ ht-degree: 84%
 
 # Android での Quality of Experience の追跡{#track-quality-of-experience-on-android}
 
+以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+>1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 ## QoS の実装
 
@@ -50,8 +52,8 @@ ht-degree: 84%
 
    ```java
    public void onBitrateChange(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, null, null); 
-   } 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, null, null);
+   }
    ```
 
    >[!IMPORTANT]
