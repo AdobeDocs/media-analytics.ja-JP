@@ -4,7 +4,7 @@ description: ブラウザーアプリ(JS)でのメディアSDKを使用したチ
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 89%
@@ -13,9 +13,11 @@ ht-degree: 89%
 
 # JavaScript 3.x を使用したチャプターおよびセグメントの追跡{#track-chapters-and-segments-on-javascript}
 
+以下の手順は、SDK 3.x を使用した実装についてのガイダンスです。
+
 >[!IMPORTANT]
 >
->以下の手順は、SDK 3.x を使用した実装についてのガイダンスです。以前のバージョンの SDK を実装している場合は、[SDK のダウンロード](/help/sdk-implement/download-sdks.md)から開発者ガイドをダウンロードできます。
+> 以前のバージョンの SDK を実装している場合は、[SDK のダウンロード](/help/sdk-implement/download-sdks.md)から開発者ガイドをダウンロードできます。
 
 1. いつチャプター開始イベントが発生するかを識別し、チャプター情報を使用して `ChapterObject` インスタンスを作成します。
 
