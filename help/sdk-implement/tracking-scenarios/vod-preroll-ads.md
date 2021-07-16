@@ -1,6 +1,6 @@
 ---
-title: 「プリロール広告のあるVOD再生」
-description: 「メディアSDKを使用した、プリロール広告を含むVODコンテンツの追跡方法の例を表示します。」
+title: プレロール広告のある VOD 再生
+description: プレロール広告を含んだ VOD コンテンツを Media SDK を使用してトラッキングする方法の例を示します。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 95%
 | 広告が再生されます。 |  | Ad Heartbeats |  |
 | 広告 #2の再生が完了します。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | 広告の終わりとポッドの終わりに達しました。 |
 | コンテンツが再生されます。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。 |
-| コンテンツが完了する。 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。 |
+| コンテンツが完了する | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じです。 |
 | セッションが終了する | `trackSessionEnd` |  | `SessionEnd` |
 
 ## パラメーター {#parameters}
