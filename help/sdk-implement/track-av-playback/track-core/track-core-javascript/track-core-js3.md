@@ -4,7 +4,7 @@ description: JavaScript 3.xアプリを使用して、ブラウザーのメデ�
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 95%
@@ -13,8 +13,10 @@ ht-degree: 95%
 
 # JavaScript 3.x を使用したコア再生の追跡 {#track-core-playback-on-javascript}
 
+このドキュメントでは、バージョン 3.x の SDK でのトラッキングについて説明しています。
+
 >[!IMPORTANT]
->このドキュメントでは、バージョン 3.x の SDK でのトラッキングについて説明しています。以前バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
+> 以前バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/sdk-implement/download-sdks.md)）からダウンロードできます。
 
 1. **トラッキングの初期設定**
 
