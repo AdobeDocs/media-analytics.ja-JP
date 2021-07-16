@@ -1,15 +1,15 @@
 ---
 seo-title: スタンドアロンの Media SDK から Adobe Launch への移行
-title: スタンドアロンのメディアSDKからAdobeLaunchへの移行
+title: スタンドアロンの Media SDK から Adobe Launch への移行
 seo-description: Media SDK から Launch への移行に役立つ手順とコードサンプルです。
-description: メディアSDKからLaunchに移行する方法について説明します。
+description: Media SDK から Launch に移行する方法を説明します。
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
