@@ -1,6 +1,6 @@
 ---
-title: JavaScript 2.xを使用したQuality of Experienceの追跡について説明します。
-description: 「JavaScript 2.xを使用したブラウザーアプリでのメディアSDKを使用したQuality of Experience(QoE、QoS)追跡の実装について説明します。」
+title: JavaScript 2.x を使用してエクスペリエンス品質をトラッキングする方法
+description: JavaScript 2.x を使用するブラウザーアプリで Media SDK を使用してエクスペリエンス品質（QoE、QoS）のトラッキングを実装する方法を説明します。
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
