@@ -1,6 +1,6 @@
 ---
-title: Rokuでのエラーの追跡方法を説明します。
-description: RokuでのメディアSDKを使用したエラー追跡の実装について説明します。
+title: Roku でエラーをトラッキングする方法
+description: Roku で Media SDK を使用してエラートラッキングを実装する方法を説明します。
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
