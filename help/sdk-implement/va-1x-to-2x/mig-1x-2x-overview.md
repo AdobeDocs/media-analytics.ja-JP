@@ -1,6 +1,6 @@
 ---
 title: 移行の概要
-description: メディアSDKの1.xから2.xバージョンへの移行について説明します。
+description: Media SDK のバージョン 1.x から 2.x への移行について説明します。
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
