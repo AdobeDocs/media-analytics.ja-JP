@@ -1,6 +1,6 @@
 ---
 title: 検証の概要
-description: 検証プロセスの詳細を説明します。 ログを送信して適切な実装を検証する方法を説明します。
+description: 検証プロセスの詳細を説明します。ログを送信して実装の適切さを検証する方法を説明します。
 uuid: bbc6b6d6-1899-45b9-9fb7-8031f07563f6
 exl-id: 908e9de6-9461-4f3d-9d94-5541c5dfeabb
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '61'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
