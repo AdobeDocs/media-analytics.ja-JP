@@ -1,6 +1,6 @@
 ---
-title: RokuでQuality of Experienceを追跡する方法を説明します。
-description: 「RokuでのメディアSDKを使用したQuality of Experience(QoE、QoS)追跡の実装について説明します。」
+title: Roku でエクスペリエンス品質をトラッキングする方法
+description: Roku で Media SDK を使用してエクスペリエンス品質（QoE、QoS）のトラッキングを実装する方法を説明します。
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 87%
    | `fps` | FPS の値 | ○ |
    | `droppedFrames` | ドロップフレームの数 | ○ |
 
-   例：
+   次に例を示します。
 
    ```
    bitrate = 200000
