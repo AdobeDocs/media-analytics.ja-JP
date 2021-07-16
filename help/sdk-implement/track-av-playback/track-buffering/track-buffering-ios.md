@@ -1,6 +1,6 @@
 ---
-title: iOSでのバッファーの追跡方法を説明します
-description: iOSでのバッファーイベントの追跡方法を説明します。
+title: iOS でバッファリングをトラッキングする方法
+description: iOS でバッファリングイベントをトラッキングする方法を説明します。
 uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '119'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
