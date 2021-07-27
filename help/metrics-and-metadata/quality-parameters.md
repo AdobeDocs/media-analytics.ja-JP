@@ -6,9 +6,9 @@ exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: Media Analytics、変数
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2997'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -50,11 +50,11 @@ ht-degree: 99%
 | <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> media.qoe.timeToStart </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 30,000 </li><li> **説明：**<br/>&#x200B;この値は、QoSObject を使用して設定しない場合、デフォルトでは 0 に設定されます。この値はミリ秒単位で設定します。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **ハートビート：**<br/>（l:stream:startup_time） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;開始時間 </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>timeToStart） </li> <li> **データフィード：**<br/> videoqoetimetostartevar </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>timeToStart） </li> </ul> |
 
 
-### フレーム/秒
+### フレーム／秒
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> media.qoe.framesPerSecond </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 24 </li><li> **説明：**<br/>&#x200B;フレーム/秒単位のストリームフレームレートの現在の値。フィールドは、close呼び出し時にfpsフィールドにマッピングされ、処理ルールを通じてアクセスできます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> </li> <li> **ハートビート：**<br/>（l:stream:fps） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;不可 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/> </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/> </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> </li> <li> **API キー：**<br/> media.qoe.framesPerSecond </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 24 </li><li> **説明：**<br/>&#x200B;フレーム/秒単位のストリームフレームレートの現在の値。フィールドは、クローズコールで fps フィールドにマッピングされ、処理ルールを通じてアクセスできます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> </li> <li> **ハートビート：**<br/>（l:stream:fps） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;不可 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/> </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/> </li> </ul> |
 
 
 
