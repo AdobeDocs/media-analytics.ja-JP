@@ -6,13 +6,13 @@ exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
 ht-degree: 100%
 
 ---
 
-# Sessions リクエスト{#sessions-request}
+# Sessions リクエスト {#sessions-request}
 
 ```
 POST 
