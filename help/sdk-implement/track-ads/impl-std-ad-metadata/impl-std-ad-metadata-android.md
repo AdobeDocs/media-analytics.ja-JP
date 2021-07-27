@@ -6,13 +6,13 @@ exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '65'
 ht-degree: 100%
 
 ---
 
-# Android での標準広告メタデータの実装{#implement-standard-ad-metadata-on-android}
+# Android での標準広告メタデータの実装 {#implement-standard-ad-metadata-on-android}
 
 ## 広告定数
 
