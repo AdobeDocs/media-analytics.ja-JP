@@ -6,7 +6,7 @@ exl-id: dfeb0708-e744-4ff1-a644-3d77812f736a
 feature: Media Analytics、Experience Cloud 統合
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
 ht-degree: 100%
 
