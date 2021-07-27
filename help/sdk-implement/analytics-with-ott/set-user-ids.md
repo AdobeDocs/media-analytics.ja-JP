@@ -6,13 +6,13 @@ exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
 feature: Media Analytics、API
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '56'
 ht-degree: 100%
 
 ---
 
-# ユーザー ID の設定{#set-user-ids}
+# ユーザー ID の設定 {#set-user-ids}
 
 ユーザー ID はアプリケーションがユーザーに対して定義する一意のカスタム訪問者識別子です。
 
