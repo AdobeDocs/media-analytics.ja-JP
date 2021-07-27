@@ -6,13 +6,13 @@ exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '96'
 ht-degree: 100%
 
 ---
 
-# Roku でのエラーの追跡{#track-errors-on-roku}
+# Roku でのエラーの追跡 {#track-errors-on-roku}
 
 以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。
 
