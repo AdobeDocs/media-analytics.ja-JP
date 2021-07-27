@@ -6,7 +6,7 @@ exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: Media Analytics、セグメント化
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '207'
 ht-degree: 100%
 
