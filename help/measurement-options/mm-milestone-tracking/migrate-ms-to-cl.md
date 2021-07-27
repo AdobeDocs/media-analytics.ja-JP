@@ -6,7 +6,7 @@ exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '598'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # マイルストーンからカスタムリンクへの移行{#migrating-from-milestone-to-custom-link}
 
-## 概要 {#overview}
+## 概要  {#overview}
 
 マイルストーンとカスタムリンクのトラッキングでは、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。カスタムリンクのアプローチは、実装と収集されるデータの両方の縮小と簡素化と考えてください。カスタムリンクソリューションを使用する場合、ビデオ測定用の変数やメソッドが事前に定義されていないので、完全なカスタムのセットアップが必要です。開始や完了など、基本的なプレーヤーイベントについては、カスタムリンクのトラッキングコールを指すようにプレーヤーのイベントコードを更新できる必要があります。詳しくは、「[カスタムリンク実装ガイド](/help/measurement-options/cl-in-aa/cl-impl-guide.md) 」を参照してください。
 
