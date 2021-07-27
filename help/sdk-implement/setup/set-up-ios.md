@@ -6,15 +6,15 @@ exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '765'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # iOS のセットアップ{#set-up-ios}
 
-iOSデバイス用のストリーミングメディア分析を設定する方法を説明します。
+iOS デバイス用のストリーミングメディア分析の設定方法を説明します。
 
 >[!IMPORTANT]
 >
