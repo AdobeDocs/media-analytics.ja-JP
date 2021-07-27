@@ -1,18 +1,18 @@
 ---
-title: Events リクエストの実装
+title: 'Events リクエストの実装 '
 description: セッション ID を取得した後、後続のすべてのトラッキングコールで Events リクエストエンドポイントを使用する方法を説明します
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '101'
 ht-degree: 100%
 
 ---
 
-# Events リクエストの実装{#implementing-an-events-request}
+# Events リクエストの実装 {#implementing-an-events-request}
 
 **`{uri}/api/v1/sessions/{sid}/events`**
 
