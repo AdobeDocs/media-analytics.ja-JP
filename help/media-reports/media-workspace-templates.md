@@ -6,7 +6,7 @@ exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: Media Analytics、Workspace の基本
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
 ht-degree: 100%
 
