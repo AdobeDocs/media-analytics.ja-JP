@@ -1,19 +1,19 @@
 ---
-seo-title: 概要
-title: ストリーミングメディアコレクションAPIの概要
-description: メディアコレクションAPIと、プレーヤーでRESTful HTTP呼び出しを使用してオーディオおよびビデオイベントを追跡する方法について説明します。
+seo-title: '概要 '
+title: ストリーミングメディアコレクション API の概要
+description: Media Collection API について説明し、RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントをプレーヤーでトラッキングする方法について説明します。
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# 概要{#overview}
+# 概要 {#overview}
 
 メディアコレクション API は、クライアント側のメディア SDK の代替として使用できるアドビの RESTful API です。メディアコレクション API を使用すると、プレーヤーで RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントを追跡できます。
 
