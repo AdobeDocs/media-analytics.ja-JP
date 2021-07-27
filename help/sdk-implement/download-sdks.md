@@ -6,7 +6,7 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
 ht-degree: 100%
 
@@ -53,5 +53,5 @@ ht-degree: 100%
 | iOS | [iOS 用 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [はじめに - iOS 用メディア 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript 用 SDK v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [はじめに - JS 用メディア 1.x](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [TVML 用 SDK v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [はじめに - TVML 用メディア 1.x](setup/vhl_tvml.pdf) |
-| Apple TV | Apple TV v1.0.0 用 SDK（レガシー SDK 1.x の入手方法については、[カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)にお問い合わせください） | [はじめに - Apple TV 用メディア 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | Chromecast v1.0.0 用 SDK（レガシー SDK 1.x の入手方法については、[カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)にお問い合わせください） | [はじめに - Chromecast 用メディア 1.x](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | Apple TV v1.0.0 用 SDK（レガシー SDK 1.x の入手方法については、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください） | [はじめに - Apple TV 用メディア 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | Chromecast v1.0.0 用 SDK（レガシー SDK 1.x の入手方法については、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください） | [はじめに - Chromecast 用メディア 1.x](setup/chromecast_1.x_sdk.pdf) |
