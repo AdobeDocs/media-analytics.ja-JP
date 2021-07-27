@@ -6,7 +6,7 @@ exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
 feature: Media Analytics、変数
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2249'
 ht-degree: 100%
 
