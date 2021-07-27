@@ -6,13 +6,13 @@ exl-id: c4ce7092-a102-41da-80a6-a4359f925708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '96'
 ht-degree: 100%
 
 ---
 
-# iOS でのエラーの追跡{#track-errors-on-ios}
+# iOS でのエラーの追跡 {#track-errors-on-ios}
 
 以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。
 
