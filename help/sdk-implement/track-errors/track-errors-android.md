@@ -6,13 +6,13 @@ exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '92'
 ht-degree: 100%
 
 ---
 
-# Android でのエラーの追跡{#track-errors-on-android}
+# Android でのエラーの追跡 {#track-errors-on-android}
 
 以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。
 
