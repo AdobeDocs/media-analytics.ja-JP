@@ -6,7 +6,7 @@ exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '628'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # ダウンロードされたコンテンツの追跡{#track-downloaded-content}
 
-## 概要 {#overview}
+## 概要  {#overview}
 
 Downloaded Content 機能では、ユーザーがオフライン時のメディア視聴を追跡できます。例えば、ユーザーがモバイルデバイスにアプリをダウンロードしてインストールした後、そのアプリを使用してコンテンツをデバイスのローカルストレージにダウンロードするとします。ダウンロードされたデータを追跡するために、アドビは Downloaded Content 機能を開発しました。この機能を使用すると、デバイスの接続状態に関係なく、ユーザーがデバイスのストレージからコンテンツを再生した場合に、トラッキングデータがデバイスに保存されます。ユーザーが再生セッションを終了し、デバイスがオンラインに戻ると、保存されたトラッキング情報が単一のペイロード内でメディアコレクション API バックエンドに送信されます。保存されたトラッキング情報は、通常どおりメディアコレクション API で処理およびレポートされます。
 
