@@ -6,13 +6,13 @@ exl-id: 889c294b-ac45-4e82-abb3-88ab70abbc3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '69'
 ht-degree: 100%
 
 ---
 
-# JavaScript 2.x を使用した標準メタデータの実装{#implement-standard-metadata-on-javascript}
+# JavaScript 2.x を使用した標準メタデータの実装 {#implement-standard-metadata-on-javascript}
 
 ## メタデータ定数
 
