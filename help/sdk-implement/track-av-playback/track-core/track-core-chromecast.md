@@ -1,14 +1,14 @@
 ---
-title: Chromecastでのコア再生の追跡方法を説明します。
-description: ChromecastでのメディアSDKを使用したコア追跡の実装方法を説明します。
+title: Chromecast でコア再生をトラッキングする方法
+description: Chromecast で Media SDK を使用してコアトラッキングを実装する方法について説明します。
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '664'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 96%
 
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。例：
+      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
 
       ```js
       /* Set custom context data */
