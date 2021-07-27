@@ -6,13 +6,13 @@ exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
 feature: Media Analytics、Analytics ダッシュボード
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
 ht-degree: 100%
 
 ---
 
-# デバッグのダッシュボードとレポート{#debug-dashboards-and-reports}
+# デバッグのダッシュボードとレポート {#debug-dashboards-and-reports}
 
 Adobe Debug は、ビデオの再生中に送信されるヒットやメタデータを確認できるように、リアルタイムでレポートを提供します。これらの各レポートは、Debug 内に保存できます。
 
