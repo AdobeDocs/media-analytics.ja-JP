@@ -6,13 +6,13 @@ exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '67'
 ht-degree: 100%
 
 ---
 
-# iOS での標準広告メタデータの実装{#implement-standard-ad-metadata-on-ios}
+# iOS での標準広告メタデータの実装 {#implement-standard-ad-metadata-on-ios}
 
 ## 広告定数
 
