@@ -6,7 +6,7 @@ exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '616'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | エピソードのタイトル |
+| `a.media.episode` | Episode Title |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
@@ -68,7 +68,7 @@ ht-degree: 100%
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
-| `s:asset:name` | エピソードのタイトル |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -87,14 +87,14 @@ ht-degree: 100%
 |---|---|
 | `s:meta:a.media.show` | 番組 |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | エピソードのタイトル |
+| `s:meta:a.media.episode` | Episode Title |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | 生産施設 |
+| `s:meta:a.media.originator` | production house |
 | `s:meta:a.media.network` | réseau |
-| `s:meta:a.media.ad_load` | 3 |
+| `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
 | `s:meta:a.media.authorized` | unlocked |
 | `s:meta:a.media.feed` | no feed |
@@ -114,7 +114,7 @@ ht-degree: 100%
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `s:asset:name` | エピソードのタイトル |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -139,7 +139,7 @@ ht-degree: 100%
 | _**`a.media.ad.length`**_ | _**15**_ |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
-| `a.media.ad.podPosition` | 3 |
+| `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0.0 |
 | _**`a.media.ad.view`**_ | _**True**_ |
 | _**`custom.[value]`**_ | _**メタデータフィールド**_ |
@@ -154,16 +154,16 @@ ht-degree: 100%
 
 | パラメーター |  値（サンプル） |
 |---|---|
-| `a.media.show` | タイトルを表示 |
+| `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | エピソードのタイトル |
+| `a.media.episode` | Episode Title |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
 | `a.media.rating` | TV-14 |
-| `a.media.originator` | 生産施設 |
+| `a.media.originator` | production house |
 | `a.media.network` | réseau |
-| `a.media.ad_load` | 3 |
+| `a.media.ad_load` | 1 |
 | `a.media.mvpd` | mvpd |
 | `a.media.authorized` | unlocked |
 | `a.media.feed` | no feed |
@@ -201,14 +201,14 @@ ht-degree: 100%
 |---|---|
 | `s:meta:a.media.show` | 番組 |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | エピソードのタイトル |
+| `s:meta:a.media.episode` | Episode Title |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | 生産施設 |
+| `s:meta:a.media.originator` | production house |
 | `s:meta:a.media.network` | réseau |
-| `s:meta:a.media.ad_load` | 3 |
+| `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
 | `s:meta:a.media.authorized` | unlocked |
 | `s:meta:a.media.feed` | no feed |
@@ -243,7 +243,7 @@ ht-degree: 100%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**広告**_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ### Media Analytics（ハートビート）Ad Pause 呼び出し {#ma-ad-pause-call}
 
@@ -255,7 +255,7 @@ ht-degree: 100%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**広告**_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ### Media Analytics（ハートビート）Adobe Analytics Ad Complete 呼び出し {#ma-aa-ad-complete-call}
 
@@ -267,7 +267,7 @@ ht-degree: 100%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**広告**_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ## メインコンテンツの再生 {#play-main-content}
 
@@ -278,7 +278,7 @@ ht-degree: 100%
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
 | _**`l:event:duration`**_ | _**10189**_ |
-| `s:asset:name` | エピソードのタイトル |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -295,10 +295,10 @@ ht-degree: 100%
 
 | パラメーター |  値（サンプル） |
 |---|---|
-| _**`s:event:type`**_ | _**一時停止**_ |
+| _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
-| `s:asset:name` | エピソードのタイトル |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
