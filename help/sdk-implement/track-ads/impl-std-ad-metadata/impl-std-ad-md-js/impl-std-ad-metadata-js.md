@@ -6,13 +6,13 @@ exl-id: b331db87-ab4e-44fa-a97c-9691974cacd4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '72'
 ht-degree: 100%
 
 ---
 
-# JavaScript2.x を使用した標準広告メタデータの実装{#implement-standard-ad-metadata-on-javascript}
+# JavaScript2.x を使用した標準広告メタデータの実装 {#implement-standard-ad-metadata-on-javascript}
 
 ## 広告定数
 
