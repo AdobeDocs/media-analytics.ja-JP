@@ -6,7 +6,7 @@ exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '692'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # マイルストーンから Media Analytics への移行 {#migrating-from-milestone-to-media-analytics}
 
-## 概要 {#overview}
+## 概要  {#overview}
 
 マイルストーンと Media Analytics では、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。Media Analytics ソリューションはマイルストーンが発展したものであるので、多くのメソッドや指標は同じです。ただし、設定のアプローチやコードは大幅に変更されています。新しい Media Analytics のメソッドを指すようにプレーヤーのイベントコードを更新できる必要があります。Media Analytics の実装について詳しくは、[SDK の概要](/help/sdk-implement/setup/setup-overview.md)および[追跡の概要](/help/sdk-implement/track-av-playback/track-core-overview.md)を参照してください。
 
