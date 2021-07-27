@@ -6,13 +6,13 @@ exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
 ht-degree: 100%
 
 ---
 
-# セッション ID の取得{#obtaining-a-session-id}
+# セッション ID の取得 {#obtaining-a-session-id}
 
 このリファレンスプレーヤーのコードスニペットは、[Sessions リクエスト](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)をコーディングする 1 つの方法と、セッション ID（およびメディアコレクション API バージョン）を応答の Location ヘッダーから抽出する方法を示しています。
 
