@@ -6,9 +6,9 @@ exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Media Analytics 実装には、次の 2 つのタイプのトラッキングコ�
 
    呼び出しパラメーターおよびメタデータについては、[テスト呼び出しの詳細](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)を参照してください。
 
-1. **メインコンテンツを中断せずに10秒間再生します。** **コンテンツの再生**
+1. **メインコンテンツを中断せずに 10 秒間再生します。** **コンテンツの再生**
 
    メインコンテンツの再生中、メディア SDK は、10 秒ごとにハートビート（Play 呼び出し）を Media Analytics サーバーに送信します。
 
