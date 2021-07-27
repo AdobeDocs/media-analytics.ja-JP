@@ -6,13 +6,13 @@ exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
 ht-degree: 100%
 
 ---
 
-# 概要{#overview}
+# 概要 {#overview}
 
 以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。
 
