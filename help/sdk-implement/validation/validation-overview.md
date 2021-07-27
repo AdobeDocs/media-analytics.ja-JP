@@ -6,13 +6,13 @@ exl-id: 908e9de6-9461-4f3d-9d94-5541c5dfeabb
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '61'
 ht-degree: 100%
 
 ---
 
-# 検証の概要{#validation-overview}
+# 検証の概要 {#validation-overview}
 
 ログを提出して適切な実装を検証するために、検証には、お客様が（Adobe Debug を使用して）実行する必要がある必須のテストケースのリストが含まれています。各イベントおよびメタデータパラメーターに対して期待される結果があります。
 
