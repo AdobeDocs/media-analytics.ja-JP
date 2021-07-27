@@ -6,7 +6,7 @@ exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ ht-degree: 100%
 
 1. オプションで、コンテキストデータ変数を使用して標準または広告メタデータをメディアトラッキングセッションにアタッチします。
 
-   * [iOS での標準広告メタデータの実装](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+   * [iOS での標準広告メタデータの実装 ](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **カスタムの広告メタデータ** - カスタムのメタデータの場合は、カスタムデータ変数の変数オブジェクトを作成し、現在の広告のデータを設定します。
 
       ```
