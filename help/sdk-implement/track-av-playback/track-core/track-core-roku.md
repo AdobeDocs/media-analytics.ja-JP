@@ -103,7 +103,7 @@ ht-degree: 100%
 
    * **標準メタデータ**
 
-[Roku での標準メタデータの実装 ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      [Roku での標準メタデータの実装 ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >メディアオブジェクトへの標準のビデオメタデータオブジェクトのアタッチはオプションです。
