@@ -5,10 +5,10 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '628'
-ht-degree: 100%
+source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
+workflow-type: tm+mt
+source-wordcount: '698'
+ht-degree: 90%
 
 ---
 
@@ -61,13 +61,11 @@ Downloaded Content 機能は、（標準）オンラインメディアコレク�
 
 ## サンプルセッションの比較 {#sample-session-comparison}
 
-```
-[url]/api/v1/sessions
-```
-
 ### オンラインコンテンツ
 
 ```
+POST /api/v1/sessions HTTP/1.1
+
 {
   eventType: "sessionStart",
   playerTime: {
@@ -82,13 +80,49 @@ Downloaded Content 機能は、（標準）オンラインメディアコレク�
 ### ダウンロードされたコンテンツ
 
 ```
+POST /api/v1/downloaded HTTP/1.1
+
 [{
     eventType: "sessionStart",
     playerTime:{
       playhead: 0,
-      ts: 1529997923478},  
+      ts: 1529997923478
+    },  
+    params:{...},
+    customMetadata:{},  
+    qoeData:{}
+},
+    {eventType: "play", playerTime:
+        {playhead: 0,  ts: 1529997928174}},
+    {eventType: "ping", playerTime:
+        {playhead: 10, ts: 1529997937503}},
+    {eventType: "ping", playerTime:
+        {playhead: 20, ts: 1529997947533}},
+    {eventType: "ping", playerTime:
+        {playhead: 30, ts: 1529997957545},},
+    {eventType: "sessionComplete", playerTime:
+        {playhead: 35, ts: 1529997960559}
+}]
+```
+
+#### サポート終了のお知らせ
+
+ダウンロードしたコンテンツは、以前は`/api/v1/sessions` APIにも送信されていました。 この方法でダウンロードされたコンテンツを追跡するには、**非推奨**&#x200B;となり、今後&#x200B;**削除**される予定です。
+`/api/v1/sessions` APIは、セッション初期化イベントのみを受け付けます。
+新しいAPIを使用する場合、以前は必須だった`media.downloaded`フラグは不要になりました。
+ダウンロードした新しいコンテンツ実装には`/api/v1/downloaded` APIを使用することと、古いAPIに依存する既存の実装を更新することを強くお勧めします。
+
+
+```
+POST /api/v1/sessions HTTP/1.1
+[{
+    eventType: "sessionStart",
+    playerTime:{
+      playhead: 0,
+      ts: 1529997923478
+    },
     params:{
-        "media.downloaded": true
+        "media.downloaded": true,
         ...
     },
     customMetadata:{},  
