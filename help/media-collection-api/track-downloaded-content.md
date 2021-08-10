@@ -5,7 +5,7 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
+source-git-commit: 8da6889ecb50edd12b7ea4139500c35b923830f2
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 90%
@@ -105,9 +105,13 @@ POST /api/v1/downloaded HTTP/1.1
 }]
 ```
 
-#### サポート終了のお知らせ
+### サポート終了のお知らせ
 
-ダウンロードしたコンテンツは、以前は`/api/v1/sessions` APIにも送信されていました。 この方法でダウンロードされたコンテンツを追跡するには、**非推奨**&#x200B;となり、今後&#x200B;**削除**される予定です。
+>[!IMPORTANT]
+>
+>ダウンロードしたコンテンツは、以前は`/api/v1/sessions` APIにも送信されていました。 この方法でダウンロードされたコンテンツを追跡するには、**非推奨**&#x200B;となり、今後&#x200B;**削除**&#x200B;される予定です。
+
+
 `/api/v1/sessions` APIは、セッション初期化イベントのみを受け付けます。
 新しいAPIを使用する場合、以前は必須だった`media.downloaded`フラグは不要になりました。
 ダウンロードした新しいコンテンツ実装には`/api/v1/downloaded` APIを使用することと、古いAPIに依存する既存の実装を更新することを強くお勧めします。
