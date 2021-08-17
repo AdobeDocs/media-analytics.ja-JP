@@ -6,13 +6,13 @@ exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
 ht-degree: 100%
 
 ---
 
-# Adobe Debug の設定{#configure-adobe-debug}
+# Adobe Debug の設定 {#configure-adobe-debug}
 
 ## Adobe Debug へのアクセス {#accessing-adobe-debug}
 
