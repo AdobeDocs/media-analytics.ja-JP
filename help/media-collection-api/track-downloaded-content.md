@@ -6,9 +6,9 @@ exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8da6889ecb50edd12b7ea4139500c35b923830f2
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '698'
+ht-degree: 100%
 
 ---
 
@@ -109,8 +109,7 @@ POST /api/v1/downloaded HTTP/1.1
 
 >[!IMPORTANT]
 >
->ダウンロードしたコンテンツは、以前は `/api/v1/sessions` API にも送信することができました。この方法によるダウンロードコンテンツのトラッキングは、**非推奨**&#x200B;となり、今後&#x200B;**削除**される予定です。
-
+>ダウンロードしたコンテンツは、以前は `/api/v1/sessions` API にも送信することができました。この方法によるダウンロードコンテンツのトラッキングは、**非推奨**&#x200B;となり、今後&#x200B;**削除**&#x200B;される予定です。
 
 
 `/api/v1/sessions` API は、セッション初期化イベントのみを受け付けます。
