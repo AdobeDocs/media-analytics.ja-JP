@@ -4,10 +4,10 @@ description: Media SDK から JS 用の Launch に移行する方法を説明し
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
+workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -46,7 +46,7 @@ mediaConfig.debugLogging = true;
 
    ![](assets/launch_config_js.png)
 
-[Launch ユーザーガイド - メディア各ｋ長機能のインストールと設定](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=ja#install-and-configure-the-ma-extension)
+[Launch ユーザーガイド - メディア各ｋ長機能のインストールと設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
 
 ## トラッカーの作成の違い
 
@@ -119,5 +119,5 @@ delegate オブジェクトを、`getQoSObject()` および `getCurrentPlaybackT
 
 ### Launch
 
-* [Launch の概要](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=ja)
-* [Media Analytics 拡張機能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=ja)
+* [Launch の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+* [Media Analytics 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
