@@ -4,10 +4,10 @@ description: Adobe Launch を含む、Adobe ストリーミングメディアの
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
+workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,15 +17,15 @@ Streaming Media Analytics には独自の SKU があり、サーバー呼び出�
 
 * **Adobe Media Analytics 拡張機能を備えた Adobe Launch**
 
-   Launch は、アドビが提供する次世代タグ管理ソリューションです。Launch は、顧客体験の実現に必要なすべての分析、マーケティングおよび広告のタグをデプロイおよび管理するためのシンプルな手段を提供します。Launch との統合を構築して維持するには、拡張機能を使用します。拡張機能は、Launch UI とクライアント機能を拡張する JavaScript、HTML および CSS のパッケージです。詳しくは、[Experience Platform Launch ユーザーガイド](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=ja)を参照してください
+   Launch は、アドビが提供する次世代タグ管理ソリューションです。Launch は、顧客体験の実現に必要なすべての分析、マーケティングおよび広告のタグをデプロイおよび管理するためのシンプルな手段を提供します。Launch との統合を構築して維持するには、拡張機能を使用します。拡張機能は、Launch UI とクライアント機能を拡張する JavaScript、HTML および CSS のパッケージです。詳しくは、[Experience Platform Launch ユーザーガイド](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)を参照してください
 
    Adobe Media Analytics（MA）の拡張機能により、オーディオおよびビデオ用のコア JavaScript Media SDK（Media 2.x SDK）が追加されます。この拡張機能では、Launch サイトまたはプロジェクトに `MediaHeartbeat` トラッカーインスタンスを追加する機能を提供します。
 
    Media Analytics 拡張機能を備えた Adobe Launch では、以下が必要です。
    * Adobe Experience Cloud のお客様である必要があります。
    * Web ページに Launch または DTM 埋め込みコードをデプロイする必要があります。
-   * [Analytics 拡張機能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html?lang=ja)
-   * [Experience Cloud ID 拡張機能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html?lang=ja)
+   * [Analytics 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)
+   * [Experience Cloud ID 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)
 
 
 * **クライアントサイド -** これは Media Analytics のみの統合です。ビデオハートビート SDK やメディアコレクション API 統合を選択できます。このパスは、Brightcove、Ooyala、Platform など、顧客や OVP プレーヤーを含む任意のビデオプレーヤーで使用できます。
