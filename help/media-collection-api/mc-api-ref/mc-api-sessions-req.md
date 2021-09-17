@@ -5,10 +5,10 @@ uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '97'
-ht-degree: 100%
+source-git-commit: ca709046e477bd471e2f55eb6dcf45e5c3c2be17
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 61%
 
 ---
 
@@ -62,8 +62,8 @@ https://{uri}/api/v1/sessions
 ```
 
 * `playerTime` (必須)
-   * `playhead` - 秒単位で指定する必要があります。浮動小数点値を使用できます。
-   * `ts` - タイムスタンプ。ミリ秒単位で指定する必要があります。
+   * `playhead`  — コンテンツがライブの場合、再生ヘッドは現在の1日の2秒(0)である必要があります。  &lt;>コンテンツが記録される場合、再生ヘッドはコンテンツの現在の秒（0 &lt;=再生ヘッド&lt;コンテンツの長さ）である必要があります。 値には、浮動小数点数を使用できます。
+   * `ts`  — タイムスタンプ。はミリ秒単位で指定する必要があります。協定世界時(UTC)。
 * `eventType` (必須)
 
    **有効な値：** `sessionStart`
