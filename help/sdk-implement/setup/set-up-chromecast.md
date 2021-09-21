@@ -1,14 +1,14 @@
 ---
-title: Chromecast 用の Media SDK をセットアップする方法
+title: Chromecast用メディアSDKの設定方法
 description: Chromecast で Media SDK アプリケーションをセットアップするには、次の手順に従います。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 270dc48152dd77d7ceff8ce1ea9fbead0d1ce9be
+source-git-commit: 2cebb3db58e28be3e448fdfa4da5f96c8c37a947
 workflow-type: tm+mt
 source-wordcount: '643'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
