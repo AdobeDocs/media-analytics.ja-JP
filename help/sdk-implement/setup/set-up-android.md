@@ -1,14 +1,14 @@
 ---
-title: Android で Media SDK をセットアップする方法
+title: AndroidでのメディアSDKの設定方法
 description: Android で Media SDK アプリケーションをセットアップするには、次の手順に従います。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: ht
-source-wordcount: '447'
-ht-degree: 100%
+source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 97%
 
 ---
 
