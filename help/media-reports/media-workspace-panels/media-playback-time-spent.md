@@ -4,16 +4,16 @@ description: 「メディア再生滞在時間パネルを使用して、再生�
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
+source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '218'
 ht-degree: 8%
 
 ---
 
 # メディア再生滞在時間 {#media-playback-time-spent}
 
-再生滞在時間を分析すると、同時実行のピークが発生した場所やドロップオフが発生した場所を把握できます。 メディア再生滞在時間は、コンテンツの質、閲覧者のエンゲージメント、コンテンツが視聴者に与える時間外の影響に関する貴重なインサイトを提供します。 メディア再生時間機能は、ボリュームやスケールのトラブルシューティングや計画に役立ちます。
+再生滞在時間を分析すると、同時実行のピークが発生した場所やドロップオフが発生した場所を把握できます。 メディア再生滞在時間は、コンテンツの質、閲覧者のエンゲージメント、コンテンツが時間の経過と共に視聴者に与える影響に関する貴重なインサイトを提供します。 メディア再生時間機能は、ボリュームやスケールのトラブルシューティングや計画に役立ちます。
 
 ## Analysis Workspaceのメディア再生滞在時間パネル
 
