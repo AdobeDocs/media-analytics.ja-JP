@@ -6,90 +6,90 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: d8b10249c542d2875cba4916e4a2c7942c5589c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1329'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# リクエストパラメーター{#request-parameters}
+# リクエストパラメーター {#request-parameters}
 
 ## Analytics データ
 
 | リクエストキー | 必須 | リクエストタイプキー | 設定する場所 |  説明  |
 | --- | :---: | :---: | :---: | --- |
 | `analytics.trackingServer` | はい | string | `sessionStart` | Adobe Analytics サーバーの URL |
-| `analytics.reportSuite` | はい | 文字列 | `sessionStart` | Analytics レポートデータを識別する ID |
+| `analytics.reportSuite` | はい | string | `sessionStart` | Analytics レポートデータを識別する ID |
 | `analytics.enableSSL` | いいえ | ブール型 | `sessionStart` | SSL を有効にするかどうか（true または false） |
-| `analytics.visitorId` | いいえ | 文字列 | `sessionStart` | Adobe 訪問者 ID は、複数のアドビアプリケーションで使用できるカスタム ID です。ハートビート `visitorId` は Analytics `VID.` と同じです。 |
+| `analytics.visitorId` | いいえ | string | `sessionStart` | Adobe 訪問者 ID は、複数のアドビアプリケーションで使用できるカスタム ID です。ハートビート `visitorId` は Analytics `VID.` と同じです。 |
 
 ## 訪問者データ
 
 | リクエストキー | 必須 | リクエストタイプキー | 設定する場所 |  説明  |
 | --- | :---: | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | はい | 文字列 | `sessionStart` | Experience Cloud 組織 ID。Adobe Experience Cloud エコシステム内で組織を識別します。 |
-| `visitor.marketingCloudUserId` | いいえ | 文字列 | `sessionStart` | これは、Experience Cloud ユーザー ID（ECID）です。ほとんどのシナリオで、これがユーザーを識別するために使用する必要がある ID です。ハートビート `marketingCloudUserId` は、Adobe Analytics の `MID` と同じです。技術的には必須ではありませんが、このパラメーターは、Experience Cloud ファミリーのアプリにアクセスするために必要です。 |
+| `visitor.marketingCloudOrgId` | はい | string | `sessionStart` | Experience Cloud 組織 ID。Adobe Experience Cloud エコシステム内で組織を識別します。 |
+| `visitor.marketingCloudUserId` | いいえ | string | `sessionStart` | これは、Experience Cloud ユーザー ID（ECID）です。ほとんどのシナリオで、これがユーザーを識別するために使用する必要がある ID です。ハートビート `marketingCloudUserId` は、Adobe Analytics の `MID` と同じです。技術的には必須ではありませんが、このパラメーターは、Experience Cloud ファミリーのアプリにアクセスするために必要です。 |
 | `visitor.aamLocationHint` | いいえ | 整数 | `sessionStart` | Adobe Audience Manager Edge データを提供します。値が入力されていない場合、値は null です。 |
-| `appInstallationId` | いいえ | 文字列 | `sessionStart` | アプリとデバイスを一意に識別する appInstallationId |
+| `appInstallationId` | いいえ | string | `sessionStart` | アプリとデバイスを一意に識別する appInstallationId |
 
 ## コンテンツデータ
 
 | リクエストキー | 必須 | リクエストタイプキー | 設定する場所 |  説明  |
 | --- | :---: | :---: | :---: | --- |
-| `media.id` | はい | 文字列 | `sessionStart` | コンテンツの一意の ID |
-| `media.name` | いいえ | 文字列 | `sessionStart` | 人が判読可能なコンテンツの名前 |
+| `media.id` | はい | string | `sessionStart` | コンテンツの一意の ID |
+| `media.name` | いいえ | string | `sessionStart` | 人が判読可能なコンテンツの名前 |
 | `media.length` | はい | 数値 | `sessionStart` | コンテンツの長さ（秒） |
-| `media.contentType` | はい | 文字列 | `sessionStart` | ストリームの形式（任意の文字列を指定できます。推奨される値は、「Live」、「VOD」または「Linear」です） |
-| `media.playerName` | はい | 文字列 | `sessionStart` | コンテンツのレンダリングをおこなうプレーヤーの名前 |
-| `media.channel` | はい | 文字列 | `sessionStart` | コンテンツの配布チャネル。モバイルアプリケーション名、Web サイト名またはプロパティ名を使用できます。 |
+| `media.contentType` | はい | string | `sessionStart` | ストリームの形式（任意の文字列を指定できます。推奨される値は、「Live」、「VOD」または「Linear」です） |
+| `media.playerName` | はい | string | `sessionStart` | コンテンツのレンダリングをおこなうプレーヤーの名前 |
+| `media.channel` | はい | string | `sessionStart` | コンテンツの配布チャネル。モバイルアプリケーション名、Web サイト名またはプロパティ名を使用できます。 |
 | `media.resume` | いいえ | ブール型 | `sessionStart` | ユーザーが（新しいセッションを開始するに対して）以前のセッションを再開しているかどうかを示します |
-| `media.sdkVersion` | いいえ | 文字列 | `sessionStart` | プレーヤーで使用される SDK のバージョン |
+| `media.sdkVersion` | いいえ | string | `sessionStart` | プレーヤーで使用される SDK のバージョン |
 
 ## コンテンツ標準メタデータ
 
 | リクエストキー | 必須 | リクエストタイプキー | 設定する場所 |  説明  |
 | --- | :---: | :---: | :---: | --- |
-| `media.streamFormat` | いいえ | 文字列 | `sessionStart` | ストリーム形式（例：「HD」） |
-| `media.show` | いいえ | 文字列 | `sessionStart` | プログラム名またはシリーズ名 |
-| `media.season` | いいえ | 文字列 | `sessionStart` | 番組またはシリーズが属するシーズン番号 |
-| `media.episode` | いいえ | 文字列 | `sessionStart` | エピソードの番号 |
-| `media.assetId` | いいえ | 文字列 | `sessionStart` | TV シリーズのエピソードの識別子、ムービーアセットの識別子、ライブイベントの識別子など、ビデオアセットのコンテンツの一意の ID。この ID は通常、EIDR、TMS／Gracenote、Rovi などのメタデータを扱う機関から取得します。その他の独自のシステムや社内システムから取得することもできます。 |
-| `media.genre` | いいえ | 文字列 | `sessionStart` | コンテンツプロデューサーによって定義されたコンテンツのタイプ |
-| `media.firstAirDate` | いいえ | 文字列 | `sessionStart` | コンテンツがテレビで最初に放送された日付 |
-| `media.firstDigitalDate` | いいえ | 文字列 | `sessionStart` | コンテンツが何らかのデジタルプラットフォームで最初に放送された日付 |
-| `media.rating` | いいえ | 文字列 | `sessionStart` | TV Parental Guidelines で定義されたレーティング |
-| `media.originator` | いいえ | 文字列 | `sessionStart` | コンテンツの作成者 |
-| `media.network` | いいえ | 文字列 | `sessionStart` | ネットワーク／チャネル名 |
-| `media.showType` | いいえ | 文字列 | `sessionStart` | コンテンツのタイプ（0 ～ 3 の整数） <ul> <li>0 - エピソードそのもの </li> <li>1 - プレビュー </li> <li>2 - クリップ </li> <li>3 - その他 </li> </ul> |
-| `media.adLoad` | いいえ | 文字列 | `sessionStart` | 読み込まれた広告のタイプ |
-| `media.pass.mvpd` | いいえ | 文字列 | `sessionStart` | アドビの認証によって提供される MVPD |
-| `media.pass.auth` | いいえ | 文字列 | `sessionStart` | ユーザーがアドビの認証によって認証されていることを示します（設定されている場合にのみ true になります）。 |
-| `media.dayPart` | いいえ | 文字列 | `sessionStart` | コンテンツが放送された時刻 |
-| `media.feed` | いいえ | 文字列 | `sessionStart` | フィードのタイプ（例：「West-HD」） |
+| `media.streamFormat` | いいえ | string | `sessionStart` | ストリーム形式（例：「HD」） |
+| `media.show` | いいえ | string | `sessionStart` | プログラム名またはシリーズ名 |
+| `media.season` | いいえ | string | `sessionStart` | 番組またはシリーズが属するシーズン番号 |
+| `media.episode` | いいえ | string | `sessionStart` | エピソードの番号 |
+| `media.assetId` | いいえ | string | `sessionStart` | TV シリーズのエピソードの識別子、ムービーアセットの識別子、ライブイベントの識別子など、ビデオアセットのコンテンツの一意の ID。この ID は通常、EIDR、TMS／Gracenote、Rovi などのメタデータを扱う機関から取得します。その他の独自のシステムや社内システムから取得することもできます。 |
+| `media.genre` | いいえ | string | `sessionStart` | コンテンツプロデューサーによって定義されたコンテンツのタイプ |
+| `media.firstAirDate` | いいえ | string | `sessionStart` | コンテンツがテレビで最初に放送された日付 |
+| `media.firstDigitalDate` | いいえ | string | `sessionStart` | コンテンツが何らかのデジタルプラットフォームで最初に放送された日付 |
+| `media.rating` | いいえ | string | `sessionStart` | TV Parental Guidelines で定義されたレーティング |
+| `media.originator` | いいえ | string | `sessionStart` | コンテンツの作成者 |
+| `media.network` | いいえ | string | `sessionStart` | ネットワーク／チャネル名 |
+| `media.showType` | いいえ | string | `sessionStart` | コンテンツのタイプ（0 ～ 3 の整数） <ul> <li>0 - エピソードそのもの </li> <li>1 - プレビュー </li> <li>2 - クリップ </li> <li>3 - その他 </li> </ul> |
+| `media.adLoad` | いいえ | string | `sessionStart` | 読み込まれた広告のタイプ |
+| `media.pass.mvpd` | いいえ | string | `sessionStart` | アドビの認証によって提供される MVPD |
+| `media.pass.auth` | いいえ | string | `sessionStart` | ユーザーがアドビの認証によって認証されていることを示します（設定されている場合にのみ true になります）。 |
+| `media.dayPart` | いいえ | string | `sessionStart` | コンテンツが放送された時刻 |
+| `media.feed` | いいえ | string | `sessionStart` | フィードのタイプ（例：「West-HD」） |
 
 ## 広告データ
 
 | リクエストキー | 必須 | リクエストタイプキー | 設定する場所 |  説明  |
 | --- | :---: | :---: | :---: | --- |
-| `media.ad.podFriendlyName` | いいえ | 文字列 | `adBreakStart` | 広告ブレークのわかりやすい名前 |
+| `media.ad.podFriendlyName` | いいえ | string | `adBreakStart` | 広告ブレークのわかりやすい名前 |
 | `media.ad.podIndex` | はい | 整数 | `adBreakStart` | ビデオ内の広告ポッドのインデックス |
 | `media.ad.podSecond` | はい | 数値 | `adBreakStart` | ポッドが開始された時間（秒） |
 | `media.ad.podPosition` | はい | 整数 | `adStart` | 広告ブレーク内の広告のインデックス（1 から開始） |
-| `media.ad.name` | いいえ | 文字列 | `adStart` | 広告のわかりやすい名前 |
-| `media.ad.id` | はい | 文字列 | `adStart` | 広告の名前 |
+| `media.ad.name` | いいえ | string | `adStart` | 広告のわかりやすい名前 |
+| `media.ad.id` | はい | string | `adStart` | 広告の名前 |
 | `media.ad.length` | はい | 数値 | `adStart` | ビデオ広告の長さ（秒） |
-| `media.ad.playerName` | はい | 文字列 | `adStart` | 広告のレンダリングをおこなうプレーヤーの名前 |
+| `media.ad.playerName` | はい | string | `adStart` | 広告のレンダリングをおこなうプレーヤーの名前 |
 
 ## 広告標準メタデータ
 
 | リクエストキー | 必須 | リクエストタイプキー | 設定する場所 |  説明  |
 | --- | :---: | :---: | :---: | --- |
-| `media.ad.advertiser` | いいえ | 文字列 | `adStart` | 広告で取り上げられている製品の会社またはブランド |
-| `media.ad.campaignId` | いいえ | 文字列 | `adStart` | 広告キャンペーンの ID |
-| `media.ad.creativeId` | いいえ | 文字列 | `adStart` | 広告クリエイティブの ID |
-| `media.ad.siteId` | いいえ | 文字列 | `adStart` | 広告サイトの ID |
-| `media.ad.creativeURL` | いいえ | 文字列 | `adStart` | 広告クリエイティブの URL |
-| `media.ad.placementId` | いいえ | 文字列 | `adStart` | 広告のプレースメント ID |
+| `media.ad.advertiser` | いいえ | string | `adStart` | 広告で取り上げられている製品の会社またはブランド |
+| `media.ad.campaignId` | いいえ | string | `adStart` | 広告キャンペーンの ID |
+| `media.ad.creativeId` | いいえ | string | `adStart` | 広告クリエイティブの ID |
+| `media.ad.siteId` | いいえ | string | `adStart` | 広告サイトの ID |
+| `media.ad.creativeURL` | いいえ | string | `adStart` | 広告クリエイティブの URL |
+| `media.ad.placementId` | いいえ | string | `adStart` | 広告のプレースメント ID |
 
 ## チャプターデータ
 
@@ -98,13 +98,13 @@ ht-degree: 99%
 | `media.chapter.index` | はい | 整数 | `chapterStart` | コンテンツ内のチャプターの位置を識別します。 |
 | `media.chapter.offset` | はい | 数値 | `chapterStart` | 再生においてチャプターが始まる時間（秒） |
 | `media.chapter.length` | はい | 数値 | `chapterStart` | チャプターの長さ（秒） |
-| `media.chapter.friendlyName` | いいえ | 文字列 | `chapterStart` | チャプターのわかりやすい名前 |
+| `media.chapter.friendlyName` | いいえ | string | `chapterStart` | チャプターのわかりやすい名前 |
 
 ## 品質データ
 
 | リクエストキー | 必須 | リクエストタイプキー | 設定する場所 |  説明  |
 | --- | :---: | :---: | :---: | --- |
-| `media.qoe.bitrate` | いいえ | 整数 | いずれか | 平均ビットレート(bps)。 平均ビットレートは、再生セッション中に発生した再生時間に関連するすべてのビットレート値の加重平均として計算されます。 |
+| `media.qoe.bitrate` | いいえ | 整数 | いずれか | 平均ビットレート（bps）。平均ビットレートは、再生セッション中に発生した再生時間に関連するすべてのビットレート値の加重平均として計算されます。 |
 | `media.qoe.droppedFrames` | いいえ | 整数 | いずれか | ストリーム内のドロップフレームの数 |
 | `media.qoe.framesPerSecond` | いいえ | 整数 | いずれか | 1 秒あたりのフレーム数 |
 | `media.qoe.timeToStart` | いいえ | 整数 | いずれか | ユーザーが再生を押してからコンテンツが読み込まれて再生が開始されたときまでの時間（ミリ秒） |
