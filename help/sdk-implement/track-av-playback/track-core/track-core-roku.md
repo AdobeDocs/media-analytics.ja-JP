@@ -1,18 +1,18 @@
 ---
-title: Roku でコア再生をトラッキングする方法
+title: 'Roku でコア再生をトラッキングする方法 '
 description: Roku で Media SDK を使用してコアトラッキングを実装する方法を説明します。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Roku でのコア再生の追跡{#track-core-playback-on-roku}
+# Roku でのコア再生の追跡 {#track-core-playback-on-roku}
 
 このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。
 
@@ -103,7 +103,7 @@ ht-degree: 93%
 
    * **標準メタデータ**
 
-   [Roku での標準メタデータの実装 ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Roku での標準メタデータの実装 ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >メディアオブジェクトへの標準のビデオメタデータオブジェクトのアタッチはオプションです。
@@ -145,7 +145,7 @@ ht-degree: 93%
 
 1. **再生ヘッド値の更新**
 
-   メディアの再生ヘッドが変更されると、 `mediaUpdatePlayhead` APIを呼び出してSDKに通知します。 ビデオオンデマンド(VOD)の場合、値はメディアアイテムの開始時からの時間（秒）を返します。 ライブストリーミングの場合、この値はその日の午前0時(UTC)からの秒数として指定されます。
+   メディアの再生ヘッドが変更されると、`mediaUpdatePlayhead` API を呼び出して SDK に通知します。ビデオオンデマンド（VOD）の場合、値はメディアアイテムの開始時からの秒数で指定されます。ライブストリーミングの場合、値はその日の午前 0 時（UTC）からの秒数として指定されます。
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
