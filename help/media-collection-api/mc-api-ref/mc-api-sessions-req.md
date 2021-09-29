@@ -1,14 +1,14 @@
 ---
-title: ストリーミングメディアコレクションAPI — Sessionsリクエストエンドポイント
+title: ストリーミングメディアコレクション API - セッションリクエストエンドポイント
 description: Media Collection API のセッションリクエストエンドポイントのパラメーターと応答
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: ef881900766be773256e2732953f7b63c5d488fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
