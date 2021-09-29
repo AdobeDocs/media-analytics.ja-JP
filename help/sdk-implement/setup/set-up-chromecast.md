@@ -1,18 +1,18 @@
 ---
-title: Chromecast用メディアSDKの設定方法
+title: Chromecast 用 Media SDK の設定方法
 description: Chromecast で Media SDK アプリケーションをセットアップするには、次の手順に従います。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 2cebb3db58e28be3e448fdfa4da5f96c8c37a947
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Chromecast のセットアップ{#set-up-chromecast}
+# Chromecast のセットアップ {#set-up-chromecast}
 
 ## FAQ
 
@@ -136,7 +136,7 @@ Experience Cloud ソリューション用 Chromecast SDK 2.x を使用すると�
    | `getMarketingCloudID()` | 訪問者 ID サービスから Experience Cloud 訪問者 ID を取得します。<br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
    | `syncIdentifiers()` | Experience Cloud 訪問者 ID を使用して、各訪問者に関連付けることのできる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs()` に相当します。例：<br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
-1. メディアをトラッキングするには、MediaDelegateプロトコルを実装します。
+1. メディアをトラッキングするには、MediaDelegate プロトコルを実装します。
 
    ```js
     var delegate = {
