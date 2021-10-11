@@ -5,10 +5,10 @@ user-guide-title: ストリーミングメディア用 Adobe Analytics
 breadcrumb-title: メディア解析ガイド
 user-guide-description: ストリーミングメディア用 Adobe Analytics の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
-workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 99%
+source-git-commit: 407f17a5b1134362c6be7c6bfae909e9e66077be
+workflow-type: ht
+source-wordcount: '840'
+ht-degree: 100%
 
 ---
 
@@ -218,6 +218,7 @@ ht-degree: 99%
       + [メディア再生滞在時間パネル](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [Media Workspace のテンプレート](media-reports/media-workspace-templates.md)
    + [API を使用した同時ビューアデータの取得](media-reports/media-default-reports/get-concurrent-json20.md)
+   + [API を介したメディア再生滞在時間のデータの取得](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
 + [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
 + プレーヤーステートトラッキング {#player-state-tracking}
    + [概要 ](sdk-implement/player-state-tracking/player-state-overview.md)
