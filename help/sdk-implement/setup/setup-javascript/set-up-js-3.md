@@ -1,13 +1,13 @@
 ---
-title: JavaScript 3.xを使用したメディアSDKの設定方法
+title: JavaScript 3.x を使用して Media SDK をセットアップする方法
 description: JavaScript 3.x で Media SDK アプリケーションをセットアップするには、次の手順に従います。
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 * **有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
 * **メディアアプリケーションで、`AppMeasurement` と JavaScript 向け `Experience Cloud Identity Service` を実装します**。
-詳しくは、[JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) および [Experience Cloud ID サービスの実装](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja)を参照してください。
+詳しくは、[JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja) および [Experience Cloud ID サービスの実装](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja)を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
