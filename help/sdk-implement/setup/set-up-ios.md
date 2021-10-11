@@ -1,14 +1,14 @@
 ---
-title: iOSでのメディアSDKの設定方法
+title: iOS で Media SDK をセットアップする方法
 description: iOS で Media SDK アプリケーションをセットアップするには、次の手順に従います。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
