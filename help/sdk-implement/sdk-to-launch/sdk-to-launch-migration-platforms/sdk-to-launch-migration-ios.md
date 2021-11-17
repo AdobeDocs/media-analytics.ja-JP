@@ -4,10 +4,10 @@ description: Media SDK から iOS 用の Launch に移行する方法を説明�
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '362'
-ht-degree: 100%
+source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 スタンドアロンの Media SDK では、アプリケーションでトラッキング設定をおこない、トラッカーを作成する際に SDK に渡します。
 
 ```objective-c
-ADBMediaHeartbeatConfig *config = 
+ADBMediaHeartbeatConfig *config =
   [[ADBMediaHeartbeatConfig alloc] init];
 
 config.trackingServer = @"namespace.hb.omtrdc.net";
@@ -31,8 +31,8 @@ config.playerName = @"native-player";
 config.ssl = YES;
 config.debugLogging = YES;
 
-ADBMediaHeartbeat* tracker = 
-  [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
+ADBMediaHeartbeat* tracker =
+  [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config];
 ```
 
 ### Launch 拡張機能
@@ -82,7 +82,7 @@ config.ssl = YES;
 config.debugLogging = YES;
 ADBMediaHeartbeatDelegate* delegate = [[PlayerDelegate alloc] init];
 
-ADBMediaHeartbeat* tracker = 
+ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:delegate config:config];
 ```
 
@@ -142,11 +142,11 @@ ADBMediaHeartbeat* tracker =
 * 標準メディアメタデータ：
 
    ```objective-c
-   ADBMediaObject *mediaObject = 
-     [ADBMediaHeartbeat createMediaObjectWithName:@"media-name" 
-                        mediaId:@"media-id" 
-                        length:60 
-                        streamType:ADBMediaHeartbeatStreamTypeVod 
+   ADBMediaObject *mediaObject =
+     [ADBMediaHeartbeat createMediaObjectWithName:@"media-name"
+                        mediaId:@"media-id"
+                        length:60
+                        streamType:ADBMediaHeartbeatStreamTypeVod
                         mediaType:ADBMediaTypeVideo];
    
    // Standard metadata keys provided by adobe.
@@ -166,28 +166,28 @@ ADBMediaHeartbeat* tracker =
 * 標準の広告メタデータ：
 
    ```objective-c
-   ADBMediaObject* adObject = 
-     [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"] 
+   ADBMediaObject* adObject =
+     [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"]
                         adId:[adData objectForKey:@"id"]
                         position:[[adData objectForKey:@"position"] doubleValue]
                         length:[[adData objectForKey:@"length"] doubleValue]];
    
    // Standard metadata keys provided by adobe.
-   NSMutableDictionary *standardMetadata = 
+   NSMutableDictionary *standardMetadata =
      [[NSMutableDictionary alloc] init];
-   [standardMetadata setObject:@"Sample Advertiser" 
+   [standardMetadata setObject:@"Sample Advertiser"
                      forKey:ADBAdMetadataKeyADVERTISER];
-   [standardMetadata setObject:@"Sample Campaign" 
+   [standardMetadata setObject:@"Sample Campaign"
                      forKey:ADBAdMetadataKeyCAMPAIGN_ID];
-   [adObject setValue:standardMetadata 
+   [adObject setValue:standardMetadata
                      forKey:ADBMediaObjectKeyStandardAdMetadata];
    
    //Attaching custom metadata
    NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
    [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
    
-   [tracker trackEvent:ADBMediaHeartbeatEventAdStart 
-            mediaObject:adObject 
+   [tracker trackEvent:ADBMediaHeartbeatEventAdStart
+            mediaObject:adObject
             data:adDictionary];
    ```
 
@@ -196,14 +196,14 @@ ADBMediaHeartbeat* tracker =
 * 標準メディアメタデータ：
 
    ```objective-c
-   NSDictionary *mediaObject = 
-     [ACPMedia createMediaObjectWithName:@"media-name" 
-               mediaId:@"media-id" 
-               length:60 
-               streamType:ACPMediaStreamTypeVod 
+   NSDictionary *mediaObject =
+     [ACPMedia createMediaObjectWithName:@"media-name"
+               mediaId:@"media-id"
+               length:60
+               streamType:ACPMediaStreamTypeVod
                mediaType:ACPMediaTypeVideo];
    
-   NSMutableDictionary *mediaMetadata = 
+   NSMutableDictionary *mediaMetadata =
      [[NSMutableDictionary alloc] init];
    
    // Standard metadata keys provided by adobe.
@@ -219,13 +219,13 @@ ADBMediaHeartbeat* tracker =
 * 標準の広告メタデータ：
 
    ```objective-c
-   NSDictionary* adObject = 
-     [ACPMedia createAdObjectWithName:@"ad-name" 
-               adId:@"ad-id" 
-               position:1 
+   NSDictionary* adObject =
+     [ACPMedia createAdObjectWithName:@"ad-name"
+               adId:@"ad-id"
+               position:1
                length:15];
    
-   NSMutableDictionary* adMetadata = 
+   NSMutableDictionary* adMetadata =
      [[NSMutableDictionary alloc] init];
    
    // Standard metadata keys provided by adobe.
