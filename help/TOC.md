@@ -5,9 +5,9 @@ user-guide-title: ストリーミングメディア用 Adobe Analytics
 breadcrumb-title: メディア解析ガイド
 user-guide-description: ストリーミングメディア用 Adobe Analytics の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 407f17a5b1134362c6be7c6bfae909e9e66077be
+source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '828'
 ht-degree: 100%
 
 ---
@@ -145,9 +145,6 @@ ht-degree: 100%
       + [ハートビートパラメーターの説明](sdk-implement/validation/heartbeat-params.md)
       + デバッグ {#debugging}
          + [SDK のデバッグ](sdk-implement/validation/debugging/sdk-debugging.md)
-         + [Adobe Debug の設定](sdk-implement/validation/debugging/config-adobe-debug.md)
-         + [新しいデバッグレポートの作成](sdk-implement/validation/debugging/create-new-debug-report.md)
-         + [デバッグのダッシュボードとレポート](sdk-implement/validation/debugging/debug-dash-repts.md)
    + OTT アプリでの Analytics {#analytics-with-ott}
       + [アプリの状態の追跡](sdk-implement/analytics-with-ott/track-app-states.md)
       + [アプリのアクションの追跡](sdk-implement/analytics-with-ott/track-app-actions.md)
