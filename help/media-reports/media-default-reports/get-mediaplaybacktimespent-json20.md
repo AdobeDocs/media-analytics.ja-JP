@@ -1,11 +1,9 @@
 ---
 title: Analytics 2.0 API を使用したメディア再生滞在時間の JSON レポートデータの取得
 description: Analytics 2.0 API を使用してメディア再生滞在時間のレポートデータを取得する方法を説明します。 リクエストと応答のサンプルを表示します。
-uuid: null
-exl-id: null
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 3118a5eeef56c7768d88df7c658468c356921aac
+source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%

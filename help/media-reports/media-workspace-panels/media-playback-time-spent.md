@@ -1,13 +1,12 @@
 ---
 title: メディア再生滞在時間
 description: メディア再生滞在時間パネルを使用して再生滞在時間を分析し、同時実行のピーク時間とドロップオフが発生した場所を把握する方法について説明します。
-exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: d5769f3eed3f0c3770e427420025ff624e775f9f
+source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
