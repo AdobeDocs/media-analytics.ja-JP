@@ -1,12 +1,13 @@
 ---
 title: メディア再生滞在時間
-description: メディア再生滞在時間パネルを使用して再生滞在時間を分析し、同時実行のピーク時間とドロップオフが発生した場所を把握する方法について説明します。
+description: メディア再生に費やした時間パネルを使用して、再生に費やした時間を分析し、同時実行のピーク時間とドロップオフが発生した場所を理解する方法について説明します。
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
+exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
+source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '219'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 0%
 Analysis Workspace での再生滞在時間は、特定の時点でのメディアストリームの視聴に費やされた時間で、一時停止、バッファー、開始時間が含まれます。メディア再生滞在時間を使用すると、5 分、15 分、30 分、1 時間など、異なる時間間隔で再生時間を分割できます。
 
 
-メディア再生滞在時間は、同時実行のピークに関する詳細や、分類および比較機能により、時間の経過に伴う再生の分析に役立ちます。メディア再生滞在時間パネルにアクセスするには、Media Analytics コンポーネントが有効になっているレポートスイートに移動します。次に、左端のパネルアイコンをクリックし、 パネルを Analysis Workspace プロジェクトにドラッグします。[詳細情報...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
+メディア再生滞在時間は、同時実行のピークに関する詳細や、分類および比較機能により、時間の経過に伴う再生の分析に役立ちます。メディア再生滞在時間パネルにアクセスするには、Media Analytics コンポーネントが有効になっているレポートスイートに移動します。次に、左端のパネルアイコンをクリックし、 パネルを Analysis Workspace プロジェクトにドラッグします。[詳細情報...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ja)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
