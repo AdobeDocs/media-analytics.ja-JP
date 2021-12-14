@@ -1,13 +1,13 @@
 ---
-title: 'Adobe Analytics でのストリーミングメディア '
+title: Adobe Analytics でのストリーミングメディア
 description: コンテンツ、オーディオおよび広告に関する最新のストリーミングメディア測定について詳しく説明します。ストリーミングメディア用の Adobe Analytics について説明します。
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '880'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '930'
 ht-degree: 100%
 
 ---
@@ -37,6 +37,10 @@ Adobe Analytics for Streaming Media のメリットには、リアルタイム�
 ## ハートビート指標 {#heartbeat}
 
 Adobe Analytics は、「ハートビート」を使用してビデオ指標を収集します。ビデオ再生中、ハートビートはハートビートトラッキングサーバーに送信され、再生時間を測定します。ハートビート呼び出しは、10 秒ごとに送信されます。ハートビートにより、きめ細かいビデオエンゲージメント指標やより正確なビデオフォールアウトレポートが可能になります。Adobe Analytics for Streaming Media は、Media Analytics 拡張機能、Media SDK および Media Collection API を備えた Adobe Launch を使用して、ハートビートを測定します。`AppMeasurement` および `VisitorID` コンポーネントは、ビデオデータの受信に使用されます。
+
+>[!NOTE]
+>Adobe Experience Platform Launch は、Experience Platform のデータ収集テクノロジースイートとしてリブランドされています。その結果、製品ドキュメント全体でいくつかの用語の変更がロールアウトされました。用語の変更点の一覧については、次の[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ja)を参照してください。
+
 
 Adobe Analytics for Streaming Media でハートビートを使用すると、次の利点があります。
 

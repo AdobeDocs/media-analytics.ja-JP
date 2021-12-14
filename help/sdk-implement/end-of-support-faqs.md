@@ -4,9 +4,9 @@ description: このトピックには、Media Analytics SDK のサポート終�
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '673'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '723'
 ht-degree: 100%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 100%
 # Media Analytics SDK のサポート終了に関する FAQ
 
 2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。2021 年 8 月 31 日（PT）以降、アドビは Media Analytics SDK の修正、OS 関連の更新プログラム、サポートを提供しません。これらの新しい Experience Platform SDK への移行プロセス中に、Adobe Analytics for Streaming Media を有効にするには、[Media Analytics 拡張機能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)を実装する必要があることに注意してください。
+
+>[!NOTE]
+>Adobe Experience Platform Launch は、Experience Platform のデータ収集テクノロジースイートとしてリブランドされています。その結果、製品ドキュメント全体でいくつかの用語の変更がロールアウトされました。用語の変更点の一覧については、次の[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ja)を参照してください。
+
 
 ## 知っておきたいことトップ 5
 
@@ -55,8 +59,8 @@ ht-degree: 100%
 
 1. **tvOS 用 SDK は、このサポートの終了の影響を受けますか？**
 
-   はい。tvOS（バージョン 10 以降）の場合、Media Analytics 拡張機能へ移行することをお勧めします。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（iOS）](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html?lang=ja)を参照してください。
+   はい。tvOS（バージョン 10 以降）の場合、Media Analytics 拡張機能へ移行することをお勧めします。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（iOS）](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)を参照してください。
 
 1. **FireTV および AndroidTV 用 SDK は、このサポートの終了の影響を受けますか？**
 
-   はい。FireTV および AndroidTV の場合、Media Analytics 拡張機能へ移行することをお勧めします。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（Android）](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html?lang=ja)を参照してください。
+   はい。FireTV および AndroidTV の場合、Media Analytics 拡張機能へ移行することをお勧めします。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行（Android）](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)を参照してください。

@@ -4,10 +4,10 @@ description: iOS、Android、OTT デバイス、JavaScript ブラウザーなど
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '341'
-ht-degree: 100%
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ SDK が現在サポートされていないデバイスやプラットフォー�
 
 現在サポートされているデバイスとプラットフォームの表を次に示します。この SDK の最新バージョンをダウンロードするには、[SDK のダウンロード](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html?lang=ja)を参照してください。デバイスが一覧にない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
 
-| ストリーミングプラットフォームとデバイス |  | AEP Mobile SDK を含む Media Launch 拡張機能 | メディア SDK | メディアコレクション API |
+| ストリーミングプラットフォームとデバイス |  | AEP Mobile SDK を含むデータ収集 | メディア SDK | メディアコレクション API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web／モバイル Web |  |  |  |  |
 |  | JavaScript ブラウザー | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |

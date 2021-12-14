@@ -1,19 +1,22 @@
 ---
-seo-title: スタンドアロンの Media SDK から Adobe Launch への移行
+seo-title: Migrating from the standalone Media SDK to Adobe Launch
 title: スタンドアロンの Media SDK から Adobe Launch への移行
-seo-description: Media SDK から Launch への移行に役立つ手順とコードサンプルです。
+seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
 description: Media SDK から Launch に移行する方法を説明します。
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
-workflow-type: ht
-source-wordcount: '180'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '207'
 ht-degree: 100%
 
 ---
 
 # スタンドアロンの Media SDK から Adobe Launch への移行
+
+>[!NOTE]
+>Adobe Experience Platform Launch は、Experience Platform のデータ収集テクノロジースイートとしてリブランドされています。その結果、製品ドキュメント全体でいくつかの用語の変更がロールアウトされました。用語の変更点の一覧については、次の[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ja)を参照してください。
 
 このドキュメントでは、主に、スタンドアロンの Media SDK と Media Analytics Launch 拡張機能との間の Media Analytics の実装の違いに焦点を当てます。
 
