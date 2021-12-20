@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: ht
+source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
+workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -140,31 +140,27 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-   <br/><br/>
-
    **その他のパブリック API**
 
    **DebugLogging**
-| メソッド   | 明 |
-| — | — |
-| `setDebugLogging` | SDK のデバッグログを有効または無効にするために使用します。<br/><br/>`ADBMobile().setDebugLogging(true)` | |  `getDebugLogging` | デバッグログが有効な場合は true を返します。   <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
-   <br/><br/>
+   |  メソッド   | 説明 |
+   | --- | --- |
+   | `setDebugLogging` | SDK のデバッグログを有効または無効にするために使用します。  <br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | デバッグログが有効な場合は true を返します。  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
-|  Constant   | Description |
-| --- | --- |
-| `PRIVACY_STATUS_OPT_IN` | setPrivacyStatus を呼び出してオプトインする際に渡す定数。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`|
-| `PRIVACY_STATUS_OPT_OUT` | setPrivacyStatus を呼び出してオプトアウトする際に渡す定数。<br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
-   <br/>
+   |  定数   | 説明 |
+   | --- | --- |
+   | `PRIVACY_STATUS_OPT_IN` | setPrivacyStatus を呼び出してオプトインを呼び出す際に渡す定数。 <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | setPrivacyStatus を呼び出してオプトアウトする際に渡す定数。 <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  メソッド   | 説明 |
    | --- | --- |
    | `setPrivacyStatus` | SDK のプライバシーステータスを設定します。 <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
    | `getPrivacyStatus` | SDK に設定されている現在のプライバシーステータスを取得します。 <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
-   <br/><br/>
    >[!IMPORTANT]
    >
    >SDK が ping を正しく送信するよう、250 ミリ秒ごとにメインイベントループで `processMessages` 関数と `processMediaMessages` 関数を呼び出すようにします。
