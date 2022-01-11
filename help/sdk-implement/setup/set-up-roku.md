@@ -6,13 +6,13 @@ exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Roku のセットアップ{#set-up-roku}
+# Roku のセットアップ {#set-up-roku}
 
 ## 前提条件 
 
@@ -132,7 +132,7 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
    | --- | --- |
    | `visitorMarketingCloudID` | 訪問者 ID サービスから Experience Cloud 訪問者 ID を取得します。<br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Experience Cloud 訪問者 ID を使用して、各訪問者に関連付けることのできる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、`setCustomerIDs` に対応します。例：<br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | SDK で広告（RIDA）用に Roku ID を設定するために使用されます。例：<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>`"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API を使用して、広告（RIDA）用の Roku ID を取得します。 |
+   | `setAdvertisingIdentifier` | SDK で広告（RIDA）用に Roku ID を設定するために使用されます。例：<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API を使用して、広告（RIDA）用の Roku ID を取得します。 |
    | `getAllIdentifiers` | Analytics、訪問者、Audience Manager、カスタム識別情報など、SDK に保存されているすべての識別情報のリストを返します。<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
    <!--
     Roku Api Reference:
@@ -146,15 +146,15 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
 
    |  メソッド   | 説明 |
    | --- | --- |
-   | `setDebugLogging` | SDK のデバッグログを有効または無効にするために使用します。  <br/><br/>`ADBMobile().setDebugLogging(true)` |
-   | `getDebugLogging` | デバッグログが有効な場合は true を返します。  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+   | `setDebugLogging` | SDK のデバッグログを有効または無効にするために使用します。<br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | デバッグログが有効になっている場合は true を返します。<br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
 
-   |  定数   | 説明 |
+   | 定数   | 説明 |
    | --- | --- |
-   | `PRIVACY_STATUS_OPT_IN` | setPrivacyStatus を呼び出してオプトインを呼び出す際に渡す定数。 <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
-   | `PRIVACY_STATUS_OPT_OUT` | setPrivacyStatus を呼び出してオプトアウトする際に渡す定数。 <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
+   | `PRIVACY_STATUS_OPT_IN` | setPrivacyStatus を呼び出してオプトインする際に渡す定数。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | setPrivacyStatus を呼び出してオプトアウトする際に渡す定数。<br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  メソッド   | 説明 |
    | --- | --- |
