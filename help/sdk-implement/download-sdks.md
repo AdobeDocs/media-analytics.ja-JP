@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 6c42e5d51a2b23c3fe721a36100fe47b7afb14e6
+source-git-commit: 23dea585347d57a7f2958344af4f8a6861d6fa3f
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 | メディア SDK 3.x | 最新のメディア SDK のダウンロード |  API   |  ドキュメント  |
 | --- | --- | --- | --- |
 | JavaScript | [JS 用メディア SDK v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript 3.x のセットアップ](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
-| Chromecast | [Chromecast 用メディア SDK v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Chromecast API リファレンス](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast のセットアップ ](/help/sdk-implement/setup/set-up-chromecast.md) |
+| Chromecast | [Chromecast 用メディア SDK v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast のセットアップ ](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## メディア SDK 2.x のダウンロード {#download-2x-sdks}
