@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 23dea585347d57a7f2958344af4f8a6861d6fa3f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '602'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 | メディア SDK 3.x | 最新のメディア SDK のダウンロード |  API   |  ドキュメント  |
 | --- | --- | --- | --- |
 | JavaScript | [JS 用メディア SDK v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript 3.x のセットアップ](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
-| Chromecast | [Chromecast 用メディア SDK v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast のセットアップ ](/help/sdk-implement/setup/set-up-chromecast.md) |
+| Chromecast | [Chromecast 用 Media SDK v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast のセットアップ ](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## メディア SDK 2.x のダウンロード {#download-2x-sdks}
@@ -40,7 +40,7 @@ ht-degree: 0%
 | Android／FireTV | [Android 用メディア SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android のセットアップ](/help/sdk-implement/setup/set-up-android.md) |
 | iOS／Apple TV | [iOS v2.3.0 用メディア SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0)（レガシー 2.0 SDK の入手方法については、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください） | [iOS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS のセットアップ](/help/sdk-implement/setup/set-up-ios.md) |
 | JavaScript | [JS 用メディア SDK v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 2.x のセットアップ](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md) |
-| Roku | [Roku 用メディア SDK v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [Roku のセットアップ](/help/sdk-implement/setup/set-up-roku.md) |
+| Roku | [Roku 用 Media SDK v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [Roku のセットアップ](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Chromecast 用メディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast のセットアップ ](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 ## Media Analytics Launch 拡張機能 {#media-analytics-launch-extension}
@@ -49,7 +49,7 @@ ht-degree: 0%
 |---|---|---|
 | **Web 拡張機能** | [Adobe Media Analytics for Audio and Video 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=ja) | [Adobe Media Analytics for Audio and Video 拡張機能](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
 | **Web 拡張機能（3.x SDK）** | [Adobe Media Analytics for Audio and Video 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja) | [Adobe Media Analytics (3.x SDK) for Audio and Video 拡張機能](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| **モバイル拡張機能** | [Adobe Analytics - Media Analytics for Audio and Video](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics - Media Analytics for Audio and Video](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
+| **モバイル拡張機能** | [Adobe Analytics - Media Analytics for Audio and Video](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics - Media Analytics for Audio and Video 拡張機能 ](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
 
 ## メディア SDK 1.x のダウンロード {#download-the-1.x-media-sDKs}
 
