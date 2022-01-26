@@ -3,11 +3,11 @@ title: 'メディア視聴時間帯 '
 description: メディア視聴時間帯ダッシュボードを使用すると、コンテンツの開始を時間帯で表示でき、オーディエンスがいつ関与しているかを分析できます。
 uuid: aa545f72-6816-448f-af5d-3c5e18f7b3b7
 exl-id: 5e4a390e-8cc5-4934-8d60-c82ca0daaee1
-feature: Media Analytics、Reports & Analytics の基本
+feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '50'
+workflow-type: tm+mt
+source-wordcount: '45'
 ht-degree: 100%
 
 ---

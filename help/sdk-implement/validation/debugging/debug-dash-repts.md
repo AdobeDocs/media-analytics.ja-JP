@@ -3,11 +3,11 @@ title: デバッグのダッシュボードとレポート
 description: Adobe Debug ダッシュボードについて説明します。
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
-feature: Media Analytics、Analytics ダッシュボード
+feature: Media Analytics, Analytics Dashboards
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '86'
+workflow-type: tm+mt
+source-wordcount: '82'
 ht-degree: 100%
 
 ---

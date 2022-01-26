@@ -1,6 +1,8 @@
 ---
 source-git-commit: 97af9e6790bb4a4d65057868b90e1127cb3bb153
-translation-type: tm+mt
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 100%
 
 ---
 # コントリビューション
@@ -11,7 +13,7 @@ translation-type: tm+mt
 
 ## 行動規範
 
-このプロジェクトはアドビの[行動規範](https://git.corp.adobe.com/OpenSourceAdvisoryBoard/starter-repo/blob/master/code-of-conduct.md)に従います。参加することにより、この行動規範を遵守することが期待されます。許容できない行動を見かけた場合は SOMEEMAIL に報告してください。
+このプロジェクトはアドビ[行動規範](https://git.corp.adobe.com/OpenSourceAdvisoryBoard/starter-repo/blob/master/code-of-conduct.md)を遵守しています。参加することにより、この行動規範を遵守することが期待されます。許容できない行動を見かけた場合は SOMEEMAIL に報告してください。
 
 ## コントリビューター使用許諾契約
 
@@ -19,4 +21,4 @@ translation-type: tm+mt
 
 ## コードのレビュー
 
-すべての送信は、プルリクエスト形式でおこなわれ、プロジェクト承諾者のレビューを受ける必要があります。プルリクエストの送信方法については、[GitHub のプルリクエストに関するドキュメント](https://help.github.com/articles/about-pull-requests/)を参照してください。
+すべての送信は、プルリクエスト形式でおこなわれ、プロジェクト承諾者のレビューを受ける必要があります。プルリクエストの送信について詳しくは、[GitHub のプルリクエストドキュメント](https://help.github.com/ja/github/collaborating-with-issues-and-pull-requests/about-pull-requests)をお読みください。

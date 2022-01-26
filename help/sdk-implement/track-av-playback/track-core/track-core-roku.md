@@ -6,7 +6,7 @@ exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 100%
 
@@ -103,7 +103,7 @@ ht-degree: 100%
 
    * **標準メタデータ**
 
-   [Roku での標準メタデータの実装 ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Roku での標準メタデータの実装 ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >メディアオブジェクトへの標準のビデオメタデータオブジェクトのアタッチはオプションです。

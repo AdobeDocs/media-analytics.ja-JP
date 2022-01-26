@@ -6,7 +6,7 @@ exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f296b2549bb49162d735f29718057b3b1bbec231
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 100%
 
@@ -115,7 +115,7 @@ ht-degree: 100%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/> media.ad.name </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.1 </li> <li> **値の例：**<br/> &quot;Ford F-150&quot; </li><li> **説明：**<br/>&#x200B;広告のわかりやすい名前。レポートでは、「広告名」が分類、「広告名（変数）」が eVar です。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.ad.<br/>friendlyName） </li> <li> **ハートビート：**<br/>（s:asset:ad_name） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar および分類 </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;広告名および広告名（変数） </li> <li> **コンテキストデータ：**<br/>（a.media.ad.<br/>friendlyName） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.ad.friendlyName） </li> <li> **XDM フィールドパス**<br/>：advertising.adAssetReference.dc:title </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [名前](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/> media.ad.name </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：** 1.5.1 </li> <li> **値の例：**<br/> &quot;Ford F-150&quot; </li><li> **説明：**<br/>&#x200B;広告のわかりやすい名前。レポートでは、「広告名」が分類、「広告名（変数）」が eVar です。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.ad.<br/>friendlyName） </li> <li> **ハートビート：**<br/>（s:asset:ad_name） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar および分類 </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;広告名および広告名（変数） </li> <li> **コンテキストデータ：**<br/>（a.media.ad.<br/>friendlyName） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.ad.friendlyName） </li> <li> **XDM フィールドパス**<br/>：advertising.adAssetReference.dc:title </li> </ul> |
 
 
 

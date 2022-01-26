@@ -3,11 +3,11 @@ title: メディア同時閲覧者数
 description: 1 日の同時閲覧者数の表示に使用するメディア同時閲覧者数ダッシュボードについて説明します。 データは、コンテンツ、デバイスタイプ、国などでフィルタリングできます。
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-feature: Media Analytics、Reports & Analytics の基本
+feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '295'
+workflow-type: tm+mt
+source-wordcount: '290'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 100%
 >[!TIP]
 >
 > このレポートは、同時にアクティブなメディアセッションに基づいています。  ユニーク訪問者ごとの同時視聴者を表示し、セグメントを適用し、分解して比較するには、[Analysis Workspace のメディア同時視聴者数パネル](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=ja)を使用します。
-
 
 ![](assets/video-concurrent-viewers.png)
 

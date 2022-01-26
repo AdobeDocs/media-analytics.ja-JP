@@ -5,8 +5,8 @@ exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: ht
-source-wordcount: '364'
+workflow-type: tm+mt
+source-wordcount: '362'
 ht-degree: 100%
 
 ---
@@ -62,8 +62,8 @@ ht-degree: 100%
 
    | 変数名 | タイプ | 説明 |
    | --- | --- | --- |
-   | `name` | string | 広告名を示す空白以外の文字列。 |
-   | `adId` | string | 広告識別子を示す空白以外の文字列。 |
+   | `name` | 文字列 | 広告名を示す空白以外の文字列。 |
+   | `adId` | 文字列 | 広告識別子を示す空白以外の文字列。 |
    | `position` | 数値 | 広告ブレーク内の広告の位置を示す番号（1 から始まります）。 |
    | `length` | 数値 | 広告の長さを示す正の数。 |
 

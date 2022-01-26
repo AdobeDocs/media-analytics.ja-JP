@@ -6,8 +6,8 @@ exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: ht
-source-wordcount: '132'
+workflow-type: tm+mt
+source-wordcount: '130'
 ht-degree: 100%
 
 ---

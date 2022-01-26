@@ -1,13 +1,13 @@
 ---
 title: Federated Analytics
-description: Federated Analyticsサービスは、2つのパートナー間でAdobe Analyticsをストリーミングメディアデータを共有するシステムを提供します。
+description: Federated Analyticsサービスは、2 つのパートナー間でAdobe Analyticsをストリーミングメディアデータと共有するシステムを提供します。
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '552'
 ht-degree: 92%
 
 ---
@@ -38,13 +38,13 @@ Federated Analytics サービスは、2 つのパートナー間でAdobe Media A
 * **メディアストリームに関する契約：** Adobe Analytics 内でオーディオおよびビデオデータにアクセスするためには、受信者と送信者が事前に Adobe Analytics for Media Streams の契約を済ませておく必要があります。詳しくは、アカウントチームにお問い合わせください。
 * **フェデレーションに関する補遺契約：**&#x200B;データの送受信をおこなうためには、送信者と受信者それぞれがアドビとの補遺契約に署名している必要があります。パートナーシップ 1 組で 1 つの補遺契約ではなく、それぞれのお客様が補遺契約に署名する必要があります。詳しくは、アカウントチームにお問い合わせください。
 
-* **Media Analytics の実装：** 送信者は、フェデレーテッドデータセットの一部となるすべてのプレーヤーにMedia Analyticsを実装する必要があります。フェデレーションに使用できるのは、Media Analytics データのみです。以下のドキュメントを参照してください。[Adobe Analyticsでのストリーミングメディアの測定](/help/media-overview.md)
+* **Media Analytics の実装：** 送信者は、フェデレーテッドデータセットの一部となるすべてのプレーヤーにMedia Analyticsを実装する必要があります。フェデレーションに使用できるのは、Media Analytics データのみです。次のドキュメントを参照してください。 [Adobe Analyticsでのストリーミングメディアの測定](/help/media-overview.md)
 
 * **アドビのコンサルティングサービスの契約：**&#x200B;送信者と受信者間のフェデレーテッドルールの初期設定については、コンサルティングサービスと協力してデータの確認とデータ共有契約の作成をおこなうと効果的です。
 
 ## Federated Analytics フォームのダウンロード
 
-Federated Analyticsに参加するには、[フェデレーションルールの契約](federated-analytics-form.pdf)フォームをダウンロードして記入します。
+Federated Analyticsに参加するには、 [フェデレーションルール契約](federated-analytics-form.pdf) フォーム。
 
 
 ## プロセス {#process}

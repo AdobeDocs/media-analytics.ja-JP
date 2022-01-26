@@ -6,7 +6,7 @@ exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 37c46d493926ab83d9b6ccedafd82b150bbd6e2c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '6488'
 ht-degree: 100%
 
@@ -168,7 +168,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>  [name](./audio-video-parameters.md#config-media-object) </li> <li> **API キー：**<br/> media.name </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5.1 </li> <li> **値の例：**<br/> 「The Big Bang Theory」 </li> <li> **説明：**<br/>&#x200B;これは、コンテンツのわかりやすい（人間が解読可能な）名前で、`s:asset:name.` の最後の値と同じです。<br/>レポートでは、「ビデオ名」が分類、「コンテンツ名（変数）」が eVAR です。<br/> **リリース日：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.<br/>friendlyName） </li> <li> **ハートビート：**<br/>（s:asset:name） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;分類 </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;ビデオ名 </li> <li> **コンテキストデータ：**<br/>（a.media.friendlyName） </li> <li> **データフィード：**<br/> video.videoclassificationname </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.friendlyName） </li> <li> **XDM フィールドパス**<br/>：media.mediaTimed.primaryAssetReference.dc:title </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [名前](./audio-video-parameters.md#config-media-object) </li> <li> **API キー：**<br/> media.name </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5.1 </li> <li> **値の例：**<br/> 「The Big Bang Theory」 </li> <li> **説明：**<br/>&#x200B;これは、コンテンツのわかりやすい（人間が解読可能な）名前で、`s:asset:name.` の最後の値と同じです。<br/>レポートでは、「ビデオ名」が分類、「コンテンツ名（変数）」が eVAR です。<br/> **リリース日：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.<br/>friendlyName） </li> <li> **ハートビート：**<br/>（s:asset:name） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;分類 </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;ビデオ名 </li> <li> **コンテキストデータ：**<br/>（a.media.friendlyName） </li> <li> **データフィード：**<br/> video.videoclassificationname </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.friendlyName） </li> <li> **XDM フィールドパス**<br/>：media.mediaTimed.primaryAssetReference.dc:title </li> </ul> |
 
 ### ビデオパス
 

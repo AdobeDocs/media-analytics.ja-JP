@@ -6,8 +6,8 @@ exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '117'
+workflow-type: tm+mt
+source-wordcount: '115'
 ht-degree: 100%
 
 ---
@@ -45,11 +45,11 @@ ht-degree: 100%
 | 定数名 | 説明 | タイプ |
 |---|---|---|
 | `ADBAudioMetadataKeyALBUM` | 番組 | Audio |
-| `ADBAudioMetadataKeyARTIST` | シーズン | Audio |
-| `ADBAudioMetadataKeyAUTHOR` | シーズン | Audio |
-| `ADBAudioMetadataKeyLABEL` | エピソード | Audio |
-| `ADBAudioMetadataKeyPUBLISHER` | アセット | Audio |
-| `ADBAudioMetadataKeySTATION` | ジャンル | Audio |
+| `ADBAudioMetadataKeyARTIST` | シーズン | オーディオ |
+| `ADBAudioMetadataKeyAUTHOR` | シーズン | オーディオ |
+| `ADBAudioMetadataKeyLABEL` | エピソード | オーディオ |
+| `ADBAudioMetadataKeyPUBLISHER` | アセット | オーディオ |
+| `ADBAudioMetadataKeySTATION` | ジャンル | オーディオ |
 
 ## 広告のメタデータキー
 

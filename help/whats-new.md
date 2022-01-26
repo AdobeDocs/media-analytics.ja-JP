@@ -2,14 +2,14 @@
 title: Media Analytics の新機能
 description: 新着情報には、新機能と通知に関する情報が含まれています。
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 100%
 
 ---
 
 
-# Media Analytics の新機能 {#whats-new}
+# Media Analytics の新機能{#whats-new}
 
 ![バナー](assets/media_analytics_banner.png)
 
@@ -34,12 +34,12 @@ Adobe Experience Cloud のリリースノートでは、Adobe Experience Cloud �
 
 ## 重要な通知
 
-| 機能 | [一般公開](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=ja) - ターゲット日 | 説明 |
+| 機能 | [一般公開](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) - ターゲット日 | 説明 |
 | ----------- | ---------- | ---------- |
-| [サポートされるデバイスとプラットフォーム](https://experienceleague.adobe.com/docs/media-analytics/using/supported-devices.html?lang=ja) | 2021 年 8 月 31 日（PT） | 2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、Media Analytics SDK のサポート終了に関する FAQ を参照してください。 |
+| [サポートされるデバイスとプラットフォーム](https://experienceleague.adobe.com/docs/media-analytics/using/supported-devices.html) | 2021 年 8 月 31 日（PT） | 2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、Media Analytics SDK のサポート終了に関する FAQ を参照してください。 |
 | [Media Analytics SDK のサポート終了に関する FAQ](sdk-implement/end-of-support-faqs.md) | 2019 年秋 | iOS および Android 用 Media Analytics SDK の機能の開発は終了しました。2019 年秋から導入された新機能は、Media Analytics 拡張機能とメディアコレクション API を使用して有効化されます。 |
 | [メディアの概要](media-overview.md) | 2019 年 2 月 20 日（PT） | アドビは TLS 1.1 以降のみをサポートします。 この変更により、アドビは、TLS 1.0 をデプロイしている古いデバイスや Web ブラウザーを使用するエンドユーザーから情報を収集しなくなります。 |
-| [サポートされるデバイスとプラットフォーム](https://experienceleague.adobe.com/docs/media-analytics/using/supported-devices.html?lang=ja) | 2019 年 2 月 19 日（PT） | 各 SDK でサポートされる最小プラットフォームバージョンを以下に示します。 <br>- iOS：iOS 6 以降<br>- Android：Android 5.0 以降 - Lollipop <br>- Chrome：v22 以降<br>- Mozilla：v27 以降<br> - Safari：v7 以降<br>- IE：v1 以降 |
+| [サポートされるデバイスとプラットフォーム](https://experienceleague.adobe.com/docs/media-analytics/using/supported-devices.html) | 2019 年 2 月 19 日（PT） | 各 SDK でサポートされる最小プラットフォームバージョンを以下に示します。 <br>- iOS：iOS 6 以降<br>- Android：Android 5.0 以降 - Lollipop <br>- Chrome：v22 以降<br>- Mozilla：v27 以降<br> - Safari：v7 以降<br>- IE：v1 以降 |
 | [オーディオおよびビデオパラメーター](metrics-and-metadata/audio-video-parameters.md) | 2019 年 2 月 7 日（PT） | Adobe Analytics for Video and Audio は指標名の変更をリリースしました。<i>Media Initiates</i> は <i>Media Starts</i> と呼ばれるようになります。この変更は、指標とレポートの業界標準を反映し、レポートで指標を簡単に識別できるようにするためにおこなわれました。 |
 | [オーディオおよびビデオパラメーター](metrics-and-metadata/audio-video-parameters.md) | 2018 年 9 月 13 日（PT） | ビデオおよびオーディオ分析のクロスコンテンツトラッキングをおこなえるように、一部のディメンション、指標およびレポートのラベルが変更されています。例えば、ラベルの「*ビデオ開始*」が「*メディア開始*」に、「*ビデオの長さ*」が「*コンテンツの長さ*」に、「*ビデオ名*」が「*コンテンツ名*」に変更されています。Reports and Analytics のすべてのビデオレポートが、「ビデオ」という名前の代わりに「メディア」を使用するように更新されています。ラベルの変更によるデータ収集および履歴データへの影響はありません。Report Builder 内またはこの変更の影響を受ける可能性のある他の外部自動データプルでこれらを使用している場合は、これらの変更に注意してください。 |
 

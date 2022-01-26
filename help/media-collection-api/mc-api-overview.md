@@ -1,5 +1,5 @@
 ---
-seo-title: '概要 '
+seo-title: Overview
 title: ストリーミングメディアコレクション API の概要
 description: Media Collection API について説明し、RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントをプレーヤーでトラッキングする方法について説明します。
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
@@ -7,8 +7,8 @@ exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '357'
+workflow-type: tm+mt
+source-wordcount: '354'
 ht-degree: 100%
 
 ---
