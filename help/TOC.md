@@ -5,10 +5,10 @@ user-guide-title: ストリーミングメディア用 Adobe Analytics
 breadcrumb-title: メディア解析ガイド
 user-guide-description: ストリーミングメディア用 Adobe Analytics の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
+source-git-commit: 5465631bf29e746d7d5dc07603f57fd7033935c4
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 100%
+source-wordcount: '833'
+ht-degree: 99%
 
 ---
 
@@ -211,8 +211,9 @@ ht-degree: 100%
       + [メディア視聴時間帯レポート](media-reports/media-default-reports/media-reports-daypart.md)
       + [メディア同時ビューアレポート](media-reports/media-default-reports/media-concurrent-viewers.md)
    + メディア Workspace パネル {#media-workspace-panels}
-      + [メディアの同時視聴者パネル](media-reports/media-workspace-panels/media-concurrent-viewers.md)
-      + [メディア再生滞在時間パネル](media-reports/media-workspace-panels/media-playback-time-spent.md)
+   + [メディア分平均オーディエンスパネル](media-reports/media-workspace-panels/average-minute-audience.md)
+   + [メディアの同時視聴者パネル](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+   + [メディア再生滞在時間パネル](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [Media Workspace のテンプレート](media-reports/media-workspace-templates.md)
    + [API を使用した同時ビューアデータの取得](media-reports/media-default-reports/get-concurrent-json20.md)
    + [API を介したメディア再生滞在時間のデータの取得](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
