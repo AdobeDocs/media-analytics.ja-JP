@@ -4,14 +4,19 @@ description: メディアの分平均オーディエンスパネルを使用し�
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 806d3e68eb32adef2af8629474fa5c69a280e433
+source-git-commit: a138edbfd7b5136f038cc9397e53521110446076
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 7%
+source-wordcount: '271'
+ht-degree: 9%
 
 ---
 
 # メディア分平均オーディエンス {#media-average-minute-audience}
+
+>[!NOTE]
+>
+>この機能は現在、限定的にテスト中です。
+
 
 Media Analytics のお客様は、分平均オーディエンスパネルを使用して、コンテンツの平均消費量をより深く理解できます。 分平均オーディエンスを使用すると、任意の長さやジャンルのプログラミングを比較できます。 さらに、顧客は、このデジタル平均分オーディエンスを、線形 TV 平均分指標と比較または追加できます。 このパネルでは、カスタム期間の平均オーディエンスをより柔軟に測定できるほか、期間の分類が事後に更新された場合にも測定できます。 現在の分平均オーディエンス指標は、処理時間が処理時に使用できる場合にのみ機能します。
 
