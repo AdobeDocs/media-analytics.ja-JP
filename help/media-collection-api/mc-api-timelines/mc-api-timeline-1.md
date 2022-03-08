@@ -5,10 +5,10 @@ uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 88bf699cb5b0872cefa4d6a6609c74f8fa35189a
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 100%
+source-wordcount: '1203'
+ht-degree: 98%
 
 ---
 
@@ -136,6 +136,8 @@ ht-degree: 100%
     }
 }
 ```
+
+**注意：AdBreakStart イベントと AdStart イベントの間には、追加の再生イベントは存在しません。**
 
 ### アクション 5 - 広告 ping {#Action-5}
 
