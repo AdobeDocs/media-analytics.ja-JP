@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
+source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '771'
+ht-degree: 92%
 
 ---
 
@@ -145,7 +145,8 @@ ht-degree: 100%
 
 1. **再生ヘッド値の更新**
 
-   メディアの再生ヘッドが変更されると、`mediaUpdatePlayhead` API を呼び出して SDK に通知します。ビデオオンデマンド（VOD）の場合、値はメディアアイテムの開始時からの秒数で指定されます。ライブストリーミングの場合、値はその日の午前 0 時（UTC）からの秒数として指定されます。
+   メディアの再生ヘッドが変更されると、`mediaUpdatePlayhead` API を呼び出して SDK に通知します。<br />ビデオオンデマンド（VOD）の場合、値はメディアアイテムの開始時からの秒数で指定されます。<br /> ライブストリーミングの場合、プレーヤーがコンテンツの期間に関する情報を提供しない場合は、その日の午前 0 時 (UTC) からの秒数を指定できます。 <br /> 注意：プログレスマーカーを使用する場合、コンテンツのデュレーションが必要です。また、再生ヘッドは、メディアアイテムの開始時からの秒数（0 から始まる）で更新する必要があります。
+
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)

@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 100%
+source-wordcount: '781'
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 100%
    |  メソッド名  |  説明  | 必須 |
    | --- | --- | :---: |
    | `getQoSObject()` | 現在の QoS 情報を含む `MediaObject` インスタンスを返します。このメソッドは、再生セッション中に複数回呼び出されます。プレーヤー実装は、常に、利用可能な最新の QoS データを返す必要があります。 | ○ |
-   | `getCurrentPlaybackTime()` | 再生ヘッドの現在の位置を返します。VOD 追跡の場合は、メディアアイテムの開始時からの時間（秒）を返します。線形／ライブトラッキングの場合、値はその日の午前 0 時（UTC）からの秒数を指定します。 | ○ |
+   | `getCurrentPlaybackTime()` | 再生ヘッドの現在の位置を返します。<br />VOD 追跡の場合は、メディアアイテムの開始時からの時間（秒）を返します。<br /> ライブストリーミングの場合、プレーヤーがコンテンツの期間に関する情報を提供しない場合は、その日の午前 0 時 (UTC) からの秒数を指定できます。 <br /> 注意：プログレスマーカーを使用する場合、コンテンツのデュレーションが必要です。また、再生ヘッドは、メディアアイテムの開始時からの秒数（0 から始まる）で更新する必要があります。 | ○ |
 
    >[!TIP]
    >

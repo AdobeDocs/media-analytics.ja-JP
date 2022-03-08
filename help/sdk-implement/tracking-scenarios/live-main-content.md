@@ -5,10 +5,10 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 100%
+source-wordcount: '577'
+ht-degree: 94%
 
 ---
 
@@ -63,7 +63,7 @@ Content Heartbeats では、いくつかの特定の事柄を探します。
 
 ### 開始時
 
-ライブメディアの場合、ユーザーがストリームの再生を開始する際に、`l:event:playhead` を、その日の午前 0 時（UTC）からの秒数に設定する必要があります。 これは、VOD とは対照的です（VOD では再生ヘッドを「0」に設定します）。
+ライブメディアの場合、ユーザーがストリームの再生を開始する際に、`l:event:playhead` を、その日の午前 0 時（UTC）からの秒数に設定する必要があります。 これは、VOD とは対照的です（VOD では再生ヘッドを「0」に設定します）。注意：プログレスマーカーを使用する場合、コンテンツのデュレーションが必要です。また、再生ヘッドは、メディアアイテムの開始時からの秒数（0 から始まる）で更新する必要があります。
 
 例えば、ライブストリーミングイベントが午前 0 時に開始し、24 時間実行するとします（`a.media.length=86400`; `l:asset:length=86400`）。次に、ユーザーが午後 12：00 にそのライブストリームの再生を開始するとします。このシナリオでは、`l:event:playhead` を 43200（UTC の午前 0 時から 12 時間を秒単位で表した数値）に設定する必要があります。
 

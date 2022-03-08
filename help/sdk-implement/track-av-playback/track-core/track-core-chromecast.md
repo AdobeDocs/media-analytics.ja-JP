@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 100%
+source-wordcount: '750'
+ht-degree: 90%
 
 ---
 
@@ -87,6 +87,14 @@ ht-degree: 100%
 
    ```
    ADBMobile.media.trackPlay();
+   ```
+
+1. **再生ヘッド値の更新**
+
+   更新 `mediaUpdatePlayhead`&#39;再生ヘッドが変更されたときの位置の値を複数回返します。 <br />ビデオオンデマンド（VOD）の場合、値はメディアアイテムの開始時からの秒数で指定されます。<br /> ライブストリーミングの場合、プレーヤーがコンテンツの期間に関する情報を提供しない場合は、その日の午前 0 時 (UTC) からの秒数を指定できます。 <br />  注意：プログレスマーカーを使用する場合、コンテンツのデュレーションが必要です。また、再生ヘッドは、メディアアイテムの開始時からの秒数（0 から始まる）で更新する必要があります。
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **再生の完了を追跡**
