@@ -2,17 +2,17 @@
 title: Adobe Analytics for Streaming Media リリースノート
 description: Adobe Analyticsリリースノートを表示します。
 feature: Release Notes
-source-git-commit: c9a1007e0d2ae37014faeffebe89a14175c8506f
+exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
+source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 67%
+source-wordcount: '545'
+ht-degree: 68%
 
 ---
 
-
 # Adobe Analytics for Streaming Media リリースノート（2022 年 3 月）
 
-**最終更新日**:2022 年 3 月 4 日
+**最終更新日**:2022 年 3 月 24 日
 
 ## *最新のリリースノート*
 
@@ -20,7 +20,7 @@ ht-degree: 67%
 
 | 機能 | 説明 | ターゲット日 |
 | ----------- | ---------- | ------- |
-| **分平均オーディエンス** | Media Analytics のお客様は、分平均オーディエンスパネルを使用して、平均コンテンツ消費量をより深く理解できます。 <br>分平均オーディエンスを使用すると、あらゆる長さやジャンルのプログラミングを比較できます。さらに、デジタル平均分オーディエンスを、線形 TV 平均分指標と比較または追加できます。 このパネルでは、カスタム期間の平均オーディエンスをより柔軟に測定できるほか、期間の分類が更新された場合も測定できます。  [詳細情報](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | **限定リリース** <br>2022 年 2 月 17 日 |
+| **分平均オーディエンス** | Media Analytics のお客様は、分平均オーディエンスパネルを使用して、平均コンテンツ消費量をより深く理解できます。 <br>分平均オーディエンスを使用すると、あらゆる長さやジャンルのプログラミングを比較できます。さらに、デジタル平均分オーディエンスを、線形 TV 平均分指標と比較または追加できます。 このパネルでは、カスタム期間の平均オーディエンスをより柔軟に測定できるほか、期間の分類が更新された場合も測定できます。  [詳細情報](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 2022 年 3 月 17 日 |
 
 ## Analytics for Streaming Media ヘルプリソース
 
