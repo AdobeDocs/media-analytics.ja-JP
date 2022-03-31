@@ -1,14 +1,14 @@
 ---
-title: メディアトラッキングタイムライン � コンテンツの最後まで視聴
-description: 再生ヘッドタイムラインと対応するユーザーのアクションを詳しく説明します �。各アクションとそれに伴うリクエストの詳細について説明します。
+title: メディアトラッキングタイムラインコンテンツの最後まで視聴
+description: 再生ヘッドタイムラインと対応するユーザーのアクションを詳しく説明します。各アクションとそれに伴うリクエストの詳細について説明します。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 88bf699cb5b0872cefa4d6a6609c74f8fa35189a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1203'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ ht-degree: 98%
 }
 ```
 
-**注意：AdBreakStart イベントと AdStart イベントの間には、追加の再生イベントは存在しません。**
+**メモ：AdBreakStart イベントと AdStart イベントの間に、追加の再生イベントを設定しないでください。**
 
 ### アクション 5 - 広告 ping {#Action-5}
 
