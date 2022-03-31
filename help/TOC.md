@@ -6,7 +6,7 @@ breadcrumb-title: メディア解析ガイド
 user-guide-description: ストリーミングメディア用 Adobe Analytics の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
 source-git-commit: 534f6f77d69a8fe3574c214cd56d2f77758c1643
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
 ht-degree: 100%
 
@@ -52,7 +52,7 @@ ht-degree: 100%
          + JavaScript でのコア再生の追跡 {#track-core-javascript}
             + [JavaScript 2.x でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js.md)
             + [JavaScript 3.x でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
-         + [Chromecast でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
+         + [Chromecast でコア再生を追跡](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
          + [Roku でのコア再生の追跡](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + バッファーの追跡 {#track-buffering}
          + [Android でのバッファーの追跡](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
@@ -135,7 +135,7 @@ ht-degree: 100%
       + [バッファリングがある VOD 再生](sdk-implement/tracking-scenarios/vod-buffering.md)
       + [同時に動作する複数の VOD トラッカー](sdk-implement/tracking-scenarios/vod-multi-trackers.md)
       + [複数のセッションに対応する 1 つの VOD トラッカー](sdk-implement/tracking-scenarios/vod-multi-track-one-session.md)
-      + [ライブメインコンテンツ](sdk-implement/tracking-scenarios/live-main-content.md)
+      + [ライブメインコンテンツ ](sdk-implement/tracking-scenarios/live-main-content.md)
       + [順次トラッキングを含むライブメインコンテンツ](sdk-implement/tracking-scenarios/live-sequential.md)
    + 検証 {#validation}
       + [検証の概要](sdk-implement/validation/validation-overview.md)
