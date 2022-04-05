@@ -3,9 +3,9 @@ title: Adobe Analytics for Streaming Media リリースノート
 description: Adobe Analyticsリリースノートを表示します。
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
+source-git-commit: 8ca8416ba3dd8f5d3ef4ba9399e7c84335f3abf1
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '525'
 ht-degree: 68%
 
 ---
@@ -48,7 +48,7 @@ Experience League に関する最新のセルフヘルプドキュメント、�
 
 | 機能 | 一般公開 | 説明 |
 | ----------- | ---------- | -------------- |
-| **メディア再生滞在時間** | 2021 年 9 月 28 日（PT） | アドビのストリーミングメディア再生滞在時間 は、ビューアのエンゲージメントに関する貴重なインサイトを提供し、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、様々な粒度（新たな 5 分、15 分、30 分の時間粒度を含む）で分割できます。[詳細情報...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| **メディア再生滞在時間** | 2021 年 9 月 28 日（PT） | アドビのストリーミングメディア再生滞在時間 は、ビューアのエンゲージメントに関する貴重なインサイトを提供し、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、様々な粒度（新たな 5 分、15 分、30 分の時間粒度を含む）で分割できます。[詳細情報...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) |
 
 ## 2021年1月
 
@@ -65,7 +65,7 @@ Media Analytics の新機能
 
 | 機能 | 一般公開 | 説明 |
 | -------- | -------------------- | ----------- |
-| Workspace **の**&#x200B;メディア同時閲覧者パネル | 2020年9月17日（PT） | メディア同時閲覧者パネルを使用すると、同時閲覧のピークが発生した場所やドロップオフが発生した場所を把握できます。  コンテンツの質と閲覧者の関与に関する貴重な情報を提供し、ボリュームやスケールのトラブルシューティングや計画に役立ちます。[詳細情報…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=en) |
+| Workspace **の**&#x200B;メディア同時閲覧者パネル | 2020年9月17日（PT） | メディア同時閲覧者パネルを使用すると、同時閲覧のピークが発生した場所やドロップオフが発生した場所を把握できます。  コンテンツの質と閲覧者の関与に関する貴重な情報を提供し、ボリュームやスケールのトラブルシューティングや計画に役立ちます。[詳細情報…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) |
 
 
 ## 2020年7月
