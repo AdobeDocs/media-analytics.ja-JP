@@ -5,9 +5,9 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d2a6f9648b682079ca858e9025d41dcb9dc6554f
+source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '952'
 ht-degree: 96%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 メディア指標を収集する各レポートスイートは、メディアデータが送信される前に設定されている必要があります。
 
-上級のお客様がAnalysis Workspaceでメディアパネルを使用できるのは、メディアコアが有効になり、以下に対してトラッキングが有効になっている場合のみです。 [Quality of Experience](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
+上級のお客様は、メディアコアが有効になり、以下に対してトラッキングが有効になっている場合にのみ、Analysis Workspaceでメディアパネルを使用できます。 [Quality of Experience](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
 
 >[!TIP]
 >
