@@ -9,15 +9,15 @@ exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
 # リソース {#resources}
 
-## リリースノート{#release-notes}
+## リリースノート {#release-notes}
 
 * [リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)
 
