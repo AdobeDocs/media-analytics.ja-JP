@@ -5,7 +5,7 @@ feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
 source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '205'
 ht-degree: 100%
 
