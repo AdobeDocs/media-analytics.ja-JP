@@ -210,11 +210,11 @@ ht-degree: 100%
       + [メディアの詳細](media-reports/media-default-reports/media-reports-detail.md)
       + [メディア視聴時間帯レポート](media-reports/media-default-reports/media-reports-daypart.md)
       + [メディア同時ビューアレポート](media-reports/media-default-reports/media-concurrent-viewers.md)
-   + メディア Workspace パネル {#media-workspace-panels}
+   + メディアワークスペースパネル {#media-workspace-panels}
    + [メディア分平均オーディエンスパネル](media-reports/media-workspace-panels/average-minute-audience.md)
    + [メディアの同時視聴者パネル](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [メディア再生滞在時間パネル](media-reports/media-workspace-panels/media-playback-time-spent.md)
-   + [Media Workspace のテンプレート](media-reports/media-workspace-templates.md)
+   + [Media ワークスペースのテンプレート](media-reports/media-workspace-templates.md)
    + [API を使用した同時ビューアデータの取得](media-reports/media-default-reports/get-concurrent-json20.md)
    + [API を介したメディア再生滞在時間のデータの取得](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
 + [ダウンロードされたコンテンツの追跡](media-collection-api/track-downloaded-content.md)
