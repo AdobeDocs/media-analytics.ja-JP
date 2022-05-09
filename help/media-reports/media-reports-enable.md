@@ -6,21 +6,21 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# メディアレポートの有効化{#media-reports-enablement}
+# メディアレポートの有効化 {#media-reports-enablement}
 
-メディア指標を収集する各レポートスイートは、メディアデータが送信される前に設定されている必要があります。
+メディア指標を収集する各レポートスイートは、メディアデータの送信前に設定しておく必要があります。
 
-上級のお客様は、メディアコアが有効になり、以下に対してトラッキングが有効になっている場合にのみ、Analysis Workspaceでメディアパネルを使用できます。 [Quality of Experience](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
+上級者のお客様は、Media Core を有効にして、「[エクスペリエンスの品質](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=ja)」でトラッキングを有効にした場合にのみ、Analysis Workspace でメディアパネルを使用できます。
 
 >[!TIP]
 >
->新機能を活用するために、既存の Media Analytics のお客様は、RSID のビデオトラッキングを再有効化する必要があります。
+>既存の Media Analytics のお客様が新機能を活用するには、RSID のビデオトラッキングを再有効化する必要があります。
 
 1. [Reports &amp; Analytics](https://my.omniture.com/login/) で、**[!UICONTROL 管理者／レポートスイートをクリックします]。**
 1. メディアデータを収集するレポートスイートを選択して、**[!UICONTROL 設定を編集／メディア管理／メディアレポート]をクリックします。**
