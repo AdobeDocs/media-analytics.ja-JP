@@ -5,10 +5,10 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 37c46d493926ab83d9b6ccedafd82b150bbd6e2c
+source-git-commit: 935fba7f14cd1a5a5839b0a7c8597453d4a79227
 workflow-type: tm+mt
-source-wordcount: '6488'
-ht-degree: 100%
+source-wordcount: '6487'
+ht-degree: 99%
 
 ---
 
@@ -328,13 +328,13 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定</li> <li> **API キー：**<br/>&#x200B;なし</li> <li> **型：**<br/>&#x200B;文字列</li> <li> **送信タイミング：**<br/>&#x200B;メディア開始</li> <li> **最小のSDK のバージョン：**&#x200B;すべて可</li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;メディアの読み込みイベント。（ユーザーが _再生_ ボタンをクリックしたときに発生します）。プリロール広告やバッファリング、エラーなどがあった場合でもカウントされます。<br/>**重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。<br/> **リリース日：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.view） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=start） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;メディア開始 </li> <li> **コンテキストデータ：**<br/>（a.media.view） </li> <li> **データフィード：**<br/> videostart </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.view） </li> <li> **XDM フィールドパス**<br/>：media.mediaTimed.starts.value, media.mediaTimed.dropBeforeStart.value </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定</li> <li> **API キー：**<br/>&#x200B;なし</li> <li> **型：**<br/>&#x200B;文字列</li> <li> **送信タイミング：**<br/>&#x200B;メディア開始</li> <li> **最小のSDK のバージョン：**&#x200B;すべて可</li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;メディアの読み込みイベント。（ユーザーが _再生_ ボタンをクリックしたときに発生します）。プリロール広告やバッファリング、エラーなどがあった場合でもカウントされます。<br/>**重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。<br/> **リリース日：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.view） </li> <li> **ハートビート：**<br/>（s:event:<br/>type=start） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;メディア開始 </li> <li> **コンテキストデータ：**<br/>（a.media.view） </li> <li> **データフィード：**<br/> videostart </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.view） </li> <li> **XDM フィールドのパス：**<br/> media.mediaTimed.impressions.value </li> </ul> |
 
 ### コンテンツ開始
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;メディアの最初のフレームが視聴されます。ユーザーが広告やバッファリングなどの最中にドロップした場合は、「コンテンツ開始」イベントは発生しません。<br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;コンテンツ開始 </li> <li> **コンテキストデータ：**<br/>（a.media.play） </li> <li> **データフィード：**<br/> videoplay </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.play） </li> <li> **XDM フィールドパス**<br/>：media.mediaTimed.dropBeforeStart.value </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;メディアの最初のフレームが視聴されます。ユーザーが広告やバッファリングなどの最中にドロップした場合は、「コンテンツ開始」イベントは発生しません。<br/> **重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;コンテンツ開始 </li> <li> **コンテキストデータ：**<br/>（a.media.play） </li> <li> **データフィード：**<br/> videoplay </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.play） </li> <li> **XDM フィールドのパス：**<br/> media.mediaTimed.starts.value </li> </ul> |
 
 ### コンテンツ完了 {#content-complete}
 
@@ -346,7 +346,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- | --- |
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 105 </li> <li> **説明：**<br/>&#x200B;メインコンテンツでの再生タイプの全イベントの合計時間（秒単位）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/> **リリース日：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;コンテンツ視聴時間 </li> <li> **コンテキストデータ：**<br/>（a.media.timePlayed） </li> <li> **データフィード：**<br/> videotime </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.timePlayed） </li> <li> **XDM フィールドパス**<br/>：media.mediaTimed.dropBeforeStart.value </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 105 </li> <li> **説明：**<br/>&#x200B;メインコンテンツでの再生タイプの全イベントの合計時間（秒単位）。Analysis Workspace と Reports &amp; Analytics では、値は時刻形式（HH:MM:SS）で表示されます。データフィード、Data Warehouse およびレポート API では、値は秒単位で表示されます。<br/> **リリース日：2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics：**<br/>&#x200B;なし </li> <li> **ハートビート：**<br/>&#x200B;なし </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;コンテンツ視聴時間 </li> <li> **コンテキストデータ：**<br/>（a.media.timePlayed） </li> <li> **データフィード：**<br/> videotime </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.timePlayed） </li> <li> **XDM フィールドのパス：**<br/> media.mediaTimed.timePlayed.value </li> </ul> |
 
 ### メディア視聴時間
 
