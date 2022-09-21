@@ -1,11 +1,11 @@
 ---
-title: 'オーディオおよびビデオパラメーター '
+title: オーディオおよびビデオパラメーター
 description: オーディオおよびビデオコンテンツデータやコンテキストデータ値などの、コアストリーミングメディアデータ変数について説明します。
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '7004'
 ht-degree: 92%
@@ -272,7 +272,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK キー：**<br/> AUTHORIZED </li> <li> **API キー：**<br/> media.pass.auth </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **値の例：**<br/> 「TRUE」 </li> <li> **説明：**<br/>&#x200B;ユーザーはアドビの認証によって認証済み。<br/>**重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.pass.auth） </li> <li> **ハートビート：**<br/>（s:meta:<br/>a.media.pass.<br/>auth） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;認証済み </li> <li> **コンテキストデータ：**<br/>（a.media.pass.auth） </li> <li> **データフィード：**<br/> videoauthorized </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.pass.auth） </li> <li> **XDM フィールドパス**<br/>：media.mediaTimed.mediaAuth </li> <li> **コレクション XDM フィールドのパス：**<br/> mediaCollection.sessionDetails.<br/>isAuthenticated </li> <li> **XDM フィールドパスのレポート：**<br/> mediaReporting.sessionDetails.<br/>isAuthenticated </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> AUTHORIZED </li> <li> **API キー：**<br/> media.pass.auth </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **値の例：**<br/> 「TRUE」 </li> <li> **説明：**<br/>&#x200B;ユーザーはアドビの認証によって認証済み。<br/>**重要：** 設定されている場合は true のみを返します。設定されていない場合は値は返されません。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.pass.auth） </li> <li> **ハートビート：**<br/>（s:meta:<br/>a.media.pass.<br/>auth） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;認証済み </li> <li> **コンテキストデータ：**<br/>（a.media.pass.auth） </li> <li> **データフィード：**<br/> videoauthorized </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.pass.auth） </li> <li> **XDM フィールドパス**<br/>：media.mediaTimed.mediaAuth </li> <li> **コレクション XDM フィールドのパス：**<br/> mediaCollection.sessionDetails.<br/>isAuthorized </li> <li> **XDM フィールドパスのレポート：**<br/> mediaReporting.sessionDetails.<br/>isAuthorized </li> </ul> |
 
 ### 日パート
 

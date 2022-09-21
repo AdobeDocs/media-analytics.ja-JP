@@ -1,11 +1,11 @@
 ---
-title: 'プレーヤーステートパラメーター '
+title: プレーヤーステートパラメーター
 description: フルスクリーン、クローズキャプション、ミュート、ピクチャーインピクチャーなどのプロパティに対するプレーヤーステートトラッキングパラメーターについて説明します。
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-feature: Media Analytics, Variables
+feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 94%
@@ -41,7 +41,7 @@ ht-degree: 94%
 
 ## プレーヤーステートプロパティ {#player-state-properties}
 
-プレーヤーステートトラッキング機能は、オーディオまたはビデオストリームにアタッチできます。標準化されたプレーヤーステートトラッキング指標は、ソリューション変数として保存されます。標準のステートは、フルスクリーン、ミュート、クローズドキャプション、ピクチャーインピクチャー、フォーカス設定です。
+プレーヤーステートトラッキング機能は、オーディオまたはビデオストリームにアタッチできます。標準化されたプレーヤーステートトラッキング指標は、ソリューション変数として保存されます。標準の状態は次のとおりです。fullscreen、mute、closedCaptioning、pictureInPicture および inFocus。
 
 ### フルスクリーンプロパティ
 
