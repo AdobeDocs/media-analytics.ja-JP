@@ -3,16 +3,16 @@ title: Adobe Analytics for Streaming Media リリースノート
 description: Adobe Analytics のリリースノートを表示します。
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 24471de7f56212d29001ce23aea155fb56dbad8b
+source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
-# Adobe Analytics for Streaming Media リリースノート（2022年3月）
+# Adobe Analytics for Streaming Media リリースノート（2022 年 9 月）
 
-**最終更新日**：2022年23月9日（PT）
+**最終更新日**：2022年22月9日（PT）
 
 ## 関連リソース
 
