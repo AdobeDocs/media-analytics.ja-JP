@@ -4,10 +4,10 @@ description: 追加の処理ルールおよびカスタム変数を使用せず�
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 3e996d243d060a6fd07d2ddbabf05e39eca40758
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 100%
+source-wordcount: '402'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 データ管理プラットフォーム（DMP）である Adobe Audience Manager（AAM）は、オーディエンスデータアセットを 1 つにまとめるのに役立ちます。それにより、サイト訪問者について商業的に関連性のある情報の収集や、マーケティング用のセグメントの作成および適切なオーディエンスをターゲットにした広告やコンテンツの提供が容易になります。
 
-AAM を利用すれば、データ販売者、exchange、デマンド側のプラットフォームに縛られることがありません。さらに、AAM は、パートナーのデータアセットについては、完全に無関係です。複数のデータソースにアクセスできるので、デジタルパブリッシャーは、AAM によって幅広い種類のサードパーティデータやアドビのプライベートデータコープを利用できるようになります。AAM について詳しくは、AAM ドキュメントの [Audience Manager 製品ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.html)を参照してください。
+AAM を利用すれば、データ販売者、exchange、デマンド側のプラットフォームに縛られることがありません。さらに、AAM は、パートナーのデータアセットについては、完全に無関係です。複数のデータソースにアクセスできるAAMを使用すると、デジタルパブリッシャーは様々なサードパーティデータを使用できます。 AAM について詳しくは、AAM ドキュメントの [Audience Manager 製品ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.html)を参照してください。
 
 **VA から AAM へのデータ転送 -** ビデオコンテンツとビデオ広告の両方で、ソリューション（予約）変数を使用して収集された指標とメタデータを AAM へと自動的に送信できます。データ転送は、デスクトップ、モバイル、OTT を含むすべてのプラットフォームで使用できます。このサーバーサイドデータ転送を有効にするには、Adobe Client Care に連絡して、このフィードを有効にするよう依頼する必要があります。
 
