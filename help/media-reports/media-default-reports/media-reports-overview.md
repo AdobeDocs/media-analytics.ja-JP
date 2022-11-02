@@ -3,12 +3,12 @@ title: メディアの概要
 description: メディアの概要ダッシュボードを使用すると、集計された測定値を表示できます。メディアのパフォーマンスを迅速に監視する方法を説明します。
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: Media Analytics, Reports & Analytics Basics
+feature: "Media Analytics, Reports & Analytics Basics"
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '107'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

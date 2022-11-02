@@ -6,8 +6,8 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: ht
-source-wordcount: '952'
+workflow-type: tm+mt
+source-wordcount: '950'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 100%
 1. [Reports &amp; Analytics](https://my.omniture.com/login/) で、**[!UICONTROL 管理者／レポートスイートをクリックします]。**
 1. メディアデータを収集するレポートスイートを選択して、**[!UICONTROL 設定を編集／メディア管理／メディアレポート]をクリックします。**
 
-   ![](assets/media-reporting.png){width=&quot;400px&quot;}
+   ![](assets/media-reporting.png){width="400px"}
 
 1. **[!UICONTROL メディアレポート]**&#x200B;ページで、**[!UICONTROL メディアコア]を**&#x200B;有効にして、オプションで&#x200B;**[!UICONTROL メディア広告]**、**[!UICONTROL メディアチャプター]**&#x200B;および&#x200B;**[!UICONTROL メディア画質]**&#x200B;を有効にします。
 
