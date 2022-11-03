@@ -6,13 +6,13 @@ exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
 ht-degree: 100%
 
 ---
 
-# 計算指標{#calculated-metrics}
+# 計算指標 {#calculated-metrics}
 
 ストリーミングメディアの計算指標は、平均広告視聴時間やメディアストリームあたりの平均広告数など、ターゲットを絞ったストリーミングメディアデータを取得できるカスタム指標です。
 
