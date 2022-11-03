@@ -1,45 +1,48 @@
 ---
-title: 複数のプレーヤーステートを一度に更新する
-description: このトピックでは、複数のプレーヤーステートトラッキング機能について説明します。
+title: 複数プレーヤーの状態を一度に更新する
+description: このトピックでは、複数プレーヤーの状態のトラッキング機能について説明します。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: fdbb777547181422b81ff6f7874bec3d317d02e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
-# 複数のプレーヤーステートトラッキング
+# 複数プレーヤーの状態のトラッキング
 
-次の図に示すように、2 つのプレーヤーステートが同時に開始および終了したり、ステートの終了が別のステートの開始になったりする場合があります。
+次の図に示すように、2 つのプレーヤーの状態が同時に開始および終了したり、状態の終了が別の状態の開始になったりする場合があります。
 
-![複数のプレーヤーステート](assets/multiple-player-states.svg)
+![複数プレーヤーの状態](assets/multiple-player-states.svg)
 
 現在の実装では、次の両方のシナリオを使用できます。
-- `stateStart(pictureInPicture)` -t0
-- `stateStart(mute)` -t0
+- `stateStart(pictureInPicture)` - t0
+- `stateStart(mute)` - t0
 - `stateEnd(mute)` - t1
 - `stateEnd(pictureInPicture)` - t1
 - `stateStart(fullScreen)` - t1
 - `stateEnd(fullScreen)` - t2
 
-ただし、この場合は、複数の `stateStart` および `stateEnd` イベントを使用して、複数の状態の同時変更を伝えることができます。 この一般的な動作を最適化するために、 `statesUpdate` イベントタイプが実装され、状態のリストを終了し、新しい状態のリストを開始します。
+ただし、この場合は、複数の `stateStart` および `stateEnd` イベントを発行して、複数の同時状態変化を通知する必要があります。この一般的な動作を最適化するために、`statesUpdate`
+イベントタイプが実装されました。これは、状態のリストを終了し、新しい状態のリストを開始します。
 
-新しい `statesUpdate` イベントの場合、上記のイベントのリストは次のようになります。
-- `statesUpdate(statesEnd=[], statesStart=[pictureInPicture, mute])` -t0
+
+新しい `statesUpdate` イベントを使用すると、上記のイベントのリストは次のようになります。
+- `statesUpdate(statesEnd=[], statesStart=[pictureInPicture, mute])` - t0
 - `statesUpdate(statesEnd=[mute, pictureInPicture], statesStart=[fullScreen])` - t1
 - `statesUpdate(statesEnd=[fullScreen], statesStart=[])` - t2
 
-同じ動作に対して、状態更新呼び出しの数が 6 から 3 に減少しました。 最後のイベントも単純なものでした `stateEnd(fullScreen)`.
+同じ動作に対して、状態更新呼び出しの数が 6 から 3 に減少しました。 最後のイベントは単純な `stateEnd(fullScreen)` だった可能性もあります。
 
-## メディアコレクション API の実装 {#mpst-api}
 
-メディアコレクション API を使用して、複数のプレーヤーステートトラッキングを実装できます。
+## Media Collection API の実装 {#mpst-api}
+
+Media Collection API を使用して、複数プレーヤーの状態のトラッキングを実装できます。
 
 ### 例
 
-次に、複数のプレーヤーステートトラッキングのためのメディアコレクション API の実装例を示します。
+次に、複数プレーヤーの状態のトラッキング用の Media Collection API の実装例を示します。
 
 ```
 // statesUpdate (ex: mute and pictureInPicture are switched on)
