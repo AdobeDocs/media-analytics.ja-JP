@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: ストリーミングメディア用 Adobe Analytics
 breadcrumb-title: メディア解析ガイド
-user-guide-description: ストリーミングメディア用 Adobe Analytics の実装メディア SDK とメディアコレクション API について説明します。
+user-guide-description: ストリーミングメディア用 Adobe Analytics の実装Media SDK と Media Collection API について説明します。
 sub-product: media analytics
 source-git-commit: 212fad8592c9f935869e55d034b17519c8b9de36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 98%
             + [カスタムリンク導入ガイド ](measurement-options/cl-in-aa/cl-impl-guide.md)
          + Primetime {#primetime}
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
-         + [Audience Manager の有効化](intro-to-ava/am-enablement.md)
+         + [Audience Manager の有効化 ](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
    + [Media Analytics SDK のサポート終了に関する FAQ](sdk-implement/end-of-support-faqs.md)
    + [SDK のダウンロード](sdk-implement/download-sdks.md)
@@ -200,8 +200,8 @@ ht-degree: 98%
    + [チャプターパラメーター](metrics-and-metadata/chapter-parameters.md)
    + [プレーヤーステートパラメーター ](metrics-and-metadata/player-state-parameters.md)
    + [品質パラメーター](metrics-and-metadata/quality-parameters.md)
-   + [セグメント](metrics-and-metadata/segments.md)
-   + [計算指標](metrics-and-metadata/calculated-metrics.md)
+   + [セグメント ](metrics-and-metadata/segments.md)
+   + [計算指標 ](metrics-and-metadata/calculated-metrics.md)
 + レポートと分析 {#media-reports}
    + [メディアレポートの有効化](media-reports/media-reports-enable.md)
    + メディアのデフォルトレポート {#media-default-reports}
@@ -222,7 +222,7 @@ ht-degree: 98%
    + [概要 ](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準ステートとカスタムステート](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [実装とレポート](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-   + [複数のプレーヤーステートトラッキング](sdk-implement/player-state-tracking/multiple-player-states.md)
+   + [複数プレーヤーの状態のトラッキング](sdk-implement/player-state-tracking/multiple-player-states.md)
    + [プレーヤーステートトラッキングの例](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
 + その他のリソース {#additional-resources}
