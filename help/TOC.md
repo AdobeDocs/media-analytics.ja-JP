@@ -5,9 +5,9 @@ user-guide-title: ストリーミングメディア用 Adobe Analytics
 breadcrumb-title: メディア解析ガイド
 user-guide-description: ストリーミングメディア用 Adobe Analytics の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
+source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '865'
 ht-degree: 79%
 
 ---
@@ -54,10 +54,6 @@ ht-degree: 79%
          + [タイムアウト条件](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
          + [イベントの順序の制御](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
          + [セッションの応答が遅い場合のイベントのキューへの登録](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-      + メディアトラッキングタイムライン {#mc-api-timelines}
-         + [タイムライン 1 - コンテンツの最後まで視聴](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
-         + [タイムライン 2 - ユーザーが中断したセッション](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
-         + [タイムライン 3 - チャプター](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + 変数 {#variables}
       + [ストリーミングメディアのパラメーター](implementation/variables/audio-video-parameters.md)
       + [広告パラメーター](implementation/variables/ad-parameters.md)
@@ -174,6 +170,7 @@ ht-degree: 79%
    + [API を使用した同時ビューアデータの取得](reporting/reports-and-analytics/get-concurrent-json20.md)
    + [API を介したメディア再生滞在時間のデータの取得](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + ユースケース {#media-use-cases}
+   + [メディア SDK の使用例](use-cases/cookbook/sdk-cookbook-overview.md)
    + プレーヤーステートトラッキング {#player-state-tracking}
       + [概要 ](use-cases/player-state-tracking/player-state-overview.md)
       + [標準ステートとカスタムステート](use-cases/player-state-tracking/standard-and-custom-states.md)
@@ -183,7 +180,6 @@ ht-degree: 79%
    + [オフラインダウンロード済みコンテンツの追跡](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [再生中のアプリケーション割り込みの処理](use-cases/cookbook/app-interrupts.md)
-   + [メディア SDK の使用例](use-cases/cookbook/sdk-cookbook-overview.md)
    + [メディアストリームアトリビューション](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [非アクティブなセッションの再開](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph での Roku トラッキング](use-cases/cookbook/sdk-track-scenegraph.md)
