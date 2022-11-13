@@ -4,7 +4,7 @@ description: ストリーミングメディアの使用例について説明し�
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
+source-git-commit: c569ea265f6e467b19d58a870ac7b24b8bf355b1
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 48%
@@ -14,7 +14,7 @@ ht-degree: 48%
 # ストリーミングメディアの使用例 {#media-sdk-use-cases}
 
 * [プレーヤーステートトラッキング](/help/use-cases/player-state-tracking/player-state-overview.md)
-* [オフラインダウンロード済みコンテンツの追跡](using/media-use-cases/track-downloaded-content.html)
+* [オフラインダウンロード済みコンテンツの追跡](/help/use-cases/track-downloaded-content.md)
 * [再生中のアプリケーション割り込みの処理](/help/use-cases/cookbook/app-interrupts.md)
 * [広告間に発生するギャップの処理](/help/use-cases/cookbook/fix-ad-play-ad.md)
 * [非アクティブなセッションの再開](/help/use-cases/cookbook/resuming-inactive.md)
