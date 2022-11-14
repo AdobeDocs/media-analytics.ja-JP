@@ -3,8 +3,8 @@ title: Adobe Analytics for Streaming Media リリースノート
 description: Adobe Analytics のリリースノートを表示します。
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
-workflow-type: ht
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 100%
 
@@ -54,8 +54,8 @@ ht-degree: 100%
 
 | 機能 | 説明 | ターゲット日または更新日 |
 | ----------- | ---------- | -------------- |
-| メディア再生滞在時間 | アドビのストリーミングメディア再生滞在時間は、ビューアのエンゲージメントに関する貴重なインサイトを提供します。これにより、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、様々な粒度（新しい 5 分、15 分、30 分の時間粒度を含む）で分割できます。[詳細情報...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) | 2021年9月 |
-| Analytics Workspace のメディア同時閲覧者パネル | ピーク同時実行が発生した場所、または下降が発生した場所を把握します。コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。[詳細情報…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) <br><br>[Analytics Workspace のメディア同時閲覧者パネル（チュートリアル）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=ja#analysis-workspace) | 2020年9月<br><br><br> 2021年1月 |
+| メディア再生滞在時間 | アドビのストリーミングメディア再生滞在時間は、ビューアのエンゲージメントに関する貴重なインサイトを提供します。これにより、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、様々な粒度（新しい 5 分、15 分、30 分の時間粒度を含む）で分割できます。[詳細情報...](/help/reporting/workspace/media-playback-time-spent.md) | 2021年9月 |
+| Analytics Workspace のメディア同時閲覧者パネル | ピーク同時実行が発生した場所、または下降が発生した場所を把握します。コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。[詳細情報…](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Analytics Workspace のメディア同時閲覧者パネル（チュートリアル）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=ja#analysis-workspace) | 2020年9月<br><br><br> 2021年1月 |
 | サポートされるデバイスとプラットフォーム | AEP SDK を含むメディア Launch 拡張機能で、以下の OTT デバイスがサポートされるようになりました。 <div><ul><li>Apple TV（tvOS）</li><li>Fire TV（Fire OS）</li><li>Android TV</li></ul></div> | 2020年6月 |
 
 
