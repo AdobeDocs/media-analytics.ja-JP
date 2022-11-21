@@ -4,13 +4,13 @@ description: ストリーミングメディア用Adobe Analyticsの概要
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
+source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '439'
 ht-degree: 6%
 
 ---
-
 
 # はじめに {#getting-started}
 
@@ -47,10 +47,6 @@ Adobe Analyticsストリーミングメディアソリューションは、次�
 メディアコレクション API の使用について詳しくは、 [ストリーミングメディア API ドキュメント](/help/implementation/media-collection-api/mc-api-overview.md).
 
 ## アドビ拡張機能 {#adobe-extensions}
-
->[!NOTE]
->
->拡張機能の概要が必要
 
 * この [**Adobe MediumAnalytics for Audio and Video 拡張機能**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) （Media Analytics 拡張機能）、iOSおよび tvOS 実装で必要です。 タグサイトまたはプロジェクトにトラッカーインスタンスを追加する機能を提供します。 MA 拡張機能には、Analytics 拡張機能とExperience CloudID 拡張機能も必要です。
 
