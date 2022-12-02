@@ -2,14 +2,14 @@
 title: Media Analytics の新機能
 description: 新着情報には、新機能と通知に関する情報が含まれています。
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
 ht-degree: 100%
 
 ---
 
 
-# Media Analytics の新機能{#whats-new}
+# Media Analytics の新機能 {#whats-new}
 
 ![バナー](assets/media_analytics_banner.png)
 
@@ -34,7 +34,7 @@ Adobe Experience Cloud のリリースノートでは、Adobe Experience Cloud �
 
 ## 重要な通知
 
-| 機能 | [一般公開](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) - ターゲット日 | 説明 |
+| 機能 | [一般公開](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=ja) - ターゲット日 | 説明 |
 | ----------- | ---------- | ---------- |
 | [サポートされるデバイスとプラットフォーム](../getting-started/supported-devices.md) | 2021 年 8 月 31 日（PT） | 2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、Media Analytics SDK のサポート終了に関する FAQ を参照してください。 |
 | [Media Analytics SDK のサポート終了に関する FAQ](sdk-implement/end-of-support-faqs.md) | 2019 年秋 | iOS および Android 用 Media Analytics SDK の機能の開発は終了しました。2019 年秋から導入された新機能は、Media Analytics 拡張機能とメディアコレクション API を使用して有効化されます。 |
