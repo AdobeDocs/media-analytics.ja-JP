@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '915'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 >
 >新機能を活用するために、既存の Media Analytics のお客様は、RSID のビデオトラッキングを再有効化する必要があります。
 
-1. In [Adobe Analytics](https://experience.adobe.com) クリック **[!UICONTROL 管理者/レポートスイート].**
+1. [Adobe Analytics](https://experience.adobe.com) で、**[!UICONTROL 管理者／レポートスイート]をクリックします。**
 1. メディアデータを収集するレポートスイートを選択して、**[!UICONTROL 設定を編集／メディア管理／メディアレポート]をクリックします。**
 
    ![](assets/media-reporting.png){width="400px"}
@@ -35,7 +35,7 @@ ht-degree: 97%
 
    * **メディア広告**
 
-      メディア広告指標は、メディアコンテンツ内の広告の測定に使用されます。これは、ソリューション eVar を使用して、広告、広告プレーヤー名、広告ポッドおよびポッド位置の広告を測定します。 ソリューションイベントは、広告開始、広告完了、広告滞在時間およびビデオ滞在時間に使用されます。
+      メディア広告指標は、メディアコンテンツ内の広告の測定に使用されます。これは、ソリューション eVar を使用して、広告、広告プレイヤー名、広告ポッドおよびポッド位置の広告を測定します。ソリューションイベントは、広告開始、広告完了、広告滞在時間およびビデオ滞在時間に使用されます。
 
    * **メディアチャプター**
 
