@@ -1,14 +1,14 @@
 ---
-title: Adobeストリーミングメディアでのオフラインダウンロードコンテンツの追跡方法
-description: ユーザーがオフラインの場合に Downloaded Content 機能を使用してメディア視聴をトラッキングする方法について説明します。
+title: オフラインでダウンロードしたコンテンツを Adobe Streaming Media でトラッキングする方法
+description: ユーザーがオフラインの場合にダウンロード済みコンテンツ機能を使用してメディア視聴をトラッキングする方法について説明します。
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
