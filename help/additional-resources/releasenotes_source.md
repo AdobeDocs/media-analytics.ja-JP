@@ -10,7 +10,7 @@ ht-degree: 100%
 以下の内容は、Experience Cloud リリースノートからコピーされています。これは、新しいストリーミングメディアのリリースノートに移動されます。
 
 
-[Adobe Experience Cloud 製品](https://business.adobe.com/jp/products/adobe-experience-cloud-products.html) の最新のリリース更新について説明します。Experience League に関する最新のセルフヘルプドキュメント、チュートリアル、コースを入手します。
+[Adobe Experience Cloud 製品](https://business.adobe.com/jp/products/adobe-experience-cloud-products.html)の最新のリリース更新について説明します。Experience League に関する最新のセルフヘルプドキュメント、チュートリアル、コースを入手します。
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=ja) の最新のリリース更新について説明します。Experience League に関する最新のセルフヘルプドキュメント、チュートリアル、コースを入手します。
 
@@ -35,7 +35,7 @@ Media Analytics の新機能
 
 | 公開日 | 名前 | タイプ | 説明 |
 | ----------- | ---------- | ---------- | --------- |
-| 1月 | <a href="/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en">メディア再生滞在時間パネル</a> | ビデオ | メディアユーザーがメディア再生時間パネルを使用して、指定された精度での 1 日の閲覧時間に基づいた視聴者数を把握する方法を説明します。 |
+| 1月 | <a href="/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en">メディア再生滞在時間パネル</a> | ビデオ | メディアユーザーがメディア再生時間パネルを使用して、1 日の閲覧時間に基づいた視聴者数を、指定された精度で把握する方法を説明します。 |
 
 
 
@@ -44,7 +44,7 @@ Media Analytics の新機能
 
 | 機能 | 説明 |
 | ----------- | ---------- |
-| メディア再生滞在時間 | アドビのストリーミングメディア再生滞在時間は、ビューアのエンゲージメントに関する貴重なインサイトを提供します。これにより、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、様々な粒度（新たな 5 分、15 分、30 分の時間粒度を含む）で分割できます。[詳細情報...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=ja) |
+| メディア再生滞在時間 | アドビのストリーミングメディア再生滞在時間は、ビューアのエンゲージメントに関する貴重なインサイトを提供します。これにより、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、様々な粒度（新しい 5 分、15 分、30 分の時間粒度を含む）で分割できます。[詳細情報...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=ja) |
 
 
 
@@ -52,7 +52,7 @@ Media Analytics の新機能
 
 | 機能 | 説明 |
 | ----------- | ---------- |
-| メディア再生滞在時間 | アドビのストリーミングメディア再生滞在時間は、ビューアのエンゲージメントに関する貴重なインサイトを提供します。これにより、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、様々な粒度（新たな 5 分、15 分、30 分の時間粒度を含む）で分割できます。[詳細情報...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=ja) |
+| メディア再生滞在時間 | アドビのストリーミングメディア再生滞在時間は、ビューアのエンゲージメントに関する貴重なインサイトを提供します。これにより、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、様々な粒度（新しい 5 分、15 分、30 分の時間粒度を含む）で分割できます。[詳細情報...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=ja) |
 
 ## 2021年1月
 
@@ -60,7 +60,7 @@ Media Analytics の新機能
 
 | 公開日 | 名前 | タイプ | 説明 |
 | ----------- | ---------- | ---------- | --------- |
-| 2021年1月6日（PT） | [Analysis Workspace のメディア同時視聴者数パネル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=ja#analysis-workspace) | ビデオ | ピーク同時実行が発生した場所、または下降が発生した場所を理解します。 コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。 |
+| 2021年1月6日（PT） | [Analysis Workspace のメディア同時視聴者数パネル](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=ja#analysis-workspace) | ビデオ | ピーク同時実行が発生した場所、または下降が発生した場所を把握します。コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。 |
 
 
 ## 2020年11月
