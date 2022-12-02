@@ -4,7 +4,7 @@ description: Adobe Analytics のリリースノートを表示します。
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
 ht-degree: 100%
 
