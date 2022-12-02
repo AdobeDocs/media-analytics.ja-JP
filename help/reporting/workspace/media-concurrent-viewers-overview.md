@@ -5,13 +5,13 @@ exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# メディア同時閲覧者数の概要 {#media-concurrent-viewers}
+# メディア同時視聴者数の概要 {#media-concurrent-viewers}
 
 同時視聴者数を分析することで、同時実行のピークが発生した場所やドロップオフが発生した場所を把握し、コンテンツおよび視聴者エンゲージメントの品質に関する貴重なインサイトを得たり、量と規模に関するトラブルシューティングや計画に役立てたりすることができます。
 
