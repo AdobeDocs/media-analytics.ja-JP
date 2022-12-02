@@ -5,9 +5,9 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '259'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -17,15 +17,15 @@ Adobe Analytics for Streaming Media は、以下を含む主要なデバイス�
 
 * iOS および Android のスマートフォンおよびタブレット
 * Roku、Fire TV、Android TV の OTT デバイス
-* デスクトップおよびノート PC 向けの JavaScript ブラウザー
+* デスクトップおよびラップトップの JavaScript ブラウザー
 
-このメディア SDK は、デバイスの新バージョンのリリースに合わせて定期的に更新されます。また、個々のプラットフォームや他の使用可能なメディアプレーヤーのネイティブプレーヤーと統合するために SDK を使用できます。
+Media SDK は、新しいバージョンのデバイスがリリースされると定期的に更新されます。SDK を使用して、個々のプラットフォームのネイティブプレーヤーやその他の使用可能なメディアプレーヤーと統合できます。
 
-SDK が現在サポートされていないデバイスや、実装のカスタマイズが必要になる場合は、メディアコレクション API を使用できます。 メディアコレクション API を使用すると、デバイスから Media Analytics バックエンドに直接 RESTful API 呼び出しをおこなうことができます。
+現在 SDK をサポートしていないデバイスの場合や、実装をカスタマイズする必要がある場合は、Media Collection API を使用できます。Media Collection API を使用すると、デバイスから Media Analytics バックエンドに直接 RESTful API 呼び出しを行うことができます。
 
 現在サポートされているデバイスの表を次に示します。デバイスが一覧にない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
 
-| ストリーミングプラットフォームとデバイス |  | データ収集 (<br></br> Adobe Experience Platform<br></br> モバイル SDK | メディア SDK | メディアコレクション API |
+| ストリーミングプラットフォームとデバイス |  | Adobe Experience Platform Mobile SDK<br></br> を使用したデータ収集<br></br> | メディア SDK | メディアコレクション API |
 |:---|:---|:---:|:---:|:---:|
 | Web／モバイル Web |  |  |  |  |
 |  | JavaScript ブラウザー | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) |
@@ -35,7 +35,7 @@ SDK が現在サポートされていないデバイスや、実装のカスタ�
 |  | Windows デバイス |  |  | ![サポート](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
 |  | Apple TV（tvOS） | ![サポート](/help/assets/icon-blue-check.png) |  | ![サポート](/help/assets/icon-blue-check.png) |
-|  | Roku |  | ![サポート](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![サポート](/help/assets/icon-blue-check.png)<br>（ネイティブ） |
+|  | Roku |  | ![サポートあり](/help/assets/icon-blue-check.png)<br>（BrightScript） | ![サポートあり](/help/assets/icon-blue-check.png)<br>（ネイティブ） |
 |  | Fire TV（Fire OS） | ![サポート](/help/assets/icon-blue-check.png) |  | ![サポート](/help/assets/icon-blue-check.png) |
 |  | Android TV | ![サポート](/help/assets/icon-blue-check.png) |  | ![サポート](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) |
