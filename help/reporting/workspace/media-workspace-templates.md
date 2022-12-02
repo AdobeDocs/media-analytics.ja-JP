@@ -6,13 +6,13 @@ exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
 ht-degree: 100%
 
 ---
 
-# Media ワークスペースのテンプレート{#media-workspace-templates}
+# Media ワークスペースのテンプレート {#media-workspace-templates}
 
 Adobe Analytics Workspace を利用すると、トラッキングデータを分析するためのダッシュボードをすばやくセットアップすることができます。新しいプロジェクトを作成する際や、ワークスペースに移動して既存のプロジェクトを管理する際に、よく利用する一般的なトラッキングシナリオ（獲得、ストリーミングメディアの消費など）に対応した標準のテンプレートから選択できます。または、独自のカスタムテンプレートの作成、変更、保存をおこなうこともできます。
 
