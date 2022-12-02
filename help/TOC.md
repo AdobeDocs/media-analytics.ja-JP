@@ -1,41 +1,41 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: ストリーミングメディア用 Adobe Analytics
+user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: メディア解析ガイド
-user-guide-description: ストリーミングメディア用 Adobe Analytics の実装これには、メディア SDK とメディアコレクション API が含まれます。
+user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
 source-git-commit: 7b33301495a6596ce5e343e9e720d15619da2af9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '865'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
-# ストリーミングメディア用 Adobe Analytics {#using}
+# Adobe Analytics for Streaming Media {#using}
 
 + [ストリーミングメディア分析ガイド](media-overview.md)
 + リリースノート {#release-notes}
-   + [ストリーミングメディアのリリースノート](additional-resources/release-notes.md)
+   + [Streaming Media リリースノート](additional-resources/release-notes.md)
 + はじめに {#getting-started}
    + [概要](getting-started/getting-started.md)
    + [SDK、ライブラリおよび拡張機能](getting-started/download-sdks.md)
    + [サポートされるデバイス](getting-started/supported-devices.md)
    + [前提条件](getting-started/prereqs.md)
-   + [サポート終了](additional-resources/end-of-support-faqs.md)
+   + [サポートの終了](additional-resources/end-of-support-faqs.md)
    + [ストリーミングメディアドキュメント](getting-started/implementation-documentation.md)
 + 実装 {#implementation}
    + [実装の概要](implementation/overview.md)
-   + メディア SDK — 実装 {#media-sdk}
-      + [メディア SDK の概要](implementation/media-sdk/media-sdk-overview.md)
+   + Media SDK - 実装 {#media-sdk}
+      + [Media SDK の概要](implementation/media-sdk/media-sdk-overview.md)
       + インストールと設定 {#setup}
          + [Web SDK のインストール](implementation/media-sdk/setup/web-implementation.md)
-         + [モバイル SDK のインストール](implementation/media-sdk/setup/mobile-implementation.md)
+         + [Mobile SDK のインストール](implementation/media-sdk/setup/mobile-implementation.md)
          + OTT SDK のインストール {#ott-setup}
             + [Chromecast SDK のインストール](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Roku SDK のインストール](implementation/media-sdk/setup/set-up-roku.md)
-   + メディアコレクション API — 実装 {#streaming-media-apis}
+   + Media Collection API - 実装 {#streaming-media-apis}
       + [メディアコレクション](implementation/media-collection-api/mc-api-overview.md)
       + [API クイックスタート](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
       + [Sessions リクエスト](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -74,21 +74,21 @@ ht-degree: 79%
       + [メディア分平均オーディエンスパネル](reporting/workspace/average-minute-audience.md)
       + [メディアの同時視聴者パネル](reporting/workspace/media-concurrent-viewers-overview.md)
       + [メディア再生滞在時間パネル](reporting/workspace/media-playback-time-spent.md)
-   + [Media ワークスペースのテンプレート](reporting/workspace/media-workspace-templates.md)
+   + [Media ワークスペースのテンプレート ](reporting/workspace/media-workspace-templates.md)
    + [API を使用した同時ビューアデータの取得](reporting/reports-and-analytics/get-concurrent-json20.md)
    + [API を介したメディア再生滞在時間のデータの取得](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + ユースケース {#media-use-cases}
-   + [メディア SDK の使用例](use-cases/cookbook/sdk-cookbook-overview.md)
+   + [Media SDK の使用例](use-cases/cookbook/sdk-cookbook-overview.md)
    + プレーヤーステートトラッキング {#player-state-tracking}
       + [概要 ](use-cases/player-state-tracking/player-state-overview.md)
       + [標準ステートとカスタムステート](use-cases/player-state-tracking/standard-and-custom-states.md)
       + [実装とレポート](use-cases/player-state-tracking/implementation-and-reporting.md)
-      + [複数のプレーヤーステートトラッキング](use-cases/player-state-tracking/multiple-player-states.md)
+      + [複数プレーヤーのステートトラッキング](use-cases/player-state-tracking/multiple-player-states.md)
       + [プレーヤーステートトラッキングの例](use-cases/player-state-tracking/player-state-examples.md)
-   + [オフラインダウンロード済みコンテンツの追跡](use-cases/track-downloaded-content.md)
-   + [Federated Analytics](use-cases/federated-analytics.md)
+   + [オフラインダウンロードコンテンツの追跡](use-cases/track-downloaded-content.md)
+   + [Federated Analytics ](use-cases/federated-analytics.md)
    + [再生中のアプリケーション割り込みの処理](use-cases/cookbook/app-interrupts.md)
-   + [メディアストリームアトリビューション](use-cases/media-analytics-cookbook/media-dimensions.md)
+   + [メディアストリームの属性](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [非アクティブなセッションの再開](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph での Roku トラッキング](use-cases/cookbook/sdk-track-scenegraph.md)
    + [広告間のギャップの処理](use-cases/cookbook/fix-ad-play-ad.md)
@@ -106,27 +106,27 @@ ht-degree: 79%
    + [オプトアウトおよびプライバシー設定](privacy/opt-out-privacy.md)
    + [セキュリティ](privacy/security.md)
 + レガシー実装 {#legacy-implementations}
-   + [レガシー — 概要](legacy/setup/legacy-setup-overview.md)
-   + [レガシー — SDK のダウンロード](legacy/legacy-download-sdks.md)
-   + レガシー — メディア SDK {#legacy-media-sdks}
-      + [レガシー — メディア SDK の概要](legacy/media-sdk/setup/setup-overview.md)
+   + [レガシー - 概要](legacy/setup/legacy-setup-overview.md)
+   + [レガシー - SDK のダウンロード](legacy/legacy-download-sdks.md)
+   + レガシー - Media SDK {#legacy-media-sdks}
+      + [レガシー - Media SDK の概要](legacy/media-sdk/setup/setup-overview.md)
       + [Android のセットアップ](legacy/media-sdk/setup/set-up-android.md)
       + [iOS のセットアップ](legacy/media-sdk/setup/set-up-ios.md)
       + JavaScript のセットアップ {#setup-javascript}
          + [JavaScript 3.x のセットアップ](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + レガシー — メディア SDK から Launch への移行 {#sdk-to-launch}
+   + レガシー - Media SDK から Launch への移行 {#sdk-to-launch}
       + [概要](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android — メディア SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS — メディア SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript — メディア SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-   + [Heartbeat Measurement について](legacy/heartbeat-measurement.md)
-   + [Adobe Primetimeとストリーミングメディア分析](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-   + [AdobeAudience Management の有効化](legacy/intro-to-ava/am-enablement.md)
+      + [Android - Media SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+      + [iOS - Media SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+      + [JavaScript - Media SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+   + [ハートビート測定について](legacy/heartbeat-measurement.md)
+   + [Adobe Primetime とストリーミングメディア分析](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe Audience Management のイネーブルメント](legacy/intro-to-ava/am-enablement.md)
    + [カスタムリンクの実装](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
-   + 従来のマイルストーンの追跡 {#legacy-milestone-tracking}
-      + [従来のマイルストーンの追跡](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+   + レガシーマイルストーンのトラッキング {#legacy-milestone-tracking}
+      + [レガシーマイルストーンのトラッキング](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
       + [マイルストーンから VA への移行](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
-      + [マイルストーンを CL に移行](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+      + [マイルストーンから CL への移行](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + 検証 {#validation}
       + [検証の概要](legacy/validation/validation-overview.md)
       + [テスト 1：標準の再生](legacy/validation/test1-standard-playback.md)
@@ -138,9 +138,9 @@ ht-degree: 79%
    + [レガシー移行：VHL 1.x から VHL 2.x へ](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
    + [JavaScript 2.x のセットアップ](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [v1.x と v2.x のコードの比較](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
-   + [トラッキング API 1x から 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
-   + [レガシー — AVA の概要](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
-   + [クライアント側のパス](legacy/intro-to-ava/implementation-paths/client-side-path.md)
+   + [API 1x から 2x へのトラッキング](legacy/va-1x-to-2x/1x-2x-api-change.md)
+   + [レガシー - AVA の概要](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
+   + [クライアントサイドパス](legacy/intro-to-ava/implementation-paths/client-side-path.md)
    + トラッキング {#track-av-playback}
       + [概要 ](use-cases/track-av-playback/track-core-overview.md)
       + コアストリーミングメディア再生のトラック {#track-core}
