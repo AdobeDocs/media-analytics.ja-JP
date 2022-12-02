@@ -1,18 +1,18 @@
 ---
-title: オプトアウトおよびプライバシーの説明
-description: オプトイン、オプトアウトおよびプライバシーを処理する方法について説明します。
+title: オプトアウトとプライバシー
+description: オプトイン、オプトアウトおよびプライバシーの取り扱い方法を説明します。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# オプトアウトおよびプライバシー{#opt-out-and-privacy}
+# オプトアウトおよびプライバシー {#opt-out-and-privacy}
 
 ## オプトアウトとオプトイン {#opt-out-opt-in}
 
@@ -36,15 +36,15 @@ ht-degree: 89%
 
          * **Chromecast：**
 
-                &quot;&#39;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                &quot;&#39;
+                ```
             
-         * **Roku：**
+         * **Roku:**
 
-                &quot;&#39;
+                ```
                 ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-                &quot;&#39;
+                ```
             
             >[!IMPORTANT]
             >
@@ -53,28 +53,28 @@ ht-degree: 89%
 
          * **Chromecast：**
 
-                &quot;&#39;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                &quot;&#39;
+                ```
             
-         * **Roku：**
+         * **Roku:**
 
-                &quot;&#39;
+                ```
                 ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-                &quot;&#39;
+                ```
             * **現在の設定を返す：**
 
          * **Chromecast：**
 
-                &quot;&#39;
+                ```
                 ADBMobile.config.getPrivacyStatus()
-                &quot;&#39;
+                ```
             
-         * **Roku：**
+         * **Roku:**
 
-                &quot;&#39;
+                ```
                 ADBMobile().getPrivacyStatus()
-                &quot;&#39;
+                ```
             `setPrivacyStatus` を使用してプライバシー設定を変更した後は、同じメソッドを使用して再度変更されるまで、またはアプリを完全にアンインストールして再度インストールするまで、変更が保持されます。
 
 ## 保存されている ID の取得（OTT アプリ）  {#retrieving-stored-identifiers-ott-apps}
