@@ -5,15 +5,15 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: メディア解析ガイド
 user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 7b33301495a6596ce5e343e9e720d15619da2af9
-workflow-type: ht
-source-wordcount: '865'
-ht-degree: 100%
+source-git-commit: c2750af493d9cd526e776a27c51452d3a8fe25cb
+workflow-type: tm+mt
+source-wordcount: '876'
+ht-degree: 99%
 
 ---
 
 
-# Adobe Analytics for Streaming Media {#using}
+# ストリーミングメディア用 Adobe Analytics {#using}
 
 + [ストリーミングメディア分析ガイド](media-overview.md)
 + リリースノート {#release-notes}
@@ -102,6 +102,50 @@ ht-degree: 100%
       + [ユーザー ID の設定](use-cases/analytics-with-ott/set-user-ids.md)
       + [OTT と Audience Manager ](use-cases/analytics-with-ott/ott-am.md)
       + [OTT と Experience Cloud ](use-cases/analytics-with-ott/ott-experience-cloud.md)
++ トラッキング {#tracking}
+   + トラッキング {#track-av-playback}
+      + [概要 ](use-cases/track-av-playback/track-core-overview.md)
+      + コアストリーミングメディア再生のトラック {#track-core}
+         + [JavaScript 3.x でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
+         + [Chromecast でコア再生を追跡](use-cases/track-av-playback/track-core/track-core-chromecast.md)
+         + [Roku でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-roku.md)
+      + バッファーの追跡 {#track-buffering}
+         + [JavaScript 3.x でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+         + [Chromecast でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
+         + [Roku でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
+      + シークの追跡 {#track-seeking}
+         + [JavaScript 3.x でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+         + [Chromecast でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
+         + [Roku でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
+      + 標準メタデータの実装 {#impl-std-metadata}
+         + [JavaScript 3.x での標準メタデータの実装 ](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+         + [Chromecast での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+         + [標準メタデータパラメーター - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+         + [Roku での標準メタデータの実装 ](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+         + [標準メタデータパラメーター - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
+      + 広告の追跡 {#track-ads}
+         + [概要 ](use-cases/track-ads/track-ads-overview.md)
+         + [JavaScript 3.x での広告の追跡](use-cases/track-ads/track-ads-js/track-ads-js3.md)
+         + [Chromecast での広告の追跡](use-cases/track-ads/track-ads-chromecast.md)
+         + [Roku での広告の追跡](use-cases/track-ads/track-ads-roku.md)
+         + 標準広告メタデータの実装 {#impl-std-ad-metadata}
+            + [JavaScript 3.x での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+            + [Roku での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+      + チャプターおよびセグメントの追跡 {#track-chapters}
+         + [概要 ](use-cases/track-chapters/track-chapters-overview.md)
+         + [JavaScript 3.x でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
+         + [Chromecast でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-chromecast.md)
+         + [Roku でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-roku.md)
+      + Quality of Experience の追跡 {#track-qos}
+         + [概要 ](use-cases/track-qos/track-qos-overview.md)
+         + [JavaScript 3.x での Quality of Experience の追跡](use-cases/track-qos/track-qos-js/track-qos-js3.md)
+         + [Chromecast での Quality of Experience の追跡](use-cases/track-qos/track-qos-chromecast.md)
+         + [Roku での Quality of Experience の追跡](use-cases/track-qos/track-qos-roku.md)
+      + エラーの追跡 {#track-errors}
+         + [概要 ](use-cases/track-errors/track-errors-overview.md)
+         + [JavaScript 3.x でのエラーの追跡](use-cases/track-errors/track-errors-js/track-errors-js3.md)
+         + [Chromecast でのエラーの追跡](use-cases/track-errors/track-errors-chromecast.md)
+         + [Roku でのエラーの追跡](use-cases/track-errors/track-errors-roku.md)
 + プライバシーとセキュリティ {#streaming-media-privacy}
    + [オプトアウトおよびプライバシー設定](privacy/opt-out-privacy.md)
    + [セキュリティ](privacy/security.md)
@@ -141,86 +185,47 @@ ht-degree: 100%
    + [API 1x から 2x へのトラッキング](legacy/va-1x-to-2x/1x-2x-api-change.md)
    + [レガシー - AVA の概要](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
    + [クライアントサイドパス](legacy/intro-to-ava/implementation-paths/client-side-path.md)
-   + トラッキング {#track-av-playback}
-      + [概要 ](use-cases/track-av-playback/track-core-overview.md)
-      + コアストリーミングメディア再生のトラック {#track-core}
-         + [Android でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-android.md)
-         + [iOS でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-ios.md)
-         + JavaScript でのコア再生の追跡 {#track-core-javascript}
-            + [JavaScript 2.x でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-            + [JavaScript 3.x でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
-         + [Chromecast でコア再生を追跡](use-cases/track-av-playback/track-core/track-core-chromecast.md)
-         + [Roku でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-roku.md)
-      + バッファーの追跡 {#track-buffering}
-         + [Android でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-         + [iOS でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-         + JavaScript でのバッファーの追跡 {#track-buffering-js}
-            + [JavaScript 2.x でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-            + [JavaScript 3.x でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
-         + [Chromecast でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Roku でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
-      + シークの追跡 {#track-seeking}
-         + [Android でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-         + [iOS でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-         + JavaScript でのシークの追跡 {#track-seeking-js}
-            + [JavaScript 2.x でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-            + [JavaScript 3.x でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
-         + [Chromecast でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Roku でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
-      + 標準メタデータの実装 {#impl-std-metadata}
-         + [Android での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-         + [iOS での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-         + [iOS のメタデータキー](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-         + JavaScript での標準メタデータの実装 {#impl-std-md-js}
-            + [JavaScript 2.x での標準メタデータの実装 ](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-            + [JavaScript 3.x での標準メタデータの実装 ](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-         + [Chromecast での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [標準メタデータパラメーター - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-         + [Roku での標準メタデータの実装 ](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [標準メタデータパラメーター - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
+   + レガシートラッキング {#track-av-playback}
+      + [Android でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-android.md)
+      + [iOS でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-ios.md)
+      + JavaScript でのコア再生の追跡 {#track-core-javascript}
+         + [JavaScript 2.x でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
+      + [Android でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
+      + [iOS でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
+      + JavaScript でのバッファーの追跡 {#track-buffering-js}
+         + [JavaScript 2.x でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+      + [Android でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+      + [iOS でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+      + JavaScript でのシークの追跡 {#track-seeking-js}
+         + [JavaScript 2.x でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+      + [Android での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+      + [iOS での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+      + [iOS のメタデータキー](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+      + JavaScript での標準メタデータの実装 {#impl-std-md-js}
+         + [JavaScript 2.x での標準メタデータの実装 ](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + 広告の追跡 {#track-ads}
-         + [概要 ](use-cases/track-ads/track-ads-overview.md)
          + [Android での広告の追跡](use-cases/track-ads/track-ads-android.md)
          + [iOS での広告の追跡](use-cases/track-ads/track-ads-ios.md)
          + JavaScript での広告の追跡 {#track-ads-js}
             + [JavaScript 2.x での広告の追跡](use-cases/track-ads/track-ads-js/track-ads-js.md)
-            + [JavaScript 3.x での広告の追跡](use-cases/track-ads/track-ads-js/track-ads-js3.md)
-         + [Chromecast での広告の追跡](use-cases/track-ads/track-ads-chromecast.md)
-         + [Roku での広告の追跡](use-cases/track-ads/track-ads-roku.md)
-         + 標準広告メタデータの実装 {#impl-std-ad-metadata}
             + [Android での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
             + [iOS での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
             + JavaScript での標準広告メタデータの実装 {#impl-std-ad-md-js}
                + [JavaScript 2.x での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-               + [JavaScript 3.x での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-            + [Roku での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
       + チャプターおよびセグメントの追跡 {#track-chapters}
-         + [概要 ](use-cases/track-chapters/track-chapters-overview.md)
          + [Android でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-android.md)
          + [iOS でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-ios.md)
          + JavaScript でのチャプターおよびセグメントの追跡 {#track-chapters-js}
             + [JavaScript 2.x でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
-            + [JavaScript 3.x でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-         + [Chromecast でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-chromecast.md)
-         + [Roku でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-roku.md)
-      + Quality of Experience の追跡 {#track-qos}
-         + [概要 ](use-cases/track-qos/track-qos-overview.md)
          + [Android での Quality of Experience の追跡](use-cases/track-qos/track-qos-android.md)
          + [iOS での Quality of Experience の追跡](use-cases/track-qos/track-qos-ios.md)
          + JavaScript での Quality of Experience の追跡 {#track-qos-js}
             + [JavaScript 2.x での Quality of Experience の追跡](use-cases/track-qos/track-qos-js/track-qos-js.md)
-            + [JavaScript 3.x での Quality of Experience の追跡](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-         + [Chromecast での Quality of Experience の追跡](use-cases/track-qos/track-qos-chromecast.md)
-         + [Roku での Quality of Experience の追跡](use-cases/track-qos/track-qos-roku.md)
       + エラーの追跡 {#track-errors}
-         + [概要 ](use-cases/track-errors/track-errors-overview.md)
          + [Android でのエラーの追跡](use-cases/track-errors/track-errors-android.md)
          + [iOS でのエラーの追跡 ](use-cases/track-errors/track-errors-ios.md)
          + JavaScript でのエラーの追跡 {#track-errors-js}
             + [JavaScript 2.x でのエラーの追跡](use-cases/track-errors/track-errors-js/track-errors-js.md)
-            + [JavaScript 3.x でのエラーの追跡](use-cases/track-errors/track-errors-js/track-errors-js3.md)
-         + [Chromecast でのエラーの追跡](use-cases/track-errors/track-errors-chromecast.md)
-         + [Roku でのエラーの追跡](use-cases/track-errors/track-errors-roku.md)
       + 追跡シナリオ {#tracking-scenarios}
          + [広告のない VOD 再生](use-cases/tracking-scenarios/vod-no-intrs-details.md)
          + [プリロール広告のある VOD 再生](use-cases/tracking-scenarios/vod-preroll-ads.md)
