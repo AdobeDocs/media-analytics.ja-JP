@@ -5,7 +5,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 7a512a81-a6d1-4d0c-a4fe-91e9b11419db
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 現在の実装では、次の両方のシナリオを使用できます。
 - `stateStart(pictureInPicture)` - t0
-- `stateStart(mute)` -t0
+- `stateStart(mute)` - t0
 - `stateEnd(mute)` - t1
 - `stateEnd(pictureInPicture)` - t1
 - `stateStart(fullScreen)` - t1
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 
 新しい `statesUpdate` イベントを使用すると、上記のイベントのリストは次のようになります。
-- `statesUpdate(statesEnd=[], statesStart=[pictureInPicture, mute])` -t0
+- `statesUpdate(statesEnd=[], statesStart=[pictureInPicture, mute])` - t0
 - `statesUpdate(statesEnd=[mute, pictureInPicture], statesStart=[fullScreen])` - t1
 - `statesUpdate(statesEnd=[fullScreen], statesStart=[])` - t2
 
