@@ -6,7 +6,7 @@ exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
 feature: "Media Analytics, Analytics Dashboards"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '82'
 ht-degree: 100%
 
