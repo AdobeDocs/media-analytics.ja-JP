@@ -6,7 +6,7 @@ exl-id: dfeb0708-e744-4ff1-a644-3d77812f736a
 feature: "Media Analytics, Experience Cloud Integration"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '41'
 ht-degree: 100%
 
