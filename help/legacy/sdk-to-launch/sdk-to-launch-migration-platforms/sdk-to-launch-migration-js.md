@@ -5,7 +5,7 @@ exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
 ht-degree: 100%
 
@@ -117,7 +117,7 @@ delegate オブジェクトを、`getQoSObject()` および `getCurrentPlaybackT
 * [JavaScript 3.x のセットアップ](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
-### 起動
+### Launch
 
 * [Launch の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)
 * [Media Analytics 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=ja)
