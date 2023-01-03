@@ -6,7 +6,7 @@ exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3320'
 ht-degree: 100%
 
