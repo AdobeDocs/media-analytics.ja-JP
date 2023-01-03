@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
+workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 実装パスは、Media SDK の組み込みロジック（標準、推奨される実装）を使用するか、好きなものを選択してシンプルで強力でカスタマイズ可能な Media Collection API（RESTful）を使用するかによって異なります。
 
-サポートされているプラットフォームに応じて実装パスを選択します。 一部のプレーヤーは、Media SDK または Adobe Experience Platform Media SDK でサポートされていません。Media Collection API は、これらのプレーヤーをサポートする方法を提供します。サポートされるデバイスについて詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください。
+サポートされているプラットフォームに応じて実装パスを選択します。 一部のプレーヤーは、Media SDK またはAdobe Experience Platform Media Extensions でサポートされていません。 メディアコレクション API は、これらのプレーヤーをサポートする方法を提供します。 サポートされるデバイスについて詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください。
 
 ![メディアフロー](media-sdk/assets/choose-media-flow2.png)
 

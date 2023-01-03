@@ -5,10 +5,10 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '358'
-ht-degree: 100%
+source-git-commit: d2d0f34c64ecb2a900412d5959449c8c36328730
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 特定のデバイスでトラッキングアクティビティを許可するかどうかを制御できます。
 
-* **モバイルアプリ** - VA ライブラリは、`AdobeMobile` ライブラリのプライバシーおよびオプトアウト設定に従います。トラッキングをオプトアウトするには、`AdobeMobile` ライブラリを使用する必要があります。`AdobeMobile` ライブラリのオプトアウトおよびプライバシー設定について詳しくは、[オプトアウトおよびプライバシー設定](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=ja)を参照してください。
+* **モバイルアプリ —** メディア拡張機能は、データ収集のプライバシー設定に従います。 トラッキングをオプトアウトするには、プライバシーを次のように設定する必要があります。 [タグでオプトアウト](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) または [Mobile SDK のプライバシーステータスの更新](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/#getprivacystatus).
 * **JavaScript およびブラウザーアプリ** - VA ライブラリは、`VisitorAPI` のプライバシーおよびオプトアウト設定に従います。トラッキングをオプトアウトするには、Visitor API サービスからオプトアウトする必要があります。オプトアウトおよびプライバシーについて詳しくは、[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) を参照してください。
 * **OTT アプリ（Chromecast、Roku）-** OTT SDK は、EU 一般データ保護規則（GDPR）対応の API を提供します。これらの API を使用して、データ収集および送信の `opt` ステータスフラグを設定し、ローカルに保存されている ID を取得できます。
 

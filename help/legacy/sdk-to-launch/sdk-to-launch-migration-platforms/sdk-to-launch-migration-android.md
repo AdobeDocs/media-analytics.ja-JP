@@ -4,10 +4,10 @@ description: Media SDK から Android 用の Launch に移行する方法を説�
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -44,7 +44,7 @@ MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 
 ![](assets/launch_config_mobile.png)
 
-[モバイル拡張機能の使用](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[モバイル拡張機能の使用](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## トラッカーの作成
 
@@ -84,7 +84,7 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 ### Launch 拡張機能
 
-[メディア API リファレンス - メディアトラッカーの作成](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[メディア API リファレンス - メディアトラッカーの作成](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 トラッカーを作成する前に、メディア拡張機能と依存する拡張機能をモバイルコアに登録する必要があります。
 
@@ -131,11 +131,11 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 
 実装では、トラッカーによって公開された `updateCurrentPlayhead` メソッドを呼び出して、現在のプレーヤーの再生ヘッドを更新する必要があります。正確な追跡をおこなうには、このメソッドを少なくとも 1 秒に 1 回呼び出す必要があります。
 
-[メディア API リファレンス - 現在のプレーヤーを更新](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[メディア API リファレンス - 現在のプレーヤーを更新](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 実装では、トラッカーによって公開された `updateQoEObject` メソッドを呼び出して QoE 情報を更新する必要があります。品質指標に変更が生じた場合は常に、このメソッドが呼び出されることを想定しています。
 
-[メディア API リファレンス - QoE オブジェクトの更新](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[メディア API リファレンス - QoE オブジェクトの更新](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## 標準メディア／広告メタデータを渡す
 

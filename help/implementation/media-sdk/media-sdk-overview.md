@@ -1,15 +1,15 @@
 ---
 title: メディアストリーミングAdobeSDK の実装方法
-description: メディア SDK を使用したストリーミングメディア用Adobe Analyticsの実装について説明します。
+description: メディア SDK を使用したストリーミングメディア用 Adobe Analyticsの実装について説明します。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
-
 
 # メディア SDK の概要 {#implementation-overview}
 
@@ -22,9 +22,9 @@ ht-degree: 3%
 | Platform | バージョン |
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [JavaScript 用メディア SDK v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
-| <img src="assets/javascript-icon.png"> | [JavaScript v3.x 用のAdobe MediumAnalytics 拡張 ( タグ付き（データ収集）)](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [JavaScript v3.x のタグ付きAdobe MediumAnalytics 拡張機能（データ収集）](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
-### モバイルの実装
+### Mobile の実装
 
 | Platform | バージョン |
 |:----:|:----|

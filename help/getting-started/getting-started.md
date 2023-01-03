@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
-source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
-workflow-type: ht
-source-wordcount: '439'
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Adobe Analytics Streaming Media ソリューションは、次のメディアプ
 * OTT（オーバーザトップ）
 * ストリーミングメディアやサーバー間の統合に使用できるコネクテッドデバイス
 
-詳しくは、[サポートされるデバイスとプラットフォーム](#_Supported_devices_and)を参照してください。
+詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください。
 
 >[!IMPORTANT]
 >
@@ -45,11 +45,3 @@ Media SDK のダウンロードとインストールについて詳しくは、[
 **Media Collection API** を使用すると、メディア分析の実装をカスタマイズできます。Media Collection API を使用してアドビのサーバーを直接呼び出し、SDK などを使用して実行できるほぼすべてのアクションを実行します。データ収集をカスタマイズして、ストリーミングメディアデータに関する重要な質問を調べたり、インサイトを得たり、回答したりするレポートを作成します。
 
 Media Collection API の使用について詳しくは、[Steaming Media API ドキュメント](/help/implementation/media-collection-api/mc-api-overview.md)を参照してください。
-
-## アドビ拡張機能 {#adobe-extensions}
-
-* iOS および tvOS の実装には、[**Adobe Media Analytics for Audio and Video 拡張機能**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=ja)（Media Analytics 拡張機能）が必要です。タグのサイトまたはプロジェクトにトラッカーインスタンスを追加する機能を提供します。MA 拡張機能には、Analytics 拡張機能と Experience Cloud ID 拡張機能も必要です。
-
-* [Analytics 拡張機能 v1.6 以降](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ja) — この拡張機能を使用すると、Adobe Experience Platform Web SDK Javascript ライブラリを読み込んで、データを Adobe ソリューションに送信できます。
-
-* [Experience Cloud ID 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ja) - この拡張機能は、すべての Experience Cloud ソリューションをまたいで訪問者を特定する、Experience Cloud ID サービスを実装します。Experience Cloud ID サービスは、Adobe Experience Platform のパーソナライズ機能の拡張機能です。

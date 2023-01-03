@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '503'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 96%
 
 ---
 
@@ -24,9 +24,9 @@ Adobe Analytics for Streaming Media を実装するには、次のタスクを�
 1. **メディアトラッキングサーバーの URL を取得する**<br> メディアトラッキングサーバーの URL については、Adobe Analytics の営業担当または販売店にお問い合わせください。 この 
 `collection-api-server` URL は、Mobile SDK 用、JavaScript SDK 用および Roku の非収集 APIトラッキングサーバー用です。API 実装のドメイン名は、`[your_namespace].hb-api.omtrdc.net` です。
 
-1. **現在の Media SDK をダウンロードするか、必要な拡張機能を実装する**<br> 実装パスに応じて、web、モバイルまたは OTT（オーバーザトップ）プラットフォーム用の[最新の SDK をダウンロード](download-sdks.md)します。Adobe Analytics for Streaming Media を有効にするには、必要な拡張機能を実装する必要があります。必要な拡張機能について詳しくは、[Adobe 拡張機能](download-sdks.md#media-extension)を参照してください（Media SDK のダウンロードまたは拡張機能の取得を明確にする必要があります）
+1. **現在の Media SDK をダウンロードするか、必要な拡張機能を実装する**<br> 実装パスに応じて、web、モバイルまたは OTT（オーバーザトップ）プラットフォーム用の[最新の SDK をダウンロード](download-sdks.md)します。ストリーミングメディア用 Adobe Analytics拡張機能のパスを有効にするには、必要な拡張機能を実装する必要があります。
 
-1. **Adobe Analytics レポートを有効にする**<br> Analytics でレポートを有効にし、収集しているコンテンツや広告データを表示するには、Analytics でレポートを有効にする必要があります。 [メディアレポートの有効化](/help/reporting/media-reports-enable.md)を参照してください。
+1. **Adobe Analytics レポートを有効にする**<br> Analytics でレポートを有効にし、収集しているコンテンツや広告データを表示するには、Analytics でレポートを有効にする必要があります。 詳しくは、 [メディアレポートの有効化](/help/reporting/media-reports-enable.md).
 
 1. **Experience Cloud を有効にする**<br>
 

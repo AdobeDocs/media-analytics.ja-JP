@@ -1,22 +1,23 @@
 ---
-title: ストリーミングメディア用 Analytics の Web 実装を設定する方法
+title: ストリーミングメディア用 Analytics用の Web 実装の設定方法
 description: Web アプリ用のAdobeストリーミングメディアの実装方法を説明します。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 71%
+source-wordcount: '449'
+ht-degree: 73%
 
 ---
 
-
 # Web SDK のインストール {#install-web-sdks}
 
-JavaScript 用の Media SDK v3.x を設定 >> ダウンロードページ/リンクで Calise が必要とするもの
+この節では、Web スタンドアロン SDK をインストールし、JavaScript を設定する方法について説明します。
 
-この節では、Web SDK のインストール方法と JavaScript の設定方法について説明します。
+* [スタンドアロン Web SDK](/help/implementation/media-sdk/setup/web-implementation.md)
 
+* [Web 拡張機能 SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja){target=_blank}
 
 ## 前提条件 {#prerequesites}
 
