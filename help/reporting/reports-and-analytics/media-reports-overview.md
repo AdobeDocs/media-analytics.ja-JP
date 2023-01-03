@@ -6,7 +6,7 @@ exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
 feature: "Media Analytics, Reports & Analytics Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '107'
 ht-degree: 100%
 
