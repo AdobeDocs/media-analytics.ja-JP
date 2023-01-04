@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: メディア解析ガイド
 user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
+source-git-commit: f25a661c9ad4af1aa1cd97854c26fda44cc6816e
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 98%
+source-wordcount: '894'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,13 @@ ht-degree: 98%
    + [SDK、ライブラリおよび拡張機能](getting-started/download-sdks.md)
    + [サポートされるデバイス](getting-started/supported-devices.md)
    + [前提条件](getting-started/prereqs.md)
-   + [サポートの終了](additional-resources/end-of-support-faqs.md)
+   + サポートの終了 {#end-of-support}
+      + [Media Analytics Mobile SDK のサポート終了](additional-resources/end-of-support-faqs.md)
+      + レガシー - Media SDK から Launch への移行 {#sdk-to-launch}
+      + [概要](legacy/sdk-to-launch/sdk-to-launch-migration.md)
+      + [Android - Media SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+      + [iOS - Media SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+      + [JavaScript - Media SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [ストリーミングメディアドキュメント](getting-started/implementation-documentation.md)
 + 実装 {#implementation}
    + [実装の概要](implementation/overview.md)
@@ -160,11 +166,6 @@ ht-degree: 98%
       + [iOS のセットアップ](legacy/media-sdk/setup/set-up-ios.md)
       + JavaScript のセットアップ {#setup-javascript}
          + [JavaScript 3.x のセットアップ](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + レガシー - Media SDK から Launch への移行 {#sdk-to-launch}
-      + [概要](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android - Media SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS - Media SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript - Media SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [ハートビート測定について](legacy/heartbeat-measurement.md)
    + [Adobe Primetime とストリーミングメディア分析](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe Audience Management のイネーブルメント](legacy/intro-to-ava/am-enablement.md)
