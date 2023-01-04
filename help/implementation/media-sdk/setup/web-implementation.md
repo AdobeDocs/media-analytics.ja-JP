@@ -4,14 +4,14 @@ description: Web アプリ用のAdobeストリーミングメディアの実装�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: d0ea5f9d8ee61475aa40c606fb79659dfd6b3870
+source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
-# JavaScript を使用した Analytics の実装 {#install-web-sdks}
+# JavaScript を使用した Analytics のインストール {#install-web-sdks}
 
 このページの情報では、Web スタンドアロン SDK のインストール方法と JavaScript のセットアップ方法について説明します。
 

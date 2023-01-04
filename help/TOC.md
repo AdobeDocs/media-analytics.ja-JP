@@ -5,7 +5,7 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: メディア解析ガイド
 user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: a9366d5bf590f16b193c7e2905cadca0f7afd636
+source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 98%
@@ -31,8 +31,8 @@ ht-degree: 98%
       + [Media SDK の概要](implementation/media-sdk/media-sdk-overview.md)
       + インストールと設定 {#setup}
          + Web SDK のインストール {#install-web-sdk}
-            + [JavaScript を使用した Analytics の実装](implementation/media-sdk/setup/web-implementation.md)
-            + [Media Analytics 拡張機能を使用した Analytics の実装](implementation/media-sdk/setup/web-implementation-tags.md)
+            + [JavaScript を使用した Analytics のインストール](implementation/media-sdk/setup/web-implementation.md)
+            + [Media Analytics 拡張機能を使用した Analytics のインストール](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobile SDK のインストール](implementation/media-sdk/setup/mobile-implementation.md)
          + OTT SDK のインストール {#ott-setup}
             + [Chromecast SDK のインストール](implementation/media-sdk/setup/set-up-chromecast.md)
