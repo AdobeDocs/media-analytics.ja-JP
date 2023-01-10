@@ -5,20 +5,18 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
+source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 98%
+source-wordcount: '366'
+ht-degree: 90%
 
 ---
 
 # Media SDK、タグを使用した拡張機能、OTT SDK の取得 {#download-sdks}
 
-このページの情報には、現在の Media SDK をダウンロードし、Media Extension を取得するためのリンクが含まれています。
+このページの情報には、現在のメディア SDK をダウンロードし、タグを使用するメディア拡張機能を取得するためのリンクが含まれています。
 
-このページの情報には、現在の Media SDK をダウンロードし、タグを使用する Media Extension を取得するためのリンクが含まれています。
-
-Adobe Experience Platform のタグは、アドビが提供する次世代型の web サイトタグおよび Mobile SDK の管理機能です。タグを使用すると、関連する顧客体験を強化するために必要な分析、マーケティング、広告などのソリューションを、簡単にデプロイして管理できます。タグについて詳しくは、[タグの概要](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=ja)を参照してください。
+Adobe Experience Platform のタグは、アドビが提供する次世代型の web サイトタグおよび Mobile SDK の管理機能です。タグを使用すると、関連する顧客体験を強化するために必要な分析、マーケティング、広告などのソリューションを、簡単にデプロイして管理できます。タグについて詳しくは、 [タグの概要](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=ja).
 
 
 >[!NOTE]
