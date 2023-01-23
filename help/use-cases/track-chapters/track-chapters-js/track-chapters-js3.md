@@ -5,7 +5,7 @@ exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
 ht-degree: 100%
 
@@ -30,9 +30,9 @@ ht-degree: 100%
    | 変数名 | タイプ | 説明 |
    | --- | --- | --- |
    | `name` | string | チャプター名を示す空白以外の文字列。 |
-   | `position` | 数値 | コンテンツ内のチャプターの位置（1 から始まります）。 |
-   | `length` | 数値 | チャプターの長さを示す正の数。 |
-   | `startTime` | 数値 | チャプターの開始位置の再生ヘッド値。 |
+   | `position` | number | コンテンツ内のチャプターの位置（1 から始まります）。 |
+   | `length` | number | チャプターの長さを示す正の数。 |
+   | `startTime` | number | チャプターの開始位置の再生ヘッド値。 |
 
    チャプターオブジェクト：
 
