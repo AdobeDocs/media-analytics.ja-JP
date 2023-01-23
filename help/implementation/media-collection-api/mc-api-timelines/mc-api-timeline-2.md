@@ -1,14 +1,14 @@
 ---
-title: メディアトラッキングタイムライン � ユーザーが中断したセッション
+title: メディアトラッキングタイムライン ‐ ユーザーが中断したセッション
 description: ビデオセッションが中断された場合の再生ヘッドタイムラインと、対応するユーザーアクションについて説明します。各アクションとリクエストの詳細について説明します。
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 99%
 | --- | :---: | :---: | --- |
 | プリロール広告 #1 の開始を追跡する | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-12 秒の広告が開始されます。
+12 秒の広告が開始します。
 
 ```json
 {
@@ -289,7 +289,7 @@ ht-degree: 99%
 | --- | :---: | :---: | --- |
 | ミッドロール広告ブレークの開始を追跡する | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
-期間が 8 秒のミッドロール広告。`adBreakStart` を送信します。
+デュレーションが 8 秒のミッドロール広告：`adBreakStart` を送信します。
 
 ```json
 {
@@ -342,7 +342,7 @@ ht-degree: 99%
 | --- | :---: | :---: | --- |
 | ユーザーがアプリを閉じ、視聴を中断したユーザーがこのセッションに戻らないとアプリが判断する。 | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
-`sessionEnd` を VA バックエンドに送信して、それ以上の処理をおこなうことなくセッションを即座に終了する必要があることを示します。
+`sessionEnd` を VA バックエンドに送信して、それ以上の処理を行うことなくセッションを即座に終了する必要があることを示します。
 
 ```json
 {
