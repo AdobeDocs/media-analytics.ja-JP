@@ -6,31 +6,31 @@ exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# Chromecast 用 Mobile SDK v3.x のセットアップ {#set-up-chromecast}
+# Chromecast 用 Mobile SDK v3.x の設定 {#set-up-chromecast}
 
 この節では、ストリーミングメディア用の Chromecast インストールを設定するための前提条件について説明します。
 
 ## 前提条件
 
-* **有効な設定パラメーターを取得する**
+* **有効な設定パラメーターの取得**
 
-   これらのパラメーターは、Media Analytics アカウントの設定後、Adobeの担当者から取得できます。
-* **メディアプレーヤーに次の API を含めます**
+   これらのパラメーターは、Media Analytics アカウントの設定後、アドビ担当者から取得できます。
+* **メディアプレーヤーへの下記 API の組み込み**
 
    * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * *プレーヤー情報を提供する API* - メディア名や再生ヘッドなどの情報がこれに該当します。
 
 Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。今回は、Adobe Analytics および Adobe Target ソリューションのアプリ分析およびターゲティング機能とのシームレスな統合を提供します。詳しくは、[Adobe Mobile Services のドキュメント](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=ja)を参照してください。
 
-AdobeMobile Library for Chromecast v3.x for ChromecastExperience Cloudソリューションを使用すると、JavaScript で記述された Chromecast アプリケーションを測定し、Audience Management を通じてオーディエンスデータを活用および収集し、ビデオエンゲージメントを測定できます。
+Experience Cloud ソリューション向けの Chromecast 用 Adobe Mobile ライブラリ v3.x を使用すると、JavaScript で記述された Chromecast アプリケーションを測定したり、Audience Management を通じてオーディエンスデータを利用および収集したり、ビデオエンゲージメントを測定したりできます。
 
-## モバイルライブラリ/SDK の実装
+## モバイルライブラリ／SDK 実装
 
 1. ダウンロードした Chromecast ライブラリをプロジェクトに追加します。
 
@@ -43,7 +43,7 @@ AdobeMobile Library for Chromecast v3.x for ChromecastExperience Cloudソリュ�
       * `ADBMobileConfig` config
 
          アプリ用にカスタマイズされた SDK 設定ファイル。この SDK には、サンプルの `ADBMobileConfig` 実装が用意されています（`samples/` / 内）。アドビの担当者から、適切な設定を入手してください。
-   1. ライブラリファイルを `index.html` ファイルを作成し、 `ADBMobileConfig` グローバル変数を次に示します (Media Analytics 用のAdobeMobile の設定に使用するグローバル変数には、という排他的なキーが存在します )。 `mediaHeartbeat`):
+   1. このライブラリファイルを `index.html` ファイルに追加し、以下のように `ADBMobileConfig` グローバル変数を作成します（Adobe Mobile for Media Analytics の設定に使用されるグローバル変数には、`mediaHeartbeat` という専用のキーがあります）。
 
       ```js
       <script>
@@ -88,7 +88,7 @@ AdobeMobile Library for Chromecast v3.x for ChromecastExperience Cloudソリュ�
 
       >[!IMPORTANT]
       >
-      >If `mediaHeartbeat` が誤って設定されている場合、メディアモジュールがエラー状態になり、トラッキングコールの送信が停止します。
+      >`mediaHeartbeat` を誤って設定した場合、メディアモジュールがエラー状態になり、トラッキングコールが送信されなくなります。
 
       mediaHeartbeat キーの ADBMobile 設定パラメーター：
    | 設定パラメーター | 説明     |
@@ -104,7 +104,7 @@ AdobeMobile Library for Chromecast v3.x for ChromecastExperience Cloudソリュ�
 
 1. Experience Cloud 訪問者 ID を設定します。
 
-   Experience Cloud 訪問者 ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。訪問者 ID サービスは、Media Analytics やその他の統合に必要なMarketing Cloudです。
+   Experience Cloud 訪問者 ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。訪問者 ID サービスは、Media Analytics およびその他の Marketing Cloud 統合に必要です。
 
    `ADBMobileConfig` 設定ファイルに `marketingCloud` 組織 ID が含まれていることを確認します。
 
