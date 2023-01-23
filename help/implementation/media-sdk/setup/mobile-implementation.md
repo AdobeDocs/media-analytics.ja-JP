@@ -1,35 +1,36 @@
 ---
-title: ストリーミングメディア用タグを使用してモバイル SDK を設定する方法
-description: モバイルアプリ用のAdobeストリーミングメディアの実装方法を説明します。
+title: ストリーミングメディア用タグを使用して Mobile SDK を設定する方法
+description: モバイルアプリ用の Adobe Streaming Media の実装方法を説明します。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
 # Mobile SDK のインストール {#install-mobile-sdks}
 
-Android またはiOSにモバイルアプリ用のストリーミングメディアを実装するには、以下をインストールして設定します。
+Android または iOS にモバイルアプリ用のストリーミングメディアを実装するには、以下をインストールして設定します。
 
 * **Adobe Experience Platform モバイル SDK**
 
-   データを収集するには、Adobe Experience Platformのタグを使用します。 Adobe Experience Platform のタグは、他のタグ要件と共に Analytics コードを導入できるタグ管理ソリューションです。
+   データを収集するには、Adobe Experience Platform のタグを使用します。 Adobe Experience Platform のタグは、他のタグ要件と共に Analytics コードを導入できるタグ管理ソリューションです。
 
-* **Android 用メディア SDK** または **iOS用メディア SDK**
+* **Android 用 Media SDK** または **iOS 用 Media SDK**
 
 * **Adobe Media Analytics for Audio and Video 拡張機能**
 
-SDK のダウンロードとその他のドキュメントリソースについては、 [タグを使用したメディア SDK、拡張機能、OTT SDK の取得](/help/getting-started/download-sdks.md)
+SDK のダウンロード方法とその他のドキュメントリソースについては、[タグを使用した Media SDK、拡張機能、OTT SDK の取得](/help/getting-started/download-sdks.md)を参照してください
 
-* **有効な設定パラメーターを取得する**
+* **有効な設定パラメーターの取得**
 
-   これらのパラメーターは、Analytics アカウントの設定後、Adobeの担当者から取得できます。
+   これらのパラメーターは、Analytics アカウントの設定後、アドビ担当者から取得できます。
 
-* **メディアプレーヤーに次の API を含めます**
+* **メディアプレーヤーで以下の API を含める**
 
-   * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
+   * *プレーヤーイベントをサブスクライブするための API* - Media SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
 
-   * *プレーヤー情報を提供する API*  — これには、メディア名、再生ヘッドの位置、広告、チャプターなど、現在再生中に関する情報が含まれます。
+   * *プレーヤー情報を提供する API* - これには、メディア名、再生ヘッドの位置、広告、チャプターなど、現在再生中の情報が含まれます。
