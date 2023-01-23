@@ -6,13 +6,13 @@ exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# タイムライン：章 {#timeline-3-chapters}
+# タイムライン：チャプター {#timeline-3-chapters}
 
 ## VOD、プリロール広告、一時停止、バッファリング、コンテンツの最後まで視聴
 
@@ -146,7 +146,7 @@ ping タイマーを開始します。最初の ping イベントは、プリロ
 | --- | :---: | :---: | --- |
 | プリロール広告 #1 の完了を追跡する | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-最初のプリロール広告の終わりを追跡します。
+最初のプレロール広告の終わりを追跡します。
 
 ```json
 {
@@ -164,7 +164,7 @@ ping タイマーを開始します。最初の ping イベントは、プリロ
 | --- | :---: | :---: | --- |
 | プリロール広告 #2 の開始を追跡する | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-長さが 7 秒の 2 番目のプリロール広告の開始を追跡します。
+2 番目のプレロール広告（長さが 7 秒）の開始を追跡します。
 
 ```json
 {
@@ -214,7 +214,7 @@ ping タイマーを開始します。最初の ping イベントは、プリロ
 | --- | :---: | :---: | --- |
 | プリロール広告 #2 の完了を追跡する | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-2 番目のプリロール広告の終わりを追跡します。
+2 番目のプレロール広告の終わりを追跡します。
 
 ```json
 {
@@ -380,7 +380,7 @@ ping タイマーを開始します。最初の ping イベントは、プリロ
 | --- | :---: | :---: | --- |
 | ミッドロール広告ブレークの開始を追跡する | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-期間が 8 秒のミッドロール広告。`adBreakStart` を送信します。
+8 秒間のミッドロール広告：`adBreakStart` を送信します。
 
 ```json
 {
