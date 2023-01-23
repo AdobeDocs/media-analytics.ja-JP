@@ -6,9 +6,9 @@ exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Analytics for Streaming Media を使用すれば、サイトやストリ�
 
 ## 仕組み
 
-ストリーミングメディアトラッキングデータは、メディア SDK またはAdobe Experience Platform Media Extensions とメディアコレクション API を使用して、プレーヤーから収集されます。 個々の再生セッションごとにデータを収集して処理する Media Analytics サービスに、すべてのきめ細かいデータ（最大 10 秒間）が送信されます。再生セッションが終了すると、計算したトラッキングデータが Adobe Analytics に送信され、保存とレポートが行われます。Adobe Customer Journey Analytics（CJA）実装では、Analytics Data Connector（ADC）を使用してデータを CJA に送信できるので、顧客が CJA をレポートツールとして使用できます。
+ストリーミングメディアトラッキングデータは、Media SDK または Adobe Experience Platform メディア拡張機能およびメディアコレクション API を使用してプレーヤーから収集されます。個々の再生セッションごとにデータを収集して処理する Media Analytics サービスに、すべてのきめ細かいデータ（最大 10 秒間）が送信されます。再生セッションが終了すると、計算したトラッキングデータが Adobe Analytics に送信され、保存とレポートが行われます。Adobe Customer Journey Analytics（CJA）実装では、Analytics Data Connector（ADC）を使用してデータを CJA に送信できるので、顧客が CJA をレポートツールとして使用できます。
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 
