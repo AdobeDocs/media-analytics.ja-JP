@@ -6,29 +6,29 @@ exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# レガシー — メディア SDK の設定の概要 {#setup-overview}
+# レガシー - Media SDK セットアップの概要 {#setup-overview}
 
-ビデオアプリまたはプレーヤー用のメディア SDK をダウンロードしたら、この節の情報に従ってメディア SDK を設定および実装します。
+ビデオアプリまたはプレーヤー用の Media SDK をダウンロードしたら、この節の情報に従って、Media SDK をセットアップして実装します。
 
 
 ## 一般的な実装のガイドライン {#general-implementation-guidelines}
 
-メディアストリーミングメディアトラッキングでは、3 つの主な SDK コンポーネントをAdobeに使用します。
-* メディアハートビート設定 — `MediaHeartbeatConfig` には、レポートの基本設定が含まれます。
-* メディアハートビートデリゲート — `MediaHeartbeatDelegate` は、再生時間と QoS オブジェクトを制御します。
-* メディアハートビート — `MediaHeartbeat` は、メンバーとメソッドを含むプライマリライブラリです。
+Adobe Streaming Media トラッキングで使用する主な SDK コンポーネントは 3 つあります。
+* Media Heartbeat 設定 - `MediaHeartbeatConfig` には、レポートの基本設定が含まれています。
+* Media Heartbeat デリゲート - `MediaHeartbeatDelegate` は、再生時間と QoS オブジェクトを制御します。
+* Media Heartbeat - `MediaHeartbeat` は、メンバーとメソッドを含むプライマリライブラリです。
 
-## ストリーミングメディア SDK の実装
+## Streaming Media SDK の実装
 
-ストリーミングメディア SDK をセットアップして使用するには、次の実装手順を実行します。
+Streaming Media SDK をセットアップして使用するには、次の実装手順を実行します。
 
-1. の作成 `MediaHeartbeatConfig` インスタンスを作成し、設定パラメーター値を設定します。
+1. `MediaHeartbeatConfig` インスタンスを作成し、設定パラメーター値を設定します。
 
    |  変数名  | 説明  | 必須 |  デフォルト値  |
    |---|---|:---:|---|
