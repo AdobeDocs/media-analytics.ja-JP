@@ -1,22 +1,23 @@
 ---
-title: レガシーメディア SDK の実装の説明
-description: 「モバイル、OTT、ブラウザー (JS) アプリケーションで、メディアトラッキング用の**レガシー** 2.x メディア SDK を設定する方法を説明します。」
+title: レガシー Media SDK の実装の説明
+description: モバイルアプリケーション、OTT アプリケーションおよびブラウザー（JS）アプリケーションでメディアトラッキング用に **レガシー** 2.x Media SDK をセットアップする方法について説明します。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# レガシー 2.x ストリーミングメディア SDK の設定の概要{#setup-overview}
+# レガシー 2.x Streaming Media SDK セットアップの概要{#setup-overview}
 
-この節の手順は、 **レガシー** メディア SDK 2.x
+この節の手順は、**レガシー** 2.x Media SDK に適用されます。
 
-* メディア SDK の 1.x バージョンの実装について詳しくは、 [メディア SDK 1.x のドキュメントです。](/help/getting-started/download-sdks.md)
+* Media SDK の 1.x バージョンの実装について詳しくは、[1.x Media SDK のドキュメント](/help/getting-started/download-sdks.md)を参照してください。
 
-* Primetime インテグレーターの場合、 _Primetime メディア SDK のドキュメント_.
+* Primetime のインテグレーターの場合は、_Primetime Media SDK のドキュメント_&#x200B;を参照してください。
 
 >[!IMPORTANT]
 >
@@ -155,7 +156,7 @@ Media Analytics トラッキング実装は、2 つのタイプのトラッキ�
 | Chromecast | [Chromecast 向け設定 ](chromecast_1.x_sdk.pdf) |
 | iOS | [iOS 向け設定 ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript 向け設定 ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android： [Media Analytics の設定](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html) </li> <li> DHLS： [Media Analytics の設定](https://helpx.adobe.com/jp/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS： [Media Analytics の設定](https://helpx.adobe.com/jp/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android： [Media Analytics の設定](https://helpx.adobe.com/jp/support/primetime.html) </li> <li> DHLS： [Media Analytics の設定](https://helpx.adobe.com/jp/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS： [Media Analytics の設定](https://helpx.adobe.com/jp/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [TVML 向け設定 ](vhl_tvml.pdf) |
 
 ## Primetime メディア SDK のドキュメント {#primetime-docs}
