@@ -6,9 +6,9 @@ exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 82%
 
 ## 前提条件 {#roku-prerequisites}
 
-* **Media Analytics 用の有効な設定パラメーターを取得する**
+* **Media Analytics 用の有効な設定パラメーターの取得**
 
-   これらのパラメーターは、Media Analytics アカウントの設定後、Adobeの担当者から取得できます。
-* **メディアプレーヤーに次の API を含めます**
+   これらのパラメーターは、Media Analytics アカウントの設定後、アドビ担当者から取得できます。
+* **メディアプレーヤーへの下記 API の組み込み**
 
    * _プレーヤーイベントをサブスクライブするための API_ - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * _プレーヤー情報を提供する API_ - メディア名や再生ヘッドなどの情報がこれに該当します。
 
-Experience Cloudソリューション用 Roku SDK 2.x を使用すると、BrightScript で記述された Roku アプリケーションを測定し、Audience Management を通じてオーディエンスデータを活用および収集し、ビデオイベントを通じてビデオエンゲージメントを測定できます。
+Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、BrightScript で記述された Roku アプリケーションを測定したり、Audience Management を通じてオーディエンスデータを利用および収集したり、ビデオイベントを介してビデオエンゲージメントを測定したりできます。
 
-## モバイルライブラリ/SDK の実装
+## モバイルライブラリ／SDK 実装
 
 1. [ダウンロードした](/help/getting-started/download-sdks.md) Roku ライブラリをプロジェクトに追加します。
 
@@ -37,7 +37,7 @@ Experience Cloudソリューション用 Roku SDK 2.x を使用すると、Brigh
       * `ADBMobileConfig.json`：アプリ用にカスタマイズされた SDK 設定ファイル。
    1. プロジェクトソースに、ライブラリファイルと JSON 設定ファイルを追加します。
 
-      Mobile の設定に使用する JSON には、Adobe分析用の専用のキー ( `mediaHeartbeat`. メディア分析の設定パラメーターは、ここに属しています。
+      Adobe Mobile の設定に使用する JSON には、`mediaHeartbeat` と呼ばれるメディア分析用の専用キーがあります。ここには、メディア分析の設定パラメーターが属しています。
 
       >[!TIP]
       >
@@ -103,7 +103,7 @@ Experience Cloudソリューション用 Roku SDK 2.x を使用すると、Brigh
 
 1. Experience Cloud 訪問者 ID を設定します。
 
-   Experience Cloud 訪問者 ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。訪問者 ID サービスは、ビデオイベントや他のイベント統合に必要なMarketing Cloudです。
+   Experience Cloud 訪問者 ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。訪問者 ID サービスは、ビデオイベントおよびその他の Marketing Cloud 統合に必要です。
 
    `ADBMobileConfig` 設定ファイルに `marketingCloud` 組織 ID が含まれていることを確認します。
 
