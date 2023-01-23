@@ -6,17 +6,17 @@ exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1169'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Roku — SceneGraph でのトラッキング {#tracking-in-scenegraph-roku}
+# Roku - SceneGraph でのトラッキング {#tracking-in-scenegraph-roku}
 
 ## はじめに {#introduction}
 
-Roku SceneGraph XML プログラミングフレームワークを使用して、アプリケーションを開発できます。 このフレームワークには、次の 2 つの主要な概念が含まれます。
+Roku SceneGraph XML プログラミングフレームワークを使用して、アプリケーションを開発できます。 このフレームワークの特長は、次の 2 つの重要な概念です。
 
 * アプリケーション画面の SceneGraph レンダリング
 * SceneGraph 画面の XML 設定
@@ -219,7 +219,7 @@ API 署名：`ADBMobile().sgConstants()`
 
    1. `adbmobile.brs`（AdobeMobileLibrary）を `pkg:/source/` ディレクトリにコピーします。
 
-   1. Scene Graph をサポートするために、`adbmobileTask.brs` および `adbMobileTask.xml` を `pkg:/components/` ディレクトリにコピーします。
+   1. SceneGraph をサポートするために、`adbmobileTask.brs` および `adbMobileTask.xml` を `pkg:/components/` ディレクトリにコピーします。
 
 1. **初期設定**
 
