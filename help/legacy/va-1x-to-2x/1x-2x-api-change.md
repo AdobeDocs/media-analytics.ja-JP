@@ -6,13 +6,13 @@ exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# レガシー API — 1.x から 2.x への変換 {#one-x-to-two-x-conv}
+# レガシーAPI -1.x から 2.x への変換 {#one-x-to-two-x-conv}
 
 ## メディア SDK 2.x API リファレンス
 
