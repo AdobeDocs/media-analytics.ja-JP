@@ -1,13 +1,13 @@
 ---
-title: ストリーミングメディア用 Analytics用の Web 実装の設定方法
-description: Web アプリ用のAdobeストリーミングメディアの実装方法を説明します。
+title: ストリーミングメディア用 Analytics の web 実装をセットアップする方法
+description: Web アプリ用の Adobe Streaming Media を実装する方法について説明します。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 69%
+ht-degree: 90%
 
 ---
 
@@ -19,18 +19,18 @@ ht-degree: 69%
 
 ## 前提条件 {#prerequesites}
 
-* **有効な設定パラメーターを取得する**
+* **有効な設定パラメーターを取得**
 
-   これらのパラメーターは、Analytics アカウントの設定後、Adobeの担当者から取得できます。
+   これらのパラメーターは、Analytics アカウントの設定後、アドビ担当者から取得できます。
 
-* **実装方法 `AppMeasurement` および `Experience Cloud Identity Service` （メディアアプリケーションの JavaScript 版）**
+* **メディアアプリケーションで JavaScript 用に `AppMeasurement` と `Experience Cloud Identity Service` を実装**
 
-   詳しくは、 [JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja) および [Experience CloudID サービスの実装](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja).
+   詳しくは、[JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)および [Experience Cloud ID サービスの実装](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja)を参照してください。
 
-* **メディアプレーヤーに次の API を含めます**
+* **メディアプレーヤーで以下の API を含める**
 
-   * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
-   * *プレーヤー情報を提供する API*  — 現在再生中のメディア、広告およびチャプターに関する情報が含まれます。
+   * *プレーヤーイベントをサブスクライブするための API* - Media SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
+   * *プレーヤー情報を提供する API* - 現在再生中のメディア、広告、チャプターに関する情報が含まれます。
 
 ## JavaScript 3.x のセットアップ {#set-up-javascript}
 
@@ -106,4 +106,4 @@ ht-degree: 69%
 
 2.x から 3.x への移行について詳しくは、[ 2.x から 3.x への移行](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)を参照してください。
 
-レガシーコンテンツについては、 [レガシー実装](/help/legacy/media-sdk/setup/setup-overview.md)
+レガシーコンテンツについては、[レガシー実装](/help/legacy/media-sdk/setup/setup-overview.md)を参照してください

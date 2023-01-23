@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -96,7 +96,7 @@ ht-degree: 96%
    + [オフラインダウンロードコンテンツの追跡](use-cases/track-downloaded-content.md)
    + [Federated Analytics ](use-cases/federated-analytics.md)
    + [再生中のアプリケーション割り込みの処理](use-cases/cookbook/app-interrupts.md)
-   + [メディアストリームの属性](use-cases/media-analytics-cookbook/media-dimensions.md)
+   + [メディアストリームのアトリビューション](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [非アクティブなセッションの再開](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph での Roku トラッキング](use-cases/cookbook/sdk-track-scenegraph.md)
    + [広告間のギャップの処理](use-cases/cookbook/fix-ad-play-ad.md)
@@ -142,13 +142,13 @@ ht-degree: 96%
       + チャプターおよびセグメントの追跡 {#track-chapters}
          + [概要 ](use-cases/track-chapters/track-chapters-overview.md)
          + [JavaScript 3.x でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-         + [Chromecast でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-chromecast.md)
-         + [Roku でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-roku.md)
+         + [Chromecast でのチャプターとセグメントの追跡](use-cases/track-chapters/track-chapters-chromecast.md)
+         + [Roku でのチャプターとセグメントの追跡](use-cases/track-chapters/track-chapters-roku.md)
       + Quality of Experience の追跡 {#track-qos}
          + [概要 ](use-cases/track-qos/track-qos-overview.md)
          + [JavaScript 3.x での Quality of Experience の追跡](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-         + [Chromecast での Quality of Experience の追跡](use-cases/track-qos/track-qos-chromecast.md)
-         + [Roku での Quality of Experience の追跡](use-cases/track-qos/track-qos-roku.md)
+         + [Chromecast でのエクスペリエンス品質の追跡](use-cases/track-qos/track-qos-chromecast.md)
+         + [Roku でのエクスペリエンス品質の追跡](use-cases/track-qos/track-qos-roku.md)
       + エラーの追跡 {#track-errors}
          + [概要 ](use-cases/track-errors/track-errors-overview.md)
          + [JavaScript 3.x でのエラーの追跡](use-cases/track-errors/track-errors-js/track-errors-js3.md)
@@ -216,12 +216,12 @@ ht-degree: 96%
             + JavaScript での標準広告メタデータの実装 {#impl-std-ad-md-js}
                + [JavaScript 2.x での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
       + チャプターおよびセグメントの追跡 {#track-chapters}
-         + [Android でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-android.md)
+         + [Android でのチャプターとセグメントの追跡](use-cases/track-chapters/track-chapters-android.md)
          + [iOS でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-ios.md)
          + JavaScript でのチャプターおよびセグメントの追跡 {#track-chapters-js}
             + [JavaScript 2.x でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
-         + [Android での Quality of Experience の追跡](use-cases/track-qos/track-qos-android.md)
-         + [iOS での Quality of Experience の追跡](use-cases/track-qos/track-qos-ios.md)
+         + [Android でのエクスペリエンス品質の追跡](use-cases/track-qos/track-qos-android.md)
+         + [iOS でのエクスペリエンス品質の追跡](use-cases/track-qos/track-qos-ios.md)
          + JavaScript での Quality of Experience の追跡 {#track-qos-js}
             + [JavaScript 2.x での Quality of Experience の追跡](use-cases/track-qos/track-qos-js/track-qos-js.md)
       + エラーの追跡 {#track-errors}
