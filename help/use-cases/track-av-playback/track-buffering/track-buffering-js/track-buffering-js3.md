@@ -5,13 +5,13 @@ exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
 ht-degree: 100%
 
 ---
 
-# JavaScript 3.x を使用したバッファーの追跡{#track-buffering-on-javascript}
+# JavaScript 3.x を使用したバッファリングの追跡{#track-buffering-on-javascript}
 
 以下の手順は、すべての 3.x SDK に共通する実装のガイダンスです。
 
