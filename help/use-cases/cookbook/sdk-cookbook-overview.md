@@ -1,28 +1,28 @@
 ---
-title: メディア SDK の使用例の概要
-description: ストリーミングメディアの使用例について説明します
+title: Media SDK ユースケースの概要
+description: ストリーミングメディアの使用例について学ぶ
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c569ea265f6e467b19d58a870ac7b24b8bf355b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '78'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
-# ストリーミングメディアの使用例 {#media-sdk-use-cases}
+# ストリーミングメディアのユースケース {#media-sdk-use-cases}
 
-* [プレーヤーステートトラッキング](/help/use-cases/player-state-tracking/player-state-overview.md)
-* [オフラインダウンロード済みコンテンツの追跡](/help/use-cases/track-downloaded-content.md)
+* [プレーヤーの状態のトラッキング](/help/use-cases/player-state-tracking/player-state-overview.md)
+* [オフラインダウンロードコンテンツの追跡](/help/use-cases/track-downloaded-content.md)
 * [再生中のアプリケーション割り込みの処理](/help/use-cases/cookbook/app-interrupts.md)
 * [広告間に発生するギャップの処理](/help/use-cases/cookbook/fix-ad-play-ad.md)
 * [非アクティブなセッションの再開](/help/use-cases/cookbook/resuming-inactive.md)
 * [SceneGraph（Roku）でのトラッキング](/help/use-cases/cookbook/sdk-track-scenegraph.md)
-* [メディアストリームアトリビューション](/help/use-cases/media-analytics-cookbook/media-dimensions.md)
+* [メディアストリームのアトリビューション](/help/use-cases/media-analytics-cookbook/media-dimensions.md)
 
 * Federated
-   * [Federated Analytics](/help/use-cases/federated-analytics.md)
+   * [Federated Analytics ](/help/use-cases/federated-analytics.md)
 
 * タイムライン
    * [チャプターの開始と終了](/help/use-cases/timelines/chapter-start-end.md)
