@@ -5,9 +5,9 @@ exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '691'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 
 1. 2021 年 8 月 31 日（PT）を過ぎると、Mobile v4 SDK はサポートされなくなります。iOS または Android 用 Adobe Experience Platform（AEP）Mobile SDK に移行する必要があります。詳しくは、[バージョン 4 モバイル SDK のサポート終了に関する FAQ](https://developer.adobe.com/client-sdks/documentation/v4-end-of-life-faq/)を参照してください。
 
-1. Analytics for Streaming Media を実装するには AEP Mobile SDK と、Analytics と Media Analytics の拡張機能を使用する必要があります。2021 年 9 月 1 日（PT）以降は、新しい AEP Mobile SDK および拡張機能を使用する必要があります。Media Analytics 拡張機能は、Adobe タグ（データ収集）を使用して設定されます。詳しくは、[スタンドアロンのメディア SDK から Adobe Launch への移行](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)を参照してください。
+1. Analytics for Streaming Media を実装するには AEP Mobile SDK と、Analytics と Media Analytics の拡張機能を使用する必要があります。2021 年 9 月 1 日（PT）以降は、新しい AEP Mobile SDK および拡張機能を使用する必要があります。Media Analytics 拡張機能は、アドビタグ（データ収集）を使用して設定されます。詳しくは、[スタンドアロンの Media SDK から Adobe Launch への移行](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)を参照してください。
 
 1. iOS および Android 用 Media Analytics SDK の機能の開発は終了しました。2019 年秋から導入された新機能は、Media Analytics 拡張機能とメディアコレクション API を使用して有効化されます。
 
@@ -45,7 +45,7 @@ ht-degree: 96%
 
 1. **Media Analytics 拡張機能への移行のレベルオブエフォート（LOE）はどの程度ですか？**
 
-   LOE は顧客の実装によって異なるので、異なります。  以下の移行ドキュメントを確認した後、コンサルティングを利用するか、カスタマーケアに問い合わせて、追加のサポートを依頼してください。
+   LOE は顧客の実装によって様々です。以下の移行ドキュメントを確認した後、コンサルティングを利用するか、カスタマーケアに問い合わせて、追加のサポートを依頼してください。
 
 [Media Analytics 拡張機能：Android 版の移行](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
 
@@ -55,7 +55,7 @@ ht-degree: 96%
 
 1. **タグ管理システムとして Launch が必要ですか？Launch を使用したくない場合はどうなりますか？**
 
-   モバイルアプリの使用例では、Launch は、Web の場合とは異なり、タグ管理システムとしては使用されません。SDK 拡張機能を設定するには、Launch UI を使用する必要があります。これは、Adobe Mobile Services UI を使用してモバイル v4 SDK を設定する方法と似ています。インストールに関して Launch を使用するメリットは、選択した拡張機能に基づいて、インストール手順をカスタマイズできる点です。
+   モバイルアプリのユースケースでは、Launch は、web の場合とは異なり、タグ管理システムとしては使用されません。SDK 拡張機能を設定するには、Launch UI を使用する必要があります。これは、Adobe Mobile Services UI を使用してモバイル v4 SDK を設定する方法と似ています。インストールに関して Launch を使用するメリットは、選択した拡張機能に基づいて、インストール手順をカスタマイズできる点です。
 
 1. **tvOS 用 SDK は、このサポートの終了の影響を受けますか？**
 
