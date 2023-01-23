@@ -6,9 +6,9 @@ exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ iOS デバイス用のストリーミングメディア分析の設定方法を�
 
       1. 「**[!UICONTROL Copy Items if Needed]**」チェックボックスが選択されていること、「**[!UICONTROL Create Groups]**」が選択されていること、および「**[!UICONTROL Add to Target]**」にあるチェックボックスが選択されていないことを確認します。
 
-      ![オプションを選択](assets/choose-options_ios.png)
+      ![オプションの選択](assets/choose-options_ios.png)
 
       1. 「**[!UICONTROL 完了]**」をクリックします。
       1. **[!UICONTROL Project Navigator]** で、アプリを選択し、ターゲットを選択します。
@@ -159,7 +159,7 @@ iOS デバイス用のストリーミングメディア分析の設定方法を�
 
 バージョン 2.x では、すべてのパブリックメソッドは、開発をより簡単にするために、`ADBMediaHeartbeat` クラスに統合されています。すべての設定は、`ADBMediaHeartbeatConfig` クラスに統合されています。
 
-1.x から 2.x への移行について詳しくは、レガシー実装のドキュメントを参照してください )。
+1.x から 2.x への移行について詳しくは、レガシー実装のドキュメントを参照してください。
 
 ## tvOS のネイティブアプリの設定
 
