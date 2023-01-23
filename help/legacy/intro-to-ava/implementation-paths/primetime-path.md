@@ -5,7 +5,7 @@ exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Media Analytics（ハートビート）は、アドビの従来のマイルストーンモデルに代わる、アドビの標準メディアトラッキングソリューションです。
 
-Adobe Primetime は、コンテンツプログラマーやディストリビューターが、接続されたすべての画面でメディアを収益化できるようにする Adobe Experience Cloud ソリューションです。
+Adobe Primetime は、接続されたすべての画面でメディアを収益化できるようコンテンツのプログラマーや提供者を支援する 、Adobe Experience Cloud ソリューションです。
 
 Primetime は、メディアの投稿、広告、パーソナライゼーション、分析用のモジュラー型プラットフォームを提供することで、デバイスをまたいだグローバルオーディエンスへのリーチ、およびこれらのオーディエンスの収益化やアクティブ化の複雑さを解消します。さらに、Primetime オファーは、次の点に関するソリューションと価値を提供します。
 
