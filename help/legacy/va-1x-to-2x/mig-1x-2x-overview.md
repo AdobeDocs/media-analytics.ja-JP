@@ -6,15 +6,15 @@ exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '216'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# VHL 1.x から VHL 2.x への従来の移行の概要 {#migration-overview}
+# VHL 1.x から VHL 2.x へのレガシー移行の概要 {#migration-overview}
 
-VHL 1.x から VHL 2.x への移行は簡単です。新しいバージョンでは、初期化、設定、プレーヤーデリゲート用のシンプルな API を備えています。i
+VHL 1.x から VHL 2.x への移行は簡単です。新しいバージョンでは、初期化や設定、プレーヤーのデリゲート用の簡略化された API を利用できるというメリットがあります。
 
 1.x と 2.x の主な違いは次のとおりです。
 
