@@ -6,9 +6,9 @@ exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 93%
 
    呼び出しパラメーターおよびメタデータについては、[テスト呼び出しの詳細](/help/legacy/validation/test-call-details.md#play-main-content)を参照してください。
 
-   プラットフォームの [広告の追跡](/help/use-cases/track-ads/track-ads-overview.md) これらの広告呼び出しに関する追加情報の手順です。
+   また、これらの広告呼び出しの追加情報については、お使いのプラットフォームの[広告の追跡](/help/use-cases/track-ads/track-ads-overview.md)の手順も参照してください。
 
 1. **アプリまたはブラウザーをバックグラウンドに移動する**
 
