@@ -6,13 +6,13 @@ exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '198'
 ht-degree: 100%
 
 ---
 
-# Android でのチャプターおよびセグメントの追跡{#track-chapters-and-segments-on-android}
+# Android でのチャプターとセグメントの追跡{#track-chapters-and-segments-on-android}
 
 以下の手順は、SDK 2.x を使用した実装についてのガイダンスです。
 
