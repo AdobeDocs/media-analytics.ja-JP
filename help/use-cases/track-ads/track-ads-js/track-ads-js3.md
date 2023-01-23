@@ -5,7 +5,7 @@ exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
 ht-degree: 100%
 
@@ -38,8 +38,8 @@ ht-degree: 100%
    | 変数名 | タイプ | 説明 |
    | --- | --- | --- |
    | `name` | string | 広告ブレーク名（プレロール、ミッドロール、ポストロール）を示す空白以外の文字列。 |
-   | `position` | 数値 | 広告ブレークの位置番号（1 から始まる） |
-   | `startTime` | 数値 | 広告ブレーク開始時の再生ヘッド値 |
+   | `position` | number | 広告ブレークの位置番号（1 から始まる） |
+   | `startTime` | number | 広告ブレーク開始時の再生ヘッド値 |
 
    広告ブレークオブジェクトの作成：
 
@@ -62,10 +62,10 @@ ht-degree: 100%
 
    | 変数名 | タイプ | 説明 |
    | --- | --- | --- |
-   | `name` | 文字列 | 広告名を示す空白以外の文字列。 |
-   | `adId` | 文字列 | 広告識別子を示す空白以外の文字列。 |
-   | `position` | 数値 | 広告ブレーク内の広告の位置を示す番号（1 から始まります）。 |
-   | `length` | 数値 | 広告の長さを示す正の数。 |
+   | `name` | string | 広告名を示す空白以外の文字列。 |
+   | `adId` | string | 広告識別子を示す空白以外の文字列。 |
+   | `position` | number | 広告ブレーク内の広告の位置を示す番号（1 から始まります）。 |
+   | `length` | number | 広告の長さを示す正の数。 |
 
    広告オブジェクトの作成：
 
