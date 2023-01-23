@@ -5,9 +5,9 @@ exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '650'
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Media Analytics が目的のパスの場合は、[メディア SDK の実装](/h
 
 ## Adobe Primetime
 
-Adobe Primetime は、コンテンツのプログラマーや提供者が、接続されたすべての画面でメディアを収益化することを支援する Adobe Experience Cloud ソリューションです。
+Adobe Primetime は、接続されたすべての画面でメディアを収益化できるようコンテンツのプログラマーや提供者を支援する 、Adobe Experience Cloud ソリューションです。
 
 Primetime は、ビデオパブリッシング、広告、パーソナライゼーション、アナリティクス用のモジュール式プラットフォームを提供することで、各種デバイスをまたぐグローバルオーディエンスへのリーチ、収益化、活性化における複雑性を軽減します。さらに、Primetime オファーは、次の点に関するソリューションと価値を提供します。
 
