@@ -5,7 +5,7 @@ exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
 ht-degree: 100%
 
@@ -31,10 +31,10 @@ ht-degree: 100%
 
    | 変数 | タイプ | 説明 |
    | --- | --- | --- |
-   | `bitrate` | 数値 | 現在のビットレート |
-   | `startupTime` | 数値 | 起動時間 |
-   | `fps` | 数値 | FPS の値 |
-   | `droppedFrames` | 数値 | ドロップフレームの数 |
+   | `bitrate` | number | 現在のビットレート |
+   | `startupTime` | number | 起動時間 |
+   | `fps` | number | FPS の値 |
+   | `droppedFrames` | number | ドロップフレームの数 |
 
    QoE オブジェクトの作成：
 
