@@ -7,7 +7,7 @@ exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 メディアコレクション API は、クライアント側のメディア SDK の代替として使用できるアドビの RESTful API です。メディアコレクション API を使用すると、プレーヤーで RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントを追跡できます。
 
-メディアコレクション API は、基本的に、メディア SDK のサーバー側バージョンとして動作するアダプターです。つまり、メディア SDK ドキュメントの一部はメディアコレクション API にも関連しています。例えば、両方のソリューションが同じ[ストリーミングメディアパラメーター](../variables/audio-video-parameters.md)を使用すると、収集されたストリーミングメディアトラッキングデータは、同じ[レポートと分析になります。](/help/reporting/media-reports-enable.md)
+メディアコレクション API は、基本的に、メディア SDK のサーバーサイドバージョンとして動作するアダプターです。つまり、メディア SDK ドキュメントの一部はメディアコレクション API にも関連しています。例えば、両方のソリューションが同じ[ストリーミングメディアパラメーター](../variables/audio-video-parameters.md)を使用すると、収集されたストリーミングメディアトラッキングデータは、同じ[レポートと分析になります。](/help/reporting/media-reports-enable.md)
 
 ## メディアトラッキングデータのフロー {#media-tracking-data-flows}
 
