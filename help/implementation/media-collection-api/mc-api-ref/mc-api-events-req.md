@@ -1,14 +1,14 @@
 ---
-title: ストリーミングメディアコレクション API � イベントリクエストエンドポイント
+title: ストリーミングメディアコレクション API ‐ イベントリクエストエンドポイント
 description: Media Collection API イベントリクエストエンドポイントのパラメーターと応答
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 
 ## URI パラメーター
 
-`sid`:から返されたセッション ID [Sessions リクエスト](mc-api-sessions-req.md).
+`sid`：[セッションリクエスト](mc-api-sessions-req.md)から返されたセッション ID。
 
 ## リクエスト本文
 
