@@ -6,13 +6,13 @@ exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
 ht-degree: 100%
 
 ---
 
-# Roku での Quality of Experience の追跡{#track-quality-of-experience-on-roku}
+# Roku でのエクスペリエンス品質の追跡{#track-quality-of-experience-on-roku}
 
 以下の手順は、すべての 2.x SDK に共通する実装のガイダンスです。
 
