@@ -6,15 +6,15 @@ exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '150'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # クライアントサイド{#client-side}
 
-**このページを削除します??**
+**このページの削除??**
 
 Media Analytics（ハートビート）は、アドビの標準化されたメディアトラッキングソリューションです。
 
