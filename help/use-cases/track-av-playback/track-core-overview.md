@@ -6,9 +6,9 @@ exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 98%
 ### スクラビングの終了時
 
 * を呼び出します `trackEvent(SeekComplete)`
-変更をキャンセル
+変更のキャンセル
 
 ### バッファリングの開始時
 
@@ -242,4 +242,4 @@ if (e.type == "buffered") {
 
 ## 検証 {#validate}
 
-の検証に関する情報 *レガシー* の実装については、 [従来の検証。](/help/legacy/validation/validation-overview.md)
+*レガシー*&#x200B;実装の検証について詳しくは、[レガシーの検証](/help/legacy/validation/validation-overview.md)を参照してください。
