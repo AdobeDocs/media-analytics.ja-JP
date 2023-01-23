@@ -5,7 +5,7 @@ exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
 ht-degree: 100%
 
@@ -27,9 +27,9 @@ ht-degree: 100%
    | 変数名 | タイプ | 説明 |
    | --- | --- | --- |
    | `name` | string | メディア名を示す、空白以外の文字列。 |
-   | `id` | 文字列 | 一意のメディア識別子を示す、空白以外の文字列。 |
-   | `length` | 数値 | メディアの長さを秒単位で示す正の数。長さが不明な場合は 0 を使用します。 |
-   | `streamType` | 文字列 |  |
+   | `id` | string | 一意のメディア識別子を示す、空白以外の文字列。 |
+   | `length` | number | メディアの長さを秒単位で示す正の数。長さが不明な場合は 0 を使用します。 |
+   | `streamType` | string |  |
    | `mediaType` |  | メディアのタイプ（オーディオまたはビデオ）。 |
 
    **`StreamType`定数：**
