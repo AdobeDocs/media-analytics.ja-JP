@@ -6,17 +6,17 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Media SDK、タグを使用した拡張機能、OTT SDK の取得 {#download-sdks}
 
-このページの情報には、現在のメディア SDK をダウンロードし、タグを使用するメディア拡張機能を取得するためのリンクが含まれています。
+このページの情報には、現在の Media SDK をダウンロードし、タグを使用するメディア拡張機能を取得するためのリンクが含まれています。
 
-Adobe Experience Platform のタグは、アドビが提供する次世代型の web サイトタグおよび Mobile SDK の管理機能です。タグを使用すると、関連する顧客体験を強化するために必要な分析、マーケティング、広告などのソリューションを、簡単にデプロイして管理できます。タグについて詳しくは、 [タグの概要](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=ja).
+Adobe Experience Platform のタグは、アドビが提供する次世代型の web サイトタグおよび Mobile SDK の管理機能です。タグを使用すると、関連する顧客体験を強化するために必要な分析、マーケティング、広告などのソリューションを、簡単にデプロイして管理できます。タグについて詳しくは、[タグの概要](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=ja)を参照してください。
 
 
 >[!NOTE]
