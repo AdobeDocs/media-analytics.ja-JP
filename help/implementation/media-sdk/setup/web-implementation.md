@@ -5,17 +5,17 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # JavaScript を使用した Analytics のインストール {#install-web-sdks}
 
-このページの情報では、Web スタンドアロン SDK のインストール方法と JavaScript のセットアップ方法について説明します。
+このページの情報では、web スタンドアロン SDK のインストール方法と JavaScript のセットアップ方法について説明します。
 
-または、 Analytics 拡張機能を使用して、Adobe MediumAnalytics を実装することもできます ( [Media Analytics 拡張機能を使用した Analytics の実装](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+または、[Media Analytics 拡張機能を使用した Analytics の実装](/help/implementation/media-sdk/setup/web-implementation-tags.md)で説明しているように、Adobe Media Analytics 拡張機能を使用して Analytics を実装することもできます。
 
 ## 前提条件 {#prerequesites}
 
