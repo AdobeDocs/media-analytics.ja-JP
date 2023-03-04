@@ -4,10 +4,10 @@ description: Adobe Experience Platform のデータ収集を含む、Adobe Strea
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
-source-wordcount: '650'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 **このコンテンツは現在の実装パスファイルに移動されました**
 
-Streaming Media Analytics には独自の SKU があり、サーバー呼び出しに基づく価格モデルからビデオのストリーミングに基づくモデルに変更されるため、顧客は実装パスごとに営業担当者／アカウントマネージャーに連絡して新しい販売注文にサインする必要があります。
+Streaming Media Analytics には独自の SKU があり、サーバーコールに基づく価格モデルからビデオストリームに基づくモデルへの変更があるので、実装パスごとに営業担当者/Adobe担当者のアカウントチームに連絡して新しい受注に署名する必要があります。
 
 ## Adobe Media Analytics 拡張機能を使用した Adobe Experience Platform のデータ収集
 

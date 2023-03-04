@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '298'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Analytics Streaming Media ソリューションは、次のメディアプ
 
 >[!IMPORTANT]
 >
->Adobe Analytics Streaming Media を実装するには、アドビ営業担当または販売店に連絡して、Streaming Media が製品ポートフォリオに含まれていることを確認してください。
+>Adobe Analytics Streaming Media を実装するには、Adobeの営業担当者またはAdobeのアカウントチームに連絡して、Streaming Media が製品ポートフォリオに含まれていることを確認してください。
 
 ## Streaming Media 用 Media SDK {#media-sdks}
 

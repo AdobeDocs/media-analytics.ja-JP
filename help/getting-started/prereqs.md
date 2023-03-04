@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '486'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 Adobe Analytics for Streaming Media を実装するには、次のタスクを実行します。
 
 1. **Steaming Media の価格モデルを確認する**<br>
-現在の価格モデルは、ビデオストリームに基づいています。Streaming Media Analytics は Adobe Analytics とは別売なので、必要に応じて、営業担当または販売店に連絡して、新しい販売注文に署名してください。
+現在の価格モデルは、ビデオストリームに基づいています。Streaming Media Analytics はAdobe Analyticsとは別売なので、必要に応じて、営業担当者またはAdobeのアカウントチームに連絡し、新しい販売注文に署名してください。
 
 1. **Adobe Analytics の実装を確認する**<br> Streaming Media for Adobe Analytics には、Adobe Analytics の基本的な実装も必要です。詳しくは、[Adobe Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ja)を参照してください。
 
