@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: メディア解析ガイド
 user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
+source-git-commit: 9b448c75604abe2683ab4d522a7197dfe1af55be
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '902'
+ht-degree: 99%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 100%
             + [JavaScript を使用した Analytics のインストール](implementation/media-sdk/setup/web-implementation.md)
             + [Media Analytics 拡張機能を使用した Analytics のインストール](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobile SDK のインストール](implementation/media-sdk/setup/mobile-implementation.md)
+         + [Adobe Experience Platform Edge での Analytics のインストール](implementation/media-sdk/implementation-edge.md)
          + OTT SDK のインストール {#ott-setup}
             + [Chromecast SDK のインストール](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Roku SDK のインストール](implementation/media-sdk/setup/set-up-roku.md)
@@ -193,19 +194,19 @@ ht-degree: 100%
       + [iOS でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-ios.md)
       + JavaScript でのコア再生の追跡 {#track-core-javascript}
          + [JavaScript 2.x でのコア再生の追跡](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-      + [Android でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-      + [iOS でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-      + JavaScript でのバッファーの追跡 {#track-buffering-js}
-         + [JavaScript 2.x でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-      + [Android でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-      + [iOS でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-      + JavaScript でのシークの追跡 {#track-seeking-js}
-         + [JavaScript 2.x でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-      + [Android での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-      + [iOS での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      + [iOS のメタデータキー](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-      + JavaScript での標準メタデータの実装 {#impl-std-md-js}
-         + [JavaScript 2.x での標準メタデータの実装 ](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+         + [Android でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
+         + [iOS でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
+         + JavaScript でのバッファーの追跡 {#track-buffering-js}
+            + [JavaScript 2.x でのバッファーの追跡](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+         + [Android でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+         + [iOS でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+         + JavaScript でのシークの追跡 {#track-seeking-js}
+            + [JavaScript 2.x でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+         + [Android での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+         + [iOS での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+         + [iOS のメタデータキー](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + JavaScript での標準メタデータの実装 {#impl-std-md-js}
+            + [JavaScript 2.x での標準メタデータの実装 ](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + 広告の追跡 {#track-ads}
          + [Android での広告の追跡](use-cases/track-ads/track-ads-android.md)
          + [iOS での広告の追跡](use-cases/track-ads/track-ads-ios.md)
