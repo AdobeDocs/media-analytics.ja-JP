@@ -45,6 +45,7 @@ ht-degree: 100%
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
             ```
+
          >[!IMPORTANT]
          >
          >ユーザーがトラッキングをオプトアウトすると、再度オプトインするまで、永続化されたデバイスデータと ID がすべて消去されます。
@@ -62,6 +63,7 @@ ht-degree: 100%
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
+
       * **現在の設定を返す：**
 
          * **Chromecast：**
@@ -75,6 +77,7 @@ ht-degree: 100%
             ```
             ADBMobile().getPrivacyStatus()
             ```
+
    `setPrivacyStatus` を使用してプライバシー設定を変更した後は、同じメソッドを使用して再度変更されるまで、またはアプリを完全にアンインストールして再度インストールするまで、変更が保持されます。
 
 ## 保存されている ID の取得（OTT アプリ）  {#retrieving-stored-identifiers-ott-apps}
