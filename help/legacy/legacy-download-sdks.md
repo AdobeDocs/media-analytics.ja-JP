@@ -4,10 +4,10 @@ description: Android、iOS、JavaScript、Chromecast および Roku を含む、
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Media Analytics 拡張機能を備えた Adobe Data Collection には、次の�
 * Adobe Experience Cloud のお客様である必要があります。
 * Web ページにデータ収集または DTM 埋め込みコードをデプロイする必要があります。
 * [Analytics 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ja)を設定する必要があります。 
-* [Adobe Media Analytics for Audio and Video Launch 拡張機能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)を設定する必要があります。 
+* [Adobe Media Analytics for Audio and Video 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)を設定する必要があります。 
 * [Experience Cloud ID 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ja)を設定する必要があります。 
 
 ## メディア SDK 2.x のダウンロード {#download-2x-sdks}

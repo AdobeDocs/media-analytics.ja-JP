@@ -5,9 +5,9 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '7004'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '7002'
 ht-degree: 100%
 
 ---
@@ -130,7 +130,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK キー：**<br/> `config.downloadedcontent` </li> <li> **API キー：**<br/>&#x200B;バックエンドから取得 </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **タイプ：**<br/>&#x200B;ブール型 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK バージョン：** <br/>Launch AndroidおよびiOS 拡張機能 v1.1.0 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;ダウンロードされたコンテンツメディアセッションの再生によってヒットが生成された場合、true に設定します。ダウンロードされたコンテンツが再生されていない場合、存在しません。<br/><br/>[Launch](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker-with-optional-configuration)  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.downloaded） </li> <li> **ハートビート：**<br/>（s:meta:a.media.downloaded） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/>（a.media.downloaded） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.downloaded） </li> <li> **XDM フィールドのパス**<br/>：media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> `config.downloadedcontent` </li> <li> **API キー：**<br/>&#x200B;バックエンドから取得 </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **タイプ：**<br/>&#x200B;ブール型 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK バージョン：** <br/>Launch AndroidおよびiOS 拡張機能 v1.1.0 </li> <li> **値の例：**<br/> TRUE </li> <li> **説明：**<br/>&#x200B;ダウンロードされたコンテンツメディアセッションの再生によってヒットが生成された場合、true に設定します。ダウンロードされたコンテンツが再生されていない場合、存在しません。<br/><br/>[Launch](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.downloaded） </li> <li> **ハートビート：**<br/>（s:meta:a.media.downloaded） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;カスタムの処理ルールを使用 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;カスタム </li> <li> **コンテキストデータ：**<br/>（a.media.downloaded） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.downloaded） </li> <li> **XDM フィールドのパス**<br/>：media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
 
 ### コンテンツプレイヤー名
 

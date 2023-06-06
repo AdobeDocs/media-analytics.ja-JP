@@ -4,9 +4,9 @@ description: 標準プレーヤーステートとカスタムプレーヤース�
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '279'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '278'
 ht-degree: 100%
 
 ---
@@ -42,4 +42,4 @@ ht-degree: 100%
 
 カスタムステートの作成機能を使用すると、再生セッション中にカスタムアクションをキャプチャし、カスタムメタデータを更新できます。
 
-カスタムステートの作成について詳しくは、[メディア API リファレンスガイド`createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)を参照してください。
+カスタムステートの作成について詳しくは、[メディア API リファレンスガイド`createStateObject`](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)を参照してください。
