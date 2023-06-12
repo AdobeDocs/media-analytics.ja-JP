@@ -4,9 +4,9 @@ description: メディアストリーミングAdobeの実装方法を説明し�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: e3380ad898b551b6e0bbf5624d8419c5a95496f6
+source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1883'
 ht-degree: 11%
 
 ---
@@ -344,7 +344,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 ## AEP Mobile SDK を使用したExperience PlatformEdge へのデータ送信
 
-Adobe Experience Platform mobile SDK を使用して、モバイルデータを Experience Platform Edge に送信できます。 （または、Edge API のカスタム実装を使用できます）。<!-- I guess we don't need/want to document this? -->)
+Adobe Experience Platform mobile SDK を使用して、モバイルデータを Experience Platform Edge に送信できます。 （または、Edge API のカスタム実装を使用できます）。<!-- Waiting for link from John -->)
 
 次のドキュメントリソースを使用して、iOSと Android の両方の実装を完了します。
 
@@ -352,5 +352,5 @@ Adobe Experience Platform mobile SDK を使用して、モバイルデータを 
 
 * [API リファレンス](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Edge Network 拡張機能のAdobeストリーミングメディアへの移行](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) （ユーザーがメディア拡張機能から Edge に移行する際に使用）
+* [Edge Network 拡張機能のAdobeストリーミングメディアへの移行](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
