@@ -4,9 +4,9 @@ description: メディアストリーミングAdobeの実装方法を説明し�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
+source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1939'
 ht-degree: 11%
 
 ---
@@ -344,7 +344,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 ## AEP Mobile SDK を使用したExperience PlatformEdge へのデータ送信
 
-Adobe Experience Platform mobile SDK を使用して、モバイルデータを Experience Platform Edge に送信できます。 （または、Edge API のカスタム実装を使用できます）。<!-- Waiting for link from John -->)
+Adobe Experience Platform mobile SDK を使用して、モバイルデータを Experience Platform Edge に送信できます。
 
 次のドキュメントリソースを使用して、iOSと Android の両方の実装を完了します。
 
@@ -354,3 +354,13 @@ Adobe Experience Platform mobile SDK を使用して、モバイルデータを 
 
 * [Edge Network 拡張機能のAdobeストリーミングメディアへの移行](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
+
+または、以下のリソースを使用して Edge API のカスタム実装を使用できます。
+
+* [メディアエッジ API の概要](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+
+* [Media Edge API の概要](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
+
+* [メディア Edge API トラブルシューティングガイド](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+
+* [Media Edge API 用の Open API 仕様ファイルの使用](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
