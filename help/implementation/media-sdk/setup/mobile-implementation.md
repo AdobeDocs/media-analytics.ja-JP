@@ -4,10 +4,10 @@ description: モバイルアプリ用の Adobe Streaming Media の実装方法�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '187'
-ht-degree: 100%
+source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,9 @@ Android または iOS にモバイルアプリ用のストリーミングメデ�
 
 * **Adobe Experience Platform モバイル SDK**
 
-   データを収集するには、Adobe Experience Platform のタグを使用します。 Adobe Experience Platform のタグは、他のタグ要件と共に Analytics コードを導入できるタグ管理ソリューションです。
+  データを収集するには、次のいずれかを使用します。
+   * Adobe Experience Platform のタグ. Adobe Experience Platform のタグは、他のタグ要件と共に Analytics コードを導入できるタグ管理ソリューションです。
+   * Adobe Experience Platform Edge
 
 * **Android 用 Media SDK** または **iOS 用 Media SDK**
 
@@ -27,7 +29,7 @@ SDK のダウンロード方法とその他のドキュメントリソースに�
 
 * **有効な設定パラメーターの取得**
 
-   これらのパラメーターは、Analytics アカウントの設定後、アドビ担当者から取得できます。
+  これらのパラメーターは、Analytics アカウントの設定後、アドビ担当者から取得できます。
 
 * **メディアプレーヤーで以下の API を含める**
 

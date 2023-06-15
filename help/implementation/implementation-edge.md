@@ -4,10 +4,10 @@ description: メディアストリーミングAdobeの実装方法を説明し�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
+source-git-commit: 547c47b09b2cc18ee155953eaad314599fa8d749
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,45 +15,17 @@ ht-degree: 11%
 
 Adobe Experience Platform Edge を使用すると、複数の製品用のデータを一元的な場所に送信できます。Experience Edge は、適切な情報を目的の製品に転送します。この概念を使用すると、特に複数のデータソリューションにまたがる実装作業を統合できます。
 
-次の図は、Media Edge を使用する Media Analytics の実装を示しています。
+次の図は、Media Analytics の実装で、Experience Platformエッジを使用して、Analysis WorkspaceでAdobe AnalyticsまたはCustomer Journey Analyticsのどちらでデータを使用できるかを示しています。
 
-![Edge の実装](assets/media-analytics-implementation-overview.png)
+![CJA ワークフロー](assets/cja-implementation.png)
+
+Experience PlatformEdge を使用しない実装方法を含む、すべての実装オプションの概要については、 [ストリーミングメディアのAdobe AnalyticsまたはCustomer Journey Analyticsへの実装](/help/implementation/overview.md).
 
 >[!IMPORTANT]
 >
->現在、Adobe Experience Platform Mobile SDK を使用してのみ、Experience Edge にデータを送信できます。
+>ストリーミングメディアは、まだ AEP Web SDK と統合されていません。
 
-
-<!-- Replace the above sentence with this after it web releases: You can send data to Experience Edge using any of the following implementation methods:
-
-* Adobe Experience Platform Web SDK (Coming soon)
-* Adobe Experience Platform Mobile SDK
-* Edge Network Server API
-
-Regardless of which Experience Edge implementation method you use for configuring media tracking, you must first complete the following sections:
-
--->
-
-以下の節で、Media Edge を使用した Media Analytics の実装についてExperience Platformします。
-
-* [レポートスイートの定義](#define-a-report-suite)
-* [Adobe Experience Platformでのスキーマの設定](#set-up-the-schema-in-adobe-experience-platform)
-* [Adobe Experience Platformでのデータセットの作成](#create-a-dataset-in-adobe-experience-platform)
-* [Adobe Experience Platformでのデータストリームの設定](#configure-a-datastream-in-adobe-experience-platform)
-* [Customer Journey Analytics で接続を作成する](#create-a-connection-in-customer-journey-analytics)
-* [Customer Journey Analyticsでのデータビューの作成](#create-a-data-view-in-customer-journey-analytics)
-* [プロジェクトの作成とCustomer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics)
-* [Edge 拡張機能を使用したExperience PlatformEdge へのデータ送信](#send-data-to-experience-platform-edge-with-the-edge-extension)
-
-## レポートスイートの定義
-
->[!NOTE]
->
->レポートスイートは、Adobe Analyticsを使用している場合にのみ必要です。 レポートにCustomer Journey Analyticsを使用する予定がある場合、レポートスイートは不要です。
-
-レポートにAdobe Analyticsを使用する予定がある場合は、ストリーミングメディアの実装で使用するレポートスイートが必要です。 レポートスイートの定義について詳しくは、 [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
-
-レポートスイートが定義されたら、 [Adobe Experience Platformでのスキーマの設定](#set-up-the-schema-in-adobe-experience-platform).
+Mobile SDK または API のどちらを使用して Experience Edge を使用したストリーミングメディアを実装しているかに関係なく、最初に次の節を完了する必要があります。
 
 ## Adobe Experience Platformでのスキーマの設定
 
@@ -353,7 +325,6 @@ Adobe Experience Platform mobile SDK を使用して、モバイルデータを 
 * [API リファレンス](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
 * [Edge Network 拡張機能のAdobeストリーミングメディアへの移行](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
-
 
 または、以下のリソースを使用して Edge API のカスタム実装を使用できます。
 
