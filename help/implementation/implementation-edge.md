@@ -4,10 +4,10 @@ description: メディアストリーミングAdobeの実装方法を説明し�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: 547c47b09b2cc18ee155953eaad314599fa8d749
+source-git-commit: b57db92ae4ce01e259424e3d71e36311af88ccac
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1785'
+ht-degree: 11%
 
 ---
 
@@ -46,75 +46,58 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    ![追加されたフィールドグループ](assets/schema-field-groups-added.png)
 
-1. 内 [!UICONTROL **構造**] 領域で、 `endUserIds` > `_experience` 「 」フィールドグループに移動して、「 」を選択します。 [!UICONTROL **関連するフィールドの管理**].
 
-   ![関連するフィールドの管理ボタン](assets/manage-related-fields.png)
+この節の次の手順はオプションです。Media Edge API へのリクエストは、AEP スキーマ UI で指定されたフィールドを非表示にしなくても機能します。
+ただし、非表示のフィールドは Media Edge API で使用されないので、フィールドを非表示にすると、スキーマが読みやすく理解しやすくなります。
+次の手順は、 `MediaAnalytics Interaction Details` fieldgroup.
 
-1. スキーマを次のように更新します。
+1. 内 [!UICONTROL **構造**] 領域で、 `Media Collection Details` フィールド、選択 [!UICONTROL **関連するフィールドの管理**]&#x200B;次の手順に従ってスキーマを更新します。
 
-   * 内 `Adobe Analytics ExperienceEvent Template` フィールドグループ、以下を除くすべてのフィールドを非表示 `EndUserIDs`.
+   ![manage-related-fields](assets/manage-related-fields.png)
 
-   * 内 `endUserIds` > `_experience` > `Adobe Advertising Cloud end user IDs` フィールドグループ（以下を除くすべてのフィールドを非表示） `Identifier` フィールドに入力します。
-
-   * 内 `endUserIds` > `_experience` > `Adobe Analytics Cloud Custom end user IDs` フィールドグループ（以下を除くすべてのフィールドを非表示） `Identifier` フィールドに入力します。
-
-     ![非表示にするフィールド](assets/schema-hide-fields.png)
-
-1. 選択 [!UICONTROL **確認**] 変更を保存します。
-
-1. 内 [!UICONTROL **構造**] 領域で、 `Implementation Details` フィールドグループ、選択 [!UICONTROL **関連するフィールドの管理**]&#x200B;次の手順に従ってスキーマを更新します。
-
-   * 内 `Implementation Details` > `Implementation details` フィールドグループ、以下を除くすべてのフィールドを非表示 `version`.
-
-     ![非表示にするフィールド](assets/schema-hide-fields2.png)
-
-1. 選択 [!UICONTROL **確認**] 変更を保存します。
-
-1. 内 [!UICONTROL **構造**] 領域で、 `Media Collection Details` フィールドグループ、選択 [!UICONTROL **関連するフィールドの管理**]&#x200B;次の手順に従ってスキーマを更新します。
-
-   * 内 `Media Collection Details` フィールドグループを非表示にする `List Of States` フィールドグループを使用します。
+   * 内 `Media Collection Details` フィールド、非表示 `List Of States` フィールドに入力します。
 
      ![メディアコレクションの状態を非表示にする](assets/schema-hide-media-collection-states.png)
 
-   * 内 `Media Collection Details` > `Advertising Details` フィールドグループで、次のレポートフィールドを非表示にします。 `Ad Completed`, `Ad Started`、および `Ad Time Played`.
+   * 内 `Media Collection Details` > `Advertising Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Completed`, `Ad Started`、および `Ad Time Played`.
 
-   * 内 `Media Collection Details` > `Advertising Pod Details` フィールドグループに表示されない場合は、次のレポートフィールドを非表示にします。 `Ad Break ID`
+   * 内 `Media Collection Details` > `Advertising Pod Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Break ID`
 
-   * 内 `Media Collection Details` > `Chapter Details` フィールドグループに表示しない場合は、次のレポートフィールドを非表示にします。 `Chapter ID`, `Chapter Completed`, `Chapter Started`、および `Chapter Time Played`.
+   * 内 `Media Collection Details` > `Chapter Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Chapter ID`, `Chapter Completed`, `Chapter Started`、および `Chapter Time Played`.
 
-   * 内 `Media Collection Details` > `Qoe Data Details` フィールドグループに表示しない場合は、次のレポートフィールドを非表示にします。 `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`、および `Total Stalling Duration`.
+   * 内 `Media Collection Details` > `Qoe Data Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`、および `Total Stalling Duration`.
 
-   * 内 `Media Collection Details` > `Session Details` フィールドグループに表示しない場合は、次のレポートフィールドを非表示にします。 `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`、および `Pccr`.
+   * 内 `Media Collection Details` > `Session Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`、および `Pccr`.
 
-   * 内 `Media Collection Details` > `List Of States End` および `Media Collection Details` > `List Of States Start` フィールドグループに表示し、次のレポートフィールドを非表示にします。 `Player State Count`, `Player State Set`、および `Player State Time`.
+   * 内 `Media Collection Details` > `List Of States End` および `Media Collection Details` > `List Of States Start` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Player State Count`, `Player State Set`、および `Player State Time`.
 
      ![非表示にするフィールド](assets/schema-hide-listofstates.png)
 
 1. 選択 [!UICONTROL **確認**] 変更を保存します。
 
-1. 内 [!UICONTROL **構造**] 領域で、 `List Of Media Collection Downloaded Content Events` フィールドグループ、選択 [!UICONTROL **関連するフィールドの管理**]&#x200B;次の手順に従ってスキーマを更新します。
+1. 内 [!UICONTROL **構造**] 領域で、 `List Of Media Collection Downloaded Content Events` フィールド、選択 [!UICONTROL **関連するフィールドの管理**]&#x200B;次の手順に従ってスキーマを更新します。
 
-   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` フィールドグループを非表示にする `List Of States` フィールドグループを使用します。
+   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` フィールド、非表示 `List Of States` フィールドに入力します。
 
-   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` フィールドグループで、次のレポートフィールドを非表示にします。 `Ad Completed`, `Ad Started`、および `Ad Time Played`.
+   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Completed`, `Ad Started`、および `Ad Time Played`.
 
-   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` フィールドグループに表示されない場合は、次のレポートフィールドを非表示にします。 `Ad Break ID`
+   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Break ID`
 
-   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` フィールドグループに表示しない場合は、次のレポートフィールドを非表示にします。 `Chapter ID`, `Chapter Completed`, `Chapter Started`、および `Chapter Time Played`.
+   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Chapter ID`, `Chapter Completed`, `Chapter Started`、および `Chapter Time Played`.
 
-   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` フィールドグループに表示しない場合は、次のレポートフィールドを非表示にします。 `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`、および `Total Stalling Duration`.
+   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`、および `Total Stalling Duration`.
 
-   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` フィールドグループに表示しない場合は、次のレポートフィールドを非表示にします。 `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`、および `Pccr`.
+   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`、および `Pccr`.
 
-   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` および `Media Collection Details` > `List Of States Start` フィールドグループに表示し、次のレポートフィールドを非表示にします。 `Player State Count`, `Player State Set`、および `Player State Time`.
+   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` および `Media Collection Details` > `List Of States Start` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Player State Count`, `Player State Set`、および `Player State Time`.
 
-   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details`  フィールドグループを非表示にする `Media Session ID` フィールドに入力します。
+   * 内 `List Of Media Collection Downloaded Content Events` > `Media Details`  フィールド、非表示 `Media Session ID` フィールドに入力します。
 
 1. 選択 [!UICONTROL **確認**] 変更を保存します。
 
-1. 内 [!UICONTROL **構造**] 領域で、 `Media Reporting Details` フィールドグループ、選択 [!UICONTROL **関連するフィールドの管理**]&#x200B;次の手順に従ってスキーマを更新します。
+1. 内 [!UICONTROL **構造**] 領域で、 `Media Reporting Details` フィールド、選択 [!UICONTROL **関連するフィールドの管理**]&#x200B;次の手順に従ってスキーマを更新します。
 
-   * 内 `Media Reporting Details` フィールドグループで、次のフィールドグループを非表示にします。 `Error Details`, `List Of States End`, `List of States Start`, `Playhead`、および `Media Session ID`.
+   * 内 `Media Reporting Details` 次のフィールドを非表示にします。 `Error Details`, `List Of States End`, `List of States Start`、および `Media Session ID`.
 
 1. 選択 [!UICONTROL **確認**] > [!UICONTROL **保存**]  変更を保存します。
 
