@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: ade20d7ae3cbb525b3a8390a27e1d93201d83003
+source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '403'
+ht-degree: 13%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 ## Edge 実装メソッド
 
-ほとんどの場合、新しいAdobe AnalyticsまたはCustomer Journey Analytics(CJA) のすべてのお客様に対して Media Analytics を実装する際には、Edge を使用することをお勧めします。
+ほとんどの場合、新規Adobe AnalyticsまたはCustomer Journey Analyticsのすべてのお客様に対して、Media Analytics を実装する際には Edge を使用することをお勧めします。
 
-* **Media for Edge Network SDK / Extension:** iOSおよび Android デバイスからデータを収集し、Edge に送信します。 その後、データを CJA またはAdobe Analyticsに送信できます。
+* **Media for Edge Network SDK / Extension:** iOSおよび Android デバイスからデータを収集し、Edge に送信します。 その後、データをCustomer Journey AnalyticsまたはAdobe Analyticsに送信できます。
 
   Media for Edge Network SDK/Extension について詳しくは、 [Media Edge を使用した Media Analytics のExperience Platform](/help/implementation/implementation-edge.md).
 
@@ -28,7 +28,7 @@ ht-degree: 0%
   >
   >この実装方法は、現在、Web SDK または Roku をサポートしていません。 ただし、Media Edge API を使用して実装する場合は、両方ともサポートされます。
 
-* **Media Edge API:** 任意のデバイスまたは形式（モバイル、Web、上位のデバイスを含む）からデータを収集し、Edge にデータを送信するようにカスタマイズできます。 その後、データを CJA またはAdobe Analyticsに送信できます。
+* **Media Edge API:** 任意のデバイスまたは形式（モバイル、Web、上位のデバイスを含む）からデータを収集し、Edge にデータを送信するようにカスタマイズできます。 その後、データをCustomer Journey AnalyticsまたはAdobe Analyticsに送信できます。
 
   <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## その他の実装方法
 
-ほとんどの場合、特に新しい実装では、CJA とAdobe Analyticsの両方で、上記の Edge 実装方法をお勧めします。
+ほとんどの場合、Customer Journey AnalyticsとAdobe Analyticsの両方、特に新しい実装では、上記の Edge 実装方法をお勧めします。
 
 Edge 実装方法に加えて、他の実装方法も使用できます。 これらの実装方法は、最初、Adobe Analyticsで使用するように設計されました。 ただし、次のいずれかの実装方法を使用するお客様は、 [Analytics ソース接続](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja).
 
