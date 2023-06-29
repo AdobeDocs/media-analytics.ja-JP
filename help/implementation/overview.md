@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '398'
 ht-degree: 13%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 13%
 
 ## Edge 実装メソッド
 
-ほとんどの場合、新規Adobe AnalyticsまたはCustomer Journey Analyticsのすべてのお客様に対して、Media Analytics を実装する際には Edge を使用することをお勧めします。
+新規のAdobe AnalyticsまたはCustomer Journey Analyticsのお客様すべてに対して Media Analytics を実装する場合は、Edge を使用することをお勧めします。
 
 * **Media for Edge Network SDK / Extension:** iOSおよび Android デバイスからデータを収集し、Edge に送信します。 その後、データをCustomer Journey AnalyticsまたはAdobe Analyticsに送信できます。
 
-  Media for Edge Network SDK/Extension について詳しくは、 [Media Edge を使用した Media Analytics のExperience Platform](/help/implementation/implementation-edge.md).
+  Media for Edge Network SDK/Extension について詳しくは、 [Media Edge を使用した Media Analytics のExperience Platform](/help/implementation/edge/implementation-edge.md).
 
   >[!NOTE]
   >
@@ -34,11 +34,11 @@ ht-degree: 13%
 
 ![CJA ワークフロー](assets/cja-implementation.png)
 
-## その他の実装方法
+## Adobe Analyticsのみの実装方法
 
-ほとんどの場合、Customer Journey AnalyticsとAdobe Analyticsの両方、特に新しい実装では、上記の Edge 実装方法をお勧めします。
+上記の Edge 実装方法は、特に新しい実装の場合は、Customer Journey AnalyticsとAdobe Analyticsの両方で推奨されます。
 
-Edge 実装方法に加えて、他の実装方法も使用できます。 これらの実装方法は、最初、Adobe Analyticsで使用するように設計されました。 ただし、次のいずれかの実装方法を使用するお客様は、 [Analytics ソース接続](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja).
+Edge 実装方法に加えて、他の実装方法も使用できます。 これらの実装方法は、Adobe Analyticsで使用するように設計されています。 ただし、次のいずれかの実装方法を使用している既存のお客様は、 [Analytics ソース接続](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja).
 
 * **タグ付きのメディア拡張機能：** Adobe MediumAnalytics for Audio and Video 拡張機能は、タグが有効なサイトまたはプロジェクトにメディアトラッカーインスタンスを追加する機能を提供します。 データがAdobe Analyticsに送信されます。
 

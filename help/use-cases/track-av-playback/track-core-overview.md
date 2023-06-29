@@ -5,8 +5,8 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->再生ヘッドの位置は、セットアップおよび設定コードの一環として設定されます。`getCurrentPlayheadTime` について詳しくは、[概要：一般的な実装のガイドライン](/help/implementation/media-sdk/media-sdk-overview.md)を参照してください。
+>再生ヘッドの位置は、セットアップおよび設定コードの一環として設定されます。`getCurrentPlayheadTime` について詳しくは、[概要：一般的な実装のガイドライン](/help/implementation/media-sdk-overview.md)を参照してください。
 
 
 ## 実装方法 {#implement}
@@ -107,13 +107,13 @@ ht-degree: 100%
 
    * **標準メタデータ -**
 
-      >[!NOTE]
-      >
-      >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
+     >[!NOTE]
+     >
+     >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
 
-      標準メタデータオブジェクトをインスタンス化し、必要な変数を設定して、メディアハートビートオブジェクトでメタデータオブジェクトを設定します。
+     標準メタデータオブジェクトをインスタンス化し、必要な変数を設定して、メディアハートビートオブジェクトでメタデータオブジェクトを設定します。
 
-      メタデータの包括的なリストについては、[オーディオおよびビデオパラメーター](../../implementation/variables/audio-video-parameters.md)を参照してください。
+     メタデータの包括的なリストについては、[オーディオおよびビデオパラメーター](../../implementation/variables/audio-video-parameters.md)を参照してください。
 
    * **カスタムメタデータ** - カスタム変数の変数オブジェクトを作成し、このコンテンツのデータを設定します。
 

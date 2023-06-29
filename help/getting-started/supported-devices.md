@@ -4,7 +4,7 @@ description: iOS、Android、OTT デバイス、JavaScript ブラウザーなど
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: deae677d9e8b4dc241765cf5d168fcd71b9c8310
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 69%
@@ -25,7 +25,7 @@ SDK が現在サポートされていないデバイスや、実装のカスタ�
 
 現在サポートされているデバイスの表を次に示します。デバイスが一覧にない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
 
-Edge 上でのメディアの実装について詳しくは、 [Media Edge を使用した Media Analytics のExperience Platform](/help/implementation/implementation-edge.md).
+Edge 上でのメディアの実装について詳しくは、 [Media Edge を使用した Media Analytics のExperience Platform](/help/implementation/edge/implementation-edge.md).
 
 | ストリーミングプラットフォームとデバイス | | Media for Edge Network SDK / Extension | Media Edge API | タグまたは AEP mobile SDK を含むメディア拡張機能 | メディア SDK | メディアコレクション API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

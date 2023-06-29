@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: メディア解析ガイド
 user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 129818d73bdcc63fcf922d295e3f360ab1375dbe
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 99%
+source-wordcount: '904'
+ht-degree: 96%
 
 ---
 
@@ -33,36 +33,39 @@ ht-degree: 99%
          + [JavaScript - Media SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 実装 {#implementation}
    + [実装の概要](implementation/overview.md)
-   + Media SDK - 実装 {#media-sdk}
-      + [Media SDK の概要](implementation/media-sdk/media-sdk-overview.md)
-      + インストールと設定 {#setup}
-         + Web SDK のインストール {#install-web-sdk}
-            + [JavaScript を使用した Analytics のインストール](implementation/media-sdk/setup/web-implementation.md)
-            + [Media Analytics 拡張機能を使用した Analytics のインストール](implementation/media-sdk/setup/web-implementation-tags.md)
-         + [Mobile SDK のインストール](implementation/media-sdk/setup/mobile-implementation.md)
-         + OTT SDK のインストール {#ott-setup}
+   + [Media SDK の概要](/help/implementation/media-sdk-overview.md)
+   + Edge の実装（推奨） {#edge-recommended}
+      + Media Edge SDK/Extension {#media-edge-sdk}
+         + [Media Edge SDK/Extension setup](/help/implementation/edge/implementation-edge.md)
+         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
+      + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
+   + Adobe Analyticsのみの実装 {#analytics-only}
+      + メディア SDK /拡張機能 {#media-sdk}
+         + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
+         + [Media Analytics 拡張機能](implementation/media-sdk/setup/web-implementation-tags.md)
+         + [モバイル SDK](implementation/media-sdk/setup/mobile-implementation.md)
+         + OTT SDK {#ott-setup}
             + [Chromecast SDK のインストール](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Roku SDK のインストール](implementation/media-sdk/setup/set-up-roku.md)
-   + [Adobe Experience Platform Edge での Analytics のインストール](implementation/implementation-edge.md)
-   + Media Collection API - 実装 {#streaming-media-apis}
-      + [メディアコレクション](implementation/media-collection-api/mc-api-overview.md)
-      + [API クイックスタート](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
-      + [Sessions リクエスト](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
-      + [Events リクエスト](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
-      + [リクエストパラメーター](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-      + [イベントタイプと説明](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
-      + API の実装 {#mc-api-impl}
-         + [プレーヤーでの HTTP リクエストタイプの設定](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
-         + [セッション ID の取得](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
-         + [Events リクエストの実装 ](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
-         + [JSON 検証スキーマ](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
-         + [イベントリクエストの検証](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
-         + [ping イベントの送信](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
-         + [QoE データの送信](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
-         + [カスタムメタデータのサポート](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
-         + [タイムアウト条件](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
-         + [イベントの順序の制御](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
-         + [セッションの応答が遅い場合のイベントのキューへの登録](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+      + Media Collection API - 実装 {#streaming-media-apis}
+         + [メディアコレクション](implementation/media-collection-api/mc-api-overview.md)
+         + [API クイックスタート](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
+         + [Sessions リクエスト](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+         + [Events リクエスト](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
+         + [リクエストパラメーター](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
+         + [イベントタイプと説明](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
+         + API の実装 {#mc-api-impl}
+            + [プレーヤーでの HTTP リクエストタイプの設定](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
+            + [セッション ID の取得](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
+            + [Events リクエストの実装 ](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+            + [JSON 検証スキーマ](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
+            + [イベントリクエストの検証](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+            + [ping イベントの送信](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
+            + [QoE データの送信](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
+            + [カスタムメタデータのサポート](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+            + [タイムアウト条件](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
+            + [イベントの順序の制御](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
+            + [セッションの応答が遅い場合のイベントのキューへの登録](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
    + 変数 {#variables}
       + [ストリーミングメディアのパラメーター](implementation/variables/audio-video-parameters.md)
       + [広告パラメーター](implementation/variables/ad-parameters.md)
