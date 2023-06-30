@@ -4,16 +4,16 @@ description: Android、iOS、JavaScript、Chromecast および Roku を含む、
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 97%
+source-wordcount: '339'
+ht-degree: 80%
 
 ---
 
 # レガシー - SDK のダウンロード{#legacy-download-sdks}
 
-このページの情報には、**レガシー**&#x200B;の 2.x Media SDK および 1.x のレガシー Media SDK をダウンロードするためのリンクが含まれています。
+このページの情報には、 **レガシー**  メディア SDK 2.x および **レガシー** メディア SDK 1.x
 
 **最新の** SDK のダウンロードについて詳しくは、[SDK のダウンロード](/help/getting-started/download-sdks.md)を参照してください。
 
@@ -34,8 +34,8 @@ Media Analytics 拡張機能を備えた Adobe Data Collection には、次の�
 
 | メディア SDK 2.x | 最新のメディア SDK のダウンロード |  API   |  ドキュメント  |
 | --- | --- | --- | --- |
-| Android／Fire TV | [Android 用メディア SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android のセットアップ](/help/legacy/media-sdk/setup/set-up-android.md) |
-| iOS／Apple TV | [iOS v2.3.0 用メディア SDK](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0)（レガシー 2.0 SDK の入手方法については、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください） | [iOS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS のセットアップ](/help/legacy/media-sdk/setup/set-up-ios.md) |
-| JavaScript | [JS 用メディア SDK v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 2.x のセットアップ](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md) |
-| Roku | [Roku 用 Media SDK v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [Roku のセットアップ](/help/implementation/media-sdk/setup/set-up-roku.md) |
-| Chromecast | [Chromecast 用メディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast のセットアップ ](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
+| Android／Fire TV | [Android 用レガシーメディア SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android のセットアップ](/help/legacy/media-sdk/setup/set-up-android.md) |
+| iOS／Apple TV | [iOS用レガシーメディア SDK v2.3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) ( 連絡先 [カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html) （レガシー 2.0 SDK の取得方法） | [iOS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS のセットアップ](/help/legacy/media-sdk/setup/set-up-ios.md) |
+| JavaScript | [JS 用レガシーメディア SDK v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 2.x のセットアップ](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md) |
+| Roku | [Roku 用レガシーメディア SDK v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | | [Roku のセットアップ](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| Chromecast | [Chromecast 用レガシーメディア SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast のセットアップ ](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
