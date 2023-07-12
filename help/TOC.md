@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: メディア解析ガイド
 user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: cb45048d77edc188b5fdbd60ae89c165ff9befa0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '900'
 ht-degree: 96%
 
 ---
@@ -169,7 +169,7 @@ ht-degree: 96%
       + [Android のセットアップ](legacy/media-sdk/setup/set-up-android.md)
       + [iOS のセットアップ](legacy/media-sdk/setup/set-up-ios.md)
       + JavaScript のセットアップ {#setup-javascript}
-         + [JavaScript 3.x のセットアップ](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
+         + [JavaScript 2.x のセットアップ](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [ハートビート測定について](legacy/heartbeat-measurement.md)
    + [Adobe Primetime とストリーミングメディア分析](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe Audience Management のイネーブルメント](legacy/intro-to-ava/am-enablement.md)
@@ -187,7 +187,6 @@ ht-degree: 96%
       + デバッグ {#debugging}
          + [SDK のデバッグ](legacy/validation/debugging/sdk-debugging.md)
    + [レガシー移行：VHL 1.x から VHL 2.x へ](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
-   + [JavaScript 2.x のセットアップ](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [v1.x と v2.x のコードの比較](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [API 1x から 2x へのトラッキング](legacy/va-1x-to-2x/1x-2x-api-change.md)
    + [レガシー - AVA の概要](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
