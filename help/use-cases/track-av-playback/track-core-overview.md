@@ -5,9 +5,9 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: 0d53e62069a65b252e004e21943ecdbd011a3658
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '874'
 ht-degree: 100%
 
 ---
@@ -63,10 +63,6 @@ ht-degree: 100%
 ### バッファリングの終了時
 
 * を呼び出します `trackEvent(BufferComplete);`
-
->[!TIP]
->
->再生ヘッドの位置は、セットアップおよび設定コードの一環として設定されます。`getCurrentPlayheadTime` について詳しくは、[概要：一般的な実装のガイドライン](/help/implementation/media-sdk-overview.md)を参照してください。
 
 
 ## 実装方法 {#implement}
