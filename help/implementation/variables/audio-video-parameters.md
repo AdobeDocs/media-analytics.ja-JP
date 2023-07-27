@@ -6,13 +6,13 @@ exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7002'
 ht-degree: 100%
 
 ---
 
-# オーディオおよびビデオパラメーター {#audio-and-video-parameters}
+# オーディオおよびビデオパラメーター{#audio-and-video-parameters}
 
 このトピックでは、コンテキストデータ値など、アドビがソリューション変数を通じて収集するオーディオおよびビデオコンテンツデータのリストを示します。
 
