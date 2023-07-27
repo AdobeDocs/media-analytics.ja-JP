@@ -6,9 +6,9 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '405'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Platform のタグは、アドビが提供する次世代型の
 >レガシー SDK のダウンロードについて詳しくは、[レガシー - SDK のダウンロード](/help/legacy/legacy-download-sdks.md)を参照してください。<br>
 >サポート終了に関する重要な情報については、[サポート終了に関する FAQ](/help/additional-resources/end-of-support-faqs.md) を参照してください。
 
-## メディア SDK とモバイルライブラリ {#media-sdks-libraries}
+## Media SDK と Mobile ライブラリ {#media-sdks-libraries}
 
 ### Web 実装 {#download-web-sdk}
 
@@ -32,16 +32,16 @@ Adobe Experience Platform のタグは、アドビが提供する次世代型の
 |:---:|---|---|---|---|
 | ![JavaScript アイコン](assets/javascript-icon.png) | Web - [JS 用 Media SDK v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript を使用した Analytics のインストール](/help/implementation/media-sdk/setup/web-implementation.md) | [JS 用 Media SDK v3.0.2 のサンプル](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript アイコン](assets/javascript-icon.png) | Web - メディア拡張機能 |  | [Adobe Medium Analytics (3.x SDK) for Audio and Video 拡張機能 — タグ（データ収集）を使用](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja) | [Adobe Media Analytics (3.x SDK) for Audio and Video 拡張機能のサンプル](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![JavaScript アイコン](assets/javascript-icon.png) | Web -Experience Platformエッジ（近日公開） |  | [Analytics とExperience PlatformEdge のインストール](/help/implementation/edge/implementation-edge.md) | |
+| ![JavaScript アイコン](assets/javascript-icon.png) | Web - Experience Platform Edge（近日公開） |  | [Experience Platform Edge を使用した Analytics をインストール](/help/implementation/edge/implementation-edge.md) | |
 
-### モバイルの実装 {#get-mobile-extension}
+### Mobile の実装 {#get-mobile-extension}
 
 | サポートされるプラットフォーム | バージョン |  ドキュメント   |  サンプル  |
 |:---:|---|---|---|
 | ![Android アイコン](assets/android-icon.png) | Android - メディア拡張機能 | [Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video のサンプル](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Apple iOSアイコン&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS／tvOS - メディア拡張機能 | [Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video のサンプル](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Android アイコン](assets/android-icon.png) | Android -Experience PlatformEdge | [Analytics とExperience PlatformEdge のインストール](/help/implementation/edge/implementation-edge.md) | |
-| ![Apple iOSアイコン&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS/tvOS -Experience PlatformEdge | [Analytics とExperience PlatformEdge のインストール](/help/implementation/edge/implementation-edge.md) |  |
+| ![Apple iOS アイコン&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS／tvOS - メディア拡張機能 | [Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video のサンプル](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Android アイコン](assets/android-icon.png) | Android - Experience Platform Edge | [Experience Platform Edge を使用した Analytics のインストール](/help/implementation/edge/implementation-edge.md) | |
+| ![Apple iOS アイコン&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS／tvOS - Experience Platform Edge | [Experience Platform Edge を使用した Analytics のインストール](/help/implementation/edge/implementation-edge.md) |  |
 
 ### オーバーザトップ実装 {#download-ott-libraries}
 
