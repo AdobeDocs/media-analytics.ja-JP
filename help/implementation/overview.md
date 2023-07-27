@@ -1,5 +1,5 @@
 ---
-title: ストリーミングメディアのAdobe AnalyticsまたはCustomer Journey Analyticsへの実装
+title: Adobe Analytics または Customer Journey Analytics 用のストリーミングメディアの実装
 description: ストリーミングメディアの実装パスについて説明します。
 uuid: null
 feature: Media Analytics
@@ -8,49 +8,49 @@ exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 11%
+ht-degree: 81%
 
 ---
 
-# Streaming Media for Adobe Analytics の実装 またはCustomer Journey Analytics
+# Streaming Media for Adobe Analytics の実装または Customer Journey Analytics
 
-ストリーミングメディアは様々な方法で実装できます。 このページで説明している実装方法でサポートされるデバイスとプラットフォームの詳細な比較については、 [サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md).
+ストリーミングメディアは様々な方法で実装できます。このページで説明している実装方法でサポートされるデバイスとプラットフォームの比較について詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください。
 
-## Edge 実装メソッド
+## Edge の実装方法
 
-新規のAdobe AnalyticsまたはCustomer Journey Analyticsのお客様すべてに対して Media Analytics を実装する場合は、Edge を使用することをお勧めします。
+Adobe Analytics または Customer Journey Analytics のすべての新規顧客に対して Media Analytics を実装する場合は、Edge を使用することをお勧めします。
 
-* **Media for Edge Network SDK / Extension:** iOSおよび Android デバイスからデータを収集し、Edge に送信します。 その後、データをCustomer Journey AnalyticsまたはAdobe Analyticsに送信できます。
+* **Edge Network 用 Media SDK／拡張機能：** iOS および Android デバイスからデータを収集し、Edge に送信します。その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
-  Media for Edge Network SDK/Extension について詳しくは、 [Media Edge を使用した Media Analytics のExperience Platform](/help/implementation/edge/implementation-edge.md).
+  Edge Network 用 Media SDK／拡張機能について詳しくは、[Experience Platform Edge を使用した Media Analytics のインストール](/help/implementation/edge/implementation-edge.md)を参照してください。
 
   >[!NOTE]
   >
-  >この実装方法は、現在、Web SDK または Roku をサポートしていません。 ただし、Media Edge API を使用して実装する場合は、両方ともサポートされます。
+  >この実装方式は現在、Web SDK または Roku をサポートしていません。ただし、Media Edge API を使用して実装する場合は両方ともサポートされます。
 
-* **Media Edge API:** 任意のデバイスまたは形式（モバイル、Web、上位のデバイスを含む）からデータを収集し、Edge にデータを送信するようにカスタマイズできます。 その後、データをCustomer Journey AnalyticsまたはAdobe Analyticsに送信できます。
+* **Media Edge API：**&#x200B;任意のデバイスまたは形式（モバイル、web、オーバーザトップデバイスなど）からデータを収集し、Edge にデータを送信するようにカスタマイズできます。その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
   <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
 
 ![CJA ワークフロー](assets/cja-implementation.png)
 
-## Adobe Analyticsのみの実装方法
+## Adobe Analytics のみの実装方式
 
-上記の Edge 実装方法は、特に新しい実装の場合は、Customer Journey AnalyticsとAdobe Analyticsの両方で推奨されます。
+上記の Edge 実装方式は、Customer Journey Analytics と Adobe Analytics の両方、特に新しい実装の場合に推奨されます。
 
-Edge 実装方法に加えて、他の実装方法も使用できます。 これらの実装方法は、Adobe Analyticsで使用するように設計されています。 ただし、次のいずれかの実装方法を使用している既存のお客様は、 [Analytics ソース接続](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja).
+Edge 実装方式に加えて、他の実装方式も使用できます。これらの実装方式は、Adobe Analytics で使用するために設計されました。ただし、次のいずれかの実装方法を使用している既存の顧客は、[Analytics ソース接続](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成することで、Customer Journey Analytics でデータを使用できるようにすることができます。
 
-* **タグ付きのメディア拡張機能：** Adobe MediumAnalytics for Audio and Video 拡張機能は、タグが有効なサイトまたはプロジェクトにメディアトラッカーインスタンスを追加する機能を提供します。 データがAdobe Analyticsに送信されます。
+* **タグ付きのメディア拡張機能：** Adobe Medium Analytics for Audio and Video 拡張機能は、タグが有効なサイトまたはプロジェクトにメディアトラッカーインスタンスを追加する機能を提供します。データは Adobe Analytics に送信されます。
 
-  タグを使用したメディア拡張機能のインストール、設定および実装について詳しくは、 [Adobe MediumAnalytics (3.x SDK) for Audio and Video 拡張機能の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html).
+  タグ付きのメディア拡張機能のインストール、設定、実装について詳しくは、[Adobe Media Analytics (3.x SDK) for Audio and Video 拡張機能の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=ja)を参照してください。
 
 * **メディア SDK:**  メディア SDK を使用すると、Web サイト、携帯電話、接続された TV、タブレット、OTT デバイス、セットトップボックス、ゲームコンソールなど、複数のメディアプラットフォームを測定できます。 ( 詳しくは、 [サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md).)
 
-  メディア SDK は、メディアコレクション API を追跡に使用します。 データがAdobe Analyticsに送信されます。
+  メディア SDK は、メディアコレクション API を追跡に使用します。 データは Adobe Analytics に送信されます。
 
   Media SDK と拡張機能のダウンロードとインストールについて詳しくは、[Media SDK、タグを使用した拡張機能、OTT SDK の取得](/help/getting-started/download-sdks.md)を参照してください。
 
-* **メディアコレクション API:** メディアコレクション API はカスタマイズ可能なので、カスタムトラッキング機能を必要とするアプリケーションや、メディア SDK でサポートされていないデバイスに使用できます。 メディアコレクション API は、RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントを追跡します。 データがAdobe Analyticsに送信されます。
+* **メディアコレクション API:** メディアコレクション API はカスタマイズ可能なので、カスタムトラッキング機能を必要とするアプリケーションや、メディア SDK でサポートされていないデバイスに使用できます。 メディアコレクション API は、RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントを追跡します。 データは Adobe Analytics に送信されます。
 
   Media Collection API の使用について詳しくは、[Media Collection API](media-collection-api/mc-api-overview.md) を参照してください。
 

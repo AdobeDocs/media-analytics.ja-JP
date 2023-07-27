@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,12 +33,12 @@ ht-degree: 96%
 + 実装 {#implementation}
    + [実装の概要](implementation/overview.md)
    + Edge の実装（推奨） {#edge-recommended}
-      + Media Edge SDK/Extension {#media-edge-sdk}
-         + [Media Edge SDK/Extension setup](/help/implementation/edge/implementation-edge.md)
+      + Media Edge SDK／拡張機能 {#media-edge-sdk}
+         + [Media Edge SDK／拡張機能の設定](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
-   + Adobe Analyticsのみの実装 {#analytics-only}
-      + メディア SDK /拡張機能 {#media-sdk}
+   + Adobe Analytics のみの実装 {#analytics-only}
+      + Media SDK／拡張機能 {#media-sdk}
          + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
          + [Media Analytics 拡張機能](implementation/media-sdk/setup/web-implementation-tags.md)
          + [モバイル SDK](implementation/media-sdk/setup/mobile-implementation.md)
