@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: メディア解析ガイド
 user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: b33a6205d5c6921c4ee0fcfc968593c62461c2a0
+source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '897'
 ht-degree: 100%
 
 ---
@@ -33,11 +33,13 @@ ht-degree: 100%
 + 実装 {#implementation}
    + [実装の概要](implementation/overview.md)
    + Edge の実装（推奨） {#edge-recommended}
+      + [前提条件](/help/implementation/edge/prerequisites-edge.md)
       + Media Edge SDK／拡張機能 {#media-edge-sdk}
          + [Media Edge SDK／拡張機能の設定](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + Adobe Analytics のみの実装 {#analytics-only}
+      + [前提条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + Media SDK／拡張機能 {#media-sdk}
          + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
          + [Media Analytics 拡張機能](implementation/media-sdk/setup/web-implementation-tags.md)
