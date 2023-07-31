@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: 60702b2cf466df7a1b328743c5d5f4c1834d9554
+source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 75%
+source-wordcount: '442'
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 75%
 ストリーミングメディアの実装を開始する前に、 [ストリーミングメディア：概要](/help/media-overview.md) を使用して、ストリーミングメディアがニーズを満たしていることを確認します。
 
 1. **Steaming Media の価格モデルを確認する**<br>
-現在の価格モデルは、ビデオストリームに基づいています。Streaming Media Analytics はAdobe Analyticsとは別売なので、必要に応じて、営業担当者またはAdobeのアカウントチームに連絡し、新しい販売注文に署名してください。
+現在の価格モデルは、ビデオストリームに基づいています。必要に応じて、ストリーミングメディアはAdobe Analyticsのアドオンとして別売されているので、営業担当者またはAdobeアカウントチームにお問い合わせください。<!--update when media SKUs are added to other AEP apps -->
 
 1. **Adobe Analytics レポートを有効にする**<br> Analytics でレポートを有効にし、収集しているコンテンツや広告データを表示するには、Analytics でレポートを有効にする必要があります。 [メディアレポートの有効化](/help/reporting/media-reports-enable.md)を参照してください。
 
@@ -45,3 +45,5 @@ ht-degree: 75%
    * [Adobe Analyticsのみの実装の前提条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
    * [Edge 実装の前提条件](/help/implementation/edge/prerequisites-edge.md)
+
+   以下を使用します。 [実装の概要](/help/implementation/overview.md) どの実装方法がお客様にとって最適かを判断するために。
