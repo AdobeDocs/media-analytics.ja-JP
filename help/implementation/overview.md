@@ -6,9 +6,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '471'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -44,13 +44,13 @@ Edge 実装方式に加えて、他の実装方式も使用できます。これ
 
   タグ付きのメディア拡張機能のインストール、設定、実装について詳しくは、[Adobe Media Analytics (3.x SDK) for Audio and Video 拡張機能の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=ja)を参照してください。
 
-* **メディア SDK:**  メディア SDK を使用すると、Web サイト、携帯電話、接続された TV、タブレット、OTT デバイス、セットトップボックス、ゲームコンソールなど、複数のメディアプラットフォームを測定できます。 ( 詳しくは、 [サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md).)
+* **Media SDK：** Media SDK を使用すると、web サイト、携帯電話、コネクテッド TV、タブレット、OTT デバイス、セットトップボックス、ゲームコンソールなど、複数のメディアプラットフォームを測定できます。（詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください）。
 
-  メディア SDK は、メディアコレクション API を追跡に使用します。 データは Adobe Analytics に送信されます。
+  Media SDK は、Media Collection API をトラッキングに使用します。データは Adobe Analytics に送信されます。
 
   Media SDK と拡張機能のダウンロードとインストールについて詳しくは、[Media SDK、タグを使用した拡張機能、OTT SDK の取得](/help/getting-started/download-sdks.md)を参照してください。
 
-* **メディアコレクション API:** メディアコレクション API はカスタマイズ可能なので、カスタムトラッキング機能を必要とするアプリケーションや、メディア SDK でサポートされていないデバイスに使用できます。 メディアコレクション API は、RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントを追跡します。 データは Adobe Analytics に送信されます。
+* **Media Collection API：** Media Collection API はカスタマイズ可能なので、カスタムトラッキング機能を必要とするアプリケーションや、Media SDK でサポートされていないデバイスに使用できます。Media Collection API は、RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントを追跡します。データは Adobe Analytics に送信されます。
 
   Media Collection API の使用について詳しくは、[Media Collection API](media-collection-api/mc-api-overview.md) を参照してください。
 
