@@ -6,19 +6,19 @@ exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# ストリーミングメディア用 Adobe Analyticsの概要
+# ストリーミングメディア用 Adobe Analytics の概要
 
 ![バナー](./assets/media_analytics_banner.png)
 
-ストリーミングメディア用 Adobe Analyticsは、オーディオ、ビデオおよび広告用の強力な測定ツールを提供します。 Streaming Media 指標を、Audience Analytics、モバイル分析、クロスデバイス分析などの他の Adobe Analytics 機能と組み合わせることができます。
+ストリーミングメディア用 Adobe Analytics は、オーディオ、ビデオおよび広告用の強力な測定ツールを提供します。Streaming Media 指標を、Audience Analytics、モバイル分析、クロスデバイス分析などの他の Adobe Analytics 機能と組み合わせることができます。
 
-ストリーミングメディアは、Adobe Analyticsのアドオンとして購入できます<!-- update this when SKUs are available for other AEP products -->、およびストリーミングメディア指標は、次のAdobe Experience Platform製品に簡単に統合できます。
+ストリーミングメディアは、Adobe Analytics<!-- update this when SKUs are available for other AEP products --> のアドオンとして購入でき、ストリーミングメディアの指標は、次の Adobe Experience Platform 製品に簡単に統合できます。
 
 * Adobe Analytics
 
@@ -34,7 +34,7 @@ ht-degree: 71%
 
 ## 主な特長
 
-ストリーミングメディア用 Adobe Analyticsのメリットには、リアルタイム監視、詳細分析、実用的なインサイト、収益化の機会などがあります。
+ストリーミングメディア用 Adobe Analytics のメリットには、リアルタイム監視、詳細分析、実用的なインサイト、収益化の機会などが含まれます。
 
 * **リアルタイム分析**：複数のチャネルにわたり、メディア開始などの主要パフォーマンス指標を利用して、アクションにつながる意思決定をリアルタイムで行います。
 
@@ -42,11 +42,11 @@ ht-degree: 71%
 
 * **エンゲージメントの促進**：バッファリングイベントを減らしコンテンツ内で広告を再生する場所とタイミングを把握することによりユーザーエンゲージメントを強化して、繰り返し訪問を実現する、押し付けがましくないスムーズなエクスペリエンスを提供します。
 
-* **全体像**：すべてのコンテンツ配信業者の複数のデータポイントを組み合わせて、すべてのメディアアクティビティを完全に把握できます。可能なすべてのチャネルでエンゲージメントと視聴を測定します。
+* **全体像の把握**：すべてのコンテンツディストリビューターにわたる複数のデータポイントを統合して、すべてのメディアアクティビティの全体像を把握します。可能なあらゆるチャネルにわたるエンゲージメントと視聴を測定します。
 
-  ストリーミングメディア用 Adobe Analyticsでは、サイトやストリーミングアプリをまたいで完全なカスタマージャーニーを追跡し、カスタマーパスや興味を視覚化し、レコメンデーションの強化とカスタマーエクスペリエンスのパーソナライズを実現できます。  メディア測定を使用すれば、データを複数のディメンションやセグメントに分類し、完全で詳細な分析をおこなうのに必要なメタデータをすべてキャプチャできます。その後、データを分析し、成功基準を、完全に消費されたメディア、平均滞在時間、完了した広告に関連付けることができます。
+  ストリーミングメディア用 Adobe Analytics を使用すると、サイトとストリーミングアプリ全体のカスタマージャーニーを完全に追跡して、顧客のパスや関心を視覚化し、レコメンデーションの強化や顧客体験のパーソナライズを実現できます。メディア測定を使用すれば、データを複数のディメンションやセグメントに分類し、完全で詳細な分析をおこなうのに必要なメタデータをすべてキャプチャできます。その後、データを分析し、成功基準を、完全に消費されたメディア、平均滞在時間、完了した広告に関連付けることができます。
 
-* **重要な指標**：ドロップフレーム、バッファリングに費やされた時間、平均ビットレートなど、Quality of Experience(QoE) に関する重要な配信指標を測定します。
+* **重要な指標**：ドロップフレーム数、バッファリングに費やされた時間、平均ビットレートなど、エクスペリエンスの品質（QoE）に関する重要な配信指標を測定します。
 
 * **精度の向上**：個々の訪問者の時間帯や分単位の同時視聴者数、コンテンツの平均視聴時間など、非常に詳細なレベルで視聴行動を評価します。
 
@@ -68,4 +68,4 @@ ht-degree: 71%
 >Customer Journey Analytics を実装すると、Experience Edge または Analytics Data Connector（ADC）を使用してデータを Customer Journey Analytics に送信できます。
 
 
-様々な実装方法について詳しくは、 [ストリーミングメディアのAdobe AnalyticsまたはCustomer Journey Analyticsへの実装](/help/implementation/overview.md).
+様々な実装方法について詳しくは、[Adobe Analytics または Customer Journey Analytics 用のストリーミングメディアの実装](/help/implementation/overview.md)を参照してください。
