@@ -6,9 +6,9 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 74%
 
 ストリーミングメディアの実装を開始する前に、次のタスクを実行します。
 
-1. **ストリーミングメディアの概要の確認**<br>
-ストリーミングメディアの実装を開始する前に、 [ストリーミングメディア：概要](/help/media-overview.md) を使用して、ストリーミングメディアがニーズを満たしていることを確認します。
+1. **ストリーミングメディアの概要をレビューする**<br>
+ストリーミングメディアの実装を開始する前に、[ストリーミングメディアの概要](/help/media-overview.md)をレビューして、ストリーミングメディアがニーズを満たしていることを確認します。
 
 1. **Steaming Media の価格モデルを確認する**<br>
-現在の価格モデルは、ビデオストリームに基づいています。必要に応じて、ストリーミングメディアはAdobe Analyticsのアドオンとして別売されているので、営業担当者またはAdobeアカウントチームにお問い合わせください。<!--update when media SKUs are added to other AEP apps -->
+現在の価格モデルは、ビデオストリームに基づいています。ストリーミングメディアは Adobe Analytics のアドオンとして別売されているので、必要に応じて、営業担当またはアドビのアカウントチームにお問い合わせください。<!--update when media SKUs are added to other AEP apps -->
 
 1. **Adobe Analytics レポートを有効にする**<br> Analytics でレポートを有効にし、収集しているコンテンツや広告データを表示するには、Analytics でレポートを有効にする必要があります。 [メディアレポートの有効化](/help/reporting/media-reports-enable.md)を参照してください。
 
-1. **Experience CloudへのAdobe Experience Platform Identity Service の実装**
+1. **Experience Cloud に Adobe Experience Platform ID サービスを実装する**
 
    **ID サービス**&#x200B;は、Experience Cloud コアサービス、ソリューション、People コアサービスの顧客属性およびオーディエンスのための、共通の識別フレームワークです。ID サービスは、サイト訪問者に一意の永続的な ID を割り当てることで機能します。組織が ID サービスを実装している場合、この ID を使用すれば、異なる Experience Cloud ソリューション内で、同じサイト訪問者と彼らのデータを識別できます。
 
@@ -38,12 +38,12 @@ ht-degree: 74%
 
    Experience Cloud ID について詳しくは、[Experience Cloud ID の概要](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=ja)および [Adobe Experience Platform ID サービス](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) を参照してください。
 
-1. **実装方法のその他の前提条件を表示します**
+1. **実装方法の追加の前提条件を表示する**
 
    ストリーミングメディアの実装方法に応じて、次のいずれかの実装方法の前提条件を確認します。
 
-   * [Adobe Analyticsのみの実装の前提条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+   * [Adobe Analytics のみの実装の前提条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
-   * [Edge 実装の前提条件](/help/implementation/edge/prerequisites-edge.md)
+   * [Edge の実装の前提条件](/help/implementation/edge/prerequisites-edge.md)
 
-   以下を使用します。 [実装の概要](/help/implementation/overview.md) どの実装方法がお客様にとって最適かを判断するために。
+   適切な実装方法を判断するには、[実装の概要](/help/implementation/overview.md)を参照してください。
