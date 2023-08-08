@@ -6,7 +6,7 @@ breadcrumb-title: メディア解析ガイド
 user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
 source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '897'
 ht-degree: 100%
 
