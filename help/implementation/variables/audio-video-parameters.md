@@ -5,9 +5,9 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
-workflow-type: ht
-source-wordcount: '7002'
+source-git-commit: 28fcf03600585e3d6a067eca99560218bfef0e05
+workflow-type: tm+mt
+source-wordcount: '7001'
 ht-degree: 100%
 
 ---
