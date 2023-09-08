@@ -5,25 +5,41 @@ uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '210'
-ht-degree: 100%
+source-git-commit: 41de1573b001deb65f525af9c5c648d85cac8629
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 11%
 
 ---
 
-# Media ワークスペースのテンプレート {#media-workspace-templates}
+# Analysis Workspaceのメディアレポート {#media-workspace-templates}
 
-Adobe Analytics Workspace を利用すると、トラッキングデータを分析するためのダッシュボードをすばやくセットアップすることができます。新しいプロジェクトを作成する際や、ワークスペースに移動して既存のプロジェクトを管理する際に、よく利用する一般的なトラッキングシナリオ（獲得、ストリーミングメディアの消費など）に対応した標準のテンプレートから選択できます。または、独自のカスタムテンプレートの作成、変更、保存をおこなうこともできます。
+>[!NOTE]
+>
+>*レポート* Workspace では、以前は *テンプレート*.
 
-テンプレートの操作は、プロジェクトの作成や管理をおこなう際に Adobe Analytics の「ワークスペース」タブでおこないます。最初にワークスペースに移動すると、新規プロジェクトを作成するのか既存のプロジェクトを開くのかを選択できます。
+Analysis Workspaceには、データの分析に使用できる、デフォルトで使用できる事前作成済みレポートのセットが用意されています。 使用可能なすべてのデフォルトのレポートについて詳しくは、 [レポートの表示](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) in [Adobe Analyticsランディングページ](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ja).
 
-* **新規プロジェクトの作成 -** ワークスペースで「**[!UICONTROL 新規プロジェクトの作成]**」ボタンをクリックすると、ダイアログが表示されます。このダイアログで、（標準とカスタムを含む）テンプレートのコレクションから選択できます。
+これらのレポートの一部は、次の節で説明するように、ストリーミングメディアデータの分析に特に役立ちます。
 
-   ![](/help/reporting/assets/all-templates-audio.png)
+## デフォルトのメディアレポートについて
 
-   例えば、**[!UICONTROL オーディオ消費]**&#x200B;テンプレートを選択すると、以下のオーディオ向けダッシュボードが表示されます。
+次に、ストリーミングメディアデータを分析する際に役立つデフォルトのレポートのリストを示します。
 
-   ![](/help/reporting/assets/aa-workspace.png)
+* [!UICONTROL **メディアコンテンツ消費**]：最も消費され、ユーザーを引き付けているコンテンツを示すレポートを作成します。
 
-* **プロジェクト管理** - 既存のプロジェクトで、データの表示を変更し、名前を付けて保存して、カスタムテンプレートの独自のコレクションを作成できます。
+* [!UICONTROL **ストリーミングメディア消費**]：次の例に示すように、ダッシュボードを使用してレポートを作成します。
+
+* [!UICONTROL **メディア最新性、頻度、ロイヤルティ**]：最新性（最後の訪問からの日数）、頻度（訪問者あたりの訪問回数）、ロイヤルティ（ユーザーのコホートがサイトに戻る頻度）を示すレポートを作成します
+
+例えば、  [!UICONTROL **ストリーミングメディア消費**] レポートを作成すると、次のダッシュボードを持つプロジェクトが表示されます。
+
+![](/help/reporting/assets/aa-workspace.png)
+
+## デフォルトのメディアレポートを使用
+
+デフォルトのメディアレポートは、新しいプロジェクトを作成する際に次の方法で使用できます。 また、既存のプロジェクトを変更する場合は、またはを実行できます。
+
+* **新しいプロジェクトを作成する場合：** デフォルトレポートから新しいプロジェクトを作成する方法については、 [空のプロジェクトまたはレポートからプロジェクトを作成する](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) in [Analysis Workspaceでプロジェクトを作成する](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+
+* **カスタム会社レポートを作成する場合：** カスタム会社レポートの作成方法について詳しくは、 [カスタム会社レポートの作成](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) in [Adobe Analyticsランディングページ](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ja).

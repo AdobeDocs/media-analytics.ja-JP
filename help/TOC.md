@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: メディア解析ガイド
 user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
-workflow-type: ht
+source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
+workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -74,21 +74,22 @@ ht-degree: 100%
       + [品質パラメーター](implementation/variables/quality-parameters.md)
       + [計算指標 ](implementation/variables/calculated-metrics.md)
 + レポート {#media-reports}
-   + [メディアレポートの有効化](reporting/media-reports-enable.md)
-   + [セグメント](reporting/segments.md)
-   + メディアのデフォルトレポート {#media-default-reports}
-      + [デフォルトレポートの概要](reporting/reports-and-analytics/default-reports-overview.md)
-      + [メディアの概要](reporting/reports-and-analytics/media-reports-overview.md)
-      + [メディアの詳細](reporting/reports-and-analytics/media-reports-detail.md)
-      + [メディア視聴時間帯レポート](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [メディア同時ビューアレポート](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + メディアワークスペースパネル {#media-workspace-panels}
+   + [メディアレポートの有効化 ](reporting/media-reports-enable.md)
+   + Workspace のメディアパネル {#media-workspace-panels}
       + [メディア分平均オーディエンスパネル](reporting/workspace/average-minute-audience.md)
       + [メディアの同時視聴者パネル](reporting/workspace/media-concurrent-viewers-overview.md)
       + [メディア再生滞在時間パネル](reporting/workspace/media-playback-time-spent.md)
-   + [Media ワークスペースのテンプレート ](reporting/workspace/media-workspace-templates.md)
-   + [API を使用した同時ビューアデータの取得](reporting/reports-and-analytics/get-concurrent-json20.md)
-   + [API を介したメディア再生滞在時間のデータの取得](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+   + [Workspace のメディアレポート](reporting/workspace/media-workspace-templates.md)
+   + [メディアセグメント](reporting/segments.md)
+   + デフォルトのメディアレポート {#media-default-reports}
+      + [デフォルトレポートの概要](reporting/reports-and-analytics/default-reports-overview.md)
+      + [メディアの概要 ](reporting/reports-and-analytics/media-reports-overview.md)
+      + [メディアの詳細 ](reporting/reports-and-analytics/media-reports-detail.md)
+      + [メディア視聴時間帯レポート](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [メディア同時ビューアレポート](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+   + メディア API {#media-api}
+      + [同時ビューアデータの取得](reporting/reports-and-analytics/get-concurrent-json20.md)
+      + [メディア再生に費やした時間データを取得する](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + ユースケース {#media-use-cases}
    + [Media SDK の使用例](use-cases/cookbook/sdk-cookbook-overview.md)
    + プレーヤーステートトラッキング {#player-state-tracking}

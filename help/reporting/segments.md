@@ -5,14 +5,14 @@ uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: "Media Analytics, Segmentation"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '204'
-ht-degree: 100%
+source-git-commit: b15a81dc8f08e94c9b80d66019f3d0fe95ef5a74
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 99%
 
 ---
 
-# セグメント {#segments}
+# メディアセグメント{#segments}
 
 セグメントを使用すると、特性や Web サイトでのインタラクションに基づいて訪問者のサブセットを識別できます。ストリーミングメディアセグメントを使用すると、オーディオストリーム、ライブストリーム、ポッドキャストストリームなどの訪問者ストリームタイプを識別できます。Adobe Analytics セグメントについて詳しくは、 Adobe Analytics コンポーネントガイドの[セグメントとコンテナについて](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ja)を参照してください。
 
