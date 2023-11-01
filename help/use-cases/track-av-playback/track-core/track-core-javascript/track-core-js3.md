@@ -4,8 +4,8 @@ description: JavaScript 3.x アプリを使用するブラウザーで Media SDK
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
+workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 100%
 
@@ -16,7 +16,8 @@ ht-degree: 100%
 このドキュメントでは、バージョン 3.x の SDK でのトラッキングについて説明しています。
 
 >[!IMPORTANT]
-> 以前バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/getting-started/download-sdks.md)）からダウンロードできます。
+>
+>以前バージョンの SDK を実装する場合は、開発ガイドをこちら（[SDK のダウンロード](/help/getting-started/download-sdks.md)）からダウンロードできます。
 
 1. **トラッキングの初期設定**
 
@@ -29,8 +30,8 @@ ht-degree: 100%
    | `name` | string | メディア名を示す、空白以外の文字列。 |
    | `id` | string | 一意のメディア識別子を示す、空白以外の文字列。 |
    | `length` | number | メディアの長さを秒単位で示す正の数。長さが不明な場合は 0 を使用します。 |
-   | `streamType` | string |  |
-   | `mediaType` |  | メディアのタイプ（オーディオまたはビデオ）。 |
+   | `streamType` | string |   |
+   | `mediaType` | | メディアのタイプ（オーディオまたはビデオ）。 |
 
    **`StreamType`定数：**
 
@@ -60,30 +61,30 @@ ht-degree: 100%
 
    * **標準メタデータ**
 
-      >[!NOTE]
-      >
-      >標準メタデータのアタッチは任意です。
+     >[!NOTE]
+     >
+     >標準メタデータのアタッチは任意です。
 
       * メディアメタデータキー API リファレンス - [標準メタデータキー - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         利用可能なメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/implementation/variables/audio-video-parameters.md)を参照してください。
+        利用可能なメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/implementation/variables/audio-video-parameters.md)を参照してください。
+
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このメディアのデータを設定します。次に例を示します。
+     カスタム変数の変数オブジェクトを作成し、このメディアのデータを設定します。次に例を示します。
 
-      ```js
-      /* Set context data */
-       var contextData = {};
-      
-       //Standard metadata
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
-      
-       //Custom metadata
-       contextData["isUserLoggedIn"] = "false";
-       contextData["tvStation"] = "Sample TV Station";
-      ```
-
+     ```js
+     /* Set context data */
+      var contextData = {};
+     
+      //Standard metadata
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
+     
+      //Custom metadata
+      contextData["isUserLoggedIn"] = "false";
+      contextData["tvStation"] = "Sample TV Station";
+     ```
 
 1. **意図を追跡して再生を開始**
 
