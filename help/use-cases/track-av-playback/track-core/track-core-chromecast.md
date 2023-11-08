@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '750'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '770'
+ht-degree: 93%
 
 ---
 
@@ -46,24 +46,24 @@ ht-degree: 100%
 
    * **標準のビデオメタデータ**
 
-      [Chromecast での標準メタデータの実装](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+     [Chromecast での標準メタデータの実装](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
 
-      >[!NOTE]
-      >
-      >メディアオブジェクトへの標準のビデオメタデータオブジェクトのアタッチはオプションです。
+     >[!NOTE]
+     >
+     >メディアオブジェクトへの標準のビデオメタデータオブジェクトのアタッチはオプションです。
 
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
+     カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
 1. **意図を追跡して再生を開始**
 
@@ -91,11 +91,17 @@ ht-degree: 100%
 
 1. **再生ヘッド値を更新**
 
-   再生ヘッドが変更されたときは、`mediaUpdatePlayhead` の位置の値を複数回更新します。<br /> ビデオオンデマンド（VOD）の場合、値はメディアアイテムの開始時からの秒数で指定されます。<br /> ライブストリーミングでは、プレーヤーがコンテンツのデュレーションに関する情報を提供しない場合、その日の午前0時（UTC）からの秒数を指定できます。<br /> メモ：プログレスマーカーを使用する場合、コンテンツのデュレーションが必要です。また、再生ヘッドはメディアアイテムの開始時からの（0 から始まる）秒数で更新する必要があります。
+   再生ヘッドが変更されたときは、`mediaUpdatePlayhead` の位置の値を複数回更新します。<br /> ビデオオンデマンド（VOD）の場合、値はメディアアイテムの開始時からの秒数で指定されます。<br /> ライブストリーミングでは、プレーヤーがコンテンツのデュレーションに関する情報を提供しない場合、その日の午前0時（UTC）からの秒数を指定できます。 
 
    ```
-   ADBMobile().mediaUpdatePlayhead(position)
+   ADBMobile().media.updatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >を呼び出す際は、次の点を考慮してください。 `media.updatePlayhead` API:
+   >* プログレスマーカーを使用する場合、コンテンツのデュレーションが必要です。また、再生ヘッドは、メディアアイテムの開始時からの秒数（0 から始まる）で更新する必要があります。
+   >* メディア SDK を使用する場合は、 `media.updatePlayhead` 1 秒に 1 回以上の API。
 
 1. **再生の完了を追跡**
 

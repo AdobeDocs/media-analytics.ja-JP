@@ -4,10 +4,10 @@ description: JavaScript 3.x アプリを使用するブラウザーで Media SDK
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 91%
 
 ---
 
@@ -125,6 +125,20 @@ ht-degree: 100%
    ```js
    tracker.trackPlay();
    ```
+
+1. **再生ヘッド値を更新**
+
+   メディアの再生ヘッドが変更された場合は、 `mediaUpdatePlayhead` API. <br /> ビデオオンデマンド（VOD）の場合、値はメディア項目の開始時からの秒数で指定されます。<br /> ライブストリーミングでは、プレーヤーがコンテンツのデュレーションに関する情報を提供しない場合、その日の午前0時（UTC）からの秒数を指定できます。 
+
+   ```
+   tracker.updatePlayhead(position)
+   ```
+
+   >[!NOTE]
+   >
+   >を呼び出す際は、次の点を考慮してください。 `tracker.updatePlayhead` API:
+   >* プログレスマーカーを使用する場合、コンテンツのデュレーションが必要です。また、再生ヘッドは、メディアアイテムの開始時からの秒数（0 から始まる）で更新する必要があります。
+   >* メディア SDK を使用する場合は、 `tracker.updatePlayhead` 1 秒に 1 回以上の API。
 
 1. **再生の完了を追跡**
 

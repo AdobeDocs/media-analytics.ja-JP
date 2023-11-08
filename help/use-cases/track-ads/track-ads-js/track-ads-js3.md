@@ -4,7 +4,7 @@ description: メディア SDK を使用して、ブラウザー（JS）アプリ
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: fd9f0a7f4592c01082bcad015351d9128df2f8c9
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 88%
@@ -133,13 +133,14 @@ ht-degree: 88%
 
 ## 詳細な広告トラッキング
 
+デフォルトの広告 ping 間隔は、 `10 seconds`.
+
 詳細な広告トラッキングを設定して、 `1 second` 広告トラッキング。
 
-この情報は、トラッキングセッションの開始時に指定する必要があります。
-
->[!NOTE]
+>[!IMPORTANT]
 >
->   デフォルトの広告 ping 間隔は、 `10 seconds`.
+>この情報は、トラッキングセッションの開始時に指定する必要があります。
+
 
 
 **構文**

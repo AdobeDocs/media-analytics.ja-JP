@@ -5,8 +5,8 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 100%
 
@@ -17,6 +17,7 @@ ht-degree: 100%
 このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。
 
 >[!IMPORTANT]
+>
 >1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/getting-started/download-sdks.md)）からダウンロードできます。
 
 1. **トラッキングの初期設定**
@@ -70,24 +71,23 @@ ht-degree: 100%
 
       * [iOS での標準メタデータの実装](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **ビデオのメタデータキー**
-
-         [iOS のメタデータキー](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+        [iOS のメタデータキー](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
       * ビデオメタデータの包括的なリストについては、[オーディオおよびビデオパラメーター](/help/implementation/variables/audio-video-parameters.md)を参照してください。
-      >[!NOTE]
-      >
-      >メディアオブジェクトへの標準のビデオメタデータオブジェクトのアタッチはオプションです。
+
+     >[!NOTE]
+     >
+     >メディアオブジェクトへの標準のビデオメタデータオブジェクトのアタッチはオプションです。
 
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
+     カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
 
-      ```
-      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
-      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-      [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-      ```
-
+     ```
+     NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+     [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+     [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+     ```
 
 1. **意図を追跡して再生を開始**
 

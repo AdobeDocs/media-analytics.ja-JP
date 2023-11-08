@@ -5,8 +5,8 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 100%
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 
 このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。
 >[!IMPORTANT]
+>
 >1.x バージョンの SDK を実装する場合は、Android 向けの 1.x の開発ガイドをこちら（[SDK のダウンロード](/help/getting-started/download-sdks.md)）からダウンロードできます。
 
 1. **トラッキングの初期設定**
@@ -61,26 +62,26 @@ ht-degree: 100%
 
    * **標準メタデータ**
 
-      [Android での標準メタデータの実装](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+     [Android での標準メタデータの実装](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
-      >[!NOTE]
-      >
-      >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
+     >[!NOTE]
+     >
+     >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
 
       * メディアメタデータキー API リファレンス - [標準メタデータキー - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
       * 利用可なビデオメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/implementation/variables/audio-video-parameters.md)を参照してください。
+
    * **カスタムメタデータ**
 
-      カスタム変数のディクショナリを作成し、このメディアのデータを設定します。次に例を示します。
+     カスタム変数のディクショナリを作成し、このメディアのデータを設定します。次に例を示します。
 
-      ```java
-      HashMap<String, String> mediaMetadata =  
-        new HashMap<String, String>();
-      mediaMetadata.put("isUserLoggedIn", "false");
-      mediaMetadata.put("tvStation", "Sample TV Station");
-      mediaMetadata.put("programmer", "Sample programmer");
-      ```
-
+     ```java
+     HashMap<String, String> mediaMetadata =  
+       new HashMap<String, String>();
+     mediaMetadata.put("isUserLoggedIn", "false");
+     mediaMetadata.put("tvStation", "Sample TV Station");
+     mediaMetadata.put("programmer", "Sample programmer");
+     ```
 
 1. **意図を追跡して再生を開始**
 

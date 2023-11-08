@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 92%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 100%
 このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。
 
 >[!IMPORTANT]
+>
 >1.x バージョンの SDK を実装する場合は、1.x の開発ガイドをこちら（[SDK のダウンロード](/help/getting-started/download-sdks.md)）からダウンロードできます。
 
 1. **トラッキングの初期設定**
@@ -105,18 +106,19 @@ ht-degree: 100%
 
 [Roku での標準メタデータの実装 ](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
-      >[!NOTE]
-      >メディアオブジェクトへの標準のビデオメタデータオブジェクトのアタッチはオプションです。
+     >[!NOTE]
+     >
+     >メディアオブジェクトへの標準のビデオメタデータオブジェクトのアタッチはオプションです。
 
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
+     カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
 
-      ```
-      mediaContextData = {}
-      mediaContextData["cmk1"] = "cmv1"
-      mediaContextData["cmk2"] = "cmv2"
-      ```
+     ```
+     mediaContextData = {}
+     mediaContextData["cmk1"] = "cmv1"
+     mediaContextData["cmk2"] = "cmv2"
+     ```
 
 1. **意図を追跡して再生を開始**
 
@@ -127,12 +129,15 @@ ht-degree: 100%
    ```
 
    >[!TIP]
+   >
    >2 つ目の値は、手順 2 で作成した、カスタムのビデオメタデータオブジェクトの名前です。
 
    >[!IMPORTANT]
+   >
    >`trackSessionStart` では、再生の開始ではなく、ユーザーの再生の意図を追跡します。この API は、ビデオのデータ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
 
    >[!NOTE]
+   >
    >カスタムのビデオメタデータを使用しない場合は、前述の iOS の例でコメントアウトされている行に示されているように、`trackSessionStart` の `data` 引数に空のオブジェクトを送信します。
 
 1. **実際の再生開始を追跡**
@@ -145,12 +150,18 @@ ht-degree: 100%
 
 1. **再生ヘッド値の更新**
 
-   メディアの再生ヘッドが変更されると、`mediaUpdatePlayhead` API を呼び出して SDK に通知します。<br /> ビデオオンデマンド（VOD）の場合、値はメディア項目の開始時からの秒数で指定されます。<br /> ライブストリーミングでは、プレーヤーがコンテンツのデュレーションに関する情報を提供しない場合、その日の午前0時（UTC）からの秒数を指定できます。<br /> メモ：プログレスマーカーを使用する場合、コンテンツのデュレーションが必要で、再生ヘッドはメディアアイテムの開始時から、0 から始まる秒数で更新する必要があります。
-
+   メディアの再生ヘッドが変更された場合は、 `mediaUpdatePlayhead` API. <br /> ビデオオンデマンド（VOD）の場合、値はメディア項目の開始時からの秒数で指定されます。<br /> ライブストリーミングでは、プレーヤーがコンテンツのデュレーションに関する情報を提供しない場合、その日の午前0時（UTC）からの秒数を指定できます。 
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >を呼び出す際は、次の点を考慮してください。 `mediaUpdatePlayhead` API:
+   >* プログレスマーカーを使用する場合、コンテンツのデュレーションが必要です。また、再生ヘッドは、メディアアイテムの開始時からの秒数（0 から始まる）で更新する必要があります。
+   >* メディア SDK を使用する場合は、 `mediaUpdatePlayhead` 1 秒に 1 回以上の API。
+
 
 1. **再生の完了を追跡**
 
