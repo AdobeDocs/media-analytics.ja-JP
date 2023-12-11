@@ -4,11 +4,11 @@ description: Media ワークスペースのテンプレートを使用すると�
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
-role: User, Admin, Data Engineer
-source-git-commit: 41de1573b001deb65f525af9c5c648d85cac8629
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 11%
+source-wordcount: '296'
+ht-degree: 9%
 
 ---
 

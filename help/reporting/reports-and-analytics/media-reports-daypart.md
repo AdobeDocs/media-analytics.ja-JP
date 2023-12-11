@@ -4,9 +4,9 @@ description: メディア視聴時間帯ダッシュボードを使用すると�
 uuid: aa545f72-6816-448f-af5d-3c5e18f7b3b7
 exl-id: 5e4a390e-8cc5-4934-8d60-c82ca0daaee1
 feature: "Media Analytics, Reports & Analytics Basics"
-role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 100%
 
