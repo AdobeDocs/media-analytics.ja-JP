@@ -5,16 +5,16 @@ uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '108'
-ht-degree: 100%
+source-git-commit: e84864164adf056f47f24d65f0400c89d53d1630
+workflow-type: tm+mt
+source-wordcount: '107'
+ht-degree: 70%
 
 ---
 
 # ping イベントの送信{#sending-ping-events}
 
-**メインコンテンツに対しては、他にどのような API イベントが送信されているかに関係なく、再生を開始した 10 秒後から 10 秒ごとに ping イベントを発生させる必要があります。広告トラッキングの場合、1 秒ごとに ping イベントを発生させる必要があります。**
+**他にどのような API イベントが送信されているかに関係なく、再生を開始した 10 秒後から 10 秒ごとに ping イベントを発生させる必要があります。 これは、メインコンテンツと広告トラッキングの両方に適用されます。**
 
 ping イベントは、文字どおり Media Analytics の「ハートビート」です。ping 呼び出しの必須パラメーターは、`eventType: ping` と `playerTime` オブジェクトのみです（再生ヘッドの位置とタイムスタンプ）。
 
