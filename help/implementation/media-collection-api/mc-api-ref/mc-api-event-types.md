@@ -5,10 +5,10 @@ uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '353'
-ht-degree: 100%
+source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 88%
 
 ---
 
@@ -81,7 +81,7 @@ ping イベントの場合、リクエスト本文に *マップが含まれて�
 
 これは、コンテンツの視聴を中断したユーザーが復帰する可能性が低いときに、Media Analytics バックエンドにセッションを即座に閉じるよう通知するために使用されます。
 
-`sessionEnd` を送信しない場合、中断されたセッションは、（10 分間イベントを受け取らなかった後、または再生ヘッドが 30 分間移動しなかった場合）通常どおりにタイムアウトし、バックエンドによって削除されます。
+次の場合、 `sessionEnd` が送信されない場合、セッションが中断されます [正常にタイムアウトする](../mc-api-impl/mc-api-timeout.md) （10 分間イベントを受け取らなかった後、または再生ヘッドが 30 分間移動しなかった場合）。 さらに、そのセッション ID を使用しておこなわれた後続のすべてのメディア呼び出しは破棄されます。
 
 ## sessionComplete
 
