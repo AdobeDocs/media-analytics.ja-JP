@@ -3,11 +3,11 @@ title: Media Edge を使用した Media Analytics のExperience Platform
 description: Media Edge を使用したAdobeストリーミングメディアの実装方法についてExperience Platformします。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
+source-git-commit: 68710e8d68266c62ded94a14892ddc78a0807a49
 workflow-type: tm+mt
-source-wordcount: '1777'
-ht-degree: 12%
+source-wordcount: '1738'
+ht-degree: 10%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    スキーマを作成する場合は、「 [!UICONTROL **XDM ExperienceEvent**] から [!UICONTROL **スキーマを作成**] ドロップダウンメニュー。
 
-1. 内 [!UICONTROL **構成**] 領域、 [!UICONTROL **フィールドグループ**] セクション、選択 [!UICONTROL **追加**]&#x200B;を検索し、次の新しいフィールドグループをスキーマに追加します。
+1. Adobe Analytics の [!UICONTROL **構成**] 領域、内 [!UICONTROL **フィールドグループ**] セクション、選択 [!UICONTROL **追加**]&#x200B;を検索し、次の新しいフィールドグループをスキーマに追加します。
    * `Adobe Analytics ExperienceEvent Template`
    * `Implementation Details`
    * `MediaAnalytics Interaction Details`
@@ -46,63 +46,70 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    ![追加されたフィールドグループ](assets/schema-field-groups-added.png)
 
-1. 選択 [!UICONTROL **確認**] 変更を保存します。
+1. 選択 [!UICONTROL **確認**] をクリックして変更を保存します。
 
 1. （オプション）Media Edge API で使用されていない特定のフィールドを非表示にできます。 これらのフィールドを非表示にすると、スキーマが読み取りやすく、理解しやすくなりますが、必須ではありません。 これらのフィールドは、 `MediaAnalytics Interaction Details` fieldgroup.
 
-+++ ここを展開して、非表示にできるフィールドの説明を表示します。
++++ ここを展開して、非表示にできるフィールドに関する手順を表示します。
 
-   1. 内 [!UICONTROL **構造**] 領域で、 `Media Collection Details` フィールド、選択 [!UICONTROL **関連するフィールドの管理**]&#x200B;次の手順に従ってスキーマを更新します。
+   1. Adobe Analytics の [!UICONTROL **構造**] 領域で、 `Media Collection Details` 「 」フィールドで「 」を選択し、 [!UICONTROL **関連するフィールドの管理**].
 
       ![manage-related-fields](assets/manage-related-fields.png)
 
-      * 内 `Media Collection Details` フィールド、非表示 `List Of States` フィールドに入力します。
+   1. 次のオプションを有効にします。 [!UICONTROL **フィールドの表示名を表示**]&#x200B;次の手順に従ってスキーマを更新します。
+
+      * Adobe Analytics の `Media Collection Details` > `Advertising Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Completed`, `Ad Started`、および `Ad Time Played`.
+
+      * Adobe Analytics の `Media Collection Details` > `Advertising Pod Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Break ID`
+
+      * Adobe Analytics の `Media Collection Details` > `Chapter Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Chapter Completed`, `Chapter ID`, `Chapter Started`、および `Chapter Time Played`.
+
+      * Adobe Analytics の `Media Collection Details` フィールド、非表示 `List Of States` フィールドに入力します。
 
         ![メディアコレクションの状態を非表示にする](assets/schema-hide-media-collection-states.png)
 
-      * 内 `Media Collection Details` > `Advertising Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Completed`, `Ad Started`、および `Ad Time Played`.
-
-      * 内 `Media Collection Details` > `Advertising Pod Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Break ID`
-
-      * 内 `Media Collection Details` > `Chapter Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Chapter ID`, `Chapter Completed`, `Chapter Started`、および `Chapter Time Played`.
-
-      * 内 `Media Collection Details` > `Qoe Data Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`、および `Total Stalling Duration`.
-
-      * 内 `Media Collection Details` > `Session Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`、および `Pccr`.
-
-      * 内 `Media Collection Details` > `List Of States End` および `Media Collection Details` > `List Of States Start` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Player State Count`, `Player State Set`、および `Player State Time`.
+      * Adobe Analytics の `Media Collection Details` > `List Of States End` および `Media Collection Details` > `List Of States Start` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Player State Count`, `Player State Set`、および `Player State Time`.
 
         ![非表示にするフィールド](assets/schema-hide-listofstates.png)
 
-   1. 選択 [!UICONTROL **確認**] 変更を保存します。
+      * Adobe Analytics の `Media Collection Details` > `Qoe Data Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Impacted Streams`, `Buffer Events`, `Dropped Frame Impacted Streams`, `Drops Before Starts`, `Errors`, `External Error IDs`, `Error Impacted Streams`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Impacted Streams`, `Stalling Events`, `Total Buffer Duration`、および `Total Stalling Duration`.
 
-   1. 内 [!UICONTROL **構造**] 領域で、 `List Of Media Collection Downloaded Content Events` フィールド、選択 [!UICONTROL **関連するフィールドの管理**]&#x200B;次の手順に従ってスキーマを更新します。
+      * Adobe Analytics の `Media Collection Details` > `Session Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Content Completes`, `Chapter Count`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Segment Views`, `Media Downloaded Flag`, `Media Starts`, `Media Session ID`, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pev3`, `Pccr`, `Total Pause Duration`, `Unique Time Played`、および `Video Segment`.
 
-      * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` フィールド、非表示 `List Of States` フィールドに入力します。
+   1. 選択 [!UICONTROL **確認**] をクリックして変更を保存します。
 
-      * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Completed`, `Ad Started`、および `Ad Time Played`.
+   1. Adobe Analytics の [!UICONTROL **構造**] 領域、次のオプションを有効にします。 [!UICONTROL **フィールドの表示名を表示**]&#x200B;を選択し、 `List Of Media Collection Downloaded Content Events` フィールドに入力します。
 
-      * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Break ID`
+   1. 選択 [!UICONTROL **関連するフィールドの管理**]&#x200B;次の手順に従ってスキーマを更新します。
 
-      * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Chapter ID`, `Chapter Completed`, `Chapter Started`、および `Chapter Time Played`.
 
-      * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`、および `Total Stalling Duration`.
+      * Adobe Analytics の `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Completed`, `Ad Started`、および `Ad Time Played`.
 
-      * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`、および `Pccr`.
+      * Adobe Analytics の `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Ad Break ID`
 
-      * 内 `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` および `Media Collection Details` > `List Of States Start` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Player State Count`, `Player State Set`、および `Player State Time`.
+      * Adobe Analytics の `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Chapter Completed`, `Chapter ID`, `Chapter Started`、および `Chapter Time Played`.
 
-      * 内 `List Of Media Collection Downloaded Content Events` > `Media Details`  フィールド、非表示 `Media Session ID` フィールドに入力します。
+      * Adobe Analytics の `List Of Media Collection Downloaded Content Events` > `Media Details` フィールド、非表示 `List Of States` フィールドに入力します。
 
-   1. 選択 [!UICONTROL **確認**] 変更を保存します。
+      * Adobe Analytics の `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` および `Media Collection Details` > `List Of States Start` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Player State Count`, `Player State Set`、および `Player State Time`.
 
-   1. 内 [!UICONTROL **構造**] 領域で、 `Media Reporting Details` フィールド、選択 [!UICONTROL **関連するフィールドの管理**]&#x200B;次の手順に従ってスキーマを更新します。
+      * Adobe Analytics の `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Events`, `Buffer Impacted Streams`, `Drops Before Starts`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Errors`, `External Error IDs`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, `Stalling Impacted Streams`, `Total Buffer Duration`、および `Total Stalling Duration`.
 
-      * 内 `Media Reporting Details` 次のフィールドを非表示にします。 `Error Details`, `List Of States End`, `List of States Start`、および `Media Session ID`.
+      * Adobe Analytics の `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 「 」フィールドで、次のレポートフィールドを非表示にします。 `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Content Completes`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Media Segment Views`, `Media Session ID`, `Media Session Server Timeout`, `Media Starts`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pccr`, `Pev3`, `Total Pause Duration`, `Unique Time Played`、および `Video Segment`.
 
-   1. 選択 [!UICONTROL **確認**] > [!UICONTROL **保存**]  変更を保存します。
+      * Adobe Analytics の `List Of Media Collection Downloaded Content Events` > `Media Details`  フィールド、非表示 `Media Session ID` フィールドに入力します。
 
-1. 続行 [Adobe Experience Platformでのデータセットの作成](#create-a-dataset-in-adobe-experience-platform).
+   1. 選択 [!UICONTROL **確認**] をクリックして変更を保存します。
+
+   1. Adobe Analytics の [!UICONTROL **構造**] 領域で、 `Media Reporting Details` フィールド、選択 [!UICONTROL **関連するフィールドの管理**].
+
+   1. 次のオプションを有効にします。 [!UICONTROL **フィールドの表示名を表示**]&#x200B;次の手順に従ってスキーマを更新します。
+
+      * Adobe Analytics の `Media Reporting Details` 次のフィールドを非表示にします。 `Error Details`, `List Of States End`, `List of States Start`、および `Media Session ID`.
+
+   1. 選択 [!UICONTROL **確認**] > [!UICONTROL **保存**]  をクリックして変更を保存します。
+
+1. 次で続行 [Adobe Experience Platformでのデータセットの作成](#create-a-dataset-in-adobe-experience-platform).
 
 ## Adobe Experience Platformでのデータセットの作成
 
@@ -112,17 +119,17 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    データセットのスキーマを選択する際に、以前に作成したスキーマを選択します。詳しくは、 [Adobe Experience Platformでのスキーマの設定](#set-up-the-schema-in-adobe-experience-platform).
 
-1. 続行 [データストリームのCustomer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform).
+1. 次で続行 [Customer Journey Analyticsでのデータストリームの設定](#configure-a-datastream-in-adobe-experience-platform).
 
 ## Adobe Experience Platformでのデータストリームの設定
 
-1. データセットを作成したことを確認します ( [Adobe Experience Platformでのデータセットの作成](#create-a-dataset-in-adobe-experience-platform).
+1. データセットを作成したことを確認します。詳しくは、 [Adobe Experience Platformでのデータセットの作成](#create-a-dataset-in-adobe-experience-platform).
 
 1. 新しいデータストリームの作成 ( [データストリームの設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja).
 
    データストリームを作成する場合は、次の設定を選択します。
 
-   * 内 [!UICONTROL **イベントスキーマ**] フィールドでデータストリームを作成する場合、 [Adobe Experience Platformでのスキーマの設定](#set-up-the-schema-in-adobe-experience-platform). 「[!UICONTROL **保存**]」を選択します。
+   * Adobe Analytics の [!UICONTROL **イベントスキーマ**] フィールドでデータストリームを作成する場合、 [Adobe Experience Platformでのスキーマの設定](#set-up-the-schema-in-adobe-experience-platform). 「[!UICONTROL **保存**]」を選択します。
 
      >[!IMPORTANT]
      >
@@ -142,11 +149,13 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
      ![Adobe Analyticsサービスの追加](assets/datastream-add-service.png)
 
-   * 展開 [!UICONTROL **詳細オプション**]、次にを有効にします。 [!UICONTROL **Media Analytics**] オプション。
+   * 展開 [!UICONTROL **詳細オプション**]、次に、を有効にします。 [!UICONTROL **Media Analytics**] オプション。
 
      ![Media Analytics オプション](assets/datastream-media-check.png)
 
-1. 続行 [Customer Journey Analyticsでの接続の作成](#create-a-connection-in-customer-journey-analytics).
+1. これで、 [Media Edge API](/help/implementation/edge/implementation-edge-api.md) または [Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md) をクリックして、media analytics データの収集を開始します。
+
+   一部のデータを収集した後、次の操作を実行できます。 [接続での接続の作成Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
 ## Customer Journey Analytics で接続を作成する
 
@@ -155,7 +164,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 >次の手順は、Customer Journey Analyticsを使用する場合にのみ必要です。
 
 
-1. データストリームを作成したことを確認します ( [データストリームのCustomer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform).
+1. データストリームを作成したことを確認します。詳しくは、 [Customer Journey Analyticsでのデータストリームの設定](#configure-a-datastream-in-adobe-experience-platform).
 
 1. Customer Journey Analyticsで、 [接続の作成](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja).
 
@@ -163,9 +172,9 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    1. 以前に作成したデータセットを選択します。詳しくは、 [Adobe Experience Platformでのデータセットの作成](#create-a-dataset-in-adobe-experience-platform).
 
-   1. 次を確認します。 [!UICONTROL **すべての新しいデータをインポート**] の設定が有効になっています。
+   1. 次の点を確認します。 [!UICONTROL **すべての新しいデータをインポート**] の設定が有効になっています。
 
-1. 続行 [Customer Journey Analyticsでのデータビューの作成](#create-a-new-data-view-in-customer-journey-analytics).
+1. 次で続行 [Customer Journey Analyticsでのデータビューの作成](#create-a-new-data-view-in-customer-journey-analytics).
 
 ## Customer Journey Analyticsでのデータビューの作成
 
@@ -173,17 +182,17 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 >
 >次の手順は、Customer Journey Analyticsを使用する場合にのみ必要です。
 
-1. 接続がCustomer Journey Analyticsで作成されていることを確認します ( [Customer Journey Analyticsでの接続の作成](#create-a-connection-in-customer-journey-analytics).
+1. 接続がCustomer Journey Analyticsで作成されていることを確認します。詳しくは、 [接続での接続の作成Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
-1. 顧客ジャーニー分析で、 [データビューの作成または編集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja).
+1. 顧客ジャーニー分析で、 [データビューの作成または編集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en).
 
-   データビューを作成する場合、ストリーミングメディアの実装には、次の設定が必要です。
+   データビューを作成する場合、ストリーミングメディアを実装するには、次の設定が必要です。
 
-   1. 内 [!UICONTROL **接続**] 「 」フィールドで、以前に作成した接続を選択します。 [Customer Journey Analyticsでの接続の作成](#create-a-connection-in-customer-journey-analytics).
+   1. Adobe Analytics の [!UICONTROL **接続**] 」フィールドで、以前に作成した接続を選択します。詳しくは、 [接続での接続の作成Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
       作成した接続が選択できるようになるまでに、最大 15 分かかる場合があります。
 
-   1. の [!UICONTROL **コンポーネント**] タブ、 [!UICONTROL **スキーマフィールド**] 「 」セクションで、以下の表に示す各コンポーネントを検索し、 [!UICONTROL **指標**] パネル。 同じ名前のフィールドが複数存在する場合は、XDM パスを使用して、そのフィールドが正しいことを確認します。
+   1. 次の日： [!UICONTROL **コンポーネント**] タブ、 [!UICONTROL **スキーマフィールド**] 「 」セクションで、以下の表に示す各コンポーネントを検索し、 [!UICONTROL **指標**] パネル。 同じ名前のフィールドが複数存在する場合は、XDM パスを使用して、そのフィールドが正しいことを確認します。
 
       **メインコンテンツ — コンテンツ指標**
 
@@ -196,7 +205,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
       | コンテンツ視聴時間 | mediaReporting.sessionDetails.timePlayed |
       | メディア視聴時間 | mediaReporting.sessionDetails.totalTimePlayed |
       | ユニーク再生時間 | mediaReporting.sessionDetails.uniqueTimePlayed |
-      | 10％プログレスマーカー | mediaReporting.sessionDetails.hasProgress10 |
+      | 10%進捗状況マーカー | mediaReporting.sessionDetails.hasProgress10 |
       | 分平均オーディエンス | mediaReporting.sessionDetails.averageMinuteAudience |
 
 
@@ -233,7 +242,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
       | コンポーネント名 | XDM パス |
       |----------|---------|
       | プレーヤーステートセット | mediaReporting.states.isSet |
-      | プレーヤーステートカウント | mediaReporting.states.count |
+      | プレーヤーの状態の数 | mediaReporting.states.count |
       | プレーヤーステートタイム | mediaReporting.states.time |
 
 
@@ -241,7 +250,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       | コンポーネント名 | コンテキストラベル |
       |---------|----------|
-      | メディアセッションサーバーのタイムアウト | メディア：前回の呼び出しからの経過時間（秒） |
+      | メディアセッションサーバーのタイムアウト | メディア：前回の呼び出しからの経過秒数 |
       | メディア視聴時間 | メディア：メディア視聴時間 |
       | 合計バッファー時間 | メディア：合計バッファー時間 |
       | 開始時間 | メディア：開始時間 |
@@ -256,11 +265,11 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       このテーブルのディメンションに加えて、Customer Journey Analyticsプロジェクトでデータをフィルタリングするために使用可能にする他のディメンションも追加できます。
 
-1. 選択 [!UICONTROL **保存して続行**] > [!UICONTROL **保存して終了**] 変更を保存します。
+1. 選択 [!UICONTROL **保存して続行**] > [!UICONTROL **保存して終了**] をクリックして変更を保存します。
 
-1. 続行 [プロジェクトの作成とCustomer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics).
+1. 次で続行 [Customer Journey Analyticsでのプロジェクトの作成と設定](#create-and-configure-a-project-in-customer-journey-analytics).
 
-## プロジェクトの作成とCustomer Journey Analytics
+## Customer Journey Analyticsでのプロジェクトの作成と設定
 
 1. データビューがCustomer Journey Analyticsで作成されていることを確認します。詳しくは、 [Customer Journey Analyticsでのデータビューの作成](#create-a-new-data-view-in-customer-journey-analytics).
 
@@ -290,21 +299,21 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    ![メディア再生に費やした時間パネル](assets/media-playback-time-spent-panels.png)
 
-1. プロジェクトを共有します。詳しくは、 [プロジェクトの共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ja).
+1. プロジェクトを共有します。詳しくは、 [プロジェクトの共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
 
    >[!NOTE]
    >
    >   共有したいユーザーが使用できない場合は、そのユーザーがAdobe Admin ConsoleのCustomer Journey Analyticsに対するユーザーおよび管理者アクセス権を持っていることを確認してください。
 
-1. 続行 [データをExperience PlatformEdge に送信](#send-data-to-experience-platform-edge).
+1. 次で続行 [データをExperience PlatformEdge に送信](#send-data-to-experience-platform-edge).
 
-## AEP Mobile SDK を使用したExperience PlatformEdge へのデータ送信
+## AEP Mobile SDK を使用してExperience PlatformEdge にデータを送信する
 
 Adobe Experience Platform Mobile SDK を使用して、モバイルデータをExperience PlatformEdge に送信できます。
 
 次のドキュメントリソースを使用して、iOSと Android の両方の実装を完了します。
 
-* [はじめに](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+* [今すぐはじめる](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
 * [API リファレンス](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
@@ -312,9 +321,9 @@ Adobe Experience Platform Mobile SDK を使用して、モバイルデータをE
 
 または、以下のリソースを使用して Edge API のカスタム実装を使用できます。
 
-* [Media Edge API の概要](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+* [メディアエッジ API の概要](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
-* [Media Edge API の基本を学ぶ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
+* [Media Edge API の概要](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
 * [メディア Edge API トラブルシューティングガイド](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
