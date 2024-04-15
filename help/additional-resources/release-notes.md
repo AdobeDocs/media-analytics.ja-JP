@@ -4,14 +4,14 @@ description: Adobe Analytics のリリースノートを表示します。
 feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
+source-git-commit: 649438cebb6868d3d5799629317596c08c1c086f
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 91%
+source-wordcount: '871'
+ht-degree: 86%
 
 ---
 
-# ストリーミングメディア用 Adobe Analyticsリリースノート（2023 年 5 月）
+# ストリーミングメディア用 Adobe Analytics リリースノート（2023 年 5 月）
 
 **最終更新日**：2023年5月12日（PT）
 
@@ -31,11 +31,12 @@ ht-degree: 91%
 
 | 機能 | 説明 | ターゲット日 |
 | ----------- | ---------- | ------- |
-| メディアコレクション：Experience Edge（API および Mobile SDK）との統合 | Experience Edge API および Mobile SDK を使用してストリーミングメディアを実装でき、よりパーソナライズされたキャンペーンを構築し、よりパーソナライズされたコンテンツを提供できるようになり、より多くのトラッキングデータをレポートに追加できます。<p>この機能強化により、Customer Journey Analyticsレポート、RT-CDP、AJO、イベント転送など、すべてのソリューションにわたって統合収集方法が提供されます。  [詳細情報](/help/implementation/edge/implementation-edge.md) | 2023年5月12日（PT） |
+| Roku データのAdobe Experience Platform Edge への送信 | 次の場合 [media Analytics とExperience Platform Edge のインストール](/help/implementation/edge/implementation-edge.md)Adobe Experience Platform Roku SDK を使用すると、ストリーミングメディアデータをAdobe Experience Platformに送信できます。 | 2024年4月12日（PT） |
+| メディアコレクション：Experience Edge との統合（API および Mobile SDK） | Experience Edge API と Mobile SDK を使用してストリーミングメディアを実装できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analyticsレポート、RT-CDP、AJO、イベント転送など、すべてのソリューションにわたって統一された収集手段が提供されます。  [詳細情報](/help/implementation/edge/implementation-edge.md) | 2023年5月12日（PT） |
 | メディア同時ビューアパネル | ピーク同時実行が発生した場所、または下降が発生した場所を把握します。コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=ja) | 2022年8月9日（PT） |
 | メディア再生滞在時間パネル | メディア再生滞在時間は、ビューアエンゲージメントに関する貴重なインサイトを提供し、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、新たな 5 分、15 分、30 分の時間粒度を含む、様々な粒度で分割できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ja) | 2022年8月9日（PT） |
 | モバイルスコアカードで注釈を共有 | ワークスペースで作成された注釈をモバイルスコアカードに表示できます。これにより、組織とキャンペーンに関するコンテキストデータのニュアンスやインサイトを、モバイルスコアカードプロジェクト内で直接共有でき、Analytics ダッシュボードモバイルアプリで表示できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=ja) | 2022年6月15日 |
-| Report BuilderのCustomer Journey Analytics更新 | スケジュールおよびデータブロックマネージャーなどの機能が含まれます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=ja) | 2022年5月18日（PT） |
+| Customer Journey Analytics更新のReport Builder | スケジュールおよびデータブロックマネージャーなどの機能が含まれます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=ja) | 2022年5月18日（PT） |
 | ワークスペースの注釈 | Analysis Workspace の注釈を使用すると、コンテキストデータのニュアンスとインサイトを組織に効果的に伝えることができます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=ja) | 2022年3月23日（PT）から順次展開を開始 |
 | モバイルスコアカードプロジェクトのプレビューモード | Analytics ダッシュボードアプリにおけるモバイルスコアカードの表示のプレビューを、スコアカードビルダーから直接起動します。プレビューモードを使用すると、アプリ内と同じ方法でフィルターやグラフを操作でき、スコアカードを保存および共有する前にエクスペリエンスをプレビューできます。また、デバイスピッカーをプレビューモードで使用して、様々なデバイスでのスコアカードの表示を確認することもできます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=ja#preview) | 2022年2月16日 |
 
