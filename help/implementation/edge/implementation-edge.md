@@ -4,9 +4,9 @@ description: Experience Platform Edge を使用してAdobeストリーミング�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1862'
 ht-degree: 9%
 
 ---
@@ -315,7 +315,11 @@ Experience Platform Edge に送信するデータの種類に応じて、次の�
 
 ### Web:Adobe Experience Platform Web SDK の使用
 
+* [今すぐはじめる](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
+* [Adobe Experience Platform Web SDK を使用した Edge への web データの送信](/help/implementation/edge/edge-web-sdk.md)
+
+* [Edge Network拡張用にAdobeストリーミングメディアに移行](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### モバイル：Adobe Experience Platform Mobile SDK の使用
 

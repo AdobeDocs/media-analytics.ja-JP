@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a9c772e77a2b049e6e4bd65877940b0398a23f7f
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 92%
+source-wordcount: '426'
+ht-degree: 89%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Experience Platform のタグは、アドビが提供する次世代型の
 |:---:|---|---|---|---| ---| ---|
 | ![JavaScript アイコン&#x200B;](assets/javascript-icon.png)</br>**JavaScript API** | Adobe Analytics | Analytics のみ | Web - [JS 用 Media SDK v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript を使用した Media Analytics のインストール](/help/implementation/media-sdk/setup/web-implementation.md) | [JS 用 Media SDK v3.0.2 のサンプル](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript アイコン&#x200B;](assets/javascript-icon.png)</br>**JavaScript API** | Adobe Analytics | Analytics のみ | Web - メディア拡張機能 |  | [Adobe Medium Analytics (3.x SDK) for Audio and Video 拡張機能 — タグ（データ収集）を使用](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja) | [Adobe Media Analytics (3.x SDK) for Audio and Video 拡張機能のサンプル](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![JavaScript アイコン&#x200B;](assets/javascript-icon.png)</br>**JavaScript API** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web - Experience Platform Edge（近日公開） |  | [Experience Platform Edge を使用した Media Analytics のインストール](/help/implementation/edge/implementation-edge.md) | |
+| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web - Experience Platformエッジ |  | [Experience Platform Edge を使用した Media Analytics のインストール](/help/implementation/edge/implementation-edge.md) <p>と</p><p>[Adobe Experience Platform Web SDK を使用した Edge への web データの送信](/help/implementation/edge/edge-web-sdk.md)</p> | |
 
 ### Mobile の実装 {#get-mobile-extension}
 

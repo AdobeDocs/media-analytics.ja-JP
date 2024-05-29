@@ -3,7 +3,7 @@ title: Adobe Experience Platform Web SDK を使用した Edge への web デー�
 description: Adobe Experience Platform Web SDK を使用して、AdobeストリーミングメディアデータをExperience PlatformEdge に送信する方法を説明します。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4e6ae687175b45680d8de071dbc3011f18921a44
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Media JS SDK を使用している顧客の場合、Web SDK は、Media JS SDK �
 
 [!DNL Web SDK] media Analytics トラッカーを取得するコマンドが含まれています。 このコマンドを使用してオブジェクトインスタンスを作成し、から提供されるのと同じ API を使用することができます。 [Media JS ライブラリ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)、メディアイベントを追跡
 
-を参照してください。 [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getMediaAnalyticsTracker) サポートされる方法の詳細に関するドキュメント。
+を参照してください。 [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) サポートされる方法の詳細に関するドキュメント。
 
 以下のスニペットは、Media JS でメディアトラッカーインスタンスを取得する方法を示しています。
 
