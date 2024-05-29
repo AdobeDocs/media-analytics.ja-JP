@@ -4,10 +4,10 @@ description: Experience Platform Edge を使用してAdobeストリーミング�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 10%
+source-wordcount: '1837'
+ht-degree: 9%
 
 ---
 
@@ -17,15 +17,11 @@ Adobe Experience Platform Edge を使用すると、複数の製品用のデー�
 
 次の図に、Media Analytics 実装でExperience Platformエッジを使用して、Adobe AnalyticsまたはCustomer Journey AnalyticsのいずれかでAnalysis Workspaceのデータを利用できるようにする方法を示します。
 
-![CJA ワークフロー](assets/cja-implementation.png)
+![CJA ワークフロー](assets/streaming-media-edge.png)
 
 Experience Platformエッジを使用しない実装方法を含む、すべての実装オプションの概要については、を参照してください。 [Streaming Media for Adobe AnalyticsまたはCustomer Journey Analyticsの実装](/help/implementation/overview.md).
 
->[!IMPORTANT]
->
->ストリーミングメディアは、まだ AEP Web SDK と統合されていません。
-
-Experience Edge で Streaming Media を実装するために Mobile SDK と API のどちらを使用しているかに関係なく、最初に次の節を完了する必要があります。
+Experience Edge と Streaming Media を実装するためにAdobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK、API のいずれを使用しているかに関係なく、最初に次の節を実行する必要があります。
 
 ## Adobe Experience Platformでのスキーマの設定
 
@@ -35,7 +31,13 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 1. Adobe Experience Platformで、の説明に従ってスキーマの作成を開始します [UI でのスキーマの作成と編集](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-   スキーマを作成する際に、を選択します [!UICONTROL **XDM ExperienceEvent**] から [!UICONTROL **スキーマを作成**] ドロップダウンメニュー。
+1. スキーマを作成する際に、スキーマの詳細ページで次を選択します [!UICONTROL **エクスペリエンスイベント**] スキーマの基本クラスを選択する場合。
+
+   ![追加されたフィールドグループ](assets/schema-experience-event.png)
+
+1. 「[!UICONTROL **次へ**]」を選択します。
+
+1. スキーマの表示名と説明を指定し、選択します [!UICONTROL **終了**].
 
 1. が含まれる [!UICONTROL **構成**] エリア、内 [!UICONTROL **フィールドグループ**] セクションで選択 [!UICONTROL **追加**]&#x200B;を検索し、次の新しいフィールドグループをスキーマに追加します。
    * `Adobe Analytics ExperienceEvent Template`
@@ -46,7 +48,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    ![追加されたフィールドグループ](assets/schema-field-groups-added.png)
 
-1. を選択 [!UICONTROL **確認**] 変更を保存します。
+1. を選択 [!UICONTROL **保存**] 変更を保存します。
 
 1. （オプション） Media Edge API で使用されない特定のフィールドを非表示にできます。 これらのフィールドを非表示にすると、スキーマが読みやすく理解しやすくなりますが、必須ではありません。 これらのフィールドは、のフィールドのみを参照します。 `MediaAnalytics Interaction Details` フィールドグループ。
 
@@ -141,7 +143,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       * [!UICONTROL **Adobe Analytics**] （Adobe Analyticsを使用している場合）
 
-        Adobe Analyticsを使用している場合は、セクションの説明に従って、レポートスイートを定義してください [レポートスイートの定義](#define-a-report-suite) この記事の内容です。
+        Adobe Analyticsを使用している場合は、の説明に従ってレポートスイートを定義してください [レポートスイートの作成](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * [!UICONTROL **Adobe Experience Platform**] （Customer Journey Analyticsを使用する場合）
 
@@ -310,6 +312,10 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 ## Experience Platformエッジへのデータの送信
 
 Experience Platform Edge に送信するデータの種類に応じて、次のいずれかの方法を使用できます。
+
+### Web:Adobe Experience Platform Web SDK の使用
+
+
 
 ### モバイル：Adobe Experience Platform Mobile SDK の使用
 

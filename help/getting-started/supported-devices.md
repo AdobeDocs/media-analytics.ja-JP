@@ -4,9 +4,9 @@ description: iOS、Android、OTT デバイス、JavaScript ブラウザーなど
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
+source-git-commit: b538b973509ee2a2c2010da300cbed1ce06ec2af
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Edge 上でのメディアの実装について詳しくは、「[Experience Pla
 | ストリーミングプラットフォームとデバイス | | Edge Network 用 Media SDK／拡張機能 | Media Edge API | タグ付きメディア拡張機能または AEP Mobile SDK | メディア SDK | メディアコレクション API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web／モバイル Web | | | | | |
-| | JavaScript ブラウザー | （近日公開） | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) |
+| | JavaScript ブラウザー | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) |
 | モバイルアプリ | | | | | |
 | | iOS デバイス | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | | ![サポート](/help/assets/icon-blue-check.png) | |
 | | Android デバイス | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | | ![サポート](/help/assets/icon-blue-check.png) |

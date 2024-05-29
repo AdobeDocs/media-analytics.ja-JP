@@ -5,14 +5,14 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: ht
-source-wordcount: '471'
-ht-degree: 100%
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 81%
 
 ---
 
-# Streaming Media for Adobe Analytics の実装または Customer Journey Analytics
+# Adobe Analytics または Customer Journey Analytics 用のストリーミングメディアの実装
 
 ストリーミングメディアは様々な方法で実装できます。このページで説明している実装方法でサポートされるデバイスとプラットフォームの比較について詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください。
 
@@ -20,19 +20,15 @@ ht-degree: 100%
 
 Adobe Analytics または Customer Journey Analytics のすべての新規顧客に対して Media Analytics を実装する場合は、Edge を使用することをお勧めします。
 
-* **Edge Network 用 Media SDK／拡張機能：** iOS および Android デバイスからデータを収集し、Edge に送信します。その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
+* **Edge NetworkSDK/拡張機能のメディア：** Web、iOSおよび Android デバイス、または Roku デバイスからデータを収集し、Edge Networkに送信します。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
-  Edge Network 用 Media SDK／拡張機能について詳しくは、[Experience Platform Edge を使用した Media Analytics のインストール](/help/implementation/edge/implementation-edge.md)を参照してください。
+  Media for Extension SDK/Edge Networkについて詳しくは、 [Media Analytics とExperience Platform Edge のインストール](/help/implementation/edge/implementation-edge.md).
 
-  >[!NOTE]
-  >
-  >この実装方式は現在、Web SDK または Roku をサポートしていません。ただし、Media Edge API を使用して実装する場合は両方ともサポートされます。
+* **Media Edge API:** は、任意のデバイスやフォーマット（モバイル、web、OTT （オーバーザトップ）デバイスなど）からデータを収集し、Edge Networkに送信するようにカスタマイズできます。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
-* **Media Edge API：**&#x200B;任意のデバイスまたは形式（モバイル、web、オーバーザトップデバイスなど）からデータを収集し、Edge にデータを送信するようにカスタマイズできます。その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
+  Media Edge API について詳しくは、以下を参照してください。 [Media Edge API：概要](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
-  <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
-
-![CJA ワークフロー](assets/cja-implementation.png)
+![CJA ワークフロー](assets/streaming-media-edge.png)
 
 ## Adobe Analytics のみの実装方式
 
