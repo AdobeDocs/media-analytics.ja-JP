@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: メディア解析ガイド
 user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: b5a95af55d782a14fc5fd6b8d5b9f206c797212e
+source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 99%
+source-wordcount: '900'
+ht-degree: 98%
 
 ---
 
@@ -99,7 +99,7 @@ ht-degree: 99%
       + [実装とレポート](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [複数プレーヤーのステートトラッキング](use-cases/player-state-tracking/multiple-player-states.md)
       + [プレーヤーステートトラッキングの例](use-cases/player-state-tracking/player-state-examples.md)
-   + [オフラインダウンロードコンテンツの追跡](use-cases/track-downloaded-content.md)
+   + [ダウンロードされたコンテンツの追跡 ](use-cases/track-downloaded-content.md)
    + [Federated Analytics ](use-cases/federated-analytics.md)
    + [再生中のアプリケーション割り込みの処理](use-cases/cookbook/app-interrupts.md)
    + [メディアストリームのアトリビューション](use-cases/media-analytics-cookbook/media-dimensions.md)
