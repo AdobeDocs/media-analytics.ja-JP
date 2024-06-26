@@ -1,20 +1,22 @@
 ---
 title: Federated Analytics
-description: Federated Analytics サービスは、2 つのパートナー間で Adobe Analytics for Streaming Media データを共有できるシステムです。
+description: Federated Analytics サービスは、2 つのパートナー間でストリーミングメディアデータを共有するシステムを提供します。
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '552'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 80%
 
 ---
 
 # Federated Analytics {#federated-analytics}
 
-Federated Analytics サービスは、2 つのパートナー間でAdobe Media Analytics データ（オーディオおよびビデオ）を共有できるシステムです。Media Analytics によって生成される標準化された計測データは、Federated Analytics の指標の 1 つで、複数のソースからの同一のデータを単一のレポートに表示できます。Federated Analytics を規定するルールとロジックによって、それぞれの状況に合わせてデータを簡単に管理し、個々のパートナーのニーズに対応できます。Federated Analytics を利用すれば、オーディオおよびビデオ計測の効率性と実用性を高め、簡略化を推し進めることができます。
+Federated Analytics サービスは、2 つのパートナー間でストリーミングメディアデータ（オーディオとビデオ）を共有するシステムを提供します。
+Streaming Media Collection アドオンで作成された標準化された測定データは、Federated Analyticsの特徴であり、同じデータを複数のソースから 1 つのレポートに送ることができます。
+Federated Analytics を規定するルールとロジックによって、それぞれの状況に合わせてデータを簡単に管理し、個々のパートナーのニーズに対応できます。Federated Analytics を利用すれば、オーディオおよびビデオ計測の効率性と実用性を高め、簡略化を推し進めることができます。
 
 ## メリット {#benefits}
 
@@ -38,7 +40,7 @@ Federated Analytics サービスは、2 つのパートナー間でAdobe Media A
 * **メディアストリームに関する契約：** Adobe Analytics 内でオーディオおよびビデオデータにアクセスするためには、受信者と送信者が事前に Adobe Analytics for Media Streams の契約を済ませておく必要があります。詳しくは、アカウントチームにお問い合わせください。
 * **フェデレーションに関する補遺契約：**&#x200B;データの送受信をおこなうためには、送信者と受信者それぞれがアドビとの補遺契約に署名している必要があります。パートナーシップ 1 組で 1 つの補遺契約ではなく、それぞれのお客様が補遺契約に署名する必要があります。詳しくは、アカウントチームにお問い合わせください。
 
-* **Media Analytics の実装：** 送信者は、フェデレーテッドデータセットの一部となるすべてのプレーヤーにMedia Analyticsを実装する必要があります。フェデレーションに使用できるのは、Media Analytics データのみです。[Adobe Analytics での Streaming Media の測定](/help/media-overview.md)のドキュメントを参照してください。
+* **ストリーミングメディアコレクションアドオンの実装：** 送信者には、フェデレーション データセットの一部となるすべてのプレーヤーに対してストリーミング メディア コレクション アドオンが実装されている必要があります。 ストリーミングメディアデータのみがフェデレーションに使用できます。 詳しくは、を参照してください [Adobeストリーミングメディアコレクションアドオンの概要](/help/media-overview.md).
 
 * **アドビのコンサルティングサービスの契約：**&#x200B;送信者と受信者間のフェデレーテッドルールの初期設定については、コンサルティングサービスと協力してデータの確認とデータ共有契約の作成をおこなうと効果的です。
 

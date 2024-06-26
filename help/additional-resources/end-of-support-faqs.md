@@ -4,31 +4,31 @@ description: このトピックには、Media Analytics SDK のサポート終�
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 79%
+source-wordcount: '601'
+ht-degree: 74%
 
 ---
 
 # Media Analytics Mobile SDK のサポート終了に関する FAQ
 
-2021 年 8 月 31 日にバージョン 4 のモバイル SDK のサポートが終了すると共に、AdobeはiOSおよび Android 用の Media Analytics Mobile SDK のサポートを終了しました。 ( これには、Web 用 Media Analytics SDK(JS) や、Chromecast や Roku などの OTT プラットフォームは含まれません（まだサポートされています）。
+2021 年 8 月 31 日（PT）にバージョン 4 の Mobile SDK のサポートが終了するのに伴い、AdobeはiOSおよびAndroid用 Media Analytics Mobile SDK のサポートも終了しました。 （これには、Web （JS）用 Media Analytics SDK と、Chromecast や Roku などの OTT プラットフォームは含まれません。これらのプラットフォームは引き続きサポートされます）。
 
-つまり、Adobeは Media Analytics Mobile SDK の修正、OS 関連の更新、サポートを提供しなくなりました。 新しいExperience PlatformSDK に移行する際は、 [Media Analytics 拡張機能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) ストリーミングメディア用 Adobe Analyticsを有効にするには、を実装する必要があります。
+つまり、Adobeでは、Media Analytics Mobile SDK の修正、OS 関連の更新プログラム、サポートを提供しなくなりました。 新しいExperience PlatformSDK に移行する際には、 [Media Analytics 拡張機能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) Adobeのストリーミングメディアコレクションアドオンを有効にするには、実装する必要があります。
 
 
 ## 知っておきたいことトップ 5
 
-1. 2021 年 8 月 31 日以降、Mobile v4 SDK はサポートされなくなりました。 iOS または Android 用 Adobe Experience Platform（AEP）Mobile SDK に移行する必要があります。
+1. Mobile v4 SDK は、2021 年 8 月 31 日（PT）以降はサポートされなくなりました。 iOSおよびAndroid用のAdobe Experience Platform （AEP） Mobile SDK に移行する必要があります。
 
-1. Analytics for Streaming Media を実装するには AEP Mobile SDK と、Analytics と Media Analytics の拡張機能を使用する必要があります。2021 年 9 月 1 日以降は、新しい AEP Mobile SDK および拡張機能を使用する必要があります。  Media Analytics 拡張機能は、アドビタグ（データ収集）を使用して設定されます。詳しくは、[スタンドアロンの Media SDK から Adobe Launch への移行](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)を参照してください。
+1. Analytics for Streaming Media を実装するには AEP Mobile SDK と、Analytics と Media Analytics の拡張機能を使用する必要があります。2021 年 9 月 1 日（PT）をもって、新しい AEP Mobile SDK および拡張機能を使用する必要があります。  Media Analytics 拡張機能は、アドビタグ（データ収集）を使用して設定されます。詳しくは、[スタンドアロンの Media SDK から Adobe Launch への移行](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)を参照してください。
 
 1. iOS および Android 用 Media Analytics SDK の機能の開発は終了しました。2019 年秋から導入された新機能は、Media Analytics 拡張機能とメディアコレクション API を使用して有効化されます。
 
 1. Analytics for Streaming Media のお客様は引き続き、Roku SDK と Chromecast SDK をご利用いただけます。Roku SDK と Chromecast SDK はスタンドアロンの SDK として引き続き機能強化やサポートが行われます。Media Analytics 用の JS SDK を使用している場合は、引き続きスタンドアロン SDK を使用するか、Adobe データ収集（以前の Adobe Launch）を使用して Media Analytics 拡張機能を有効にすることができます。
 
-ご質問がある場合は、Adobeアカウントチームにお問い合わせください。
+ご不明な点はAdobeアカウントチームにお問い合わせください。
 
 ## よくある質問（FAQ）
 

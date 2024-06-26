@@ -6,18 +6,18 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# メディアコレクション API の概要{#overview}
+# メディアコレクション API の概要 {#overview}
 
 メディアコレクション API は、クライアント側のメディア SDK の代替として使用できるアドビの RESTful API です。メディアコレクション API を使用すると、プレーヤーで RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントを追跡できます。
 
-メディアコレクション API は、基本的に、メディア SDK のサーバーサイドバージョンとして動作するアダプターです。つまり、メディア SDK ドキュメントの一部はメディアコレクション API にも関連しています。例えば、両方のソリューションが同じ[ストリーミングメディアパラメーター](../variables/audio-video-parameters.md)を使用すると、収集されたストリーミングメディアトラッキングデータは、同じ[レポートと分析になります。](/help/reporting/media-reports-enable.md)
+メディアコレクション API は、基本的に、メディア SDK のサーバーサイドバージョンとして動作するアダプターです。つまり、メディア SDK ドキュメントの一部はメディアコレクション API にも関連しています。例えば、両方のソリューションで同じものを使用しています [ストリーミングメディアパラメーター](../variables/audio-video-parameters.md)を選択します。収集されたストリーミングメディアトラッキングデータも同じ結果になります [レポートと分析。](/help/reporting/media-reports-enable.md)
 
 ## メディアトラッキングデータのフロー {#media-tracking-data-flows}
 
@@ -37,11 +37,11 @@ ht-degree: 100%
 
 * **`sessions`-** サーバーとのセッションを確立し、後続の `events` 呼び出しで使用するセッション ID を返します。アプリは、トラッキングセッションの開始時にこれを 1 回呼び出します。
 
-   `{uri}/api/v1/sessions`
+  `{uri}/api/v1/sessions`
 
 * **`events`-** メディアトラッキングデータを送信します。
 
-   `{uri}/api/v1/sessions/{session-id}/events`
+  `{uri}/api/v1/sessions/{session-id}/events`
 
 ### リクエスト本文 {#mc-api-request-body}
 

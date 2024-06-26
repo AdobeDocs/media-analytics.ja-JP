@@ -1,28 +1,29 @@
 ---
-title: ストリーミングメディアの前提条件について説明します
-description: Adobe Analytics Streaming Media の基本を学ぶ。 Adobe Analytics for Streaming Media の実装に必要な事項について説明します。
+title: Adobeストリーミングメディアコレクションアドオンの前提条件について説明します
+description: ストリーミングメディアコレクションアドオンの基本を学びます。 実装に必要なものを説明します。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: ht
-source-wordcount: '442'
-ht-degree: 100%
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
+source-wordcount: '435'
+ht-degree: 62%
 
 ---
 
 # 前提条件 {#prerequisites}
 
-ストリーミングメディアの実装を開始する前に、次のタスクを実行します。
+Adobeストリーミングメディアコレクションアドオンの実装を開始する前に、次のタスクを実行します。
 
-1. **ストリーミングメディアの概要をレビューする**<br>
-ストリーミングメディアの実装を開始する前に、[ストリーミングメディアの概要](/help/media-overview.md)をレビューして、ストリーミングメディアがニーズを満たしていることを確認します。
+1. **ストリーミングメディアコレクションアドオンの概要の確認**<br>
+ストリーミングメディアコレクション アドオンの実装を開始する前に、 [ストリーミングメディアコレクションアドオンの概要](/help/media-overview.md) お客様のニーズを満たしていることを確認します。
 
-1. **Steaming Media の価格モデルを確認する**<br>
-現在の価格モデルは、ビデオストリームに基づいています。ストリーミングメディアは Adobe Analytics のアドオンとして別売されているので、必要に応じて、営業担当またはアドビのアカウントチームにお問い合わせください。<!--update when media SKUs are added to other AEP apps -->
+1. **価格モデルを確認**<br>
+Adobeストリーミングメディアコレクションアドオンの現在の価格モデルは、ビデオストリームに基づいています。 アドオンはAdobe AnalyticsとAdobe Experience Platformに別々に販売されるので、必要に応じて、営業担当またはAdobeアカウントチームにお問い合わせください。
 
-1. **Adobe Analytics レポートを有効にする**<br> Analytics でレポートを有効にし、収集しているコンテンツや広告データを表示するには、Analytics でレポートを有効にする必要があります。 [メディアレポートの有効化](/help/reporting/media-reports-enable.md)を参照してください。
+1. **Adobe Analytics レポートを有効にする**<br>
+Analytics またはCustomer Journey Analyticsでレポートを有効にし、収集しているコンテンツや広告データを表示するには、レポートを有効にする必要があります。 [メディアレポートの有効化](/help/reporting/media-reports-enable.md)を参照してください。
 
 1. **Experience Cloud に Adobe Experience Platform ID サービスを実装する**
 
@@ -40,7 +41,7 @@ ht-degree: 100%
 
 1. **実装方法の追加の前提条件を表示する**
 
-   ストリーミングメディアの実装方法に応じて、次のいずれかの実装方法の前提条件を確認します。
+   ストリーミングメディアコレクション アドオンの実装方法に応じて、次のいずれかの実装方法の前提条件を確認します。
 
    * [Adobe Analytics のみの実装の前提条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 

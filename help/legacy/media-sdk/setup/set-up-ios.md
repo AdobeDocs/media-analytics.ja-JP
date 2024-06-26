@@ -5,16 +5,16 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '763'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 94%
 
 ---
 
 # iOS のセットアップ{#set-up-ios}
 
-iOS デバイス用のストリーミングメディア分析の設定方法を説明します。
+iOS デバイス用の Streaming Media Collection アドオンの設定方法について説明します。
 
 >[!IMPORTANT]
 >
@@ -25,9 +25,9 @@ iOS デバイス用のストリーミングメディア分析の設定方法を�
 * **メディア SDK 用の有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
 * **iOS 向け ADBMobile をアプリケーションに実装** Adobe Mobile SDK ドキュメントについて詳しくは、[Experience Cloud ソリューション用 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=ja) を参照してください。
 
-   >[!IMPORTANT]
-   >
-   >iOS 9 から、Apple は App Transport Security（ATS）という機能を導入しました。この機能は、アプリケーションで業界標準のプロトコルと暗号のみを使用することで、ネットワークセキュリティの向上を目的としています。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。ATS について詳しくは、[App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=ja) を参照してください。
+  >[!IMPORTANT]
+  >
+  >iOS 9 から、Apple は App Transport Security（ATS）という機能を導入しました。この機能は、アプリケーションで業界標準のプロトコルと暗号のみを使用することで、ネットワークセキュリティの向上を目的としています。この機能はデフォルトで有効になっていますが、ATS を利用する際の各種設定オプションが用意されています。ATS について詳しくは、[App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=ja) を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
 
@@ -55,11 +55,12 @@ iOS デバイス用のストリーミングメディア分析の設定方法を�
       * `ADBMediaHeartbeatConfig.h`：SDK 設定用の Objective-C ヘッダーファイル。
       * `MediaSDK.a`：iOS デバイス用のライブラリビルド（armv7、armv7s、arm64）とシミュレーター（i386 および x86_64）を含む、ビットコード対応の大きなバイナリ。
 
-         ターゲットが iOS アプリを対象としている場合は、このバイナリがリンクされている必要があります。
+        ターゲットが iOS アプリを対象としている場合は、このバイナリがリンクされている必要があります。
 
       * `MediaSDK_TV.a`：新しい Apple TV デバイス用のライブラリビルド（arm64）とシミュレーター（x86_64）を含む、ビットコード対応の大きなバイナリ。
 
-         このバイナリは、ターゲットが Apple TV（tvOS）アプリを対象としている場合、リンクされている必要があります。
+        このバイナリは、ターゲットが Apple TV（tvOS）アプリを対象としている場合、リンクされている必要があります。
+
    1. 以下のようにして、プロジェクトにライブラリを追加します。
 
       1. Xcode IDE を起動して、アプリを開きます。
@@ -85,11 +86,8 @@ iOS デバイス用のストリーミングメディア分析の設定方法を�
          * **MediaSDK_TV.a**
          * **libsqlite3.0.tbd**
          * **SystemConfiguration.framework**
+
       1. アプリケーションがエラーなくビルドされることを確認します。
-
-
-
-
 
 1. ライブラリをインポートします。
 
@@ -167,9 +165,9 @@ iOS デバイス用のストリーミングメディア分析の設定方法を�
 
 次の手順を Xcode プロジェクトで実行します。このガイドは、プロジェクトのターゲットの 1 つが tvOS 用の Apple TV アプリであることを想定して記述されています。
 
-1. プロジェクトの `lib` フォルダーに `VideoHeartbeat_TV.a` ライブラリファイルをドラッグします。
+1. をドラッグ `VideoHeartbeat_TV.a` ライブラリファイルをプロジェクトのに `lib` フォルダー。
 
-1. tvOS アプリのターゲットの「**[!UICONTROL Build Phases（ビルドフェーズ）]**」タブで、「**[!UICONTROL Link Binary with Libraries（バイナリをライブラリとリンク）]**」を展開して、以下のライブラリを追加します。
+1. が含まれる **[!UICONTROL ビルドフェーズ]** tvOS アプリのターゲットの「」タブで、 **[!UICONTROL バイナリとライブラリのリンク]** をセクションして、次のライブラリを追加します。
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

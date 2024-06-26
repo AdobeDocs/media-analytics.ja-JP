@@ -4,18 +4,18 @@ description: ハートビートを使用してビデオ指標を収集する方�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '313'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 86%
 
 ---
 
 # ハートビート測定について
 
-Adobe Analytics では、「ハートビート」を使用してビデオ指標を収集します。ビデオ再生中、ハートビートはハートビートトラッキングサーバーに送信され、再生時間を測定します。ハートビート呼び出しは、10 秒ごとに送信されます。ハートビートにより、きめ細かいビデオエンゲージメント指標やより正確なビデオフォールアウトレポートが可能になります。ストリーミングメディア用 Adobe Analytics では、Media Analytics 拡張機能、Media SDK およびメディアコレクション API を備えた Adobe Launch を使用して、ハートビートを測定します。`AppMeasurement` および `VisitorID` コンポーネントは、ビデオデータの受信に使用されます。
+Adobeストリーミングメディアコレクションアドオンでは、「ハートビート」を使用してビデオ指標を収集します。 ビデオ再生中、ハートビートはハートビートトラッキングサーバーに送信され、再生時間を測定します。ハートビート呼び出しは、10 秒ごとに送信されます。ハートビートにより、きめ細かいビデオエンゲージメント指標やより正確なビデオフォールアウトレポートが可能になります。ストリーミングメディアは、Media Analytics 拡張機能、Media SDK および Media Collection API を備えたAdobe Launch を使用して、ハートビートを測定します。 `AppMeasurement` および `VisitorID` コンポーネントは、ビデオデータの受信に使用されます。
 
-Adobe Analytics for Streaming Media でハートビートを使用すると、次の利点があります。
+ストリーミングメディアコレクションアドオンでハートビートを使用すると、次の利点があります。
 
 | 機能 | 説明 |
 |---|---|

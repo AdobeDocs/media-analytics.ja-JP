@@ -5,16 +5,16 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '445'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '443'
+ht-degree: 97%
 
 ---
 
 # Android のセットアップ{#set-up-android}
 
-Android デバイス用のストリーミングメディア分析の設定方法について説明します。
+Android デバイス用の Streaming Media Collection アドオンを設定する方法について説明します。
 
 >[!IMPORTANT]
 >
@@ -61,7 +61,6 @@ Android デバイス用のストリーミングメディア分析の設定方法
       1. 「**[!UICONTROL 順序]**／**[!UICONTROL エクスポート]**」タブをクリックします。
 
       1. `MediaSDK.jar` ファイルが選択されていることを確認します。
-
 
 1. ライブラリをインポートします。
 

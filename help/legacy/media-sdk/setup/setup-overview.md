@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## 一般的な実装のガイドライン {#general-implementation-guidelines}
 
-Adobe Streaming Media トラッキングで使用する主な SDK コンポーネントは 3 つあります。
+ストリーミングメディアコレクションアドオンを使用したトラッキングに使用する主な SDK コンポーネントは 3 つあります。
 * Media Heartbeat 設定 - `MediaHeartbeatConfig` には、レポートの基本設定が含まれています。
 * Media Heartbeat デリゲート - `MediaHeartbeatDelegate` は、再生時間と QoS オブジェクトを制御します。
 * Media Heartbeat - `MediaHeartbeat` は、メンバーとメソッドを含むプライマリライブラリです。
@@ -119,11 +119,11 @@ Media Analytics トラッキング実装は、2 つのタイプのトラッキ�
 
 * **Adobe Analytics（AppMeasurement）サーバー** トラッキングサーバーオプションについて詳しくは、[trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html)を参照してください。
 
-   >[!IMPORTANT]
-   >
-   >Experience Cloud 訪問者 ID サービスを使用するには、RDC トラッキングサーバーまたは RDC サーバーに解決される CNAME が必要です。
+  >[!IMPORTANT]
+  >
+  >Experience Cloud 訪問者 ID サービスを使用するには、RDC トラッキングサーバーまたは RDC サーバーに解決される CNAME が必要です。
 
-   Analytics トラッキングサーバーは「`.sc.omtrdc.net`」で終わるか CNAME である必要があります。
+  Analytics トラッキングサーバーは「`.sc.omtrdc.net`」で終わるか CNAME である必要があります。
 
 * ** Media Analytics（ハートビート）サーバー** これは、常に「`[your_namespace].hb.omtrdc.net`」形式になります。「`[your_namespace]`」の値は会社を指定し、アドビによって提供されます。
 

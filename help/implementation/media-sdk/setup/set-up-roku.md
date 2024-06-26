@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 93%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 100%
 
 ## 前提条件 {#roku-prerequisites}
 
-* **Media Analytics 用の有効な設定パラメーターの取得**
+* **ストリーミングメディアコレクションアドオン用の有効な設定パラメーターの取得**
 
-   これらのパラメーターは、Media Analytics アカウントの設定後、アドビ担当者から取得できます。
-* **メディアプレーヤーへの下記 API の組み込み**
+  これらのパラメーターは、Adobeのストリーミングメディアコレクションのアドオンアカウントを設定した後、Adobe担当者から取得できます。
+* **メディアプレーヤーで以下の API を含める**
 
-   * _プレーヤーイベントをサブスクライブするための API_ - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
+   * _プレーヤーイベントをサブスクライブするための API_ - Media SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * _プレーヤー情報を提供する API_ - メディア名や再生ヘッドなどの情報がこれに該当します。
 
 Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、BrightScript で記述された Roku アプリケーションを測定したり、Audience Management を通じてオーディエンスデータを利用および収集したり、ビデオイベントを介してビデオエンゲージメントを測定したりできます。
@@ -35,6 +35,7 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
       * `adbmobile.brs`：このライブラリファイルは、Roku アプリのソースフォルダーに含まれています。
 
       * `ADBMobileConfig.json`：アプリ用にカスタマイズされた SDK 設定ファイル。
+
    1. プロジェクトソースに、ライブラリファイルと JSON 設定ファイルを追加します。
 
       Adobe Mobile の設定に使用する JSON には、`mediaHeartbeat` と呼ばれるメディア分析用の専用キーがあります。ここには、メディア分析の設定パラメーターが属しています。
@@ -99,7 +100,6 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
       >[!IMPORTANT]
       >
       >`mediaHeartbeat` を誤って設定した場合、メディアモジュール（VHL）がエラー状態になり、トラッキングコールの送信が中止されます。
-
 
 1. Experience Cloud 訪問者 ID を設定します。
 

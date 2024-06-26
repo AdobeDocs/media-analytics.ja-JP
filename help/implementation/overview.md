@@ -1,32 +1,32 @@
 ---
-title: Adobe Analytics または Customer Journey Analytics 用のストリーミングメディアの実装
-description: ストリーミングメディアの実装パスについて説明します。
+title: ストリーミングメディアコレクションアドオンの実装
+description: ストリーミングメディアコレクションアドオンの実装パスについて説明します。
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 81%
+source-wordcount: '459'
+ht-degree: 69%
 
 ---
 
-# Adobe Analytics または Customer Journey Analytics 用のストリーミングメディアの実装
+# ストリーミングメディアコレクションアドオンの実装
 
-ストリーミングメディアは様々な方法で実装できます。このページで説明している実装方法でサポートされるデバイスとプラットフォームの比較について詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください。
+Adobeストリーミングメディアコレクションアドオンを実装するには、様々な方法があります。 このページで説明している実装方法でサポートされるデバイスとプラットフォームの比較について詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください。
 
 ## Edge の実装方法
 
-Adobe Analytics または Customer Journey Analytics のすべての新規顧客に対して Media Analytics を実装する場合は、Edge を使用することをお勧めします。
+Adobe AnalyticsまたはCustomer Journey Analyticsの新規のお客様すべてに Streaming Media Collection アドオンを実装する際は、Edgeを使用することをお勧めします。
 
-* **Edge NetworkSDK/拡張機能のメディア：** Web、iOSおよび Android デバイス、または Roku デバイスからデータを収集し、Edge Networkに送信します。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
+* **Edge NetworkSDK/拡張機能のメディア：** Web、iOSおよびAndroid デバイス、または Roku デバイスからデータを収集し、Edge Networkに送信します。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
-  Media for Extension SDK/Edge Networkについて詳しくは、 [Media Analytics とExperience Platform Edge のインストール](/help/implementation/edge/implementation-edge.md).
+  Media for Extension SDK/Edge Networkについて詳しくは、 [Edge Networkを使用した Streaming Media Collection アドオンの実装](/help/implementation/edge/implementation-edge.md).
 
 * **Media Edge API:** は、任意のデバイスやフォーマット（モバイル、web、OTT （オーバーザトップ）デバイスなど）からデータを収集し、Edge Networkに送信するようにカスタマイズできます。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
-  Media Edge API について詳しくは、以下を参照してください。 [Media Edge API：概要](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
+  Media Edge API について詳しくは、 [Media Edge API の概要](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
 ![CJA ワークフロー](assets/streaming-media-edge.png)
 

@@ -1,16 +1,17 @@
 ---
-title: Adobe Experience Platform Web SDK を使用した Edge への web データの送信
-description: Adobe Experience Platform Web SDK を使用して、AdobeストリーミングメディアデータをExperience PlatformEdge に送信する方法を説明します。
+title: Adobe Experience Platform Web SDK を使用したEdgeへの web データの送信
+description: Adobe Experience Platform Web SDK を使用して、AdobeストリーミングメディアデータをExperience PlatformEdgeに送信する方法について説明します。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Adobe Experience Platform Web SDK を使用した Edge への web データの送信
+# Adobe Experience Platform Web SDK を使用したEdgeへの web データの送信
 
 バージョン 2.20.0 以降、 `streamingMedia` Adobe Experience Platformコンポーネント [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) を使用すると、web サイト上のメディアセッションに関連するデータを収集できます。 収集されたデータには、メディアプレイバック、一時停止、完了およびその他の関連イベントに関する情報を含めることができます。
 
@@ -22,14 +23,14 @@ Media JS SDK を使用している顧客の場合、Web SDK は、Media JS SDK �
 
 を使用するには `streamingMedia` web SDK のコンポーネントです。次の前提条件を満たす必要があります。
 
-* Media Analytics データを Edge に送信する前に、まず次の手順を完了してください [Media Analytics とExperience Platform Edge のインストール](/help/implementation/edge/implementation-edge.md).
+* ストリーミングメディアデータをEdgeに送信する前に、まずの手順を実行します。 [Experience PlatformEdgeと Streaming Media Collection アドオンのインストール](/help/implementation/edge/implementation-edge.md).
 * Adobe Experience PlatformやAdobe Analyticsにアクセスできることを確認します。
 * Web SDK バージョン 2.20.0 以降を使用する必要があります。 を参照してください。 [Web SDK インストールの概要](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) を参照して、最新バージョンのインストール方法を確認してください。
 * を有効にする **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** 使用しているデータストリームのオプション。
 * データストリームで使用するスキーマに、メディアコレクションのスキーマフィールドが含まれていることを確認してください。
-* このページで示されているように、次のいずれかを使用して、Web SDK 設定でストリーミングメディア機能を設定します。 [タグ拡張機能](#tag-extension) または [JavaScript ライブラリ](#library).
+* このページで示されているように、次のいずれかを使用して、Web SDK 設定でストリーミングメディア機能を設定します。 [タグ拡張機能](#tag-extension) または [JavaScript図書館](#library).
 
-ストリーミングメディア用 Analyticsの実装を Media JS から Web SDK に移行するには、このページで説明する手順に従います。
+ストリーミングメディアコレクションアドオンの実装を Media JS から Web SDK に移行するには、このページで説明する手順に従います。
 
 ### 手順 1:Experience PlatformWeb SDK のインストール
 

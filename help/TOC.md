@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Adobe Analytics for Streaming Media
-breadcrumb-title: メディア解析ガイド
-user-guide-description: Adobe Analytics for Streaming Media の実装これには、メディア SDK とメディアコレクション API が含まれます。
+user-guide-title: ストリーミングメディアコレクションアドオン
+breadcrumb-title: ストリーミングメディアコレクションガイド
+user-guide-description: ストリーミングメディアの実装 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 98%
+source-wordcount: '895'
+ht-degree: 94%
 
 ---
 
 
-# Adobe Analytics for Streaming Media {#using}
+# ストリーミングメディアコレクションアドオン {#using}
 
-+ [ストリーミングメディア分析ガイド](media-overview.md)
++ [ストリーミングメディアコレクションガイド](media-overview.md)
 + リリースノート {#release-notes}
-   + [Streaming Media リリースノート](additional-resources/release-notes.md)
+   + [Streaming Media Collection リリースノート](additional-resources/release-notes.md)
 + はじめに {#getting-started}
    + [前提条件](getting-started/prereqs.md)
    + [サポートされるデバイス](getting-started/supported-devices.md)
-   + [ストリーミングメディアドキュメント](getting-started/implementation-documentation.md)
+   + [ストリーミングメディアコレクション実装ドキュメント](getting-started/implementation-documentation.md)
    + [SDK、ライブラリおよび拡張機能](getting-started/download-sdks.md)
    + サポートの終了 {#end-of-support}
       + [Media Analytics Mobile SDK のサポート終了](additional-resources/end-of-support-faqs.md)
@@ -37,7 +37,7 @@ ht-degree: 98%
       + Media Edge SDK／拡張機能 {#media-edge-sdk}
          + [Media Edge SDK／拡張機能の設定](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
-         + [Media Edge モバイル SDK](/help/implementation/edge/edge-mobile-sdk.md)
+         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + Adobe Analytics のみの実装 {#analytics-only}
       + [前提条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
@@ -172,7 +172,7 @@ ht-degree: 98%
       + JavaScript のセットアップ {#setup-javascript}
          + [JavaScript 2.x のセットアップ](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [ハートビート測定について](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime とストリーミングメディア分析](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe Primetime](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe Audience Management のイネーブルメント](legacy/intro-to-ava/am-enablement.md)
    + [カスタムリンクの実装](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + レガシーマイルストーンのトラッキング {#legacy-milestone-tracking}

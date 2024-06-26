@@ -1,6 +1,6 @@
 ---
-title: Adobe Analytics for Streaming Media の新機能
-description: Adobe Analytics for Streaming Media の新機能について説明します。
+title: ストリーミングメディアの新機能
+description: ストリーミングメディアの新機能について説明します。
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
@@ -8,10 +8,10 @@ snippet: y
 exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '28'
-ht-degree: 100%
+source-git-commit: 8eeb4a157d9756318582bc485769c5704f54c515
+workflow-type: tm+mt
+source-wordcount: '17'
+ht-degree: 35%
 
 ---
 

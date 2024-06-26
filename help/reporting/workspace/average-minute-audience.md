@@ -4,10 +4,10 @@ description: メディア分平均オーディエンスパネルを使用して�
 feature: Media Analytics, Workspace Basics
 role: User, Admin
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -22,4 +22,4 @@ Analysis Workspace での分平均オーディエンスは、メディアスト�
 
 メディア分平均オーディエンスパネルでは、分類を使用して期間が使用可能になっている場合に選択した特定のコンテンツによる分平均オーディエンス分析を提供します。
 
-分平均オーディエンスパネルでは、分類を使用して期間を指定できるかどうかに関わらず、特定のコンテンツでフィルタリング可能な、選択した期間を通じた分析も提供します。メディア分平均オーディエンスパネルにアクセスするには、Media Analytics コンポーネントが有効になっているレポートスイートに移動します。次に、左端のパネルアイコンをクリックし、 パネルを Analysis Workspace プロジェクトにドラッグします。[詳細情報...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=ja)
+分平均オーディエンスパネルでは、分類を使用して期間を指定できるかどうかに関わらず、特定のコンテンツでフィルタリング可能な、選択した期間を通じた分析も提供します。メディア分平均オーディエンスパネルにアクセスするには、ストリーミングメディアコンポーネントが有効になっているレポートスイートに移動します。 次に、左端のパネルアイコンをクリックし、 パネルを Analysis Workspace プロジェクトにドラッグします。[詳細情報...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=ja)

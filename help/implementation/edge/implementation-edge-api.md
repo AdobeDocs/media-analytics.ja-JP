@@ -1,26 +1,26 @@
 ---
-title: Media Edge API を使用した Media Analytics のExperience Platform
-description: Media Edge API を使用した Media Analytics のインストールに関するExperience Platform。
+title: 実装 API を使用した Streaming Media Collection アドオンのEdge Network
+description: Media Analytics とExperience Platform Edge API のインストールに関するリソース。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: 416db2b77201f4342af45cf141e80a0f4c120df7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
 
-# Media Edge API を使用した Media Analytics のExperience Platform
+# 実装 API を使用した Streaming Media Collection アドオンのEdge Network
 
-を使用できない場合、 [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md)の場合は、API を介して Edge Network に直接データを送信できます。
+を使用できない場合 [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md)の場合、API を介してAdobe Experience Platform Edge Networkに直接データを送信できます。
 
-Edge API のカスタム実装の実行方法に関する情報については、次のリソースを参照してください。
+Edge API のカスタム実装の実行方法については、次の資料を使用してください。
 
-* [メディアエッジ API の概要](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
+* [Media Edge API の概要](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
 
 * [Media Edge API の概要](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 
-* [メディア Edge API トラブルシューティングガイド](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
+* [Media Edge API トラブルシューティングガイド](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
 * [Media Edge API 用の Open API 仕様ファイルの使用](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/swagger/)

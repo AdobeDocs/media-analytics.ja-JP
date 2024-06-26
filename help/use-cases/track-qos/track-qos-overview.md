@@ -5,10 +5,10 @@ uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '258'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Quality of Experience の追跡には、サービス品質（QoS）およびエ�
 
 を呼び出します `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
-## QoS の実装
+## QOS の実装
 
 1. メディアの再生中にいつ QoS 指標が変更されるかを識別し、QoS 情報を使用して `MediaObject` を作成し、新しい QoS 情報を更新します。
 

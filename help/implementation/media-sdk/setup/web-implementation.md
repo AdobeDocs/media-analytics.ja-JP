@@ -4,28 +4,28 @@ description: Web アプリ用の Adobe Streaming Media を実装する方法に�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 9d7886a67e426089977cbe322d310c36604646d0
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 98%
+source-wordcount: '442'
+ht-degree: 92%
 
 ---
 
-# JavaScript を使用した Media Analytics のインストール {#install-web-sdks}
+# JavaScriptを使用した Media SDK のインストール {#install-web-sdks}
 
 このページの情報では、web スタンドアロン SDK のインストール方法と JavaScript のセットアップ方法について説明します。
 
-または、[Media Analytics 拡張機能を使用した Analytics の実装](/help/implementation/media-sdk/setup/web-implementation-tags.md)で説明しているように、Adobe Media Analytics 拡張機能を使用して Analytics を実装することもできます。
+または、の説明に従って、Adobe Medium Analytics 拡張機能を使用してAdobe Streaming Media Collection アドオンを実装することもできます。 [Media Analytics 拡張機能を使用した Analytics の実装](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## 前提条件 {#prerequesites}
 
 * **有効な設定パラメーターを取得**
 
-   これらのパラメーターは、Analytics アカウントの設定後、アドビ担当者から取得できます。
+  これらのパラメーターは、Analytics アカウントの設定後、アドビ担当者から取得できます。
 
 * **メディアアプリケーションで JavaScript 用に `AppMeasurement` と `Experience Cloud Identity Service` を実装**
 
-   詳しくは、[JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)および [Experience Cloud ID サービスの実装](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja)を参照してください。
+  詳しくは、[JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)および [Experience Cloud ID サービスの実装](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja)を参照してください。
 
 * **メディアプレーヤーで以下の API を含める**
 

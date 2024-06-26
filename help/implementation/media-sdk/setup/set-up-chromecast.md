@@ -5,25 +5,25 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '575'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 97%
 
 ---
 
 # Chromecast 用 Mobile SDK v3.x の設定 {#set-up-chromecast}
 
-この節では、ストリーミングメディア用の Chromecast インストールを設定するための前提条件について説明します。
+この節では、ストリーミングメディアコレクションアドオンの Chromecast インストールを設定するための前提条件について説明します。
 
 ## 前提条件
 
 * **有効な設定パラメーターの取得**
 
-   これらのパラメーターは、Media Analytics アカウントの設定後、アドビ担当者から取得できます。
+  これらのパラメーターは、Media Analytics アカウントの設定後、アドビ担当者から取得できます。
 * **メディアプレーヤーへの下記 API の組み込み**
 
-   * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
+   * *プレーヤーイベントをサブスクライブするための API* - Media SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * *プレーヤー情報を提供する API* - メディア名や再生ヘッドなどの情報がこれに該当します。
 
 Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。今回は、Adobe Analytics および Adobe Target ソリューションのアプリ分析およびターゲティング機能とのシームレスな統合を提供します。詳しくは、[Adobe Mobile Services のドキュメント](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=ja)を参照してください。
@@ -38,11 +38,12 @@ Experience Cloud ソリューション向けの Chromecast 用 Adobe Mobile ラ�
 
       *  を使用します`adbmobile-chromecast.min.js`。
 
-         このライブラリファイルは、Chromecast アプリのソースフォルダーに含まれています。
+        このライブラリファイルは、Chromecast アプリのソースフォルダーに含まれています。
 
       * `ADBMobileConfig` config
 
-         アプリ用にカスタマイズされた SDK 設定ファイル。この SDK には、サンプルの `ADBMobileConfig` 実装が用意されています（`samples/` / 内）。アドビの担当者から、適切な設定を入手してください。
+        アプリ用にカスタマイズされた SDK 設定ファイル。この SDK には、サンプルの `ADBMobileConfig` 実装が用意されています（`samples/` / 内）。アドビの担当者から、適切な設定を入手してください。
+
    1. このライブラリファイルを `index.html` ファイルに追加し、以下のように `ADBMobileConfig` グローバル変数を作成します（Adobe Mobile for Media Analytics の設定に使用されるグローバル変数には、`mediaHeartbeat` という専用のキーがあります）。
 
       ```js
@@ -91,6 +92,7 @@ Experience Cloud ソリューション向けの Chromecast 用 Adobe Mobile ラ�
       >`mediaHeartbeat` を誤って設定した場合、メディアモジュールがエラー状態になり、トラッキングコールが送信されなくなります。
 
       mediaHeartbeat キーの ADBMobile 設定パラメーター：
+
    | 設定パラメーター | 説明     |
    | --- | --- |
    | `server` | バックエンドのトラッキングエンドポイントの URL を表す文字列。 |

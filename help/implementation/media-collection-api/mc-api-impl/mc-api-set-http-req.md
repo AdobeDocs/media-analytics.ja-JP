@@ -1,14 +1,14 @@
 ---
 title: プレーヤーでの HTTP リクエストタイプの設定
-description: すべてのストリーミングメディアコレクション API リクエストのリクエスト本文は、JSON 形式にする必要があります。プレーヤーでコンテンツリクエストタイプを設定する方法を説明します。
+description: すべての Media Collection API リクエストのリクエスト本文は、JSON 形式にする必要があります。 プレーヤーでコンテンツリクエストタイプを設定する方法を説明します。
 uuid: b8fa7233-e654-4acf-a9d7-14158cded13e
 exl-id: 9ab3eb07-8f0d-4f9a-8feb-db20c4de3db4
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '76'
-ht-degree: 100%
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
+source-wordcount: '75'
+ht-degree: 81%
 
 ---
 

@@ -1,19 +1,19 @@
 ---
 title: サポートされているデバイスとプラットフォーム
-description: iOS、Android、OTT デバイス、JavaScript ブラウザーなど、ストリーミングメディア用の Adobe Analytics でサポートされている主要なデバイスについて説明します。
+description: Streaming Media Collection アドオンがサポートするiOS、Android、OTT デバイス、JavaScript ブラウザーなどの主要なデバイスについて説明します。
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: b538b973509ee2a2c2010da300cbed1ce06ec2af
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 100%
+source-wordcount: '313'
+ht-degree: 76%
 
 ---
 
 # サポートされるデバイスとプラットフォーム {#devices-supported}
 
-ストリーミングメディア用 Adobe Analytics は、以下を含む主要なデバイスをすべてサポートしています。
+Adobeストリーミングメディアコレクションアドオンは、次のようなすべての主要デバイスをサポートしています。
 
 * iOS および Android のスマートフォンおよびタブレット
 * Roku、Fire TV、Android TV の OTT デバイス
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 SDK は、新しいバージョンのデバイスがリリースされると定期的に更新されます。SDK を使用して、個々のプラットフォームのネイティブプレーヤーやその他の使用可能なメディアプレーヤーと統合できます。
 
-現在 SDK をサポートしていないデバイスの場合や、実装をカスタマイズする必要がある場合は、Media Collection API または Media Edge API を使用できます。これらの API を使用すると、デバイスから Media Analytics バックエンドに直接 RESTful API の呼び出しを行うことができます。
+現在 SDK をサポートしていないデバイスの場合や、実装をカスタマイズする必要がある場合は、Media Collection API または Media Edge API を使用できます。これらの API を使用すると、デバイスからストリーミングメディアコレクションアドオンのバックエンドに直接 RESTful API 呼び出しを行うことができます。
 
 現在サポートされているデバイスの表を次に示します。デバイスが一覧にない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
 
-Edge 上でのメディアの実装について詳しくは、「[Experience Platform Edge を使用した Media Analytics のインストール](/help/implementation/edge/implementation-edge.md)」を参照してください。
+Edgeへの Media の実装について詳しくは、 [Experience PlatformEdgeと Streaming Media Collection アドオンのインストール](/help/implementation/edge/implementation-edge.md).
 
 | ストリーミングプラットフォームとデバイス | | Edge Network 用 Media SDK／拡張機能 | Media Edge API | タグ付きメディア拡張機能または AEP Mobile SDK | メディア SDK | メディアコレクション API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
