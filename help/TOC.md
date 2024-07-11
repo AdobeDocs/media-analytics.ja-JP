@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: ストリーミングメディアコレクションアドオン
 breadcrumb-title: ストリーミングメディアコレクションガイド
-user-guide-description: ストリーミングメディアの実装 これには、メディア SDK とメディアコレクション API が含まれます。
+user-guide-description: ストリーミングメディアを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
 source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
