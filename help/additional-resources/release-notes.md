@@ -7,7 +7,7 @@ exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
 source-wordcount: '982'
-ht-degree: 75%
+ht-degree: 80%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 75%
 
 | 機能 | 説明 | ターゲット日 |
 | ----------- | ---------- | ------- |
-| Web SDK を使用したAdobe Experience Platform Edge Networkへの web データの送信 | これで、 [Adobe Experience Platform Web SDK を使用して、ストリーミングメディア web データをAdobe Experience Platform Edge Networkに送信します。](/help/implementation/edge/edge-web-sdk.md)を使用すると、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供できるので、より多くのトラッキングデータをレポートできるようになります。<p>この機能強化により、Customer Journey Analytics、RT-CDP、AJO、イベント転送など、すべてのプラットフォームソリューションにわたる web 実装に統一された収集方法が提供されます。以前は、ストリーミングメディア web データをEdge Networkに送信する唯一の方法は、Media Edge API を使用することでした。 | 2024年5月29日（PT） |
-| Roku データのAdobe Experience Platform Edgeへの送信 | 次の場合 [Experience PlatformEdgeでの Streaming Media Collection アドオンのインストール](/help/implementation/edge/implementation-edge.md)Adobe Experience Platform Roku SDK を使用すると、ストリーミングメディアデータをAdobe Experience Platformに送信できます。 | 2024年4月12日（PT） |
+| Web SDK を使用したAdobe Experience Platform Edge Networkへの web データの送信 | [Adobe Experience Platform Web SDK を使用して、ストリーミングメディア Web データをAdobe Experience Platform Edge Networkに送信 ](/help/implementation/edge/edge-web-sdk.md) できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analytics、RT-CDP、AJO、イベント転送など、すべてのプラットフォームソリューションをまたいだ web 実装向けの、統一された収集方法が提供されます。以前は、ストリーミングメディア web データを Edge Network に送信する唯一の方法は、Media Edge API を使用することでした。 | 2024年5月29日（PT） |
+| Roku データのAdobe Experience Platform Edgeへの送信 | [Experience Platform Edge を使用してストリーミングメディアコレクションアドオンをインストール](/help/implementation/edge/implementation-edge.md)する際、Adobe Experience Platform Roku SDK を使用してストリーミングメディアデータを Adobe Experience Platform に送信できるようになりました。 | 2024年4月12日（PT） |
 | Media Collection:Experience Edgeとの統合（API および Mobile SDK） | Experience Edge API と Mobile SDK を使用して、Adobeのストリーミングメディアコレクションアドオンを実装できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analyticsレポート、RT-CDP、AJO、イベント転送など、すべてのソリューションにわたって統一された収集手段が提供されます。  [詳細情報](/help/implementation/edge/implementation-edge.md) | 2023年5月12日（PT） |
 | メディア同時ビューアパネル | ピーク同時実行が発生した場所、または下降が発生した場所を把握します。コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=ja) | 2022年8月9日（PT） |
 | メディア再生滞在時間パネル | メディア再生滞在時間は、ビューアエンゲージメントに関する貴重なインサイトを提供し、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、新たな 5 分、15 分、30 分の時間粒度を含む、様々な粒度で分割できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ja) | 2022年8月9日（PT） |

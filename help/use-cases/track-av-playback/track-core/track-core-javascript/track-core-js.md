@@ -6,8 +6,8 @@ exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '689'
+workflow-type: tm+mt
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
@@ -66,28 +66,28 @@ ht-degree: 100%
 
    * **標準メタデータ**
 
-      [JavaScript での標準メタデータの実装](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+     [JavaScript での標準メタデータの実装](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
 
-      >[!NOTE]
-      >
-      >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
+     >[!NOTE]
+     >
+     >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
 
       * メディアメタデータキー API リファレンス - [標準メタデータキー - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         利用可能なメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/implementation/variables/audio-video-parameters.md)を参照してください。
+        利用可能なメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/implementation/variables/audio-video-parameters.md)を参照してください。
+
    * **カスタムメタデータ**
 
-      カスタム変数の変数オブジェクトを作成し、このメディアのデータを設定します。次に例を示します。
+     カスタム変数の変数オブジェクトを作成し、このメディアのデータを設定します。次に例を示します。
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
 1. **意図を追跡して再生を開始**
 

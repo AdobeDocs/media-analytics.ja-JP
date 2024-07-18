@@ -17,12 +17,12 @@ ht-degree: 62%
 Adobeストリーミングメディアコレクションアドオンの実装を開始する前に、次のタスクを実行します。
 
 1. **ストリーミングメディアコレクションアドオンの概要の確認**<br>
-ストリーミングメディアコレクション アドオンの実装を開始する前に、 [ストリーミングメディアコレクションアドオンの概要](/help/media-overview.md) お客様のニーズを満たしていることを確認します。
+ストリーミングメディアコレクションアドオンの実装を開始する前に、[ ストリーミングメディアコレクションアドオンの概要 ](/help/media-overview.md) を確認して、ニーズを満たしていることを確認してください。
 
-1. **価格モデルを確認**<br>
+1. **価格モデルを確認する**<br>
 Adobeストリーミングメディアコレクションアドオンの現在の価格モデルは、ビデオストリームに基づいています。 アドオンはAdobe AnalyticsとAdobe Experience Platformに別々に販売されるので、必要に応じて、営業担当またはAdobeアカウントチームにお問い合わせください。
 
-1. **Adobe Analytics レポートを有効にする**<br>
+1. **Adobe Analytics レポートの有効化**<br>
 Analytics またはCustomer Journey Analyticsでレポートを有効にし、収集しているコンテンツや広告データを表示するには、レポートを有効にする必要があります。 [メディアレポートの有効化](/help/reporting/media-reports-enable.md)を参照してください。
 
 1. **Experience Cloud に Adobe Experience Platform ID サービスを実装する**

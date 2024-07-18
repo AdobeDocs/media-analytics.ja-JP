@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '254'
 ht-degree: 82%
 
 ---
@@ -31,4 +31,4 @@ TVSDK は既にメディア SDK と統合されているので、サポートさ
 
 >[!NOTE]
 >
->この実装パスでは、Media Analytics には一意の SKU が割り当てられ、メディアストリームに基づくサーバーコールに基づく価格モデルからモデルに変更されるので、新しい受注には、営業担当者/Adobeアカウントチームに連絡する必要があります。 また、TVSDK の購入について、営業担当者またはアカウントマネージャーにお問い合わせください。
+>この導入パスでは、Media Analytics には一意の SKU があり、サーバー呼び出しに基づく価格モデルからメディアストリームに基づくモデルに変わるので、お客様は営業担当者/Adobeアカウントチームに連絡して新しい販売注文にサインする必要があります。 また、TVSDK の購入について、営業担当者またはアカウントマネージャーにお問い合わせください。

@@ -7,8 +7,8 @@ feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
 source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
 workflow-type: tm+mt
-source-wordcount: '2329'
-ht-degree: 100%
+source-wordcount: '2328'
+ht-degree: 99%
 
 ---
 

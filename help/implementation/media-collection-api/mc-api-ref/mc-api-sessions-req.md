@@ -6,8 +6,8 @@ exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '130'
+workflow-type: tm+mt
+source-wordcount: '133'
 ht-degree: 100%
 
 ---
@@ -66,7 +66,7 @@ https://{uri}/api/v1/sessions
    * `ts` - タイムスタンプはミリ秒単位、協定世界時（UTC）である必要があります。
 * `eventType` (必須)
 
-   **有効な値：** `sessionStart`
+  **有効な値：** `sessionStart`
 * `params` (必須)
 * `customMetadata` (オプション)
 * `qoeData` (オプション)

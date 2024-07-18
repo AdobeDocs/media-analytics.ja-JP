@@ -6,8 +6,8 @@ exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '385'
+workflow-type: tm+mt
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 100%
 * **JavaScript およびブラウザーアプリ** - VA ライブラリは、`VisitorAPI` のプライバシーおよびオプトアウト設定に従います。トラッキングをオプトアウトするには、Visitor API サービスからオプトアウトする必要があります。オプトアウトおよびプライバシーについて詳しくは、[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) を参照してください。
 * **OTT アプリ（Chromecast、Roku）-** OTT SDK は、EU 一般データ保護規則（GDPR）対応の API を提供します。これらの API を使用して、データ収集および送信の `opt` ステータスフラグを設定し、ローカルに保存されている ID を取得できます。
 
-   >[!NOTE]
-   >
-   >プライバシーのステータスがオプトアウトに設定されている場合、メディアハートビートトラッキングコールも無効になります。
+  >[!NOTE]
+  >
+  >プライバシーのステータスがオプトアウトに設定されている場合、メディアハートビートトラッキングコールも無効になります。
 
-   次の設定を使用することで、Analytics データが特定のデバイスに送信されるかどうかを制御できます。
+  次の設定を使用することで、Analytics データが特定のデバイスに送信されるかどうかを制御できます。
 
    * `ADBMobile.json` 設定ファイル内の `privacyDefault` 設定。この設定は、コード内で変更されるまで保持される初期設定を制御します。
 
@@ -36,46 +36,49 @@ ht-degree: 100%
 
          * **Chromecast：**
 
-                ```
-                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                ```
-            
+               ```
+               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-                ```
-            
-            >[!IMPORTANT]
-            >
-            >ユーザーがトラッキングをオプトアウトすると、再度オプトインするまで、永続化されたデバイスデータと ID がすべて消去されます。
+               ```
+               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
+               ```
+           
+           >[!IMPORTANT]
+           >
+           >ユーザーがトラッキングをオプトアウトすると、再度オプトインするまで、永続化されたデバイスデータと ID がすべて消去されます。
+
       * **再度オプトインする：**
 
          * **Chromecast：**
 
-                ```
-                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                ```
-            
+               ```
+               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-                ```
-            * **現在の設定を返す：**
+               ```
+               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
+               ```
+           
+      * **現在の設定を返す：**
 
          * **Chromecast：**
 
-                ```
-                ADBMobile.config.getPrivacyStatus()
-                ```
-            
+               ```
+               ADBMobile.config.getPrivacyStatus()
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().getPrivacyStatus()
-                ```
-            `setPrivacyStatus` を使用してプライバシー設定を変更した後は、同じメソッドを使用して再度変更されるまで、またはアプリを完全にアンインストールして再度インストールするまで、変更が保持されます。
+               ```
+               ADBMobile().getPrivacyStatus()
+               ```
+           
+  `setPrivacyStatus` を使用してプライバシー設定を変更した後は、同じメソッドを使用して再度変更されるまで、またはアプリを完全にアンインストールして再度インストールするまで、変更が保持されます。
 
 ## 保存されている ID の取得（OTT アプリ）  {#retrieving-stored-identifiers-ott-apps}
 
@@ -98,12 +101,12 @@ ht-degree: 100%
 
 * **Chromecast：**
 
-   ```
-   ADBMobile.config.getAllIdentifiersAsync(callback)
-   ```
+  ```
+  ADBMobile.config.getAllIdentifiersAsync(callback)
+  ```
 
 * **Roku：**
 
-   ```
-   vids = ADBMobile().getAllIdentifiers()
-   ```
+  ```
+  vids = ADBMobile().getAllIdentifiers()
+  ```

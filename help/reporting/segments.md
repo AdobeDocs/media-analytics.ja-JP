@@ -7,8 +7,8 @@ feature: "Media Analytics, Segmentation"
 role: User, Admin, Data Engineer
 source-git-commit: b15a81dc8f08e94c9b80d66019f3d0fe95ef5a74
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 99%
+source-wordcount: '198'
+ht-degree: 100%
 
 ---
 

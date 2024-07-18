@@ -6,8 +6,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 93%
+source-wordcount: '620'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 **このコンテンツは現在の実装パスファイルに移動されました**
 
-Streaming Media Analytics には独自の SKU があり、サーバーコールに基づく価格モデルからビデオストリームに基づくモデルへの変更があるので、実装パスごとに営業担当者/Adobe担当者のアカウントチームに連絡して新しい受注に署名する必要があります。
+Streaming Media Analytics には一意の SKU があり、サーバー呼び出しに基づく価格モデルからビデオストリームに基づくモデルに変わるので、お客様は導入パスごとに営業担当者/Adobeアカウントチームに連絡して新しい販売注文にサインする必要があります。
 
 ## Adobe Media Analytics 拡張機能を使用した Adobe Experience Platform のデータ収集
 

@@ -6,7 +6,7 @@ exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
 
@@ -25,13 +25,13 @@ ht-degree: 100%
 | トリガー   | ハートビートメソッド  | ネットワーク呼び出し   | メモ   |
 | --- | --- | --- | --- |
 | ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart()` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| 広告が開始されます。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start、Heartbeat Ad Start |  |
+| 広告が開始されます。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start、Heartbeat Ad Start | |
 | 広告の最初のフレームが再生されます。 | `trackPlay()` | Heartbeat Ad Play | メインコンテンツの前に広告コンテンツを再生する場合、ハートビートは、広告の再生が開始する際に開始されます。 |
-| 広告が再生されます。 |  | Ad Heartbeats |  |
-| 広告がスキップされます。 | `trackEvent:trackAdSkip` |  | Ad Complete ネットワーク呼び出しはありません。 |
-| コンテンツが再生されます。 |  | Content Heartbeats | これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| 広告が再生されます。 | | Ad Heartbeats | |
+| 広告がスキップされます。 | `trackEvent:trackAdSkip` | | Ad Complete ネットワーク呼び出しはありません。 |
+| コンテンツが再生されます。 | | Content Heartbeats | これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | コンテンツの再生が完了します。 | `trackComplete()` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| セッションが終了します。 | `trackSessionEnd()` |  | `SessionEnd` |
+| セッションが終了します。 | `trackSessionEnd()` | | `SessionEnd` |
 
 ## パラメーター {#parameters}
 

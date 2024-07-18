@@ -15,7 +15,7 @@ ht-degree: 74%
 
 2021 年 8 月 31 日（PT）にバージョン 4 の Mobile SDK のサポートが終了するのに伴い、AdobeはiOSおよびAndroid用 Media Analytics Mobile SDK のサポートも終了しました。 （これには、Web （JS）用 Media Analytics SDK と、Chromecast や Roku などの OTT プラットフォームは含まれません。これらのプラットフォームは引き続きサポートされます）。
 
-つまり、Adobeでは、Media Analytics Mobile SDK の修正、OS 関連の更新プログラム、サポートを提供しなくなりました。 新しいExperience PlatformSDK に移行する際には、 [Media Analytics 拡張機能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) Adobeのストリーミングメディアコレクションアドオンを有効にするには、実装する必要があります。
+つまり、Adobeでは、Media Analytics Mobile SDK の修正、OS 関連の更新プログラム、サポートを提供しなくなりました。 新しいExperience PlatformSDK に移行する場合は、Adobeのストリーミングメディアコレクションアドオンを有効にするために [Media Analytics 拡張機能 ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) を実装する必要があります。
 
 
 ## 知っておきたいことトップ 5

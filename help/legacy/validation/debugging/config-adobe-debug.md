@@ -6,8 +6,8 @@ exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '651'
+workflow-type: tm+mt
+source-wordcount: '618'
 ht-degree: 100%
 
 ---
@@ -73,18 +73,17 @@ SSL 証明書をダウンロードしてインストールします。
    1. 次のどちらかの手順を実行します。
 
       * [ローカルコンピューターの信頼されたルート証明機関ストアへの証明書の追加](https://technet.microsoft.com/ja-jp/library/cc754841.aspx#BKMK_addlocal)
+
    1. Firefox の場合は、[Mozilla Firefox でのルート証明書のインストール](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)に記載されている手順を実行します。
 
       変更を確認するには、Firefox を終了して再度開く必要がある場合があります。
+
    **iOS デバイス**
    1. Adobe Debug を HTTP プロキシとして使用するように iOS デバイスを設定するには、**[!UICONTROL 設定アプリ]****／****[!UICONTROL Wifi 設定]**&#x200B;をクリックします。
 
    1. Safari では、[デバッグ](https://proxy.debug.adobe.com/ssl)に移動します。
 
       Safari に、SSL 証明書のインストールを求めるメッセージが表示されます。
-
-
-
 
 ## モバイルデバイスへの SSL 証明書のインストール {#install-sSL-for-mobile-device}
 

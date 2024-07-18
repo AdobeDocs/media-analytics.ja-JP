@@ -5,9 +5,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
 source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 99%
 
 ---
 
@@ -137,11 +137,11 @@ Media Analytics トラッキング実装は、2 つのタイプのトラッキ�
 
 * **Adobe Analytics（AppMeasurement）サーバー** トラッキングサーバーオプションについて詳しくは、[trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html)を参照してください。
 
-   >[!IMPORTANT]
-   >
-   >Experience Cloud 訪問者 ID サービスを使用するには、RDC トラッキングサーバーまたは RDC サーバーに解決される CNAME が必要です。
+  >[!IMPORTANT]
+  >
+  >Experience Cloud 訪問者 ID サービスを使用するには、RDC トラッキングサーバーまたは RDC サーバーに解決される CNAME が必要です。
 
-   Analytics トラッキングサーバーは「`.sc.omtrdc.net`」で終わるか CNAME である必要があります。
+  Analytics トラッキングサーバーは「`.sc.omtrdc.net`」で終わるか CNAME である必要があります。
 
 * ** Media Analytics（ハートビート）サーバー** これは、常に「`[your_namespace].hb.omtrdc.net`」形式になります。「`[your_namespace]`」の値は会社を指定し、アドビによって提供されます。
 
@@ -151,13 +151,13 @@ Media Analytics トラッキング実装は、2 つのタイプのトラッキ�
 
 | Video Analytics 1.x SDK |  開発者ガイド（PDF のみ） |
 | --- | --- |
-| Android | [Android 向け設定 ](vhl-dev-guide-v15_android.pdf) |
-| Apple TV | [Apple TV 向け設定 ](vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | [Chromecast 向け設定 ](chromecast_1.x_sdk.pdf) |
-| iOS | [iOS 向け設定 ](vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [JavaScript 向け設定 ](vhl-dev-guide-v15_js.pdf) |
+| Android | [Android 向け設定](vhl-dev-guide-v15_android.pdf) |
+| Apple TV | [Apple TV 用に設定 ](vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | [Chromecast 向け設定](chromecast_1.x_sdk.pdf) |
+| iOS | [iOS 向け設定](vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [JavaScript 向け設定](vhl-dev-guide-v15_js.pdf) |
 | Primetime | <ul> <li> Android： [Media Analytics の設定](https://helpx.adobe.com/jp/support/primetime.html) </li> <li> DHLS： [Media Analytics の設定](https://helpx.adobe.com/jp/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS： [Media Analytics の設定](https://helpx.adobe.com/jp/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
-| TVML | [TVML 向け設定 ](vhl_tvml.pdf) |
+| TVML | [TVML 向け設定](vhl_tvml.pdf) |
 
 ## Primetime メディア SDK のドキュメント {#primetime-docs}
 

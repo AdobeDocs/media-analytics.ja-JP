@@ -6,8 +6,8 @@ exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '355'
+workflow-type: tm+mt
+source-wordcount: '359'
 ht-degree: 100%
 
 ---
@@ -83,14 +83,14 @@ ht-degree: 100%
    * [JavaScript での標準広告メタデータの実装](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
    * **カスタムの広告メタデータ** - カスタムのメタデータの場合は、カスタムデータ変数の変数オブジェクトを作成し、現在の広告のデータを設定します。
 
-      ```js
-      /* Set custom context data */
-      var adCustomMetadata = {
-          affiliate: "Sample affiliate",
-          campaign: "Sample ad campaign",
-          creative: "Sample creative"
-      };
-      ```
+     ```js
+     /* Set custom context data */
+     var adCustomMetadata = {
+         affiliate: "Sample affiliate",
+         campaign: "Sample ad campaign",
+         creative: "Sample creative"
+     };
+     ```
 
 1. `MediaHeartbeat` インスタンスの `AdStart` イベントで `trackEvent()` を呼び出し、広告再生の追跡を開始します。
 

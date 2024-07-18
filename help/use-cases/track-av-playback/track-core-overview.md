@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 0d53e62069a65b252e004e21943ecdbd011a3658
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 
 ### スクラビングの終了時
 
-* を呼び出します `trackEvent(SeekComplete)`
+* `trackEvent(SeekComplete)` に電話
 変更のキャンセル
 
 ### バッファリングの開始時

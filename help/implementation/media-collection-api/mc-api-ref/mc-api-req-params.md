@@ -6,8 +6,8 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1329'
+workflow-type: tm+mt
+source-wordcount: '1337'
 ht-degree: 100%
 
 ---
@@ -128,7 +128,7 @@ Experience Cloud ユーザー ID（`MID` または `MCID` とも呼ばれます�
 
 ### appInstallationId
 
-* **`appInstallationId` 値を渡さない場合 -** MA バックエンドは MCID を生成しなくなり、その代わりに Adobe Analytics にその操作を任せます&#x200B;*。* MCID を送信する（MCID を取得できる場合）か、（必須の `appInstallationId` と共に）`marketingCloudOrgId` を送信してメディアコレクション API が MCID を生成してすべての呼び出しで送信できるようにすることをお勧めします。
+* **`appInstallationId` 値を渡さない場合 -** MA バックエンドは MCID を生成しなくなり、その代わりに Adobe Analytics にその操作を任せます&#x200B;*。*&#x200B;アドビのレコメンデーションは、MCID を送信する（MCID を取得できる場合）か、（必須の `appInstallationId` と共に）`marketingCloudOrgId` を送信してメディアコレクション API が MCID を生成してすべての呼び出しで送信できるようにすることです。
 
 * **`appInstallationId` 値を渡す場合 -** `appInstallationId` および&#x200B;*（*&#x200B;必須の&#x200B;*）* `marketingCloudOrgId` パラメーターの値を渡すと、MA バックエンドによって MCID を生成できます。自分で `appInstallationId` を渡す場合は、クライアント側でその値を維持する必要があります。この値はデバイス上のアプリに対して一意である必要があり、アプリが再インストールされない限り永続的である必要があります。
 
@@ -149,17 +149,17 @@ Experience Cloud ユーザー ID（`MID` または `MCID` とも呼ばれます�
 
 * **analytics.aid：**
 
-   このキーの値は、Analytics レガシーユーザー ID を表す文字列である必要があります。
+  このキーの値は、Analytics レガシーユーザー ID を表す文字列である必要があります。
 * **visitor.customerIDs：**
 
-   このキーの値は、次の形式のオブジェクトである必要があります。
+  このキーの値は、次の形式のオブジェクトである必要があります。
 
-   ```js
-   "<<insert your ID name here>>": {  
-     "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>>
-   }
-   ```
+  ```js
+  "<<insert your ID name here>>": {  
+    "id": " <<insert your id here>>",  
+     "authState": <<insert one of 0, 1, 2>>
+  }
+  ```
 
 `visitor.customerIDs` の値には、上記の形式のオブジェクトを任意の数だけ含めることができます。
 

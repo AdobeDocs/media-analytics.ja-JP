@@ -5,8 +5,8 @@ exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
-workflow-type: ht
-source-wordcount: '412'
+workflow-type: tm+mt
+source-wordcount: '383'
 ht-degree: 100%
 
 ---
@@ -145,99 +145,99 @@ ADBMediaHeartbeat* tracker =
 
 * 標準メディアメタデータ：
 
-   ```objective-c
-   ADBMediaObject *mediaObject =
-     [ADBMediaHeartbeat createMediaObjectWithName:@"media-name"
-                        mediaId:@"media-id"
-                        length:60
-                        streamType:ADBMediaHeartbeatStreamTypeVod
-                        mediaType:ADBMediaTypeVideo];
-   
-   // Standard metadata keys provided by adobe.
-   NSMutableDictionary *standardMetadata = [[NSMutableDictionary alloc] init];
-   [standardMetadata setObject:@"Sample show" forKey:ADBVideoMetadataKeySHOW];
-   [standardMetadata setObject:@"Sample season" forKey:ADBVideoMetadataKeySEASON];
-   [mediaObject setValue:standardMetadata forKey:ADBMediaObjectKeyStandardMediaMetadata];
-   
-   //Attaching custom metadata
-   NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
-   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-   
-   [tracker trackSessionStart:mediaObject data:mediaMetadata];
-   ```
+  ```objective-c
+  ADBMediaObject *mediaObject =
+    [ADBMediaHeartbeat createMediaObjectWithName:@"media-name"
+                       mediaId:@"media-id"
+                       length:60
+                       streamType:ADBMediaHeartbeatStreamTypeVod
+                       mediaType:ADBMediaTypeVideo];
+  
+  // Standard metadata keys provided by adobe.
+  NSMutableDictionary *standardMetadata = [[NSMutableDictionary alloc] init];
+  [standardMetadata setObject:@"Sample show" forKey:ADBVideoMetadataKeySHOW];
+  [standardMetadata setObject:@"Sample season" forKey:ADBVideoMetadataKeySEASON];
+  [mediaObject setValue:standardMetadata forKey:ADBMediaObjectKeyStandardMediaMetadata];
+  
+  //Attaching custom metadata
+  NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+  [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+  [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+  
+  [tracker trackSessionStart:mediaObject data:mediaMetadata];
+  ```
 
 * 標準の広告メタデータ：
 
-   ```objective-c
-   ADBMediaObject* adObject =
-     [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"]
-                        adId:[adData objectForKey:@"id"]
-                        position:[[adData objectForKey:@"position"] doubleValue]
-                        length:[[adData objectForKey:@"length"] doubleValue]];
-   
-   // Standard metadata keys provided by adobe.
-   NSMutableDictionary *standardMetadata =
-     [[NSMutableDictionary alloc] init];
-   [standardMetadata setObject:@"Sample Advertiser"
-                     forKey:ADBAdMetadataKeyADVERTISER];
-   [standardMetadata setObject:@"Sample Campaign"
-                     forKey:ADBAdMetadataKeyCAMPAIGN_ID];
-   [adObject setValue:standardMetadata
-                     forKey:ADBMediaObjectKeyStandardAdMetadata];
-   
-   //Attaching custom metadata
-   NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
-   [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
-   
-   [tracker trackEvent:ADBMediaHeartbeatEventAdStart
-            mediaObject:adObject
-            data:adDictionary];
-   ```
+  ```objective-c
+  ADBMediaObject* adObject =
+    [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"]
+                       adId:[adData objectForKey:@"id"]
+                       position:[[adData objectForKey:@"position"] doubleValue]
+                       length:[[adData objectForKey:@"length"] doubleValue]];
+  
+  // Standard metadata keys provided by adobe.
+  NSMutableDictionary *standardMetadata =
+    [[NSMutableDictionary alloc] init];
+  [standardMetadata setObject:@"Sample Advertiser"
+                    forKey:ADBAdMetadataKeyADVERTISER];
+  [standardMetadata setObject:@"Sample Campaign"
+                    forKey:ADBAdMetadataKeyCAMPAIGN_ID];
+  [adObject setValue:standardMetadata
+                    forKey:ADBMediaObjectKeyStandardAdMetadata];
+  
+  //Attaching custom metadata
+  NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
+  [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
+  
+  [tracker trackEvent:ADBMediaHeartbeatEventAdStart
+           mediaObject:adObject
+           data:adDictionary];
+  ```
 
 ### Launch 拡張機能
 
 * 標準メディアメタデータ：
 
-   ```objective-c
-   NSDictionary *mediaObject =
-     [ACPMedia createMediaObjectWithName:@"media-name"
-               mediaId:@"media-id"
-               length:60
-               streamType:ACPMediaStreamTypeVod
-               mediaType:ACPMediaTypeVideo];
-   
-   NSMutableDictionary *mediaMetadata =
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
-   [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
-   
-   // Custom metadata keys
-   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-   [_tracker trackSessionStart:mediaObject data:mediaMetadata];
-   ```
+  ```objective-c
+  NSDictionary *mediaObject =
+    [ACPMedia createMediaObjectWithName:@"media-name"
+              mediaId:@"media-id"
+              length:60
+              streamType:ACPMediaStreamTypeVod
+              mediaType:ACPMediaTypeVideo];
+  
+  NSMutableDictionary *mediaMetadata =
+    [[NSMutableDictionary alloc] init];
+  
+  // Standard metadata keys provided by adobe.
+  [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
+  [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
+  
+  // Custom metadata keys
+  [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+  [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+  [_tracker trackSessionStart:mediaObject data:mediaMetadata];
+  ```
 
 * 標準の広告メタデータ：
 
-   ```objective-c
-   NSDictionary* adObject =
-     [ACPMedia createAdObjectWithName:@"ad-name"
-               adId:@"ad-id"
-               position:1
-               length:15];
-   
-   NSMutableDictionary* adMetadata =
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
-   [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
-   
-   // Custom metadata keys
-   [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
-   
-   [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
-   ```
+  ```objective-c
+  NSDictionary* adObject =
+    [ACPMedia createAdObjectWithName:@"ad-name"
+              adId:@"ad-id"
+              position:1
+              length:15];
+  
+  NSMutableDictionary* adMetadata =
+    [[NSMutableDictionary alloc] init];
+  
+  // Standard metadata keys provided by adobe.
+  [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
+  [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
+  
+  // Custom metadata keys
+  [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
+  
+  [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
+  ```

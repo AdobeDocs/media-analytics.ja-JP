@@ -6,7 +6,7 @@ exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ params: { "media.channel": "channel-1" },
 
 `c.a.media.channel=channel-2`
 
-### 推奨
+### レコメンデーション
 
 カスタムメタデータには、別個の名前空間を使用することをお勧めします。 次に例を示します。
 

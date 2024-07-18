@@ -68,4 +68,4 @@ Adobeストリーミングメディアコレクションアドオンは、オー
 >Customer Journey Analytics を実装すると、Experience Edge または Analytics Data Connector（ADC）を使用してデータを Customer Journey Analytics に送信できます。
 
 
-様々な実装方法について詳しくは、 [Streaming Media Collection アドオンをAdobe AnalyticsまたはCustomer Journey Analyticsに実装する](/help/implementation/overview.md).
+様々な実装方法について詳しくは、[Adobe AnalyticsまたはCustomer Journey Analytics用のストリーミングメディアコレクション アドオンの実装 ](/help/implementation/overview.md) を参照してください。

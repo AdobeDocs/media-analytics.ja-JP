@@ -6,7 +6,7 @@ exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 100%
 
@@ -24,32 +24,32 @@ ht-degree: 100%
 
    * **Roku：**
 
-      ```js
-      ADBMobile().trackAction("myapp.ActionName", {})
-      ```
+     ```js
+     ADBMobile().trackAction("myapp.ActionName", {})
+     ```
 
    * **Chromecast：**
 
-      ```js
-      ADBMobile.analytics.trackAction("myapp.ActionName", {});
-      ```
+     ```js
+     ADBMobile.analytics.trackAction("myapp.ActionName", {});
+     ```
 
 1. アクションをカスタムイベントにマップします。
 
    * **Roku：**
 
-      ```js
-      dictionary = {} 
-      dictionary["myapp.social.SocialSource"] = "Twitter"  
-      ADBMobile().trackAction("myapp.SocialShare", dictionary)
-      ```
+     ```js
+     dictionary = {} 
+     dictionary["myapp.social.SocialSource"] = "Twitter"  
+     ADBMobile().trackAction("myapp.SocialShare", dictionary)
+     ```
 
    * **Chromecast：**
 
-      ```js
-      var dictionary = {}; 
-      dictionary["myapp.social.SocialSource"] = "Twitter"; 
-      ADBMobile.analytics.trackAction("myapp.SocialShare", dictionary);
-      ```
+     ```js
+     var dictionary = {}; 
+     dictionary["myapp.social.SocialSource"] = "Twitter"; 
+     ADBMobile.analytics.trackAction("myapp.SocialShare", dictionary);
+     ```
 
 各アクション追跡呼び出しで追加のコンテキストデータを送信することもできます。

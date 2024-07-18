@@ -6,8 +6,8 @@ exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1169'
+workflow-type: tm+mt
+source-wordcount: '1152'
 ht-degree: 100%
 
 ---
@@ -59,42 +59,42 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 
 | カテゴリ | メソッド名 | 説明 |
 |---|---|---|
-| **定数** |  |  |
+| **定数** | |  |
 |  | `sceneGraphConstants` | `SceneGraphConstants` を含むオブジェクトを返します。詳しくは、前出の表を参照してください。 |
-|  |  |  |
-| **デバッグのログ** |  |  |
+|  | | |
+| **デバッグのログ** | | |
 |  | `setDebugLogging` | ADBMobile SDK でデバッグのログを設定する SceneGraph API です。 |
 |  | `getDebugLogging` | ADBMobile SDK からデバッグのログを取得する SceneGraph API です。 |
-|  | 詳しくは、レガシー SDK の、デバッグのログに関する節を参照してください。 |  |
-|  |  |  |
-| **プライバシーステータス／オプトアウト** |  |  |
+|  | 詳しくは、レガシー SDK の、デバッグのログに関する節を参照してください。 | |
+|  | | |
+| **プライバシーステータス／オプトアウト** | | |
 |  | `setPrivacyStatus` | ADBMobile SDK でプライバシーステータスを設定する SceneGraph API です。 |
 |  | `getPrivacyStatus` | ADBMobile SDK からプライバシーステータスを取得する SceneGraph API です。 |
-|  | 詳しくは、レガシー SDK の、オプトアウト／プライバシーステータスに関する節を参照してください。 |  |
-|  |  |  |
-| **Analytics** |  |  |
+|  | 詳しくは、レガシー SDK の、オプトアウト／プライバシーステータスに関する節を参照してください。 | |
+|  | | |
+| **Analytics** | | |
 |  | `trackState` | ADBMobile SDK のステータスを追跡する SceneGraph API です。 |
 |  | `trackAction` | ADBMobile SDK のアクションを追跡する SceneGraph API です。 |
 |  | `trackingIdentifier` | ADBMobile SDK から追跡 ID を取得する SceneGraph API です。 |
 |  | `userIdentifier` | ADBMobile SDK からユーザー ID を取得する SceneGraph API です。 |
 |  | `setUserIdentifier` | ADBMobile SDK でユーザー ID を設定する SceneGraph API です。 |
 |  | `getAllIdentifiers` | Roku SDK が認識している永続的なユーザー ID をすべて取得する SceneGraph API です。 |
-|  | 詳しくは、レガシー SDK の Analytics に関する節を参照してください。 |  |
-|  |  |  |
-| **Experience Cloud** |  |  |
+|  | 詳しくは、レガシー SDK の Analytics に関する節を参照してください。 | |
+|  | | |
+| **Experience Cloud** | | |
 |  | `visitorSyncIdentifiers` | ADBMobile SDK で Experience Cloud ID を同期する SceneGraph API です。 |
 |  | `visitorMarketingCloudID` | ADBMobile SDK から訪問者 Experience Cloud ID を取得する SceneGraph API です。 |
-|  | 詳しくは、レガシー SDK の、Experience Cloud に関する節を参照してください。 |  |
-|  |  |  |
-| **Audience Manager** |  |  |
+|  | 詳しくは、レガシー SDK の、Experience Cloud に関する節を参照してください。 | |
+|  | | |
+| **Audience Manager** | | |
 |  | `audienceSubmitSignal` | 特性を持つオーディエンス管理シグナルを送信する SceneGraph API です。 |
 |  | `audienceVisitorProfile` | ADBMobile SDK から Audience Manager の訪問者プロファイルを取得する SceneGraph API です。 |
 |  | `audienceDpid` | ADBMobile SDK からオーディエンス DPID を取得する SceneGraph API です。 |
 |  | `audienceDpuuid` | ADBMobile SDK からオーディエンス DPUUID を取得する SceneGraph API です。 |
 |  | `audienceSetDpidAndDpuuid` | ADBMobile SDK でオーディエンス DPID およびオーディエンス DPUUID を設定する SceneGraph API です。 |
-|  | 詳しくは、レガシー SDK の、Audience Manager に関する節を参照してください。 |  |
-|  |  |  |
-| **MediaHeartbeat** |  |  |
+|  | 詳しくは、レガシー SDK の、Audience Manager に関する節を参照してください。 | |
+|  | | |
+| **MediaHeartbeat** | | |
 |  | `mediaTrackLoad` | MediaHeartbeat 追跡用にビデオコンテンツを読み込む SceneGraph API です。 |
 |  | mediaTrackStart | MediaHeartbeat を使用してビデオトラッキングセッションを開始する SceneGraph API です。 |
 |  | `mediaTrackUnload` | MediaHeartbeat 追跡からビデオコンテンツをアンロードする SceneGraph API です。 |
@@ -105,7 +105,7 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 |  | mediaTrackEvent | 追跡中の再生イベントを追跡する SceneGraph API です。例：広告、チャプター。 |
 |  | `mediaUpdatePlayhead` | ビデオのトラッキング中に MediaHeartbeat に再生ヘッドの更新を送信する SceneGraph API です。 |
 |  | `mediaUpdateQoS` | ビデオのトラッキング中に MediaHeartbeat に QoS の更新を送信する SceneGraph API です。 |
-|  | 詳しくは、レガシー SDK の、MediaHeartbeat に関する節を参照してください。 |  |
+|  | 詳しくは、レガシー SDK の、MediaHeartbeat に関する節を参照してください。 | |
 
 ### SceneGraphConstants
 
@@ -193,7 +193,7 @@ API 署名：`ADBMobile().sgConstants()`
 |---|---|---|
 | バージョン管理 | `version` | AdobeMobileLibrary バージョン情報を取得する定数 |
 | プライバシー／オプトアウト | `PRIVACY_STATUS_OPT_IN` | オプトインのプライバシーステータスを示す定数 |
-|  | `PRIVACY_STATUS_OPT_OUT` | オプトアウトのプライバシーステータスを示す定数 |
+|   | `PRIVACY_STATUS_OPT_OUT` | オプトアウトのプライバシーステータスを示す定数 |
 | MediaHeartbeat 定数 | <br/><br/>[メディアハートビートメソッド](/help/use-cases/track-av-playback/track-core/track-core-roku.md)ページの定数を参照してください。 | メディアハートビート API でこれらの定数を使用します。 |
 | 標準メタデータ | <br/><br/>[標準メタデータパラメーター](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)ページの定数を参照してください。 | 標準ビデオ／広告メタデータを MediaHeartbeat API にアタッチするにはこれらの定数を使用します。 |
 

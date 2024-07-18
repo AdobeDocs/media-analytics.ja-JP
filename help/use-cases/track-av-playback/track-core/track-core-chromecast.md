@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 93%
+source-wordcount: '719'
+ht-degree: 88%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 93%
 
 1. **再生ヘッド値を更新**
 
-   再生ヘッドが変更されたときは、`mediaUpdatePlayhead` の位置の値を複数回更新します。<br /> ビデオオンデマンド（VOD）の場合、値はメディアアイテムの開始時からの秒数で指定されます。<br /> ライブストリーミングでは、プレーヤーがコンテンツのデュレーションに関する情報を提供しない場合、その日の午前0時（UTC）からの秒数を指定できます。 
+   再生ヘッドが変更されたときは、`mediaUpdatePlayhead` の位置の値を複数回更新します。<br /> ビデオオンデマンド（VOD）の場合、値はメディアアイテムの開始時からの秒数で指定されます。<br /> ライブストリーミングでは、プレーヤーがコンテンツのデュレーションに関する情報を提供しない場合、その日の午前 0 時（UTC）からの秒数を指定できます。
 
    ```
    ADBMobile().media.updatePlayhead(position)
@@ -99,9 +99,9 @@ ht-degree: 93%
 
    >[!NOTE]
    >
-   >を呼び出す際は、次の点を考慮してください。 `media.updatePlayhead` API:
-   >* プログレスマーカーを使用する場合、コンテンツのデュレーションが必要です。また、再生ヘッドは、メディアアイテムの開始時からの秒数（0 から始まる）で更新する必要があります。
-   >* メディア SDK を使用する場合は、 `media.updatePlayhead` 1 秒に 1 回以上の API。
+   >`media.updatePlayhead` API を呼び出す際は、次の点を考慮してください。
+   >* プログレスマーカーを使用する場合、コンテンツのデュレーションが必要です。また、再生ヘッドはメディアアイテムの開始時からの（0 から始まる）秒数で更新する必要があります。
+   >* Media SDK を使用する場合は、`media.updatePlayhead` API を 1 秒に 1 回以上呼び出す必要があります。
 
 1. **再生の完了を追跡**
 

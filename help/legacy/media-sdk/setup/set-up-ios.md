@@ -165,9 +165,9 @@ iOS デバイス用の Streaming Media Collection アドオンの設定方法に
 
 次の手順を Xcode プロジェクトで実行します。このガイドは、プロジェクトのターゲットの 1 つが tvOS 用の Apple TV アプリであることを想定して記述されています。
 
-1. をドラッグ `VideoHeartbeat_TV.a` ライブラリファイルをプロジェクトのに `lib` フォルダー。
+1. `VideoHeartbeat_TV.a` ライブラリファイルをプロジェクトの `lib` フォルダーにドラッグします。
 
-1. が含まれる **[!UICONTROL ビルドフェーズ]** tvOS アプリのターゲットの「」タブで、 **[!UICONTROL バイナリとライブラリのリンク]** をセクションして、次のライブラリを追加します。
+1. tvOS アプリのターゲットの「**[!UICONTROL ビルドフェーズ]**」タブで、「**[!UICONTROL バイナリをライブラリとリンク]**」セクションを展開し、次のライブラリを追加します。
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

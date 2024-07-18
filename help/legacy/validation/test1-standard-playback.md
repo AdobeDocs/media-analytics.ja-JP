@@ -6,8 +6,8 @@ exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '838'
+workflow-type: tm+mt
+source-wordcount: '847'
 ht-degree: 100%
 
 ---
@@ -43,41 +43,40 @@ Media Analytics 実装には、次の 2 つのタイプのトラッキングコ�
 
    * **Adobe Analytics Start 呼び出し**
 
-      | パラメーター | 値（サンプル） |
-      |---|---|
-      | `pev2` | ms_s |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | パラメーター | 値（サンプル） |
+     |---|---|
+     | `pev2` | ms_s |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Web サイトページ呼び出し**
 
-      | パラメーター | 値（サンプル） |
-      |---|---|
-      | `mid` | 30250035503789876473484580554595324209 |
+     | パラメーター | 値（サンプル） |
+     |---|---|
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **ライフサイクル呼び出し**
 
-      | パラメーター | 値（サンプル） |
-      |---|---|
-      | `pev2` | ADBINTERNAL:Lifecycle |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | パラメーター | 値（サンプル） |
+     |---|---|
+     | `pev2` | ADBINTERNAL:Lifecycle |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Media Analytics Start 呼び出し**
 
-      | パラメーター | 値（サンプル） |
-      |---|---|
-      | `s:event:type` | start |
+     | パラメーター | 値（サンプル） |
+     |---|---|
+     | `s:event:type` | start |
 
-      >[!NOTE]
-      >
-      >Media Analytics Start 呼び出し（`s:event:type=start`）時に `mid` 値が存在しないことがあります。これは問題ありません。Media Analytics Play 呼び出し（`s:event:type=play`）までは表示されないことがあります。
+     >[!NOTE]
+     >
+     >Media Analytics Start 呼び出し（`s:event:type=start`）時に `mid` 値が存在しないことがあります。これは問題ありません。Media Analytics Play 呼び出し（`s:event:type=play`）までは表示されないことがあります。
 
    * **Media Analytics Play 呼び出し**
 
-      | パラメーター | 値（サンプル） |
-      |---|---|
-      | `s:event:type` | play |
-      | `s:user:mid` | 30250035503789876473484580554595324209 |
-
+     | パラメーター | 値（サンプル） |
+     |---|---|
+     | `s:event:type` | play |
+     | `s:user:mid` | 30250035503789876473484580554595324209 |
 
 1. **メディアプレーヤーを開始する**
 
@@ -107,13 +106,11 @@ Media Analytics 実装には、次の 2 つのタイプのトラッキングコ�
 
    * **広告再生**
 
-      広告の再生中、Media Analytics SDK は、1 秒ごとにタイプ「ad」の再生イベントを Media Analytics サーバーに送信します。
+     広告の再生中、Media Analytics SDK は、1 秒ごとにタイプ「ad」の再生イベントを Media Analytics サーバーに送信します。
 
    * **広告完了**
 
-      広告の 100％の時点で、Media Analytics Complete 呼び出しが送信される必要があります。
-
-
+     広告の 100％の時点で、Media Analytics Complete 呼び出しが送信される必要があります。
 
 1. **広告再生を 30 秒間一時停止します（可能な場合）。** **広告一時停止**
 
@@ -134,7 +131,7 @@ Media Analytics 実装には、次の 2 つのタイプのトラッキングコ�
    * 再生ヘッドの位置は、1 回の Play 呼び出しにつき 10 秒ずつ増やす必要があります。
    * `l:event:duration` の値は、前回のトラッキングコールからのミリ秒数を表し、10 秒の呼び出しのたびにほぼ同じ値である必要があります。
 
-      呼び出しパラメーターおよびメタデータについては、[テスト呼び出しの詳細](/help/legacy/validation/test-call-details.md#play-main-content)を参照してください。
+     呼び出しパラメーターおよびメタデータについては、[テスト呼び出しの詳細](/help/legacy/validation/test-call-details.md#play-main-content)を参照してください。
 
 1. **再生中に 30 秒以上一時停止します。** メディアプレーヤーの一時停止時、10 秒ごとに一時停止イベント呼び出しが SDK によって Media Analytics サーバーに送信されます。一時停止が終わったら、再生イベントを再開する必要があります。
 

@@ -15,7 +15,7 @@ ht-degree: 92%
 
 このページの情報では、web スタンドアロン SDK のインストール方法と JavaScript のセットアップ方法について説明します。
 
-または、の説明に従って、Adobe Medium Analytics 拡張機能を使用してAdobe Streaming Media Collection アドオンを実装することもできます。 [Media Analytics 拡張機能を使用した Analytics の実装](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+または、[Media Analytics 拡張機能を使用した Analytics の実装 ](/help/implementation/media-sdk/setup/web-implementation-tags.md) で説明しているように、Adobe Medium Analytics 拡張機能を使用してAdobeのストリーミングメディアコレクションアドオンを実装することもできます。
 
 ## 前提条件 {#prerequesites}
 

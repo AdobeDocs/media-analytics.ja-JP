@@ -6,8 +6,8 @@ exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '520'
+workflow-type: tm+mt
+source-wordcount: '526'
 ht-degree: 100%
 
 ---
@@ -24,11 +24,11 @@ ht-degree: 100%
 | --- | --- | --- | --- |
 | ユーザーが[!UICONTROL 再生]をクリックする | trackSessionStart | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
 | コンテンツ再生の最初のフレーム。 | trackPlay | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
-| コンテンツ再生 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| コンテンツ再生 | | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | セッション 1 終了（Episode 1 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | 「Complete」は、最初のエピソードの session1 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
 | Episode 2 開始（Session 2 開始） | trackSessionStart | Analytics Content Start、Heartbeat Content Start | これは、ユーザーが最初のエピソードを視聴し、別のエピソードまで視聴し続けたためです |
 | メディアの最初のフレーム | trackPlay | Heartbeat Content Play | このメソッドは、タイマーをトリガーし、これ以降、ハートビートは、再生が続く限り、10 秒ごとに送信されます。 |
-| コンテンツ再生 |  | Content Heartbeats |  |
+| コンテンツ再生 | | Content Heartbeats | |
 | セッション終了（Episode2 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | 「Complete」は、2 番目のエピソードの session2 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
 
 ## パラメーター {#parameters}

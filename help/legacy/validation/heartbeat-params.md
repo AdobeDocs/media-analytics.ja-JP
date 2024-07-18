@@ -26,7 +26,7 @@ Media Analytics（ハートビート）サーバーでアドビが収集して�
 | `l:event:duration` | メディア SDK | （必須）<br/><br/>この値は、プレーヤーではなく、メディア SDK によって内部的に設定されます（ミリ秒単位）。バックエンドで滞在時間の指標を算出するのに使用されます。例えば a.media.totalTimePlayed は、生成されたすべての再生（type=play）ハードビートの総時間として算出されます。<br/>*注意：*「状態変更イベント」（例えば、type=complete、type=chapter_complete または type=bitrate_change）である特定のイベントに対して、このパラメーターは、0 に設定されます。 |
 | `l:event:playhead` | VideoInfo | （必須）<br/><br/>イベントが記録された場合、再生ヘッドは、現在アクティブなアセット（メインまたは広告）の内部にあります。 |
 | `s:event:sid` | メディア SDK | （必須）<br/><br/>セッション ID（ランダムに生成された文字列）。特定のセッションのすべてのイベント（ビデオ + 広告）は同じである必要があります。 |
-| `l:asset:duration` / `l:asset:length` <br/>（長さの期間から名前を変更） | VideoInfo | （必須）<br/><br/>メインアセットのビデオアセットの長さ。 |
+| `l:asset:duration` / `l:asset:length` <br/> （長さの期間から名前を変更） | VideoInfo | （必須）<br/><br/>メインアセットのビデオアセットの長さ。 |
 | `s:asset:publisher` | MediaHeartbeatConfig | （必須）<br/><br/>アセットの投稿者。 |
 | `s:asset:video_id` | VideoInfo | （必須）<br/><br/>投稿者のカタログでビデオを一意に識別する ID。 |
 | `s:asset:type` | メディア SDK | （必須）<br/><br/>アセットのタイプ（メインまたは広告）。 |

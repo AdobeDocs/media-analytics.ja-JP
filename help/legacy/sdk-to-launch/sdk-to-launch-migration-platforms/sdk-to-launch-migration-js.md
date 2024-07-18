@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 73ef5e55c9ab57a5a2ba22aa1e4b646c530cc53f
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '415'
 ht-degree: 100%
 
 ---

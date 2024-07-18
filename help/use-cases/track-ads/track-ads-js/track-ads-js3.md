@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '398'
 ht-degree: 88%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 88%
                                    <LENGTH>);
    ```
 
-1. （オプション）コンテキストデータ変数を使用して標準または広告メタデータをメディアトラッキングセッションにアタッチします。
+1. （任意）コンテキストデータ変数を使用して、メディアトラッキングセッションに標準メタデータや広告メタデータを添付します。
 
    * [JavaScript での標準広告メタデータの実装](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
    * **カスタムの広告メタデータ** - カスタムのメタデータの場合は、カスタムデータ変数の変数オブジェクトを作成し、現在の広告のデータを設定します。
@@ -131,11 +131,11 @@ ht-degree: 88%
 
 詳しくは、追跡シナリオの[プリロール広告のある VOD 再生](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)を参照してください。
 
-## 詳細な広告トラッキング
+## きめ細かい広告トラッキング
 
-デフォルトの広告 ping 間隔は、 `10 seconds`.
+デフォルトの広告 ping 間隔は `10 seconds` です。
 
-詳細な広告トラッキングを設定して、 `1 second` 広告トラッキング。
+きめ細かい広告トラッキングを設定して、`1 second` しい広告トラッキングを有効にすることができます。
 
 >[!IMPORTANT]
 >

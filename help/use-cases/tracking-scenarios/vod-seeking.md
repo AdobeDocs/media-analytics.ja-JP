@@ -6,7 +6,7 @@ exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 
@@ -24,11 +24,11 @@ ht-degree: 100%
 | --- | --- | --- | --- |
 | ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
 | コンテンツ再生の最初のフレーム。 | `trackPlay` | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
-| コンテンツ再生 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| ユーザーがコンテンツでシーク操作を開始する | `trackSeekStart` |  | シークが完了する（例えば、`trackSeekComplete`）まで、ハートビートは終わりません。 |
-| シーク操作が完了する | `trackSeekComplete` |  | シークが完了したので、ハートビートは終わり始めます。ヒント：再生ヘッド値は、シーク後に修正された新しい再生ヘッドを表す必要があります。 |
+| コンテンツ再生 | | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| ユーザーがコンテンツでシーク操作を開始する | `trackSeekStart` | | シークが完了する（例えば、`trackSeekComplete`）まで、ハートビートは終わりません。 |
+| シーク操作が完了する | `trackSeekComplete` | | シークが完了したので、ハートビートは終わり始めます。ヒント：再生ヘッド値は、シーク後に修正された新しい再生ヘッドを表す必要があります。 |
 | コンテンツの完了 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| セッション終了 | `trackSessionEnd` |  | `SessionEnd` |
+| セッション終了 | `trackSessionEnd` | | `SessionEnd` |
 
 ## サンプルコード {#sample-code}
 

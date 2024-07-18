@@ -6,9 +6,9 @@ exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -27,12 +27,14 @@ ht-degree: 100%
 
       * [!UICONTROL User Name ]および[!UICONTROL  Shared Secret] - これらのフィールドはオプションですが、Adobe Debug に Web サービス API の資格情報を追加すると、レポートスイートの変数名と変数設定を表示できます。
 
-         次のいずれかの方法でアクセスできます。
+        次のいずれかの方法でアクセスできます。
 
          * [!UICONTROL Analytics／管理者／カンパニー設定／Web サービス]
-         * [!UICONTROL Analytics／管理者／ユーザー管理／ユーザー／個々のユーザーの設定]新しいユーザーの Web サービス API の資格情報を作成するには、[!UICONTROL ユーザー管理]でユーザーを **Web サービスアクセス**&#x200B;ユーザーグループに追加します。
+         * [!UICONTROL Analytics /管理者/ User Management / ユーザー/個々のユーザーの設定 ] 新しいユーザーの Web サービス API 資格情報を作成するには、[!UICONTROL User Management] で、ユーザーを **Web サービスアクセス** ユーザーグループに追加します。
+
       * [!UICONTROL Default Endpoint] - このフィールドのデータはアドビが提供します。変更することはできません。
       * [!UICONTROL Extra Endpoint] - CNAME を使用している場合に、`metrics.companyname.com` などのトラッキングサーバーの `CNAMES` を追加します。
+
    * **ビデオハートビート（Media Analytics）**
 
       * [!UICONTROL Default Endpoint] - このフィールドのデータはアドビが提供します。変更することはできません。
