@@ -4,10 +4,10 @@ description: Streaming Media Collection アドオンをExperience PlatformEdge�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 3963cd62b7c190464fe5314198107f273a225503
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 9%
+source-wordcount: '2154'
+ht-degree: 8%
 
 ---
 
@@ -111,6 +111,30 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    1. [!UICONTROL **確認**]/[!UICONTROL **保存**] を選択して、変更を保存します。
 
++++
+
+1. （オプション）カスタムメタデータをスキーマに追加できます。 これにより、特定のニーズやコンテキストに合わせてカスタマイズできる、ユーザー定義のメタデータを追加で含めることができます。 この柔軟性は、既存のスキーマが目的のデータポイントをカバーしていないシナリオで役立ちます。 （Media Edge API でカスタムメタデータを操作することもできます。 詳しくは、[Media Edge API を使用したカスタムメタデータの作成 ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/) を参照してください。
+
++++ スキーマにカスタムメタデータを追加する方法については、こちらを参照してください。
+
+   1. [!UICONTROL **アカウント情報**]/[!UICONTROL **割り当てられた組織**]/[!UICONTROL _**組織名**_]/[!UICONTROL **テナント**] を選択して、組織のテナントの名前を見つけます。
+
+      これらのカスタムフィールドは、このパスを通じて受け取られます。 （例：テナント名：_dcbl → myCustomField パス：_dcbl.myCustomField。）
+
+   1. 定義したメディアスキーマにカスタムフィールドグループを追加します。
+
+      ![add-custom-metadata](assets/add-custom-metadata-fieldgroup.png)
+
+   1. 追跡するカスタムフィールドをフィールドグループに追加します。
+
+      ![add-custom-metadata](assets/add-custom-fields.png)
+
+   1. リクエストペイロードのカスタムフィールドに [ 生成されたパスを使用 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) します。
+
+      ![add-custom-metadata](assets/custom-fields-path.png)
+
++++
+
 1. [Adobe Experience Platformでデータセットを作成 ](#create-a-dataset-in-adobe-experience-platform) を参照してください。
 
 ## Adobe Experience Platformでのデータセットの作成
@@ -135,8 +159,8 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
      >[!IMPORTANT]
      >
-         >     「[!UICONTROL **保存してマッピングを追加**]」を選択しないでください。選択すると、タイムスタンプフィールドにマッピングエラーが発生します。
-     
+     >「[!UICONTROL **保存してマッピングを追加**]」を選択しないでください。選択すると、タイムスタンプフィールドにマッピングエラーが発生します。
+
      ![ データストリームの作成とスキーマの選択 ](assets/datastream-create-schema.png)
 
    * Adobe AnalyticsとCustomer Journey Analyticsのどちらを使用しているかに応じて、次のいずれかのサービスをデータストリームに追加します。
@@ -151,7 +175,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
      ![Adobe Analytics サービスを追加する ](assets/datastream-add-service.png)
 
-   * 「[!UICONTROL **詳細オプション**]」を展開し、「[!UICONTROL **Media Analytics**]」オプションを有効にします。
+      * 「[!UICONTROL **詳細オプション**]」を展開し、「[!UICONTROL **Media Analytics**]」オプションを有効にします。
 
      ![Media Analytics オプション ](assets/datastream-media-check.png)
 
@@ -164,7 +188,6 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 >[!NOTE]
 >
 >次の手順は、Customer Journey Analyticsを使用する場合にのみ必要です。
-
 
 1. [Customer Journey Analyticsでのデータストリームの設定 ](#configure-a-datastream-in-adobe-experience-platform) の説明に従って、データストリームが作成されていることを確認します。
 
@@ -301,11 +324,22 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    ![ メディア再生滞在時間パネル ](assets/media-playback-time-spent-panels.png)
 
+1. （条件付き） [Adobe Experience Platformでのスキーマの設定 ](#set-up-the-schema-in-adobe-experience-platform) の手順 8 でスキーマにカスタムメタデータを追加した場合は、Customer Journey Analyticsガイドの [ 永続性コンポーネント設定 ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) で説明しているように、カスタムフィールドに永続性を設定する必要があります。
+
+   Customer Journey Analyticsにデータが送信されると、カスタムユーザー ID ディメンションを使用できるようになります。
+
+   ![setup-custom-metadata](assets/custom-metadata-dimension.png)
+
+   >[!NOTE]
+   >
+   >Adobe Analyticsをデータストリームのアップストリームとして設定した場合、カスタムメタデータも、スキーマに設定した名前（テナントのプレフィックスを除く（例：myCustomField）で ContextData に存在します。 これにより、[ 処理ルールの作成 ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) など、ContextData で使用できるすべてのAdobe Analytics機能を使用できます。
+
 1. [ プロジェクトの共有 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en) の説明に従って、プロジェクトを共有します。
 
    >[!NOTE]
    >
    >   共有したいユーザーが使用できない場合は、そのユーザーが、Adobe Admin ConsoleのCustomer Journey Analyticsへのユーザーおよび管理者アクセス権を持っていることを確認してください。
+
 
 1. [Experience PlatformのEdgeへのデータの送信 ](#send-data-to-experience-platform-edge) を続けます。
 
