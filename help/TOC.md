@@ -5,10 +5,10 @@ user-guide-title: ストリーミングメディアコレクションアドオ�
 breadcrumb-title: ストリーミングメディアコレクションガイド
 user-guide-description: ストリーミングメディアを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 97%
       + [複数プレーヤーのステートトラッキング](use-cases/player-state-tracking/multiple-player-states.md)
       + [プレーヤーステートトラッキングの例](use-cases/player-state-tracking/player-state-examples.md)
    + [ダウンロードされたコンテンツの追跡 ](use-cases/track-downloaded-content.md)
-   + [Federated Analytics ](use-cases/federated-analytics.md)
+   + [Federated Media](use-cases/federated-media.md)
    + [再生中のアプリケーション割り込みの処理](use-cases/cookbook/app-interrupts.md)
    + [メディアストリームのアトリビューション](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [非アクティブなセッションの再開](use-cases/cookbook/resuming-inactive.md)

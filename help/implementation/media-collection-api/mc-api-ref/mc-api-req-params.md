@@ -5,7 +5,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 100%
@@ -143,7 +143,7 @@ Experience Cloud ユーザー ID（`MID` または `MCID` とも呼ばれます�
 
 ### visitor.marketingCloudOrgId
 
-このパラメーターは、MCID が指定されていない場合に MCID の生成に必要であるだけでなく、（どの Media Analytics が[フェデレーションルールの照合](/help/use-cases/federated-analytics.md)を実行するかに基づいて）Publisher ID の値としても使用されます。
+このパラメーターは、MCID が指定されていない場合に MCID の生成に必要であるだけでなく、（どの Media Analytics が[フェデレーションルールの照合](/help/use-cases/federated-media.md)を実行するかに基づいて）Publisher ID の値としても使用されます。
 
 ### Analytics レガシーユーザー ID（aid）および宣言済みユーザー ID（customerIDs）
 
