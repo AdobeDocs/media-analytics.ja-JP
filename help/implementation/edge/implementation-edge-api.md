@@ -4,7 +4,7 @@ description: Media Analytics とExperience Platform Edge API のインストー�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
@@ -23,4 +23,4 @@ Edge API のカスタム実装の実行方法については、次の資料を�
 
 * [Media Edge API トラブルシューティングガイド ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
-* [Media Edge API 用の Open API 仕様ファイルの使用 ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/swagger/)
+* [Media Edge API 用の Open API 仕様ファイルの使用 ](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
