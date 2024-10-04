@@ -5,10 +5,10 @@ uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 4b120beb888923027ba4ec71daea0ecc53fe21c7
 workflow-type: tm+mt
 source-wordcount: '2023'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 96%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK キー：**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/> media.ad.podPosition </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 1 </li><li> **説明：**<br/>&#x200B;親広告ブレーク内の広告の位置（インデックス）。最初の広告のインデックスは 0、2 番目の広告のインデックスは 1（以下同様）。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.ad.<br/>podPosition） </li> <li> **ハートビート：**<br/> （<code>s:asset:pod_position</code>） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;ポッド位置の広告 </li> <li> **コンテキストデータ：**<br/>（a.media.ad.<br/>podPosition） </li> <li> **データフィード：**<br/> videoadinpod </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.ad.podPosition） </li> <li> **XDM フィールドパス**<br/> a: dvertising.adAssetViewDetails.index </li> <li> **コレクション XDM フィールドのパス：**<br/> mediaCollection.advertisingDetails.index </li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.advertisingDetails.index </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/> media.ad.podPosition </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/>&#x200B;広告開始、広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 1 </li><li> **説明：**<br/>&#x200B;親広告ブレーク内の広告の位置（インデックス）。最初の広告のインデックスは 0、2 番目の広告のインデックスは 1（以下同様）。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.ad.<br/>podPosition） </li> <li> **ハートビート：**<br/> （<code>s:asset:pod_position</code>） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/> eVar </li> <li> **有効期限：**<br/>&#x200B;ヒット時 </li> <li> **レポート名：**<br/>&#x200B;ポッド位置の広告 </li> <li> **コンテキストデータ：**<br/>（a.media.ad.<br/>podPosition） </li> <li> **データフィード：**<br/> videoadinpod </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.ad.podPosition） </li> <li> **XDM フィールドパス**<br/> a: dvertising.adAssetViewDetails.index </li> <li> **コレクション XDM フィールドのパス：**<br/> mediaCollection.advertisingDetails.podPosition </li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.advertisingDetails.podPosition </li> </ul> |
 
 
 
@@ -91,7 +91,7 @@ ht-degree: 96%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK キー：**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/> media.ad.podPosition </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/> </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 1 </li><li> **説明：**<br/>&#x200B;コンテンツ内の広告ブレークのインデックス（1 から開始）。このプロパティは、メディア SDK でポッド ID を生成するために **のみ** 使用します。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> </li> <li> **ハートビート：**<br/> </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;不可 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/> </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/> </li> <li> **XDM フィールドパス**<br/>：advertising.adAssetViewDetails.index </li> <li> **コレクション XDM フィールドのパス：**<br/> mediaCollection.advertisingPodDetails.index </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API キー：**<br/> media.ad.podIndex </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;数値 </li> <li> **送信タイミング：**<br/> </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> 1 </li><li> **説明：**<br/>&#x200B;コンテンツ内の広告ブレークのインデックス（1 から開始）。このプロパティは、メディア SDK でポッド ID を生成するために **のみ** 使用します。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> </li> <li> **ハートビート：**<br/> </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;不可 </li> <li> **予約変数：**<br/>&#x200B;なし </li> <li> **レポート名：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/> </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/> </li> <li> **XDM フィールドパス**<br/>：advertising.adAssetViewDetails.index </li> <li> **コレクション XDM フィールドのパス：**<br/> mediaCollection.advertisingPodDetails.index </li> </ul> |
 
 
 
