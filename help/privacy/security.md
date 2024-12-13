@@ -1,13 +1,13 @@
 ---
 title: セキュリティ
-description: ストリーミングメディアコレクションアドオンに関連するセキュリティについて説明します
+description: ストリーミングメディアコレクションに関連するセキュリティについて説明します
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: a301612f-5019-40c3-af40-d608cd320e16
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 94%
+source-wordcount: '227'
+ht-degree: 95%
 
 ---
 

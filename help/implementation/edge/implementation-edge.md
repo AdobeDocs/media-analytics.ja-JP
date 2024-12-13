@@ -1,27 +1,27 @@
 ---
-title: Edge Networkを使用した Streaming Media Collection アドオンの実装
-description: Streaming Media Collection アドオンをExperience PlatformEdgeで実装する方法を説明します。
+title: Edge Networkを使用した Streaming Media Collection の実装
+description: Experience Platform Edgeで Streaming Media Collection を実装する方法を説明します。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2146'
 ht-degree: 8%
 
 ---
 
-# Edge Networkを使用した Streaming Media Collection アドオンの実装
+# Edge Networkを使用した Streaming Media Collection の実装
 
 Adobe Experience Platform Edge Network を使用すると、複数の製品宛てのデータを一元的な場所に送信できます。Experience Edge は、適切な情報を目的の製品に転送します。この概念を使用すると、特に複数のデータソリューションにまたがる実装作業を統合できます。
 
-次の図に、Adobeストリーミングメディアコレクションアドオンを実装して、Experience Platform Edgeを使用してAdobe AnalyticsまたはCustomer Journey AnalyticsのいずれかでAnalysis Workspaceのデータを利用できるようにする方法を示します。
+次の図に、Adobe Streaming Media Collection を実装してExperience Platform Edgeを使用し、Adobe AnalyticsまたはCustomer Journey AnalyticsのいずれかでAnalysis Workspaceのデータを利用できるようにする方法を示します。
 
 ![CJA ワークフロー](assets/streaming-media-edge.png)
 
-Streaming Media Collection を使用しない実装方法を含む、すべての実装オプションの概要については、[Experience PlatformEdge アドオンの実装 ](/help/implementation/overview.md) を参照してください。
+Streaming Media Collection を使用しない実装方法を含む、すべての実装オプションの概要については、[Experience PlatformEdgeの実装 ](/help/implementation/overview.md) を参照してください。
 
-Experience Edgeを使用した Streaming Media Collection アドオンの実装に、Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK、API のいずれを使用しているかに関係なく、最初に次の節を完了する必要があります。
+Experience Edgeで Streaming Media Collection を実装するために、Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK、API のいずれを使用しているかに関係なく、最初に次の節を実行する必要があります。
 
 ## Adobe Experience Platformでのスキーマの設定
 
@@ -193,7 +193,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 1. Customer Journey Analyticsで、[ 接続の作成 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) の説明に従って接続を作成します。
 
-   接続を作成する際、ストリーミングメディアコレクションアドオンを実装するには、次の設定を選択する必要があります。
+   接続を作成する際、ストリーミングメディアコレクションの実装に次の設定を選択する必要があります。
 
    1. [Adobe Experience Platformでのデータセットの作成 ](#create-a-dataset-in-adobe-experience-platform) の説明に従って、以前に作成したデータセットを選択します。
 
@@ -211,7 +211,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 1. カスタマージャーニー分析で、[ データビューの作成または編集 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja) の説明に従って、データビューを作成します。
 
-   データビューを作成する際に、ストリーミングメディアコレクションアドオンを実装するには、次の設定選択が必要です。
+   データビューを作成する際に、ストリーミングメディアコレクションを実装するには、次の設定選択が必要です。
 
    1. 「[!UICONTROL **接続**]」フィールドで、前に作成した接続を選択します（[Customer Journey Analyticsでの接続の作成 ](#create-a-connection-in-customer-journey-analytics) を参照）。
 
@@ -347,15 +347,15 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 Experience PlatformEdgeに送信するデータの種類に応じて、次のいずれかの方法を使用できます。
 
-### Web:Adobe Experience Platform Web SDK の使用
+### Web:Adobe Experience Platform Web SDKの使用
 
 * [今すぐはじめる](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
-* [Adobe Experience Platform Web SDK を使用したEdgeへの web データの送信](/help/implementation/edge/edge-web-sdk.md)
+* [Adobe Experience Platform Web SDKを使用したEdgeへの Web データの送信](/help/implementation/edge/edge-web-sdk.md)
 
 * [Edge Network拡張用にAdobe Streaming Media に移行 ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
-### モバイル：Adobe Experience Platform Mobile SDK の使用
+### モバイル：Adobe Experience Platform Mobile SDKを使用します
 
 次のドキュメントリソースを使用して、iOSとAndroidの両方の実装を完了してください。
 

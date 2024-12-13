@@ -1,17 +1,17 @@
 ---
-title: Streaming Media Collection アドオンのリリースノート
-description: Streaming Media Collection アドオンリリースノートのリリースノートを表示します。
+title: Streaming Media Collection リリースノート
+description: Streaming Media Collection のリリースノートを表示します。
 feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 80%
+source-wordcount: '975'
+ht-degree: 78%
 
 ---
 
-# Streaming Media Collection アドオンリリースノート（2023 年 5 月）
+# Streaming Media Collection リリースノート（2023 年 5 月）
 
 **最終更新日**：2024年5月29日（PT）
 
@@ -27,13 +27,13 @@ ht-degree: 80%
 
 ## *最新のリリースノート*
 
-## Adobeストリーミングメディアコレクションアドオンの新機能と更新された機能 {#cja-features}
+## Adobeストリーミングメディアコレクションの新機能と更新された機能 {#cja-features}
 
 | 機能 | 説明 | ターゲット日 |
 | ----------- | ---------- | ------- |
-| Web SDK を使用したAdobe Experience Platform Edge Networkへの web データの送信 | [Adobe Experience Platform Web SDK を使用して、ストリーミングメディア Web データをAdobe Experience Platform Edge Networkに送信 ](/help/implementation/edge/edge-web-sdk.md) できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analytics、RT-CDP、AJO、イベント転送など、すべてのプラットフォームソリューションをまたいだ web 実装向けの、統一された収集方法が提供されます。以前は、ストリーミングメディア web データを Edge Network に送信する唯一の方法は、Media Edge API を使用することでした。 | 2024年5月29日（PT） |
-| Roku データのAdobe Experience Platform Edgeへの送信 | [Experience Platform Edge を使用してストリーミングメディアコレクションアドオンをインストール](/help/implementation/edge/implementation-edge.md)する際、Adobe Experience Platform Roku SDK を使用してストリーミングメディアデータを Adobe Experience Platform に送信できるようになりました。 | 2024年4月12日（PT） |
-| Media Collection:Experience Edgeとの統合（API および Mobile SDK） | Experience Edge API と Mobile SDK を使用して、Adobeのストリーミングメディアコレクションアドオンを実装できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analyticsレポート、RT-CDP、AJO、イベント転送など、すべてのソリューションにわたって統一された収集手段が提供されます。  [詳細情報](/help/implementation/edge/implementation-edge.md) | 2023年5月12日（PT） |
+| Web SDKを使用したAdobe Experience Platform Edge Networkへの web データの送信 | [Adobe Experience Platform Web SDKを使用して、ストリーミングメディアの web データをAdobe Experience Platform Edge Networkに送信 ](/help/implementation/edge/edge-web-sdk.md) できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analytics、RT-CDP、AJO、イベント転送など、すべてのプラットフォームソリューションをまたいだ web 実装向けの、統一された収集方法が提供されます。以前は、ストリーミングメディア web データを Edge Network に送信する唯一の方法は、Media Edge API を使用することでした。 | 2024年5月29日（PT） |
+| Roku データのAdobe Experience Platform Edgeへの送信 | [Streaming Media Collection をExperience Platform Edgeと共にインストール ](/help/implementation/edge/implementation-edge.md) する際に、Adobe Experience Platform Roku SDKを使用してストリーミングメディアデータをAdobe Experience Platformに送信できるようになりました。 | 2024年4月12日（PT） |
+| Media Collection: Experience Edgeとの統合（API およびモバイル SDK） | Experience Edge API とモバイル SDKを使用して、Adobeのストリーミングメディアコレクションを実装できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analyticsレポート、RT-CDP、AJO、イベント転送など、すべてのソリューションにわたって統一された収集手段が提供されます。  [詳細情報](/help/implementation/edge/implementation-edge.md) | 2023年5月12日（PT） |
 | メディア同時ビューアパネル | ピーク同時実行が発生した場所、または下降が発生した場所を把握します。コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=ja) | 2022年8月9日（PT） |
 | メディア再生滞在時間パネル | メディア再生滞在時間は、ビューアエンゲージメントに関する貴重なインサイトを提供し、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。特定の時点でのメディアストリームの視聴時間を確認できます。再生時間は、新たな 5 分、15 分、30 分の時間粒度を含む、様々な粒度で分割できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ja) | 2022年8月9日（PT） |
 | モバイルスコアカードで注釈を共有 | ワークスペースで作成された注釈をモバイルスコアカードに表示できます。これにより、組織とキャンペーンに関するコンテキストデータのニュアンスやインサイトを、モバイルスコアカードプロジェクト内で直接共有でき、Analytics ダッシュボードモバイルアプリで表示できます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=ja) | 2022年6月15日 |
@@ -42,7 +42,7 @@ ht-degree: 80%
 | モバイルスコアカードプロジェクトのプレビューモード | Analytics ダッシュボードアプリにおけるモバイルスコアカードの表示のプレビューを、スコアカードビルダーから直接起動します。プレビューモードを使用すると、アプリ内と同じ方法でフィルターやグラフを操作でき、スコアカードを保存および共有する前にエクスペリエンスをプレビューできます。また、デバイスピッカーをプレビューモードで使用して、様々なデバイスでのスコアカードの表示を確認することもできます。[詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=ja#preview) | 2022年2月16日 |
 
 
-## Adobeストリーミングメディアコレクションアドオンの新機能と更新された機能 {#sm-features}
+## Adobeストリーミングメディアコレクションの新機能と更新された機能 {#sm-features}
 
 | 機能 | 説明 | ターゲット日 |
 | ----------- | ---------- | ------- |

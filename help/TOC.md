@@ -1,19 +1,19 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: ストリーミングメディアコレクションアドオン
+user-guide-title: ストリーミングメディアコレクション
 breadcrumb-title: ストリーミングメディアコレクションガイド
 user-guide-description: ストリーミングメディアを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '893'
 ht-degree: 96%
 
 ---
 
 
-# ストリーミングメディアコレクションアドオン {#using}
+# ストリーミングメディアコレクション {#using}
 
 + [ストリーミングメディアコレクションガイド](media-overview.md)
 + リリースノート {#release-notes}
@@ -36,7 +36,7 @@ ht-degree: 96%
       + [前提条件](/help/implementation/edge/prerequisites-edge.md)
       + Media Edge SDK／拡張機能 {#media-edge-sdk}
          + [Media Edge SDK／拡張機能の設定](/help/implementation/edge/implementation-edge.md)
-         + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
+         + [Media Edge web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + Adobe Analytics のみの実装 {#analytics-only}

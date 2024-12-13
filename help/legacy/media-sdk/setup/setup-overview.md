@@ -1,14 +1,14 @@
 ---
 title: Media SDK の実装
-description: モバイルアプリケーション、OTT アプリケーション、ブラウザー（JS）アプリケーションでメディアトラッキング用に Media SDK をセットアップする方法を説明します。
+description: モバイルアプリケーション、OTT アプリケーション、ブラウザー（JS）アプリケーションでメディアトラッキング用に Media SDKをセットアップする方法について説明します。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 97%
+source-wordcount: '617'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 ## 一般的な実装のガイドライン {#general-implementation-guidelines}
 
-ストリーミングメディアコレクションアドオンを使用したトラッキングに使用する主な SDK コンポーネントは 3 つあります。
+ストリーミングメディアコレクションでのトラッキングに使用する主なSDK コンポーネントは 3 つあります。
 * Media Heartbeat 設定 - `MediaHeartbeatConfig` には、レポートの基本設定が含まれています。
 * Media Heartbeat デリゲート - `MediaHeartbeatDelegate` は、再生時間と QoS オブジェクトを制御します。
 * Media Heartbeat - `MediaHeartbeat` は、メンバーとメソッドを含むプライマリライブラリです。

@@ -1,28 +1,28 @@
 ---
-title: ストリーミングメディアコレクションアドオンの実装
-description: ストリーミングメディアコレクションアドオンの実装パスについて説明します。
+title: ストリーミングメディアコレクションの実装
+description: ストリーミングメディアコレクションの実装パスについて説明します。
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '453'
 ht-degree: 69%
 
 ---
 
-# ストリーミングメディアコレクションアドオンの実装
+# ストリーミングメディアコレクションの実装
 
-Adobeストリーミングメディアコレクションアドオンを実装するには、様々な方法があります。 このページで説明している実装方法でサポートされるデバイスとプラットフォームの比較について詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください。
+Adobe Streaming Media Collection を実装するには、様々な方法があります。 このページで説明している実装方法でサポートされるデバイスとプラットフォームの比較について詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください。
 
 ## Edge の実装方法
 
-Adobe AnalyticsまたはCustomer Journey Analyticsの新規のお客様すべてに Streaming Media Collection アドオンを実装する際は、Edgeを使用することをお勧めします。
+Adobe AnalyticsまたはCustomer Journey Analyticsの新規のお客様すべてに Streaming Media Collection を実装する際は、Edgeを使用することをお勧めします。
 
-* **Media for Extension SDK/Edge Network:** Web、iOS、Androidの各デバイス、または Roku デバイスからデータを収集し、Edge Networkに送信します。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
+* **Media for Extension SDK/Edge Network:** Web、iOSおよびAndroidのデバイス、または Roku のデバイスからデータを収集してEdge Networkに送信します。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
-  Media for Extension SDK/Edge Networkについて詳しくは、「[Edge Networkを使用した Streaming Media Collection アドオンの実装 ](/help/implementation/edge/implementation-edge.md)」を参照してください。
+  Media for Extension SDK/Edge Networkについて詳しくは、「[Edge Networkを使用したストリーミングメディアコレクションの実装 ](/help/implementation/edge/implementation-edge.md)」を参照してください。
 
 * **Media Edge API:** 任意のデバイスまたはフォーマット（モバイル、web、OTT デバイスなど）からデータを収集し、Edge Networkに送信するようにカスタマイズできます。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 

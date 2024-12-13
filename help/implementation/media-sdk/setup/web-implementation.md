@@ -4,18 +4,18 @@ description: Web アプリ用の Adobe Streaming Media を実装する方法に�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '441'
 ht-degree: 92%
 
 ---
 
-# JavaScriptを使用した Media SDK のインストール {#install-web-sdks}
+# JavaScriptを使用した Media SDKのインストール {#install-web-sdks}
 
 このページの情報では、web スタンドアロン SDK のインストール方法と JavaScript のセットアップ方法について説明します。
 
-または、[Media Analytics 拡張機能を使用した Analytics の実装 ](/help/implementation/media-sdk/setup/web-implementation-tags.md) で説明しているように、Adobe Medium Analytics 拡張機能を使用してAdobeのストリーミングメディアコレクションアドオンを実装することもできます。
+または、[Media Analytics 拡張機能を使用した Analytics の実装 ](/help/implementation/media-sdk/setup/web-implementation-tags.md) で説明しているように、Adobe Medium Analytics 拡張機能を使用して Streaming Media Collection Adobeを実装することもできます。
 
 ## 前提条件 {#prerequesites}
 

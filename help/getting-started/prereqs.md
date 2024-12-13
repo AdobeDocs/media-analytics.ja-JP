@@ -1,23 +1,23 @@
 ---
-title: Adobeストリーミングメディアコレクションアドオンの前提条件について説明します
-description: ストリーミングメディアコレクションアドオンの基本を学びます。 実装に必要なものを説明します。
+title: Adobe Streaming Media Collection の前提条件について説明します
+description: ストリーミングメディアコレクションの基本を学びます。 実装に必要なものを説明します。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 62%
+source-wordcount: '428'
+ht-degree: 64%
 
 ---
 
 # 前提条件 {#prerequisites}
 
-Adobeストリーミングメディアコレクションアドオンの実装を開始する前に、次のタスクを実行します。
+Adobeストリーミングメディアコレクションの実装を開始する前に、次のタスクを実行します。
 
-1. **ストリーミングメディアコレクションアドオンの概要の確認**<br>
-ストリーミングメディアコレクションアドオンの実装を開始する前に、[ ストリーミングメディアコレクションアドオンの概要 ](/help/media-overview.md) を確認して、ニーズを満たしていることを確認してください。
+1. **ストリーミングメディアコレクションの概要の確認**<br>
+ストリーミングメディアコレクションの実装を開始する前に、[ ストリーミングメディアコレクションの概要 ](/help/media-overview.md) を確認して、ニーズを満たしていることを確認します。
 
 1. **価格モデルを確認する**<br>
 Adobeストリーミングメディアコレクションアドオンの現在の価格モデルは、ビデオストリームに基づいています。 アドオンはAdobe AnalyticsとAdobe Experience Platformに別々に販売されるので、必要に応じて、営業担当またはAdobeアカウントチームにお問い合わせください。
@@ -41,7 +41,7 @@ Analytics またはCustomer Journey Analyticsでレポートを有効にし、�
 
 1. **実装方法の追加の前提条件を表示する**
 
-   ストリーミングメディアコレクション アドオンの実装方法に応じて、次のいずれかの実装方法の前提条件を確認します。
+   ストリーミングメディアコレクションの実装方法に応じて、次のいずれかの実装方法の前提条件を確認します。
 
    * [Adobe Analytics のみの実装の前提条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 

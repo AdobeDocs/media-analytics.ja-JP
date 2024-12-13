@@ -4,16 +4,16 @@ description: Web アプリ用の Adobe Streaming Media を実装する方法に�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 77%
+source-wordcount: '117'
+ht-degree: 78%
 
 ---
 
-# Media Analytics 拡張機能を使用したストリーミングメディアコレクションアドオンのインストール
+# Media Analytics 拡張機能を使用したストリーミングメディアコレクションのインストール
 
-Media Analytics 拡張機能を使用して、AdobeのストリーミングAdobe Mediumコレクションのアドオンを実装できます。 Media Analytics の拡張機能により、コア JavaScript Media SDK（Media 3.x SDK）が追加されます。この拡張機能では、タグが有効なサイトまたはプロジェクトに Media トラッカーインスタンスを追加する機能を提供します。
+Media Analytics 拡張機能を使用して、AdobeのストリーミングAdobe Mediumコレクションを実装できます。 Media Analytics の拡張機能により、コア JavaScript Media SDK（Media 3.x SDK）が追加されます。この拡張機能では、タグが有効なサイトまたはプロジェクトに Media トラッカーインスタンスを追加する機能を提供します。
 
 拡張機能のインストール方法と使用方法について詳しくは、[Adobe Media Analytics (3.x SDK) for Audio and Video 拡張機能 - タグを使用（データ収集）](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja)を参照してください。
 

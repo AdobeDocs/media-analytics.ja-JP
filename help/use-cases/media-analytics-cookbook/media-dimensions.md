@@ -4,10 +4,10 @@ description: 追加の処理ルールおよびカスタム変数を使用せず�
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 87%
+source-wordcount: '232'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->メディア指標はメディアトラッキング以外には使用 _できません_ これらのほとんどは、ハートビートイベントに基づいてストリーミングメディアコレクションアドオンによって計算されるからです。 また、メディア指標が異なる実装によって水増しされないことも重要です。
+>メディア指標はメディアトラッキング以外には使用 _できません_ これらのほとんどは、ハートビートイベントに基づいてストリーミングメディアコレクションで計算されるからです。 また、メディア指標が異なる実装によって水増しされないことも重要です。
 
 ## メディアストリームのアトリビューションの使用
 

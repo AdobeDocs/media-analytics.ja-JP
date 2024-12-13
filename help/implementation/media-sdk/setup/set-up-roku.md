@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 1375fb3260d5c4ca703827b3d73174f4e475f76d
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 93%
+source-wordcount: '664'
+ht-degree: 94%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 93%
 
 ## 前提条件 {#roku-prerequisites}
 
-* **ストリーミングメディアコレクションアドオン用の有効な設定パラメーターの取得**
+* **ストリーミングメディアコレクション用の有効な設定パラメーターの取得**
 
-  これらのパラメーターは、Adobeのストリーミングメディアコレクションのアドオンアカウントを設定した後、Adobe担当者から取得できます。
+  これらのパラメーターは、Adobeのストリーミングメディアコレクションアカウントを設定した後、Adobe担当者から取得できます。
 * **メディアプレーヤーで以下の API を含める**
 
    * _プレーヤーイベントをサブスクライブするための API_ - Media SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
