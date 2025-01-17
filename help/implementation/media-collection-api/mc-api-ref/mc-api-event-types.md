@@ -1,14 +1,14 @@
 ---
 title: ストリーミングメディアのイベントタイプと説明
-description: メディアコレクションのイベントタイプと説明"
+description: 'メディアコレクションのイベントタイプと説明 '
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+source-git-commit: 98722998606af3761652e282c31338bb966eb654
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 88%
+source-wordcount: '394'
+ht-degree: 79%
 
 ---
 
@@ -90,3 +90,15 @@ ping イベントの場合、リクエスト本文に *マップが含まれて�
 >[!IMPORTANT]
 >
 >各イベントタイプについて [JSON 検証スキーマ](mc-api-json-validation.md)を参照して、正しいイベントパラメーターのタイプと要件を確認してください。
+
+## stateStart
+
+プレーヤーの状態のトラッキングの開始を示します。
+
+詳しくは、[ 実装とレポート ](/help/use-cases/player-state-tracking/implementation-and-reporting.md) を参照してください。
+
+## stateEnd
+
+プレーヤーの状態トラッキングの終了を示します。
+
+詳しくは、[ 実装とレポート ](/help/use-cases/player-state-tracking/implementation-and-reporting.md) を参照してください。

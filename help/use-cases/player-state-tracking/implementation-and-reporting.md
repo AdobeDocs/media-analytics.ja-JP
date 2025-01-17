@@ -4,25 +4,25 @@ description: プレーヤーステートのトラッキング機能を実装す�
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 78%
 
 ---
 
 # 実装とレポート
 
-再生セッション中は、各ステートの発生（最初から最後まで）を個別に追跡する必要があります。メディア SDK とメディアコレクション API は、この機能の新しいトラッキングメソッドを提供します。
+再生セッション中は、各ステートの発生（最初から最後まで）を個別に追跡する必要があります。Media SDKと Media Collection API は、この機能のトラッキングメソッドを提供します。
 
-メディア SDK には、カスタムステートトラッキングの 2 つの新しいメソッドが含まれています。
+Media SDKには、カスタム状態トラッキング用の 2 つのメソッドがあります。
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-メディアコレクション API には、必須イベントパラメーターが「`media.stateName`」の 2 つの新しいイベントが含まれています。
+Media Collection API には、必須パラメーターとして `media.stateName` を持つ 2 つのイベントが含まれています。
 
 `stateStart` と `stateEnd`
 
@@ -91,11 +91,11 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## レポート
 
-レポートスイートでプレーヤーステートトラッキングが有効にされると、すべてのプレーヤーステート指標を、Analysis Workspace で使用可能な任意のレポートビジュアライゼーションやコンポーネント（セグメント、計算指標）に使用できます。新しい指標は、Admin Console のメディアレポート設定（設定の編集／メディア管理／メディアレポート）で、個々のレポートに対して有効にできます。
+レポートスイートでプレーヤーステートトラッキングが有効にされると、すべてのプレーヤーステート指標を、Analysis Workspace で使用可能な任意のレポートビジュアライゼーションやコンポーネント（セグメント、計算指標）に使用できます。これらの指標は、メディアレポート設定（設定を編集/メディア管理/メディアレポート）を使用して、個々のレポートのAdmin Consoleから有効にできます。
 
 ![](assets/report-setup.png)
 
-Analytics Workspace では、すべての新しいプロパティが指標パネルに表示されます。例えば、`full screen` で検索し、指標パネルにフルスクリーンデータを表示できます。
+Analysis Workspaceでは、新しいプロパティはすべて指標パネルにあります。 例えば、`full screen` で検索し、指標パネルにフルスクリーンデータを表示できます。
 
 ![](assets/full-screen-report.png)
 

@@ -6,7 +6,7 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 7a1ae72af231659bd794fb18ce9e76685e6beff4
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 93%
@@ -93,3 +93,5 @@ ht-degree: 93%
 * `chapterComplete`
 * `sessionEnd`
 * `sessionComplete`
+* `stateStart`
+* `stateEnd`
