@@ -27,7 +27,7 @@ Media Analytics 拡張機能を備えた Adobe Data Collection には、次の�
 * Adobe Experience Cloud のお客様である必要があります。
 * Web ページにデータ収集または DTM 埋め込みコードをデプロイする必要があります。
 * [Analytics 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ja)を設定する必要があります。 
-* [Adobe Medium Analytics for Audio and Video 拡張機能 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html) を設定する必要があります。
+* [Adobe Medium Analytics for Audio and Video 拡張機能 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=ja) を設定する必要があります。
 * [Experience Cloud ID 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ja)を設定する必要があります。 
 
 ## メディア SDK 2.x のダウンロード {#download-2x-sdks}
