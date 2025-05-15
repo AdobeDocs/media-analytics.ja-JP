@@ -5,7 +5,7 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ebabbe52fe673e3fb6f13da40bbc3c87aef1c7bd
+source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
 workflow-type: tm+mt
 source-wordcount: '7067'
 ht-degree: 91%
@@ -218,7 +218,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK キー：**<br/> ASSET_ID </li> <li> **API キー：**<br/> media.assetId </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **値の例：**<br/> 「89745363」 </li> <li> **説明：**<br/> TV シリーズのエピソードの識別子、ムービーアセットの識別子、ライブイベントの識別子など、メディアアセットのコンテンツの一意の ID です。この ID は通常、EIDR、TMS／Gracenote、Rovi などのメタデータを扱う機関から取得します。その他の独自のシステムや社内システムから取得することもできます。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.asset） </li> <li> **ハートビート：**<br/> （<code>s:meta:</code><br/>a.media.asset） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;分類 </li> <li> **レポート名：**<br/>&#x200B;アセット ID </li> <li> **コンテキストデータ：**<br/>（a.media.asset） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.asset） </li> <li> **XDM フィールドパス：** （非推奨） <br/>media.mediaTimed.primaryAssetReference.<br/>@id </li> <li> **コレクション XDM フィールドのパス：**<br/> mediaCollection.sessionDetails.assetID </li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.sessionDetails.assetID </li> </ul> |
+| <ul> <li> **SDK キー：**<br/> ASSET_ID </li> <li> **API キー：**<br/> media.assetId </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア開始、メディア終了 </li> <li> **最小のSDK のバージョン：** 1.5.7 </li> <li> **値の例：**<br/> 「89745363」 </li> <li> **説明：**<br/> TV シリーズのエピソードの識別子、ムービーアセットの識別子、ライブイベントの識別子など、メディアアセットのコンテンツの一意の ID です。この ID は通常、EIDR、TMS／Gracenote、Rovi などのメタデータを扱う機関から取得します。その他の独自のシステムや社内システムから取得することもできます。  </li></ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.asset） </li> <li> **ハートビート：**<br/> （<code>s:meta:</code><br/>a.media.asset） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;分類 </li> <li> **レポート名：**<br/>&#x200B;アセット ID </li> <li> **コンテキストデータ：**<br/>（a.media.asset） </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.asset） </li> <li> **XDM フィールドパス：** （非推奨） <br/>media.mediaTimed.primaryAssetReference.<br/>_id </li> <li> **コレクション XDM フィールドのパス：**<br/> mediaCollection.sessionDetails.assetID </li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.sessionDetails.assetID </li> </ul> |
 
 ### ジャンル
 

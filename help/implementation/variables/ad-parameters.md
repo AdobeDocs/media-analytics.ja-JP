@@ -5,9 +5,9 @@ uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ebabbe52fe673e3fb6f13da40bbc3c87aef1c7bd
+source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2036'
 ht-degree: 89%
 
 ---
@@ -176,7 +176,7 @@ ht-degree: 89%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;広告開始 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ビデオ広告の開始数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.ad.<br/>view） </li> <li> **ハートビート：**<br/> （<code>s:event:type=start</code>） <br/> （<code>s:asset:type=ad<code>） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;広告開始 </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/>（a.media.ad.<br/>view） </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.ad.view） </li> <li> **XDM フィールドパス：** （非推奨） <br/>advertising.starts.value > 0 => &quot;TRUE&quot; </li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.advertisingDetails.isStarted </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;広告開始 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ビデオ広告の開始数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.ad.<br/>view） </li> <li> **ハートビート：**<br/> （<code>s:event:type=start</code>） <br/> （<code>s:asset:type=ad<code>） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;広告開始 </li> <li> **データフィード：**<br/> videoadstart </li> <li> **コンテキストデータ：**<br/>（a.media.ad.<br/>view） </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.ad.view） </li> <li> **XDM フィールドパス：** （非推奨） <br/>advertising.impressions.value > 0 => &quot;TRUE&quot; </li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.advertisingDetails.isStarted </li> </ul> |
 
 
 
@@ -184,7 +184,7 @@ ht-degree: 89%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ビデオ広告の完了数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.ad.<br/>complete） </li> <li> **ハートビート：**<br/> （<code>s:event:type=complete</code>） <br/> （<code>s:asset:type=ad</code>）  </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;広告完了 </li> <li> **データフィード：**<br/>&#x200B;なし </li> <li> **コンテキストデータ：**<br/>（a.media.ad.<br/>complete） </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.ad.complete） </li> <li> **XDM フィールドパス：** （非推奨） <br/> advertising.completes.value > 0 => &quot;TRUE&quot; </li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.advertisingDetails.<br/>isCompleted </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;はい </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;広告の終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ビデオ広告の完了数。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.ad.<br/>complete） </li> <li> **ハートビート：**<br/> （<code>s:event:type=complete</code>） <br/> （<code>s:asset:type=ad</code>）  </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;広告完了 </li> <li> **データフィード：**<br/> videoadcomplete </li> <li> **コンテキストデータ：**<br/>（a.media.ad.<br/>complete） </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.ad.complete） </li> <li> **XDM フィールドパス：** （非推奨） <br/> advertising.completes.value > 0 => &quot;TRUE&quot; </li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.advertisingDetails.<br/>isCompleted </li> </ul> |
 
 
 

@@ -5,7 +5,7 @@ uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: ebabbe52fe673e3fb6f13da40bbc3c87aef1c7bd
+source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
 workflow-type: tm+mt
 source-wordcount: '3314'
 ht-degree: 90%
@@ -185,7 +185,7 @@ ht-degree: 90%
 
 |   実装   | ネットワークパラメーター | レポート |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ユーザーがビデオを開始する前に終了した回数。この指標は、広告とは無関係に、コンテンツがレンダリングされなかった場合に 1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>dropBeforeStart） </li> <li> **ハートビート：**<br/> （<code>s:event:</code><br/>type=aa_start） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;開始前にドロップ </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>dropBeforeStart） </li> <li> **データフィード：**<br/> videoqoedropbeforestart </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart） </li> <li> **XDM フィールドパス：** （非推奨） <br/>media.mediaTimed.primaryAssetViewDetails.<br/>qoe.dropBeforeStarts.value >= 1 => 「TRUE」</li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.qoeDataDetails.<br/>isDroppedBeforeStart </li> </ul> |
+| <ul> <li> **SDK キー：**<br/>&#x200B;自動設定 </li> <li> **API キー：**<br/>&#x200B;なし </li> <li> **必須：**<br/>&#x200B;いいえ </li> <li> **型：**<br/>&#x200B;文字列 </li> <li> **送信タイミング：**<br/>&#x200B;メディア終了 </li> <li> **最小のSDK のバージョン：**&#x200B;すべて可 </li> <li> **値の例：**<br/> TRUE </li><li> **説明：**<br/>&#x200B;ユーザーがビデオを開始する前に終了した回数。この指標は、広告とは無関係に、コンテンツがレンダリングされなかった場合に 1 に設定されます。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/>（a.media.qoe.<br/>dropBeforeStart） </li> <li> **ハートビート：**<br/> （<code>s:event:</code><br/>type=aa_start） </li> </ul> | <ul> <li> **利用可能：**<br/>&#x200B;可 </li> <li> **予約変数：**<br/>&#x200B;イベント </li> <li> **レポート名：**<br/>&#x200B;開始前にドロップ </li> <li> **コンテキストデータ：**<br/>（a.media.qoe.<br/>dropBeforeStart） </li> <li> **データフィード：**<br/> videoqoedropbeforestart </li> <li> **Audience Manager：**<br/>（c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart） </li> <li> **XDM フィールドパス：** （非推奨） <br/>media.mediaTimed.dropBeforeStarts.<br/>value >= 1 => &quot;TRUE&quot;</li> <li> **レポート XDM フィールドのパス：**<br/> mediaReporting.qoeDataDetails.<br/>isDroppedBeforeStart </li> </ul> |
 
 
 
