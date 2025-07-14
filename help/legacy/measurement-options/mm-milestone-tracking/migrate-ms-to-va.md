@@ -3,9 +3,9 @@ title: マイルストーンから Media Analytics に移行する方法
 description: マイルストーン変数を Media Analytics 指標に変換し、マイルストーンモジュールメソッドを Media Analytics 構文に変更する方法を説明します。
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 96%
@@ -82,7 +82,7 @@ ht-degree: 96%
 | parentName | `parentName`：広告が埋め込まれたプライマリコンテンツの名前または ID。 | 該当なし | 自動的に継承される。 |
 | parentPod | `parentPod`：広告が表示されたプライマリコンテンツ内の位置。 | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
 | parentPodPosition | `parentPodPosition`：広告が表示されるポッド内の位置。 | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| CPM | `CPM`：この再生に適用される CPM または暗号化された CPM（「~」のプレフィックスが付く）。 | 該当なし | デフォルトでは Media Analytics で使用できません。 |
+| CPM | `CPM`：この再生に適用される CPM または暗号化された CPM（「~」の接頭辞が付く）。 | 該当なし | デフォルトでは Media Analytics で使用できません。 |
 | Media.click | `s.Media.click(name, offset)` | 該当なし | カスタムリンクの分析呼び出しを使用してクリックを追跡する。 |
 | Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
 | Media.complete | `s.Media.complete(name, offset)` | trackComplete | `trackComplete()` |

@@ -3,9 +3,9 @@ title: Chromecast で広告をトラッキングする方法
 description: メディア SDK を使用して、Chromecast アプリケーションに広告トラッキングを実装します。
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 100%

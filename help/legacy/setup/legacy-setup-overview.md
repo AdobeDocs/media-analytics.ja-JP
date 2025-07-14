@@ -1,10 +1,10 @@
 ---
 title: レガシー Media SDK の実装の説明
 description: モバイルアプリケーション、OTT アプリケーションおよびブラウザー（JS）アプリケーションでメディアトラッキング用に **レガシー** 2.x Media SDK をセットアップする方法について説明します。
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 99%
@@ -143,7 +143,7 @@ Media Analytics トラッキング実装は、2 つのタイプのトラッキ�
 
   Analytics トラッキングサーバーは「`.sc.omtrdc.net`」で終わるか CNAME である必要があります。
 
-* **&#x200B; Media Analytics（ハートビート）サーバー** これは、常に「`[your_namespace].hb.omtrdc.net`」形式になります。「`[your_namespace]`」の値は会社を指定し、アドビによって提供されます。
+* ** Media Analytics（ハートビート）サーバー** これは、常に「`[your_namespace].hb.omtrdc.net`」形式になります。「`[your_namespace]`」の値は会社を指定し、アドビによって提供されます。
 
 メディアトラッキングはあらゆるプラットフォーム、デスクトップ、モバイルで同じように動作します。オーディオトラッキングは、現在、モバイルプラットフォームで動作します。すべてのトラッキングコールに共通する、検証が必要な主要ユニバーサル変数がいくつかあります。
 

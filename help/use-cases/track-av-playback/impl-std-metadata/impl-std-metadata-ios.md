@@ -3,9 +3,9 @@ title: iOS で標準メタデータを実装する方法
 description: iOS で標準ビデオメタデータや標準広告メタデータをトラッキングコールで送信するように設定する方法を説明します。
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 100%

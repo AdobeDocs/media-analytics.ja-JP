@@ -2,10 +2,10 @@
 title: ストリーミングメディアコレクションの実装
 description: ストリーミングメディアコレクションの実装パスについて説明します。
 uuid: null
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 69%
@@ -20,11 +20,11 @@ Adobe Streaming Media Collection を実装するには、様々な方法があ�
 
 Adobe AnalyticsまたはCustomer Journey Analyticsの新規のお客様すべてに Streaming Media Collection を実装する際は、Edgeを使用することをお勧めします。
 
-* **Media for Extension SDK/Edge Network:** Web、iOSおよびAndroidのデバイス、または Roku のデバイスからデータを収集してEdge Networkに送信します。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
+* **Media for Edge Network SDK/拡張機能：** Web、iOSおよびAndroidのデバイス、または Roku デバイスからデータを収集し、Edge Networkに送信します。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
-  Media for Extension SDK/Edge Networkについて詳しくは、「[Edge Networkを使用したストリーミングメディアコレクションの実装 ](/help/implementation/edge/implementation-edge.md)」を参照してください。
+  Media for Edge Network SDK/Extension について詳しくは、[Edge Networkを使用した Streaming Media Collection の実装 ](/help/implementation/edge/implementation-edge.md) を参照してください。
 
-* **Media Edge API:** 任意のデバイスまたはフォーマット（モバイル、web、OTT デバイスなど）からデータを収集し、Edge Networkに送信するようにカスタマイズできます。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
+* **Media Edge API:** 任意のデバイスまたはフォーマット（モバイル、web、OTT デバイスなど）からデータを収集してEdge Networkに送信するようにカスタマイズできます。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
   Media Edge API について詳しくは、[Media Edge API の概要 ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/) を参照してください。
 

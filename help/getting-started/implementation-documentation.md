@@ -2,10 +2,10 @@
 title: ストリーミングメディア実装ドキュメント
 description: ストリーミングメディアの実装に関する情報の参照先について説明します。
 uuid: null
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 46%
@@ -22,8 +22,8 @@ ht-degree: 46%
 
 | 実装 | ドキュメント |
 |:-----------------------:|----------------|
-| **Web** | * [Adobe Experience Platform Web SDKAdobe Mediumを使用したEdgeへの Web データの送信 ](/help/implementation/edge/edge-web-sdk.md) <br> * [ ストリーミングメディア用 Web 実装 ](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Analytics for Audio and Video 拡張機能を使用した Web 実装 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja) |
-| **モバイル** | * [Adobe Experience Platform モバイルSDKを使用してEdgeにモバイルデータを送信 ](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform モバイルSDKガイド ](https://developer.adobe.com/client-sdks/documentation/) <br> *[ オーディオおよびビデオ用Adobe Medium拡張機能 ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[ 現在のモバイルSDKのバージョン ](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[ ストリーミングメディア用のモバイル実装 ](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **Web** | * [Adobe Experience Platform Web SDKを使用したEdgeへの Web データの送信 ](/help/implementation/edge/edge-web-sdk.md) <br> * [ ストリーミングメディア用 Web 実装 ](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Adobe Media Analytics for Audio and Video 拡張機能を使用した Web 実装 ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja) |
+| **モバイル** | * [Adobe Experience Platform Mobile SDKを使用したEdgeへのモバイルデータの送信 ](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform Mobile SDK ガイド ](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics for Audio and Video 拡張機能 ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[ 現在の Mobile SDKのバージョン ](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[ ストリーミングメディア用のモバイル実装 ](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
 | **OTT** | *[Chromecast 3.0 SDK for Adobe Marketing Cloud ソリューション ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Chromecast のセットアップ ](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Roku のセットアップ ](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform API** | *[Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md) |
 

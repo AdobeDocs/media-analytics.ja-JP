@@ -3,9 +3,9 @@ title: Roku 用 Media SDK のセットアップ方法
 description: Roku で Media SDK アプリケーションをセットアップするには、次の手順に従います。
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 94%
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 * **ストリーミングメディアコレクション用の有効な設定パラメーターの取得**
 
-  これらのパラメーターは、Adobeのストリーミングメディアコレクションアカウントを設定した後、Adobe担当者から取得できます。
+  これらのパラメーターは、Adobe Streaming Media Collection アカウントの設定後、Adobeの担当者から取得できます。
 * **メディアプレーヤーで以下の API を含める**
 
    * _プレーヤーイベントをサブスクライブするための API_ - Media SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
@@ -99,7 +99,7 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
 
       >[!IMPORTANT]
       >
-      >`mediaHeartbeat` を誤って設定した場合、メディアモジュール（VHL）がエラー状態になり、トラッキングコールの送信が中止されます。
+      >`mediaHeartbeat` を誤って設定した場合、メディアモジュール（VHL）がエラー状態になり、トラッキングコールの送信が停止されます。
 
 1. Experience Cloud 訪問者 ID を設定します。
 
@@ -125,7 +125,7 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
 
    >[!TIP]
    >
-   >Experience Cloud 訪問者 ID メソッドのプレフィックスは `visitor` です。
+   >Experience Cloud 訪問者 ID メソッドの接頭辞は `visitor` です。
 
    |  メソッド   | 説明 |
    | --- | --- |
@@ -171,4 +171,4 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
    | `processMediaMessages` | 処理するメディアイベントを SDK に渡します。<br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=ja) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

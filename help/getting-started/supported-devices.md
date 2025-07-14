@@ -2,9 +2,9 @@
 title: サポートされているデバイスとプラットフォーム
 description: Streaming Media Collection がサポートするiOS、Android、OTT デバイス、JavaScript ブラウザーなどの主要なデバイスについて説明します。
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 77%
@@ -25,7 +25,7 @@ SDK は、新しいバージョンのデバイスがリリースされると定�
 
 現在サポートされているデバイスの表を次に示します。デバイスが一覧にない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
 
-Edgeへの Media の実装について詳しくは、[Experience Platform Edgeと Streaming Media Collection のインストール ](/help/implementation/edge/implementation-edge.md) を参照してください。
+Experience Platformへの Media の実装について詳しくは、[Edge Edgeを使用した Streaming Media Collection のインストール ](/help/implementation/edge/implementation-edge.md) を参照してください。
 
 | ストリーミングプラットフォームとデバイス | | Edge Network 用 Media SDK／拡張機能 | Media Edge API | タグ付きメディア拡張機能または AEP Mobile SDK | メディア SDK | メディアコレクション API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

@@ -1,10 +1,10 @@
 ---
 title: メディア分平均オーディエンス
 description: メディア分平均オーディエンスパネルを使用して、特定のコンテンツ部分の分平均オーディエンスまたはカスタマイズされた期間の分平均オーディエンスを分析する方法を説明します。
-feature: Media Analytics, Workspace Basics
+feature: Streaming Media, Workspace Basics
 role: User, Admin
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 92%

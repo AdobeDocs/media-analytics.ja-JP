@@ -3,9 +3,9 @@ title: メディアトラッキングタイムラインについて学ぶ
 description: 再生ヘッドタイムラインと対応するユーザーのアクションを詳しく説明します。各アクションとそれに伴うリクエストの詳細について説明します。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 98%
@@ -179,7 +179,7 @@ ht-degree: 98%
 >[!NOTE]
 >
 >簡略にするために、タイムラインの後続の広告では、一連の 1 秒の ping を示すのを省略します。
-> 簡潔性を重視する場合
+>> 簡潔性を重視する場合
 
 ```json
 {

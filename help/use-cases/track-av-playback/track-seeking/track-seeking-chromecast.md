@@ -3,9 +3,9 @@ title: Chromecast でシークをトラッキングする方法
 description: Chromecast で Media SDK を使用してシーク開始イベントとシーク完了イベントをトラッキングする方法を説明します。
 uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
 exl-id: 03be8ed3-ae3a-4e9a-b667-0d9280a844a1
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 100%

@@ -1,22 +1,22 @@
 ---
-title: Adobeストリーミングメディアコレクションの概要
-description: ストリーミングメディアコレクションを使用すると、コンテンツ、オーディオおよび広告に関する強力なインサイトを得ることができます。
+title: Adobe ストリーミングメディアコレクションの概要
+description: ストリーミングメディアコレクションを使用すると、コンテンツ、オーディオおよび広告用の強力なinsightを取得できます。
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 65%
 
 ---
 
-# Adobeストリーミングメディアコレクションの概要
+# Adobe ストリーミングメディアコレクションの概要
 
 ![バナー](./assets/media_analytics_banner.png)
 
-Adobeのストリーミングメディアコレクションは、オーディオ、ビデオ、ストリーミングメディアプロバイダー向けの広告など、ストリーミングメディアコンテンツ用の強力な収集、測定、パーソナライゼーションツールを提供します。 ストリーミングメディア指標を、Audience Analytics分析、モバイル分析、クロスデバイス分析などの機能と組み合わせることができます。
+Adobe Streaming Media Collection は、オーディオ、ビデオ、ストリーミングメディアプロバイダー向けの広告など、ストリーミングメディアコンテンツ用の強力な収集、測定、パーソナライゼーションツールを提供します。 ストリーミングメディア指標を、Audience Analytics、モバイル、クロスデバイス分析などの機能と組み合わせることができます。
 
 ストリーミングメディアデータは、次のAdobe Experience Platform製品と容易に統合できます。
 
@@ -30,7 +30,7 @@ Adobeのストリーミングメディアコレクションは、オーディオ
 
 >[!IMPORTANT]
 >
->Streaming Media Collection を実装するには、Adobe営業担当またはAdobeアカウントチームに連絡して、Streaming Media Collection アドオンが商品ポートフォリオに含まれていることを確認してください。
+>Streaming Media Collection を実装するには、Adobe営業担当またはAdobe アカウントチームに連絡して、Streaming Media Collection アドオンが商品ポートフォリオに含まれていることを確認してください。
 
 ## 主な特長
 

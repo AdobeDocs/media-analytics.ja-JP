@@ -3,12 +3,12 @@ title: メディアストリーミングセグメント
 description: メディアストリームタイプのセグメント、説明、ルールなど、メディアストリームタイプに関連付けられているレポートセグメントについて説明します。
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
-feature: "Media Analytics, Segmentation"
+feature: "Streaming Media, Segmentation"
 role: User, Admin, Data Engineer
-source-git-commit: b15a81dc8f08e94c9b80d66019f3d0fe95ef5a74
+source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 

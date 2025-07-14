@@ -3,9 +3,9 @@ title: マイルストーンからカスタムリンクへの移行
 description: マイルストーン変数をカスタムリンクに変更し、マイルストーンモジュールのメソッドをカスタムリンク構文に変更する方法を説明します。
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 100%
@@ -81,7 +81,7 @@ ht-degree: 100%
 | parentName | `parentName`：広告が埋め込まれたプライマリコンテンツの名前または ID。 | 該当なし | 使用不可。 |
 | parentPod | `parentPod`: 広告が表示されたプライマリコンテンツ内の位置。 | 該当なし | 使用不可。 |
 | parentPodPosition | `parentPodPosition`: 広告が表示されるポッド内の位置。 | 該当なし | 使用不可。 |
-| CPM | `CPM`：この再生に適用される CPM または暗号化された CPM（「~」のプレフィックスが付く）。 | 該当なし | 使用不可。 |
+| CPM | `CPM`：この再生に適用される CPM または暗号化された CPM（「~」の接頭辞が付く）。 | 該当なし | 使用不可。 |
 | Media.click | `s.Media.click(name, offset)` | `s.tl()` | カスタムリンクの分析呼び出しを使用してクリックを追跡する。 |
 | Media.close | `s.Media.close(mediaName)` | 該当なし | 使用不可。 |
 | Media.complete | `s.Media.complete(` <br> `  name,` <br> `  offset)` | `s.tl()` | `s.linkTrackVars` <br> `  = 'events,` <br> `     prop10,` <br> `     eVar10,` <br> `     eVar12,` <br> `     eVar15,` <br> `     contextData.video.name,` <br> `     contextData.video.complete';` <br> `s.linkTrackEvents ` <br> `  = 'event3';` <br> `s.prop10` <br> `   = mediaName;` <br> `s.eVar10` <br> `  = mediaName;` <br> `s.eVar12` <br> `  = "video";` <br> `s.eVar15` <br> `  = mediaPlayerName;` <br> `s.events` <br> `  = 'event3';` <br> `s.contextData['video.name']` <br> `  = mediaName;` <br> `s.contextData['video.complete']` <br> `  = 'true';` <br> `s.tl(this,'o','Video Complete');` |

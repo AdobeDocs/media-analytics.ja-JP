@@ -3,9 +3,9 @@ title: Media Analytics SDK をダウンロードするためのアクセスリ�
 description: Android、iOS、JavaScript、Chromecast および Roku を含む、利用可能なプラットフォームの SDK ダウンロードのリンクです。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 81%
@@ -22,7 +22,7 @@ Adobe Experience Platform のタグは、アドビが提供する次世代型の
 >[!NOTE]
 >
 >レガシー SDK のダウンロードについて詳しくは、[レガシー - SDK のダウンロード](/help/legacy/legacy-download-sdks.md)を参照してください。<br>
->サポート終了に関する重要な情報については、[サポート終了に関する FAQ](/help/additional-resources/end-of-support-faqs.md) を参照してください。
+>>サポート終了に関する重要な情報については、[サポート終了に関する FAQ](/help/additional-resources/end-of-support-faqs.md) を参照してください。
 
 ## Media SDK と Mobile ライブラリ {#media-sdks-libraries}
 
@@ -32,7 +32,7 @@ Adobe Experience Platform のタグは、アドビが提供する次世代型の
 |:---:|---|---|---|---| ---| ---|
 | ![JavaScript アイコン ](assets/javascript-icon.png)</br>**JavaScript API** | Adobe Analytics | Analytics のみ | Web - [JS 用 Media SDK v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScriptを使用して Media SDKをインストールする ](/help/implementation/media-sdk/setup/web-implementation.md) | [JS 用 Media SDK v3.0.2 のサンプル](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript アイコン ](assets/javascript-icon.png)</br>**JavaScript API** | Adobe Analytics | Analytics のみ | Web - メディア拡張機能 |  | [Adobe Medium Analytics (3.x SDK) for Audio and Video 拡張機能 — タグ（データ収集）を使用](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja) | [Adobe Media Analytics (3.x SDK) for Audio and Video 拡張機能のサンプル](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web -Experience PlatformEdge |  | [Edge Networkを使用した Streaming Media Collection の実装 ](/help/implementation/edge/implementation-edge.md) <p>と</p><p>[Adobe Experience Platform Web SDKを使用したEdgeへの Web データの送信 ](/help/implementation/edge/edge-web-sdk.md)</p> | |
+| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web - Experience Platform Edge |  | [Edge Networkを使用した Streaming Media Collection の実装 ](/help/implementation/edge/implementation-edge.md) <p>と</p><p>[Adobe Experience Platform Web SDKを使用したEdgeへの Web データの送信 ](/help/implementation/edge/edge-web-sdk.md)</p> | |
 
 ### Mobile の実装 {#get-mobile-extension}
 

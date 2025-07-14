@@ -3,9 +3,9 @@ title: Roku で広告をトラッキングする方法
 description: メディア SDK を使用して、Roku アプリケーションに広告トラッキングを実装します。
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 100%

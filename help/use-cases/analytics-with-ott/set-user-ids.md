@@ -3,9 +3,9 @@ title: ユーザー ID の設定
 description: 一意の顧客識別子として提供されるユーザー ID を設定するための API。
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
-feature: "Media Analytics, API"
+feature: "Streaming Media, API"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 100%

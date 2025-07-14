@@ -2,9 +2,9 @@
 title: 使用可能なストリーミングメディア実装パスを教えてください。
 description: Adobe Experience Platform のデータ収集を含む、Adobe Streaming Media の実装パスについて説明します。
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 92%
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 **このコンテンツは現在の実装パスファイルに移動されました**
 
-Streaming Media Analytics には一意の SKU があり、サーバー呼び出しに基づく価格モデルからビデオストリームに基づくモデルに変わるので、お客様は導入パスごとに営業担当者/Adobeアカウントチームに連絡して新しい販売注文にサインする必要があります。
+Streaming Media Analytics には一意の SKU があり、サーバー呼び出しに基づく価格モデルからビデオストリームに基づくモデルに変わるので、お客様は導入パスごとに営業担当者/Adobe アカウントチームに連絡して新しい販売注文に署名する必要があります。
 
 ## Adobe Media Analytics 拡張機能を使用した Adobe Experience Platform のデータ収集
 

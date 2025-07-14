@@ -3,9 +3,9 @@ title: Chromecast でチャプターとセグメントをトラッキングす�
 description: Chromecast でメディア SDK を使用してチャプターとセグメントのトラッキングを実装する方法を説明します。
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 100%

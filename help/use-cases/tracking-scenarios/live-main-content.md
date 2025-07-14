@@ -1,11 +1,11 @@
 ---
-title: ライブメインコンテンツ
+title: 'ライブメインコンテンツ '
 description: Media SDK を使用してライブコンテンツをトラッキングする方法の例を示します。
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 100%

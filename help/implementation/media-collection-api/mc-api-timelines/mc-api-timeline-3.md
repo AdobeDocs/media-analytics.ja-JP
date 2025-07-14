@@ -3,9 +3,9 @@ title: メディアトラッキングタイムライン ‐ チャプター
 description: 再生ヘッドタイムラインと、チャプターの開始と終了のタイミングについて説明します。
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 100%

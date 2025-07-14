@@ -1,14 +1,14 @@
 ---
 title: 広告と広告の間に発生する main:play の解決
-description: 広告と広告の間で予期せず発生する main:play 呼び出しを処理する方法を説明します。
+description: 広告間で予期しない main:play 呼び出しを処理する方法を説明します。
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

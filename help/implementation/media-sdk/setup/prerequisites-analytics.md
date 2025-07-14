@@ -1,10 +1,10 @@
 ---
 title: Adobe Analytics のみの実装の前提条件
 description: Adobe Analyticsのみの実装で Streaming Media Collection を使用するための前提条件を説明します
-feature: Media Analytics, System Requirements
+feature: Streaming Media, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: f94a5339-f777-44ec-ba79-0a1986c52225
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: 0b0b4a373b15191dcb37dc436413f68cdc70768e
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 44%
@@ -13,7 +13,7 @@ ht-degree: 44%
 
 # Adobe Analytics のみの実装の前提条件
 
-この節で説明する前提条件は、（Edgeを使用していない場合に）Adobe分析専用の実装を使用したストリーミングメディアコレクションの実装に固有です。
+この節で説明する前提条件は、（Edgeを使用していない場合に）Adobeのみの実装を使用した Streaming Media Collection の実装に固有です。
 
 1. **一般的な前提条件を満たす**<br>
 Streaming Media Collection をAdobe Analyticsのみの実装用に実装する場合でも、Edge実装の場合でも、[ 一般的な前提条件 ](/help/getting-started/prereqs.md) を満たしていることを確認してください。

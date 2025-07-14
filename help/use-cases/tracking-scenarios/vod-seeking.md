@@ -3,9 +3,9 @@ title: メインコンテンツでシークのある VOD 再生
 description: シークが発生した VOD コンテンツを Media SDK を使用してトラッキングする方法の例を示します。
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%

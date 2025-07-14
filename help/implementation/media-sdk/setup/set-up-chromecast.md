@@ -3,9 +3,9 @@ title: Chromecast 用 Media SDK の設定方法
 description: Chromecast で Media SDK アプリケーションをセットアップするには、次の手順に従います。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 97%
@@ -36,7 +36,7 @@ Experience Cloud ソリューション向けの Chromecast 用 Adobe Mobile ラ�
 
    1. `AdobeMobileLibrary-Chromecast-[version]`.zip ファイルには、次のソフトウェアコンポーネントが含まれています。
 
-      * を使用します`adbmobile-chromecast.min.js`。
+      *  を使用します`adbmobile-chromecast.min.js`。
 
         このライブラリファイルは、Chromecast アプリのソースフォルダーに含まれています。
 
@@ -89,7 +89,7 @@ Experience Cloud ソリューション向けの Chromecast 用 Adobe Mobile ラ�
 
       >[!IMPORTANT]
       >
-      >`mediaHeartbeat` を誤って設定した場合、メディアモジュールがエラー状態になり、トラッキングコールが送信されなくなります。
+      >`mediaHeartbeat` を誤って設定した場合、メディアモジュールがエラー状態になり、トラッキングコールの送信が停止されます。
 
       mediaHeartbeat キーの ADBMobile 設定パラメーター：
 
@@ -128,7 +128,7 @@ Experience Cloud ソリューション向けの Chromecast 用 Adobe Mobile ラ�
 
    >[!TIP]
    >
-   >Experience Cloud 訪問者 ID メソッドのプレフィックスは `visitor` です。
+   >Experience Cloud 訪問者 ID メソッドの接頭辞は `visitor` です。
 
    | メソッド | 説明 |
    | --- | --- |
@@ -153,4 +153,4 @@ Experience Cloud ソリューション向けの Chromecast 用 Adobe Mobile ラ�
    }
    ```
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=ja) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

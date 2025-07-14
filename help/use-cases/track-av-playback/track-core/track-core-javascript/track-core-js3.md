@@ -2,9 +2,9 @@
 title: JavaScript v3.x を使用してコア再生をトラッキングする方法
 description: JavaScript 3.x アプリを使用するブラウザーで Media SDK を使用してコアトラッキングを実装する方法を説明します。
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 87%
@@ -128,7 +128,7 @@ ht-degree: 87%
 
 1. **再生ヘッド値を更新**
 
-   メディア再生ヘッドが変更されたら、`mediaUpdatePlayhead` API を呼び出して SDK に通知します。 <br /> ビデオオンデマンド（VOD）の場合、値はメディア項目の開始時からの秒数で指定されます。<br /> ライブストリーミングでは、プレーヤーがコンテンツのデュレーションに関する情報を提供しない場合、その日の午前 0 時（UTC）からの秒数を指定できます。
+   メディアの再生ヘッドが変更された場合は、`mediaUpdatePlayhead` API を呼び出してSDKに通知します。 <br /> ビデオオンデマンド（VOD）の場合、値はメディア項目の開始時からの秒数で指定されます。<br /> ライブストリーミングでは、プレーヤーがコンテンツのデュレーションに関する情報を提供しない場合、その日の午前 0 時（UTC）からの秒数を指定できます。
 
    ```
    tracker.updatePlayhead(position)

@@ -2,9 +2,9 @@
 title: Adobe Primetime とは
 description: Adobe Primetime ソリューションと、それがストリーミングメディアの収益化にどのように役立つかについて説明します。
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 82%
@@ -31,4 +31,4 @@ TVSDK は既にメディア SDK と統合されているので、サポートさ
 
 >[!NOTE]
 >
->この導入パスでは、Media Analytics には一意の SKU があり、サーバー呼び出しに基づく価格モデルからメディアストリームに基づくモデルに変わるので、お客様は営業担当者/Adobeアカウントチームに連絡して新しい販売注文にサインする必要があります。 また、TVSDK の購入について、営業担当者またはアカウントマネージャーにお問い合わせください。
+>この導入パスでは、Media Analytics には一意の SKU があり、サーバー呼び出しに基づく価格モデルからメディアストリームに基づくモデルに変わるので、お客様は営業担当者/Adobe アカウントチームに連絡して新しい販売注文にサインする必要があります。 また、TVSDK の購入について、営業担当者またはアカウントマネージャーにお問い合わせください。

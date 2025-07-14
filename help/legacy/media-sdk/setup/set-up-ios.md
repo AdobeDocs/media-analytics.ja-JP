@@ -3,9 +3,9 @@ title: iOS で Media SDK をセットアップする方法
 description: iOS で Media SDK アプリケーションをセットアップするには、次の手順に従います。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 94%
@@ -14,7 +14,7 @@ ht-degree: 94%
 
 # iOS のセットアップ{#set-up-ios}
 
-iOS デバイス のストリーミングメディアコレクションの設定方法について説明します。
+iOS デバイス用の Streaming Media Collection の設定方法について説明します。
 
 >[!IMPORTANT]
 >
@@ -165,9 +165,9 @@ iOS デバイス のストリーミングメディアコレクションの設定
 
 次の手順を Xcode プロジェクトで実行します。このガイドは、プロジェクトのターゲットの 1 つが tvOS 用の Apple TV アプリであることを想定して記述されています。
 
-1. `VideoHeartbeat_TV.a`ライブラリファイルをプロジェクトの`lib`フォルダーにドラッグします。
+1. `VideoHeartbeat_TV.a` ライブラリファイルをプロジェクトの `lib` フォルダーにドラッグします。
 
-1. tvOS アプリのターゲットタブ **[!UICONTROL ビルドフェーズ]** で、「 **[!UICONTROL バイナリライブラリとのリンク]** 」セクションを展開し、次のライブラリを追加します。
+1. tvOS アプリのターゲットの「**[!UICONTROL ビルドフェーズ]**」タブで、「**[!UICONTROL バイナリをライブラリとリンク]**」セクションを展開し、次のライブラリを追加します。
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

@@ -1,14 +1,14 @@
 ---
-title: プレロール広告のある VOD 再生
-description: プレロール広告を含んだ VOD コンテンツを Media SDK を使用してトラッキングする方法の例を示します。
+title: プリロール広告のあるVOD再生
+description: プリロール広告を含んだVOD コンテンツを Media SDKを使用してトラッキングする方法の例を示します。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 

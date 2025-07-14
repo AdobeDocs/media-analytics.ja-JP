@@ -1,11 +1,11 @@
 ---
-title: チャプターが 1 つある VOD 再生
+title: 'チャプターが 1 つある VOD 再生 '
 description: チャプターを 1 つ含んだ VOD 再生のトラッキングの例を示します。
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 100%

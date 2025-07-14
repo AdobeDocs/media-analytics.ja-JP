@@ -1,17 +1,17 @@
 ---
-title: 実装 API を使用した Streaming Media Collection のEdge Network
-description: Media Analytics とExperience Platform Edge API のインストールに関するリソース。
-feature: Media Analytics
+title: Edge Network API を使用した Streaming Media Collection の実装
+description: Media Analytics とExperience Platform Edge API のインストールに関するリソースです。
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-# 実装 API を使用した Streaming Media Collection のEdge Network
+# Edge Network API を使用した Streaming Media Collection の実装
 
 [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md) が利用できない場合は、API を介してAdobe Experience Platform Edge Networkに直接データを送信できます。
 

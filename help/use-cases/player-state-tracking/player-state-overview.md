@@ -2,9 +2,9 @@
 title: プレーヤーステートトラッキングについて
 description: プレーヤーステートの実装とレポートに関する要件やガイドラインを含め、プレーヤーステートのトラッキング機能について説明します。
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 100%

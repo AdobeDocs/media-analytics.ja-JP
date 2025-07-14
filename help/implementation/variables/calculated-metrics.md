@@ -3,9 +3,9 @@ title: 計算指標
 description: ストリーミングメディアコレクションの計算指標と指標式について説明します。
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 72%
@@ -14,7 +14,7 @@ ht-degree: 72%
 
 # 計算指標{#calculated-metrics}
 
-Adobeストリーミングメディアコレクションの計算指標は、平均広告視聴時間やメディアストリームあたりの平均広告数など、ターゲットを絞ったストリーミングメディアデータを取得できるカスタム指標です。
+Adobe ストリーミングメディアコレクションの計算指標は、平均広告視聴時間やメディアストリームあたりの平均広告数など、ターゲットを絞ったストリーミングメディアデータを取得できるカスタム指標です。
 
 Adobe Analytics の計算指標について詳しくは、Adobe Analytics コンポーネントガイドの[計算指標および高度な計算（派生）指標](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=ja)を参照してください。
 

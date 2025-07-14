@@ -1,11 +1,11 @@
 ---
-title: メディアレポートの有効化
+title: 'メディアレポートの有効化 '
 description: メディア指標を収集するメディアレポートスイートについて説明します。メディアデータを送信する前に、次の手順に従ってメディアレポートを設定します。
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 98%

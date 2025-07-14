@@ -2,16 +2,16 @@
 title: Media SDK ユースケースの概要
 description: ストリーミングメディアの使用例について学ぶ
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 92%
 
 ---
 
-# メディア SDK の使用例 {#media-sdk-use-cases}
+# Media SDKのユースケース {#media-sdk-use-cases}
 
 * [プレーヤーの状態のトラッキング](/help/use-cases/player-state-tracking/player-state-overview.md)
 * [オフラインダウンロードコンテンツの追跡](/help/use-cases/track-downloaded-content.md)
@@ -22,7 +22,7 @@ ht-degree: 92%
 * [メディアストリームのアトリビューション](/help/use-cases/media-analytics-cookbook/media-dimensions.md)
 
 * Federated
-   * [フェデレーテッド・メディア](/help/use-cases/federated-media.md)
+   * [Federated Media](/help/use-cases/federated-media.md)
 
 * タイムライン
    * [チャプターの開始と終了](/help/use-cases/timelines/chapter-start-end.md)

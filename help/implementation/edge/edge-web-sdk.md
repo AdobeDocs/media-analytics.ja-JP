@@ -1,19 +1,19 @@
 ---
 title: Adobe Experience Platform Web SDKを使用したEdgeへの Web データの送信
-description: Adobe Experience Platform web SDKを使用して、AdobeストリーミングメディアデータをExperience PlatformEdgeに送信する方法について説明します。
-feature: Media Analytics
+description: Adobe Experience Platform Web SDKを使用して、Adobe ストリーミングメディアデータをExperience Platform Edgeに送信する方法について説明します。
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Adobe Experience Platform Web SDKを使用したEdgeへの Web データの送信
 
-バージョン 2.20.0 以降は、Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/home) の `streamingMedia` コンポーネントを使用すると、web サイト上のメディアセッションに関連するデータを収集できます。 収集されたデータには、メディアプレイバック、一時停止、完了およびその他の関連イベントに関する情報を含めることができます。
+バージョン 2.20.0 以降は、Adobe Experience Platform `streamingMedia`Web SDK[ の ](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/home) コンポーネントを使用すると、web サイト上のメディアセッションに関連するデータを収集できます。 収集されたデータには、メディアプレイバック、一時停止、完了およびその他の関連イベントに関する情報を含めることができます。
 
 データを収集したら、Adobe Experience PlatformやAdobe Analyticsに送信し、レポートを生成できます。 この機能は、web サイトでのメディア消費行動を追跡および把握するための包括的なソリューションを提供します。
 
@@ -23,7 +23,7 @@ Media JS SDKを使用しているお客様の場合、Web SDKは、Media JS SDK�
 
 Web SDKの `streamingMedia` コンポーネントを使用するには、次の前提条件を満たす必要があります。
 
-* ストリーミングメディアデータをEdgeに送信する前に、まず [Experience Platform Edgeを使用したストリーミングメディアコレクションのインストール ](/help/implementation/edge/implementation-edge.md) の手順を実行します。
+* ストリーミングメディアデータをEdgeに送信する前に、まず [Experience Platform Edgeでのストリーミングメディアコレクションのインストール ](/help/implementation/edge/implementation-edge.md) の手順を実行します。
 * Adobe Experience PlatformやAdobe Analyticsにアクセスできることを確認します。
 * Web SDK バージョン 2.20.0 以降を使用する必要があります。 最新バージョンのインストール方法については、[Web SDKのインストールの概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/install/overview) を参照してください。
 * 使用しているデータストリームの「**[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)**」オプションを有効にします。
@@ -68,7 +68,7 @@ alloy("configure", {
 });
 ```
 
-設定方法について詳しくは、web SDK `streamingMedia` コンポーネント [ ドキュメント ](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/configure/streamingmedia) を参照してください。
+設定方法について詳しくは、web SDK `streamingMedia` コンポーネント [ ドキュメント ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) を参照してください。
 
 ### 手順 3:Media JS SDKから移行する際に、Media トラッカーインスタンスを取得する
 
@@ -76,7 +76,7 @@ Media JS SDKを使用しているお客様の場合、Web SDKは、Media JS SDK�
 
 [!DNL Web SDK] には、Media Analytics トラッカーを取得するコマンドが含まれています。 このコマンドを使用してオブジェクトインスタンスを作成し、[Media JS ライブラリ ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html) で提供される API と同じ API を使用してメディアイベントを追跡できます。
 
-サポートされるメソッドについて詳しくは、[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) のドキュメントを参照してください。
+サポートされるメソッドについて詳しくは、[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) のドキュメントを参照してください。
 
 以下のスニペットは、Media JS でメディアトラッカーインスタンスを取得する方法を示しています。
 
