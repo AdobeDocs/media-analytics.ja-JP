@@ -12,15 +12,15 @@ ht-degree: 2%
 
 # 新しいストリーミングメディアフィールドへのオーディエンスの移行
 
-このドキュメントでは、「Media」と呼ばれるAdobe ストリーミングメディアコレクションのデータタイプのフィールドを使用するオーディエンスを、「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプを使用するように移行する方法について説明します。
+このドキュメントでは、「Media」と呼ばれるAdobe ストリーミングメディアコレクションのデータタイプのフィールドを使用するオーディエンスを、「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプを使用するように移行する方法について説明します。
 
 ## オーディエンスの移行
 
-オーディエンスを「メディア」という古いデータタイプから「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータタイプに移行するには、オーディエンスを編集し、各ルールで非推奨（廃止予定）のデータタイプの古いフィールドを、新しいデータタイプの新しい対応するフィールドに置き換える必要があります。
+オーディエンスを「メディア」という古いデータタイプから「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータタイプに移行するには、オーディエンスを編集し、各ルールで非推奨（廃止予定）のデータタイプの古いフィールドを、新しいデータタイプの新しい対応するフィールドに置き換える必要があります。
 
 1. 非推奨の「メディア」データタイプのフィールドを含むルールを見つけます。 これが、パス `media.mediaTimed` で始まるすべてのフィールドです。
 
-1. 新しい「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」データタイプのフィールドを使用して、これらのルールを複製します。
+1. 新しい「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」データタイプのフィールドを使用して、これらのルールを複製します。
 
 1. オーディエンスが期待どおりに動作していることを検証するまで、両方のルールを保持します。
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 1. オーディエンスが引き続き期待どおりに動作していることを検証します。
 
-古いフィールドと新しいフィールド間のマッピングについては、[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) ページの [ コンテンツ ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) パラメーターを参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
+古いフィールドと新しいフィールド間のマッピングについては、[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) ページの [ コンテンツ ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) パラメーターを参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
 
 ![ 新しい古い XDM フィールドのパス ](assets/field-paths-updated.jpeg)
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
    ![ オーディエンスを編集 ](assets/audience-edit5.jpeg)
 
-1. 古いフィールド間をマッピングするには、[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) ページを参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。 例えば、「[ メディア開始 ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts)」パラメーターの場合、`media.mediaTimed.impressions.value` の対応する設定は `mediaReporting.sessionDetails.isViewed` です。
+1. 古いフィールド間をマッピングするには、[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) ページを参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。 例えば、「[ メディア開始 ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts)」パラメーターの場合、`media.mediaTimed.impressions.value` の対応する設定は `mediaReporting.sessionDetails.isViewed` です。
 
    ![ 更新された XDM パス ](assets/updated-xdm-path.jpeg)
 
