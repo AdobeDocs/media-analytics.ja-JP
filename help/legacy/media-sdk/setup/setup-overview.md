@@ -5,9 +5,9 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '616'
 ht-degree: 94%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 94%
 
 ## 一般的な実装のガイドライン {#general-implementation-guidelines}
 
-ストリーミングメディアコレクションでのトラッキングに使用する主なSDK コンポーネントは 3 つあります。
+ストリーミングメディアサービスでのトラッキングに使用するSDK コンポーネントは、主に次の 3 つです。
 * Media Heartbeat 設定 - `MediaHeartbeatConfig` には、レポートの基本設定が含まれています。
 * Media Heartbeat デリゲート - `MediaHeartbeatDelegate` は、再生時間と QoS オブジェクトを制御します。
 * Media Heartbeat - `MediaHeartbeat` は、メンバーとメソッドを含むプライマリライブラリです。
@@ -125,6 +125,6 @@ Media Analytics トラッキング実装は、2 つのタイプのトラッキ�
 
   Analytics トラッキングサーバーは「`.sc.omtrdc.net`」で終わるか CNAME である必要があります。
 
-* **&#x200B; Media Analytics（ハートビート）サーバー** これは、常に「`[your_namespace].hb.omtrdc.net`」形式になります。「`[your_namespace]`」の値は会社を指定し、アドビによって提供されます。
+* ** Media Analytics（ハートビート）サーバー** これは、常に「`[your_namespace].hb.omtrdc.net`」形式になります。「`[your_namespace]`」の値は会社を指定し、アドビによって提供されます。
 
 メディアトラッキングはあらゆるプラットフォーム、デスクトップ、モバイルで同じように動作します。オーディオトラッキングは、現在、モバイルプラットフォームで動作します。すべてのトラッキングコールに共通する、検証が必要な主要ユニバーサル変数がいくつかあります。

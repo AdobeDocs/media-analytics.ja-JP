@@ -1,14 +1,14 @@
 ---
-title: ストリーミングメディアコレクション API ‐ リクエストパラメーター
+title: Streaming Media Services API リクエストパラメーター�
 description: Media Collection API リクエストパラメーター、リクエストキー、説明
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '1337'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 

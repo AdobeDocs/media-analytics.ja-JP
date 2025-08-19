@@ -1,13 +1,13 @@
 ---
-source-git-commit: e534d44f9d03b99153fde23b2c587f8607ceea72
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '613'
+ht-degree: 98%
 
 ---
 # ストリーミングメディアリリースノート - ソーステキスト
 
-以下の内容は、Experience Cloud リリースノートからコピーされています。これは、新しいストリーミングメディアのリリースノートに移動されます。
+以下の内容は、Experience Cloud リリースノートからコピーされています。これは、新しい streaming media services リリースノートに移動されます。
 
 
 [Adobe Experience Cloud 製品](https://business.adobe.com/jp/products/adobe-experience-cloud-products.html)の最新のリリース更新について説明します。Experience League に関する最新のセルフヘルプドキュメント、チュートリアル、コースを入手します。

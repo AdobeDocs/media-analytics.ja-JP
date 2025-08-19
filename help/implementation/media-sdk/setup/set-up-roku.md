@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 94%
+source-wordcount: '675'
+ht-degree: 92%
 
 ---
 
@@ -16,9 +16,10 @@ ht-degree: 94%
 
 ## 前提条件 {#roku-prerequisites}
 
-* **ストリーミングメディアコレクション用の有効な設定パラメーターの取得**
+* **Adobe Streaming Media Services 用の有効な設定パラメーターの取得**
 
-  これらのパラメーターは、Adobe Streaming Media Collection アカウントの設定後、Adobeの担当者から取得できます。
+  これらのパラメーターは、Adobe Streaming Media Collection アドオンまたはAdobe for Streaming Media アドオンのアカウントを設定した後、Adobe Analytics の担当者から取得できます。
+
 * **メディアプレーヤーで以下の API を含める**
 
    * _プレーヤーイベントをサブスクライブするための API_ - Media SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
@@ -171,4 +172,4 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
    | `processMediaMessages` | 処理するメディアイベントを SDK に渡します。<br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=ja) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

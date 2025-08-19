@@ -3,7 +3,8 @@ title: 新しいストリーミングメディアフィールドへのプロフ�
 description: 新しいストリーミングメディアフィールドにプロファイルを移行する方法を説明します
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 19e729c7d87b4e81b6952c7ebcb8b122043d516d
+exl-id: 0f75e594-5216-4ac1-91bd-fa89ab4b2110
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 0%
@@ -12,11 +13,11 @@ ht-degree: 0%
 
 # 新しいストリーミングメディアフィールドへのプロファイルの移行
 
-このドキュメントでは、Adobe Analytics for Streaming Media データが有効なAdobe データ収集フローの上に存在するプロファイルフィルタリングサービスを移行するプロセスについて説明します。 移行により、プロファイルフィルタリングサービスが、「Media」と呼ばれるAdobe Streaming Media Collection データタイプの使用から、「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプの使用に変換されます。
+このドキュメントでは、ストリーミングメディアデータに対してAdobe Analyticsが有効なAdobe データ収集フローの上に存在するプロファイルフィルタリングサービスを移行するプロセスについて説明します。 移行により、プロファイルフィルタリングサービスが、「Media」と呼ばれるAdobe streaming media services データタイプの使用から、「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプの使用に変換されます。
 
 ## プロファイルの移行
 
-プロファイルフィルタリングを古い「メディア」というデータタイプから新しい「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」というデータタイプに移行するには、既存のプロファイルフィルタリングルールを編集する必要があります。
+プロファイルフィルタリングを古い「メディア」というデータタイプから新しい「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」というデータタイプに移行するには、既存のプロファイルフィルタリングルールを編集する必要があります。
 
 1. Adobe Experience Platformの「[!UICONTROL **ソース**]」セクションで、「[!UICONTROL **データフロー**]」タブに移動します。
 
@@ -32,7 +33,7 @@ ht-degree: 0%
 
 1. プロファイルが引き続き期待どおりに動作していることを検証します。
 
-古いフィールドと新しいフィールド間のマッピングについては、[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) ページの [ コンテンツ ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) パラメーターを参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
+古いフィールドと新しいフィールド間のマッピングについては、[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) ページの [ コンテンツ ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) パラメーターを参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
 
 ## 例
 
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 1. Adobe Experience Platformの「[!UICONTROL **ソース**]」セクションで、「[!UICONTROL **データフロー**]」タブに移動します。
 
-&#x200B;1. ストリーミングメディアデータをAdobe AnalyticsからAdobe Experience PlatformにAdobe Analyticsを介して読み込む役割を果たすデータフローを見つけます。
+&#x200B;1. Adobe AnalyticsからAdobe Analyticsを介してAdobe Experience Platformにストリーミングメディアデータを読み込む役割を果たすデータフローを見つけます。
 
 1. **[!UICONTROL データフローを更新]** を選択して、次の画像に示すように、編集 UI を入力します。
 
@@ -55,7 +56,7 @@ ht-degree: 0%
    ![AEP データフローフィルタールール ](assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   meda.mediaTimed オブジェクトを使用する各フィルターについて、`mediaReporting` オーディオおよびビデオパラメーター [ ページを使用して ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) オブジェクトで対応するフィールドを見つけ、古いフィールドと新しいフィールド間をマッピングします。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。 例えば、[ メディア開始 ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts) の場合、`media.mediaTimed.impressions.value` の通信相手は `mediaReporting.sessionDetails.isViewed` です。
+   meda.mediaTimed オブジェクトを使用する各フィルターについて、`mediaReporting` オーディオおよびビデオパラメーター [ ページを使用して ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) オブジェクトで対応するフィールドを見つけ、古いフィールドと新しいフィールド間をマッピングします。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。 例えば、[ メディア開始 ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts) の場合、`media.mediaTimed.impressions.value` の通信相手は `mediaReporting.sessionDetails.isViewed` です。
 
    ![ 新しい XDM フィールドと古い XDM フィールド ](assets/xdm-fields-new-and-old.jpeg)
 

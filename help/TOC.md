@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: ストリーミングメディアコレクション
-breadcrumb-title: ストリーミングメディアコレクションガイド
-user-guide-description: ストリーミングメディアを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
+user-guide-title: ストリーミングメディアサービスガイド
+breadcrumb-title: ストリーミングメディアサービスガイド
+user-guide-description: ストリーミングメディアサービスの実装。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 81%
+source-wordcount: '926'
+ht-degree: 79%
 
 ---
 
 
-# ストリーミングメディアコレクション {#using}
+# ストリーミングメディアサービスガイド {#using}
 
-+ [ストリーミングメディアコレクションガイド](media-overview.md)
++ [Adobe streaming media services ガイド](media-overview.md)
 + リリースノート {#release-notes}
-   + [Streaming Media Collection リリースノート](additional-resources/release-notes.md)
+   + [Streaming Media Services リリースノート](additional-resources/release-notes.md)
 + 基本を学ぶ {#getting-started}
    + [前提条件](getting-started/prereqs.md)
    + [サポートされるデバイス](getting-started/supported-devices.md)
-   + [ストリーミングメディアコレクション実装ドキュメント](getting-started/implementation-documentation.md)
+   + [ストリーミングメディアサービスの実装ドキュメント](getting-started/implementation-documentation.md)
    + [SDK、ライブラリおよび拡張機能](getting-started/download-sdks.md)
    + サポートの終了 {#end-of-support}
       + [Media Analytics Mobile SDK のサポート終了](additional-resources/end-of-support-faqs.md)

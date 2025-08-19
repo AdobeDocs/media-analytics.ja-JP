@@ -1,19 +1,19 @@
 ---
-title: サポートされているデバイスとプラットフォーム
-description: Streaming Media Collection がサポートするiOS、Android、OTT デバイス、JavaScript ブラウザーなどの主要なデバイスについて説明します。
+title: サポートされるデバイスとプラットフォームについて学ぶ
+description: Adobe ストリーミングメディアサービスがサポートするiOS、Android、OTT デバイス、JavaScript ブラウザーなどの主要なデバイスについて説明します。
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 77%
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
 # サポートされるデバイスとプラットフォーム {#devices-supported}
 
-Adobe Streaming Media Collection は、次のようなすべての主要なデバイスをサポートしています。
+Adobe ストリーミングメディアサービスは、次のようなすべての主要なデバイスをサポートしています。
 
 * iOS および Android のスマートフォンおよびタブレット
 * Roku、Fire TV、Android TV の OTT デバイス
@@ -21,7 +21,7 @@ Adobe Streaming Media Collection は、次のようなすべての主要なデ�
 
 SDK は、新しいバージョンのデバイスがリリースされると定期的に更新されます。SDK を使用して、個々のプラットフォームのネイティブプレーヤーやその他の使用可能なメディアプレーヤーと統合できます。
 
-現在 SDK をサポートしていないデバイスの場合や、実装をカスタマイズする必要がある場合は、Media Collection API または Media Edge API を使用できます。これらの API を使用すると、デバイスからストリーミングメディアコレクションのバックエンドに直接 RESTful API 呼び出しを行うことができます。
+現在 SDK をサポートしていないデバイスの場合や、実装をカスタマイズする必要がある場合は、Media Collection API または Media Edge API を使用できます。これらの API を使用すると、デバイスからAdobe ストリーミングメディアサービスのバックエンドに直接 RESTful API 呼び出しを行うことができます。
 
 現在サポートされているデバイスの表を次に示します。デバイスが一覧にない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
 

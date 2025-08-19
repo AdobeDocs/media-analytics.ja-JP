@@ -1,24 +1,26 @@
 ---
-title: ストリーミングメディアコレクションの実装
-description: ストリーミングメディアコレクションの実装パスについて説明します。
+title: Adobe AnalyticsまたはCustomer Journey Analyticsのストリーミングメディアサービスの実装
+description: Adobe Streaming Media Services の実装パスについて説明します。
 uuid: null
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 69%
+source-wordcount: '484'
+ht-degree: 65%
 
 ---
 
-# ストリーミングメディアコレクションの実装
+# Adobe AnalyticsまたはCustomer Journey Analyticsのストリーミングメディアサービスの実装
 
-Adobe Streaming Media Collection を実装するには、様々な方法があります。 このページで説明している実装方法でサポートされるデバイスとプラットフォームの比較について詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください。
+Adobe Streaming Media Services の実装には、様々な方法があります。 このページで説明している実装方法でサポートされるデバイスとプラットフォームの比較について詳しくは、[サポートされるデバイスとプラットフォーム](/help/getting-started/supported-devices.md)を参照してください。
 
 ## Edge の実装方法
 
-Adobe AnalyticsまたはCustomer Journey Analyticsの新規のお客様すべてに Streaming Media Collection を実装する際は、Edgeを使用することをお勧めします。
+Adobe AnalyticsまたはCustomer Journey Analyticsの新規のお客様すべてにストリーミングメディアサービスを実装する場合は、Edgeを使用することをお勧めします。
+
+Edgeの実装方法では、ストリーミングメディアコレクションアドオンを使用します。
 
 * **Media for Edge Network SDK/拡張機能：** Web、iOSおよびAndroidのデバイス、または Roku デバイスからデータを収集し、Edge Networkに送信します。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
@@ -35,6 +37,8 @@ Adobe AnalyticsまたはCustomer Journey Analyticsの新規のお客様すべて
 上記の Edge 実装方式は、Customer Journey Analytics と Adobe Analytics の両方、特に新しい実装の場合に推奨されます。
 
 Edge 実装方式に加えて、他の実装方式も使用できます。これらの実装方式は、Adobe Analytics で使用するために設計されました。ただし、次のいずれかの実装方法を使用している既存の顧客は、[Analytics ソース接続](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成することで、Customer Journey Analytics でデータを使用できるようにすることができます。
+
+Adobe Analyticsのみの実装方法では、Adobe Analytics for Streaming Media アドオンを使用します。
 
 * **タグ付きのメディア拡張機能：** Adobe Medium Analytics for Audio and Video 拡張機能は、タグが有効なサイトまたはプロジェクトにメディアトラッカーインスタンスを追加する機能を提供します。データは Adobe Analytics に送信されます。
 

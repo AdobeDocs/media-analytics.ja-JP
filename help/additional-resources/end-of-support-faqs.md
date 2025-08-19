@@ -4,10 +4,10 @@ description: このトピックには、Media Analytics SDK のサポート終�
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 75%
+source-wordcount: '614'
+ht-degree: 68%
 
 ---
 
@@ -15,18 +15,18 @@ ht-degree: 75%
 
 2021 年 8 月 31 日（PT）にバージョン 4 の Mobile SDK のサポートが終了するのに伴い、AdobeではiOSおよびAndroid用の Media Analytics Mobile SDK のサポートも終了しました。 （これには、Web （JS）用の Media Analytics SDKや、引き続きサポートされる Chromecast や Roku などの OTT プラットフォームは含まれません。）
 
-つまり、Adobeでは、Media Analytics Mobile SDKの修正、OS 関連の更新プログラム、サポートを提供しなくなりました。 新しいExperience Platform SDK に移行する場合は、Adobe Streaming Media Collection を有効にするために [Media Analytics 拡張機能 ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) を実装する必要があります。
+つまり、Adobeでは、Media Analytics Mobile SDKの修正、OS 関連の更新プログラム、サポートを提供しなくなりました。 新しいExperience Platform SDK に移行する場合は、Adobe Streaming Media サービスを有効にするために [Media Analytics 拡張機能 ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) を実装する必要があります。
 
 
 ## 知っておきたいことトップ 5
 
 1. Mobile v4 SDK は、2021 年 8 月 31 日（PT）以降はサポートされなくなりました。 iOSとAndroidのAdobe Experience Platform（AEP） Mobile SDK に移行する必要があります。
 
-1. Analytics for Streaming Media を実装するには AEP Mobile SDK と、Analytics と Media Analytics の拡張機能を使用する必要があります。2021 年 9 月 1 日をもって、新しいAEP Mobile SDK および拡張機能を使用する必要があります。  Media Analytics 拡張機能は、アドビタグ（データ収集）を使用して設定されます。詳しくは、[スタンドアロンの Media SDK から Adobe Launch への移行](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)を参照してください。
+1. Adobe Streaming Media Services を実装するには、AEP Mobile SDKと Analytics および Media Analytics 拡張機能の使用が必要です。 2021 年 9 月 1 日をもって、新しいAEP Mobile SDK および拡張機能を使用する必要があります。  Media Analytics 拡張機能は、アドビタグ（データ収集）を使用して設定されます。詳しくは、[スタンドアロンの Media SDK から Adobe Launch への移行](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)を参照してください。
 
 1. iOS および Android 用 Media Analytics SDK の機能の開発は終了しました。2019 年秋から導入された新機能は、Media Analytics 拡張機能とメディアコレクション API を使用して有効化されます。
 
-1. Analytics for Streaming Media のお客様は引き続き、Roku SDK と Chromecast SDK をご利用いただけます。Roku SDK と Chromecast SDK はスタンドアロンの SDK として引き続き機能強化やサポートが行われます。Media Analytics 用の JS SDK を使用している場合は、引き続きスタンドアロン SDK を使用するか、Adobe データ収集（以前の Adobe Launch）を使用して Media Analytics 拡張機能を有効にすることができます。
+1. Roku および Chromecast SDK は、Adobe Analytics for Streaming Media アドオンおよびCustomer Journey Analytics Streaming Media Collection アドオンを使用しているお客様が引き続き使用できます。 Roku SDK と Chromecast SDK はスタンドアロンの SDK として引き続き機能強化やサポートが行われます。Media Analytics 用の JS SDK を使用している場合は、引き続きスタンドアロン SDK を使用するか、Adobe データ収集（以前の Adobe Launch）を使用して Media Analytics 拡張機能を有効にすることができます。
 
 ご不明な点については、Adobe アカウントチームにお問い合わせください。
 

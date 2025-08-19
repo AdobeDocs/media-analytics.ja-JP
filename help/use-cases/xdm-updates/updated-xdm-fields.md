@@ -1,24 +1,25 @@
 ---
-title: Analytics ソースコネクタ実装の、更新された XDM ストリーミングメディアフィールドへの移行
+title: Analytics ソースコネクタ実装を、ストリーミングメディアサービス用の新しい XDM フィールドに更新します
 description: 更新された XDM ストリーミングメディアフィールドへの Analytics ソースコネクタ実装の移行について説明します
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+exl-id: d239b203-71ce-4307-884f-9d11cc623d04
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Analytics ソースコネクタ実装のストリーミングメディア用の新しい XDM フィールドへの更新
+# Analytics ソースコネクタ実装を、ストリーミングメディアサービス用の新しい XDM フィールドに更新します
 
 >[!NOTE]
 >
->この情報は、[Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) を使用して、Customer Journey Analytics レポートまたはその他の Platform サービスで使用するために、Adobe AnalyticsからAdobe Experience Platformにストリーミングメディアデータを取り込む組織を対象としています。
+>この情報は、[Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) を使用してAdobe AnalyticsからストリーミングメディアデータをAdobe Experience Platformに取り込み、Customer Journey Analytics レポートやその他の Platform サービスで使用する組織を対象としています。
 >
 >変更内容は、データ収集、処理、レポートを含む、Adobe Analytics as a スタンドアロンアプリケーションには影響しません。 データフィードや処理ルールなどのツールは影響を受けないため、Analytics 実装を更新する必要はありません。
 
-Streaming Media サービスの新しいAdobe データ収集（Analytics ソースコネクタ）実装が、XDM フィールドセット間で移行できるようになりました。
+ストリーミングメディアサービスの新しいAdobe データ収集（Analytics ソースコネクタ）実装が、XDM フィールドセット間で移行できるようになりました。
 
 ## 新しい XDM フィールドパス
 
@@ -32,7 +33,7 @@ Adobe AnalyticsからAdobeにストリーミングメディアデータを転送
 
 ## 新しい XDM フィールドパスとの追加の違い
 
-Streaming Media 用の新しいAdobe ソースコネクタの実装により、Adobe Analyticsからのキープアライブ呼び出しがAdobe Experience Platformに取り込まれるようになりました。
+ストリーミングメディア用の新しいAdobe ソースコネクタ実装により、Adobe Analyticsからのキープアライブ呼び出しがAdobe Experience Platformに取り込まれるようになりました。
 
 以前は、これらの呼び出しは、Customer Journey Analyticsなどの Platform アプリには反映されていませんでした。 その結果、組織ではレポートで次のような違いが生じる場合があります。
 
@@ -87,4 +88,3 @@ CJA レポートを移行する方法は 2 つあります。
 Adobe Data Collection for Streaming Media を使用しているすべてのユーザーは、指定された移行期間内に移行を完了する必要があります。
 
 ご質問やサポートのニーズについては、遠慮なくAdobe サポートチームにお問い合わせください。
-

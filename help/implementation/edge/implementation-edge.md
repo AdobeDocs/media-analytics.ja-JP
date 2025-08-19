@@ -1,12 +1,12 @@
 ---
-title: Edge Networkを使用した Streaming Media Collection の実装
-description: Experience Platform Edgeで Streaming Media Collection を実装する方法について説明します。
+title: Edge Networkを使用したAdobe streaming media services の実装
+description: Adobe streaming media services をExperience Platform Edgeで実装する方法について説明します。
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2152'
 ht-degree: 9%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 9%
 
 Adobe Experience Platform Edge Network を使用すると、複数の製品宛てのデータを一元的な場所に送信できます。Experience Edge は、適切な情報を目的の製品に転送します。この概念を使用すると、特に複数のデータソリューションにまたがる実装作業を統合できます。
 
-次の図に、Adobe Streaming Media Collection を実装してExperience Platform Edgeを使用し、Adobe AnalyticsまたはCustomer Journey AnalyticsのいずれかでAnalysis Workspaceのデータを利用できるようにする方法を示します。
+次の図は、Streaming Media Collection アドオンを実装して、Experience Platform Edgeを使用してAdobe AnalyticsまたはCustomer Journey AnalyticsのいずれかでAnalysis Workspaceのデータを利用できるようにする方法を示しています。
 
 ![CJA ワークフロー](assets/streaming-media-edge.png)
 
-Experience Platform Edgeを使用しない実装方法を含む、すべての実装オプションの概要については、[ ストリーミングメディアコレクションの実装 ](/help/implementation/overview.md) を参照してください。
+Experience Platform Edgeを使用しない実装方法を含む、すべての実装オプションの概要については、[Adobe AnalyticsまたはCustomer Journey Analyticsのストリーミングメディアサービスの実装 ](/help/implementation/overview.md) を参照してください。
 
 Experience Edgeで Streaming Media Collection を実装するために、Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK、API のいずれを使用しているかに関係なく、最初に次の節を実行する必要があります。
 
@@ -29,7 +29,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 スキーマを作成して設定するには：
 
-1. Adobe Experience Platformで、[UI でのスキーマの作成と編集 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja) の説明に従ってスキーマの作成を開始します。
+1. Adobe Experience Platformで、[UI でのスキーマの作成と編集 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en) の説明に従ってスキーマの作成を開始します。
 
 1. スキーマの作成時にスキーマの詳細ページで、スキーマのベースクラスを選択する際に [!UICONTROL **エクスペリエンスイベント**] を選択します。
 
@@ -52,7 +52,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 1. （オプション） Media Edge API で使用されない特定のフィールドを非表示にできます。 これらのフィールドを非表示にすると、スキーマが読みやすく理解しやすくなりますが、必須ではありません。 これらのフィールドは、`MediaAnalytics Interaction Details` フィールドグループのフィールドのみを参照します。
 
-+++ ここを展開すると、非表示にできるフィールドに関する説明が表示されます。
+   +++ ここを展開すると、非表示にできるフィールドに関する説明が表示されます。
 
    1. [!UICONTROL **構造**] 領域で「`Media Collection Details`」フィールドを選択し、「[!UICONTROL **関連フィールドを管理**]」を選択します。
 
@@ -111,11 +111,11 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    1. [!UICONTROL **確認**]/[!UICONTROL **保存**] を選択して、変更を保存します。
 
-+++
+   +++
 
 1. （オプション）カスタムメタデータをスキーマに追加できます。 これにより、特定のニーズやコンテキストに合わせてカスタマイズできる、ユーザー定義のメタデータを追加で含めることができます。 この柔軟性は、既存のスキーマが目的のデータポイントをカバーしていないシナリオで役立ちます。 （Media Edge API でカスタムメタデータを操作することもできます。 詳しくは、[Media Edge API を使用したカスタムメタデータの作成 ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/) を参照してください。
 
-+++ スキーマにカスタムメタデータを追加する方法については、こちらを参照してください。
+   +++ スキーマにカスタムメタデータを追加する方法については、こちらを参照してください。
 
    1. [!UICONTROL **アカウント情報**]/[!UICONTROL **割り当てられた組織**]/[!UICONTROL _**組織名**_]/[!UICONTROL **テナント**] を選択して、組織のテナントの名前を見つけます。
 
@@ -129,11 +129,11 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. リクエストペイロードのカスタムフィールドに [ 生成されたパスを使用 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) します。
+   1. リクエストペイロードのカスタムフィールドに [ 生成されたパスを使用 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) します。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
-+++
+   +++
 
 1. [Adobe Experience Platformでデータセットを作成 ](#create-a-dataset-in-adobe-experience-platform) を参照してください。
 
@@ -167,11 +167,11 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       * [!UICONTROL **Adobe Analytics**] （Adobe Analyticsを使用している場合）
 
-        Adobe Analyticsを使用している場合は、[ レポートスイートの作成 ](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) で説明されているとおりに、レポートスイートを定義してください。
+        Adobe Analyticsを使用している場合は、[ レポートスイートの作成 ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) で説明されているとおりに、レポートスイートを定義してください。
 
       * [!UICONTROL **Adobe Experience Platform**] （Customer Journey Analyticsを使用している場合）
 
-     データストリームにサービスを追加する方法について詳しくは、[ データストリームの設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja#view-details) の「データストリームへのサービスの追加」の節を参照してください。
+     データストリームにサービスを追加する方法について詳しくは、[ データストリームの設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details) の「データストリームへのサービスの追加」の節を参照してください。
 
      ![Adobe Analytics サービスを追加する ](assets/datastream-add-service.png)
 
@@ -332,9 +332,9 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    >[!NOTE]
    >
-   >Adobe Analyticsをデータストリームのアップストリームとして設定した場合、カスタムメタデータも、スキーマに設定した名前（テナントのプレフィックスを除く（例：myCustomField）で ContextData に存在します。 これにより、[ 処理ルールの作成 ](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) など、ContextData で使用できるすべてのAdobe Analytics機能を使用できます。
+   >Adobe Analyticsをデータストリームのアップストリームとして設定した場合、カスタムメタデータも、スキーマに設定した名前（テナントのプレフィックスを除く（例：myCustomField）で ContextData に存在します。 これにより、[ 処理ルールの作成 ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) など、ContextData で使用できるすべてのAdobe Analytics機能を使用できます。
 
-1. [ プロジェクトの共有 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ja) の説明に従って、プロジェクトを共有します。
+1. [ プロジェクトの共有 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en) の説明に従って、プロジェクトを共有します。
 
    >[!NOTE]
    >
@@ -381,10 +381,10 @@ API は、Edge API のカスタム実装を使用する場合にも使用でき�
 
 Media Edge API について詳しくは、次のリソースを参照してください。
 
-* [Media Edge API の概要 ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html?lang=ja)
+* [Media Edge API の概要 ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
-* [Media Edge API の概要 ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html?lang=ja)
+* [Media Edge API の概要 ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
-* [Media Edge API トラブルシューティングガイド ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html?lang=ja)
+* [Media Edge API トラブルシューティングガイド ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
 * [Media Edge API 用の Open API 仕様ファイルの使用 ](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
