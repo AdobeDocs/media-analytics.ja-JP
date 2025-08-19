@@ -36,7 +36,7 @@ Experience Cloud ソリューション向けの Chromecast 用 Adobe Mobile ラ�
 
    1. `AdobeMobileLibrary-Chromecast-[version]`.zip ファイルには、次のソフトウェアコンポーネントが含まれています。
 
-      *  を使用します`adbmobile-chromecast.min.js`。
+      * を使用します`adbmobile-chromecast.min.js`。
 
         このライブラリファイルは、Chromecast アプリのソースフォルダーに含まれています。
 
