@@ -5,9 +5,9 @@ user-guide-title: ストリーミングメディアサービスガイド
 breadcrumb-title: ストリーミングメディアサービスガイド
 user-guide-description: ストリーミングメディアサービスを実装します。これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '929'
 ht-degree: 81%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 81%
       + [実装とレポート](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [複数プレーヤーのステートトラッキング](use-cases/player-state-tracking/multiple-player-states.md)
       + [プレーヤーステートトラッキングの例](use-cases/player-state-tracking/player-state-examples.md)
+   + [スケジュールデータの追跡](/help/use-cases/track-schedule-data.md)
    + [ダウンロードされたコンテンツの追跡 ](use-cases/track-downloaded-content.md)
    + [Federated Media](use-cases/federated-media.md)
    + [再生中のアプリケーション割り込みの処理](use-cases/cookbook/app-interrupts.md)
