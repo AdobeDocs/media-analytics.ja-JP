@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: ストリーミングメディアサービスガイド
 breadcrumb-title: ストリーミングメディアサービスガイド
-user-guide-description: ストリーミングメディアサービスの実装。 これには、メディア SDK とメディアコレクション API が含まれます。
+user-guide-description: ストリーミングメディアサービスを実装します。これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
 source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 79%
+ht-degree: 81%
 
 ---
 
