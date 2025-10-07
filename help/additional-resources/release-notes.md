@@ -4,16 +4,16 @@ description: ストリーミングメディアサービスのリリースノー�
 feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: 4c0ef5a933b083140661b51e58a860dcbb983bb5
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 64%
+source-wordcount: '1330'
+ht-degree: 78%
 
 ---
 
-# ストリーミングメディアサービスリリースノート（2025 年 8 月）
+# Streaming Media Services リリースノート（2025 年 10 月）
 
-**最終更新日**：2025年8月6日（PT）
+**最終更新日**：2025年10月7日（PT）
 
 ## 関連リソース
 
@@ -31,7 +31,8 @@ ht-degree: 64%
 
 | 機能 | 説明 | ターゲット日 |
 | ----------- | ---------- | ------- |
-| ストリーミングメディアデータをAdobe Experience Platformに収集するための XDM フィールドを更新しました | ストリーミングメディアデータをAdobe Experience Platformに収集する場合、ストリーミングメディアパラメーターのドキュメントの「XDM フィールドパス」の見出しの下に表示されている XDM フィールドパスは使用しないでください。 代わりに、2025 年 5 月 9 日（PT）より前にストリーミングメディアデータを Platform に収集するように Analytics ソースコネクタを実装したお客様は、ストリーミングメディアパラメーターのドキュメントの「XDM フィールドパスのレポート」の見出しで示されているように、既存の設定を mediaReporting フィールドパスに移行する必要があります。<p> これらのフィールドパスは次のページにあり、「非推奨」としてマークされています。[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[ 広告パラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/ad-parameters)、[ チャプターパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters)、[ プレーヤーステートパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/player-state-parameters) および [ 品質パラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/quality-parameters)。 （2025 年 5 月 9 日（PT）以降に Analytics ソースコネクタを実装し、mediaReporting XDM パスのみを既に使用している顧客の場合は、アクションは必要ありません。）</p><p>非推奨（廃止予定）の XDM フィールドパスのデータ取り込みは、2025 年 10 月末まで継続されます。 その後、非推奨フィールドパスは完全に削除され、Adobe Experience Platform スキーマ UI に表示されなくなります。データは、mediaReporting フィールドパスを使用してのみ送信されます。</p><p>詳しくは、[ 更新された XDM ストリーミングメディアフィールドへの Analytics Source Connector 実装の移行 ](/help/use-cases/xdm-updates/updated-xdm-fields.md) を参照してください。</p><p>移行サポートについては、Adobe Consulting サービスまたはアカウントチームにお問い合わせください。 </p> | 2025年10月 |
+| **ストリーミングメディア：スケジュールデータのサポート** | 過去のライブストリーミングメディアコンテンツの予定データをアップロードして、より簡単かつ正確に視聴者を追跡できるようになりました。<p>以下は、スケジュールデータのアップロードでサポートされるライブコンテンツの例です。</p><ul><li>FAST（無料広告サポート TV）プラットフォーム</li><li>ローカルストリーム</li><li>ライブスポーツ</li></ul><p>スケジュールデータをアップロードすると、アップロードファイルで指定した時間帯に放送された個々の番組の閲覧者数データを追跡できます。特定のトピックやプログラムセグメントの視聴者データを収集することもできます。</p><p>これらの機能は、ストリーミングメディアコレクションの実装方法に関係なく使用できます。</p><p>以前は、ライブコンテンツを分析する際に、特定のセッションを特定のプログラムに正確に関連付けることが難しく、特定のセッションを個々のトピックやプログラムセグメントに関連付けることはできませんでした。</p><p>（ドキュメントへのリンクを添付。）<!--For more information, see [Upload schedule data to track live content](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-use-cases/track-schedule-data)--></p> | 2025年10月29日（PT） |
+| ストリーミングメディアデータをAdobe Experience Platformに収集するための XDM フィールドを更新しました | ストリーミングメディアデータを Adobe Experience Platform に収集する際は、ストリーミングメディアパラメーターに関するドキュメントの「XDM フィールドパス」の見出しの下に表示されている XDM フィールドパスは使用しないでください。2025年5月9日（PT）より前に Analytics ソースコネクタを実装し、ストリーミングメディアデータを Platform に収集しているお客様は、ストリーミングメディアパラメーターに関するドキュメントの「XDM フィールドパスのレポート」の見出しの下に示されているように、既存の設定を mediaReporting フィールドパスに移行する必要があります。<p> これらのフィールドパスは、[オーディオおよびビデオパラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[広告パラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/ad-parameters)、[チャプターパラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters)、[プレーヤー状態パラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/player-state-parameters)および[品質パラメーター](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/quality-parameters)のページに表示されますが、「廃止」としてマークされています。（2025年5月9日（PT）以降に Analytics ソースコネクターを実装し、既に mediaReporting XDM パスのみを使用しているお客様は、アクションは必要ありません。）</p><p>廃止された XDM フィールドパスでのデータ取り込みは、2025年10月末まで継続されます。その後、廃止されたフィールドは完全に廃止され、Adobe Experience Platform スキーマ UI に表示されなくなります。データは mediaReporting フィールドを使用してのみ送信されるようになります。</p><p>詳しくは、[更新された XDM ストリーミングメディアフィールドへの Analytics ソースコネクターの実装の移行](/help/use-cases/xdm-updates/updated-xdm-fields.md)を参照してください。</p><p>移行のサポートについては、Adobe Consulting サービスまたはアカウントチームにお問い合わせください。 </p> | 2025年10月 |
 | Web SDKを使用したAdobe Experience Platform Edge Networkへの web データの送信 | [Adobe Experience Platform Web SDKを使用して、ストリーミングメディア web データをAdobe Experience Platform Edge Networkに送信 ](/help/implementation/edge/edge-web-sdk.md) できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analytics、RT-CDP、AJO、イベント転送など、すべてのプラットフォームソリューションをまたいだ web 実装向けの、統一された収集方法が提供されます。以前は、ストリーミングメディア web データを Edge Network に送信する唯一の方法は、Media Edge API を使用することでした。 | 2024年5月29日（PT） |
 | Roku データのAdobe Experience Platform Edgeへの送信 | [Experience Platform Edgeを使用してCustomer Journey Analytics Streaming Media Collection をインストール ](/help/implementation/edge/implementation-edge.md) する際に、Adobe Experience Platform Roku SDKを使用してストリーミングメディアデータをAdobe Experience Platformに送信できるようになりました。 | 2024年4月12日（PT） |
 | Media Collection: Experience Edgeとの統合（API およびモバイル SDK） | Experience Edge API とモバイル SDKを使用して、Customer Journey Analytics ストリーミングメディアコレクションを実装できるようになりました。これにより、よりパーソナライズされたキャンペーンを作成し、よりパーソナライズされたコンテンツを提供して、レポートするトラッキングデータを増やすことができます。<p>この機能強化により、Customer Journey Analytics レポート、RT-CDP、AJO、イベント転送など、すべてのソリューションにわたって統一された収集手段が提供されます。  [詳細情報](/help/implementation/edge/implementation-edge.md) | 2023年5月12日（PT） |
