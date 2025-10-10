@@ -22,7 +22,7 @@ Adobe Experience Platform のタグは、アドビが提供する次世代型の
 >[!NOTE]
 >
 >レガシー SDK のダウンロードについて詳しくは、[レガシー - SDK のダウンロード](/help/legacy/legacy-download-sdks.md)を参照してください。<br>
->&#x200B;>サポート終了に関する重要な情報については、[サポート終了に関する FAQ](/help/additional-resources/end-of-support-faqs.md) を参照してください。
+>>サポート終了に関する重要な情報については、[サポート終了に関する FAQ](/help/additional-resources/end-of-support-faqs.md) を参照してください。
 
 ## Media SDK と Mobile ライブラリ {#media-sdks-libraries}
 

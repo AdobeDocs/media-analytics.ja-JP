@@ -79,7 +79,7 @@ SSL 証明書をダウンロードしてインストールします。
       変更を確認するには、Firefox を終了して再度開く必要がある場合があります。
 
    **iOS デバイス**
-   1. Adobe Debug を HTTP プロキシとして使用するように iOS デバイスを設定するには、**[!UICONTROL 設定アプリ]**&#x200B;**／**&#x200B;**[!UICONTROL Wifi 設定]**&#x200B;をクリックします。
+   1. Adobe Debug を HTTP プロキシとして使用するように iOS デバイスを設定するには、**[!UICONTROL 設定アプリ]****／****[!UICONTROL Wifi 設定]**&#x200B;をクリックします。
 
    1. Safari では、[デバッグ](https://proxy.debug.adobe.com/ssl)に移動します。
 

@@ -3,7 +3,8 @@ title: オーディエンスを新しい Adobe Analytics for Streaming Media デ
 description: オーディエンスを新しい Adobe Analytics for Streaming Media データタイプに移行する方法を説明します
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 3056a384535b3f5f2a9bc2d950bd5ee3410ec0a5
+exl-id: 79203a2f-8158-44f2-83b2-146179be9180
+source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 47%
@@ -12,7 +13,7 @@ ht-degree: 47%
 
 # Adobe Experience PlatformとCustomer Journey Analyticsの Media Analytics パラメーターマッピング
 
-このドキュメントでは、Adobe Experience PlatformとCustomer Journey Analytics内で使用されるすべての Media Analytics パラメーターの包括的なリストを提供します。 これは、[Analytics Source Connector](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) または [Analytics Adobe Analytics Source Connector for Classifications](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/classifications) を介して Platform から読み込まれたデータの統合をサポートし、各パラメーターを対応する XDM フィールドパスにマッピングすることを目的としています。
+このドキュメントでは、Adobe Experience PlatformとCustomer Journey Analytics内で使用されるすべての Media Analytics パラメーターの包括的なリストを提供します。 これは、[Analytics Source Connector](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) または [Analytics Adobe Analytics Source Connector for Classifications](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications) を介して Platform から読み込まれたデータの統合をサポートし、各パラメーターを対応する XDM フィールドパスにマッピングすることを目的としています。
 
 ## Media Analytics 予約変数
 
@@ -237,9 +238,3 @@ Adobe Analyticsでは、各レポートスイート内で定義される実装�
 | 合計停止時間 | `_experience.analytics.event<x>to<y>.event<number>.value` | 指標 |
 
 {style="table-layout:auto"}
-
-
-
-
-
-

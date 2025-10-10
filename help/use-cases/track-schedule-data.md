@@ -5,7 +5,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 hide: true
 hidefromtoc: true
-source-git-commit: e38a83853e85418611e17015b661d8592a7c95a1
+exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
+source-git-commit: b947a1d64c7fa58e784712397b0167d4186d00c3
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 2%
@@ -140,7 +141,7 @@ ht-degree: 2%
 
    1. バッチ ID を使用して、プログラムスケジュールのデータレコードを含む.json ファイルをプッシュします。
 
-      スケジュールの情報をプッシュするには、[ バッチ取得 API の概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/batch/overview) で説明しているように、AEP バッチ API を使用する必要があります。
+      スケジュールの情報をプッシュするには、[ バッチ取得 API の概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview) で説明しているように、AEP バッチ API を使用する必要があります。
 
       次の cURL を使用した例では、スケジュールレコードを含んだファイルをプッシュします。
 
@@ -300,9 +301,9 @@ ht-degree: 2%
 
    Customer Journey Analyticsで作成し、レポートするディメンションの次の例について考えてみます。
 
-   * **[「_エピソード名_」 ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：このディメンションは、特定のシリーズのどのエピソードが最もパフォーマンスが高いかを学ぶのに役立ちます。
+   * **[「_エピソード名_」 ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：このディメンションは、特定のシリーズのどのエピソードが最もパフォーマンスが高いかを学ぶのに役立ちます。
 
-   * **[アセット ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[アセット ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. [Customer Journey Analyticsでのデータの分析 ](#analyze-data-in-customer-journey-analytics) を参照してください。
 

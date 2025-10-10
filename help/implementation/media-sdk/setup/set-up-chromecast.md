@@ -36,7 +36,7 @@ Experience Cloud ソリューション向けの Chromecast 用 Adobe Mobile ラ�
 
    1. `AdobeMobileLibrary-Chromecast-[version]`.zip ファイルには、次のソフトウェアコンポーネントが含まれています。
 
-      * を使用します`adbmobile-chromecast.min.js`。
+      *  を使用します`adbmobile-chromecast.min.js`。
 
         このライブラリファイルは、Chromecast アプリのソースフォルダーに含まれています。
 
@@ -153,4 +153,4 @@ Experience Cloud ソリューション向けの Chromecast 用 Adobe Mobile ラ�
    }
    ```
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=ja) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
