@@ -13,7 +13,7 @@ ht-degree: 47%
 
 # Adobe Experience PlatformとCustomer Journey Analyticsの Media Analytics パラメーターマッピング
 
-このドキュメントでは、Adobe Experience PlatformとCustomer Journey Analytics内で使用されるすべての Media Analytics パラメーターの包括的なリストを提供します。 これは、[Analytics Source Connector](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) または [Analytics Adobe Analytics Source Connector for Classifications](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications) を介して Platform から読み込まれたデータの統合をサポートし、各パラメーターを対応する XDM フィールドパスにマッピングすることを目的としています。
+このドキュメントでは、Adobe Experience PlatformとCustomer Journey Analytics内で使用されるすべての Media Analytics パラメーターの包括的なリストを提供します。 これは、[Analytics Source Connector](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) または [Analytics Adobe Analytics Source Connector for Classifications](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/classifications) を介して Platform から読み込まれたデータの統合をサポートし、各パラメーターを対応する XDM フィールドパスにマッピングすることを目的としています。
 
 ## Media Analytics 予約変数
 
