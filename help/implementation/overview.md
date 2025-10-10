@@ -24,11 +24,11 @@ Edgeの実装方法では、ストリーミングメディアコレクション�
 
 * **Media for Edge Network SDK/拡張機能：** Web、iOSおよびAndroidのデバイス、または Roku デバイスからデータを収集し、Edge Networkに送信します。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
-  Media for Edge Network SDK/Extension について詳しくは、[Edge Networkを使用した Streaming Media Collection の実装 ](/help/implementation/edge/implementation-edge.md) を参照してください。
+  Media for Edge Network SDK/Extension について詳しくは、[Edge Networkを使用した Streaming Media Collection の実装 &#x200B;](/help/implementation/edge/implementation-edge.md) を参照してください。
 
 * **Media Edge API:** 任意のデバイスまたはフォーマット（モバイル、web、OTT デバイスなど）からデータを収集してEdge Networkに送信するようにカスタマイズできます。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
-  Media Edge API について詳しくは、[Media Edge API の概要 ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/) を参照してください。
+  Media Edge API について詳しくは、[Media Edge API の概要 &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/) を参照してください。
 
 ![CJA ワークフロー](assets/streaming-media-edge.png)
 

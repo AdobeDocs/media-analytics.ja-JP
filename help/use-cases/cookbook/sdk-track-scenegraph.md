@@ -142,28 +142,28 @@ SceneGraph サポートを AdobeMobile SDK に追加するために、アドビ�
 <td> 無効 </td>
 <td> 読み取り専用。AdobeMobileSDK で実行されるすべての API はこのフィールドに応答を返します。応答オブジェクトを受信するには、このフィールドの更新をリッスンするコールバックを登録します。応答オブジェクトの形式を次に示します。  
 <pre>
-response = {
+response = &lbrace;
   "apiName" : &lt;SceneGraphConstants.
                API_NAME&gt; 
   "returnValue : &lt;API_RESPONSE&gt;
-}</pre>
+&rbrace;</pre>
 この応答オブジェクトのインスタンスは API リファレンスガイドに記載されているように値を返す AdobeMobileSDK の API 呼び出し用に送信されます。例えば、visitorMarketingCloudID() の API 呼び出しは以下の応答オブジェクトを返します。
 <pre>
-response = {
+response = &lbrace;
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : "07050x25671x33760x72644x14"  
-}
+&rbrace;
 </pre>
 また、応答データは無効になる場合もあります。
 <pre>
-response = {  
+response = &lbrace;  
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : invalid
-}
+&rbrace;
 </pre>
 </td>
 </tr>

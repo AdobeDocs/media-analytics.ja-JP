@@ -16,5 +16,5 @@ ht-degree: 0%
 
 ログを提出して適切な実装を検証するために、検証には、お客様が（Adobe Debug を使用して）実行する必要がある必須のテストケースのリストが含まれています。各イベントおよびメタデータパラメーターに対して期待される結果があります。
 
-* [テスト 1：標準の再生 ](test1-standard-playback.md)
-* [テスト 2：メディアの中断 ](test2-media-interrupt.md)
+* [テスト 1：標準の再生 &#x200B;](test1-standard-playback.md)
+* [テスト 2：メディアの中断 &#x200B;](test2-media-interrupt.md)

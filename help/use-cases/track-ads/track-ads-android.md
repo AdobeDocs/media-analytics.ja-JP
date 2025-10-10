@@ -84,7 +84,7 @@ ht-degree: 0%
 
 1. オプションで、コンテキストデータ変数を使用して標準または広告メタデータをメディアトラッキングセッションにアタッチします。
 
-   * [Android での標準広告メタデータの実装 ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+   * [Android での標準広告メタデータの実装 &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
 
    help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md
 

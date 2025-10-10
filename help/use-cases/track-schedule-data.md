@@ -65,7 +65,7 @@ ht-degree: 2%
 
 過去のライブコンテンツのスケジュールデータをアップロードするには、ストリーミングメディア環境が次の前提条件を満たす必要があります。
 
-* [ トラッキングの概要 ](/help/use-cases/track-av-playback/track-core-overview.md) で説明されているように、ストリーミングメディアコレクションを有効にして、スケジュールデータをアップロードするコンテンツに対してトラッキングを行う必要があります。<!--specifics??? -->
+* [&#x200B; トラッキングの概要 &#x200B;](/help/use-cases/track-av-playback/track-core-overview.md) で説明されているように、ストリーミングメディアコレクションを有効にして、スケジュールデータをアップロードするコンテンツに対してトラッキングを行う必要があります。<!--specifics??? -->
 
 * Customer Journey Analyticsで Streaming Media Collection を使用します。 スケジュールデータをアップロードする機能は、Adobe Analyticsでは使用できません。
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 1. **Media Analytics スケジュール済みプログラム** XDM クラスに基づいてスキーマを作成します。
 
-   ![Media Analytics スケジュールプログラムスキーマ ](assets/media_schedule_finish_schema_creation.png)
+   ![Media Analytics スケジュールプログラムスキーマ &#x200B;](assets/media_schedule_finish_schema_creation.png)
 
    これは、Media Analytics スケジュール済みプログラムクラスの XDM 定義です。
 
@@ -83,11 +83,11 @@ ht-degree: 2%
 
 1. 作成したスキーマに基づいてデータセットを作成します。
 
-1. 次のセクション [ プッシュスケジュール情報 ](#push-schedule-information) に進みます。
+1. 次のセクション [&#x200B; プッシュスケジュール情報 &#x200B;](#push-schedule-information) に進みます。
 
 ## プッシュスケジュール情報
 
-[ プログラムスケジュールデータセットを作成 ](#create-a-program-schedule-dataset-in-aep) した後、スケジュール情報をプッシュできます。
+[&#x200B; プログラムスケジュールデータセットを作成 &#x200B;](#create-a-program-schedule-dataset-in-aep) した後、スケジュール情報をプッシュできます。
 
 1. スケジュール情報を含んだ.json ファイルを作成します。
 
@@ -141,7 +141,7 @@ ht-degree: 2%
 
    1. バッチ ID を使用して、プログラムスケジュールのデータレコードを含む.json ファイルをプッシュします。
 
-      スケジュールの情報をプッシュするには、[ バッチ取得 API の概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview) で説明しているように、AEP バッチ API を使用する必要があります。
+      スケジュールの情報をプッシュするには、[&#x200B; バッチ取得 API の概要 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview) で説明しているように、AEP バッチ API を使用する必要があります。
 
       次の cURL を使用した例では、スケジュールレコードを含んだファイルをプッシュします。
 
@@ -168,7 +168,7 @@ ht-degree: 2%
           -H 'Authorization: Bearer <OAUTH_TOKEN>'
       ```
 
-1. 次の節 [Adobe カスタマーケアでサポートチケットを登録する ](#log-a-support-ticket-with-adobe-customer-care) に進みます。
+1. 次の節 [Adobe カスタマーケアでサポートチケットを登録する &#x200B;](#log-a-support-ticket-with-adobe-customer-care) に進みます。
 
 ## Adobe カスタマーケアへのサポートチケットの登録
 
@@ -301,15 +301,15 @@ ht-degree: 2%
 
    Customer Journey Analyticsで作成し、レポートするディメンションの次の例について考えてみます。
 
-   * **[「_エピソード名_」 ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：このディメンションは、特定のシリーズのどのエピソードが最もパフォーマンスが高いかを学ぶのに役立ちます。
+   * **[「_エピソード名_」 &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：このディメンションは、特定のシリーズのどのエピソードが最もパフォーマンスが高いかを学ぶのに役立ちます。
 
    * **[アセット ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
-1. [Customer Journey Analyticsでのデータの分析 ](#analyze-data-in-customer-journey-analytics) を参照してください。
+1. [Customer Journey Analyticsでのデータの分析 &#x200B;](#analyze-data-in-customer-journey-analytics) を参照してください。
 
 ## Customer Journey Analyticsでのデータの分析
 
-[ スケジュールデータファイルのリクエストとアップロード ](#request-and-upload-the-schedule-data-file) に記載されているデータファイルをアップロードすると、1 日以内に、データをCustomer Journey Analyticsでレポートする準備が整います。
+[&#x200B; スケジュールデータファイルのリクエストとアップロード &#x200B;](#request-and-upload-the-schedule-data-file) に記載されているデータファイルをアップロードすると、1 日以内に、データをCustomer Journey Analyticsでレポートする準備が整います。
 
 Customer Journey Analyticsで過去のライブストリーミングメディアデータについてレポートするには：
 
@@ -317,7 +317,7 @@ Customer Journey Analyticsで過去のライブストリーミングメディア
 
 1. 過去のライブストリーミングメディアデータの分析に必要なテーブルやビジュアライゼーションを作成して、プロジェクトを作成します。
 
-   プロジェクトを作成する際には、スケジュールデータファイルに含まれ、Adobe カスタマーケアに送信された情報を使用します。 これには、一致するキー、ディメンション、追加のメタデータが含まれます。 詳しくは、[ スケジュールデータファイルをリクエストしてアップロード ](#request-and-upload-the-schedule-data-file) を参照してください。
+   プロジェクトを作成する際には、スケジュールデータファイルに含まれ、Adobe カスタマーケアに送信された情報を使用します。 これには、一致するキー、ディメンション、追加のメタデータが含まれます。 詳しくは、[&#x200B; スケジュールデータファイルをリクエストしてアップロード &#x200B;](#request-and-upload-the-schedule-data-file) を参照してください。
 
 
 

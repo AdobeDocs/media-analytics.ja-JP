@@ -143,7 +143,7 @@ Media Analytics トラッキング実装は、2 つのタイプのトラッキ�
 
   Analytics トラッキングサーバーは「`.sc.omtrdc.net`」で終わるか CNAME である必要があります。
 
-* ** Media Analytics（ハートビート）サーバー** これは、常に「`[your_namespace].hb.omtrdc.net`」形式になります。「`[your_namespace]`」の値は会社を指定し、アドビによって提供されます。
+* **&#x200B; Media Analytics（ハートビート）サーバー** これは、常に「`[your_namespace].hb.omtrdc.net`」形式になります。「`[your_namespace]`」の値は会社を指定し、アドビによって提供されます。
 
 メディアトラッキングはあらゆるプラットフォーム、デスクトップ、モバイルで同じように動作します。オーディオトラッキングは、現在、モバイルプラットフォームで動作します。すべてのトラッキングコールに共通する、検証が必要な主要ユニバーサル変数がいくつかあります。
 
@@ -152,7 +152,7 @@ Media Analytics トラッキング実装は、2 つのタイプのトラッキ�
 | Video Analytics 1.x SDK |  開発者ガイド（PDF のみ） |
 | --- | --- |
 | Android | [Android 向け設定](vhl-dev-guide-v15_android.pdf) |
-| Apple TV | [Apple TV 用に設定 ](vhl-dev-guide-v1x_appletv.pdf) |
+| Apple TV | [Apple TV 用に設定 &#x200B;](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [Chromecast 向け設定](chromecast_1.x_sdk.pdf) |
 | iOS | [iOS 向け設定](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript 向け設定](vhl-dev-guide-v15_js.pdf) |

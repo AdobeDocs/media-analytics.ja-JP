@@ -17,7 +17,7 @@ ht-degree: 62%
 Adobe ストリーミングメディアサービスの実装を開始する前に、次の作業を行います。
 
 1. **Adobe streaming media services の概要の確認**<br>
-ストリーミングメディアサービスの実装を開始する前に、[Adobe streaming media services の概要を参照して ](/help/media-overview.md) ストリーミングメディアサービスがニーズを満たしていることを確認してください。
+ストリーミングメディアサービスの実装を開始する前に、[Adobe streaming media services の概要を参照して &#x200B;](/help/media-overview.md) ストリーミングメディアサービスがニーズを満たしていることを確認してください。
 
 1. **価格モデルを確認する**<br>
 Customer Journey Analytics Streaming Media Collection アドオンおよび Adobe Analytics for Streaming Media アドオンの現在の価格モデルは、ビデオストリームに基づいています。 アドオンはAdobe AnalyticsとAdobe Experience Platformに別売なので、必要に応じて、営業担当またはAdobe アカウントチームにお問い合わせください。

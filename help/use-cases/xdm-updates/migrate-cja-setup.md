@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 新しいストリーミングメディアフィールドを使用するようにCustomer Journey Analyticsを移行する
 
-このドキュメントでは、「Media」と呼ばれるAdobe ストリーミングメディアサービスのデータタイプを使用するCustomer Journey Analytics設定を、「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプを使用するように更新する方法について説明します。
+このドキュメントでは、「Media」と呼ばれるAdobe ストリーミングメディアサービスのデータタイプを使用するCustomer Journey Analytics設定を、「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプを使用するように更新する方法について説明します。
 
 ## Customer Journey Analyticsを移行
 
-Customer Journey Analyticsの設定を「Media」という古いデータタイプから「[Media レポートの詳細 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータタイプに移行するには、古いデータタイプを使用している次の設定を更新する必要があります。
+Customer Journey Analyticsの設定を「Media」という古いデータタイプから「[Media レポートの詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータタイプに移行するには、古いデータタイプを使用している次の設定を更新する必要があります。
 
 * データビュー
 
@@ -43,9 +43,9 @@ Customer Journey Analyticsの設定を「Media」という古いデータタイ�
 
 1. 派生フィールドの古いフィールドをすべて、「メディアレポートの詳細」の新しい対応するフィールドに置き換えます。
 
-古いフィールドと新しいフィールド間のマッピングについては、[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) ページの [ コンテンツ ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) パラメーターを参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
+古いフィールドと新しいフィールド間のマッピングについては、[&#x200B; オーディオおよびビデオパラメーター &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) ページの [&#x200B; コンテンツ ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) パラメーターを参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
 
-![ 新しい古い XDM フィールドのパス ](assets/field-paths-updated.jpeg)
+![&#x200B; 新しい古い XDM フィールドのパス &#x200B;](assets/field-paths-updated.jpeg)
 
 ## 例
 
@@ -59,13 +59,13 @@ Customer Journey Analyticsの設定を「Media」という古いデータタイ�
 
 1. 非推奨（廃止予定）のデータタイプの古いフィールドを使用している指標またはディメンションを見つけます。
 
-   ![ データビューの古いフィールドパス ](assets/old-field-data-view.jpeg)
+   ![&#x200B; データビューの古いフィールドパス &#x200B;](assets/old-field-data-view.jpeg)
 
-1. [ チャプターパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) 記事の [ チャプターオフセット ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters) セクションで、対応する新しいフィールドを確認します。
+1. [&#x200B; チャプターパラメーター &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) 記事の [&#x200B; チャプターオフセット &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters) セクションで、対応する新しいフィールドを確認します。
 
 1. データビュー内の対応する新しいフィールドを見つけます。
 
-   ![ データビューの新しいフィールドパス ](assets/new-field-data-view.jpeg)
+   ![&#x200B; データビューの新しいフィールドパス &#x200B;](assets/new-field-data-view.jpeg)
 
 1. 新しいフィールドを指標またはディメンションにドラッグします。
 
@@ -79,43 +79,43 @@ Customer Journey Analyticsの設定を「Media」という古いデータタイ�
 
 1. 「Case When」句を派生フィールドにドラッグします。
 
-   ![ 新しいフィールドをカスタマイズしてデータビューを作成する ](assets/create-derived-field2.jpeg)
+   ![&#x200B; 新しいフィールドをカスタマイズしてデータビューを作成する &#x200B;](assets/create-derived-field2.jpeg)
 
-1. [!UICONTROL **チャプターパラメーター**] ページの **チャプター名** パラメーターに示されているように、[ レポート XDM フィールドパス ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) の値を使用して [If](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters) 句に入力します。
+1. [!UICONTROL **チャプターパラメーター**] ページの **チャプター名** パラメーターに示されているように、[&#x200B; レポート XDM フィールドパス &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) の値を使用して [If](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters) 句に入力します。
 
-   ![ チャプター名 ](assets/chapter-name.jpeg)
+   ![&#x200B; チャプター名 &#x200B;](assets/chapter-name.jpeg)
 
-   ![ チャプター名 ](assets/chapter-name2.jpeg)
+   ![&#x200B; チャプター名 &#x200B;](assets/chapter-name2.jpeg)
 
-   ![ 派生フィールドの条件 ](assets/derived-field-condition.jpeg)
+   ![&#x200B; 派生フィールドの条件 &#x200B;](assets/derived-field-condition.jpeg)
 
-   ![ 派生フィールドチャプター名 ](assets/derived-field-chapter-name.jpeg)
+   ![&#x200B; 派生フィールドチャプター名 &#x200B;](assets/derived-field-chapter-name.jpeg)
 
 1. 非推奨の「メディア」データタイプの古いフィールドを使用して、フォールバック値を入力します。
 
-   ![ フォールバック値 ](assets/fallback-value.jpeg)
+   ![&#x200B; フォールバック値 &#x200B;](assets/fallback-value.jpeg)
 
-   ![ フォールバック値 ](assets/fallback-value2.jpeg)
+   ![&#x200B; フォールバック値 &#x200B;](assets/fallback-value2.jpeg)
 
    これが、派生フィールドの最終的な定義です。
 
-   ![ 派生フィールドの完成 ](assets/derived-field-complete.jpeg)
+   ![&#x200B; 派生フィールドの完成 &#x200B;](assets/derived-field-complete.jpeg)
 
 1. 派生フィールドを更新するには、古い非推奨フィールド（`media.mediaTimed` で始まるパス）を使用している派生フィールドを見つけます。
 
-   ![ 派生フィールド ](assets/old-derived-field.jpeg)
+   ![&#x200B; 派生フィールド &#x200B;](assets/old-derived-field.jpeg)
 
 1. 更新する派生フィールドの上にマウスポインターを置き、「[!UICONTROL **編集**] アイコンを選択します。
 
 1. 古いデータタイプ（`media.mediaTimed` で始まるパス）からすべてのフィールドを見つけ、新しい対応するフィールドに置き換えます。
 
-   ![ 古いデータタイプを持つフィールドを見つけます ](assets/locate-fields-with-old-datatype.jpeg)
+   ![&#x200B; 古いデータタイプを持つフィールドを見つけます &#x200B;](assets/locate-fields-with-old-datatype.jpeg)
 
-1. [ ストリーミングメディアパラメーター ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) 記事の [ コンテンツ名（変数） ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) セクションで、対応する新しいフィールドを確認します。
+1. [&#x200B; ストリーミングメディアパラメーター &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) 記事の [&#x200B; コンテンツ名（変数） &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) セクションで、対応する新しいフィールドを確認します。
 
 1. 古いフィールドを新しいフィールドに置き換えます。
 
-   ![ 新しいフィールド ](assets/derived-field-new.jpeg)
+   ![&#x200B; 新しいフィールド &#x200B;](assets/derived-field-new.jpeg)
 
 1. 古い非推奨（廃止予定）の「メディア」データタイプのフィールドを使用して、すべての派生フィールドに対してこのプロセスを繰り返します。
 

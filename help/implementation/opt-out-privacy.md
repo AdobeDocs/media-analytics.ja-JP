@@ -39,12 +39,14 @@ ht-degree: 0%
                ```
                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
                ```
+
            
          * **Roku:**
 
                ```
                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
                ```
+
            
            >[!IMPORTANT]
            >
@@ -57,12 +59,14 @@ ht-degree: 0%
                ```
                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
                ```
+
            
          * **Roku:**
 
                ```
                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
                ```
+
            
       * **現在の設定を返す：**
 
@@ -71,12 +75,14 @@ ht-degree: 0%
                ```
                ADBMobile.config.getPrivacyStatus()
                ```
+
            
          * **Roku:**
 
                ```
                ADBMobile().getPrivacyStatus()
                ```
+
            
   `setPrivacyStatus` を使用してプライバシー設定を変更した後は、同じメソッドを使用して再度変更されるまで、またはアプリを完全にアンインストールして再度インストールするまで、変更が保持されます。
 
