@@ -58,7 +58,7 @@ ht-degree: 79%
          + API の実装 {#mc-api-impl}
             + [プレーヤーでの HTTP リクエストタイプの設定](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
             + [セッション ID の取得](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
-            + [Events リクエストの実装 ](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+            + [Events リクエストの実装 &#x200B;](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
             + [JSON 検証スキーマ](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
             + [イベントリクエストの検証](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
             + [ping イベントの送信](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
@@ -71,9 +71,9 @@ ht-degree: 79%
       + [ストリーミングメディアのパラメーター](implementation/variables/audio-video-parameters.md)
       + [広告パラメーター](implementation/variables/ad-parameters.md)
       + [チャプターパラメーター](implementation/variables/chapter-parameters.md)
-      + [プレーヤーステートパラメーター ](implementation/variables/player-state-parameters.md)
+      + [プレーヤーステートパラメーター &#x200B;](implementation/variables/player-state-parameters.md)
       + [品質パラメーター](implementation/variables/quality-parameters.md)
-      + [計算指標 ](implementation/variables/calculated-metrics.md)
+      + [計算指標 &#x200B;](implementation/variables/calculated-metrics.md)
 + レポート {#media-reports}
    + [メディアレポートの有効化](reporting/media-reports-enable.md)
    + Workspaceのメディアパネル {#media-workspace-panels}
@@ -85,7 +85,7 @@ ht-degree: 79%
    + デフォルトメディアレポート {#media-default-reports}
       + [デフォルトレポートの概要](reporting/reports-and-analytics/default-reports-overview.md)
       + [メディアの概要](reporting/reports-and-analytics/media-reports-overview.md)
-      + [メディアの詳細 ](reporting/reports-and-analytics/media-reports-detail.md)
+      + [メディアの詳細 &#x200B;](reporting/reports-and-analytics/media-reports-detail.md)
       + [メディア視聴時間帯レポート](reporting/reports-and-analytics/media-reports-daypart.md)
       + [メディア同時ビューアレポート](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + メディア API {#media-api}
@@ -94,13 +94,13 @@ ht-degree: 79%
 + ユースケース {#media-use-cases}
    + [Media SDK の使用例](use-cases/cookbook/sdk-cookbook-overview.md)
    + プレーヤーの状態のトラッキング {#player-state-tracking}
-      + [概要 ](use-cases/player-state-tracking/player-state-overview.md)
+      + [概要 &#x200B;](use-cases/player-state-tracking/player-state-overview.md)
       + [標準ステートとカスタムステート](use-cases/player-state-tracking/standard-and-custom-states.md)
       + [実装とレポート](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [複数プレーヤーのステートトラッキング](use-cases/player-state-tracking/multiple-player-states.md)
       + [プレーヤーステートトラッキングの例](use-cases/player-state-tracking/player-state-examples.md)
    + [スケジュールデータの追跡](/help/use-cases/track-schedule-data.md)
-   + [ダウンロードされたコンテンツの追跡 ](use-cases/track-downloaded-content.md)
+   + [ダウンロードされたコンテンツの追跡 &#x200B;](use-cases/track-downloaded-content.md)
    + [Federated Media](use-cases/federated-media.md)
    + [再生中のアプリケーション割り込みの処理](use-cases/cookbook/app-interrupts.md)
    + [メディアストリームのアトリビューション](use-cases/media-analytics-cookbook/media-dimensions.md)
@@ -122,8 +122,8 @@ ht-degree: 79%
       + [アプリの状態の追跡](use-cases/analytics-with-ott/track-app-states.md)
       + [アプリのアクションの追跡](use-cases/analytics-with-ott/track-app-actions.md)
       + [ユーザー ID の設定](use-cases/analytics-with-ott/set-user-ids.md)
-      + [OTT と Audience Manager ](use-cases/analytics-with-ott/ott-am.md)
-      + [OTT と Experience Cloud ](use-cases/analytics-with-ott/ott-experience-cloud.md)
+      + [OTT と Audience Manager &#x200B;](use-cases/analytics-with-ott/ott-am.md)
+      + [OTT と Experience Cloud &#x200B;](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + トラッキング {#tracking}
    + [概要](use-cases/track-av-playback/track-core-overview.md)
    + コアストリーミングメディア再生のトラック {#track-core}
@@ -139,10 +139,10 @@ ht-degree: 79%
       + [Chromecast でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
       + [Roku でのシークの追跡](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
    + 標準メタデータの実装 {#impl-std-metadata}
-      + [JavaScript 3.x での標準メタデータの実装 ](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+      + [JavaScript 3.x での標準メタデータの実装 &#x200B;](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
       + [Chromecast での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
       + [標準メタデータパラメーター - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-      + [Roku での標準メタデータの実装 ](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      + [Roku での標準メタデータの実装 &#x200B;](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
       + [標準メタデータパラメーター - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
    + 広告の追跡 {#track-ads}
       + [概要](use-cases/track-ads/track-ads-overview.md)
@@ -150,8 +150,8 @@ ht-degree: 79%
       + [Chromecast での広告の追跡](use-cases/track-ads/track-ads-chromecast.md)
       + [Roku での広告の追跡](use-cases/track-ads/track-ads-roku.md)
       + 標準広告メタデータの実装 {#impl-std-ad-metadata}
-         + [JavaScript 3.x での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-         + [Roku での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+         + [JavaScript 3.x での標準広告メタデータの実装 &#x200B;](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+         + [Roku での標準広告メタデータの実装 &#x200B;](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + チャプターおよびセグメントの追跡 {#track-chapters}
       + [概要](use-cases/track-chapters/track-chapters-overview.md)
       + [JavaScript 3.x でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
@@ -217,16 +217,16 @@ ht-degree: 79%
          + [iOS での標準メタデータの実装](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS のメタデータキー](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
          + JavaScriptでの標準メタデータの実装 {#impl-std-md-js}
-            + [JavaScript 2.x での標準メタデータの実装 ](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+            + [JavaScript 2.x での標準メタデータの実装 &#x200B;](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + 広告の追跡 {#track-ads}
          + [Android での広告の追跡](use-cases/track-ads/track-ads-android.md)
          + [iOS での広告の追跡](use-cases/track-ads/track-ads-ios.md)
          + JavaScriptでの広告の追跡 {#track-ads-js}
             + [JavaScript 2.x での広告の追跡](use-cases/track-ads/track-ads-js/track-ads-js.md)
-            + [Android での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
-            + [iOS での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+            + [Android での標準広告メタデータの実装 &#x200B;](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+            + [iOS での標準広告メタデータの実装 &#x200B;](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
             + JavaScriptでの標準広告メタデータの実装 {#impl-std-ad-md-js}
-               + [JavaScript 2.x での標準広告メタデータの実装 ](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
+               + [JavaScript 2.x での標準広告メタデータの実装 &#x200B;](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
       + チャプターおよびセグメントの追跡 {#track-chapters}
          + [Android でのチャプターとセグメントの追跡](use-cases/track-chapters/track-chapters-android.md)
          + [iOS でのチャプターおよびセグメントの追跡](use-cases/track-chapters/track-chapters-ios.md)
@@ -238,7 +238,7 @@ ht-degree: 79%
             + [JavaScript 2.x での Quality of Experience の追跡](use-cases/track-qos/track-qos-js/track-qos-js.md)
       + エラーの追跡 {#track-errors}
          + [Android でのエラーの追跡](use-cases/track-errors/track-errors-android.md)
-         + [iOS でのエラーの追跡 ](use-cases/track-errors/track-errors-ios.md)
+         + [iOS でのエラーの追跡 &#x200B;](use-cases/track-errors/track-errors-ios.md)
          + JavaScriptでのエラーの追跡 {#track-errors-js}
             + [JavaScript 2.x でのエラーの追跡](use-cases/track-errors/track-errors-js/track-errors-js.md)
       + 追跡シナリオ {#tracking-scenarios}
@@ -251,5 +251,5 @@ ht-degree: 79%
          + [バッファリングがある VOD 再生](use-cases/tracking-scenarios/vod-buffering.md)
          + [同時に動作する複数の VOD トラッカー](use-cases/tracking-scenarios/vod-multi-trackers.md)
          + [複数のセッションに対応する 1 つの VOD トラッカー](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
-         + [ライブメインコンテンツ ](use-cases/tracking-scenarios/live-main-content.md)
+         + [ライブメインコンテンツ &#x200B;](use-cases/tracking-scenarios/live-main-content.md)
          + [順次トラッキングを含むライブメインコンテンツ](use-cases/tracking-scenarios/live-sequential.md)
