@@ -4,11 +4,11 @@ description: ブラウザーアプリ（JS）で Media SDK を使用してチャ
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 exl-id: 9964ec0c-cce9-4ccc-bd26-a2b3fcdc3e28
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '200'
+ht-degree: 95%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 0%
    | --- | --- | :---: |
    | `name` | チャプター名 | ○ |
    | `position` | チャプター位置 | ○ |
-   | `length` | チャプターの長さ | ○ |
-   | `startTime` | チャプター開始時間 | ○ |
+   | `length` | チャプター長さ | ○ |
+   | `startTime` | チャプター開始時刻 | ○ |
 
    チャプターオブジェクト：
 

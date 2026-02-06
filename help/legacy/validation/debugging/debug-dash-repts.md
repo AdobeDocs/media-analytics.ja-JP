@@ -4,19 +4,19 @@ description: Adobe Debug ダッシュボードについて説明します。
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
 feature: "Streaming Media, Analytics Dashboards"
-role: User, Admin, Data Engineer
-source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '82'
+ht-degree: 39%
 
 ---
 
 # デバッグのダッシュボードとレポート {#debug-dashboards-and-reports}
 
-Adobe Debug は、ビデオの再生中に送信されるヒットやメタデータを確認できるように、リアルタイムでレポートを提供します。これらの各レポートは、Debug 内に保存できます。
+Adobeのデバッグ機能では、レポートをリアルタイムで提供するので、ビデオの再生中に送信されたヒットとメタデータを確認できます。 これらの各レポートは、デバッグ内に保存できます。
 
-認定のためにこれらのレポートを共有するには、URL をコピーして、リンクを送信します（例えば、ZenDesk チケット内で）。
+認証の場合、これらのレポートは、URL をコピーし、ZenDesk チケット内などにリンクを送信するだけで共有できます。
 
 >[!NOTE]
 >

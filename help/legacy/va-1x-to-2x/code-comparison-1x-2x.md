@@ -4,11 +4,11 @@ description: Media SDK のバージョン 1.x と 2.x のコードの違いに�
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 74%
+ht-degree: 57%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 74%
 
 **1.x および 2.x サンプルプレーヤーへのリンク：**
 
-* [1.x のサンプルプレーヤー](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x のサンプルプレーヤー](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [1.x サンプルプレーヤー ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
+* [2.x サンプルプレーヤー ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 次の節では、初期化、コア再生、広告再生、チャプター再生、その他のイベントについて、1.x と 2.x のコードを比較します。
 

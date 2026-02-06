@@ -2,9 +2,9 @@
 title: Adobe Analytics のみの実装の前提条件
 description: Adobe Analyticsのみの実装に Adobe Analytics for Streaming Media アドオンを使用するための前提条件について説明します
 feature: Streaming Media, Workspace Basics
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: f94a5339-f777-44ec-ba79-0a1986c52225
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 43%
@@ -16,7 +16,7 @@ ht-degree: 43%
 この節で説明する前提条件は、（Edgeを使用していない場合に）Adobe分析専用の実装用の Adobe Analytics for Streaming Media アドオンを実装する場合に固有です。
 
 1. **一般的な前提条件を満たす**<br>
-ストリーミングメディアサービスをAdobe Analyticsのみの実装用に実装する場合でも、Edgeの実装用に実装する場合でも、[&#x200B; 一般的な前提条件 &#x200B;](/help/getting-started/prereqs.md) を満たしていることを確認してください。
+ストリーミングメディアサービスをAdobe Analyticsのみの実装用に実装する場合でも、Edgeの実装用に実装する場合でも、[ 一般的な前提条件 ](/help/getting-started/prereqs.md) を満たしていることを確認してください。
 
 1. **Adobe Analyticsが実装されていることを確認する**<br>
 Analytics のみの実装に Adobe Analytics for Streaming Media アドオンを実装する場合は、Adobe Analyticsの基本的な実装も必要です。 詳しくは、[Adobe Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ja)を参照してください。

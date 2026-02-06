@@ -3,8 +3,8 @@ title: Media Analytics SDK のサポート終了に関する FAQ
 description: このトピックには、Media Analytics SDK のサポート終了に関する FAQ が含まれています。
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 68%
@@ -15,7 +15,7 @@ ht-degree: 68%
 
 2021 年 8 月 31 日（PT）にバージョン 4 の Mobile SDK のサポートが終了するのに伴い、AdobeではiOSおよびAndroid用の Media Analytics Mobile SDK のサポートも終了しました。 （これには、Web （JS）用の Media Analytics SDKや、引き続きサポートされる Chromecast や Roku などの OTT プラットフォームは含まれません。）
 
-つまり、Adobeでは、Media Analytics Mobile SDKの修正、OS 関連の更新プログラム、サポートを提供しなくなりました。 新しいExperience Platform SDK に移行する場合は、Adobe Streaming Media サービスを有効にするために [Media Analytics 拡張機能 &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) を実装する必要があります。
+つまり、Adobeでは、Media Analytics Mobile SDKの修正、OS 関連の更新プログラム、サポートを提供しなくなりました。 新しいExperience Platform SDK に移行する場合は、Adobe Streaming Media サービスを有効にするために [Media Analytics 拡張機能 ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) を実装する必要があります。
 
 
 ## 知っておきたいことトップ 5

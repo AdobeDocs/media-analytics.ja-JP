@@ -3,11 +3,11 @@ title: JavaScript 3.x を使用してエラーをトラッキングする方法
 description: ブラウザーアプリ（JS）で Media SDK を使用してエラートラッキングを実装する方法を説明します。
 exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '97'
+ht-degree: 100%
 
 ---
 

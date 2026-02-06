@@ -4,11 +4,11 @@ description: Chromecast で Media SDK を使用してコアトラッキングを
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 88%
+ht-degree: 81%
 
 ---
 
@@ -138,7 +138,7 @@ ht-degree: 88%
    * アプリ内でユーザーが明示的に一時停止をクリックする。
    * プレーヤー自体が一時停止状態になる。
    * （*モバイルアプリケーション*）- ユーザーがアプリケーションをバックグラウンドに移行した場合でも、アプリケーションのセッションを開いたままにしておきたい。
-   * （*モバイルアプリケーション*）- 何らかのシステムの割り込みが生じ、アプリケーションがバックグラウンドに移行する。例：ユーザーに電話がかかってきた場合や、別のアプリケーションのポップアップが表示された場合でも、アプリケーションのセッションを終了せず、ユーザーが中断した場所からビデオを再開できるようにしたい。
+   * （*モバイルアプリケーション*）- 何らかのシステムの割り込みが生じ、アプリケーションがバックグラウンドに移行する。例えば、ユーザーが呼び出しを受け取った場合や、別のアプリケーションからポップアップが発生した場合に、中断した時点からビデオを再開する機会をユーザーに与えるために、アプリケーションでセッションを維持する必要があります。
 
 1. 一時停止からのビデオ再生およびビデオ再開に関するイベントをプレーヤーから識別し、[trackPlay](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete) を呼び出します。
 
@@ -151,4 +151,4 @@ ht-degree: 88%
    >これは、手順 4 で使用したのと同じイベントソースである可能性があります。ビデオ再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
 
 * トラッキングのシナリオ：[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Chromecast SDK に含まれている、追跡の完全な例を示すサンプルプレーヤー
+* Chromecast SDKに付属しているサンプルプレーヤーで、トラッキングの完全な例を確認できます。

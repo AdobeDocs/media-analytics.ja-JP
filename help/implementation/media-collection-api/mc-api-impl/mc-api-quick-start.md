@@ -4,8 +4,8 @@ description: ストリーミングメディア API の基本を学ぶ。 リク�
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 97%
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->Media Analytics（MA）コレクション API バックエンドサーバーへの [Session リクエスト](../mc-api-ref/mc-api-sessions-req.md)を正常に完了するために必要なリクエストデータを収集します。（`curl`、Postman などを使用して）リクエストを手動で送信することで、リクエストデータを迅速に確認できます。これにより、リクエスト内の無効なデータ型または無効な情報に起因する問題があるかどうかに関するフィードバックがすぐに得られます。[JSON 検証スキーマ](../mc-api-ref/mc-api-json-validation.md)を使用して、適切なリクエストデータを提供していることを確認します。
+>Media Analytics（MA）コレクション API バックエンドサーバーへの [Session リクエスト](../mc-api-ref/mc-api-sessions-req.md)を正常に完了するために必要なリクエストデータを収集します。（`curl`、Postman などを使用して）リクエストを手動で送信することで、リクエストデータを迅速に確認できます。これにより、リクエスト内の無効なデータタイプまたは無効な情報に起因する問題があるかどうかに関するフィードバックがすぐに得られます。[JSON 検証スキーマ](../mc-api-ref/mc-api-json-validation.md)を使用して、適切なリクエストデータを提供していることを確認します。
 
 1. 標準の必須 Adobe Analytics および訪問者データを収集します。これらは、すべての Experience Cloud アプリケーションを実行するために提供する必要があります。
 
@@ -53,7 +53,7 @@ ht-degree: 97%
 
    >[!NOTE]
    >
-   >JSON リクエスト本文内では正しいデータ型を使用する必要があります。例えば、`analytics.enableSSL` はブール型、`media.length` は数値型です。[JSON 検証スキーマ](mc-api-validate-reqs.md)を調べて、パラメーターのタイプと、それが必須の要件かオプションの要件かを確認できます。
+   >JSON リクエスト本文内では正しいデータタイプを使用する必要があります。例えば、`analytics.enableSSL` はブール型、`media.length` は数値型です。[JSON 検証スキーマ](mc-api-validate-reqs.md)を調べて、パラメーターのタイプと、それが必須の要件かオプションの要件かを確認できます。
 
 1. Sessions リクエストを MA コレクション API エンドポイントに送信します。リクエストのペイロードが無効な場合は、問題を特定し、`201 Created` 応答を受け取るまで再試行します。この `curl` の例では、JSON リクエスト本文は、`sample_data_session` という名前のファイルに格納されています。
 

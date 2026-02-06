@@ -3,11 +3,11 @@ title: Media Analytics クックブック
 description: 一般的な MA クックブックリンクおよび SDK 専用リンクを含む、トップレベルクックブックページです。
 exl-id: 5f26fbce-d861-4b38-8497-ce010082f3a7
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '32'
+ht-degree: 100%
 
 ---
 

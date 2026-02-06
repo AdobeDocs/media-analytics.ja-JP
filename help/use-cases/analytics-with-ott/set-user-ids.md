@@ -4,19 +4,19 @@ description: 一意の顧客識別子として提供されるユーザー ID を
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
 feature: "Streaming Media, API"
-role: User, Admin, Data Engineer
-source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '53'
+ht-degree: 45%
 
 ---
 
 # ユーザー ID の設定 {#set-user-ids}
 
-ユーザー ID はアプリケーションがユーザーに対して定義する一意のカスタム訪問者識別子です。
+ユーザー ID は、アプリケーションでユーザーに対して定義される一意のカスタム訪問者識別子です。
 
-ADBMobile SDK で一意のユーザー ID を設定および取得する手順は次のとおりです。
+ADBMobile SDKに一意のユーザー ID を次のように設定して取得します。
 
 * **設定:**
 

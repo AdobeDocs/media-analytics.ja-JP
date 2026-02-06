@@ -4,8 +4,8 @@ description: 検証で使用する標準の再生テストについて説明し�
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 99%
@@ -80,7 +80,7 @@ Media Analytics 実装には、次の 2 つのタイプのトラッキングコ�
 
 1. **メディアプレーヤーを開始する**
 
-   メディアプレーヤーの開始時に、メディア SDK は、次の順番で 2 つのサーバーにキー呼び出しを送信します。
+   メディアプレーヤーの開始時に、メディア SDK は、次の順序で 2 つのサーバーにキー呼び出しを送信します。
 
    1. Adobe Analytics サーバー - Start 呼び出し
    1. Media Analytics サーバー - Start 呼び出し
@@ -94,7 +94,7 @@ Media Analytics 実装には、次の 2 つのタイプのトラッキングコ�
 
    * **広告開始**
 
-   広告の開始時に、次の順番でキー呼び出しが送信されます。
+   広告の開始時に、次の順序でキー呼び出しが送信されます。
 
    1. Adobe Analytics サーバー - Ad Start 呼び出し
    1. Media Analytics サーバー - Ad Start 呼び出し

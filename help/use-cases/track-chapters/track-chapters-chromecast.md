@@ -4,11 +4,11 @@ description: Chromecast でメディア SDK を使用してチャプターとセ
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '198'
+ht-degree: 95%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 0%
    | --- | --- | :---: |
    | `name` | チャプター名 | ○ |
    | `position` | チャプター位置 | ○ |
-   | `length` | チャプターの長さ | ○ |
-   | `startTime` | チャプター開始時間 | ○ |
+   | `length` | チャプター長さ | ○ |
+   | `startTime` | チャプター開始時刻 | ○ |
 
    チャプターオブジェクト：[createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject)
 

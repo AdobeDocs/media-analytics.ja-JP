@@ -2,12 +2,12 @@
 title: オーディエンスを新しい Adobe Analytics for Streaming Media データタイプに移行する
 description: オーディエンスを新しい Adobe Analytics for Streaming Media データタイプに移行する方法を説明します
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1346'
-ht-degree: 47%
+ht-degree: 46%
 
 ---
 
@@ -116,13 +116,13 @@ Media Analytics チームと ADC チームは現在、「レポート XDM フィ
 
 | フィールド名 | 現在の XDM フィールドパス （非推奨） | レポート XDM フィールドのパス | データタイプ | 派生フィールド | メモ |
 |------------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
-| 平均ビットレート | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateAverage.value | mediaReporting.qoeDataDetails.bitrateAverage | Both | 平均ビットレート |           |
-| 開始時間 | media.mediaTimed.primaryAssetViewDetails.qoe.timeToStart.value | mediaReporting.qoeDataDetails.timeToStart | Both | 開始時間 |           |
-| ドロップフレーム | media.mediaTimed.primaryAssetViewDetails.qoe.droppedFrames.value | mediaReporting.qoeDataDetails.droppedFrames | Both | ドロップフレーム |           |
-| バッファーイベント | media.mediaTimed.primaryAssetViewDetails.qoe.buffers.value | mediaReporting.qoeDataDetails.bufferCount | Both | バッファーイベント |           |
-| 合計バッファー時間 | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime | Both | 合計バッファー時間 |     |
-| ビットレート変更 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount | Both | ビットレート変更 |         |
-| エラー／エラーイベント | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount | Both | エラー／エラーイベント |  |
+| 平均ビットレート | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateAverage.value | mediaReporting.qoeDataDetails.bitrateAverage | 両方 | 平均ビットレート |           |
+| 開始時間 | media.mediaTimed.primaryAssetViewDetails.qoe.timeToStart.value | mediaReporting.qoeDataDetails.timeToStart | 両方 | 開始時間 |           |
+| ドロップフレーム | media.mediaTimed.primaryAssetViewDetails.qoe.droppedFrames.value | mediaReporting.qoeDataDetails.droppedFrames | 両方 | ドロップフレーム |           |
+| バッファーイベント | media.mediaTimed.primaryAssetViewDetails.qoe.buffers.value | mediaReporting.qoeDataDetails.bufferCount | 両方 | バッファーイベント |           |
+| 合計バッファー時間 | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime | 両方 | 合計バッファー時間 |     |
+| ビットレート変更 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount | 両方 | ビットレート変更 |         |
+| エラー／エラーイベント | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount | 両方 | エラー／エラーイベント |  |
 | プレーヤー SDK のエラー ID | media.mediaTimed.primaryAssetViewDetails.qoe.playerSdkErrors | mediaReporting.qoeDataDetails.playerSdkErrors | ディメンション | サポートなし | mediaReporting フィールドの使用 |
 | 外部エラー ID | media.mediaTimed.primaryAssetViewDetails.qoe.externalSdkErrors | mediaReporting.qoeDataDetails.externalErrors | ディメンション | サポートなし | mediaReporting フィールドの使用 |
 | 開始前にドロップ | media.mediaTimed.dropBeforeStarts.value | mediaReporting.qoeDataDetails.isDroppedBeforeStart | 指標 | 開始前にドロップ |     |
@@ -189,7 +189,7 @@ Customer Journey Analyticsで接続を設定するには：
 | videoad | 広告名 | `<_sandbox>.ad_name` |
 | videoad | クリエイティブ ID | `<_sandbox>.creative_id` |
 | videoadpod | キー/広告ポッド ID | `<_sandbox>.key` |
-| videoadpod | ポッド位置 | `<_sandbox>.pod_position` |
+| videoadpod | ポッドの位置 | `<_sandbox>.pod_position` |
 | videoadpod | ポッド名 | `<_sandbox>.pod_name` |
 | videochapter | キー/チャプター | `<_sandbox>.key` |
 | videochapter | チャプターの長さ | `<_sandbox>.chapter_length` |
@@ -223,7 +223,7 @@ Adobe Analyticsでは、各レポートスイート内で定義される実装�
 | ストリーム形式 | `_experience.analytics.customDimensions.eVars.eVar<number>` | ディメンション |
 | 初回放送日 | `_experience.analytics.customDimensions.eVars.eVar<number>` | ディメンション |
 | 初回デジタル日 | `_experience.analytics.customDimensions.eVars.eVar<number>` | ディメンション |
-| フェデレーテッドデータ | `_experience.analytics.customDimensions.eVars.eVar<number>` と `_experience.analytics.event<x>to<y>.event<number>.value` | Both |
+| フェデレーテッドデータ | `_experience.analytics.customDimensions.eVars.eVar<number>` と `_experience.analytics.event<x>to<y>.event<number>.value` | 両方 |
 | 推定ストリーム | `_experience.analytics.event<x>to<y>.event<number>.value` | 指標 |
 | 広告数 | `_experience.analytics.event<x>to<y>.event<number>.value` | 指標 |
 | チャプター数 | `_experience.analytics.event<x>to<y>.event<number>.value` | 指標 |
@@ -231,7 +231,7 @@ Adobe Analyticsでは、各レポートスイート内で定義される実装�
 | サイト ID | `_experience.analytics.customDimensions.eVars.eVar<number>` | ディメンション |
 | クリエイティブ URL | `_experience.analytics.customDimensions.eVars.eVar<number>` | ディメンション |
 | プレースメント ID | `_experience.analytics.customDimensions.eVars.eVar<number>` | ディメンション |
-| フレーム／秒 | `_experience.analytics.customDimensions.eVars.eVar<number>` と `_experience.analytics.event<x>to<y>.event<number>.value` | Both |
+| フレーム／秒 | `_experience.analytics.customDimensions.eVars.eVar<number>` と `_experience.analytics.event<x>to<y>.event<number>.value` | 両方 |
 | メディア SDK のエラー ID | `_experience.analytics.event<x>to<y>.event<number>.value` | 指標 |
 | 停止の影響を受けたストリーム | `_experience.analytics.event<x>to<y>.event<number>.value` | 指標 |
 | 停止イベント | `_experience.analytics.event<x>to<y>.event<number>.value` | 指標 |

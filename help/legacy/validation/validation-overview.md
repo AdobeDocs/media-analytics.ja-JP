@@ -4,11 +4,11 @@ description: 検証プロセスの詳細を説明します。ログを送信し�
 uuid: bbc6b6d6-1899-45b9-9fb7-8031f07563f6
 exl-id: 908e9de6-9461-4f3d-9d94-5541c5dfeabb
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '62'
+ht-degree: 100%
 
 ---
 
@@ -16,5 +16,5 @@ ht-degree: 0%
 
 ログを提出して適切な実装を検証するために、検証には、お客様が（Adobe Debug を使用して）実行する必要がある必須のテストケースのリストが含まれています。各イベントおよびメタデータパラメーターに対して期待される結果があります。
 
-* [テスト 1：標準の再生 &#x200B;](test1-standard-playback.md)
-* [テスト 2：メディアの中断 &#x200B;](test2-media-interrupt.md)
+* [テスト 1：標準の再生 ](test1-standard-playback.md)
+* [テスト 2：メディアの中断 ](test2-media-interrupt.md)

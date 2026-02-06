@@ -3,9 +3,9 @@ title: Adobe AnalyticsまたはCustomer Journey Analyticsのストリーミン�
 description: Adobe Streaming Media Services の実装パスについて説明します。
 uuid: null
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 65%
@@ -24,11 +24,11 @@ Edgeの実装方法では、ストリーミングメディアコレクション�
 
 * **Media for Edge Network SDK/拡張機能：** Web、iOSおよびAndroidのデバイス、または Roku デバイスからデータを収集し、Edge Networkに送信します。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
-  Media for Edge Network SDK/Extension について詳しくは、[Edge Networkを使用した Streaming Media Collection の実装 &#x200B;](/help/implementation/edge/implementation-edge.md) を参照してください。
+  Media for Edge Network SDK/Extension について詳しくは、[Edge Networkを使用した Streaming Media Collection の実装 ](/help/implementation/edge/implementation-edge.md) を参照してください。
 
 * **Media Edge API:** 任意のデバイスまたはフォーマット（モバイル、web、OTT デバイスなど）からデータを収集してEdge Networkに送信するようにカスタマイズできます。 その後、データを Customer Journey Analytics または Adobe Analytics に送信できます。
 
-  Media Edge API について詳しくは、[Media Edge API の概要 &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/) を参照してください。
+  Media Edge API について詳しくは、[Media Edge API の概要 ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/) を参照してください。
 
 ![CJA ワークフロー](assets/streaming-media-edge.png)
 

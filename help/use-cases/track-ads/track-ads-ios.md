@@ -4,11 +4,11 @@ description: メディア SDK を使用して、iOS アプリケーションに�
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 88%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 0%
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
-   | `name` | プリロール、ミッドロール、ポストロールなど、広告ブレークの名前 | ○ |
-   | `position` | コンテンツ内の広告ブレークの位置番号（1 から始まる）。 | ○ |
+   | `name` | 広告ブレーク名（プリロール、ミッドロール、ポストロールなど）。 | ○ |
+   | `position` | コンテンツ内での広告ブレークの位置番号（1 から始まる）。 | ○ |
    | `startTime` | 広告ブレーク開始時の再生ヘッド値 | ○ |
 
    広告ブレークオブジェクトの作成：
@@ -67,9 +67,9 @@ ht-degree: 0%
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
    | `name` | 広告のわかりやすい名前. | ○ |
-   | `adId` | 広告の一意の ID。 | ○ |
-   | `position` | 広告ブレーク内の広告の位置番号（1 から始まる）。 | ○ |
-   | `length` | 広告の長さ | ○ |
+   | `adId` | 広告の一意の識別子。 | ○ |
+   | `position` | 広告ブレーク内での広告の位置（1 から始まる）。 | ○ |
+   | `length` | 広告長さ | ○ |
 
    広告オブジェクトの作成：
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 1. オプションで、コンテキストデータ変数を使用して標準または広告メタデータをメディアトラッキングセッションにアタッチします。
 
-   * [iOS での標準広告メタデータの実装 &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+   * [iOS での標準広告メタデータの実装 ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **カスタムの広告メタデータ** - カスタムのメタデータの場合は、カスタムデータ変数の変数オブジェクトを作成し、現在の広告のデータを設定します。
 
      ```

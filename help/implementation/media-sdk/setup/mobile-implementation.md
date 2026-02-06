@@ -2,9 +2,9 @@
 title: ストリーミングメディアサービス用タグを使用してモバイルSDKを設定する方法
 description: モバイルアプリ用のAdobe ストリーミングメディアサービスを実装する方法について説明します。
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 70%

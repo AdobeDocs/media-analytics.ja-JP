@@ -2,9 +2,9 @@
 title: Edge Network API を使用したAdobe Streaming Media Services の実装
 description: Media Analytics とExperience Platform Edge API のインストールに関するリソースです。
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 Edge API のカスタム実装の実行方法については、次の資料を使用してください。
 
-* [Media Edge API の概要 &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
+* [Media Edge API の概要 ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
 
-* [Media Edge API の概要 &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
+* [Media Edge API の概要 ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 
-* [Media Edge API トラブルシューティングガイド &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
+* [Media Edge API トラブルシューティングガイド ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
-* [Media Edge API 用の Open API 仕様ファイルの使用 &#x200B;](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
+* [Media Edge API 用の Open API 仕様ファイルの使用 ](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

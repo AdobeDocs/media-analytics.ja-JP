@@ -4,11 +4,11 @@ description: メディア SDK を使用して、ブラウザー（JS）アプリ
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 91%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
-   | `name` | プリロール、ミッドロール、ポストロールなど、広告ブレークの名前 | ○ |
+   | `name` | 広告ブレーク名（プリロール、ミッドロール、ポストロールなど）。 | ○ |
    | `position` | 広告ブレークの位置番号（1 から始まる） | ○ |
    | `startTime` | 広告ブレーク開始時の再生ヘッド値 | ○ |
 
@@ -64,9 +64,9 @@ ht-degree: 0%
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
    | `name` | 広告のわかりやすい名前. | ○ |
-   | `adId` | 広告の一意の ID。 | ○ |
-   | `position` | 広告ブレーク内の広告の位置番号（1 から始まる）。 | ○ |
-   | `length` | 広告の長さ | ○ |
+   | `adId` | 広告の一意の識別子。 | ○ |
+   | `position` | 広告ブレーク内での広告の位置（1 から始まる）。 | ○ |
+   | `length` | 広告長さ | ○ |
 
    広告オブジェクトの作成：
 

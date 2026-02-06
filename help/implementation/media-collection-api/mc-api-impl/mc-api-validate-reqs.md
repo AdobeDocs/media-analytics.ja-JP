@@ -4,17 +4,17 @@ description: JSON 検証スキーマを使用してイベントリクエスト�
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '121'
+ht-degree: 72%
 
 ---
 
 # イベントリクエストの検証{#validating-event-requests}
 
-各イベントタイプの JSON リクエスト本文は、JSON スキーマを使用してバックエンドで検証されます。API 呼び出しで検証が失敗すると、HTTP 応答本文にエラーメッセージが書き込まれます。
+各イベントタイプの JSON リクエスト本文は、JSON スキーマを使用してバックエンドで検証されます。 API 呼び出しの検証に失敗すると、HTTP 応答本文にエラーメッセージが入力されます。
 
 各イベントタイプの JSON 検証スキーマは、`{uri}/api/v1/schemas/{eventType}`（例えば、`{uri}/api/v1/schemas/sessionEnd`）で公開されています。これらの JSON 検証スキーマは、各タイプのイベントの正しいリクエスト本文パラメーターを判断するための絶対的な典拠となります。
 

@@ -4,11 +4,11 @@ description: iOS で使用可能なメタデータキーについて説明しま
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '111'
+ht-degree: 78%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 0%
 | `ADBVideoMetadataKeyRATING` | レーティング | ビデオ |
 | `ADBVideoMetadataKeyORIGINATOR` | 作成者 | ビデオ |
 | `ADBVideoMetadataKeyNETWORK` | ネットワーク | ビデオ |
-| `ADBVideoMetadataKeySHOW_TYPE` | 番組タイプ | ビデオ |
+| `ADBVideoMetadataKeySHOW_TYPE` | タイプを表示 | ビデオ |
 | `ADBVideoMetadataKeyAD_LOAD` | 広告読み込み | ビデオ |
 | `ADBVideoMetadataKeyMVPD` | mvpd | ビデオ |
 | `ADBVideoMetadataKeyAUTHORIZED` | Authorization | ビデオ |
-| `ADBVideoMetadataKeyDAY_PART` | 日パート | ビデオ |
+| `ADBVideoMetadataKeyDAY_PART` | 日分割 | ビデオ |
 | `ADBVideoMetadataKeyFEED` | フィード | ビデオ |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | ストリーム形式 | ビデオ |
 
@@ -56,8 +56,8 @@ ht-degree: 0%
 | 定数名 | 説明 | タイプ |
 |---|---|---|
 | `ADBAdMetadataKeyADVERTISER` | 広告主 | 広告 |
-| `ADBAdMetadataKeyCAMPAIGN_ID` | キャンペーン ID | 広告 |
-| `ADBAdMetadataKeyCREATIVE_ID` | クリエイティブ ID | 広告 |
-| `ADBAdMetadataKeyPLACEMENT_ID` | プレースメント ID | 広告 |
-| `ADBAdMetadataKeySITE_ID` | サイト ID | 広告 |
-| `ADBAdMetadataKeyCREATIVE_URL` | クリエイティブ URL | 広告 |
+| `ADBAdMetadataKeyCAMPAIGN_ID` | キャンペーン Id | 広告 |
+| `ADBAdMetadataKeyCREATIVE_ID` | Creative Id | 広告 |
+| `ADBAdMetadataKeyPLACEMENT_ID` | プレースメント Id | 広告 |
+| `ADBAdMetadataKeySITE_ID` | サイト Id | 広告 |
+| `ADBAdMetadataKeyCREATIVE_URL` | Creative Url | 広告 |

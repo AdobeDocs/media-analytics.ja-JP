@@ -4,11 +4,11 @@ description: Android で Media SDK を使用してコアトラッキングを実
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '689'
+ht-degree: 93%
 
 ---
 
@@ -68,8 +68,8 @@ ht-degree: 0%
      >
      >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
 
-      * メディアメタデータキー API リファレンス - [標準メタデータキー - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * 利用可なビデオメタデータの包括的なセットについては、[オーディオおよびビデオパラメーター](/help/implementation/variables/audio-video-parameters.md)を参照してください。
+      * メディアメタデータキー API リファレンス - [ 標準メタデータキー – Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+      * 利用可能なビデオメタデータの包括的なセットについては、こちらを参照してください。[ オーディオおよびビデオパラメーター ](/help/implementation/variables/audio-video-parameters.md)
 
    * **カスタムメタデータ**
 
@@ -174,7 +174,7 @@ ht-degree: 0%
    >
    >これは、手順 4 で使用したのと同じイベントソースである可能性があります。メディア再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
 
-コア再生の追跡に関する追加情報については、以下を参照してください。
+コア再生のトラッキングについて詳しくは、以下を参照してください。
 
 * トラッキングのシナリオ：[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Android SDK に含まれている、追跡の完全な例を示すサンプルプレーヤー
+* 完全なトラッキングの例については、Android SDKに含まれているサンプルプレーヤーを参照してください。

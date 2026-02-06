@@ -4,11 +4,11 @@ description: iOS で Media SDK を使用してチャプターとセグメント�
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '197'
+ht-degree: 95%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 0%
    | --- | --- | :---: |
    | `name` | チャプター名 | ○ |
    | `position` | チャプター位置 | ○ |
-   | `length` | チャプターの長さ | ○ |
-   | `startTime` | チャプター開始時間 | ○ |
+   | `length` | チャプター長さ | ○ |
+   | `startTime` | チャプター開始時刻 | ○ |
 
    チャプターオブジェクト：
 

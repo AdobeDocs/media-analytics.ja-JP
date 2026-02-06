@@ -2,9 +2,9 @@
 title: Analytics ソースコネクタ実装を、ストリーミングメディアサービス用の新しい XDM フィールドに更新します
 description: 更新された XDM ストリーミングメディアフィールドへの Analytics ソースコネクタ実装の移行について説明します
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d239b203-71ce-4307-884f-9d11cc623d04
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この情報は、[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) を使用してAdobe AnalyticsからストリーミングメディアデータをAdobe Experience Platformに取り込み、Customer Journey Analytics レポートやその他の Platform サービスで使用する組織を対象としています。
+>この情報は、[Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) を使用してAdobe AnalyticsからストリーミングメディアデータをAdobe Experience Platformに取り込み、Customer Journey Analytics レポートやその他の Platform サービスで使用する組織を対象としています。
 >
 >変更内容は、データ収集、処理、レポートを含む、Adobe Analytics as a スタンドアロンアプリケーションには影響しません。 データフィードや処理ルールなどのツールは影響を受けないため、Analytics 実装を更新する必要はありません。
 
@@ -57,17 +57,17 @@ CJA レポートを移行する方法は 2 つあります。
 
 * **履歴データを保持するため**:Adobe チームは、事前定義済みのCustomer Journey Analytics テンプレートを開発して、古い XDM フィールドと新しい XDM フィールドを 1 つのフィールドに組み合わせた一連の派生フィールドを導入しました。 このテンプレートは、リクエストに応じて、Customer Journey Analytics接続ごとに有効にすることができます。 新しいフィールドを有効にする方法については、Adobe サポートチームにお問い合わせください。 これらの派生フィールドは、組織の派生フィールド制限にはカウントされません。
 
-  マッピングのリストを表示するには、[Adobe Experience PlatformとCustomer Journey Analytics用の Media Analytics パラメーターマッピング &#x200B;](/help/use-cases/xdm-updates/parameters-mapping.md) を参照してください。
+  マッピングのリストを表示するには、[Adobe Experience PlatformとCustomer Journey Analytics用の Media Analytics パラメーターマッピング ](/help/use-cases/xdm-updates/parameters-mapping.md) を参照してください。
 
-* **履歴データが不要な場合**：レポート時にレポート XDM フィールドパスを使用すれば十分です。 詳しくは、[&#x200B; 新しいストリーミングメディアフィールドを使用するためのCustomer Journey Analyticsの移行 &#x200B;](/help/use-cases/xdm-updates/migrate-cja-setup.md) を参照してください。
+* **履歴データが不要な場合**：レポート時にレポート XDM フィールドパスを使用すれば十分です。 詳しくは、[ 新しいストリーミングメディアフィールドを使用するためのCustomer Journey Analyticsの移行 ](/help/use-cases/xdm-updates/migrate-cja-setup.md) を参照してください。
 
 ### Real-Time CDP
 
-すべてのオーディエンスとプロファイルは、`mediaReporting` に基づいている必要があります。 詳しくは、[&#x200B; 新しいストリーミングメディアフィールドへのプロファイルの移行 &#x200B;](/help/use-cases/xdm-updates/migrate-profiles.md) を参照してください。
+すべてのオーディエンスとプロファイルは、`mediaReporting` に基づいている必要があります。 詳しくは、[ 新しいストリーミングメディアフィールドへのプロファイルの移行 ](/help/use-cases/xdm-updates/migrate-profiles.md) を参照してください。
 
 ### データストリームとデータ収集
 
-動的設定とデータマッピングでは、`mediaReporting` を使用する必要があります。 詳しくは、[&#x200B; カスタムフィールドのデータ準備を新しいストリーミングメディアフィールドに移行する &#x200B;](/help/use-cases/xdm-updates/migrate-dataprep.md) を参照してください。
+動的設定とデータマッピングでは、`mediaReporting` を使用する必要があります。 詳しくは、[ カスタムフィールドのデータ準備を新しいストリーミングメディアフィールドに移行する ](/help/use-cases/xdm-updates/migrate-dataprep.md) を参照してください。
 
 ### 移行が必要なその他のサービス
 

@@ -2,9 +2,9 @@
 title: ストリーミングメディア用 Analytics の web 実装をセットアップする方法
 description: Web アプリ用の Adobe Streaming Media を実装する方法について説明します。
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 92%
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 このページの情報では、web スタンドアロン SDK のインストール方法と JavaScript のセットアップ方法について説明します。
 
-または、[Media Analytics 拡張機能を使用したストリーミングメディアサービスのインストール &#x200B;](/help/implementation/media-sdk/setup/web-implementation-tags.md) で説明しているように、Adobe Media Analytics 拡張機能を使用してストリーミングメディアサービスを実装することもできます。
+または、[Media Analytics 拡張機能を使用したストリーミングメディアサービスのインストール ](/help/implementation/media-sdk/setup/web-implementation-tags.md) で説明しているように、Adobe Media Analytics 拡張機能を使用してストリーミングメディアサービスを実装することもできます。
 
 ## 前提条件 {#prerequesites}
 
@@ -104,6 +104,6 @@ ht-degree: 92%
 
 ## JavaScript 2.x から 3.x への移行
 
-2.x から 3.x への移行について詳しくは、[&#x200B; 2.x から 3.x への移行](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)を参照してください。
+2.x から 3.x への移行について詳しくは、[ 2.x から 3.x への移行](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)を参照してください。
 
 レガシーコンテンツについては、[レガシー実装](/help/legacy/media-sdk/setup/setup-overview.md)を参照してください

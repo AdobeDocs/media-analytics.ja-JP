@@ -4,7 +4,7 @@ description: Adobe ストリーミングメディアサービスがサポート�
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 75%
@@ -25,14 +25,14 @@ SDK は、新しいバージョンのデバイスがリリースされると定�
 
 現在サポートされているデバイスの表を次に示します。デバイスが一覧にない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
 
-Experience Platformへの Media の実装について詳しくは、[Edge Edgeを使用した Streaming Media Collection のインストール &#x200B;](/help/implementation/edge/implementation-edge.md) を参照してください。
+Experience Platformへの Media の実装について詳しくは、[Edge Edgeを使用した Streaming Media Collection のインストール ](/help/implementation/edge/implementation-edge.md) を参照してください。
 
-| ストリーミングプラットフォームとデバイス | | Edge Network 用 Media SDK／拡張機能 | Media Edge API | タグ付きメディア拡張機能または AEP Mobile SDK | メディア SDK | メディアコレクション API |
+| ストリーミングプラットフォームとデバイス |  | Edge Network 用 Media SDK／拡張機能 | Media Edge API | タグ付きメディア拡張機能または AEP Mobile SDK | メディア SDK | メディアコレクション API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
-| Web／モバイル Web | | | | | |
+| Web／モバイル Web | | | | | | |
 | | JavaScript ブラウザー | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) |
-| モバイルアプリ | | | | | |
-| | iOS デバイス | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | | ![サポート](/help/assets/icon-blue-check.png) | |
+| モバイルアプリ | | | | | | |
+| | iOS デバイス | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | | ![サポート](/help/assets/icon-blue-check.png) |
 | | Android デバイス | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | ![サポート](/help/assets/icon-blue-check.png) | | ![サポート](/help/assets/icon-blue-check.png) |
 | | Windows デバイス | | ![サポート](/help/assets/icon-blue-check.png) | | | ![サポート](/help/assets/icon-blue-check.png) |
 | OTT | | | | | | |

@@ -4,11 +4,11 @@ description: メディア SDK を使用して、Roku アプリケーションに
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '298'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
-   | `name` | プリロール、ミッドロール、ポストロールなど、広告ブレークの名前 | ○ |
+   | `name` | 広告ブレーク名（プリロール、ミッドロール、ポストロールなど）。 | ○ |
    | `position` | 広告ブレークの位置番号（1 から始まる） | ○ |
    | `startTime` | 広告ブレーク開始時の再生ヘッド値 | ○ |
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 1. オプションで、コンテキストデータ変数を使用して標準または広告メタデータをメディアトラッキングセッションにアタッチします。
 
-   * [Roku での標準広告メタデータの実装 &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   * [Roku での標準広告メタデータの実装 ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **カスタムの広告メタデータ** - カスタムのメタデータの場合は、カスタムデータ変数の変数オブジェクトを作成し、現在の広告アセットのデータを設定します。
 
      ```

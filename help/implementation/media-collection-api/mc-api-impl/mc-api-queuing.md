@@ -4,11 +4,11 @@ description: プレーヤーでイベントが発生した後にセッション 
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '205'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >[Events リクエスト](../mc-api-ref/mc-api-events-req.md)は、HTTP 応答コード以外のデータをクライアントに返しません。
 
-セッション ID を受け取る前にイベントを処理する 1 つの方法については、配信環境のリファレンスプレーヤーを確認してください。次に例を示します。
+セッション ID を受け取る前にイベントを処理する 1 つの方法について、配布内のリファレンスプレーヤーを確認します。 次に例を示します。
 
 ```js
 var eventData = {};            // JSON payload 
@@ -75,7 +75,7 @@ VideoPlayer.prototype.getPlayerTime = function() {
 };
 ```
 
-**キューに入れられたイベントを処理する -** リファレンスプレーヤーでは、キューに入れられたイベントが次のように処理されます。
+**キュー内のイベントをすべて処理 –** 参照プレーヤーは、キュー内のイベントを次のように処理します。
 
 ```js
     […] 
@@ -92,4 +92,4 @@ VideoPlayer.prototype._processPendingEvents =
 }
 ```
 
-続いて、トラッキングイベントを発生と同時に処理します。
+発生したトラッキングイベントの処理を続行します。

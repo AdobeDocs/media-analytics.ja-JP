@@ -4,8 +4,8 @@ description: ユーザーがオフラインの場合にダウンロード済み�
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 98%
@@ -48,7 +48,7 @@ Downloaded Content 機能は、（標準）オンラインメディアコレク�
 
 * バッチペイロードの最初のイベントは、メディアコレクション API で通常おこなうように、`sessionStart` である必要があります。
 * **ダウンロードされたコンテンツを送信していることをバックエンドに示すために、`media.downloaded: true`** イベントの標準メタデータパラメーター（`params` キー）に `sessionStart` を含める必要があります。ダウンロードされたデータを送信する際に、このパラメーターが存在しないか、false に設定されている場合、API は応答コード 400（無効な要求）を返します。このパラメーターは、バックエンドに対して、ダウンロードされたコンテンツとライブコンテンツを区別します。ライブセッションに `media.downloaded: true` が設定されている場合、同様に API からの応答が 400 になります。
-* プレーヤーイベントを発生順に正しく保存するのは実装側の責任です。
+* プレーヤーイベントを発生した順序で正しく保存するのは実装側の責任です。
 
 ### 応答コード
 

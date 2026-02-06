@@ -4,11 +4,11 @@ description: Media SDK のバージョン 1.x から 2.x への移行につい�
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '216'
+ht-degree: 87%
 
 ---
 
@@ -18,8 +18,8 @@ VHL 1.x から VHL 2.x への移行は簡単です。新しいバージョンで
 
 1.x と 2.x の主な違いは次のとおりです。
 
-* **プラグインとデリゲート** - Analytics、VideoPlayer および Heartbeat 用にプラグインやデリゲートを実装する必要がなくなりました。
-* **設定** - 1.x のプラグイン用に設定をインスタンス化する必要がなくなりました。
+* **プラグイン、デリゲート -** Analytics、VideoPlayer およびハートビート用のプラグインとデリゲートを実装する必要がなくなりました。
+* **設定 –** 1.x プラグインの設定をインスタンス化する必要がなくなりました。
 
 ## 2.x のメリット {#benefits-of-two-x}
 

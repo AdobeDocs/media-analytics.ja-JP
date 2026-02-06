@@ -4,8 +4,8 @@ description: ストリーミングメディアサービスの基本を学びま�
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Streaming Media, Workspace Basics"
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 62%
@@ -17,7 +17,7 @@ ht-degree: 62%
 Adobe ストリーミングメディアサービスの実装を開始する前に、次の作業を行います。
 
 1. **Adobe streaming media services の概要の確認**<br>
-ストリーミングメディアサービスの実装を開始する前に、[Adobe streaming media services の概要を参照して &#x200B;](/help/media-overview.md) ストリーミングメディアサービスがニーズを満たしていることを確認してください。
+ストリーミングメディアサービスの実装を開始する前に、[Adobe streaming media services の概要を参照して ](/help/media-overview.md) ストリーミングメディアサービスがニーズを満たしていることを確認してください。
 
 1. **価格モデルを確認する**<br>
 Customer Journey Analytics Streaming Media Collection アドオンおよび Adobe Analytics for Streaming Media アドオンの現在の価格モデルは、ビデオストリームに基づいています。 アドオンはAdobe AnalyticsとAdobe Experience Platformに別売なので、必要に応じて、営業担当またはAdobe アカウントチームにお問い合わせください。
