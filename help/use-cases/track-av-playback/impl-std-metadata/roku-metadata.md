@@ -5,18 +5,18 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 91%
+ht-degree: 75%
 
 ---
 
 # Roku のメタデータキー{#roku-metadata-keys}
 
-ビデオ、オーディオおよび広告の標準メタデータをそれぞれメディアと広告の情報オブジェクトに設定できます。ビデオや広告メタデータの定数キーを使用すると、追跡 API を呼び出す前に、標準メタデータを含むディクショナリが情報オブジェクトに設定されます。標準メタデータ定数の一覧と例については、以下の表を参照してください。
+ビデオ、オーディオおよび広告の標準メタデータをそれぞれメディアと広告の情報オブジェクトに設定できます。ビデオ/広告メタデータの定数キーを使用して、トラック API を呼び出す前に、情報オブジェクトに標準メタデータを含むディクショナリを設定します。 標準メタデータ定数のリスト全体については、以下の表を参照し、その後にサンプルを参照してください。
 
-## ビデオメタデータ定数 {#video-metadata-constants}
+## ビデオメタデータの定数 {#video-metadata-constants}
 
 | メタデータ名 | コンテキストデータキー | 定数名 |
 | --- | --- | --- |
@@ -76,7 +76,7 @@ ht-degree: 91%
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | `MediaInfo` `trackLoad` にメタデータを設定するための定数 |
 | `MEDIA_STANDARD_AD_METADATA` | `EventData` `trackEvent` に広告メタデータを設定するための定数 |
-| `MEDIA_RESUMED` | ビデオ再開のハートビートを送信する定数。以前に停止されたコンテンツのビデオトラッキングを再開するには、`mediaTrackLoad` を呼び出す際に、`mediaInfo` オブジェクトの `MEDIA_RESUMED` プロパティを設定する必要があります（`MEDIA_RESUMED` は `mediaTrackEvent` API を使用して追跡できるイベントではありません。）ユーザーが視聴を停止したコンテンツの追跡を継続し、`MEDIA_RESUMED` で視聴を再開する予定がある場合は、true に設定する必要があります。 <br/><br/>例えば、あるユーザーがコンテンツの 30％を視聴してからアプリを閉じたとします。その場合はセッションが終了します。その後、同じユーザーが同じコンテンツに再度アクセスした場合、アプリケーションは、そのユーザーが中断した場所から視聴を再開できるようにします。アプリケーションはそのうえで `mediaTrackLoad` API を呼び出し、`MEDIA_RESUMED` を「true」に設定します。これにより、同じビデオコンテンツのこの 2 つのメディアセッションをリンクさせることができます。実装の例を次に示します。<br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>この例では、ビデオの新しいセッションが作成されますが、SDK によってイベントタイプ「resume」のハートビートリクエストも送信されます。これをレポートで使用することで、2 つのメディアセッションをリンクさせることができます。 |
+| `MEDIA_RESUMED` | ビデオ再開のハートビートを送信する定数。以前に停止されたコンテンツのビデオトラッキングを再開するには、`mediaTrackLoad` を呼び出す際に、`mediaInfo` オブジェクトの `MEDIA_RESUMED` プロパティを設定する必要があります（`MEDIA_RESUMED` は `mediaTrackEvent` API を使用して追跡できるイベントではありません。）ユーザーが視聴を停止したコンテンツの追跡を継続し、`MEDIA_RESUMED` で視聴を再開する予定がある場合は、true に設定する必要があります。 <br/><br/>例えば、あるユーザーがコンテンツの 30％を視聴してからアプリを閉じたとします。その場合はセッションが終了します。その後、同じユーザーが同じコンテンツに再度アクセスした場合、アプリケーションは、そのユーザーが中断した場所から視聴を再開できるようにします。アプリケーションはそのうえで `mediaTrackLoad` API を呼び出し、`MEDIA_RESUMED` を「true」に設定します。その結果、同じビデオコンテンツに対するこれら 2 つの異なるメディアセッションをリンクできます。 実装の例を次に示します。<br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>この例では、ビデオの新しいセッションが作成されますが、SDK によってイベントタイプ「resume」のハートビートリクエストも送信されます。これをレポートで使用することで、2 つのメディアセッションをリンクさせることができます。 |
 
 ### コンテンツタイプ定数
 

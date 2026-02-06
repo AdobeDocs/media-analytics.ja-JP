@@ -5,16 +5,16 @@ uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '139'
+ht-degree: 55%
 
 ---
 
 # Chromecast のメタデータキー{#chromecast-metadata-keys}
 
-ビデオと広告の標準メタデータをそれぞれメディアと広告の情報オブジェクトに設定できます。ビデオや広告メタデータの定数キーを使用すると、追跡 API を呼び出す前に、標準メタデータを含むディクショナリが情報オブジェクトに設定されます。標準メタデータ定数の一覧と例については、以下の表を参照してください。
+標準のビデオおよび広告メタデータは、それぞれメディアオブジェクトおよび広告情報オブジェクトに設定できます。 ビデオ/広告メタデータの定数キーを使用して、トラック API を呼び出す前に、情報オブジェクトに標準メタデータを含むディクショナリを設定します。 標準メタデータ定数のリスト全体については、以下の表を参照し、その後にサンプルを参照してください。
 
 ## メタデータ定数 {#video-metadata-constants}
 

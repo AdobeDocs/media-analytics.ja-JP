@@ -4,7 +4,7 @@ description: Adobe streaming media services をExperience Platform Edgeで実装
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 9%
@@ -19,21 +19,21 @@ Adobe Experience Platform Edge Network を使用すると、複数の製品宛�
 
 ![CJA ワークフロー](assets/streaming-media-edge.png)
 
-Experience Platform Edgeを使用しない実装方法を含む、すべての実装オプションの概要については、[Adobe AnalyticsまたはCustomer Journey Analyticsのストリーミングメディアサービスの実装 &#x200B;](/help/implementation/overview.md) を参照してください。
+Experience Platform Edgeを使用しない実装方法を含む、すべての実装オプションの概要については、[Adobe AnalyticsまたはCustomer Journey Analyticsのストリーミングメディアサービスの実装 ](/help/implementation/overview.md) を参照してください。
 
 Experience Edgeで Streaming Media Collection を実装するために、Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK、API のいずれを使用しているかに関係なく、最初に次の節を実行する必要があります。
 
 ## Adobe Experience Platformでのスキーマの設定
 
-Adobe Experience Platform を活用するアプリケーション間で使用するデータ収集を標準化するために、アドビはオープンで公的に文書化された標準である Experience Data Model（XDM）を作成しました。
+Adobe Experience Platform を活用するアプリケーション間で使用するデータ収集を標準化するために、アドビはオープンで公的に文書化された標準であるエクスペリエンスデータモデル（XDM）を作成しました。
 
 スキーマを作成して設定するには：
 
-1. Adobe Experience Platformで、[UI でのスキーマの作成と編集 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja) の説明に従ってスキーマの作成を開始します。
+1. Adobe Experience Platformで、[UI でのスキーマの作成と編集 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en) の説明に従ってスキーマの作成を開始します。
 
 1. スキーマの作成時にスキーマの詳細ページで、スキーマのベースクラスを選択する際に [!UICONTROL **エクスペリエンスイベント**] を選択します。
 
-   ![&#x200B; 追加されたフィールドグループ &#x200B;](assets/schema-experience-event.png)
+   ![ 追加されたフィールドグループ ](assets/schema-experience-event.png)
 
 1. 「[!UICONTROL **次へ**]」を選択します。
 
@@ -46,7 +46,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    フィールドグループを追加したら、次のように、「[!UICONTROL **フィールドグループ**]」セクションに表示されます。
 
-   ![&#x200B; 追加されたフィールドグループ &#x200B;](assets/schema-field-groups-added.png)
+   ![ 追加されたフィールドグループ ](assets/schema-field-groups-added.png)
 
 1. 「[!UICONTROL **保存**]」を選択して変更を保存します。
 
@@ -56,7 +56,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    1. [!UICONTROL **構造**] 領域で「`Media Collection Details`」フィールドを選択し、「[!UICONTROL **関連フィールドを管理**]」を選択します。
 
-      ![&#x200B; 管理に関連するフィールド &#x200B;](assets/manage-related-fields.png)
+      ![ 管理に関連するフィールド ](assets/manage-related-fields.png)
 
    1. [!UICONTROL **フィールドの表示名を表示**] するオプションを有効にし、次のようにスキーマを更新します。
 
@@ -68,11 +68,11 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       * 「`Media Collection Details`」フィールドで、「`List Of States`」フィールドを非表示にします。
 
-        ![&#x200B; メディアコレクションの状態を非表示 &#x200B;](assets/schema-hide-media-collection-states.png)
+        ![ メディアコレクションの状態を非表示 ](assets/schema-hide-media-collection-states.png)
 
       * `Media Collection Details`/`List Of States End` および `Media Collection Details`/`List Of States Start` フィールドで、レポートフィールド `Player State Count`、`Player State Set` および `Player State Time` を非表示にします。
 
-        ![&#x200B; 非表示にするフィールド &#x200B;](assets/schema-hide-listofstates.png)
+        ![ 非表示にするフィールド ](assets/schema-hide-listofstates.png)
 
       * `Media Collection Details`/`Qoe Data Details` フィールドで、次のレポートフィールド（`Average Bitrate`、`Average Bitrate Bucket`、`Bitrate Change Impacted Streams`、`Bitrate Changes`、`Buffer Impacted Streams`、`Buffer Events`、`Dropped Frame Impacted Streams`、`Drops Before Starts`、`Errors`、`External Error IDs`、`Error Impacted Streams`、`Media SDK Error IDs`、`Player SDK Error IDs`、`Stalling Impacted Streams`、`Stalling Events`、`Total Buffer Duration` および `Total Stalling Duration`）を非表示にします。
 
@@ -113,7 +113,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    +++
 
-1. （オプション）カスタムメタデータをスキーマに追加できます。 これにより、特定のニーズやコンテキストに合わせてカスタマイズできる、ユーザー定義のメタデータを追加で含めることができます。 この柔軟性は、既存のスキーマが目的のデータポイントをカバーしていないシナリオで役立ちます。 （Media Edge API でカスタムメタデータを操作することもできます。 詳しくは、[Media Edge API を使用したカスタムメタデータの作成 &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/) を参照してください。
+1. （オプション）カスタムメタデータをスキーマに追加できます。 これにより、特定のニーズやコンテキストに合わせてカスタマイズできる、ユーザー定義のメタデータを追加で含めることができます。 この柔軟性は、既存のスキーマが目的のデータポイントをカバーしていないシナリオで役立ちます。 （Media Edge API でカスタムメタデータを操作することもできます。 詳しくは、[Media Edge API を使用したカスタムメタデータの作成 ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/) を参照してください。
 
    +++ スキーマにカスタムメタデータを追加する方法については、こちらを参照してください。
 
@@ -129,59 +129,59 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. リクエストペイロードのカスタムフィールドに [&#x200B; 生成されたパスを使用 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) します。
+   1. リクエストペイロードのカスタムフィールドに [ 生成されたパスを使用 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) します。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
    +++
 
-1. [Adobe Experience Platformでデータセットを作成 &#x200B;](#create-a-dataset-in-adobe-experience-platform) を参照してください。
+1. [Adobe Experience Platformでデータセットを作成 ](#create-a-dataset-in-adobe-experience-platform) を参照してください。
 
 ## Adobe Experience Platform でデータセットを作成
 
-1. [Adobe Experience Platformでのスキーマの設定 &#x200B;](#set-up-the-schema-in-adobe-experience-platform) の説明に従って、スキーマを設定していることを確認してください。
+1. [Adobe Experience Platformでのスキーマの設定 ](#set-up-the-schema-in-adobe-experience-platform) の説明に従って、スキーマを設定していることを確認してください。
 
-1. Adobe Experience Platformで、[&#x200B; データセット UI ガイド &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=ja#create) の説明に従って、データセットの作成を開始します。
+1. Adobe Experience Platformで、[ データセット UI ガイド ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=ja#create) の説明に従って、データセットの作成を開始します。
 
-   データセットのスキーマを選択する場合は、[Adobe Experience Platformでのスキーマの設定 &#x200B;](#set-up-the-schema-in-adobe-experience-platform) で説明しているように、以前に作成したスキーマを選択します。
+   データセットのスキーマを選択する場合は、[Adobe Experience Platformでのスキーマの設定 ](#set-up-the-schema-in-adobe-experience-platform) で説明しているように、以前に作成したスキーマを選択します。
 
-1. [Customer Journey Analyticsでのデータストリームの設定 &#x200B;](#configure-a-datastream-in-adobe-experience-platform) を参照してください。
+1. [Customer Journey Analyticsでのデータストリームの設定 ](#configure-a-datastream-in-adobe-experience-platform) を参照してください。
 
 ## Adobe Experience Platformでのデータストリームの設定
 
-1. [Adobe Experience Platformでのデータセットの作成 &#x200B;](#create-a-dataset-in-adobe-experience-platform) の説明に従って、データセットが作成されていることを確認します。
+1. [Adobe Experience Platformでのデータセットの作成 ](#create-a-dataset-in-adobe-experience-platform) の説明に従って、データセットが作成されていることを確認します。
 
-1. [&#x200B; データストリームの設定 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja) の説明に従って、新しいデータストリームを作成します。
+1. [ データストリームの設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja) の説明に従って、新しいデータストリームを作成します。
 
    データストリームを作成する際は、必ず次の設定を選択します。
 
-   * データストリームを作成する際の [!UICONTROL **イベントスキーマ**] フィールドで、[Adobe Experience Platformでのスキーマの設定 &#x200B;](#set-up-the-schema-in-adobe-experience-platform) で作成したスキーマを選択していることを確認します。 「[!UICONTROL **保存**]」を選択します。
+   * データストリームを作成する際の [!UICONTROL **イベントスキーマ**] フィールドで、[Adobe Experience Platformでのスキーマの設定 ](#set-up-the-schema-in-adobe-experience-platform) で作成したスキーマを選択していることを確認します。 「[!UICONTROL **保存**]」を選択します。
 
      >[!IMPORTANT]
      >
      >「[!UICONTROL **保存してマッピングを追加**]」を選択しないでください。選択すると、タイムスタンプフィールドにマッピングエラーが発生します。
 
-     ![&#x200B; データストリームの作成とスキーマの選択 &#x200B;](assets/datastream-create-schema.png)
+     ![ データストリームの作成とスキーマの選択 ](assets/datastream-create-schema.png)
 
    * Adobe AnalyticsとCustomer Journey Analyticsのどちらを使用しているかに応じて、次のいずれかのサービスをデータストリームに追加します。
 
       * [!UICONTROL **Adobe Analytics**] （Adobe Analyticsを使用している場合）
 
-        Adobe Analyticsを使用している場合は、[&#x200B; レポートスイートの作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) で説明されているとおりに、レポートスイートを定義してください。
+        Adobe Analyticsを使用している場合は、[ レポートスイートの作成 ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) で説明されているとおりに、レポートスイートを定義してください。
 
       * [!UICONTROL **Adobe Experience Platform**] （Customer Journey Analyticsを使用している場合）
 
-     データストリームにサービスを追加する方法について詳しくは、[&#x200B; データストリームの設定 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja#view-details) の「データストリームへのサービスの追加」の節を参照してください。
+     データストリームにサービスを追加する方法について詳しくは、[ データストリームの設定 ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details) の「データストリームへのサービスの追加」の節を参照してください。
 
-     ![Adobe Analytics サービスを追加する &#x200B;](assets/datastream-add-service.png)
+     ![Adobe Analytics サービスを追加する ](assets/datastream-add-service.png)
 
       * 「[!UICONTROL **詳細オプション**]」を展開し、「[!UICONTROL **Media Analytics**]」オプションを有効にします。
 
-     ![Media Analytics オプション &#x200B;](assets/datastream-media-check.png)
+     ![Media Analytics オプション ](assets/datastream-media-check.png)
 
 1. これで、[Media Edge API](/help/implementation/edge/implementation-edge-api.md) または [Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md) を実装して、Media Analytics データの収集を開始する準備が整いました。
 
-   データを収集したら、[Customer Journey Analyticsで接続を作成する &#x200B;](#create-a-connection-in-customer-journey-analytics) ことができます。
+   データを収集したら、[Customer Journey Analyticsで接続を作成する ](#create-a-connection-in-customer-journey-analytics) ことができます。
 
 ## Customer Journey Analytics で接続を作成する
 
@@ -189,17 +189,17 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 >
 >次の手順は、Customer Journey Analyticsを使用する場合にのみ必要です。
 
-1. [Customer Journey Analyticsでのデータストリームの設定 &#x200B;](#configure-a-datastream-in-adobe-experience-platform) の説明に従って、データストリームが作成されていることを確認します。
+1. [Customer Journey Analyticsでのデータストリームの設定 ](#configure-a-datastream-in-adobe-experience-platform) の説明に従って、データストリームが作成されていることを確認します。
 
-1. Customer Journey Analyticsで、[&#x200B; 接続の作成 &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) の説明に従って接続を作成します。
+1. Customer Journey Analyticsで、[ 接続の作成 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja) の説明に従って接続を作成します。
 
    接続を作成する際、ストリーミングメディアコレクションの実装に次の設定を選択する必要があります。
 
-   1. [Adobe Experience Platformでのデータセットの作成 &#x200B;](#create-a-dataset-in-adobe-experience-platform) の説明に従って、以前に作成したデータセットを選択します。
+   1. [Adobe Experience Platformでのデータセットの作成 ](#create-a-dataset-in-adobe-experience-platform) の説明に従って、以前に作成したデータセットを選択します。
 
    1. [!UICONTROL **すべての新しいデータをインポート**] 設定が有効になっていることを確認します。
 
-1. [Customer Journey Analyticsでデータビューを作成 &#x200B;](#create-a-new-data-view-in-customer-journey-analytics) を参照してください。
+1. [Customer Journey Analyticsでデータビューを作成 ](#create-a-new-data-view-in-customer-journey-analytics) を参照してください。
 
 ## Customer Journey Analytics でデータビューを作成
 
@@ -207,13 +207,13 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 >
 >次の手順は、Customer Journey Analyticsを使用する場合にのみ必要です。
 
-1. [Customer Journey Analyticsでの接続の作成 &#x200B;](#create-a-connection-in-customer-journey-analytics) の説明に従って、Customer Journey Analyticsで接続が作成されていることを確認してください。
+1. [Customer Journey Analyticsでの接続の作成 ](#create-a-connection-in-customer-journey-analytics) の説明に従って、Customer Journey Analyticsで接続が作成されていることを確認してください。
 
-1. カスタマージャーニー分析で、[&#x200B; データビューの作成または編集 &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja) の説明に従って、データビューを作成します。
+1. カスタマージャーニー分析で、[ データビューの作成または編集 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja) の説明に従って、データビューを作成します。
 
    データビューを作成する際に、ストリーミングメディアコレクションを実装するには、次の設定選択が必要です。
 
-   1. 「[!UICONTROL **接続**]」フィールドで、前に作成した接続を選択します（[Customer Journey Analyticsでの接続の作成 &#x200B;](#create-a-connection-in-customer-journey-analytics) を参照）。
+   1. 「[!UICONTROL **接続**]」フィールドで、前に作成した接続を選択します（[Customer Journey Analyticsでの接続の作成 ](#create-a-connection-in-customer-journey-analytics) を参照）。
 
       作成した接続が選択できるようになるまで、最大 15 分かかる場合があります。
 
@@ -292,11 +292,11 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 1. [!UICONTROL **保存して続行**]/[!UICONTROL **保存して終了**] を選択して、変更を保存します。
 
-1. [Customer Journey Analyticsでのプロジェクトの作成と設定 &#x200B;](#create-and-configure-a-project-in-customer-journey-analytics) を参照してください。
+1. [Customer Journey Analyticsでのプロジェクトの作成と設定 ](#create-and-configure-a-project-in-customer-journey-analytics) を参照してください。
 
 ## Customer Journey Analyticsでのプロジェクトの作成と設定
 
-1. [Customer Journey Analyticsでのデータビューの作成 &#x200B;](#create-a-new-data-view-in-customer-journey-analytics) の説明に従って、Customer Journey Analyticsでデータビューを作成したことを確認してください。
+1. [Customer Journey Analyticsでのデータビューの作成 ](#create-a-new-data-view-in-customer-journey-analytics) の説明に従って、Customer Journey Analyticsでデータビューを作成したことを確認してください。
 
 1. Customer Journey Analyticsの「[!UICONTROL **Workspace**]」タブの「[!UICONTROL **プロジェクト**] エリアで、「[!UICONTROL **プロジェクトを作成**]」を選択します。
 
@@ -304,27 +304,27 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 1. 新規プロジェクトで、以前に作成したデータビューを選択します。
 
-   プロジェクトでパネルを作成する場合は、[Customer Journey Analyticsでのデータビューの作成 &#x200B;](#create-a-new-data-view-in-customer-journey-analytics) で説明しているように、データビューに追加した任意のコンポーネントを使用できます。
+   プロジェクトでパネルを作成する場合は、[Customer Journey Analyticsでのデータビューの作成 ](#create-a-new-data-view-in-customer-journey-analytics) で説明しているように、データビューに追加した任意のコンポーネントを使用できます。
 
    次の 4 つのパネルは、作成可能なパネルの例です。
 
-   ![&#x200B; メインコンテンツパネル &#x200B;](assets/main-content-panel.png)
+   ![ メインコンテンツパネル ](assets/main-content-panel.png)
 
-   ![&#x200B; チャプターと広告パネル &#x200B;](assets/chapter-and-ads-panel.png)
+   ![ チャプターと広告パネル ](assets/chapter-and-ads-panel.png)
 
-   ![QoE パネル &#x200B;](assets/qoe-panel.png)
+   ![QoE パネル ](assets/qoe-panel.png)
 
-   ![&#x200B; ピーターの状態パネル &#x200B;](assets/player-state-panel.png)
+   ![ ピーターの状態パネル ](assets/player-state-panel.png)
 
 1. 左側のパネルで **パネル** アイコンを選択し、[!UICONTROL **メディア同時視聴者数**] パネルと [!UICONTROL **メディア再生滞在時間**] パネルにドラッグします。
 
    2 つのパネルは次のようになります。
 
-   ![&#x200B; メディアの同時視聴者数パネル &#x200B;](assets/media-concurrent-viewers-panels.png)
+   ![ メディアの同時視聴者数パネル ](assets/media-concurrent-viewers-panels.png)
 
-   ![&#x200B; メディア再生滞在時間パネル &#x200B;](assets/media-playback-time-spent-panels.png)
+   ![ メディア再生滞在時間パネル ](assets/media-playback-time-spent-panels.png)
 
-1. （条件付き） [Adobe Experience Platformでのスキーマの設定 &#x200B;](#set-up-the-schema-in-adobe-experience-platform) の手順 8 でスキーマにカスタムメタデータを追加した場合は、Customer Journey Analytics ガイドの [&#x200B; 永続性コンポーネントの設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) で説明しているように、カスタムフィールドに永続性を設定する必要があります。
+1. （条件付き） [Adobe Experience Platformでのスキーマの設定 ](#set-up-the-schema-in-adobe-experience-platform) の手順 8 でスキーマにカスタムメタデータを追加した場合は、Customer Journey Analytics ガイドの [ 永続性コンポーネントの設定 ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) で説明しているように、カスタムフィールドに永続性を設定する必要があります。
 
    データがCustomer Journey Analyticsに送信されると、カスタムユーザー ID ディメンションを使用できるようになります。
 
@@ -332,16 +332,16 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    >[!NOTE]
    >
-   >Adobe Analyticsをデータストリームのアップストリームとして設定した場合、カスタムメタデータも、スキーマに設定した名前（テナントのプレフィックスを除く（例：myCustomField）で ContextData に存在します。 これにより、[&#x200B; 処理ルールの作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) など、ContextData で使用できるすべてのAdobe Analytics機能を使用できます。
+   >Adobe Analyticsをデータストリームのアップストリームとして設定した場合、カスタムメタデータも、スキーマに設定した名前（テナントのプレフィックスを除く（例：myCustomField）で ContextData に存在します。 これにより、[ 処理ルールの作成 ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) など、ContextData で使用できるすべてのAdobe Analytics機能を使用できます。
 
-1. [&#x200B; プロジェクトの共有 &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ja) の説明に従って、プロジェクトを共有します。
+1. [ プロジェクトの共有 ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en) の説明に従って、プロジェクトを共有します。
 
    >[!NOTE]
    >
    >   共有したいユーザーが使用できない場合は、そのユーザーが、Adobe Admin ConsoleのCustomer Journey Analyticsへのユーザーおよび管理者アクセス権を持っていることを確認してください。
 
 
-1. [Experience Platform Edgeへのデータの送信 &#x200B;](#send-data-to-experience-platform-edge) を続けます。
+1. [Experience Platform Edgeへのデータの送信 ](#send-data-to-experience-platform-edge) を続けます。
 
 ## Experience Platform Edgeへのデータの送信
 
@@ -353,7 +353,7 @@ Experience Platform Edgeに送信するデータの種類に応じて、次の�
 
 * [Adobe Experience Platform Web SDKを使用したEdgeへの Web データの送信](/help/implementation/edge/edge-web-sdk.md)
 
-* [Adobe Streaming Media for Edge Network拡張機能への移行 &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Adobe Streaming Media for Edge Network拡張機能への移行 ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### モバイル：Adobe Experience Platform Mobile SDKを使用します
 
@@ -363,7 +363,7 @@ Experience Platform Edgeに送信するデータの種類に応じて、次の�
 
 * [API リファレンス](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Adobe Streaming Media for Edge Network拡張機能への移行 &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Adobe Streaming Media for Edge Network拡張機能への移行 ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Roku:Adobe Experience Platform Roku SDK
 
@@ -371,7 +371,7 @@ Experience Platform Edgeに送信するデータの種類に応じて、次の�
 
 * [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)
 
-* [Adobe Streaming Media for Edge Network拡張機能への移行 &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+* [Adobe Streaming Media for Edge Network拡張機能への移行 ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
 
 ### API:Web およびその他
 
@@ -381,10 +381,10 @@ API は、Edge API のカスタム実装を使用する場合にも使用でき�
 
 Media Edge API について詳しくは、次のリソースを参照してください。
 
-* [Media Edge API の概要 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html?lang=ja)
+* [Media Edge API の概要 ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
-* [Media Edge API の概要 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html?lang=ja)
+* [Media Edge API の概要 ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
-* [Media Edge API トラブルシューティングガイド &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+* [Media Edge API トラブルシューティングガイド ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
-* [Media Edge API 用の Open API 仕様ファイルの使用 &#x200B;](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
+* [Media Edge API 用の Open API 仕様ファイルの使用 ](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
