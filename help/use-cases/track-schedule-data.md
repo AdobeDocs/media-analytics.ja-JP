@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->この記事で説明している機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般公開されたら、このメモは削除されます。リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases) を参照してください。
+>この記事で説明している機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。機能が一般公開されたら、このメモは削除されます。リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/releases/releases) を参照してください。
 
 過去のライブストリーミングメディアコンテンツのスケジュールデータをアップロードして、ライブコンテンツの視聴をより簡単かつ正確に追跡できます。 個々のプログラム、さらには特定のトピックやプログラムセグメントの視聴者を追跡できます。
 
@@ -143,7 +143,7 @@ ht-degree: 5%
 
    1. バッチ ID を使用して、プログラムスケジュールのデータレコードを含む.json ファイルをプッシュします。
 
-      スケジュールの情報をプッシュするには、[&#x200B; バッチ取得 API の概要 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview) で説明しているように、AEP バッチ API を使用する必要があります。
+      スケジュールの情報をプッシュするには、[&#x200B; バッチ取得 API の概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/batch/overview) で説明しているように、AEP バッチ API を使用する必要があります。
 
       次の cURL を使用した例では、スケジュールレコードを含んだファイルをプッシュします。
 

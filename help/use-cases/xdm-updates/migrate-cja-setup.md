@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 新しいストリーミングメディアフィールドを使用するようにCustomer Journey Analyticsを移行する
 
-このドキュメントでは、「Media」と呼ばれるAdobe ストリーミングメディアサービスのデータタイプを使用するCustomer Journey Analytics設定を、「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプを使用するように更新する方法について説明します。
+このドキュメントでは、「Media」と呼ばれるAdobe ストリーミングメディアサービスのデータタイプを使用するCustomer Journey Analytics設定を、「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプを使用するように更新する方法について説明します。
 
 ## Customer Journey Analyticsを移行
 
-Customer Journey Analyticsの設定を「Media」という古いデータタイプから「[Media レポートの詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータタイプに移行するには、古いデータタイプを使用している次の設定を更新する必要があります。
+Customer Journey Analyticsの設定を「Media」という古いデータタイプから「[Media レポートの詳細 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータタイプに移行するには、古いデータタイプを使用している次の設定を更新する必要があります。
 
 * データビュー
 
@@ -61,7 +61,7 @@ Customer Journey Analyticsの設定を「Media」という古いデータタイ�
 
    ![&#x200B; データビューの古いフィールドパス &#x200B;](assets/old-field-data-view.jpeg)
 
-1. [&#x200B; チャプターパラメーター &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) 記事の [&#x200B; チャプターオフセット &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters) セクションで、対応する新しいフィールドを確認します。
+1. [&#x200B; チャプターパラメーター &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) 記事の [&#x200B; チャプターオフセット &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters) セクションで、対応する新しいフィールドを確認します。
 
 1. データビュー内の対応する新しいフィールドを見つけます。
 
@@ -81,7 +81,7 @@ Customer Journey Analyticsの設定を「Media」という古いデータタイ�
 
    ![&#x200B; 新しいフィールドをカスタマイズしてデータビューを作成する &#x200B;](assets/create-derived-field2.jpeg)
 
-1. [!UICONTROL **チャプターパラメーター**] ページの **チャプター名** パラメーターに示されているように、[&#x200B; レポート XDM フィールドパス &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) の値を使用して [If](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters) 句に入力します。
+1. [!UICONTROL **チャプターパラメーター**] ページの **チャプター名** パラメーターに示されているように、[&#x200B; レポート XDM フィールドパス &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) の値を使用して [If](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/chapter-parameters) 句に入力します。
 
    ![&#x200B; チャプター名 &#x200B;](assets/chapter-name.jpeg)
 
@@ -111,7 +111,7 @@ Customer Journey Analyticsの設定を「Media」という古いデータタイ�
 
    ![&#x200B; 古いデータタイプを持つフィールドを見つけます &#x200B;](assets/locate-fields-with-old-datatype.jpeg)
 
-1. [&#x200B; ストリーミングメディアパラメーター &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) 記事の [&#x200B; コンテンツ名（変数） &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) セクションで、対応する新しいフィールドを確認します。
+1. [&#x200B; ストリーミングメディアパラメーター &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) 記事の [&#x200B; コンテンツ名（変数） &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) セクションで、対応する新しいフィールドを確認します。
 
 1. 古いフィールドを新しいフィールドに置き換えます。
 

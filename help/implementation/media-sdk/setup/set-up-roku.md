@@ -172,4 +172,4 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
    | `processMediaMessages` | 処理するメディアイベントを SDK に渡します。<br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=ja) -->

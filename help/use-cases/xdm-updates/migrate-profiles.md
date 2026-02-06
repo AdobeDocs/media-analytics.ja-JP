@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 新しいストリーミングメディアフィールドへのプロファイルの移行
 
-このドキュメントでは、ストリーミングメディアデータに対してAdobe Analyticsが有効なAdobe データ収集フローの上に存在するプロファイルフィルタリングサービスを移行するプロセスについて説明します。 移行により、プロファイルフィルタリングサービスが、「Media」と呼ばれるAdobe streaming media services データタイプの使用から、「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプの使用に変換されます。
+このドキュメントでは、ストリーミングメディアデータに対してAdobe Analyticsが有効なAdobe データ収集フローの上に存在するプロファイルフィルタリングサービスを移行するプロセスについて説明します。 移行により、プロファイルフィルタリングサービスが、「Media」と呼ばれるAdobe streaming media services データタイプの使用から、「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプの使用に変換されます。
 
 ## プロファイルの移行
 
-プロファイルフィルタリングを古い「メディア」というデータタイプから新しい「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」というデータタイプに移行するには、既存のプロファイルフィルタリングルールを編集する必要があります。
+プロファイルフィルタリングを古い「メディア」というデータタイプから新しい「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」というデータタイプに移行するには、既存のプロファイルフィルタリングルールを編集する必要があります。
 
 1. Adobe Experience Platformの「[!UICONTROL **ソース**]」セクションで、「[!UICONTROL **データフロー**]」タブに移動します。
 

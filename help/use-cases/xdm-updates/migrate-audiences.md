@@ -13,15 +13,15 @@ ht-degree: 2%
 
 # 新しいストリーミングメディアフィールドへのオーディエンスの移行
 
-このドキュメントでは、「Media」と呼ばれるAdobe ストリーミングメディアサービスのデータタイプのフィールドを使用するオーディエンスを、「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプを使用するように移行する方法について説明します。
+このドキュメントでは、「Media」と呼ばれるAdobe ストリーミングメディアサービスのデータタイプのフィールドを使用するオーディエンスを、「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details) と呼ばれる新しい対応するデータタイプを使用するように移行する方法について説明します。
 
 ## オーディエンスの移行
 
-オーディエンスを「メディア」という古いデータタイプから「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータタイプに移行するには、オーディエンスを編集し、各ルールで非推奨（廃止予定）のデータタイプの古いフィールドを、新しいデータタイプの新しい対応するフィールドに置き換える必要があります。
+オーディエンスを「メディア」という古いデータタイプから「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータタイプに移行するには、オーディエンスを編集し、各ルールで非推奨（廃止予定）のデータタイプの古いフィールドを、新しいデータタイプの新しい対応するフィールドに置き換える必要があります。
 
 1. 非推奨の「メディア」データタイプのフィールドを含むルールを見つけます。 これが、パス `media.mediaTimed` で始まるすべてのフィールドです。
 
-1. 新しい「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」データタイプのフィールドを使用して、これらのルールを複製します。
+1. 新しい「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」データタイプのフィールドを使用して、これらのルールを複製します。
 
 1. オーディエンスが期待どおりに動作していることを検証するまで、両方のルールを保持します。
 
