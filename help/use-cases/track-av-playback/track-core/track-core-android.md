@@ -68,8 +68,8 @@ ht-degree: 93%
      >
      >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
 
-      * メディアメタデータキー API リファレンス - [ 標準メタデータキー – Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * 利用可能なビデオメタデータの包括的なセットについては、こちらを参照してください。[ オーディオおよびビデオパラメーター ](/help/implementation/variables/audio-video-parameters.md)
+      * メディアメタデータキー API リファレンス - [&#x200B; 標準メタデータキー – Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+      * 利用可能なビデオメタデータの包括的なセットについては、こちらを参照してください。[&#x200B; オーディオおよびビデオパラメーター &#x200B;](/help/implementation/variables/audio-video-parameters.md)
 
    * **カスタムメタデータ**
 

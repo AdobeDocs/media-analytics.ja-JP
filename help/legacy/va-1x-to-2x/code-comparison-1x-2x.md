@@ -30,8 +30,8 @@ ht-degree: 57%
 
 **1.x および 2.x サンプルプレーヤーへのリンク：**
 
-* [1.x サンプルプレーヤー ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x サンプルプレーヤー ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [1.x サンプルプレーヤー &#x200B;](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
+* [2.x サンプルプレーヤー &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 次の節では、初期化、コア再生、広告再生、チャプター再生、その他のイベントについて、1.x と 2.x のコードを比較します。
 

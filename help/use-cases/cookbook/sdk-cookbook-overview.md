@@ -33,5 +33,5 @@ ht-degree: 92%
    * [アプリの状態の追跡](/help/use-cases/analytics-with-ott/track-app-states.md)
    * [アプリのアクションの追跡](/help/use-cases/analytics-with-ott/track-app-actions.md)
    * [ユーザー ID の設定](/help/use-cases/analytics-with-ott/set-user-ids.md)
-   * [OTT と Audience Manager ](/help/use-cases/analytics-with-ott/ott-am.md)
-   * [OTT と Experience Cloud ](/help/use-cases/analytics-with-ott/ott-experience-cloud.md)
+   * [OTT と Audience Manager &#x200B;](/help/use-cases/analytics-with-ott/ott-am.md)
+   * [OTT と Experience Cloud &#x200B;](/help/use-cases/analytics-with-ott/ott-experience-cloud.md)

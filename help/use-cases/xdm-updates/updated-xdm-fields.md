@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この情報は、[Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) を使用してAdobe AnalyticsからストリーミングメディアデータをAdobe Experience Platformに取り込み、Customer Journey Analytics レポートやその他の Platform サービスで使用する組織を対象としています。
+>この情報は、[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) を使用してAdobe AnalyticsからストリーミングメディアデータをAdobe Experience Platformに取り込み、Customer Journey Analytics レポートやその他の Platform サービスで使用する組織を対象としています。
 >
 >変更内容は、データ収集、処理、レポートを含む、Adobe Analytics as a スタンドアロンアプリケーションには影響しません。 データフィードや処理ルールなどのツールは影響を受けないため、Analytics 実装を更新する必要はありません。
 
@@ -57,17 +57,17 @@ CJA レポートを移行する方法は 2 つあります。
 
 * **履歴データを保持するため**:Adobe チームは、事前定義済みのCustomer Journey Analytics テンプレートを開発して、古い XDM フィールドと新しい XDM フィールドを 1 つのフィールドに組み合わせた一連の派生フィールドを導入しました。 このテンプレートは、リクエストに応じて、Customer Journey Analytics接続ごとに有効にすることができます。 新しいフィールドを有効にする方法については、Adobe サポートチームにお問い合わせください。 これらの派生フィールドは、組織の派生フィールド制限にはカウントされません。
 
-  マッピングのリストを表示するには、[Adobe Experience PlatformとCustomer Journey Analytics用の Media Analytics パラメーターマッピング ](/help/use-cases/xdm-updates/parameters-mapping.md) を参照してください。
+  マッピングのリストを表示するには、[Adobe Experience PlatformとCustomer Journey Analytics用の Media Analytics パラメーターマッピング &#x200B;](/help/use-cases/xdm-updates/parameters-mapping.md) を参照してください。
 
-* **履歴データが不要な場合**：レポート時にレポート XDM フィールドパスを使用すれば十分です。 詳しくは、[ 新しいストリーミングメディアフィールドを使用するためのCustomer Journey Analyticsの移行 ](/help/use-cases/xdm-updates/migrate-cja-setup.md) を参照してください。
+* **履歴データが不要な場合**：レポート時にレポート XDM フィールドパスを使用すれば十分です。 詳しくは、[&#x200B; 新しいストリーミングメディアフィールドを使用するためのCustomer Journey Analyticsの移行 &#x200B;](/help/use-cases/xdm-updates/migrate-cja-setup.md) を参照してください。
 
 ### Real-Time CDP
 
-すべてのオーディエンスとプロファイルは、`mediaReporting` に基づいている必要があります。 詳しくは、[ 新しいストリーミングメディアフィールドへのプロファイルの移行 ](/help/use-cases/xdm-updates/migrate-profiles.md) を参照してください。
+すべてのオーディエンスとプロファイルは、`mediaReporting` に基づいている必要があります。 詳しくは、[&#x200B; 新しいストリーミングメディアフィールドへのプロファイルの移行 &#x200B;](/help/use-cases/xdm-updates/migrate-profiles.md) を参照してください。
 
 ### データストリームとデータ収集
 
-動的設定とデータマッピングでは、`mediaReporting` を使用する必要があります。 詳しくは、[ カスタムフィールドのデータ準備を新しいストリーミングメディアフィールドに移行する ](/help/use-cases/xdm-updates/migrate-dataprep.md) を参照してください。
+動的設定とデータマッピングでは、`mediaReporting` を使用する必要があります。 詳しくは、[&#x200B; カスタムフィールドのデータ準備を新しいストリーミングメディアフィールドに移行する &#x200B;](/help/use-cases/xdm-updates/migrate-dataprep.md) を参照してください。
 
 ### 移行が必要なその他のサービス
 

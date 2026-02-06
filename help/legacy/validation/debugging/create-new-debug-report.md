@@ -25,12 +25,12 @@ ht-degree: 44%
    * **レポートに名前を付ける** - プレーヤーの名前と日付を入力します。これにより、認定中にプレーヤーを簡単に追跡し、ブランドとプラットフォームを区別することができます。
    * **Adobe Analytics**
 
-      * [!UICONTROL  ユーザー名 ] および [!UICONTROL  共有暗号鍵 ] – これらのフィールドはオプションですが、web サービス API 資格情報をAdobe デバッグに追加して、レポートスイートの変数名と変数設定を表示することができます。
+      * [!UICONTROL &#x200B; ユーザー名 &#x200B;] および [!UICONTROL &#x200B; 共有暗号鍵 &#x200B;] – これらのフィールドはオプションですが、web サービス API 資格情報をAdobe デバッグに追加して、レポートスイートの変数名と変数設定を表示することができます。
 
         にアクセスするには、次のいずれかの方法を使用します。
 
-         * [!UICONTROL Analytics/管理者/会社設定/web サービス ]
-         * [!UICONTROL Analytics /管理者/ User Management / ユーザー/個々のユーザーの設定 ] 新しいユーザーの Web サービス API 資格情報を作成するには、[!UICONTROL User Management] で、ユーザーを **Web サービスアクセス** ユーザーグループに追加します。
+         * [!UICONTROL Analytics/管理者/会社設定/web サービス &#x200B;]
+         * [!UICONTROL Analytics /管理者/ User Management / ユーザー/個々のユーザーの設定 &#x200B;] 新しいユーザーの Web サービス API 資格情報を作成するには、[!UICONTROL User Management] で、ユーザーを **Web サービスアクセス** ユーザーグループに追加します。
 
       * [!UICONTROL Default Endpoint] - このフィールドのデータはアドビが提供します。変更することはできません。
       * [!UICONTROL Extra Endpoint] - CNAME を使用している場合に、`metrics.companyname.com` などのトラッキングサーバーの `CNAMES` を追加します。

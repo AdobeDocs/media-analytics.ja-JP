@@ -104,7 +104,7 @@ ht-degree: 81%
 
    * **標準メタデータ**
 
-[Roku での標準メタデータの実装 ](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Roku での標準メタデータの実装 &#x200B;](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
      >[!NOTE]
      >

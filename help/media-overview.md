@@ -68,4 +68,4 @@ Adobe ストリーミングメディアサービスは、オーディオ、ビ�
 >Customer Journey Analytics を実装すると、Experience Edge または Analytics Data Connector（ADC）を使用してデータを Customer Journey Analytics に送信できます。
 
 
-様々な実装方法について詳しくは、[Adobe AnalyticsまたはCustomer Journey Analyticsのストリーミングメディアサービスの実装 ](/help/implementation/overview.md) を参照してください。
+様々な実装方法について詳しくは、[Adobe AnalyticsまたはCustomer Journey Analyticsのストリーミングメディアサービスの実装 &#x200B;](/help/implementation/overview.md) を参照してください。

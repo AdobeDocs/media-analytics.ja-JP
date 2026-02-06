@@ -18,4 +18,4 @@ Media Analytics （ハートビート）は、Adobeの標準化されたメデ�
 
 クライアントサイドの統合は、Media Analytics でのみ実装されます。メディア SDK またはメディアコレクション API（またはその両方）を実装できます。クライアントサイドパスは、Brightcove、Ooyala、Platform など、顧客や OVP プレーヤーを含む任意のプレーヤーで使用できます。
 
-Media Analytics を目的としたパスにする場合は、[Media SDK、タグを使用した拡張機能、OTT SDK の取得 ](/help/getting-started/download-sdks.md) および [Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md) を参照してください。
+Media Analytics を目的としたパスにする場合は、[Media SDK、タグを使用した拡張機能、OTT SDK の取得 &#x200B;](/help/getting-started/download-sdks.md) および [Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md) を参照してください。

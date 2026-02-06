@@ -17,10 +17,10 @@ ht-degree: 0%
 
 Edge API のカスタム実装の実行方法については、次の資料を使用してください。
 
-* [Media Edge API の概要 ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
+* [Media Edge API の概要 &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
 
-* [Media Edge API の概要 ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
+* [Media Edge API の概要 &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 
-* [Media Edge API トラブルシューティングガイド ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
+* [Media Edge API トラブルシューティングガイド &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
-* [Media Edge API 用の Open API 仕様ファイルの使用 ](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
+* [Media Edge API 用の Open API 仕様ファイルの使用 &#x200B;](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

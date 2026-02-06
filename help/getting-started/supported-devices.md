@@ -25,7 +25,7 @@ SDK は、新しいバージョンのデバイスがリリースされると定�
 
 現在サポートされているデバイスの表を次に示します。デバイスが一覧にない場合は、そのデバイスのステータスについて、カスタマーケアまたはソリューションコンサルタントにお問い合わせください。
 
-Experience Platformへの Media の実装について詳しくは、[Edge Edgeを使用した Streaming Media Collection のインストール ](/help/implementation/edge/implementation-edge.md) を参照してください。
+Experience Platformへの Media の実装について詳しくは、[Edge Edgeを使用した Streaming Media Collection のインストール &#x200B;](/help/implementation/edge/implementation-edge.md) を参照してください。
 
 | ストリーミングプラットフォームとデバイス |  | Edge Network 用 Media SDK／拡張機能 | Media Edge API | タグ付きメディア拡張機能または AEP Mobile SDK | メディア SDK | メディアコレクション API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

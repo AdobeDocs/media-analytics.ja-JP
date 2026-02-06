@@ -52,7 +52,7 @@ Quality of Experience の追跡には、サービス品質（QoS）およびエ�
    | `fps` | FPS の値 | ○ |
    | `droppedFrames` | ドロップフレームの数 | ○ |
 
-   **QoS オブジェクトの作成：**[createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createQoSObject)
+   **QoS オブジェクトの作成：**&#x200B;[createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createQoSObject)
 
    ```
    qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10);

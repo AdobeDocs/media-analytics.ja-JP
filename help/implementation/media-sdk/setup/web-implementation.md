@@ -15,7 +15,7 @@ ht-degree: 92%
 
 このページの情報では、web スタンドアロン SDK のインストール方法と JavaScript のセットアップ方法について説明します。
 
-または、[Media Analytics 拡張機能を使用したストリーミングメディアサービスのインストール ](/help/implementation/media-sdk/setup/web-implementation-tags.md) で説明しているように、Adobe Media Analytics 拡張機能を使用してストリーミングメディアサービスを実装することもできます。
+または、[Media Analytics 拡張機能を使用したストリーミングメディアサービスのインストール &#x200B;](/help/implementation/media-sdk/setup/web-implementation-tags.md) で説明しているように、Adobe Media Analytics 拡張機能を使用してストリーミングメディアサービスを実装することもできます。
 
 ## 前提条件 {#prerequesites}
 
@@ -104,6 +104,6 @@ ht-degree: 92%
 
 ## JavaScript 2.x から 3.x への移行
 
-2.x から 3.x への移行について詳しくは、[ 2.x から 3.x への移行](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)を参照してください。
+2.x から 3.x への移行について詳しくは、[&#x200B; 2.x から 3.x への移行](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)を参照してください。
 
 レガシーコンテンツについては、[レガシー実装](/help/legacy/media-sdk/setup/setup-overview.md)を参照してください

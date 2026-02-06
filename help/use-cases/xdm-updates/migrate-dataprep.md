@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # カスタムフィールドのデータ準備を新しいストリーミングメディアフィールドに移行する
 
-このドキュメントでは、Adobe Streaming Media Collection データに対して有効なAdobe データ収集フローの上に存在するデータ準備サービスを移行するプロセスについて説明します。 移行により、Adobe Streaming Media Collection データタイプ「Media」からデータ準備マッピングが変換され、対応する新しいデータタイプ「[ メディアレポートの詳細 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」が使用されます。
+このドキュメントでは、Adobe Streaming Media Collection データに対して有効なAdobe データ収集フローの上に存在するデータ準備サービスを移行するプロセスについて説明します。 移行により、Adobe Streaming Media Collection データタイプ「Media」からデータ準備マッピングが変換され、対応する新しいデータタイプ「[&#x200B; メディアレポートの詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」が使用されます。
 
 ## カスタムフィールドのデータ準備の移行
 
-データ準備のマッピングを「メディア」という古いデータ・タイプから「[ メディア・レポート詳細 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータ・タイプに移行するには、データ準備のマッピングを編集する必要があります：
+データ準備のマッピングを「メディア」という古いデータ・タイプから「[&#x200B; メディア・レポート詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータ・タイプに移行するには、データ準備のマッピングを編集する必要があります：
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. マッピングが引き続き期待どおりに機能していることを検証します。
 
-古いフィールドと新しいフィールド間のマッピングについては、[ オーディオおよびビデオパラメーター ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) ページの [ コンテンツ ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) パラメーターを参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
+古いフィールドと新しいフィールド間のマッピングについては、[&#x200B; オーディオおよびビデオパラメーター &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) ページの [&#x200B; コンテンツ ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/implementation/variables/audio-video-parameters) パラメーターを参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
 
 ## 例
 
@@ -47,13 +47,13 @@ ht-degree: 0%
 
 1. **[!UICONTROL データフローを更新]** を選択して、次の画像に示すように、編集 UI を入力します。
 
-   ![AEPのデータフロー ](assets/aep-dataflow.jpeg)
+   ![AEPのデータフロー &#x200B;](assets/aep-dataflow.jpeg)
 
 1. 「**[!UICONTROL マッピング]**」タブで、「**[!UICONTROL カスタム]**」を選択します。
 
 1. フィールドをソースとして使用するカスタムマッピング `media.mediaTimed` 特定します。
 
-   ![AEPのデータフロー（続き ](assets/aep-dataflow2.jpeg)
+   ![AEPのデータフロー（続き &#x200B;](assets/aep-dataflow2.jpeg)
 
    この例では、開発組織のスキーマにカスタムフィールドグループを作成したので、ターゲットフィールドは `_dcbl` の下にあります。 カスタムフィールドグループのパスは、組織名に基づいて異なります。
 
@@ -61,23 +61,23 @@ ht-degree: 0%
 
    例えば、Network の場合、`media.mediaTimed.primaryAssetViewDetails`.broadcastNetwork の対応関係は `mediaReporting.sessionDetails.network` です。
 
-   ![ 更新された XDM フィールドパス ](assets/xdm-field-path-old-and-new.jpeg)
+   ![&#x200B; 更新された XDM フィールドパス &#x200B;](assets/xdm-field-path-old-and-new.jpeg)
 
 1. 「**[!UICONTROL Source フィールド]**」フィールドで、`media.mediaTimed` のパスを `mediaReporting` のパスに置き換えます。 ターゲットフィールドは変更されません。
 
-   ![AEPのデータフロー（続き ](assets/aep-dataflow3.jpeg)
+   ![AEPのデータフロー（続き &#x200B;](assets/aep-dataflow3.jpeg)
 
 1. 「**[!UICONTROL 次へ]**」を選択して、変更を保存します。
 
    ステータスが **[!UICONTROL 処理中]** と表示されます。 変更が適用されると、ステータスが **[!UICONTROL 有効]** になります。
 
-   ![AEPのデータフロー（続き ](assets/aep-dataflow5.jpeg)
+   ![AEPのデータフロー（続き &#x200B;](assets/aep-dataflow5.jpeg)
 
 ## 様々なデータタイプを使用した例
 
 上記の例では、関係するすべてのデータタイプが文字列なので、マッピングの置き換えは直接でした。
 
-ソースフィールドのデータタイプがターゲットフィールドのデータタイプと異なる場合は、[ データ準備のトラブルシューティングガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide)、[ データ準備によるデータ形式の処理 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) および [ データ準備のマッピング機能 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) のガイドラインに従う必要があります。
+ソースフィールドのデータタイプがターゲットフィールドのデータタイプと異なる場合は、[&#x200B; データ準備のトラブルシューティングガイド &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide)、[&#x200B; データ準備によるデータ形式の処理 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) および [&#x200B; データ準備のマッピング機能 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) のガイドラインに従う必要があります。
 
 例えば、ソースのタイプが文字列で、ターゲットのタイプがブール値の場合、Data Prep では、値を自動的に解析し、ソースの値をブール値に変換できます。
 
@@ -85,8 +85,8 @@ ht-degree: 0%
 
 `media.mediaTimed` を使用したカスタムフィールドへのマッピング。
 
-![AEPのデータフロー（続き ](assets/aep-dataflow6.jpeg)
+![AEPのデータフロー（続き &#x200B;](assets/aep-dataflow6.jpeg)
 
 同じカスタムフィールドへの `mediaReporting` を使用したマッピング：
 
-![AEPのデータフロー（続き ](assets/aep-dataflow7.jpeg)
+![AEPのデータフロー（続き &#x200B;](assets/aep-dataflow7.jpeg)

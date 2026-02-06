@@ -15,10 +15,10 @@ ht-degree: 3%
 
 Adobe Experience Platform Mobile SDKを使用すると、モバイルストリーミングメディアデータをExperience Platform Edgeに送信できます。
 
-モバイルストリーミングメディアデータをEdgeに送信する前に、まず [Experience Platform Edgeを使用したストリーミングメディアコレクションのインストール ](/help/implementation/edge/implementation-edge.md) の手順を実行し、次のドキュメントリソースを使用してiOSとAndroidの両方の実装を実行します。
+モバイルストリーミングメディアデータをEdgeに送信する前に、まず [Experience Platform Edgeを使用したストリーミングメディアコレクションのインストール &#x200B;](/help/implementation/edge/implementation-edge.md) の手順を実行し、次のドキュメントリソースを使用してiOSとAndroidの両方の実装を実行します。
 
 * [今すぐはじめる](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
 * [API リファレンス](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Adobe Streaming Media for Edge Network拡張機能への移行 ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Adobe Streaming Media for Edge Network拡張機能への移行 &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
