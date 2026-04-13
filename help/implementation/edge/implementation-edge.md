@@ -33,7 +33,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 1. スキーマの作成時にスキーマの詳細ページで、スキーマのベースクラスを選択する際に「[!UICONTROL **エクスペリエンスイベント**]」を選択します。
 
-   ![ フィールドグループを追加](assets/schema-experience-event.png)
+   ![&#x200B; フィールドグループを追加](assets/schema-experience-event.png)
 
 1. 「[!UICONTROL **次へ**]」を選択します。
 
@@ -46,7 +46,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    フィールドグループを追加すると、次のように&#x200B;[!UICONTROL **フィールドグループ**] セクションに表示されます。
 
-   ![ フィールドグループを追加](assets/schema-field-groups-added.png)
+   ![&#x200B; フィールドグループを追加](assets/schema-field-groups-added.png)
 
 1. [!UICONTROL **保存**]&#x200B;を選択して、変更を保存します。
 
@@ -68,15 +68,15 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       * `Media Collection Details` フィールドで、`List Of States` フィールドを非表示にします。
 
-        ![ メディア コレクションの状態を非表示](assets/schema-hide-media-collection-states.png)
+        ![&#x200B; メディア コレクションの状態を非表示](assets/schema-hide-media-collection-states.png)
 
       * `Media Collection Details` > `List Of States End`および`Media Collection Details` > `List Of States Start` フィールドで、次のレポートフィールドを非表示にします：`Player State Count`、`Player State Set`、および`Player State Time`。
 
-        非表示にする![ フィールド ](assets/schema-hide-listofstates.png)
+        非表示にする![&#x200B; フィールド &#x200B;](assets/schema-hide-listofstates.png)
 
       * `Media Collection Details` > `Qoe Data Details` フィールドで、次のレポートフィールドを非表示にします：`Average Bitrate`、`Average Bitrate Bucket`、`Bitrate Change Impacted Streams`、`Bitrate Changes`、`Buffer Impacted Streams`、`Buffer Events`、`Dropped Frame Impacted Streams`、`Drops Before Starts`、`Errors`、`External Error IDs`、`Error Impacted Streams`、`Media SDK Error IDs`、`Player SDK Error IDs`、`Stalling Impacted Streams`、`Stalling Events`、`Total Buffer Duration`、および`Total Stalling Duration`。
 
-      * `Media Collection Details` > `Session Details` フィールドで、次のレポートフィールドを非表示にします：`10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Content Completes`, `Chapter Count`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Segment Views`, `Media Downloaded Flag`, `Media Starts`, `Media Session ID`, `Media Session Server Timeout`, `Pause Events`, `Pause Impacted Streams`, `Pccr`, `Total Pause Duration`, `Unique Time Played`および`Video Segment`。`Media Time Spent``Pev3`
+      * `Media Collection Details` > `Session Details` フィールドで、次のレポートフィールドを非表示にします：`10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Content Completes`, `Chapter Count`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Segment Views`, `Media Downloaded Flag`, `Media Starts`, `Media Session ID`, `Media Session Server Timeout`, `Pause Events`, `Pause Impacted Streams`, `Pccr`, `Total Pause Duration`, `Unique Time Played`および`Video Segment`。`Media Time Spent` `Pev3`
 
    1. [!UICONTROL **確認**]&#x200B;を選択して変更を保存します。
 
@@ -97,7 +97,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       * `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` フィールドで、次のレポートフィールドを非表示にします：`Average Bitrate`、`Average Bitrate Bucket`、`Bitrate Change Impacted Streams`、`Bitrate Changes`、`Buffer Events`、`Buffer Impacted Streams`、`Drops Before Starts`、`Dropped Frame Impacted Streams`、`Error Impacted Streams`、`Errors`、`External Error IDs`、`Media SDK Error IDs`、`Player SDK Error IDs`、`Stalling Events`、`Stalling Impacted Streams`、`Total Buffer Duration`および`Total Stalling Duration`。
 
-      * `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` フィールドで、次のレポートフィールドを非表示にします：`10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Content Completes`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Media Segment Views`, `Media Session ID`, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Pccr`, `Pev3`, `Total Pause Duration`、`Unique Time Played`、`Video Segment`。`Media Starts``Pause Impacted Streams`
+      * `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` フィールドで、次のレポートフィールドを非表示にします：`10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Content Completes`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Media Segment Views`, `Media Session ID`, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Pccr`, `Pev3`, `Total Pause Duration`、`Unique Time Played`、`Video Segment`。`Media Starts` `Pause Impacted Streams`
 
       * `List Of Media Collection Downloaded Content Events` > `Media Details` フィールドで、`Media Session ID` フィールドを非表示にします。
 
@@ -113,7 +113,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    +++
 
-1. （オプション）カスタムメタデータをスキーマに追加できます。 これにより、特定のニーズやコンテキストに合わせてカスタマイズできる、ユーザー定義の追加メタデータを含めることができます。 この柔軟性は、既存のスキーマが目的のデータポイントをカバーしないシナリオで役立ちます。 （カスタムのメタデータは、Media Edge APIでも使用できます。 詳しくは、[ カスタムメタデータのサポート - XDM形式](/help/implementation/edge/implementation-edge-custom-metadata.md)を参照してください。
+1. （オプション）カスタムメタデータをスキーマに追加できます。 これにより、特定のニーズやコンテキストに合わせてカスタマイズできる、ユーザー定義の追加メタデータを含めることができます。 この柔軟性は、既存のスキーマが目的のデータポイントをカバーしないシナリオで役立ちます。 （カスタムのメタデータは、Media Edge APIでも使用できます。 詳しくは、[&#x200B; カスタムメタデータのサポート - XDM形式](/help/implementation/edge/implementation-edge-custom-metadata.md)を参照してください。
 
    +++ スキーマにカスタムメタデータを追加する手順を表示するには、ここを展開します。
 
@@ -129,7 +129,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [ リクエストペイロードのカスタムフィールドに生成されたパス ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)を使用します。
+   1. [&#x200B; リクエストペイロードのカスタムフィールドに生成されたパス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)を使用します。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -141,7 +141,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 1. [Adobe Experience Platformでのスキーマの設定](#set-up-the-schema-in-adobe-experience-platform)の説明に従って、スキーマを設定していることを確認してください。
 
-1. Adobe Experience Platformで、[ データセット UI ガイド ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=ja#create)の説明に従って、データセットの作成を開始します。
+1. Adobe Experience Platformで、[&#x200B; データセット UI ガイド &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=ja#create)の説明に従って、データセットの作成を開始します。
 
    データセットのスキーマを選択する際は、[Adobe Experience Platformでのスキーマの設定](#set-up-the-schema-in-adobe-experience-platform)で説明されているように、以前に作成したスキーマを選択します。
 
@@ -151,7 +151,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 1. 「[Adobe Experience Platformでデータセットを作成する](#create-a-dataset-in-adobe-experience-platform)」の説明に従ってデータセットを作成していることを確認してください。
 
-1. 「[ データストリームの設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja)」の説明に従って、新しいデータストリームを作成します。
+1. 「[&#x200B; データストリームの設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja)」の説明に従って、新しいデータストリームを作成します。
 
    データストリームを作成する際は、次の設定選択を行ってください。
 
@@ -161,23 +161,23 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
      >
      >「[!UICONTROL **マッピングを保存して追加**]」を選択しないでください。選択すると、タイムスタンプフィールドのマッピングエラーが発生します。
 
-     ![ データストリームを作成してスキーマを選択](assets/datastream-create-schema.png)
+     ![&#x200B; データストリームを作成してスキーマを選択](assets/datastream-create-schema.png)
 
    * Adobe AnalyticsとCustomer Journey Analyticsのどちらを使用しているかに応じて、次のいずれかのサービスをデータストリームに追加します。
 
       * [!UICONTROL **Adobe Analytics**] （Adobe Analyticsを使用している場合）
 
-        Adobe Analyticsを使用している場合は、[ レポートスイートの作成](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)の説明に従って、レポートスイートを定義してください。
+        Adobe Analyticsを使用している場合は、[&#x200B; レポートスイートの作成](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)の説明に従って、レポートスイートを定義してください。
 
       * [!UICONTROL **Adobe Experience Platform**] （Customer Journey Analyticsを使用している場合）
 
-     データストリームにサービスを追加する方法について詳しくは、[ データストリームの設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)の「データストリームにサービスを追加」セクションを参照してください。
+     データストリームにサービスを追加する方法について詳しくは、[&#x200B; データストリームの設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)の「データストリームにサービスを追加」セクションを参照してください。
 
      ![Adobe Analytics サービスを追加](assets/datastream-add-service.png)
 
       * [!UICONTROL **詳細オプション**]&#x200B;を展開し、[!UICONTROL **Media Analytics**] オプションを有効にします。
 
-     ![ メディア分析オプション ](assets/datastream-media-check.png)
+     ![&#x200B; メディア分析オプション &#x200B;](assets/datastream-media-check.png)
 
 1. これで、[Media Edge API](/help/implementation/edge/implementation-edge-api.md)または[Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md)を実装して、Media Analytics データの収集を開始する準備が整いました。
 
@@ -209,7 +209,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 1. [Customer Journey Analyticsでのコネクションの作成](#create-a-connection-in-customer-journey-analytics)の説明に従って、Customer Journey Analyticsでコネクションを作成したことを確認します。
 
-1. お客様のジャーニー分析で、[ データビューの作成または編集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja)の説明に従ってデータビューを作成します。
+1. お客様のジャーニー分析で、[&#x200B; データビューの作成または編集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja)の説明に従ってデータビューを作成します。
 
    データビューを作成する場合、ストリーミングメディアコレクションを実装するには、次の設定を選択する必要があります。
 
@@ -308,21 +308,21 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    次の4つのパネルは、作成できるパネルの例です。
 
-   ![ メインコンテンツパネル ](assets/main-content-panel.png)
+   ![&#x200B; メインコンテンツパネル &#x200B;](assets/main-content-panel.png)
 
-   ![章と広告パネル ](assets/chapter-and-ads-panel.png)
+   ![章と広告パネル &#x200B;](assets/chapter-and-ads-panel.png)
 
-   ![QoE パネル ](assets/qoe-panel.png)
+   ![QoE パネル &#x200B;](assets/qoe-panel.png)
 
-   ![ プラーター状態パネル ](assets/player-state-panel.png)
+   ![&#x200B; プラーター状態パネル &#x200B;](assets/player-state-panel.png)
 
 1. 左側のパネルで&#x200B;**パネル** アイコンを選択し、[!UICONTROL **メディア同時視聴者数**] パネルと&#x200B;[!UICONTROL **メディア再生時間**] パネルをドラッグします。
 
    2つのパネルは次のようになります。
 
-   ![ メディア同時視聴者数パネル ](assets/media-concurrent-viewers-panels.png)
+   ![&#x200B; メディア同時視聴者数パネル &#x200B;](assets/media-concurrent-viewers-panels.png)
 
-   ![ メディア再生時間パネル ](assets/media-playback-time-spent-panels.png)
+   ![&#x200B; メディア再生時間パネル &#x200B;](assets/media-playback-time-spent-panels.png)
 
 1. （条件付き）スキーマにカスタムメタデータを追加した場合（[Adobe Experience Platformでのスキーマの設定](#set-up-the-schema-in-adobe-experience-platform)の手順8で説明）、カスタムフィールドの永続性を設定する必要があります（Customer Journey Analytics ガイドの[永続性コンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)で説明）。
 
@@ -334,7 +334,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
    >
    >データストリームのアップストリームとしてAdobe Analyticsを設定する場合、カスタムメタデータはContextDataにも存在し、スキーマで設定した名前が付きます（テナントのプレフィックスはmyCustomFieldなし）。 これにより、[処理ルールの作成](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)など、ContextDataで使用できるすべてのAdobe Analytics機能を使用できるようになります。
 
-1. 「[ プロジェクトを共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)」の説明に従って、プロジェクトを共有します。
+1. 「[&#x200B; プロジェクトを共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)」の説明に従って、プロジェクトを共有します。
 
    >[!NOTE]
    >
