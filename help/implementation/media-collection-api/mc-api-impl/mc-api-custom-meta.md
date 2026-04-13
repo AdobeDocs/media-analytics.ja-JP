@@ -16,9 +16,9 @@ ht-degree: 7%
 
 Media Collection APIを使用すると、カスタムキーと値のペアを、`sessionStart`、`adStart`、および`chapterStart` イベントの標準パラメーターと共に送信できます。 カスタムメタデータは、それぞれのメディア終了イベントとともに&#x200B;**Adobe Analytics**&#x200B;に転送されます。
 
-このデータをAnalysis Workspaceで利用できるようにするには、カスタム eVarを定義し、ユースケースに応じて処理ルールを設定する必要があります。 eVarまたはpropにマッピングすると、データは、[Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)が設定されている場合、対応するeVar パスを通じてAdobe Experience Platformでも利用できるようになります。
+このデータをAnalysis Workspaceで利用できるようにするには、カスタム eVarを定義し、ユースケースに応じて処理ルールを設定する必要があります。 eVarまたはpropにマッピングすると、データは、[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)が設定されている場合、対応するeVar パスを通じてAdobe Experience Platformでも利用できるようになります。
 
-Experience Edgeを使用するXDM ベースの実装については、[ カスタムメタデータのサポート - XDM フォーマット ](/help/implementation/edge/implementation-edge-custom-metadata.md)を参照してください。
+Experience Edgeを使用するXDM ベースの実装については、[&#x200B; カスタムメタデータのサポート - XDM フォーマット &#x200B;](/help/implementation/edge/implementation-edge-custom-metadata.md)を参照してください。
 
 ## 概要
 
@@ -168,8 +168,8 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 
 ## 関連ドキュメント
 
-- [ カスタムメタデータのサポート - XDM フォーマット ](/help/implementation/edge/implementation-edge-custom-metadata.md) — Experience Edgeを介して、AnalyticsとAEPの両方にカスタムメタデータを送信します
-- [ レポートスイートデータ用のAdobe Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Analytics データをAdobe Experience Platformに取り込む
+- [&#x200B; カスタムメタデータのサポート - XDM フォーマット &#x200B;](/help/implementation/edge/implementation-edge-custom-metadata.md) — Experience Edgeを介して、AnalyticsとAEPの両方にカスタムメタデータを送信します
+- [&#x200B; レポートスイートデータ用のAdobe Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Analytics データをAdobe Experience Platformに取り込む
 
 <!--
 - [Session endpoints](sessions.md) — Session lifecycle management
