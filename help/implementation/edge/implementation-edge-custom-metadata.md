@@ -3,7 +3,7 @@ title: カスタムメタデータのサポート - XDM形式
 description: Experience Edge XDM フォーマットを使用して、メディアトラッキングイベントでカスタムメタデータを送信する方法を説明します。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: da2fe856a32f9056752b9e2c2e339d43be20372a
+source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 2%
@@ -301,6 +301,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 ```
 
 この例では、次のようになります。
+
 - `_mycompany.league`→AnalyticsとAEPの両方に送信されました
 - `debugMode`と`testFlag` （`_data.__adobe.analytics.contextData`未満）→Analyticsにのみ送信されます
 
@@ -312,11 +313,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 `xdm.mediaCollection.customMetadata`は、イベントを含むカスタムメタデータの送信に使用される&#x200B;**受信API パス**&#x200B;です。 処理後、データはコンテキストデータ変数としてAdobe Analyticsに転送され、`mediaReporting.customMetadata`の下のAdobe Experience Platformと最上位の統合フィールドとして保存されます。
 
 **Adobe Analytics：**
+
 - 処理後、カスタムメタデータはコンテキストデータ変数としてAdobe Analyticsに転送されます。 `_tenant`接頭辞は自動的に削除されるので、処理ルールは`_tenant`の後のフィールドパスのみを参照します（例：`_mycompany.contentCategory`は`contentCategory`になります）。
 - `_data`を介して送信されたデータもAdobe Analyticsに転送され、処理ルールを介して利用できます
 - 処理ルールを使用して、コンテキストデータ変数をeVar、prop、またはその他のAnalytics変数にマッピングします。 詳しくは、[Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping)のデータ変数マッピングを参照してください。
 
 **Adobe Experience Platform:**
+
 - カスタムメタデータフィールドは、XDM スキーマのカスタムフィールド（`_mycompany`など）として定義する必要があり、AEPでフラット化されたフィールドとして保存してクエリできます
 
   ![XDM スキーマのカスタムフィールド定義](assets/custom_metadata.png)
@@ -336,6 +339,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 - [&#x200B; カスタムメタデータサポート &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)。 — MC API （JSON形式）
 - [Media Collection Details data type](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details) — XDM スキーマ参照
 - [Adobe Experience Platform Edge Networkのデータ変数マッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping) — XDM フィールドのAnalytics コンテキストデータマッピング
+
 <!--
 - [Session endpoints](sessions.md) — Session lifecycle management
 - [Ad endpoints](ads.md) — Track advertising impressions

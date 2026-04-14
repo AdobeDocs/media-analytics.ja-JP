@@ -5,7 +5,7 @@ user-guide-title: ストリーミングメディアサービスガイド
 breadcrumb-title: ストリーミングメディアサービスガイド
 user-guide-description: ストリーミングメディアサービスを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
+source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 79%
@@ -39,7 +39,7 @@ ht-degree: 79%
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
-      + [カスタムメタデータのサポート](/help/implementation/edge/implementation-edge-custom-metadata.md)
+      + [カスタムメタデータのサポート](implementation/edge/implementation-edge-custom-metadata.md)
    + Adobe Analyticsのみの実装 {#analytics-only}
       + [前提条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + Media SDK/拡張機能 {#media-sdk}
