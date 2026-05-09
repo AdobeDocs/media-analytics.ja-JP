@@ -6,7 +6,7 @@ product_v2:
 feature-set: Analytics
 landing-page-name: analytics
 landing-page-breadcrumb-title: Analytics
-git-repo: https://github.com/AdobeDocs/media-analytics.en
+git-repo: https://github.com/AdobeDocs/media-analytics.ja-JP
 index: true
 source-git-commit: 478d146b3d5d9736cb3e1c1e2ebb5fd0473b9729
 workflow-type: tm+mt
