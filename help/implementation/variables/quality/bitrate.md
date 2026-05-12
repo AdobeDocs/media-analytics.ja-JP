@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**ビットレート**変数のデータ収集について説明します。 対応するレポート変数については、[平均ビットレート （ディメンション） ](/help/reporting/dimensions/average-bitrate.md)および[平均ビットレート （指標） ](/help/reporting/metrics/average-bitrate.md)を参照してください。*
+*このページでは、**ビットレート**&#x200B;変数のデータ収集について説明します。 対応するレポート変数については、[平均ビットレート （ディメンション） &#x200B;](/help/reporting/dimensions/average-bitrate.md)および[平均ビットレート （指標） &#x200B;](/help/reporting/metrics/average-bitrate.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -147,4 +147,4 @@ tracker.updateQoEObject(qoeObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。

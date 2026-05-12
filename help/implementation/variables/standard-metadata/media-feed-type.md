@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**メディアフィードの種類**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ メディアフィードの種類](/help/reporting/dimensions/media-feed-type.md)を参照してください。*
+*このページでは、**メディアフィードの種類**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; メディアフィードの種類](/help/reporting/dimensions/media-feed-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -136,4 +136,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

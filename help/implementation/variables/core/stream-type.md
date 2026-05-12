@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Stream type**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ストリームタイプ ](/help/reporting/dimensions/stream-type.md)を参照してください。*
+*このページでは、**Stream type**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ストリームタイプ &#x200B;](/help/reporting/dimensions/stream-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -161,4 +161,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造とすべての必須フィールドについては、[Media Collection API セッション リファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造とすべての必須フィールドについては、[Media Collection API セッション リファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

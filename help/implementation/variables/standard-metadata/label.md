@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Label**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ラベル ](/help/reporting/dimensions/label.md)を参照してください。*
+*このページでは、**Label**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ラベル &#x200B;](/help/reporting/dimensions/label.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -136,4 +136,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

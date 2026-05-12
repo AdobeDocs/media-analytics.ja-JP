@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Content resumes**変数のデータ収集について説明します。 対応するレポート指標については、[ コンテンツの再開](/help/reporting/metrics/content-resumes.md)を参照してください。*
+*このページでは、**Content resumes**&#x200B;変数のデータ収集について説明します。 対応するレポート指標については、[&#x200B; コンテンツの再開](/help/reporting/metrics/content-resumes.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -162,4 +162,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

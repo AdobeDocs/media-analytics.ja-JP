@@ -15,7 +15,7 @@ ht-degree: 18%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Creative ID**変数のデータ収集について説明します。 対応するレポートディメンションについては、[Creative ID](/help/reporting/dimensions/creative-id.md)を参照してください。*
+*このページでは、**Creative ID**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[Creative ID](/help/reporting/dimensions/creative-id.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -139,4 +139,4 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。

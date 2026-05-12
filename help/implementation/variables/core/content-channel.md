@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツチャネル**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ コンテンツチャネル ](/help/reporting/dimensions/content-channel.md)を参照してください。*
+*このページでは、**コンテンツチャネル**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; コンテンツチャネル &#x200B;](/help/reporting/dimensions/content-channel.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -151,4 +151,4 @@ var tracker = ADB.Media.getInstance(mediaConfig);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

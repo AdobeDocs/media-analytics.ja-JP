@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**日パート**変数のデータ収集について説明します。 対応するレポートディメンションについては、[日パート ](/help/reporting/dimensions/day-part.md)を参照してください。*
+*このページでは、**日パート**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[日パート &#x200B;](/help/reporting/dimensions/day-part.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -136,4 +136,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

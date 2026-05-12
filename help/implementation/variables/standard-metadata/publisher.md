@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Publisher**変数のデータ収集について説明します。 対応するレポートディメンションについては、[発行者](/help/reporting/dimensions/publisher.md)を参照してください。*
+*このページでは、**Publisher**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[発行者](/help/reporting/dimensions/publisher.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -136,4 +136,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

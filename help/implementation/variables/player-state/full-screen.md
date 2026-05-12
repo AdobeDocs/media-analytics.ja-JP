@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**フルスクリーン**プレーヤーの状態に関するデータ収集について説明します。 対応するレポート指標については、[ フルスクリーンの影響を受けるストリーム ](/help/reporting/metrics/full-screen-streams-impacted.md)、[ フルスクリーン数](/help/reporting/metrics/full-screen-count.md)、および[ フルスクリーン合計期間](/help/reporting/metrics/full-screen-total-duration.md)を参照してください。*
+*このページでは、**フルスクリーン**&#x200B;プレーヤーの状態に関するデータ収集について説明します。 対応するレポート指標については、[&#x200B; フルスクリーンの影響を受けるストリーム &#x200B;](/help/reporting/metrics/full-screen-streams-impacted.md)、[&#x200B; フルスクリーン数](/help/reporting/metrics/full-screen-count.md)、および[&#x200B; フルスクリーン合計期間](/help/reporting/metrics/full-screen-total-duration.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -169,4 +169,4 @@ tracker.trackPlayerStateEnd(stateObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。

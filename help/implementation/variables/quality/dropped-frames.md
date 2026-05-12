@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**削除されたフレーム**変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[削除されたフレーム ](/help/reporting/dimensions/dropped-frames.md)を参照してください。*
+*このページでは、**削除されたフレーム**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[削除されたフレーム &#x200B;](/help/reporting/dimensions/dropped-frames.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -137,4 +137,4 @@ tracker.updateQoEObject(qoeObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。

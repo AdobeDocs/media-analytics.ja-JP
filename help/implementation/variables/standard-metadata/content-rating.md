@@ -15,7 +15,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツ評価**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ コンテンツの評価](/help/reporting/dimensions/content-rating.md)を参照してください。*
+*このページでは、**コンテンツ評価**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; コンテンツの評価](/help/reporting/dimensions/content-rating.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -136,4 +136,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
