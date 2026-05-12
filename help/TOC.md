@@ -259,7 +259,7 @@ sub-product: media analytics
    + デフォルトメディアレポート {#media-default-reports}
       + [デフォルトレポートの概要](reporting/reports-and-analytics/default-reports-overview.md)
       + [メディアの概要](reporting/reports-and-analytics/media-reports-overview.md)
-      + [メディアの詳細 ](reporting/reports-and-analytics/media-reports-detail.md)
+      + [メディアの詳細 &#x200B;](reporting/reports-and-analytics/media-reports-detail.md)
       + [メディア視聴時間帯レポート](reporting/reports-and-analytics/media-reports-daypart.md)
       + [メディア同時ビューアレポート](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + Media API {#media-api}
