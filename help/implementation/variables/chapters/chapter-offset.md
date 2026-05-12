@@ -24,7 +24,7 @@ ht-degree: 12%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.chapter.offset` |
-| **XDM コレクションフィールド** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **必須** | いいえ（モバイル SDK）；はい（Edge、Media Collection API） |
 | **様が**&#x200B;様と共に送信されました | 章の開始、章の終了 |
 

@@ -24,7 +24,7 @@ MVPD （マルチチャネル ビデオ プログラミング ディストリビ
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.pass.mvpd` |
-| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | セッション開始、セッション終了 |
 

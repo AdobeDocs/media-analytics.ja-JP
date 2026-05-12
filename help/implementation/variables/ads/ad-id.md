@@ -24,7 +24,7 @@ ht-degree: 16%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.name` |
-| **XDM コレクションフィールド** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **必須** | はい |
 | **様が**&#x200B;様と共に送信されました | 開始、終了 |
 
