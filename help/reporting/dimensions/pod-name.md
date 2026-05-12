@@ -27,9 +27,9 @@ ht-degree: 1%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics （処理ルール） | `a.media.ad.podFriendlyName`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
+| Adobe Analytics （処理ルール） | `a.media.ad.podFriendlyName`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
 | Adobe Analytics（分類） | 広告ポッドディメンションの分類 – **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)**&#x200B;がレポートスイートに対して有効になっている場合、Adobeはこの分類を自動的に作成します。 分類値の入力と維持はユーザーの責任です。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | データフィード（処理ルール） | `evar1`-`evar250`、`post_evar1`-`post_evar250` （処理ルール `a.media.ad.podFriendlyName`がマッピングされるeVar） |
 | データフィード（分類） | なし – データフィードは分類をサポートしていません。 |
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ## 処理ルールのアプローチ
 
-`a.media.ad.podFriendlyName`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 このアプローチは、分類のメンテナンスを必要とせずに、ヒットごとの値としてわかりやすい名前をキャプチャします。
+`a.media.ad.podFriendlyName`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 このアプローチは、分類のメンテナンスを必要とせずに、ヒットごとの値としてわかりやすい名前をキャプチャします。
 
 トレードオフは、ポッド名と親[広告ポッド &#x200B;](ad-pod.md) ディメンションとの間の保証された1:1関係が失われることです。 実装でイベント間で同じポッド IDに一貫性のない値が送信される場合、同じ広告ポッドの下に複数の名前が表示される可能性があります。 値の更新は、今後のデータにのみ適用されます。
 
