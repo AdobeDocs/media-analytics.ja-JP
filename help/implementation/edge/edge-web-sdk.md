@@ -82,7 +82,7 @@ alloy("configure", {
 });
 ```
 
-構成方法の詳細については、Web SDK `streamingMedia` コンポーネント [&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia)を参照してください。
+構成方法の詳細については、Web SDK `streamingMedia` コンポーネント [&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/configure/streamingmedia)を参照してください。
 
 ### 手順3:Media JS SDKから移行する際にMedia Tracker インスタンスを取得する
 
@@ -90,7 +90,7 @@ Media JS SDKを使用しているお客様に対しては、Web SDKは、Media J
 
 [!DNL Web SDK]には、Media Analytics トラッカーを取得するコマンドが含まれています。 このコマンドを使用してオブジェクトインスタンスを作成し、[Media JS ライブラリ &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)で提供されているものと同じAPIを使用して、メディアイベントを追跡できます。
 
-サポートされているメソッドの詳細については、[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) ドキュメントを参照してください。
+サポートされているメソッドの詳細については、[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) ドキュメントを参照してください。
 
 以下のスニペットは、Media JSでメディアトラッカーインスタンスを取得する方法を示しています。
 

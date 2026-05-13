@@ -52,7 +52,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
 スキーマを作成して設定するには：
 
-1. Adobe Experience Platformで、[UIでのスキーマの作成と編集](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)の説明に従って、スキーマの作成を開始します。
+1. Adobe Experience Platformで、[UIでのスキーマの作成と編集](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja)の説明に従って、スキーマの作成を開始します。
 
 1. スキーマの作成時にスキーマの詳細ページで、スキーマのベースクラスを選択する際に「[!UICONTROL **エクスペリエンスイベント**]」を選択します。
 
@@ -152,7 +152,7 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [&#x200B; リクエストペイロードのカスタムフィールドに生成されたパス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)を使用します。
+   1. [&#x200B; リクエストペイロードのカスタムフィールドに生成されたパス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)を使用します。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -190,11 +190,11 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
       * [!UICONTROL **Adobe Analytics**] （Adobe Analyticsを使用している場合）
 
-        Adobe Analyticsを使用している場合は、[&#x200B; レポートスイートの作成](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)の説明に従って、レポートスイートを定義してください。
+        Adobe Analyticsを使用している場合は、[&#x200B; レポートスイートの作成](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)の説明に従って、レポートスイートを定義してください。
 
       * [!UICONTROL **Adobe Experience Platform**] （Customer Journey Analyticsを使用している場合）
 
-     データストリームにサービスを追加する方法について詳しくは、[&#x200B; データストリームの設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)の「データストリームにサービスを追加」セクションを参照してください。
+     データストリームにサービスを追加する方法について詳しくは、[&#x200B; データストリームの設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja#view-details)の「データストリームにサービスを追加」セクションを参照してください。
 
      ![Adobe Analytics サービスを追加](assets/datastream-add-service.png)
 
@@ -355,9 +355,9 @@ Adobe Experience Platform を活用するアプリケーション間で使用す
 
    >[!NOTE]
    >
-   >データストリームのアップストリームとしてAdobe Analyticsを設定する場合、カスタムメタデータはContextDataにも存在し、スキーマで設定した名前が付きます（テナントのプレフィックスはmyCustomFieldなし）。 これにより、[処理ルールの作成](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)など、ContextDataで使用できるすべてのAdobe Analytics機能を使用できるようになります。
+   >データストリームのアップストリームとしてAdobe Analyticsを設定する場合、カスタムメタデータはContextDataにも存在し、スキーマで設定した名前が付きます（テナントのプレフィックスはmyCustomFieldなし）。 これにより、[処理ルールの作成](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)など、ContextDataで使用できるすべてのAdobe Analytics機能を使用できるようになります。
 
-1. 「[&#x200B; プロジェクトを共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)」の説明に従って、プロジェクトを共有します。
+1. 「[&#x200B; プロジェクトを共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ja)」の説明に従って、プロジェクトを共有します。
 
    >[!NOTE]
    >
