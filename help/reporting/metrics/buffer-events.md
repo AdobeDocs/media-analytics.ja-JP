@@ -1,0 +1,34 @@
+---
+title: バッファーイベント（指標）
+description: セッション全体の合計と平均のバッファリングイベントをカウントします。
+feature: Metrics
+role: User, Admin
+source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 6%
+
+---
+
+
+# バッファーイベント（指標）
+
+>[!BEGINSHADEBOX]
+
+*このページでは、**バッファーイベント**指標について説明します。 Adobe Analyticsは、同じ`a.media.qoe.bufferCount`個のコンテキストデータ変数から、ペアの[ バッファーイベント（ディメンション） ](/help/reporting/dimensions/buffer-events.md)を自動入力します。 Customer Journey Analyticsは、ディメンションまたは指標として使用できる1つの`mediaReporting.qoeDataDetails.bufferCount` フィールドを公開します。*
+
+>[!ENDSHADEBOX]
+
+**バッファーイベント**&#x200B;指標は、合計、平均、パーセンタイルのロールアップに適した、セッション間のバッファリングイベントをカウントします。 この指標を使用して、レポート期間の合計バッファー量を計算し、コンテンツ、ネットワーク、プレーヤー間のバッファー安定性を比較します。
+
+## この指標の計算方法
+
+メディアバックエンドでは、プレーヤーが`buffer`状態になるたびにカウントが増加します。 この指標は、クローズ呼び出しで報告されます。
+
+| レポートシステム | ソース |
+| --- | --- |
+| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.bufferCount`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
+
+セッションレベルのブール値レポートの場合（セッションでバッファリングが発生したかどうかに関係なく）、[影響を受けるストリームのバッファリング ](buffer-impacted-streams.md)を使用します。

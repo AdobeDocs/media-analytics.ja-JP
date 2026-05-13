@@ -1,0 +1,26 @@
+---
+title: バッファーの影響を受けるストリーム
+description: プレイヤーが少なくとも1回バッファー状態に入ったセッションをカウントします。
+feature: Metrics
+role: User, Admin
+source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 9%
+
+---
+
+
+# バッファーの影響を受けるストリーム
+
+**バッファーの影響を受けたストリーム**&#x200B;指標では、少なくとも1回はバッファー状態に入ったセッションがカウントされます。 この指標は、セッションレベルのブール値です。影響を受ける1つのストリームと同じセッション数の中の複数のバッファーイベントです。 合計バッファーボリュームに対して、[ バッファーイベント ](buffer-events.md)を使用します。
+
+## この指標の計算方法
+
+メディア バックエンドは、セッション中に`media.bufferStart` イベントを初めて受信したときに`mediaReporting.qoeDataDetails.hasBufferImpactedStreams = true`を設定します。 この指標は、クローズ呼び出しで報告されます。
+
+| レポートシステム | ソース |
+| --- | --- |
+| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.buffer`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasBufferImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |

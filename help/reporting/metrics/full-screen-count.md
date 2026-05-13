@@ -1,0 +1,32 @@
+---
+title: 全画面数
+description: セッション中にビューアがフルスクリーンに入った回数をレポートします。
+feature: Metrics
+role: User, Admin
+source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 7%
+
+---
+
+
+# 全画面数
+
+>[!BEGINSHADEBOX]
+
+*このページでは、**全画面数**のレポート指標について説明します。 この変数の収集方法については、[全画面](/help/implementation/variables/player-state/full-screen.md)を参照してください。*
+
+>[!ENDSHADEBOX]
+
+**全画面数**&#x200B;指標は、視聴者がセッション中に全画面表示に入った回数を報告します。 全画面表示の状態開始イベントごとにカウントが増加します。 セッションレベルのブール値ロールアップでは[ フルスクリーンの影響を受けるストリーム ](full-screen-streams-impacted.md)と、状態での合計時間では[ フルスクリーン合計時間](full-screen-total-duration.md)と組み合わせます。
+
+## この指標の計算方法
+
+メディアバックエンドは、全画面状態の開始イベントごとに`mediaReporting.states[]`の`fullscreen` エントリの`count` フィールドを増分します。 この指標は、クローズ呼び出しで報告されます。
+
+| レポートシステム | ソース |
+| --- | --- |
+| Adobe Analytics | [[!UICONTROL Player State Tracking]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.states.fullscreen.count`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) エントリ （`name = "fullscreen"`、フィールド `count`） |
+| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |

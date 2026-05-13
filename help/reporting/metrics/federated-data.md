@@ -1,12 +1,12 @@
 ---
 title: 連合データ
-description: 連合データ数は、顧客自身の実装ではなく、連合データ共有を介して受信したセッションを数えます。
+description: 顧客独自の実装ではなく、連合データ共有を介して受信したセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: c9c4287b4b330ebc1a1ec8b7197b42ee45f7ff48
+source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 5%
+source-wordcount: '216'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 5%
 
 >[!TIP]
 >
->連合データをディメンションとして使用する場合は、`a.media.federated`個のコンテキストデータ変数をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。
+>連合データをディメンションとして使用する場合は、`a.media.federated`個のコンテキストデータ変数をeVarにマッピングする[処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。
 
 ## この指標の計算方法
 
@@ -31,6 +31,6 @@ ht-degree: 5%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.federated`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isFederated`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
+| Adobe Analytics | [[!UICONTROL  ビデオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.federated`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isFederated`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |

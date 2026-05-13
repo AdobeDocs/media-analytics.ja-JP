@@ -1,0 +1,34 @@
+---
+title: ドロップされたフレーム （指標）
+description: セッション間の合計と平均の累積ドロップ済みフレームをレポートします。
+feature: Metrics
+role: User, Admin
+source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 6%
+
+---
+
+
+# ドロップされたフレーム （指標）
+
+>[!BEGINSHADEBOX]
+
+*このページでは、**削除されたフレーム**指標について説明します。 Adobe Analyticsは、同じ`a.media.qoe.droppedFrameCount` コンテキストデータ変数からペアの[ ドロップされたフレーム（ディメンション） ](/help/reporting/dimensions/dropped-frames.md)を自動入力します。 Customer Journey Analyticsは、ディメンションまたは指標として使用できる1つの`mediaReporting.qoeDataDetails.droppedFrames` フィールドを公開します。 この変数の収集方法については、[削除されたフレーム ](/help/implementation/variables/quality/dropped-frames.md)を参照してください。*
+
+>[!ENDSHADEBOX]
+
+**ドロップフレーム**&#x200B;指標は、合計、平均、パーセンタイルのロールアップに適した、セッション間の累積ドロップフレームをレポートします。 この指標を使用して、レポート期間の合計配信数を計算し、コンテンツ、ネットワーク、プレーヤー間のフレームレンダリング品質を比較します。
+
+## この指標の計算方法
+
+ドロップが蓄積すると、プレーヤーはQoE オブジェクトの`droppedFrames`値を更新します。 バックエンドは、クローズコールの最新の値をレポートします。
+
+| レポートシステム | ソース |
+| --- | --- |
+| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.droppedFrameCount`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
+
+セッションレベルのブール値レポートの場合（任意のフレームがドロップされたかどうかにかかわらず）、[ ドロップされたフレームの影響を受けるストリーム ](dropped-frame-impacted-streams.md)を使用します。
