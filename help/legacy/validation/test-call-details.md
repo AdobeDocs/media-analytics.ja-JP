@@ -6,11 +6,22 @@ exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/98Oa98xntOkB9Fe3NQ30FUdvVk0JNKJMyzjgSTvncdI
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: e992d880-33bc-4949-a648-aa7d410276cd
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
 source-wordcount: 616
@@ -28,13 +39,13 @@ ht-degree: 78%
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episode Title |
-| _**`a.media.name`**_ | _**123456**_ |
-| _**`a.media.length`**_ | _**120**_ |
+| _&#x200B;**`a.media.name`**&#x200B;_ | _&#x200B;**123456**&#x200B;_ |
+| _&#x200B;**`a.media.length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
 | `a.media.playerName` | HTML5 |
-| _**`a.media.view`**_ | _**true**_ |
+| _&#x200B;**`a.media.view`**&#x200B;_ | _&#x200B;**true**&#x200B;_ |
 | `a.contentType` | vod |
-| _**`custom.[value]`**_ | _**カスタムメタデータフィールド**_ |
-| _**`a.media.[value]`**_ | _**標準メタデータフィールド**_ |
+| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**カスタムメタデータフィールド**&#x200B;_ |
+| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**標準メタデータフィールド**&#x200B;_ |
 
 **メモ:**
 
@@ -72,15 +83,15 @@ ht-degree: 78%
 | パラメーター |  値（サンプル）  |
 |---|---|
 | `s:event:type` | start |
-| _**`l:event:playhead`**_ | _**0**_ |
+| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**0**&#x200B;_ |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
-| _**`s:meta:custom.[value]`**_ | _**カスタムメタデータフィールド**_ |
-| _**`s:meta:a.media.[value]`**_ | _**標準メタデータフィールド**_ |
+| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**カスタムメタデータフィールド**&#x200B;_ |
+| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**標準メタデータフィールド**&#x200B;_ |
 
 **メモ:**
 
@@ -117,7 +128,7 @@ ht-degree: 78%
 
 | パラメーター |  値（サンプル）  |
 |---|---|
-| _**`s:event:type`**_ | _**aa_start**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_start**&#x200B;_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episode Title |
@@ -137,19 +148,19 @@ ht-degree: 78%
 
 | パラメーター |  値（サンプル）  |
 |---|---|
-| _**`pev2`**_ | _**msa_s**_ |
+| _&#x200B;**`pev2`**&#x200B;_ | _&#x200B;**msa_s**&#x200B;_ |
 | `a.media.name` | 123456 |
-| _**`a.media.ad.name`**_ | _**9378**_ |
+| _&#x200B;**`a.media.ad.name`**&#x200B;_ | _&#x200B;**9378**&#x200B;_ |
 | `a.media.ad.friendlyName` | Video_VPAID_DFA |
 | `a.media.ad.podFriendlyName` | preroll |
-| _**`a.media.ad.length`**_ | _**15**_ |
+| _&#x200B;**`a.media.ad.length`**&#x200B;_ | _&#x200B;**15**&#x200B;_ |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0.0 |
-| _**`a.media.ad.view`**_ | _**True**_ |
-| _**`custom.[value]`**_ | _**メタデータフィールド**_ |
-| _**`a.media.[value]`**_ | _**標準メタデータフィールド**_ |
+| _&#x200B;**`a.media.ad.view`**&#x200B;_ | _&#x200B;**True**&#x200B;_ |
+| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**メタデータフィールド**&#x200B;_ |
+| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**標準メタデータフィールド**&#x200B;_ |
 
 **メモ:**
 
@@ -186,15 +197,15 @@ ht-degree: 78%
 
 | パラメーター |  値（サンプル）  |
 |---|---|
-| _**`s:event:type`**_ | _**start**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**start**&#x200B;_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:ad_id` | 9378 |
-| _**`l:asset:length`**_ | _**120**_ |
+| _&#x200B;**`l:asset:length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
-| _**`s:meta:custom.[value]`**_ | _**カスタムメタデータフィールド**_ |
-| _**`s:meta:a.media.[value]`**_ | _**標準メタデータフィールド**_ |
+| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**ad**&#x200B;_ |
+| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**カスタムメタデータフィールド**&#x200B;_ |
+| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**標準メタデータフィールド**&#x200B;_ |
 
 **メモ:**
 
@@ -231,7 +242,7 @@ ht-degree: 78%
 
 | パラメーター |  値（サンプル）  |
 |---|---|
-| _**`s:event:type`**_ | _**aa_ad_start**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_ad_start**&#x200B;_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
@@ -243,37 +254,37 @@ ht-degree: 78%
 
 | パラメーター |  値（サンプル）  |
 |---|---|
-| _**`s:event:type`**_ | _**play**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**play**&#x200B;_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**ad**&#x200B;_ |
 
 ### Media Analytics（ハートビート）Ad Pause 呼び出し {#ma-ad-pause-call}
 
 | パラメーター |  値（サンプル）  |
 |---|---|
-| _**`s:event:type`**_ | _**pause**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pause**&#x200B;_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**ad**&#x200B;_ |
 
 ### Media Analytics（ハートビート）Adobe Analytics Ad Complete 呼び出し {#ma-aa-ad-complete-call}
 
 | パラメーター |  値（サンプル）  |
 |---|---|
-| _**`s:event:type`**_ | _**complete**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**complete**&#x200B;_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**ad**&#x200B;_ |
 
 ## メインコンテンツの再生 {#play-main-content}
 
@@ -282,8 +293,8 @@ ht-degree: 78%
 | パラメーター |  値（サンプル）  |
 |---|---|
 | `s:event:type` | play |
-| _**`l:event:playhead`**_ | _**29**_ |
-| _**`l:event:duration`**_ | _**10189**_ |
+| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
+| _&#x200B;**`l:event:duration`**&#x200B;_ | _&#x200B;**10189**&#x200B;_ |
 | `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
@@ -301,8 +312,8 @@ ht-degree: 78%
 
 | パラメーター |  値（サンプル）  |
 |---|---|
-| _**`s:event:type`**_ | _**pause**_ |
-| _**`l:event:playhead`**_ | _**29**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pause**&#x200B;_ |
+| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |

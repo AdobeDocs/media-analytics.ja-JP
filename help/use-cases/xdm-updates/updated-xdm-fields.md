@@ -5,10 +5,19 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: d239b203-71ce-4307-884f-9d11cc623d04
 TQID: https://experienceleague.adobe.com/cEIBTufYRaIusKjm-CszVvsFmZNfMS-RAvOm3wbbBgc
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
 source-wordcount: 886
@@ -20,7 +29,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->この情報は、[Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)を使用して、Adobe AnalyticsからAdobe Experience Platformにストリーミングメディアデータを取り込み、Customer Journey Analytics レポートやその他のPlatform サービスで使用する企業向けです。
+>この情報は、[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)を使用して、Adobe AnalyticsからAdobe Experience Platformにストリーミングメディアデータを取り込み、Customer Journey Analytics レポートやその他のPlatform サービスで使用する企業向けです。
 >
 >この変更は、データの収集、処理、レポートなど、Adobe Analytics as a スタンドアロンアプリケーションには影響しません。 データフィードや処理ルールなどのツールは影響を受けないため、Analyticsの実装を更新する必要はありません。
 
@@ -62,7 +71,7 @@ CJA レポートを移行するには、次の2つの方法があります。
 
 * **履歴データを保持するため**: Adobe チームは、古いXDM フィールドと新しいXDM フィールドを1つのフィールドに組み合わせた派生フィールドのセットを導入する、事前定義されたCustomer Journey Analytics テンプレートを開発しました。 このテンプレートは、リクエストに応じてCustomer Journey Analytics接続ごとに有効にできます。 新しいフィールドを有効にする方法については、Adobe サポートチームにお問い合わせください。 これらの派生フィールドは、組織の派生フィールド制限にカウントされません。
 
-  マッピングのリストを表示するには、[Adobe Experience PlatformとCustomer Journey AnalyticsのMedia Analytics パラメーターのマッピング ](/help/use-cases/xdm-updates/parameters-mapping.md)を参照してください。
+  マッピングのリストを表示するには、[Adobe Experience PlatformとCustomer Journey AnalyticsのMedia Analytics パラメーターのマッピング &#x200B;](/help/use-cases/xdm-updates/parameters-mapping.md)を参照してください。
 
 * **履歴データが不要な場合**: レポート時にレポート XDM フィールドのパスを使用するだけで十分です。 詳しくは、[新しいストリーミングメディアフィールドを使用するようにCustomer Journey Analyticsを移行する](/help/use-cases/xdm-updates/migrate-cja-setup.md)を参照してください。
 
@@ -72,7 +81,7 @@ CJA レポートを移行するには、次の2つの方法があります。
 
 ### データストリームとデータ収集
 
-動的設定とデータ マッピングでは、`mediaReporting`を使用する必要があります。 詳しくは、[ カスタムフィールドのデータ準備を新しいストリーミングメディアフィールドに移行](/help/use-cases/xdm-updates/migrate-dataprep.md)を参照してください。
+動的設定とデータ マッピングでは、`mediaReporting`を使用する必要があります。 詳しくは、[&#x200B; カスタムフィールドのデータ準備を新しいストリーミングメディアフィールドに移行](/help/use-cases/xdm-updates/migrate-dataprep.md)を参照してください。
 
 ### 移行する必要があるその他のサービス
 
