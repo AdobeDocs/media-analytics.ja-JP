@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Station**のレポートディメンションについて説明します。 この変数の収集方法については、[Station](/help/implementation/variables/standard-metadata/station.md)を参照してください。*
+*このページでは、**Station**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[Station](/help/implementation/variables/standard-metadata/station.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 8%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  オーディオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.station`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; オーディオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.station`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.station`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videoaudiostation` |
 

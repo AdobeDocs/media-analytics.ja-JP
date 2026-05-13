@@ -22,7 +22,7 @@ ht-degree: 4%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.name`からトラフィック変数（prop）として自動的に収集されます。 |
-| Customer Journey Analytics | なし – パス分析に[ コンテンツ ](content.md)を使用 |
+| Customer Journey Analytics | なし – パス分析に[&#x200B; コンテンツ &#x200B;](content.md)を使用 |
 | データフィード | `videopath, post_videopath` |
 
 >[!IMPORTANT]

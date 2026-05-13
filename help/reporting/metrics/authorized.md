@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**承認済み**レポート指標について説明します。 この変数の収集方法については、[Authorized](/help/implementation/variables/standard-metadata/authorized.md)を参照してください。*
+*このページでは、**承認済み**&#x200B;レポート指標について説明します。 この変数の収集方法については、[Authorized](/help/implementation/variables/standard-metadata/authorized.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,6 +27,6 @@ ht-degree: 11%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  ビデオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.pass.auth`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.pass.auth`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |

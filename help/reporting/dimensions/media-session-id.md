@@ -21,7 +21,7 @@ ht-degree: 5%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | `a.media.vsid`をeVarにマッピングする[処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
+| Adobe Analytics | `a.media.vsid`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videosessionid, post_videosessionid` |
 

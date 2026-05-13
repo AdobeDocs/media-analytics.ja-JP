@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツチャネル**のレポートディメンションについて説明します。 この変数の収集方法については、[ コンテンツチャネル ](/help/implementation/variables/core/content-channel.md)を参照してください。*
+*このページでは、**コンテンツチャネル**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; コンテンツチャネル &#x200B;](/help/implementation/variables/core/content-channel.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 

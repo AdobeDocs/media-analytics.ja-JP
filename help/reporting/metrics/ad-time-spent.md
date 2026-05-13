@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # 広告滞在時間
 
-**広告滞在時間**&#x200B;指標は、一時停止、バッファリング、ストールを除いた、セッションごとのアクティブな広告再生の合計秒数を報告します。 [ コンテンツに費やした時間](/help/reporting/metrics/content-time-spent.md)と組み合わせて、広告の読み込みをコンテンツエンゲージメントと比較します。
+**広告滞在時間**&#x200B;指標は、一時停止、バッファリング、ストールを除いた、セッションごとのアクティブな広告再生の合計秒数を報告します。 [&#x200B; コンテンツに費やした時間](/help/reporting/metrics/content-time-spent.md)と組み合わせて、広告の読み込みをコンテンツエンゲージメントと比較します。
 
 ## この指標の計算方法
 
@@ -21,6 +21,6 @@ ht-degree: 8%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  メディア広告]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.ad.timePlayed`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディア広告]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.ad.timePlayed`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.timePlayed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |

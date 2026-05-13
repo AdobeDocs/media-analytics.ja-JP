@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツプレーヤー名**のレポートディメンションについて説明します。 この変数の収集方法については、[ コンテンツプレーヤー名](/help/implementation/variables/core/content-player-name.md)を参照してください。*
+*このページでは、**コンテンツプレーヤー名**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; コンテンツプレーヤー名](/help/implementation/variables/core/content-player-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 

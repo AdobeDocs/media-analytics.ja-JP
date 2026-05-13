@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツ再開**レポート指標について説明します。 この変数の収集方法については、[ コンテンツの再開](/help/implementation/variables/core/content-resumes.md)を参照してください。*
+*このページでは、**コンテンツ再開**&#x200B;レポート指標について説明します。 この変数の収集方法については、[&#x200B; コンテンツの再開](/help/implementation/variables/core/content-resumes.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 

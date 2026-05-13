@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Show**レポートディメンションについて説明します。 この変数の収集方法については、[Show](/help/implementation/variables/standard-metadata/show.md)を参照してください。*
+*このページでは、**Show**&#x200B;レポートディメンションについて説明します。 この変数の収集方法については、[Show](/help/implementation/variables/standard-metadata/show.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  ビデオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.show`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.show`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videoshow, post_videoshow` |
 

@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**プレースメント ID**のレポートディメンションについて説明します。 この変数の収集方法については、[配置ID](/help/implementation/variables/ads/placement-id.md)を参照してください。*
+*このページでは、**プレースメント ID**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[配置ID](/help/implementation/variables/ads/placement-id.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 9%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | `a.media.ad.placement`をeVarにマッピングする[処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
+| Adobe Analytics | `a.media.ad.placement`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
 | Customer Journey Analytics | [`mediaReporting.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | データフィード | `evar1`-`evar250`、`post_evar1`-`post_evar250` （処理ルール `a.media.ad.placement`がマッピングされるeVar） |
 

@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツタイプ**のレポートディメンションについて説明します。 この変数の収集方法については、[ コンテンツタイプ ](/help/implementation/variables/core/content-type.md)を参照してください。*
+*このページでは、**コンテンツタイプ**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; コンテンツタイプ &#x200B;](/help/implementation/variables/core/content-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -48,6 +48,6 @@ Adobeで定義された値は、組み込みのセグメントとレポートに
 
 | セグメント | 規則 |
 | --- | --- |
-| [!UICONTROL VOD コンテンツ ] | コンテンツの種類= `vod` |
-| [!UICONTROL  ライブコンテンツ ] | コンテンツの種類= `live` |
-| [!UICONTROL 線形コンテンツ ] | コンテンツの種類= `linear` |
+| [!UICONTROL VOD コンテンツ &#x200B;] | コンテンツの種類= `vod` |
+| [!UICONTROL &#x200B; ライブコンテンツ &#x200B;] | コンテンツの種類= `live` |
+| [!UICONTROL 線形コンテンツ &#x200B;] | コンテンツの種類= `linear` |

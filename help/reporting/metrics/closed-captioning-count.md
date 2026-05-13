@@ -15,11 +15,11 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**クローズドキャプション数**のレポート指標について説明します。 この変数の収集方法については、[ クローズドキャプション ](/help/implementation/variables/player-state/closed-captioning.md)を参照してください。*
+*このページでは、**クローズドキャプション数**&#x200B;のレポート指標について説明します。 この変数の収集方法については、[&#x200B; クローズドキャプション &#x200B;](/help/implementation/variables/player-state/closed-captioning.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
-**クローズドキャプション数**&#x200B;指標は、セッション中にビューアがキャプションを有効にした回数を報告します。 各caption-enable state-start イベントは、カウントを増分します。 セッションレベルのブール値ロールアップのクローズドキャプション ](closed-captioning-streams-impacted.md)の影響を受ける[ ストリームと、ステートでの合計時間の[ クローズドキャプション合計時間](closed-captioning-total-duration.md)を組み合わせます。
+**クローズドキャプション数**&#x200B;指標は、セッション中にビューアがキャプションを有効にした回数を報告します。 各caption-enable state-start イベントは、カウントを増分します。 セッションレベルのブール値ロールアップのクローズドキャプション [&#128279;](closed-captioning-streams-impacted.md)の影響を受ける ストリームと、ステートでの合計時間の[&#x200B; クローズドキャプション合計時間](closed-captioning-total-duration.md)を組み合わせます。
 
 ## この指標の計算方法
 

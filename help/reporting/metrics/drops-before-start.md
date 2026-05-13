@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # 開始前にドロップ
 
-**開始前にドロップ**&#x200B;指標は、ビューアがメインコンテンツをレンダリングする前に終了したセッションをカウントします。 この指標は、広告の行動に関係なく、コンテンツが放棄された前にフラグを立てるため、純粋なコンテンツ前の脱落を測定するのに最適な手段です。 [ メディア開始](/help/reporting/metrics/media-starts.md)および[ コンテンツ開始](/help/reporting/metrics/content-starts.md)と組み合わせて、コンテンツフレームを生成しなかったセッションのシェアを計算します。
+**開始前にドロップ**&#x200B;指標は、ビューアがメインコンテンツをレンダリングする前に終了したセッションをカウントします。 この指標は、広告の行動に関係なく、コンテンツが放棄された前にフラグを立てるため、純粋なコンテンツ前の脱落を測定するのに最適な手段です。 [&#x200B; メディア開始](/help/reporting/metrics/media-starts.md)および[&#x200B; コンテンツ開始](/help/reporting/metrics/content-starts.md)と組み合わせて、コンテンツフレームを生成しなかったセッションのシェアを計算します。
 
 ## この指標の計算方法
 
@@ -21,6 +21,6 @@ ht-degree: 8%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.dropBeforeStart`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.dropBeforeStart`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.isDroppedBeforeStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |

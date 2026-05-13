@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**開始時間**指標について説明します。 Adobe Analyticsは、同じ`a.media.qoe.timeToStart`個のコンテキストデータ変数から、ペアの[開始時間（ディメンション） ](/help/reporting/dimensions/time-to-start.md)を自動入力します。 Customer Journey Analyticsは、ディメンションまたは指標として使用できる1つの`mediaReporting.qoeDataDetails.timeToStart` フィールドを公開します。 この変数の収集方法については、[開始時間](/help/implementation/variables/quality/time-to-start.md)を参照してください。*
+*このページでは、**開始時間**&#x200B;指標について説明します。 Adobe Analyticsは、同じ`a.media.qoe.timeToStart`個のコンテキストデータ変数から、ペアの[開始時間（ディメンション） &#x200B;](/help/reporting/dimensions/time-to-start.md)を自動入力します。 Customer Journey Analyticsは、ディメンションまたは指標として使用できる1つの`mediaReporting.qoeDataDetails.timeToStart` フィールドを公開します。 この変数の収集方法については、[開始時間](/help/implementation/variables/quality/time-to-start.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,6 +27,6 @@ ht-degree: 6%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.timeToStart`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.timeToStart`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |

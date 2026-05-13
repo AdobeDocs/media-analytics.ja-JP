@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**バッファーイベント**指標について説明します。 Adobe Analyticsは、同じ`a.media.qoe.bufferCount`個のコンテキストデータ変数から、ペアの[ バッファーイベント（ディメンション） ](/help/reporting/dimensions/buffer-events.md)を自動入力します。 Customer Journey Analyticsは、ディメンションまたは指標として使用できる1つの`mediaReporting.qoeDataDetails.bufferCount` フィールドを公開します。*
+*このページでは、**バッファーイベント**&#x200B;指標について説明します。 Adobe Analyticsは、同じ`a.media.qoe.bufferCount`個のコンテキストデータ変数から、ペアの[&#x200B; バッファーイベント（ディメンション） &#x200B;](/help/reporting/dimensions/buffer-events.md)を自動入力します。 Customer Journey Analyticsは、ディメンションまたは指標として使用できる1つの`mediaReporting.qoeDataDetails.bufferCount` フィールドを公開します。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ ht-degree: 6%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.bufferCount`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.bufferCount`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
 
-セッションレベルのブール値レポートの場合（セッションでバッファリングが発生したかどうかに関係なく）、[影響を受けるストリームのバッファリング ](buffer-impacted-streams.md)を使用します。
+セッションレベルのブール値レポートの場合（セッションでバッファリングが発生したかどうかに関係なく）、[影響を受けるストリームのバッファリング &#x200B;](buffer-impacted-streams.md)を使用します。

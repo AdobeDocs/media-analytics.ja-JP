@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、フルスクリーンの影響を受ける&#x200B;**ストリーム**のレポート指標について説明します。 この変数の収集方法については、[全画面](/help/implementation/variables/player-state/full-screen.md)を参照してください。*
+*このページでは、フルスクリーンの影響を受ける&#x200B;**ストリーム**&#x200B;のレポート指標について説明します。 この変数の収集方法については、[全画面](/help/implementation/variables/player-state/full-screen.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 

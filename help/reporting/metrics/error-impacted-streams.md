@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # エラーの影響を受けるストリーム
 
-**エラーが影響を受けたストリーム**&#x200B;指標では、少なくとも1つのエラーが発生したセッションをカウントします（`trackError`が呼び出されたか、`media.error` イベントが発生しました）。 この指標はセッションレベルのブール値で、同じセッション内の複数のエラーが、影響を受ける1つのストリームとしてカウントされます。 合計エラーボリュームには、[ エラー](/help/reporting/dimensions/errors.md)を使用します。
+**エラーが影響を受けたストリーム**&#x200B;指標では、少なくとも1つのエラーが発生したセッションをカウントします（`trackError`が呼び出されたか、`media.error` イベントが発生しました）。 この指標はセッションレベルのブール値で、同じセッション内の複数のエラーが、影響を受ける1つのストリームとしてカウントされます。 合計エラーボリュームには、[&#x200B; エラー](/help/reporting/dimensions/errors.md)を使用します。
 
 ## この指標の計算方法
 
@@ -21,6 +21,6 @@ ht-degree: 9%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.error`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.error`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasErrorImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |

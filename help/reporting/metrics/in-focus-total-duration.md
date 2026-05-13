@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**フォーカス合計期間**のレポート指標について説明します。 この変数の収集方法については、[ フォーカス中](/help/implementation/variables/player-state/in-focus.md)を参照してください。*
+*このページでは、**フォーカス合計期間**&#x200B;のレポート指標について説明します。 この変数の収集方法については、[&#x200B; フォーカス中](/help/implementation/variables/player-state/in-focus.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
