@@ -18,7 +18,7 @@ ht-degree: 12%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | なし（Adobe Analyticsでは、フレームレート用に予約されたコンテキストデータキーが割り当てられません） |
-| **XDM コレクションフィールド** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | 品質イベント、セッション終了 |
 
