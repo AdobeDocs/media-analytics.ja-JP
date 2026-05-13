@@ -1,13 +1,19 @@
 ---
-title: 'バッファリングがある VOD 再生 '
+title: バッファリングがある VOD 再生
 description: Media SDK を使用して VOD コンテンツをトラッキングする方法の例を示します。
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/jud37ZkadqiCb4F35qddJjglbaUW942hd0KmjAWrAdw
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: 231
 ht-degree: 100%
 
 ---
@@ -23,14 +29,14 @@ ht-degree: 100%
 | トリガー   | ハートビートメソッド   | ネットワーク呼び出し   | メモ   |
 |---|---|---|---|
 | ユーザーが&#x200B;**[!UICONTROL 再生]**&#x200B;をクリックする | `trackSessionStart` | Analytics Content Start、Heartbeat Content Start | これは、**[!UICONTROL 再生]**&#x200B;をクリックするユーザーか、自動再生イベントである可能性があります。 |
-| ビデオ再生の最初のフレーム。 | `trackPlay` | Heartbeat Content Play | このメソッドは、タイマーをトリガーします。ハートビートは、再生が続く限り、10 秒ごとに送信されます。 |
+| ビデオ再生の最初のフレーム。 | `trackPlay` | Heartbeat Content Play | このメソッドは、タイマーをトリガーします。 ハートビートは、再生が続く限り、10 秒ごとに送信されます。 |
 | コンテンツが再生されます。 |  | Content Heartbeats |  |
 | バッファリングが開始されます。 | `trackEvent:BufferStart` | Heartbeat Buffer |  |
 | コンテンツがバッファーされます。 |  | Content Heartbeats |  |
 | バッファリングが完了します。 | `trackEvent:BufferComplete` | Heartbeat Buffer、Heartbeat Play |  |
 | コンテンツが再生されます。 |  | Content Heartbeats |  |
 | コンテンツの再生が完了します。 | `trackComplete` | Heartbeat Content Complete | 再生ヘッドの終わりに達しました。 |
-| セッションが終了します。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。この API は、ユーザーが最後までビデオを視聴していなくても、呼び出される必要があります。 |
+| セッションが終了します。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端を意味します。 この API は、ユーザーが最後までビデオを視聴していなくても、呼び出される必要があります。 |
 
 ## パラメーター {#parameters}
 

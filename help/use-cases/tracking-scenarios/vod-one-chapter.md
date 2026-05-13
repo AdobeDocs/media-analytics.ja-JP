@@ -1,13 +1,19 @@
 ---
-title: 'チャプターが 1 つある VOD 再生 '
+title: チャプターが 1 つある VOD 再生
 description: チャプターを 1 つ含んだ VOD 再生のトラッキングの例を示します。
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/VV3HRRhTaxd-CC-uAyfYWks9q5A2zdCN-yn5td2Ajb8
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: 434
 ht-degree: 100%
 
 ---
@@ -18,7 +24,7 @@ ht-degree: 100%
 
 このシナリオでは、VOD コンテンツの一部がチャプターとしてマークされています。
 
-特に指定のない限り、このシナリオのネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオの呼び出しと同じです。ネットワーク呼び出しは同時に発生しますが、ペイロードは異なります。
+特に指定のない限り、このシナリオのネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオの呼び出しと同じです。 ネットワーク呼び出しは同時に発生しますが、ペイロードは異なります。
 
 | トリガー   | ハートビートメソッド   | ネットワーク呼び出し   | メモ   |
 |---|---|---|---|
@@ -29,13 +35,13 @@ ht-degree: 100%
 | チャプターが完了します。 | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | チャプターの終わりに達したとき。 |
 | コンテンツが再生されます。 |  | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | コンテンツが完了する | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| セッションが終了します。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端に到達したことを意味します。この API は、ユーザーが最後までメディアを視聴していなくても、呼び出される必要があります。 |
+| セッションが終了します。 | `trackSessionEnd` |  | `SessionEnd` は、表示セッションの終端に到達したことを意味します。 この API は、ユーザーが最後までメディアを視聴していなくても、呼び出される必要があります。 |
 
 ## パラメーター {#parameters}
 
-チャプターの再生が開始されると、`Heartbeat Chapter Start` 呼び出しが送信されます。チャプターの開始が 10 秒のタイマーと同時に起こらない場合、`Heartbeat Chapter Start` 呼び出しは、数秒間遅延され、呼び出しは次の 10 秒のインターバルに進みます。
+チャプターの再生が開始されると、`Heartbeat Chapter Start` 呼び出しが送信されます。 チャプターの開始が 10 秒のタイマーと同時に起こらない場合、`Heartbeat Chapter Start` 呼び出しは、数秒間遅延され、呼び出しは次の 10 秒のインターバルに進みます。
 
-これが発生すると、`Content Heartbeat` 呼び出しは同じインターバルから出ます。イベントタイプとアセットタイプを調査することで、この 2 つの違いを区別できます。
+これが発生すると、`Content Heartbeat` 呼び出しは同じインターバルから出ます。 イベントタイプとアセットタイプを調査することで、この 2 つの違いを区別できます。
 
 ### Heartbeat Chapter Start
 

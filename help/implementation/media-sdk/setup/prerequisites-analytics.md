@@ -1,28 +1,37 @@
 ---
 title: Adobe Analytics のみの実装の前提条件
-description: Adobe Analyticsのみの実装に Adobe Analytics for Streaming Media アドオンを使用するための前提条件について説明します
+description: Adobe Analyticsのみの実装でAdobe Analytics for Streaming Media アドオンを使用するための前提条件について説明します
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
 exl-id: f94a5339-f777-44ec-ba79-0a1986c52225
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/falbDtUtqAMtmtQs2jLpEvUKmwvATotVu8njuTNZ09k
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: c77ba355-6681-41fe-b719-563d3f507fdb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 43%
+source-wordcount: 243
+ht-degree: 14%
 
 ---
 
 # Adobe Analytics のみの実装の前提条件
 
-この節で説明する前提条件は、（Edgeを使用していない場合に）Adobe分析専用の実装用の Adobe Analytics for Streaming Media アドオンを実装する場合に固有です。
+この節で説明する前提条件は、（Edgeを使用しない場合に）Adobe-Analyticsのみの実装用のAdobe Analytics for Streaming Media アドオンの実装に固有のものです。
 
-1. **一般的な前提条件を満たす**<br>
-ストリーミングメディアサービスをAdobe Analyticsのみの実装用に実装する場合でも、Edgeの実装用に実装する場合でも、[&#x200B; 一般的な前提条件 &#x200B;](/help/getting-started/prereqs.md) を満たしていることを確認してください。
+1. **一般的な前提条件を完了する**<br>
+Adobe Analyticsのみの実装にストリーミングメディアサービスを実装する場合でも、Edgeの実装に対してストリーミングメディアサービスを実装する場合でも、[一般的な前提条件](/help/getting-started/prereqs.md)を満たしていることを確認してください。
 
-1. **Adobe Analyticsが実装されていることを確認する**<br>
-Analytics のみの実装に Adobe Analytics for Streaming Media アドオンを実装する場合は、Adobe Analyticsの基本的な実装も必要です。 詳しくは、[Adobe Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ja)を参照してください。
+1. **Adobe Analyticsを実装していることを確認してください**<br>
+Analyticsのみの実装用にAdobe Analytics for Streaming Media アドオンを実装する場合は、Adobe Analyticsの基本実装も必要です。 詳しくは、[Adobe Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=ja)を参照してください。
 
-1. **メディアトラッキングサーバーの URL を取得する**<br> メディアトラッキングサーバーの URL については、Adobe Analytics の営業担当または販売店にお問い合わせください。 これは、Mobile SDK、JavaScript SDKおよび Roku の非収集 API トラッキングサーバーの `collection-api-server` URL です。 API 実装のドメイン名は、`[your_namespace].hb-api.omtrdc.net` です。
+1. **メディアトラッキングサーバーのURLを取得**<br>
+メディアトラッキングサーバーのURLについては、Adobe Analytics担当者にお問い合わせください。 これは、モバイル SDK、JavaScript SDK、Roku用の非collection-api トラッキングサーバーの`collection-api-server` URLです。 API 実装のドメイン名は、`[your_namespace].hb-api.omtrdc.net` です。
 
-1. **現在の Media SDK をダウンロードするか、必要な拡張機能を実装する**<br> 実装パスに応じて、web、モバイルまたは OTT（オーバーザトップ）プラットフォーム用の[最新の SDK をダウンロード](/help/getting-started/download-sdks.md)します。Adobe Analytics for Streaming Media アドオンを有効にするには、必要な拡張機能を実装する必要があります。
+1. **現在のMedia SDKをダウンロードするか、必要な拡張機能を実装します**<br>
+実装パスに応じて、[現在のSDK](/help/getting-started/download-sdks.md)をweb、モバイル、またはオーバーザトップのプラットフォーム用にダウンロードします。 Adobe Analytics for Streaming Media アドオンを有効にするには、必要な拡張機能を実装する必要があります。
 
-1. **Adobe Analytics レポートを有効にする**<br> Analytics でレポートを有効にし、収集しているコンテンツや広告データを表示するには、Analytics でレポートを有効にする必要があります。 [メディアレポートの有効化](/help/reporting/media-reports-enable.md)を参照してください。
+1. **Adobe Analytics レポートの有効化**<br>
+Analyticsでレポートを有効にし、収集するコンテンツと広告データを表示するには、Analyticsでレポートを有効にする必要があります。 [メディアレポートの有効化](/help/reporting/media-reports-enable.md)を参照してください。

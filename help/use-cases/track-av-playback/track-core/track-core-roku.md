@@ -1,18 +1,24 @@
 ---
-title: 'Roku でコア再生をトラッキングする方法 '
+title: Roku でコア再生をトラッキングする方法
 description: Roku で Media SDK を使用してコアトラッキングを実装する方法を説明します。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/n-ox7dhsEPOQCJqHFm8ZLG-7puJ7kfn1ZE7GEg-KFas
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 81%
+source-wordcount: 802
+ht-degree: 79%
 
 ---
 
-# Roku でのコア再生の追跡 {#track-core-playback-on-roku}
+# Roku でのコア再生の追跡{#track-core-playback-on-roku}
 
 このドキュメントでは、バージョン 2.x の SDK でのトラッキングについて説明しています。
 
@@ -29,7 +35,7 @@ ht-degree: 81%
    | 変数名 | 説明 | 必須 |
    | --- | --- | :---: |
    | `name` | ビデオ名 | ○ |
-   | `mediaid` | ビデオの一意の識別子 | ○ |
+   | `mediaid` | ビデオの一意のID | ○ |
    | `length` | ビデオの長さ | ○ |
    | `streamType` | ストリームタイプ（後述の _StreamType 定数_ を参照） | ○ |
    | `mediaType` | メディアタイプ（後述の&#x200B;_MediaType 定数_ を参照） | ○ |
@@ -64,7 +70,7 @@ ht-degree: 81%
    )
    ```
 
-    または
+   または
 
    ```
    mediaInfo = adb_media_init_mediainfo()
@@ -87,7 +93,7 @@ ht-degree: 81%
    )
    ```
 
-    または
+   または
 
    ```
    mediaInfo = adb_media_init_mediainfo()
@@ -104,7 +110,7 @@ ht-degree: 81%
 
    * **標準メタデータ**
 
-[Roku での標準メタデータの実装 &#x200B;](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+     [Roku での標準メタデータの実装](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
      >[!NOTE]
      >
@@ -112,7 +118,7 @@ ht-degree: 81%
 
    * **カスタムメタデータ**
 
-     カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。次に例を示します。
+     カスタム変数の変数オブジェクトを作成し、このビデオのデータを設定します。 次に例を示します。
 
      ```
      mediaContextData = {}
@@ -134,7 +140,7 @@ ht-degree: 81%
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` では、再生の開始ではなく、ユーザーの再生の意図を追跡します。この API は、ビデオのデータ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
+   >`trackSessionStart` では、再生の開始ではなく、ユーザーの再生の意図を追跡します。 この API は、ビデオのデータ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` と `trackPlay` の間の時間）を見積もるために使用します。
 
    >[!NOTE]
    >
@@ -150,7 +156,7 @@ ht-degree: 81%
 
 1. **再生ヘッド値の更新**
 
-   メディアの再生ヘッドが変更された場合は、`mediaUpdatePlayhead` API を呼び出してSDKに通知します。 <br /> ビデオオンデマンド（VOD）の場合、値はメディア項目の開始時からの秒数で指定されます。<br /> ライブストリーミングでは、プレーヤーがコンテンツのデュレーションに関する情報を提供しない場合、その日の午前 0 時（UTC）からの秒数を指定できます。
+   メディア再生ヘッドが変更された場合は、`mediaUpdatePlayhead` APIを呼び出してSDKに通知します。<br /> ビデオオンデマンド（VOD）の場合、値はメディア項目の先頭から秒単位で指定されます。<br /> ライブストリーミングの場合、プレーヤーがコンテンツ時間に関する情報を提供しない場合、その日の午前0時UTCからの秒数として値を指定できます。
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
@@ -158,9 +164,9 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >`mediaUpdatePlayhead` API を呼び出す際は、次の点を考慮してください。
-   >* プログレスマーカーを使用する場合、コンテンツのデュレーションが必要です。また、再生ヘッドはメディアアイテムの開始時からの（0 から始まる）秒数で更新する必要があります。
-   >* Media SDK を使用する場合は、`mediaUpdatePlayhead` API を 1 秒に 1 回以上呼び出す必要があります。
+   >`mediaUpdatePlayhead` APIを呼び出す際には、次の点を考慮してください。
+   >* 進捗マーカーを使用する場合、コンテンツの継続時間が必要です。再生ヘッドは、メディア項目の先頭から0から始まる秒数で更新する必要があります。
+   >* Media SDKを使用する場合は、少なくとも1秒に1回は`mediaUpdatePlayhead` APIを呼び出す必要があります。
 
 
 1. **再生の完了を追跡**
@@ -180,7 +186,7 @@ ht-degree: 81%
    ```
 
    >[!IMPORTANT]
-   >`trackSessionEnd` は、ビデオトラッキングセッションの終わりをマークします。セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。`trackSessionEnd` の後は、他のすべての `track*` API 呼び出しは無視されます（新しいビデオトラッキングセッション用の `trackSessionStart` を除く）。
+   >`trackSessionEnd` は、ビデオトラッキングセッションの終わりをマークします。 セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。 `trackSessionEnd` の後は、他のすべての `track*` API 呼び出しは無視されます（新しいビデオトラッキングセッション用の `trackSessionStart` を除く）。
 
 1. **考えられるすべての一時停止シナリオを追跡**
 
@@ -192,12 +198,12 @@ ht-degree: 81%
 
    **一時停止のシナリオ**
 
-   ビデオプレーヤーが一時停止するあらゆるシナリオを識別して、`trackPause` が適切に呼び出されるようにします。以下のシナリオでは、アプリで `trackPause()` () を呼び出す必要があります。
+   ビデオプレーヤーが一時停止するあらゆるシナリオを識別して、`trackPause` が適切に呼び出されるようにします。 以下のシナリオでは、アプリで `trackPause()` () を呼び出す必要があります。
 
    * アプリ内でユーザーが明示的に一時停止をクリックする。
    * プレーヤー自体が一時停止状態になる。
    * （*モバイルアプリケーション*）- ユーザーがアプリケーションをバックグラウンドに移行した場合でも、アプリケーションのセッションを開いたままにしておきたい。
-   * （*モバイルアプリケーション*）- 何らかのシステムの割り込みが生じ、アプリケーションがバックグラウンドに移行する。例えば、ユーザーが呼び出しを受け取った場合や、別のアプリケーションからポップアップが発生した場合に、中断した時点からビデオを再開する機会をユーザーに与えるために、アプリケーションでセッションを維持する必要があります。
+   * （*モバイルアプリケーション*）- 何らかのシステムの割り込みが生じ、アプリケーションがバックグラウンドに移行する。 例えば、ユーザーが電話を受け取ったり、別のアプリケーションからポップアップが発生したりしますが、セッションを維持して、中断した時点からビデオを再開する機会をユーザーに提供するアプリケーションが必要です。
 
 1. 一時停止からのビデオ再生およびビデオ再開に関するイベントをプレーヤーから識別し、`trackPlay` を呼び出します。
 
@@ -206,7 +212,7 @@ ht-degree: 81%
    ```
 
    >[!TIP]
-   >これは、手順 4 で使用したのと同じイベントソースである可能性があります。ビデオ再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
+   >これは、手順 4 で使用したのと同じイベントソースである可能性があります。 ビデオ再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
 
 * トラッキングのシナリオ：[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Roku SDKに付属しているサンプルプレーヤーで、トラッキングの完全な例を確認できます。
+* Roku SDKに含まれているサンプルプレイヤーで、トラッキングの例を紹介します。

@@ -1,14 +1,19 @@
 ---
-title: ストリーミングメディアコレクション API - クイックスタート
+title: Streaming Media Collection API - クイックスタート
 description: ストリーミングメディア API の基本を学ぶ。 リクエストデータをすばやく確認する方法を説明します。
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/F7NHDQkJVwVc-Th-blxBP8gifT7V55xLqlI1YT-pswc
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 97%
+source-wordcount: 294
+ht-degree: 90%
 
 ---
 
@@ -16,7 +21,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->Media Analytics（MA）コレクション API バックエンドサーバーへの [Session リクエスト](../mc-api-ref/mc-api-sessions-req.md)を正常に完了するために必要なリクエストデータを収集します。（`curl`、Postman などを使用して）リクエストを手動で送信することで、リクエストデータを迅速に確認できます。これにより、リクエスト内の無効なデータタイプまたは無効な情報に起因する問題があるかどうかに関するフィードバックがすぐに得られます。[JSON 検証スキーマ](../mc-api-ref/mc-api-json-validation.md)を使用して、適切なリクエストデータを提供していることを確認します。
+>Media Analytics（MA）コレクション API バックエンドサーバーへの [Session リクエスト](../mc-api-ref/mc-api-sessions-req.md)を正常に完了するために必要なリクエストデータを収集します。 （`curl`、Postman などを使用して）リクエストを手動で送信することで、リクエストデータを迅速に確認できます。 これにより、リクエスト内の無効なデータタイプまたは無効な情報に起因する問題があるかどうかに関するフィードバックがすぐに得られます。 [JSON 検証スキーマ](../mc-api-ref/mc-api-json-validation.md)を使用して、適切なリクエストデータを提供していることを確認します。
 
 1. 標準の必須 Adobe Analytics および訪問者データを収集します。これらは、すべての Experience Cloud アプリケーションを実行するために提供する必要があります。
 
@@ -25,7 +30,7 @@ ht-degree: 97%
    * Analytics レポートスイート ID
    * Analytics トラッキングサーバー URL
 
-1. 呼び出しを成功させるために必要な最小限のデータを含む、`sessions` リクエスト本文の JSON オブジェクトを作成します。次に例を示します。
+1. 呼び出しを成功させるために必要な最小限のデータを含む、`sessions` リクエスト本文の JSON オブジェクトを作成します。 次に例を示します。
 
    ```json
    {
@@ -53,9 +58,9 @@ ht-degree: 97%
 
    >[!NOTE]
    >
-   >JSON リクエスト本文内では正しいデータタイプを使用する必要があります。例えば、`analytics.enableSSL` はブール型、`media.length` は数値型です。[JSON 検証スキーマ](mc-api-validate-reqs.md)を調べて、パラメーターのタイプと、それが必須の要件かオプションの要件かを確認できます。
+   >JSON リクエスト本文内では正しいデータタイプを使用する必要があります。 例：`analytics.enableSSL`にはブール値が必要で、`media.length`には数値などが必要です。[JSON検証スキーマを確認することで、パラメーターの種類と必須と任意の要件を確認できます。](mc-api-validate-reqs.md)
 
-1. Sessions リクエストを MA コレクション API エンドポイントに送信します。リクエストのペイロードが無効な場合は、問題を特定し、`201 Created` 応答を受け取るまで再試行します。この `curl` の例では、JSON リクエスト本文は、`sample_data_session` という名前のファイルに格納されています。
+1. Sessions リクエストを MA コレクション API エンドポイントに送信します。 リクエストのペイロードが無効な場合は、問題を特定し、`201 Created` 応答を受け取るまで再試行します。 この `curl` の例では、JSON リクエスト本文は、`sample_data_session` という名前のファイルに格納されています。
 
    ```sh
    $ curl -i -d \
@@ -76,4 +81,4 @@ ht-degree: 97%
    Access-Control-Expose-Headers: Location
    ```
 
-[Sessions リクエスト](../mc-api-ref/mc-api-sessions-req.md)が成功すると、上記のような `201 Created` 応答を受け取ります。応答の Location ヘッダーにはセッション ID が含まれています。セッション ID は、後続のすべてのトラッキングコールに必要なので、応答における重要な情報です。[Sessions リクエスト](../mc-api-ref/mc-api-sessions-req.md)が正常に返されたら、ビデオプレーヤーで MA API を使用してビデオトラッキングの実装を続行できます。
+[Sessions リクエスト](../mc-api-ref/mc-api-sessions-req.md)が成功すると、上記のような `201 Created` 応答を受け取ります。 応答の Location ヘッダーにはセッション ID が含まれています。 セッション ID は、後続のすべてのトラッキングコールに必要なので、応答における重要な情報です。 [Sessions リクエスト](../mc-api-ref/mc-api-sessions-req.md)が正常に返されたら、ビデオプレーヤーで MA API を使用してビデオトラッキングの実装を続行できます。

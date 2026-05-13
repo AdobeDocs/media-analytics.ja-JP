@@ -1,13 +1,19 @@
 ---
-title: '順次トラッキングを含むライブメインコンテンツ '
+title: 順次トラッキングを含むライブメインコンテンツ
 description: メディア SDK を使用して、順次トラッキングを含むライブコンテンツをトラッキングする方法の例を示します。
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/oCoZuJHBMNOe3I6ITBqIQO6BSTNSWpbsjzXGuzd9KyU
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: 526
 ht-degree: 100%
 
 ---
@@ -20,16 +26,16 @@ ht-degree: 100%
 
 これは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオと同じシナリオですが、コンテンツの一部はスクラブされ、メインコンテンツのあるポイントから別のポイントまでのシークが完了します。
 
-| トリガー | ハートビートメソッド |  ネットワーク呼び出し |  メモ   |
+| トリガー | ハートビートメソッド |  ネットワーク呼び出し  |  メモ   |
 | --- | --- | --- | --- |
 | ユーザーが[!UICONTROL 再生]をクリックする | trackSessionStart | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づかないので、これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオと同一です。 |
 | コンテンツ再生の最初のフレーム。 | trackPlay | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
 | コンテンツ再生 | | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
-| セッション 1 終了（Episode 1 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | 「Complete」は、最初のエピソードの session1 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
+| セッション 1 終了（Episode 1 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | 「Complete」は、最初のエピソードの session1 に到達し、視聴が完了したことを意味します。 次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
 | Episode 2 開始（Session 2 開始） | trackSessionStart | Analytics Content Start、Heartbeat Content Start | これは、ユーザーが最初のエピソードを視聴し、別のエピソードまで視聴し続けたためです |
 | メディアの最初のフレーム | trackPlay | Heartbeat Content Play | このメソッドは、タイマーをトリガーし、これ以降、ハートビートは、再生が続く限り、10 秒ごとに送信されます。 |
 | コンテンツ再生 | | Content Heartbeats | |
-| セッション終了（Episode2 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | 「Complete」は、2 番目のエピソードの session2 に到達し、視聴が完了したことを意味します。次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
+| セッション終了（Episode2 終了） | trackComplete / trackSessionEnd | Heartbeat Content Complete | 「Complete」は、2 番目のエピソードの session2 に到達し、視聴が完了したことを意味します。 次のエピソードのセッションを開始する前に、このセッションを終わらせる必要があります。 |
 
 ## パラメーター {#parameters}
 
@@ -48,7 +54,7 @@ ht-degree: 100%
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
-Heartbeat Content Start 呼び出しと同じように見えますが、「s:event:type」パラメーターに重要な違いがあります。すべてのパラメーターは、ここで準備ができている必要があります。
+Heartbeat Content Start 呼び出しと同じように見えますが、「s:event:type」パラメーターに重要な違いがあります。 すべてのパラメーターは、ここで準備ができている必要があります。
 
 | パラメーター | 値 | メモ |
 |---|---|---|
@@ -57,7 +63,7 @@ Heartbeat Content Start 呼び出しと同じように見えますが、「s:eve
 
 ## Content Heartbeats {#content-heartbeats}
 
-メディア再生中に、1 つ以上のハートビートを 10 秒ごと（メインコンテンツ）および 1 秒ごと（広告）に送信するタイマーがあります。それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
+メディア再生中に、1 つ以上のハートビートを 10 秒ごと（メインコンテンツ）および 1 秒ごと（広告）に送信するタイマーがあります。 それらのハートビートには、再生、広告、バッファーおよびその他多くに関する情報が含まれます。 各ハートビートの厳密なコンテンツは、このドキュメントの範囲外であり、検証に重要なことは、ハートビートは、再生が続く間、常にトリガーされるということです。
 
 Content Heartbeats では、いくつかの特定の事柄を探します。
 
@@ -68,7 +74,7 @@ Content Heartbeats では、いくつかの特定の事柄を探します。
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
-任意のエピソードの再生が完了した場合（再生ヘッドがエピソードの境界を越える）、Heartbeat Content Complete 呼び出しが送信されます。これは、他のハートビート呼び出しに似ていますが、いくつか特有のものが含まれます。
+任意のエピソードの再生が完了した場合（再生ヘッドがエピソードの境界を越える）、Heartbeat Content Complete 呼び出しが送信されます。 これは、他のハートビート呼び出しに似ていますが、いくつか特有のものが含まれます。
 
 | パラメーター | 値 | メモ |
 |---|---|---|

@@ -1,33 +1,39 @@
 ---
-title: ストリーミングメディアサービスの実装ドキュメント
-description: ストリーミングメディアサービスの実装に関する情報の参照先について説明します。
+title: Streaming Media Servicesの実装ドキュメント
+description: ストリーミングメディアサービスの実装に関する情報を確認する方法を説明します。
 uuid: null
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/XqlNBPWJBTXi3Nqukt4HhAOU03wVI4Y3aeazc-w-sjw
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 38%
+source-wordcount: 362
+ht-degree: 52%
 
 ---
 
-# ストリーミングメディアサービスの実装ドキュメント {#streaming-media-documentation}
+# Streaming Media Servicesの実装ドキュメント {#streaming-media-documentation}
 
-Customer Journey Analytics Streaming Media Collection アドオンまたはAdobe Analytics for Streaming Media アドオンの実装に関するドキュメントは、複数の製品 web サイトにあります。 ストリーミングメディアサービスの実装方法に応じて、1 つ以上のドキュメントセットを参照する必要が生じる場合があります。
+Customer Journey Analytics Streaming Media Collection アドオンまたはAdobe Analytics for Streaming Media アドオンの実装に関するドキュメントは、複数の製品Web サイトにあります。 ストリーミングメディアサービスの実装方法によっては、1つ以上のドキュメントセットを参照する必要がある場合があります。
 
 次の表の情報を使用して、選択した実装方法のドキュメントを検索します。
 
-## 実装ドキュメント {#media-documentation}
+## 導入ドキュメント {#media-documentation}
 
 | 実装 | ドキュメント |
 |:-----------------------:|----------------|
-| **Web** | * [Adobe Experience Platform Web SDKを使用したEdgeへの Web データの送信 &#x200B;](/help/implementation/edge/edge-web-sdk.md) <br> * [&#x200B; ストリーミングメディアサービスの Web 実装 &#x200B;](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Adobe Media Analytics for Audio and Video 拡張機能を使用した Web 実装 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja) |
-| **モバイル** | * [Adobe Experience Platform Mobile SDKを使用したEdgeへのモバイルデータの送信 &#x200B;](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform Mobile SDK ガイド &#x200B;](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics for Audio and Video 拡張機能 &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[&#x200B; 現在の Mobile SDKのバージョン &#x200B;](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[&#x200B; ストリーミングメディアサービスのモバイル実装 &#x200B;](/help/implementation/media-sdk/setup/mobile-implementation.md) |
-| **OTT** | *[Chromecast 3.0 SDK for Adobe Marketing Cloud ソリューション &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Chromecast のセットアップ &#x200B;](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Roku のセットアップ &#x200B;](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| **Web** | * [ ストリーミングメディアサービス用のWeb実装](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Web実装を使用して、Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md) <br>でEdgeにWeb データを送信する[Adobe Media Analytics for Audio and Video拡張機能を使用したWeb実装](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja) |
+| **モバイル** | *[Adobe Experience Platform モバイル SDKを使用してEdgeにモバイルデータを送信する](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform モバイル SDK ガイド ](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics for Audio and Video拡張機能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[現在のモバイル SDK バージョン ](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[ ストリーミングメディアサービスのモバイル実装](/help/implementation/media-sdk/setup/mobile-implementation.md) |
+| **OTT** | *[Chromecast 3.0 SDK for Adobe Marketing Cloud Solutions](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Chromecastの設定](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Roku](/help/implementation/media-sdk/setup/set-up-roku.md)の設定 |
 | **Adobe Experience Platform API** | *[Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md) |
 
-## 追加ドキュメント {#additional-documentation}
+## その他のドキュメント {#additional-documentation}
 
 次の表に、ストリーミングメディアサービスで使用されるAdobe製品に関するドキュメントを示します。
 
@@ -38,4 +44,4 @@ Customer Journey Analytics Streaming Media Collection アドオンまたはAdobe
 
 ## アドビのエンタープライズ版チュートリアル {#adobe-tutorials}
 
-[アドビのエンタープライズ版チュートリアル](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=ja)を使用し、アドビのエンタープライズアプリケーションをビジネスニーズに活用できます。Adobe Experience Cloud、Adobe Experience Platform、Adobe Analytics に関する便利なチュートリアルやトレーニングをご覧いただけます。
+[アドビのエンタープライズ版チュートリアル](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=ja)を使用し、アドビのエンタープライズアプリケーションをビジネスニーズに活用できます。 Adobe Experience Cloud、Adobe Experience Platform、Adobe Analytics に関する便利なチュートリアルやトレーニングをご覧いただけます。
