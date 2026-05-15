@@ -3,10 +3,10 @@ title: 発行者
 description: 音声コンテンツパブリッシャーを報告します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 10%
+source-wordcount: '114'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**発行者**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[Publisher](/help/implementation/variables/standard-metadata/publisher.md)を参照してください。*
+*このページでは、**発行者**のレポートディメンションについて説明します。 この変数の収集方法については、[Publisher](/help/implementation/variables/standard-metadata/publisher.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +27,10 @@ ht-degree: 10%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; オーディオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.publisher`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.publisher`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | [[!UICONTROL  オーディオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.publisher`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.publisher`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videoaudiopublisher` |
+| Audience Manager | `c_contextdata.a.media.publisher` |
 
 ## ディメンション項目
 

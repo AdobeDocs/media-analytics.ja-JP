@@ -3,10 +3,10 @@ title: メディアのダウンロード
 description: ダウンロードされたオフラインコンテンツを再生したセッションをフラグします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 6%
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**メディアのダウンロード**&#x200B;レポート ディメンションについて説明します。 この変数の収集方法については、[&#x200B; メディアがダウンロードしたフラグ &#x200B;](/help/implementation/variables/core/media-downloaded-flag.md)を参照してください。*
+*このページでは、**メディアのダウンロード**レポート ディメンションについて説明します。 この変数の収集方法については、[ メディアがダウンロードしたフラグ ](/help/implementation/variables/core/media-downloaded-flag.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +27,10 @@ ht-degree: 6%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | `a.media.downloaded`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | `a.media.downloaded`をeVarにマッピングする[処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `evar1`-`evar250`、`post_evar1`-`post_evar250` （処理ルール `a.media.downloaded`がマッピングされるeVar） |
+| Audience Manager | `c_contextdata.a.media.downloaded` |
 
 ## ディメンション項目
 

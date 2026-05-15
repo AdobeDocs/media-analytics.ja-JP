@@ -7,23 +7,14 @@ exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/79XLYzuvi3neUuCrt3LcGEwnnaR038-mWHMuSrY797M
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: 331
-ht-degree: 96%
+source-wordcount: 347
+ht-degree: 91%
 
 ---
 
@@ -31,7 +22,7 @@ ht-degree: 96%
 
 メディアコレクション API は、クライアント側のメディア SDK の代替として使用できるアドビの RESTful API です。 メディアコレクション API を使用すると、プレーヤーで RESTful HTTP 呼び出しを使用してオーディオおよびビデオイベントを追跡できます。
 
-メディアコレクション API は、基本的に、メディア SDK のサーバーサイドバージョンとして動作するアダプターです。 ストリーミングメディア追跡データを収集すると、同じ[&#x200B; レポートと分析](/help/reporting/media-reports-enable.md)につながります。
+メディアコレクション API は、基本的に、メディア SDK のサーバーサイドバージョンとして動作するアダプターです。 ストリーミングメディア追跡データを収集すると、同じ[ レポートと分析](/help/reporting/media-reports-enable.md)につながります。
 
 ## メディアトラッキングデータのフロー {#media-tracking-data-flows}
 
@@ -92,20 +83,4 @@ ht-degree: 96%
 
 ### イベントタイプ {#mc-api-event-types}
 
-* `sessionStart`
-* `play`
-* `ping`
-* `pauseStart`
-* `bufferStart`
-* `adStart`
-* `adComplete`
-* `adSkip`
-* `adBreakStart`
-* `adBreakComplete`
-* `chapterStart`
-* `chapterSkip`
-* `chapterComplete`
-* `sessionEnd`
-* `sessionComplete`
-* `stateStart`
-* `stateEnd`
+SDKごとの実装例を含むイベントタイプの完全な一覧については、[ イベントの概要](/help/implementation/events/overview.md)を参照してください。

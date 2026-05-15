@@ -3,9 +3,9 @@ title: メディアのダウンロード済みフラグ
 description: ダウンロードされたオフライン再生としてセッションにマークを付けると、ストリーミングセッションとは別にレポートされます。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**メディア ダウンロード フラグ**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ダウンロードされたメディア &#x200B;](/help/reporting/dimensions/media-downloaded-flag.md)を参照してください。*
+*このページでは、**メディア ダウンロード フラグ**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ダウンロードされたメディア ](/help/reporting/dimensions/media-downloaded-flag.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 10%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.downloaded` |
-| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特性** | `c_contextdata.a.media.downloaded` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | セッション開始、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## Web SDK
 
@@ -106,7 +107,7 @@ m.aepSdk.createMediaSession({
 
 ## Media Edge API
 
-デバイスがオンラインに戻った後、[&#x200B; ダウンロード済み](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/#downloaded) エンドポイントを呼び出し、`mediaDownloadedEvents`内で完全なオフラインセッションをバッチ処理します。 Adobeは自動的に`isDownloaded`を`true`に設定し、セッション IDを割り当てます。ペイロードに含めないでください。
+デバイスがオンラインに戻った後、[ ダウンロード済み](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/#downloaded) エンドポイントを呼び出し、`mediaDownloadedEvents`内で完全なオフラインセッションをバッチ処理します。 Adobeは自動的に`isDownloaded`を`true`に設定し、セッション IDを割り当てます。ペイロードに含めないでください。
 
 ```json
 {
@@ -169,4 +170,4 @@ var tracker = ADB.Media.getInstance(mediaConfig);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

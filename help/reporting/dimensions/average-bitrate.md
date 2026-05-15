@@ -3,10 +3,10 @@ title: 平均ビットレート（ディメンション）
 description: 各セッションのバケット化された平均ビットレートを100 kbps間隔でレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 6%
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、各セッションのバケット化されたビットレートを報告する&#x200B;**平均ビットレート**&#x200B;ディメンションについて説明します。 生の加重平均指標については、[平均ビットレート （指標） &#x200B;](/help/reporting/metrics/average-bitrate.md)を参照してください。 この変数の収集方法については、[&#x200B; ビットレート &#x200B;](/help/implementation/variables/quality/bitrate.md)を参照してください。*
+*このページでは、各セッションのバケット化されたビットレートを報告する&#x200B;**平均ビットレート**ディメンションについて説明します。 生の加重平均指標については、[平均ビットレート （指標） ](/help/reporting/metrics/average-bitrate.md)を参照してください。 この変数の収集方法については、[ ビットレート ](/help/implementation/variables/quality/bitrate.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -25,10 +25,11 @@ ht-degree: 6%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.bitrateAverageBucket`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| データフィード | `videoqoebitrateaverageevar, post_videoqoebitrateaverageevar` |
+| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.bitrateAverageBucket`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| データフィード | `videoqoebitrateaverageevar`, `post_videoqoebitrateaverageevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 
 ## ディメンション項目
 
-各項目はビットレートバケットラベルです（例：`800-899`、`3200-3299`）。 バケット化されたディメンションではなく、生の重み付けされた平均値に対して[平均ビットレート（指標） &#x200B;](/help/reporting/metrics/average-bitrate.md)を使用します。
+各項目はビットレートバケットラベルです（例：`800-899`、`3200-3299`）。 バケット化されたディメンションではなく、生の重み付けされた平均値に対して[平均ビットレート（指標） ](/help/reporting/metrics/average-bitrate.md)を使用します。

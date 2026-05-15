@@ -3,10 +3,10 @@ title: コンテンツタイプ
 description: ストリームのフォーマット（VOD、ライブ、リニア、ポッドキャスト、曲など）をレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 8%
+source-wordcount: '199'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツタイプ**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; コンテンツタイプ &#x200B;](/help/implementation/variables/core/content-type.md)を参照してください。*
+*このページでは、**コンテンツタイプ**のレポートディメンションについて説明します。 この変数の収集方法については、[ コンテンツタイプ ](/help/implementation/variables/core/content-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 8%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.contentType`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.contentType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| データフィード | `videocontenttype, post_videocontenttype` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| データフィード | `videocontenttype`, `post_videocontenttype` |
+| Audience Manager | `c_contextdata.a.contentType` |
 
 >[!IMPORTANT]
 >
@@ -48,6 +49,6 @@ Adobeで定義された値は、組み込みのセグメントとレポートに
 
 | セグメント | 規則 |
 | --- | --- |
-| [!UICONTROL VOD コンテンツ &#x200B;] | コンテンツの種類= `vod` |
-| [!UICONTROL &#x200B; ライブコンテンツ &#x200B;] | コンテンツの種類= `live` |
-| [!UICONTROL 線形コンテンツ &#x200B;] | コンテンツの種類= `linear` |
+| [!UICONTROL VOD コンテンツ ] | コンテンツの種類= `vod` |
+| [!UICONTROL  ライブコンテンツ ] | コンテンツの種類= `live` |
+| [!UICONTROL 線形コンテンツ ] | コンテンツの種類= `linear` |

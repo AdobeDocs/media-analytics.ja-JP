@@ -3,9 +3,9 @@ title: ピクチャインピクチャ
 description: ビューアがピクチャインピクチャ再生を開始および終了するタイミングを追跡して、バックエンドがPiP エンゲージメントをレポートできるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '292'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**写真**&#x200B;プレーヤーの状態のデータ収集について説明します。 対応するレポート指標については、[画像の影響を受けるストリーム &#x200B;](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[画像のカウント &#x200B;](/help/reporting/metrics/picture-in-picture-count.md)、および[画像の合計期間](/help/reporting/metrics/picture-in-picture-total-duration.md)を参照してください。*
+*このページでは、**写真**プレーヤーの状態のデータ収集について説明します。 対応するレポート指標については、[画像の影響を受けるストリーム ](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[画像のカウント ](/help/reporting/metrics/picture-in-picture-count.md)、および[画像の合計期間](/help/reporting/metrics/picture-in-picture-total-duration.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 8%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.states.pictureinpicture.set`, `a.media.states.pictureinpicture.count`, `a.media.states.pictureinpicture.time` |
-| **XDM コレクションフィールド** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details)および[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "pictureInPicture"`を含むエントリ） |
+| **XDM コレクションフィールド** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)および[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "pictureInPicture"`を含むエントリ） |
+| **Audience Manager特性** | `c_contextdata.a.media.states.pictureinpicture.set`, `c_contextdata.a.media.states.pictureinpicture.count`, `c_contextdata.a.media.states.pictureinpicture.time` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | 状態開始、状態終了 |
+| **様が**&#x200B;様と共に送信されました | [状態開始](/help/implementation/events/player-state/state-start.md)、[状態終了](/help/implementation/events/player-state/state-end.md) |
 
 ## Web SDK
 
@@ -156,4 +157,4 @@ tracker.trackPlayerStateEnd(stateObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。

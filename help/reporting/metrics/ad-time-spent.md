@@ -3,17 +3,17 @@ title: 広告滞在時間
 description: セッションあたりのアクティブな広告再生の合計秒数を報告します。
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 8%
+source-wordcount: '162'
+ht-degree: 9%
 
 ---
 
 
 # 広告滞在時間
 
-**広告滞在時間**&#x200B;指標は、一時停止、バッファリング、ストールを除いた、セッションごとのアクティブな広告再生の合計秒数を報告します。 [&#x200B; コンテンツに費やした時間](/help/reporting/metrics/content-time-spent.md)と組み合わせて、広告の読み込みをコンテンツエンゲージメントと比較します。
+**広告滞在時間**&#x200B;指標は、一時停止、バッファリング、ストールを除いた、セッションごとのアクティブな広告再生の合計秒数を報告します。 [ コンテンツに費やした時間](/help/reporting/metrics/content-time-spent.md)と組み合わせて、広告の読み込みをコンテンツエンゲージメントと比較します。
 
 ## この指標の計算方法
 
@@ -21,6 +21,7 @@ ht-degree: 8%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; メディア広告]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.ad.timePlayed`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.timePlayed`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
+| Adobe Analytics | [[!UICONTROL  メディア広告]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.ad.timePlayed`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.timePlayed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
+| Audience Manager | `c_contextdata.a.media.ad.timePlayed` |

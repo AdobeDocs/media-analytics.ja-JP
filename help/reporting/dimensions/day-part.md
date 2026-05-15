@@ -3,10 +3,10 @@ title: 日パート
 description: コンテンツがブロードキャストまたは再生された時間帯バケット（午前、午後、時間、深夜）を報告します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 6%
+source-wordcount: '149'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**日パート**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[日パート &#x200B;](/help/implementation/variables/standard-metadata/day-part.md)を参照してください。*
+*このページでは、**日パート**のレポートディメンションについて説明します。 この変数の収集方法については、[日パート ](/help/implementation/variables/standard-metadata/day-part.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +27,10 @@ ht-degree: 6%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.dayPart`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| データフィード | `videodaypart, post_videodaypart` |
+| Adobe Analytics | [[!UICONTROL  ビデオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.dayPart`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| データフィード | `videodaypart`, `post_videodaypart` |
+| Audience Manager | `c_contextdata.a.media.dayPart` |
 
 ## ディメンション項目
 

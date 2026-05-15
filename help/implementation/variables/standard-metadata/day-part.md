@@ -3,9 +3,9 @@ title: 日パート
 description: コンテンツがブロードキャストまたは再生されたときの時間帯バケット（午前、午後、時間、深夜）を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**日パート**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[日パート &#x200B;](/help/reporting/dimensions/day-part.md)を参照してください。*
+*このページでは、**日パート**変数のデータ収集について説明します。 対応するレポートディメンションについては、[日パート ](/help/reporting/dimensions/day-part.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 13%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.dayPart` |
-| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特性** | `c_contextdata.a.media.dayPart` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | セッション開始、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## Web SDK
 
@@ -136,4 +137,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

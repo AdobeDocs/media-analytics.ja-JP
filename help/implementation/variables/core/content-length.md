@@ -3,9 +3,9 @@ title: コンテンツの長さ
 description: セッション開始時にコンテンツの長さを秒単位で設定します。 これにより、進捗状況マーカーと毎分平均オーディエンス数を向上できます。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '237'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツの長さ**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; コンテンツの長さ](/help/reporting/dimensions/content-length.md)を参照してください。*
+*このページでは、**コンテンツの長さ**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ コンテンツの長さ](/help/reporting/dimensions/content-length.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 12%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.length` |
-| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特性** | `c_contextdata.a.media.length` |
 | **必須** | はい |
-| **様が**&#x200B;様と共に送信されました | セッション開始、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## Web SDK
 
@@ -157,4 +158,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

@@ -3,9 +3,9 @@ title: キャンペーン ID
 description: 各広告のキャンペーン IDを設定し、キャンペーンごとにエンゲージメントを集約できるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 15%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Campaign ID**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; キャンペーン ID](/help/reporting/dimensions/campaign-id.md)を参照してください。*
+*このページでは、**Campaign ID**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ キャンペーン ID](/help/reporting/dimensions/campaign-id.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 15%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.campaign` |
-| **XDM コレクションフィールド** | [`mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager特性** | `c_contextdata.a.media.ad.campaign` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | 開始、終了 |
+| **様が**&#x200B;様と共に送信されました | [広告の開始](/help/implementation/events/ads/ad-start.md)、広告の終了 |
 
 ## Web SDK
 
@@ -139,4 +140,4 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。

@@ -3,10 +3,10 @@ title: ストリームタイプ
 description: 各メディアセッションがオーディオまたはビデオコンテンツであるかどうかをキャプチャします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 5%
+source-wordcount: '322'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**ストリームタイプ**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; ストリームタイプ &#x200B;](/help/implementation/variables/core/stream-type.md)を参照してください。*
+*このページでは、**ストリームタイプ**のレポートディメンションについて説明します。 この変数の収集方法については、[ ストリームタイプ ](/help/implementation/variables/core/stream-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 5%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.streamType`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videostreamtype` |
+| Audience Manager | `c_contextdata.a.media.streamType` |
 
 >[!IMPORTANT]
 >
@@ -50,10 +51,10 @@ ht-degree: 5%
 
 | セグメント | 規則 |
 | --- | --- |
-| [!UICONTROL すべてのストリーミングメディア &#x200B;] | コンテンツ （ID）が存在します |
+| [!UICONTROL すべてのストリーミングメディア ] | コンテンツ （ID）が存在します |
 | [!UICONTROL 音声のみ] | コンテンツ （ID）が存在し、ストリームタイプ = `audio` |
-| [!UICONTROL &#x200B; ビデオのみ] | コンテンツ （ID）が存在し、ストリームタイプ != `audio` |
+| [!UICONTROL  ビデオのみ] | コンテンツ （ID）が存在し、ストリームタイプ != `audio` |
 
 >[!TIP]
 >
->[!UICONTROL &#x200B; ビデオのみ] セグメントでは、`= video`ではなく`!=` ルールを使用して、ストリームタイプが`audio`以外のカスタム値に設定されている可能性があるセッションを正しくキャプチャします。
+>[!UICONTROL  ビデオのみ] セグメントでは、`= video`ではなく`!=` ルールを使用して、ストリームタイプが`audio`以外のカスタム値に設定されている可能性があるセッションを正しくキャプチャします。

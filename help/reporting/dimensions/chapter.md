@@ -3,10 +3,10 @@ title: チャプター
 description: 自動生成された章IDでキーを設定して、再生された各一意の章をレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 6%
+source-wordcount: '194'
+ht-degree: 8%
 
 ---
 
@@ -17,13 +17,14 @@ ht-degree: 6%
 
 ## このディメンションの入力方法
 
-`media.chapterStart`が起動すると、章IDが自動的に生成されます。 値は直接設定されず、章の位置、オフセット、コンテンツ IDから派生します。
+[章の開始](/help/implementation/events/chapters/chapter-start.md) イベントが発生すると、章IDが自動的に生成されます。 値は直接設定されず、章の位置、オフセット、コンテンツ IDから派生します。
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; メディアチャプター]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.chapter.name`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
-| データフィード | `videochapter, post_videochapter` |
+| Adobe Analytics | [[!UICONTROL  メディアチャプター]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.chapter.name`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| データフィード | `videochapter`, `post_videochapter` |
+| Audience Manager | 該当なし |
 
 ## ディメンション項目
 

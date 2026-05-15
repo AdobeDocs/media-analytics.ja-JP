@@ -3,10 +3,10 @@ title: メディアパス
 description: パス分析用のトラフィック変数としてコンテンツ IDをキャプチャします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 4%
+source-wordcount: '229'
+ht-degree: 5%
 
 ---
 
@@ -22,8 +22,13 @@ ht-degree: 4%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.name`からトラフィック変数（prop）として自動的に収集されます。 |
-| Customer Journey Analytics | なし – パス分析に[&#x200B; コンテンツ &#x200B;](content.md)を使用 |
-| データフィード | `videopath, post_videopath` |
+| Customer Journey Analytics | なし – パス分析に[ コンテンツ ](content.md)を使用 |
+| データフィード | `videopath`, `post_videopath` |
+| Audience Manager | `c_contextdata.a.media.name` |
+
+>[!NOTE]
+>
+>Adobe Analytics propには100 バイトの制限があります。 100 バイトを超える値は切り捨てられます。
 
 >[!IMPORTANT]
 >

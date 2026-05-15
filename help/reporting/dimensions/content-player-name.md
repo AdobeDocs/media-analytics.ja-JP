@@ -3,10 +3,10 @@ title: コンテンツプレーヤー名
 description: 各メディアセッションをレンダリングしたプレーヤーをレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 5%
+source-wordcount: '194'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツプレーヤー名**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; コンテンツプレーヤー名](/help/implementation/variables/core/content-player-name.md)を参照してください。*
+*このページでは、**コンテンツプレーヤー名**のレポートディメンションについて説明します。 この変数の収集方法については、[ コンテンツプレーヤー名](/help/implementation/variables/core/content-player-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 5%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.playerName`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.playerName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| データフィード | `videoplayername, post_videoplayername` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| データフィード | `videoplayername`, `post_videoplayername` |
+| Audience Manager | `c_contextdata.a.media.playerName` |
 
 >[!IMPORTANT]
 >

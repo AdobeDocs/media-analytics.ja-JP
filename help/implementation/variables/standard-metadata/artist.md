@@ -3,9 +3,9 @@ title: 作者名
 description: オーディオコンテンツに対してパフォーマンスの高いアーティスト名を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '175'
 ht-degree: 16%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Artist**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[Artist](/help/reporting/dimensions/artist.md)を参照してください。*
+*このページでは、**Artist**変数のデータ収集について説明します。 対応するレポートディメンションについては、[Artist](/help/reporting/dimensions/artist.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 16%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.artist` |
-| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.artist`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.artist`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特性** | `c_contextdata.a.media.artist` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | セッション開始、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## Web SDK
 
@@ -136,4 +137,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

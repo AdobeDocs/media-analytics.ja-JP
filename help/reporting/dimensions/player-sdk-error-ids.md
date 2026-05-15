@@ -3,10 +3,10 @@ title: Player SDK エラーID
 description: コンテンツプレーヤーのSDKによって生成された一意のエラーIDをレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 6%
+source-wordcount: '157'
+ht-degree: 7%
 
 ---
 
@@ -17,13 +17,14 @@ ht-degree: 6%
 
 ## このディメンションの入力方法
 
-プレーヤーは、`media.error`件のイベントでPlayer-SDK エラーIDをトラッカーに渡します。 バックエンドでは、セッション全体で一意のIDを収集し、クローズコールでレポートします。
+プレーヤーは、[error](/help/implementation/events/error.md)件のイベントでPlayer-SDK エラーIDをトラッカーに渡します。 バックエンドでは、セッション全体で一意のIDを収集し、クローズコールでレポートします。
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.playerSdkErrors`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| データフィード | `videoqoeplayersdkerrors, post_videoqoeplayersdkerrors` |
+| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.playerSdkErrors`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| データフィード | `videoqoeplayersdkerrors`, `post_videoqoeplayersdkerrors` |
+| Audience Manager | `c_contextdata.a.media.qoe.playerSdkErrors` |
 
 ## ディメンション項目
 

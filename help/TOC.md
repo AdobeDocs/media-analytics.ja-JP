@@ -1,18 +1,17 @@
 ---
-source-git-commit: c9c4287b4b330ebc1a1ec8b7197b42ee45f7ff48
-workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 61%
-
----
-﻿---
 product: adobe analytics
 audience: end-user
 user-guide-title: ストリーミングメディアサービスガイド
 breadcrumb-title: ストリーミングメディアサービスガイド
 user-guide-description: ストリーミングメディアサービスを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
+source-git-commit: 84574afd9d39e0643e7f12f44e8729e947c2ec1b
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 59%
+
 ---
+
 
 # ストリーミングメディアサービスガイド {#using}
 
@@ -33,6 +32,32 @@ sub-product: media analytics
          + [JavaScript - Media SDK から Launch へ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 実装 {#implementation}
    + [実装の概要](implementation/overview.md)
+   + イベント {#events}
+      + [イベントの概要](implementation/events/overview.md)
+      + セッション {#session}
+         + [セッション開始](implementation/events/session/session-start.md)
+         + [セッション完了](implementation/events/session/session-complete.md)
+         + [セッション終了](implementation/events/session/session-end.md)
+      + 再生 {#playback}
+         + [Play](implementation/events/playback/play.md)
+         + [一時停止して開始](implementation/events/playback/pause-start.md)
+         + [バッファー開始](implementation/events/playback/buffer-start.md)
+         + [ビットレートの変更](implementation/events/playback/bitrate-change.md)
+         + [Ping](implementation/events/playback/ping.md)
+      + 広告 {#ads}
+         + [広告休憩の開始](implementation/events/ads/ad-break-start.md)
+         + [広告の開始](implementation/events/ads/ad-start.md)
+         + [広告が完了](implementation/events/ads/ad-complete.md)
+         + [広告スキップ](implementation/events/ads/ad-skip.md)
+         + [広告ブレーク完了](implementation/events/ads/ad-break-complete.md)
+      + 章 {#chapters}
+         + [章の開始](implementation/events/chapters/chapter-start.md)
+         + [章完了](implementation/events/chapters/chapter-complete.md)
+         + [章のスキップ](implementation/events/chapters/chapter-skip.md)
+      + プレイヤーの状態 {#player-state}
+         + [状態の開始](implementation/events/player-state/state-start.md)
+         + [状態終了](implementation/events/player-state/state-end.md)
+      + [エラー](implementation/events/error.md)
    + 変数 {#variables}
       + コア {#core}
          + [コンテンツチャネル](implementation/variables/core/content-channel.md)
@@ -121,7 +146,6 @@ sub-product: media analytics
          + [Sessions リクエスト](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
          + [Events リクエスト](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
          + [リクエストパラメーター](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-         + [イベントタイプと説明](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
          + API の実装 {#mc-api-impl}
             + [プレーヤーでの HTTP リクエストタイプの設定](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
             + [セッション ID の取得](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
@@ -239,6 +263,8 @@ sub-product: media analytics
       + [ピクチャインピクチャ数](reporting/metrics/picture-in-picture-count.md)
       + [ピクチャインピクチャの合計時間](reporting/metrics/picture-in-picture-total-duration.md)
       + [進捗マーカー](reporting/metrics/progress-markers.md)
+      + [ストールイベント](reporting/metrics/stall-events.md)
+      + [影響を受けるストリームを停止する](reporting/metrics/stall-impacted-streams.md)
       + [クローズドキャプションの影響を受けるストリーム](reporting/metrics/closed-captioning-streams-impacted.md)
       + [フルスクリーンの影響を受けるストリーム](reporting/metrics/full-screen-streams-impacted.md)
       + [フォーカスの影響を受けるストリーム](reporting/metrics/in-focus-streams-impacted.md)
@@ -247,6 +273,7 @@ sub-product: media analytics
       + [開始時間（指標）](reporting/metrics/time-to-start.md)
       + [合計バッファー時間（指標）](reporting/metrics/total-buffer-duration.md)
       + [合計一時停止時間](reporting/metrics/total-pause-duration.md)
+      + [合計滞留時間](reporting/metrics/total-stalling-duration.md)
       + [ユニーク再生時間](reporting/metrics/unique-time-played.md)
    + [計算指標](reporting/calculated-metrics.md)
    + [メディアレポートの有効化](reporting/media-reports-enable.md)
@@ -259,7 +286,7 @@ sub-product: media analytics
    + デフォルトメディアレポート {#media-default-reports}
       + [デフォルトレポートの概要](reporting/reports-and-analytics/default-reports-overview.md)
       + [メディアの概要](reporting/reports-and-analytics/media-reports-overview.md)
-      + [メディアの詳細 &#x200B;](reporting/reports-and-analytics/media-reports-detail.md)
+      + [メディアの詳細 ](reporting/reports-and-analytics/media-reports-detail.md)
       + [メディア視聴時間帯レポート](reporting/reports-and-analytics/media-reports-daypart.md)
       + [メディア同時ビューアレポート](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + Media API {#media-api}

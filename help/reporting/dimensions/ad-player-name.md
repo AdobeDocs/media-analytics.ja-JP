@@ -3,10 +3,10 @@ title: 広告プレーヤー名
 description: 各広告をレンダリングしたプレーヤーをレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 7%
+source-wordcount: '132'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**広告プレーヤー名**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[Ad player name](/help/implementation/variables/ads/ad-player-name.md)を参照してください。*
+*このページでは、**広告プレーヤー名**のレポートディメンションについて説明します。 この変数の収集方法については、[Ad player name](/help/implementation/variables/ads/ad-player-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -23,14 +23,15 @@ ht-degree: 7%
 
 ## このディメンションの入力方法
 
-広告プレーヤー名は、プレーヤーが`media.adStart` イベントごとに設定します。
+広告プレーヤー名は、[広告開始](/help/implementation/events/ads/ad-start.md) イベントごとにプレーヤーによって設定されます。
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; メディア広告]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.ad.playerName`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.playerName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| データフィード | `videoadplayername, post_videoadplayername` |
+| Adobe Analytics | [[!UICONTROL  メディア広告]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.ad.playerName`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| データフィード | `videoadplayername`, `post_videoadplayername` |
+| Audience Manager | `c_contextdata.a.media.ad.playerName` |
 
 ## ディメンション項目
 
-各項目は、`media.adStart`に報告されたリテラル広告プレーヤー名です。
+各項目は、[ad start](/help/implementation/events/ads/ad-start.md)に報告されたリテラル広告プレーヤー名です。

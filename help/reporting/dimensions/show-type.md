@@ -3,10 +3,10 @@ title: タイプを表示
 description: コンテンツ形式（完全なエピソード、プレビュー、クリップなど）をレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 9%
+source-wordcount: '143'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**タイプを表示**&#x200B;レポート ディメンションについて説明します。 この変数の収集方法については、[&#x200B; タイプを表示](/help/implementation/variables/standard-metadata/show-type.md)を参照してください。*
+*このページでは、**タイプを表示**レポート ディメンションについて説明します。 この変数の収集方法については、[ タイプを表示](/help/implementation/variables/standard-metadata/show-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +27,10 @@ ht-degree: 9%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.type`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.showType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| データフィード | `videoshowtype, post_videoshowtype` |
+| Adobe Analytics | [[!UICONTROL  ビデオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.type`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| データフィード | `videoshowtype`, `post_videoshowtype` |
+| Audience Manager | `c_contextdata.a.media.type` |
 
 ## ディメンション項目
 

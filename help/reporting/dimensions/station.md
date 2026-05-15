@@ -3,10 +3,10 @@ title: ステーション
 description: オーディオ放送コンテンツのラジオ局名またはIDを報告します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 8%
+source-wordcount: '138'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Station**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[Station](/help/implementation/variables/standard-metadata/station.md)を参照してください。*
+*このページでは、**Station**のレポートディメンションについて説明します。 この変数の収集方法については、[Station](/help/implementation/variables/standard-metadata/station.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +27,10 @@ ht-degree: 8%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; オーディオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.station`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.station`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | [[!UICONTROL  オーディオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.station`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.station`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videoaudiostation` |
+| Audience Manager | `c_contextdata.a.media.station` |
 
 ## ディメンション項目
 

@@ -3,10 +3,10 @@ title: 番組
 description: シリーズの一部であるビデオコンテンツのプログラム名またはシリーズ名をレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 7%
+source-wordcount: '156'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Show**&#x200B;レポートディメンションについて説明します。 この変数の収集方法については、[Show](/help/implementation/variables/standard-metadata/show.md)を参照してください。*
+*このページでは、**Show**レポートディメンションについて説明します。 この変数の収集方法については、[Show](/help/implementation/variables/standard-metadata/show.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +27,10 @@ ht-degree: 7%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.show`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| データフィード | `videoshow, post_videoshow` |
+| Adobe Analytics | [[!UICONTROL  ビデオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.show`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| データフィード | `videoshow`, `post_videoshow` |
+| Audience Manager | `c_contextdata.a.media.show` |
 
 ## ディメンション項目
 

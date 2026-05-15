@@ -3,10 +3,10 @@ title: メディアフィードタイプ
 description: 同じコンテンツが複数のフィードを介して配信される場合、ブロードキャストフィード（East-HDまたはWest-SDなど）を報告します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 6%
+source-wordcount: '157'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**メディアフィードの種類**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; メディアフィードの種類](/help/implementation/variables/standard-metadata/media-feed-type.md)を参照してください。*
+*このページでは、**メディアフィードの種類**のレポートディメンションについて説明します。 この変数の収集方法については、[ メディアフィードの種類](/help/implementation/variables/standard-metadata/media-feed-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +27,10 @@ ht-degree: 6%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.feed`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.feed`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| データフィード | `videofeedtype, post_videofeedtype` |
+| Adobe Analytics | [[!UICONTROL  ビデオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.feed`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| データフィード | `videofeedtype`, `post_videofeedtype` |
+| Audience Manager | `c_contextdata.a.media.feed` |
 
 ## ディメンション項目
 

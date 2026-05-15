@@ -3,9 +3,9 @@ title: フレーム/秒
 description: QoE オブジェクトの現在のフレーム レートを設定して、バックエンドに品質レポート用のフレーム レート コンテキストを設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 0e6b5a8ef5738191276976ed31125016774c043d
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '225'
 ht-degree: 12%
 
 ---
@@ -18,9 +18,10 @@ ht-degree: 12%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | なし（Adobe Analyticsでは、フレームレート用に予約されたコンテキストデータキーが割り当てられません） |
-| **XDM コレクションフィールド** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager特性** | 該当なし |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | 品質イベント、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | 品質イベント （[ ビットレート変更](/help/implementation/events/playback/bitrate-change.md)、[ バッファー開始](/help/implementation/events/playback/buffer-start.md)、[ エラー](/help/implementation/events/error.md)）、セッション終了 |
 
 ## Web SDK
 
@@ -131,4 +132,4 @@ tracker.updateQoEObject(qoeObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。

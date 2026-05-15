@@ -3,10 +3,10 @@ title: コンテンツ名
 description: 各メディアセッションの人間が判読可能なタイトルをレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 8%
+source-wordcount: '160'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツ名**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; コンテンツ名](/help/implementation/variables/core/content-name.md)を参照してください。*
+*このページでは、**コンテンツ名**のレポートディメンションについて説明します。 この変数の収集方法については、[ コンテンツ名](/help/implementation/variables/core/content-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -28,12 +28,13 @@ ht-degree: 8%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.friendlyName`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.friendlyName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| データフィード | `videoname, post_videoname` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| データフィード | `videoname`, `post_videoname` |
+| Audience Manager | `c_contextdata.a.media.friendlyName` |
 
 >[!NOTE]
 >
->Adobe Analyticsでは、この値は[&#x200B; コンテンツ &#x200B;](content.md) ディメンションの&#x200B;**ビデオ名**&#x200B;分類にも対応します。 お客様は、その分類を個別に入力および管理する責任があります。 Customer Journey Analyticsは、このディメンションを直接使用します。
+>Adobe Analyticsでは、この値は[ コンテンツ ](content.md) ディメンションの&#x200B;**ビデオ名**&#x200B;分類にも対応します。 お客様は、その分類を個別に入力および管理する責任があります。 Customer Journey Analyticsは、このディメンションを直接使用します。
 
 >[!IMPORTANT]
 >

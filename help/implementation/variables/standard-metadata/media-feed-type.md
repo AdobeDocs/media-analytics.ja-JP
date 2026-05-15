@@ -3,9 +3,9 @@ title: メディアフィードタイプ
 description: 地域や品質によって異なるコンテンツのブロードキャストフィードのタイプ（East-HDやWest-SDなど）を特定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '203'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**メディアフィードの種類**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; メディアフィードの種類](/help/reporting/dimensions/media-feed-type.md)を参照してください。*
+*このページでは、**メディアフィードの種類**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ メディアフィードの種類](/help/reporting/dimensions/media-feed-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 13%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.feed` |
-| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特性** | `c_contextdata.a.media.feed` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | セッション開始、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## Web SDK
 
@@ -136,4 +137,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

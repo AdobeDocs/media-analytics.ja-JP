@@ -3,10 +3,10 @@ title: ドロップされたフレーム（寸法）
 description: セッションあたりの累積ドロップフレーム数を報告します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 5%
+source-wordcount: '181'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**削除されたフレーム**&#x200B;のディメンションについて説明します。 Adobe Analyticsは、同じ`a.media.qoe.droppedFrameCount` コンテキストデータ変数からペアの[&#x200B; ドロップされたフレーム（指標） &#x200B;](/help/reporting/metrics/dropped-frames.md)を自動入力します。 Customer Journey Analyticsは、ディメンションまたは指標として使用できる1つの`mediaReporting.qoeDataDetails.droppedFrames` フィールドを公開します。 この変数の収集方法については、[削除されたフレーム &#x200B;](/help/implementation/variables/quality/dropped-frames.md)を参照してください。*
+*このページでは、**削除されたフレーム**のディメンションについて説明します。 Adobe Analyticsは、同じ`a.media.qoe.droppedFrameCount` コンテキストデータ変数からペアの[ ドロップされたフレーム（指標） ](/help/reporting/metrics/dropped-frames.md)を自動入力します。 Customer Journey Analyticsは、ディメンションまたは指標として使用できる1つの`mediaReporting.qoeDataDetails.droppedFrames` フィールドを公開します。 この変数の収集方法については、[削除されたフレーム ](/help/implementation/variables/quality/dropped-frames.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,10 +27,11 @@ ht-degree: 5%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.droppedFrameCount`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| データフィード | `videoqoedroppedframecountevar, post_videoqoedroppedframecountevar` |
+| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.droppedFrameCount`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| データフィード | `videoqoedroppedframecountevar`, `post_videoqoedroppedframecountevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.droppedFrameCount` |
 
 ## ディメンション項目
 
-各項目は、クローズ呼び出しで報告されるリテラルのドロップカウント値です。 セッションレベルのブール値レポートの場合（任意のフレームがドロップされたかどうかにかかわらず）、[&#x200B; ドロップされたフレームの影響を受けるストリーム &#x200B;](/help/reporting/metrics/dropped-frame-impacted-streams.md)を使用します。
+各項目は、クローズ呼び出しで報告されるリテラルのドロップカウント値です。 セッションレベルのブール値レポートの場合（任意のフレームがドロップされたかどうかにかかわらず）、[ ドロップされたフレームの影響を受けるストリーム ](/help/reporting/metrics/dropped-frame-impacted-streams.md)を使用します。
