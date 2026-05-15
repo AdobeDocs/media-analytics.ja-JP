@@ -24,7 +24,7 @@ ht-degree: 13%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.chapter.friendlyName` |
-| **XDM コレクションフィールド** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.chapter.friendlyName` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [章の開始](/help/implementation/events/chapters/chapter-start.md)、章の終了 |

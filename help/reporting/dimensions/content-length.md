@@ -28,13 +28,13 @@ ht-degree: 6%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.length`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videolength`, `post_videolength` |
 | Audience Manager | `c_contextdata.a.media.length` |
 
 >[!NOTE]
 >
->Adobe Analyticsでは、この値は[Content](content.md) ディメンションの&#x200B;**Video length**&#x200B;分類にも対応します。 お客様は、その分類を個別に入力および管理する責任があります。 Customer Journey Analyticsは、このディメンションを直接使用します。 必要に応じて、[値のグループ化](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)を使用できます。
+>Adobe Analyticsでは、この値は[Content](content.md) ディメンションの&#x200B;**Video length**&#x200B;分類にも対応します。 お客様は、その分類を個別に入力および管理する責任があります。 Customer Journey Analyticsは、このディメンションを直接使用します。 必要に応じて、[値のグループ化](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)を使用できます。
 
 >[!IMPORTANT]
 >
