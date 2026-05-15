@@ -18,7 +18,7 @@ ht-degree: 10%
 セッションは、**10分間イベントを受信しなかった場合、**&#x200B;または&#x200B;**30分間の再生ヘッドの移動がない場合、**&#x200B;に自動的に期限切れになります。 セッションの有効期限が切れた場合は、新しいセッション IDを取得するために、「セッション開始」を再度呼び出す必要があります。
 
 * **前提条件**：なし。常に最初のイベント
-* **関連する指標**: [ メディア開始](/help/reporting/metrics/media-starts.md)
+* **関連する指標**: [&#x200B; メディア開始](/help/reporting/metrics/media-starts.md)
 
 ## Web SDK
 
@@ -138,7 +138,7 @@ tracker.trackSessionStart(mediaObject, null);
 
 ## メディアコレクション API
 
-`sessionStart`件の投稿を[ セッションエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
+`sessionStart`件の投稿を[&#x200B; セッションエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
 
 ```json
 {
