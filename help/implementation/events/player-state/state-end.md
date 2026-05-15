@@ -17,8 +17,8 @@ ht-degree: 13%
 
 有効な状態名：`fullscreen`、`mute`、`closedCaptioning`、`pictureInPicture`、`inFocus`
 
-* **前提条件**: [ セッション開始](../session/session-start.md)、[状態開始](state-start.md)
-* **関連する指標**：状態によって異なります。[ プレーヤーの状態トラッキング ](/help/use-cases/player-state-tracking/implementation-and-reporting.md)を参照してください
+* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[状態開始](state-start.md)
+* **関連する指標**：状態によって異なります。[&#x200B; プレーヤーの状態トラッキング &#x200B;](/help/use-cases/player-state-tracking/implementation-and-reporting.md)を参照してください
 
 ## Web SDK
 
@@ -123,7 +123,7 @@ tracker.trackPlayerStateEnd(stateObject);
 
 ## メディアコレクション API
 
-`stateEnd`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`stateEnd`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

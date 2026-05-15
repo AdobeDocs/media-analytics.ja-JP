@@ -15,11 +15,11 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**平均ビットレート**イベント指標について説明します。この指標は、セッションあたりの生の加重平均ビットレートを報告します。 グループ化されたディメンションについては、[平均ビットレート （ディメンション） ](/help/reporting/dimensions/average-bitrate.md)を参照してください。 この変数の収集方法については、[ ビットレート ](/help/implementation/variables/quality/bitrate.md)を参照してください。*
+*このページでは、**平均ビットレート**&#x200B;イベント指標について説明します。この指標は、セッションあたりの生の加重平均ビットレートを報告します。 グループ化されたディメンションについては、[平均ビットレート （ディメンション） &#x200B;](/help/reporting/dimensions/average-bitrate.md)を参照してください。 この変数の収集方法については、[&#x200B; ビットレート &#x200B;](/help/implementation/variables/quality/bitrate.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
-**平均ビットレート**&#x200B;指標は、各セッションの生の加重平均再生ビットレート（kbps）をレポートします。 [ バケット ディメンション ](/help/reporting/dimensions/average-bitrate.md)とは異なり、指標は、合計、平均、およびセッション間のパーセンタイル ロールアップに適した連続的な数値です。
+**平均ビットレート**&#x200B;指標は、各セッションの生の加重平均再生ビットレート（kbps）をレポートします。 [&#x200B; バケット ディメンション &#x200B;](/help/reporting/dimensions/average-bitrate.md)とは異なり、指標は、合計、平均、およびセッション間のパーセンタイル ロールアップに適した連続的な数値です。
 
 ## この指標の計算方法
 
@@ -27,7 +27,7 @@ ht-degree: 8%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.bitrateAverage`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.bitrateAverage`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverage`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateAverage` |

@@ -17,11 +17,11 @@ ht-degree: 10%
 
 ## この指標の計算方法
 
-メディア バックエンドは、セッション中に受信した[ チャプター開始](/help/implementation/events/chapters/chapter-start.md) イベントごとに`mediaReporting.sessionDetails.chapterCount`を増分します。 この指標は、クローズ呼び出しで報告されます。
+メディア バックエンドは、セッション中に受信した[&#x200B; チャプター開始](/help/implementation/events/chapters/chapter-start.md) イベントごとに`mediaReporting.sessionDetails.chapterCount`を増分します。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | `a.media.chapterCount`をカスタムイベントにマッピングする[処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
+| Adobe Analytics | `a.media.chapterCount`をカスタムイベントにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.chapterCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （処理ルールが`a.media.chapterCount`にマッピングするカスタムイベント。[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)の参照を参照） |
 | Audience Manager | 該当なし |

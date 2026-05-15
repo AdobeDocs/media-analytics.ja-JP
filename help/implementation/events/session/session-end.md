@@ -13,11 +13,11 @@ ht-degree: 14%
 
 # セッション終了
 
-セッション終了イベントは、メディアトラッキングセッションを直ちに閉じます。 ビューアが最後に到達する前にコンテンツを放棄し、同じセッションで後続のイベントを追跡しない場合に使用します。 視聴者がコンテンツを完了した場合は、代わりに[ セッション完了](session-complete.md)に電話してください。
+セッション終了イベントは、メディアトラッキングセッションを直ちに閉じます。 ビューアが最後に到達する前にコンテンツを放棄し、同じセッションで後続のイベントを追跡しない場合に使用します。 視聴者がコンテンツを完了した場合は、代わりに[&#x200B; セッション完了](session-complete.md)に電話してください。
 
 明示的なセッション終了がなければ、イベントなしの10分または再生ヘッドなしの30分が経過すると、セッションは自動的に終了します。
 
-* **前提条件**: [ セッション開始](session-start.md)
+* **前提条件**: [&#x200B; セッション開始](session-start.md)
 * **関連する指標**：なし
 
 ## Web SDK
@@ -98,7 +98,7 @@ tracker.trackSessionEnd();
 
 ## メディアコレクション API
 
-`sessionEnd`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`sessionEnd`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

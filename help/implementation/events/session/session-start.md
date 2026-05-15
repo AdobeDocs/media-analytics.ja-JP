@@ -16,7 +16,7 @@ ht-degree: 12%
 セッション開始イベントは、メディアトラッキングセッションを開きます。 再生のために最初に送信されるイベントである必要があります。 応答は、同じセッションの後続のすべてのイベントに含める必要があるセッション IDを返します。
 
 * **前提条件**：なし。常に最初のイベント
-* **関連する指標**: [ メディア開始](/help/reporting/metrics/media-starts.md)
+* **関連する指標**: [&#x200B; メディア開始](/help/reporting/metrics/media-starts.md)
 
 ## Web SDK
 
@@ -136,7 +136,7 @@ tracker.trackSessionStart(mediaObject, null);
 
 ## メディアコレクション API
 
-`sessionStart`件の投稿を[ セッションエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
+`sessionStart`件の投稿を[&#x200B; セッションエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
 
 ```json
 {

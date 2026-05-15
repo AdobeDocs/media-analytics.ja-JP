@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**クローズドキャプションの合計期間**のレポート指標について説明します。 この変数の収集方法については、[ クローズドキャプション ](/help/implementation/variables/player-state/closed-captioning.md)を参照してください。*
+*このページでは、**クローズドキャプションの合計期間**&#x200B;のレポート指標について説明します。 この変数の収集方法については、[&#x200B; クローズドキャプション &#x200B;](/help/implementation/variables/player-state/closed-captioning.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 

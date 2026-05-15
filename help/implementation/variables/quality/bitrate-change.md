@@ -15,11 +15,11 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、ビットレート変更イベントの実装方法について説明します。 対応するレポート変数については、[ ビットレート変更（ディメンション） ](/help/reporting/dimensions/bitrate-changes.md)および[ ビットレート変更（指標） ](/help/reporting/metrics/bitrate-changes.md)を参照してください。*
+*このページでは、ビットレート変更イベントの実装方法について説明します。 対応するレポート変数については、[&#x200B; ビットレート変更（ディメンション） &#x200B;](/help/reporting/dimensions/bitrate-changes.md)および[&#x200B; ビットレート変更（指標） &#x200B;](/help/reporting/metrics/bitrate-changes.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
-ビットレート変更イベントは、プレーヤーが別のビットレートに切り替えたことを示します。 最初にQoE オブジェクトの[ ビットレート ](/help/implementation/variables/quality/bitrate.md)値を更新してから、ビットレート変更イベントを実行します。 バックエンドでは、これらのイベントの数を使用して、ビットレートの変更ディメンションと指標を計算し、結果として得られるビットレート値は平均ビットレートを供給します。
+ビットレート変更イベントは、プレーヤーが別のビットレートに切り替えたことを示します。 最初にQoE オブジェクトの[&#x200B; ビットレート &#x200B;](/help/implementation/variables/quality/bitrate.md)値を更新してから、ビットレート変更イベントを実行します。 バックエンドでは、これらのイベントの数を使用して、ビットレートの変更ディメンションと指標を計算し、結果として得られるビットレート値は平均ビットレートを供給します。
 
 | プロパティ | 値 |
 | --- | --- |
@@ -27,7 +27,7 @@ ht-degree: 11%
 | **XDM イベントタイプ** | `media.bitrateChange` |
 | **Audience Manager特性** | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [ ビットレート変更](/help/implementation/events/playback/bitrate-change.md) |
+| **様が**&#x200B;様と共に送信されました | [&#x200B; ビットレート変更](/help/implementation/events/playback/bitrate-change.md) |
 
 ## Web SDK
 
@@ -140,4 +140,4 @@ tracker.trackEvent(ADB.Media.Event.BitrateChange);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。

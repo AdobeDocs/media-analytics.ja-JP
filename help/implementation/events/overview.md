@@ -31,7 +31,7 @@ ht-degree: 4%
 10. **[バッファー開始](playback/buffer-start.md)** → **[再生](playback/play.md)** （再開）：任意のバッファリングの場合
 11. **[セッション完了](session/session-complete.md)**：ビューアがコンテンツの最後に到達したとき
 
-ビューアがコンテンツの最後に到達する前にセッションを放棄した場合は、「[ セッションの終了](session/session-end.md)」を使用します。
+ビューアがコンテンツの最後に到達する前にセッションを放棄した場合は、「[&#x200B; セッションの終了](session/session-end.md)」を使用します。
 
 ## セッションのライフサイクル
 
@@ -44,29 +44,29 @@ ht-degree: 4%
 
 | イベント | カテゴリ | 関連付けられた指標 |
 | --- | --- | --- |
-| [ セッション開始](session/session-start.md) | セッション | [ メディア開始](/help/reporting/metrics/media-starts.md) |
-| [ セッション完了](session/session-complete.md) | セッション | [ コンテンツ完了](/help/reporting/metrics/content-completes.md) |
-| [ セッション終了](session/session-end.md) | セッション | — |
-| [ プレイ ](playback/play.md) | 再生 | [ コンテンツ開始](/help/reporting/metrics/content-starts.md) |
-| [開始を一時停止](playback/pause-start.md) | 再生 | [ イベントを一時停止](/help/reporting/metrics/pause-events.md) |
-| [ バッファー開始](playback/buffer-start.md) | 再生 | [ バッファーイベント ](/help/reporting/metrics/buffer-events.md) |
-| [ ビットレート変更](playback/bitrate-change.md) | 再生 | [ ビットレートの変更](/help/reporting/metrics/bitrate-changes.md) |
+| [&#x200B; セッション開始](session/session-start.md) | セッション | [&#x200B; メディア開始](/help/reporting/metrics/media-starts.md) |
+| [&#x200B; セッション完了](session/session-complete.md) | セッション | [&#x200B; コンテンツ完了](/help/reporting/metrics/content-completes.md) |
+| [&#x200B; セッション終了](session/session-end.md) | セッション | — |
+| [&#x200B; プレイ &#x200B;](playback/play.md) | 再生 | [&#x200B; コンテンツ開始](/help/reporting/metrics/content-starts.md) |
+| [開始を一時停止](playback/pause-start.md) | 再生 | [&#x200B; イベントを一時停止](/help/reporting/metrics/pause-events.md) |
+| [&#x200B; バッファー開始](playback/buffer-start.md) | 再生 | [&#x200B; バッファーイベント &#x200B;](/help/reporting/metrics/buffer-events.md) |
+| [&#x200B; ビットレート変更](playback/bitrate-change.md) | 再生 | [&#x200B; ビットレートの変更](/help/reporting/metrics/bitrate-changes.md) |
 | [Ping](playback/ping.md) | 再生 | — |
 | [休憩の開始](ads/ad-break-start.md) | 広告 | — |
 | [広告の開始](ads/ad-start.md) | 広告 | [広告開始](/help/reporting/metrics/ad-starts.md) |
 | [Ad complete](ads/ad-complete.md) | 広告 | [広告が完了しました](/help/reporting/metrics/ad-completes.md) |
-| [広告をスキップ ](ads/ad-skip.md) | 広告 | — |
+| [広告をスキップ &#x200B;](ads/ad-skip.md) | 広告 | — |
 | [Ad break complete](ads/ad-break-complete.md) | 広告 | — |
 | [章の開始](chapters/chapter-start.md) | 章 | [章開始](/help/reporting/metrics/chapter-starts.md) |
 | [章完了](chapters/chapter-complete.md) | 章 | [章完了](/help/reporting/metrics/chapter-completes.md) |
-| [章をスキップ ](chapters/chapter-skip.md) | 章 | — |
+| [章をスキップ &#x200B;](chapters/chapter-skip.md) | 章 | — |
 | [状態の開始](player-state/state-start.md) | プレイヤーの状態 | 州によって異なる |
 | [状態の終了](player-state/state-end.md) | プレイヤーの状態 | 州によって異なる |
-| [ エラー](error.md) | 画質 | [影響を受けるストリームのエラー](/help/reporting/metrics/error-impacted-streams.md) |
+| [&#x200B; エラー](error.md) | 画質 | [影響を受けるストリームのエラー](/help/reporting/metrics/error-impacted-streams.md) |
 
 >[!MORELIKETHIS]
 >
->* [JSON検証スキーマ ](/help/implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)：各イベントタイプのリクエストペイロード構造を検証します
->* [ イベント要求エンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):Media Collection API エンドポイント参照
->* [ セッション要求エンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md): イベントを送信する前にセッションを作成します
->* [ プレーヤー状態の追跡](/help/use-cases/player-state-tracking/implementation-and-reporting.md)：状態の開始と終了の実装の詳細
+>* [JSON検証スキーマ &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)：各イベントタイプのリクエストペイロード構造を検証します
+>* [&#x200B; イベント要求エンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):Media Collection API エンドポイント参照
+>* [&#x200B; セッション要求エンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md): イベントを送信する前にセッションを作成します
+>* [&#x200B; プレーヤー状態の追跡](/help/use-cases/player-state-tracking/implementation-and-reporting.md)：状態の開始と終了の実装の詳細

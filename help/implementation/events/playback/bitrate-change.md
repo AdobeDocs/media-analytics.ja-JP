@@ -13,10 +13,10 @@ ht-degree: 14%
 
 # ビットレートの変更
 
-ビットレート変更イベントは、プレーヤーが新しい再生ビットレートを交渉したことを示します。 再生中にビットレートが変更されるたびに送信します。 新しいビットレート値をQoE データに含めて、バックエンドが[平均ビットレート ](/help/reporting/metrics/average-bitrate.md)とビットレートごとのバケット ディメンションを計算できるようにします。
+ビットレート変更イベントは、プレーヤーが新しい再生ビットレートを交渉したことを示します。 再生中にビットレートが変更されるたびに送信します。 新しいビットレート値をQoE データに含めて、バックエンドが[平均ビットレート &#x200B;](/help/reporting/metrics/average-bitrate.md)とビットレートごとのバケット ディメンションを計算できるようにします。
 
-* **前提条件**: [ セッション開始](../session/session-start.md)
-* **関連する指標**: [ ビットレートの変更](/help/reporting/metrics/bitrate-changes.md)
+* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
+* **関連する指標**: [&#x200B; ビットレートの変更](/help/reporting/metrics/bitrate-changes.md)
 
 ## Web SDK
 
@@ -128,7 +128,7 @@ tracker.trackEvent(ADB.Media.Event.BitrateChange);
 
 ## メディアコレクション API
 
-`qoeData`の新しいビットレートを使用して、[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に`bitrateChange` POSTを送信します。
+`qoeData`の新しいビットレートを使用して、[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に`bitrateChange` POSTを送信します。
 
 ```json
 {

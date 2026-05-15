@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**ラベル**のレポートディメンションについて説明します。 この変数の収集方法については、[Label](/help/implementation/variables/standard-metadata/label.md)を参照してください。*
+*このページでは、**ラベル**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[Label](/help/implementation/variables/standard-metadata/label.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 10%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  オーディオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.label`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; オーディオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.label`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.label`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videoaudiolabel` |
 | Audience Manager | `c_contextdata.a.media.label` |

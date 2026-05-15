@@ -15,11 +15,11 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツの長さ**のレポートディメンションについて説明します。 この変数の収集方法については、[ コンテンツの長さ](/help/implementation/variables/core/content-length.md)を参照してください。*
+*このページでは、**コンテンツの長さ**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; コンテンツの長さ](/help/implementation/variables/core/content-length.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
-**コンテンツ長** ディメンションは、セッション開始時に設定された各メディアセッションの合計期間を秒単位でレポートします。 [進行状況マーカー](/help/reporting/metrics/progress-markers.md)および[毎分平均オーディエンス ](/help/reporting/metrics/average-minute-audience.md)を含むバックエンド指標を強化します。
+**コンテンツ長** ディメンションは、セッション開始時に設定された各メディアセッションの合計期間を秒単位でレポートします。 [進行状況マーカー](/help/reporting/metrics/progress-markers.md)および[毎分平均オーディエンス &#x200B;](/help/reporting/metrics/average-minute-audience.md)を含むバックエンド指標を強化します。
 
 ## このディメンションの入力方法
 

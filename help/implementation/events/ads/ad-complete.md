@@ -13,9 +13,9 @@ ht-degree: 15%
 
 # 広告が完了
 
-広告完了イベントは、個々の広告が再生を完了したことを示します。 広告の再生後から完了まで送信します。 視聴者が広告をスキップした場合は、代わりに[広告スキップ ](ad-skip.md)を送信します。
+広告完了イベントは、個々の広告が再生を完了したことを示します。 広告の再生後から完了まで送信します。 視聴者が広告をスキップした場合は、代わりに[広告スキップ &#x200B;](ad-skip.md)を送信します。
 
-* **前提条件**: [ セッション開始](../session/session-start.md)、[ アドブレーク開始](ad-break-start.md)、[ アドスタート ](ad-start.md)
+* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[&#x200B; アドブレーク開始](ad-break-start.md)、[&#x200B; アドスタート &#x200B;](ad-start.md)
 * **関連する指標**: [広告が](/help/reporting/metrics/ad-completes.md)を完了しました
 
 >[!IMPORTANT]
@@ -100,7 +100,7 @@ tracker.trackEvent(ADB.Media.Event.AdComplete, null, null);
 
 ## メディアコレクション API
 
-`adComplete`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`adComplete`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

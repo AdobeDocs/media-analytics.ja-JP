@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**メディアフィードの種類**のレポートディメンションについて説明します。 この変数の収集方法については、[ メディアフィードの種類](/help/implementation/variables/standard-metadata/media-feed-type.md)を参照してください。*
+*このページでは、**メディアフィードの種類**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; メディアフィードの種類](/help/implementation/variables/standard-metadata/media-feed-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  ビデオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.feed`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.feed`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videofeedtype`, `post_videofeedtype` |
 | Audience Manager | `c_contextdata.a.media.feed` |

@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**章の長さ**変数のデータ収集について説明します。 対応するレポートディメンションについては、[章の長さ](/help/reporting/dimensions/chapter-length.md)を参照してください。*
+*このページでは、**章の長さ**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[章の長さ](/help/reporting/dimensions/chapter-length.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -150,4 +150,4 @@ tracker.trackEvent(ADB.Media.Event.ChapterStart, chapterInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。

@@ -13,9 +13,9 @@ ht-degree: 20%
 
 # 章完了
 
-チャプターが完了すると、チャプターが再生を終了したことを示すイベントシグナルが表示されます。 ビューアが章の終わりに達したときに送信します。 ビューアが章をスキップした場合は、代わりに[章スキップ ](chapter-skip.md)を送信します。
+チャプターが完了すると、チャプターが再生を終了したことを示すイベントシグナルが表示されます。 ビューアが章の終わりに達したときに送信します。 ビューアが章をスキップした場合は、代わりに[章スキップ &#x200B;](chapter-skip.md)を送信します。
 
-* **前提条件**: [ セッション開始](../session/session-start.md)、[章開始](chapter-start.md)
+* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[章開始](chapter-start.md)
 * **関連する指標**: [章完了](/help/reporting/metrics/chapter-completes.md)
 
 ## Web SDK
@@ -96,7 +96,7 @@ tracker.trackEvent(ADB.Media.Event.ChapterComplete, null, null);
 
 ## メディアコレクション API
 
-`chapterComplete`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`chapterComplete`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**ジャンル**のレポートディメンションについて説明します。 この変数の収集方法については、[ ジャンル ](/help/implementation/variables/standard-metadata/genre.md)を参照してください。*
+*このページでは、**ジャンル**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; ジャンル &#x200B;](/help/implementation/variables/standard-metadata/genre.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  ビデオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、（リスト変数として保存されている）コンテキストデータ `a.media.genre`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、（リスト変数として保存されている）コンテキストデータ `a.media.genre`から自動的に収集されます。 |
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting)または[`mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) （レガシー） |
 | データフィード | `videogenre`, `post_videogenre` |
 | Audience Manager | `c_contextdata.a.media.genre` |

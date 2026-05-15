@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Content resumes**変数のデータ収集について説明します。 対応するレポート指標については、[ コンテンツの再開](/help/reporting/metrics/content-resumes.md)を参照してください。*
+*このページでは、**Content resumes**&#x200B;変数のデータ収集について説明します。 対応するレポート指標については、[&#x200B; コンテンツの再開](/help/reporting/metrics/content-resumes.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 11%
 | **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | 該当なし |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md) |
+| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md) |
 
 ## Web SDK
 
@@ -163,4 +163,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

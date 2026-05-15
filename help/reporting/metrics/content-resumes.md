@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツ再開**レポート指標について説明します。 この変数の収集方法については、[ コンテンツの再開](/help/implementation/variables/core/content-resumes.md)を参照してください。*
+*このページでは、**コンテンツ再開**&#x200B;レポート指標について説明します。 この変数の収集方法については、[&#x200B; コンテンツの再開](/help/implementation/variables/core/content-resumes.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -23,7 +23,7 @@ ht-degree: 10%
 
 ## この指標の計算方法
 
-[ セッション開始](/help/implementation/events/session/session-start.md) イベントの`mediaCollection.sessionDetails.hasResume`が`true`の場合、メディアバックエンドは`mediaReporting.sessionDetails.hasResume = true`を設定します。 プレーヤーは、セッションに履歴書として明示的にフラグを付ける必要があります。 この指標は、クローズ呼び出しで報告されます。
+[&#x200B; セッション開始](/help/implementation/events/session/session-start.md) イベントの`mediaCollection.sessionDetails.hasResume`が`true`の場合、メディアバックエンドは`mediaReporting.sessionDetails.hasResume = true`を設定します。 プレーヤーは、セッションに履歴書として明示的にフラグを付ける必要があります。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |
