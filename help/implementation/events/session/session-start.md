@@ -3,10 +3,10 @@ title: セッション開始
 description: メディアセッションの開始を通知し、後続のすべてのイベントに必要なセッション IDを取得します。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 12%
+source-wordcount: '221'
+ht-degree: 10%
 
 ---
 
@@ -15,8 +15,10 @@ ht-degree: 12%
 
 セッション開始イベントは、メディアトラッキングセッションを開きます。 再生のために最初に送信されるイベントである必要があります。 応答は、同じセッションの後続のすべてのイベントに含める必要があるセッション IDを返します。
 
+セッションは、**10分間イベントを受信しなかった場合、**&#x200B;または&#x200B;**30分間の再生ヘッドの移動がない場合、**&#x200B;に自動的に期限切れになります。 セッションの有効期限が切れた場合は、新しいセッション IDを取得するために、「セッション開始」を再度呼び出す必要があります。
+
 * **前提条件**：なし。常に最初のイベント
-* **関連する指標**: [&#x200B; メディア開始](/help/reporting/metrics/media-starts.md)
+* **関連する指標**: [ メディア開始](/help/reporting/metrics/media-starts.md)
 
 ## Web SDK
 
@@ -136,7 +138,7 @@ tracker.trackSessionStart(mediaObject, null);
 
 ## メディアコレクション API
 
-`sessionStart`件の投稿を[&#x200B; セッションエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
+`sessionStart`件の投稿を[ セッションエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
 
 ```json
 {
