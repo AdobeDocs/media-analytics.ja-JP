@@ -1,46 +1,60 @@
 ---
-title: 'Media ワークスペースのテンプレート '
-description: Media ワークスペースのテンプレートを使用すると、トラッキングデータを分析できます。獲得メディアまたはストリーミングメディア用の標準テンプレートを選択するか、独自のカスタムテンプレートを作成します。
+title: Media ワークスペースのテンプレート
+description: Media ワークスペースのテンプレートを使用すると、トラッキングデータを分析できます。 獲得メディアまたはストリーミングメディア用の標準テンプレートを選択するか、独自のカスタムテンプレートを作成します。
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-feature: "Streaming Media, Workspace Basics"
+feature: Streaming Media, Workspace Basics
 role: User, Admin
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+TQID: https://experienceleague.adobe.com/PuNBynwGRmjRl2jDS2dfdfpDEtap6vfNIFWFaxgYkIs
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 9%
+source-wordcount: 369
+ht-degree: 10%
 
 ---
 
-# Analysis Workspaceのメディアレポート {#media-workspace-templates}
+# Analysis WorkspaceのMedia Reports {#media-workspace-templates}
 
 >[!NOTE]
 >
->Workspaceの *レポート* は、以前は *templates* と呼ばれていました。
+>Workspaceの&#x200B;*レポート*&#x200B;は、以前は&#x200B;*テンプレート*&#x200B;と呼ばれていました。
 
-Analysis Workspaceには、データの分析に使用できる事前定義済みの一連のレポートが、デフォルトで用意されています。 使用可能なすべてのデフォルトレポートについて詳しくは、[Adobe Analytics ランディングページ &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ja#menus) の [&#x200B; レポートの表示 &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ja) を参照してください。
+Analysis Workspaceには、データ分析に使用できる事前定義済みのレポートがデフォルトで用意されています。 利用可能なすべてのデフォルトレポートについて詳しくは、[Adobe Analytics ランディングページ &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ja)の「[&#x200B; レポートを表示](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ja#menus)」を参照してください。
 
-これらのレポートの一部は、次の節で説明するように、ストリーミングメディアデータの分析に特に役立ちます。
+これらのレポートの一部は、次の節で説明するように、ストリーミングメディアデータの分析に特に便利です。
 
-## デフォルトメディアレポートについて
+## デフォルトのメディアレポートについて
 
-ストリーミングメディアデータを分析する際に役立つデフォルトのレポートを次に示します。
+次に、ストリーミングメディアデータの分析に役立つデフォルトレポートのリストを示します。
 
-* [!UICONTROL **メディアコンテンツ消費**]：最も消費され、ユーザーを引き付けているコンテンツを示すレポートを作成します。
+* [!UICONTROL **メディアコンテンツの消費**]：どのコンテンツが最も消費され、ユーザーを惹きつけているかを示すレポートを作成します。
 
 * [!UICONTROL **ストリーミングメディア消費**]：次の例に示すように、ダッシュボードを使用してレポートを作成します。
 
-* [!UICONTROL **メディアの最新性、頻度、ロイヤルティ**]：最新性（前回の訪問からの日数）、頻度（訪問者あたりの訪問数）、ロイヤルティ（ユーザーのコホートがサイトに戻る頻度）を示すレポートを作成します
+* [!UICONTROL **メディアの最新性、頻度、ロイヤルティ**]：最新性（最後の訪問からの日数）、頻度（訪問者あたりの訪問回数）、ロイヤルティ（サイトに戻るユーザーのコホート数）を示すレポートを作成します
 
-例えば、「[!UICONTROL **ストリーミングメディア消費**]」レポートを選択すると、次のダッシュボードを含むプロジェクトが表示されます。
+例えば、[!UICONTROL **ストリーミングメディア消費**] レポートを選択すると、次のダッシュボードを含むプロジェクトが表示されます。
 
 ![](/help/reporting/assets/aa-workspace.png)
 
-## デフォルトのメディアレポートを使用
+## デフォルトのメディアレポートの使用
 
 デフォルトのメディアレポートは、次の方法で使用できます。
-新規プロジェクトを作成する場合。 また、既存のプロジェクトを変更する場合に、またはを行うこともできます。
+複雑さが増すことは言うまでもありません。 また、既存のプロジェクトを修正する場合にも使用できます。
 
-* **新規プロジェクトを作成する場合：** デフォルトのレポートから新しいプロジェクトを作成する方法については、[Analysis Workspaceでプロジェクトを作成する &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=ja#create-a-project-from-a-blank-project-or-a-report) の [&#x200B; 空のプロジェクトまたはレポートからプロジェクトを作成する &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=ja#create-a-project-from-a-blank-project-or-a-report) を参照してください。
+* **新しいプロジェクトを作成する際：**&#x200B;既定のレポートから新しいプロジェクトを作成する方法については、[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=ja#create-a-project-from-a-blank-project-or-a-report)空白のプロジェクトからプロジェクトを作成するか、[Analysis Workspaceでプロジェクトを作成](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=ja#create-a-project-from-a-blank-project-or-a-report)のレポート &#x200B;を参照してください。
 
-* **カスタム会社レポートを作成する場合：** カスタム会社レポートの作成方法については、[Adobe Analytics ランディングページの &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ja#company-report) カスタム会社レポートの作成 [&#x200B; を参照してください &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ja)。
+* **カスタム会社レポートの作成時：** カスタム会社レポートの作成方法について詳しくは、[Adobe Analytics ランディングページ &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ja)の[&#x200B; カスタム会社レポートの作成](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=ja#company-report)を参照してください。

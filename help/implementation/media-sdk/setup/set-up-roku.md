@@ -5,9 +5,22 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/yj31nOyVc9b6mFyYN0XeRidvQkiYXPS3Aat0a7z5CfI
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: 688
 ht-degree: 92%
 
 ---
@@ -16,13 +29,13 @@ ht-degree: 92%
 
 ## 前提条件 {#roku-prerequisites}
 
-* **Adobe Streaming Media Services 用の有効な設定パラメーターの取得**
+* **Adobe ストリーミング メディア サービスの有効な設定パラメーターを取得**
 
-  これらのパラメーターは、Adobe Streaming Media Collection アドオンまたはAdobe for Streaming Media アドオンのアカウントを設定した後、Adobe Analytics の担当者から取得できます。
+  これらのパラメーターは、Adobe Streaming Media Collection アドオンまたはAdobe Analytics for Streaming Media アドオンのアカウントを設定した後、Adobe担当者から取得できます。
 
 * **メディアプレーヤーで以下の API を含める**
 
-   * _プレーヤーイベントをサブスクライブするための API_ - Media SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
+   * _プレーヤーイベントをサブスクライブするための API_ - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
    * _プレーヤー情報を提供する API_ - メディア名や再生ヘッドなどの情報がこれに該当します。
 
 Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、BrightScript で記述された Roku アプリケーションを測定したり、Audience Management を通じてオーディエンスデータを利用および収集したり、ビデオイベントを介してビデオエンゲージメントを測定したりできます。
@@ -39,11 +52,11 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
 
    1. プロジェクトソースに、ライブラリファイルと JSON 設定ファイルを追加します。
 
-      Adobe Mobile の設定に使用する JSON には、`mediaHeartbeat` と呼ばれるメディア分析用の専用キーがあります。ここには、メディア分析の設定パラメーターが属しています。
+      Adobe Mobile の設定に使用する JSON には、`mediaHeartbeat` と呼ばれるメディア分析用の専用キーがあります。 ここでは、メディア分析の設定パラメーターが属します。
 
       >[!TIP]
       >
-      >サンプルの `ADBMobileConfig` JSON ファイルがパッケージに付属しています。設定については、アドビの担当者にお問い合わせください。
+      >サンプルの `ADBMobileConfig` JSON ファイルがパッケージに付属しています。 設定については、アドビの担当者にお問い合わせください。
 
       次に例を示します。
 
@@ -104,7 +117,7 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
 
 1. Experience Cloud 訪問者 ID を設定します。
 
-   Experience Cloud 訪問者 ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。訪問者 ID サービスは、ビデオイベントおよびその他の Marketing Cloud 統合に必要です。
+   Experience Cloud 訪問者 ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。 訪問者 ID サービスは、ビデオイベントおよびその他の Marketing Cloud 統合に必要です。
 
    `ADBMobileConfig` 設定ファイルに `marketingCloud` 組織 ID が含まれていることを確認します。
 
@@ -120,7 +133,7 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
    >
    >「`@AdobeOrg`」が含まれている必要があります。
 
-   設定が完了すると、Experience Cloud 訪問者 ID が生成され、すべてのヒットに含まれます。`custom` や `automatically-generated` などの他の訪問者 ID は、引き続きヒットごとに送信されます。
+   設定が完了すると、Experience Cloud 訪問者 ID が生成され、すべてのヒットに含まれます。 `custom` や `automatically-generated` などの他の訪問者 ID は、引き続きヒットごとに送信されます。
 
    **Experience Cloud 訪問者 ID サービスメソッド**
 
@@ -131,8 +144,8 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
    |  メソッド   | 説明 |
    | --- | --- |
    | `visitorMarketingCloudID` | 訪問者 ID サービスから Experience Cloud 訪問者 ID を取得します。<br/><br/>`ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | Experience Cloud 訪問者 ID を使用して、各訪問者に関連付けることのできる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、`setCustomerIDs` に対応します。例：<br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | SDK で広告（RIDA）用に Roku ID を設定するために使用されます。例：<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API を使用して、広告（RIDA）用の Roku ID を取得します。 |
+   | `visitorSyncIdentifiers` | Experience Cloud 訪問者 ID を使用して、各訪問者に関連付けることのできる追加の顧客 ID を設定できます。 訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。 このメソッドは、`setCustomerIDs` に対応します。 例：<br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `setAdvertisingIdentifier` | SDK で広告（RIDA）用に Roku ID を設定するために使用されます。 例：<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API を使用して、広告（RIDA）用の Roku ID を取得します。 |
    | `getAllIdentifiers` | Analytics、訪問者、Audience Manager、カスタム識別情報など、SDK に保存されているすべての識別情報のリストを返します。<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
 
    <!--
@@ -152,7 +165,7 @@ Experience Cloud ソリューション用 Roku SDK 2.x を使用すると、Brig
 
    **PrivacyStatus**
 
-   | 定数   | 説明 |
+   |  定数   | 説明 |
    | --- | --- |
    | `PRIVACY_STATUS_OPT_IN` | setPrivacyStatus を呼び出してオプトインする際に渡す定数。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
    | `PRIVACY_STATUS_OPT_OUT` | setPrivacyStatus を呼び出してオプトアウトする際に渡す定数。<br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |

@@ -5,26 +5,42 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/re7nZLD9IwvufJGicWLArSwdIi6h518q3ZMDf6oqaCI
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 97%
+source-wordcount: 459
+ht-degree: 86%
 
 ---
 
 # Android のセットアップ{#set-up-android}
 
-Android デバイス用のストリーミングメディアサービスの設定方法について説明します。
+Android デバイスにストリーミングメディアサービスを設定する方法を説明します。
 
 >[!IMPORTANT]
 >
->2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/additional-resources/end-of-support-faqs.md) を参照してください。
+>2021 年 8 月 31 日（PT）にバージョン 4 のモバイル SDK のサポートが終了するのに伴い、iOS および Android 向けの Media Analytics SDK のサポートも終了します。  詳しくは、[Media Analytics SDK のサポート終了に関する FAQ](/help/additional-resources/end-of-support-faqs.md) を参照してください。
 
 
 ## 前提条件
 
-* **メディア SDK 用の有効な設定パラメーターを取得** これらのパラメーターは、Analytics アカウントの設定後、アドビの担当者から取得できます。
-* **Android 向け ADBMobile をアプリケーションに実装** Adobe Mobile SDK ドキュメントについて詳しくは、[Experience Cloud ソリューション用 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=ja) を参照してください。
+* **Media SDKの有効な設定パラメーターを取得する**
+これらのパラメーターは、analytics アカウントを設定した後で、Adobe担当者から取得できます。
+* **Android用ADBMobileをアプリケーションに実装する**
+Adobe Mobile SDKのドキュメントについて詳しくは、[Android SDK 4.x for Experience Cloud Solutions](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=ja)を参照してください。
 
 * **メディアプレーヤーで以下の機能を設定します。**
    * *プレーヤーイベントをサブスクライブするための API* - メディア SDK では、プレーヤーでイベントが発生する際に、シンプルな API のセットを呼び出す必要があります。
@@ -122,7 +138,7 @@ Android デバイス用のストリーミングメディアサービスの設定
 
    >[!IMPORTANT]
    >
-   >`MediaHeartbeat` インスタンスがアクセス可能であることと、*セッションの終わりまで解放されない*&#x200B;ことを確認します。このインスタンスは、以下のすべてのトラッキングイベントに使用されます。
+   >`MediaHeartbeat` インスタンスがアクセス可能であることと、*セッションの終わりまで解放されない*&#x200B;ことを確認します。 このインスタンスは、以下のすべてのトラッキングイベントに使用されます。
 
 **アプリの権限の追加**
 
@@ -138,6 +154,6 @@ Android デバイス用のストリーミングメディアサービスの設定
 
 **Android でのバージョン 1.x から 2.x への移行**
 
-バージョン 2.x では、すべてのパブリックメソッドは、開発をより簡単にするために、`com.adobe.primetime.va.simple.MediaHeartbeat` クラスに統合されています。また、すべての設定は、`com.adobe.primetime.va.simple.MediaHeartbeatConfig` クラスに統合されました。
+バージョン 2.x では、すべてのパブリックメソッドは、開発をより簡単にするために、`com.adobe.primetime.va.simple.MediaHeartbeat` クラスに統合されています。 また、すべての設定は、`com.adobe.primetime.va.simple.MediaHeartbeatConfig` クラスに統合されました。
 
 1.x から 2.x への移行について詳しくは、レガシー実装のドキュメントを参照してください。

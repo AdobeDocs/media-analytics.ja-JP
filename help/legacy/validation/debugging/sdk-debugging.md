@@ -5,16 +5,32 @@ uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 exl-id: c2de6454-8538-4d07-a099-e278b153d894
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/H62IoGbWZ3JPApfb-wFlt9P-oa3rD1kCzalpXEQ4Km0
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: 221
 ht-degree: 100%
 
 ---
 
 # SDK のデバッグ{#sdk-debugging}
 
-ログを有効／無効にすることができます。メディア SDK では、メディアトラッキングスタック全体にわたる広範なトレース／ログメカニズムを提供します。Config オブジェクトの `debugLogging` フラグを設定することで、ログを有効または無効にできます。
+ログを有効／無効にすることができます。 メディア SDK では、メディアトラッキングスタック全体にわたる広範なトレース／ログメカニズムを提供します。 Config オブジェクトの `debugLogging` フラグを設定することで、ログを有効または無効にできます。
 
 ## デバッグログのサンプルコード
 
@@ -52,7 +68,7 @@ this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasure
 
 ### OTT（Chromecast、Roku）
 
-ADBMobile ライブラリでは、`setDebugLogging` メソッドを利用してデバッグのログを記録できます。すべての実稼働アプリケーションに対してデバッグのログを `false` に設定してください。
+ADBMobile ライブラリでは、`setDebugLogging` メソッドを利用してデバッグのログを記録できます。 すべての実稼働アプリケーションに対してデバッグのログを `false` に設定してください。
 
 #### Roku
 
@@ -84,7 +100,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag：**&#x200B;ログメッセージを発行したサブコンポーネントの名前（通常、クラス名）
 * **message：**&#x200B;実際のトレースメッセージ
 
-メディア SDK ライブラリのログ出力を使用して、実装を検証できます。文字列 `#track` についてログ全体を検索するとよいでしょう。これにより、アプリケーションによって呼び出されたすべての `track*()` をハイライトします。
+メディア SDK ライブラリのログ出力を使用して、実装を検証できます。 文字列 `#track` についてログ全体を検索するとよいでしょう。 これにより、アプリケーションによって呼び出されたすべての `track*()` をハイライトします。
 
 例えば、`#track` でフィルターしたログは以下のようになります。
 

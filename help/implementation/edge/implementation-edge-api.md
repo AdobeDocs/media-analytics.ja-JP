@@ -1,26 +1,38 @@
 ---
-title: Edge Network API を使用したAdobe Streaming Media Services の実装
-description: Media Analytics とExperience Platform Edge API のインストールに関するリソースです。
+title: Edge Network APIを使用したAdobe ストリーミングメディアサービスの実装
+description: Experience Platform Edge APIを使用したMedia Analyticsのインストールに関する関連情報。
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/7COaJQQEabsNBXC73jmiFUkp0qZcFYJShCgG2icekpE
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: 134
 ht-degree: 0%
 
 ---
 
-# Edge Network API を使用したAdobe Streaming Media Services の実装
+# Edge Network APIを使用したAdobe ストリーミングメディアサービスの実装
 
-[Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md) が利用できない場合は、API を介してAdobe Experience Platform Edge Networkに直接データを送信できます。
+[Adobe Experience Platform モバイル SDK](/help/implementation/edge/implementation-edge.md)を使用できない場合は、APIを介してAdobe Experience Platform Edge Networkに直接データを送信できます。
 
-Edge API のカスタム実装の実行方法については、次の資料を使用してください。
+Edge APIのカスタム実装を行う方法について詳しくは、次のリソースを使用してください。
 
-* [Media Edge API の概要 &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
+* [Media Edge APIの概要](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
 
-* [Media Edge API の概要 &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
+* [Media Edge APIの概要](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 
-* [Media Edge API トラブルシューティングガイド &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
+* [Media Edge API トラブルシューティングガイド](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
-* [Media Edge API 用の Open API 仕様ファイルの使用 &#x200B;](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
+* [Media Edge APIのOpen API仕様ファイルの使用](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

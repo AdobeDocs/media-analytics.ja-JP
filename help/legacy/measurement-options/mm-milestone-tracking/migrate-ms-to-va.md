@@ -5,18 +5,40 @@ uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ARM-6kkgoa8-xsbZ-Ut-pei0-ZuTX6LgFX5FoRRV0d4
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: 709
 ht-degree: 96%
 
 ---
 
 # マイルストーンから Media Analytics への移行 {#migrating-from-milestone-to-media-analytics}
 
-## 概要  {#overview}
+## 概要 {#overview}
 
-マイルストーンと Media Analytics では、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。Media Analytics ソリューションはマイルストーンが発展したものであるので、多くのメソッドや指標は同じです。ただし、設定のアプローチやコードは大幅に変更されています。新しい Media Analytics のメソッドを指すようにプレーヤーのイベントコードを更新できる必要があります。Media Analytics の実装について詳しくは、[SDK の概要](/help/legacy/setup/legacy-setup-overview.md)および[追跡の概要](/help/use-cases/track-av-playback/track-core-overview.md)を参照してください。
+マイルストーンと Media Analytics では、ビデオ測定の中核的な概念は同じです。ビデオプレーヤーのイベントを取得して分析メソッドにマッピングする一方で、プレーヤーのメタデータおよび値を取得して分析変数にマッピングします。 Media Analytics ソリューションはマイルストーンが発展したものであるので、多くのメソッドや指標は同じです。ただし、設定のアプローチやコードは大幅に変更されています。 新しい Media Analytics のメソッドを指すようにプレーヤーのイベントコードを更新できる必要があります。 Media Analytics の実装について詳しくは、[SDK の概要](/help/legacy/setup/legacy-setup-overview.md)および[追跡の概要](/help/use-cases/track-av-playback/track-core-overview.md)を参照してください。
 
 以下の表では、マイルストーンソリューションと Media Analytics ソリューション間の変更について説明します。
 
@@ -38,7 +60,7 @@ ht-degree: 96%
 | マイルストーン | マイルストーンの構文 | Media Analytics | Media Analytics の構文 |
 | --- | --- | --- | --- |
 | Media.trackUsingContextData | `s.Media.trackUsingContextData` <br> `  = true;` | 該当なし | すべての Media Analytics データはコンテキストデータのみを使用して送信されます。 |
-| Media.contextDataMapping | `s.Media.contextDataMapping = {` <br> `  "a.media.name":"eVar2,prop2",` <br> `  "a.media.segment":"eVar3",` <br> `  "a.contentType":"eVar1",` <br> `  "a.media.timePlayed":"event3",` <br> `  "a.media.view":"event1",` <br> `  "a.media.segmentView":"event2",` <br> `  "a.media.complete":"event7",` <br> `  "a.media.milestones": {` <br> `    25:"event4",` <br> `    50:"event5",` <br> `    75:"event6"` <br> `  }` <br> `};` | 該当なし | Media Analytics のコンテキストデータは、予約変数に自動的に設定されます。実装コード内で eVar、prop およびイベントへのマッピングは不要になりました。お客様は、処理ルールを使用してコンテキストデータを変数にマッピングすることができます。 |
+| Media.contextDataMapping | `s.Media.contextDataMapping = {` <br> `  "a.media.name":"eVar2,prop2",` <br> `  "a.media.segment":"eVar3",` <br> `  "a.contentType":"eVar1",` <br> `  "a.media.timePlayed":"event3",` <br> `  "a.media.view":"event1",` <br> `  "a.media.segmentView":"event2",` <br> `  "a.media.complete":"event7",` <br> `  "a.media.milestones": {` <br> `    25:"event4",` <br> `    50:"event5",` <br> `    75:"event6"` <br> `  }` <br> `};` | 該当なし | Media Analytics のコンテキストデータは、予約変数に自動的に設定されます。 実装コード内で eVar、prop およびイベントへのマッピングは不要になりました。 お客様は、処理ルールを使用してコンテキストデータを変数にマッピングすることができます。 |
 | Media.trackVars | `s.Media.trackVars =` <br> `  "events,` <br> `  prop2,` <br> `  eVar1,` <br> `  eVar2,` <br> `  eVar3";` | 該当なし | マッピングは予約変数および処理ルールによって実行されるので、不要になりました。 |
 | Media.trackEvents | `s.Media.trackEvents =` <br> `  "event1,` <br> `  event2,` <br> `  event3,` <br> `  event4,` <br> `  event5,` <br> `  event6,` <br> `  event7"` | 該当なし | マッピングは予約変数および処理ルールによって実行されるので、不要になりました。 |
 
@@ -51,9 +73,9 @@ ht-degree: 96%
 | Media.completeByCloseOffset | `s.Media.` <br> `  completeByCloseOffset` <br> `  = true` | 該当なし | コンテンツ完了では、100％プログレスマーカーのみがサポートされます。 |
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | 該当なし | コンテンツ完了では、100％プログレスマーカーのみがサポートされます。 |
 | Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK Key: playerName;<br> API Key: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | 該当なし | Media Analytics は、コンテンツの場合は 10 秒、広告の場合は 1 秒に設定されます。他のオプションは利用できません。 |
-| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 該当なし | Media Analytics は、常に 10%、25%、50%、75%、95% で進捗マーカーを追跡します。 |
-| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 該当なし | Media Analytics は、常に 10%、25%、50%、75%、95% で進捗マーカーを追跡します。 |
+| Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | 該当なし | Media Analytics は、コンテンツの場合は 10 秒、広告の場合は 1 秒に設定されます。 他のオプションは利用できません。 |
+| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 該当なし | Media Analyticsでは、進行状況マーカーを常に10%、25%、50%、75%、95%に追跡します。 |
+| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 該当なし | Media Analyticsでは、進行状況マーカーを常に10%、25%、50%、75%、95%に追跡します。 |
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。 |
 | Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。 |
 
@@ -61,9 +83,9 @@ ht-degree: 96%
 
 | マイルストーン | マイルストーンの構文 | Media Analytics | Media Analytics の構文 |
 | --- | --- | --- | --- |
-| Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 該当なし | Media Analytics は、コンテンツの場合は 10 秒、広告の場合は 1 秒に設定されます。他のオプションは利用できません。 |
-| Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 該当なし | 広告の場合、プログレスマーカーはデフォルトでは提供されません。広告のプログレスマーカーを作成するには、計算指標を使用します。 |
-| Media.adTrackOffsetMilestones | `s.Media.` <br> `  adTrackOffsetMilestones` <br> `  = "20,40,60";` | 該当なし | 広告の場合、Media Analytics は 1 秒に設定されます。他のオプションは利用できません。 |
+| Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 該当なし | Media Analytics は、コンテンツの場合は 10 秒、広告の場合は 1 秒に設定されます。 他のオプションは利用できません。 |
+| Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 該当なし | 広告の場合、プログレスマーカーはデフォルトでは提供されません。 広告のプログレスマーカーを作成するには、計算指標を使用します。 |
+| Media.adTrackOffsetMilestones | `s.Media.` <br> `  adTrackOffsetMilestones` <br> `  = "20,40,60";` | 該当なし | 広告の場合、Media Analytics は 1 秒に設定されます。 他のオプションは利用できません。 |
 | Media.adSegmentByMilestones | `s.Media.` <br> `  adSegmentByMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。 |
 | Media.adSegmentByOffsetMilestones | `s.Media.` <br> `  adSegmentByOffsetMilestones` <br> `  = true;` | 該当なし | 自動追跡は利用できなくなりました。 |
 

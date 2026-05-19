@@ -3,20 +3,29 @@ title: ユーザー ID の設定
 description: 一意の顧客識別子として提供されるユーザー ID を設定するための API。
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
-feature: "Streaming Media, API"
+feature: Streaming Media, API
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/AG7KGMEVhpDbGzHKhb94KF8QHzDTw-y1kdkklOdWCFI
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: 53
 ht-degree: 45%
 
 ---
 
-# ユーザー ID の設定 {#set-user-ids}
+# ユーザー ID の設定{#set-user-ids}
 
-ユーザー ID は、アプリケーションでユーザーに対して定義される一意のカスタム訪問者識別子です。
+ユーザーIDは、ユーザーのアプリケーションで定義された一意のカスタム訪問者識別子です。
 
-ADBMobile SDKに一意のユーザー ID を次のように設定して取得します。
+ADBMobile SDKで一意のユーザーIDを次のように設定して取得します。
 
 * **設定:**
 

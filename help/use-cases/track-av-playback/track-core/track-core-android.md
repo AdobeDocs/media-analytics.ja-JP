@@ -5,10 +5,26 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/W-wkhWebsd4z-eOWdqeyZgxrH4ztckDVyHejylpfkHI
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 93%
+source-wordcount: 713
+ht-degree: 95%
 
 ---
 
@@ -68,12 +84,11 @@ ht-degree: 93%
      >
      >メディアオブジェクトへの標準メタデータオブジェクトのアタッチはオプションです。
 
-      * メディアメタデータキー API リファレンス - [&#x200B; 標準メタデータキー – Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * 利用可能なビデオメタデータの包括的なセットについては、こちらを参照してください。[&#x200B; オーディオおよびビデオパラメーター &#x200B;](/help/implementation/variables/audio-video-parameters.md)
+      * Media metadata keys API リファレンス - [標準メタデータキー – Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
 
    * **カスタムメタデータ**
 
-     カスタム変数のディクショナリを作成し、このメディアのデータを設定します。次に例を示します。
+     カスタム変数のディクショナリを作成し、このメディアのデータを設定します。 次に例を示します。
 
      ```java
      HashMap<String, String> mediaMetadata =  
@@ -85,7 +100,7 @@ ht-degree: 93%
 
 1. **意図を追跡して再生を開始**
 
-   メディアセッションの追跡を開始するには、メディアハートビートインスタンスの `trackSessionStart` を呼び出します。次に例を示します。
+   メディアセッションの追跡を開始するには、メディアハートビートインスタンスの `trackSessionStart` を呼び出します。 次に例を示します。
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
@@ -99,7 +114,7 @@ ht-degree: 93%
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` では、再生の開始ではなく、ユーザーの再生の意図を追跡します。この API は、メディアのデータ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` () と `trackPlay` () の間の時間）を見積もるために使用します。
+   >`trackSessionStart` では、再生の開始ではなく、ユーザーの再生の意図を追跡します。 この API は、メディアのデータ／メタデータを読み込み、開始時間の QoS 指標（`trackSessionStart` () と `trackPlay` () の間の時間）を見積もるために使用します。
 
    >[!NOTE]
    >
@@ -140,7 +155,7 @@ ht-degree: 93%
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` は、メディアトラッキングセッションの終わりをマークします。セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。`trackSessionEnd` の後は、他のすべての `track*` API 呼び出しは無視されます（新しいメディアトラッキングセッション用の `trackSessionStart` を除く）。
+   >`trackSessionEnd` は、メディアトラッキングセッションの終わりをマークします。 セッションが最後まで適切に視聴された場合（ユーザーがコンテンツを最後まで視聴）は、`trackComplete` の前に `trackSessionEnd` を呼び出すようにしてください。 `trackSessionEnd` の後は、他のすべての `track*` API 呼び出しは無視されます（新しいメディアトラッキングセッション用の `trackSessionStart` を除く）。
 
 1. **考えられるすべての一時停止シナリオを追跡**
 
@@ -154,12 +169,12 @@ ht-degree: 93%
 
    **一時停止のシナリオ**
 
-   ビデオプレーヤーが一時停止するあらゆるシナリオを識別して、`trackPause` が適切に呼び出されるようにします。以下のシナリオでは、アプリで `trackPause()` () を呼び出す必要があります。
+   ビデオプレーヤーが一時停止するあらゆるシナリオを識別して、`trackPause` が適切に呼び出されるようにします。 以下のシナリオでは、アプリで `trackPause()` () を呼び出す必要があります。
 
    * アプリ内でユーザーが明示的に一時停止をクリックする。
    * プレーヤー自体が一時停止状態になる。
    * （*モバイルアプリケーション*）- ユーザーがアプリケーションをバックグラウンドに移行した場合でも、アプリケーションのセッションを開いたままにしておきたい。
-   * （*モバイルアプリケーション*）- 何らかのシステムの割り込みが生じ、アプリケーションがバックグラウンドに移行する。例：ユーザーに電話がかかってきた場合や、別のアプリケーションのポップアップが表示された場合でも、アプリケーションのセッションを終了せず、ユーザーが中断した場所からメディアを再開できるようにしたい。
+   * （*モバイルアプリケーション*）- 何らかのシステムの割り込みが生じ、アプリケーションがバックグラウンドに移行する。 例：ユーザーに電話がかかってきた場合や、別のアプリケーションのポップアップが表示された場合でも、アプリケーションのセッションを終了せず、ユーザーが中断した場所からメディアを再開できるようにしたい。
 
 1. 一時停止からのメディア再生およびメディア再開に関するイベントをメディアプレーヤーから識別し、`trackPlay` を呼び出します。
 
@@ -172,9 +187,9 @@ ht-degree: 93%
 
    >[!TIP]
    >
-   >これは、手順 4 で使用したのと同じイベントソースである可能性があります。メディア再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
+   >これは、手順 4 で使用したのと同じイベントソースである可能性があります。 メディア再生が再開される際に、各 `trackPause()` API 呼び出しが後続の `trackPlay()` API 呼び出しと対になっていることを確認します。
 
-コア再生のトラッキングについて詳しくは、以下を参照してください。
+コア再生のトラッキングについて詳しくは、次を参照してください。
 
 * トラッキングのシナリオ：[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* 完全なトラッキングの例については、Android SDKに含まれているサンプルプレーヤーを参照してください。
+* Android SDKに含まれているサンプルプレイヤーを使用して、包括的なトラッキングの例を示します。

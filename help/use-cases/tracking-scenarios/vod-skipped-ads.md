@@ -1,13 +1,29 @@
 ---
-title: '広告がスキップされた VOD 再生 '
+title: 広告がスキップされた VOD 再生
 description: ユーザーが広告をスキップした VOD コンテンツを Media SDK を使用してトラッキングする方法の例を示します。
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ypN5kYhjEzqtO-Zt3mah1H5I5f9s12NnFFBk6hYy7MI
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: 285
 ht-degree: 100%
 
 ---
@@ -24,7 +40,7 @@ ht-degree: 100%
 
 | トリガー   | ハートビートメソッド  | ネットワーク呼び出し   | メモ   |
 | --- | --- | --- | --- |
-| ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart()` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
+| ユーザーが[!UICONTROL 再生]をクリックする | `trackSessionStart()` | Analytics Content Start、Heartbeat Content Start | Measurement Library は、プリロール広告があることに気づきません。 これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | 広告が開始されます。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start、Heartbeat Ad Start | |
 | 広告の最初のフレームが再生されます。 | `trackPlay()` | Heartbeat Ad Play | メインコンテンツの前に広告コンテンツを再生する場合、ハートビートは、広告の再生が開始する際に開始されます。 |
 | 広告が再生されます。 | | Ad Heartbeats | |

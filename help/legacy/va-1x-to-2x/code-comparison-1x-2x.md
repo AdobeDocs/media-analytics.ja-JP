@@ -5,16 +5,32 @@ uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/Hf-dQ5Wiv0UWJgViVZCLUsRQO-2-AnRWLrp-ZvGeeXw
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 57%
+source-wordcount: 685
+ht-degree: 56%
 
 ---
 
 # レガシーコードの比較 - 1.x と 2.x {#code-comparison-x-to-x}
 
- 設定パラメーターと追跡 API はすべて、`MediaHeartbeats` と `MediaHeartbeatConfig` クラスに統合されました。
+設定パラメーターと追跡 API はすべて、`MediaHeartbeats` と `MediaHeartbeatConfig` クラスに統合されました。
 
 **設定 API の変更点は次のとおりです。**
 
@@ -30,8 +46,8 @@ ht-degree: 57%
 
 **1.x および 2.x サンプルプレーヤーへのリンク：**
 
-* [1.x サンプルプレーヤー &#x200B;](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x サンプルプレーヤー &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [1.x サンプルプレーヤー](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
+* [2.x サンプルプレーヤー](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 次の節では、初期化、コア再生、広告再生、チャプター再生、その他のイベントについて、1.x と 2.x のコードを比較します。
 
@@ -75,7 +91,7 @@ configData.debugLogging = true;
 this._heartbeat.configure(configData);
 ```
 
-#### Media Heartbeat 初期化（2.x） {#mh-init-2.x}
+#### Media ハートビートの初期化（2.x） {#mh-init-2.x}
 
 ```js
 var mediaConfig = new MediaHeartbeatConfig();
@@ -132,7 +148,7 @@ SampleVideoPlayerPluginDelegate.prototype.getQoSInfo = function() {
 };
 ```
 
-#### AdobeAnalyticsPluginDelegate （1.x） {#analytics-plugin-delegate-1.x}
+#### Adobe AnalyticsPluginDelegate （1.x） {#analytics-plugin-delegate-1.x}
 
 ```js
 $.extend(SampleAdobeAnalyticsPluginDelegate.prototype, AdobeAnalyticsPluginDelegate.prototype);
@@ -220,7 +236,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | `VideoMetadataKeys()` | `MediaHeartbeat.createMediaObject()` |
 | `AdobeAnalyticsPlugin.setVideoMetadata()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### 標準メタデータ（1.x） {#std-meta-1.x}
+#### 標準メタデータ （1.x） {#std-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -242,7 +258,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-#### 標準メタデータ（2.x） {#std-meta-2.x}
+#### 標準メタデータ （2.x） {#std-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -387,7 +403,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBufferStart()` | `MediaHeartbeat.trackEvent(`<br/>  `MediaHeartbeat.Event.BufferStart)` |
 
-#### バッファー開始（1.x） {#buffer-start-1.x}
+#### バッファ開始（1.x） {#buffer-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() {
@@ -396,7 +412,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 };
 ```
 
-#### バッファー開始（2.x） {#buffer-start-2.x}
+#### バッファ開始（2.x） {#buffer-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() {
@@ -466,7 +482,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | `VideoPlayerPluginDelegate.getAdInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakStart)` |
 | | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
 
-#### 広告開始（1.x） {#ad-start-1.x}
+#### 広告の開始（1.x） {#ad-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -481,7 +497,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### 広告開始（2.x） {#ad-start-2.x}
+#### 広告の開始（2.x） {#ad-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -507,7 +523,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdMetadataKeys()` | `MediaHeartbeat.createAdObject()` |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.trackAdStart()` |
 
-#### 標準広告メタデータ （1.x） {#ad-meta-1.x}
+#### 標準広告メタデータ（1.x） {#ad-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -639,7 +655,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 | `VideoPlayerPlugin.trackAdComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdComplete)` |
 | | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
 
-#### 広告完了（1.x） {#ad-complete-1.x}
+#### 広告の完了（1.x） {#ad-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() {
@@ -648,7 +664,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 };
 ```
 
-#### 広告完了（2.x） {#ad-complete-2.x}
+#### 広告の完了（2.x） {#ad-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() {
@@ -667,7 +683,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.createChapterObject` |
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### チャプター開始（1.x） {#chap-start-1.x}
+#### 章の開始（1.x） {#chap-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() {
@@ -682,7 +698,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 };
 ```
 
-#### チャプター開始（2.x） {#chap-start-2.x}
+#### 章の開始（2.x） {#chap-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() {
@@ -702,7 +718,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterSkip)` |
 
-#### チャプタースキップ（1.x） {#chap-skip-1.x}
+#### 章のスキップ （1.x） {#chap-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
@@ -713,7 +729,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 >[!NOTE]
 >VHL 1.5.X API では、プレーヤーがチャプター境界の外にある場合は、`getChapterinfo()` は null を返す必要があります。
 
-#### チャプタースキップ（2.x） {#chap-skip-2.x}
+#### 章のスキップ （2.x） {#chap-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterSkip = function() {
@@ -728,7 +744,7 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.createChapterObject()` |
 | `AdobeAnalyticsPlugin.setChapterMetadata()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### チャプターカスタムメタデータ（1.x） {#chap-cust-meta-1.x}
+#### 章カスタムメタデータ（1.x） {#chap-cust-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() {
@@ -740,7 +756,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-#### チャプターカスタムメタデータ（2.x） {#chap-cust-meta-2.x}
+#### 章カスタムメタデータ（2.x） {#chap-cust-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() {
@@ -762,7 +778,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `trackChapterComplete()` | `trackEvent(MediaHeartbeat.Event.ChapterComplete)` |
 
-#### チャプター完了（1.x） {#chap-complete-1.x}
+#### 章完了（1.x） {#chap-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() {
@@ -771,7 +787,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 };
 ```
 
-#### チャプター完了（2.x） {#chap-complete-2.x}
+#### 章完了（2.x） {#chap-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() {
@@ -818,7 +834,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 | `VideoPlayerPlugin.trackVideoLoad()` | |
 
-#### ビデオ再開（1.x） {#video-resume-1.x}
+#### ビデオの再開（1.x） {#video-resume-1.x}
 
 ```js
 this._videoInfo.resumed=true;
@@ -831,7 +847,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### ビデオ再開（2.x） {#video-resume-2.x}
+#### ビデオの再開（2.x） {#video-resume-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {

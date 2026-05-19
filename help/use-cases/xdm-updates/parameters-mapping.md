@@ -1,29 +1,41 @@
 ---
-title: オーディエンスを新しい Adobe Analytics for Streaming Media データタイプに移行する
-description: オーディエンスを新しい Adobe Analytics for Streaming Media データタイプに移行する方法を説明します
+title: ストリーミングメディア用の新しいAdobe Analytics データタイプへのオーディエンスの移行
+description: 新しいAdobe Analytics for Streaming Media データタイプにオーディエンスを移行する方法について説明します
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 46%
+source-wordcount: 1376
+ht-degree: 45%
 
 ---
 
-# Adobe Experience PlatformとCustomer Journey Analyticsの Media Analytics パラメーターマッピング
+# Adobe Experience PlatformとCustomer Journey AnalyticsのMedia Analytics パラメーターマッピング
 
-このドキュメントでは、Adobe Experience PlatformとCustomer Journey Analytics内で使用されるすべての Media Analytics パラメーターの包括的なリストを提供します。 これは、[Analytics Source Connector](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) または [Analytics Adobe Analytics Source Connector for Classifications](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/classifications) を介して Platform から読み込まれたデータの統合をサポートし、各パラメーターを対応する XDM フィールドパスにマッピングすることを目的としています。
+このドキュメントでは、Adobe Experience PlatformおよびCustomer Journey Analytics内で使用されるすべてのMedia Analytics パラメーターの包括的なリストを提供します。 これは、[Analytics Source コネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)または[Analytics Source コネクタ for Classifications](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/classifications)を介してAdobe AnalyticsからPlatformに読み込まれたデータの統合をサポートし、各パラメーターを対応するXDM フィールドパスにマッピングすることを目的としています。
 
-## Media Analytics 予約変数
+## Media Analyticsの予約変数
 
-すべての Media Analytics 予約変数について、2025 年 5 月まで（および 2025 年 5 月を含む）にAdobe AnalyticsからAEPに取り込まれたデータは、以下の表で指摘されている「現在の XDM フィールドパス」で確認できます。
+すべてのMedia Analyticsの予約済み変数について、2025年5月までの（および含む）Adobe AnalyticsからAEPに取り込まれたデータは、以下の表で示す「現在のXDM フィールドパス」の下にあります。
 
-Media Analytics チームと ADC チームは現在、「レポート XDM フィールドパス」への完全移行に向けて取り組んでいるので、この移行が完了し、「レポート XDM フィールドパス」が使用できるようになると、公式コミュニケーションが共有されます。
+Media AnalyticsおよびADC チームは現在、「レポート XDM フィールドパス」への完全な移行に向けて作業しているため、この移行が完了し、「レポート XDM フィールドパス」を使用できるようになると、正式なコミュニケーションが共有されます。
 
-## ストリーミングメディアパラメーター
+## Streaming Media パラメーター
 
-| フィールド名 | 現在の XDM フィールドパス （非推奨） | レポート XDM フィールドのパス | データタイプ | 派生フィールド | メモ |
+| フィールド名 | 現在のXDM フィールドパス （非推奨） | レポート XDM フィールドパス | データタイプ | 派生フィールド | メモ |
 |--------------------|---------------------------------------------------------------------------|---------------------------------------------------|-----------|-------------------|-----------------------------------------------------------------------|
 | ストリームタイプ | media.mediaTimed.primaryAssetReference.streamType | mediaReporting.sessionDetails.streamType | ディメンション | ストリームタイプ |                                                                       |
 | コンテンツ ID | media.mediaTimed.primaryAssetReference._id | mediaReporting.sessionDetails.name | ディメンション | コンテンツ ID |                                                                       |
@@ -34,11 +46,11 @@ Media Analytics チームと ADC チームは現在、「レポート XDM フィ
 | コンテンツチャネル | media.mediaTimed.primaryAssetViewDetails.broadcastChannel | mediaReporting.sessionDetails.channel | ディメンション | コンテンツチャネル |                                                                       |
 | コンテンツセグメント | media.mediaTimed.primaryAssetViewDetails.videoSegment | mediaReporting.sessionDetails.segment | ディメンション | コンテンツセグメント |                                                                       |
 | コンテンツ名 | media.mediaTimed.primaryAssetReference._dc.title | mediaReporting.sessionDetails.friendlyName | ディメンション | コンテンツ名 |                                                                       |
-| ビデオパス | *AEP/CJAでは使用されません* |                                                   |           |                   | Adobe Analytics固有のプロパティ |
+| ビデオパス | *AEP/CJAでは使用されていません* |                                                   |           |                   | Adobe Analytics固有のプロパティ |
 | 番組 | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Series._iptc4xmpExt.Name | mediaReporting.sessionDetails.show | ディメンション | 番組 |                                                                       |
 | シーズン | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Season._iptc4xmpExt.Name | mediaReporting.sessionDetails.season | ディメンション | シーズン |                                                                       |
 | エピソード | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Episode._iptc4xmpExt.Name | mediaReporting.sessionDetails.episode | ディメンション | エピソード |                                                                       |
-| ジャンル | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Genre | mediaReporting.sessionDetails.genreList | ディメンション | サポートなし | MediaReporting フィールドの使用 |
+| ジャンル | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Genre | mediaReporting.sessionDetails.genreList | ディメンション | サポートされていません | mediaReporting フィールドの使用 |
 | ネットワーク | media.mediaTimed.primaryAssetViewDetails.broadcastNetwork | mediaReporting.sessionDetails.network | ディメンション | ネットワーク |                                                                       |
 | 番組タイプ | media.mediaTimed.primaryAssetReference.showType | mediaReporting.sessionDetails.showType | ディメンション | 番組タイプ |                                                                       |
 | MVPD | media.mediaTimed.idp | mediaReporting.sessionDetails.mvpd | ディメンション | MVPD |                                                                       |
@@ -64,7 +76,7 @@ Media Analytics チームと ADC チームは現在、「レポート XDM フィ
 | 95%進捗状況マーカー | media.mediaTimed.progress95.value | mediaReporting.sessionDetails.hasProgress95 | 指標 | 95%進捗状況マーカー |                                                                       |
 | 分平均オーディエンス | サポートなし | mediaReporting.sessionDetails.averageMinuteAudience | 指標 | 分平均オーディエンス |                                                                  |
 | 前回の呼び出しからの経過時間（秒） | media.mediaTimed.primaryAssetViewDetails.sessionTimeout | mediaReporting.sessionDetails.secondsSinceLastCall | 指標 | 前回の呼び出しからの経過時間（秒） |                                                              |
-| 一時停止の影響を受けたストリーム | サポートなし | mediaReporting.sessionDetails.hasPauseImpactedStreams | 指標 | 一時停止の影響を受けたストリーム | 他のイベントからこの値を計算することで、mediaTimed をカバーします |
+| 一時停止の影響を受けたストリーム | サポートなし | mediaReporting.sessionDetails.hasPauseImpactedStreams | 指標 | 一時停止の影響を受けたストリーム | mediaTimedでは、この値を他のイベントから計算します |
 | 一時停止イベント | media.mediaTimed.pauses.value | mediaReporting.sessionDetails.pauseCount | 指標 | 一時停止イベント |                                                                       |
 | 一時停止時間合計 | media.mediaTimed.pauseTime.value | mediaReporting.sessionDetails.pauseTime | 指標 | 一時停止時間合計 |                                                                       |
 | コンテンツ再開 | media.mediaTimed.resumes.value | mediaReporting.sessionDetails.hasResume | 指標 | コンテンツ再開 |                                                                       |
@@ -72,20 +84,20 @@ Media Analytics チームと ADC チームは現在、「レポート XDM フィ
 
 {style="table-layout:auto"}
 
-## プレーヤーステートパラメーターの更新
+## プレーヤーの状態パラメーターの更新
 
-| フィールド名 | 現在の XDM フィールドパス （非推奨） | レポート XDM フィールドのパス | データタイプ | 派生フィールド | メモ |
+| フィールド名 | 現在のXDM フィールドパス （非推奨） | レポート XDM フィールドパス | データタイプ | 派生フィールド | メモ |
 |----------------------------|-------------------------------------|----------------------------------|-----------|----------------|--------------------------------------|
-| プレーヤーの状態の影響を受けるストリーム | サポートなし | mediaReporting.states.isSet | 指標 | サポートなし | mediaReporting フィールドの使用 |
-| プレーヤーの状態のカウント | サポートなし | mediaReporting.states.count | 指標 | サポートなし | mediaReporting フィールドの使用 |
-| プレイヤーの状態の合計期間 | サポートなし | mediaReporting.states.time | 指標 | サポートなし | mediaReporting フィールドの使用 |
-| プレイヤーの州名 | サポートなし | mediaReporting.states.name | ディメンション | サポートなし | mediaReporting フィールドの使用 |
+| プレーヤーの状態の影響を受けるストリーム | サポートなし | mediaReporting.states.isSet | 指標 | サポートされていません | mediaReporting フィールドの使用 |
+| プレイヤーの状態カウント | サポートなし | mediaReporting.states.count | 指標 | サポートされていません | mediaReporting フィールドの使用 |
+| プレーヤーの状態の合計期間 | サポートなし | mediaReporting.states.time | 指標 | サポートされていません | mediaReporting フィールドの使用 |
+| プレーヤーの状態名 | サポートなし | mediaReporting.states.name | ディメンション | サポートされていません | mediaReporting フィールドの使用 |
 
 {style="table-layout:auto"}
 
-## チャプターパラメーター 
+## チャプターパラメーター
 
-| フィールド名 | 現在の XDM フィールドパス （非推奨） | レポート XDM フィールドのパス | データタイプ | 派生フィールド | メモ |
+| フィールド名 | 現在のXDM フィールドパス （非推奨） | レポート XDM フィールドパス | データタイプ | 派生フィールド | メモ |
 |------------------|--------------------------------------------------------------|-------------------------------------------|-----------|----------------|-----------|
 | チャプター | media.mediaTimed.mediaChapter.chapterAssetReference._id | mediaReporting.chapterDetails.ID | ディメンション | チャプター |           |
 | チャプター開始 | media.mediaTimed.mediaChapter.impressions.value | mediaReporting.chapterDetails.isStarted | 指標 | チャプター開始 |           |
@@ -94,9 +106,9 @@ Media Analytics チームと ADC チームは現在、「レポート XDM フィ
 
 {style="table-layout:auto"}
 
-## 広告パラメーター 
+## 広告パラメーター
 
-| フィールド名 | 現在の XDM フィールドパス （非推奨） | レポート XDM フィールドのパス | データタイプ | 派生フィールド | メモ |
+| フィールド名 | 現在のXDM フィールドパス （非推奨） | レポート XDM フィールドパス | データタイプ | 派生フィールド | メモ |
 |------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
 | 広告 ID | advertising.adAssetReference._id | mediaReporting.advertisingDetails.name | ディメンション | 広告 ID |           |
 | ポッド位置の広告 | advertising.adAssetViewDetails.index | mediaReporting.advertisingDetails.podPosition | ディメンション | ポッド位置の広告 |     |
@@ -112,9 +124,9 @@ Media Analytics チームと ADC チームは現在、「レポート XDM フィ
 
 {style="table-layout:auto"}
 
-## 品質パラメーター 
+## 品質パラメーター
 
-| フィールド名 | 現在の XDM フィールドパス （非推奨） | レポート XDM フィールドのパス | データタイプ | 派生フィールド | メモ |
+| フィールド名 | 現在のXDM フィールドパス （非推奨） | レポート XDM フィールドパス | データタイプ | 派生フィールド | メモ |
 |------------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
 | 平均ビットレート | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateAverage.value | mediaReporting.qoeDataDetails.bitrateAverage | 両方 | 平均ビットレート |           |
 | 開始時間 | media.mediaTimed.primaryAssetViewDetails.qoe.timeToStart.value | mediaReporting.qoeDataDetails.timeToStart | 両方 | 開始時間 |           |
@@ -123,8 +135,8 @@ Media Analytics チームと ADC チームは現在、「レポート XDM フィ
 | 合計バッファー時間 | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime | 両方 | 合計バッファー時間 |     |
 | ビットレート変更 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount | 両方 | ビットレート変更 |         |
 | エラー／エラーイベント | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount | 両方 | エラー／エラーイベント |  |
-| プレーヤー SDK のエラー ID | media.mediaTimed.primaryAssetViewDetails.qoe.playerSdkErrors | mediaReporting.qoeDataDetails.playerSdkErrors | ディメンション | サポートなし | mediaReporting フィールドの使用 |
-| 外部エラー ID | media.mediaTimed.primaryAssetViewDetails.qoe.externalSdkErrors | mediaReporting.qoeDataDetails.externalErrors | ディメンション | サポートなし | mediaReporting フィールドの使用 |
+| プレーヤー SDK のエラー ID | media.mediaTimed.primaryAssetViewDetails.qoe.playerSdkErrors | mediaReporting.qoeDataDetails.playerSdkErrors | ディメンション | サポートされていません | mediaReporting フィールドの使用 |
+| 外部エラー ID | media.mediaTimed.primaryAssetViewDetails.qoe.externalSdkErrors | mediaReporting.qoeDataDetails.externalErrors | ディメンション | サポートされていません | mediaReporting フィールドの使用 |
 | 開始前にドロップ | media.mediaTimed.dropBeforeStarts.value | mediaReporting.qoeDataDetails.isDroppedBeforeStart | 指標 | 開始前にドロップ |     |
 | バッファーの影響を受けたストリーム | サポートなし | mediaReporting.qoeDataDetails.hasBufferImpactedStreams | 指標 | バッファーの影響を受けたストリーム | 他のイベントから計算 |
 | ビットレート変更の影響を受けたストリーム | サポートなし | mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams | 指標 | ビットレート変更の影響を受けたストリーム | 他のイベントから計算 |
@@ -133,27 +145,27 @@ Media Analytics チームと ADC チームは現在、「レポート XDM フィ
 
 {style="table-layout:auto"}
 
-## Media Analytics の分類
+## Media Analyticsの分類
 
-Media Analytics の分類は、ACDC と呼ばれる別のフローを介してAEPに取り込まれます。 次の表に示す各分類グループは、AEP内の一意のデータセットに対応します。 CJAでは、Media Analytics イベントデータセットと各分類データセット間の接続を確立する必要があります。
+Media Analyticsの分類は、ACDCと呼ばれる別のフローを介してAEPに取り込まれます。 次の表に示す各分類グループは、AEP内の一意のデータセットに対応します。 CJAでは、Media Analytics イベントデータセットと各分類データセットとの間の接続を確立する必要があります。
 
-### Customer Journey Analyticsのデータセットの接続
+### Customer Journey Analyticsでのデータセットの接続
 
 Customer Journey Analyticsで接続を設定するには：
 
 - 「**接続**」タブに移動し、「**新しい接続を作成**」を選択します。
-- 接続インターフェイスで、「**データセットを追加**」を選択し、（ADC 経由でメディアデータをインポートするために使用される） Media Analytics イベントデータセットと、4 つの関連する分類データセットを探します。
+- 接続インターフェイスで、**データセットを追加**&#x200B;を選択し、4つの関連する分類データセットと共に、（ADC経由でメディアデータを読み込むために使用される） Media Analytics イベントデータセットを見つけます。
 
 ### 設定の詳細
 
-各ルックアップデータセット（分類データセット）について、次のように設定します。
+ルックアップデータセット（分類データセット）ごとに、次のように設定します。
 
 - **ビデオデータセット**:
    - キー：`_sandbox.key`
    - 一致するキー：`Asset ID (media.mediaTimed.primaryAssetReference._id)`
    - データ ソースの種類：`Web Data`
 
-- **videoad データセット**:
+- **ビデオデータセット**:
    - キー：`_sandbox.key`
    - 一致するキー：`Ad ID (advertising.adAssetReference._id)`
    - データ ソースの種類：`Web Data`
@@ -163,14 +175,14 @@ Customer Journey Analyticsで接続を設定するには：
    - 一致するキー：`Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
    - データ ソースの種類：`Web Data`
 
-- **videochapter データセット**:
+- **ビデオチャプターデータセット**:
    - キー：`_sandbox.key`
    - 一致するキー：`Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
    - データ ソースの種類：`Web Data`
 
-### レポートに関する考慮事項
+### レポートに関する検討事項
 
-レポート中に分類データセットを操作する場合は、標準の Media Analytics XDM フィールドではなく、分類固有のフィールドパス（`ACDC XDM Path`）を参照していることを確認してください。
+レポート中に分類データセットを使用する場合は、標準のMedia Analytics XDM フィールドではなく、分類固有のフィールドパス （`ACDC XDM Path`）を参照してください。
 
 ## 分類テーブル
 
@@ -184,14 +196,14 @@ Customer Journey Analyticsで接続を設定するには：
 | video | 初回デジタル日 | `<_sandbox>.first_digital_date` |
 | video | コンテンツ評価 | `<_sandbox>.content_rating` |
 | video | 作成者 | `<_sandbox>.originator` |
-| videoad | キー/広告 ID | `<_sandbox>.key` |
+| videoad | キー/広告ID | `<_sandbox>.key` |
 | videoad | 広告の長さ | `<_sandbox>.ad_length` |
 | videoad | 広告名 | `<_sandbox>.ad_name` |
 | videoad | クリエイティブ ID | `<_sandbox>.creative_id` |
 | videoadpod | キー/広告ポッド ID | `<_sandbox>.key` |
-| videoadpod | ポッドの位置 | `<_sandbox>.pod_position` |
+| videoadpod | ポッド位置 | `<_sandbox>.pod_position` |
 | videoadpod | ポッド名 | `<_sandbox>.pod_name` |
-| videochapter | キー/チャプター | `<_sandbox>.key` |
+| videochapter | キー/章 | `<_sandbox>.key` |
 | videochapter | チャプターの長さ | `<_sandbox>.chapter_length` |
 | videochapter | チャプターオフセット | `<_sandbox>.chapter_offset` |
 | videochapter | チャプター位置 | `<_sandbox>.chapter_position` |
@@ -201,17 +213,17 @@ Customer Journey Analyticsで接続を設定するには：
 
 ## Media Analytics カスタム変数
 
-Adobe Analyticsでは、各レポートスイート内で定義される実装ルールに応じて、カスタム変数が様々なイベントや eVar に割り当てられます。 その結果、これらのカスタム変数がAdobe Experience Platform（AEP）に読み込まれると、異なる XDM パスにマッピングされます。
+Adobe Analyticsでは、各レポートスイート内で定義された実装ルールに応じて、カスタム変数が異なるイベントまたはeVarに割り当てられます。 その結果、これらのカスタム変数がAdobe Experience Platform（AEP）に読み込まれると、異なるXDM パスにマッピングされます。
 
 - イベントは、次のパスに保存されます。
 
   `_experience.analytics.event<x>to<y>.event<number>.value`
 
-- eVar は、次のパスに保存されます。
+- eVarは、次のパスに格納されます。
 
   `_experience.analytics.customDimensions.eVars.eVar<number>`
 
-どちらの場合も、`<number>` は元のAdobe Analytics レポートスイート設定で使用された特定のイベントまたはeVar番号に対応しています。
+いずれの場合も、`<number>`は、元のAdobe Analytics レポートスイート設定で使用されている特定のイベントまたはeVar番号に対応します。
 
 ### カスタム変数
 

@@ -1,20 +1,36 @@
 ---
-title: プリロール広告のあるVOD再生
-description: プリロール広告を含んだVOD コンテンツを Media SDKを使用してトラッキングする方法の例を示します。
+title: VOD Playback with Pre-roll Ads
+description: Media SDKを使用して、プリロール広告を含むVOD コンテンツをトラッキングする方法の例を示します。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/Yw1UIjZr5ZKx6AWU4anAo5kux5EoVtnQMoFLs5T2nas
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: 544
 ht-degree: 95%
 
 ---
 
 # プリロール広告のある VOD 再生{#vod-playback-with-pre-roll-ads}
 
-このシナリオでは、メインコンテンツの前にプリロール広告が挿入されています。特に指定のない限り、ネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオの呼び出しと同じです。ネットワーク呼び出しは同時に発生しますが、ペイロードは異なります。
+このシナリオでは、メインコンテンツの前にプリロール広告が挿入されています。 特に指定のない限り、ネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオの呼び出しと同じです。 ネットワーク呼び出しは同時に発生しますが、ペイロードは異なります。
 
 | トリガー | ハートビートメソッド | ネットワーク呼び出し   | メモ   |
 | --- | --- | --- | --- |
@@ -32,7 +48,7 @@ ht-degree: 95%
 
 ## パラメーター {#parameters}
 
-広告の再生が開始されると、`Heartbeat Ad Start` 呼び出しが送信されます。広告の開始が 10 秒のタイマーと同時に起こらない場合、`Heartbeat Ad Start` 呼び出しは、数秒間遅延され、呼び出しは次の 10 秒のインターバルに進みます。これが発生すると、`Content Heartbeat` 呼び出しは同じインターバルから出ます。この 2 つの呼び出しの違いは、イベントタイプとアセットタイプを調査することで区別できます。
+広告の再生が開始されると、`Heartbeat Ad Start` 呼び出しが送信されます。 広告の開始が 10 秒のタイマーと同時に起こらない場合、`Heartbeat Ad Start` 呼び出しは、数秒間遅延され、呼び出しは次の 10 秒のインターバルに進みます。 これが発生すると、`Content Heartbeat` 呼び出しは同じインターバルから出ます。この 2 つの呼び出しの違いは、イベントタイプとアセットタイプを調査することで区別できます。
 
 ### Heartbeat Ad Start
 
@@ -61,7 +77,7 @@ ht-degree: 95%
 | `s:asset:ad_id` | &lt;広告 ID> |  |
 | `s:asset:pod_id` | &lt;広告ポッド ID> |  |
 
-`Heartbeat Content Complete` 呼び出しと同様、再生が完了した（再生ヘッドの終わりに達した）場合、`Heartbeat Ad Complete` 呼び出しが送信されます。この呼び出しは、他の `Heartbeat Ad` 呼び出しに似ていますが、いくつか特有のものが含まれます。
+`Heartbeat Content Complete` 呼び出しと同様、再生が完了した（再生ヘッドの終わりに達した）場合、`Heartbeat Ad Complete` 呼び出しが送信されます。 この呼び出しは、他の `Heartbeat Ad` 呼び出しに似ていますが、いくつか特有のものが含まれます。
 
 ### Heartbeat Ad Complete 呼び出し
 

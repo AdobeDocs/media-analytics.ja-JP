@@ -5,9 +5,25 @@ uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/tuQKZx3-sYhbRWOcamQ15n3sTEOwZmiXxgIFe4-kGQ0
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: 276
 ht-degree: 100%
 
 ---
@@ -26,7 +42,7 @@ ht-degree: 100%
 | コンテンツ再生の最初のフレーム。 | `trackPlay` | Heartbeat Content Play | メインコンテンツの前にチャプターコンテンツを再生する場合、ハートビートは、チャプターが開始する際に開始されます。 |
 | コンテンツ再生 | | Content Heartbeats | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | ユーザーがコンテンツでシーク操作を開始する | `trackSeekStart` | | シークが完了する（例えば、`trackSeekComplete`）まで、ハートビートは終わりません。 |
-| シーク操作が完了する | `trackSeekComplete` | | シークが完了したので、ハートビートは終わり始めます。ヒント：再生ヘッド値は、シーク後に修正された新しい再生ヘッドを表す必要があります。 |
+| シーク操作が完了する | `trackSeekComplete` | | シークが完了したので、ハートビートは終わり始めます。  ヒント：再生ヘッド値は、シーク後に修正された新しい再生ヘッドを表す必要があります。 |
 | コンテンツの完了 | `trackComplete` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | セッション終了 | `trackSessionEnd` | | `SessionEnd` |
 

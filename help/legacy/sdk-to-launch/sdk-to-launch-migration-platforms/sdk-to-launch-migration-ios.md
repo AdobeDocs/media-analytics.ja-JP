@@ -1,27 +1,41 @@
 ---
-title: スタンドアロンの Media SDKからAdobe Launch への移行 – iOS
+title: スタンドアロン Media SDKからAdobe Launchへの移行 – iOS
 description: Media SDK から iOS 用の Launch に移行する方法を説明します。
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/drdnQd83UXJkMKj-isUKPeIHe9xGetwY31HzHf37IEo
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 97%
+source-wordcount: 429
+ht-degree: 60%
 
 ---
 
 # スタンドアロンの Media SDK から Adobe Launch への移行 - iOS
 
 >[!NOTE]
->Adobe Experience Platform Launch は、Experience Platform のデータ収集テクノロジースイートとしてリブランドされています。その結果、製品ドキュメント全体でいくつかの用語の変更がロールアウトされました。用語の変更点の一覧については、次の[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ja)を参照してください。
+>Adobe Experience Platform Launch は、Experience Platform のデータ収集テクノロジースイートとしてリブランドされています。 その結果、製品ドキュメント全体でいくつかの用語の変更がロールアウトされました。 用語の変更点の一覧については、次の[ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=ja)を参照してください。
 
 ## 設定
 
 ### スタンドアロンの Media SDK
 
-スタンドアロンの Media SDK では、アプリケーションでトラッキング設定を行い、
-トラッカーを作成する際に SDK に渡します。
+スタンドアロンのMedia SDKでは、アプリでトラッキング設定を設定し，
+SDKに渡します。
 
 ```objective-c
 ADBMediaHeartbeatConfig *config =
@@ -43,17 +57,20 @@ ADBMediaHeartbeat* tracker =
 
 1. Experience Platform Launch　で、モバイルプロパティの「[!UICONTROL 拡張機能]」タブをクリックします。
 1. 「[!UICONTROL カタログ]」タブでオーディオおよびビデオ用 Adobe Media Analytics 拡張機能を探し、「[!UICONTROL インストール]」をクリックします。
-1. 拡張機能の設定ページで、トラッキングパラメーターを設定します。メディア拡張機能では、設定済みのパラメーターをトラッキングに使用します。
+1. 拡張機能の設定ページで、トラッキングパラメーターを設定します。
+メディア拡張機能では、設定済みのパラメーターをトラッキングに使用します。
 
    ![](assets/launch_config_mobile.png)
 
-[Media Analytics 拡張機能の設定](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
+[Media Analytics拡張機能の設定](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## トラッカーの作成
 
 ### スタンドアロンの Media SDK
 
-スタンドアロンのメディア SDK では、`ADBMediaHeartbeatConfig` オブジェクトを手動で作成し、トラッキングパラメーターを設定します。`getQoSObject()` および `getCurrentPlaybackTime()functions.` を公開する delegate インターフェイスを実装します
+スタンドアロン Media SDKでは、`ADBMediaHeartbeatConfig` オブジェクトを手動で作成します
+トラッキングパラメーターを設定します。 を公開するデリゲート インターフェイスを実装します。
+`getQoSObject()` と `getCurrentPlaybackTime()functions.`
 
 トラッキング用の MediaHeartbeat インスタンスの作成：
 
@@ -92,7 +109,7 @@ ADBMediaHeartbeat* tracker =
 
 ### Launch 拡張機能
 
-[メディア API リファレンス - メディアトラッカーの作成](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
+[Media API リファレンス - Media Trackerの作成](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 トラッカーを作成する前に、メディア拡張機能と依存する拡張機能をモバイルコアに登録します。
 
@@ -127,17 +144,25 @@ ADBMediaHeartbeat* tracker =
 
 ### スタンドアロンの Media SDK
 
-スタンドアロンの Media SDK では、トラッカーの作成中に `ADBMediaHeartbeartDelegate` プロトコルを実装する delegate オブジェクトを渡します。トラッカーが `getQoSObject()` および `getCurrentPlaybackTime()` インターフェイスメソッドを呼び出すたびに、実装は最新の QoE と再生ヘッドを返す必要があります。
+スタンドアロンのMedia SDKでは、デリゲート オブジェクトが
+トラッカーの作成中に`ADBMediaHeartbeartDelegate` プロトコルが渡されました。
+実装は、常に最新のQoEと再生ヘッドを返す必要があります。
+トラッカーは`getQoSObject()`および`getCurrentPlaybackTime()` インターフェイスを呼び出します
+方法：
 
 ### Launch 拡張機能
 
-実装では、トラッカーによって公開された `updateCurrentPlayhead` メソッドを呼び出すことにより、現在のプレーヤーの再生ヘッドを更新する必要があります。正確な追跡をおこなうには、このメソッドを少なくとも 1 秒に 1 回呼び出す必要があります。
+実装は、を呼び出して、現在のプレーヤー再生ヘッドを更新する必要があります。
+トラッカーにより`updateCurrentPlayhead` メソッドが公開されました。 正確なトラッキングのために
+このメソッドは、少なくとも1秒に1回は呼び出す必要があります。
 
-[メディア API リファレンス - 現在の再生ヘッドの更新](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
+[Media API リファレンス – 現在の再生ヘッドの更新](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
-実装では、トラッカーによって公開された `updateQoEObject` メソッドを呼び出して QoE 情報を更新する必要があります。品質指標に変更がある場合は常に、このメソッドを呼び出す必要があります。
+実装は、QoE情報を更新する必要があります。
+トラッカーにより`updateQoEObject` メソッドが公開されました。 このメソッドを
+品質指標が変更されるたびに確認します。
 
-[メディア API リファレンス - QoE オブジェクトの更新](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
+[Media API リファレンス - QoE オブジェクトの更新](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## 標準メディア／広告メタデータを渡す
 

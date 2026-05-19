@@ -1,0 +1,41 @@
+---
+title: エラー数
+description: セッションごとのエラーイベントの数を報告します。
+feature: Dimensions
+role: User, Admin
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 6%
+
+---
+
+
+# エラー数
+
+>[!BEGINSHADEBOX]
+
+*このページでは、**エラー**&#x200B;ディメンションについて説明します。 Adobe Analyticsは、同じ`a.media.qoe.errorCount`個のコンテキストデータ変数から、ペアの[&#x200B; エラーイベント指標](/help/reporting/metrics/error-events.md)を自動入力します。 Customer Journey Analyticsは、ディメンションまたは指標として使用できる1つの`mediaReporting.qoeDataDetails.errorCount` フィールドを公開します。*
+
+>[!ENDSHADEBOX]
+
+**エラー** ディメンションは、セッション中に受信したエラーイベントの数を報告します。 ディメンションを使用して、正確なエラー数ごとにエンゲージメントを分割します。
+
+## このディメンションの入力方法
+
+メディアバックエンドは、プレーヤーによって報告されるすべてのエラーのカウントを増分します。 値はクローズ呼び出しで報告されます。
+
+| レポートシステム | ソース |
+| --- | --- |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.errorCount`から自動的に収集されます。 |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| データフィード | `videoqoeerrorcountevar`, `post_videoqoeerrorcountevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.errorCount` |
+
+## ディメンション項目
+
+各項目は、クローズ呼び出しで報告されるリテラルのエラー数の値です。 セッションレベルのブール値レポートの場合（エラーが発生したかどうかにかかわらず）、[&#x200B; エラーが影響を受けるストリーム &#x200B;](/help/reporting/metrics/error-impacted-streams.md)を使用します。 一意のエラーIDの場合、[外部エラーID](external-error-ids.md)と[Player SDK エラーID](player-sdk-error-ids.md)を使用します。
+
+>[!NOTE]
+>
+>従来のハートビート SDK（Media SDK 1.5.x-2.x）を使用する場合、SDKによって内部的に生成されたエラーIDは、コンテキストデータキー`a.media.qoe.mediaSdkErrors`で自動的に収集され、カスタム処理ルールを介してAdobe Analyticsでアクセスできます。 Audience Manager特性は`c_contextdata.a.media.qoe.mediaSdkErrors`です。 このフィールドは、Media Collection APIまたはMedia Edge APIの実装には適用されません。
