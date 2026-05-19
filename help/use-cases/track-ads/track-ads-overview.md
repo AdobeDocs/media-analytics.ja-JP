@@ -6,24 +6,15 @@ exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/PguxKIzAL95WbMl5c0yJq9rYSqZgOGbbAYtxOI4eVOs
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 77%
+source-wordcount: 641
+ht-degree: 58%
 
 ---
 
@@ -110,7 +101,7 @@ ht-degree: 77%
 
 1. `MediaHeartbeat` インスタンスの `AdStart` イベントで `trackEvent()` を呼び出し、広告再生の追跡を開始します。
 
-   カスタムメタデータ変数（または空のオブジェクト）への参照を、イベント呼び出しの 3 番目のパラメーターとして追加します。
+   カスタムメタデータ変数（または空のオブジェクト）への参照を、イベント呼び出しの 3 番目のパラメーターとして追加します。 広告の再生中は、コンテンツ再生ヘッド （`l:event:playhead`）を広告枠が始まった位置に固定しておきます。広告再生中にコンテンツ再生を進めると、[ コンテンツ滞在時間](/help/reporting/metrics/content-time-spent.md)が上書きされます。
 
 1. 広告の再生が広告の終わりに到達したら、`AdComplete` イベントで `trackEvent()` を呼び出します。
 
@@ -120,7 +111,11 @@ ht-degree: 77%
 
 >[!IMPORTANT]
 >
->広告の再生（`s:asset:type=ad`）中、コンテンツプレーヤーの再生ヘッド（`l:event:playhead`）を増分しないでください。 増分すると、コンテンツ視聴時間指標に悪影響をおよぼします。
+>**プレロール広告：`trackPlay`を`AdBreakStart`および`AdStart`前に呼び出さないでください。** メインコンテンツの最初の`play` pingは[ コンテンツ開始](/help/reporting/metrics/content-starts.md)を増分します。 プレロール広告イベントが発生する前に`trackPlay`が呼び出され、広告中にビューアが脱落した場合、メインコンテンツが再生されなかったとしても、コンテンツ開始は増分されます。 プレロール シナリオの場合、`AdBreakStart`と`AdStart`が送信されるまで`trackPlay`を遅らせます。
+
+>[!NOTE]
+>
+>広告再生中に報告された再生ヘッドの値は、広告内ではなく、**メインコンテンツ**&#x200B;内の視聴者の位置を表します。 10分間のビデオの前のプレロール広告の場合、広告全体を通して再生ヘッドは`0`です。 5分の時点で開始するミッドロール広告の場合、広告の期間中、再生ヘッドは`300` （秒）のままになります。
 
 以下のサンプルコードでは、HTML5 メディアプレーヤー用の JavaScript 2.x SDK を使用しています。
 
@@ -165,5 +160,5 @@ if (e.type == "ad break complete") {
 >* [休憩の開始](/help/implementation/events/ads/ad-break-start.md)
 >* [広告の開始](/help/implementation/events/ads/ad-start.md)
 >* [Ad complete](/help/implementation/events/ads/ad-complete.md)
->* [広告をスキップ &#x200B;](/help/implementation/events/ads/ad-skip.md)
+>* [広告をスキップ ](/help/implementation/events/ads/ad-skip.md)
 >* [Ad break complete](/help/implementation/events/ads/ad-break-complete.md)

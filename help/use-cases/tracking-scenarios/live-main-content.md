@@ -6,26 +6,15 @@ exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/oOshJZEQmXqgNh5l10-qhLMO8dmph6Tz9mpH0a4FePU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 590
-ht-degree: 98%
+source-wordcount: 749
+ht-degree: 77%
 
 ---
 
@@ -87,6 +76,17 @@ Content Heartbeats では、いくつかの特定の事柄を探します。
 ### 一時停止時
 
 ユーザーが再生を一時停止する場合、再生の開始時に適用されたのと同じ「ライブ再生ヘッド」ロジックが適用される必要があります。 ユーザーがライブストリームの再生に戻る場合、ライブストリームを一時停止した時点&#x200B;_ではなく_、午前 0 時（UTC）からの新しい秒数に合わせて `l:event:playhead` 値を設定する必要があります。
+
+## ライブストリームでのプログラムの変更のトラッキング {#live-program-changes}
+
+ライブストリームがある番組や番組から別の番組に移行する場合（放送とケーブルのプロパティに共通のパターン）、各プログラムは個別のセッションとして追跡する必要があります。 これにより、視聴すべてを単一の連続したストリームに起因するのではなく、個々のタイトルごとに費やしたエンゲージメントと時間をレポートできます。
+
+**推奨されるアプローチ：**
+
+1. 現在のプログラムが終了したとき（またはプレイヤーがプログラム変更イベントを通知したとき）、`trackSessionEnd`を呼び出して現在のセッションを閉じます。
+2. 新しいプログラムが開始されたら、新しいプログラムのメタデータ（名前、ID、コンテンツタイプなど）を使用して`trackSessionStart`に呼び出します。
+
+各プログラムを独自のセッションとして追跡することで、[ コンテンツに費やした時間](/help/reporting/metrics/content-time-spent.md)、[進捗マーカー](/help/reporting/metrics/progress-markers.md)、および各プログラムにスコープ付けされた完了指標を保持し、タイトルごとの正確なオーディエンスレポートを有効にします。 移行には`trackComplete`ではなく`trackSessionEnd`を使用します。`trackComplete`は、視聴者が意図的に個別のコンテンツの最後まで視聴したことを示します。一方、`trackSessionEnd`は、ストリームが終了するのではなく異なるプログラミングで続いているため、ここではこれが正しいです。
 
 ## サンプルコード {#sample-code}
 

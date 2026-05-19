@@ -3,10 +3,10 @@ title: 開始時間
 description: プレーヤーの起動時間をミリ秒単位で設定し、バックエンドが最初のフレームの品質を報告できるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -15,19 +15,23 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**開始時間**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[開始までの時間](/help/reporting/dimensions/time-to-start.md)を参照してください。*
+*このページでは、**開始時間**変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[開始までの時間](/help/reporting/dimensions/time-to-start.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
 変数を開始するまでの時間は、再生を開始してから最初のフレームレンダリングまでの経過時間（ミリ秒単位）です。 セッション開始イベントが発生する前に、QoE オブジェクトに設定します。 Adobeは、値を数秒で保存およびレポートします。ミリ秒単位で渡すと、取り込み時にAdobeがコンバージョンします。
 
+>[!IMPORTANT]
+>
+>プレーヤーがコンテンツフレームのレンダリングを開始したら、`timeToStart`の更新を停止します。 この値は、最初のバッファリングまたは読み込みフェーズで増加する可能性がありますが、再生が開始された時点から固定として扱う必要があります。 最初のフレームレンダリング後に更新を続けると、膨張または不正確な[開始時間](/help/reporting/metrics/time-to-start.md)指標が生成されます。
+
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.qoe.timeToStart` |
-| **XDM コレクションフィールド** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.qoe.timeToStart` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## Web SDK
 
@@ -157,4 +161,4 @@ tracker.updateQoEObject(qoeObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。

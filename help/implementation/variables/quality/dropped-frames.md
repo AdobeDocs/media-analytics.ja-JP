@@ -3,10 +3,10 @@ title: ドロップしたフレーム
 description: バックエンドがフレームドロップの品質を報告できるように、QoE オブジェクトにドロップされたフレームの実行回数を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -15,19 +15,23 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**削除されたフレーム**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[削除されたフレーム &#x200B;](/help/reporting/dimensions/dropped-frames.md)を参照してください。*
+*このページでは、**削除されたフレーム**変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[削除されたフレーム ](/help/reporting/dimensions/dropped-frames.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
 ドロップされたフレーム変数は、セッション中にプレイヤーがドロップしたフレームのランニングカウントです。 QoE オブジェクトに設定し、プレイヤーが新しいドロップを報告するたびに値を更新します。 バックエンドは、セッションのクローズ時に最新の値をレポートします。
 
+>[!NOTE]
+>
+>セッション全体のドロップされたフレームの&#x200B;**累計**&#x200B;をその時点まで常に渡します。間隔ごとの差分は渡しません。 更新の間に値を`0`にリセットすると、バックエンドは最終値として`0`を受け取り、実際に以前にドロップしたものに関係なく、セッションのドロップ済みフレームがゼロであるとレポートします。
+
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.qoe.droppedFrameCount` |
-| **XDM コレクションフィールド** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM コレクションフィールド** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | 品質イベント （[&#x200B; ビットレート変更](/help/implementation/events/playback/bitrate-change.md)、[&#x200B; バッファー開始](/help/implementation/events/playback/buffer-start.md)、[&#x200B; エラー](/help/implementation/events/error.md)）、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | 品質イベント （[ ビットレート変更](/help/implementation/events/playback/bitrate-change.md)、[ バッファー開始](/help/implementation/events/playback/buffer-start.md)、[ エラー](/help/implementation/events/error.md)）、セッション終了 |
 
 ## Web SDK
 
@@ -138,4 +142,4 @@ tracker.updateQoEObject(qoeObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
