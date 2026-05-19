@@ -21,10 +21,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 285
-ht-degree: 100%
+source-wordcount: 319
+ht-degree: 80%
 
 ---
 
@@ -45,13 +45,14 @@ ht-degree: 100%
 | 広告の最初のフレームが再生されます。 | `trackPlay()` | Heartbeat Ad Play | メインコンテンツの前に広告コンテンツを再生する場合、ハートビートは、広告の再生が開始する際に開始されます。 |
 | 広告が再生されます。 | | Ad Heartbeats | |
 | 広告がスキップされます。 | `trackEvent:trackAdSkip` | | Ad Complete ネットワーク呼び出しはありません。 |
+| 広告ブレークが終了します。 | `trackEvent:AdBreakComplete` | | 広告がスキップされた場合でも必要です。 このイベントを使用しない場合、広告イベントは無視され、スキップされた広告期間はメインコンテンツとしてカウントされます。 |
 | コンテンツが再生されます。 | | Content Heartbeats | これらのネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | コンテンツの再生が完了します。 | `trackComplete()` | Heartbeat Content Complete | このネットワーク呼び出しは、[広告のない VOD 再生](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)シナリオとまったく同じです。 |
 | セッションが終了します。 | `trackSessionEnd()` | | `SessionEnd` |
 
 ## パラメーター {#parameters}
 
-パラメーターは、Ad Complete および Ad-Break Complete 呼び出しがないことを除いて、[プリロール広告のある VOD 再生](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)シナリオのパラメーターと同一です。
+パラメーターは、広告完了呼び出しがない場合を除き、プレロール広告[&#128279;](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) シナリオでのVOD再生のパラメーターと同じです。 スキップして広告枠を閉じるには、引き続き`AdBreakComplete`が必要です。
 
 ## サンプルコード {#sample-code}
 
@@ -128,14 +129,22 @@ _mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip, null, null);
 ....... 
 ....... 
 
-// 6. Call trackComplete() when the playback reaches the end, i.e., when the media  
+// 6. Track the MediaHeartbeat.Event.AdBreakComplete event to close the ad break.  
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content.  
+_mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete, null, null); 
+
+....... 
+....... 
+
+// 7. Call trackComplete() when the playback reaches the end, i.e., when the media  
 //    completes and finishes playing.  
 _mediaHeartbeat.trackComplete(); 
 
 ........ 
 ........ 
 
-// 7. Call trackSessionEnd() when the playback session is over. This method must be called  
+// 8. Call trackSessionEnd() when the playback session is over. This method must be called  
 //    even if the user does not watch the media to completion.  
 _mediaHeartbeat.trackSessionEnd(); 
 
@@ -212,13 +221,20 @@ NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
 ....... 
 ....... 
 
-// 6. Call trackComplete when the playback reaches the end, i.e., when the media 
+// 6. Track the ADBMediaHeartbeatEventAdBreakComplete event to close the ad break.  
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content. 
+[_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventAdBreakComplete mediaObject:nil data:nil]; 
+....... 
+....... 
+
+// 7. Call trackComplete when the playback reaches the end, i.e., when the media 
 //    completes and finishes playing. 
 [_mediaHeartbeat trackComplete]; 
 ....... 
 ....... 
 
-// 7. Call trackSessionEnd when the playback session is over. This method must  
+// 8. Call trackSessionEnd when the playback session is over. This method must  
 //    be called even if the user does not watch the media to completion. 
 [_mediaHeartbeat trackSessionEnd]; 
 ....... 
@@ -298,14 +314,22 @@ this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip);
 ....... 
 ....... 
 
-// 6. Call trackComplete() when the playback reaches the end, i.e., playback completes  
+// 6. Track the MediaHeartbeat.Event.AdBreakComplete event to close the ad break. 
+//    This is required even when the ad was skipped; omitting it causes ad events  
+//    to be ignored and the skipped-ad duration to be counted as main content. 
+this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
+
+....... 
+....... 
+
+// 7. Call trackComplete() when the playback reaches the end, i.e., playback completes  
 //    and finishes playing. 
 this._mediaHeartbeat.trackComplete(); 
 
 ........ 
 ........ 
 
-// 7. Call trackSessionEnd() when the playback session is over. This method must be called even  
+// 8. Call trackSessionEnd() when the playback session is over. This method must be called even  
 //    if the user does not watch the media to completion. 
 this._mediaHeartbeat.trackSessionEnd(); 
 

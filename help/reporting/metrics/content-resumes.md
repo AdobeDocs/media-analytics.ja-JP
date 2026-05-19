@@ -3,10 +3,10 @@ title: コンテンツの再開
 description: 以前に中断された再生を再開したセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 10%
+source-wordcount: '171'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 10%
 
 ## この指標の計算方法
 
-[&#x200B; セッション開始](/help/implementation/events/session/session-start.md) イベントの`mediaCollection.sessionDetails.hasResume`が`true`の場合、メディアバックエンドは`mediaReporting.sessionDetails.hasResume = true`を設定します。 プレーヤーは、セッションに履歴書として明示的にフラグを付ける必要があります。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドは、`mediaCollection.sessionDetails.hasResume`が[&#x200B; セッション開始](/help/implementation/events/session/session-start.md) イベントの`true`の場合にこのフラグを設定します。 プレーヤーは、セッションに履歴書として明示的にフラグを付ける必要があります。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

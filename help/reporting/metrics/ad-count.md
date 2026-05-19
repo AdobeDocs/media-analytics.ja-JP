@@ -3,9 +3,9 @@ title: 広告数
 description: セッション中に開始された広告の数をレポートします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '176'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ## この指標の計算方法
 
-メディア バックエンドは、セッション中に受信した[広告の開始](/help/implementation/events/ads/ad-start.md) イベントごとに`mediaReporting.sessionDetails.adCount`を増分します。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドは、セッション中に受信した[広告開始](/help/implementation/events/ads/ad-start.md) イベントごとに、このカウントを増分します。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

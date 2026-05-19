@@ -3,9 +3,9 @@ title: クローズドキャプション数
 description: セッション中にビューアがキャプションを有効にした回数をレポートします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '167'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 8%
 
 ## この指標の計算方法
 
-メディアバックエンドは、すべてのcaption-enable state-start イベントで`mediaReporting.states[]`の`closedCaptioning` エントリの`count` フィールドを増分します。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドでは、キャプションを有効にして状態を開始するイベントごとに、このカウントを増分します。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

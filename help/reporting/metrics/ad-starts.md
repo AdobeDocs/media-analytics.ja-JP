@@ -3,10 +3,10 @@ title: 広告開始
 description: セッション中に再生を開始したすべての広告をカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 12%
+source-wordcount: '126'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## この指標の計算方法
 
-メディア バックエンドは、[広告の開始](/help/implementation/events/ads/ad-start.md) イベントを受信したときに`mediaReporting.advertisingDetails.isStarted = true`を設定します。 この指標は、広告開始呼び出しに関して報告されます。
+メディア バックエンドは、[広告開始](/help/implementation/events/ads/ad-start.md) イベントを受信したときに、このフラグを設定します。 この指標は、広告開始呼び出しに関して報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

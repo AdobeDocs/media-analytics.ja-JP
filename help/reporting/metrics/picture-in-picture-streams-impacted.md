@@ -3,9 +3,9 @@ title: ピクチャインピクチャの影響を受けるストリーム
 description: ビューアが少なくとも1回はピクチャインピクチャに入ったセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '192'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 ## この指標の計算方法
 
-メディアバックエンドは、`pictureInPicture` エントリの`mediaReporting.states[]`の`isSet` フラグを`true`に設定し、`statesStart`の`pictureInPicture`を含む`media.statesUpdate` イベントを初めて受信しました。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドは、セッション中にピクチャインピクチャの状態開始イベントを初めて受信したときに、このフラグを設定します。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

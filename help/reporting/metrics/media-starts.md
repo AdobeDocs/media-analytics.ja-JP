@@ -3,10 +3,10 @@ title: メディア開始
 description: プリロール広告またはバッファリングで終了したセッションを含め、開始されたすべてのメディアセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 8%
+source-wordcount: '228'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ## この指標の計算方法
 
-[&#x200B; セッション開始](/help/implementation/events/session/session-start.md) イベントを受信すると、メディアバックエンドは`mediaReporting.sessionDetails.isViewed = true`を設定します。 報告された指標は、セッションごとに`1`です。 メディアの開始は、クローズ呼び出しではなく、開始呼び出しで報告されます。 セッションのクローズを待たない唯一のフェーズ 1指標です。
+メディアバックエンドは、[&#x200B; セッション開始](/help/implementation/events/session/session-start.md) イベントを受信したときに、このフラグを設定します。 報告された指標は、セッションごとに`1`です。 メディアの開始は、クローズ呼び出しではなく開始呼び出しで報告されます。セッションのクローズを待たない唯一の指標です。 [&#x200B; コンテンツ開始](/help/reporting/metrics/content-starts.md)、[&#x200B; コンテンツ滞在時間](/help/reporting/metrics/content-time-spent.md)、[&#x200B; プログレスマーカー](/help/reporting/metrics/progress-markers.md)など、その他のすべてのメディア指標は、クローズコールで報告され、再生中にリアルタイムでは使用できません。 [広告開始](/help/reporting/metrics/ad-starts.md)は、クローズ時ではなく、トリガーイベントで報告される1つの追加指標です。
 
 | レポートシステム | ソース |
 | --- | --- |

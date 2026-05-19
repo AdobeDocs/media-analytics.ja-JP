@@ -3,10 +3,10 @@ title: 章の開始
 description: セッション中に再生を開始したすべての章をカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 13%
+source-wordcount: '116'
+ht-degree: 12%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ## この指標の計算方法
 
-メディア バックエンドは、[章の開始](/help/implementation/events/chapters/chapter-start.md) イベントを受信したときに`mediaReporting.chapterDetails.isStarted = true`を設定します。 この指標は、章のクローズ呼び出しで報告されます。
+メディアバックエンドは、[章の開始](/help/implementation/events/chapters/chapter-start.md) イベントを受信したときに、このフラグを設定します。 この指標は、章のクローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

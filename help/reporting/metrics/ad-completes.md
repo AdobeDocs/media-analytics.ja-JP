@@ -3,9 +3,9 @@ title: 広告完了
 description: 完了まで再生したすべての広告をカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## この指標の計算方法
 
-メディア バックエンドは、[広告が完了した](/help/implementation/events/ads/ad-complete.md) イベントを受信したときに`mediaReporting.advertisingDetails.isCompleted = true`を設定します。 この指標は、広告クローズ呼び出しに関してレポートされます。 スキップまたは放棄された広告は、完了としてカウントされません。
+メディア バックエンドは、[広告が完了した](/help/implementation/events/ads/ad-complete.md) イベントを受信したときに、このフラグを設定します。 この指標は、広告クローズ呼び出しに関してレポートされます。 スキップまたは放棄された広告は、完了としてカウントされません。
 
 | レポートシステム | ソース |
 | --- | --- |

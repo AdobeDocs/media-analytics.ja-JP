@@ -3,7 +3,7 @@ title: フルスクリーンの影響を受けるストリーム
 description: ビューアがフルスクリーンで少なくとも1回入力したセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -23,7 +23,7 @@ ht-degree: 8%
 
 ## この指標の計算方法
 
-メディアバックエンドは、`fullscreen` エントリの`mediaReporting.states[]`の`isSet` フラグを`true`に設定し、`statesStart`の`fullscreen`を含む`media.statesUpdate` イベントを初めて受信しました。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドは、セッション中にフルスクリーンの状態開始イベントを初めて受信したときに、このフラグを設定します。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

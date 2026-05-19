@@ -3,10 +3,10 @@ title: イベントを一時停止
 description: セッション中に発生したすべての個別の一時停止をカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 12%
+source-wordcount: '170'
+ht-degree: 10%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## この指標の計算方法
 
-メディア バックエンドは、[一時停止の開始](/help/implementation/events/playback/pause-start.md) イベントごとに`mediaReporting.sessionDetails.pauseCount`増加します。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドでは、[一時停止の開始](/help/implementation/events/playback/pause-start.md) イベントごとに、このカウントが増加します。 1回の連続した一時停止では、時間に関係なく1回の増分が生成されます。 プレーヤーが一時停止したままの間に送信されたハートビート [ping](/help/implementation/events/playback/ping.md)はすべて同じ一時停止ピリオドに属しており、カウントを再度増加させません。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

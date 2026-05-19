@@ -3,9 +3,9 @@ title: 進捗マーカー
 description: 再生ヘッドが5つの固定しきい値（10%、25%、50%、75%、95%）をそれぞれ超えたセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '542'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,11 @@ ht-degree: 9%
 
 ## 各マーカーの計算方法
 
-メディアバックエンドは、各イベントの後にレポートされた再生ヘッドを`Content length`と比較します。 再生ヘッドが最初にしきい値を超えると、対応する`mediaReporting.sessionDetails.hasProgress*` ブール値がセッションの残りの部分に対して`true`に設定されます。 5つのマーカーはすべて、クローズコールで報告されます。
+メディアバックエンドは、各イベントの後にレポートされた再生ヘッドを[&#x200B; コンテンツの長さ](../dimensions/content-length.md)と比較します。 再生ヘッドが最初にしきい値を超えると、対応するフラグがセッションの残りの部分に設定されます。 5つのマーカーはすべて、クローズコールで報告されます。 メインコンテンツで再生イベントを生成しないセッション（[開始する前にドロップ &#x200B;](/help/reporting/metrics/drops-before-start.md)など）では、再生ヘッドがしきい値を超えることはないため、マーカーは設定されません。
+
+>[!IMPORTANT]
+>
+>進捗マーカーには、ゼロ以外の[&#x200B; コンテンツ長](/help/reporting/dimensions/content-length.md)と正確な再生ヘッドのレポートが必要です。 コンテンツの長さが設定されていないか、ゼロであるか、間違っている場合、マーカーは間違ったタイミングで起動するか、まったく起動しない可能性があります。
 
 ### 10%進捗マーカー {#progress-10}
 
@@ -75,7 +79,3 @@ ht-degree: 9%
 | Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress95`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
 | Audience Manager | `c_contextdata.a.media.progress95` |
-
->[!IMPORTANT]
->
->進捗マーカーには、ゼロ以外の[&#x200B; コンテンツ長](/help/reporting/dimensions/content-length.md)と正確な再生ヘッドのレポートが必要です。 コンテンツの長さが設定されていないか、ゼロであるか、間違っている場合、マーカーは間違ったタイミングで起動するか、まったく起動しない可能性があります。

@@ -3,10 +3,10 @@ title: 広告滞在時間
 description: セッションあたりのアクティブな広告再生の合計秒数を報告します。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 9%
+source-wordcount: '174'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ## この指標の計算方法
 
-メディアバックエンドは、プレーヤーが広告の`play`状態にある間に、イベント間の経過時間を合計します。 一時停止およびバッファリング中の時間は除外されます。 この指標は、広告クローズ呼び出しに関してレポートされます。 値は、Analysis Workspaceでは`HH:MM:SS`として表示され、データフィード、Data Warehouse、レポート APIでは秒単位で表示されます。
+メディアバックエンドは、プレーヤーが広告の`play`状態にある間に、イベント間の経過時間を合計します。 一時停止、バッファリング、シーク中の時間は除外されます。これは、メインコンテンツに対して[&#x200B; コンテンツ滞在時間](/help/reporting/metrics/content-time-spent.md)を計算する方法と一致しています。 この指標は、広告クローズ呼び出しに関してレポートされます。 値は、Analysis Workspaceでは`HH:MM:SS`として表示され、データフィード、Data Warehouse、レポート APIでは秒単位で表示されます。
 
 | レポートシステム | ソース |
 | --- | --- |

@@ -3,9 +3,9 @@ title: ビットレートの変更が影響を受けるストリーム
 description: 少なくとも1つのビットレート変更が発生したセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '145'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## この指標の計算方法
 
-メディア バックエンドは、セッション中に[&#x200B; ビットレート変更](/help/implementation/events/playback/bitrate-change.md) イベントを初めて受信したときに`mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams = true`を設定します。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドは、セッション中に[&#x200B; ビットレート変更](/help/implementation/events/playback/bitrate-change.md) イベントを初めて受信したときに、このフラグを設定します。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

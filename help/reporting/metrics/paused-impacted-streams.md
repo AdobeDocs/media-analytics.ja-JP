@@ -3,9 +3,9 @@ title: 影響を受けるストリームを一時停止しました
 description: ビューアが少なくとも1回一時停止したセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '152'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ## この指標の計算方法
 
-メディア バックエンドは、セッション中に[一時停止の開始](/help/implementation/events/playback/pause-start.md) イベントを初めて受信したときに`mediaReporting.sessionDetails.hasPauseImpactedStreams = true`を設定します。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドは、セッション中に[一時停止の開始](/help/implementation/events/playback/pause-start.md) イベントを初めて受信したときに、このフラグを設定します。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

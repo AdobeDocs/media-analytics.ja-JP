@@ -3,10 +3,10 @@ title: コンテンツ滞在時間
 description: セッションごとのアクティブなメインコンテンツ再生の合計秒数を報告します。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 8%
+source-wordcount: '221'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ## この指標の計算方法
 
-メディアバックエンドは、プレーヤーがメインコンテンツの`play`状態にある間に、イベント間の経過時間を合計します。 広告、一時停止、バッファーイベント、ストール中の時間は除外されます。 この指標は、クローズ呼び出しで報告されます。 値は、Analysis Workspaceでは`HH:MM:SS`として表示され、データフィード、Data Warehouse、レポート APIでは秒単位で表示されます。
+メディアバックエンドは、プレーヤーがメインコンテンツの`play`状態にある間に、イベント間の経過時間を合計します。 広告、一時停止、バッファーイベント、ストール中の時間は除外されます。 アクティブな再生時間のみがカウントされるため、視聴者が逆方向にシークしてセグメントを再視聴すると、指標は[&#x200B; コンテンツの長さ](/help/reporting/dimensions/content-length.md)を超える可能性があります。 特定のセグメントを通過するたびに追加の再生時間が蓄積され、ユーザーがセッションでコンテンツを消費して巻き戻す限り、発生する可能性があります。 この指標は、クローズ呼び出しで報告されます。 値は、Analysis Workspaceでは`HH:MM:SS`として表示され、データフィード、Data Warehouse、レポート APIでは秒単位で表示されます。
 
 | レポートシステム | ソース |
 | --- | --- |

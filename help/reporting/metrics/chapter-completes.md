@@ -3,9 +3,9 @@ title: 章完了
 description: 完了まで再生したすべての章をカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## この指標の計算方法
 
-メディア バックエンドは、[章の完了](/help/implementation/events/chapters/chapter-complete.md) イベントを受信したときに`mediaReporting.chapterDetails.isCompleted = true`を設定します。 この指標は、章のクローズ呼び出しで報告されます。 再生中にスキップまたは放棄された章は、完了としてカウントされません。
+メディアバックエンドは、[章が完了した](/help/implementation/events/chapters/chapter-complete.md) イベントを受信したときに、このフラグを設定します。 この指標は、章のクローズ呼び出しで報告されます。 再生中にスキップまたは放棄された章は、完了としてカウントされません。
 
 | レポートシステム | ソース |
 | --- | --- |

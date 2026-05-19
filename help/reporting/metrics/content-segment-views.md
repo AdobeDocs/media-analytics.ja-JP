@@ -3,9 +3,9 @@ title: コンテンツセグメントビュー
 description: アクティブなメインコンテンツの再生が発生したセグメントをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '185'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ## この指標の計算方法
 
-メディアバックエンドは、メインコンテンツに対する少なくとも1つの[play](/help/implementation/events/playback/play.md) イベントが受信されたセグメントをカバーする任意のクローズコールに対して`mediaReporting.sessionDetails.hasSegmentView = true`を設定します。 この指標は、クローズ呼び出しで報告されます。 Media Edge API パスでは、セグメントビューはコンテンツの開始と同じ条件で実行されます。 どちらも、メインコンテンツに[play](/help/implementation/events/playback/play.md) イベントが必要です。
+メディアバックエンドは、メインコンテンツに対して少なくとも1つの[play](/help/implementation/events/playback/play.md) イベントが受信されたセグメントをカバーするクローズ呼び出しにこのフラグを設定します。 この指標は、クローズ呼び出しで報告されます。 Media Edge API パスでは、セグメントビューはコンテンツの開始と同じ条件で実行されます。 どちらも、メインコンテンツに[play](/help/implementation/events/playback/play.md) イベントが必要です。
 
 | レポートシステム | ソース |
 | --- | --- |

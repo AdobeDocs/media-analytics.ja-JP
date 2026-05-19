@@ -3,9 +3,9 @@ title: コンテンツ完了
 description: 再生ヘッドがコンテンツの最後に達したセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '142'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## この指標の計算方法
 
-[&#x200B; セッション完了](/help/implementation/events/session/session-complete.md) イベントを受信すると、メディアバックエンドは`mediaReporting.sessionDetails.isCompleted = true`を設定します。 この指標は、クローズ呼び出しで報告されます。 明示的な`sessionComplete`なしでタイムアウトしたセッションは、完了としてカウントされません。
+メディアバックエンドは、[&#x200B; セッション完了](/help/implementation/events/session/session-complete.md) イベントを受信したときに、このフラグを設定します。 この指標は、クローズ呼び出しで報告されます。 明示的な`sessionComplete`なしでタイムアウトしたセッションは、完了としてカウントされません。
 
 | レポートシステム | ソース |
 | --- | --- |

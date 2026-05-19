@@ -3,10 +3,10 @@ title: 章数
 description: セッション中に開始したチャプターの数をレポートします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 10%
+source-wordcount: '172'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## この指標の計算方法
 
-メディア バックエンドは、セッション中に受信した[&#x200B; チャプター開始](/help/implementation/events/chapters/chapter-start.md) イベントごとに`mediaReporting.sessionDetails.chapterCount`を増分します。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドは、セッション中に受信した[章開始](/help/implementation/events/chapters/chapter-start.md) イベントごとに、このカウントを増分します。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

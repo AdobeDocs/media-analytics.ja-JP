@@ -3,10 +3,10 @@ title: 開始前にドロップ
 description: メインコンテンツがレンダリングされる前にビューアが終了したセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 9%
+source-wordcount: '211'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ## この指標の計算方法
 
-メディアバックエンドは、メインコンテンツで[play](/help/implementation/events/playback/play.md) イベントを生成することなく閉じるセッションに`mediaReporting.qoeDataDetails.isDroppedBeforeStart = true`を設定します。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドは、メインコンテンツで[play](/help/implementation/events/playback/play.md) イベントを生成することなく閉じるセッションにこのフラグを設定します。 この指標は、クローズ呼び出しで報告されます。 一般的なシナリオには、プレロール広告中にビューアが終了する、最初のバッファーフェーズでプレーヤーが無期限に停止する、最初のメインコンテンツ再生イベントの前にエラーが発生するなどがあります。 これらすべての場合、セッションは[&#x200B; メディア開始](/help/reporting/metrics/media-starts.md)を記録しますが、[&#x200B; コンテンツ開始](/help/reporting/metrics/content-starts.md)と[進行状況マーカー](/help/reporting/metrics/progress-markers.md)は記録されません。
 
 | レポートシステム | ソース |
 | --- | --- |

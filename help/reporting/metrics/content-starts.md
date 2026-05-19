@@ -3,9 +3,9 @@ title: コンテンツ開始
 description: メインコンテンツが実際に再生され始めたセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '148'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## この指標の計算方法
 
-メディアバックエンドは、メインコンテンツの[play](/help/implementation/events/playback/play.md) イベントを初めて受信したときに`mediaReporting.sessionDetails.isPlayed = true`を設定します。 この指標は、その再生イベントでトリガーされますが、クローズコールで報告されます。 プレロールのドロップ率を計算するには、`(Media starts − Content starts) / Media starts`を使用します。
+メディアバックエンドは、メインコンテンツの[play](/help/implementation/events/playback/play.md) イベントを初めて受信したときに、このフラグを設定します。 この指標は、その再生イベントでトリガーされますが、クローズコールで報告されます。 プレロールのドロップ率を計算するには、`(Media starts − Content starts) / Media starts`を使用します。
 
 | レポートシステム | ソース |
 | --- | --- |

@@ -3,9 +3,9 @@ title: 影響を受けるストリームを停止する
 description: 再生中に少なくとも1回のストールが発生したセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 1278355e0bfc67c635250c426edaf865fb658c37
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '178'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ## この指標の計算方法
 
-メディア バックエンドは、セッション中に少なくとも3つの連続したイベントの再生ヘッドの動きがメインコンテンツに記録されない場合に`mediaReporting.qoeDataDetails.hasStallImpactedStreams = true`を設定します。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドは、セッション中に少なくとも3つの連続したイベントについて、メインコンテンツに再生ヘッドの動きが記録されていない場合に、このフラグを設定します。 この指標は、クローズ呼び出しで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |

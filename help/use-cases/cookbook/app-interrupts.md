@@ -14,10 +14,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 358
-ht-degree: 55%
+source-wordcount: 473
+ht-degree: 41%
 
 ---
 
@@ -45,3 +45,11 @@ ht-degree: 55%
 * _同じセッションを再開しますか？_
 
   トラッキングセッションの再開について詳しくは、[非アクティブセッションの再開](resuming-inactive.md)を参照してください。SDKは、再開pingを送信し、ユーザーが手動でセッションを再開していることをバックエンドに通知します。
+
+* _同じセッションで`trackSessionEnd`が2回呼び出された場合はどうなりますか？_
+
+  同じセッションに対して`trackSessionEnd`を複数回呼び出すことは安全です。 バックエンドは、最初のイベントのセッションを閉じ、2番目の`trackSessionEnd`を含む、そのセッション IDの後続のすべてのイベントをサイレントでドロップします。 つまり、レース条件（例えば、ビューアがプレーヤーを閉じたと同じ瞬間に30分間の非アクティビティタイムアウトが実行される）では、重複したデータは生成されません。
+
+* _セッションが既にアクティブになっている間に`trackSessionStart`が呼び出された場合はどうなりますか？_
+
+  セッションがまだ閉じられていない場合、SDKは2回目の`trackSessionStart`呼び出しを無視します。 新しいセッションを開始する必要がある場合は、最初に`trackSessionEnd`に電話して現在のセッションを明示的に閉じ、次に新しいセッションの`trackSessionStart`を呼び出します。

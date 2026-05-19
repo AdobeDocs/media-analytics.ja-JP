@@ -3,9 +3,9 @@ title: ドロップしたフレームの影響を受けるストリーム
 description: 少なくとも1つのフレームがドロップされたセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ## この指標の計算方法
 
-メディア バックエンドは、セッションのクローズ時にQoE オブジェクトの`droppedFrames`値が0より大きい場合に`mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams = true`を設定します。
+メディアバックエンドは、セッションのクローズ時にQoE オブジェクトの`droppedFrames`値が0より大きい場合に、このフラグを設定します。
 
 | レポートシステム | ソース |
 | --- | --- |

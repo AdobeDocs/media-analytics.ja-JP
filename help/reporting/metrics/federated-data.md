@@ -3,9 +3,9 @@ title: 連合データ
 description: 顧客独自の実装ではなく、連合データ共有を介して受信したセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '220'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 ## この指標の計算方法
 
-セッションがフェデレーションチャネル経由で受信されると、メディアバックエンドは`mediaReporting.sessionDetails.isFederated = true`を設定します。 この指標は、適格セッションごとに1回増加し、クローズコールで報告されます。
+メディアバックエンドは、セッションが連合チャネルを介して到着したときに、このフラグを設定します。 この指標は、適格セッションごとに1回増加し、クローズコールで報告されます。
 
 | レポートシステム | ソース |
 | --- | --- |
