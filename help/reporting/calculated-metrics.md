@@ -1,22 +1,21 @@
 ---
-source-git-commit: c06ecd16f417c9584fb87181074d1c2bee487e0b
+title: 計算指標
+description: Adobe AnalyticsおよびCustomer Journey Analyticsのストリーミングメディアレポート用のカスタム計算指標。
+feature: Metrics
+role: User, Admin
+source-git-commit: ea740a32bbd5e640cd437cd8c5c4f48071a0d02c
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
 
 ---
-﻿---
-title: 計算指標
-description: Adobe AnalyticsおよびCustomer Journey Analyticsのストリーミングメディアレポート用のカスタム計算指標。
-feature: Metrics
-role: User, Admin
----
+
 
 # 計算指標
 
 Adobeのストリーミングメディアサービスの計算指標は、標準的なストリーミングメディア指標から構築されたカスタム指標です。これにより、実装を変更することなく、平均広告滞在時間やメディア完了率などの比率を導き出すことができます。
 
-Analysis Workspaceでこれらの計算指標を作成するには、[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/analytics/components/calculated-metrics/cm-overview)または[Customer Journey Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)でそれぞれの計算指標の概要を参照してください。
+Analysis Workspaceでこれらの計算指標を作成するには、[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview)または[Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)でそれぞれの計算指標の概要を参照してください。
 
 | 計算指標 | 説明 | 数式 |
 | --- | --- | --- |
