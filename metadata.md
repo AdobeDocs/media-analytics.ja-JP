@@ -3,12 +3,13 @@ cloud: Experience Cloud
 solution: Analytics
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+usetq: true
 feature-set: Analytics
 landing-page-name: analytics
 landing-page-breadcrumb-title: Analytics
 git-repo: https://github.com/AdobeDocs/media-analytics.ja-JP
 index: true
-source-git-commit: 478d146b3d5d9736cb3e1c1e2ebb5fd0473b9729
+source-git-commit: 28c9e0d7f0dbf36f24ab7b2449730670c5bcdcfb
 workflow-type: tm+mt
 source-wordcount: 128
 ht-degree: 89%

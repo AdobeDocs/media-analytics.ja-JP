@@ -3,13 +3,12 @@ title: 計算指標
 description: Adobe AnalyticsおよびCustomer Journey Analyticsのストリーミングメディアレポート用のカスタム計算指標。
 feature: Metrics
 role: User, Admin
-source-git-commit: ea740a32bbd5e640cd437cd8c5c4f48071a0d02c
+source-git-commit: 1251b66173158b8fea92516197b3b9f444bfaaf7
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
 
 ---
-
 
 # 計算指標
 
@@ -34,3 +33,4 @@ Analysis Workspaceでこれらの計算指標を作成するには、[Adobe Anal
 | コンテンツバッファー期間レート | 総バッファ時間とコンテンツに費やした時間の割合 | [`Total Buffer Duration`](/help/reporting/metrics/total-buffer-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | コンテンツの開始時間 | 開始までの時間とコンテンツに費やした時間の比較 | [`Time to Start`](/help/reporting/metrics/time-to-start.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | 広告滞在時間率 | 広告滞在時間とコンテンツ滞在時間の比較 | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
+
