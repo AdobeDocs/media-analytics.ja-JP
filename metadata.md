@@ -1,7 +1,8 @@
 ---
 cloud: Experience Cloud
 solution: Analytics
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
 usetq: true
 feature-set: Analytics
 landing-page-name: analytics
