@@ -27,6 +27,6 @@ Adobeのアプリケーションやサービスごとに同じ値が格納され
 
 >[!MORELIKETHIS]
 >
->* [ イベントの概要](/help/implementation/events/overview.md)：変数を含むプレイヤーイベント
->* [ ディメンションの概要](/help/reporting/dimensions/overview.md)：変数が入力するレポートディメンション
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)：変数を含むプレイヤーイベント
+>* [&#x200B; ディメンションの概要](/help/reporting/dimensions/overview.md)：変数が入力するレポートディメンション
 >* [指標の概要](/help/reporting/metrics/overview.md)：変数が入力するレポート指標
