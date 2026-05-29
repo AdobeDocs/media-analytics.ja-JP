@@ -3,7 +3,7 @@ title: 作成者
 description: コンテンツの作成者にレポートを送信します。 主にオーディオブックに使用されます。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**作成者**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[作成者](/help/implementation/variables/standard-metadata/author.md)を参照してください。*
+*このページでは、**作成者**のレポートディメンションについて説明します。 この変数の収集方法については、[作成者](/help/implementation/variables/standard-metadata/author.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ ht-degree: 11%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; オーディオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.author`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.author`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | [[!UICONTROL  オーディオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.author`から自動的に収集されます。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.author`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videoaudioauthor` |
 | Audience Manager | `c_contextdata.a.media.author` |
 

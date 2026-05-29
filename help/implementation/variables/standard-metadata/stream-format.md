@@ -3,10 +3,10 @@ title: ストリーム形式
 description: ストリーム形式を設定して、品質層（HD、SD、または配信パイプラインで使用するその他のラベル）を特定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 13%
+source-wordcount: '236'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**ストリーム形式**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ストリーム形式](/help/reporting/dimensions/stream-format.md)を参照してください。*
+*このページでは、**ストリーム形式**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ストリーム形式](/help/reporting/dimensions/stream-format.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,14 +24,18 @@ ht-degree: 13%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.format` |
-| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.format` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
-## Web SDK
+## 推奨される実装タイプ
 
-[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`mediaCollection.sessionDetails`内に`streamFormat`を設定：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`streamFormat`を設定：
 
 ```javascript
 alloy("sendEvent", {
@@ -47,11 +51,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 ストリーム形式をHashMap引数のメタデータキーとして`trackSessionStart`に渡します。 `MediaConstants.VideoMetadataKeys.STREAM_FORMAT`.を使用します。
-
-**iOS （Swift）**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -60,7 +62,9 @@ metadata[MediaConstants.VideoMetadataKeys.STREAM_FORMAT] = "HD"
 tracker.trackSessionStart(info: mediaObject, metadata: metadata)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+ストリーム形式をHashMap引数のメタデータキーとして`trackSessionStart`に渡します。 `MediaConstants.VideoMetadataKeys.STREAM_FORMAT`.を使用します。
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -69,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.STREAM_FORMAT] = "HD"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `createMediaSession`を使用して`sessionDetails`内に`streamFormat`を設定します：
 
@@ -87,9 +91,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-`mediaCollection.sessionDetails`内の`streamFormat`で[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) エンドポイントを呼び出します：
+`xdm.mediaCollection.sessionDetails`内の`streamFormat`で[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) エンドポイントを呼び出します：
 
 ```json
 {
@@ -112,7 +116,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `ADB.Media.VideoMetadataKeys.StreamFormat`を使用して、`contextData` オブジェクトにストリーム形式を渡します。
 
@@ -123,7 +133,20 @@ contextData[ADB.Media.VideoMetadataKeys.StreamFormat] = "HD";
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+`ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT`を使用して、`trackSessionStart`を呼び出す前に、メディアオブジェクトの`StandardMediaMetadata` プロパティでストリーム形式を設定します。
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+var standardMetadata = {};
+standardMetadata[ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT] = "HD";
+mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 `sessionStart` POST リクエストの`params` オブジェクトに`media.streamFormat`を含めます：
 
@@ -137,4 +160,6 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+
+>[!ENDTABS]

@@ -3,7 +3,7 @@ title: コンテンツ
 description: コンテンツ IDでキーを設定して、再生された各メディアの一意の部分をレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツ**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; コンテンツ ID](/help/implementation/variables/core/content-id.md)を参照してください。*
+*このページでは、**コンテンツ**のレポートディメンションについて説明します。 この変数の収集方法については、[ コンテンツ ID](/help/implementation/variables/core/content-id.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -28,13 +28,13 @@ ht-degree: 6%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.name`から自動的に収集されます。 訪問の期間を保持します。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `video`, `post_video` |
 | Audience Manager | `c_contextdata.a.media.name` |
 
 >[!IMPORTANT]
 >
->コンテンツ IDが必要です。 未設定または空の場合、セッションはストリーミングメディアレポートから削除され、どのメディアレポートにも[!UICONTROL すべてのストリーミングメディア &#x200B;] セグメントにも表示されません。
+>コンテンツ IDが必要です。 未設定または空の場合、セッションはストリーミングメディアレポートから削除され、どのメディアレポートにも[!UICONTROL すべてのストリーミングメディア ] セグメントにも表示されません。
 
 ## ディメンション項目
 
@@ -44,4 +44,4 @@ ht-degree: 6%
 
 | セグメント | 規則 |
 | --- | --- |
-| [!UICONTROL すべてのストリーミングメディア &#x200B;] | コンテンツ （ID）が存在します |
+| [!UICONTROL すべてのストリーミングメディア ] | コンテンツ （ID）が存在します |

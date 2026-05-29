@@ -3,10 +3,10 @@ title: ストリームタイプ
 description: ストリームタイプを設定して、メディアストリームがオーディオまたはビデオコンテンツかどうかを識別します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 10%
+source-wordcount: '312'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Stream type**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ストリームタイプ &#x200B;](/help/reporting/dimensions/stream-type.md)を参照してください。*
+*このページでは、**Stream type**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ストリームタイプ ](/help/reporting/dimensions/stream-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -26,14 +26,18 @@ ht-degree: 10%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.streamType` |
-| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.streamType` |
 | **必須** | はい |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
-## Web SDK
+## 推奨される実装タイプ
 
-[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`mediaCollection.sessionDetails`内に`streamType`を設定：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`streamType`を設定：
 
 ```javascript
 alloy("sendEvent", {
@@ -55,11 +59,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 `Media.MediaType.Video`または`Media.MediaType.Audio`を`mediaType`引数として`createMediaObject`に渡します。 `createMediaObject`の`streamType`引数は、この変数ではなく、コンテンツタイプ変数（VOD、Liveなど）を制御することに注意してください。
-
-**iOS （Swift）**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "video-123",
@@ -71,7 +73,9 @@ let mediaObject = Media.createMediaObjectWith(name: "video-123",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+`Media.MediaType.Video`または`Media.MediaType.Audio`を`mediaType`引数として`createMediaObject`に渡します。 `createMediaObject`の`streamType`引数は、この変数ではなく、コンテンツタイプ変数（VOD、Liveなど）を制御することに注意してください。
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("video-123",
@@ -83,9 +87,9 @@ var mediaInfo = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
-`createMediaSession`の呼び出し時に`mediaCollection.sessionDetails`内に`streamType`を設定：
+`createMediaSession`の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`streamType`を設定：
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -107,9 +111,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-`mediaCollection.sessionDetails`内の`streamType`で[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) エンドポイントを呼び出します：
+`xdm.mediaCollection.sessionDetails`内の`streamType`で[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) エンドポイントを呼び出します：
 
 ```json
 {
@@ -132,7 +136,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `ADB.Media.MediaType.Video`または`ADB.Media.MediaType.Audio`を5番目の引数として`Media.createMediaObject`に渡します：
 
@@ -148,7 +158,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+`ADBMobile.media.MediaType.Video`または`ADBMobile.media.MediaType.Audio`を5番目の引数として`ADBMobile.media.createMediaObject`に渡します：
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "My Video",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 `sessionStart` POST リクエストの`params` オブジェクトに`media.streamType`を含めます：
 
@@ -162,4 +187,6 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造とすべての必須フィールドについては、[Media Collection API セッション リファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造とすべての必須フィールドについては、[Media Collection API セッション リファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+
+>[!ENDTABS]

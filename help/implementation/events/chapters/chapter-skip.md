@@ -3,10 +3,10 @@ title: 章のスキップ
 description: 視聴者が章をスキップしたことを知らせる。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 18%
+source-wordcount: '139'
+ht-degree: 10%
 
 ---
 
@@ -15,10 +15,14 @@ ht-degree: 18%
 
 章スキップイベントは、ビューアが章を終了する前にスキップしたことを示します。 ビューアが章の境界を通過したときに、完了まで見ずに送信します。 章が最後まで再生される場合は、[章完了](chapter-complete.md)を送信します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[章開始](chapter-start.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)、[章開始](chapter-start.md)
 * **関連する指標**：なし
 
-## Web SDK
+## 推奨される実装タイプ
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を`eventType: "media.chapterSkip"`と呼び出します：
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 `trackEvent`を`ChapterSkip` イベントタイプで呼び出します。
-
-**iOS （Swift）**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.ChapterSkip, info: nil, metadata: nil)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+`trackEvent`を`ChapterSkip` イベントタイプで呼び出します。
 
 ```kotlin
 tracker.trackEvent(Media.Event.ChapterSkip, null, null)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `sendMediaEvent`を`eventType: "media.chapterSkip"`と呼び出します：
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 [chapterSkip](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterskip) エンドポイントを呼び出します。
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterSkip?configId={datastream
 }'
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `ChapterSkip` イベントタイプで`trackEvent`を呼び出します：
 
@@ -94,9 +104,17 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterSkip?configId={datastream
 tracker.trackEvent(ADB.Media.Event.ChapterSkip, null, null);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
 
-`chapterSkip`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`ChapterSkip` イベントタイプで`trackEvent`を呼び出します：
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
+```
+
+>[!TAB Media Collection API]
+
+`chapterSkip`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {
@@ -104,3 +122,5 @@ tracker.trackEvent(ADB.Media.Event.ChapterSkip, null, null);
   "eventType": "chapterSkip"
 }
 ```
+
+>[!ENDTABS]

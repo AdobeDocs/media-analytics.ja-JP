@@ -6,22 +6,14 @@ exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/rXu8Om0i6ELI2TGRANqhn9GTqq1DM1Obo7ZbCC1Ox4E
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 190
-ht-degree: 90%
+source-wordcount: 171
+ht-degree: 88%
 
 ---
 
@@ -33,7 +25,7 @@ ht-degree: 90%
 1. リクエスト本文の `elements` -> `id` を `metrics/concurrent_viewers_visitors` に設定します。
 1. 十分な量のデータをリクエストします。
 
-   * レポートで指定したデータ範囲で、ビデオセッション終了時に、すべての同時ビューアデータを取得します&#x200B;_。_
+   * レポートで指定したデータ範囲は、ビデオセッションが終了した時点ですべての同時視聴者データ _を収集します。_
 1日に開始し、翌日の午前0時を過ぎてから終了するセッションを考慮する必要があります。
 
    * 分析で、リクエストで意図した期間より 1 日分多いデータをリクエストしますが、 _*意図したデータのみを使用します。*_
@@ -133,7 +125,7 @@ ht-degree: 90%
 
 
 <!--
-You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows.
+You can extract the concurrent viewers report data using the API Explorer as follows.
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:
@@ -143,7 +135,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=ja)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
 
         * `dateTo` - End date of the report.         
 

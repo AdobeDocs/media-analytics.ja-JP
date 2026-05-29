@@ -3,22 +3,26 @@ title: セッション完了
 description: 視聴者がメインコンテンツの最後に到達したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 16%
+source-wordcount: '165'
+ht-degree: 9%
 
 ---
 
 
 # セッション完了
 
-セッション完了イベントは、視聴者がメインコンテンツの最後に到達したことを示します。 セッションはすぐに閉じません。セッションは、自然に期限切れになるまで開いたままです。 セッションを即座に閉じたい場合は、代わりに[&#x200B; セッション終了](session-end.md)に電話してください。
+セッション完了イベントは、視聴者がメインコンテンツの最後に到達したことを示します。 セッションはすぐに閉じません。セッションは、自然に期限切れになるまで開いたままです。 セッションを即座に閉じたい場合は、代わりに[ セッション終了](session-end.md)に電話してください。
 
-* **前提条件**: [&#x200B; セッション開始](session-start.md)
-* **関連する指標**: [&#x200B; コンテンツ完了](/help/reporting/metrics/content-completes.md)
+* **前提条件**: [ セッション開始](session-start.md)
+* **関連する指標**: [[!UICONTROL  コンテンツ完了]](/help/reporting/metrics/content-completes.md)
 
-## Web SDK
+## 推奨される実装タイプ
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を`eventType: "media.sessionComplete"`と呼び出します：
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 メディアプレーヤーがコンテンツの終わりに達したら、`trackComplete`に電話してください。
-
-**iOS （Swift）**
 
 ```swift
 tracker.trackComplete()
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+メディアプレーヤーがコンテンツの終わりに達したら、`trackComplete`に電話してください。
 
 ```kotlin
 tracker.trackComplete()
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `sendMediaEvent`を`eventType: "media.sessionComplete"`と呼び出します：
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 [sessionComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessioncomplete) エンドポイントを呼び出します。
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionComplete?configId={datast
 }'
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 メディアプレーヤーがコンテンツの最後に達したときに`trackComplete`を呼び出します。
 
@@ -94,9 +104,17 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionComplete?configId={datast
 tracker.trackComplete();
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
 
-`sessionComplete`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+メディアプレーヤーがコンテンツの最後に達したときに`trackComplete`を呼び出します。
+
+```javascript
+ADBMobile.media.trackComplete();
+```
+
+>[!TAB Media Collection API]
+
+`sessionComplete`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {
@@ -104,3 +122,5 @@ tracker.trackComplete();
   "eventType": "sessionComplete"
 }
 ```
+
+>[!ENDTABS]

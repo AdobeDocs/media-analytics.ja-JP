@@ -3,10 +3,10 @@ title: ドロップしたフレーム
 description: バックエンドがフレームドロップの品質を報告できるように、QoE オブジェクトにドロップされたフレームの実行回数を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 9%
+source-wordcount: '303'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**削除されたフレーム**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[削除されたフレーム &#x200B;](/help/reporting/dimensions/dropped-frames.md)を参照してください。*
+*このページでは、**削除されたフレーム**変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[削除されたフレーム ](/help/reporting/dimensions/dropped-frames.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -28,14 +28,18 @@ ht-degree: 9%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.qoe.droppedFrameCount` |
-| **XDM コレクションフィールド** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | 品質イベント （[&#x200B; ビットレート変更](/help/implementation/events/playback/bitrate-change.md)、[&#x200B; バッファー開始](/help/implementation/events/playback/buffer-start.md)、[&#x200B; エラー](/help/implementation/events/error.md)）、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | 品質イベント （[ ビットレート変更](/help/implementation/events/playback/bitrate-change.md)、[ バッファー開始](/help/implementation/events/playback/buffer-start.md)、[ エラー](/help/implementation/events/error.md)）、セッション終了 |
 
-## Web SDK
+## 推奨される実装タイプ
 
-[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`mediaCollection.qoeDataDetails`内に`droppedFrames`を設定：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`xdm.mediaCollection.qoeDataDetails`内に`droppedFrames`を設定：
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 4番目の引数としてドロップしたフレームを`createQoEObject`に渡します。 品質イベントが発生する前に、トラッカーを更新します。
-
-**iOS （Swift）**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -68,7 +70,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+4番目の引数としてドロップしたフレームを`createQoEObject`に渡します。 品質イベントが発生する前に、トラッカーを更新します。
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -79,9 +83,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
-`sendMediaEvent`の呼び出し時に`mediaCollection.qoeDataDetails`内に`droppedFrames`を設定：
+`sendMediaEvent`の呼び出し時に`xdm.mediaCollection.qoeDataDetails`内に`droppedFrames`を設定：
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -98,9 +102,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-`mediaCollection.qoeDataDetails`内の`droppedFrames`で[bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) エンドポイントを呼び出します：
+`xdm.mediaCollection.qoeDataDetails`内の`droppedFrames`で[bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) エンドポイントを呼び出します：
 
 ```json
 {
@@ -119,7 +123,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 ドロップしたフレームを4番目の引数として`ADB.Media.createQoEObject`に渡します。
 
@@ -128,7 +138,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 0, 24, 3);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+累積ドロップされたフレーム数を4番目の引数として`ADBMobile.media.createQoSObject`に渡し、トラッカーを更新します。
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames (cumulative total)
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Media Collection API]
 
 `params` オブジェクトに`media.qoe.droppedFrames`を含めます：
 
@@ -142,4 +166,6 @@ tracker.updateQoEObject(qoeObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+
+>[!ENDTABS]

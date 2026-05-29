@@ -3,10 +3,10 @@ title: 作成者
 description: コンテンツの作成者を設定します。 主にオーディオブックに使用されます。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 16%
+source-wordcount: '210'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**作成者**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[作成者](/help/reporting/dimensions/author.md)を参照してください。*
+*このページでは、**作成者**変数のデータ収集について説明します。 対応するレポートディメンションについては、[作成者](/help/reporting/dimensions/author.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,14 +24,18 @@ ht-degree: 16%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.author` |
-| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.author`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.author`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.author` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
-## Web SDK
+## 推奨される実装タイプ
 
-[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`mediaCollection.sessionDetails`内に`author`を設定：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`author`を設定：
 
 ```javascript
 alloy("sendEvent", {
@@ -47,11 +51,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 作成者をHashMap引数のメタデータキーとして`trackSessionStart`に渡します。 `MediaConstants.AudioMetadataKeys.AUTHOR`.を使用します。
-
-**iOS （Swift）**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -60,7 +62,9 @@ metadata[MediaConstants.AudioMetadataKeys.AUTHOR] = "Eleanor Clementine"
 tracker.trackSessionStart(info: mediaObject, metadata: metadata)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+作成者をHashMap引数のメタデータキーとして`trackSessionStart`に渡します。 `MediaConstants.AudioMetadataKeys.AUTHOR`.を使用します。
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -69,7 +73,7 @@ metadata[MediaConstants.AudioMetadataKeys.AUTHOR] = "Eleanor Clementine"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `createMediaSession`を使用して`sessionDetails`内に`author`を設定します：
 
@@ -87,9 +91,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-`mediaCollection.sessionDetails`内の`author`で[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) エンドポイントを呼び出します：
+`xdm.mediaCollection.sessionDetails`内の`author`で[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) エンドポイントを呼び出します：
 
 ```json
 {
@@ -112,7 +116,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 作成者を`ADB.Media.AudioMetadataKeys.Author`を使用して`contextData` オブジェクトに渡します：
 
@@ -123,7 +133,20 @@ contextData[ADB.Media.AudioMetadataKeys.Author] = "Eleanor Clementine";
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+`ADBMobile.media.AudioMetadataKeys.AUTHOR`を使用して、`trackSessionStart`を呼び出す前に、メディアオブジェクトの`StandardMediaMetadata` プロパティで作成者を設定します。
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Track", "audio-123", 240,
+  ADBMobile.media.StreamType.AOD, ADBMobile.media.MediaType.Audio);
+var standardMetadata = {};
+standardMetadata[ADBMobile.media.AudioMetadataKeys.AUTHOR] = "Eleanor Clementine";
+mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 `params` オブジェクトに`media.author`を含めます：
 
@@ -137,4 +160,6 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+
+>[!ENDTABS]

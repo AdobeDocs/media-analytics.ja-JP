@@ -3,10 +3,10 @@ title: バッファー開始
 description: メディアプレーヤーがバッファリング状態になったことを示す信号。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 15%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 15%
 
 バッファー開始イベントは、メディアプレーヤーがバッファリング状態に入ったことを示します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
-* **関連する指標**: [&#x200B; バッファーイベント &#x200B;](/help/reporting/metrics/buffer-events.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)
+* **関連する指標**: [[!UICONTROL  バッファーイベント ]](/help/reporting/metrics/buffer-events.md)
 
 >[!NOTE]
 >
@@ -24,7 +24,11 @@ ht-degree: 15%
 >
 >**モバイル SDK:** バッファリングを終了したら`trackEvent(BufferComplete)`に電話し、`trackPlay()`に電話して再生を再開します。
 
-## Web SDK
+## 推奨される実装タイプ
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を`eventType: "media.bufferStart"`と呼び出します：
 
@@ -40,11 +44,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 プレーヤーがバッファリング状態に入ったときに`BufferStart`で`trackEvent`に電話し、終了したときに`BufferComplete`に電話します。
-
-**iOS （Swift）**
 
 ```swift
 // Buffer starts
@@ -54,7 +56,9 @@ tracker.trackEvent(event: MediaEvent.BufferStart, info: nil, metadata: nil)
 tracker.trackEvent(event: MediaEvent.BufferComplete, info: nil, metadata: nil)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+プレーヤーがバッファリング状態に入ったときに`BufferStart`で`trackEvent`に電話し、終了したときに`BufferComplete`に電話します。
 
 ```kotlin
 // Buffer starts
@@ -64,7 +68,7 @@ tracker.trackEvent(Media.Event.BufferStart, null, null)
 tracker.trackEvent(Media.Event.BufferComplete, null, null)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `sendMediaEvent`を`eventType: "media.bufferStart"`と呼び出します：
 
@@ -79,7 +83,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 [bufferStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bufferstart/) エンドポイントを呼び出します。
 
@@ -100,7 +104,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/bufferStart?configId={datastream
 }'
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `BufferStart` イベントタイプで`trackEvent`を呼び出します：
 
@@ -108,9 +118,21 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/bufferStart?configId={datastream
 tracker.trackEvent(ADB.Media.Event.BufferStart, null, null);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
 
-`bufferStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+プレーヤーがバッファリング状態に入ったときに`BufferStart`で`trackEvent`に電話し、終了したときに`BufferComplete`に電話します。
+
+```javascript
+// Buffer starts
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferStart);
+
+// Buffer ends
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
+```
+
+>[!TAB Media Collection API]
+
+`bufferStart`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {
@@ -118,3 +140,5 @@ tracker.trackEvent(ADB.Media.Event.BufferStart, null, null);
   "eventType": "bufferStart"
 }
 ```
+
+>[!ENDTABS]

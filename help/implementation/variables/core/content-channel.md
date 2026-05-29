@@ -3,10 +3,10 @@ title: コンテンツチャネル
 description: コンテンツが再生される配信ステーション、ネットワーク、またはプロパティを識別するチャネルを設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 12%
+source-wordcount: '250'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツチャネル**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; コンテンツチャネル &#x200B;](/help/reporting/dimensions/content-channel.md)を参照してください。*
+*このページでは、**コンテンツチャネル**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ コンテンツチャネル ](/help/reporting/dimensions/content-channel.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,14 +24,18 @@ ht-degree: 12%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.channel` |
-| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.channel` |
 | **必須** | はい |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
-## Web SDK
+## 推奨される実装タイプ
 
-[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`mediaCollection.sessionDetails`内に`channel`を設定：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`channel`を設定：
 
 ```javascript
 alloy("sendEvent", {
@@ -52,11 +56,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 `MediaConstants.TrackerConfig.CHANNEL`を使用してトラッカーを作成する際に、トラッカー設定を通じてチャネルを設定します。 チャネルはメディアオブジェクトの一部ではありません。
-
-**iOS （Swift）**
 
 ```swift
 var config: [String: Any] = [:]
@@ -68,7 +70,9 @@ Media.createTrackerWith(config: config) { tracker in
 }
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+`MediaConstants.TrackerConfig.CHANNEL`を使用してトラッカーを作成する際に、トラッカー設定を通じてチャネルを設定します。 チャネルはメディアオブジェクトの一部ではありません。
 
 ```kotlin
 val config = HashMap<String, Any>()
@@ -78,9 +82,9 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
-`createMediaSession`の呼び出し時に`mediaCollection.sessionDetails`内に`channel`を設定：
+`createMediaSession`の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`channel`を設定：
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -101,9 +105,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-`mediaCollection.sessionDetails`内の`channel`で[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) エンドポイントを呼び出します：
+`xdm.mediaCollection.sessionDetails`内の`channel`で[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) エンドポイントを呼び出します：
 
 ```json
 {
@@ -125,7 +129,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 トラッカーを作成する前に、`ADB.MediaConfig`にチャネルを設定します。
 
@@ -138,7 +148,18 @@ mediaConfig.channel = "Sports";
 var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+`trackSessionStart`の呼び出し時に`channel`を標準メタデータキーとして渡します：
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+var metadata = { "a.media.channel": "Sports" };
+ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB Media Collection API]
 
 `sessionStart` POST リクエストの`params` オブジェクトに`media.channel`を含めます：
 
@@ -152,4 +173,6 @@ var tracker = ADB.Media.getInstance(mediaConfig);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+
+>[!ENDTABS]

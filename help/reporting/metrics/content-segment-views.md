@@ -3,7 +3,7 @@ title: コンテンツセグメントビュー
 description: アクティブなメインコンテンツの再生が発生したセグメントをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 9%
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # コンテンツセグメントビュー
 
-**コンテンツセグメントビュー**&#x200B;指標では、アクティブなメインコンテンツの再生が発生した5分間のコンテンツセグメントがカウントされます。 この指標は、閲覧者が読み込みやバッファリングだけでなく、そのセグメントでコンテンツを再生したことを確認します。 [&#x200B; コンテンツセグメント &#x200B;](/help/reporting/dimensions/content-segment.md) ディメンションと組み合わせて、長文コンテンツビューアのどの部分が実際に消費されたかを分割します。
+**コンテンツセグメントビュー**&#x200B;指標では、アクティブなメインコンテンツの再生が発生した5分間のコンテンツセグメントがカウントされます。 この指標は、閲覧者が読み込みやバッファリングだけでなく、そのセグメントでコンテンツを再生したことを確認します。 [ コンテンツセグメント ](/help/reporting/dimensions/content-segment.md) ディメンションと組み合わせて、長文コンテンツビューアのどの部分が実際に消費されたかを分割します。
 
 ## この指標の計算方法
 
@@ -22,6 +22,6 @@ ht-degree: 9%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.segmentView`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasSegmentView`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasSegmentView`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
 | Audience Manager | 該当なし |

@@ -3,7 +3,7 @@ title: MVPD
 description: ユーザーが認証したケーブル、サテライト、または仮想プロバイダーを報告します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**MVPD**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[MVPD](/help/implementation/variables/standard-metadata/mvpd.md)を参照してください。*
+*このページでは、**MVPD**のレポートディメンションについて説明します。 この変数の収集方法については、[MVPD](/help/implementation/variables/standard-metadata/mvpd.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ MVPDは、コンテンツがAdobe Passの背後でゲート化されるセッシ
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.pass.mvpd`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | [[!UICONTROL  ビデオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.pass.mvpd`から自動的に収集されます。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videomvpd`, `post_videomvpd` |
 | Audience Manager | `c_contextdata.a.media.pass.mvpd` |
 

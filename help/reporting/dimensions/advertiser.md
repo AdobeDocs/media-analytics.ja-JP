@@ -3,7 +3,7 @@ title: 広告主
 description: 各広告で取り上げられた企業やブランドを報告します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 12%
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**広告主**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[広告主](/help/implementation/variables/ads/advertiser.md)を参照してください。*
+*このページでは、**広告主**のレポートディメンションについて説明します。 この変数の収集方法については、[広告主](/help/implementation/variables/ads/advertiser.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ ht-degree: 12%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; メディア広告]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.ad.advertiser`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.advertiser`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | [[!UICONTROL  メディア広告]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.ad.advertiser`から自動的に収集されます。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | データフィード | `videoadvertiser`, `post_videoadvertiser` |
 | Audience Manager | `c_contextdata.a.media.ad.advertiser` |
 

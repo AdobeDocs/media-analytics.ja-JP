@@ -3,10 +3,10 @@ title: 開始時間
 description: プレーヤーの起動時間をミリ秒単位で設定し、バックエンドが最初のフレームの品質を報告できるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 9%
+source-wordcount: '294'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**開始時間**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[開始までの時間](/help/reporting/dimensions/time-to-start.md)を参照してください。*
+*このページでは、**開始時間**変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[[!UICONTROL 開始までの時間]](/help/reporting/dimensions/time-to-start.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -23,19 +23,23 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
->プレーヤーがコンテンツフレームのレンダリングを開始したら、`timeToStart`の更新を停止します。 この値は、最初のバッファリングまたは読み込みフェーズで増加する可能性がありますが、再生が開始された時点から固定として扱う必要があります。 最初のフレームレンダリング後に更新を続けると、膨張または不正確な[開始時間](/help/reporting/metrics/time-to-start.md)指標が生成されます。
+>プレーヤーがコンテンツフレームのレンダリングを開始したら、`timeToStart`の更新を停止します。 この値は、最初のバッファリングまたは読み込みフェーズで増加する可能性がありますが、再生が開始された時点から固定として扱う必要があります。 最初のフレームレンダリング後に更新を続けると、膨張または不正確な[[!UICONTROL 開始時間]](/help/reporting/metrics/time-to-start.md)指標が生成されます。
 
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.qoe.timeToStart` |
-| **XDM コレクションフィールド** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.qoe.timeToStart` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
-## Web SDK
+## 推奨される実装タイプ
 
-[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`media.sessionStart`の`mediaCollection.qoeDataDetails`内に`timeToStart`を設定：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`media.sessionStart`の`xdm.mediaCollection.qoeDataDetails`内に`timeToStart`を設定：
 
 ```javascript
 alloy("sendEvent", {
@@ -59,11 +63,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 起動時間を2番目の引数（`startupTime`）として`createQoEObject`に渡します。
-
-**iOS （Swift）**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -74,7 +76,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+起動時間を2番目の引数（`startupTime`）として`createQoEObject`に渡します。
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -85,9 +89,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
-`createMediaSession`の呼び出し時に`media.sessionStart`の`mediaCollection.qoeDataDetails`内に`timeToStart`を設定：
+`createMediaSession`の呼び出し時に`media.sessionStart`の`xdm.mediaCollection.qoeDataDetails`内に`timeToStart`を設定：
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -111,9 +115,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-`mediaCollection.qoeDataDetails`内の`timeToStart`で[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) エンドポイントを呼び出します：
+`xdm.mediaCollection.qoeDataDetails`内の`timeToStart`で[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) エンドポイントを呼び出します：
 
 ```json
 {
@@ -138,7 +142,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 2番目の引数として開始する時間を`ADB.Media.createQoEObject`に渡します：
 
@@ -147,7 +157,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 30000, 24, 0);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+起動時間を2番目の引数（`startupTime`）として`ADBMobile.media.createQoSObject`にミリ秒単位で渡し、トラッカーを更新します。
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,   // bitrate
+  0,      // startupTime (ms)
+  24,     // fps
+  0       // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Media Collection API]
 
 `sessionStart`の`params` オブジェクトに`media.qoe.timeToStart`を含めます：
 
@@ -161,4 +185,6 @@ tracker.updateQoEObject(qoeObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+
+>[!ENDTABS]
