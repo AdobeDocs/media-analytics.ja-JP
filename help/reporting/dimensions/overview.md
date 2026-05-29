@@ -3,7 +3,7 @@ title: ストリーミングメディアディメンションの概要
 description: Adobe AnalyticsとCustomer Journey Analytics全体でストリーミングメディアディメンションが入力され、整理される方法について説明します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -36,6 +36,6 @@ ht-degree: 6%
 
 >[!MORELIKETHIS]
 >
->* [指標の概要](../metrics/overview.md): ストリーミングメディア指標の参照
->* [&#x200B; パラメーターマッピング &#x200B;](/help/implementation/parameters-mapping.md)：変数から列からXDMへの参照を完了します
->* [&#x200B; メディアセグメント &#x200B;](/help/reporting/segments.md): ストリーミングメディアディメンションを使用する組み込みセグメント
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md): ディメンションに入力するプレイヤーイベント
+>* [変数の概要](/help/implementation/variables/overview.md): Adobeに取り込まれるデータ
+>* [指標の概要](/help/reporting/metrics/overview.md)：変数が入力するレポート指標

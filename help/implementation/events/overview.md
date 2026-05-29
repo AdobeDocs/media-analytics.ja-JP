@@ -3,9 +3,9 @@ title: ストリーミングメディアイベントの概要
 description: メディアイベントの種類と送信する順序について説明します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -69,3 +69,9 @@ ht-degree: 0%
 ## エラーイベント
 
 [Error](error.md) イベントは、セッション中の再生エラー（失敗したストリームリクエスト、コーデックエラー、または外部配信エラー）を記録します。 意味のあるエラーが発生するたびに送信します。 エラーイベントはセッションを閉じません。再生は続行でき、後続のイベントは同じセッションで追跡されます。 エラーが復元不可能な場合は、セッション終了でエラーに従い、セッションを明示的に閉じます。
+
+>[!MORELIKETHIS]
+>
+>* [変数の概要](/help/implementation/variables/overview.md): Adobeに取り込まれるデータ
+>* [&#x200B; ディメンションの概要](/help/reporting/dimensions/overview.md): イベントが入力するレポートディメンション
+>* [指標の概要](/help/reporting/metrics/overview.md): イベントが入力するレポート指標
