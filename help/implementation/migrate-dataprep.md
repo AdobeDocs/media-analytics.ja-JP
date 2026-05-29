@@ -27,11 +27,11 @@ ht-degree: 0%
 
 # カスタムフィールドのデータ準備を新しいストリーミングメディアフィールドに移行する
 
-このドキュメントでは、Adobe Streaming Media Collection データに対して有効になっているAdobe Data Collection フローの上に存在するData Prep サービスを移行するプロセスについて説明します。 移行は、「Media」という名前のAdobe Streaming Media Collection データタイプからData Prep マッピングを変換して、「[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という名前の新しい対応するデータタイプを使用します。
+このドキュメントでは、Adobe Streaming Media Collection データに対して有効になっているAdobe Data Collection フローの上に存在するData Prep サービスを移行するプロセスについて説明します。 移行は、「Media」という名前のAdobe Streaming Media Collection データタイプからData Prep マッピングを変換して、「[Media Reporting Details](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」という名前の新しい対応するデータタイプを使用します。
 
 ## カスタムフィールドのデータ準備の移行
 
-データ準備マッピングを「メディア」と呼ばれる古いデータ型から「[&#x200B; メディアのレポートの詳細](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」と呼ばれる新しいデータ型に移行するには、データ準備マッピングを編集する必要があります。
+データ準備マッピングを「メディア」と呼ばれる古いデータ型から「[&#x200B; メディアのレポートの詳細](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」と呼ばれる新しいデータ型に移行するには、データ準備マッピングを編集する必要があります。
 
 >[!IMPORTANT]
 >
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 上記の例では、関連するすべてのデータタイプがStringだったので、マッピングの置換は直接でした。
 
-ソースフィールドのデータタイプがターゲットフィールドのデータタイプと異なる場合は、[&#x200B; データ準備のトラブルシューティングガイド &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide)、[&#x200B; データ準備](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)でのデータ形式の処理、[&#x200B; データ準備マッピング関数](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)のガイドラインに従う必要があります。
+ソースフィールドのデータタイプがターゲットフィールドのデータタイプと異なる場合は、[&#x200B; データ準備のトラブルシューティングガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/troubleshooting-guide)、[&#x200B; データ準備](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/data-handling)でのデータ形式の処理、[&#x200B; データ準備マッピング関数](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/data-handling)のガイドラインに従う必要があります。
 
 例えば、ソースタイプが文字列で、ターゲットタイプがブール値の場合、Data Prepは値を自動的に解析し、ソース値をブール値に変換できます。
 

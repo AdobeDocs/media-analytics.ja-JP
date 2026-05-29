@@ -28,7 +28,7 @@ ht-degree: 7%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、（リスト変数として保存されている）コンテキストデータ `a.media.genre`から自動的に収集されます。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting)または[`xdm.mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) （レガシー） |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting)または[`xdm.mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) （レガシー） |
 | データフィード | `videogenre`, `post_videogenre` |
 | Audience Manager | `c_contextdata.a.media.genre` |
 

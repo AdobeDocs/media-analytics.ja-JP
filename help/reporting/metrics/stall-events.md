@@ -23,9 +23,9 @@ Customer Journey Analyticsでは、`xdm.mediaReporting.qoeDataDetails.stallCount
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | `a.media.qoe.stallCount`をカスタムイベントにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.stallCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| データフィード | `event_list`、`post_event_list` （処理ルールが`a.media.qoe.stallCount`にマッピングするカスタムイベント。[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)の参照を参照） |
+| Adobe Analytics | `a.media.qoe.stallCount`をカスタムイベントにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.stallCount`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| データフィード | `event_list`、`post_event_list` （処理ルールが`a.media.qoe.stallCount`にマッピングするカスタムイベント。[`event.tsv`](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)の参照を参照） |
 | Audience Manager | `c_contextdata.a.media.qoe.stallCount` |
 
 セッションレベルのブール値レポートの場合（ストールが発生したかどうかにかかわらず）、[影響を受けるストリームをストール &#x200B;](stall-impacted-streams.md)します。

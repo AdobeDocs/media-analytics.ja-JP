@@ -45,7 +45,7 @@ ht-degree: 78%
 
 * **メディアアプリケーションで JavaScript 用に `AppMeasurement` と `Experience Cloud Identity Service` を実装**
 
-  詳しくは、[AppMeasurementを使用したAnalyticsの実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)および[JavaScriptを使用した訪問者特定](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)を参照してください。
+  詳しくは、[AppMeasurementを使用したAnalyticsの実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)および[JavaScriptを使用した訪問者特定](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/appmeasurement)を参照してください。
 
 * **メディアプレーヤーで以下の API を含める**
 
