@@ -1,5 +1,5 @@
 ---
-title: Media Edge API データマッピングとプラットフォーム検証
+title: XDM レポートスキーマ
 description: Adobe Experience PlatformでExperience Eventsを生成するMedia Edge API イベントと、MediaReporting XDM スキーマを使用して実装を検証する方法について説明します。
 feature: Streaming Media
 role: User, Admin, Developer
@@ -15,26 +15,26 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: 763
 ht-degree: 4%
 
 ---
 
 
-# Media Edge API データマッピングとプラットフォーム検証
+# XDM レポートスキーマ
 
-Media Edge APIまたはMedia Edge SDKを使用してメディアトラッキングイベントを送信すると、Media Analytics バックエンドは、それらのイベントを処理し、計算されたエクスペリエンスイベントをAdobe Experience Platform データセットに書き込みます。 どのイベントがAdobe Experience Platformに到達し、どのようなバックエンド処理が必要になるかを把握することは、Customer Journey AnalyticsやAdobe Analyticsでの実装を検証し、正確なレポートを作成するのに役立ちます。
+Adobe Experience Platform Edge Networkを使用してメディアトラッキングイベントを送信する場合、Media Analytics バックエンドは、それらのイベントを処理し、計算されたエクスペリエンスイベントをPlatform データセットに書き込みます。 どのイベントがAdobe Experience Platformに到達し、どのようなバックエンド処理が必要になるかを把握することは、Customer Journey AnalyticsやAdobe Analyticsでの実装を検証し、正確なレポートを作成するのに役立ちます。
 
-Media Edgeでは、次の2つの異なるXDM スキーマを使用します。
+2つの異なるXDM スキーマが、コレクションとレポートパイプラインの異なる部分で使用されます。
 
 | スキーマ | 名前空間 | 方向 | 目的 |
 |---|---|---|---|
-| メディアコレクション | `xdm.mediaCollection` | Client → Adobe | トラッキングイベントごとにプレイヤーが送信する情報 |
-| メディアレポート | `xdm.mediaReporting` | Adobe → Platform | バックエンドが処理後にデータセットに書き込む内容 |
+| メディアコレクション | `xdm.mediaCollection` | Client → Adobe | 各トラッキングイベントに対してプレイヤーが送信する情報。 [変数](/help/implementation/variables/)によって使用されます。 |
+| メディアレポート | `xdm.mediaReporting` | Adobe → Platform | バックエンドが処理後にデータセットに書き込むもの。 [&#x200B; ディメンション &#x200B;](/help/reporting/dimensions/overview.md)および[指標](/help/reporting/metrics/overview.md)によって使用されます。 |
 
-`mediaReporting`に存在するが、`mediaCollection` ペイロードに存在しないフィールドは、**バックエンド計算**&#x200B;です。これは、セッション内のイベントの完全なシーケンスから派生したものです。 これらのフィールドは、Adobeによって生成されます。
+`mediaReporting`に存在するが、`mediaCollection` ペイロードに存在しないフィールドは、セッション内のイベントの完全なシーケンスから派生します。 これらのフィールドは、Adobeによって生成されます。
 
 ## Platform データセットに書き込むイベント
 
