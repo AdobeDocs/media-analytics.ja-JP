@@ -5,9 +5,9 @@ user-guide-title: ストリーミングメディアサービスガイド
 breadcrumb-title: ストリーミングメディアサービスガイド
 user-guide-description: ストリーミングメディアサービスを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '753'
 ht-degree: 36%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 36%
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
       + [カスタムメタデータのサポート](implementation/edge/implementation-edge-custom-metadata.md)
-      + [AEPのデータマッピングと検証](/help/implementation/edge/platform-data.md)
+      + [XDM レポートスキーマ](/help/implementation/edge/platform-data.md)
    + Adobe Analyticsのみの実装 {#analytics-only}
       + [前提条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + [メディアレポートの有効化](implementation/media-sdk/setup/media-reports-enable.md)
@@ -293,7 +293,7 @@ ht-degree: 36%
    + デフォルトメディアレポート {#media-default-reports}
       + [デフォルトレポートの概要](reporting/reports-and-analytics/default-reports-overview.md)
       + [メディアの概要](reporting/reports-and-analytics/media-reports-overview.md)
-      + [メディアの詳細 &#x200B;](reporting/reports-and-analytics/media-reports-detail.md)
+      + [メディアの詳細 ](reporting/reports-and-analytics/media-reports-detail.md)
       + [メディア視聴時間帯レポート](reporting/reports-and-analytics/media-reports-daypart.md)
       + [メディア同時ビューアレポート](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + Media API {#media-api}
