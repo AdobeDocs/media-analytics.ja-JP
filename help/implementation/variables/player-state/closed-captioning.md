@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**クローズドキャプション**プレーヤー状態のデータ収集について説明します。 対応するレポート指標について、[ クローズドキャプションの影響を受けるストリーム ](/help/reporting/metrics/closed-captioning-streams-impacted.md)、[ クローズドキャプション数](/help/reporting/metrics/closed-captioning-count.md)、および[ クローズドキャプション合計期間](/help/reporting/metrics/closed-captioning-total-duration.md)を参照してください。*
+*このページでは、**クローズドキャプション**&#x200B;プレーヤー状態のデータ収集について説明します。 対応するレポート指標について、[&#x200B; クローズドキャプションの影響を受けるストリーム &#x200B;](/help/reporting/metrics/closed-captioning-streams-impacted.md)、[&#x200B; クローズドキャプション数](/help/reporting/metrics/closed-captioning-count.md)、および[&#x200B; クローズドキャプション合計期間](/help/reporting/metrics/closed-captioning-total-duration.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -178,6 +178,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

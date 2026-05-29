@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Mute**プレーヤー状態のデータ収集について説明します。 対応するレポート指標について、[ ミュート ](/help/reporting/metrics/mute-streams-impacted.md)、[ ミュート数](/help/reporting/metrics/mute-count.md)、および[ ミュート合計期間](/help/reporting/metrics/mute-total-duration.md)の影響を受けるストリームを参照してください。*
+*このページでは、**Mute**&#x200B;プレーヤー状態のデータ収集について説明します。 対応するレポート指標について、[&#x200B; ミュート &#x200B;](/help/reporting/metrics/mute-streams-impacted.md)、[&#x200B; ミュート数](/help/reporting/metrics/mute-count.md)、および[&#x200B; ミュート合計期間](/help/reporting/metrics/mute-total-duration.md)の影響を受けるストリームを参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -178,6 +178,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

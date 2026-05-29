@@ -610,7 +610,7 @@ ADB.Media.StreamType = {
 
 +++標準メタデータキー
 
-`ADB.Media.VideoMetadataKeys`、`ADB.Media.AudioMetadataKeys`および`ADB.Media.AdMetadataKeys`は、標準メタデータのコンテキストデータキー文字列を提供します。 キーとそれに対応するレポート変数の完全なリストについては、[標準メタデータ変数リファレンス ](/help/implementation/variables/standard-metadata/show.md)を参照してください。
+`ADB.Media.VideoMetadataKeys`、`ADB.Media.AudioMetadataKeys`および`ADB.Media.AdMetadataKeys`は、標準メタデータのコンテキストデータキー文字列を提供します。 キーとそれに対応するレポート変数の完全なリストについては、[標準メタデータ変数リファレンス &#x200B;](/help/implementation/variables/standard-metadata/show.md)を参照してください。
 
 +++
 

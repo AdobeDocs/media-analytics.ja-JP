@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**サイト ID**のレポートディメンションについて説明します。 この変数の収集方法については、[ サイト ID](/help/implementation/variables/ads/site-id.md)を参照してください。*
+*このページでは、**サイト ID**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; サイト ID](/help/implementation/variables/ads/site-id.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 10%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | `a.media.ad.site`をeVarにマッピングする[処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
+| Adobe Analytics | `a.media.ad.site`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.siteID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | データフィード | `evar1`-`evar250`、`post_evar1`-`post_evar250` （処理ルール `a.media.ad.site`がマッピングされるeVar） |
 | Audience Manager | `c_contextdata.a.media.ad.site` |

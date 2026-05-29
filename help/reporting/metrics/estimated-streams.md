@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## この指標の計算方法
 
-メディアバックエンドは、この指標を`FLOOR(totalTimePlayed / 1800) + 1`として計算します。この指標は、`totalTimePlayed`が[ メディア滞在時間](media-time-spent.md)秒単位です。 この指標は、クローズ呼び出しで報告されます。
+メディアバックエンドは、この指標を`FLOOR(totalTimePlayed / 1800) + 1`として計算します。この指標は、`totalTimePlayed`が[&#x200B; メディア滞在時間](media-time-spent.md)秒単位です。 この指標は、クローズ呼び出しで報告されます。
 
 | メディア滞在時間 | 推定ストリーム |
 | --- | --- |
@@ -28,7 +28,7 @@ ht-degree: 10%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | `a.media.estimatedStreams`をカスタムイベントにマッピングする[処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
+| Adobe Analytics | `a.media.estimatedStreams`をカスタムイベントにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.estimatedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （処理ルールが`a.media.estimatedStreams`にマッピングするカスタムイベント。[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)の参照を参照） |
 | Audience Manager | `c_contextdata.a.media.estimatedStreams` |

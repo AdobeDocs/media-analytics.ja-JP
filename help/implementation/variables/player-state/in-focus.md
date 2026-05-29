@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**In focus**プレーヤー状態のデータ収集について説明します。 対応するレポート指標については、[ フォーカスの影響を受けるストリーム ](/help/reporting/metrics/in-focus-streams-impacted.md)、[ フォーカスのカウント ](/help/reporting/metrics/in-focus-count.md)および[ フォーカスの合計期間](/help/reporting/metrics/in-focus-total-duration.md)を参照してください。*
+*このページでは、**In focus**&#x200B;プレーヤー状態のデータ収集について説明します。 対応するレポート指標については、[&#x200B; フォーカスの影響を受けるストリーム &#x200B;](/help/reporting/metrics/in-focus-streams-impacted.md)、[&#x200B; フォーカスのカウント &#x200B;](/help/reporting/metrics/in-focus-count.md)および[&#x200B; フォーカスの合計期間](/help/reporting/metrics/in-focus-total-duration.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -178,6 +178,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

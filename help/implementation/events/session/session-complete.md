@@ -13,10 +13,10 @@ ht-degree: 9%
 
 # セッション完了
 
-セッション完了イベントは、視聴者がメインコンテンツの最後に到達したことを示します。 セッションはすぐに閉じません。セッションは、自然に期限切れになるまで開いたままです。 セッションを即座に閉じたい場合は、代わりに[ セッション終了](session-end.md)に電話してください。
+セッション完了イベントは、視聴者がメインコンテンツの最後に到達したことを示します。 セッションはすぐに閉じません。セッションは、自然に期限切れになるまで開いたままです。 セッションを即座に閉じたい場合は、代わりに[&#x200B; セッション終了](session-end.md)に電話してください。
 
-* **前提条件**: [ セッション開始](session-start.md)
-* **関連する指標**: [[!UICONTROL  コンテンツ完了]](/help/reporting/metrics/content-completes.md)
+* **前提条件**: [&#x200B; セッション開始](session-start.md)
+* **関連する指標**: [[!UICONTROL &#x200B; コンテンツ完了]](/help/reporting/metrics/content-completes.md)
 
 ## 推奨される実装タイプ
 
@@ -114,7 +114,7 @@ ADBMobile.media.trackComplete();
 
 >[!TAB Media Collection API]
 
-`sessionComplete`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`sessionComplete`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、ポッド位置&#x200B;**の**広告のレポートディメンションについて説明します。 この変数の収集方法については、[ ポッド位置の広告](/help/implementation/variables/ads/ad-in-pod-position.md)を参照してください。*
+*このページでは、ポッド位置&#x200B;**の**&#x200B;広告のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; ポッド位置の広告](/help/implementation/variables/ads/ad-in-pod-position.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  メディア広告]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.ad.podPosition`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディア広告]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.ad.podPosition`から自動的に収集されます。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | データフィード | `videoadinpod`, `post_videoadinpod` |
 | Audience Manager | `c_contextdata.a.media.ad.podPosition` |

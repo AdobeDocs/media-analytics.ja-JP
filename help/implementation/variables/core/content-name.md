@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツ名**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ コンテンツ名](/help/reporting/dimensions/content-name.md)を参照してください。*
+*このページでは、**コンテンツ名**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; コンテンツ名](/help/reporting/dimensions/content-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 9%
 | **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.friendlyName` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -185,6 +185,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
 
 >[!ENDTABS]

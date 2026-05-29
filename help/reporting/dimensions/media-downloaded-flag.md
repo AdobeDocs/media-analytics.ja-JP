@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**メディアのダウンロード**レポート ディメンションについて説明します。 この変数の収集方法については、[ メディアがダウンロードしたフラグ ](/help/implementation/variables/core/media-downloaded-flag.md)を参照してください。*
+*このページでは、**メディアのダウンロード**&#x200B;レポート ディメンションについて説明します。 この変数の収集方法については、[&#x200B; メディアがダウンロードしたフラグ &#x200B;](/help/implementation/variables/core/media-downloaded-flag.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | `a.media.downloaded`をeVarにマッピングする[処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
+| Adobe Analytics | `a.media.downloaded`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `evar1`-`evar250`、`post_evar1`-`post_evar250` （処理ルール `a.media.downloaded`がマッピングされるeVar） |
 | Audience Manager | `c_contextdata.a.media.downloaded` |

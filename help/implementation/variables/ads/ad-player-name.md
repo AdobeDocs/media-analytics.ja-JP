@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**広告プレーヤー名**変数のデータ収集について説明します。 対応するレポートディメンションについては、[Ad player name](/help/reporting/dimensions/ad-player-name.md)を参照してください。*
+*このページでは、**広告プレーヤー名**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[Ad player name](/help/reporting/dimensions/ad-player-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -161,6 +161,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, metadata);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

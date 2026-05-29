@@ -5,10 +5,19 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
 TQID: https://experienceleague.adobe.com/57wAwVCwAUlRcMAbFW-X6T6Fe7Ap6leOaQw2Vx9r3OA
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 700
@@ -22,7 +31,7 @@ ht-degree: 0%
 
 ## カスタムフィールドのデータ準備の移行
 
-データ準備マッピングを「メディア」と呼ばれる古いデータ型から「[ メディアのレポートの詳細](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」と呼ばれる新しいデータ型に移行するには、データ準備マッピングを編集する必要があります。
+データ準備マッピングを「メディア」と呼ばれる古いデータ型から「[&#x200B; メディアのレポートの詳細](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」と呼ばれる新しいデータ型に移行するには、データ準備マッピングを編集する必要があります。
 
 >[!IMPORTANT]
 >
@@ -40,7 +49,7 @@ ht-degree: 0%
 
 1. マッピングが期待どおりに機能していることを確認します。
 
-古いフィールドと新しいフィールドの間のマッピングについては、[ コンテンツ ID](/help/reporting/dimensions/content.md) パラメーターと、[ ストリーミングメディアサービス ](/help/media-overview.md)に記載されているストリーミングメディア変数の残りの部分を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
+古いフィールドと新しいフィールドの間のマッピングについては、[&#x200B; コンテンツ ID](/help/reporting/dimensions/content.md) パラメーターと、[&#x200B; ストリーミングメディアサービス &#x200B;](/help/media-overview.md)に記載されているストリーミングメディア変数の残りの部分を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
 
 ## 例
 
@@ -82,7 +91,7 @@ ht-degree: 0%
 
 上記の例では、関連するすべてのデータタイプがStringだったので、マッピングの置換は直接でした。
 
-ソースフィールドのデータタイプがターゲットフィールドのデータタイプと異なる場合は、[ データ準備のトラブルシューティングガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide)、[ データ準備](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)でのデータ形式の処理、[ データ準備マッピング関数](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)のガイドラインに従う必要があります。
+ソースフィールドのデータタイプがターゲットフィールドのデータタイプと異なる場合は、[&#x200B; データ準備のトラブルシューティングガイド &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide)、[&#x200B; データ準備](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)でのデータ形式の処理、[&#x200B; データ準備マッピング関数](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)のガイドラインに従う必要があります。
 
 例えば、ソースタイプが文字列で、ターゲットタイプがブール値の場合、Data Prepは値を自動的に解析し、ソース値をブール値に変換できます。
 

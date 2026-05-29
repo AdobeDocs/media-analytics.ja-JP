@@ -13,10 +13,10 @@ ht-degree: 10%
 
 # Play
 
-再生イベントは、メディアプレーヤーが状態を再生に変更したことを示す。 コンテンツの最初の開始時、自動再生時、一時停止またはバッファーの後にプレーヤーが再開されるたびに送信します。 別の再開イベントはありません。[一時停止の開始](pause-start.md)または[ バッファーの開始](buffer-start.md)の後の再生イベントが再開として機能します。
+再生イベントは、メディアプレーヤーが状態を再生に変更したことを示す。 コンテンツの最初の開始時、自動再生時、一時停止またはバッファーの後にプレーヤーが再開されるたびに送信します。 別の再開イベントはありません。[一時停止の開始](pause-start.md)または[&#x200B; バッファーの開始](buffer-start.md)の後の再生イベントが再開として機能します。
 
-* **前提条件**: [ セッション開始](../session/session-start.md)
-* **関連する指標**: [[!UICONTROL  コンテンツ開始]](/help/reporting/metrics/content-starts.md)
+* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
+* **関連する指標**: [[!UICONTROL &#x200B; コンテンツ開始]](/help/reporting/metrics/content-starts.md)
 
 ## 推奨される実装タイプ
 
@@ -114,7 +114,7 @@ ADBMobile.media.trackPlay();
 
 >[!TAB Media Collection API]
 
-`play`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`play`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

@@ -13,7 +13,7 @@ ht-degree: 12%
 
 # 章の開始
 
-**チャプター開始**&#x200B;指標は、セッション中に再生を開始したすべてのチャプターをカウントします。 [ チャプター完了](chapter-completes.md)と組み合わせて、チャプター完了率を計算します。
+**チャプター開始**&#x200B;指標は、セッション中に再生を開始したすべてのチャプターをカウントします。 [&#x200B; チャプター完了](chapter-completes.md)と組み合わせて、チャプター完了率を計算します。
 
 ## この指標の計算方法
 
@@ -21,7 +21,7 @@ ht-degree: 12%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  メディアチャプター]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.chapter.view`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディアチャプター]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.chapter.view`から自動的に収集されます。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.isStarted`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
 | Audience Manager | `c_contextdata.a.media.chapter.view` |

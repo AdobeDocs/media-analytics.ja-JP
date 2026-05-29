@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**エピソード**のレポートディメンションについて説明します。 この変数の収集方法については、[ エピソード ](/help/implementation/variables/standard-metadata/episode.md)を参照してください。*
+*このページでは、**エピソード**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; エピソード &#x200B;](/help/implementation/variables/standard-metadata/episode.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 10%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  ビデオメタデータ ]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.episode`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.episode`から自動的に収集されます。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.episode`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videoepisode`, `post_videoepisode` |
 | Audience Manager | `c_contextdata.a.media.episode` |

@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Ad break name**変数のデータ収集について説明します。 対応するレポートディメンションについては、[Pod name](/help/reporting/dimensions/pod-name.md)を参照してください。*
+*このページでは、**Ad break name**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[Pod name](/help/reporting/dimensions/pod-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -168,6 +168,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]
