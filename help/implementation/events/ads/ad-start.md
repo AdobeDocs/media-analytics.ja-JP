@@ -3,10 +3,10 @@ title: 広告の開始
 description: 個々の広告が再生を開始したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 14%
+source-wordcount: '187'
+ht-degree: 8%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 14%
 広告開始イベントは、個々の広告が再生を開始したことを示します。 これは、[Ad break start](ad-break-start.md) / [Ad break complete](ad-break-complete.md) ペア内で発生する必要があります。
 
 * **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[広告ブレーク開始](ad-break-start.md)
-* **関連する指標**: [広告開始](/help/reporting/metrics/ad-starts.md)
+* **関連する指標**: [[!UICONTROL 広告開始]](/help/reporting/metrics/ad-starts.md)
 
 >[!IMPORTANT]
 >
 >1つの広告が再生される場合でも、このイベントは`adBreakStart`と`adBreakComplete`個のブックエンドで囲む必要があります。 これらのブックエンドがないと、広告イベントは無視され、広告期間はメインコンテンツ期間としてカウントされます。
 
-## Web SDK
+## 推奨される実装タイプ
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)に`eventType: "media.adStart"`と必須`advertisingDetails`を呼び出します：
 
@@ -45,11 +49,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 広告名、ID、ポッドの位置、および長さを`createAdObject`に渡してから、`trackEvent`を呼び出します。
-
-**iOS （Swift）**
 
 ```swift
 let adObject = Media.createAdObjectWith(name: "Ford F-150",
@@ -60,7 +62,9 @@ let adObject = Media.createAdObjectWith(name: "Ford F-150",
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: nil)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+広告名、ID、ポッドの位置、および長さを`createAdObject`に渡してから、`trackEvent`を呼び出します。
 
 ```kotlin
 val adObject = Media.createAdObject("Ford F-150",
@@ -71,7 +75,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `sendMediaEvent`に`eventType: "media.adStart"`と必須`advertisingDetails`を呼び出します：
 
@@ -93,7 +97,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 必要な`advertisingDetails`で[adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) エンドポイントを呼び出します。
 
@@ -120,7 +124,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adStart?configId={datastreamID}"
 }'
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 広告名、ID、位置、長さを`ADB.Media.createAdObject`に渡します。
 
@@ -135,7 +145,22 @@ var adInfo = ADB.Media.createAdObject(
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, null);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+広告名、ID、位置、長さを`ADBMobile.media.createAdObject`に渡します。
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject(
+  "Ford F-150",  // name (friendly name)
+  "ad-2125",     // ad ID
+  0,             // position in pod
+  15             // length (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 `adStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
@@ -151,3 +176,5 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, null);
   }
 }
 ```
+
+>[!ENDTABS]

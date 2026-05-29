@@ -17,10 +17,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 294
-ht-degree: 90%
+ht-degree: 82%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 90%
 >
 >Media Analytics（MA）コレクション API バックエンドサーバーへの [Session リクエスト](../mc-api-ref/mc-api-sessions-req.md)を正常に完了するために必要なリクエストデータを収集します。 （`curl`、Postman などを使用して）リクエストを手動で送信することで、リクエストデータを迅速に確認できます。 これにより、リクエスト内の無効なデータタイプまたは無効な情報に起因する問題があるかどうかに関するフィードバックがすぐに得られます。 [JSON 検証スキーマ](../mc-api-ref/mc-api-json-validation.md)を使用して、適切なリクエストデータを提供していることを確認します。
 
-1. 標準の必須 Adobe Analytics および訪問者データを収集します。これらは、すべての Experience Cloud アプリケーションを実行するために提供する必要があります。
+1. CX Enterprise アプリケーションを実行するために必要な標準のAdobe Analyticsおよび訪問者データを収集します。
 
    * 訪問者の Experience Cloud 組織 ID
    * 訪問者の Experience Cloud ユーザー ID

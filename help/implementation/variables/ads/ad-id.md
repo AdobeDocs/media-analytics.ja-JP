@@ -3,10 +3,10 @@ title: 広告 ID
 description: 広告を一意に識別：
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 16%
+source-wordcount: '219'
+ht-degree: 10%
 
 ---
 
@@ -24,14 +24,18 @@ ht-degree: 16%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.name` |
-| **XDM コレクションフィールド** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.ad.name` |
 | **必須** | はい |
 | **様が**&#x200B;様と共に送信されました | [広告の開始](/help/implementation/events/ads/ad-start.md)、広告の終了 |
 
-## Web SDK
+## 推奨される実装タイプ
 
-`media.adStart`の[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を呼び出す場合、`mediaCollection.advertisingDetails`内に`name`を設定します：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+`media.adStart`の[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を呼び出す場合、`xdm.mediaCollection.advertisingDetails`内に`name`を設定します：
 
 ```javascript
 alloy("sendEvent", {
@@ -52,11 +56,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 広告IDを`adId`引数として`createAdObject`に渡します。 最初の引数（`name`）はフレンドリ名、2番目の引数はIDです。
-
-**iOS （Swift）**
 
 ```swift
 let adObject = Media.createAdObjectWith(name: "Ford F-150",
@@ -67,7 +69,9 @@ let adObject = Media.createAdObjectWith(name: "Ford F-150",
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: nil)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+広告IDを`adId`引数として`createAdObject`に渡します。 最初の引数（`name`）はフレンドリ名、2番目の引数はIDです。
 
 ```kotlin
 val adObject = Media.createAdObject("Ford F-150",
@@ -78,9 +82,9 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
-`media.adStart`の`sendMediaEvent`を呼び出す場合、`mediaCollection.advertisingDetails`内に`name`を設定します：
+`media.adStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingDetails`内に`name`を設定します：
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -100,9 +104,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-`mediaCollection.advertisingDetails`内の`name`で[adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) エンドポイントを呼び出します：
+`xdm.mediaCollection.advertisingDetails`内の`name`で[adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) エンドポイントを呼び出します：
 
 ```json
 {
@@ -124,7 +128,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 広告IDを2番目の引数として`ADB.Media.createAdObject`に渡します：
 
@@ -139,7 +149,21 @@ var adInfo = ADB.Media.createAdObject(
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+広告IDを2番目の引数として`ADBMobile.media.createAdObject`に渡します：
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject(
+  "Ford F-150",
+  "ad-2125",
+  1,
+  30
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 `adStart` POST リクエストの`params` オブジェクトに`media.ad.id`を含めます：
 
@@ -154,3 +178,5 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
 完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+
+>[!ENDTABS]

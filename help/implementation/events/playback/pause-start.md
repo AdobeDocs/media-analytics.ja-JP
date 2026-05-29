@@ -3,10 +3,10 @@ title: 一時停止して開始
 description: ユーザーがメディア再生を一時停止したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 19%
+source-wordcount: '140'
+ht-degree: 10%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 19%
 一時停止の開始イベントは、ユーザーが再生を一時停止したことを示します。 別の再開イベントはありません。再生の再開時に[Play](play.md) イベントを送信します。
 
 * **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
-* **関連する指標**: [&#x200B; イベントを一時停止](/help/reporting/metrics/pause-events.md)
+* **関連する指標**: [[!UICONTROL &#x200B; イベントを一時停止]](/help/reporting/metrics/pause-events.md)
 
 >[!NOTE]
 >
 >再開イベントタイプがありません。 `pauseStart`の後に[`play`](play.md) イベントを送信すると、再開が推測されます。
 
-## Web SDK
+## 推奨される実装タイプ
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を`eventType: "media.pauseStart"`と呼び出します：
 
@@ -38,23 +42,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 ユーザーが再生を一時停止したときに`trackPause`を呼び出します。
-
-**iOS （Swift）**
 
 ```swift
 tracker.trackPause()
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+ユーザーが再生を一時停止したときに`trackPause`を呼び出します。
 
 ```kotlin
 tracker.trackPause()
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `sendMediaEvent`を`eventType: "media.pauseStart"`と呼び出します：
 
@@ -69,7 +73,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 [pauseStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/pausestart/) エンドポイントを呼び出します。
 
@@ -90,7 +94,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/pauseStart?configId={datastreamI
 }'
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 ユーザーが再生を一時停止したときに`trackPause`を呼び出します。
 
@@ -98,7 +108,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/pauseStart?configId={datastreamI
 tracker.trackPause();
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+ユーザーが再生を一時停止したときに`trackPause`を呼び出します。
+
+```javascript
+ADBMobile.media.trackPause();
+```
+
+>[!TAB Media Collection API]
 
 `pauseStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
@@ -108,3 +126,5 @@ tracker.trackPause();
   "eventType": "pauseStart"
 }
 ```
+
+>[!ENDTABS]

@@ -3,7 +3,7 @@ title: カスタムメタデータのサポート - XDM形式
 description: Experience Edge XDM フォーマットを使用して、メディアトラッキングイベントでカスタムメタデータを送信する方法を説明します。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 2%
@@ -310,7 +310,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 &lt;InlineAlert variant="info" slots="text" />
 
-`xdm.mediaCollection.customMetadata`は、イベントを含むカスタムメタデータの送信に使用される&#x200B;**受信API パス**&#x200B;です。 処理後、データはコンテキストデータ変数としてAdobe Analyticsに転送され、`mediaReporting.customMetadata`の下のAdobe Experience Platformと最上位の統合フィールドとして保存されます。
+`xdm.mediaCollection.customMetadata`は、イベントを含むカスタムメタデータの送信に使用される&#x200B;**受信API パス**&#x200B;です。 処理後、データはコンテキストデータ変数としてAdobe Analyticsに転送され、`xdm.mediaReporting.customMetadata`の下のAdobe Experience Platformと最上位の統合フィールドとして保存されます。
 
 **Adobe Analytics：**
 
@@ -323,7 +323,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 - カスタムメタデータフィールドは、XDM スキーマのカスタムフィールド（`_mycompany`など）として定義する必要があり、AEPでフラット化されたフィールドとして保存してクエリできます
 
   ![XDM スキーマのカスタムフィールド定義](assets/custom_metadata.png)
-- レポートとクエリの場合、カスタムメタデータは`mediaReporting.customMetadata`の下および最上位の統合フィールドとしても使用できます。 ユースケースに最も適したツールを選択します。
+- レポートとクエリの場合、カスタムメタデータは`xdm.mediaReporting.customMetadata`の下および最上位の統合フィールドとしても使用できます。 ユースケースに最も適したツールを選択します。
 - セグメンテーション、Journey Orchestration、Real-Time CDPのアクティベーションにアクセス可能
 
 ## 動作

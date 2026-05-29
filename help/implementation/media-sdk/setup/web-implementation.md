@@ -20,14 +20,18 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 472
-ht-degree: 93%
+source-wordcount: 449
+ht-degree: 78%
 
 ---
 
 # JavaScriptを使用したMedia SDKのインストール {#install-web-sdks}
+
+>[!IMPORTANT]
+>
+>ここでは、AnalyticsのみのJavaScript Web SDKの実装について説明します。 推奨される実装については、[Edge Networkを使用したストリーミングメディアの実装](/help/implementation/edge/edge-web-sdk.md)を参照してください。
 
 このページの情報では、web スタンドアロン SDK のインストール方法と JavaScript のセットアップ方法について説明します。
 
@@ -41,7 +45,7 @@ ht-degree: 93%
 
 * **メディアアプリケーションで JavaScript 用に `AppMeasurement` と `Experience Cloud Identity Service` を実装**
 
-  詳しくは、[JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)および [Experience Cloud ID サービスの実装](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja)を参照してください。
+  詳しくは、[AppMeasurementを使用したAnalyticsの実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)および[JavaScriptを使用した訪問者特定](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/appmeasurement)を参照してください。
 
 * **メディアプレーヤーで以下の API を含める**
 
@@ -87,10 +91,6 @@ ht-degree: 93%
 
    メディア SDK は、Web ページごとに 1 回設定する必要があります。設定は、作成されるすべてのトラッカーインスタンスに適用されます。
 
-   >[!IMPORTANT]
-   >
-   > Media SDK（3.x）は、メディアコレクション API を使用して、2.x SDK で使用されている HB エンドポイントとは異なるメディアを追跡します。 詳細については、アドビの担当者にお問い合わせください。
-
    `MediaConfig` 初期化のサンプル：
 
    ```js
@@ -120,6 +120,4 @@ ht-degree: 93%
 
 ## JavaScript 2.x から 3.x への移行
 
-2.x から 3.x への移行について詳しくは、[&#x200B; 2.x から 3.x への移行](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)を参照してください。
-
-レガシーコンテンツについては、[レガシー実装](/help/legacy/media-sdk/setup/setup-overview.md)を参照してください
+2.xから3.xへの移行について詳しくは、[JS SDK 2.xから3.x](/help/implementation/media-sdk/setup/migrate-js-2x-to-3x.md)への移行を参照してください。

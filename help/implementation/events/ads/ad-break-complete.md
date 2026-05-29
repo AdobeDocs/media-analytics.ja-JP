@@ -3,10 +3,10 @@ title: 広告ブレーク完了
 description: 広告ブレークのすべての広告が終了したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 16%
+source-wordcount: '156'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 16%
 >
 >すべての`adBreakStart`には一致する`adBreakComplete`が必要です。 クロージングブックエンドを使用しない場合、広告イベントは無視され、広告期間はメインコンテンツに関連付けられます。
 
-## Web SDK
+## 推奨される実装タイプ
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を`eventType: "media.adBreakComplete"`と呼び出します：
 
@@ -38,23 +42,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 `trackEvent`を`AdBreakComplete` イベントタイプで呼び出します。
-
-**iOS （Swift）**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.AdBreakComplete, info: nil, metadata: nil)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+`trackEvent`を`AdBreakComplete` イベントタイプで呼び出します。
 
 ```kotlin
 tracker.trackEvent(Media.Event.AdBreakComplete, null, null)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `sendMediaEvent`を`eventType: "media.adBreakComplete"`と呼び出します：
 
@@ -69,7 +73,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 [adBreakComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakcomplete) エンドポイントを呼び出します。
 
@@ -90,7 +94,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakComplete?configId={datast
 }'
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `AdBreakComplete` イベントタイプで`trackEvent`を呼び出します：
 
@@ -98,7 +108,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakComplete?configId={datast
 tracker.trackEvent(ADB.Media.Event.AdBreakComplete, null, null);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+`AdBreakComplete` イベントタイプで`trackEvent`を呼び出します：
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete);
+```
+
+>[!TAB Media Collection API]
 
 `adBreakComplete`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
@@ -108,3 +126,5 @@ tracker.trackEvent(ADB.Media.Event.AdBreakComplete, null, null);
   "eventType": "adBreakComplete"
 }
 ```
+
+>[!ENDTABS]

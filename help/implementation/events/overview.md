@@ -3,9 +3,9 @@ title: ストリーミングメディアイベントの概要
 description: メディアイベントの種類と送信する順序について説明します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -69,10 +69,3 @@ ht-degree: 0%
 ## エラーイベント
 
 [Error](error.md) イベントは、セッション中の再生エラー（失敗したストリームリクエスト、コーデックエラー、または外部配信エラー）を記録します。 意味のあるエラーが発生するたびに送信します。 エラーイベントはセッションを閉じません。再生は続行でき、後続のイベントは同じセッションで追跡されます。 エラーが復元不可能な場合は、セッション終了でエラーに従い、セッションを明示的に閉じます。
-
->[!MORELIKETHIS]
->
->* [JSON検証スキーマ &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)：各イベントタイプのリクエストペイロード構造を検証します
->* [&#x200B; イベント要求エンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):Media Collection API エンドポイント参照
->* [&#x200B; セッション要求エンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md): イベントを送信する前にセッションを作成します
->* [&#x200B; プレーヤー状態の追跡](/help/use-cases/player-state-tracking/implementation-and-reporting.md)：状態の開始と終了の実装の詳細

@@ -3,10 +3,10 @@ title: フレーム/秒
 description: QoE オブジェクトの現在のフレーム レートを設定して、バックエンドに品質レポート用のフレーム レート コンテキストを設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 12%
+source-wordcount: '254'
+ht-degree: 7%
 
 ---
 
@@ -18,14 +18,18 @@ ht-degree: 12%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | なし（Adobe Analyticsでは、フレームレート用に予約されたコンテキストデータキーが割り当てられません） |
-| **XDM コレクションフィールド** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特性** | 該当なし |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | 品質イベント （[&#x200B; ビットレート変更](/help/implementation/events/playback/bitrate-change.md)、[&#x200B; バッファー開始](/help/implementation/events/playback/buffer-start.md)、[&#x200B; エラー](/help/implementation/events/error.md)）、セッション終了 |
 
-## Web SDK
+## 推奨される実装タイプ
 
-[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`mediaCollection.qoeDataDetails`内に`framesPerSecond`を設定：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`xdm.mediaCollection.qoeDataDetails`内に`framesPerSecond`を設定：
 
 ```javascript
 alloy("sendEvent", {
@@ -43,11 +47,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 フレームレートを3番目の引数（`fps`）として`createQoEObject`に渡します。
-
-**iOS （Swift）**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -58,7 +60,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+フレームレートを3番目の引数（`fps`）として`createQoEObject`に渡します。
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -69,9 +73,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
-`sendMediaEvent`の呼び出し時に`mediaCollection.qoeDataDetails`内に`framesPerSecond`を設定：
+`sendMediaEvent`の呼び出し時に`xdm.mediaCollection.qoeDataDetails`内に`framesPerSecond`を設定：
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -88,9 +92,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-`mediaCollection.qoeDataDetails`内の`framesPerSecond`で[bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) エンドポイントを呼び出します：
+`xdm.mediaCollection.qoeDataDetails`内の`framesPerSecond`で[bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) エンドポイントを呼び出します：
 
 ```json
 {
@@ -109,7 +113,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 フレームレートを3番目の引数として`ADB.Media.createQoEObject`に渡します。
 
@@ -118,7 +128,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 0, 24, 0);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+フレームレートを3番目の引数（`fps`）として`ADBMobile.media.createQoSObject`に渡し、トラッカーを更新します。
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Media Collection API]
 
 `params` オブジェクトに`media.qoe.framesPerSecond`を含めます：
 
@@ -133,3 +157,5 @@ tracker.updateQoEObject(qoeObject);
 ```
 
 完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+
+>[!ENDTABS]

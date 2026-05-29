@@ -3,10 +3,10 @@ title: メディアのダウンロード済みフラグ
 description: ダウンロードされたオフライン再生としてセッションにマークを付けると、ストリーミングセッションとは別にレポートされます。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 10%
+source-wordcount: '273'
+ht-degree: 6%
 
 ---
 
@@ -24,14 +24,18 @@ ht-degree: 10%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.downloaded` |
-| **XDM コレクションフィールド** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.downloaded` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
-## Web SDK
+## 推奨される実装タイプ
 
-[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`mediaCollection.sessionDetails`内の`isDownloaded`を`true`に設定：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`xdm.mediaCollection.sessionDetails`内の`isDownloaded`を`true`に設定：
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 `MediaConstants.TrackerConfig.DOWNLOADED_CONTENT`を使用してトラッカーを作成する際に、トラッカー設定でダウンロード済みコンテンツ フラグを設定します。
-
-**iOS （Swift）**
 
 ```swift
 var config: [String: Any] = [:]
@@ -70,7 +72,9 @@ Media.createTrackerWith(config: config) { tracker in
 }
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+`MediaConstants.TrackerConfig.DOWNLOADED_CONTENT`を使用してトラッカーを作成する際に、トラッカー設定でダウンロード済みコンテンツ フラグを設定します。
 
 ```kotlin
 val config = HashMap<String, Any>()
@@ -81,9 +85,9 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
-`createMediaSession`の呼び出し時に`mediaCollection.sessionDetails`内の`isDownloaded`を`true`に設定：
+`createMediaSession`の呼び出し時に`xdm.mediaCollection.sessionDetails`内の`isDownloaded`を`true`に設定：
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -105,7 +109,7 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 デバイスがオンラインに戻った後、[&#x200B; ダウンロード済み](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/#downloaded) エンドポイントを呼び出し、`mediaDownloadedEvents`内で完全なオフラインセッションをバッチ処理します。 Adobeは自動的に`isDownloaded`を`true`に設定し、セッション IDを割り当てます。ペイロードに含めないでください。
 
@@ -142,7 +146,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 トラッカーを作成する前に、`ADB.MediaConfig`に`downloadedContent`を設定します：
 
@@ -156,7 +166,18 @@ mediaConfig.downloadedContent = true;
 var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+`trackSessionStart`を呼び出す前に、メディア情報オブジェクトに`MediaDownloaded`を設定します：
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 `sessionStart` POST リクエストの`params` オブジェクトに`media.downloaded`を含めます：
 
@@ -171,3 +192,5 @@ var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
 完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+
+>[!ENDTABS]

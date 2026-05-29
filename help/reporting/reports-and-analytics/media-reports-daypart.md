@@ -16,13 +16,13 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 45
-ht-degree: 100%
+ht-degree: 53%
 
 ---
 
 # メディア視聴時間帯{#media-daypart}
 
-メディア視聴時間帯ダッシュボードには時刻別にコンテンツ開始が表示されるので、オーディエンスが関与している時間帯をすばやく確認できます。![](assets/video-daypart-report.png)
+メディア デイパート ダッシュボードには、時間帯ごとに[[!UICONTROL &#x200B; コンテンツ開始]](/help/reporting/metrics/content-starts.md)が表示され、オーディエンスがエンゲージしているときにすばやく表示できます。 ![](assets/video-daypart-report.png)

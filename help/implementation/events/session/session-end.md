@@ -3,10 +3,10 @@ title: セッション終了
 description: 視聴者がコンテンツを放棄した場合は、直ちにメディアセッションを閉じます。
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 8%
+source-wordcount: '300'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,11 @@ ht-degree: 8%
 * **前提条件**: [&#x200B; セッション開始](session-start.md)
 * **関連する指標**：なし
 
-## Web SDK
+## 推奨される実装タイプ
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を`eventType: "media.sessionEnd"`と呼び出します：
 
@@ -40,23 +44,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 ビューアーがプレーヤーを閉じるか、離れるときに`trackSessionEnd`に電話します。
-
-**iOS （Swift）**
 
 ```swift
 tracker.trackSessionEnd()
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+ビューアーがプレーヤーを閉じるか、離れるときに`trackSessionEnd`に電話します。
 
 ```kotlin
 tracker.trackSessionEnd()
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `sendMediaEvent`を`eventType: "media.sessionEnd"`と呼び出します：
 
@@ -71,7 +75,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 [sessionEnd](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionend) エンドポイントを呼び出します。
 
@@ -92,7 +96,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionEnd?configId={datastreamI
 }'
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 ビューアーがプレーヤーを閉じるか、離れるときに`trackSessionEnd`に電話します。
 
@@ -100,7 +110,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionEnd?configId={datastreamI
 tracker.trackSessionEnd();
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+ビューアーがプレーヤーを閉じるか、離れるときに`trackSessionEnd`に電話します。
+
+```javascript
+ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB Media Collection API]
 
 `sessionEnd`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
@@ -110,3 +128,5 @@ tracker.trackSessionEnd();
   "eventType": "sessionEnd"
 }
 ```
+
+>[!ENDTABS]

@@ -3,7 +3,7 @@ title: ストリームタイプ
 description: 各メディアセッションがオーディオまたはビデオコンテンツであるかどうかをキャプチャします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 6%
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 >[!ENDSHADEBOX]
 
-**ストリームタイプ** ディメンションは、各メディアセッションがオーディオまたはビデオコンテンツであるかどうかをキャプチャします。 この機能は、レポートスイートで[Media Coreが有効になった後](/help/reporting/media-reports-enable.md)にAdobe Analyticsで利用でき、ストリーミングメディアデータを含むデータセットではCustomer Journey Analyticsで利用できます。
+**ストリームタイプ** ディメンションは、各メディアセッションがオーディオまたはビデオコンテンツであるかどうかをキャプチャします。 この機能は、レポートスイートで[Media Coreが有効になった後](/help/implementation/media-sdk/setup/media-reports-enable.md)にAdobe Analyticsで利用でき、ストリーミングメディアデータを含むデータセットではCustomer Journey Analyticsで利用できます。
 
 ## このディメンションの入力方法
 
@@ -28,7 +28,7 @@ ht-degree: 6%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.streamType`から自動的に収集されます。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videostreamtype` |
 | Audience Manager | `c_contextdata.a.media.streamType` |
 

@@ -15,14 +15,18 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 199
-ht-degree: 70%
+source-wordcount: 220
+ht-degree: 63%
 
 ---
 
 # Mobile SDK のインストール {#install-mobile-sdks}
+
+>[!IMPORTANT]
+>
+>ここでは、AnalyticsのみのMobile SDKの実装について説明します。 推奨される実装については、[Edge Networkを使用したストリーミングメディアの実装](/help/implementation/edge/edge-mobile-sdk.md)を参照してください。
 
 AndroidまたはiOSにモバイルアプリ用のAdobe ストリーミングメディアサービスを実装するには、以下をインストールして設定します。
 

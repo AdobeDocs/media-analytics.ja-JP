@@ -3,10 +3,10 @@ title: ビットレートの変更
 description: プレーヤーが別のビットレートに切り替えるたびに、ビットレート変更イベントを起動します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 11%
+source-wordcount: '260'
+ht-degree: 6%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、ビットレート変更イベントの実装方法について説明します。 対応するレポート変数については、[&#x200B; ビットレート変更（ディメンション） &#x200B;](/help/reporting/dimensions/bitrate-changes.md)および[&#x200B; ビットレート変更（指標） &#x200B;](/help/reporting/metrics/bitrate-changes.md)を参照してください。*
+*このページでは、ビットレート変更イベントの実装方法について説明します。 対応するレポート変数については、[[!UICONTROL &#x200B; ビットレート変更] （ディメンション） &#x200B;](/help/reporting/dimensions/bitrate-changes.md)および[[!UICONTROL &#x200B; ビットレート変更] （指標） &#x200B;](/help/reporting/metrics/bitrate-changes.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
-ビットレート変更イベントは、プレーヤーが別のビットレートに切り替えたことを示します。 最初にQoE オブジェクトの[&#x200B; ビットレート &#x200B;](/help/implementation/variables/quality/bitrate.md)値を更新してから、ビットレート変更イベントを実行します。 バックエンドでは、これらのイベントの数を使用して、ビットレートの変更ディメンションと指標を計算し、結果として得られるビットレート値は平均ビットレートを供給します。
+ビットレート変更イベントは、プレーヤーが別のビットレートに切り替えたことを示します。 最初にQoE オブジェクトの[&#x200B; ビットレート &#x200B;](/help/implementation/variables/quality/bitrate.md)値を更新してから、ビットレート変更イベントを実行します。 バックエンドでは、これらのイベントのカウントを使用して、[[!UICONTROL &#x200B; ビットレート変更]](/help/reporting/dimensions/bitrate-changes.md) ディメンションと[[!UICONTROL &#x200B; ビットレート変更]](/help/reporting/metrics/bitrate-changes.md)指標を計算し、結果のビットレート値は[[!UICONTROL 平均ビットレート &#x200B;]](/help/reporting/metrics/average-bitrate.md)を入力します。
 
 | プロパティ | 値 |
 | --- | --- |
@@ -29,7 +29,11 @@ ht-degree: 11%
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [&#x200B; ビットレート変更](/help/implementation/events/playback/bitrate-change.md) |
 
-## Web SDK
+## 推奨される実装タイプ
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を使用して、新しいビットレートで`media.bitrateChange` イベントを送信します。
 
@@ -51,11 +55,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 新しいビットレートでQoE オブジェクトを更新し、ビットレート変更イベントを実行します。
-
-**iOS （Swift）**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 4500,
@@ -66,7 +68,9 @@ tracker.updateQoEObject(qoe: qoeObject)
 tracker.trackEvent(event: MediaEvent.BitrateChange, info: nil, metadata: nil)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+新しいビットレートでQoE オブジェクトを更新し、ビットレート変更イベントを実行します。
 
 ```kotlin
 val qoeObject = Media.createQoEObject(4500L, 0.0, 24.0, 0L)
@@ -74,7 +78,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `sendMediaEvent`と`media.bitrateChange`を使用して、ビットレートの変更を通知します。 `qoeDataDetails`に新しいビットレートを含めます：
 
@@ -95,7 +99,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 更新された`qoeDataDetails`で[bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) エンドポイントを呼び出します。
 
@@ -116,7 +120,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 QoE オブジェクトを更新し、イベントを実行します。
 
@@ -126,7 +136,22 @@ tracker.updateQoEObject(qoeObject);
 tracker.trackEvent(ADB.Media.Event.BitrateChange);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+QoS オブジェクトを新しいビットレートで更新し、ビットレート変更イベントを実行します。
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  4500,  // bitrate (kbps)
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Media Collection API]
 
 新しいビットレートで`bitrateChange` POST リクエストを送信します。
 
@@ -141,3 +166,5 @@ tracker.trackEvent(ADB.Media.Event.BitrateChange);
 ```
 
 完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+
+>[!ENDTABS]

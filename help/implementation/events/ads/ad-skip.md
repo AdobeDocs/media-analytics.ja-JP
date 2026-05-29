@@ -3,10 +3,10 @@ title: 広告スキップ
 description: 視聴者が広告をスキップしたことを知らせるシグナル。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 15%
+source-wordcount: '167'
+ht-degree: 8%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 15%
 >
 >1つの広告が再生される場合でも、このイベントは`adBreakStart`と`adBreakComplete`個のブックエンドで囲む必要があります。 これらのブックエンドがないと、広告イベントは無視され、広告期間はメインコンテンツ期間としてカウントされます。
 
-## Web SDK
+## 推奨される実装タイプ
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を`eventType: "media.adSkip"`と呼び出します：
 
@@ -38,23 +42,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 `trackEvent`を`AdSkip` イベントタイプで呼び出します。
-
-**iOS （Swift）**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.AdSkip, info: nil, metadata: nil)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+`trackEvent`を`AdSkip` イベントタイプで呼び出します。
 
 ```kotlin
 tracker.trackEvent(Media.Event.AdSkip, null, null)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `sendMediaEvent`を`eventType: "media.adSkip"`と呼び出します：
 
@@ -69,7 +73,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 [adSkip](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adskip) エンドポイントを呼び出します。
 
@@ -90,7 +94,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adSkip?configId={datastreamID}" 
 }'
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 `AdSkip` イベントタイプで`trackEvent`を呼び出します：
 
@@ -98,7 +108,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adSkip?configId={datastreamID}" 
 tracker.trackEvent(ADB.Media.Event.AdSkip, null, null);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+`AdSkip` イベントタイプで`trackEvent`を呼び出します：
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdSkip);
+```
+
+>[!TAB Media Collection API]
 
 `adSkip`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
@@ -108,3 +126,5 @@ tracker.trackEvent(ADB.Media.Event.AdSkip, null, null);
   "eventType": "adSkip"
 }
 ```
+
+>[!ENDTABS]

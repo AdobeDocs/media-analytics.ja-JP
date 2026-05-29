@@ -3,10 +3,10 @@ title: Play
 description: メディアプレーヤーが再生状態に入ったことを示す信号。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 17%
+source-wordcount: '165'
+ht-degree: 10%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 17%
 再生イベントは、メディアプレーヤーが状態を再生に変更したことを示す。 コンテンツの最初の開始時、自動再生時、一時停止またはバッファーの後にプレーヤーが再開されるたびに送信します。 別の再開イベントはありません。[一時停止の開始](pause-start.md)または[&#x200B; バッファーの開始](buffer-start.md)の後の再生イベントが再開として機能します。
 
 * **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
-* **関連する指標**: [&#x200B; コンテンツ開始](/help/reporting/metrics/content-starts.md)
+* **関連する指標**: [[!UICONTROL &#x200B; コンテンツ開始]](/help/reporting/metrics/content-starts.md)
 
-## Web SDK
+## 推奨される実装タイプ
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を`eventType: "media.play"`と呼び出します：
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 メディアプレーヤーの再生が開始または再開されると、`trackPlay`に電話します。
-
-**iOS （Swift）**
 
 ```swift
 tracker.trackPlay()
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+メディアプレーヤーの再生が開始または再開されると、`trackPlay`に電話します。
 
 ```kotlin
 tracker.trackPlay()
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `sendMediaEvent`を`eventType: "media.play"`と呼び出します：
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 [play](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/play/) エンドポイントを呼び出します。
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/play?configId={datastreamID}" \
 }'
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 メディアプレーヤーの再生が開始または再開されたときに`trackPlay`に電話します。
 
@@ -94,7 +104,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/play?configId={datastreamID}" \
 tracker.trackPlay();
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+メディアプレーヤーの再生が開始または再開されたときに`trackPlay`に電話します。
+
+```javascript
+ADBMobile.media.trackPlay();
+```
+
+>[!TAB Media Collection API]
 
 `play`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
@@ -104,3 +122,5 @@ tracker.trackPlay();
   "eventType": "play"
 }
 ```
+
+>[!ENDTABS]

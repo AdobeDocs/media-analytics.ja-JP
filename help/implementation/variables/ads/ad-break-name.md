@@ -3,10 +3,10 @@ title: 広告ブレーク名
 description: 親の広告枠のわかりやすい名前を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 11%
+source-wordcount: '248'
+ht-degree: 6%
 
 ---
 
@@ -24,14 +24,18 @@ ht-degree: 11%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.podFriendlyName` |
-| **XDM コレクションフィールド** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **必須** | はい（モバイル SDK）、いいえ（Edge、Media Collection API） |
 | **様が**&#x200B;様と共に送信されました | [広告ブレーク開始](/help/implementation/events/ads/ad-break-start.md)、広告クローズ |
 
-## Web SDK
+## 推奨される実装タイプ
 
-`media.adBreakStart`の[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を呼び出す場合、`mediaCollection.advertisingPodDetails`内に`friendlyName`を設定します：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+`media.adBreakStart`の[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)を呼び出す場合、`xdm.mediaCollection.advertisingPodDetails`内に`friendlyName`を設定します：
 
 ```javascript
 alloy("sendEvent", {
@@ -50,11 +54,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 広告ブレーク名を最初の（`name`）引数として`createAdBreakObject`に渡し、広告ブレーク開始イベントを広告ブレーク開始イベントの前に追跡します。
-
-**iOS （Swift）**
 
 ```swift
 let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
@@ -64,7 +66,9 @@ let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
 tracker.trackEvent(event: MediaEvent.AdBreakStart, info: adBreakObject, metadata: nil)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+広告ブレーク名を最初の（`name`）引数として`createAdBreakObject`に渡し、広告ブレーク開始イベントを広告ブレーク開始イベントの前に追跡します。
 
 ```kotlin
 val adBreakObject = Media.createAdBreakObject("pre-roll",
@@ -74,9 +78,9 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
-`media.adBreakStart`の`sendMediaEvent`を呼び出す場合、`mediaCollection.advertisingPodDetails`内に`friendlyName`を設定します：
+`media.adBreakStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingPodDetails`内に`friendlyName`を設定します：
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -94,9 +98,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-`mediaCollection.advertisingPodDetails`内の`friendlyName`で[adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart) エンドポイントを呼び出します。
+`xdm.mediaCollection.advertisingPodDetails`内の`friendlyName`で[adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart) エンドポイントを呼び出します。
 
 ```json
 {
@@ -117,7 +121,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 広告ブレーク名を最初の引数として`ADB.Media.createAdBreakObject`に渡します：
 
@@ -131,7 +141,20 @@ var adBreakInfo = ADB.Media.createAdBreakObject(
 tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+広告ブレーク名を最初の引数として`ADBMobile.media.createAdBreakObject`に渡します：
+
+```javascript
+var adBreakInfo = ADBMobile.media.createAdBreakObject(
+  "pre-roll",
+  1,
+  0
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Media Collection API]
 
 `adBreakStart` POST リクエストの`params` オブジェクトに`media.ad.podFriendlyName`を含めます：
 
@@ -146,3 +169,5 @@ tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
 完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+
+>[!ENDTABS]

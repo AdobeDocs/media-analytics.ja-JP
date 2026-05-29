@@ -18,10 +18,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 8%
+source-wordcount: 563
+ht-degree: 6%
 
 ---
 
@@ -88,9 +88,7 @@ alloy("configure", {
 
 Media JS SDKを使用しているお客様に対しては、Web SDKは、Media JS SDKからWeb SDKへの移行パスを提供しますが、Media イベントの処理などの既存のMedia JS機能のサポートも含まれています。
 
-[!DNL Web SDK]には、Media Analytics トラッカーを取得するコマンドが含まれています。 このコマンドを使用してオブジェクトインスタンスを作成し、[Media JS ライブラリ &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)で提供されているものと同じAPIを使用して、メディアイベントを追跡できます。
-
-サポートされているメソッドの詳細については、[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) ドキュメントを参照してください。
+Web SDKには、[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) コマンドが含まれており、これを使用してオブジェクトインスタンスを作成できます。 次に、[3.x Media SDK](/help/implementation/media-sdk/setup/js-3x-api-reference.md)が提供するAPIと同じAPIを使用して、メディアイベントを追跡できます。
 
 以下のスニペットは、Media JSでメディアトラッカーインスタンスを取得する方法を示しています。
 

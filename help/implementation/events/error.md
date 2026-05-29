@@ -3,10 +3,10 @@ title: エラー
 description: メディアプレーヤーでエラーが発生したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 16%
+source-wordcount: '168'
+ht-degree: 10%
 
 ---
 
@@ -16,11 +16,15 @@ ht-degree: 16%
 エラーイベントは、メディアプレーヤーでエラーが発生したことを示します。 エラーを追跡しても、セッションは閉じません。 エラーにより再生が続行されない場合は、エラーイベントの後に[&#x200B; セッション終了](session/session-end.md)を呼び出します。
 
 * **前提条件**: [&#x200B; セッション開始](session/session-start.md)
-* **関連する指標**: [影響を受けるストリーム &#x200B;](/help/reporting/metrics/error-impacted-streams.md)
+* **関連する指標**: [[!UICONTROL 影響を受けるストリーム &#x200B;]](/help/reporting/metrics/error-impacted-streams.md)
 
 `errorDetails.source` プロパティで使用できる値は、2つだけです。`player` （メディアプレーヤーで発生したエラー）と`external` （CDNやネットワークなどの外部ソースからのエラー）。
 
-## Web SDK
+## 推奨される実装タイプ
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 [`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)に`eventType: "media.error"`と必須`errorDetails`を呼び出します：
 
@@ -40,23 +44,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 エラーID文字列で`trackError`を呼び出します。
-
-**iOS （Swift）**
 
 ```swift
 tracker.trackError(errorId: "media-error-001")
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+エラーID文字列で`trackError`を呼び出します。
 
 ```kotlin
 tracker.trackError("media-error-001")
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
 `sendMediaEvent`に`eventType: "media.error"`と必須`errorDetails`を呼び出します：
 
@@ -75,7 +79,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 必要な`errorDetails`を使用して[&#x200B; エラー](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/error/) エンドポイントを呼び出します。
 
@@ -100,7 +104,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/error?configId={datastreamID}" \
 }'
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 エラーID文字列で`trackError`を呼び出します：
 
@@ -108,7 +118,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/error?configId={datastreamID}" \
 tracker.trackError("media-error-001");
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+エラーID文字列で`trackError`を呼び出します：
+
+```javascript
+ADBMobile.media.trackError("media-error-001");
+```
+
+>[!TAB Media Collection API]
 
 `error`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
@@ -122,3 +140,5 @@ tracker.trackError("media-error-001");
   }
 }
 ```
+
+>[!ENDTABS]

@@ -3,10 +3,10 @@ title: 広告休憩の開始時間
 description: コンテンツ内の広告ブレークの開始時間（オフセット）を秒単位で設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 12%
+source-wordcount: '239'
+ht-degree: 7%
 
 ---
 
@@ -24,14 +24,18 @@ ht-degree: 12%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.podSecond` |
-| **XDM コレクションフィールド** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.ad.podSecond` |
 | **必須** | はい |
 | **様が**&#x200B;様と共に送信されました | [広告ブレーク開始](/help/implementation/events/ads/ad-break-start.md)、広告クローズ |
 
-## Web SDK
+## 推奨される実装タイプ
 
-[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`mediaCollection.advertisingPodDetails`内に`offset`を設定：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+[`sendEvent`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/sendevent/overview)の呼び出し時に`xdm.mediaCollection.advertisingPodDetails`内に`offset`を設定：
 
 ```javascript
 alloy("sendEvent", {
@@ -50,11 +54,9 @@ alloy("sendEvent", {
 });
 ```
 
-## モバイル SDK
+>[!TAB iOS]
 
 3番目の引数として開始時間を秒単位で`createAdBreakObject`に渡します。
-
-**iOS （Swift）**
 
 ```swift
 let adBreakObject = Media.createAdBreakObjectWith(name: "mid-roll-1",
@@ -64,7 +66,9 @@ let adBreakObject = Media.createAdBreakObjectWith(name: "mid-roll-1",
 tracker.trackEvent(event: MediaEvent.AdBreakStart, info: adBreakObject, metadata: nil)
 ```
 
-**Android （Kotlin）**
+>[!TAB Android]
+
+3番目の引数として開始時間を秒単位で`createAdBreakObject`に渡します。
 
 ```kotlin
 val adBreakObject = Media.createAdBreakObject("mid-roll-1",
@@ -74,9 +78,9 @@ val adBreakObject = Media.createAdBreakObject("mid-roll-1",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
-## Roku （BrightScript）
+>[!TAB Roku]
 
-`media.adBreakStart`の`sendMediaEvent`を呼び出す場合、`mediaCollection.advertisingPodDetails`内に`offset`を設定します：
+`media.adBreakStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingPodDetails`内に`offset`を設定します：
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -94,9 +98,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-`mediaCollection.advertisingPodDetails`内の`offset`で[adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart) エンドポイントを呼び出します。
+`xdm.mediaCollection.advertisingPodDetails`内の`offset`で[adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart) エンドポイントを呼び出します。
 
 ```json
 {
@@ -116,7 +120,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## メディア SDK
+>[!ENDTABS]
+
+## 従来の実装タイプ （Analyticsのみ）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 3番目の引数として開始時間を`ADB.Media.createAdBreakObject`に渡します。
 
@@ -130,7 +140,20 @@ var adBreakInfo = ADB.Media.createAdBreakObject(
 tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
-## メディアコレクション API
+>[!TAB Chromecast]
+
+3番目の引数として開始時間を秒単位で`ADBMobile.media.createAdBreakObject`に渡します。
+
+```javascript
+var adBreakInfo = ADBMobile.media.createAdBreakObject(
+  "mid-roll-1",
+  2,
+  90
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Media Collection API]
 
 `adBreakStart` POST リクエストの`params` オブジェクトに`media.ad.podSecond`を含めます：
 
@@ -145,3 +168,5 @@ tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
 完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+
+>[!ENDTABS]
