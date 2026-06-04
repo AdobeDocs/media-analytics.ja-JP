@@ -28,7 +28,7 @@ ht-degree: 6%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL &#x200B; メディア広告]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.ad.length`から自動的に収集されます。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.length`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | データフィード | `videoadlength`, `post_videoadlength` |
 | Audience Manager | `c_contextdata.a.media.ad.length` |
 

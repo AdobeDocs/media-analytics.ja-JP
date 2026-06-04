@@ -22,7 +22,7 @@ ht-degree: 7%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL &#x200B; メディア広告]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.ad.pod`から自動的に収集されます。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | データフィード | `videoadpod`, `post_videoadpod` |
 | Audience Manager | 該当なし |
 

@@ -31,8 +31,8 @@ ht-degree: 4%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | Edgeの実装時に、XDM フィールドマッピングによって自動的に収集されます。 Analyticsのみの実装の場合は、[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md)を使用して、コンテキストデータ `media.sdkVersion`をカスタム eVarにマッピングします。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Edgeの実装時に、XDM フィールドマッピングによって自動的に収集されます。 Analyticsのみの実装の場合は、[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md)を使用して、コンテキストデータ `media.sdkVersion`をカスタム eVarにマッピングします。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | 専用のデータフィード列はありません。 Analyticsのみの実装の場合は、処理ルールで設定されたカスタム eVarのデータフィード列を使用します。 |
 | Audience Manager | `c_contextdata.media.sdkVersion` （Analyticsのみの実装） |
 

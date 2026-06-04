@@ -28,7 +28,7 @@ ht-degree: 6%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.qoe.timeToStart`から自動的に収集されます。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | データフィード | `videoqoetimetostartevar`, `post_videoqoetimetostartevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.timeToStart` |
 

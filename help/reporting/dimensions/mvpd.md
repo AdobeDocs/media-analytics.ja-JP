@@ -28,7 +28,7 @@ MVPDは、コンテンツがAdobe Passの背後でゲート化されるセッシ
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL &#x200B; ビデオメタデータ &#x200B;]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.pass.mvpd`から自動的に収集されます。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videomvpd`, `post_videomvpd` |
 | Audience Manager | `c_contextdata.a.media.pass.mvpd` |
 

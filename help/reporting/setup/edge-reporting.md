@@ -127,7 +127,7 @@ Edge Networkを使用してStreaming Media Collectionを実装したら、収集
 
 1. （条件付き）スキーマにカスタムメタデータを追加した場合は、Customer Journey Analytics ガイドの[永続性コンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)で説明されているように、カスタムフィールドの永続性を設定します。
 
-1. 「[&#x200B; プロジェクトを共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)」の説明に従って、プロジェクトを共有します。
+1. 「[&#x200B; プロジェクトを共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ja)」の説明に従って、プロジェクトを共有します。
 
    >[!NOTE]
    >

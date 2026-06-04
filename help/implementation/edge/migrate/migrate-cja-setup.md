@@ -26,11 +26,11 @@ ht-degree: 1%
 
 # Customer Journey Analyticsを移行して、新しいストリーミングメディアフィールドを使用する
 
-このドキュメントでは、「Media」という名前のAdobe ストリーミングメディアサービスのデータタイプを使用するCustomer Journey Analyticsの設定を、「[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という名前の新しい対応するデータタイプを使用するように更新する方法について説明します。
+このドキュメントでは、「Media」という名前のAdobe ストリーミングメディアサービスのデータタイプを使用するCustomer Journey Analyticsの設定を、「[Media Reporting Details](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」という名前の新しい対応するデータタイプを使用するように更新する方法について説明します。
 
 ## Customer Journey Analyticsの移行
 
-Customer Journey Analytics設定を「Media」という古いデータ型から「[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータ型に移行するには、古いデータ型を使用している次の設定を更新する必要があります。
+Customer Journey Analytics設定を「Media」という古いデータ型から「[Media Reporting Details](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータ型に移行するには、古いデータ型を使用している次の設定を更新する必要があります。
 
 * データビュー
 
