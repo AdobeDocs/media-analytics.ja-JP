@@ -34,7 +34,7 @@ Edge Networkを使用してStreaming Media Collectionを実装したら、収集
 
 ## Customer Journey Analytics でデータビューを作成
 
-1. Customer Journey Analyticsで、[ データビューの作成または編集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja)の説明に従ってデータビューを作成します。
+1. Customer Journey Analyticsで、[&#x200B; データビューの作成または編集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja)の説明に従ってデータビューを作成します。
 
    1. 「**[!UICONTROL 接続]**」フィールドで、以前に作成した接続を選択します。
 
@@ -127,7 +127,7 @@ Edge Networkを使用してStreaming Media Collectionを実装したら、収集
 
 1. （条件付き）スキーマにカスタムメタデータを追加した場合は、Customer Journey Analytics ガイドの[永続性コンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)で説明されているように、カスタムフィールドの永続性を設定します。
 
-1. 「[ プロジェクトを共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)」の説明に従って、プロジェクトを共有します。
+1. 「[&#x200B; プロジェクトを共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)」の説明に従って、プロジェクトを共有します。
 
    >[!NOTE]
    >
@@ -135,6 +135,6 @@ Edge Networkを使用してStreaming Media Collectionを実装したら、収集
 
 >[!MORELIKETHIS]
 >
->* Workspaceの[ メディアパネル ](/help/reporting/workspace/media-concurrent-viewers-overview.md)
->* [ ディメンションの概要](/help/reporting/dimensions/overview.md)
+>* Workspaceの[&#x200B; メディアパネル &#x200B;](/help/reporting/workspace/media-concurrent-viewers-overview.md)
+>* [&#x200B; ディメンションの概要](/help/reporting/dimensions/overview.md)
 >* [指標の概要](/help/reporting/metrics/overview.md)

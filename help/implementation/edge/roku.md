@@ -16,7 +16,7 @@ ht-degree: 0%
 
 * **前提条件**:
    * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
-   * [GitHub リリース ](https://github.com/adobe/aepsdk-roku/releases)からSDKをダウンロードし、[入門ガイド ](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md)の説明に従って、チャンネルに追加します。
+   * [GitHub リリース &#x200B;](https://github.com/adobe/aepsdk-roku/releases)からSDKをダウンロードし、[入門ガイド &#x200B;](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md)の説明に従って、チャンネルに追加します。
 
 ## AEP Roku SDK メディア版の設定
 
@@ -51,11 +51,11 @@ m.aepSdk.createMediaSession({
 >
 >再生中に、最新の再生ヘッド値を使用して少なくとも1秒に1回、`media.ping` イベントを送信します。 AEP Roku SDKは、これらのpingが正しく機能することに依存しています。
 
-設定キーと完全なAPIについては、[AEP Roku SDK API リファレンス ](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/api-reference.md)を参照してください。
+設定キーと完全なAPIについては、[AEP Roku SDK API リファレンス &#x200B;](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/api-reference.md)を参照してください。
 
 ## メディアイベントの追跡
 
-セッションが開いたら、各メディアイベントを`sendMediaEvent`で送信します。 正確なペイロードについては、各[ イベント ](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md) ページの&#x200B;**Roku** タブを参照してください。
+セッションが開いたら、各メディアイベントを`sendMediaEvent`で送信します。 正確なペイロードについては、各[&#x200B; イベント &#x200B;](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md) ページの&#x200B;**Roku** タブを参照してください。
 
 ## 次の手順
 
@@ -64,5 +64,5 @@ m.aepSdk.createMediaSession({
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Platform六SDK](https://github.com/adobe/aepsdk-roku)
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)
 >* [変数の概要](/help/implementation/variables/overview.md)

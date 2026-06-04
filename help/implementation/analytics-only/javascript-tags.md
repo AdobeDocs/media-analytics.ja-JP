@@ -12,7 +12,7 @@ ht-degree: 14%
 
 # Media Analytics タグ拡張機能の設定
 
-Adobe Media Analytics （3.x SDK）の音声および動画用タグ拡張機能は、Media SDK JavaScript（3.x）をタグ経由でデプロイします。JavaScriptを手動でインストールする必要はありません。 このページでは、タグ設定について説明します。 代わりにコードにSDKをインストールするには、[ ストリーミングメディア用にJavaScriptを設定](javascript.md)を参照してください。 新しい実装の場合は、推奨される[Web SDK タグ拡張機能](/help/implementation/edge/web-sdk-tags.md) Edge パスを検討してください。
+Adobe Media Analytics （3.x SDK）の音声および動画用タグ拡張機能は、Media SDK JavaScript（3.x）をタグ経由でデプロイします。JavaScriptを手動でインストールする必要はありません。 このページでは、タグ設定について説明します。 代わりにコードにSDKをインストールするには、[&#x200B; ストリーミングメディア用にJavaScriptを設定](javascript.md)を参照してください。 新しい実装の場合は、推奨される[Web SDK タグ拡張機能](/help/implementation/edge/web-sdk-tags.md) Edge パスを検討してください。
 
 * **前提条件**: [Analyticsのみの実装の概要](overview.md)を完了します。
 
@@ -30,6 +30,6 @@ Adobe Media Analytics （3.x SDK）の音声および動画用タグ拡張機能
 
 >[!MORELIKETHIS]
 >
->* [ オーディオおよびビデオ拡張機能のAdobe Media Analytics （3.x SDK） ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja)
->* [ ストリーミングメディア用にJavaScriptを設定する（コード内） ](javascript.md)
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [&#x200B; オーディオおよびビデオ拡張機能のAdobe Media Analytics （3.x SDK） &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja)
+>* [&#x200B; ストリーミングメディア用にJavaScriptを設定する（コード内） &#x200B;](javascript.md)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)

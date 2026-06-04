@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**アプリ バージョン**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ アプリバージョン ](/help/reporting/dimensions/app-version.md)を参照してください。*
+*このページでは、**アプリ バージョン**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; アプリバージョン &#x200B;](/help/reporting/dimensions/app-version.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 | **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Media Collection API パラメーター** | `media.sdkVersion` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md) |
+| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md) |
 
 ## 推奨される実装タイプ
 
@@ -167,6 +167,6 @@ var ADBMobileConfig = {
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
 
 >[!ENDTABS]

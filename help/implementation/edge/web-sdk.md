@@ -12,11 +12,11 @@ ht-degree: 5%
 
 # ストリーミングメディア用のWeb SDKの設定
 
-Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) （`alloy.js`、バージョン 2.20.0以降）の`streamingMedia` コンポーネントは、web サイト上のメディアセッションデータを収集し、それをEdge Networkに送信します。 このページでは、インコード （`alloy.js`）設定について説明します。 代わりにタグを使用してWeb SDKを設定するには、[ ストリーミングメディア用のWeb SDK タグ拡張機能の設定](web-sdk-tags.md)を参照してください。
+Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) （`alloy.js`、バージョン 2.20.0以降）の`streamingMedia` コンポーネントは、web サイト上のメディアセッションデータを収集し、それをEdge Networkに送信します。 このページでは、インコード （`alloy.js`）設定について説明します。 代わりにタグを使用してWeb SDKを設定するには、[&#x200B; ストリーミングメディア用のWeb SDK タグ拡張機能の設定](web-sdk-tags.md)を参照してください。
 
 * **前提条件**:
    * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
-   * Web SDK 2.20.0以降をインストールします。 [Web SDKのインストール ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/overview)を参照してください。
+   * Web SDK 2.20.0以降をインストールします。 [Web SDKのインストール &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/overview)を参照してください。
 
 ## streamingMedia コンポーネントの設定
 
@@ -35,7 +35,7 @@ alloy("configure", {
 });
 ```
 
-構成の詳細については、[`streamingMedia` コマンド ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)を参照してください。
+構成の詳細については、[`streamingMedia` コマンド &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)を参照してください。
 
 ### Media JS SDKからの移行
 
@@ -52,5 +52,5 @@ SDKが設定された状態で、[`sendEvent`](https://experienceleague.adobe.co
 >[!MORELIKETHIS]
 >
 >* [Web SDK の概要](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)
 >* [変数の概要](/help/implementation/variables/overview.md)

@@ -18,11 +18,11 @@ Media Collection APIは、RESTful HTTP呼び出しを使用して、ストリー
 
 ## APIの実装
 
-`sessionStart` リクエストを含むセッションを開き、その後に返されるセッションに後続のイベントを送信します。 リクエスト/レスポンスの形式、パラメーター、検証スキーマ、実装ガイダンスについて詳しくは、[Media Collection API リファレンス ](../media-collection-api/mc-api-overview.md)を参照してください。
+`sessionStart` リクエストを含むセッションを開き、その後に返されるセッションに後続のイベントを送信します。 リクエスト/レスポンスの形式、パラメーター、検証スキーマ、実装ガイダンスについて詳しくは、[Media Collection API リファレンス &#x200B;](../media-collection-api/mc-api-overview.md)を参照してください。
 
 ## メディアイベントの追跡
 
-正確なペイロードについては、各[ イベント ](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md) ページの&#x200B;**メディアコレクション API** タブを参照してください。
+正確なペイロードについては、各[&#x200B; イベント &#x200B;](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md) ページの&#x200B;**メディアコレクション API** タブを参照してください。
 
 ## 次の手順
 
@@ -30,6 +30,6 @@ Media Collection APIは、RESTful HTTP呼び出しを使用して、ストリー
 
 >[!MORELIKETHIS]
 >
->* [Media Collection API リファレンス ](../media-collection-api/mc-api-overview.md)
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [Media Collection API リファレンス &#x200B;](../media-collection-api/mc-api-overview.md)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)
 >* [変数の概要](/help/implementation/variables/overview.md)

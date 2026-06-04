@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**キャンペーン ID**のレポートディメンションについて説明します。 この変数の収集方法については、[ キャンペーン ID](/help/implementation/variables/ads/campaign-id.md)を参照してください。*
+*このページでは、**キャンペーン ID**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[&#x200B; キャンペーン ID](/help/implementation/variables/ads/campaign-id.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 13%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  メディア広告]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.ad.campaign`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディア広告]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.ad.campaign`から自動的に収集されます。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.campaignID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | データフィード | `videocampaign`, `post_videocampaign` |
 | Audience Manager | `c_contextdata.a.media.ad.campaign` |

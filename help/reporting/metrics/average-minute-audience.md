@@ -28,4 +28,4 @@ ht-degree: 12%
 
 >[!IMPORTANT]
 >
->分平均オーディエンス数には、ゼロ以外の[ コンテンツ長](/help/reporting/dimensions/content-length.md)が必要です。 コンテンツの長さが未設定または0の場合、この指標はセッション用に生成されません。
+>分平均オーディエンス数には、ゼロ以外の[&#x200B; コンテンツ長](/help/reporting/dimensions/content-length.md)が必要です。 コンテンツの長さが未設定または0の場合、この指標はセッション用に生成されません。

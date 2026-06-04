@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**広告が**件のレポート ディメンションを読み込みます。 この変数の収集方法については、[Ad load type](/help/implementation/variables/standard-metadata/ad-load-type.md)を参照してください。*
+*このページでは、**広告が**&#x200B;件のレポート ディメンションを読み込みます。 この変数の収集方法については、[Ad load type](/help/implementation/variables/standard-metadata/ad-load-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  ストリーミングメディア ]](/help/reporting/setup/analytics-reporting.md)が設定されている場合、コンテキストデータ `a.media.adLoad`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; ストリーミングメディア &#x200B;]](/help/reporting/setup/analytics-reporting.md)が設定されている場合、コンテキストデータ `a.media.adLoad`から自動的に収集されます。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `videoadload`, `post_videoadload` |
 | Audience Manager | `c_contextdata.a.media.adLoad` |

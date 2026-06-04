@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # ストリーミングメディア用にAndroidを設定する
 
-Adobe Streaming Media for Edge Network拡張機能（`EdgeMedia`）は、Android アプリでメディアセッションデータを収集し、それをEdge Networkに送信します。 このページでは、コード内の設定について説明します。 代わりにTags モバイルプロパティを使用してSDKを設定するには、「[ タグを使用したストリーミングメディア用にAndroidを設定する](android-tags.md)」を参照してください。
+Adobe Streaming Media for Edge Network拡張機能（`EdgeMedia`）は、Android アプリでメディアセッションデータを収集し、それをEdge Networkに送信します。 このページでは、コード内の設定について説明します。 代わりにTags モバイルプロパティを使用してSDKを設定するには、「[&#x200B; タグを使用したストリーミングメディア用にAndroidを設定する](android-tags.md)」を参照してください。
 
 * **前提条件**:
    * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
@@ -37,7 +37,7 @@ MobileCore.updateConfiguration(configuration)
 val tracker = Media.createTracker()
 ```
 
-コンフィギュレーションキーと完全なトラッカーAPIについては、[Media for Edge Network API リファレンス ](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/api-reference/)を参照してください。
+コンフィギュレーションキーと完全なトラッカーAPIについては、[Media for Edge Network API リファレンス &#x200B;](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/api-reference/)を参照してください。
 
 ## メディアイベントの追跡
 
@@ -50,5 +50,5 @@ val tracker = Media.createTracker()
 >[!MORELIKETHIS]
 >
 >* [Edge Network用Adobe Streaming Media](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)
->* [ タグ付きストリーミングメディア用にAndroidを設定](android-tags.md)
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [&#x200B; タグ付きストリーミングメディア用にAndroidを設定](android-tags.md)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)

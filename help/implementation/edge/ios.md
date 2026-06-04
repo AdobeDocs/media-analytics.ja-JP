@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # ストリーミングメディア用にiOSを設定する
 
-Adobe Streaming Media for Edge Network拡張機能（`AEPEdgeMedia`）は、iOSまたはtvOS アプリのメディアセッションデータを収集し、Edge Networkに送信します。 このページでは、コード内の設定について説明します。 代わりにTags モバイルプロパティを使用してSDKを設定するには、「[ タグを使用したストリーミングメディア用にiOSを設定する](ios-tags.md)」を参照してください。
+Adobe Streaming Media for Edge Network拡張機能（`AEPEdgeMedia`）は、iOSまたはtvOS アプリのメディアセッションデータを収集し、Edge Networkに送信します。 このページでは、コード内の設定について説明します。 代わりにTags モバイルプロパティを使用してSDKを設定するには、「[&#x200B; タグを使用したストリーミングメディア用にiOSを設定する](ios-tags.md)」を参照してください。
 
 * **前提条件**:
    * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
@@ -37,7 +37,7 @@ MobileCore.updateConfiguration(configuration)
 let tracker = Media.createTracker()
 ```
 
-コンフィギュレーションキーと完全なトラッカーAPIについては、[Media for Edge Network API リファレンス ](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/api-reference/)を参照してください。
+コンフィギュレーションキーと完全なトラッカーAPIについては、[Media for Edge Network API リファレンス &#x200B;](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/api-reference/)を参照してください。
 
 ## メディアイベントの追跡
 
@@ -50,5 +50,5 @@ let tracker = Media.createTracker()
 >[!MORELIKETHIS]
 >
 >* [Edge Network用Adobe Streaming Media](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)
->* [ タグ付きストリーミングメディア用にiOSを設定](ios-tags.md)
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [&#x200B; タグ付きストリーミングメディア用にiOSを設定](ios-tags.md)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)

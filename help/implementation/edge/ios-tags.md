@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # タグ付きストリーミングメディア用にiOSを設定する
 
-IOSまたはtvOS アプリのストリーミングメディアコレクションは、Tags モバイルプロパティを使用して設定できます。このメディア設定は、Data Collection UIで管理されます。 このページでは、タグ設定について説明します。 代わりにコードでSDKを設定するには、[ ストリーミングメディア用にiOSを設定](ios.md)を参照してください。
+IOSまたはtvOS アプリのストリーミングメディアコレクションは、Tags モバイルプロパティを使用して設定できます。このメディア設定は、Data Collection UIで管理されます。 このページでは、タグ設定について説明します。 代わりにコードでSDKを設定するには、[&#x200B; ストリーミングメディア用にiOSを設定](ios.md)を参照してください。
 
 * **前提条件**:
    * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
@@ -39,5 +39,5 @@ IOSまたはtvOS アプリのストリーミングメディアコレクション
 >[!MORELIKETHIS]
 >
 >* [Edge Network用Adobe Streaming Media](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)
->* [ ストリーミングメディア用にiOSを設定する（コード内） ](ios.md)
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [&#x200B; ストリーミングメディア用にiOSを設定する（コード内） &#x200B;](ios.md)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)
