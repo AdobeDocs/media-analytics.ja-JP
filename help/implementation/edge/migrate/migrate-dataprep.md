@@ -18,7 +18,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 700
 ht-degree: 0%
@@ -37,11 +37,11 @@ ht-degree: 0%
 >
 >データが失われるのを防ぐには、このセクションの手順を完了する前に、Analytics ソースコネクタが新しい`mediaReporting` フィールドを使用してデプロイされていることを確認します。
 
-1. Adobe Experience Platformの「[!UICONTROL **ソース**]」セクションで、「[!UICONTROL **データフロー**]」タブに移動します。
+1. Adobe Experience Platformの「**[!UICONTROL ソース]**」セクションで、「**[!UICONTROL データフロー]**」タブに移動します。
 
 1. Adobe Data Collectionを使用して、Adobe AnalyticsからAdobe Experience Platformにストリーミングメディアデータを読み込むデータフローを見つけます。
 
-1. 非推奨フィールドを含むすべてのカスタムソースマッピングを、新しいXDM オブジェクトの新しい対応フィールドに置き換えて、[!UICONTROL **データフローの更新**]&#x200B;を選択して、データ準備の設定を変更します。
+1. 非推奨フィールドを含むすべてのカスタムソースマッピングを、新しいXDM オブジェクトの新しい対応フィールドに置き換えて、**[!UICONTROL データフローの更新]**&#x200B;を選択して、データ準備の設定を変更します。
 
 1. 非推奨の「メディア」オブジェクトのソースフィールドを含むマッピングを探します。
 
@@ -55,19 +55,19 @@ ht-degree: 0%
 
 移行ガイドラインに簡単に従えるように、単一のマッピングを含む次のデータフローの例を考えてみましょう。 この場合、移行ガイドラインを1回だけ適用する必要があります。
 
-1. Adobe Experience Platformの「[!UICONTROL **ソース**]」セクションで、「[!UICONTROL **データフロー**]」タブに移動します。
+1. Adobe Experience Platformの「**[!UICONTROL ソース]**」セクションで、「**[!UICONTROL データフロー]**」タブに移動します。
 
 1. Adobe Data Collectionを使用して、Adobe AnalyticsからAdobe Experience Platformにストリーミングメディアデータを読み込むデータフローを見つけます。
 
 1. 次の画像に示すように、**[!UICONTROL データフローを更新]**&#x200B;を選択して編集UIに入ります。
 
-   ![AEP データフロー](assets/aep-dataflow.jpeg)
+   ![AEP データフロー](../../assets/aep-dataflow.jpeg)
 
 1. 「**[!UICONTROL マッピング]**」タブで、「**[!UICONTROL カスタム]**」を選択します。
 
 1. `media.mediaTimed` フィールドに基づくカスタムマッピングをソースとして特定します。
 
-   ![AEP データフローが続行されました](assets/aep-dataflow2.jpeg)
+   ![AEP データフローが続行されました](../../assets/aep-dataflow2.jpeg)
 
    この例では、開発組織のスキーマにカスタムフィールドグループを作成したため、ターゲットフィールドは`_dcbl`未満です。 カスタムフィールドグループのパスは、組織名によって異なります。
 
@@ -75,17 +75,17 @@ ht-degree: 0%
 
    例えば、Networkの場合、`media.mediaTimed.primaryAssetViewDetails`.broadcastNetworkの通信相手は`xdm.mediaReporting.sessionDetails.network`です。
 
-   ![XDM フィールドパスを更新しました](assets/xdm-field-path-old-and-new.jpeg)
+   ![XDM フィールドパスを更新しました](../../assets/xdm-field-path-old-and-new.jpeg)
 
 1. **[!UICONTROL Source フィールド]** フィールドで、`media.mediaTimed` パスを`mediaReporting` パスに置き換えます。 ターゲットフィールドは変更されません。
 
-   ![AEP データフローが続行されました](assets/aep-dataflow3.jpeg)
+   ![AEP データフローが続行されました](../../assets/aep-dataflow3.jpeg)
 
 1. **[!UICONTROL 次へ]**&#x200B;を選択して変更を保存します。
 
    ステータスは&#x200B;**[!UICONTROL 処理中]**&#x200B;と表示されます。 変更が適用されると、ステータスは&#x200B;**[!UICONTROL 有効]**&#x200B;と表示されます。
 
-   ![AEP データフローが続行されました](assets/aep-dataflow5.jpeg)
+   ![AEP データフローが続行されました](../../assets/aep-dataflow5.jpeg)
 
 ## 異なるデータタイプを使用した例
 
@@ -99,8 +99,8 @@ ht-degree: 0%
 
 `media.mediaTimed`をカスタムフィールドにマッピングしています。
 
-![AEP データフローが続行されました](assets/aep-dataflow6.jpeg)
+![AEP データフローが続行されました](../../assets/aep-dataflow6.jpeg)
 
 `mediaReporting`と同じカスタムフィールドへのマッピング：
 
-![AEP データフローが続行されました](assets/aep-dataflow7.jpeg)
+![AEP データフローが続行されました](../../assets/aep-dataflow7.jpeg)

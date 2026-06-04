@@ -3,7 +3,7 @@ title: タイプを表示
 description: 文字列整数コードを使用して、コンテンツ形式（完全なエピソード、プレビュー、クリップなど）を特定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 8%
@@ -21,10 +21,10 @@ ht-degree: 8%
 
 show type変数は、文字列整数コードを使用してコンテンツ形式を識別します。
 
-- `"0"`：完全なエピソード
-- `"1"`: プレビューまたは予告編
-- `"2"`: クリップ
-- `"3"`：その他
+* `"0"`：完全なエピソード
+* `"1"`: プレビューまたは予告編
+* `"2"`: クリップ
+* `"3"`：その他
 
 このツールを使用すると、エンゲージメントを測定する際に、トレーラーやクリップなどの短編コンテンツからプログラム全体の表示を分離できます。
 

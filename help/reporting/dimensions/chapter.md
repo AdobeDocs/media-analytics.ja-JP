@@ -3,7 +3,7 @@ title: チャプター
 description: 自動生成された章IDでキーを設定して、再生された各一意の章をレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 8%
@@ -21,7 +21,7 @@ ht-degree: 8%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; メディアチャプター]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.chapter.name`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディアチャプター]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.chapter.name`から自動的に収集されます。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | データフィード | `videochapter`, `post_videochapter` |
 | Audience Manager | 該当なし |

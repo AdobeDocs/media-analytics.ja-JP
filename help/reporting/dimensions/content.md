@@ -3,7 +3,7 @@ title: コンテンツ
 description: コンテンツ IDでキーを設定して、再生された各メディアの一意の部分をレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 6%
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.name`から自動的に収集されます。 訪問の期間を保持します。 |
+| Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.name`から自動的に収集されます。 訪問の期間を保持します。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード | `video`, `post_video` |
 | Audience Manager | `c_contextdata.a.media.name` |

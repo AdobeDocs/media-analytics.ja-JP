@@ -18,7 +18,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 750
 ht-degree: 4%
@@ -41,7 +41,7 @@ ht-degree: 4%
 
 Web SDKは、`setConsent` コマンドを使用して設定された同意設定を尊重します。 同意が`"out"`に設定されている場合、Web SDKは、ストリーミングメディアトラッキング呼び出しを含むすべてのイベントのEdge Networkへの転送を停止します。 同意の状態は、セッション間のブラウザーストレージに保持されます。
 
-オプトアウトを実装する前に、Web SDKがストリーミングメディアコンポーネントで設定されていることを確認します。 詳しくは、[Web SDKの設定](../implementation/edge/edge-web-sdk.md)を参照してください。
+オプトアウトを実装する前に、Web SDKがストリーミングメディアコンポーネントで設定されていることを確認します。 詳しくは、[Web SDKの設定](../implementation/edge/web-sdk.md)を参照してください。
 
 Adobe 2.0の同意標準を使用して、同意をオプトアウトに設定します。
 

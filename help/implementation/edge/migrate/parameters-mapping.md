@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 1325
+source-wordcount: 1331
 ht-degree: 20%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 20%
 
 ## Media Analyticsの予約変数
 
-2025年10月の時点で、`media.mediaTimed` XDM フィールドパスは完全に非推奨となり、`mediaReporting`に置き換えられます。 2025年10月以降に取り込まれたデータには、`mediaReporting`個のフィールドのみが含まれます。 以前のデータは、従来のフィールドパスの下に残り、**従来のXDM フィールド**&#x200B;の下のテーブルに反映されます。
+2025年10月の時点で、Analytics ソースコネクタで使用される`media.mediaTimed` XDM フィールドパスは完全に非推奨となり、`mediaReporting`に置き換えられます。 2025年10月以降に取り込まれたデータには、`mediaReporting`個のフィールドのみが含まれます。 以前のデータは、従来のフィールドパスの下に残り、**従来のXDM フィールド**&#x200B;の下のテーブルに反映されます。
 
 ### キープアライブ通話動作
 

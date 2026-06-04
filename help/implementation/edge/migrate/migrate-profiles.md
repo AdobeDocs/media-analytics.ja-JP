@@ -17,7 +17,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 533
 ht-degree: 0%
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 プロファイルフィルタリングを「メディア」と呼ばれる古いデータタイプから「[&#x200B; メディアレポートの詳細](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」と呼ばれる新しいデータタイプに移行するには、既存のプロファイルフィルタリングルールを編集する必要があります。
 
-1. Adobe Experience Platformの「[!UICONTROL **ソース**]」セクションで、「[!UICONTROL **データフロー**]」タブに移動します。
+1. Adobe Experience Platformの「**[!UICONTROL ソース]**」セクションで、「**[!UICONTROL データフロー]**」タブに移動します。
 
 1. Adobe Data Collectionを使用して、Adobe AnalyticsからAdobe Experience Platformにストリーミングメディアデータを読み込むデータフローを見つけます。
 
-1. 非推奨フィールドを含むすべてのカスタムルールを、新しいXDM オブジェクトの新しい対応するフィールドに置き換えることで、[!UICONTROL **データフローの更新**]&#x200B;を選択して、プロファイルフィルタリングの設定を変更します。
+1. 非推奨フィールドを含むすべてのカスタムルールを、新しいXDM オブジェクトの新しい対応するフィールドに置き換えることで、**[!UICONTROL データフローの更新]**&#x200B;を選択して、プロファイルフィルタリングの設定を変更します。
 
 1. 非推奨の「メディア」オブジェクトのフィールドを含むフィルターを探します。
 
@@ -52,29 +52,29 @@ ht-degree: 0%
 
 移行ガイドラインに簡単に従えるように、単一のプロファイルフィルタリングルールを含む次のデータフローの例を考えてみましょう。 この場合、ルールは1つしかないため、移行ガイドラインを1回だけ適用する必要があります。
 
-1. Adobe Experience Platformの「[!UICONTROL **ソース**]」セクションで、「[!UICONTROL **データフロー**]」タブに移動します。
+1. Adobe Experience Platformの「**[!UICONTROL ソース]**」セクションで、「**[!UICONTROL データフロー]**」タブに移動します。
 
 1.Adobe AnalyticsからAdobe Analyticsを介してAdobe Experience Platformにストリーミングメディアデータを読み込むデータフローを見つけます。
 
 1. 次の画像に示すように、**[!UICONTROL データフローを更新]**&#x200B;を選択して編集UIに入ります。
 
-   ![AEP データフロープロファイル &#x200B;](assets/aep-dataflow-profile.jpeg)
+   ![AEP データフロープロファイル &#x200B;](../../assets/aep-dataflow-profile.jpeg)
 
 1. 「**[!UICONTROL 次へ]**」を選択して、「フィルター」タブに移動します。
 
-   ![AEP データフローフィルタータブ &#x200B;](assets/aep-dataflow-filtering-profile.jpeg)
+   ![AEP データフローフィルタータブ &#x200B;](../../assets/aep-dataflow-filtering-profile.jpeg)
 
 1. 「**[!UICONTROL フィルタリング]**」タブで、`media.mediaTimed` フィールドに依存するフィルタリングルールを特定します。
 
-   ![AEP データフローフィルタールール &#x200B;](assets/dataflow-filtering-rules-profile.jpeg)
+   ![AEP データフローフィルタールール &#x200B;](../../assets/dataflow-filtering-rules-profile.jpeg)
 
 
    meda.mediaTimed オブジェクトを使用する各フィルターについて、[&#x200B; ストリーミングメディアサービス &#x200B;](/help/media-overview.md)に記載されているストリーミングメディア変数を使用して、`mediaReporting` オブジェクト内の対応するフィールドを検索し、古いフィールドと新しいフィールドの間をマッピングします。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。 例えば、[Media Starts](/help/reporting/metrics/media-starts.md)の場合、`media.mediaTimed.impressions.value`の通信相手は`xdm.mediaReporting.sessionDetails.isViewed`です。
 
-   ![新しいXDM フィールドと古いXDM フィールド &#x200B;](assets/xdm-fields-new-and-old.jpeg)
+   ![新しいXDM フィールドと古いXDM フィールド &#x200B;](../../assets/xdm-fields-new-and-old.jpeg)
 
 1. 関連する`mediaReporting` フィールドをフィルタリングルールにドラッグし、2つのルール間でOR演算子を使用します。 新しいフィールドを使用する場合は、既存のルールと同じルールを追加します。
 
-   ![&#x200B; フィルタールールを追加](assets/add-filter-rules.jpeg)
+   ![&#x200B; フィルタールールを追加](../../assets/add-filter-rules.jpeg)
 
 1. **[!UICONTROL 次へ]**&#x200B;を選択して変更を保存します。

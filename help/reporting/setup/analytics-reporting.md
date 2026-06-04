@@ -1,41 +1,22 @@
 ---
-title: メディアレポートの有効化
-description: メディア指標を収集するメディアレポートスイートについて説明します。  メディアデータを送信する前に、次の手順に従ってメディアレポートを設定します。
-uuid: d306068d-a308-4b6e-8a72-742dda0de428
-exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
+title: Analyticsのみの実装用のレポートの設定
+description: Adobe Analyticsのメディアレポートスイートモジュールを有効にして、ストリーミングメディアデータを収集およびレポートできるようにします。
 feature: Streaming Media
-role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/2nLLlF-rFJUR3t-OMbcy5iqF42l-O7oLybXFGhdPyhU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
-  - id: e38cbddc-1633-4cd5-bed5-9f289f2a6029
-  - id: ef60b66e-5984-4336-ba72-6d978b1b6f87
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+role: User, Admin
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 20%
+source-wordcount: '580'
+ht-degree: 9%
 
 ---
 
-# メディアレポートの有効化
+# Analyticsのみの実装用のレポートの設定
+
+Analyticsのみの実装でストリーミングメディアデータを収集する前に、そのデータを受信する各レポートスイートを設定して、適切なメディアモジュールを有効にする必要があります。 このページでは、これらのモジュールを有効にする方法と、結果のレポートを検索する場所について説明します。
+
+* **前提条件**: Adobe Analyticsの実装。 [Analyticsのみの実装の概要](/help/implementation/analytics-only/overview.md)と、選択した実装方法を参照してください。
+
+## レポートスイートでメディアレポートを有効にする
 
 メディア指標を収集する各レポートスイートは、メディアデータの送信前に設定しておく必要があります。
 
@@ -44,11 +25,11 @@ ht-degree: 20%
 
    ![&#x200B; レポートスイートマネージャーメニューのスクリーンショット &#x200B;](assets/media-reporting.png)
 
-1. **[!UICONTROL Media Reporting]** ページで、目的のストリーミングメディアコンポーネントを有効にします（以下を参照）。
+1. **[!UICONTROL Media Reporting]** ページで、目的のストリーミングメディアモジュールを有効にします（以下を参照）。
 
 1. **[!UICONTROL 保存].**&#x200B;を選択
 
-   このレポートスイートが既にメディアデータを収集するように設定されている場合は、「**[!UICONTROL 保存]**」をクリックした後に、追加の設定ページが表示されます。 **[!UICONTROL メディアコア指標]**&#x200B;ページが表示されたら、次のステップへと進みます。
+   このレポートスイートが既にメディアデータを収集するように設定されている場合、**[!UICONTROL 保存]**&#x200B;を選択すると、追加の設定ページが表示されます。 **[!UICONTROL メディアコア指標]**&#x200B;ページが表示されたら、次のステップへと進みます。
 
 ## 利用可能なストリーミングメディアモジュール
 
@@ -141,7 +122,7 @@ ht-degree: 20%
       * [[!UICONTROL 合計バッファー時間]](/help/reporting/metrics/total-buffer-duration.md)
 * **[!UICONTROL ビデオメタデータ]**：番組、季節、ジャンルなどの標準ビデオコンテンツ属性の追跡を有効にします。
    * **ディメンション：**
-      * [!UICONTROL 広告が読み込まれます]
+      * [[!UICONTROL 広告が読み込まれます]](/help/reporting/dimensions/ad-load-type.md)
       * [[!UICONTROL 日パート &#x200B;]](/help/reporting/dimensions/day-part.md)
       * [[!UICONTROL &#x200B; エピソード &#x200B;]](/help/reporting/dimensions/episode.md)
       * [[!UICONTROL &#x200B; ジャンル &#x200B;]](/help/reporting/dimensions/genre.md)
@@ -178,3 +159,9 @@ ht-degree: 20%
       * [フォーカスの影響を受ける[!UICONTROL &#x200B; ストリーム &#x200B;]](/help/reporting/metrics/in-focus-streams-impacted.md)
       * [ミュート ]の影響を受ける[[!UICONTROL &#x200B; ストリーム]](/help/reporting/metrics/mute-streams-impacted.md)
       * [[!UICONTROL &#x200B; ピクチャインピクチャの影響を受けるストリーム &#x200B;]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
+
+>[!MORELIKETHIS]
+>
+>* [Workspaceのメディア レポート &#x200B;](/help/reporting/workspace/media-workspace-templates.md)
+>* [&#x200B; ディメンションの概要](/help/reporting/dimensions/overview.md)
+>* [指標の概要](/help/reporting/metrics/overview.md)

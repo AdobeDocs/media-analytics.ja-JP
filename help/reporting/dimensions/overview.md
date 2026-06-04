@@ -3,7 +3,7 @@ title: ストリーミングメディアディメンションの概要
 description: Adobe AnalyticsとCustomer Journey Analytics全体でストリーミングメディアディメンションが入力され、整理される方法について説明します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 | レポートシステム | ディメンションの到達方法 |
 | --- | --- |
-| Adobe Analytics | [&#x200B; コンテキストデータ変数](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/contextdata)を使用して入力されました。 これらのコンテキストデータ変数を使用してディメンションに自動的に入力されるディメンションもあれば、[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を使用して入力されるディメンションもあります。 値を自動入力するディメンションでは、最初にそれぞれの[&#x200B; ストリーミングメディアレポートスイート設定](../../implementation/media-sdk/setup/media-reports-enable.md)を有効にする必要があります。 |
+| Adobe Analytics | [&#x200B; コンテキストデータ変数](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/contextdata)を使用して入力されました。 これらのコンテキストデータ変数を使用してディメンションに自動的に入力されるディメンションもあれば、[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を使用して入力されるディメンションもあります。 値を自動入力するディメンションでは、最初にそれぞれの[&#x200B; ストリーミングメディアレポートスイート設定](../setup/analytics-reporting.md)を有効にする必要があります。 |
 | Customer Journey Analytics | 通常、`xdm.mediaReporting.sessionDetails`のXDM フィールドは、ストリーミングメディアデータを含む任意のデータセットから取得されます。 [&#x200B; データビューコンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/overview)内で、必要な設定を持つ各ディメンションを作成する必要があります。 |
 | データフィード | ディメンションには、自動的に入力された独自のデータフィード列名（`videostreamtype`、`videoname`、または`videolength`など）があります。 処理ルールを必要とするディメンションでは、`evar`列の名前が使用されます。 |
 | Audience Manager | Adobe Analyticsから転送されるコンテキストデータ。 AnalyticsからAudience Managerへのサーバーサイド転送が設定されている場合にのみ使用できます。 |

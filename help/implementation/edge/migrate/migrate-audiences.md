@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 516
 ht-degree: 1%
@@ -43,49 +43,49 @@ ht-degree: 1%
 
 古いフィールドと新しいフィールドの間のマッピングについては、[&#x200B; コンテンツ ID](/help/reporting/dimensions/content.md) パラメーターと、[&#x200B; ストリーミングメディアサービス &#x200B;](/help/media-overview.md)に記載されているストリーミングメディア変数の残りの部分を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
 
-![古いXDM フィールドパスと新しいXDM フィールドパス &#x200B;](assets/field-paths-updated.jpeg)
+![古いXDM フィールドパスと新しいXDM フィールドパス &#x200B;](../../assets/field-paths-updated.jpeg)
 
 ## 例
 
 移行ガイドラインに簡単に従えるように、単一のルールを持つオーディエンスを含む次の例を考えてみましょう。 オーディエンスにはルールが1つあるため、移行ガイドラインを1回だけ適用する必要があります。
 
-1. 右上隅の「[!UICONTROL **オーディエンスを編集**]」ボタンを選択します。
+1. 右上隅の「**[!UICONTROL オーディエンスを編集]**」ボタンを選択します。
 
 1. オーディエンスに設定されたルールを探します。
 
-   ![&#x200B; オーディエンスを編集](assets/audience-edit.jpeg)
+   ![&#x200B; オーディエンスを編集](../../assets/audience-edit.jpeg)
 
-   ![&#x200B; オーディエンスを編集](assets/audience-edit2.jpeg)
+   ![&#x200B; オーディエンスを編集](../../assets/audience-edit2.jpeg)
 
 1. ルールを選択して設定を開きます。
 
-   ![&#x200B; オーディエンスを編集](assets/audience-edit3.jpeg)
+   ![&#x200B; オーディエンスを編集](../../assets/audience-edit3.jpeg)
 
 1. （オプション）ルールで使用されるフィールドのパスを表示するには、フィールド名の近くにある「情報」ボタンを選択します。
 
-   ![&#x200B; オーディエンスを編集](assets/audience-edit4.jpeg)
+   ![&#x200B; オーディエンスを編集](../../assets/audience-edit4.jpeg)
 
 1. フィールド名を特定します（この場合は「メディア開始」）。
 
-   ![&#x200B; オーディエンスを編集](assets/audience-edit5.jpeg)
+   ![&#x200B; オーディエンスを編集](../../assets/audience-edit5.jpeg)
 
 1. 古いフィールド間のマッピングについては、[&#x200B; ストリーミングメディアサービス &#x200B;](/help/media-overview.md)で説明されているストリーミングメディア変数を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。 例えば、[Media Starts](/help/reporting/metrics/media-starts.md) パラメーターの場合、`media.mediaTimed.impressions.value`の対応者は`xdm.mediaReporting.sessionDetails.isViewed`です。
 
-   ![XDM パスを更新](assets/updated-xdm-path.jpeg)
+   ![XDM パスを更新](../../assets/updated-xdm-path.jpeg)
 
 1. 新しいフィールドを使用して、既存のルールと同じルールを追加します。
 
-   ![ルールを追加](assets/add-rule.jpeg)
+   ![ルールを追加](../../assets/add-rule.jpeg)
 
-   ![ルールを追加](assets/add-rule2.jpeg)
+   ![ルールを追加](../../assets/add-rule2.jpeg)
 
-   ![ルールを追加](assets/add-rule3.jpeg)
+   ![ルールを追加](../../assets/add-rule3.jpeg)
 
-1. 「[!UICONTROL **保存**]」を選択して、オーディエンスを保存します。 オーディエンスが期待どおりに機能していることを検証する必要がある限り、この設定を維持できます。
+1. 「**[!UICONTROL 保存]**」を選択して、オーディエンスを保存します。 オーディエンスが期待どおりに機能していることを検証する必要がある限り、この設定を維持できます。
 
-1. 検証が完了したら、古いフィールドを削除し、[!UICONTROL **保存**]&#x200B;を選択してオーディエンスを保存します。
+1. 検証が完了したら、古いフィールドを削除し、**[!UICONTROL 保存]**&#x200B;を選択してオーディエンスを保存します。
 
-   ![ルールを追加](assets/add-rule4.jpeg)
+   ![ルールを追加](../../assets/add-rule4.jpeg)
 
 1. オーディエンスを再度検証します。
 
