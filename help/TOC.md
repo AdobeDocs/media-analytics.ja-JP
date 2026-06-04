@@ -5,9 +5,9 @@ user-guide-title: ストリーミングメディアサービスガイド
 breadcrumb-title: ストリーミングメディアサービスガイド
 user-guide-description: ストリーミングメディアサービスを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '754'
 ht-degree: 36%
 
 ---
@@ -67,8 +67,10 @@ ht-degree: 36%
          + [コンテンツの再開](implementation/variables/core/content-resumes.md)
          + [コンテンツタイプ](implementation/variables/core/content-type.md)
          + [メディアのダウンロード済みフラグ](implementation/variables/core/media-downloaded-flag.md)
+         + [アプリバージョン](implementation/variables/core/app-version.md)
          + [ストリームタイプ](implementation/variables/core/stream-type.md)
       + 標準メタデータ {#metadata}
+         + [広告の読み込みタイプ](implementation/variables/standard-metadata/ad-load-type.md)
          + [アルバム](implementation/variables/standard-metadata/album.md)
          + [作者名](implementation/variables/standard-metadata/artist.md)
          + [アセット ID](implementation/variables/standard-metadata/asset-id.md)
@@ -123,24 +125,30 @@ ht-degree: 36%
          + [ミュート](implementation/variables/player-state/mute.md)
          + [ピクチャインピクチャ](implementation/variables/player-state/picture-in-picture.md)
    + Edgeの実装（推奨） {#edge}
-      + [前提条件](/help/implementation/edge/prerequisites-edge.md)
-      + Media Edge SDK / 拡張機能 {#media-edge-sdk}
-         + [Media Edge SDK／拡張機能の設定](/help/implementation/edge/implementation-edge.md)
-         + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
-         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
-      + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
-      + [カスタムメタデータのサポート](implementation/edge/implementation-edge-custom-metadata.md)
-      + [XDM レポートスキーマ](/help/implementation/edge/platform-data.md)
+      + [Edgeの導入の概要](/help/implementation/edge/overview.md)
+      + [Web SDK](/help/implementation/edge/web-sdk.md)
+      + [Web SDK タグ拡張機能](/help/implementation/edge/web-sdk-tags.md)
+      + [iOS](/help/implementation/edge/ios.md)
+      + [iOS tag extension](/help/implementation/edge/ios-tags.md)
+      + [Android](/help/implementation/edge/android.md)
+      + [Android tag extension](/help/implementation/edge/android-tags.md)
+      + [Roku](/help/implementation/edge/roku.md)
+      + [Media Edge API](/help/implementation/edge/media-edge-api.md)
+      + [カスタムメタデータのサポート](/help/implementation/edge/custom-metadata.md)
+      + [XDM レポートスキーマ](/help/implementation/edge/reporting-schema.md)
+      + XDM フィールドの移行 {#xdm-updates}
+         + [オーディエンスの移行](implementation/edge/migrate/migrate-audiences.md)
+         + [CJA設定の移行](implementation/edge/migrate/migrate-cja-setup.md)
+         + [データ準備の移行](implementation/edge/migrate/migrate-dataprep.md)
+         + [プロファイルの移行](implementation/edge/migrate/migrate-profiles.md)
+         + [メディアパラメーターマッピング](implementation/edge/migrate/parameters-mapping.md)
    + Adobe Analyticsのみの実装 {#analytics-only}
-      + [前提条件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
-      + [メディアレポートの有効化](implementation/media-sdk/setup/media-reports-enable.md)
-      + Media SDK/拡張機能 {#media-sdk}
-         + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
-         + [JavaScript Web SDK API リファレンス](implementation/media-sdk/setup/js-3x-api-reference.md)
-         + [JS SDK 2.xから3.xへの移行](implementation/media-sdk/setup/migrate-js-2x-to-3x.md)
-         + [Media Analytics 拡張機能](implementation/media-sdk/setup/web-implementation-tags.md)
-         + [モバイル SDK](implementation/media-sdk/setup/mobile-implementation.md)
-      + Media Collection API – 実装 {#streaming-media-apis}
+      + [Analyticsのみの実装の概要](/help/implementation/analytics-only/overview.md)
+      + [JavaScript](/help/implementation/analytics-only/javascript.md)
+      + [Media Analytics タグ拡張機能](/help/implementation/analytics-only/javascript-tags.md)
+      + [Chromecast](/help/implementation/analytics-only/chromecast.md)
+      + [メディアコレクション API](/help/implementation/analytics-only/media-collection-api.md)
+      + Media Collection API リファレンス {#streaming-media-apis}
          + [メディアコレクション](implementation/media-collection-api/mc-api-overview.md)
          + [API クイックスタート](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
          + [Sessions リクエスト](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -158,23 +166,22 @@ ht-degree: 36%
             + [タイムアウト条件](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [イベントの順序の制御](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [セッションの応答が遅い場合のイベントのキューへの登録](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + XDM フィールドの移行 {#xdm-updates}
-      + [オーディエンスの移行](implementation/migrate-audiences.md)
-      + [CJA設定の移行](implementation/migrate-cja-setup.md)
-      + [データ準備の移行](implementation/migrate-dataprep.md)
-      + [プロファイルの移行](implementation/migrate-profiles.md)
-      + [メディアパラメーターマッピング](implementation/parameters-mapping.md)
 + レポート {#reporting}
+   + レポートの設定 {#reporting-setup}
+      + [Edgeの導入](reporting/setup/edge-reporting.md)
+      + [Analyticsのみの実装](reporting/setup/analytics-reporting.md)
    + ディメンション {#dimensions}
       + [ディメンションの概要](reporting/dimensions/overview.md)
       + [広告](reporting/dimensions/ad.md)
       + [ポッド位置での広告](reporting/dimensions/ad-in-pod-position.md)
       + [広告の長さ](reporting/dimensions/ad-length.md)
+      + [広告ロード数](reporting/dimensions/ad-load-type.md)
       + [広告名](reporting/dimensions/ad-name.md)
       + [広告プレーヤー名](reporting/dimensions/ad-player-name.md)
       + [広告ポッド](reporting/dimensions/ad-pod.md)
       + [広告主](reporting/dimensions/advertiser.md)
       + [アルバム](reporting/dimensions/album.md)
+      + [アプリバージョン](reporting/dimensions/app-version.md)
       + [作者名](reporting/dimensions/artist.md)
       + [アセット ID](reporting/dimensions/asset-id.md)
       + [作成者](reporting/dimensions/author.md)
@@ -293,7 +300,7 @@ ht-degree: 36%
    + デフォルトメディアレポート {#media-default-reports}
       + [デフォルトレポートの概要](reporting/reports-and-analytics/default-reports-overview.md)
       + [メディアの概要](reporting/reports-and-analytics/media-reports-overview.md)
-      + [メディアの詳細 &#x200B;](reporting/reports-and-analytics/media-reports-detail.md)
+      + [メディアの詳細 ](reporting/reports-and-analytics/media-reports-detail.md)
       + [メディア視聴時間帯レポート](reporting/reports-and-analytics/media-reports-daypart.md)
       + [メディア同時ビューアレポート](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + Media API {#media-api}

@@ -3,7 +3,7 @@ title: エラー数
 description: セッションごとのエラーイベントの数を報告します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**エラー**&#x200B;ディメンションについて説明します。 Adobe Analyticsは、同じ`a.media.qoe.errorCount`個のコンテキストデータ変数から、ペアの[&#x200B; エラーイベント指標](/help/reporting/metrics/error-events.md)を自動入力します。 Customer Journey Analyticsは、ディメンションまたは指標として使用できる1つの`xdm.mediaReporting.qoeDataDetails.errorCount` フィールドを公開します。*
+*このページでは、**エラー**ディメンションについて説明します。 Adobe Analyticsは、同じ`a.media.qoe.errorCount`個のコンテキストデータ変数から、ペアの[ エラーイベント指標](/help/reporting/metrics/error-events.md)を自動入力します。 Customer Journey Analyticsは、ディメンションまたは指標として使用できる1つの`xdm.mediaReporting.qoeDataDetails.errorCount` フィールドを公開します。*
 
 >[!ENDSHADEBOX]
 
@@ -27,14 +27,14 @@ ht-degree: 6%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.qoe.errorCount`から自動的に収集されます。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.qoe.errorCount`から自動的に収集されます。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | データフィード | `videoqoeerrorcountevar`, `post_videoqoeerrorcountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.errorCount` |
 
 ## ディメンション項目
 
-各項目は、クローズ呼び出しで報告されるリテラルのエラー数の値です。 セッションレベルのブール値レポートの場合（エラーが発生したかどうかにかかわらず）、[&#x200B; エラーが影響を受けるストリーム &#x200B;](/help/reporting/metrics/error-impacted-streams.md)を使用します。 一意のエラーIDの場合、[外部エラーID](external-error-ids.md)と[Player SDK エラーID](player-sdk-error-ids.md)を使用します。
+各項目は、クローズ呼び出しで報告されるリテラルのエラー数の値です。 セッションレベルのブール値レポートの場合（エラーが発生したかどうかにかかわらず）、[ エラーが影響を受けるストリーム ](/help/reporting/metrics/error-impacted-streams.md)を使用します。 一意のエラーIDの場合、[外部エラーID](external-error-ids.md)と[Player SDK エラーID](player-sdk-error-ids.md)を使用します。
 
 >[!NOTE]
 >

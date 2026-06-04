@@ -3,7 +3,7 @@ title: メディアパス
 description: パス分析用のトラフィック変数としてコンテンツ IDをキャプチャします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 5%
@@ -21,8 +21,8 @@ ht-degree: 5%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md)が有効になっている場合、コンテキストデータ `a.media.name`からトラフィック変数（prop）として自動的に収集されます。 |
-| Customer Journey Analytics | なし – パス分析に[&#x200B; コンテンツ &#x200B;](content.md)を使用 |
+| Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.name`からトラフィック変数（prop）として自動的に収集されます。 |
+| Customer Journey Analytics | なし – パス分析に[ コンテンツ ](content.md)を使用 |
 | データフィード | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |
 

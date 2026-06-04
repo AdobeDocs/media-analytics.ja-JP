@@ -3,7 +3,7 @@ title: タイプを表示
 description: 文字列整数コードを使用して、コンテンツ形式（完全なエピソード、プレビュー、クリップなど）を特定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 8%
@@ -15,26 +15,26 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Show type**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; タイプを表示](/help/reporting/dimensions/show-type.md)を参照してください。*
+*このページでは、**Show type**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ タイプを表示](/help/reporting/dimensions/show-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
 show type変数は、文字列整数コードを使用してコンテンツ形式を識別します。
 
-- `"0"`：完全なエピソード
-- `"1"`: プレビューまたは予告編
-- `"2"`: クリップ
-- `"3"`：その他
+* `"0"`：完全なエピソード
+* `"1"`: プレビューまたは予告編
+* `"2"`: クリップ
+* `"3"`：その他
 
 このツールを使用すると、エンゲージメントを測定する際に、トレーラーやクリップなどの短編コンテンツからプログラム全体の表示を分離できます。
 
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.type` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.type` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -167,6 +167,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
 
 >[!ENDTABS]
