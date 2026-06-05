@@ -22,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
 source-wordcount: 358
 ht-degree: 50%
@@ -37,7 +37,7 @@ Adobe Analytics には、Web サイト上のメディアのパフォーマンス
 
 メディアレポートは、「**[!UICONTROL レポート]**」タブにリストされます。 **[!UICONTROL メディア]**／**[!UICONTROL メディアエンゲージメント]**&#x200B;に移動し、以下の中から選択します。
 
-| メディアレポート | 説明     | 一般的なビジネスインサイト       |
+| メディアレポート | 説明 | 一般的なビジネスインサイト |
 | --- | --- | --- |
 | [メディアの概要 &#x200B;](media-reports-overview.md) | 複数の集計の測定値を表示して、メディアのパフォーマンスが期待どおりであることをすばやく監視します。 広告インプレッションの横に[[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md)が表示され、これらの指標をすばやく表示して比較できます。 | <ul> <li>[[!UICONTROL &#x200B; コンテンツ開始]](/help/reporting/metrics/content-starts.md)、完了率、ストリームでの平均時間、1訪問あたりの平均メディア項目など、上位の指標の合計。  </li> <li>デバイスの種類または国別にフィルタリングされたメディアの合計[[!UICONTROL &#x200B; コンテンツ開始]](/help/reporting/metrics/content-starts.md)と[[!UICONTROL 広告開始]](/help/reporting/metrics/ad-starts.md)です。  </li> </ul> |
 | [メディアの詳細 &#x200B;](media-reports-detail.md) | 開始、同時閲覧者数、完了率、再生の割合および広告インプレッションを含む、すべてのメディア項目に関する詳細な指標を表示します。 | <ul> <li>[[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md)、[[!UICONTROL &#x200B; コンテンツ開始]](/help/reporting/metrics/content-starts.md)および[[!UICONTROL 広告が開始]](/help/reporting/metrics/ad-starts.md)を含む上位の指標の合計、および1訪問あたりの平均コンテンツ数。  </li> <li>デバイスの種類または国別にフィルタリングされたメディアの合計[[!UICONTROL &#x200B; コンテンツ開始]](/help/reporting/metrics/content-starts.md)と[[!UICONTROL 広告開始]](/help/reporting/metrics/ad-starts.md)です。  </li> </ul> |

@@ -5,10 +5,10 @@ user-guide-title: ストリーミングメディアサービスガイド
 breadcrumb-title: ストリーミングメディアサービスガイド
 user-guide-description: ストリーミングメディアサービスを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 36%
+source-wordcount: '749'
+ht-degree: 35%
 
 ---
 
@@ -16,13 +16,11 @@ ht-degree: 36%
 # ストリーミングメディアサービスガイド {#using}
 
 + [Adobe streaming media services ガイド](media-overview.md)
-+ リリースノート {#release-notes}
-   + [ストリーミングメディアサービスのリリースノート](additional-resources/release-notes.md)
++ [ストリーミングメディアサービスのリリースノート](release-notes.md)
 + 基本を学ぶ {#getting-started}
    + [前提条件](getting-started/prereqs.md)
    + [サポートされるデバイス](getting-started/supported-devices.md)
-   + [Streaming Media Servicesの実装ドキュメント](getting-started/implementation-documentation.md)
-   + [SDK、ライブラリおよび拡張機能](getting-started/download-sdks.md)
+   + [Media SDK、エクステンションおよびAPIを入手](getting-started/download-sdks.md)
 + 実装 {#implementation}
    + [実装の概要](implementation/overview.md)
    + イベント {#events}

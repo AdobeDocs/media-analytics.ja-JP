@@ -1,5 +1,5 @@
 ---
-title: Media Analytics SDK をダウンロードするためのアクセスリンク
+title: Media SDK、エクステンションおよびAPIを入手
 description: Android、iOS、JavaScript、Chromecast および Roku を含む、利用可能なプラットフォームの SDK ダウンロードのリンクです。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
@@ -23,41 +23,37 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: 524
-ht-degree: 81%
+source-wordcount: 575
+ht-degree: 32%
 
 ---
 
-# Media SDK、タグを使用した拡張機能、OTT SDK の取得 {#download-sdks}
+# Media SDK、エクステンションおよびAPIを入手
 
-このページの情報には、現在の Media SDK をダウンロードし、タグを使用するメディア拡張機能を取得するためのリンクが含まれています。
+## Edgeの実装（推奨） {#edge-sdks}
 
-Adobe Experience Platform のタグは、アドビが提供する次世代型の web サイトタグおよび Mobile SDK の管理機能です。 タグを使用すると、関連する顧客体験を強化するために必要な分析、マーケティング、広告などのソリューションを、簡単にデプロイして管理できます。 タグについて詳しくは、[タグの概要](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=ja)を参照してください。
+Edgeでは、一度収集したデータをAdobe Experience Platform Edge Networkを通じて、Adobe Analytics、Customer Journey Analytics、Adobe Journey Optimizer、Real-Time CDPなどの複数の配信先に配信できます。 SDKがネイティブでないプラットフォーム（スマートテレビ、ゲーム機、セットトップボックスなど）の場合は、Media Edge APIを使用します。
 
-## Media SDK と Mobile ライブラリ {#media-sdks-libraries}
+| | ドキュメント | サンプル |
+|:---:|---|---|
+| [![JavaScript アイコン &#x200B;](assets/javascript-icon.png)](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/install/overview)<br>[Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/install/overview) | [&#x200B; ストリーミングメディア用にWeb SDKを設定](/help/implementation/edge/web-sdk.md) | [&#x200B; サンプル &#x200B;](https://github.com/adobe/alloy-samples/blob/main/media-collection/STANDALONE.md) |
+| [![拡張機能アイコン &#x200B;](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html?lang=ja)<br>[Web SDK タグ拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html?lang=ja) | [&#x200B; ストリーミングメディア用のWeb SDK タグ拡張機能の設定](/help/implementation/edge/web-sdk-tags.md) | [&#x200B; サンプル &#x200B;](https://github.com/adobe/alloy-samples/blob/main/media-collection/TAGS_IMPL.md) |
+| [![Android アイコン &#x200B;](assets/android.png)](https://github.com/adobe/aepsdk-media-android)<br>[Android SDK](https://github.com/adobe/aepsdk-media-android) | [&#x200B; ストリーミングメディア用にAndroidを設定](/help/implementation/edge/android.md) | [&#x200B; サンプル &#x200B;](https://github.com/adobe/aepsdk-media-android/tree/main/code/testapp) |
+| [![Apple iOS アイコン &#x200B;](assets/apple.png)](https://github.com/adobe/aepsdk-media-ios)<br>[iOS / tvOS SDK](https://github.com/adobe/aepsdk-media-ios) | [&#x200B; ストリーミングメディア用にiOSを設定](/help/implementation/edge/ios.md) | [&#x200B; サンプル &#x200B;](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| [![拡張機能アイコン &#x200B;](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Android タグ拡張機能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [&#x200B; ストリーミングメディア用のAndroid タグ拡張機能の設定](/help/implementation/edge/android-tags.md) | |
+| [![拡張機能アイコン &#x200B;](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[iOS / tvOS タグ拡張機能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [&#x200B; ストリーミングメディア用のiOS タグ拡張機能の設定](/help/implementation/edge/ios-tags.md) | |
+| [![Roku icon](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[Roku SDK](https://github.com/adobe/aepsdk-roku) | [&#x200B; ストリーミングメディア用にRokuを設定](/help/implementation/edge/roku.md) | [&#x200B; サンプル &#x200B;](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
+| [![API アイコン &#x200B;](assets/api.png)](https://developer.adobe.com/data-collection-apis/docs/api/media-edge)<br>[Media Edge API](https://developer.adobe.com/data-collection-apis/docs/api/media-edge) | [Media Edge APIの設定](/help/implementation/edge/media-edge-api.md) | [&#x200B; サンプル &#x200B;](https://developer.adobe.com/data-collection-apis/docs/getting-started/media-edge-examples) |
 
-### Web 実装 {#download-web-sdk}
+## Analyticsのみの実装 {#analytics-only-sdks}
 
-| サポートされるプラットフォーム | サポートされるソリューション | 実装方法 | バージョン |  API   |  ドキュメント  |  サンプル  |
-|:---:|---|---|---|---| ---| ---|
-| ![JavaScript アイコン &#x200B;](assets/javascript-icon.png)</br>**JavaScript API** | Adobe Analytics | Analytics のみ | Web - [JS 用 Media SDK v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API リファレンス](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/3.x/docs/APIReference.md) | [&#x200B; ストリーミングメディア用にJavaScriptを設定](/help/implementation/analytics-only/javascript.md) | [JS 用 Media SDK v3.0.2 のサンプル](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
-| ![JavaScript アイコン &#x200B;](assets/javascript-icon.png)</br>**JavaScript API** | Adobe Analytics | Analytics のみ | Web - メディア拡張機能 |  | [Adobe Medium Analytics (3.x SDK) for Audio and Video 拡張機能 — タグ（データ収集）を使用](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja) | [Adobe Media Analytics (3.x SDK) for Audio and Video 拡張機能のサンプル](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web - Experience Platform Edge |  | [Edgeの実装の概要](/help/implementation/edge/overview.md) <p>と</p><p>[&#x200B; ストリーミングメディア用にWeb SDKを設定](/help/implementation/edge/web-sdk.md)</p> | |
+これらのSDKと拡張機能は、Adobe Analyticsに直接データを送信します。 新しい実装については、上記のEdgeの実装を使用してください。 既存のAnalytics データをCustomer Journey Analyticsまたはその他のExperience Platform アプリケーションに取り込むには、[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)を使用します。
 
-### Mobile の実装 {#get-mobile-extension}
-
-| サポートされるプラットフォーム | サポートされるソリューション | 実装方法 | バージョン |  ドキュメント   |  サンプル  |
-|:---:|---|---|---|---|---|
-| ![Android アイコン &#x200B;](assets/android-icon.png)</br>**Android** | Adobe Analytics | Analytics のみ | Android - メディア拡張機能 | [Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video のサンプル](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Apple iOS アイコン&#x200B;](assets/ios-icon.png)<br>**tvOS** | Adobe Analytics | Analytics のみ | iOS／tvOS - メディア拡張機能 | [Mobile SDK ドキュメント](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video のサンプル](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Android アイコン &#x200B;](assets/android-icon.png)</br>**Android** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Android - Experience Platform Edge | [&#x200B; ストリーミングメディア用にAndroidを設定](/help/implementation/edge/android.md) | |
-| ![Apple iOS アイコン&#x200B;](assets/ios-icon.png)<br>**tvOS** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | iOS／tvOS - Experience Platform Edge | [&#x200B; ストリーミングメディア用にiOSを設定](/help/implementation/edge/ios.md) |  |
-
-### オーバーザトップ実装 {#download-ott-libraries}
-
-| サポートされるプラットフォーム | サポートされるソリューション | 実装方法 | バージョン |  API   |  ドキュメント  |
-|:---:|---|---|---|---|---|
-| ![Chromecast アイコン &#x200B;](assets/chromecast-icon.png)</br>**Chromecast** | Adobe Analytics | Analytics のみ | [Chromecast 用 SDK v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API リファレンス](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast SDKの設定](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/docs/2.x/chromecast-setup.md) |
-| ![Roku アイコン &#x200B;](assets/roku-icon.png)</br>**Roku** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | [Adobe Experience Platform六SDK](https://github.com/adobe/aepsdk-roku/tree/main) |  | [&#x200B; ストリーミングメディア用にRokuを設定](/help/implementation/edge/roku.md) |
+| | ドキュメント | サンプル |
+|:---:|---|---|
+| [![JavaScript アイコン &#x200B;](assets/javascript-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2)<br>[Media SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [&#x200B; ストリーミングメディア用にJavaScriptを設定](/help/implementation/analytics-only/javascript.md) | [&#x200B; サンプル &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| [![拡張機能アイコン &#x200B;](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja)<br>[&#x200B; メディア拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja) | [&#x200B; ストリーミングメディアのタグを使用したJavaScriptの設定](/help/implementation/analytics-only/javascript-tags.md) | [&#x200B; サンプル &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| [![Chromecast icon](assets/chromecast-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3)<br>[Chromecast SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [&#x200B; ストリーミングメディア用Chromecastの設定](/help/implementation/analytics-only/chromecast.md) | [&#x200B; サンプル &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/chromecast/samples/BasicPlayerSample) |
+| [![API アイコン &#x200B;](assets/api.png)](/help/implementation/media-collection-api/mc-api-overview.md)<br>[&#x200B; メディアコレクション API](/help/implementation/media-collection-api/mc-api-overview.md) | [Media Collection APIの設定](/help/implementation/analytics-only/media-collection-api.md) | |
