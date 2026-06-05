@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: 793
-ht-degree: 60%
+source-wordcount: 720
+ht-degree: 36%
 
 ---
 
@@ -66,21 +66,20 @@ ht-degree: 60%
 
 | 機能 | 説明 | 日付 |
 | --- | --- | --- |
-| **複数のプレーヤー状態のトラッキング** | Media Collection API を使用して、複数のプレーヤーの状態トラッキングを実装します。 [詳細情報](/help/implementation/events/player-state/overview.md) | 2022年9月 |
+| **複数のプレーヤー状態のトラッキング** | メディア コレクション APIを使用して、複数の[&#x200B; プレーヤー状態トラッキング &#x200B;](/help/implementation/events/player-state/overview.md)を実装します。 | 2022年9月 |
 | XDM フィールドの名前を変更しました | 一貫性のためにXDM フィールド名を変更：<ul><li>オーディオとビデオのパラメーター</li><li>広告パラメーター</li><li>チャプターパラメーター</li><li>プレーヤーステートパラメーター</li><li>品質パラメーター</li></ul> | 2022年9月 |
-| **メディア同時ビューアパネル** | ピーク同時実行が発生した場所、または下降が発生した場所を把握します。 コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=ja) | 2022年8月9日（PT） |
-| **メディア再生滞在時間パネル** | メディア再生滞在時間は、ビューアエンゲージメントに関する貴重なインサイトを提供し、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。 特定の時点でのメディアストリームの視聴時間を確認できます。 再生時間は、新たな 5 分、15 分、30 分の時間粒度を含む、様々な粒度で分割できます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=ja) | 2022年8月9日（PT） |
-| **分平均オーディエンス** | Media Analytics のお客様は、分平均オーディエンスパネルを使用すると、コンテンツの平均消費量をより正確に把握できます。 <br>分平均オーディエンスを使用すると、あらゆる長さやジャンルのプログラミングを比較できます。 さらに、お客様はデジタル分平均オーディエンスを、線形 TV 分平均指標と比較したり、この指標に追加したりできます。 このパネルでは、カスタム期間の平均オーディエンスをより柔軟に測定できるほか、期間の分類が更新された場合にも測定できます。  [詳細情報](/help/reporting/workspace/average-minute-audience.md) | 2022年3月16日（PT） |
+| **パネルがCustomer Journey Analyticsに追加されました** | Customer Journey Analyticsに[&#x200B; メディア同時視聴者数パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)と[&#x200B; メディア再生滞在時間パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)を追加しました。 | 2022年8月9日（PT） |
+| **分平均オーディエンス** | [分平均オーディエンス パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)を使用すると、平均コンテンツ消費量をより詳細に把握できます。 <br>分平均オーディエンスを使用すると、あらゆる長さやジャンルのプログラミングを比較できます。 さらに、お客様はデジタル分平均オーディエンスを、線形 TV 分平均指標と比較したり、この指標に追加したりできます。 このパネルでは、カスタム期間の平均オーディエンスをより柔軟に測定できるほか、期間の分類が更新された場合にも測定できます。 | 2022年3月16日（PT） |
 
 ## 2021年
 
 | 機能 | 説明 | 日付 |
 | --- | --- | --- |
-| **メディア再生滞在時間** | アドビのストリーミングメディア再生滞在時間は、ビューアのエンゲージメントに関する貴重なインサイトを提供します。これにより、メディア企業は日分割機能を備えた高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関する、より深く、より詳細なインサイトを得ることができます。 特定の時点でのメディアストリームの視聴時間を確認できます。 再生時間は、様々な粒度（新たな 5 分、15 分、30 分の時間粒度を含む）で分割できます。 [詳細情報...](/help/reporting/workspace/media-playback-time-spent.md) | 2021年9月 |
+| **メディア再生滞在時間** | [再生滞在時間パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)は、視聴者のエンゲージメントに関する貴重なinsightを提供し、メディア組織が日分割の機能を使用した高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関するより深く詳細なインサイトを得られるようにします。 特定の時点でのメディアストリームの視聴時間を確認できます。 再生時間は、様々な粒度（新たな 5 分、15 分、30 分の時間粒度を含む）で分割できます。 | 2021年9月 |
 
 ## 2020年
 
 | 機能 | 説明 | 日付 |
 | --- | --- | --- |
-| **メディア同時ビューアパネル** | ピーク同時実行が発生した場所、または下降が発生した場所を把握します。 コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。 [詳細情報…](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Analytics Workspace のメディア同時閲覧者パネル（チュートリアル）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=ja#analysis-workspace) | 2020年9月；2021年1月 |
+| **メディア同時ビューアパネル** | [同時視聴者数パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)を使用すると、同時視聴数のピークが発生した場所や脱落が発生した場所を把握できます。 コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。<br><br>[&#x200B; メディア同時視聴者数パネル （チュートリアル） &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | 2020年9月；2021年1月 |
 | **サポートされるデバイスとプラットフォーム** | AEP SDK を含むメディア Launch 拡張機能で、以下の OTT デバイスがサポートされるようになりました。 <div><ul><li>Apple TV（tvOS）</li><li>Fire TV（Fire OS）</li><li>Android TV</li></ul></div> | 2020年6月 |

@@ -3,9 +3,9 @@ title: メディアパス
 description: パス分析用のトラフィック変数としてコンテンツ IDをキャプチャします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.name`からトラフィック変数（prop）として自動的に収集されます。 |
-| Customer Journey Analytics | なし – パス分析に[&#x200B; コンテンツ &#x200B;](content.md)を使用 |
+| Customer Journey Analytics | なし – パス分析には[Content](content.md)を使用します。 |
 | データフィード | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |
 
@@ -36,4 +36,4 @@ ht-degree: 5%
 
 ## ディメンション項目
 
-各項目は、訪問中に報告されたコンテンツ IDです。 Adobe Analyticsのコンテンツ/メディアパスの下にある「次のページフロー」レポートと「前のページフローレポート」を使用して、コンテンツ間のナビゲーションパスを表示します。
+各項目は、訪問中に報告されたコンテンツ IDです。 フローパネルを使用して、コンテンツ間のナビゲーションパスを表示できます。
