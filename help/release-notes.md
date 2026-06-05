@@ -26,9 +26,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
 workflow-type: tm+mt
-source-wordcount: 789
+source-wordcount: 793
 ht-degree: 60%
 
 ---
@@ -37,12 +37,17 @@ ht-degree: 60%
 
 **最終更新**: 2026年6月4日
 
-## 2025年
+## 2026
 
 | 機能 | 説明 | 日付 |
 | --- | --- | --- |
 | **サポートスケジュールのデータ** | 過去のライブコンテンツのスケジュールデータをアップロードして、プログラムやセグメント別の視聴者を追跡できます。 サポートされるコンテンツの種類は次のとおりです。<ul><li>FAST（無料広告サポート TV）プラットフォーム</li><li>ローカルストリーム</li><li>ライブスポーツ</li></ul>詳しくは、「[&#x200B; スケジュール データをアップロードしてライブコンテンツを追跡する](/help/use-cases/track-schedule-data.md) ユースケース」を参照してください。 | ロールアウト開始：2025年10月29日（PT）<p>一般公開：2026年10月</p> |
-| `mediaTimed` XDM フィールドの非推奨化 | `mediaTimed` XDM オブジェクトは、`mediaReporting` フィールドパスのために非推奨（廃止予定）になっています。 2025年5月9日（PT）より前にAnalytics ソースコネクタを実装したお客様は、設定を移行する必要があります。 詳しくは、次の移行ガイドを参照してください。<ul><li>[新しいストリーミングメディアフィールドにオーディエンスを移行](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[新しいストリーミングメディアフィールドを使用するようにCustomer Journey Analyticsを移行](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[&#x200B; カスタムフィールドのデータ準備を新しいストリーミングメディアフィールドに移行](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[&#x200B; プロファイルを新しいストリーミングメディアフィールドに移行](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | 2025年10月 |
+
+## 2025年
+
+| 機能 | 説明 | 日付 |
+| --- | --- | --- |
+| **`mediaTimed`XDM フィールドの非推奨化** | `mediaTimed` XDM オブジェクトは、`mediaReporting` フィールドパスのために非推奨（廃止予定）になっています。 2025年5月9日（PT）より前にAnalytics ソースコネクタを実装したお客様は、設定を移行する必要があります。 詳しくは、次の移行ガイドを参照してください。<ul><li>[新しいストリーミングメディアフィールドにオーディエンスを移行](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[新しいストリーミングメディアフィールドを使用するようにCustomer Journey Analyticsを移行](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[&#x200B; カスタムフィールドのデータ準備を新しいストリーミングメディアフィールドに移行](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[&#x200B; プロファイルを新しいストリーミングメディアフィールドに移行](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | 2025年10月 |
 
 ## 2024
 
