@@ -5,10 +5,10 @@ user-guide-title: ストリーミングメディアサービスガイド
 breadcrumb-title: ストリーミングメディアサービスガイド
 user-guide-description: ストリーミングメディアサービスを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 35%
+source-wordcount: '698'
+ht-degree: 33%
 
 ---
 
@@ -289,21 +289,7 @@ ht-degree: 35%
       + [合計滞留時間](reporting/metrics/total-stalling-duration.md)
       + [ユニーク再生時間](reporting/metrics/unique-time-played.md)
    + [計算指標](reporting/calculated-metrics.md)
-   + Workspaceのメディアパネル {#media-workspace-panels}
-      + [メディア分平均オーディエンスパネル](reporting/workspace/average-minute-audience.md)
-      + [メディアの同時視聴者パネル](reporting/workspace/media-concurrent-viewers-overview.md)
-      + [メディア再生滞在時間パネル](reporting/workspace/media-playback-time-spent.md)
-   + [Workspace のメディアレポート](reporting/workspace/media-workspace-templates.md)
    + [メディアセグメント](reporting/segments.md)
-   + デフォルトメディアレポート {#media-default-reports}
-      + [デフォルトレポートの概要](reporting/reports-and-analytics/default-reports-overview.md)
-      + [メディアの概要](reporting/reports-and-analytics/media-reports-overview.md)
-      + [メディアの詳細 &#x200B;](reporting/reports-and-analytics/media-reports-detail.md)
-      + [メディア視聴時間帯レポート](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [メディア同時ビューアレポート](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + Media API {#media-api}
-      + [同時ビューアデータの取得](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [メディア再生時間データの取得](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + ユースケース {#media-use-cases}
    + [スケジュールデータの追跡](/help/use-cases/track-schedule-data.md)
    + [ダウンロードされたコンテンツの追跡](use-cases/track-downloaded-content.md)
