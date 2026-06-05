@@ -26,7 +26,7 @@ ht-degree: 76%
 
 # メディアセグメント{#segments}
 
-セグメントを使用すると、特性や Web サイトでのインタラクションに基づいて訪問者のサブセットを識別できます。 ストリーミングメディアセグメントを使用すると、オーディオストリーム、ライブストリーム、ポッドキャストストリームなどの訪問者ストリームタイプを識別できます。 Adobe Analytics セグメントについて詳しくは、Adobe Analytics コンポーネントガイドの「[&#x200B; セグメントについて](https://experienceleague.adobe.com/en/docs/analytics/components/segmentation/seg-overview)」を参照してください。
+セグメントを使用すると、特性や Web サイトでのインタラクションに基づいて訪問者のサブセットを識別できます。 ストリーミングメディアセグメントを使用すると、オーディオストリーム、ライブストリーム、ポッドキャストストリームなどの訪問者ストリームタイプを識別できます。 Adobe Analytics セグメントについて詳しくは、Adobe Analytics コンポーネントガイドの「[&#x200B; セグメントについて](https://experienceleague.adobe.com/ja/docs/analytics/components/segmentation/seg-overview)」を参照してください。
 
 | セグメント | 説明 | 規則 |
 |---|---|---|
