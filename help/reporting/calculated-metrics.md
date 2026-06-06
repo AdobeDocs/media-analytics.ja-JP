@@ -18,19 +18,19 @@ Analysis Workspaceでこれらの計算指標を作成するには、[Adobe Anal
 
 | 計算指標 | 説明 | 数式 |
 | --- | --- | --- |
-| 平均 メディアストリームあたりの広告 | [[!UICONTROL 広告開始]](/help/reporting/metrics/ad-starts.md)/[[!UICONTROL  メディア開始]](/help/reporting/metrics/media-starts.md) | `[Ad starts] / [Media starts]` |
-| 平均 メディアストリームごとのチャプター | [[!UICONTROL 章開始]](/help/reporting/metrics/chapter-starts.md)/[[!UICONTROL  メディア開始]](/help/reporting/metrics/media-starts.md) | `[Chapter starts] / [Media starts]` |
-| 平均 メディア滞在時間 | [[!UICONTROL  メディアが[[!UICONTROL  メディア開始]](/help/reporting/metrics/media-starts.md) （`HH:MM:SS`）ごとに]](/help/reporting/metrics/media-time-spent.md)費やした時間 | `[Media time spent] / [Media starts]` |
-| 平均 コンテンツ滞在時間 | [[!UICONTROL  コンテンツが[[!UICONTROL 個のコンテンツを開始]](/help/reporting/metrics/content-starts.md) （`HH:MM:SS`）ごとに費やした時間]](/help/reporting/metrics/content-time-spent.md) | `[Content time spent] / [Content starts]` |
-| 平均 広告滞在時間 | [[!UICONTROL 広告が[[!UICONTROL 広告開始]](/help/reporting/metrics/ad-starts.md) （`HH:MM:SS`）ごとに]](/help/reporting/metrics/ad-time-spent.md)回費やした時間 | `[Ad time spent] / [Ad starts]` |
-| 平均 章の滞在時間 | [[!UICONTROL 章が[[!UICONTROL 章ごとに]](/help/reporting/metrics/chapter-time-spent.md)回費やした時間]](/help/reporting/metrics/chapter-starts.md) （`HH:MM:SS`） | `[Chapter time spent] / [Chapter starts]` |
-| メディア完了率 | [[!UICONTROL  コンテンツ完了率]](/help/reporting/metrics/content-completes.md) vs. [[!UICONTROL  メディア開始]](/help/reporting/metrics/media-starts.md) | `[Content completes] / [Media starts]` |
-| コンテンツ完了率 | [[!UICONTROL  コンテンツ完了率]](/help/reporting/metrics/content-completes.md) vs. [[!UICONTROL  コンテンツ開始]](/help/reporting/metrics/content-starts.md) | `[Content completes] / [Content starts]` |
+| 平均 メディアストリームあたりの広告 | [[!UICONTROL 広告開始]](/help/reporting/metrics/ad-starts.md)/[[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md) | `[Ad starts] / [Media starts]` |
+| 平均 メディアストリームごとのチャプター | [[!UICONTROL 章開始]](/help/reporting/metrics/chapter-starts.md)/[[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md) | `[Chapter starts] / [Media starts]` |
+| 平均 メディア滞在時間 | [&#128279;](/help/reporting/metrics/media-time-spent.md)&#x200B; メディアが[[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md) （`HH:MM:SS`）ごとに費やした時間 | `[Media time spent] / [Media starts]` |
+| 平均 コンテンツ滞在時間 | [&#128279;](/help/reporting/metrics/content-time-spent.md)&#x200B; コンテンツが[[!UICONTROL 個のコンテンツを開始]](/help/reporting/metrics/content-starts.md) （`HH:MM:SS`）ごとに費やした時間 | `[Content time spent] / [Content starts]` |
+| 平均 広告滞在時間 | [&#128279;](/help/reporting/metrics/ad-time-spent.md)広告が[[!UICONTROL 広告開始]](/help/reporting/metrics/ad-starts.md) （`HH:MM:SS`）ごとに回費やした時間 | `[Ad time spent] / [Ad starts]` |
+| 平均 章の滞在時間 | [&#128279;](/help/reporting/metrics/chapter-starts.md)章が[[!UICONTROL 章ごとに]](/help/reporting/metrics/chapter-time-spent.md)回費やした時間 （`HH:MM:SS`） | `[Chapter time spent] / [Chapter starts]` |
+| メディア完了率 | [[!UICONTROL &#x200B; コンテンツ完了率]](/help/reporting/metrics/content-completes.md) vs. [[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md) | `[Content completes] / [Media starts]` |
+| コンテンツ完了率 | [[!UICONTROL &#x200B; コンテンツ完了率]](/help/reporting/metrics/content-completes.md) vs. [[!UICONTROL &#x200B; コンテンツ開始]](/help/reporting/metrics/content-starts.md) | `[Content completes] / [Content starts]` |
 | 広告完了率 | [[!UICONTROL 広告完了率]](/help/reporting/metrics/ad-completes.md) vs. [[!UICONTROL 広告開始]](/help/reporting/metrics/ad-starts.md) | `[Ad completes] / [Ad starts]` |
 | 章完了率 | [[!UICONTROL 章完了率]](/help/reporting/metrics/chapter-completes.md) vs. [[!UICONTROL 章開始]](/help/reporting/metrics/chapter-starts.md) | `[Chapter completes] / [Chapter starts]` |
-| 開始率より前にドロップ | [[!UICONTROL 開始]](/help/reporting/metrics/drops-before-start.md)前のドロップ率と[[!UICONTROL  メディア開始]](/help/reporting/metrics/media-starts.md) | `[Drops before start] / [Media starts]` |
-| コンテンツ中断期間の割合 | [[!UICONTROL 合計一時停止の期間]](/help/reporting/metrics/total-pause-duration.md)と[[!UICONTROL  コンテンツの滞在時間]](/help/reporting/metrics/content-time-spent.md)の割合 | `[Total pause duration] / [Content time spent]` |
-| コンテンツバッファー期間レート | 合計バッファー時間[[!UICONTROL と[[!UICONTROL  コンテンツ滞在時間]](/help/reporting/metrics/content-time-spent.md)の割合]](/help/reporting/metrics/total-buffer-duration.md) | `[Total buffer duration] / [Content time spent]` |
-| コンテンツの開始時間 | [[!UICONTROL 開始までの時間]](/help/reporting/metrics/time-to-start.md)と[[!UICONTROL  コンテンツ滞在時間]](/help/reporting/metrics/content-time-spent.md)の割合 | `[Time to start] / [Content time spent]` |
-| 広告滞在時間率 | [[!UICONTROL 広告費]](/help/reporting/metrics/ad-time-spent.md)と[[!UICONTROL  コンテンツ費やす時間]](/help/reporting/metrics/content-time-spent.md)の割合 | `[Ad time spent] / [Content time spent]` |
+| 開始率より前にドロップ | [[!UICONTROL 開始]](/help/reporting/metrics/drops-before-start.md)前のドロップ率と[[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md) | `[Drops before start] / [Media starts]` |
+| コンテンツ中断期間の割合 | [[!UICONTROL 合計一時停止の期間]](/help/reporting/metrics/total-pause-duration.md)と[[!UICONTROL &#x200B; コンテンツの滞在時間]](/help/reporting/metrics/content-time-spent.md)の割合 | `[Total pause duration] / [Content time spent]` |
+| コンテンツバッファー期間レート | 合計バッファー時間[&#128279;](/help/reporting/metrics/total-buffer-duration.md)と[[!UICONTROL  コンテンツ滞在時間]](/help/reporting/metrics/content-time-spent.md)の割合 | `[Total buffer duration] / [Content time spent]` |
+| コンテンツの開始時間 | [[!UICONTROL 開始までの時間]](/help/reporting/metrics/time-to-start.md)と[[!UICONTROL &#x200B; コンテンツ滞在時間]](/help/reporting/metrics/content-time-spent.md)の割合 | `[Time to start] / [Content time spent]` |
+| 広告滞在時間率 | [[!UICONTROL 広告費]](/help/reporting/metrics/ad-time-spent.md)と[[!UICONTROL &#x200B; コンテンツ費やす時間]](/help/reporting/metrics/content-time-spent.md)の割合 | `[Ad time spent] / [Content time spent]` |
 
