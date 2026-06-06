@@ -1,5 +1,5 @@
 ---
-title: オプトアウトとプライバシーについて
+title: オプトアウトとプライバシーの設定
 description: オプトイン、オプトアウトおよびプライバシーの取り扱い方法を説明します。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
@@ -18,14 +18,14 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
 workflow-type: tm+mt
-source-wordcount: 750
-ht-degree: 4%
+source-wordcount: 751
+ht-degree: 3%
 
 ---
 
-# オプトアウトおよびプライバシー
+# オプトアウトとプライバシーの設定
 
 ユーザーがトラッキングをオプトアウトすると、ストリーミングメディアライブラリは直ちにすべてのデータ収集アクティビティを停止します。 セッション開始の呼び出しも、ハートビート pingも、イベント追跡データがそのユーザーのAdobe data collection サーバーに送信されることはありません。
 

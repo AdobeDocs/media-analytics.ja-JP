@@ -5,10 +5,10 @@ user-guide-title: ストリーミングメディアサービスガイド
 breadcrumb-title: ストリーミングメディアサービスガイド
 user-guide-description: ストリーミングメディアサービスを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 33%
+source-wordcount: '694'
+ht-degree: 32%
 
 ---
 
@@ -164,6 +164,7 @@ ht-degree: 33%
             + [タイムアウト条件](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [イベントの順序の制御](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [セッションの応答が遅い場合のイベントのキューへの登録](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+   + [オプトアウトとプライバシーの設定](implementation/opt-out-privacy.md)
 + レポート {#reporting}
    + レポートの設定 {#reporting-setup}
       + [Edgeの導入](reporting/setup/edge-reporting.md)
@@ -298,6 +299,3 @@ ht-degree: 33%
       + [タイムライン：チャプター](use-cases/scenarios/chapter-start-end.md)
       + [タイムライン：表示から終了](use-cases/scenarios/view-to-end-of-content.md)
       + [タイムライン：ユーザーがセッションを放棄](use-cases/scenarios/user-abandons-session.md)
-+ プライバシーとセキュリティ {#streaming-media-privacy}
-   + [オプトアウトおよびプライバシー設定](privacy/opt-out-privacy.md)
-   + [セキュリティ](privacy/security.md)
