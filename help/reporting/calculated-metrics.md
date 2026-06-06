@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Adobeのストリーミングメディアサービスの計算指標は、標準的なストリーミングメディア指標から構築されたカスタム指標です。これにより、実装を変更することなく、平均広告滞在時間やメディア完了率などの比率を導き出すことができます。
 
-Analysis Workspaceでこれらの計算指標を作成するには、[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview)または[Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)でそれぞれの計算指標の概要を参照してください。
+Analysis Workspaceでこれらの計算指標を作成するには、[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/analytics/components/calculated-metrics/cm-overview)または[Customer Journey Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)でそれぞれの計算指標の概要を参照してください。
 
 | 計算指標 | 説明 | 数式 |
 | --- | --- | --- |
