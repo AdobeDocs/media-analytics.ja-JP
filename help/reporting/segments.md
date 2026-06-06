@@ -17,14 +17,14 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
 workflow-type: tm+mt
-source-wordcount: 188
-ht-degree: 76%
+source-wordcount: 189
+ht-degree: 75%
 
 ---
 
-# メディアセグメント{#segments}
+# Streaming Media セグメント
 
 セグメントを使用すると、特性や Web サイトでのインタラクションに基づいて訪問者のサブセットを識別できます。 ストリーミングメディアセグメントを使用すると、オーディオストリーム、ライブストリーム、ポッドキャストストリームなどの訪問者ストリームタイプを識別できます。 Adobe Analytics セグメントについて詳しくは、Adobe Analytics コンポーネントガイドの「[&#x200B; セグメントについて](https://experienceleague.adobe.com/ja/docs/analytics/components/segmentation/seg-overview)」を参照してください。
 

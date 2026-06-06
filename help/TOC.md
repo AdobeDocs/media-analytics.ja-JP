@@ -5,9 +5,9 @@ user-guide-title: ストリーミングメディアサービスガイド
 breadcrumb-title: ストリーミングメディアサービスガイド
 user-guide-description: ストリーミングメディアサービスを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
+source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '693'
 ht-degree: 32%
 
 ---
@@ -290,7 +290,7 @@ ht-degree: 32%
       + [合計滞留時間](reporting/metrics/total-stalling-duration.md)
       + [ユニーク再生時間](reporting/metrics/unique-time-played.md)
    + [計算指標](reporting/calculated-metrics.md)
-   + [メディアセグメント](reporting/segments.md)
+   + [セグメント](reporting/segments.md)
 + ユースケース {#media-use-cases}
    + [スケジュールデータの追跡](/help/use-cases/track-schedule-data.md)
    + [ダウンロードされたコンテンツの追跡](use-cases/track-downloaded-content.md)
