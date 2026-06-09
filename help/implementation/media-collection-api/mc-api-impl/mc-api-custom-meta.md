@@ -1,5 +1,5 @@
 ---
-title: カスタムメタデータのサポート
+title: Media Collection API カスタムメタデータのサポート
 description: sessionStart イベント、chapterStart イベント、adStart イベントでカスタム key:value ペアを指定する方法について説明します。
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
@@ -18,14 +18,14 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 449
-ht-degree: 7%
+source-wordcount: 435
+ht-degree: 5%
 
 ---
 
-# カスタムメタデータのサポート{#custom-metadata-support}
+# Media Collection API カスタムメタデータのサポート
 
 Media Collection APIを使用すると、カスタムキーと値のペアを、`sessionStart`、`adStart`、および`chapterStart` イベントの標準パラメーターと共に送信できます。 カスタムメタデータは、それぞれのメディア終了イベントとともに&#x200B;**Adobe Analytics**&#x200B;に転送されます。
 
@@ -80,7 +80,7 @@ Experience Edgeを使用するXDM ベースの実装については、[&#x200B; 
 
 ### 主要な命名要件
 
-* カスタムメタデータキーで`media.`接頭辞を使用しないでください。標準メディアフィールドにマッピングされ、Analytics レポートで上書きされる可能性があります
+* カスタムメタデータキーで`media.` プレフィックスを使用しないでください。 標準メディアフィールドにマッピングされ、Analytics レポートで上書きされる可能性があります
 * `a.`接頭辞はAdobe標準メタデータ用に予約されているため、使用しないでください
 
 ## メインコンテンツのカスタムメタデータ
@@ -179,13 +179,6 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 * `sessionStart`個のメタデータはセッション全体で保持されます。更新には新しいセッションが必要です
 * 各`adStart`および`chapterStart` イベントには、異なるカスタムメタデータを含めることができます
 
-## 関連ドキュメント
-
-* [&#x200B; カスタムメタデータのサポート - XDM フォーマット &#x200B;](/help/implementation/edge/custom-metadata.md) — Experience Edgeを介して、AnalyticsとAEPの両方にカスタムメタデータを送信します
-* [&#x200B; レポートスイートデータ用のAdobe Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Analytics データをAdobe Experience Platformに取り込む
-
-<!--
-* [Session endpoints](sessions.md) — Session lifecycle management
-* [Ad endpoints](ads.md) — Track advertising impressions
-* [Chapter endpoints](chapters.md) — Segment content into chapters
--->
+>[!MORELIKETHIS]
+>* [&#x200B; カスタムメタデータのサポート - XDM形式](/help/implementation/edge/custom-metadata.md)
+>* [&#x200B; レポートスイートデータ用のAdobe Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)

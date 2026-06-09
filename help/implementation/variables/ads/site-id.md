@@ -3,10 +3,10 @@ title: サイト ID
 description: 各広告の広告サイト IDを設定して、広告配置サイト別のブレイクアウトを有効にします。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 11%
+source-wordcount: '229'
+ht-degree: 10%
 
 ---
 
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.SITE_ID] = "site-42"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `media.adStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingDetails`内に`siteID`を設定します：
 
@@ -146,6 +146,21 @@ var standardAdMetadata = {};
 standardAdMetadata[ADBMobile.media.AdMetadataKeys.SITE_ID] = "site-42";
 adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+標準広告メタデータオブジェクトの`MEDIA_AdMetadataKeySITE_ID`を使用してサイト IDを設定します。
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+standardAdMetadata = {}
+standardAdMetadata[adb.MEDIA_AdMetadataKeySITE_ID] = "site-42"
+adInfo[adb.MEDIA_STANDARD_AD_METADATA] = standardAdMetadata
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB Media Collection API]

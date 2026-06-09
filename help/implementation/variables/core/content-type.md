@@ -3,9 +3,9 @@ title: コンテンツタイプ
 description: コンテンツの種類を設定して、ストリームのフォーマット（VOD、ライブ、リニア、ポッドキャスト、曲など）を特定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '334'
 ht-degree: 5%
 
 ---
@@ -89,7 +89,7 @@ var mediaInfo = Media.createMediaObject("My Video",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `createMediaSession`の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`contentType`を設定：
 
@@ -171,6 +171,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+`MEDIA_STREAM_TYPE_*`定数を4番目の（`streamType`）引数として`adb_media_init_mediainfo`に渡します。 Roku 2.x SDKでは、この引数はコンテンツタイプ （`vod`、`live`、`linear`）を保持します。
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB Media Collection API]

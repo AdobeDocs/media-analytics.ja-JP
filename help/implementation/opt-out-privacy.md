@@ -18,9 +18,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 751
+source-wordcount: 798
 ht-degree: 3%
 
 ---
@@ -99,15 +99,15 @@ MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
 
 詳しくは、AEP Mobile SDK ドキュメントの[&#x200B; プライバシーとGDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)を参照してください。
 
->[!TAB Roku]
+>[!TAB Edge六]
 
-AEP Roku SDKは、Adobe 2.0同意標準で`setConsent()`を使用しています。 `collect.val`を`"n"`に設定すると、ストリーミングメディアイベントを含むすべてのデータ収集が即座に停止されます。
+Roku Edge SDKは、Adobe 2.0同意標準で`setConsent()`を使用しています。 `collect.val`を`"n"`に設定すると、ストリーミングメディアイベントを含むすべてのデータ収集が即座に停止されます。
 
 同意値：
 
-* `"y"` — オプトイン （データ収集が許可されています）
-* `"n"` — オプトアウト （データ収集は抑制）
-* `"p"` – 保留中（ユーザーの決定を待っています。解決するまでデータは収集されません）
+* `"y"`：オプトイン （データ収集が許可されています）
+* `"n"`：オプトアウトされました（データ収集は抑制されました）
+* `"p"`：保留中（ユーザーの決定を待っています。解決するまでデータは収集されません）
 
 ```brightscript
 currentDate = CreateObject("roDateTime")
@@ -129,7 +129,7 @@ m.aepSdk.setConsent(collectConsentNo)
 
 トラッキングを復元するには、`collect.val`を`"y"`に設定し、もう一度`setConsent()`に電話してください。
 
-`updateConfiguration()`と`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` キーを使用して、SDK初期化時にデフォルトの同意値を設定することもできます。 詳しくは、[AEP Roku SDK ドキュメント &#x200B;](https://github.com/adobe/aepsdk-roku)を参照してください。
+`updateConfiguration()`と`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` キーを使用して、SDK初期化時にデフォルトの同意値を設定することもできます。 詳しくは、[Roku Edge SDK ドキュメント &#x200B;](https://github.com/adobe/aepsdk-roku)を参照してください。
 
 >[!TAB Media Edge API]
 
@@ -196,6 +196,30 @@ var ADBMobileConfig = {
     "privacyDefault": "optedout"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDKは、`setPrivacyStatus`を使用して設定されたプライバシーステータスを尊重します。 ステータスを`PRIVACY_STATUS_OPT_OUT`に設定すると、すべてのデータ収集が抑制されます。
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_OUT)
+```
+
+トラッキングを復元するには、ステータスをオプトインに戻します。
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_IN)
+```
+
+`ADBMobileConfig.json` ファイルのSDK初期化時に、デフォルトのプライバシーステータスを設定することもできます。
+
+```json
+"analytics": {
+  "privacyDefault": "optedout"
+}
 ```
 
 >[!TAB Media Collection API]

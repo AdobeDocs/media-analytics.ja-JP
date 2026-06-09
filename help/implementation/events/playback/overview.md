@@ -21,9 +21,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 230
+source-wordcount: 231
 ht-degree: 2%
 
 ---
@@ -50,4 +50,4 @@ ht-degree: 2%
 1. **ユーザーが再生を一時停止したときに[一時停止の開始](pause-start.md)**&#x200B;を呼び出します。 再生が再開されたときに再生を送信します。
 1. **プレーヤーがデータ待ちの状態で停止した場合、[&#x200B; バッファー開始](buffer-start.md)**&#x200B;を呼び出します。 XDM ベースのAPIでは、次のPlay イベントを送信するとバッファエンドが推測されます。 Mobile SDKでは、バッファリングが解決する場合に`BufferComplete`を明示的に呼び出します。
 1. **メインコンテンツの再生中は10秒ごとに[Ping](ping.md)**&#x200B;に電話し、広告再生中は1秒ごとに電話します。 Pingはセッションを維持し、再生ヘッドの動きを記録します。 モバイル SDKはpingを自動的に送信します。他のすべてのプラットフォームは手動で送信する必要があります。
-1. **プレーヤーが新しいビットレートを交渉するたびに[&#x200B; ビットレート変更](bitrate-change.md)**&#x200B;を呼び出します。 現在のQoE データ（ビットレート、フレーム/秒、ドロップされたフレーム）を含めることで、バックエンドは[平均ビットレート &#x200B;](/help/reporting/metrics/average-bitrate.md)および関連する品質指標を計算できます。
+1. **プレーヤーが新しいビットレートを交渉するたびに[&#x200B; ビットレート変更](bitrate-change.md)**&#x200B;を呼び出します。 現在のQoE データ（ビットレート、フレーム/秒、ドロップされたフレーム）を含めて、バックエンドが[平均ビットレート &#x200B;](/help/reporting/metrics/average-bitrate.md)および関連する品質指標を計算できるようにします。

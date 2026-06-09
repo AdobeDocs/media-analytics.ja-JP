@@ -3,7 +3,7 @@ title: ポッド名
 description: 各広告枠のわかりやすい名前をレポートします。 分類またはカスタム処理ルールを使用して、Adobe Analyticsで収集します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics （処理ルール） | `a.media.ad.podFriendlyName`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
-| Adobe Analytics（分類） | 広告ポッドディメンションの分類 – **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)**&#x200B;がレポートスイートに対して有効になっている場合、Adobeはこの分類を自動的に作成します。 分類値の入力と維持はユーザーの責任です。 |
+| Adobe Analytics（分類） | 広告ポッドディメンションの分類。 **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)**&#x200B;がレポートスイートに対して有効になっている場合、Adobeはこの分類を自動的に作成します。 分類値の入力と維持はユーザーの責任です。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | データフィード（処理ルール） | `evar1`-`evar250`、`post_evar1`-`post_evar250` （処理ルール `a.media.ad.podFriendlyName`がマッピングされるeVar） |
 | データフィード（分類） | なし – データフィードは分類をサポートしていません。 |

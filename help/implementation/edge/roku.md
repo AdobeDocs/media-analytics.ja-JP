@@ -1,16 +1,16 @@
 ---
-title: ストリーミングメディア用にRokuを設定する
+title: ストリーミングメディア用にRoku Edgeを設定する
 description: Adobe Experience Platform Roku SDKを設定して、ストリーミングメディアデータをEdge Networkに送信します。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
-# ストリーミングメディア用にRokuを設定する
+# ストリーミングメディア用にRoku Edgeを設定する
 
 [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku) （BrightScript）は、Roku チャネルのメディアセッションデータを収集し、Edge Networkに送信します。 Rokuはコードで設定されています。タグは使用しません。
 
@@ -18,7 +18,7 @@ ht-degree: 0%
    * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
    * [GitHub リリース &#x200B;](https://github.com/adobe/aepsdk-roku/releases)からSDKをダウンロードし、[入門ガイド &#x200B;](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md)の説明に従って、チャンネルに追加します。
 
-## AEP Roku SDK メディア版の設定
+## Roku Edge SDK for mediaの設定
 
 SDKを初期化し、データストリームとメディアの設定を行います。
 
@@ -49,13 +49,13 @@ m.aepSdk.createMediaSession({
 
 >[!IMPORTANT]
 >
->再生中に、最新の再生ヘッド値を使用して少なくとも1秒に1回、`media.ping` イベントを送信します。 AEP Roku SDKは、これらのpingが正しく機能することに依存しています。
+>再生中に、最新の再生ヘッド値を使用して少なくとも1秒に1回、`media.ping` イベントを送信します。 Roku Edge SDKは、これらのpingが正しく機能することに依存しています。
 
-設定キーと完全なAPIについては、[AEP Roku SDK API リファレンス &#x200B;](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/api-reference.md)を参照してください。
+設定キーと完全なAPIについては、[Roku Edge SDK API リファレンス &#x200B;](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/api-reference.md)を参照してください。
 
 ## メディアイベントの追跡
 
-セッションが開いたら、各メディアイベントを`sendMediaEvent`で送信します。 正確なペイロードについては、各[&#x200B; イベント &#x200B;](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md) ページの&#x200B;**Roku** タブを参照してください。
+セッションが開いたら、各メディアイベントを`sendMediaEvent`で送信します。 正確なペイロードについては、各[event](/help/implementation/events/overview.md)および[variable](/help/implementation/variables/overview.md) ページの&#x200B;**Roku Edge** タブを参照してください。
 
 ## 次の手順
 

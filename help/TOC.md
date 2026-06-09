@@ -5,10 +5,10 @@ user-guide-title: ストリーミングメディアサービスガイド
 breadcrumb-title: ストリーミングメディアサービスガイド
 user-guide-description: ストリーミングメディアサービスを実装します。 これには、メディア SDK とメディアコレクション API が含まれます。
 sub-product: media analytics
-source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 32%
+source-wordcount: '697'
+ht-degree: 31%
 
 ---
 
@@ -130,7 +130,7 @@ ht-degree: 32%
       + [iOS tag extension](/help/implementation/edge/ios-tags.md)
       + [Android](/help/implementation/edge/android.md)
       + [Android tag extension](/help/implementation/edge/android-tags.md)
-      + [Roku](/help/implementation/edge/roku.md)
+      + [Edge六](/help/implementation/edge/roku.md)
       + [Media Edge API](/help/implementation/edge/media-edge-api.md)
       + [カスタムメタデータのサポート](/help/implementation/edge/custom-metadata.md)
       + [XDM レポートスキーマ](/help/implementation/edge/reporting-schema.md)
@@ -145,6 +145,7 @@ ht-degree: 32%
       + [JavaScript](/help/implementation/analytics-only/javascript.md)
       + [Media Analytics タグ拡張機能](/help/implementation/analytics-only/javascript-tags.md)
       + [Chromecast](/help/implementation/analytics-only/chromecast.md)
+      + [Roku 2.x](/help/implementation/analytics-only/roku-2x.md)
       + [メディアコレクション API](/help/implementation/analytics-only/media-collection-api.md)
       + Media Collection API リファレンス {#streaming-media-apis}
          + [メディアコレクション](implementation/media-collection-api/mc-api-overview.md)

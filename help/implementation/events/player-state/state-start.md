@@ -3,10 +3,10 @@ title: 状態の開始
 description: メディアプレーヤーがトラッキング済みプレーヤー状態になったことを示す信号。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 7%
+source-wordcount: '217'
+ht-degree: 6%
 
 ---
 
@@ -79,7 +79,7 @@ val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
 tracker.trackEvent(Media.Event.StateStart, stateObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.statesUpdate"`で呼び出し、状態名を`statesStart`で呼び出します：
 
@@ -142,6 +142,10 @@ var stateObject = ADBMobile.media.createStateObject(ADBMobile.media.PlayerState.
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用できません。 プレイヤーの状態をトラッキングするには、[Roku Edge SDK](/help/implementation/edge/roku.md)を使用します。
 
 >[!TAB Media Collection API]
 

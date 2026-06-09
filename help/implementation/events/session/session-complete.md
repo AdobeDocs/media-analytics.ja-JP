@@ -3,10 +3,10 @@ title: セッション完了
 description: 視聴者がメインコンテンツの最後に到達したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ tracker.trackComplete()
 tracker.trackComplete()
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.sessionComplete"`と呼び出します：
 
@@ -110,6 +110,14 @@ tracker.trackComplete();
 
 ```javascript
 ADBMobile.media.trackComplete();
+```
+
+>[!TAB Roku 2.x]
+
+メディアプレーヤーがコンテンツの最後に達したときに`mediaTrackComplete`を呼び出します。
+
+```brightscript
+ADBMobile().mediaTrackComplete()
 ```
 
 >[!TAB Media Collection API]

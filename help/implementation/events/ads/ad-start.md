@@ -3,10 +3,10 @@ title: 広告の開始
 description: 個々の広告が再生を開始したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 8%
+source-wordcount: '209'
+ht-degree: 7%
 
 ---
 
@@ -75,7 +75,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`に`eventType: "media.adStart"`と必須`advertisingDetails`を呼び出します：
 
@@ -158,6 +158,17 @@ var adInfo = ADBMobile.media.createAdObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+`adb_media_init_adinfo`で広告オブジェクトを作成してから、イベントを追跡します。 ポッド内の広告位置は1 ベースです。
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 15.0)  ' name, id, position, length
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB Media Collection API]

@@ -3,9 +3,9 @@ title: 章のスキップ
 description: 視聴者が章をスキップしたことを知らせる。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '148'
 ht-degree: 10%
 
 ---
@@ -54,7 +54,7 @@ tracker.trackEvent(event: MediaEvent.ChapterSkip, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.ChapterSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.chapterSkip"`と呼び出します：
 
@@ -110,6 +110,15 @@ tracker.trackEvent(ADB.Media.Event.ChapterSkip, null, null);
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
+```
+
+>[!TAB Roku 2.x]
+
+`MEDIA_CHAPTER_SKIP` イベントタイプで`mediaTrackEvent`を呼び出します：
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_SKIP)
 ```
 
 >[!TAB Media Collection API]

@@ -23,10 +23,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 575
-ht-degree: 32%
+source-wordcount: 625
+ht-degree: 30%
 
 ---
 
@@ -44,7 +44,7 @@ Edgeでは、一度収集したデータをAdobe Experience Platform Edge Networ
 | [![Apple iOS アイコン &#x200B;](assets/apple.png)](https://github.com/adobe/aepsdk-media-ios)<br>[iOS / tvOS SDK](https://github.com/adobe/aepsdk-media-ios) | [&#x200B; ストリーミングメディア用にiOSを設定](/help/implementation/edge/ios.md) | [&#x200B; サンプル &#x200B;](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 | [![拡張機能アイコン &#x200B;](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Android タグ拡張機能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [&#x200B; ストリーミングメディア用のAndroid タグ拡張機能の設定](/help/implementation/edge/android-tags.md) | |
 | [![拡張機能アイコン &#x200B;](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[iOS / tvOS タグ拡張機能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [&#x200B; ストリーミングメディア用のiOS タグ拡張機能の設定](/help/implementation/edge/ios-tags.md) | |
-| [![Roku icon](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[Roku SDK](https://github.com/adobe/aepsdk-roku) | [&#x200B; ストリーミングメディア用にRokuを設定](/help/implementation/edge/roku.md) | [&#x200B; サンプル &#x200B;](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
+| [![Roku icon](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[Roku Edge SDK](https://github.com/adobe/aepsdk-roku) | [&#x200B; ストリーミングメディア用にRoku Edgeを設定](/help/implementation/edge/roku.md) | [&#x200B; サンプル &#x200B;](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
 | [![API アイコン &#x200B;](assets/api.png)](https://developer.adobe.com/data-collection-apis/docs/api/media-edge)<br>[Media Edge API](https://developer.adobe.com/data-collection-apis/docs/api/media-edge) | [Media Edge APIの設定](/help/implementation/edge/media-edge-api.md) | [&#x200B; サンプル &#x200B;](https://developer.adobe.com/data-collection-apis/docs/getting-started/media-edge-examples) |
 
 ## Analyticsのみの実装 {#analytics-only-sdks}
@@ -56,4 +56,5 @@ Edgeでは、一度収集したデータをAdobe Experience Platform Edge Networ
 | [![JavaScript アイコン &#x200B;](assets/javascript-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2)<br>[Media SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [&#x200B; ストリーミングメディア用にJavaScriptを設定](/help/implementation/analytics-only/javascript.md) | [&#x200B; サンプル &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | [![拡張機能アイコン &#x200B;](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja)<br>[&#x200B; メディア拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja) | [&#x200B; ストリーミングメディアのタグを使用したJavaScriptの設定](/help/implementation/analytics-only/javascript-tags.md) | [&#x200B; サンプル &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | [![Chromecast icon](assets/chromecast-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3)<br>[Chromecast SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [&#x200B; ストリーミングメディア用Chromecastの設定](/help/implementation/analytics-only/chromecast.md) | [&#x200B; サンプル &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/chromecast/samples/BasicPlayerSample) |
+| [![Roku icon](assets/roku-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7)<br>[Roku SDK 2.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7) | [&#x200B; ストリーミングメディア用にRoku 2.xを設定](/help/implementation/analytics-only/roku-2x.md) | [&#x200B; サンプル &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/roku/samples) |
 | [![API アイコン &#x200B;](assets/api.png)](/help/implementation/media-collection-api/mc-api-overview.md)<br>[&#x200B; メディアコレクション API](/help/implementation/media-collection-api/mc-api-overview.md) | [Media Collection APIの設定](/help/implementation/analytics-only/media-collection-api.md) | |

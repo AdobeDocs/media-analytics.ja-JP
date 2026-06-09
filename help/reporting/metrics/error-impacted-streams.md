@@ -3,7 +3,7 @@ title: エラーの影響を受けるストリーム
 description: 少なくとも1つのエラーが発生したセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # エラーの影響を受けるストリーム
 
-**エラーの影響を受けたストリーム**&#x200B;指標では、少なくとも1つのエラーが発生したセッションをカウントします（`trackError`が呼び出されたか、[&#x200B; エラー](/help/implementation/events/error.md) イベントが発生しました）。 この指標はセッションレベルのブール値で、同じセッション内の複数のエラーが、影響を受ける1つのストリームとしてカウントされます。 合計エラーボリュームには、[&#x200B; エラー](/help/reporting/dimensions/errors.md)を使用します。
+**エラーの影響を受けたストリーム**&#x200B;指標では、少なくとも1つのエラーが発生したセッションをカウントします（`trackError`が呼び出されたか、[&#x200B; エラー](/help/implementation/events/error.md) イベントが発生しました）。 この指標はセッションレベルのブール値です。同じセッション内の複数のエラーは、影響を受ける1つのストリームとしてカウントされます。 合計エラーボリュームには、[&#x200B; エラー](/help/reporting/dimensions/errors.md)を使用します。
 
 ## この指標の計算方法
 

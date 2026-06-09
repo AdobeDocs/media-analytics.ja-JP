@@ -3,17 +3,17 @@ title: セッション終了
 description: 視聴者がコンテンツを放棄した場合は、直ちにメディアセッションを閉じます。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 5%
+source-wordcount: '314'
+ht-degree: 4%
 
 ---
 
 
 # セッション終了
 
-セッション終了イベントは、メディア追跡セッションを直ちに不可逆的に閉じます。 セッション終了はハードクローズです。送信されると、セッションは終了し、それ以降のイベントは追跡できません。 プレーヤーが破壊されたり、ページがアンロードされたりするなど、追加のイベントが続かないことが確実な場合にのみ、セッション終了を使用します。 多くの場合、セッションの有効期限を自然発生的に切り落とすリスクを回避する方が安全です。 視聴者がコンテンツを完了した場合は、代わりに[&#x200B; セッション完了](session-complete.md)に電話してください。
+セッション終了イベントは、メディア追跡セッションを直ちに不可逆的に閉じます。 セッション終了はハードクローズです。送信されると、セッションは終了され、それ以降のイベントは追跡できません。 プレーヤーが破壊されたり、ページがアンロードされたりするなど、追加のイベントが続かないことが確実な場合にのみ、セッション終了を使用します。 多くの場合、セッションの有効期限を自然発生的に切り落とすリスクを回避する方が安全です。 視聴者がコンテンツを完了した場合は、代わりに[&#x200B; セッション完了](session-complete.md)に電話してください。
 
 明示的なセッション終了がなければ、イベントなしの10分または再生ヘッドなしの30分が経過すると、セッションは自動的に終了します。
 
@@ -60,7 +60,7 @@ tracker.trackSessionEnd()
 tracker.trackSessionEnd()
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.sessionEnd"`と呼び出します：
 
@@ -116,6 +116,14 @@ tracker.trackSessionEnd();
 
 ```javascript
 ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB Roku 2.x]
+
+ビューアーがプレーヤーを閉じるか、離れるときに`mediaTrackSessionEnd`に電話します。
+
+```brightscript
+ADBMobile().mediaTrackSessionEnd()
 ```
 
 >[!TAB Media Collection API]

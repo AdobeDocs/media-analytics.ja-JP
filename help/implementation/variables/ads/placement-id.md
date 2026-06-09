@@ -3,10 +3,10 @@ title: プレースメント ID
 description: 各広告のプレースメント IDを設定して、広告プレースメント別のブレイクアウトを有効にします。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 11%
+source-wordcount: '225'
+ht-degree: 10%
 
 ---
 
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.PLACEMENT_ID] = "placement-12"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `media.adStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingDetails`内に`placementID`を設定します：
 
@@ -146,6 +146,21 @@ var standardAdMetadata = {};
 standardAdMetadata[ADBMobile.media.AdMetadataKeys.PLACEMENT_ID] = "placement-12";
 adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+標準広告メタデータオブジェクトの`MEDIA_AdMetadataKeyPLACEMENT_ID`を使用してプレースメント IDを設定します。
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+standardAdMetadata = {}
+standardAdMetadata[adb.MEDIA_AdMetadataKeyPLACEMENT_ID] = "placement-12"
+adInfo[adb.MEDIA_STANDARD_AD_METADATA] = standardAdMetadata
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB Media Collection API]

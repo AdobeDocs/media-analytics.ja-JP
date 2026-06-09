@@ -3,10 +3,10 @@ title: バッファー開始
 description: メディアプレーヤーがバッファリング状態になったことを示す信号。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 8%
+source-wordcount: '196'
+ht-degree: 7%
 
 ---
 
@@ -68,7 +68,7 @@ tracker.trackEvent(Media.Event.BufferStart, null, null)
 tracker.trackEvent(Media.Event.BufferComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.bufferStart"`と呼び出します：
 
@@ -128,6 +128,20 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferStart);
 
 // Buffer ends
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
+```
+
+>[!TAB Roku 2.x]
+
+プレーヤーがバッファリング状態に入ったときに`MEDIA_BUFFER_START`で`mediaTrackEvent`に電話し、終了したときに`MEDIA_BUFFER_COMPLETE`に電話します。
+
+```brightscript
+adb = ADBMobile()
+
+' Buffer starts
+adb.mediaTrackEvent(adb.MEDIA_BUFFER_START)
+
+' Buffer ends
+adb.mediaTrackEvent(adb.MEDIA_BUFFER_COMPLETE)
 ```
 
 >[!TAB Media Collection API]

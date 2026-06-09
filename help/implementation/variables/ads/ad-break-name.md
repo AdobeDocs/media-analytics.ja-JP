@@ -3,9 +3,9 @@ title: 広告ブレーク名
 description: 親の広告枠のわかりやすい名前を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '267'
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `media.adBreakStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingPodDetails`内に`friendlyName`を設定します：
 
@@ -152,6 +152,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
   0
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Roku 2.x]
+
+広告ブレーク名を最初の引数として`adb_media_init_adbreakinfo`に渡します。 Roku パラメーターの順序に注意してください：`name, startTime, position`。
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("pre-roll", 0.0, 1)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 ```
 
 >[!TAB Media Collection API]

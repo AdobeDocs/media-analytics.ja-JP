@@ -3,10 +3,10 @@ title: コンテンツチャネル
 description: コンテンツが再生される配信ステーション、ネットワーク、またはプロパティを識別するチャネルを設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 7%
+source-wordcount: '270'
+ht-degree: 6%
 
 ---
 
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `createMediaSession`の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`channel`を設定：
 
@@ -157,6 +157,16 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
   ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
 var metadata = { "a.media.channel": "Sports" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB Roku 2.x]
+
+`ADBMobileConfig.json`の`mediaHeartbeat` セクションで`channel`を設定します。 チャネルは設定値であり、セッションごとの値ではありません。
+
+```json
+"mediaHeartbeat": {
+  "channel": "Sports"
+}
 ```
 
 >[!TAB Media Collection API]

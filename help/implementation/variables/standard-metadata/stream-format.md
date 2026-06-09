@@ -3,10 +3,10 @@ title: ストリーム形式
 description: ストリーム形式を設定して、品質層（HD、SD、または配信パイプラインで使用するその他のラベル）を特定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 8%
+source-wordcount: '256'
+ht-degree: 7%
 
 ---
 
@@ -73,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.STREAM_FORMAT] = "HD"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `createMediaSession`を使用して`sessionDetails`内に`streamFormat`を設定します：
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT] = "HD";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+`MEDIA_VideoMetadataKeySTREAM_FORMAT`を使用して、`mediaTrackSessionStart`を呼び出す前に、メディアオブジェクトの標準メタデータでストリーム形式を設定します。
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeySTREAM_FORMAT] = "HD"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB Media Collection API]

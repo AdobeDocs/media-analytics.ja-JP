@@ -3,10 +3,10 @@ title: セッション開始
 description: メディアセッションの開始を通知し、後続のすべてのイベントに必要なセッション IDを取得します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 5%
+source-wordcount: '388'
+ht-degree: 4%
 
 ---
 
@@ -75,7 +75,7 @@ val mediaObject = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 必要なセッションの詳細を含めて`createMediaSession`を呼び出します：
 
@@ -162,6 +162,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+`adb_media_init_mediainfo`でメディアオブジェクトを作成し、`mediaTrackSessionStart`を呼び出します。 オプションの2番目の引数は、`a.media.*`個のメタデータキーまたは`invalid`の連想配列を受け入れます。
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
+```
+
 >[!TAB Media Collection API]
 
 `sessionStart`件の投稿を[&#x200B; セッションエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
@@ -184,7 +195,7 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 
 ## セッションの再開
 
-以前に閉じられたセッションを再開する場合（クロスデバイスのハンドオフ後や、アプリケーションが保存された再生状態を復元した後など）、セッションの開始時に再開フラグを設定します。 これにより、Analyticsは[[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md)ではなく[[!UICONTROL &#x200B; コンテンツ再開]](/help/reporting/metrics/content-resumes.md)を増分します。
+以前に閉じられたセッションを再開する場合（例えば、クロスデバイスのハンドオフ後、またはアプリケーションが保存された再生状態を復元した後など）、セッションの開始時に再開フラグを設定します。 これにより、Analyticsは[[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md)ではなく[[!UICONTROL &#x200B; コンテンツ再開]](/help/reporting/metrics/content-resumes.md)を増分します。
 
 ## 推奨される実装タイプ
 
@@ -242,7 +253,7 @@ mediaObject[Media.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `"hasResume": true`を`sessionDetails`に追加：
 
@@ -325,6 +336,18 @@ var mediaObject = ADBMobile.media.createMediaObject(
 
 mediaObject[ADBMobile.media.MediaObjectKey.MediaResumed] = true;
 ADBMobile.media.trackSessionStart(mediaObject, null);
+```
+
+>[!TAB Roku 2.x]
+
+`mediaTrackSessionStart`を呼び出す前に、メディアオブジェクトに`resumed` キーを設定します。
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+mediaInfo.resumed = true
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB Media Collection API]

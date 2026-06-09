@@ -3,10 +3,10 @@ title: エラー
 description: メディアプレーヤーでエラーが発生したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 10%
+source-wordcount: '187'
+ht-degree: 9%
 
 ---
 
@@ -60,7 +60,7 @@ tracker.trackError(errorId: "media-error-001")
 tracker.trackError("media-error-001")
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`に`eventType: "media.error"`と必須`errorDetails`を呼び出します：
 
@@ -124,6 +124,15 @@ tracker.trackError("media-error-001");
 
 ```javascript
 ADBMobile.media.trackError("media-error-001");
+```
+
+>[!TAB Roku 2.x]
+
+エラーIDとエラーソースを指定して`mediaTrackError`を呼び出します。 プレーヤーのエラーに`ERROR_SOURCE_PLAYER`定数を使用します。
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackError("media-error-001", adb.ERROR_SOURCE_PLAYER)
 ```
 
 >[!TAB Media Collection API]

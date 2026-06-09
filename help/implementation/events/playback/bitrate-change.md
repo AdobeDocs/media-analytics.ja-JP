@@ -3,10 +3,10 @@ title: ビットレートの変更
 description: 再生ビットレートが変更されたことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 7%
+source-wordcount: '226'
+ht-degree: 6%
 
 ---
 
@@ -69,7 +69,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.bitrateChange"`で呼び出し、新しいビットレートを`qoeDataDetails`で呼び出します：
 
@@ -150,6 +150,18 @@ this._qosInfo = ADBMobile.media.createQoSObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Roku 2.x]
+
+`adb_media_init_qosinfo`を使用して新しいビットレートでQoS オブジェクトを構築し、`mediaUpdateQoS`でトラッカーを更新してから、イベントを追跡します。 Roku パラメーターの順序に注意してください：`bitrate, startupTime, fps, droppedFrames`。
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 ```
 
 >[!TAB Media Collection API]

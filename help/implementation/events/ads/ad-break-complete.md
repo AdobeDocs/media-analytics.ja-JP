@@ -3,9 +3,9 @@ title: 広告ブレーク完了
 description: 広告ブレークのすべての広告が終了したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '165'
 ht-degree: 9%
 
 ---
@@ -58,7 +58,7 @@ tracker.trackEvent(event: MediaEvent.AdBreakComplete, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.AdBreakComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.adBreakComplete"`と呼び出します：
 
@@ -114,6 +114,15 @@ tracker.trackEvent(ADB.Media.Event.AdBreakComplete, null, null);
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete);
+```
+
+>[!TAB Roku 2.x]
+
+`MEDIA_AD_BREAK_COMPLETE` イベントタイプで`mediaTrackEvent`を呼び出します：
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_COMPLETE)
 ```
 
 >[!TAB Media Collection API]

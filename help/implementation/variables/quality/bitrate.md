@@ -3,10 +3,10 @@ title: ビットレート
 description: バックエンドがビットレート指標を計算できるように、QoE オブジェクトの現在の再生ビットレート（kbps）を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 6%
+source-wordcount: '307'
+ht-degree: 5%
 
 ---
 
@@ -81,7 +81,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `media.bitrateChange`などの品質イベントに`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.qoeDataDetails`内に`bitrate`を設定します。
 
@@ -156,6 +156,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0      // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+ビットレートをkbpsで第1引数として`adb_media_init_qosinfo`に渡し、トラッカーを`mediaUpdateQoS`で更新します。
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB Media Collection API]

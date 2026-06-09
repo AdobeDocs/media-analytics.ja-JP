@@ -3,7 +3,7 @@ title: タグ付きストリーミングメディア用にiOSを設定する
 description: Adobe Streaming Media for Edge Network タグ拡張機能を使用して、iOS用のストリーミングメディア収集を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 1%
@@ -23,9 +23,9 @@ IOSまたはtvOS アプリのストリーミングメディアコレクション
 1. データ収集UIで、モバイルプロパティを開き、**[!UICONTROL 拡張機能]**&#x200B;を選択します。
 1. **[!UICONTROL カタログ]** タブで、**Adobe Streaming Media for Edge Network**&#x200B;拡張機能を見つけて、**[!UICONTROL インストール]**&#x200B;を選択します。
 1. 以下を設定し、保存します。
-   * **[!UICONTROL Channel]** – 各セッションで報告されるチャネル名。
-   * **[!UICONTROL Player name]** – 使用中のメディアプレーヤーの名前。
-   * **[!UICONTROL アプリケーションのバージョン]** — Player アプリケーションのバージョン。
+   * **[!UICONTROL チャネル]**：各セッションで報告されるチャネル名。
+   * **[!UICONTROL Player name]**：使用中のメディアプレーヤーの名前。
+   * **[!UICONTROL アプリケーションのバージョン]**：プレーヤーのアプリケーションのバージョン。
 1. 変更を公開してから、`AEPCore`、`AEPEdge`、`AEPEdgeIdentity`および`AEPEdgeMedia`の依存関係をアプリに追加し、Mobile Coreに登録します。
 
 ## メディアイベントの追跡

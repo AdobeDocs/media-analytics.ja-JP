@@ -3,9 +3,9 @@ title: アプリバージョン
 description: メディアプレーヤーアプリケーションのバージョン文字列を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ val config: Map<String, Any> = mapOf(
 MobileCore.updateConfiguration(config)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `ADB_CONSTANTS.CONFIGURATION.MEDIA_APP_VERSION`を使用して、SDK設定でアプリのバージョンを設定します。
 
@@ -149,6 +149,16 @@ var ADBMobileConfig = {
     "sdkVersion": "2.1.0"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+`ADBMobileConfig.json`の`mediaHeartbeat` セクションで`sdkVersion`を設定します。 このフィールドは、Roku 2.x SDK ライブラリのバージョンではなく、Player アプリケーションのバージョンをキャプチャします。
+
+```json
+"mediaHeartbeat": {
+  "sdkVersion": "2.1.0"
+}
 ```
 
 >[!TAB Media Collection API]

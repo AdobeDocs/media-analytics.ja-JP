@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 803
-ht-degree: 2%
+source-wordcount: 807
+ht-degree: 3%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 ## 実装手順
 
 1. **ユーザーが再生をトリガーするタイミングを特定** （ユーザーが「再生」または「自動再生」をクリックしたタイミング）。 コンテンツ名、ID、長さ、ストリームタイプ、メディアタイプを使用して、メディアオブジェクトを作成します。 フィールド定義については、[&#x200B; コンテンツ名](/help/implementation/variables/core/content-name.md)、[&#x200B; コンテンツ ID](/help/implementation/variables/core/content-id.md)、[&#x200B; コンテンツの長さ](/help/implementation/variables/core/content-length.md)、[&#x200B; ストリームタイプ &#x200B;](/help/implementation/variables/core/stream-type.md)および[&#x200B; コンテンツタイプ &#x200B;](/help/implementation/variables/core/content-type.md)を参照してください。
-1. **オプションでメタデータを添付** – 標準メタデータ（番組、季節、エピソードなど） データバリエーションを定義することができます。 標準メタデータキーの参照については、[Show](/help/implementation/variables/standard-metadata/show.md)、[Season](/help/implementation/variables/standard-metadata/season.md)、[Episode](/help/implementation/variables/standard-metadata/episode.md)、[Genre](/help/implementation/variables/standard-metadata/genre.md)、および[Network](/help/implementation/variables/standard-metadata/network.md)を参照してください。
+1. **オプションでメタデータを添付**：標準メタデータ（番組、季節、エピソードなど） データバリエーションを定義することができます。 標準メタデータキーの参照については、[Show](/help/implementation/variables/standard-metadata/show.md)、[Season](/help/implementation/variables/standard-metadata/season.md)、[Episode](/help/implementation/variables/standard-metadata/episode.md)、[Genre](/help/implementation/variables/standard-metadata/genre.md)、および[Network](/help/implementation/variables/standard-metadata/network.md)を参照してください。
 1. **セッションのトラッキングを開始するには、[&#x200B; セッション開始](/help/implementation/events/session/session-start.md)**&#x200B;に電話してください。 これにより、データとメタデータが読み込まれ、開始までの時間のQoS測定が開始されます。 SessionStartは、最初のフレームではなく、再生する&#x200B;*インテント*&#x200B;を追跡します。
 1. **コンテンツの最初のフレームが画面に表示されたら、[Play](/help/implementation/events/playback/play.md)**&#x200B;を呼び出します。
 1. **プレーヤーが一時停止したときに[一時停止の開始](/help/implementation/events/playback/pause-start.md)**&#x200B;を呼び出します。 再生が再開されたときに、再度再生を呼び出します。 別の再開イベントはありません。
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 ## コア再生
 
-次の例は、セッションの開始からコンテンツの完了、セッションの終了に至るまで、セッションフロー全体を示しています。
+次の例は、セッションの開始からコンテンツの完了およびセッション終了までのセッションフロー全体を示しています。
 
 プラットフォーム別の実装の詳細については、[&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、[再生](/help/implementation/events/playback/play.md)、[開始を一時停止](/help/implementation/events/playback/pause-start.md)、[&#x200B; セッション完了](/help/implementation/events/session/session-complete.md)、および[&#x200B; セッション終了](/help/implementation/events/session/session-end.md)を参照してください。
 
@@ -82,7 +82,7 @@ ht-degree: 2%
 
 ## アプリの割り込みの処理
 
-メディアアプリケーションの再生は、ユーザーが一時停止を押したり、アプリがバックグラウンドに移動したり、電話が到着したりするなど、さまざまな方法で中断する可能性があります。 原因に関係なく、トラッキング手順は同じです。
+メディアアプリケーションでの再生は、様々な方法で中断される場合があります。 例えば、利用者が一時停止を押した場合、アプリがバックグラウンドで再生された場合、電話が到着した場合などです。 原因に関係なく、トラッキング手順は同じです。
 
 1. アプリケーションが中断された場合（バックグラウンドに移動、メディアの一時停止など）、**PauseStart**&#x200B;を呼び出します。
 1. アプリケーションがフォアグラウンドに戻ったり、メディアの再生が再開されたりしたら、**Play**&#x200B;に電話してください。

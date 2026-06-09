@@ -3,10 +3,10 @@ title: メディアのダウンロード済みフラグ
 description: ダウンロードされたオフライン再生としてセッションにマークを付けると、ストリーミングセッションとは別にレポートされます。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 6%
+source-wordcount: '304'
+ht-degree: 5%
 
 ---
 
@@ -85,7 +85,7 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `createMediaSession`の呼び出し時に`xdm.mediaCollection.sessionDetails`内の`isDownloaded`を`true`に設定：
 
@@ -176,6 +176,10 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
 mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
+
+>[!TAB Roku 2.x]
+
+ダウンロードしたコンテンツトラッキングは、Roku 2.x SDKでは利用できません。 ダウンロードされたメディアの再生を報告するには、[Roku Edge SDK](/help/implementation/edge/roku.md)または[Media Collection API](/help/implementation/analytics-only/media-collection-api.md)を使用します。
 
 >[!TAB Media Collection API]
 

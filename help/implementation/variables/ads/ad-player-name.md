@@ -3,10 +3,10 @@ title: 広告プレーヤー名
 description: 広告をレンダリングするプレーヤーの名前を設定します。 広告プレーヤーは、メインコンテンツプレーヤーとは異なる場合があります。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 7%
+source-wordcount: '277'
+ht-degree: 6%
 
 ---
 
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.AD_PLAYER] = "Freewheel"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `media.adStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingDetails`内に`playerName`を設定します：
 
@@ -145,6 +145,18 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 var adInfo = ADBMobile.media.createAdObject("Ford F-150", "ad-2125", 1, 30);
 var metadata = { "a.media.ad.playerName": "Chromecast Player" };
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, metadata);
+```
+
+>[!TAB Roku 2.x]
+
+広告開始イベントをトラッキングする際に、コンテキストデータオブジェクトに広告プレーヤー名を渡します。
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+contextData = { "a.media.ad.playerName": "Roku Player" }
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo, contextData)
 ```
 
 >[!TAB Media Collection API]

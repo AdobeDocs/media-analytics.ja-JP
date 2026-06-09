@@ -15,7 +15,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 763
 ht-degree: 4%
@@ -65,7 +65,7 @@ Adobe Experience Platform Edge Networkを使用してメディアトラッキン
 |---|---|
 | `xdm.mediaReporting.sessionDetails.timePlayed` | 広告を除く、再生されたメインコンテンツの合計秒数 |
 | `xdm.mediaReporting.sessionDetails.totalTimePlayed` | 広告を含む合計経過秒数 |
-| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | 重複排除された秒：複数回閲覧されたインターバルは1回のみカウントされます |
+| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | 重複排除の秒： 複数回閲覧されたインターバルは、1回のみカウントされます |
 | `xdm.mediaReporting.sessionDetails.averageMinuteAudience` | `timePlayed`をコンテンツの長さで割りました |
 | `xdm.mediaReporting.sessionDetails.estimatedStreams` | 推定される同時ストリーム |
 | `xdm.mediaReporting.sessionDetails.adCount` | 開始した広告の数 |

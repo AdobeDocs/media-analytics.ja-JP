@@ -3,10 +3,10 @@ title: コンテンツ名
 description: コンテンツのわかりやすい名前（レポートに表示される人間が読めるタイトル）を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 9%
+source-wordcount: '247'
+ht-degree: 8%
 
 ---
 
@@ -85,7 +85,7 @@ var mediaInfo = Media.createMediaObject("Blinding Light",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `createMediaSession`の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`friendlyName`を設定：
 
@@ -169,6 +169,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+最初の引数として人間が読み取れる名前を`adb_media_init_mediainfo`に渡します：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("Blinding Light", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB Media Collection API]

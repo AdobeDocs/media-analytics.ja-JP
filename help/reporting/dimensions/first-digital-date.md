@@ -3,7 +3,7 @@ title: 最初のデジタル日付
 description: コンテンツがデジタルプラットフォームに最初に表示された日付をレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics （処理ルール） | `a.media.digitalDate`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
-| Adobe Analytics（分類） | [&#x200B; コンテンツ（ID） &#x200B;](content.md) ディメンションの分類 – **[[!UICONTROL ビデオメタデータ]](/help/reporting/setup/analytics-reporting.md)**&#x200B;がレポートスイートに対して有効になっている場合、Adobeはこの分類を自動的に作成します。 分類値の入力と維持はユーザーの責任です。 |
+| Adobe Analytics（分類） | [&#x200B; コンテンツ （ID） &#x200B;](content.md) ディメンションの分類。 **[[!UICONTROL ビデオメタデータ]](/help/reporting/setup/analytics-reporting.md)**&#x200B;がレポートスイートに対して有効になっている場合、Adobeはこの分類を自動的に作成します。 分類値の入力と維持はユーザーの責任です。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | データフィード（処理ルール） | `evar1`-`evar250`、`post_evar1`-`post_evar250` （処理ルール `a.media.digitalDate`がマッピングされるeVar） |
 | データフィード（分類） | なし – データフィードは分類をサポートしていません。 |

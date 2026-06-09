@@ -26,9 +26,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 720
+source-wordcount: 722
 ht-degree: 36%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 36%
 | 機能 | 説明 | 日付 |
 | --- | --- | --- |
 | **Web SDK サポート** | Web SDKまたはWeb SDKタグ拡張機能を使用して、ストリーミングメディア web データをAdobe Experience Platform Edge Networkに送信します。これにより、Customer Journey Analytics、Real-Time CDP、Journey Optimizer、イベント転送などのプラットフォームソリューションをまたいで統合されたコレクション方法が可能になります。 詳しくは、[&#x200B; ストリーミングメディア用のWeb SDKの設定](/help/implementation/edge/web-sdk.md)または[&#x200B; ストリーミングメディア用のWeb SDK タグ拡張機能の設定](/help/implementation/edge/web-sdk-tags.md)を参照してください。 | 2024年5月29日（PT） |
-| **Roku サポート** | Roku SDKを使用して、Adobe Experience Platformにストリーミングメディアデータを送信します。 詳しくは、[&#x200B; ストリーミングメディア用にRokuを設定](/help/implementation/edge/roku.md)を参照してください。 | 2024年4月12日（PT） |
+| **Roku サポート** | Roku Edge SDKを使用して、Adobe Experience Platformにストリーミングメディアデータを送信します。 詳しくは、[&#x200B; ストリーミングメディア用にRoku Edgeを設定](/help/implementation/edge/roku.md)を参照してください。 | 2024年4月12日（PT） |
 
 ## 2023年
 

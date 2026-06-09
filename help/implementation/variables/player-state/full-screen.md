@@ -3,10 +3,10 @@ title: フルスクリーン
 description: ビューアがフルスクリーン再生を開始および終了するタイミングを追跡し、バックエンドがフルスクリーンのエンゲージメントをレポートできるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 7%
+source-wordcount: '333'
+ht-degree: 6%
 
 ---
 
@@ -89,7 +89,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を使用して、状態が`statesStart`に追加された`media.statesUpdate` イベントを送信します：
 
@@ -166,6 +166,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 // When the user exits full-screen:
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用できません。 プレイヤーの状態をトラッキングするには、[Roku Edge SDK](/help/implementation/edge/roku.md)を使用します。
 
 >[!TAB Media Collection API]
 

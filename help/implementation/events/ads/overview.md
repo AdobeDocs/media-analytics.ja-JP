@@ -20,7 +20,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 513
 ht-degree: 3%
@@ -73,7 +73,7 @@ ht-degree: 3%
 **解決策：**&#x200B;広告が終了したときに直ちに呼び出すのではなく、各広告のAdComplete呼び出しを（最後の広告を除く）遅延させます。 次のように呼び出しをバッチ化します。
 
 * **広告が開始**&#x200B;するたびに：以前の広告が存在し、まだ完了とマークされていない場合は、新しい広告のAdStartを呼び出す&#x200B;*前*&#x200B;にAdCompleteを呼び出します。
-* **広告アセットの終了**&#x200B;ごとに、アドコンプリートをすぐに呼び出さないで、延期します。
+* すべての&#x200B;**広告アセットの終了**：すぐにAdCompleteを呼び出さないで、延期してください。
 * **広告ブレークが完了した場合**：最後の広告のAdCompleteを呼び出してから（まだ呼び出されていない場合）、AdBreakCompleteを呼び出します。
 
 このパターンにより、AdCompleteと次のAdStartが連続して実行され、ギャップがなくなります。

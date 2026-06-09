@@ -3,10 +3,10 @@ title: 章の開始
 description: コンテンツ内のチャプターセグメントの開始を知らせます。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 8%
+source-wordcount: '191'
+ht-degree: 7%
 
 ---
 
@@ -70,7 +70,7 @@ val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`に`eventType: "media.chapterStart"`と必須`chapterDetails`を呼び出します：
 
@@ -151,6 +151,17 @@ var chapterInfo = ADBMobile.media.createChapterObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+`adb_media_init_chapterinfo`で章オブジェクトを作成してから、イベントを追跡します。
+
+```brightscript
+adb = ADBMobile()
+chapterInfo = adb_media_init_chapterinfo("Pilot Episode - Opening", 1, 240.0, 0.0)  ' name, position, length, startTime
+
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 ```
 
 >[!TAB Media Collection API]

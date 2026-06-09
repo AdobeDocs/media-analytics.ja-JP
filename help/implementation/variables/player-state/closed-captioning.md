@@ -3,9 +3,9 @@ title: クローズドキャプション
 description: ビューアがクローズドキャプションのオンとオフを切り替えたタイミングを追跡し、バックエンドがキャプションのエンゲージメントをレポートできるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '327'
 ht-degree: 5%
 
 ---
@@ -87,7 +87,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を使用して、状態が`statesStart`に追加された`media.statesUpdate` イベントを送信します：
 
@@ -163,6 +163,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 // When the viewer disables captions:
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用できません。 プレイヤーの状態をトラッキングするには、[Roku Edge SDK](/help/implementation/edge/roku.md)を使用します。
 
 >[!TAB Media Collection API]
 
