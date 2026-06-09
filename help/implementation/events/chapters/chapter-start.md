@@ -13,9 +13,9 @@ ht-degree: 7%
 
 # 章の開始
 
-チャプター開始イベントは、コンテンツ内のチャプターの開始を示します。 チャプタートラッキングはオプションであり、コアメディアトラッキングには必要ありません。 チャプターは重複できません。新しいチャプターを開始する前に、[ チャプター完了](chapter-complete.md)または[ チャプタースキップ ](chapter-skip.md)を送信して、現在のチャプターを閉じてください。
+チャプター開始イベントは、コンテンツ内のチャプターの開始を示します。 チャプタートラッキングはオプションであり、コアメディアトラッキングには必要ありません。 チャプターは重複できません。新しいチャプターを開始する前に、[&#x200B; チャプター完了](chapter-complete.md)または[&#x200B; チャプタースキップ &#x200B;](chapter-skip.md)を送信して、現在のチャプターを閉じてください。
 
-* **前提条件**: [ セッション開始](../session/session-start.md)
+* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
 * **関連する指標**: [[!UICONTROL 章開始]](/help/reporting/metrics/chapter-starts.md)
 
 ## 推奨される実装タイプ
@@ -166,7 +166,7 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 
 >[!TAB Media Collection API]
 
-`chapterStart`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`chapterStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

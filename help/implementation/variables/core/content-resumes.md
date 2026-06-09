@@ -15,11 +15,11 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Content resumes**変数のデータ収集について説明します。 対応するレポート指標については、[[!UICONTROL  コンテンツの再開]](/help/reporting/metrics/content-resumes.md)を参照してください。*
+*このページでは、**Content resumes**&#x200B;変数のデータ収集について説明します。 対応するレポート指標については、[[!UICONTROL &#x200B; コンテンツの再開]](/help/reporting/metrics/content-resumes.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
-コンテンツは、以前に中断された再生を再開するセッションに変数フラグを付けます。 バックエンドがセッションの[[!UICONTROL  コンテンツ再開]](/help/reporting/metrics/content-resumes.md) イベントをカウントし、新しいストリームのカウントから除外するように、`media.sessionStart`に設定します。 ダイレクト APIおよびEdge APIの実装の場合、クライアントは再開されたセッションを検出し（例えば、バッファ、一時停止、または30分を超える停止の後）、それに応じてこのフラグを設定する責任があります。
+コンテンツは、以前に中断された再生を再開するセッションに変数フラグを付けます。 バックエンドがセッションの[[!UICONTROL &#x200B; コンテンツ再開]](/help/reporting/metrics/content-resumes.md) イベントをカウントし、新しいストリームのカウントから除外するように、`media.sessionStart`に設定します。 ダイレクト APIおよびEdge APIの実装の場合、クライアントは再開されたセッションを検出し（例えば、バッファ、一時停止、または30分を超える停止の後）、それに応じてこのフラグを設定する責任があります。
 
 | プロパティ | 値 |
 | --- | --- |
@@ -27,7 +27,7 @@ ht-degree: 6%
 | **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | 該当なし |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md) |
+| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md) |
 
 ## 推奨される実装タイプ
 
@@ -196,6 +196,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
 
 >[!ENDTABS]

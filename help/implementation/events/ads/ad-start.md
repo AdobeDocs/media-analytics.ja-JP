@@ -15,7 +15,7 @@ ht-degree: 7%
 
 広告開始イベントは、個々の広告が再生を開始したことを示します。 これは、[Ad break start](ad-break-start.md) / [Ad break complete](ad-break-complete.md) ペア内で発生する必要があります。
 
-* **前提条件**: [ セッション開始](../session/session-start.md)、[広告ブレーク開始](ad-break-start.md)
+* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[広告ブレーク開始](ad-break-start.md)
 * **関連する指標**: [[!UICONTROL 広告開始]](/help/reporting/metrics/ad-starts.md)
 
 >[!IMPORTANT]
@@ -173,7 +173,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 
 >[!TAB Media Collection API]
 
-`adStart`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`adStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

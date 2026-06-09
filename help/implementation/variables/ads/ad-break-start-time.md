@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Ad Break Start Time**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ポッドの位置](/help/reporting/dimensions/pod-position.md)を参照してください。*
+*このページでは、**Ad Break Start Time**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ポッドの位置](/help/reporting/dimensions/pod-position.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -178,6 +178,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

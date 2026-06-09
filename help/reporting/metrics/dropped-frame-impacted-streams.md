@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # ドロップしたフレームの影響を受けるストリーム
 
-**ドロップされたフレームの影響を受けるストリーム**&#x200B;指標は、少なくとも1つのフレームがドロップされたセッションをカウントします。 この指標はセッションレベルのブール値です。同じセッション内の複数のドロップは、影響を受ける1つのストリームとしてカウントされます。 合計ドロップボリュームには、[ ドロップされたフレーム ](dropped-frames.md)を使用します。
+**ドロップされたフレームの影響を受けるストリーム**&#x200B;指標は、少なくとも1つのフレームがドロップされたセッションをカウントします。 この指標はセッションレベルのブール値です。同じセッション内の複数のドロップは、影響を受ける1つのストリームとしてカウントされます。 合計ドロップボリュームには、[&#x200B; ドロップされたフレーム &#x200B;](dropped-frames.md)を使用します。
 
 ## この指標の計算方法
 
@@ -21,7 +21,7 @@ ht-degree: 11%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | [[!UICONTROL  メディア品質]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.qoe.droppedFrames`から自動的に収集されます。 |
+| Adobe Analytics | [[!UICONTROL &#x200B; メディア品質]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.qoe.droppedFrames`から自動的に収集されます。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
 | Audience Manager | `c_contextdata.a.media.qoe.droppedFrames` |
