@@ -316,7 +316,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 * 処理後、カスタムメタデータはコンテキストデータ変数としてAdobe Analyticsに転送されます。 `_tenant`接頭辞は自動的に削除されるので、処理ルールは`_tenant`の後のフィールドパスのみを参照します（例：`_mycompany.contentCategory`は`contentCategory`になります）。
 * `_data`を介して送信されたデータもAdobe Analyticsに転送され、処理ルールを介して利用できます
-* 処理ルールを使用して、コンテキストデータ変数をeVar、prop、またはその他のAnalytics変数にマッピングします。 詳しくは、[Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)のデータ変数マッピングを参照してください。
+* 処理ルールを使用して、コンテキストデータ変数をeVar、prop、またはその他のAnalytics変数にマッピングします。 詳しくは、[Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping)のデータ変数マッピングを参照してください。
 
 **Adobe Experience Platform:**
 
@@ -336,5 +336,5 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 >[!MORELIKETHIS]
 >
 >* [Media Collection API カスタムメタデータのサポート &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
->* [&#x200B; メディアコレクションの詳細データタイプ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
->* [Adobe Experience Platform Edge Networkのデータ変数マッピング &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)
+>* [&#x200B; メディアコレクションの詳細データタイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Adobe Experience Platform Edge Networkのデータ変数マッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping)

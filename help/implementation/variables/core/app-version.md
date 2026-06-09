@@ -27,7 +27,7 @@ ht-degree: 2%
 
 | プロパティ | 値 |
 | --- | --- |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Media Collection API パラメーター** | `media.sdkVersion` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md) |
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 >[!TAB Web SDK]
 
-[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)の呼び出し時に`streamingMedia`設定オブジェクトに`appVersion`を設定します：
+[`configure`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/configure/streamingmedia)の呼び出し時に`streamingMedia`設定オブジェクトに`appVersion`を設定します：
 
 ```javascript
 alloy("configure", {

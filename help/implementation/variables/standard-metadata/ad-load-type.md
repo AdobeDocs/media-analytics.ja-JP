@@ -24,7 +24,7 @@ ht-degree: 3%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.adLoad` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.adLoad` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 >[!TAB Web SDK]
 
-[`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession)の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`adLoad`を設定：
+[`createMediaSession`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/createmediasession)の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`adLoad`を設定：
 
 ```javascript
 alloy("createMediaSession", {
