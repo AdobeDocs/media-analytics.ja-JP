@@ -3,10 +3,10 @@ title: フルスクリーン
 description: ビューアがフルスクリーン再生を開始および終了するタイミングを追跡し、バックエンドがフルスクリーンのエンゲージメントをレポートできるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 7%
+source-wordcount: '333'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**フルスクリーン**&#x200B;プレーヤーの状態に関するデータ収集について説明します。 対応するレポート指標については、[&#x200B; フルスクリーンの影響を受けるストリーム &#x200B;](/help/reporting/metrics/full-screen-streams-impacted.md)、[&#x200B; フルスクリーン数](/help/reporting/metrics/full-screen-count.md)、および[&#x200B; フルスクリーン合計期間](/help/reporting/metrics/full-screen-total-duration.md)を参照してください。*
+*このページでは、**フルスクリーン**プレーヤーの状態に関するデータ収集について説明します。 対応するレポート指標については、[ フルスクリーンの影響を受けるストリーム ](/help/reporting/metrics/full-screen-streams-impacted.md)、[ フルスクリーン数](/help/reporting/metrics/full-screen-count.md)、および[ フルスクリーン合計期間](/help/reporting/metrics/full-screen-total-duration.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.states.fullscreen.set`, `a.media.states.fullscreen.count`, `a.media.states.fullscreen.time` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "fullscreen"`を含むエントリ） |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "fullscreen"`を含むエントリ） |
 | **Audience Manager特性** | `c_contextdata.a.media.states.fullscreen.set`, `c_contextdata.a.media.states.fullscreen.count`, `c_contextdata.a.media.states.fullscreen.time` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [状態開始](/help/implementation/events/player-state/state-start.md)、[状態終了](/help/implementation/events/player-state/state-end.md) |
@@ -89,7 +89,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を使用して、状態が`statesStart`に追加された`media.statesUpdate` イベントを送信します：
 
@@ -167,6 +167,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
 
+>[!TAB Roku 2.x]
+
+Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用できません。 プレイヤーの状態をトラッキングするには、[Roku Edge SDK](/help/implementation/edge/roku.md)を使用します。
+
 >[!TAB Media Collection API]
 
 視聴者がフルスクリーンに入ったときに`stateStart` POST リクエストを送信し、視聴者が終了したときに`stateEnd` POSTを送信します。
@@ -191,6 +195,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

@@ -3,9 +3,9 @@ title: インフォーカス
 description: プレーヤーがビューアの画面にいつフォーカスしているかを追跡し、バックエンドでフォーカスエンゲージメントをレポートできます。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '339'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**In focus**&#x200B;プレーヤー状態のデータ収集について説明します。 対応するレポート指標については、[&#x200B; フォーカスの影響を受けるストリーム &#x200B;](/help/reporting/metrics/in-focus-streams-impacted.md)、[&#x200B; フォーカスのカウント &#x200B;](/help/reporting/metrics/in-focus-count.md)および[&#x200B; フォーカスの合計期間](/help/reporting/metrics/in-focus-total-duration.md)を参照してください。*
+*このページでは、**In focus**プレーヤー状態のデータ収集について説明します。 対応するレポート指標については、[ フォーカスの影響を受けるストリーム ](/help/reporting/metrics/in-focus-streams-impacted.md)、[ フォーカスのカウント ](/help/reporting/metrics/in-focus-count.md)および[ フォーカスの合計期間](/help/reporting/metrics/in-focus-total-duration.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 5%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.states.infocus.set`, `a.media.states.infocus.count`, `a.media.states.infocus.time` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "inFocus"`を含むエントリ） |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "inFocus"`を含むエントリ） |
 | **Audience Manager特性** | `c_contextdata.a.media.states.infocus.set`, `c_contextdata.a.media.states.infocus.count`, `c_contextdata.a.media.states.infocus.time` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [状態開始](/help/implementation/events/player-state/state-start.md)、[状態終了](/help/implementation/events/player-state/state-end.md) |
@@ -87,7 +87,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を使用して、状態が`statesStart`に追加された`media.statesUpdate` イベントを送信します：
 
@@ -164,6 +164,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
 
+>[!TAB Roku 2.x]
+
+Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用できません。 プレイヤーの状態をトラッキングするには、[Roku Edge SDK](/help/implementation/edge/roku.md)を使用します。
+
 >[!TAB Media Collection API]
 
 プレイヤーがフォーカスを得たときに`stateStart` POST リクエストを送信し、フォーカスが失われたときに`stateEnd` POSTを送信します。
@@ -178,6 +182,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

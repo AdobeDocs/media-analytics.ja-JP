@@ -3,10 +3,10 @@ title: コンテンツチャネル
 description: コンテンツが再生される配信ステーション、ネットワーク、またはプロパティを識別するチャネルを設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 7%
+source-wordcount: '270'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツチャネル**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; コンテンツチャネル &#x200B;](/help/reporting/dimensions/content-channel.md)を参照してください。*
+*このページでは、**コンテンツチャネル**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ コンテンツチャネル ](/help/reporting/dimensions/content-channel.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,10 +24,10 @@ ht-degree: 7%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.channel` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.channel` |
 | **必須** | はい |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `createMediaSession`の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`channel`を設定：
 
@@ -159,6 +159,16 @@ var metadata = { "a.media.channel": "Sports" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
 ```
 
+>[!TAB Roku 2.x]
+
+`ADBMobileConfig.json`の`mediaHeartbeat` セクションで`channel`を設定します。 チャネルは設定値であり、セッションごとの値ではありません。
+
+```json
+"mediaHeartbeat": {
+  "channel": "Sports"
+}
+```
+
 >[!TAB Media Collection API]
 
 `sessionStart` POST リクエストの`params` オブジェクトに`media.channel`を含めます：
@@ -173,6 +183,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, metadata);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
 
 >[!ENDTABS]

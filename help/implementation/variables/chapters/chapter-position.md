@@ -3,10 +3,10 @@ title: 章の位置
 description: コンテンツ内で章インデックスを設定します。 チャプターIDを正しく自動生成するには、チャプターの位置が必要です。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 7%
+source-wordcount: '246'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**章の位置**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[章の位置](/help/reporting/dimensions/chapter-position.md)を参照してください。*
+*このページでは、**章の位置**変数のデータ収集について説明します。 対応するレポートディメンションについては、[章の位置](/help/reporting/dimensions/chapter-position.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.chapter.position` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.chapter.position` |
 | **必須** | いいえ（モバイル SDK）；はい（Edge、Media Collection API） |
 | **様が**&#x200B;様と共に送信されました | [章の開始](/help/implementation/events/chapters/chapter-start.md)、章の終了 |
@@ -81,7 +81,7 @@ val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `media.chapterStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.chapterDetails`内に`index`を設定します：
 
@@ -160,6 +160,17 @@ var chapterInfo = ADBMobile.media.createChapterObject(
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+章位置を2番目の引数（`position`）として`adb_media_init_chapterinfo`に渡します：
+
+```brightscript
+adb = ADBMobile()
+chapterInfo = adb_media_init_chapterinfo("Pilot Episode - Opening", 1, 240.0, 0.0)  ' name, position, length, startTime
+
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
+```
+
 >[!TAB Media Collection API]
 
 `chapterStart` POST リクエストの`params` オブジェクトに`media.chapter.index`を含めます：
@@ -174,6 +185,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

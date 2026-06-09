@@ -3,9 +3,9 @@ title: 章のスキップ
 description: 視聴者が章をスキップしたことを知らせる。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '148'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 章スキップイベントは、ビューアが章を終了する前にスキップしたことを示します。 ビューアが章の境界を通過したときに、完了まで見ずに送信します。 章が最後まで再生される場合は、[章完了](chapter-complete.md)を送信します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[章開始](chapter-start.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)、[章開始](chapter-start.md)
 * **関連する指標**：なし
 
 ## 推奨される実装タイプ
@@ -54,7 +54,7 @@ tracker.trackEvent(event: MediaEvent.ChapterSkip, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.ChapterSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.chapterSkip"`と呼び出します：
 
@@ -112,9 +112,18 @@ tracker.trackEvent(ADB.Media.Event.ChapterSkip, null, null);
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
 ```
 
+>[!TAB Roku 2.x]
+
+`MEDIA_CHAPTER_SKIP` イベントタイプで`mediaTrackEvent`を呼び出します：
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_SKIP)
+```
+
 >[!TAB Media Collection API]
 
-`chapterSkip`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`chapterSkip`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

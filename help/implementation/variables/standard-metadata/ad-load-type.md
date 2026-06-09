@@ -3,9 +3,9 @@ title: 広告の読み込みタイプ
 description: ストリーミングセッションの広告ロードのタイプを設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '269'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**広告の読み込みタイプ**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[広告読み込み](/help/reporting/dimensions/ad-load-type.md)を参照してください。*
+*このページでは、**広告の読み込みタイプ**変数のデータ収集について説明します。 対応するレポートディメンションについては、[広告読み込み](/help/reporting/dimensions/ad-load-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,10 +24,10 @@ ht-degree: 3%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.adLoad` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.adLoad` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 >[!TAB Web SDK]
 
-[`createMediaSession`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/createmediasession)の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`adLoad`を設定：
+[`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession)の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`adLoad`を設定：
 
 ```javascript
 alloy("createMediaSession", {
@@ -79,7 +79,7 @@ videoMetadata[MediaConstants.VideoMetadataKeys.AD_LOAD] = "linear"
 tracker.trackSessionStart(mediaInfo, videoMetadata)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `createMediaSession`を使用して`sessionDetails`内に`adLoad`を設定します：
 
@@ -152,6 +152,21 @@ mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetada
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+`MEDIA_VideoMetadataKeyAD_LOAD`を使用して、`mediaTrackSessionStart`を呼び出す前に、メディアオブジェクトの標準メタデータで広告読み込みタイプを設定します。
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyAD_LOAD] = "linear"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
+```
+
 >[!TAB Media Collection API]
 
 `sessionStart` POST リクエストの`params` オブジェクトに`media.adLoad`を含めます：
@@ -166,6 +181,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
 
 >[!ENDTABS]

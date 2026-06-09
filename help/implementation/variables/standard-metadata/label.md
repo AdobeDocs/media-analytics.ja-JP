@@ -3,10 +3,10 @@ title: ラベル
 description: オーディオコンテンツをリリースしたレコードラベルを設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 10%
+source-wordcount: '232'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Label**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ラベル &#x200B;](/help/reporting/dimensions/label.md)を参照してください。*
+*このページでは、**Label**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ラベル ](/help/reporting/dimensions/label.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,10 +24,10 @@ ht-degree: 10%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.label` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.label` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -73,7 +73,7 @@ metadata[MediaConstants.AudioMetadataKeys.LABEL] = "Capitol Records"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `createMediaSession`を使用して`sessionDetails`内に`label`を設定します：
 
@@ -146,6 +146,21 @@ mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetada
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+`MEDIA_AudioMetadataKeyLABEL`を使用して、`mediaTrackSessionStart`を呼び出す前に、メディアオブジェクトの標準メタデータにレコードラベルを設定します。
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Track", "audio-123", 240.0, adb.MEDIA_STREAM_TYPE_AOD, adb.MEDIA_TYPE_AUDIO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_AudioMetadataKeyLABEL] = "Capitol Records"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
+```
+
 >[!TAB Media Collection API]
 
 `params` オブジェクトに`media.label`を含めます：
@@ -160,6 +175,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
 
 >[!ENDTABS]

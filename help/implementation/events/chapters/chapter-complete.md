@@ -3,19 +3,19 @@ title: 章完了
 description: チャプターセグメントの再生が終了したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 11%
+source-wordcount: '141'
+ht-degree: 10%
 
 ---
 
 
 # 章完了
 
-チャプターが完了すると、チャプターが再生を終了したことを示すイベントシグナルが表示されます。 ビューアが章の終わりに達したときに送信します。 ビューアが章をスキップした場合は、代わりに[章スキップ &#x200B;](chapter-skip.md)を送信します。
+チャプターが完了すると、チャプターが再生を終了したことを示すイベントシグナルが表示されます。 ビューアが章の終わりに達したときに送信します。 ビューアが章をスキップした場合は、代わりに[章スキップ ](chapter-skip.md)を送信します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[章開始](chapter-start.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)、[章開始](chapter-start.md)
 * **関連する指標**: [[!UICONTROL 章完了]](/help/reporting/metrics/chapter-completes.md)
 
 ## 推奨される実装タイプ
@@ -54,7 +54,7 @@ tracker.trackEvent(event: MediaEvent.ChapterComplete, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.ChapterComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.chapterComplete"`と呼び出します：
 
@@ -112,9 +112,18 @@ tracker.trackEvent(ADB.Media.Event.ChapterComplete, null, null);
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterComplete);
 ```
 
+>[!TAB Roku 2.x]
+
+`MEDIA_CHAPTER_COMPLETE` イベントタイプで`mediaTrackEvent`を呼び出します：
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_COMPLETE)
+```
+
 >[!TAB Media Collection API]
 
-`chapterComplete`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`chapterComplete`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

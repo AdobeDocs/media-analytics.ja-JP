@@ -3,9 +3,9 @@ title: 広告スキップ
 description: 視聴者が広告をスキップしたことを知らせるシグナル。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '176'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 広告スキップイベントは、視聴者が広告を終了する前にスキップしたことを示します。 ビューアがスキップボタンを選択したときに送信します。 広告が完了まで再生される場合は、代わりに[Ad complete](ad-complete.md)を送信します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[&#x200B; アドブレーク開始](ad-break-start.md)、[&#x200B; アドスタート &#x200B;](ad-start.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)、[ アドブレーク開始](ad-break-start.md)、[ アドスタート ](ad-start.md)
 * **関連する指標**：なし
 
 >[!IMPORTANT]
@@ -58,7 +58,7 @@ tracker.trackEvent(event: MediaEvent.AdSkip, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.AdSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.adSkip"`と呼び出します：
 
@@ -116,9 +116,18 @@ tracker.trackEvent(ADB.Media.Event.AdSkip, null, null);
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdSkip);
 ```
 
+>[!TAB Roku 2.x]
+
+`MEDIA_AD_SKIP` イベントタイプで`mediaTrackEvent`を呼び出します：
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_SKIP)
+```
+
 >[!TAB Media Collection API]
 
-`adSkip`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`adSkip`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

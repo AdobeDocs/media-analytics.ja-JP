@@ -3,7 +3,7 @@ title: フルスクリーンの影響を受けるストリーム
 description: ビューアがフルスクリーンで少なくとも1回入力したセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -15,11 +15,11 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、フルスクリーンの影響を受ける&#x200B;**ストリーム**&#x200B;のレポート指標について説明します。 この変数の収集方法については、[全画面](/help/implementation/variables/player-state/full-screen.md)を参照してください。*
+*このページでは、フルスクリーンの影響を受ける&#x200B;**ストリーム**のレポート指標について説明します。 この変数の収集方法については、[全画面](/help/implementation/variables/player-state/full-screen.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
-フルスクリーンの影響を受ける&#x200B;**ストリーム**&#x200B;指標では、ビューアがフルスクリーンに少なくとも1回参加したセッションがカウントされます。 この指標は、セッションレベルのブール値です。影響を受ける1つのストリームと同じセッション数の中で、複数のフルスクリーンエントリが表示されます。 全画面表示の合計配信数には、[全画面数](full-screen-count.md)を使用します。
+フルスクリーンの影響を受ける&#x200B;**ストリーム**&#x200B;指標では、ビューアがフルスクリーンに少なくとも1回参加したセッションがカウントされます。 この指標はセッションレベルのブール値です。同じセッション内の複数のフルスクリーンエントリが、影響を受ける1つのストリームとしてカウントされます。 全画面表示の合計配信数には、[全画面数](full-screen-count.md)を使用します。
 
 ## この指標の計算方法
 
@@ -28,6 +28,6 @@ ht-degree: 8%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Player State Tracking]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.states.fullscreen.set`から自動的に収集されます。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.states[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details) エントリ （`name = "fullscreen"`、フィールド `isSet`） |
-| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
+| Customer Journey Analytics | [`xdm.mediaReporting.states[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) エントリ （`name = "fullscreen"`、フィールド `isSet`） |
+| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
 | Audience Manager | `c_contextdata.a.media.states.fullscreen.set` |

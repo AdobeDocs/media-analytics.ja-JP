@@ -3,10 +3,10 @@ title: シーズン
 description: エピソード別にエンゲージメントを分割できるように、コンテンツのシーズン番号を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 9%
+source-wordcount: '250'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**シーズン**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; シーズン &#x200B;](/help/reporting/dimensions/season.md)を参照してください。*
+*このページでは、**シーズン**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ シーズン ](/help/reporting/dimensions/season.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,10 +24,10 @@ ht-degree: 9%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.season` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.season` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -73,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.SEASON] = "2"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `createMediaSession`を使用して`sessionDetails`内に`season`を設定します：
 
@@ -146,6 +146,21 @@ mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetada
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+`MEDIA_VideoMetadataKeySEASON`を使用して、`mediaTrackSessionStart`を呼び出す前に、メディアオブジェクトの標準メタデータでシーズン番号を設定します。
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeySEASON] = "2"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
+```
+
 >[!TAB Media Collection API]
 
 `params` オブジェクトに`media.season`を含めます：
@@ -160,6 +175,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
 
 >[!ENDTABS]

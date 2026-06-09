@@ -6,20 +6,14 @@ exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/LSKiNN-obuHzVYKbAai52SQ2MvI6-gzgb-G-x0DH2dE
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 342
-ht-degree: 100%
+source-wordcount: 331
+ht-degree: 73%
 
 ---
 
@@ -33,14 +27,11 @@ ht-degree: 100%
 
 例えば、`adBreakStart` イベントの後に `adStart` イベントを送信できます。 これは、広告の時間内に広告を開始する必要があるため、一般的な使用例です。
 
-広告の準備が整い、バッファーが不要な場合、ほぼ瞬時に両方のイベントが発生し、両方のイベントの `playerTime.ts` は非常に近づきますが、等しくなることはありません。
-
-> 並べ替えアルゴリズムはどのイベントが最初に発生したかを認識しないため、どのようなイベントでも、イベントの「playerTime.ts」が等しくなることはありません。 2 つの連続したイベントには、少なくとも 1 ミリ秒のタイムスタンプの違いがあるはずです。
+広告の準備が整っていて、バッファーが不要な場合、両方のイベントはほぼ瞬時に発生し、両方のイベントの`playerTime.ts`は互いに非常に近い状態になります。 しかし、並べ替えアルゴリズムは最初に何が起こったのかを知らないので、それらは決して等しくはありません。 連続したイベントに対しては、常に少なくとも1 ミリ秒のタイムスタンプ差を保持します。
 
 ネットワーク呼び出しの発生時には、両方のイベントが非常に近い時間で発生するので、到着時の順序が正しくなくなる場合があります。 この例では、`adStart` イベントが `adBreakStart` イベントの前に到達します。
 
-
-イベントの時間枠（5 秒または最大 10 個のイベント）があります。 イベントは、処理パイプラインに送信する前にバッファリングされます。 条件が満たされた場合 — 5 秒を経過したか 10 個を超えるイベントが受信されると、`playerTime.ts` に基づいてイベントが並べ替えられ、新しい順序で処理パイプラインに送信されます。
+イベントの時間枠（5 秒または最大 10 個のイベント）があります。 イベントは、処理パイプラインに送信する前にバッファリングされます。 条件が満たされると（5秒経過したか10個を超えるイベントを受信した場合）、イベントは`playerTime.ts`に基づいて並べ替えられ、その後、新しい順序で処理パイプラインに送信されます。
 
 >[!IMPORTANT]
 >

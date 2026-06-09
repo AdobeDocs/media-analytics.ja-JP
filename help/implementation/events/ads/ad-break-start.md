@@ -3,10 +3,10 @@ title: 広告休憩の開始
 description: 広告ブレークの開始（1つ以上の広告のシーケンス）を通知します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 7%
+source-wordcount: '220'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 広告枠の開始イベントは、広告枠の開始を示します。 広告ブレークとは、1つ以上の広告のシーケンスです。 1つの広告が再生される場合でも、`adStart`、`adComplete`および`adSkip` イベントごとに`adBreakStart`と`adBreakComplete` ペアの間で発生する必要があります。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)
 * **関連する指標**：なし
 
 >[!IMPORTANT]
@@ -71,7 +71,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`に`eventType: "media.adBreakStart"`と必須`advertisingPodDetails`を呼び出します：
 
@@ -150,9 +150,20 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
 ```
 
+>[!TAB Roku 2.x]
+
+`adb_media_init_adbreakinfo`で広告ブレーク オブジェクトを作成してから、イベントを追跡します。 Roku パラメーターの順序に注意してください：`name, startTime, position`。
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("pre-roll", 0.0, 1)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
+```
+
 >[!TAB Media Collection API]
 
-`adBreakStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`adBreakStart`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

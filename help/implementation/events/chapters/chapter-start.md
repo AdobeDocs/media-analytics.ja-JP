@@ -3,19 +3,19 @@ title: 章の開始
 description: コンテンツ内のチャプターセグメントの開始を知らせます。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 8%
+source-wordcount: '191'
+ht-degree: 7%
 
 ---
 
 
 # 章の開始
 
-チャプター開始イベントは、コンテンツ内のチャプターの開始を示します。 チャプタートラッキングはオプションであり、コアメディアトラッキングには必要ありません。 チャプターは重複できません。新しいチャプターを開始する前に、[&#x200B; チャプター完了](chapter-complete.md)または[&#x200B; チャプタースキップ &#x200B;](chapter-skip.md)を送信して、現在のチャプターを閉じてください。
+チャプター開始イベントは、コンテンツ内のチャプターの開始を示します。 チャプタートラッキングはオプションであり、コアメディアトラッキングには必要ありません。 チャプターは重複できません。新しいチャプターを開始する前に、[ チャプター完了](chapter-complete.md)または[ チャプタースキップ ](chapter-skip.md)を送信して、現在のチャプターを閉じてください。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)
 * **関連する指標**: [[!UICONTROL 章開始]](/help/reporting/metrics/chapter-starts.md)
 
 ## 推奨される実装タイプ
@@ -70,7 +70,7 @@ val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`に`eventType: "media.chapterStart"`と必須`chapterDetails`を呼び出します：
 
@@ -153,9 +153,20 @@ var chapterInfo = ADBMobile.media.createChapterObject(
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+`adb_media_init_chapterinfo`で章オブジェクトを作成してから、イベントを追跡します。
+
+```brightscript
+adb = ADBMobile()
+chapterInfo = adb_media_init_chapterinfo("Pilot Episode - Opening", 1, 240.0, 0.0)  ' name, position, length, startTime
+
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
+```
+
 >[!TAB Media Collection API]
 
-`chapterStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`chapterStart`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

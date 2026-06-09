@@ -3,9 +3,9 @@ title: 広告の長さ
 description: 各広告の長さを秒単位で設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '218'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Ad length**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[Ad length](/help/reporting/dimensions/ad-length.md)を参照してください。*
+*このページでは、**Ad length**変数のデータ収集について説明します。 対応するレポートディメンションについては、[Ad length](/help/reporting/dimensions/ad-length.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 8%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.length` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.ad.length` |
 | **必須** | はい |
 | **様が**&#x200B;様と共に送信されました | [広告の開始](/help/implementation/events/ads/ad-start.md)、広告の終了 |
@@ -79,7 +79,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `media.adStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingDetails`内に`length`を設定します：
 
@@ -159,6 +159,17 @@ var adInfo = ADBMobile.media.createAdObject(
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+広告の長さを4番目の引数として`adb_media_init_adinfo`に秒単位で渡します。
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)  ' name, id, position, length
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
+```
+
 >[!TAB Media Collection API]
 
 `adStart` POST リクエストの`params` オブジェクトに`media.ad.length`を含めます：
@@ -173,6 +184,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

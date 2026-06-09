@@ -3,10 +3,10 @@ title: キャンペーン ID
 description: 各広告のキャンペーン IDを設定し、キャンペーンごとにエンゲージメントを集約できるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 10%
+source-wordcount: '247'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Campaign ID**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; キャンペーン ID](/help/reporting/dimensions/campaign-id.md)を参照してください。*
+*このページでは、**Campaign ID**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ キャンペーン ID](/help/reporting/dimensions/campaign-id.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 10%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.campaign` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.ad.campaign` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [広告の開始](/help/implementation/events/ads/ad-start.md)、広告の終了 |
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.CAMPAIGN_ID] = "fall-2024"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `media.adStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingDetails`内に`campaignID`を設定します：
 
@@ -148,6 +148,21 @@ adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+標準広告メタデータオブジェクトの`MEDIA_AdMetadataKeyCAMPAIGN_ID`を使用してキャンペーン IDを設定します。
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+standardAdMetadata = {}
+standardAdMetadata[adb.MEDIA_AdMetadataKeyCAMPAIGN_ID] = "fall-2024"
+adInfo[adb.MEDIA_STANDARD_AD_METADATA] = standardAdMetadata
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
+```
+
 >[!TAB Media Collection API]
 
 `params` オブジェクトに`media.ad.campaignId`を含めます：
@@ -162,6 +177,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

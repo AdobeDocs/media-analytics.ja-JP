@@ -3,7 +3,7 @@ title: フォーカスの影響を受けるストリーム
 description: 少なくとも1回はプレイヤーが注目していたセッションをカウントします。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 8%
@@ -15,11 +15,11 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、フォーカスの影響を受ける&#x200B;**ストリーム**&#x200B;のレポート指標について説明します。 この変数の収集方法については、[&#x200B; フォーカス中](/help/implementation/variables/player-state/in-focus.md)を参照してください。*
+*このページでは、フォーカスの影響を受ける&#x200B;**ストリーム**のレポート指標について説明します。 この変数の収集方法については、[ フォーカス中](/help/implementation/variables/player-state/in-focus.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
-フォーカスの影響を受ける&#x200B;**ストリーム**&#x200B;指標では、少なくとも1回はプレイヤーがフォーカスを当てていたセッションがカウントされます。 この指標はセッションレベルのブール値で、影響を受ける1つのストリームと同じセッション数の中の複数のフォーカスイベントを指します。 フォーカスイベントの合計数に対して、[&#x200B; フォーカス数](in-focus-count.md)を使用します。
+フォーカスの影響を受ける&#x200B;**ストリーム**&#x200B;指標では、少なくとも1回はプレイヤーがフォーカスを当てていたセッションがカウントされます。 この指標はセッションレベルのブール値です。同じセッション内の複数のフォーカスイベントは、影響を受ける1つのストリームとしてカウントされます。 フォーカスイベントの合計数に対して、[ フォーカス数](in-focus-count.md)を使用します。
 
 ## この指標の計算方法
 
@@ -28,6 +28,6 @@ ht-degree: 8%
 | レポートシステム | ソース |
 | --- | --- |
 | Adobe Analytics | [[!UICONTROL Player State Tracking]](/help/reporting/setup/analytics-reporting.md)が有効になっている場合、コンテキストデータ `a.media.states.infocus.set`から自動的に収集されます。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.states[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details) エントリ （`name = "inFocus"`、フィールド `isSet`） |
-| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
+| Customer Journey Analytics | [`xdm.mediaReporting.states[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) エントリ （`name = "inFocus"`、フィールド `isSet`） |
+| データフィード | `event_list`、`post_event_list` （[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)参照） |
 | Audience Manager | `c_contextdata.a.media.states.infocus.set` |

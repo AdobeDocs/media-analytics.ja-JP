@@ -3,10 +3,10 @@ title: 広告休憩の開始時間
 description: コンテンツ内の広告ブレークの開始時間（オフセット）を秒単位で設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 7%
+source-wordcount: '259'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Ad Break Start Time**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ポッドの位置](/help/reporting/dimensions/pod-position.md)を参照してください。*
+*このページでは、**Ad Break Start Time**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ポッドの位置](/help/reporting/dimensions/pod-position.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.podSecond` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.ad.podSecond` |
 | **必須** | はい |
 | **様が**&#x200B;様と共に送信されました | [広告ブレーク開始](/help/implementation/events/ads/ad-break-start.md)、広告クローズ |
@@ -78,7 +78,7 @@ val adBreakObject = Media.createAdBreakObject("mid-roll-1",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `media.adBreakStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingPodDetails`内に`offset`を設定します：
 
@@ -153,6 +153,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
 ```
 
+>[!TAB Roku 2.x]
+
+2番目の引数として開始時間を秒単位で`adb_media_init_adbreakinfo`に渡します。 Roku パラメーターの順序に注意してください：`name, startTime, position`。
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("mid-roll-1", 90.0, 2)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
+```
+
 >[!TAB Media Collection API]
 
 `adBreakStart` POST リクエストの`params` オブジェクトに`media.ad.podSecond`を含めます：
@@ -167,6 +178,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

@@ -3,19 +3,19 @@ title: 広告が完了
 description: 個々の広告が再生を終了したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 9%
+source-wordcount: '173'
+ht-degree: 8%
 
 ---
 
 
 # 広告が完了
 
-広告完了イベントは、個々の広告が再生を完了したことを示します。 広告の再生後から完了まで送信します。 視聴者が広告をスキップした場合は、代わりに[広告スキップ &#x200B;](ad-skip.md)を送信します。
+広告完了イベントは、個々の広告が再生を完了したことを示します。 広告の再生後から完了まで送信します。 視聴者が広告をスキップした場合は、代わりに[広告スキップ ](ad-skip.md)を送信します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[&#x200B; アドブレーク開始](ad-break-start.md)、[&#x200B; アドスタート &#x200B;](ad-start.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)、[ アドブレーク開始](ad-break-start.md)、[ アドスタート ](ad-start.md)
 * **関連する指標**: [[!UICONTROL 広告が]](/help/reporting/metrics/ad-completes.md)を完了しました
 
 >[!IMPORTANT]
@@ -58,7 +58,7 @@ tracker.trackEvent(event: MediaEvent.AdComplete, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.AdComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.adComplete"`と呼び出します：
 
@@ -116,9 +116,18 @@ tracker.trackEvent(ADB.Media.Event.AdComplete, null, null);
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
 ```
 
+>[!TAB Roku 2.x]
+
+`MEDIA_AD_COMPLETE` イベントタイプで`mediaTrackEvent`を呼び出します：
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_COMPLETE)
+```
+
 >[!TAB Media Collection API]
 
-`adComplete`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`adComplete`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

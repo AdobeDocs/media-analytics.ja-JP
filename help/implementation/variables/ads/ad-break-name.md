@@ -3,9 +3,9 @@ title: 広告ブレーク名
 description: 親の広告枠のわかりやすい名前を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '267'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Ad break name**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[Pod name](/help/reporting/dimensions/pod-name.md)を参照してください。*
+*このページでは、**Ad break name**変数のデータ収集について説明します。 対応するレポートディメンションについては、[Pod name](/help/reporting/dimensions/pod-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 6%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.podFriendlyName` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **必須** | はい（モバイル SDK）、いいえ（Edge、Media Collection API） |
 | **様が**&#x200B;様と共に送信されました | [広告ブレーク開始](/help/implementation/events/ads/ad-break-start.md)、広告クローズ |
@@ -78,7 +78,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `media.adBreakStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingPodDetails`内に`friendlyName`を設定します：
 
@@ -154,6 +154,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
 ```
 
+>[!TAB Roku 2.x]
+
+広告ブレーク名を最初の引数として`adb_media_init_adbreakinfo`に渡します。 Roku パラメーターの順序に注意してください：`name, startTime, position`。
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("pre-roll", 0.0, 1)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
+```
+
 >[!TAB Media Collection API]
 
 `adBreakStart` POST リクエストの`params` オブジェクトに`media.ad.podFriendlyName`を含めます：
@@ -168,6 +179,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

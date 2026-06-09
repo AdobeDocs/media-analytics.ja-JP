@@ -3,9 +3,9 @@ title: ドロップしたフレーム
 description: バックエンドがフレームドロップの品質を報告できるように、QoE オブジェクトにドロップされたフレームの実行回数を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '323'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**削除されたフレーム**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[削除されたフレーム &#x200B;](/help/reporting/dimensions/dropped-frames.md)を参照してください。*
+*このページでは、**削除されたフレーム**変数のデータ収集について説明します。 対応するレポートディメンションと指標については、[削除されたフレーム ](/help/reporting/dimensions/dropped-frames.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -28,10 +28,10 @@ ht-degree: 5%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.qoe.droppedFrameCount` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | 品質イベント （[&#x200B; ビットレート変更](/help/implementation/events/playback/bitrate-change.md)、[&#x200B; バッファー開始](/help/implementation/events/playback/buffer-start.md)、[&#x200B; エラー](/help/implementation/events/error.md)）、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | 品質イベント （[ ビットレート変更](/help/implementation/events/playback/bitrate-change.md)、[ バッファー開始](/help/implementation/events/playback/buffer-start.md)、[ エラー](/help/implementation/events/error.md)）、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -83,7 +83,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`の呼び出し時に`xdm.mediaCollection.qoeDataDetails`内に`droppedFrames`を設定：
 
@@ -152,6 +152,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
 ADBMobile.media.updateQoSObject(qosInfo);
 ```
 
+>[!TAB Roku 2.x]
+
+累積的に削除されたフレーム数を4番目の引数（`droppedFrames`）として`adb_media_init_qosinfo`に渡し、トラッカーを`mediaUpdateQoS`で更新します。
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+```
+
 >[!TAB Media Collection API]
 
 `params` オブジェクトに`media.qoe.droppedFrames`を含めます：
@@ -166,6 +177,6 @@ ADBMobile.media.updateQoSObject(qosInfo);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]

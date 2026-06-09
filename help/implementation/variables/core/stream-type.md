@@ -3,10 +3,10 @@ title: ストリームタイプ
 description: ストリームタイプを設定して、メディアストリームがオーディオまたはビデオコンテンツかどうかを識別します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 7%
+source-wordcount: '323'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Stream type**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ストリームタイプ &#x200B;](/help/reporting/dimensions/stream-type.md)を参照してください。*
+*このページでは、**Stream type**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ストリームタイプ ](/help/reporting/dimensions/stream-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -26,10 +26,10 @@ ht-degree: 7%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.streamType` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.streamType` |
 | **必須** | はい |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -87,7 +87,7 @@ var mediaInfo = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `createMediaSession`の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`streamType`を設定：
 
@@ -173,6 +173,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+`MEDIA_TYPE_VIDEO`または`MEDIA_TYPE_AUDIO`を5番目（`mediaType`）の引数として`adb_media_init_mediainfo`に渡します：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
+```
+
 >[!TAB Media Collection API]
 
 `sessionStart` POST リクエストの`params` オブジェクトに`media.streamType`を含めます：
@@ -187,6 +198,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-完全なリクエスト構造とすべての必須フィールドについては、[Media Collection API セッション リファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造とすべての必須フィールドについては、[Media Collection API セッション リファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
 
 >[!ENDTABS]

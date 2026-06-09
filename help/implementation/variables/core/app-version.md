@@ -3,9 +3,9 @@ title: アプリバージョン
 description: メディアプレーヤーアプリケーションのバージョン文字列を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**アプリ バージョン**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; アプリバージョン &#x200B;](/help/reporting/dimensions/app-version.md)を参照してください。*
+*このページでは、**アプリ バージョン**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ アプリバージョン ](/help/reporting/dimensions/app-version.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,10 +27,10 @@ ht-degree: 2%
 
 | プロパティ | 値 |
 | --- | --- |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Media Collection API パラメーター** | `media.sdkVersion` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md) |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md) |
 
 ## 推奨される実装タイプ
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 >[!TAB Web SDK]
 
-[`configure`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/configure/streamingmedia)の呼び出し時に`streamingMedia`設定オブジェクトに`appVersion`を設定します：
+[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)の呼び出し時に`streamingMedia`設定オブジェクトに`appVersion`を設定します：
 
 ```javascript
 alloy("configure", {
@@ -77,7 +77,7 @@ val config: Map<String, Any> = mapOf(
 MobileCore.updateConfiguration(config)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `ADB_CONSTANTS.CONFIGURATION.MEDIA_APP_VERSION`を使用して、SDK設定でアプリのバージョンを設定します。
 
@@ -151,6 +151,16 @@ var ADBMobileConfig = {
 };
 ```
 
+>[!TAB Roku 2.x]
+
+`ADBMobileConfig.json`の`mediaHeartbeat` セクションで`sdkVersion`を設定します。 このフィールドは、Roku 2.x SDK ライブラリのバージョンではなく、Player アプリケーションのバージョンをキャプチャします。
+
+```json
+"mediaHeartbeat": {
+  "sdkVersion": "2.1.0"
+}
+```
+
 >[!TAB Media Collection API]
 
 `sessionStart` POST リクエストの`params` オブジェクトに`media.sdkVersion`を含めます：
@@ -167,6 +177,6 @@ var ADBMobileConfig = {
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
 
 >[!ENDTABS]

@@ -3,9 +3,9 @@ title: コンテンツプレーヤー名
 description: コンテンツをレンダリングしたプレーヤーを識別するには、プレーヤー名を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '285'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツプレーヤー名**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; コンテンツプレーヤー名](/help/reporting/dimensions/content-player-name.md)を参照してください。*
+*このページでは、**コンテンツプレーヤー名**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ コンテンツプレーヤー名](/help/reporting/dimensions/content-player-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,10 +24,10 @@ ht-degree: 6%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.playerName` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.playerName` |
 | **必須** | はい |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `createMediaSession`の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`playerName`を設定：
 
@@ -159,6 +159,16 @@ var metadata = { "a.media.playerName": "Chromecast Player" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
 ```
 
+>[!TAB Roku 2.x]
+
+`ADBMobileConfig.json`の`mediaHeartbeat` セクションで`playerName`を設定します。 プレーヤー名は設定値であり、セッションごとの値ではありません。
+
+```json
+"mediaHeartbeat": {
+  "playerName": "Roku Player"
+}
+```
+
 >[!TAB Media Collection API]
 
 `sessionStart` POST リクエストの`params` オブジェクトに`media.playerName`を含めます：
@@ -173,6 +183,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, metadata);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
 
 >[!ENDTABS]

@@ -3,9 +3,9 @@ title: 一時停止して開始
 description: ユーザーがメディア再生を一時停止したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '150'
 ht-degree: 10%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 10%
 
 一時停止の開始イベントは、ユーザーが再生を一時停止したことを示します。 別の再開イベントはありません。再生の再開時に[Play](play.md) イベントを送信します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
-* **関連する指標**: [[!UICONTROL &#x200B; イベントを一時停止]](/help/reporting/metrics/pause-events.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)
+* **関連する指標**: [[!UICONTROL  イベントを一時停止]](/help/reporting/metrics/pause-events.md)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ tracker.trackPause()
 tracker.trackPause()
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `sendMediaEvent`を`eventType: "media.pauseStart"`と呼び出します：
 
@@ -116,9 +116,17 @@ tracker.trackPause();
 ADBMobile.media.trackPause();
 ```
 
+>[!TAB Roku 2.x]
+
+ユーザーが再生を一時停止したときに`mediaTrackPause`を呼び出します。
+
+```brightscript
+ADBMobile().mediaTrackPause()
+```
+
 >[!TAB Media Collection API]
 
-`pauseStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`pauseStart`件の投稿を[ イベントエンドポイント ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
 
 ```json
 {

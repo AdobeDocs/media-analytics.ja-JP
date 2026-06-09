@@ -3,10 +3,10 @@ title: 広告プレーヤー名
 description: 広告をレンダリングするプレーヤーの名前を設定します。 広告プレーヤーは、メインコンテンツプレーヤーとは異なる場合があります。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 7%
+source-wordcount: '277'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**広告プレーヤー名**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[Ad player name](/help/reporting/dimensions/ad-player-name.md)を参照してください。*
+*このページでは、**広告プレーヤー名**変数のデータ収集について説明します。 対応するレポートディメンションについては、[Ad player name](/help/reporting/dimensions/ad-player-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.playerName` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.ad.playerName` |
 | **必須** | はい |
 | **様が**&#x200B;様と共に送信されました | [広告の開始](/help/implementation/events/ads/ad-start.md)、広告の終了 |
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.AD_PLAYER] = "Freewheel"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Edge六]
 
 `media.adStart`の`sendMediaEvent`を呼び出す場合、`xdm.mediaCollection.advertisingDetails`内に`playerName`を設定します：
 
@@ -147,6 +147,18 @@ var metadata = { "a.media.ad.playerName": "Chromecast Player" };
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, metadata);
 ```
 
+>[!TAB Roku 2.x]
+
+広告開始イベントをトラッキングする際に、コンテキストデータオブジェクトに広告プレーヤー名を渡します。
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+contextData = { "a.media.ad.playerName": "Roku Player" }
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo, contextData)
+```
+
 >[!TAB Media Collection API]
 
 `adStart` POST リクエストの`params` オブジェクトに`media.ad.playerName`を含めます：
@@ -161,6 +173,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, metadata);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
 
 >[!ENDTABS]
