@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Experience Edge APIを使用すると、`sessionStart`、`adStart`、および`chapterStart` API イベントの標準XDM フィールドと一緒にメディアカスタムメタデータを送信できます。 XDM フォーマットを介して送信されたメディアカスタムメタデータは、**Adobe Analytics**&#x200B;と&#x200B;**Adobe Experience Platform**&#x200B;の両方に転送できます。
 
-Media Collection API実装については、[ カスタムメタデータのサポート ](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)を参照してください。
+Media Collection API実装については、[&#x200B; カスタムメタデータのサポート &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)を参照してください。
 
 ## 概要
 
@@ -335,6 +335,6 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 >[!MORELIKETHIS]
 >
->* [Media Collection API カスタムメタデータのサポート ](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
->* [ メディアコレクションの詳細データタイプ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
->* [Adobe Experience Platform Edge Networkのデータ変数マッピング ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)
+>* [Media Collection API カスタムメタデータのサポート &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [&#x200B; メディアコレクションの詳細データタイプ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Adobe Experience Platform Edge Networkのデータ変数マッピング &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)
