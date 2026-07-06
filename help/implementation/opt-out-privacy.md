@@ -65,7 +65,7 @@ alloy("setConsent", {
 
 トラッキングを復元するには、`"y"`を`collect.val`値として`setConsent`を再度呼び出します。
 
-IAB TCF 2.0を含むその他の形式については、Web SDK ドキュメントの[setConsent コマンド &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent)を参照してください。
+IAB TCF 2.0を含むその他の形式については、Web SDK ドキュメントの[setConsent コマンド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/web-sdk/commands/setconsent)を参照してください。
 
 >[!TAB iOS]
 
