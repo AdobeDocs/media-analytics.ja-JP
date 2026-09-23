@@ -3,19 +3,17 @@ title: アセット ID
 description: アセット IDを設定します。EIDRやTMS/Gracenote IDなどのメディアアセットの安定した業界識別子です。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 8%
-
+source-wordcount: '304'
+ht-degree: 7%
 ---
-
 
 # アセット ID
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**アセット ID**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; アセット ID](/help/reporting/dimensions/asset-id.md)を参照してください。*
+*このページでは、**アセット ID**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ アセット ID](/help/reporting/dimensions/asset-id.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -28,10 +26,10 @@ ht-degree: 8%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.asset` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.asset` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -179,6 +177,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)を参照してください。
 
 >[!ENDTABS]

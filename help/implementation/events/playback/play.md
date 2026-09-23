@@ -3,20 +3,18 @@ title: Play
 description: メディアプレーヤーが再生状態に入ったことを示す信号。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '187'
 ht-degree: 9%
-
 ---
-
 
 # Play
 
-再生イベントは、メディアプレーヤーが状態を再生に変更したことを示す。 コンテンツの最初の開始時、自動再生時、一時停止またはバッファーの後にプレーヤーが再開されるたびに送信します。 別の再開イベントはありません。[一時停止の開始](pause-start.md)または[&#x200B; バッファーの開始](buffer-start.md)の後の再生イベントが再開として機能します。
+再生イベントは、メディアプレーヤーが状態を再生に変更したことを示す。 コンテンツの最初の開始時、自動再生時、一時停止またはバッファーの後にプレーヤーが再開されるたびに送信します。 別の再開イベントはありません。[一時停止の開始](pause-start.md)または[ バッファーの開始](buffer-start.md)の後の再生イベントが再開として機能します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
-* **関連する指標**: [[!UICONTROL &#x200B; コンテンツ開始]](/help/reporting/metrics/content-starts.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)
+* **関連する指標**: [[!UICONTROL  コンテンツ開始]](/help/reporting/metrics/content-starts.md)
 
 ## 推奨される実装タイプ
 
@@ -122,7 +120,7 @@ ADBMobile().mediaTrackPlay()
 
 >[!TAB Media Collection API]
 
-`play`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`play`件の投稿を[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

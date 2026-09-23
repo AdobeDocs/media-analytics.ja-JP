@@ -3,19 +3,17 @@ title: 章名
 description: 各章のわかりやすい名前を設定して、章レベルのレポートを章タイトルで分割できるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
-
+source-wordcount: '234'
+ht-degree: 7%
 ---
-
 
 # 章名
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**章名**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[章名](/help/reporting/dimensions/chapter-name.md)を参照してください。*
+*このページでは、**章名**変数のデータ収集について説明します。 対応するレポートディメンションについては、[章名](/help/reporting/dimensions/chapter-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 8%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.chapter.friendlyName` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.chapter.friendlyName` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [章の開始](/help/implementation/events/chapters/chapter-start.md)、章の終了 |
@@ -186,6 +184,6 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

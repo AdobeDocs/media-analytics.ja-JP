@@ -3,19 +3,17 @@ title: コンテンツの評価
 description: テレビの保護者のガイドラインまたは地域の評価システムで定義されているコンテンツの評価を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 8%
-
+source-wordcount: '253'
+ht-degree: 7%
 ---
-
 
 # コンテンツの評価
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**コンテンツ評価**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; コンテンツの評価](/help/reporting/dimensions/content-rating.md)を参照してください。*
+*このページでは、**コンテンツ評価**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ コンテンツの評価](/help/reporting/dimensions/content-rating.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,10 +22,10 @@ ht-degree: 8%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.rating` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.rating`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.rating`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.rating` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)を参照してください。
 
 >[!ENDTABS]

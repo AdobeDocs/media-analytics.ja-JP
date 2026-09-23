@@ -3,19 +3,17 @@ title: ストリームタイプ
 description: ストリームタイプを設定して、メディアストリームがオーディオまたはビデオコンテンツかどうかを識別します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 6%
-
 ---
-
 
 # ストリームタイプ
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Stream type**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ストリームタイプ &#x200B;](/help/reporting/dimensions/stream-type.md)を参照してください。*
+*このページでは、**Stream type**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ストリームタイプ ](/help/reporting/dimensions/stream-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -26,10 +24,10 @@ ht-degree: 6%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.streamType` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.streamType` |
 | **必須** | はい |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -198,6 +196,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-完全なリクエスト構造とすべての必須フィールドについては、[Media Collection API セッション リファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造とすべての必須フィールドについては、[Media Collection API セッション リファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)を参照してください。
 
 >[!ENDTABS]

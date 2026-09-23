@@ -3,19 +3,17 @@ title: 広告名
 description: 広告のわかりやすい名前を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 8%
-
+source-wordcount: '232'
+ht-degree: 7%
 ---
-
 
 # 広告名
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Ad name**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[Ad name](/help/reporting/dimensions/ad-name.md)を参照してください。*
+*このページでは、**Ad name**変数のデータ収集について説明します。 対応するレポートディメンションについては、[Ad name](/help/reporting/dimensions/ad-name.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 8%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.friendlyName` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.ad.friendlyName` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [広告の開始](/help/implementation/events/ads/ad-start.md)、広告の終了 |
@@ -186,6 +184,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

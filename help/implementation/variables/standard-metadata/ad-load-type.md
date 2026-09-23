@@ -3,19 +3,17 @@ title: 広告の読み込みタイプ
 description: ストリーミングセッションの広告ロードのタイプを設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '278'
 ht-degree: 3%
-
 ---
-
 
 # 広告の読み込みタイプ
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**広告の読み込みタイプ**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[広告読み込み](/help/reporting/dimensions/ad-load-type.md)を参照してください。*
+*このページでは、**広告の読み込みタイプ**変数のデータ収集について説明します。 対応するレポートディメンションについては、[広告読み込み](/help/reporting/dimensions/ad-load-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,10 +22,10 @@ ht-degree: 3%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.adLoad` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.adLoad` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -35,7 +33,7 @@ ht-degree: 3%
 
 >[!TAB Web SDK]
 
-[`createMediaSession`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/createmediasession)の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`adLoad`を設定：
+[`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession)の呼び出し時に`xdm.mediaCollection.sessionDetails`内に`adLoad`を設定：
 
 ```javascript
 alloy("createMediaSession", {
@@ -181,6 +179,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)を参照してください。
 
 >[!ENDTABS]

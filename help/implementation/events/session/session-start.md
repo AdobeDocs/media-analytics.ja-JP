@@ -3,13 +3,11 @@ title: セッション開始
 description: メディアセッションの開始を通知し、後続のすべてのイベントに必要なセッション IDを取得します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
-
+source-wordcount: '397'
+ht-degree: 5%
 ---
-
 
 # セッション開始
 
@@ -18,7 +16,7 @@ ht-degree: 4%
 セッションは、**10分間イベントを受信しなかった場合、**&#x200B;または&#x200B;**30分間の再生ヘッドの移動がない場合、**&#x200B;に自動的に期限切れになります。 セッションの有効期限が切れた場合は、新しいセッション IDを取得するために、「セッション開始」を再度呼び出す必要があります。
 
 * **前提条件**：なし。常に最初のイベント
-* **関連する指標**: [[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md)
+* **関連する指標**: [[!UICONTROL  メディア開始]](/help/reporting/metrics/media-starts.md)
 
 ## 推奨される実装タイプ
 
@@ -175,7 +173,7 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 
 >[!TAB Media Collection API]
 
-`sessionStart`件の投稿を[&#x200B; セッションエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
+`sessionStart`件の投稿を[ セッションエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
 
 ```json
 {
@@ -195,7 +193,7 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 
 ## セッションの再開
 
-以前に閉じられたセッションを再開する場合（例えば、クロスデバイスのハンドオフ後、またはアプリケーションが保存された再生状態を復元した後など）、セッションの開始時に再開フラグを設定します。 これにより、Analyticsは[[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md)ではなく[[!UICONTROL &#x200B; コンテンツ再開]](/help/reporting/metrics/content-resumes.md)を増分します。
+以前に閉じられたセッションを再開する場合（例えば、クロスデバイスのハンドオフ後、またはアプリケーションが保存された再生状態を復元した後など）、セッションの開始時に再開フラグを設定します。 これにより、Analyticsは[[!UICONTROL  メディア開始]](/help/reporting/metrics/media-starts.md)ではなく[[!UICONTROL  コンテンツ再開]](/help/reporting/metrics/content-resumes.md)を増分します。
 
 ## 推奨される実装タイプ
 

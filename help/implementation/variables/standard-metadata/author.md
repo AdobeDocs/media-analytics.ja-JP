@@ -3,19 +3,17 @@ title: 作成者
 description: コンテンツの作成者を設定します。 主にオーディオブックに使用されます。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '238'
 ht-degree: 9%
-
 ---
-
 
 # 作成者
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**作成者**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[作成者](/help/reporting/dimensions/author.md)を参照してください。*
+*このページでは、**作成者**変数のデータ収集について説明します。 対応するレポートディメンションについては、[作成者](/help/reporting/dimensions/author.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,10 +22,10 @@ ht-degree: 9%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.author` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.author`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.author`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.author` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)を参照してください。
 
 >[!ENDTABS]

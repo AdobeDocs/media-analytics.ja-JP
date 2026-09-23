@@ -3,19 +3,17 @@ title: タイプを表示
 description: 文字列整数コードを使用して、コンテンツ形式（完全なエピソード、プレビュー、クリップなど）を特定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '262'
 ht-degree: 7%
-
 ---
-
 
 # タイプを表示
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Show type**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; タイプを表示](/help/reporting/dimensions/show-type.md)を参照してください。*
+*このページでは、**Show type**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ タイプを表示](/help/reporting/dimensions/show-type.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -31,10 +29,10 @@ show type変数は、文字列整数コードを使用してコンテンツ形�
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.type` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.type` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -182,6 +180,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)を参照してください。
 
 >[!ENDTABS]

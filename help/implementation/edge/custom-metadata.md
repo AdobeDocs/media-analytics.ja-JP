@@ -3,19 +3,17 @@ title: カスタムメタデータのサポート - XDM形式
 description: Experience Edge XDM フォーマットを使用して、メディアトラッキングイベントでカスタムメタデータを送信する方法を説明します。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '774'
 ht-degree: 2%
-
 ---
-
 
 # カスタムメタデータのサポート - XDM形式
 
 Experience Edge APIを使用すると、`sessionStart`、`adStart`、および`chapterStart` API イベントの標準XDM フィールドと一緒にメディアカスタムメタデータを送信できます。 XDM フォーマットを介して送信されたメディアカスタムメタデータは、**Adobe Analytics**&#x200B;と&#x200B;**Adobe Experience Platform**&#x200B;の両方に転送できます。
 
-Media Collection API実装については、[&#x200B; カスタムメタデータのサポート &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)を参照してください。
+Media Collection API実装については、[ カスタムメタデータのサポート ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)を参照してください。
 
 ## 概要
 
@@ -316,7 +314,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 * 処理後、カスタムメタデータはコンテキストデータ変数としてAdobe Analyticsに転送されます。 `_tenant`接頭辞は自動的に削除されるので、処理ルールは`_tenant`の後のフィールドパスのみを参照します（例：`_mycompany.contentCategory`は`contentCategory`になります）。
 * `_data`を介して送信されたデータもAdobe Analyticsに転送され、処理ルールを介して利用できます
-* 処理ルールを使用して、コンテキストデータ変数をeVar、prop、またはその他のAnalytics変数にマッピングします。 詳しくは、[Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping)のデータ変数マッピングを参照してください。
+* 処理ルールを使用して、コンテキストデータ変数をeVar、prop、またはその他のAnalytics変数にマッピングします。 詳しくは、[Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)のデータ変数マッピングを参照してください。
 
 **Adobe Experience Platform:**
 
@@ -335,6 +333,6 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 >[!MORELIKETHIS]
 >
->* [Media Collection API カスタムメタデータのサポート &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
->* [&#x200B; メディアコレクションの詳細データタイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details)
->* [Adobe Experience Platform Edge Networkのデータ変数マッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping)
+>* [Media Collection API カスタムメタデータのサポート ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)
+>* [ メディアコレクションの詳細データタイプ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Adobe Experience Platform Edge Networkのデータ変数マッピング ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)

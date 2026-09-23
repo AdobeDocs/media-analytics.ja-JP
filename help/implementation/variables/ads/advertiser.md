@@ -3,19 +3,17 @@ title: 広告主
 description: 各広告で取り上げる企業やブランドを設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 10%
-
+source-wordcount: '227'
+ht-degree: 9%
 ---
-
 
 # 広告主
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**広告主**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[広告主](/help/reporting/dimensions/advertiser.md)を参照してください。*
+*このページでは、**広告主**変数のデータ収集について説明します。 対応するレポートディメンションについては、[広告主](/help/reporting/dimensions/advertiser.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 10%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.advertiser` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.ad.advertiser` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [広告の開始](/help/implementation/events/ads/ad-start.md)、広告の終了 |
@@ -177,6 +175,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

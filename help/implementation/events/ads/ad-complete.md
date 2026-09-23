@@ -3,19 +3,17 @@ title: 広告が完了
 description: 個々の広告が再生を終了したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '182'
 ht-degree: 8%
-
 ---
-
 
 # 広告が完了
 
-広告完了イベントは、個々の広告が再生を完了したことを示します。 広告の再生後から完了まで送信します。 視聴者が広告をスキップした場合は、代わりに[広告スキップ &#x200B;](ad-skip.md)を送信します。
+広告完了イベントは、個々の広告が再生を完了したことを示します。 広告の再生後から完了まで送信します。 視聴者が広告をスキップした場合は、代わりに[広告スキップ ](ad-skip.md)を送信します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[&#x200B; アドブレーク開始](ad-break-start.md)、[&#x200B; アドスタート &#x200B;](ad-start.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)、[ アドブレーク開始](ad-break-start.md)、[ アドスタート ](ad-start.md)
 * **関連する指標**: [[!UICONTROL 広告が]](/help/reporting/metrics/ad-completes.md)を完了しました
 
 >[!IMPORTANT]
@@ -127,7 +125,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_COMPLETE)
 
 >[!TAB Media Collection API]
 
-`adComplete`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`adComplete`件の投稿を[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

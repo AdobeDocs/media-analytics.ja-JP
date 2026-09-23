@@ -3,13 +3,11 @@ title: 状態の開始
 description: メディアプレーヤーがトラッキング済みプレーヤー状態になったことを示す信号。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '226'
 ht-degree: 6%
-
 ---
-
 
 # 状態の開始
 
@@ -17,8 +15,8 @@ ht-degree: 6%
 
 有効な状態名：`fullscreen`、`mute`、`closedCaptioning`、`pictureInPicture`、`inFocus`
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
-* **関連する指標**：状態によって異なります。[&#x200B; プレーヤーの状態を追跡](/help/implementation/events/player-state/overview.md)を参照してください
+* **前提条件**: [ セッション開始](../session/session-start.md)
+* **関連する指標**：状態によって異なります。[ プレーヤーの状態を追跡](/help/implementation/events/player-state/overview.md)を参照してください
 
 ## 推奨される実装タイプ
 
@@ -149,7 +147,7 @@ Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用でき�
 
 >[!TAB Media Collection API]
 
-`stateStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`stateStart`件の投稿を[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

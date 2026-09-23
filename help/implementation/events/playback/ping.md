@@ -3,13 +3,11 @@ title: Ping
 description: ハートビートを送信してメディアセッションを維持し、再生の進行状況を定期的に追跡します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '292'
 ht-degree: 1%
-
 ---
-
 
 # Ping
 
@@ -20,7 +18,7 @@ ping イベントは、セッションを維持し、再生の進行状況を追
 
 ping リクエスト本文に`params` オブジェクトを含めないでください。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)
 * **関連する指標**：なし
 
 ## 推奨される実装タイプ
@@ -111,7 +109,7 @@ ADBMobile().mediaUpdatePlayhead(10)
 
 >[!TAB Media Collection API]
 
-タイマー上の[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に`ping`の投稿を送信します。 `params` オブジェクトを含めないでください：
+タイマー上の[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に`ping`の投稿を送信します。 `params` オブジェクトを含めないでください：
 
 ```json
 {

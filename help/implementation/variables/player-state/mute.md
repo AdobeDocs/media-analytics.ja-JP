@@ -3,19 +3,17 @@ title: ミュート
 description: ビューアがオーディオをミュートおよびミュート解除するタイミングを追跡して、バックエンドがミュートエンゲージメントを報告できるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 6%
-
+source-wordcount: '328'
+ht-degree: 7%
 ---
-
 
 # ミュート
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Mute**&#x200B;プレーヤー状態のデータ収集について説明します。 対応するレポート指標について、[&#x200B; ミュート &#x200B;](/help/reporting/metrics/mute-streams-impacted.md)、[&#x200B; ミュート数](/help/reporting/metrics/mute-count.md)、および[&#x200B; ミュート合計期間](/help/reporting/metrics/mute-total-duration.md)の影響を受けるストリームを参照してください。*
+*このページでは、**Mute**プレーヤー状態のデータ収集について説明します。 対応するレポート指標について、[ ミュート ](/help/reporting/metrics/mute-streams-impacted.md)、[ ミュート数](/help/reporting/metrics/mute-count.md)、および[ ミュート合計期間](/help/reporting/metrics/mute-total-duration.md)の影響を受けるストリームを参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 6%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "mute"`を含むエントリ） |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "mute"`を含むエントリ） |
 | **Audience Manager特性** | `c_contextdata.a.media.states.mute.set`, `c_contextdata.a.media.states.mute.count`, `c_contextdata.a.media.states.mute.time` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [状態開始](/help/implementation/events/player-state/state-start.md)、[状態終了](/help/implementation/events/player-state/state-end.md) |
@@ -182,6 +180,6 @@ Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用でき�
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

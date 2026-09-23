@@ -3,20 +3,18 @@ title: バッファー開始
 description: メディアプレーヤーがバッファリング状態になったことを示す信号。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '205'
 ht-degree: 7%
-
 ---
-
 
 # バッファー開始
 
 バッファー開始イベントは、メディアプレーヤーがバッファリング状態に入ったことを示します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
-* **関連する指標**: [[!UICONTROL &#x200B; バッファーイベント &#x200B;]](/help/reporting/metrics/buffer-events.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)
+* **関連する指標**: [[!UICONTROL  バッファーイベント ]](/help/reporting/metrics/buffer-events.md)
 
 >[!NOTE]
 >
@@ -146,7 +144,7 @@ adb.mediaTrackEvent(adb.MEDIA_BUFFER_COMPLETE)
 
 >[!TAB Media Collection API]
 
-`bufferStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`bufferStart`件の投稿を[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

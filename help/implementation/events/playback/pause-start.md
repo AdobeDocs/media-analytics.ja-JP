@@ -3,20 +3,18 @@ title: 一時停止して開始
 description: ユーザーがメディア再生を一時停止したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 10%
-
+source-wordcount: '159'
+ht-degree: 9%
 ---
-
 
 # 一時停止して開始
 
 一時停止の開始イベントは、ユーザーが再生を一時停止したことを示します。 別の再開イベントはありません。再生の再開時に[Play](play.md) イベントを送信します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
-* **関連する指標**: [[!UICONTROL &#x200B; イベントを一時停止]](/help/reporting/metrics/pause-events.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)
+* **関連する指標**: [[!UICONTROL  イベントを一時停止]](/help/reporting/metrics/pause-events.md)
 
 >[!NOTE]
 >
@@ -126,7 +124,7 @@ ADBMobile().mediaTrackPause()
 
 >[!TAB Media Collection API]
 
-`pauseStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`pauseStart`件の投稿を[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

@@ -3,19 +3,17 @@ title: クローズドキャプション
 description: ビューアがクローズドキャプションのオンとオフを切り替えたタイミングを追跡し、バックエンドがキャプションのエンゲージメントをレポートできるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 5%
-
+source-wordcount: '342'
+ht-degree: 7%
 ---
-
 
 # クローズドキャプション
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**クローズドキャプション**&#x200B;プレーヤー状態のデータ収集について説明します。 対応するレポート指標について、[&#x200B; クローズドキャプションの影響を受けるストリーム &#x200B;](/help/reporting/metrics/closed-captioning-streams-impacted.md)、[&#x200B; クローズドキャプション数](/help/reporting/metrics/closed-captioning-count.md)、および[&#x200B; クローズドキャプション合計期間](/help/reporting/metrics/closed-captioning-total-duration.md)を参照してください。*
+*このページでは、**クローズドキャプション**プレーヤー状態のデータ収集について説明します。 対応するレポート指標について、[ クローズドキャプションの影響を受けるストリーム ](/help/reporting/metrics/closed-captioning-streams-impacted.md)、[ クローズドキャプション数](/help/reporting/metrics/closed-captioning-count.md)、および[ クローズドキャプション合計期間](/help/reporting/metrics/closed-captioning-total-duration.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 5%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.states.closedcaptioning.set`, `a.media.states.closedcaptioning.count`, `a.media.states.closedcaptioning.time` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "closedCaptioning"`を含むエントリ） |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "closedCaptioning"`を含むエントリ） |
 | **Audience Manager特性** | `c_contextdata.a.media.states.closedcaptioning.set`, `c_contextdata.a.media.states.closedcaptioning.count`, `c_contextdata.a.media.states.closedcaptioning.time` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [状態開始](/help/implementation/events/player-state/state-start.md)、[状態終了](/help/implementation/events/player-state/state-end.md) |
@@ -182,6 +180,6 @@ Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用でき�
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

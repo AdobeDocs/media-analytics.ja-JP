@@ -3,19 +3,17 @@ title: チャプターオフセット
 description: コンテンツ内のチャプターのオフセットを、開始から秒単位で設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '252'
 ht-degree: 6%
-
 ---
-
 
 # チャプターオフセット
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**章オフセット**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[章オフセット &#x200B;](/help/reporting/dimensions/chapter-offset.md)を参照してください。*
+*このページでは、**章オフセット**変数のデータ収集について説明します。 対応するレポートディメンションについては、[章オフセット ](/help/reporting/dimensions/chapter-offset.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 6%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.chapter.offset` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.chapter.offset` |
 | **必須** | いいえ（モバイル SDK）；はい（Edge、Media Collection API） |
 | **様が**&#x200B;様と共に送信されました | [章の開始](/help/implementation/events/chapters/chapter-start.md)、章の終了 |
@@ -185,6 +183,6 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

@@ -3,19 +3,17 @@ title: 広告休憩の開始時間
 description: コンテンツ内の広告ブレークの開始時間（オフセット）を秒単位で設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '268'
 ht-degree: 6%
-
 ---
-
 
 # 広告休憩の開始時間
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Ad Break Start Time**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ポッドの位置](/help/reporting/dimensions/pod-position.md)を参照してください。*
+*このページでは、**Ad Break Start Time**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ポッドの位置](/help/reporting/dimensions/pod-position.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 6%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.ad.podSecond` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.ad.podSecond` |
 | **必須** | はい |
 | **様が**&#x200B;様と共に送信されました | [広告ブレーク開始](/help/implementation/events/ads/ad-break-start.md)、広告クローズ |
@@ -178,6 +176,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

@@ -3,19 +3,17 @@ title: ジャンル
 description: コンテンツジャンルをコンマ区切りの文字列として設定します。 マルチジャンルのコンテンツは、レポートの行項目に分割されます。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '289'
 ht-degree: 7%
-
 ---
-
 
 # ジャンル
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**ジャンル**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ジャンル &#x200B;](/help/reporting/dimensions/genre.md)を参照してください。*
+*このページでは、**ジャンル**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ジャンル ](/help/reporting/dimensions/genre.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -28,10 +26,10 @@ ht-degree: 7%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.genre` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.genre` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -179,6 +177,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)を参照してください。
 
 >[!ENDTABS]
