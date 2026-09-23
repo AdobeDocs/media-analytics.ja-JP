@@ -13,7 +13,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**写真**プレーヤーの状態のデータ収集について説明します。 対応するレポート指標については、[画像の影響を受けるストリーム ](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[画像のカウント ](/help/reporting/metrics/picture-in-picture-count.md)、および[画像の合計期間](/help/reporting/metrics/picture-in-picture-total-duration.md)を参照してください。*
+*このページでは、**写真**&#x200B;プレーヤーの状態のデータ収集について説明します。 対応するレポート指標については、[画像の影響を受けるストリーム &#x200B;](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[画像のカウント &#x200B;](/help/reporting/metrics/picture-in-picture-count.md)、および[画像の合計期間](/help/reporting/metrics/picture-in-picture-total-duration.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -180,6 +180,6 @@ Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用でき�
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

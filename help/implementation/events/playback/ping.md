@@ -18,7 +18,7 @@ ping イベントは、セッションを維持し、再生の進行状況を追
 
 ping リクエスト本文に`params` オブジェクトを含めないでください。
 
-* **前提条件**: [ セッション開始](../session/session-start.md)
+* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
 * **関連する指標**：なし
 
 ## 推奨される実装タイプ
@@ -109,7 +109,7 @@ ADBMobile().mediaUpdatePlayhead(10)
 
 >[!TAB Media Collection API]
 
-タイマー上の[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に`ping`の投稿を送信します。 `params` オブジェクトを含めないでください：
+タイマー上の[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に`ping`の投稿を送信します。 `params` オブジェクトを含めないでください：
 
 ```json
 {

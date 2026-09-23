@@ -13,7 +13,7 @@ ht-degree: 6%
 
 広告枠の開始イベントは、広告枠の開始を示します。 広告ブレークとは、1つ以上の広告のシーケンスです。 1つの広告が再生される場合でも、`adStart`、`adComplete`および`adSkip` イベントごとに`adBreakStart`と`adBreakComplete` ペアの間で発生する必要があります。
 
-* **前提条件**: [ セッション開始](../session/session-start.md)
+* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
 * **関連する指標**：なし
 
 >[!IMPORTANT]
@@ -161,7 +161,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 
 >[!TAB Media Collection API]
 
-`adBreakStart`件の投稿を[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
+`adBreakStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

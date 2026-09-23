@@ -15,8 +15,8 @@ ht-degree: 6%
 
 有効な状態名：`fullscreen`、`mute`、`closedCaptioning`、`pictureInPicture`、`inFocus`
 
-* **前提条件**: [ セッション開始](../session/session-start.md)、[状態開始](state-start.md)
-* **関連する指標**：状態によって異なります。[ プレーヤーの状態を追跡](/help/implementation/events/player-state/overview.md)を参照してください
+* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[状態開始](state-start.md)
+* **関連する指標**：状態によって異なります。[&#x200B; プレーヤーの状態を追跡](/help/implementation/events/player-state/overview.md)を参照してください
 
 ## 推奨される実装タイプ
 
@@ -145,7 +145,7 @@ Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用でき�
 
 >[!TAB Media Collection API]
 
-`stateEnd`件の投稿を[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
+`stateEnd`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

@@ -13,7 +13,7 @@ ht-degree: 8%
 
 広告ブレークの完全なイベントシグナルは、広告ブレーク内のすべての広告が終了したことを示します（完了またはスキップします）。 [広告ブレーク開始](ad-break-start.md)までに開いた広告ブレークを閉じます。
 
-* **前提条件**: [ セッション開始](../session/session-start.md)、[広告ブレーク開始](ad-break-start.md)
+* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[広告ブレーク開始](ad-break-start.md)
 * **関連する指標**：なし
 
 >[!IMPORTANT]
@@ -125,7 +125,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_COMPLETE)
 
 >[!TAB Media Collection API]
 
-`adBreakComplete`件の投稿を[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
+`adBreakComplete`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

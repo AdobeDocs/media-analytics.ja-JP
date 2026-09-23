@@ -24,7 +24,7 @@ Analyticsのみの実装では、Adobe Analytics for Streaming Media アドオ�
 
 ## 実装方法の選択
 
-各ページでは、ストリーミングメディア固有の設定について説明します。 イベントごとのコードと変数ごとのコードは、[ イベント ](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md)にあります。
+各ページでは、ストリーミングメディア固有の設定について説明します。 イベントごとのコードと変数ごとのコードは、[&#x200B; イベント &#x200B;](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md)にあります。
 
 | Codebase | インコード | タグの使用 |
 |---|---|---|
@@ -40,5 +40,5 @@ Analyticsのみの実装では、Adobe Analytics for Streaming Media アドオ�
 >[!MORELIKETHIS]
 >
 >* [実装の概要](/help/implementation/overview.md)
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)
 >* [変数の概要](/help/implementation/variables/overview.md)

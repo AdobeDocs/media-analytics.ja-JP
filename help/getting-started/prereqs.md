@@ -52,7 +52,7 @@ Analyticsでレポートを有効にし、収集するコンテンツと広告�
 
    * **Analyticsのみの実装**: CX Enterprise ソリューション全体で一貫して訪問者を識別するには、Adobe Visitor ID サービスを有効にする必要があります。 訪問者ID サービスは、各サイト訪問者に一意の永続的なIDを割り当て、そのIDを購読するすべてのCX Enterprise ソリューション間で共有できるようにします。
 
-     詳しくは、[Adobe Visitor ID サービスのドキュメント ](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja)を参照してください。
+     詳しくは、[Adobe Visitor ID サービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja)を参照してください。
 
 1. **実装方法の追加の前提条件を表示する**
 

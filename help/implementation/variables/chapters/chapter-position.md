@@ -13,7 +13,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**章の位置**変数のデータ収集について説明します。 対応するレポートディメンションについては、[章の位置](/help/reporting/dimensions/chapter-position.md)を参照してください。*
+*このページでは、**章の位置**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[章の位置](/help/reporting/dimensions/chapter-position.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -183,6 +183,6 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

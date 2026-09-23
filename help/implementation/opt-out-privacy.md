@@ -71,7 +71,7 @@ alloy("setConsent", {
 
 トラッキングを復元するには、`"y"`を`collect.val`値として`setConsent`を再度呼び出します。
 
-IAB TCF 2.0を含むその他の形式については、Web SDK ドキュメントの[setConsent コマンド ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent)を参照してください。
+IAB TCF 2.0を含むその他の形式については、Web SDK ドキュメントの[setConsent コマンド &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent)を参照してください。
 
 >[!TAB iOS]
 
@@ -87,7 +87,7 @@ MobileCore.setPrivacyStatus(.optedOut)
 MobileCore.setPrivacyStatus(.optedIn)
 ```
 
-詳しくは、AEP Mobile SDK ドキュメントの[ プライバシーとGDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)を参照してください。
+詳しくは、AEP Mobile SDK ドキュメントの[&#x200B; プライバシーとGDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)を参照してください。
 
 >[!TAB Android]
 
@@ -103,7 +103,7 @@ MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_OUT)
 MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
 ```
 
-詳しくは、AEP Mobile SDK ドキュメントの[ プライバシーとGDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)を参照してください。
+詳しくは、AEP Mobile SDK ドキュメントの[&#x200B; プライバシーとGDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)を参照してください。
 
 >[!TAB Edge六]
 
@@ -135,7 +135,7 @@ m.aepSdk.setConsent(collectConsentNo)
 
 トラッキングを復元するには、`collect.val`を`"y"`に設定し、もう一度`setConsent()`に電話してください。
 
-`updateConfiguration()`と`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` キーを使用して、SDK初期化時にデフォルトの同意値を設定することもできます。 詳しくは、[Roku Edge SDK ドキュメント ](https://github.com/adobe/aepsdk-roku)を参照してください。
+`updateConfiguration()`と`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` キーを使用して、SDK初期化時にデフォルトの同意値を設定することもできます。 詳しくは、[Roku Edge SDK ドキュメント &#x200B;](https://github.com/adobe/aepsdk-roku)を参照してください。
 
 >[!TAB Media Edge API]
 
@@ -157,7 +157,7 @@ fetch("https://edge.adobedc.net/va/v2/sessions", {
 });
 ```
 
-詳しくは、[Media Edge API リファレンス ](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/)を参照してください。
+詳しくは、[Media Edge API リファレンス &#x200B;](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/)を参照してください。
 
 >[!ENDTABS]
 
@@ -250,7 +250,7 @@ CCPAの下での部分的なオプトアウトの場合は、`sessionStart`要�
 * `analytics.optOutServerSideForwarding`: Adobe Analyticsと他のExperience Cloud ソリューション （Audience Managerなど）間で共有されるデータをオプトアウトするには、`true`に設定します。
 * `analytics.optOutShare`：他のAdobe Analytics クライアントとのフェデレーションデータ共有をオプトアウトするには、`true`に設定します。
 
-使用可能なパラメーターの完全なリストについては、[Media Collection API リクエストパラメーターのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/parameters)を参照してください。
+使用可能なパラメーターの完全なリストについては、[Media Collection API リクエストパラメーターのリファレンス &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/parameters)を参照してください。
 
 >[!ENDTABS]
 
