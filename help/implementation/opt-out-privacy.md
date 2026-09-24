@@ -8,23 +8,29 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 3fd9ffcb997e1570abb983107e69d183b1c8b311
+    internal-label: Privacy
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 798
+source-wordcount: '806'
 ht-degree: 3%
-
 ---
-
 # オプトアウトとプライバシーの設定
 
 ユーザーがトラッキングをオプトアウトすると、ストリーミングメディアライブラリは直ちにすべてのデータ収集アクティビティを停止します。 セッション開始の呼び出しも、ハートビート pingも、イベント追跡データがそのユーザーのAdobe data collection サーバーに送信されることはありません。
@@ -161,7 +167,7 @@ fetch("https://edge.adobedc.net/va/v2/sessions", {
 
 >[!TAB Media SDK JS 3.x]
 
-Media SDK JS 3.x ライブラリは、Adobe Visitor API （Identity Service）のオプトアウト状態に延期されます。 ユーザーがVisitor APIを使用してオプトアウトすると、Media SDKはすべてのトラッキング呼び出しを自動的に抑制します。
+Media SDK JS 3.x ライブラリは、Adobe Visitor ID サービスのオプトアウト状態に延期されます。 ユーザーがID サービスを使用してオプトアウトすると、Media SDKはすべてのトラッキング呼び出しを自動的に抑制します。
 
 ```javascript
 var visitor = Visitor.getInstance("YOUR_ORG_ID@AdobeOrg");
@@ -172,7 +178,7 @@ visitor.setOptOut(true);
 
 トラッキングを復元するには、`false`を`setOptOut()`に渡します。
 
-詳しくは、[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja)を参照してください。
+詳しくは、[Adobe Visitor ID Service](https://experienceleague.adobe.com/ja/docs/id-service/using/home)を参照してください。
 
 >[!TAB Chromecast]
 
@@ -244,7 +250,7 @@ CCPAの下での部分的なオプトアウトの場合は、`sessionStart`要�
 * `analytics.optOutServerSideForwarding`: Adobe Analyticsと他のExperience Cloud ソリューション （Audience Managerなど）間で共有されるデータをオプトアウトするには、`true`に設定します。
 * `analytics.optOutShare`：他のAdobe Analytics クライアントとのフェデレーションデータ共有をオプトアウトするには、`true`に設定します。
 
-使用可能なパラメーターの完全なリストについては、[Media Collection API リクエストパラメーターのリファレンス &#x200B;](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)を参照してください。
+使用可能なパラメーターの完全なリストについては、[Media Collection API リクエストパラメーターのリファレンス &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/parameters)を参照してください。
 
 >[!ENDTABS]
 

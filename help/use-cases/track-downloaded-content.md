@@ -8,25 +8,32 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/rtLBRcyLB8D8HPBj-Qw5LD824Fu8KeUDsLokJCn2Wfc
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: e992d880-33bc-4949-a648-aa7d410276cd
+    internal-label: Validation
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+    internal-label: Implementation
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 721
-ht-degree: 93%
-
+source-wordcount: '729'
+ht-degree: 91%
 ---
-
 # ダウンロードされたコンテンツの追跡{#track-downloaded-content}
 
 ## 概要 {#overview}
@@ -39,13 +46,13 @@ Downloaded Content 機能では、ユーザーがオフライン時のメディ�
 
   このリアルタイムアプローチでは、メディアプレーヤーが各プレーヤーイベントの発生時にトラッキングデータを送信し、10 秒ごと（広告の場合は 1 秒ごと）にネットワーク ping を 1 つずつバックエンドに送信します。
 
-* オフライン（Downloaded Content 機能）
+* オフライン（ダウンロード済みコンテンツ機能）
 
   このバッチ処理アプローチでは、同じセッションイベントを生成する必要がありますが、単一セッションとしてバックエンドに送信されるまで、デバイスに保存されます（後述の例を参照）。
 
 どちらのアプローチにもそれぞれ長所と短所があります。
 * オンラインシナリオは、リアルタイムに追跡します。各ネットワーク呼び出しの前に接続性チェックが必要です。
-* オフラインシナリオ（Downloaded Content 機能）は、1 つのネットワーク接続性チェックのみ必要ですが、デバイスに、より大きなメモリフットプリントが必要です。
+* オフラインシナリオ（ダウンロード済みコンテンツ機能）では、ネットワーク接続状況のチェックは 1 回だけで済みますが、その代わりにデバイス上でより大きなメモリフットプリントが必要になります。
 
 ## 実装 {#implementation}
 
@@ -55,22 +62,22 @@ Downloaded Content 機能では、ユーザーがオフライン時のメディ�
 
 ### イベントスキーマ
 
-Downloaded Content 機能は、（標準）オンラインメディアコレクション API のオフラインバージョンなので、プレーヤーがバックエンドにバッチおよび送信するイベントデータは、オンライン呼び出しをおこなう際に使用するのと同じイベントスキーマを使用する必要があります。 これらのスキーマについて詳しくは、次を参照してください。
-* [概要;](/help/implementation/media-collection-api/mc-api-overview.md)
-* [イベントリクエストの検証](/help/implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+ダウンロード済みコンテンツ機能は、（標準的な）オンラインの Media Collection API のオフライン版です。そのため、プレーヤーがバックエンドにバッチ処理して送信するイベントデータは、オンライン呼び出し時に使用するものと同じイベントスキーマを使用する必要があります。 これらのスキーマについて詳しくは、次を参照してください。
+* [概要;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/)
+* [イベントリクエストの検証](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation)
 
 ### イベントの順序
 
 * バッチペイロードの最初のイベントは、メディアコレクション API で通常おこなうように、`sessionStart` である必要があります。
 * **ダウンロードされたコンテンツを送信していることをバックエンドに示すために、`media.downloaded: true`** イベントの標準メタデータパラメーター（`params` キー）に `sessionStart` を含める必要があります。 ダウンロードされたデータを送信する際に、このパラメーターが存在しないか、false に設定されている場合、API は応答コード 400（無効な要求）を返します。 このパラメーターは、バックエンドに対して、ダウンロードされたコンテンツとライブコンテンツを区別します。 ライブセッションに `media.downloaded: true` が設定されている場合、同様に API からの応答が 400 になります。
-* プレーヤーイベントを発生した順序で正しく保存するのは実装側の責任です。
+* プレーヤーイベントを発生した順序で正しく保存することは、実装の責任です。
 
 ### 応答コード
 
-* 201 - Created: Successful Request。データが有効であり、セッションが作成されたので、処理されます。
-* 400 - Bad Request。スキーマの検証に失敗し、すべてのデータが破棄されたので、セッションデータは処理されません。
+* 201 - Created: Successful Request。データが有効であり、セッションが作成され、処理されます。
+* 400 - Bad Request。スキーマの検証に失敗し、すべてのデータが破棄されるため、セッションデータは処理されません。
 
-## Adobe Analtyics との統合 {#integration-with-adobe-analtyics}
+## Adobe Analytics との統合 {#integration-with-adobe-analtyics}
 
 ダウンロードされたコンテンツシナリオ用に Analytics 開始／終了呼び出しを計算する際に、バックエンドは、`ts.` と呼ばれる追加の Analytics フィールドを設定します。これらは、受け取った最初および最後のイベント（開始および終了）のタイムスタンプです。 このメカニズムにより、完了したメディアセッションを正しい時点に配置できます（つまり、ユーザーが数日間オンラインに戻らなくても、コンテンツが実際に視聴された時点でメディアセッションが発生したと報告されます）。 _タイムスタンプオプションレポートスイートを作成して、Adobe Analytics側でこのメカニズムを有効にする必要があります。_ タイムスタンプオプションのレポートスイートを有効にするには、[&#x200B; タイムスタンプオプションを参照してください。](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=ja)
 

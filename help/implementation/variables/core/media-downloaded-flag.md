@@ -3,13 +3,11 @@ title: メディアのダウンロード済みフラグ
 description: ダウンロードされたオフライン再生としてセッションにマークを付けると、ストリーミングセッションとは別にレポートされます。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '322'
 ht-degree: 5%
-
 ---
-
 
 # メディアのダウンロード済みフラグ
 
@@ -179,7 +177,7 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 
 >[!TAB Roku 2.x]
 
-ダウンロードしたコンテンツトラッキングは、Roku 2.x SDKでは利用できません。 ダウンロードされたメディアの再生を報告するには、[Roku Edge SDK](/help/implementation/edge/roku.md)または[Media Collection API](/help/implementation/analytics-only/media-collection-api.md)を使用します。
+ダウンロードしたコンテンツトラッキングは、Roku 2.x SDKでは利用できません。 ダウンロードされたメディアの再生を報告するには、[Roku Edge SDK](/help/implementation/edge/roku.md)または[Media Collection API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation)を使用します。
 
 >[!TAB Media Collection API]
 
@@ -195,6 +193,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)を参照してください。
 
 >[!ENDTABS]

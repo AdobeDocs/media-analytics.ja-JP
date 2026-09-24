@@ -3,13 +3,11 @@ title: Play
 description: メディアプレーヤーが再生状態に入ったことを示す信号。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '187'
 ht-degree: 9%
-
 ---
-
 
 # Play
 
@@ -122,7 +120,7 @@ ADBMobile().mediaTrackPlay()
 
 >[!TAB Media Collection API]
 
-`play`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`play`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

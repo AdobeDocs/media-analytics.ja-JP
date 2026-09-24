@@ -3,13 +3,11 @@ title: セッション終了
 description: 視聴者がコンテンツを放棄した場合は、直ちにメディアセッションを閉じます。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 4%
-
+source-wordcount: '323'
+ht-degree: 5%
 ---
-
 
 # セッション終了
 
@@ -128,7 +126,7 @@ ADBMobile().mediaTrackSessionEnd()
 
 >[!TAB Media Collection API]
 
-`sessionEnd`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`sessionEnd`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

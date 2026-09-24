@@ -3,13 +3,11 @@ title: ピクチャインピクチャ
 description: ビューアがピクチャインピクチャ再生を開始および終了するタイミングを追跡して、バックエンドがPiP エンゲージメントをレポートできるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 5%
-
+source-wordcount: '356'
+ht-degree: 6%
 ---
-
 
 # ピクチャインピクチャ
 
@@ -182,6 +180,6 @@ Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用でき�
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

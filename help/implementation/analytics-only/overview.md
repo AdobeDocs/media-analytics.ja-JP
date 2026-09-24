@@ -3,13 +3,11 @@ title: Analyticsのみの実装の概要
 description: Analyticsのみの実装に使用される、ストリーミングメディア用Adobe Analytics アドオンの前提条件と実装方法。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '243'
 ht-degree: 5%
-
 ---
-
 # Analyticsのみの実装の概要
 
 Analyticsのみの実装では、Adobe Analytics for Streaming Media アドオンを使用して、Edge Networkを使用せずにAdobe Analyticsに直接データを送信します。 これらの方法は引き続き完全にサポートされています。 新しい実装の場合は、Adobeでは[Edgeの実装](/help/implementation/edge/overview.md)をお勧めします。これは、Adobe Analyticsに加えてCustomer Journey Analytics、Adobe Journey Optimizer、Real-Time CDPでデータを利用できるためです。
@@ -33,7 +31,7 @@ Analyticsのみの実装では、Adobe Analytics for Streaming Media アドオ�
 | Web （JavaScript） | [JavaScript](javascript.md) | [Media Analytics タグ拡張機能](javascript-tags.md) |
 | Chromecast | [Chromecast](chromecast.md) | — |
 | Roku | [Roku 2.x](roku-2x.md) | — |
-| API | [Media Collection API](media-collection-api.md) | — |
+| API | [Media Collection API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation) | — |
 
 ## 次の手順
 

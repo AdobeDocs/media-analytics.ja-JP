@@ -3,13 +3,11 @@ title: 状態終了
 description: メディアプレーヤーが追跡されたプレーヤー状態から離脱したことを示す信号。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '229'
 ht-degree: 6%
-
 ---
-
 
 # 状態終了
 
@@ -147,7 +145,7 @@ Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用でき�
 
 >[!TAB Media Collection API]
 
-`stateEnd`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`stateEnd`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

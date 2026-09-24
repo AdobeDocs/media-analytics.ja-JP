@@ -3,19 +3,17 @@ title: カスタムメタデータのサポート - XDM形式
 description: Experience Edge XDM フォーマットを使用して、メディアトラッキングイベントでカスタムメタデータを送信する方法を説明します。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '774'
 ht-degree: 2%
-
 ---
-
 
 # カスタムメタデータのサポート - XDM形式
 
 Experience Edge APIを使用すると、`sessionStart`、`adStart`、および`chapterStart` API イベントの標準XDM フィールドと一緒にメディアカスタムメタデータを送信できます。 XDM フォーマットを介して送信されたメディアカスタムメタデータは、**Adobe Analytics**&#x200B;と&#x200B;**Adobe Experience Platform**&#x200B;の両方に転送できます。
 
-Media Collection API実装については、[&#x200B; カスタムメタデータのサポート &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)を参照してください。
+Media Collection API実装については、[&#x200B; カスタムメタデータのサポート &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)を参照してください。
 
 ## 概要
 
@@ -335,6 +333,6 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 >[!MORELIKETHIS]
 >
->* [Media Collection API カスタムメタデータのサポート &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [Media Collection API カスタムメタデータのサポート &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)
 >* [&#x200B; メディアコレクションの詳細データタイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details)
 >* [Adobe Experience Platform Edge Networkのデータ変数マッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping)

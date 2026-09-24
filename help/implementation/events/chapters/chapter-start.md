@@ -3,13 +3,11 @@ title: 章の開始
 description: コンテンツ内のチャプターセグメントの開始を知らせます。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '200'
 ht-degree: 7%
-
 ---
-
 
 # 章の開始
 
@@ -166,7 +164,7 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 
 >[!TAB Media Collection API]
 
-`chapterStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`chapterStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

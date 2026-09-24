@@ -3,13 +3,11 @@ title: ビットレートの変更
 description: 再生ビットレートが変更されたことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '235'
 ht-degree: 6%
-
 ---
-
 
 # ビットレートの変更
 
@@ -166,7 +164,7 @@ adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 
 >[!TAB Media Collection API]
 
-`qoeData`の新しいビットレートを使用して、[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に`bitrateChange` POSTを送信します。
+`qoeData`の新しいビットレートを使用して、[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に`bitrateChange` POSTを送信します。
 
 ```json
 {

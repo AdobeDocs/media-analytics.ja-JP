@@ -3,13 +3,11 @@ title: セッション開始
 description: メディアセッションの開始を通知し、後続のすべてのイベントに必要なセッション IDを取得します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
-
+source-wordcount: '397'
+ht-degree: 5%
 ---
-
 
 # セッション開始
 
@@ -175,7 +173,7 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 
 >[!TAB Media Collection API]
 
-`sessionStart`件の投稿を[&#x200B; セッションエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
+`sessionStart`件の投稿を[&#x200B; セッションエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
 
 ```json
 {

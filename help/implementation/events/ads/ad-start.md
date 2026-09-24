@@ -3,13 +3,11 @@ title: 広告の開始
 description: 個々の広告が再生を開始したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 7%
-
+source-wordcount: '218'
+ht-degree: 6%
 ---
-
 
 # 広告の開始
 
@@ -173,7 +171,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 
 >[!TAB Media Collection API]
 
-`adStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)に送信します：
+`adStart`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {
