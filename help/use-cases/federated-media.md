@@ -80,7 +80,7 @@ Federated Mediaは、オーディオおよびビデオの測定をより効率�
 
 ## Federated Media Formをダウンロード
 
-フェデレーテッド メディアに参加するには、[ フェデレーション ルール契約](assets/federated_analytics_form.pdf) フォームをダウンロードして記入してください。
+フェデレーテッド メディアに参加するには、[&#x200B; フェデレーション ルール契約](assets/federated_analytics_form.pdf) フォームをダウンロードして記入してください。
 
 ## プロセス {#process}
 

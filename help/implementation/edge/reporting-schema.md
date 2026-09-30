@@ -42,7 +42,7 @@ Adobe Experience Platform Edge Networkを使用してメディアトラッキン
 | スキーマ | 名前空間 | 方向 | 目的 |
 |---|---|---|---|
 | メディアコレクション | `xdm.mediaCollection` | Client → Adobe | 各トラッキングイベントに対してプレイヤーが送信する情報。 [変数](/help/implementation/variables/)によって使用されます。 |
-| メディアレポート | `xdm.mediaReporting` | Adobe → Platform | バックエンドが処理後にデータセットに書き込むもの。 [ ディメンション ](/help/reporting/dimensions/overview.md)および[指標](/help/reporting/metrics/overview.md)によって使用されます。 |
+| メディアレポート | `xdm.mediaReporting` | Adobe → Platform | バックエンドが処理後にデータセットに書き込むもの。 [&#x200B; ディメンション &#x200B;](/help/reporting/dimensions/overview.md)および[指標](/help/reporting/metrics/overview.md)によって使用されます。 |
 
 `mediaReporting`に存在するが、`mediaCollection` ペイロードに存在しないフィールドは、セッション内のイベントの完全なシーケンスから派生します。 これらのフィールドは、Adobeによって生成されます。
 
@@ -52,16 +52,16 @@ Adobe Experience Platform Edge Networkを使用してメディアトラッキン
 
 | イベントタイプ | データセットに含まれる | メモ |
 |---|---|---|
-| [ セッション開始](/help/implementation/events/session/session-start.md) | はい | セッションが初期化されたときに書かれます |
+| [&#x200B; セッション開始](/help/implementation/events/session/session-start.md) | はい | セッションが初期化されたときに書かれます |
 | [広告の開始](/help/implementation/events/ads/ad-start.md) | はい | 個々の広告が開始されたときに作成されます |
 | [Ad complete](/help/implementation/events/ads/ad-complete.md) | はい | 広告が完了するまで再生されるときに記述されます |
 | [章完了](/help/implementation/events/chapters/chapter-complete.md) | はい | 章が完了するまで再生されるときに書かれます |
-| [ セッション完了](/help/implementation/events/session/session-complete.md) | はい | セッションが終了したときに書き込まれます。最も豊富な計算フィールドセット |
-| [ プレイ ](/help/implementation/events/playback/play.md) | いいえ | `timePlayed`の計算に使用 |
+| [&#x200B; セッション完了](/help/implementation/events/session/session-complete.md) | はい | セッションが終了したときに書き込まれます。最も豊富な計算フィールドセット |
+| [&#x200B; プレイ &#x200B;](/help/implementation/events/playback/play.md) | いいえ | `timePlayed`の計算に使用 |
 | [開始を一時停止](/help/implementation/events/playback/pause-start.md) | いいえ | `pauseCount`と`pauseTime`の計算に使用しました |
 | [Ping](/help/implementation/events/playback/ping.md) | いいえ | ハートビート。セッションが非アクティブであることを検出するために使用されます |
-| [ バッファー開始](/help/implementation/events/playback/buffer-start.md) | いいえ | QoE バッファー指標の計算に使用 |
-| [ ビットレート変更](/help/implementation/events/playback/bitrate-change.md) | いいえ | QoE ビットレート指標の計算に使用 |
+| [&#x200B; バッファー開始](/help/implementation/events/playback/buffer-start.md) | いいえ | QoE バッファー指標の計算に使用 |
+| [&#x200B; ビットレート変更](/help/implementation/events/playback/bitrate-change.md) | いいえ | QoE ビットレート指標の計算に使用 |
 | [状態の開始](/help/implementation/events/player-state/state-start.md) | いいえ | プレーヤーの状態指標の計算に使用されます |
 | [エラー](/help/implementation/events/error.md) | いいえ | QoEで`errorCount`を計算するために使用 |
 
@@ -118,9 +118,9 @@ Adobe Experience Platform Edge Networkを使用してメディアトラッキン
 
 ## ダウンロード済みコンテンツ
 
-[ ダウンロード済みエンドポイント ](/help/use-cases/track-downloaded-content.md)を使用して追跡されたセッションの場合、バックエンドは`sessionStart`のレポートイベントに`xdm.mediaReporting.sessionDetails.isDownloaded`から`true`に自動的に設定します。 ダウンロードされたセッションの他のすべてのレポートイベントは、ライブセッションと同じスキーマに従います。 CJAまたはAdobe Analyticsのこのフィールドを使用して、ダウンロードした再生をフィルタリングまたはセグメント化します。
+[&#x200B; ダウンロード済みエンドポイント &#x200B;](/help/use-cases/track-downloaded-content.md)を使用して追跡されたセッションの場合、バックエンドは`sessionStart`のレポートイベントに`xdm.mediaReporting.sessionDetails.isDownloaded`から`true`に自動的に設定します。 ダウンロードされたセッションの他のすべてのレポートイベントは、ライブセッションと同じスキーマに従います。 CJAまたはAdobe Analyticsのこのフィールドを使用して、ダウンロードした再生をフィルタリングまたはセグメント化します。
 
-コレクションの実装の詳細については、Media Edge API リファレンスの[ ダウンロード済みエンドポイント ](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/)を参照してください。
+コレクションの実装の詳細については、Media Edge API リファレンスの[&#x200B; ダウンロード済みエンドポイント &#x200B;](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/)を参照してください。
 
 ## 実装の検証
 
@@ -607,7 +607,7 @@ Analytics ソースコネクタを介してデータを受け取るAdobe Analyti
 
 +++media.sessionStart （ダウンロード済みコンテンツ）
 
-[ ダウンロード済みエンドポイント ](/help/use-cases/track-downloaded-content.md)を使用して追跡されたセッションは、同じレポートスキーマに従い、1つの主な違いがあります。`xdm.mediaReporting.sessionDetails.isDownloaded`は、`sessionStart` レポートイベントで`true`に設定されています。 その他のすべてのイベントタイプは、上記のライブコンテンツの例と同じです。
+[&#x200B; ダウンロード済みエンドポイント &#x200B;](/help/use-cases/track-downloaded-content.md)を使用して追跡されたセッションは、同じレポートスキーマに従い、1つの主な違いがあります。`xdm.mediaReporting.sessionDetails.isDownloaded`は、`sessionStart` レポートイベントで`true`に設定されています。 その他のすべてのイベントタイプは、上記のライブコンテンツの例と同じです。
 
 ```json
 {

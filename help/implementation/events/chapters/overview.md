@@ -55,9 +55,9 @@ ht-degree: 39%
 
 ## 実装手順
 
-1. 章開始イベントがいつ発生するかを特定し、章オブジェクトを作成します。 フィールド定義については、[章名](/help/implementation/variables/chapters/chapter-name.md)、[章の位置](/help/implementation/variables/chapters/chapter-position.md)、[章の長さ](/help/implementation/variables/chapters/chapter-length.md)および[章のオフセット ](/help/implementation/variables/chapters/chapter-offset.md)を参照してください。
+1. 章開始イベントがいつ発生するかを特定し、章オブジェクトを作成します。 フィールド定義については、[章名](/help/implementation/variables/chapters/chapter-name.md)、[章の位置](/help/implementation/variables/chapters/chapter-position.md)、[章の長さ](/help/implementation/variables/chapters/chapter-length.md)および[章のオフセット &#x200B;](/help/implementation/variables/chapters/chapter-offset.md)を参照してください。
 1. オプションで、カスタムチャプターメタデータ用のコンテキストデータ変数を作成します。
-1. [ チャプター開始](/help/implementation/events/chapters/chapter-start.md)に電話して、チャプターのトラッキングを開始します。
-1. 再生がチャプターの終了境界に達したら、[ チャプター完了](/help/implementation/events/chapters/chapter-complete.md)に電話してください。
-1. ユーザーが完了前に章をスキップした場合は、[章スキップ ](/help/implementation/events/chapters/chapter-skip.md)を呼び出します。
+1. [&#x200B; チャプター開始](/help/implementation/events/chapters/chapter-start.md)に電話して、チャプターのトラッキングを開始します。
+1. 再生がチャプターの終了境界に達したら、[&#x200B; チャプター完了](/help/implementation/events/chapters/chapter-complete.md)に電話してください。
+1. ユーザーが完了前に章をスキップした場合は、[章スキップ &#x200B;](/help/implementation/events/chapters/chapter-skip.md)を呼び出します。
 1. その他の章については、手順1 ～ 5を繰り返します。

@@ -25,7 +25,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、ポッドの位置&#x200B;**変数の**広告のデータ収集について説明します。 対応するレポートディメンションについては、[ ポッド位置の広告](/help/reporting/dimensions/ad-in-pod-position.md)を参照してください。*
+*このページでは、ポッドの位置&#x200B;**変数の**&#x200B;広告のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ポッド位置の広告](/help/reporting/dimensions/ad-in-pod-position.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -194,6 +194,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

@@ -27,7 +27,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Creative URL**のレポートディメンションについて説明します。 この変数の収集方法については、[Creative URL](/help/implementation/variables/ads/creative-url.md)を参照してください。*
+*このページでは、**Creative URL**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[Creative URL](/help/implementation/variables/ads/creative-url.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -39,7 +39,7 @@ CreativeのURLは、[ad start](/help/implementation/events/ads/ad-start.md) イ�
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics | `a.media.ad.creativeURL`をeVarにマッピングする[処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
+| Adobe Analytics | `a.media.ad.creativeURL`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | データフィード | `evar1`-`evar250`、`post_evar1`-`post_evar250` （処理ルール `a.media.ad.creativeURL`がマッピングされるeVar） |
 | Audience Manager | `c_contextdata.a.media.ad.creativeURL` |

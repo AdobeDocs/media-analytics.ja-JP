@@ -62,13 +62,13 @@ ht-degree: 3%
 
 ## 実装手順
 
-1. **ユーザーが再生をトリガーするタイミングを特定** （ユーザーが「再生」または「自動再生」をクリックしたタイミング）。 コンテンツ名、ID、長さ、ストリームタイプ、メディアタイプを使用して、メディアオブジェクトを作成します。 フィールド定義については、[ コンテンツ名](/help/implementation/variables/core/content-name.md)、[ コンテンツ ID](/help/implementation/variables/core/content-id.md)、[ コンテンツの長さ](/help/implementation/variables/core/content-length.md)、[ ストリームタイプ ](/help/implementation/variables/core/stream-type.md)および[ コンテンツタイプ ](/help/implementation/variables/core/content-type.md)を参照してください。
+1. **ユーザーが再生をトリガーするタイミングを特定** （ユーザーが「再生」または「自動再生」をクリックしたタイミング）。 コンテンツ名、ID、長さ、ストリームタイプ、メディアタイプを使用して、メディアオブジェクトを作成します。 フィールド定義については、[&#x200B; コンテンツ名](/help/implementation/variables/core/content-name.md)、[&#x200B; コンテンツ ID](/help/implementation/variables/core/content-id.md)、[&#x200B; コンテンツの長さ](/help/implementation/variables/core/content-length.md)、[&#x200B; ストリームタイプ &#x200B;](/help/implementation/variables/core/stream-type.md)および[&#x200B; コンテンツタイプ &#x200B;](/help/implementation/variables/core/content-type.md)を参照してください。
 1. **オプションでメタデータを添付**：標準メタデータ（番組、季節、エピソードなど） データバリエーションを定義することができます。 標準メタデータキーの参照については、[Show](/help/implementation/variables/standard-metadata/show.md)、[Season](/help/implementation/variables/standard-metadata/season.md)、[Episode](/help/implementation/variables/standard-metadata/episode.md)、[Genre](/help/implementation/variables/standard-metadata/genre.md)、および[Network](/help/implementation/variables/standard-metadata/network.md)を参照してください。
-1. **セッションのトラッキングを開始するには、[ セッション開始](/help/implementation/events/session/session-start.md)**&#x200B;に電話してください。 これにより、データとメタデータが読み込まれ、開始までの時間のQoS測定が開始されます。 SessionStartは、最初のフレームではなく、再生する&#x200B;*インテント*&#x200B;を追跡します。
+1. **セッションのトラッキングを開始するには、[&#x200B; セッション開始](/help/implementation/events/session/session-start.md)**&#x200B;に電話してください。 これにより、データとメタデータが読み込まれ、開始までの時間のQoS測定が開始されます。 SessionStartは、最初のフレームではなく、再生する&#x200B;*インテント*&#x200B;を追跡します。
 1. **コンテンツの最初のフレームが画面に表示されたら、[Play](/help/implementation/events/playback/play.md)**&#x200B;を呼び出します。
 1. **プレーヤーが一時停止したときに[一時停止の開始](/help/implementation/events/playback/pause-start.md)**&#x200B;を呼び出します。 再生が再開されたときに、再度再生を呼び出します。 別の再開イベントはありません。
-1. 視聴者がコンテンツの終わりに達したら、**呼び出し[ セッション完了](/help/implementation/events/session/session-complete.md)**。
-1. **プレーヤーがアンロードされるか、ビューアが終了せずにコンテンツを放棄すると、[ セッション終了](/help/implementation/events/session/session-end.md)**&#x200B;に電話します。 SessionEndはすぐにセッションを閉じます。それ以降のイベントは追跡できません。
+1. 視聴者がコンテンツの終わりに達したら、**呼び出し[&#x200B; セッション完了](/help/implementation/events/session/session-complete.md)**。
+1. **プレーヤーがアンロードされるか、ビューアが終了せずにコンテンツを放棄すると、[&#x200B; セッション終了](/help/implementation/events/session/session-end.md)**&#x200B;に電話します。 SessionEndはすぐにセッションを閉じます。それ以降のイベントは追跡できません。
 
 >[!IMPORTANT]
 >
@@ -78,13 +78,13 @@ ht-degree: 3%
 
 次の例は、セッションの開始からコンテンツの完了およびセッション終了までのセッションフロー全体を示しています。
 
-プラットフォーム別の実装の詳細については、[ セッション開始](/help/implementation/events/session/session-start.md)、[再生](/help/implementation/events/playback/play.md)、[開始を一時停止](/help/implementation/events/playback/pause-start.md)、[ セッション完了](/help/implementation/events/session/session-complete.md)、および[ セッション終了](/help/implementation/events/session/session-end.md)を参照してください。
+プラットフォーム別の実装の詳細については、[&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、[再生](/help/implementation/events/playback/play.md)、[開始を一時停止](/help/implementation/events/playback/pause-start.md)、[&#x200B; セッション完了](/help/implementation/events/session/session-complete.md)、および[&#x200B; セッション終了](/help/implementation/events/session/session-end.md)を参照してください。
 
 ## バッファリング
 
 バッファー開始は、プレイヤーがデータを待っていることを示すシグナルです。 BufferStart （XDM ベースのAPI）の後にPlay イベントを送信すると、バッファーエンドが推測されます。 Mobile SDKでは、BufferCompleteも明示的に呼び出します。
 
-実装の詳細については、[ バッファー開始](/help/implementation/events/playback/buffer-start.md)を参照してください。
+実装の詳細については、[&#x200B; バッファー開始](/help/implementation/events/playback/buffer-start.md)を参照してください。
 
 ## シーク
 
@@ -116,6 +116,6 @@ ht-degree: 3%
 1. **ソースデバイス**&#x200B;で、ビューアがキャストを開始したときにSessionEndを呼び出します。 SessionCompleteを呼び出さないでください。コンテンツは完了しません。
 1. **宛先デバイス**&#x200B;で、再開フラグを`true`に設定してSessionStartを呼び出し、ソースデバイスから同じコンテンツメタデータと再生ヘッドの位置を渡します。
 
-再開フラグを設定すると、Analyticsは、ハンドオフの2番目のレグに対して[ メディア開始](/help/reporting/metrics/media-starts.md)ではなく[ コンテンツ再開](/help/reporting/metrics/content-resumes.md)を増分します。
+再開フラグを設定すると、Analyticsは、ハンドオフの2番目のレグに対して[&#x200B; メディア開始](/help/reporting/metrics/media-starts.md)ではなく[&#x200B; コンテンツ再開](/help/reporting/metrics/content-resumes.md)を増分します。
 
-**以前に閉じられたセッションを手動で再開する：** アプリケーションがユーザーデータを保存し、以前に閉じられたセッションを再開できる場合は、セッション開始時に再開フラグを設定します。 すべてのプラットフォームの実装の詳細については、[ セッション開始](/help/implementation/events/session/session-start.md#resuming-a-session)を参照してください。
+**以前に閉じられたセッションを手動で再開する：** アプリケーションがユーザーデータを保存し、以前に閉じられたセッションを再開できる場合は、セッション開始時に再開フラグを設定します。 すべてのプラットフォームの実装の詳細については、[&#x200B; セッション開始](/help/implementation/events/session/session-start.md#resuming-a-session)を参照してください。

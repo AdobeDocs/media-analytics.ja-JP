@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ## オーディエンスの移行
 
-オーディエンスを「メディア」という古いデータタイプから「[ メディアのレポートの詳細](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータタイプに移行するには、オーディエンスを編集し、各ルールで、廃止されたデータタイプの古いフィールドを、新しいデータタイプの新しい対応するフィールドに置き換える必要があります。
+オーディエンスを「メディア」という古いデータタイプから「[&#x200B; メディアのレポートの詳細](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しいデータタイプに移行するには、オーディエンスを編集し、各ルールで、廃止されたデータタイプの古いフィールドを、新しいデータタイプの新しい対応するフィールドに置き換える必要があります。
 
 1. 非推奨の「メディア」データタイプのフィールドを含むルールを探します。 パス `media.mediaTimed`で始まるすべてのフィールドです。
 
@@ -51,9 +51,9 @@ ht-degree: 1%
 
 1. オーディエンスが期待どおりに機能していることを確認します。
 
-古いフィールドと新しいフィールドの間のマッピングについては、[ コンテンツ ID](/help/reporting/dimensions/content.md) パラメーターと、[ ストリーミングメディアサービス ](/help/media-overview.md)に記載されているストリーミングメディア変数の残りの部分を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
+古いフィールドと新しいフィールドの間のマッピングについては、[&#x200B; コンテンツ ID](/help/reporting/dimensions/content.md) パラメーターと、[&#x200B; ストリーミングメディアサービス &#x200B;](/help/media-overview.md)に記載されているストリーミングメディア変数の残りの部分を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
 
-![古いXDM フィールドパスと新しいXDM フィールドパス ](../../assets/field-paths-updated.jpeg)
+![古いXDM フィールドパスと新しいXDM フィールドパス &#x200B;](../../assets/field-paths-updated.jpeg)
 
 ## 例
 
@@ -63,23 +63,23 @@ ht-degree: 1%
 
 1. オーディエンスに設定されたルールを探します。
 
-   ![ オーディエンスを編集](../../assets/audience-edit.jpeg)
+   ![&#x200B; オーディエンスを編集](../../assets/audience-edit.jpeg)
 
-   ![ オーディエンスを編集](../../assets/audience-edit2.jpeg)
+   ![&#x200B; オーディエンスを編集](../../assets/audience-edit2.jpeg)
 
 1. ルールを選択して設定を開きます。
 
-   ![ オーディエンスを編集](../../assets/audience-edit3.jpeg)
+   ![&#x200B; オーディエンスを編集](../../assets/audience-edit3.jpeg)
 
 1. （オプション）ルールで使用されるフィールドのパスを表示するには、フィールド名の近くにある「情報」ボタンを選択します。
 
-   ![ オーディエンスを編集](../../assets/audience-edit4.jpeg)
+   ![&#x200B; オーディエンスを編集](../../assets/audience-edit4.jpeg)
 
 1. フィールド名を特定します（この場合は「メディア開始」）。
 
-   ![ オーディエンスを編集](../../assets/audience-edit5.jpeg)
+   ![&#x200B; オーディエンスを編集](../../assets/audience-edit5.jpeg)
 
-1. 古いフィールド間のマッピングについては、[ ストリーミングメディアサービス ](/help/media-overview.md)で説明されているストリーミングメディア変数を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。 例えば、[Media Starts](/help/reporting/metrics/media-starts.md) パラメーターの場合、`media.mediaTimed.impressions.value`の対応者は`xdm.mediaReporting.sessionDetails.isViewed`です。
+1. 古いフィールド間のマッピングについては、[&#x200B; ストリーミングメディアサービス &#x200B;](/help/media-overview.md)で説明されているストリーミングメディア変数を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。 例えば、[Media Starts](/help/reporting/metrics/media-starts.md) パラメーターの場合、`media.mediaTimed.impressions.value`の対応者は`xdm.mediaReporting.sessionDetails.isViewed`です。
 
    ![XDM パスを更新](../../assets/updated-xdm-path.jpeg)
 

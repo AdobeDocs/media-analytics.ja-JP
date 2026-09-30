@@ -67,9 +67,9 @@ Customer Journey Analytics設定を「Media」という古いデータ型から�
 
 1. 派生フィールドのすべての古いフィールドを、「Media Reporting Details」の新しい対応するフィールドに置き換えます。
 
-古いフィールドと新しいフィールドの間のマッピングについては、[ コンテンツ ID](/help/reporting/dimensions/content.md) パラメーターと、[ ストリーミングメディアサービス ](/help/media-overview.md)に記載されているストリーミングメディア変数の残りの部分を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
+古いフィールドと新しいフィールドの間のマッピングについては、[&#x200B; コンテンツ ID](/help/reporting/dimensions/content.md) パラメーターと、[&#x200B; ストリーミングメディアサービス &#x200B;](/help/media-overview.md)に記載されているストリーミングメディア変数の残りの部分を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
 
-![古いXDM フィールドパスと新しいXDM フィールドパス ](../../assets/field-paths-updated.jpeg)
+![古いXDM フィールドパスと新しいXDM フィールドパス &#x200B;](../../assets/field-paths-updated.jpeg)
 
 ## 例
 
@@ -83,13 +83,13 @@ Customer Journey Analytics設定を「Media」という古いデータ型から�
 
 1. 非推奨のデータタイプから、古いフィールドを使用している指標またはディメンションを探します。
 
-   ![ データビューの古いフィールドパス ](../../assets/old-field-data-view.jpeg)
+   ![&#x200B; データビューの古いフィールドパス &#x200B;](../../assets/old-field-data-view.jpeg)
 
-1. [章オフセット ](/help/reporting/dimensions/chapter-offset.md)記事の対応する新しいフィールドを確認してください。
+1. [章オフセット &#x200B;](/help/reporting/dimensions/chapter-offset.md)記事の対応する新しいフィールドを確認してください。
 
 1. データビューで、新しい対応するフィールドを見つけます。
 
-   ![ データビューの新しいフィールドパス ](../../assets/new-field-data-view.jpeg)
+   ![&#x200B; データビューの新しいフィールドパス &#x200B;](../../assets/new-field-data-view.jpeg)
 
 1. 新しいフィールドを指標またはディメンションにドラッグします。
 
@@ -117,9 +117,9 @@ Customer Journey Analytics設定を「Media」という古いデータ型から�
 
 1. 非推奨の「メディア」データタイプの古いフィールドを使用してフォールバック値を入力します。
 
-   ![ フォールバック値](../../assets/fallback-value.jpeg)
+   ![&#x200B; フォールバック値](../../assets/fallback-value.jpeg)
 
-   ![ フォールバック値](../../assets/fallback-value2.jpeg)
+   ![&#x200B; フォールバック値](../../assets/fallback-value2.jpeg)
 
    これが派生フィールドの最終的な定義です。
 
@@ -127,7 +127,7 @@ Customer Journey Analytics設定を「Media」という古いデータ型から�
 
 1. 派生フィールドを更新するには、古い非推奨フィールド（`media.mediaTimed`で始まるパス）を使用している派生フィールドを見つけます。
 
-   ![派生フィールド ](../../assets/old-derived-field.jpeg)
+   ![派生フィールド &#x200B;](../../assets/old-derived-field.jpeg)
 
 1. 更新する派生フィールドにマウスポインターを置き、**[!UICONTROL 編集]** アイコンを選択します。
 
@@ -135,11 +135,11 @@ Customer Journey Analytics設定を「Media」という古いデータ型から�
 
    ![古いデータ型を持つフィールドを探す](../../assets/locate-fields-with-old-datatype.jpeg)
 
-1. [ コンテンツ名](/help/reporting/dimensions/content-name.md)記事の対応する新しいフィールドを確認してください。
+1. [&#x200B; コンテンツ名](/help/reporting/dimensions/content-name.md)記事の対応する新しいフィールドを確認してください。
 
 1. 古いフィールドを新しいフィールドに置き換えます。
 
-   ![新しいフィールド ](../../assets/derived-field-new.jpeg)
+   ![新しいフィールド &#x200B;](../../assets/derived-field-new.jpeg)
 
 1. 古い非推奨の「メディア」データタイプのフィールドを使用して、すべての派生フィールドに対してこのプロセスを繰り返します。
 

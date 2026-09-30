@@ -40,7 +40,7 @@ Roku （`adbmobile.brs`）用Adobe Media SDK 2.xは、BrightScriptで記述さ�
 * `adbmobile.brs`: ライブラリファイル。 チャンネルの`pkg:/source/` ディレクトリにコピーします。
 * `ADBMobileConfig.json`: アプリ用にカスタマイズされたSDK設定ファイル。
 
-SceneGraph チャネルの場合は、`adbmobileTask.brs`と`adbmobileTask.xml`を`pkg:/components/` ディレクトリにコピーします。 [SceneGraph サポート ](#scenegraph)を参照してください。
+SceneGraph チャネルの場合は、`adbmobileTask.brs`と`adbmobileTask.xml`を`pkg:/components/` ディレクトリにコピーします。 [SceneGraph サポート &#x200B;](#scenegraph)を参照してください。
 
 ## ADBMobileConfig.jsonの設定
 
@@ -71,11 +71,11 @@ SceneGraph チャネルの場合は、`adbmobileTask.brs`と`adbmobileTask.xml`�
 | --- | --- |
 | `server` | メディアトラッキングエンドポイントのURL。 [Analyticsのみの実装の概要](overview.md)を参照してください。 |
 | `publisher` | コンテンツパブリッシャーの一意のID。 |
-| `channel` | コンテンツ配信チャネルの名前。 [ コンテンツチャネル ](/help/implementation/variables/core/content-channel.md)として報告されました。 |
+| `channel` | コンテンツ配信チャネルの名前。 [&#x200B; コンテンツチャネル &#x200B;](/help/implementation/variables/core/content-channel.md)として報告されました。 |
 | `ssl` | SSLを使用して呼び出しを追跡するかどうか。 |
 | `ovp` | オンライン ビデオ プラットフォーム プロバイダーの名前。 |
 | `sdkVersion` | アプリまたはSDKの現在のバージョン。 |
-| `playerName` | プレイヤーの名前。 [ コンテンツプレーヤー名](/help/implementation/variables/core/content-player-name.md)として報告されました。 |
+| `playerName` | プレイヤーの名前。 [&#x200B; コンテンツプレーヤー名](/help/implementation/variables/core/content-player-name.md)として報告されました。 |
 
 >[!IMPORTANT]
 >
@@ -104,7 +104,7 @@ adb.processMediaMessages()
 
 ## メディアイベントの追跡
 
-SDK メソッドを呼び出して、各メディアイベントをトラッキングします。 正確な呼び出し、ビルダー、定数については、各[ イベント ](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md) ページの&#x200B;**Roku 2.x** タブを参照してください。
+SDK メソッドを呼び出して、各メディアイベントをトラッキングします。 正確な呼び出し、ビルダー、定数については、各[&#x200B; イベント &#x200B;](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md) ページの&#x200B;**Roku 2.x** タブを参照してください。
 
 一般的なセッションは、メディアオブジェクトを作成し、`mediaTrackSessionStart`を呼び出すことから始まります。
 
@@ -139,7 +139,7 @@ adb.mediaTrackSessionStart(mediaInfo, contextData)
 | `visitorSyncIdentifiers(identifiers)` | 同じ訪問者に対して追加の顧客IDを設定します。 |
 | `setAdvertisingIdentifier(rida)` | Advertising（RIDA）のRoku IDを設定します。 Roku [`getRIDA()`](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) APIで取得します。 |
 | `getAllIdentifiers()` | Analytics、訪問者、Audience Manager、カスタム IDなど、SDKによって保存されているすべてのIDを返します。 |
-| `setPrivacyStatus(status)` | プライバシーステータスを設定します。 `adb.PRIVACY_STATUS_OPT_IN`または`adb.PRIVACY_STATUS_OPT_OUT`を渡します。 [ プライバシー](/help/implementation/opt-out-privacy.md)を参照してください。 |
+| `setPrivacyStatus(status)` | プライバシーステータスを設定します。 `adb.PRIVACY_STATUS_OPT_IN`または`adb.PRIVACY_STATUS_OPT_OUT`を渡します。 [&#x200B; プライバシー](/help/implementation/opt-out-privacy.md)を参照してください。 |
 | `getPrivacyStatus()` | 現在のプライバシーステータスを返します。 |
 | `setDebugLogging(flag)` | デバッグログを有効または無効にします。 |
 | `getDebugLogging()` | デバッグログが有効な場合、`true`を返します。 |
@@ -195,6 +195,6 @@ SceneGraph チャネルでSDKを初期化するには：
 
 >[!MORELIKETHIS]
 >
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)
 >* [変数の概要](/help/implementation/variables/overview.md)
 >* [Edge六SDK](/help/implementation/edge/roku.md)

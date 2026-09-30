@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 # ストリーミングメディア用のWeb SDK タグ拡張機能の設定
 
-Adobe Experience Platform Web SDK タグ拡張機能を使用すると、データ収集UIで`alloy.js`設定コードを使用せずにストリーミングメディアコレクションを設定できます。 このページでは、タグ設定について説明します。 代わりにコードでWeb SDKを設定するには、[ ストリーミングメディア用のWeb SDKの設定](web-sdk.md)を参照してください。
+Adobe Experience Platform Web SDK タグ拡張機能を使用すると、データ収集UIで`alloy.js`設定コードを使用せずにストリーミングメディアコレクションを設定できます。 このページでは、タグ設定について説明します。 代わりにコードでWeb SDKを設定するには、[&#x200B; ストリーミングメディア用のWeb SDKの設定](web-sdk.md)を参照してください。
 
 * **前提条件**:
   * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
@@ -50,5 +50,5 @@ Adobe Experience Platform Web SDK タグ拡張機能を使用すると、デー�
 >[!MORELIKETHIS]
 >
 >* [Web SDK タグ拡張機能の概要](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)
->* [ ストリーミングメディア用のWeb SDKの設定（コード内） ](web-sdk.md)
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [&#x200B; ストリーミングメディア用のWeb SDKの設定（コード内） &#x200B;](web-sdk.md)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)

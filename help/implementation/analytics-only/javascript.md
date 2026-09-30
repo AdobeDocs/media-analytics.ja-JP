@@ -26,8 +26,8 @@ Media SDK for JavaScript（3.x）は、ストリーミングメディアデー�
 
 * **前提条件**:
   * [Analyticsのみの実装の概要](overview.md)を完了します。
-  * [AppMeasurement](https://experienceleague.adobe.com/ja/docs/analytics/implementation/js/overview)と[訪問者ID サービス ](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)を実装します。
-  * [JavaScript用Media SDKをダウンロード ](/help/getting-started/download-sdks.md)。
+  * [AppMeasurement](https://experienceleague.adobe.com/ja/docs/analytics/implementation/js/overview)と[訪問者ID サービス &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)を実装します。
+  * [JavaScript用Media SDKをダウンロード &#x200B;](/help/getting-started/download-sdks.md)。
 
 ## SDKのインストールと設定
 
@@ -70,7 +70,7 @@ Media SDK for JavaScript（3.x）は、ストリーミングメディアデー�
 
 >[!MORELIKETHIS]
 >
->* [JavaScript 3.x用Media SDK API リファレンス ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/3.x/docs/APIReference.md)
+>* [JavaScript 3.x用Media SDK API リファレンス &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/3.x/docs/APIReference.md)
 >* [JS SDK 2.xから3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/3.x/docs/MigrationGuide.md)への移行
 >* [Media Analytics タグ拡張機能の設定](javascript-tags.md)
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)

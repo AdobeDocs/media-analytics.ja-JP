@@ -25,7 +25,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**Ad ID**変数のデータ収集について説明します。 対応するレポートディメンションについては、[Ad](/help/reporting/dimensions/ad.md)を参照してください。*
+*このページでは、**Ad ID**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[Ad](/help/reporting/dimensions/ad.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -198,6 +198,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

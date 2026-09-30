@@ -26,7 +26,7 @@ Media SDK for Chromecastは、Chromecast受信者アプリからストリーミ�
 
 * **前提条件**:
   * [Analyticsのみの実装の概要](overview.md)を完了します。
-  * [Chromecast用Media SDKをダウンロード ](/help/getting-started/download-sdks.md)。
+  * [Chromecast用Media SDKをダウンロード &#x200B;](/help/getting-started/download-sdks.md)。
 
 ## SDKのインストールと設定
 
@@ -37,7 +37,7 @@ Chromecast受信機アプリにSDKを追加し、正規表現の説明に従っ�
 
 ## メディアイベントの追跡
 
-トラッカーを作成したら、トラッカーのメソッドを使用して各メディアイベントを追跡します。 正確な呼び出しについては、各[ イベント ](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md) ページの&#x200B;**Chromecast** タブを参照してください。
+トラッカーを作成したら、トラッカーのメソッドを使用して各メディアイベントを追跡します。 正確な呼び出しについては、各[&#x200B; イベント &#x200B;](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md) ページの&#x200B;**Chromecast** タブを参照してください。
 
 ## 次の手順
 
@@ -45,6 +45,6 @@ Chromecast受信機アプリにSDKを追加し、正規表現の説明に従っ�
 
 >[!MORELIKETHIS]
 >
->* [Chromecast SDK API リファレンス ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)
->* [ イベントの概要](/help/implementation/events/overview.md)
+>* [Chromecast SDK API リファレンス &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)
+>* [&#x200B; イベントの概要](/help/implementation/events/overview.md)
 >* [変数の概要](/help/implementation/variables/overview.md)
