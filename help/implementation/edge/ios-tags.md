@@ -3,20 +3,30 @@ title: タグ付きストリーミングメディア用にiOSを設定する
 description: Adobe Streaming Media for Edge Network タグ拡張機能を使用して、iOS用のストリーミングメディア収集を設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 1%
-
 ---
-
 # タグ付きストリーミングメディア用にiOSを設定する
 
 IOSまたはtvOS アプリのストリーミングメディアコレクションは、Tags モバイルプロパティを使用して設定できます。このメディア設定は、Data Collection UIで管理されます。 このページでは、タグ設定について説明します。 代わりにコードでSDKを設定するには、[&#x200B; ストリーミングメディア用にiOSを設定](ios.md)を参照してください。
 
 * **前提条件**:
-   * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
-   * データ収集UIでモバイルプロパティを作成します。 [Edge Network向けAdobe Streaming Media](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)を参照してください。
+  * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
+  * データ収集UIでモバイルプロパティを作成します。 [Edge Network向けAdobe Streaming Media](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)を参照してください。
 
 ## 拡張機能の設定
 

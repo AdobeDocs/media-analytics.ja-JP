@@ -6,22 +6,32 @@ role: User, Admin, Developer
 exl-id: c3a4d31b-8f9e-4d7a-9b2e-1a5f0e8c7d39
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+    internal-label: Implementation
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 763
-ht-degree: 4%
-
+source-wordcount: '769'
+ht-degree: 5%
 ---
-
 
 # XDM レポートスキーマ
 
@@ -53,7 +63,7 @@ Adobe Experience Platform Edge Networkを使用してメディアトラッキン
 | [&#x200B; バッファー開始](/help/implementation/events/playback/buffer-start.md) | いいえ | QoE バッファー指標の計算に使用 |
 | [&#x200B; ビットレート変更](/help/implementation/events/playback/bitrate-change.md) | いいえ | QoE ビットレート指標の計算に使用 |
 | [状態の開始](/help/implementation/events/player-state/state-start.md) | いいえ | プレーヤーの状態指標の計算に使用されます |
-| [&#x200B; エラー](/help/implementation/events/error.md) | いいえ | QoEで`errorCount`を計算するために使用 |
+| [エラー](/help/implementation/events/error.md) | いいえ | QoEで`errorCount`を計算するために使用 |
 
 ## バックエンドで計算されたフィールド
 

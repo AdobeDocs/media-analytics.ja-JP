@@ -3,13 +3,23 @@ title: ストリーミングメディア用にRoku 2.xを設定する
 description: SceneGraph チャネルを含む、Analyticsのみのストリーミングメディア実装用Roku用Adobe Media SDK 2.xをインストールして設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 3%
-
 ---
-
 # ストリーミングメディア用にRoku 2.xを設定する
 
 Roku （`adbmobile.brs`）用Adobe Media SDK 2.xは、BrightScriptで記述されたRoku チャンネルからストリーミングメディアデータをAdobe Analyticsに直接送信します。 また、Adobe Audience Managerを通じてオーディエンスデータを収集し、メディアイベントを通じてエンゲージメントを測定します。
@@ -19,9 +29,9 @@ Roku （`adbmobile.brs`）用Adobe Media SDK 2.xは、BrightScriptで記述さ�
 >ここでは、Analytics専用のMedia SDK 2.x for Rokuについて説明します。 新しい実装の場合、Adobeでは、[Roku Edge SDK](/help/implementation/edge/roku.md)をお勧めします。この機能を使用すると、Adobe Analyticsに加えて、Customer Journey Analytics、Adobe Journey Optimizer、Real-Time CDPでデータを利用できます。
 
 * **前提条件**:
-   * [Analyticsのみの実装の概要](overview.md)を完了します。
-   * [Roku](/help/getting-started/download-sdks.md)のMedia SDKをダウンロードします。
-   * メディアプレーヤーに、プレイヤーイベントを登録するためのAPIと、メディア名や再生ヘッドの位置などのプレーヤー情報を提供するAPIを含めます。
+  * [Analyticsのみの実装の概要](overview.md)を完了します。
+  * [Roku](/help/getting-started/download-sdks.md)のMedia SDKをダウンロードします。
+  * メディアプレーヤーに、プレイヤーイベントを登録するためのAPIと、メディア名や再生ヘッドの位置などのプレーヤー情報を提供するAPIを含めます。
 
 ## SDK のインストール
 

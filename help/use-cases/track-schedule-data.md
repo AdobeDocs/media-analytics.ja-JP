@@ -4,38 +4,50 @@ description: ライブコンテンツを追跡するためにスケジュール�
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
-TQID: https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4
+TQID: 'https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+    internal-label: Insights
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 1424
+source-wordcount: '1424'
 ht-degree: 5%
-
 ---
-
 # スケジュールデータをアップロードしてライブコンテンツを追跡
 
 >[!AVAILABILITY]
 >
->この記事で説明している機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 機能が一般公開されたら、このメモは削除されます。 リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/releases/releases)を参照してください。
+>この記事で説明している機能は、リリースの限定的テスト段階にあり、お使いの環境ではまだ使用できない可能性があります。 機能が一般提供されると、この注記は削除されます。 リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/releases/releases)を参照してください。
 
 過去のライブストリーミングメディアコンテンツのスケジュールデータをアップロードして、ライブコンテンツの視聴者をより簡単かつ正確に追跡できます。 個々のプログラムや、特定のトピックやプログラムセグメントの視聴率を追跡できます。
 
 以下は、スケジュールデータのアップロードでサポートされるライブコンテンツの例です。
 
-* FAST（無料広告サポート TV）プラットフォーム
+* FAST（広告付き無料テレビ）プラットフォーム
 
 * ローカルストリーム
 
@@ -47,7 +59,7 @@ ht-degree: 5%
 
 過去のライブストリーミングメディアコンテンツのスケジュールデータアップロードを使用する場合は、さまざまな機能を利用できます。 ここでは、プログラムのパフォーマンスを分析するのに役立つ主な機能について説明します。
 
-これらの機能は、ストリーミングメディアコレクションの実装方法に関係なく使用できます。
+これらの機能は、Streaming Media Collection の実装方法に関係なく使用できます。
 
 * **プログラムのスケジュールを正確に追跡**：分析する期間について、ライブストリームの各プログラムの開始時間と終了時間を特定します。 正確な開始時間と終了時間により、正確な実行時間が正確に反映され、各ビューアセッションに対して分析することができます。
 

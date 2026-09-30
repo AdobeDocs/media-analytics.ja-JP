@@ -3,13 +3,25 @@ title: コンテンツの評価
 description: テレビの保護者ガイドラインまたは地域の評価システムで定義された視聴者の評価を報告します。
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '400'
 ht-degree: 2%
-
 ---
-
 
 # コンテンツの評価
 
@@ -38,7 +50,7 @@ ht-degree: 2%
 
 レポートスイートで&#x200B;**[[!UICONTROL ビデオメタデータ]](/help/reporting/setup/analytics-reporting.md)**&#x200B;が有効になっている場合、Adobeは自動的にコンテンツレーティング分類構造を作成します。 [分類セット &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)を使用して分類を入力および管理する責任があります。
 
-このアプローチにより、各コンテンツ IDと評価の間に1:1の関係が保証されます。 分類の更新は、そのIDのすべての履歴データにさかのぼって適用されます。
+このアプローチにより、各コンテンツ IDと評価との間に、1:1の関係を保証できます。 分類の更新は、そのIDのすべての履歴データにさかのぼって適用されます。
 
 >[!IMPORTANT]
 >
@@ -48,7 +60,7 @@ ht-degree: 2%
 
 `a.media.rating`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 このアプローチは、分類の保守を必要とせずに、コンテンツレーティングをヒットごとの値として取得します。
 
-トレードオフは、コンテンツレーティングと親[&#x200B; コンテンツ（ID） &#x200B;](content.md) ディメンションとの間の保証1:1関係が失われることです。 実装でイベント間で同じコンテンツ IDに一貫性のない値が送信される場合、同じコンテンツの下に複数の評価が表示される可能性があります。 値の更新は、今後のデータにのみ適用されます。
+トレードオフは、コンテンツレーティングと親[&#x200B; コンテンツ（ID） &#x200B;](content.md) ディメンションとの間の保証された1:1の関係が失われることです。 実装でイベント間で同じコンテンツ IDに一貫性のない値が送信される場合、同じコンテンツの下に複数の評価が表示される可能性があります。 値の更新は、今後のデータにのみ適用されます。
 
 ## ディメンション項目
 

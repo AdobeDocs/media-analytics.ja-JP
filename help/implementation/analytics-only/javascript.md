@@ -3,21 +3,31 @@ title: ストリーミングメディア用にJavaScriptを設定する
 description: Analyticsのみのストリーミングメディア実装用JavaScript用Media SDK（3.x）をインストールして設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 3%
-
 ---
-
 # ストリーミングメディア用にJavaScriptを設定する
 
 Media SDK for JavaScript（3.x）は、ストリーミングメディアデータをAdobe Analyticsに直接送信します。 このページでは、JavaScriptの手動インストールについて説明します。 代わりにタグを使用してSDKをデプロイするには、[Media Analytics タグ拡張機能の設定](javascript-tags.md)を参照してください。 新しい実装の場合は、[Web SDK](/help/implementation/edge/web-sdk.md)を使用して、Edge Network データストリームを介してAdobe Analyticsにデータを送信することを検討してください。
 
 * **前提条件**:
-   * [Analyticsのみの実装の概要](overview.md)を完了します。
-   * [AppMeasurement](https://experienceleague.adobe.com/ja/docs/analytics/implementation/js/overview)と[訪問者ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/appmeasurement)を実装します。
-   * [JavaScript用Media SDKをダウンロード &#x200B;](/help/getting-started/download-sdks.md)。
+  * [Analyticsのみの実装の概要](overview.md)を完了します。
+  * [AppMeasurement](https://experienceleague.adobe.com/ja/docs/analytics/implementation/js/overview)と[訪問者ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/appmeasurement)を実装します。
+  * [JavaScript用Media SDKをダウンロード &#x200B;](/help/getting-started/download-sdks.md)。
 
 ## SDKのインストールと設定
 

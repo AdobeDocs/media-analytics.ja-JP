@@ -3,20 +3,30 @@ title: ストリーミングメディア用のWeb SDKの設定
 description: Adobe Experience Platform Web SDK（alloy.js）を設定して、ストリーミングメディアデータをEdge Networkに送信します。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 5%
-
 ---
-
 # ストリーミングメディア用のWeb SDKの設定
 
 Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/js-overview) （`alloy.js`、バージョン 2.20.0以降）の`streamingMedia` コンポーネントは、web サイト上のメディアセッションデータを収集し、それをEdge Networkに送信します。 このページでは、インコード （`alloy.js`）設定について説明します。 代わりにタグを使用してWeb SDKを設定するには、[&#x200B; ストリーミングメディア用のWeb SDK タグ拡張機能の設定](web-sdk-tags.md)を参照してください。
 
 * **前提条件**:
-   * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
-   * Web SDK 2.20.0以降をインストールします。 [Web SDKのインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/install/overview)を参照してください。
+  * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
+  * Web SDK 2.20.0以降をインストールします。 [Web SDKのインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/install/overview)を参照してください。
 
 ## streamingMedia コンポーネントの設定
 

@@ -4,35 +4,53 @@ description: ストリーミングメディアサービスのリリースノー�
 feature: Release Notes
 role: User, Admin, Developer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-TQID: https://experienceleague.adobe.com/yNfosiewndKE7c-VjoVM6D3ifYlgX3eJGgYQWcBC9no
+TQID: 'https://experienceleague.adobe.com/yNfosiewndKE7c-VjoVM6D3ifYlgX3eJGgYQWcBC9no'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: f73667dc-d296-4875-8975-ac3fdc3adc42
+    internal-label: Dashboards
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: a421fb65-2c82-457a-921c-28c46b697a39
+    internal-label: Analytics basics
 subfeature_v2:
   - id: ac8a38fa-dec3-4581-8f64-178fde9f64e8
+    internal-label: Report Builder
   - id: c77ba355-6681-41fe-b719-563d3f507fdb
+    internal-label: Mobile SDK
   - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+    internal-label: Variables
+  - id: d89ba969-e026-48bf-927e-e9df2f1e34f3
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+    internal-label: Insights
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 722
-ht-degree: 36%
-
+source-wordcount: '722'
+ht-degree: 37%
 ---
-
 # ストリーミングメディアサービスのリリースノート
 
 **最終更新**: 2026年6月4日
@@ -41,7 +59,7 @@ ht-degree: 36%
 
 | 機能 | 説明 | 日付 |
 | --- | --- | --- |
-| **サポートスケジュールのデータ** | 過去のライブコンテンツのスケジュールデータをアップロードして、プログラムやセグメント別の視聴者を追跡できます。 サポートされるコンテンツの種類は次のとおりです。<ul><li>FAST（無料広告サポート TV）プラットフォーム</li><li>ローカルストリーム</li><li>ライブスポーツ</li></ul>詳しくは、「[&#x200B; スケジュール データをアップロードしてライブコンテンツを追跡する](/help/use-cases/track-schedule-data.md) ユースケース」を参照してください。 | ロールアウト開始：2025年10月29日（PT）<p>一般公開：2026年10月</p> |
+| **サポートスケジュールのデータ** | 過去のライブコンテンツのスケジュールデータをアップロードして、プログラムやセグメント別の視聴者を追跡できます。 サポートされるコンテンツの種類は次のとおりです。<ul><li>FAST（広告付き無料テレビ）プラットフォーム</li><li>ローカルストリーム</li><li>ライブスポーツ</li></ul>詳しくは、「[&#x200B; スケジュール データをアップロードしてライブコンテンツを追跡する](/help/use-cases/track-schedule-data.md) ユースケース」を参照してください。 | ロールアウト開始：2025年10月29日（PT）<p>一般公開：2026年10月</p> |
 
 ## 2025年
 
@@ -75,11 +93,11 @@ ht-degree: 36%
 
 | 機能 | 説明 | 日付 |
 | --- | --- | --- |
-| **メディア再生滞在時間** | [再生滞在時間パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)は、視聴者のエンゲージメントに関する貴重なinsightを提供し、メディア組織が日分割の機能を使用した高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関するより深く詳細なインサイトを得られるようにします。 特定の時点でのメディアストリームの視聴時間を確認できます。 再生時間は、様々な粒度（新たな 5 分、15 分、30 分の時間粒度を含む）で分割できます。 | 2021年9月 |
+| **メディア再生滞在時間** | [再生滞在時間パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)は、視聴者のエンゲージメントに関する貴重なinsightを提供し、メディア組織が日分割の機能を使用した高度な滞在時間分析を通じて、分単位のユーザーエンゲージメントに関するより深く詳細なインサイトを得られるようにします。 特定の時点でのメディアストリームの視聴時間を確認できます。 再生時間は、新たに追加された 5 分、15 分、30 分の時間粒度を含む、様々な粒度で分割できます。 | 2021年9月 |
 
 ## 2020年
 
 | 機能 | 説明 | 日付 |
 | --- | --- | --- |
-| **メディア同時ビューアパネル** | [同時視聴者数パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)を使用すると、同時視聴数のピークが発生した場所や脱落が発生した場所を把握できます。 コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールのトラブルシューティングや計画に役立ちます。<br><br>[&#x200B; メディア同時視聴者数パネル （チュートリアル） &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | 2020年9月；2021年1月 |
+| **メディア同時ビューアパネル** | [同時視聴者数パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)を使用すると、同時視聴数のピークが発生した場所や脱落が発生した場所を把握できます。 コンテンツの質と閲覧者のエンゲージメントに関する貴重なインサイトを取得でき、ボリュームやスケールに関するトラブルシューティングやプランニングに役立ちます。<br><br>[&#x200B; メディア同時視聴者数パネル （チュートリアル） &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | 2020年9月；2021年1月 |
 | **サポートされるデバイスとプラットフォーム** | AEP SDK を含むメディア Launch 拡張機能で、以下の OTT デバイスがサポートされるようになりました。 <div><ul><li>Apple TV（tvOS）</li><li>Fire TV（Fire OS）</li><li>Android TV</li></ul></div> | 2020年6月 |

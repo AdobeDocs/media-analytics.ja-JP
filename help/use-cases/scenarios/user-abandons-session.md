@@ -1,30 +1,39 @@
 ---
-title: メディアトラッキングタイムライン - ユーザーが中断したセッションについて学ぶ
+title: メディア トラッキング タイムライン - ユーザーによるセッション放棄について学ぶ
 description: ビデオセッションが中断された場合の再生ヘッドタイムラインと、対応するユーザーアクションについて説明します。 各アクションとリクエストの詳細について説明します。
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Streaming Media
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/e0p6PwQPp5P2RG5M-0IeWtSebVa8rH20SZBRExC9Q7c
+TQID: 'https://experienceleague.adobe.com/e0p6PwQPp5P2RG5M-0IeWtSebVa8rH20SZBRExC9Q7c'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 642
+source-wordcount: '642'
 ht-degree: 100%
-
 ---
+# タイムライン 2 - ユーザーによるセッションの放棄 {#timeline--2-user-abandons-session}
 
-# タイムライン 2 - ユーザーが中断したセッション {#timeline--2-user-abandons-session}
-
-## VOD、プリロール広告、ミッドロール広告、ユーザーがコンテンツを早い時点で中断
+## VOD、プレロール広告、ミッドロール広告、ユーザーによるコンテンツの早期放棄
 
 次の図に、再生ヘッドタイムラインおよびユーザーのアクションに対応するタイムラインを示します。 各アクションおよびそれに伴うリクエストを次に示します。
 
@@ -66,11 +75,11 @@ ht-degree: 100%
 }
 ```
 
-### アクション 2 - ping タイマー開始 {#Action-2}
+### アクション 2 - Ping タイマー開始 {#Action-2}
 
 | アクション | アクションのタイムライン（秒） | 再生ヘッドの位置（秒） | クライアントリクエスト |
 | --- | :---: | :---: | --- |
-| アプリ開始 ping イベントタイマー | 0 | 0 | |
+| アプリが ping イベントタイマーを開始 | 0 | 0 | |
 
 アプリの ping タイマーを開始します。 最初の ping イベントは、プリロール広告がある場合は 1 秒、その他の場合は 10 秒で発生させる必要があります。
 
@@ -78,9 +87,9 @@ ht-degree: 100%
 
 | アクション | アクションのタイムライン（秒） | 再生ヘッドの位置（秒） | クライアントリクエスト |
 | --- | :---: | :---: | --- |
-| プリロール広告ブレークの開始を追跡する | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| プレロール広告ブレークの開始を追跡 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-プリロール広告を追跡する必要があります。 広告は、広告ブレーク内でのみ追跡できます。
+プレロール広告をトラッキングする必要があります。 広告は、広告ブレーク内でのみ追跡できます。
 
 ```json
 {
@@ -101,7 +110,7 @@ ht-degree: 100%
 
 | アクション | アクションのタイムライン（秒） | 再生ヘッドの位置（秒） | クライアントリクエスト |
 | --- | :---: | :---: | --- |
-| プリロール広告 #1 の開始を追跡する | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| プレロール広告 #1 の開始を追跡 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 12 秒の広告が開始します。
 
@@ -153,7 +162,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | プリロール広告 #1 の完了を追跡する | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
-最初のプリロール広告が終了します。
+最初のプレロール広告が終了しました。
 
 ```json
 {
@@ -350,7 +359,7 @@ ht-degree: 100%
 
 | アクション | アクションのタイムライン（秒） | 再生ヘッドの位置（秒） | クライアントリクエスト |
 | --- | :---: | :---: | --- |
-| ユーザーがアプリを閉じ、 視聴を中断したユーザーがこのセッションに戻らないとアプリが判断する。 | 48 | 33 | `/api/v1/sessions/{sid}/events` |
+| ユーザーがアプリを閉じます。 アプリは、ユーザーが視聴を中断し、このセッションに戻らないと判断します。 | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
 `sessionEnd` を VA バックエンドに送信して、それ以上の処理を行うことなくセッションを即座に終了する必要があることを示します。
 
