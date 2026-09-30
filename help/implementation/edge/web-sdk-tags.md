@@ -26,7 +26,7 @@ Adobe Experience Platform Web SDK タグ拡張機能を使用すると、デー�
 
 * **前提条件**:
   * [Edgeの実装の概要](overview.md)を完了します（[!UICONTROL Media Analytics]が有効になっているスキーマ、データセット、データストリーム）。
-  * Web SDK タグ拡張機能をインストールして設定します。 [Web SDK タグ拡張機能の概要](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)を参照してください。
+  * Web SDK タグ拡張機能をインストールして設定します。 [Web SDK タグ拡張機能の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/overview)を参照してください。
 
 ## 拡張機能でのストリーミングメディアの設定
 
@@ -49,6 +49,6 @@ Adobe Experience Platform Web SDK タグ拡張機能を使用すると、デー�
 
 >[!MORELIKETHIS]
 >
->* [Web SDK タグ拡張機能の概要](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)
+>* [Web SDK タグ拡張機能の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/web-sdk/overview)
 >* [&#x200B; ストリーミングメディア用のWeb SDKの設定（コード内） &#x200B;](web-sdk.md)
 >* [&#x200B; イベントの概要](/help/implementation/events/overview.md)

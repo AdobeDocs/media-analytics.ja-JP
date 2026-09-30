@@ -40,8 +40,8 @@ Streaming Media Analyticsの指標は、メディアバックエンドによっ�
 
 | レポートシステム | 指標の到達方法 |
 | --- | --- |
-| Adobe Analytics | [&#x200B; コンテキストデータ変数](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/contextdata)を使用して入力されました。 一部の指標は、これらのコンテキストデータ変数を使用してソリューションイベントに自動的に入力されます。その他の指標は、[処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を使用してカスタムイベントにマッピングする必要があります。 値を自動入力する指標では、最初にそれぞれの[&#x200B; ストリーミングメディアレポートスイート設定](../setup/analytics-reporting.md)を有効にする必要があります。 |
-| Customer Journey Analytics | `xdm.mediaReporting.sessionDetails`および関連ノードのXDM フィールド。ストリーミングメディアデータを含む任意のデータセットから取得します。 [&#x200B; データビューコンポーネント設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)内で、必要な設定を持つ各指標を作成する必要があります。 |
+| Adobe Analytics | [&#x200B; コンテキストデータ変数](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/contextdata)を使用して入力されました。 一部の指標は、これらのコンテキストデータ変数を使用してソリューションイベントに自動的に入力されます。その他の指標は、[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を使用してカスタムイベントにマッピングする必要があります。 値を自動入力する指標では、最初にそれぞれの[&#x200B; ストリーミングメディアレポートスイート設定](../setup/analytics-reporting.md)を有効にする必要があります。 |
+| Customer Journey Analytics | `xdm.mediaReporting.sessionDetails`および関連ノードのXDM フィールド。ストリーミングメディアデータを含む任意のデータセットから取得します。 [&#x200B; データビューコンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/overview)内で、必要な設定を持つ各指標を作成する必要があります。 |
 | データフィード | 指標は、`event_list`列と`post_event_list`列にイベント IDとして表示されます。 各フィードファイルには、ストリーミングメディア指標を含むすべての指標のルックアップを含む`events.csv` ファイルが含まれています。 |
 
 >[!MORELIKETHIS]

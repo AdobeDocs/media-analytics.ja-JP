@@ -26,7 +26,7 @@ Media SDK for JavaScript（3.x）は、ストリーミングメディアデー�
 
 * **前提条件**:
   * [Analyticsのみの実装の概要](overview.md)を完了します。
-  * [AppMeasurement](https://experienceleague.adobe.com/ja/docs/analytics/implementation/js/overview)と[訪問者ID サービス &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)を実装します。
+  * [AppMeasurement](https://experienceleague.adobe.com/ja/docs/analytics/implementation/js/overview)と[訪問者ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/appmeasurement)を実装します。
   * [JavaScript用Media SDKをダウンロード &#x200B;](/help/getting-started/download-sdks.md)。
 
 ## SDKのインストールと設定

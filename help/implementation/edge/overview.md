@@ -45,7 +45,7 @@ Adobeソリューションごとに製品固有の実装を必要とする、従
 
 Adobe Adobe Experience Platformを使用するアプリケーションをまたいでデータ収集を標準化するために、Adobeは、一般に公開されているオープンなExperience Data Model （XDM）標準を開発しました。
 
-1. Adobe Experience Platformで、[UIでのスキーマの作成と編集](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)の説明に従って、スキーマの作成を開始します。
+1. Adobe Experience Platformで、[UIでのスキーマの作成と編集](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja)の説明に従って、スキーマの作成を開始します。
 
 1. スキーマの詳細ページで、スキーマのベースクラスとして&#x200B;**[!UICONTROL Experience Event]**&#x200B;を選択します。
 
@@ -144,7 +144,7 @@ Adobe Adobe Experience Platformを使用するアプリケーションをまた�
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [&#x200B; リクエストペイロードのカスタムフィールドに生成されたパス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)を使用します。
+   1. [&#x200B; リクエストペイロードのカスタムフィールドに生成されたパス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)を使用します。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -170,9 +170,9 @@ Adobe Adobe Experience Platformを使用するアプリケーションをまた�
 
      ![&#x200B; データストリームを作成してスキーマを選択](assets/datastream-create-schema.png)
 
-   * Adobe ソリューションに基づいて、適切なサービスをデータストリームに追加します。 サービスの追加について詳しくは、[&#x200B; データストリームの設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)の「データストリームへのサービスの追加」を参照してください。
+   * Adobe ソリューションに基づいて、適切なサービスをデータストリームに追加します。 サービスの追加について詳しくは、[&#x200B; データストリームの設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ja#view-details)の「データストリームへのサービスの追加」を参照してください。
 
-     * **[!UICONTROL Adobe Analytics]** （Adobe Analyticsを使用している場合）:「[&#x200B; レポートスイートの作成](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)」の説明に従ってレポートスイートを定義します。
+     * **[!UICONTROL Adobe Analytics]** （Adobe Analyticsを使用している場合）:「[&#x200B; レポートスイートの作成](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)」の説明に従ってレポートスイートを定義します。
 
      * **[!UICONTROL Adobe Experience Platform]** （Customer Journey Analytics、Adobe Journey OptimizerまたはReal-Time Customer Data Platformを使用している場合）
 
