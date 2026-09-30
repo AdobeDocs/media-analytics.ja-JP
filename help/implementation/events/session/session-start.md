@@ -3,7 +3,19 @@ title: セッション開始
 description: メディアセッションの開始を通知し、後続のすべてのイベントに必要なセッション IDを取得します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 5%
@@ -16,7 +28,7 @@ ht-degree: 5%
 セッションは、**10分間イベントを受信しなかった場合、**&#x200B;または&#x200B;**30分間の再生ヘッドの移動がない場合、**&#x200B;に自動的に期限切れになります。 セッションの有効期限が切れた場合は、新しいセッション IDを取得するために、「セッション開始」を再度呼び出す必要があります。
 
 * **前提条件**：なし。常に最初のイベント
-* **関連する指標**: [[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md)
+* **関連する指標**: [[!UICONTROL  メディア開始]](/help/reporting/metrics/media-starts.md)
 
 ## 推奨される実装タイプ
 
@@ -173,7 +185,7 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 
 >[!TAB Media Collection API]
 
-`sessionStart`件の投稿を[&#x200B; セッションエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
+`sessionStart`件の投稿を[ セッションエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)に送信します。 応答`Location` ヘッダーには、後続のすべてのイベント要求で使用するセッション IDが含まれています。
 
 ```json
 {
@@ -193,7 +205,7 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 
 ## セッションの再開
 
-以前に閉じられたセッションを再開する場合（例えば、クロスデバイスのハンドオフ後、またはアプリケーションが保存された再生状態を復元した後など）、セッションの開始時に再開フラグを設定します。 これにより、Analyticsは[[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md)ではなく[[!UICONTROL &#x200B; コンテンツ再開]](/help/reporting/metrics/content-resumes.md)を増分します。
+以前に閉じられたセッションを再開する場合（例えば、クロスデバイスのハンドオフ後、またはアプリケーションが保存された再生状態を復元した後など）、セッションの開始時に再開フラグを設定します。 これにより、Analyticsは[[!UICONTROL  メディア開始]](/help/reporting/metrics/media-starts.md)ではなく[[!UICONTROL  コンテンツ再開]](/help/reporting/metrics/content-resumes.md)を増分します。
 
 ## 推奨される実装タイプ
 

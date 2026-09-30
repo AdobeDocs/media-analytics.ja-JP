@@ -3,13 +3,25 @@ title: Edge実装用のレポートの設定
 description: Edge Networkを通じて収集されたストリーミングメディアデータをレポートするようにCustomer Journey Analyticsを設定します。
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 8%
-
 ---
-
 # Edge実装用のレポートの設定
 
 Edge Networkを使用してStreaming Media Collectionを実装したら、収集したデータをレポートするようにCustomer Journey Analyticsを設定します。
@@ -26,7 +38,7 @@ Edge Networkを使用してStreaming Media Collectionを実装したら、収集
 
 ## Customer Journey Analytics でデータビューを作成
 
-1. Customer Journey Analyticsで、[&#x200B; データビューの作成または編集](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/create-dataview)の説明に従ってデータビューを作成します。
+1. Customer Journey Analyticsで、[ データビューの作成または編集](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/create-dataview)の説明に従ってデータビューを作成します。
 
    1. 「**[!UICONTROL 接続]**」フィールドで、以前に作成した接続を選択します。 新しい接続が表示されるまでに最大15分かかる場合があります。
 
@@ -35,14 +47,14 @@ Edge Networkを使用してStreaming Media Collectionを実装したら、収集
       | コンポーネント | タイプ | XDM パス | コンテキストラベル |
       |---|---|---|---|
       | [コンテンツ](/help/reporting/dimensions/content.md) | ディメンション | `mediaReporting.sessionDetails.name` | Media: Content ID |
-      | [&#x200B; コンテンツ名](/help/reporting/dimensions/content-name.md) | ディメンション | `mediaReporting.sessionDetails.friendlyName` | メディア：ビデオ名 |
-      | [&#x200B; コンテンツの長さ](/help/reporting/dimensions/content-length.md) | ディメンション | `mediaReporting.sessionDetails.length` | メディア：ビデオの長さ |
+      | [ コンテンツ名](/help/reporting/dimensions/content-name.md) | ディメンション | `mediaReporting.sessionDetails.friendlyName` | メディア：ビデオ名 |
+      | [ コンテンツの長さ](/help/reporting/dimensions/content-length.md) | ディメンション | `mediaReporting.sessionDetails.length` | メディア：ビデオの長さ |
       | [表示](/help/reporting/dimensions/show.md) | ディメンション | `mediaReporting.sessionDetails.show` | メディア：表示 |
-      | [&#x200B; シーズン &#x200B;](/help/reporting/dimensions/season.md) | ディメンション | `mediaReporting.sessionDetails.season` | メディア：季節 |
-      | [&#x200B; エピソード &#x200B;](/help/reporting/dimensions/episode.md) | ディメンション | `mediaReporting.sessionDetails.episode` | メディア：エピソード |
+      | [ シーズン ](/help/reporting/dimensions/season.md) | ディメンション | `mediaReporting.sessionDetails.season` | メディア：季節 |
+      | [ エピソード ](/help/reporting/dimensions/episode.md) | ディメンション | `mediaReporting.sessionDetails.episode` | メディア：エピソード |
       | イベントタイプ | ディメンション | `eventType` | メディア：イベントタイプ |
-      | [&#x200B; コンテンツに費やした時間](/help/reporting/metrics/content-time-spent.md) | 指標 | `mediaReporting.sessionDetails.timePlayed` | メディア：コンテンツ滞在時間 |
-      | [&#x200B; メディア滞在時間](/help/reporting/metrics/media-time-spent.md) | 指標 | `mediaReporting.sessionDetails.totalTimePlayed` | メディア：メディア滞在時間 |
+      | [ コンテンツに費やした時間](/help/reporting/metrics/content-time-spent.md) | 指標 | `mediaReporting.sessionDetails.timePlayed` | メディア：コンテンツ滞在時間 |
+      | [ メディア滞在時間](/help/reporting/metrics/media-time-spent.md) | 指標 | `mediaReporting.sessionDetails.totalTimePlayed` | メディア：メディア滞在時間 |
       | [合計一時停止期間](/help/reporting/metrics/total-pause-duration.md) | 指標 | `mediaReporting.sessionDetails.pauseTime` | メディア：合計一時停止の期間 |
       | [開始までの時間](/help/reporting/metrics/time-to-start.md) | 指標 | `mediaReporting.qoeDataDetails.timeToStart` | メディア：開始までの時間 |
       | [合計バッファー時間](/help/reporting/metrics/total-buffer-duration.md) | 指標 | `mediaReporting.qoeDataDetails.bufferTime` | メディア：合計バッファー時間 |
@@ -50,9 +62,9 @@ Edge Networkを使用してStreaming Media Collectionを実装したら、収集
 
       >[!IMPORTANT]
       >
-      >この表のコンテキストラベルは、ストリーミングメディアパネルが機能するために必要です。 Customer Journey Analyticsでは、それらを使用して、**同時視聴者数**&#x200B;および&#x200B;**再生時間**&#x200B;派生指標（[&#x200B; メディア同時視聴者数](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)および[&#x200B; メディア再生時間](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent) パネルで使用）を自動計算し、[&#x200B; メディア平均分視聴者数](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel) パネルにレポートオプションを入力します。
+      >この表のコンテキストラベルは、ストリーミングメディアパネルが機能するために必要です。 Customer Journey Analyticsでは、それらを使用して、**同時視聴者数**&#x200B;および&#x200B;**再生時間**&#x200B;派生指標（[ メディア同時視聴者数](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)および[ メディア再生時間](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent) パネルで使用）を自動計算し、[ メディア平均分視聴者数](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel) パネルにレポートオプションを入力します。
 
-      この時点で、他の[&#x200B; ディメンション &#x200B;](/help/reporting/dimensions/overview.md)または[指標](/help/reporting/metrics/overview.md)をデータビューに追加できます。 各ページには、そのコンポーネントのXDM パスが一覧表示されます。
+      この時点で、他の[ ディメンション ](/help/reporting/dimensions/overview.md)または[指標](/help/reporting/metrics/overview.md)をデータビューに追加できます。 各ページには、そのコンポーネントのXDM パスが一覧表示されます。
 
 1. **[!UICONTROL 保存して続行]** → **[!UICONTROL 保存して終了]**&#x200B;を選択し、変更を保存します。
 
@@ -70,7 +82,7 @@ Edge Networkを使用してStreaming Media Collectionを実装したら、収集
 
 1. （条件付き）スキーマにカスタムメタデータを追加した場合は、Customer Journey Analytics ガイドの[永続性コンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)で説明されているように、カスタムフィールドの永続性を設定します。
 
-1. 「[&#x200B; プロジェクトを共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=ja)」の説明に従って、プロジェクトを共有します。
+1. 「[ プロジェクトを共有](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)」の説明に従って、プロジェクトを共有します。
 
    >[!NOTE]
    >
@@ -80,11 +92,11 @@ Edge Networkを使用してStreaming Media Collectionを実装したら、収集
 
 Customer Journey AnalyticsのAnalysis Workspaceには、Streaming Media Collection アドオンを使用するお客様向けの3つの専用メディアパネルが含まれています。 これらのパネルには、最も一般的なストリーミングメディアのレポート作成のニーズに対応する、事前定義済みのビジュアライゼーションが用意されています。
 
-* **[メディアの平均分視聴者数](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**：任意の長さまたはジャンルのプログラムの平均コンテンツ消費量を比較します。 特定のコンテンツ（期間ベース）とカスタム期間モードの両方をサポートし、事後期間の分類を更新できます。
-* **[メディア同時視聴者数](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**：同時視聴者数を経時的に分析して、同時視聴者数と離脱ポイントのピークを特定します。 セグメント、ディメンション、日付範囲ごとに設定可能な粒度とシリーズ分類をサポートしています。
-* **[メディア再生時間](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**：再生時間を時間の経過に沿って分析し、ピーク期間とトラフ期間の詳細を確認します。 設定可能な粒度と出力形式（時間または分）をサポートします。
+* **[メディアの平均分視聴者数](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**：任意の長さまたはジャンルのプログラムの平均コンテンツ消費量を比較します。 特定のコンテンツ（期間ベース）とカスタム期間モードの両方をサポートし、事後期間の分類を更新できます。
+* **[メディア同時視聴者数](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**：同時視聴者数を経時的に分析して、同時視聴者数と離脱ポイントのピークを特定します。 セグメント、ディメンション、日付範囲ごとに設定可能な粒度とシリーズ分類をサポートしています。
+* **[メディア再生時間](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**：再生時間を時間の経過に沿って分析し、ピーク期間とトラフ期間の詳細を確認します。 設定可能な粒度と出力形式（時間または分）をサポートします。
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; ディメンションの概要](/help/reporting/dimensions/overview.md)
+>* [ ディメンションの概要](/help/reporting/dimensions/overview.md)
 >* [指標の概要](/help/reporting/metrics/overview.md)

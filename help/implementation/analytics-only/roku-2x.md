@@ -3,13 +3,23 @@ title: ストリーミングメディア用にRoku 2.xを設定する
 description: SceneGraph チャネルを含む、Analyticsのみのストリーミングメディア実装用Roku用Adobe Media SDK 2.xをインストールして設定します。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 3%
-
 ---
-
 # ストリーミングメディア用にRoku 2.xを設定する
 
 Roku （`adbmobile.brs`）用Adobe Media SDK 2.xは、BrightScriptで記述されたRoku チャンネルからストリーミングメディアデータをAdobe Analyticsに直接送信します。 また、Adobe Audience Managerを通じてオーディエンスデータを収集し、メディアイベントを通じてエンゲージメントを測定します。
@@ -19,9 +29,9 @@ Roku （`adbmobile.brs`）用Adobe Media SDK 2.xは、BrightScriptで記述さ�
 >ここでは、Analytics専用のMedia SDK 2.x for Rokuについて説明します。 新しい実装の場合、Adobeでは、[Roku Edge SDK](/help/implementation/edge/roku.md)をお勧めします。この機能を使用すると、Adobe Analyticsに加えて、Customer Journey Analytics、Adobe Journey Optimizer、Real-Time CDPでデータを利用できます。
 
 * **前提条件**:
-   * [Analyticsのみの実装の概要](overview.md)を完了します。
-   * [Roku](/help/getting-started/download-sdks.md)のMedia SDKをダウンロードします。
-   * メディアプレーヤーに、プレイヤーイベントを登録するためのAPIと、メディア名や再生ヘッドの位置などのプレーヤー情報を提供するAPIを含めます。
+  * [Analyticsのみの実装の概要](overview.md)を完了します。
+  * [Roku](/help/getting-started/download-sdks.md)のMedia SDKをダウンロードします。
+  * メディアプレーヤーに、プレイヤーイベントを登録するためのAPIと、メディア名や再生ヘッドの位置などのプレーヤー情報を提供するAPIを含めます。
 
 ## SDK のインストール
 
@@ -30,7 +40,7 @@ Roku （`adbmobile.brs`）用Adobe Media SDK 2.xは、BrightScriptで記述さ�
 * `adbmobile.brs`: ライブラリファイル。 チャンネルの`pkg:/source/` ディレクトリにコピーします。
 * `ADBMobileConfig.json`: アプリ用にカスタマイズされたSDK設定ファイル。
 
-SceneGraph チャネルの場合は、`adbmobileTask.brs`と`adbmobileTask.xml`を`pkg:/components/` ディレクトリにコピーします。 [SceneGraph サポート &#x200B;](#scenegraph)を参照してください。
+SceneGraph チャネルの場合は、`adbmobileTask.brs`と`adbmobileTask.xml`を`pkg:/components/` ディレクトリにコピーします。 [SceneGraph サポート ](#scenegraph)を参照してください。
 
 ## ADBMobileConfig.jsonの設定
 
@@ -61,11 +71,11 @@ SceneGraph チャネルの場合は、`adbmobileTask.brs`と`adbmobileTask.xml`�
 | --- | --- |
 | `server` | メディアトラッキングエンドポイントのURL。 [Analyticsのみの実装の概要](overview.md)を参照してください。 |
 | `publisher` | コンテンツパブリッシャーの一意のID。 |
-| `channel` | コンテンツ配信チャネルの名前。 [&#x200B; コンテンツチャネル &#x200B;](/help/implementation/variables/core/content-channel.md)として報告されました。 |
+| `channel` | コンテンツ配信チャネルの名前。 [ コンテンツチャネル ](/help/implementation/variables/core/content-channel.md)として報告されました。 |
 | `ssl` | SSLを使用して呼び出しを追跡するかどうか。 |
 | `ovp` | オンライン ビデオ プラットフォーム プロバイダーの名前。 |
 | `sdkVersion` | アプリまたはSDKの現在のバージョン。 |
-| `playerName` | プレイヤーの名前。 [&#x200B; コンテンツプレーヤー名](/help/implementation/variables/core/content-player-name.md)として報告されました。 |
+| `playerName` | プレイヤーの名前。 [ コンテンツプレーヤー名](/help/implementation/variables/core/content-player-name.md)として報告されました。 |
 
 >[!IMPORTANT]
 >
@@ -94,7 +104,7 @@ adb.processMediaMessages()
 
 ## メディアイベントの追跡
 
-SDK メソッドを呼び出して、各メディアイベントをトラッキングします。 正確な呼び出し、ビルダー、定数については、各[&#x200B; イベント &#x200B;](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md) ページの&#x200B;**Roku 2.x** タブを参照してください。
+SDK メソッドを呼び出して、各メディアイベントをトラッキングします。 正確な呼び出し、ビルダー、定数については、各[ イベント ](/help/implementation/events/overview.md)および[変数](/help/implementation/variables/overview.md) ページの&#x200B;**Roku 2.x** タブを参照してください。
 
 一般的なセッションは、メディアオブジェクトを作成し、`mediaTrackSessionStart`を呼び出すことから始まります。
 
@@ -129,7 +139,7 @@ adb.mediaTrackSessionStart(mediaInfo, contextData)
 | `visitorSyncIdentifiers(identifiers)` | 同じ訪問者に対して追加の顧客IDを設定します。 |
 | `setAdvertisingIdentifier(rida)` | Advertising（RIDA）のRoku IDを設定します。 Roku [`getRIDA()`](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) APIで取得します。 |
 | `getAllIdentifiers()` | Analytics、訪問者、Audience Manager、カスタム IDなど、SDKによって保存されているすべてのIDを返します。 |
-| `setPrivacyStatus(status)` | プライバシーステータスを設定します。 `adb.PRIVACY_STATUS_OPT_IN`または`adb.PRIVACY_STATUS_OPT_OUT`を渡します。 [&#x200B; プライバシー](/help/implementation/opt-out-privacy.md)を参照してください。 |
+| `setPrivacyStatus(status)` | プライバシーステータスを設定します。 `adb.PRIVACY_STATUS_OPT_IN`または`adb.PRIVACY_STATUS_OPT_OUT`を渡します。 [ プライバシー](/help/implementation/opt-out-privacy.md)を参照してください。 |
 | `getPrivacyStatus()` | 現在のプライバシーステータスを返します。 |
 | `setDebugLogging(flag)` | デバッグログを有効または無効にします。 |
 | `getDebugLogging()` | デバッグログが有効な場合、`true`を返します。 |
@@ -185,6 +195,6 @@ SceneGraph チャネルでSDKを初期化するには：
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; イベントの概要](/help/implementation/events/overview.md)
+>* [ イベントの概要](/help/implementation/events/overview.md)
 >* [変数の概要](/help/implementation/variables/overview.md)
 >* [Edge六SDK](/help/implementation/edge/roku.md)

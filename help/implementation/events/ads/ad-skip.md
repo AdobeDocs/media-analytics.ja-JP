@@ -3,7 +3,19 @@ title: 広告スキップ
 description: 視聴者が広告をスキップしたことを知らせるシグナル。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 8%
@@ -13,7 +25,7 @@ ht-degree: 8%
 
 広告スキップイベントは、視聴者が広告を終了する前にスキップしたことを示します。 ビューアがスキップボタンを選択したときに送信します。 広告が完了まで再生される場合は、代わりに[Ad complete](ad-complete.md)を送信します。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)、[&#x200B; アドブレーク開始](ad-break-start.md)、[&#x200B; アドスタート &#x200B;](ad-start.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)、[ アドブレーク開始](ad-break-start.md)、[ アドスタート ](ad-start.md)
 * **関連する指標**：なし
 
 >[!IMPORTANT]
@@ -125,7 +137,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_SKIP)
 
 >[!TAB Media Collection API]
 
-`adSkip`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
+`adSkip`件の投稿を[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

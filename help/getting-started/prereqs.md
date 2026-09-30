@@ -5,7 +5,7 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc
+TQID: 'https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
     internal-label: Analytics
@@ -16,9 +16,17 @@ feature_v2:
     internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
     internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+  - id: a421fb65-2c82-457a-921c-28c46b697a39
+    internal-label: Analytics basics
 subfeature_v2:
   - id: c8add8f2-4250-4fd9-9cde-9707036c567d
     internal-label: Methods
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+  - id: c457b289-f974-4a67-a5b6-dec3ffa77675
+    internal-label: Workspace basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -29,7 +37,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 10%
@@ -52,7 +60,7 @@ Analyticsでレポートを有効にし、収集するコンテンツと広告�
 
    * **Analyticsのみの実装**: CX Enterprise ソリューション全体で一貫して訪問者を識別するには、Adobe Visitor ID サービスを有効にする必要があります。 訪問者ID サービスは、各サイト訪問者に一意の永続的なIDを割り当て、そのIDを購読するすべてのCX Enterprise ソリューション間で共有できるようにします。
 
-     詳しくは、[Adobe Visitor ID サービスのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja)を参照してください。
+     詳しくは、[Adobe Visitor ID サービスのドキュメント ](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja)を参照してください。
 
 1. **実装方法の追加の前提条件を表示する**
 

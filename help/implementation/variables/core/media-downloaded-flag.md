@@ -3,7 +3,19 @@ title: メディアのダウンロード済みフラグ
 description: ダウンロードされたオフライン再生としてセッションにマークを付けると、ストリーミングセッションとは別にレポートされます。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 5%
@@ -13,7 +25,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**メディア ダウンロード フラグ**&#x200B;変数のデータ収集について説明します。 対応するレポートディメンションについては、[&#x200B; ダウンロードされたメディア &#x200B;](/help/reporting/dimensions/media-downloaded-flag.md)を参照してください。*
+*このページでは、**メディア ダウンロード フラグ**変数のデータ収集について説明します。 対応するレポートディメンションについては、[ ダウンロードされたメディア ](/help/reporting/dimensions/media-downloaded-flag.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -22,10 +34,10 @@ ht-degree: 5%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.downloaded` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特性** | `c_contextdata.a.media.downloaded` |
 | **必須** | いいえ |
-| **様が**&#x200B;様と共に送信されました | [&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
+| **様が**&#x200B;様と共に送信されました | [ セッション開始](/help/implementation/events/session/session-start.md)、セッション終了 |
 
 ## 推奨される実装タイプ
 
@@ -109,7 +121,7 @@ m.aepSdk.createMediaSession({
 
 >[!TAB Media Edge API]
 
-デバイスがオンラインに戻った後、[&#x200B; ダウンロード済み](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/#downloaded) エンドポイントを呼び出し、`mediaDownloadedEvents`内で完全なオフラインセッションをバッチ処理します。 Adobeは自動的に`isDownloaded`を`true`に設定し、セッション IDを割り当てます。ペイロードに含めないでください。
+デバイスがオンラインに戻った後、[ ダウンロード済み](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/#downloaded) エンドポイントを呼び出し、`mediaDownloadedEvents`内で完全なオフラインセッションをバッチ処理します。 Adobeは自動的に`isDownloaded`を`true`に設定し、セッション IDを割り当てます。ペイロードに含めないでください。
 
 ```json
 {
@@ -193,6 +205,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API セッションのリファレンス &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)を参照してください。
+完全なリクエスト構造については、[Media Collection API セッションのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)を参照してください。
 
 >[!ENDTABS]

@@ -5,29 +5,41 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/cHrkCe0mQm8GlHwLVgf4cjF0VM8B1r3CRt39I2LB6kk
+TQID: 'https://experienceleague.adobe.com/cHrkCe0mQm8GlHwLVgf4cjF0VM8B1r3CRt39I2LB6kk'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+    internal-label: Variables
   - id: e992d880-33bc-4949-a648-aa7d410276cd
+    internal-label: Validation
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+    internal-label: Implementation
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 807
+source-wordcount: '807'
 ht-degree: 3%
-
 ---
-
 
 # コンテンツ再生の追跡
 
@@ -50,13 +62,13 @@ ht-degree: 3%
 
 ## 実装手順
 
-1. **ユーザーが再生をトリガーするタイミングを特定** （ユーザーが「再生」または「自動再生」をクリックしたタイミング）。 コンテンツ名、ID、長さ、ストリームタイプ、メディアタイプを使用して、メディアオブジェクトを作成します。 フィールド定義については、[&#x200B; コンテンツ名](/help/implementation/variables/core/content-name.md)、[&#x200B; コンテンツ ID](/help/implementation/variables/core/content-id.md)、[&#x200B; コンテンツの長さ](/help/implementation/variables/core/content-length.md)、[&#x200B; ストリームタイプ &#x200B;](/help/implementation/variables/core/stream-type.md)および[&#x200B; コンテンツタイプ &#x200B;](/help/implementation/variables/core/content-type.md)を参照してください。
+1. **ユーザーが再生をトリガーするタイミングを特定** （ユーザーが「再生」または「自動再生」をクリックしたタイミング）。 コンテンツ名、ID、長さ、ストリームタイプ、メディアタイプを使用して、メディアオブジェクトを作成します。 フィールド定義については、[ コンテンツ名](/help/implementation/variables/core/content-name.md)、[ コンテンツ ID](/help/implementation/variables/core/content-id.md)、[ コンテンツの長さ](/help/implementation/variables/core/content-length.md)、[ ストリームタイプ ](/help/implementation/variables/core/stream-type.md)および[ コンテンツタイプ ](/help/implementation/variables/core/content-type.md)を参照してください。
 1. **オプションでメタデータを添付**：標準メタデータ（番組、季節、エピソードなど） データバリエーションを定義することができます。 標準メタデータキーの参照については、[Show](/help/implementation/variables/standard-metadata/show.md)、[Season](/help/implementation/variables/standard-metadata/season.md)、[Episode](/help/implementation/variables/standard-metadata/episode.md)、[Genre](/help/implementation/variables/standard-metadata/genre.md)、および[Network](/help/implementation/variables/standard-metadata/network.md)を参照してください。
-1. **セッションのトラッキングを開始するには、[&#x200B; セッション開始](/help/implementation/events/session/session-start.md)**&#x200B;に電話してください。 これにより、データとメタデータが読み込まれ、開始までの時間のQoS測定が開始されます。 SessionStartは、最初のフレームではなく、再生する&#x200B;*インテント*&#x200B;を追跡します。
+1. **セッションのトラッキングを開始するには、[ セッション開始](/help/implementation/events/session/session-start.md)**&#x200B;に電話してください。 これにより、データとメタデータが読み込まれ、開始までの時間のQoS測定が開始されます。 SessionStartは、最初のフレームではなく、再生する&#x200B;*インテント*&#x200B;を追跡します。
 1. **コンテンツの最初のフレームが画面に表示されたら、[Play](/help/implementation/events/playback/play.md)**&#x200B;を呼び出します。
 1. **プレーヤーが一時停止したときに[一時停止の開始](/help/implementation/events/playback/pause-start.md)**&#x200B;を呼び出します。 再生が再開されたときに、再度再生を呼び出します。 別の再開イベントはありません。
-1. 視聴者がコンテンツの終わりに達したら、**呼び出し[&#x200B; セッション完了](/help/implementation/events/session/session-complete.md)**。
-1. **プレーヤーがアンロードされるか、ビューアが終了せずにコンテンツを放棄すると、[&#x200B; セッション終了](/help/implementation/events/session/session-end.md)**&#x200B;に電話します。 SessionEndはすぐにセッションを閉じます。それ以降のイベントは追跡できません。
+1. 視聴者がコンテンツの終わりに達したら、**呼び出し[ セッション完了](/help/implementation/events/session/session-complete.md)**。
+1. **プレーヤーがアンロードされるか、ビューアが終了せずにコンテンツを放棄すると、[ セッション終了](/help/implementation/events/session/session-end.md)**&#x200B;に電話します。 SessionEndはすぐにセッションを閉じます。それ以降のイベントは追跡できません。
 
 >[!IMPORTANT]
 >
@@ -66,13 +78,13 @@ ht-degree: 3%
 
 次の例は、セッションの開始からコンテンツの完了およびセッション終了までのセッションフロー全体を示しています。
 
-プラットフォーム別の実装の詳細については、[&#x200B; セッション開始](/help/implementation/events/session/session-start.md)、[再生](/help/implementation/events/playback/play.md)、[開始を一時停止](/help/implementation/events/playback/pause-start.md)、[&#x200B; セッション完了](/help/implementation/events/session/session-complete.md)、および[&#x200B; セッション終了](/help/implementation/events/session/session-end.md)を参照してください。
+プラットフォーム別の実装の詳細については、[ セッション開始](/help/implementation/events/session/session-start.md)、[再生](/help/implementation/events/playback/play.md)、[開始を一時停止](/help/implementation/events/playback/pause-start.md)、[ セッション完了](/help/implementation/events/session/session-complete.md)、および[ セッション終了](/help/implementation/events/session/session-end.md)を参照してください。
 
 ## バッファリング
 
 バッファー開始は、プレイヤーがデータを待っていることを示すシグナルです。 BufferStart （XDM ベースのAPI）の後にPlay イベントを送信すると、バッファーエンドが推測されます。 Mobile SDKでは、BufferCompleteも明示的に呼び出します。
 
-実装の詳細については、[&#x200B; バッファー開始](/help/implementation/events/playback/buffer-start.md)を参照してください。
+実装の詳細については、[ バッファー開始](/help/implementation/events/playback/buffer-start.md)を参照してください。
 
 ## シーク
 
@@ -104,6 +116,6 @@ ht-degree: 3%
 1. **ソースデバイス**&#x200B;で、ビューアがキャストを開始したときにSessionEndを呼び出します。 SessionCompleteを呼び出さないでください。コンテンツは完了しません。
 1. **宛先デバイス**&#x200B;で、再開フラグを`true`に設定してSessionStartを呼び出し、ソースデバイスから同じコンテンツメタデータと再生ヘッドの位置を渡します。
 
-再開フラグを設定すると、Analyticsは、ハンドオフの2番目のレグに対して[&#x200B; メディア開始](/help/reporting/metrics/media-starts.md)ではなく[&#x200B; コンテンツ再開](/help/reporting/metrics/content-resumes.md)を増分します。
+再開フラグを設定すると、Analyticsは、ハンドオフの2番目のレグに対して[ メディア開始](/help/reporting/metrics/media-starts.md)ではなく[ コンテンツ再開](/help/reporting/metrics/content-resumes.md)を増分します。
 
-**以前に閉じられたセッションを手動で再開する：** アプリケーションがユーザーデータを保存し、以前に閉じられたセッションを再開できる場合は、セッション開始時に再開フラグを設定します。 すべてのプラットフォームの実装の詳細については、[&#x200B; セッション開始](/help/implementation/events/session/session-start.md#resuming-a-session)を参照してください。
+**以前に閉じられたセッションを手動で再開する：** アプリケーションがユーザーデータを保存し、以前に閉じられたセッションを再開できる場合は、セッション開始時に再開フラグを設定します。 すべてのプラットフォームの実装の詳細については、[ セッション開始](/help/implementation/events/session/session-start.md#resuming-a-session)を参照してください。

@@ -4,33 +4,44 @@ description: プロファイルを新しいストリーミングメディアフ�
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 0f75e594-5216-4ac1-91bd-fa89ab4b2110
-TQID: https://experienceleague.adobe.com/c1WHnEeZnI3PP6aO40pDHpJCi2Z0ERiNY8lCj4wyMiU
+TQID: 'https://experienceleague.adobe.com/c1WHnEeZnI3PP6aO40pDHpJCi2Z0ERiNY8lCj4wyMiU'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
+    internal-label: Data collection
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 533
+source-wordcount: '533'
 ht-degree: 0%
-
 ---
-
 # プロファイルを新しいストリーミングメディアフィールドに移行
 
-このドキュメントでは、ストリーミングメディアデータに対してAdobe Analyticsが有効になっているAdobe Data Collection フローの上に存在するプロファイルフィルタリングサービスを移行するプロセスについて説明します。 この移行は、プロファイルフィルタリングサービスを「Media」というAdobe ストリーミングメディアサービスのデータタイプを使用して変換し、「[Media Reporting Details](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しい対応するデータタイプを使用します。
+このドキュメントでは、ストリーミングメディアデータに対してAdobe Analyticsが有効になっているAdobe Data Collection フローの上に存在するプロファイルフィルタリングサービスを移行するプロセスについて説明します。 この移行は、プロファイルフィルタリングサービスを「Media」というAdobe ストリーミングメディアサービスのデータタイプを使用して変換し、「[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という新しい対応するデータタイプを使用します。
 
 ## プロファイルの移行
 
-プロファイルフィルタリングを「メディア」と呼ばれる古いデータタイプから「[&#x200B; メディアレポートの詳細](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」と呼ばれる新しいデータタイプに移行するには、既存のプロファイルフィルタリングルールを編集する必要があります。
+プロファイルフィルタリングを「メディア」と呼ばれる古いデータタイプから「[ メディアレポートの詳細](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」と呼ばれる新しいデータタイプに移行するには、既存のプロファイルフィルタリングルールを編集する必要があります。
 
 1. Adobe Experience Platformの「**[!UICONTROL ソース]**」セクションで、「**[!UICONTROL データフロー]**」タブに移動します。
 
@@ -46,7 +57,7 @@ ht-degree: 0%
 
 1. プロファイルが期待どおりに動作していることを確認します。
 
-古いフィールドと新しいフィールドの間のマッピングについては、[&#x200B; コンテンツ ID](/help/reporting/dimensions/content.md) パラメーターと、[&#x200B; ストリーミングメディアサービス &#x200B;](/help/media-overview.md)に記載されているストリーミングメディア変数の残りの部分を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
+古いフィールドと新しいフィールドの間のマッピングについては、[ コンテンツ ID](/help/reporting/dimensions/content.md) パラメーターと、[ ストリーミングメディアサービス ](/help/media-overview.md)に記載されているストリーミングメディア変数の残りの部分を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
 
 ## 例
 
@@ -58,23 +69,23 @@ ht-degree: 0%
 
 1. 次の画像に示すように、**[!UICONTROL データフローを更新]**&#x200B;を選択して編集UIに入ります。
 
-   ![AEP データフロープロファイル &#x200B;](../../assets/aep-dataflow-profile.jpeg)
+   ![AEP データフロープロファイル ](../../assets/aep-dataflow-profile.jpeg)
 
 1. 「**[!UICONTROL 次へ]**」を選択して、「フィルター」タブに移動します。
 
-   ![AEP データフローフィルタータブ &#x200B;](../../assets/aep-dataflow-filtering-profile.jpeg)
+   ![AEP データフローフィルタータブ ](../../assets/aep-dataflow-filtering-profile.jpeg)
 
 1. 「**[!UICONTROL フィルタリング]**」タブで、`media.mediaTimed` フィールドに依存するフィルタリングルールを特定します。
 
-   ![AEP データフローフィルタールール &#x200B;](../../assets/dataflow-filtering-rules-profile.jpeg)
+   ![AEP データフローフィルタールール ](../../assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   meda.mediaTimed オブジェクトを使用する各フィルターについて、[&#x200B; ストリーミングメディアサービス &#x200B;](/help/media-overview.md)に記載されているストリーミングメディア変数を使用して、`mediaReporting` オブジェクト内の対応するフィールドを検索し、古いフィールドと新しいフィールドの間をマッピングします。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。 例えば、[Media Starts](/help/reporting/metrics/media-starts.md)の場合、`media.mediaTimed.impressions.value`の通信相手は`xdm.mediaReporting.sessionDetails.isViewed`です。
+   meda.mediaTimed オブジェクトを使用する各フィルターについて、[ ストリーミングメディアサービス ](/help/media-overview.md)に記載されているストリーミングメディア変数を使用して、`mediaReporting` オブジェクト内の対応するフィールドを検索し、古いフィールドと新しいフィールドの間をマッピングします。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。 例えば、[Media Starts](/help/reporting/metrics/media-starts.md)の場合、`media.mediaTimed.impressions.value`の通信相手は`xdm.mediaReporting.sessionDetails.isViewed`です。
 
-   ![新しいXDM フィールドと古いXDM フィールド &#x200B;](../../assets/xdm-fields-new-and-old.jpeg)
+   ![新しいXDM フィールドと古いXDM フィールド ](../../assets/xdm-fields-new-and-old.jpeg)
 
 1. 関連する`mediaReporting` フィールドをフィルタリングルールにドラッグし、2つのルール間でOR演算子を使用します。 新しいフィールドを使用する場合は、既存のルールと同じルールを追加します。
 
-   ![&#x200B; フィルタールールを追加](../../assets/add-filter-rules.jpeg)
+   ![ フィルタールールを追加](../../assets/add-filter-rules.jpeg)
 
 1. **[!UICONTROL 次へ]**&#x200B;を選択して変更を保存します。

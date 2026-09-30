@@ -3,7 +3,19 @@ title: エラー
 description: メディアプレーヤーでエラーが発生したことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 8%
@@ -11,10 +23,10 @@ ht-degree: 8%
 
 # エラー
 
-エラーイベントは、メディアプレーヤーでエラーが発生したことを示します。 エラーを追跡しても、セッションは閉じません。 エラーにより再生が続行されない場合は、エラーイベントの後に[&#x200B; セッション終了](session/session-end.md)を呼び出します。
+エラーイベントは、メディアプレーヤーでエラーが発生したことを示します。 エラーを追跡しても、セッションは閉じません。 エラーにより再生が続行されない場合は、エラーイベントの後に[ セッション終了](session/session-end.md)を呼び出します。
 
-* **前提条件**: [&#x200B; セッション開始](session/session-start.md)
-* **関連する指標**: [[!UICONTROL 影響を受けるストリーム &#x200B;]](/help/reporting/metrics/error-impacted-streams.md)
+* **前提条件**: [ セッション開始](session/session-start.md)
+* **関連する指標**: [[!UICONTROL 影響を受けるストリーム ]](/help/reporting/metrics/error-impacted-streams.md)
 
 `errorDetails.source` プロパティで使用できる値は、2つだけです。`player` （メディアプレーヤーで発生したエラー）と`external` （CDNやネットワークなどの外部ソースからのエラー）。
 
@@ -79,7 +91,7 @@ m.aepSdk.sendMediaEvent({
 
 >[!TAB Media Edge API]
 
-必要な`errorDetails`を使用して[&#x200B; エラー](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/error/) エンドポイントを呼び出します。
+必要な`errorDetails`を使用して[ エラー](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/error/) エンドポイントを呼び出します。
 
 ```sh
 curl -X POST "https://edge.adobedc.net/ee/va/v1/error?configId={datastreamID}" \
@@ -135,7 +147,7 @@ adb.mediaTrackError("media-error-001", adb.ERROR_SOURCE_PLAYER)
 
 >[!TAB Media Collection API]
 
-`error`件の投稿を[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
+`error`件の投稿を[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に送信します：
 
 ```json
 {

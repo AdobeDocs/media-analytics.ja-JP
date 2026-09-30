@@ -3,7 +3,19 @@ title: フルスクリーン
 description: ビューアがフルスクリーン再生を開始および終了するタイミングを追跡し、バックエンドがフルスクリーンのエンゲージメントをレポートできるようにします。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 8%
@@ -13,7 +25,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**フルスクリーン**&#x200B;プレーヤーの状態に関するデータ収集について説明します。 対応するレポート指標については、[&#x200B; フルスクリーンの影響を受けるストリーム &#x200B;](/help/reporting/metrics/full-screen-streams-impacted.md)、[&#x200B; フルスクリーン数](/help/reporting/metrics/full-screen-count.md)、および[&#x200B; フルスクリーン合計期間](/help/reporting/metrics/full-screen-total-duration.md)を参照してください。*
+*このページでは、**フルスクリーン**プレーヤーの状態に関するデータ収集について説明します。 対応するレポート指標については、[ フルスクリーンの影響を受けるストリーム ](/help/reporting/metrics/full-screen-streams-impacted.md)、[ フルスクリーン数](/help/reporting/metrics/full-screen-count.md)、および[ フルスクリーン合計期間](/help/reporting/metrics/full-screen-total-duration.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ ht-degree: 8%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.states.fullscreen.set`, `a.media.states.fullscreen.count`, `a.media.states.fullscreen.time` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "fullscreen"`を含むエントリ） |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "fullscreen"`を含むエントリ） |
 | **Audience Manager特性** | `c_contextdata.a.media.states.fullscreen.set`, `c_contextdata.a.media.states.fullscreen.count`, `c_contextdata.a.media.states.fullscreen.time` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [状態開始](/help/implementation/events/player-state/state-start.md)、[状態終了](/help/implementation/events/player-state/state-end.md) |
@@ -193,6 +205,6 @@ Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用でき�
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

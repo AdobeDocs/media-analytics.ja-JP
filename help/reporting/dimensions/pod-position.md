@@ -3,19 +3,31 @@ title: ポッドの位置
 description: コンテンツ内の各広告枠のオフセットをレポートします。
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '403'
 ht-degree: 1%
-
 ---
-
 
 # ポッドの位置
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**ポッドの位置**&#x200B;のレポートディメンションについて説明します。 この変数の収集方法については、[Ad break start time](/help/implementation/variables/ads/ad-break-start-time.md)を参照してください。*
+*このページでは、**ポッドの位置**のレポートディメンションについて説明します。 この変数の収集方法については、[Ad break start time](/help/implementation/variables/ads/ad-break-start-time.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -27,16 +39,16 @@ ht-degree: 1%
 
 | レポートシステム | ソース |
 | --- | --- |
-| Adobe Analytics （処理ルール） | `a.media.ad.podSecond`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
-| Adobe Analytics（分類） | [広告ポッド &#x200B;](ad-pod.md) ディメンションの分類。 **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)**&#x200B;がレポートスイートに対して有効になっている場合、Adobeはこの分類を自動的に作成します。 分類値の入力と維持はユーザーの責任です。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Adobe Analytics （処理ルール） | `a.media.ad.podSecond`をeVarにマッピングする[処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 |
+| Adobe Analytics（分類） | [広告ポッド ](ad-pod.md) ディメンションの分類。 **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)**&#x200B;がレポートスイートに対して有効になっている場合、Adobeはこの分類を自動的に作成します。 分類値の入力と維持はユーザーの責任です。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | データフィード（処理ルール） | `evar1`-`evar250`、`post_evar1`-`post_evar250` （処理ルール `a.media.ad.podSecond`がマッピングされるeVar） |
 | データフィード（分類） | なし – データフィードは分類をサポートしていません。 |
 | Audience Manager | `c_contextdata.a.media.ad.podSecond` |
 
 ## 分類アプローチ
 
-**[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)**&#x200B;がレポートスイートに対して有効になっている場合、Adobeは自動的にPod position classification構造を作成します。 [分類セット &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)を使用して分類を入力および管理する責任があります。
+**[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)**&#x200B;がレポートスイートに対して有効になっている場合、Adobeは自動的にPod position classification構造を作成します。 [分類セット ](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)を使用して分類を入力および管理する責任があります。
 
 このアプローチにより、各広告ポッド IDとその位置との間に1:1の関係が保証されます。 分類の更新は、そのIDのすべての履歴データにさかのぼって適用されます。
 
@@ -46,9 +58,9 @@ ht-degree: 1%
 
 ## 処理ルールのアプローチ
 
-`a.media.ad.podSecond`をeVarにマッピングする[処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 このアプローチは、分類のメンテナンスを必要とせずに、ポッドの位置をヒットごとの値としてキャプチャします。
+`a.media.ad.podSecond`をeVarにマッピングする[処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)を作成します。 このアプローチは、分類のメンテナンスを必要とせずに、ポッドの位置をヒットごとの値としてキャプチャします。
 
-トレードオフは、ポッド位置と親[広告ポッド &#x200B;](ad-pod.md) ディメンションとの間の保証された1:1関係が失われることです。 実装でイベント間で同じポッド IDに一貫性のない値が送信される場合、同じ広告ポッドの下に複数の位置が表示される可能性があります。 値の更新は、今後のデータにのみ適用されます。
+トレードオフは、ポッド位置と親[広告ポッド ](ad-pod.md) ディメンションとの間の保証された1:1の関係が失われることです。 実装でイベント間で同じポッド IDに一貫性のない値が送信される場合、同じ広告ポッドの下に複数の位置が表示される可能性があります。 値の更新は、今後のデータにのみ適用されます。
 
 ## ディメンション項目
 

@@ -4,32 +4,42 @@ description: Analytics Source コネクタおよびCustomer Journey Analyticsで
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+TQID: 'https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+    internal-label: Implementation
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 1331
+source-wordcount: '1331'
 ht-degree: 20%
-
 ---
-
 # Adobe Experience PlatformとCustomer Journey AnalyticsのMedia Analytics パラメーターマッピング
 
-このドキュメントでは、Adobe Experience PlatformおよびCustomer Journey Analytics内で使用されるすべてのMedia Analytics パラメーターの包括的なリストを提供します。 これは、[Analytics Source コネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)または[Analytics Source コネクタ for Classifications](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/classifications)を介してAdobe AnalyticsからPlatformに読み込まれたデータの統合をサポートし、各パラメーターを対応するXDM フィールドパスにマッピングすることを目的としています。
+このドキュメントでは、Adobe Experience PlatformおよびCustomer Journey Analytics内で使用されるすべてのMedia Analytics パラメーターの包括的なリストを提供します。 これは、[Analytics Source コネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)または[Analytics Source コネクタ for Classifications](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/classifications)を介してAdobe AnalyticsからPlatformに読み込まれたデータの統合をサポートし、各パラメーターを対応するXDM フィールドパスにマッピングすることを目的としています。
 
 >[!NOTE]
 >
->この参照は、[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)を使用して、Adobe AnalyticsからAdobe Experience Platformにストリーミングメディアデータを取り込み、Customer Journey Analytics レポートやその他のPlatform サービスで使用する組織に適用されます。 これらの変更は、データ収集、処理、レポートなど、Adobe Analytics as a スタンドアロンアプリケーションには影響しません。
+>この参照は、[Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)を使用して、Adobe AnalyticsからAdobe Experience Platformにストリーミングメディアデータを取り込み、Customer Journey Analytics レポートやその他のPlatform サービスで使用する組織に適用されます。 これらの変更は、データ収集、処理、レポートなど、Adobe Analytics as a スタンドアロンアプリケーションには影響しません。
 
 ## Media Analyticsの予約変数
 
@@ -47,38 +57,38 @@ ht-degree: 20%
 
 | フィールド名 | レガシーXDM フィールド | レポート XDM フィールドパス | データタイプ | 派生フィールド | メモ |
 | --- | --- | --- | --- | --- | --- |
-| [[!UICONTROL &#x200B; ストリームタイプ &#x200B;]](/help/reporting/dimensions/stream-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference.streamType` | `xdm.mediaReporting.`<br>`sessionDetails.streamType` | ディメンション | [[!UICONTROL &#x200B; ストリームタイプ &#x200B;]](/help/reporting/dimensions/stream-type.md) | |
-| [[!UICONTROL &#x200B; コンテンツ ID]](/help/reporting/dimensions/asset-id.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._id` | `xdm.mediaReporting.`<br>`sessionDetails.name` | ディメンション | [[!UICONTROL &#x200B; コンテンツ ID]](/help/reporting/dimensions/asset-id.md) | |
-| [[!UICONTROL &#x200B; コンテンツの長さ]](/help/reporting/dimensions/content-length.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._xmpDM.duration` | `xdm.mediaReporting.`<br>`sessionDetails.length` | ディメンション | [[!UICONTROL &#x200B; コンテンツの長さ]](/help/reporting/dimensions/content-length.md) | |
-| [[!UICONTROL &#x200B; コンテンツの種類]](/help/reporting/dimensions/content-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.broadcastContentType` | `xdm.mediaReporting.`<br>`sessionDetails.contentType` | ディメンション | [[!UICONTROL &#x200B; コンテンツの種類]](/help/reporting/dimensions/content-type.md) | |
-| [[!UICONTROL &#x200B; メディアセッション ID]](/help/reporting/dimensions/media-session-id.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails._id` | `xdm.mediaReporting.`<br>`sessionDetails.ID` | ディメンション | [[!UICONTROL &#x200B; メディアセッション ID]](/help/reporting/dimensions/media-session-id.md) | |
-| [[!UICONTROL &#x200B; コンテンツプレーヤー名]](/help/reporting/dimensions/content-player-name.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.playerName` | `xdm.mediaReporting.`<br>`sessionDetails.playerName` | ディメンション | [[!UICONTROL &#x200B; コンテンツプレーヤー名]](/help/reporting/dimensions/content-player-name.md) | |
-| [[!UICONTROL &#x200B; コンテンツチャネル &#x200B;]](/help/reporting/dimensions/content-channel.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.broadcastChannel` | `xdm.mediaReporting.`<br>`sessionDetails.channel` | ディメンション | [[!UICONTROL &#x200B; コンテンツチャネル &#x200B;]](/help/reporting/dimensions/content-channel.md) | |
-| [[!UICONTROL &#x200B; コンテンツセグメント &#x200B;]](/help/reporting/dimensions/content-segment.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.videoSegment` | `xdm.mediaReporting.`<br>`sessionDetails.segment` | ディメンション | [[!UICONTROL &#x200B; コンテンツセグメント &#x200B;]](/help/reporting/dimensions/content-segment.md) | |
-| [[!UICONTROL &#x200B; コンテンツ名]](/help/reporting/dimensions/content-name.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._dc.title` | `xdm.mediaReporting.`<br>`sessionDetails.friendlyName` | ディメンション | [[!UICONTROL &#x200B; コンテンツ名]](/help/reporting/dimensions/content-name.md) | |
+| [[!UICONTROL  ストリームタイプ ]](/help/reporting/dimensions/stream-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference.streamType` | `xdm.mediaReporting.`<br>`sessionDetails.streamType` | ディメンション | [[!UICONTROL  ストリームタイプ ]](/help/reporting/dimensions/stream-type.md) | |
+| [[!UICONTROL  コンテンツ ID]](/help/reporting/dimensions/asset-id.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._id` | `xdm.mediaReporting.`<br>`sessionDetails.name` | ディメンション | [[!UICONTROL  コンテンツ ID]](/help/reporting/dimensions/asset-id.md) | |
+| [[!UICONTROL  コンテンツの長さ]](/help/reporting/dimensions/content-length.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._xmpDM.duration` | `xdm.mediaReporting.`<br>`sessionDetails.length` | ディメンション | [[!UICONTROL  コンテンツの長さ]](/help/reporting/dimensions/content-length.md) | |
+| [[!UICONTROL  コンテンツの種類]](/help/reporting/dimensions/content-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.broadcastContentType` | `xdm.mediaReporting.`<br>`sessionDetails.contentType` | ディメンション | [[!UICONTROL  コンテンツの種類]](/help/reporting/dimensions/content-type.md) | |
+| [[!UICONTROL  メディアセッション ID]](/help/reporting/dimensions/media-session-id.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails._id` | `xdm.mediaReporting.`<br>`sessionDetails.ID` | ディメンション | [[!UICONTROL  メディアセッション ID]](/help/reporting/dimensions/media-session-id.md) | |
+| [[!UICONTROL  コンテンツプレーヤー名]](/help/reporting/dimensions/content-player-name.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.playerName` | `xdm.mediaReporting.`<br>`sessionDetails.playerName` | ディメンション | [[!UICONTROL  コンテンツプレーヤー名]](/help/reporting/dimensions/content-player-name.md) | |
+| [[!UICONTROL  コンテンツチャネル ]](/help/reporting/dimensions/content-channel.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.broadcastChannel` | `xdm.mediaReporting.`<br>`sessionDetails.channel` | ディメンション | [[!UICONTROL  コンテンツチャネル ]](/help/reporting/dimensions/content-channel.md) | |
+| [[!UICONTROL  コンテンツセグメント ]](/help/reporting/dimensions/content-segment.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.videoSegment` | `xdm.mediaReporting.`<br>`sessionDetails.segment` | ディメンション | [[!UICONTROL  コンテンツセグメント ]](/help/reporting/dimensions/content-segment.md) | |
+| [[!UICONTROL  コンテンツ名]](/help/reporting/dimensions/content-name.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._dc.title` | `xdm.mediaReporting.`<br>`sessionDetails.friendlyName` | ディメンション | [[!UICONTROL  コンテンツ名]](/help/reporting/dimensions/content-name.md) | |
 | ビデオパス | *AEP/CJAでは使用されていません* | | | | Adobe Analytics固有のプロパティ |
 | [[!UICONTROL 表示]](/help/reporting/dimensions/show.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Series._iptc4xmpExt.Name` | `xdm.mediaReporting.`<br>`sessionDetails.show` | ディメンション | [[!UICONTROL 表示]](/help/reporting/dimensions/show.md) | |
-| [[!UICONTROL &#x200B; シーズン &#x200B;]](/help/reporting/dimensions/season.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Season._iptc4xmpExt.Name` | `xdm.mediaReporting.`<br>`sessionDetails.season` | ディメンション | [[!UICONTROL &#x200B; シーズン &#x200B;]](/help/reporting/dimensions/season.md) | |
-| [[!UICONTROL &#x200B; エピソード &#x200B;]](/help/reporting/dimensions/episode.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Episode._iptc4xmpExt.Name` | `xdm.mediaReporting.`<br>`sessionDetails.episode` | ディメンション | [[!UICONTROL &#x200B; エピソード &#x200B;]](/help/reporting/dimensions/episode.md) | |
-| [[!UICONTROL &#x200B; ジャンル &#x200B;]](/help/reporting/dimensions/genre.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Genre` | `xdm.mediaReporting.`<br>`sessionDetails.genreList` | ディメンション | サポートされていません | `mediaReporting` フィールドを使用 |
+| [[!UICONTROL  シーズン ]](/help/reporting/dimensions/season.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Season._iptc4xmpExt.Name` | `xdm.mediaReporting.`<br>`sessionDetails.season` | ディメンション | [[!UICONTROL  シーズン ]](/help/reporting/dimensions/season.md) | |
+| [[!UICONTROL  エピソード ]](/help/reporting/dimensions/episode.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Episode._iptc4xmpExt.Name` | `xdm.mediaReporting.`<br>`sessionDetails.episode` | ディメンション | [[!UICONTROL  エピソード ]](/help/reporting/dimensions/episode.md) | |
+| [[!UICONTROL  ジャンル ]](/help/reporting/dimensions/genre.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Genre` | `xdm.mediaReporting.`<br>`sessionDetails.genreList` | ディメンション | サポートされていません | `mediaReporting` フィールドを使用 |
 | [[!UICONTROL ネットワーク]](/help/reporting/dimensions/network.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.broadcastNetwork` | `xdm.mediaReporting.`<br>`sessionDetails.network` | ディメンション | [[!UICONTROL ネットワーク]](/help/reporting/dimensions/network.md) | |
-| [[!UICONTROL &#x200B; タイプを表示]](/help/reporting/dimensions/show-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference.showType` | `xdm.mediaReporting.`<br>`sessionDetails.showType` | ディメンション | [[!UICONTROL &#x200B; タイプを表示]](/help/reporting/dimensions/show-type.md) | |
+| [[!UICONTROL  タイプを表示]](/help/reporting/dimensions/show-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference.showType` | `xdm.mediaReporting.`<br>`sessionDetails.showType` | ディメンション | [[!UICONTROL  タイプを表示]](/help/reporting/dimensions/show-type.md) | |
 | [[!UICONTROL MVPD]](/help/reporting/dimensions/mvpd.md) | `xdm.media.mediaTimed.`<br>`idp` | `xdm.mediaReporting.`<br>`sessionDetails.mvpd` | ディメンション | [[!UICONTROL MVPD]](/help/reporting/dimensions/mvpd.md) | |
 | [[!UICONTROL 認証済み]](/help/reporting/metrics/authorized.md) | サポートなし | `xdm.mediaReporting.`<br>`sessionDetails.authorized` | ディメンション | [[!UICONTROL 認証済み]](/help/reporting/metrics/authorized.md) | |
-| [[!UICONTROL 日パート &#x200B;]](/help/reporting/dimensions/day-part.md) | サポートなし | `xdm.mediaReporting.`<br>`sessionDetails.dayPart` | ディメンション | [[!UICONTROL 日パート &#x200B;]](/help/reporting/dimensions/day-part.md) | |
-| [[!UICONTROL &#x200B; メディアフィードの種類]](/help/reporting/dimensions/media-feed-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.sourceFeed` | `xdm.mediaReporting.`<br>`sessionDetails.feed` | ディメンション | [[!UICONTROL &#x200B; メディアフィードの種類]](/help/reporting/dimensions/media-feed-type.md) | |
-| [[!UICONTROL &#x200B; アーティスト &#x200B;]](/help/reporting/dimensions/artist.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._xmpDM.artist` | `xdm.mediaReporting.`<br>`sessionDetails.artist` | ディメンション | [[!UICONTROL &#x200B; アーティスト &#x200B;]](/help/reporting/dimensions/artist.md) | |
-| [[!UICONTROL &#x200B; アルバム &#x200B;]](/help/reporting/dimensions/album.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._xmpDM.album` | `xdm.mediaReporting.`<br>`sessionDetails.album` | ディメンション | [[!UICONTROL &#x200B; アルバム &#x200B;]](/help/reporting/dimensions/album.md) | |
+| [[!UICONTROL 日パート ]](/help/reporting/dimensions/day-part.md) | サポートなし | `xdm.mediaReporting.`<br>`sessionDetails.dayPart` | ディメンション | [[!UICONTROL 日パート ]](/help/reporting/dimensions/day-part.md) | |
+| [[!UICONTROL  メディアフィードの種類]](/help/reporting/dimensions/media-feed-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.sourceFeed` | `xdm.mediaReporting.`<br>`sessionDetails.feed` | ディメンション | [[!UICONTROL  メディアフィードの種類]](/help/reporting/dimensions/media-feed-type.md) | |
+| [[!UICONTROL  アーティスト ]](/help/reporting/dimensions/artist.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._xmpDM.artist` | `xdm.mediaReporting.`<br>`sessionDetails.artist` | ディメンション | [[!UICONTROL  アーティスト ]](/help/reporting/dimensions/artist.md) | |
+| [[!UICONTROL  アルバム ]](/help/reporting/dimensions/album.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._xmpDM.album` | `xdm.mediaReporting.`<br>`sessionDetails.album` | ディメンション | [[!UICONTROL  アルバム ]](/help/reporting/dimensions/album.md) | |
 | [[!UICONTROL ラベル]](/help/reporting/dimensions/label.md) | サポートなし | `xdm.mediaReporting.`<br>`sessionDetails.label` | ディメンション | [[!UICONTROL ラベル]](/help/reporting/dimensions/label.md) | |
 | [[!UICONTROL 作成者]](/help/reporting/dimensions/author.md) | サポートなし | `xdm.mediaReporting.`<br>`sessionDetails.author` | ディメンション | [[!UICONTROL 作成者]](/help/reporting/dimensions/author.md) | |
 | [[!UICONTROL 駅]](/help/reporting/dimensions/station.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._id3.Audio._id3.TRSN` | `xdm.mediaReporting.`<br>`sessionDetails.station` | ディメンション | [[!UICONTROL 駅]](/help/reporting/dimensions/station.md) | |
 | [[!UICONTROL 発行者]](/help/reporting/dimensions/publisher.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._id3.Audio._id3.TPUB` | `xdm.mediaReporting.`<br>`sessionDetails.publisher` | ディメンション | [[!UICONTROL 発行者]](/help/reporting/dimensions/publisher.md) | |
-| [[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md) | `xdm.media.mediaTimed.`<br>`impressions.value` | `xdm.mediaReporting.`<br>`sessionDetails.isViewed` | 指標 | [[!UICONTROL &#x200B; メディア開始]](/help/reporting/metrics/media-starts.md) | |
-| [[!UICONTROL &#x200B; コンテンツ開始]](/help/reporting/metrics/content-starts.md) | `xdm.media.mediaTimed.`<br>`starts.value` | `xdm.mediaReporting.`<br>`sessionDetails.isPlayed` | 指標 | [[!UICONTROL &#x200B; コンテンツ開始]](/help/reporting/metrics/content-starts.md) | |
-| [[!UICONTROL &#x200B; コンテンツ完了]](/help/reporting/metrics/content-completes.md) | `xdm.media.mediaTimed.`<br>`completes.value` | `xdm.mediaReporting.`<br>`sessionDetails.isCompleted` | 指標 | [[!UICONTROL &#x200B; コンテンツ完了]](/help/reporting/metrics/content-completes.md) | |
-| [[!UICONTROL &#x200B; コンテンツ滞在時間]](/help/reporting/metrics/content-time-spent.md) | `xdm.media.mediaTimed.`<br>`timePlayed.value` | `xdm.mediaReporting.`<br>`sessionDetails.timePlayed` | 指標 | [[!UICONTROL &#x200B; コンテンツ滞在時間]](/help/reporting/metrics/content-time-spent.md) | |
-| [[!UICONTROL &#x200B; メディア滞在時間]](/help/reporting/metrics/media-time-spent.md) | `xdm.media.mediaTimed.`<br>`totalTimePlayed.value` | `xdm.mediaReporting.`<br>`sessionDetails.totalTimePlayed` | 指標 | [[!UICONTROL &#x200B; メディア滞在時間]](/help/reporting/metrics/media-time-spent.md) | |
-| [[!UICONTROL &#x200B; ユニーク再生時間]](/help/reporting/metrics/unique-time-played.md) | サポートなし | `xdm.mediaReporting.`<br>`sessionDetails.uniqueTimePlayed` | 指標 | [[!UICONTROL &#x200B; ユニーク再生時間]](/help/reporting/metrics/unique-time-played.md) | |
+| [[!UICONTROL  メディア開始]](/help/reporting/metrics/media-starts.md) | `xdm.media.mediaTimed.`<br>`impressions.value` | `xdm.mediaReporting.`<br>`sessionDetails.isViewed` | 指標 | [[!UICONTROL  メディア開始]](/help/reporting/metrics/media-starts.md) | |
+| [[!UICONTROL  コンテンツ開始]](/help/reporting/metrics/content-starts.md) | `xdm.media.mediaTimed.`<br>`starts.value` | `xdm.mediaReporting.`<br>`sessionDetails.isPlayed` | 指標 | [[!UICONTROL  コンテンツ開始]](/help/reporting/metrics/content-starts.md) | |
+| [[!UICONTROL  コンテンツ完了]](/help/reporting/metrics/content-completes.md) | `xdm.media.mediaTimed.`<br>`completes.value` | `xdm.mediaReporting.`<br>`sessionDetails.isCompleted` | 指標 | [[!UICONTROL  コンテンツ完了]](/help/reporting/metrics/content-completes.md) | |
+| [[!UICONTROL  コンテンツ滞在時間]](/help/reporting/metrics/content-time-spent.md) | `xdm.media.mediaTimed.`<br>`timePlayed.value` | `xdm.mediaReporting.`<br>`sessionDetails.timePlayed` | 指標 | [[!UICONTROL  コンテンツ滞在時間]](/help/reporting/metrics/content-time-spent.md) | |
+| [[!UICONTROL  メディア滞在時間]](/help/reporting/metrics/media-time-spent.md) | `xdm.media.mediaTimed.`<br>`totalTimePlayed.value` | `xdm.mediaReporting.`<br>`sessionDetails.totalTimePlayed` | 指標 | [[!UICONTROL  メディア滞在時間]](/help/reporting/metrics/media-time-spent.md) | |
+| [[!UICONTROL  ユニーク再生時間]](/help/reporting/metrics/unique-time-played.md) | サポートなし | `xdm.mediaReporting.`<br>`sessionDetails.uniqueTimePlayed` | 指標 | [[!UICONTROL  ユニーク再生時間]](/help/reporting/metrics/unique-time-played.md) | |
 | [[!UICONTROL 10%進行状況マーカー]](/help/reporting/metrics/progress-markers.md) | `xdm.media.mediaTimed.`<br>`progress10.value` | `xdm.mediaReporting.`<br>`sessionDetails.hasProgress10` | 指標 | [[!UICONTROL 10%進行状況マーカー]](/help/reporting/metrics/progress-markers.md) | |
 | [[!UICONTROL 25%進行状況マーカー]](/help/reporting/metrics/progress-markers.md) | `xdm.media.mediaTimed.`<br>`progress25.value` | `xdm.mediaReporting.`<br>`sessionDetails.hasProgress25` | 指標 | [[!UICONTROL 25%進行状況マーカー]](/help/reporting/metrics/progress-markers.md) | |
 | [[!UICONTROL 50%進行状況マーカー]](/help/reporting/metrics/progress-markers.md) | `xdm.media.mediaTimed.`<br>`progress50.value` | `xdm.mediaReporting.`<br>`sessionDetails.hasProgress50` | 指標 | [[!UICONTROL 50%進行状況マーカー]](/help/reporting/metrics/progress-markers.md) | |
@@ -87,10 +97,10 @@ ht-degree: 20%
 | [[!UICONTROL 分平均オーディエンス]](/help/reporting/metrics/average-minute-audience.md) | サポートなし | `xdm.mediaReporting.`<br>`sessionDetails.averageMinuteAudience` | 指標 | [[!UICONTROL 分平均オーディエンス]](/help/reporting/metrics/average-minute-audience.md) | |
 | 前回の呼び出しからの経過時間（秒） | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.sessionTimeout` | `xdm.mediaReporting.`<br>`sessionDetails.secondsSinceLastCall` | 指標 | 前回の呼び出しからの経過時間（秒） | |
 | [[!UICONTROL 影響を受けるストリームを一時停止]](/help/reporting/metrics/paused-impacted-streams.md) | サポートなし | `xdm.mediaReporting.`<br>`sessionDetails.hasPauseImpactedStreams` | 指標 | [[!UICONTROL 影響を受けるストリームを一時停止]](/help/reporting/metrics/paused-impacted-streams.md) | mediaTimedでは、この値を他のイベントから計算します |
-| [[!UICONTROL &#x200B; イベントを一時停止]](/help/reporting/metrics/pause-events.md) | `xdm.media.mediaTimed.`<br>`pauses.value` | `xdm.mediaReporting.`<br>`sessionDetails.pauseCount` | 指標 | [[!UICONTROL &#x200B; イベントを一時停止]](/help/reporting/metrics/pause-events.md) | |
+| [[!UICONTROL  イベントを一時停止]](/help/reporting/metrics/pause-events.md) | `xdm.media.mediaTimed.`<br>`pauses.value` | `xdm.mediaReporting.`<br>`sessionDetails.pauseCount` | 指標 | [[!UICONTROL  イベントを一時停止]](/help/reporting/metrics/pause-events.md) | |
 | [[!UICONTROL 合計一時停止の期間]](/help/reporting/metrics/total-pause-duration.md) | `xdm.media.mediaTimed.`<br>`pauseTime.value` | `xdm.mediaReporting.`<br>`sessionDetails.pauseTime` | 指標 | [[!UICONTROL 合計一時停止の期間]](/help/reporting/metrics/total-pause-duration.md) | |
-| [[!UICONTROL &#x200B; コンテンツの再開]](/help/reporting/metrics/content-resumes.md) | `xdm.media.mediaTimed.`<br>`resumes.value` | `xdm.mediaReporting.`<br>`sessionDetails.hasResume` | 指標 | [[!UICONTROL &#x200B; コンテンツの再開]](/help/reporting/metrics/content-resumes.md) | |
-| [[!UICONTROL &#x200B; コンテンツセグメントビュー]](/help/reporting/metrics/content-segment-views.md) | `xdm.media.mediaTimed.`<br>`mediaSegmentViews.value` | `xdm.mediaReporting.`<br>`sessionDetails.hasSegmentView` | 指標 | [[!UICONTROL &#x200B; コンテンツセグメントビュー]](/help/reporting/metrics/content-segment-views.md) | |
+| [[!UICONTROL  コンテンツの再開]](/help/reporting/metrics/content-resumes.md) | `xdm.media.mediaTimed.`<br>`resumes.value` | `xdm.mediaReporting.`<br>`sessionDetails.hasResume` | 指標 | [[!UICONTROL  コンテンツの再開]](/help/reporting/metrics/content-resumes.md) | |
+| [[!UICONTROL  コンテンツセグメントビュー]](/help/reporting/metrics/content-segment-views.md) | `xdm.media.mediaTimed.`<br>`mediaSegmentViews.value` | `xdm.mediaReporting.`<br>`sessionDetails.hasSegmentView` | 指標 | [[!UICONTROL  コンテンツセグメントビュー]](/help/reporting/metrics/content-segment-views.md) | |
 
 ## プレーヤーの状態パラメーターの更新
 
@@ -130,20 +140,20 @@ ht-degree: 20%
 
 | フィールド名 | レガシーXDM フィールド | レポート XDM フィールドパス | データタイプ | 派生フィールド | メモ |
 | --- | --- | --- | --- | --- | --- |
-| [[!UICONTROL 平均ビットレート &#x200B;]](/help/reporting/metrics/average-bitrate.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.bitrateAverage.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.bitrateAverage` | 両方 | [[!UICONTROL 平均ビットレート &#x200B;]](/help/reporting/metrics/average-bitrate.md) | |
+| [[!UICONTROL 平均ビットレート ]](/help/reporting/metrics/average-bitrate.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.bitrateAverage.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.bitrateAverage` | 両方 | [[!UICONTROL 平均ビットレート ]](/help/reporting/metrics/average-bitrate.md) | |
 | [[!UICONTROL 開始までの時間]](/help/reporting/metrics/time-to-start.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.timeToStart.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.timeToStart` | 両方 | [[!UICONTROL 開始までの時間]](/help/reporting/metrics/time-to-start.md) | |
-| [[!UICONTROL 削除されたフレーム &#x200B;]](/help/reporting/metrics/dropped-frames.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.droppedFrames.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.droppedFrames` | 両方 | [[!UICONTROL 削除されたフレーム &#x200B;]](/help/reporting/metrics/dropped-frames.md) | |
-| [[!UICONTROL &#x200B; バッファーイベント &#x200B;]](/help/reporting/metrics/buffer-events.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.buffers.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.bufferCount` | 両方 | [[!UICONTROL &#x200B; バッファーイベント &#x200B;]](/help/reporting/metrics/buffer-events.md) | |
+| [[!UICONTROL 削除されたフレーム ]](/help/reporting/metrics/dropped-frames.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.droppedFrames.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.droppedFrames` | 両方 | [[!UICONTROL 削除されたフレーム ]](/help/reporting/metrics/dropped-frames.md) | |
+| [[!UICONTROL  バッファーイベント ]](/help/reporting/metrics/buffer-events.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.buffers.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.bufferCount` | 両方 | [[!UICONTROL  バッファーイベント ]](/help/reporting/metrics/buffer-events.md) | |
 | [[!UICONTROL 合計バッファー期間]](/help/reporting/metrics/total-buffer-duration.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.bufferTime.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.bufferTime` | 両方 | [[!UICONTROL 合計バッファー期間]](/help/reporting/metrics/total-buffer-duration.md) | |
-| [[!UICONTROL &#x200B; ビットレートの変更]](/help/reporting/metrics/bitrate-changes.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.bitrateChanges.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.bitrateChangeCount` | 両方 | [[!UICONTROL &#x200B; ビットレートの変更]](/help/reporting/metrics/bitrate-changes.md) | |
-| [[!UICONTROL &#x200B; エラー/ エラーイベント &#x200B;]](/help/reporting/metrics/error-events.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.errors.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.errorCount` | 両方 | [[!UICONTROL &#x200B; エラー/ エラーイベント &#x200B;]](/help/reporting/metrics/error-events.md) | |
+| [[!UICONTROL  ビットレートの変更]](/help/reporting/metrics/bitrate-changes.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.bitrateChanges.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.bitrateChangeCount` | 両方 | [[!UICONTROL  ビットレートの変更]](/help/reporting/metrics/bitrate-changes.md) | |
+| [[!UICONTROL  エラー/ エラーイベント ]](/help/reporting/metrics/error-events.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.errors.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.errorCount` | 両方 | [[!UICONTROL  エラー/ エラーイベント ]](/help/reporting/metrics/error-events.md) | |
 | [[!UICONTROL Player SDK エラーID]](/help/reporting/dimensions/player-sdk-error-ids.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.playerSdkErrors` | `xdm.mediaReporting.`<br>`qoeDataDetails.playerSdkErrors` | ディメンション | サポートされていません | `mediaReporting` フィールドを使用 |
 | [[!UICONTROL 外部エラーID]](/help/reporting/dimensions/external-error-ids.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.qoe.externalSdkErrors` | `xdm.mediaReporting.`<br>`qoeDataDetails.externalErrors` | ディメンション | サポートされていません | `mediaReporting` フィールドを使用 |
-| [[!UICONTROL 開始する前にドロップ &#x200B;]](/help/reporting/metrics/drops-before-start.md) | `xdm.media.mediaTimed.`<br>`dropBeforeStarts.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.isDroppedBeforeStart` | 指標 | [[!UICONTROL 開始する前にドロップ &#x200B;]](/help/reporting/metrics/drops-before-start.md) | |
+| [[!UICONTROL 開始する前にドロップ ]](/help/reporting/metrics/drops-before-start.md) | `xdm.media.mediaTimed.`<br>`dropBeforeStarts.value` | `xdm.mediaReporting.`<br>`qoeDataDetails.isDroppedBeforeStart` | 指標 | [[!UICONTROL 開始する前にドロップ ]](/help/reporting/metrics/drops-before-start.md) | |
 | [[!UICONTROL 影響を受けるストリームのバッファー]](/help/reporting/metrics/buffer-impacted-streams.md) | サポートなし | `xdm.mediaReporting.`<br>`qoeDataDetails.hasBufferImpactedStreams` | 指標 | [[!UICONTROL 影響を受けるストリームのバッファー]](/help/reporting/metrics/buffer-impacted-streams.md) | 他のイベントから計算 |
-| [[!UICONTROL &#x200B; ビットレートの変更が影響を受けるストリーム &#x200B;]](/help/reporting/metrics/bitrate-change-impacted-streams.md) | サポートなし | `xdm.mediaReporting.`<br>`qoeDataDetails.hasBitrateChangeImpactedStreams` | 指標 | [[!UICONTROL &#x200B; ビットレートの変更が影響を受けるストリーム &#x200B;]](/help/reporting/metrics/bitrate-change-impacted-streams.md) | 他のイベントから計算 |
+| [[!UICONTROL  ビットレートの変更が影響を受けるストリーム ]](/help/reporting/metrics/bitrate-change-impacted-streams.md) | サポートなし | `xdm.mediaReporting.`<br>`qoeDataDetails.hasBitrateChangeImpactedStreams` | 指標 | [[!UICONTROL  ビットレートの変更が影響を受けるストリーム ]](/help/reporting/metrics/bitrate-change-impacted-streams.md) | 他のイベントから計算 |
 | [[!UICONTROL 影響を受けるストリームのエラー]](/help/reporting/metrics/error-impacted-streams.md) | サポートなし | `xdm.mediaReporting.`<br>`qoeDataDetails.hasErrorImpactedStreams` | 指標 | [[!UICONTROL 影響を受けるストリームのエラー]](/help/reporting/metrics/error-impacted-streams.md) | 他のイベントから計算 |
-| [[!UICONTROL &#x200B; ドロップされたフレームの影響を受けるストリーム &#x200B;]](/help/reporting/metrics/dropped-frame-impacted-streams.md) | サポートなし | `xdm.mediaReporting.`<br>`qoeDataDetails.hasDroppedFrameImpactedStreams` | 指標 | [[!UICONTROL &#x200B; ドロップされたフレームの影響を受けるストリーム &#x200B;]](/help/reporting/metrics/dropped-frame-impacted-streams.md) | 他のイベントから計算 |
+| [[!UICONTROL  ドロップされたフレームの影響を受けるストリーム ]](/help/reporting/metrics/dropped-frame-impacted-streams.md) | サポートなし | `xdm.mediaReporting.`<br>`qoeDataDetails.hasDroppedFrameImpactedStreams` | 指標 | [[!UICONTROL  ドロップされたフレームの影響を受けるストリーム ]](/help/reporting/metrics/dropped-frame-impacted-streams.md) | 他のイベントから計算 |
 
 ## Media Analyticsの分類
 
@@ -161,24 +171,24 @@ Customer Journey Analyticsで接続を設定するには：
 ルックアップデータセット（分類データセット）ごとに、次のように設定します。
 
 * **ビデオデータセット**:
-   * キー：`_sandbox.key`
-   * 一致するキー：`Asset ID (media.mediaTimed.primaryAssetReference._id)`
-   * データ ソースの種類：`Web Data`
+  * キー：`_sandbox.key`
+  * 一致するキー：`Asset ID (media.mediaTimed.primaryAssetReference._id)`
+  * データ ソースの種類：`Web Data`
 
 * **ビデオデータセット**:
-   * キー：`_sandbox.key`
-   * 一致するキー：`Ad ID (advertising.adAssetReference._id)`
-   * データ ソースの種類：`Web Data`
+  * キー：`_sandbox.key`
+  * 一致するキー：`Ad ID (advertising.adAssetReference._id)`
+  * データ ソースの種類：`Web Data`
 
 * **videoadpod データセット**:
-   * キー：`_sandbox.key`
-   * 一致するキー：`Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
-   * データ ソースの種類：`Web Data`
+  * キー：`_sandbox.key`
+  * 一致するキー：`Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
+  * データ ソースの種類：`Web Data`
 
 * **ビデオチャプターデータセット**:
-   * キー：`_sandbox.key`
-   * 一致するキー：`Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
-   * データ ソースの種類：`Web Data`
+  * キー：`_sandbox.key`
+  * 一致するキー：`Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
+  * データ ソースの種類：`Web Data`
 
 ### レポートに関する検討事項
 
@@ -191,21 +201,21 @@ Customer Journey Analyticsで接続を設定するには：
 | video | キー/アセット ID | `xdm.<_sandbox>.key` |
 | video | ビデオの長さ | `xdm.<_sandbox>.video_length` |
 | video | ビデオ名 | `xdm.<_sandbox>.video_name` |
-| video | [[!UICONTROL &#x200B; アセット ID]](/help/reporting/dimensions/asset-id.md) | `xdm.<_sandbox>.asset_id` |
+| video | [[!UICONTROL  アセット ID]](/help/reporting/dimensions/asset-id.md) | `xdm.<_sandbox>.asset_id` |
 | video | [[!UICONTROL 最初のエア日]](/help/reporting/dimensions/first-air-date.md) | `xdm.<_sandbox>.first_air_date` |
 | video | [[!UICONTROL 最初のデジタル日付]](/help/reporting/dimensions/first-digital-date.md) | `xdm.<_sandbox>.first_digital_date` |
-| video | [[!UICONTROL &#x200B; コンテンツの評価]](/help/reporting/dimensions/content-rating.md) | `xdm.<_sandbox>.content_rating` |
+| video | [[!UICONTROL  コンテンツの評価]](/help/reporting/dimensions/content-rating.md) | `xdm.<_sandbox>.content_rating` |
 | video | [[!UICONTROL 発信元]](/help/reporting/dimensions/originator.md) | `xdm.<_sandbox>.originator` |
 | videoad | キー/広告ID | `xdm.<_sandbox>.key` |
 | videoad | [[!UICONTROL 広告の長さ]](/help/reporting/dimensions/ad-length.md) | `xdm.<_sandbox>.ad_length` |
 | videoad | [[!UICONTROL 広告名]](/help/reporting/dimensions/ad-name.md) | `xdm.<_sandbox>.ad_name` |
 | videoad | [[!UICONTROL Creative ID]](/help/reporting/dimensions/creative-id.md) | `xdm.<_sandbox>.creative_id` |
 | videoadpod | キー/広告ポッド ID | `xdm.<_sandbox>.key` |
-| videoadpod | [[!UICONTROL &#x200B; ポッドの位置]](/help/reporting/dimensions/pod-position.md) | `xdm.<_sandbox>.pod_position` |
-| videoadpod | [[!UICONTROL &#x200B; ポッド名]](/help/reporting/dimensions/pod-name.md) | `xdm.<_sandbox>.pod_name` |
+| videoadpod | [[!UICONTROL  ポッドの位置]](/help/reporting/dimensions/pod-position.md) | `xdm.<_sandbox>.pod_position` |
+| videoadpod | [[!UICONTROL  ポッド名]](/help/reporting/dimensions/pod-name.md) | `xdm.<_sandbox>.pod_name` |
 | videochapter | キー/章 | `xdm.<_sandbox>.key` |
 | videochapter | [[!UICONTROL 章の長さ]](/help/reporting/dimensions/chapter-length.md) | `xdm.<_sandbox>.chapter_length` |
-| videochapter | [[!UICONTROL 章のオフセット &#x200B;]](/help/reporting/dimensions/chapter-offset.md) | `xdm.<_sandbox>.chapter_offset` |
+| videochapter | [[!UICONTROL 章のオフセット ]](/help/reporting/dimensions/chapter-offset.md) | `xdm.<_sandbox>.chapter_offset` |
 | videochapter | [[!UICONTROL 章の位置]](/help/reporting/dimensions/chapter-position.md) | `xdm.<_sandbox>.chapter_position` |
 | videochapter | [[!UICONTROL 章名]](/help/reporting/dimensions/chapter-name.md) | `xdm.<_sandbox>.chapter_name` |
 
@@ -227,22 +237,22 @@ Adobe Analyticsでは、各レポートスイート内で定義された実装�
 
 | フィールド名 | XDM パス | データタイプ |
 | --- | --- | --- |
-| [[!UICONTROL &#x200B; メディア ダウンロード フラグ &#x200B;]](/help/reporting/dimensions/media-downloaded-flag.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 指標 |
+| [[!UICONTROL  メディア ダウンロード フラグ ]](/help/reporting/dimensions/media-downloaded-flag.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 指標 |
 | SDK バージョン | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
 | Media Library バージョン | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
-| [[!UICONTROL &#x200B; ストリーム形式]](/help/reporting/dimensions/stream-format.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
+| [[!UICONTROL  ストリーム形式]](/help/reporting/dimensions/stream-format.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
 | [[!UICONTROL 最初のエア日]](/help/reporting/dimensions/first-air-date.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
 | [[!UICONTROL 最初のデジタル日付]](/help/reporting/dimensions/first-digital-date.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
-| [[!UICONTROL 連合データ &#x200B;]](/help/reporting/metrics/federated-data.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>`<br>および<br>`xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 両方 |
-| [[!UICONTROL 推定ストリーム &#x200B;]](/help/reporting/metrics/estimated-streams.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 指標 |
+| [[!UICONTROL 連合データ ]](/help/reporting/metrics/federated-data.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>`<br>および<br>`xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 両方 |
+| [[!UICONTROL 推定ストリーム ]](/help/reporting/metrics/estimated-streams.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 指標 |
 | [[!UICONTROL 広告数]](/help/reporting/metrics/ad-count.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 指標 |
 | [[!UICONTROL 章数]](/help/reporting/metrics/chapter-count.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 指標 |
 | [[!UICONTROL Creative ID]](/help/reporting/dimensions/creative-id.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
-| [[!UICONTROL &#x200B; サイト ID]](/help/reporting/dimensions/site-id.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
+| [[!UICONTROL  サイト ID]](/help/reporting/dimensions/site-id.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
 | [[!UICONTROL Creative URL]](/help/reporting/dimensions/creative-url.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
-| [[!UICONTROL &#x200B; プレースメント ID]](/help/reporting/dimensions/placement-id.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
+| [[!UICONTROL  プレースメント ID]](/help/reporting/dimensions/placement-id.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | ディメンション |
 | フレーム／秒 | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>`<br>および<br>`xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 両方 |
 | メディア SDK のエラー ID | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 指標 |
 | [[!UICONTROL 影響を受けるストリームを停止しています]](/help/reporting/metrics/stall-impacted-streams.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 指標 |
-| [[!UICONTROL &#x200B; イベントの停止]](/help/reporting/metrics/stall-events.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 指標 |
+| [[!UICONTROL  イベントの停止]](/help/reporting/metrics/stall-events.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 指標 |
 | [[!UICONTROL 合計滞留期間]](/help/reporting/metrics/total-stalling-duration.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 指標 |

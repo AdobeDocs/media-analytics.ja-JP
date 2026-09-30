@@ -5,25 +5,35 @@ uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Streaming Media
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/3h9hYx2YAws6b9RGCcZMydQ0jm-YxpxcVg40Tg-N4S4
+TQID: 'https://experienceleague.adobe.com/3h9hYx2YAws6b9RGCcZMydQ0jm-YxpxcVg40Tg-N4S4'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+    internal-label: Measurement
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 599
+source-wordcount: '599'
 ht-degree: 59%
-
 ---
-
 # Federated Media{#federated-media}
 
 >[!AVAILABILITY]
@@ -48,7 +58,7 @@ Federated Mediaは、オーディオおよびビデオの測定をより効率�
 * **広範囲：**&#x200B;パートナー、プラットフォーム、デバイス全体でオーディオおよびビデオ視聴の詳細なリーチと効果を把握できます
 * **安全性：**&#x200B;ルールとロジックによってサーバーサイドのデータ共有を管理できます
 * **標準化：**&#x200B;パートナーと同じデータ言語を話す
-* **実用性：** Adobe Analytics でオーディオおよびビデオデータを数値化し、プレーヤーを相対評価したり、トレンドを確認したり、異常を検出したりできます
+* **実用性：** Adobe Analytics でオーディオおよびビデオデータを数値化し、プレーヤーを相対評価したり、トレンドをモニターしたり、異常を検出したりできます
 * **一元化：**&#x200B;オーディオおよびビデオ計測データを 1 ヶ所で収集できます
 * **契約順守：**&#x200B;データ共有の法律要件を簡単に満たせます
 * **即時性：**&#x200B;ほぼリアルタイムでのデータの送受信が可能です
@@ -62,7 +72,7 @@ Federated Mediaは、オーディオおよびビデオの測定をより効率�
 ## 要件 {#requirements}
 
 * **メディアストリームに関する契約：** Adobe Analytics 内でオーディオおよびビデオデータにアクセスするためには、受信者と送信者が事前に Adobe Analytics for Media Streams の契約を済ませておく必要があります。 詳しくは、アカウントチームにお問い合わせください。
-* **フェデレーションに関する補遺契約：**&#x200B;データの送受信をおこなうためには、送信者と受信者それぞれがアドビとの補遺契約に署名している必要があります。 パートナーシップ 1 組で 1 つの補遺契約ではなく、それぞれのお客様が補遺契約に署名する必要があります。 詳しくは、アカウントチームにお問い合わせください。
+* **フェデレーションに関する補遺契約：**&#x200B;データの送受信をおこなうためには、送信者と受信者それぞれがアドビとの補遺契約に署名している必要があります。 補遺契約はパートナーシップごとではなく、顧客 1 社につき 1 件が必要です。 詳しくは、アカウントチームにお問い合わせください。
 
 * **ストリーミングメディア収集の実装：**&#x200B;送信者は、連合データセットに含まれるすべてのプレーヤーにストリーミングメディアサービスを実装している必要があります。 フェデレーションで使用できるのは、ストリーミングメディアデータのみです。 詳しくは、[Adobe ストリーミングメディアサービスの概要](/help/media-overview.md)を参照してください。
 
@@ -70,7 +80,7 @@ Federated Mediaは、オーディオおよびビデオの測定をより効率�
 
 ## Federated Media Formをダウンロード
 
-フェデレーテッド メディアに参加するには、[&#x200B; フェデレーション ルール契約](assets/federated_analytics_form.pdf) フォームをダウンロードして記入してください。
+フェデレーテッド メディアに参加するには、[ フェデレーション ルール契約](assets/federated_analytics_form.pdf) フォームをダウンロードして記入してください。
 
 ## プロセス {#process}
 
@@ -81,4 +91,4 @@ Federated Mediaは、オーディオおよびビデオの測定をより効率�
 1. データは開発Adobe Analytics レポートスイートまたはAdobe Experience Platform データストリームに共有され、Receiverがデータをレビューおよび検証します。
 1. Receiverでデータが正しいことを確認すると、Adobe Engineeringはルールを更新して、実稼動のAnalytics レポートスイートまたはAdobe Experience Platform データストリームを指すようにします。
 1. Receiverは、実稼動Analytics レポートスイートまたはAdobe Experience Platform データストリームのデータを確認し、検証します。
-1. 以降、データセットに変化が生じた場合は、送信者と受信者はカスタマーケアチケットを送信してサポートを受けることができます。
+1. 将来、データセットに変更が生じた場合は、送信者または受信者がサポートについてのチケットを送信してサポートを受けることができます。

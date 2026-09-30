@@ -3,7 +3,19 @@ title: ビットレートの変更
 description: 再生ビットレートが変更されたことを示します。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 6%
@@ -11,10 +23,10 @@ ht-degree: 6%
 
 # ビットレートの変更
 
-ビットレート変更イベントは、プレーヤーが新しい再生ビットレートを交渉したことを示します。 再生中にビットレートが変更されるたびに送信します。 新しいビットレート値をQoE データに含めて、バックエンドが[[!UICONTROL 平均ビットレート &#x200B;]](/help/reporting/metrics/average-bitrate.md)とビットレートごとのバケット ディメンションを計算できるようにします。
+ビットレート変更イベントは、プレーヤーが新しい再生ビットレートを交渉したことを示します。 再生中にビットレートが変更されるたびに送信します。 新しいビットレート値をQoE データに含めて、バックエンドが[[!UICONTROL 平均ビットレート ]](/help/reporting/metrics/average-bitrate.md)とビットレートごとのバケット ディメンションを計算できるようにします。
 
-* **前提条件**: [&#x200B; セッション開始](../session/session-start.md)
-* **関連する指標**: [[!UICONTROL &#x200B; ビットレートの変更]](/help/reporting/metrics/bitrate-changes.md)
+* **前提条件**: [ セッション開始](../session/session-start.md)
+* **関連する指標**: [[!UICONTROL  ビットレートの変更]](/help/reporting/metrics/bitrate-changes.md)
 
 ## 推奨される実装タイプ
 
@@ -164,7 +176,7 @@ adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 
 >[!TAB Media Collection API]
 
-`qoeData`の新しいビットレートを使用して、[&#x200B; イベントエンドポイント &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に`bitrateChange` POSTを送信します。
+`qoeData`の新しいビットレートを使用して、[ イベントエンドポイント ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)に`bitrateChange` POSTを送信します。
 
 ```json
 {

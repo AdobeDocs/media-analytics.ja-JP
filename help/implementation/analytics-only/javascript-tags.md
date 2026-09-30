@@ -3,16 +3,26 @@ title: Media Analytics タグ拡張機能の設定
 description: Adobe Media Analytics （3.x SDK）のオーディオおよびビデオタグ拡張機能を使用して、Analyticsのみのストリーミングメディアを実装します。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 14%
-
 ---
-
 # Media Analytics タグ拡張機能の設定
 
-Adobe Media Analytics （3.x SDK）の音声および動画用タグ拡張機能は、Media SDK JavaScript（3.x）をタグ経由でデプロイします。JavaScriptを手動でインストールする必要はありません。 このページでは、タグ設定について説明します。 代わりにコードにSDKをインストールするには、[&#x200B; ストリーミングメディア用にJavaScriptを設定](javascript.md)を参照してください。 新しい実装の場合は、推奨される[Web SDK タグ拡張機能](/help/implementation/edge/web-sdk-tags.md) Edge パスを検討してください。
+Adobe Media Analytics （3.x SDK）の音声および動画用タグ拡張機能は、Media SDK JavaScript（3.x）をタグ経由でデプロイします。JavaScriptを手動でインストールする必要はありません。 このページでは、タグ設定について説明します。 代わりにコードにSDKをインストールするには、[ ストリーミングメディア用にJavaScriptを設定](javascript.md)を参照してください。 新しい実装の場合は、推奨される[Web SDK タグ拡張機能](/help/implementation/edge/web-sdk-tags.md) Edge パスを検討してください。
 
 * **前提条件**: [Analyticsのみの実装の概要](overview.md)を完了します。
 
@@ -30,6 +40,6 @@ Adobe Media Analytics （3.x SDK）の音声および動画用タグ拡張機能
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; オーディオおよびビデオ拡張機能のAdobe Media Analytics （3.x SDK） &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja)
->* [&#x200B; ストリーミングメディア用にJavaScriptを設定する（コード内） &#x200B;](javascript.md)
->* [&#x200B; イベントの概要](/help/implementation/events/overview.md)
+>* [ オーディオおよびビデオ拡張機能のAdobe Media Analytics （3.x SDK） ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=ja)
+>* [ ストリーミングメディア用にJavaScriptを設定する（コード内） ](javascript.md)
+>* [ イベントの概要](/help/implementation/events/overview.md)

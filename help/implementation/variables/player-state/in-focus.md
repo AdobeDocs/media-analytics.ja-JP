@@ -3,7 +3,19 @@ title: インフォーカス
 description: プレーヤーがビューアの画面にいつフォーカスしているかを追跡し、バックエンドでフォーカスエンゲージメントをレポートできます。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 6%
@@ -13,7 +25,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*このページでは、**In focus**&#x200B;プレーヤー状態のデータ収集について説明します。 対応するレポート指標については、[&#x200B; フォーカスの影響を受けるストリーム &#x200B;](/help/reporting/metrics/in-focus-streams-impacted.md)、[&#x200B; フォーカスのカウント &#x200B;](/help/reporting/metrics/in-focus-count.md)および[&#x200B; フォーカスの合計期間](/help/reporting/metrics/in-focus-total-duration.md)を参照してください。*
+*このページでは、**In focus**プレーヤー状態のデータ収集について説明します。 対応するレポート指標については、[ フォーカスの影響を受けるストリーム ](/help/reporting/metrics/in-focus-streams-impacted.md)、[ フォーカスのカウント ](/help/reporting/metrics/in-focus-count.md)および[ フォーカスの合計期間](/help/reporting/metrics/in-focus-total-duration.md)を参照してください。*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ ht-degree: 6%
 | プロパティ | 値 |
 | --- | --- |
 | **コンテキストデータ変数** | `a.media.states.infocus.set`, `a.media.states.infocus.count`, `a.media.states.infocus.time` |
-| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "inFocus"`を含むエントリ） |
+| **XDM コレクションフィールド** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)および[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （`name: "inFocus"`を含むエントリ） |
 | **Audience Manager特性** | `c_contextdata.a.media.states.infocus.set`, `c_contextdata.a.media.states.infocus.count`, `c_contextdata.a.media.states.infocus.time` |
 | **必須** | いいえ |
 | **様が**&#x200B;様と共に送信されました | [状態開始](/help/implementation/events/player-state/state-start.md)、[状態終了](/help/implementation/events/player-state/state-end.md) |
@@ -180,6 +192,6 @@ Roku 2.x SDKでは、プレイヤーの状況トラッキングは利用でき�
 }
 ```
 
-完全なリクエスト構造については、[Media Collection API イベントのリファレンス &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
+完全なリクエスト構造については、[Media Collection API イベントのリファレンス ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)を参照してください。
 
 >[!ENDTABS]

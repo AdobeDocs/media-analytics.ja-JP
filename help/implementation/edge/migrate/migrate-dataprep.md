@@ -4,34 +4,46 @@ description: カスタムフィールドのデータタイプのデータ準備�
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
-TQID: https://experienceleague.adobe.com/57wAwVCwAUlRcMAbFW-X6T6Fe7Ap6leOaQw2Vx9r3OA
+TQID: 'https://experienceleague.adobe.com/57wAwVCwAUlRcMAbFW-X6T6Fe7Ap6leOaQw2Vx9r3OA'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
+    internal-label: Data collection
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 700
+source-wordcount: '700'
 ht-degree: 0%
-
 ---
-
 # カスタムフィールドのデータ準備を新しいストリーミングメディアフィールドに移行する
 
-このドキュメントでは、Adobe Streaming Media Collection データに対して有効になっているAdobe Data Collection フローの上に存在するData Prep サービスを移行するプロセスについて説明します。 移行は、「Media」という名前のAdobe Streaming Media Collection データタイプからData Prep マッピングを変換して、「[Media Reporting Details](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」という名前の新しい対応するデータタイプを使用します。
+このドキュメントでは、Adobe Streaming Media Collection データに対して有効になっているAdobe Data Collection フローの上に存在するData Prep サービスを移行するプロセスについて説明します。 移行は、「Media」という名前のAdobe Streaming Media Collection データタイプからData Prep マッピングを変換して、「[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」という名前の新しい対応するデータタイプを使用します。
 
 ## カスタムフィールドのデータ準備の移行
 
-データ準備マッピングを「メディア」と呼ばれる古いデータ型から「[&#x200B; メディアのレポートの詳細](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-types/media-reporting-details)」と呼ばれる新しいデータ型に移行するには、データ準備マッピングを編集する必要があります。
+データ準備マッピングを「メディア」と呼ばれる古いデータ型から「[ メディアのレポートの詳細](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」と呼ばれる新しいデータ型に移行するには、データ準備マッピングを編集する必要があります。
 
 >[!IMPORTANT]
 >
@@ -49,7 +61,7 @@ ht-degree: 0%
 
 1. マッピングが期待どおりに機能していることを確認します。
 
-古いフィールドと新しいフィールドの間のマッピングについては、[&#x200B; コンテンツ ID](/help/reporting/dimensions/content.md) パラメーターと、[&#x200B; ストリーミングメディアサービス &#x200B;](/help/media-overview.md)に記載されているストリーミングメディア変数の残りの部分を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
+古いフィールドと新しいフィールドの間のマッピングについては、[ コンテンツ ID](/help/reporting/dimensions/content.md) パラメーターと、[ ストリーミングメディアサービス ](/help/media-overview.md)に記載されているストリーミングメディア変数の残りの部分を参照してください。 古いフィールドパスは「XDM フィールドパス」プロパティの下にあり、新しいフィールドパスは「レポート XDM フィールドパス」プロパティの下にあります。
 
 ## 例
 
@@ -91,7 +103,7 @@ ht-degree: 0%
 
 上記の例では、関連するすべてのデータタイプがStringだったので、マッピングの置換は直接でした。
 
-ソースフィールドのデータタイプがターゲットフィールドのデータタイプと異なる場合は、[&#x200B; データ準備のトラブルシューティングガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/troubleshooting-guide)、[&#x200B; データ準備](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/data-handling)でのデータ形式の処理、[&#x200B; データ準備マッピング関数](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/data-handling)のガイドラインに従う必要があります。
+ソースフィールドのデータタイプがターゲットフィールドのデータタイプと異なる場合は、[ データ準備のトラブルシューティングガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide)、[ データ準備](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)でのデータ形式の処理、[ データ準備マッピング関数](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)のガイドラインに従う必要があります。
 
 例えば、ソースタイプが文字列で、ターゲットタイプがブール値の場合、Data Prepは値を自動的に解析し、ソース値をブール値に変換できます。
 
